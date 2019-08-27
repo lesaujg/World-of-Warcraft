@@ -1,14 +1,14 @@
-# [2.13.4](https://github.com/WeakAuras/WeakAuras2/tree/2.13.4) (2019-07-07)
+# [2.14.1](https://github.com/WeakAuras/WeakAuras2/tree/2.14.1) (2019-08-24)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.13.3...2.13.4)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.14.0...2.14.1)
 
 ## Highlights
 
- Bug fix for corrupted custom options 
+ Fix a bug that would re-enable disabled texts for users 
 
 ## Commits
 
 emptyrivers (1):
 
-- delete corrupted custom options (#1435)
+- fix migration
 

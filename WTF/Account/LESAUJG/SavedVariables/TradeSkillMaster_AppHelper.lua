@@ -2,8 +2,8 @@
 TradeSkillMaster_AppHelperDB = {
 	["blackMarket"] = {
 		["Sisters of Elune"] = {
-			["key"] = 12924100,
 			["data"] = "[[26,90176,1,4,10500,500,10000,1,1562556239],[12,44175,1,0,3244454,150000,3094454,15,1562556239],[13,44965,1,0,4410,210,4200,13,1562556239],[78,110678,1,2,84000,4000,80000,17,1562556239]]",
+			["key"] = 12924100,
 			["updateTime"] = 1562556239,
 		},
 	},
@@ -17,13 +17,13 @@ TradeSkillMaster_AppHelperDB = {
 	},
 	["wowToken"] = {
 		["US"] = {
-			["data"] = 196441,
 			["key"] = 15075494,
+			["data"] = 196441,
 			["updateTime"] = 1532835892,
 		},
 		["PTR"] = {
-			["data"] = 46899,
 			["key"] = 9014272,
+			["data"] = 46899,
 			["updateTime"] = 1465009785,
 		},
 	},
@@ -73,7 +73,25 @@ TradeSkillMaster_AppHelperDB = {
 			"[\"AC\",\"v4.8.1\",1566742543299,1566742519,8,\"UI_NAVIGATION\",\"mailing/inbox\",\"\"]", -- [42]
 			"[\"AC\",\"v4.8.1\",1566742544158,1566742519,9,\"UI_NAVIGATION\",\"task_list\",\"\"]", -- [43]
 			"[\"AC\",\"v4.8.1\",1566742545158,1566742519,10,\"ADDON_DISABLE\",833]", -- [44]
+			"[\"AC\",\"v4.8.2\",1566878847103,1566878843,1,\"ADDON_INITIALIZE\",3706]", -- [45]
+			"[\"AC\",\"v4.8.2\",1566878856429,1566878843,2,\"UI_NAVIGATION\",\"\",\"destroying\"]", -- [46]
+			"[\"AC\",\"v4.8.2\",1566878856429,1566878843,3,\"UI_NAVIGATION\",\"destroying\",\"\"]", -- [47]
+			"[\"AC\",\"v4.8.2\",1566878856429,1566878843,4,\"UI_NAVIGATION\",\"\",\"task_list\"]", -- [48]
+			"[\"AC\",\"v4.8.2\",1566878860429,1566878843,5,\"ADDON_ENABLE\",4355]", -- [49]
+			"[\"AC\",\"v4.8.2\",1566879001384,1566878843,6,\"UI_NAVIGATION\",\"\",\"mailing\"]", -- [50]
+			"[\"AC\",\"v4.8.2\",1566879001384,1566878843,7,\"UI_NAVIGATION\",\"mailing\",\"mailing/inbox\"]", -- [51]
+			"[\"AC\",\"v4.8.2\",1566879002774,1566878843,8,\"UI_NAVIGATION\",\"mailing/inbox\",\"\"]", -- [52]
+			"[\"AC\",\"v4.8.2\",1566879007896,1566878843,9,\"UI_NAVIGATION\",\"\",\"auction\"]", -- [53]
+			"[\"AC\",\"v4.8.2\",1566879007896,1566878843,10,\"UI_NAVIGATION\",\"auction\",\"auction/shopping\"]", -- [54]
+			"[\"AC\",\"v4.8.2\",1566879007896,1566878843,11,\"UI_NAVIGATION\",\"auction/shopping\",\"auction/shopping/selection\"]", -- [55]
+			"[\"AC\",\"v4.8.2\",1566879009871,1566878843,12,\"UI_NAVIGATION\",\"auction/shopping/selection\",\"auction/shopping/scan\"]", -- [56]
+			"[\"AC\",\"v4.8.2\",1566879013498,1566878843,13,\"UI_NAVIGATION\",\"auction/shopping/scan\",\"auction/shopping/selection\"]", -- [57]
+			"[\"AC\",\"v4.8.2\",1566879016450,1566878843,14,\"UI_NAVIGATION\",\"auction/shopping/selection\",\"auction/shopping/scan\"]", -- [58]
+			"[\"AC\",\"v4.8.2\",1566879039752,1566878843,15,\"UI_NAVIGATION\",\"auction/shopping/scan\",\"auction/my_auctions\"]", -- [59]
+			"[\"AC\",\"v4.8.2\",1566879046698,1566878843,16,\"UI_NAVIGATION\",\"auction/my_auctions\",\"\"]", -- [60]
+			"[\"AC\",\"v4.8.2\",1566879048750,1566878843,17,\"UI_NAVIGATION\",\"task_list\",\"\"]", -- [61]
+			"[\"AC\",\"v4.8.2\",1566879049750,1566878843,18,\"ADDON_DISABLE\",777]", -- [62]
 		},
-		["updateTime"] = 1566742545,
+		["updateTime"] = 1566879049,
 	},
 }
