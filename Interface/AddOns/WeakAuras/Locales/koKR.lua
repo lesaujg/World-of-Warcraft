@@ -229,10 +229,8 @@ L["DBM Announce"] = "DBM 알림"
 L["DBM Timer"] = "DBM 타이머"
 L["Death Knight Rune"] = "죽음의 기사 룬"
 L["Debuff"] = "약화 효과"
---[[Translation missing --]]
-L["Debuff Class"] = "Debuff Class"
---[[Translation missing --]]
-L["Debuff Class Icon"] = "Debuff Class Icon"
+L["Debuff Class"] = "약화 효과 직업"
+L["Debuff Class Icon"] = "약화 효과 직업 아이콘"
 L["Debuff Type"] = "약화 효과 유형"
 L["Deflect"] = "튕김"
 L["Desaturate"] = "흑백"
@@ -370,8 +368,7 @@ L["Icon Color"] = "아이콘 색상"
 L["Icon Desaturate"] = "아이콘 채도감소(흑백)"
 L["If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/wa2!"] = "추가 지원이 필요하면 GitHub에서 티켓을 열거나 Discord에서 https://discord.gg/wa2 를 방문하십시오!"
 L["Ignore Rune CD"] = "룬 재사용 대기시간 무시"
---[[Translation missing --]]
-L["Ignore Rune CDs"] = "Ignore Rune CDs"
+L["Ignore Rune CDs"] = "룬 재사용 대기시간 무시"
 --[[Translation missing --]]
 L["Ignore Spell Known"] = "Ignore Spell Known"
 L["Ignore Unknown Spell"] = "알 수 없는 주문 무시"
@@ -695,12 +692,10 @@ L["Show"] = "표시"
 L["Show Absorb"] = "흡수 표시"
 L["Show all Matches"] = "모든 일치 표시"
 L["Show all Matches from all Units"] = "모든 유닛에서 모든 일치 항목 표시"
---[[Translation missing --]]
-L["Show Border"] = "Show Border"
-L["Show CD of Charge"] = "충전 CD 표시"
+L["Show Border"] = "테두리 표시"
+L["Show CD of Charge"] = "충전량 재사용 대기시간 표시"
 L["Show Code"] = "코드 표시"
---[[Translation missing --]]
-L["Show GCD"] = "Show GCD"
+L["Show GCD"] = "전역 재사용 대기시간 표시"
 L["Show Global Cooldown"] = "전역 재사용 대기시간 표시"
 --[[Translation missing --]]
 L["Show Glow"] = "Show Glow"
@@ -839,8 +834,7 @@ L["Totem"] = "토템"
 L["Totem #%i"] = "토템 #%i"
 L["Totem Name"] = "토템 이름"
 L["Totem Number"] = "토템 번호"
---[[Translation missing --]]
-L["Track Cooldowns"] = "Track Cooldowns"
+L["Track Cooldowns"] = "재사용 대기시간 추적"
 --[[Translation missing --]]
 L["Tracking Charge %i"] = "Tracking Charge %i"
 --[[Translation missing --]]

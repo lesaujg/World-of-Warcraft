@@ -398,16 +398,14 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Group by Frame"] = "Group by Frame"
 	--[[Translation missing --]]
 	L["Group contains updates from Wago"] = "Group contains updates from Wago"
-	--[[Translation missing --]]
-	L["Group Icon"] = "Group Icon"
+	L["Group Icon"] = "그룹 아이콘"
 	--[[Translation missing --]]
 	L["Group key"] = "Group key"
 	L["Group Member Count"] = "그룹원 수"
 	L["Group Role"] = "그룹 역할"
 	L["Group Scale"] = "그룹 크기 비율"
 	L["Group Settings"] = "그룹 설정"
-	--[[Translation missing --]]
-	L["Group Type"] = "Group Type"
+	L["Group Type"] = "그룹 유형"
 	L["Grow"] = "성장"
 	L["Hawk"] = "매"
 	L["Height"] = "높이"
@@ -541,8 +539,7 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Not Loaded"] = "불러오지 않음"
 	--[[Translation missing --]]
 	L["Number of Entries"] = "Number of Entries"
-	--[[Translation missing --]]
-	L["Offer a guided way to create auras for your character"] = "Offer a guided way to create auras for your character"
+	L["Offer a guided way to create auras for your character"] = "캐릭터용 효과를 만드는 안내 방법을 제공합니다."
 	L["Okay"] = "확인"
 	L["On Hide"] = "숨겨질 때"
 	L["On Init"] = "초기 실행 시"
@@ -663,10 +660,8 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Shadow Y Offset"] = "Shadow Y Offset"
 	L["Shift-click to create chat link"] = "Shift+클릭 - 대화 링크 만들기"
 	L["Show all matches (Auto-clone)"] = "모든 일치 표시 (자동 복제)"
-	--[[Translation missing --]]
-	L["Show Border"] = "Show Border"
-	--[[Translation missing --]]
-	L["Show Cooldown"] = "Show Cooldown"
+	L["Show Border"] = "테두리 표시"
+	L["Show Cooldown"] = "재사용 대기시간 표시"
 	--[[Translation missing --]]
 	L["Show Extra Options"] = "Show Extra Options"
 	--[[Translation missing --]]

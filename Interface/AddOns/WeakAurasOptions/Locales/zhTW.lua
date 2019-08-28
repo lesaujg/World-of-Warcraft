@@ -103,8 +103,7 @@ If the animation's duration is set to |cFF00CC0010%|r, and the display's trigger
 	L["Backdrop Color"] = "背景顏色"
 	L["Backdrop in Front"] = "背景在前面"
 	L["Backdrop Style"] = "背景類型"
-	--[[Translation missing --]]
-	L["Background"] = "Background"
+	L["Background"] = "背景"
 	L["Background Color"] = "背景顏色"
 	L["Background Offset"] = "背景位置"
 	L["Background Texture"] = "背景材質"
@@ -119,10 +118,8 @@ If the animation's duration is set to |cFF00CC0010%|r, and the display's trigger
 	L["Blue Rune"] = "藍色符文"
 	L["Blue Sparkle Orb"] = "藍色光球"
 	L["Border"] = "邊框"
-	--[[Translation missing --]]
-	L["Border %s"] = "Border %s"
-	--[[Translation missing --]]
-	L["Border Anchor"] = "Border Anchor"
+	L["Border %s"] = "邊框 %s"
+	L["Border Anchor"] = "邊框對齊位置"
 	L["Border Color"] = "邊框顏色"
 	L["Border in Front"] = "邊框在前面"
 	L["Border Inset"] = "邊框內縮"
@@ -291,8 +288,7 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Fire Orb"] = "火球"
 	L["Font"] = "文字"
 	L["Font Size"] = "文字大小"
-	--[[Translation missing --]]
-	L["Foreground"] = "Foreground"
+	L["Foreground"] = "前景"
 	L["Foreground Color"] = "前景顏色"
 	L["Foreground Texture"] = "前景材質"
 	L["Frame"] = "框架"
@@ -320,26 +316,21 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 |cFF00CC00<= 0.8|r 當 %s 中受到影響的人數少於 80%% 的時候會觸發 (5人隊伍時為4人、10人團隊時為8人、25人團隊時為20人)
 |cFF00CC00> 1/2|r 當 %s 中受到影響的人數超過一半時會觸發
 |cFF00CC00>= 0|r 無論如何永遠都會觸發]=]
-	--[[Translation missing --]]
-	L["Group by Frame"] = "Group by Frame"
+	L["Group by Frame"] = "依框架分群組"
 	L["Group contains updates from Wago"] = "群組包含來自 Wago 的更新"
-	--[[Translation missing --]]
-	L["Group Icon"] = "Group Icon"
-	--[[Translation missing --]]
-	L["Group key"] = "Group key"
+	L["Group Icon"] = "群組圖示"
+	L["Group key"] = "群組 key"
 	L["Group Member Count"] = "群組成員總數"
 	L["Group Role"] = "角色職責"
 	L["Group Scale"] = "群組縮放大小"
 	L["Group Settings"] = "群組設定"
-	--[[Translation missing --]]
-	L["Group Type"] = "Group Type"
+	L["Group Type"] = "群組類型"
 	L["Grow"] = "增長"
 	L["Hawk"] = "老鷹"
 	L["Height"] = "高度"
 	L["Hide"] = "隱藏"
 	L["Hide Cooldown Text"] = "隱藏冷卻文字"
-	--[[Translation missing --]]
-	L["Hide Extra Options"] = "Hide Extra Options"
+	L["Hide Extra Options"] = "隱藏額外選項"
 	L["Hide on"] = "隱藏"
 	L["Hide this group's children"] = "隱藏這個群組的子項目"
 	L["Hide When Not In Group"] = "不在隊伍中時隱藏"
@@ -351,16 +342,12 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Icon"] = "圖示"
 	L["Icon Info"] = "圖示訊息"
 	L["Icon Inset"] = "圖示內縮"
-	--[[Translation missing --]]
-	L["Icon Position"] = "Icon Position"
+	L["Icon Position"] = "圖示位置"
 	L["Icon Settings"] = "圖示設定"
 	L["If"] = "(if) 如果"
-	--[[Translation missing --]]
-	L["If checked, then the user will see a multi line edit box. This is useful for inputting large amounts of text."] = "If checked, then the user will see a multi line edit box. This is useful for inputting large amounts of text."
-	--[[Translation missing --]]
-	L["If checked, then this option group can be temporarily collapsed by the user."] = "If checked, then this option group can be temporarily collapsed by the user."
-	--[[Translation missing --]]
-	L["If checked, then this option group will start collapsed."] = "If checked, then this option group will start collapsed."
+	L["If checked, then the user will see a multi line edit box. This is useful for inputting large amounts of text."] = "勾選時，使用者會看到一個多行的文字編輯方塊，對於輸入大量文字很有幫助。"
+	L["If checked, then this option group can be temporarily collapsed by the user."] = "勾選時，這個選項群組可以被使用者暫時收合起來。"
+	L["If checked, then this option group will start collapsed."] = "勾選時，這個選項群組一開始會先呈現收合起來的狀態。"
 	L["If checked, then this separator will include text. Otherwise, it will be just a horizontal line."] = "勾選時，分隔線會包含文字，否則只會有水平線。"
 	L["If checked, then this space will span across multiple lines."] = "勾選時，此間距將會跨越多行。"
 	L["If this option is enabled, you are no longer able to import auras."] = "啟用這個選項時，將無法匯入提醒效果。"
@@ -373,8 +360,7 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Ignored"] = "忽略"
 	L["Import"] = "匯入"
 	L["Import a display from an encoded string"] = "從編碼字串匯入提醒效果"
-	--[[Translation missing --]]
-	L["Inner"] = "Inner"
+	L["Inner"] = "內部"
 	L["Invalid Item Name/ID/Link"] = "無效的物品名稱/ID/連結"
 	L["Invalid Spell ID"] = "無效的法術 ID"
 	L["Invalid Spell Name/ID/Link"] = "無效的法術名稱/ID/連結"
@@ -383,11 +369,9 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Is Stealable"] = "可偷取"
 	L["Justify"] = "左右對齊"
 	L["Keep Aspect Ratio"] = "保持長寬比例"
-	--[[Translation missing --]]
-	L["Large Input"] = "Large Input"
+	L["Large Input"] = "大量輸入"
 	L["Leaf"] = "葉子"
-	--[[Translation missing --]]
-	L["Left"] = "Left"
+	L["Left"] = "左"
 	L["Left 2 HUD position"] = "左2 HUD 位置"
 	L["Left HUD position"] = "左方 HUD 位置"
 	L["Legacy Aura Trigger"] = "傳統光環觸發"
@@ -412,17 +396,12 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Mirror"] = "鏡像"
 	L["Model"] = "模組"
 	L["Model Settings"] = "模組設定"
-	--[[Translation missing --]]
-	L["Move Above Group"] = "Move Above Group"
-	--[[Translation missing --]]
-	L["Move Below Group"] = "Move Below Group"
+	L["Move Above Group"] = "移至上方群組"
+	L["Move Below Group"] = "移至下方群組"
 	L["Move Down"] = "往下移動"
-	--[[Translation missing --]]
-	L["Move Entry Up"] = "Move Entry Up"
-	--[[Translation missing --]]
-	L["Move Into Above Group"] = "Move Into Above Group"
-	--[[Translation missing --]]
-	L["Move Into Below Group"] = "Move Into Below Group"
+	L["Move Entry Up"] = "項目往上移動"
+	L["Move Into Above Group"] = "移動到上面的群組內"
+	L["Move Into Below Group"] = "移動到下面的群組內"
 	L["Move this display down in its group's order"] = "將這個提醒效果在群組中的順序往下移動"
 	L["Move this display up in its group's order"] = "將這個提醒效果在群組中的順序往上移動"
 	L["Move Up"] = "往上移動"
@@ -437,8 +416,7 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Name Info"] = "名稱訊息"
 	L["Name Pattern Match"] = "名稱表達式符合"
 	L["Name(s)"] = "名稱"
-	--[[Translation missing --]]
-	L["Nameplates"] = "Nameplates"
+	L["Nameplates"] = "血條"
 	L["Negator"] = "不"
 	L["Never"] = "永不"
 	L["New"] = "新增"
@@ -449,10 +427,8 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["None"] = "無"
 	L["Not all children have the same value for this option"] = "並非所有子項目的這個設定都使用相同的數值"
 	L["Not Loaded"] = "未載入"
-	--[[Translation missing --]]
-	L["Number of Entries"] = "Number of Entries"
-	--[[Translation missing --]]
-	L["Offer a guided way to create auras for your character"] = "Offer a guided way to create auras for your character"
+	L["Number of Entries"] = "項目數量"
+	L["Offer a guided way to create auras for your character"] = "用引導的方式來為你的角色建立提醒效果"
 	L["Okay"] = "確認"
 	L["On Hide"] = "消失時"
 	L["On Init"] = "初始化時"
@@ -471,8 +447,7 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["or Trigger %s"] = "或觸發 %s"
 	L["Orange Rune"] = "橘色符文"
 	L["Orientation"] = "方向"
-	--[[Translation missing --]]
-	L["Outer"] = "Outer"
+	L["Outer"] = "外部"
 	L["Outline"] = "外框"
 	L["Overflow"] = "超出範圍"
 	L["Overlay %s Info"] = "疊加 %s 資訊"
@@ -516,8 +491,7 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Required for Activation"] = "啟用需要"
 	L["Reset all options to their default values."] = "重置所有選項，恢復成預設值。"
 	L["Reset to Defaults"] = "重置為預設值"
-	--[[Translation missing --]]
-	L["Right"] = "Right"
+	L["Right"] = "右"
 	L["Right 2 HUD position"] = "右2 HUD 位置"
 	L["Right HUD position"] = "右方 HUD 位置"
 	L["Right-click for more options"] = "右鍵點擊顯示更多設定"
@@ -525,10 +499,8 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Rotate In"] = "旋轉進入"
 	L["Rotate Out"] = "旋轉退出"
 	L["Rotate Text"] = "旋轉文字"
-	--[[Translation missing --]]
-	L["rotated left"] = "rotated left"
-	--[[Translation missing --]]
-	L["rotated right"] = "rotated right"
+	L["rotated left"] = "向左旋轉"
+	L["rotated right"] = "向右旋轉"
 	L["Rotation"] = "旋轉"
 	L["Rotation Mode"] = "旋轉模式"
 	L["Row Space"] = "列間距"
@@ -541,43 +513,31 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Separator Text"] = "分隔線文字"
 	L["Separator text"] = "分隔線文字"
 	L["Set Parent to Anchor"] = "將對齊點設為上一層"
-	--[[Translation missing --]]
-	L["Set Thumbnail Icon"] = "Set Thumbnail Icon"
+	L["Set Thumbnail Icon"] = "設定縮圖圖示"
 	L["Set tooltip description"] = "設定滑鼠提示說明內容"
 	L["Sets the anchored frame as the aura's parent, causing the aura to inherit attributes such as visiblility and scale."] = "將對齊的框架設定為提醒效果的上一層，會讓提醒效果繼承其屬性，像是可見性和縮放大小。"
 	L["Settings"] = "設定"
-	--[[Translation missing --]]
-	L["Shadow Color"] = "Shadow Color"
-	--[[Translation missing --]]
-	L["Shadow X Offset"] = "Shadow X Offset"
-	--[[Translation missing --]]
-	L["Shadow Y Offset"] = "Shadow Y Offset"
+	L["Shadow Color"] = "陰影顏色"
+	L["Shadow X Offset"] = "陰影水平偏移"
+	L["Shadow Y Offset"] = "陰影垂直偏移"
 	L["Shift-click to create chat link"] = "Shift-左鍵點擊建立 |cFF8800FF[聊天連結]"
 	L["Show all matches (Auto-clone)"] = "顯示所有符合的 (自動複製)"
-	--[[Translation missing --]]
-	L["Show Border"] = "Show Border"
-	--[[Translation missing --]]
-	L["Show Cooldown"] = "Show Cooldown"
-	--[[Translation missing --]]
-	L["Show Extra Options"] = "Show Extra Options"
-	--[[Translation missing --]]
-	L["Show Glow"] = "Show Glow"
-	--[[Translation missing --]]
-	L["Show Icon"] = "Show Icon"
+	L["Show Border"] = "顯示邊框"
+	L["Show Cooldown"] = "顯示冷卻"
+	L["Show Extra Options"] = "顯示額外選項"
+	L["Show Glow"] = "顯示發光"
+	L["Show Icon"] = "顯示圖示"
 	L["Show If Unit Does Not Exist"] = "單位不存在時要顯示"
 	L["Show If Unit Is Invalid"] = "單位無效時要顯示"
 	L["Show Matches for"] = "顯示符合的"
 	L["Show Matches for Units"] = "顯示單位符合的"
 	L["Show model of unit "] = "顯示單位的模組"
 	L["Show On"] = "顯示於"
-	--[[Translation missing --]]
-	L["Show Spark"] = "Show Spark"
-	--[[Translation missing --]]
-	L["Show Text"] = "Show Text"
+	L["Show Spark"] = "顯示亮點"
+	L["Show Text"] = "顯示文字"
 	L["Show this group's children"] = "顯示這個群組的子項目"
 	L["Shows a 3D model from the game files"] = "顯示遊戲檔案中的3D模組"
-	--[[Translation missing --]]
-	L["Shows a border"] = "Shows a border"
+	L["Shows a border"] = "顯示邊框"
 	L["Shows a custom texture"] = "顯示自訂材質"
 	L["Shows a progress bar with name, timer, and icon"] = "顯示一個包含名稱、時間和圖示的進度條"
 	L["Shows a spell icon with an optional cooldown overlay"] = "顯示法術圖示，可選擇是否要在上面顯示冷卻時間。"
@@ -616,21 +576,17 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Star"] = "星星"
 	L["Start"] = "開始"
 	L["Start Angle"] = "開始時的角度"
-	--[[Translation missing --]]
-	L["Start Collapsed"] = "Start Collapsed"
-	--[[Translation missing --]]
-	L["Start of %s"] = "Start of %s"
+	L["Start Collapsed"] = "開始先收合"
+	L["Start of %s"] = "%s的開始"
 	L["Status"] = "狀態"
 	L["Stealable"] = "可法術竊取"
 	L["Step Size"] = "數值間距"
 	L["Stop ignoring Updates"] = "停止忽略更新"
 	L["Stop Sound"] = "停止音效"
-	--[[Translation missing --]]
-	L["Sub Option %i"] = "Sub Option %i"
+	L["Sub Option %i"] = "子選項 %i"
 	L["Temporary Group"] = "暫時性的群組"
 	L["Text"] = "文字"
-	--[[Translation missing --]]
-	L["Text %s"] = "Text %s"
+	L["Text %s"] = "文字 %s"
 	L["Text Color"] = "文字顏色"
 	L["Text Settings"] = "文字設定"
 	L["Texture"] = "材質"
@@ -664,13 +620,10 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Tooltip Text"] = "滑鼠提示文字"
 	L["Tooltip Value"] = "滑鼠提示值"
 	L["Tooltip Value #"] = "滑鼠提示值 #"
-	--[[Translation missing --]]
-	L["Top"] = "Top"
+	L["Top"] = "上"
 	L["Top HUD position"] = "上方 HUD 位置"
-	--[[Translation missing --]]
-	L["Top Left"] = "Top Left"
-	--[[Translation missing --]]
-	L["Top Right"] = "Top Right"
+	L["Top Left"] = "左上"
+	L["Top Right"] = "右上"
 	L["Total Time Precision"] = "總共時間精確度"
 	L["Trigger"] = "觸發"
 	L["Trigger %d"] = "觸發 %d"
@@ -679,11 +632,9 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Type"] = "類型"
 	L["Ungroup"] = "解散群組"
 	L["Unit"] = "單位"
-	--[[Translation missing --]]
-	L["Unit %s is not a valid unit for RegisterUnitEvent"] = "Unit %s is not a valid unit for RegisterUnitEvent"
+	L["Unit %s is not a valid unit for RegisterUnitEvent"] = "單位 %s 不是 RegisterUnitEvent 的有效單位"
 	L["Unit Count"] = "單位數量"
-	--[[Translation missing --]]
-	L["Unit Frames"] = "Unit Frames"
+	L["Unit Frames"] = "單位框架"
 	L["Unlike the start or finish animations, the main animation will loop over and over until the display is hidden."] = "不同於開始或結束時的動畫，主要動畫將重複循環直到提醒效果被隱藏。"
 	L["Up"] = "上移"
 	L["Update "] = "更新 "
@@ -706,8 +657,7 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Vertical Bar"] = "垂直進度條"
 	L["View"] = "檢視"
 	L["Wago Update"] = "Wago 更新"
-	--[[Translation missing --]]
-	L["Whole Area"] = "Whole Area"
+	L["Whole Area"] = "整個區域"
 	L["Width"] = "寬度"
 	L["X Offset"] = "水平位置"
 	L["X Rotation"] = "水平旋轉"
