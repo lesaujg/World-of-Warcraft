@@ -1,7 +1,7 @@
 SET autoLootDefault "1"
 SET stopAutoAttackOnTargetChange "1"
 SET autoQuestPopUps "v##$"
-SET trackedQuests "v):Z)7.(^f)2))D/)DM)H~)Jt)Qh)Y})Zp"
+SET trackedQuests "v)7.):Z(^f)2))D/)DM)H~)Jt)Qh)Y})Zp"
 SET hardTrackedQuests "v"
 SET trackedWorldQuests "v"
 SET hardTrackedWorldQuests "v"
