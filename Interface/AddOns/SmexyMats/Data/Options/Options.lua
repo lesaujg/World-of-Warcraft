@@ -198,6 +198,7 @@ SmexyMats.options = {
 					SmexyMats.Colors.Mage .. "Discord: Lunixia#1530\r\n" ..
 					"|cFFCC66FFTwitch: https://www.twitch.tv/LunixiaLIVE\r\n" ..
 					"|rCheck out my other addons:\r\n" ..
+					"|cFFFF8000SmexyMats(Classic)\r\n" ..
 					"|cFFFF8000SmexyScaleUI(SSUI)\r\n" ..  
 					"|cFFFF8000SmexyGMO(SGMO)",
 			fontSize = "medium",

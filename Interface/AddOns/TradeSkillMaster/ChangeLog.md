@@ -1,8 +1,9 @@
-## v4.8.2 Changes
+## v4.8.7 Changes
 
-* Fixed bug with account syncing not connecting in some situations.
-* Adjusted default Auctioning operation prices to be invalid if there's no AuctionDB data.
-* Fixed various errors from cancel scans and generally sped up Auctioning scan processing.
-* Fixed bug with positioning of merchant frame when using other addons.
+* Fixed error caused by a corrupted item cache.
+* Fixed error when trying to create teh TSM macro on classic.
+* Fixed positioning of TSM UI button on default UIs in classic.
+* Fixed bug with cooking not showing properly in classic.
+* Changed gold graph units from 1kg to 1g on classic.
 
 [Known Issues](http://support.tradeskillmaster.com/display/KB/TSM4+Currently+Known+Issues)

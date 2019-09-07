@@ -9,8 +9,8 @@ if SmexyMatsDB == nil then SmexyMatsDB = {}; end;
 if SmexyMatsAuto == nil then SmexyMatsAuto = {}; end;
 local L = LibStub("AceLocale-3.0"):GetLocale("SmexyMats");
 local AceConfig = LibStub("AceConfigDialog-3.0");
-local name = "SmexyMats(SM)";
-local version = "v8.2.2";
+local name = "SmexyMats(Retail)";
+local version = "v8.2.3";
 local isTooltipDone = nil;
 local storedLink = nil;
 local LID = nil;
@@ -20,7 +20,7 @@ function SmexyMats:OnInitialize()
 	SmexyMats:RegisterChatCommand("sm", "ChatCommand");
 	if (SmexyMatsDB.profile == nil) or not (SmexyMatsDB.profile) then SmexyMatsDB.profile = SmexyMats.defaults.profile; end;
 	LibStub("AceConfig-3.0"):RegisterOptionsTable("SmexyMats", SmexyMats.options);
-	AceConfig:AddToBlizOptions("SmexyMats", "SmexyMats(SM)");
+	AceConfig:AddToBlizOptions("SmexyMats", "SmexyMats(Retail)");
 	local tooltipMethodHooks = {
 		SetCurrencyToken = { nil, Hook_SetCurrencyToken },
 		SetRecipeResultItem = { function(self, recipeID) if recipeID then storedLink = C_TradeSkillUI.GetRecipeItemLink(recipeID) end end, nil},
@@ -69,8 +69,8 @@ function SmexyMats:HookTooltips()
 end;
 
 function SmexyMats:ChatCommand()
-	InterfaceOptionsFrame_OpenToCategory("SmexyMats(SM)");
-	InterfaceOptionsFrame_OpenToCategory("SmexyMats(SM)");
+	InterfaceOptionsFrame_OpenToCategory("SmexyMats(Retail)");
+	InterfaceOptionsFrame_OpenToCategory("SmexyMats(Retail)");
 end;
 
 function JustTheTip(tooltip, ...)
