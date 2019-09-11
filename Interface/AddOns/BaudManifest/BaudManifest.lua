@@ -281,6 +281,7 @@ end
 ---------------------
 
 local function SetAutoSellTable(itemString, value)
+  if not itemString then return; end
   AutoSellTable[CleanItemString(itemString)] = value;
 end
 
@@ -449,7 +450,7 @@ EventFuncs = {
               if Item.ItemString then
                 local CleanedItemString = CleanItemString(Item.ItemString);
                 if not CleanedItemString then
-                  DebugMsg("Couldn't clean item string "..Item.ItemString);
+                  --DebugMsg("Couldn't clean item string "..Item.ItemString);
                 else
                   if not Hash[CleanedItemString] then
                     Hash[CleanedItemString] = Item;
@@ -513,7 +514,7 @@ EventFuncs = {
         -- fill out the autosell table from the file data
      	local AutoSell = PlayerData[1][PlayerData.AutoSell];
         for Key, Value in ipairs(AutoSell) do
-     	  AutoSellTable[CleanItemString(Value.ItemString)] = 1;
+     	  SetAutoSellTable(Value.ItemString, 1);
      	end
     end
   end,
@@ -1923,7 +1924,7 @@ end
 ---------------------------
 
 --Used for replacing Blizzard's call for opening the split stack frame
-hooksecurefunc(StackSplitMixin, "OpenStackSplitFrame", function(maxStack, parent, anchor, anchorTo, stackCount)
+hooksecurefunc(StackSplitFrame, "OpenStackSplitFrame", function(self, maxStack, parent, anchor, anchorTo, stackCount)
   if (strsub(parent:GetName(), 1, 12) == "BaudManifest") and (strsub(parent:GetName(), -8) == "BlizItem") then
     StackSplitFrame:Hide()
     BaudManifestItemEntry_OnDragStart(parent:GetParent());
@@ -2401,7 +2402,7 @@ function BaudManifestItemEntry_OnDragStart(Button)
         BaudManifestSplitStackHandler(nil, 1);
       else
         Button.SplitStack = BaudManifestSplitStackHandler;
-        OpenStackSplitFrame(ItemInfo.Count, Button, "BOTTOMRIGHT", "TOPRIGHT");
+        StackSplitFrame:OpenStackSplitFrame(ItemInfo.Count, Button, "BOTTOMRIGHT", "TOPRIGHT");
       end
       return;
     end
@@ -2770,7 +2771,7 @@ local function UpdateSlotFunc(Bag, Slot)
 
   ItemString = GetItemString(Link);
   if not ItemString then
-    DebugMsg("Cannot get ItemID from: " .. DebugPrintLink(Link));
+    --DebugMsg("Cannot get ItemID from: " .. DebugPrintLink(Link));
   end
 
   ItemID = strmatch(ItemString, "item:(%d+):");

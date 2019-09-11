@@ -75,7 +75,7 @@
           <Anchor point="BOTTOMRIGHT" relativeTo="$parentTexture"/>
         </Anchors>
       </Cooldown>
-      <Button name="$parentBlizItem" inherits="ContainerFrameItemButtonTemplate,BaudManifestBlizTemplate"/>
+      <ItemButton name="$parentBlizItem" inherits="ContainerFrameItemButtonTemplate,BaudManifestBlizTemplate"/>
       <Button name="$parentBlizInv" inherits="PaperDollItemSlotButtonTemplate,BaudManifestBlizTemplate"/>
     </Frames>
     <Scripts>
