@@ -1,19 +1,12 @@
-tag 4fd67021481c779da3459616350498bde26f3430 8.2.9
+tag 4d51b7191c802c2e019d8363c514ab764caba840 8.2.10
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Wed Jul 31 11:56:22 2019 +1000
+Date:	Wed Sep 25 09:08:16 2019 +1000
 
-LiteMount 8.2.9
-Fix scrolling for edit box on advanced options panel
+LiteMount 8.2.10 - Update TOC for WoW 8.2.5
 
-commit c2db1ac5e54c3ff6ebad735b8a618ff9baa535be
+commit 505f01ceb76a951a7384d1a485f7c8d60fd3ae2f
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Jul 30 13:18:49 2019 +1000
+Date:   Wed Sep 25 09:08:01 2019 +1000
 
-    Fix bug with uidebug
-
-commit ed50db2981544b3f00f288fef0929852d7238bc6
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Jul 30 13:16:20 2019 +1000
-
-    Fix scrolling on edit box in advanced UI panel
+    Update TOC for 8.2.5
 
