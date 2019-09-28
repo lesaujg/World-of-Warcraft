@@ -43,3 +43,4 @@ Tukui_Config: enabled
 BaudManifest: enabled
 KSpeedO: enabled
 GTFO: disabled
+OPie_Classic: disabled

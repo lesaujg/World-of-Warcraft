@@ -93,3 +93,4 @@ DBM-WorldEvents: disabled
 DBM-ZuldazarRaid: disabled
 HandyNotes_WarfrontRares: disabled
 MountDropList: disabled
+OPie_Classic: disabled

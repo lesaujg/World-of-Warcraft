@@ -235,3 +235,4 @@ DBM-CrucibleofStorms: enabled
 DBM-ZuldazarRaid: enabled
 HandyNotes_WarfrontRares: enabled
 WeakAurasCompanion: enabled
+OPie_Classic: disabled

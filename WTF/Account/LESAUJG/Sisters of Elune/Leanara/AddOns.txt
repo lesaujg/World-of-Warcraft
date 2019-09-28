@@ -71,3 +71,4 @@ TradeSkillMaster_AppHelper: enabled
 Tukui_17_Layout: enabled
 KSpeedO: enabled
 GTFO: disabled
+OPie_Classic: disabled

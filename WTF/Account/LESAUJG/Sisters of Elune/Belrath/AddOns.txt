@@ -210,3 +210,4 @@ ProjectAzilroka: disabled
 AngryWorldQuests: disabled
 Tukui_17_Layout: enabled
 KSpeedO: enabled
+OPie_Classic: disabled

@@ -228,3 +228,4 @@ HandyNotes_Arathi: disabled
 MountDropList: disabled
 DBM-CrucibleofStorms: disabled
 DBM-ZuldazarRaid: disabled
+OPie_Classic: disabled
