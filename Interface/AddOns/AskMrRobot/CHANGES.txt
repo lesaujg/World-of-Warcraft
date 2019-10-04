@@ -1,7 +1,7 @@
-changeset:   169:d90a740a1d0b
-tag:         v79
+changeset:   171:5d25f06e0633
+tag:         v80
 user:        yellowfive
-date:        Tue Jul 23 14:48:31 2019 -0700
-summary:     Bug fix, russian translation tweak.
+date:        Mon Sep 30 15:11:16 2019 -0700
+summary:     Interface version bumped.
 
 
