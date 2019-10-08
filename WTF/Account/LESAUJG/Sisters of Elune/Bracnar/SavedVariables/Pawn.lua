@@ -1,6 +1,9 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0246,
+	["LastVersion"] = 2.0307,
+	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 158017,
@@ -9,8 +12,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 449,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:255::11:4:6316:4932:4933:1586:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 455,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:255::11:4:6316:4932:4933:1592:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 166556,
@@ -24,9 +27,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:157982::::::::120:255::28:4:1592:4786:5416:4775:::|h[Crosswind Chainmail]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 163401,
-			["Level"] = 370,
-			["Link"] = "|cffa335ee|Hitem:163401::168641::::::120:255::29:4:5125:4802:1562:4786:::|h[7th Legionnaire's Cincture]|h|r",
+			["ID"] = 165454,
+			["Level"] = 400,
+			["Link"] = "|cffa335ee|Hitem:165454::::::::120:253::6:3:5126:1517:4786:::|h[Kaldorei Archer's Belt]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 165452,
@@ -55,10 +58,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:166560:6109:::::::120:255::14::::|h[Captain's Signet of Command]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 165680,
-			["Level"] = 385,
+			["ID"] = 166560,
+			["Level"] = 395,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cffa335ee|Hitem:165680:6109:::::::120:255::28:3:4803:1577:4786:::|h[Igneous Winterskorn Loop]|h|r",
+			["Link"] = "|cffa335ee|Hitem:166560:6109:::::::120:253::14::::|h[Captain's Signet of Command]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 161415,
@@ -67,10 +70,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:161415::::::::120:255::3:3:5479:1517:4786:::|h[Forest Lord's Razorleaf]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 165667,
-			["Level"] = 395,
+			["ID"] = 161415,
+			["Level"] = 400,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cffa335ee|Hitem:165667::::::::120:255::28:3:4803:1587:4786:::|h[Razzashi Tooth Medallion]|h|r",
+			["Link"] = "|cffa335ee|Hitem:161415::::::::120:253::3:3:5479:1517:4786:::|h[Forest Lord's Razorleaf]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 166668,
@@ -78,14 +81,12 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:166668::168637::::::120:255::28:5:4803:4802:42:1587:4786:::|h[Battalion Veteran's Greatcloak]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 163885,
-			["Level"] = 390,
-			["Link"] = "|cffa335ee|Hitem:163885:6148:::::::120:255::28:3:5125:1582:4783:::|h[7th Legionnaire's Halberd]|h|r",
+			["ID"] = 163881,
+			["Level"] = 395,
+			["Link"] = "|cffa335ee|Hitem:163881:5963:::::::120:253::28:3:5125:1587:4786:::|h[7th Legionnaire's Longbow]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -122,7 +123,6 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",
