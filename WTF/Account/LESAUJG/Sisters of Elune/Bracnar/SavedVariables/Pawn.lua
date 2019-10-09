@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0307,
-	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
-	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 158017,
@@ -12,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 455,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:255::11:4:6316:4932:4933:1592:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 457,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:255::11:4:6316:4932:4933:1594:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 166556,
@@ -22,19 +19,19 @@ PawnOptions = {
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 157982,
-			["Level"] = 405,
-			["Link"] = "|cffa335ee|Hitem:157982::::::::120:255::28:4:1592:4786:5416:4775:::|h[Crosswind Chainmail]|h|r",
+			["ID"] = 168358,
+			["Level"] = 420,
+			["Link"] = "|cffa335ee|Hitem:168358::::::::120:255::3:5:4822:1487:4786:6263:4775:::|h[Chestguard of the Submerged]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 165454,
-			["Level"] = 400,
-			["Link"] = "|cffa335ee|Hitem:165454::::::::120:253::6:3:5126:1517:4786:::|h[Kaldorei Archer's Belt]|h|r",
+			["ID"] = 170369,
+			["Level"] = 405,
+			["Link"] = "|cffa335ee|Hitem:170369::::::::120:253:::4:6300:6290:1492:4786:::|h[Vim's Scalecrusher Chain]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 165452,
-			["Level"] = 400,
-			["Link"] = "|cffa335ee|Hitem:165452::::::::120:255::6:3:5126:1517:4786:::|h[Kaldorei Archer's Legguards]|h|r",
+			["ID"] = 157986,
+			["Level"] = 410,
+			["Link"] = "|cffa335ee|Hitem:157986::::::::120:255::28:3:4803:1602:4786:::|h[Crosswind Legguards]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 170373,
@@ -47,9 +44,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:165455:5971:::::::120:255::6:3:5126:1517:4786:::|h[Kaldorei Archer's Vambraces]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 167839,
-			["Level"] = 380,
-			["Link"] = "|cffa335ee|Hitem:167839::168641::::::120:255::4:4:4801:1808:1502:4786:::|h[Grips of Forsaken Sanity]|h|r",
+			["ID"] = 169934,
+			["Level"] = 430,
+			["Link"] = "|cffa335ee|Hitem:169934::::::::120:255::5:3:4799:1502:4786:::|h[Deepcrawler's Handguards]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 166560,
@@ -86,7 +83,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163881:5963:::::::120:253::28:3:5125:1587:4786:::|h[7th Legionnaire's Longbow]|h|r",
 		}, -- [16]
 	},
-	["LastKeybindingsSet"] = 1,
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -123,6 +122,7 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",
