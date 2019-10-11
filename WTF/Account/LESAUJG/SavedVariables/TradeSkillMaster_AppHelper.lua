@@ -2,8 +2,8 @@
 TradeSkillMaster_AppHelperDB = {
 	["blackMarket"] = {
 		["Sisters of Elune"] = {
-			["data"] = "[[12,77069,1,3,262000,12000,250000,7,1568939128],[13,44970,1,3,4200,200,4000,2,1568939128],[67,141995,1,3,21000,1000,20000,1,1568939128]]",
 			["key"] = 9664249,
+			["data"] = "[[12,77069,1,3,262000,12000,250000,7,1568939128],[13,44970,1,3,4200,200,4000,2,1568939128],[67,141995,1,3,21000,1000,20000,1,1568939128]]",
 			["updateTime"] = 1568939128,
 		},
 	},
@@ -20,13 +20,13 @@ TradeSkillMaster_AppHelperDB = {
 	},
 	["wowToken"] = {
 		["US"] = {
-			["data"] = 196441,
 			["key"] = 15075494,
+			["data"] = 196441,
 			["updateTime"] = 1532835892,
 		},
 		["PTR"] = {
-			["data"] = 46899,
 			["key"] = 9014272,
+			["data"] = 46899,
 			["updateTime"] = 1465009785,
 		},
 	},
@@ -771,7 +771,130 @@ TradeSkillMaster_AppHelperDB = {
 			"[\"AC\",\"v4.8.14\",1570675844724,1570675152,15,\"UI_NAVIGATION\",\"crafting\",\"crafting/crafting\"]", -- [737]
 			"[\"AC\",\"v4.8.14\",1570675845495,1570675152,16,\"UI_NAVIGATION\",\"crafting/crafting\",\"\"]", -- [738]
 			"[\"AC\",\"v4.8.14\",1570675857350,1570675152,17,\"ADDON_DISABLE\",701]", -- [739]
+			"[\"AC\",\"v4.8.14\",1570756703153,1570756698,1,\"ADDON_INITIALIZE\",2884]", -- [740]
+			"[\"AC\",\"v4.8.14\",1570756717059,1570756698,2,\"ADDON_ENABLE\",4426]", -- [741]
+			"[\"AC\",\"v4.8.14\",1570756720728,1570756698,3,\"UI_NAVIGATION\",\"\",\"destroying\"]", -- [742]
+			"[\"AC\",\"v4.8.14\",1570756720728,1570756698,4,\"UI_NAVIGATION\",\"destroying\",\"\"]", -- [743]
+			"[\"AC\",\"v4.8.14\",1570756722578,1570756698,5,\"UI_NAVIGATION\",\"\",\"mailing\"]", -- [744]
+			"[\"AC\",\"v4.8.14\",1570756722578,1570756698,6,\"UI_NAVIGATION\",\"mailing\",\"mailing/inbox\"]", -- [745]
+			"[\"AC\",\"v4.8.14\",1570756729581,1570756698,7,\"UI_NAVIGATION\",\"mailing/inbox\",\"\"]", -- [746]
+			"[\"AC\",\"v4.8.14\",1570756735234,1570756698,8,\"UI_NAVIGATION\",\"\",\"auction\"]", -- [747]
+			"[\"AC\",\"v4.8.14\",1570756735234,1570756698,9,\"UI_NAVIGATION\",\"auction\",\"auction/shopping\"]", -- [748]
+			"[\"AC\",\"v4.8.14\",1570756735234,1570756698,10,\"UI_NAVIGATION\",\"auction/shopping\",\"auction/shopping/selection\"]", -- [749]
+			"[\"AC\",\"v4.8.14\",1570756736647,1570756698,11,\"UI_NAVIGATION\",\"auction/shopping/selection\",\"auction/auctioning\"]", -- [750]
+			"[\"AC\",\"v4.8.14\",1570756736647,1570756698,12,\"UI_NAVIGATION\",\"auction/auctioning\",\"auction/auctioning/selection\"]", -- [751]
+			"[\"AC\",\"v4.8.14\",1570756741683,1570756698,13,\"UI_NAVIGATION\",\"auction/auctioning/selection\",\"auction/my_auctions\"]", -- [752]
+			"[\"AC\",\"v4.8.14\",1570756761536,1570756698,14,\"UI_NAVIGATION\",\"auction/my_auctions\",\"auction/shopping\"]", -- [753]
+			"[\"AC\",\"v4.8.14\",1570756761536,1570756698,15,\"UI_NAVIGATION\",\"auction/shopping\",\"auction/shopping/selection\"]", -- [754]
+			"[\"AC\",\"v4.8.14\",1570756764972,1570756698,16,\"UI_NAVIGATION\",\"auction/shopping/selection\",\"auction/shopping/scan\"]", -- [755]
+			"[\"AC\",\"v4.8.14\",1570756795978,1570756698,17,\"UI_NAVIGATION\",\"auction/shopping/scan\",\"\"]", -- [756]
+			"[\"AC\",\"v4.8.14\",1570756796426,1570756698,18,\"UI_NAVIGATION\",\"\",\"crafting\"]", -- [757]
+			"[\"AC\",\"v4.8.14\",1570756796426,1570756698,19,\"UI_NAVIGATION\",\"crafting\",\"crafting/crafting\"]", -- [758]
+			"[\"AC\",\"v4.8.14\",1570756797632,1570756698,20,\"UI_NAVIGATION\",\"crafting/crafting\",\"crafting/crafting_reports\"]", -- [759]
+			"[\"AC\",\"v4.8.14\",1570756797632,1570756698,21,\"UI_NAVIGATION\",\"crafting/crafting_reports\",\"crafting/crafting_reports/crafts\"]", -- [760]
+			"[\"AC\",\"v4.8.14\",1570756799419,1570756698,22,\"UI_NAVIGATION\",\"crafting/crafting_reports/crafts\",\"crafting/crafting_reports/materials\"]", -- [761]
+			"[\"AC\",\"v4.8.14\",1570756826010,1570756698,23,\"UI_NAVIGATION\",\"crafting/crafting_reports/materials\",\"\"]", -- [762]
+			"[\"AC\",\"v4.8.14\",1570756832676,1570756698,24,\"UI_NAVIGATION\",\"\",\"mailing\"]", -- [763]
+			"[\"AC\",\"v4.8.14\",1570756832676,1570756698,25,\"UI_NAVIGATION\",\"mailing\",\"mailing/inbox\"]", -- [764]
+			"[\"AC\",\"v4.8.14\",1570757021904,1570756698,26,\"UI_NAVIGATION\",\"mailing/inbox\",\"\"]", -- [765]
+			"[\"AC\",\"v4.8.14\",1570757022621,1570756698,27,\"UI_NAVIGATION\",\"\",\"mailing\"]", -- [766]
+			"[\"AC\",\"v4.8.14\",1570757022621,1570756698,28,\"UI_NAVIGATION\",\"mailing\",\"mailing/inbox\"]", -- [767]
+			"[\"AC\",\"v4.8.14\",1570757043276,1570756698,29,\"UI_NAVIGATION\",\"mailing/inbox\",\"\"]", -- [768]
+			"[\"AC\",\"v4.8.14\",1570757049786,1570756698,30,\"UI_NAVIGATION\",\"\",\"auction\"]", -- [769]
+			"[\"AC\",\"v4.8.14\",1570757049786,1570756698,31,\"UI_NAVIGATION\",\"auction\",\"auction/shopping\"]", -- [770]
+			"[\"AC\",\"v4.8.14\",1570757049786,1570756698,32,\"UI_NAVIGATION\",\"auction/shopping\",\"auction/shopping/selection\"]", -- [771]
+			"[\"AC\",\"v4.8.14\",1570757054408,1570756698,33,\"UI_NAVIGATION\",\"auction/shopping/selection\",\"auction/auctioning\"]", -- [772]
+			"[\"AC\",\"v4.8.14\",1570757054408,1570756698,34,\"UI_NAVIGATION\",\"auction/auctioning\",\"auction/auctioning/selection\"]", -- [773]
+			"[\"AC\",\"v4.8.14\",1570757055235,1570756698,35,\"UI_NAVIGATION\",\"auction/auctioning/selection\",\"auction/auctioning/scan\"]", -- [774]
+			"[\"AC\",\"v4.8.14\",1570757055235,1570756698,36,\"UI_NAVIGATION\",\"auction/auctioning/scan\",\"auction/auctioning/scan/log\"]", -- [775]
+			"[\"AC\",\"v4.8.14\",1570757167589,1570756698,37,\"UI_NAVIGATION\",\"\",\"main\"]", -- [776]
+			"[\"AC\",\"v4.8.14\",1570757167589,1570756698,38,\"UI_NAVIGATION\",\"main\",\"main/dashboard\"]", -- [777]
+			"[\"AC\",\"v4.8.14\",1570757187428,1570756698,39,\"UI_NAVIGATION\",\"auction/auctioning/scan/log\",\"\"]", -- [778]
+			"[\"AC\",\"v4.8.14\",1570757187428,1570756698,40,\"UI_NAVIGATION\",\"main/dashboard\",\"\"]", -- [779]
+			"[\"AC\",\"v4.8.14\",1570757193533,1570756698,41,\"ADDON_DISABLE\",956]", -- [780]
+			"[\"AC\",\"v4.8.14\",1570757242265,1570757238,1,\"ADDON_INITIALIZE\",3015]", -- [781]
+			"[\"AC\",\"v4.8.14\",1570757249249,1570757238,2,\"UI_NAVIGATION\",\"\",\"destroying\"]", -- [782]
+			"[\"AC\",\"v4.8.14\",1570757253249,1570757238,3,\"ADDON_ENABLE\",3865]", -- [783]
+			"[\"AC\",\"v4.8.14\",1570757254249,1570757238,4,\"UI_NAVIGATION\",\"destroying\",\"\"]", -- [784]
+			"[\"AC\",\"v4.8.14\",1570760945582,1570757238,5,\"ADDON_DISABLE\",719]", -- [785]
+			"[\"AC\",\"v4.8.14\",1570763620996,1570763616,1,\"ADDON_INITIALIZE\",3396]", -- [786]
+			"[\"AC\",\"v4.8.14\",1570763632669,1570763616,2,\"ADDON_ENABLE\",5117]", -- [787]
+			"[\"AC\",\"v4.8.14\",1570763640626,1570763616,3,\"UI_NAVIGATION\",\"\",\"destroying\"]", -- [788]
+			"[\"AC\",\"v4.8.14\",1570763643277,1570763616,4,\"UI_NAVIGATION\",\"destroying\",\"\"]", -- [789]
+			"[\"AC\",\"v4.8.14\",1570766301508,1570763616,5,\"UI_NAVIGATION\",\"\",\"auction\"]", -- [790]
+			"[\"AC\",\"v4.8.14\",1570766301508,1570763616,6,\"UI_NAVIGATION\",\"auction\",\"auction/auctioning\"]", -- [791]
+			"[\"AC\",\"v4.8.14\",1570766301508,1570763616,7,\"UI_NAVIGATION\",\"auction/auctioning\",\"auction/auctioning/selection\"]", -- [792]
+			"[\"AC\",\"v4.8.14\",1570766303341,1570763616,8,\"UI_NAVIGATION\",\"auction/auctioning/selection\",\"auction/my_auctions\"]", -- [793]
+			"[\"AC\",\"v4.8.14\",1570766306953,1570763616,9,\"UI_NAVIGATION\",\"auction/my_auctions\",\"auction/shopping\"]", -- [794]
+			"[\"AC\",\"v4.8.14\",1570766306953,1570763616,10,\"UI_NAVIGATION\",\"auction/shopping\",\"auction/shopping/selection\"]", -- [795]
+			"[\"AC\",\"v4.8.14\",1570766308592,1570763616,11,\"UI_NAVIGATION\",\"auction/shopping/selection\",\"auction/shopping/scan\"]", -- [796]
+			"[\"AC\",\"v4.8.14\",1570766346784,1570763616,12,\"UI_NAVIGATION\",\"auction/shopping/scan\",\"\"]", -- [797]
+			"[\"AC\",\"v4.8.14\",1570766355218,1570763616,13,\"UI_NAVIGATION\",\"\",\"mailing\"]", -- [798]
+			"[\"AC\",\"v4.8.14\",1570766355218,1570763616,14,\"UI_NAVIGATION\",\"mailing\",\"mailing/inbox\"]", -- [799]
+			"[\"AC\",\"v4.8.14\",1570766361985,1570763616,15,\"UI_NAVIGATION\",\"mailing/inbox\",\"\"]", -- [800]
+			"[\"AC\",\"v4.8.14\",1570766426158,1570763616,16,\"UI_NAVIGATION\",\"\",\"auction\"]", -- [801]
+			"[\"AC\",\"v4.8.14\",1570766426158,1570763616,17,\"UI_NAVIGATION\",\"auction\",\"auction/shopping\"]", -- [802]
+			"[\"AC\",\"v4.8.14\",1570766426158,1570763616,18,\"UI_NAVIGATION\",\"auction/shopping\",\"auction/shopping/selection\"]", -- [803]
+			"[\"AC\",\"v4.8.14\",1570766430649,1570763616,19,\"UI_NAVIGATION\",\"auction/shopping/selection\",\"auction/auctioning\"]", -- [804]
+			"[\"AC\",\"v4.8.14\",1570766430649,1570763616,20,\"UI_NAVIGATION\",\"auction/auctioning\",\"auction/auctioning/selection\"]", -- [805]
+			"[\"AC\",\"v4.8.14\",1570766431447,1570763616,21,\"UI_NAVIGATION\",\"auction/auctioning/selection\",\"auction/my_auctions\"]", -- [806]
+			"[\"AC\",\"v4.8.14\",1570766432633,1570763616,22,\"UI_NAVIGATION\",\"auction/my_auctions\",\"auction/shopping\"]", -- [807]
+			"[\"AC\",\"v4.8.14\",1570766432633,1570763616,23,\"UI_NAVIGATION\",\"auction/shopping\",\"auction/shopping/selection\"]", -- [808]
+			"[\"AC\",\"v4.8.14\",1570766436738,1570763616,24,\"UI_NAVIGATION\",\"auction/shopping/selection\",\"auction/shopping/scan\"]", -- [809]
+			"[\"AC\",\"v4.8.14\",1570766444573,1570763616,25,\"UI_NAVIGATION\",\"auction/shopping/scan\",\"auction/shopping/selection\"]", -- [810]
+			"[\"AC\",\"v4.8.14\",1570766444573,1570763616,26,\"UI_NAVIGATION\",\"auction/shopping/selection\",\"auction/shopping/scan\"]", -- [811]
+			"[\"AC\",\"v4.8.14\",1570766455202,1570763616,27,\"UI_NAVIGATION\",\"auction/shopping/scan\",\"auction/shopping/selection\"]", -- [812]
+			"[\"AC\",\"v4.8.14\",1570766455202,1570763616,28,\"UI_NAVIGATION\",\"auction/shopping/selection\",\"auction/shopping/scan\"]", -- [813]
+			"[\"AC\",\"v4.8.14\",1570766557755,1570763616,29,\"UI_NAVIGATION\",\"auction/shopping/scan\",\"\"]", -- [814]
+			"[\"AC\",\"v4.8.14\",1570766569173,1570763616,30,\"UI_NAVIGATION\",\"\",\"mailing\"]", -- [815]
+			"[\"AC\",\"v4.8.14\",1570766569173,1570763616,31,\"UI_NAVIGATION\",\"mailing\",\"mailing/inbox\"]", -- [816]
+			"[\"AC\",\"v4.8.14\",1570766593791,1570763616,32,\"UI_NAVIGATION\",\"mailing/inbox\",\"\"]", -- [817]
+			"[\"AC\",\"v4.8.14\",1570766616216,1570763616,33,\"UI_NAVIGATION\",\"\",\"mailing\"]", -- [818]
+			"[\"AC\",\"v4.8.14\",1570766616216,1570763616,34,\"UI_NAVIGATION\",\"mailing\",\"mailing/inbox\"]", -- [819]
+			"[\"AC\",\"v4.8.14\",1570766618522,1570763616,35,\"UI_NAVIGATION\",\"mailing/inbox\",\"\"]", -- [820]
+			"[\"AC\",\"v4.8.14\",1570766622522,1570763616,36,\"ADDON_DISABLE\",3490]", -- [821]
+			"[\"AC\",\"v4.8.14\",1570766630522,1570766626,1,\"ADDON_INITIALIZE\",3042]", -- [822]
+			"[\"AC\",\"v4.8.14\",1570766632522,1570766626,2,\"UI_NAVIGATION\",\"\",\"destroying\"]", -- [823]
+			"[\"AC\",\"v4.8.14\",1570766636522,1570766626,3,\"ADDON_ENABLE\",4306]", -- [824]
+			"[\"AC\",\"v4.8.14\",1570766636522,1570766626,4,\"UI_NAVIGATION\",\"destroying\",\"\"]", -- [825]
+			"[\"AC\",\"v4.8.14\",1570766643798,1570766626,5,\"UI_NAVIGATION\",\"\",\"mailing\"]", -- [826]
+			"[\"AC\",\"v4.8.14\",1570766643798,1570766626,6,\"UI_NAVIGATION\",\"mailing\",\"mailing/inbox\"]", -- [827]
+			"[\"AC\",\"v4.8.14\",1570766657339,1570766626,7,\"UI_NAVIGATION\",\"mailing/inbox\",\"\"]", -- [828]
+			"[\"AC\",\"v4.8.14\",1570766859461,1570766626,8,\"UI_NAVIGATION\",\"\",\"crafting\"]", -- [829]
+			"[\"AC\",\"v4.8.14\",1570766859461,1570766626,9,\"UI_NAVIGATION\",\"crafting\",\"crafting/crafting_reports\"]", -- [830]
+			"[\"AC\",\"v4.8.14\",1570766859461,1570766626,10,\"UI_NAVIGATION\",\"crafting/crafting_reports\",\"crafting/crafting_reports/crafts\"]", -- [831]
+			"[\"AC\",\"v4.8.14\",1570766864749,1570766626,11,\"UI_NAVIGATION\",\"crafting/crafting_reports/crafts\",\"crafting/crafting\"]", -- [832]
+			"[\"AC\",\"v4.8.14\",1570766913049,1570766626,12,\"UI_NAVIGATION\",\"crafting/crafting\",\"\"]", -- [833]
+			"[\"AC\",\"v4.8.14\",1570766962139,1570766626,13,\"UI_NAVIGATION\",\"\",\"crafting\"]", -- [834]
+			"[\"AC\",\"v4.8.14\",1570766962139,1570766626,14,\"UI_NAVIGATION\",\"crafting\",\"crafting/crafting\"]", -- [835]
+			"[\"AC\",\"v4.8.14\",1570767009648,1570766626,15,\"UI_NAVIGATION\",\"crafting/crafting\",\"\"]", -- [836]
+			"[\"AC\",\"v4.8.14\",1570767021581,1570766626,16,\"UI_NAVIGATION\",\"\",\"crafting\"]", -- [837]
+			"[\"AC\",\"v4.8.14\",1570767021581,1570766626,17,\"UI_NAVIGATION\",\"crafting\",\"crafting/crafting\"]", -- [838]
+			"[\"AC\",\"v4.8.14\",1570767043483,1570766626,18,\"UI_NAVIGATION\",\"crafting/crafting\",\"\"]", -- [839]
+			"[\"AC\",\"v4.8.14\",1570767060480,1570766626,19,\"UI_NAVIGATION\",\"\",\"crafting\"]", -- [840]
+			"[\"AC\",\"v4.8.14\",1570767060480,1570766626,20,\"UI_NAVIGATION\",\"crafting\",\"crafting/crafting\"]", -- [841]
+			"[\"AC\",\"v4.8.14\",1570767062406,1570766626,21,\"UI_NAVIGATION\",\"crafting/crafting\",\"\"]", -- [842]
+			"[\"AC\",\"v4.8.14\",1570767189527,1570766626,22,\"UI_NAVIGATION\",\"\",\"main\"]", -- [843]
+			"[\"AC\",\"v4.8.14\",1570767189527,1570766626,23,\"UI_NAVIGATION\",\"main\",\"main/dashboard\"]", -- [844]
+			"[\"AC\",\"v4.8.14\",1570767195232,1570766626,24,\"UI_NAVIGATION\",\"main/dashboard\",\"\"]", -- [845]
+			"[\"AC\",\"v4.8.14\",1570767432142,1570766626,25,\"ADDON_DISABLE\",3212]", -- [846]
+			"[\"AC\",\"v4.8.14\",1570767449154,1570767445,1,\"ADDON_INITIALIZE\",3267]", -- [847]
+			"[\"AC\",\"v4.8.14\",1570767454638,1570767445,2,\"UI_NAVIGATION\",\"\",\"destroying\"]", -- [848]
+			"[\"AC\",\"v4.8.14\",1570767454638,1570767445,3,\"UI_NAVIGATION\",\"destroying\",\"\"]", -- [849]
+			"[\"AC\",\"v4.8.14\",1570767458638,1570767445,4,\"ADDON_ENABLE\",3935]", -- [850]
+			"[\"AC\",\"v4.8.14\",1570767464705,1570767445,5,\"UI_NAVIGATION\",\"\",\"auction\"]", -- [851]
+			"[\"AC\",\"v4.8.14\",1570767464705,1570767445,6,\"UI_NAVIGATION\",\"auction\",\"auction/shopping\"]", -- [852]
+			"[\"AC\",\"v4.8.14\",1570767464705,1570767445,7,\"UI_NAVIGATION\",\"auction/shopping\",\"auction/shopping/selection\"]", -- [853]
+			"[\"AC\",\"v4.8.14\",1570767466712,1570767445,8,\"UI_NAVIGATION\",\"auction/shopping/selection\",\"auction/shopping/scan\"]", -- [854]
+			"[\"AC\",\"v4.8.14\",1570767472926,1570767445,9,\"UI_NAVIGATION\",\"auction/shopping/scan\",\"auction/shopping/selection\"]", -- [855]
+			"[\"AC\",\"v4.8.14\",1570767475373,1570767445,10,\"UI_NAVIGATION\",\"auction/shopping/selection\",\"auction/my_auctions\"]", -- [856]
+			"[\"AC\",\"v4.8.14\",1570767477540,1570767445,11,\"UI_NAVIGATION\",\"auction/my_auctions\",\"auction/auctioning\"]", -- [857]
+			"[\"AC\",\"v4.8.14\",1570767477540,1570767445,12,\"UI_NAVIGATION\",\"auction/auctioning\",\"auction/auctioning/selection\"]", -- [858]
+			"[\"AC\",\"v4.8.14\",1570767479964,1570767445,13,\"UI_NAVIGATION\",\"auction/auctioning/selection\",\"auction/shopping\"]", -- [859]
+			"[\"AC\",\"v4.8.14\",1570767479964,1570767445,14,\"UI_NAVIGATION\",\"auction/shopping\",\"auction/shopping/selection\"]", -- [860]
+			"[\"AC\",\"v4.8.14\",1570767479544,1570767445,15,\"UI_NAVIGATION\",\"auction/shopping/selection\",\"\"]", -- [861]
+			"[\"AC\",\"v4.8.14\",1570767576527,1570767445,16,\"ADDON_DISABLE\",667]", -- [862]
 		},
-		["updateTime"] = 1570675857,
+		["updateTime"] = 1570767576,
 	},
 }
