@@ -3,9 +3,9 @@ PawnOptions = {
 	["LastVersion"] = 2.0307,
 	["ItemLevels"] = {
 		{
-			["ID"] = 158017,
-			["Level"] = 405,
-			["Link"] = "|cffa335ee|Hitem:158017::::::::120:255::28:4:1592:4786:5417:4775:::|h[Ashenwood Helm]|h|r",
+			["ID"] = 158049,
+			["Level"] = 420,
+			["Link"] = "|cffa335ee|Hitem:158049::::::::120:253::28:4:1607:4786:6264:4775:::|h[Deadwash Headguard]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
@@ -13,9 +13,9 @@ PawnOptions = {
 			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:6316:4932:4933:1598:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 166556,
-			["Level"] = 405,
-			["Link"] = "|cffa335ee|Hitem:166556::::::::120:255::6:5:5126:1517:4786:5418:4775:::|h[Kaldorei Archer's Spaulders]|h|r",
+			["ID"] = 167772,
+			["Level"] = 420,
+			["Link"] = "|cffa335ee|Hitem:167772::::::::120:253:::6:6300:6298:1502:4786:6265:4775:::|h[Azsh'ari Stormsurger Shoulderguards]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
