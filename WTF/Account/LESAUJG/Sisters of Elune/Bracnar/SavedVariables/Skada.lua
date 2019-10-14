@@ -16,15 +16,6 @@ SkadaPerCharDB = {
 			["players"] = {
 				{
 					["last"] = 1570759059,
-					["alertDamage"] = 0,
-					["healingabsorbed"] = 0,
-					["role"] = "DAMAGER",
-					["class"] = "DEATHKNIGHT",
-					["damaged"] = {
-						["Tidespring Surger"] = 17177,
-						["Unleashed Arcanofiend"] = 210651,
-						["Unleashed Arcanospawn"] = 71325,
-					},
 					["auras"] = {
 						["Gladiator's Safeguard"] = {
 							["name"] = "Gladiator's Safeguard",
@@ -147,6 +138,15 @@ SkadaPerCharDB = {
 							["uptime"] = 4,
 						},
 					},
+					["healingabsorbed"] = 0,
+					["role"] = "DAMAGER",
+					["class"] = "DEATHKNIGHT",
+					["damaged"] = {
+						["Tidespring Surger"] = 17177,
+						["Unleashed Arcanofiend"] = 210651,
+						["Unleashed Arcanospawn"] = 71325,
+					},
+					["dispells"] = 0,
 					["ccbreaks"] = 0,
 					["healingspells"] = {
 						["Gladiator's Safeguard"] = {
@@ -471,9 +471,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1570759054.58705,
 									["amount"] = -101382,
-									["hp"] = 1,
 									["spellid"] = 302207,
 									["srcname"] = "Unleashed Arcanofiend",
+									["hp"] = 1,
 								}, -- [5]
 								{
 									["spellname"] = "Magapeki dies",
@@ -508,9 +508,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1570759051.6381,
 									["amount"] = -101990,
-									["hp"] = 192924,
 									["spellid"] = 302207,
 									["srcname"] = "Unleashed Arcanofiend",
+									["hp"] = 192924,
 								}, -- [10]
 								{
 									["absorb"] = 0,
@@ -531,9 +531,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1570759052.19813,
 									["amount"] = -98689,
-									["hp"] = 101215,
 									["spellid"] = 302207,
 									["srcname"] = "Unleashed Arcanofiend",
+									["hp"] = 101215,
 								}, -- [13]
 								{
 									["absorb"] = 0,
@@ -546,9 +546,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1570759052.85515,
 									["amount"] = -101301,
-									["hp"] = 2219,
 									["spellid"] = 302207,
 									["srcname"] = "Unleashed Arcanofiend",
+									["hp"] = 2219,
 								}, -- [15]
 								["pos"] = 7,
 							},
@@ -655,18 +655,11 @@ SkadaPerCharDB = {
 					["overhealing"] = 120463,
 					["alert"] = {
 					},
-					["dispells"] = 0,
+					["alertDamage"] = 0,
 				}, -- [1]
 				{
 					["last"] = 1570759057,
 					["healingabsorbed"] = 0,
-					["dispells"] = 0,
-					["class"] = "PALADIN",
-					["damaged"] = {
-						["Tidespring Surger"] = 11947,
-						["Unleashed Arcanofiend"] = 110804,
-						["Unleashed Arcanospawn"] = 37771,
-					},
 					["auras"] = {
 						["Divine Shield"] = {
 							["name"] = "Divine Shield",
@@ -773,6 +766,13 @@ SkadaPerCharDB = {
 							["uptime"] = 0,
 						},
 					},
+					["class"] = "PALADIN",
+					["damaged"] = {
+						["Tidespring Surger"] = 11947,
+						["Unleashed Arcanofiend"] = 110804,
+						["Unleashed Arcanospawn"] = 37771,
+					},
+					["alertDamage"] = 0,
 					["healingspells"] = {
 						["Last Defender"] = {
 							["shielding"] = 5885,
@@ -1014,16 +1014,11 @@ SkadaPerCharDB = {
 					["overhealing"] = 67555.98828125,
 					["alert"] = {
 					},
-					["alertDamage"] = 0,
+					["dispells"] = 0,
 				}, -- [2]
 				{
 					["last"] = 1570759048,
 					["healingabsorbed"] = 0,
-					["dispells"] = 0,
-					["class"] = "WARRIOR",
-					["damaged"] = {
-						["Unleashed Arcanofiend"] = 8432,
-					},
 					["auras"] = {
 						["Swift Spectral Fathom Ray"] = {
 							["name"] = "Swift Spectral Fathom Ray",
@@ -1066,6 +1061,11 @@ SkadaPerCharDB = {
 							["uptime"] = 28,
 						},
 					},
+					["class"] = "WARRIOR",
+					["damaged"] = {
+						["Unleashed Arcanofiend"] = 8432,
+					},
+					["alertDamage"] = 0,
 					["healingspells"] = {
 					},
 					["role"] = "TANK",
@@ -1113,18 +1113,10 @@ SkadaPerCharDB = {
 					["overhealing"] = 0,
 					["alert"] = {
 					},
-					["alertDamage"] = 0,
+					["dispells"] = 0,
 				}, -- [3]
 				{
 					["last"] = 1570759057,
-					["alertDamage"] = 357641,
-					["healingabsorbed"] = 0,
-					["role"] = "DAMAGER",
-					["class"] = "HUNTER",
-					["damaged"] = {
-						["Unleashed Arcanofiend"] = 300214,
-						["Tidespring Surger"] = 20044,
-					},
 					["auras"] = {
 						["Dance of Death"] = {
 							["name"] = "Dance of Death",
@@ -1239,6 +1231,14 @@ SkadaPerCharDB = {
 							["uptime"] = 32,
 						},
 					},
+					["healingabsorbed"] = 0,
+					["role"] = "DAMAGER",
+					["class"] = "HUNTER",
+					["damaged"] = {
+						["Unleashed Arcanofiend"] = 300214,
+						["Tidespring Surger"] = 20044,
+					},
+					["dispells"] = 0,
 					["ccbreaks"] = 0,
 					["healingspells"] = {
 						["Vampiric Speed"] = {
@@ -1647,9 +1647,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1570759055.39912,
 									["amount"] = -133808,
-									["hp"] = 1,
 									["spellid"] = 302207,
 									["srcname"] = "Unleashed Arcanofiend",
+									["hp"] = 1,
 								}, -- [12]
 								{
 									["spellname"] = "Bracnar dies",
@@ -1740,7 +1740,7 @@ SkadaPerCharDB = {
 							["alertCount"] = 5,
 						},
 					},
-					["dispells"] = 0,
+					["alertDamage"] = 357641,
 				}, -- [4]
 				{
 					["last"] = 1570759055,
@@ -1847,12 +1847,6 @@ SkadaPerCharDB = {
 				}, -- [5]
 				{
 					["last"] = 1570759062,
-					["alertDamage"] = 0,
-					["healingabsorbed"] = 0,
-					["role"] = "HEALER",
-					["class"] = "DRUID",
-					["damaged"] = {
-					},
 					["auras"] = {
 						["Blessed Portents"] = {
 							["name"] = "Blessed Portents",
@@ -1991,6 +1985,12 @@ SkadaPerCharDB = {
 							["uptime"] = 22,
 						},
 					},
+					["healingabsorbed"] = 0,
+					["role"] = "HEALER",
+					["class"] = "DRUID",
+					["damaged"] = {
+					},
+					["dispells"] = 0,
 					["ccbreaks"] = 0,
 					["healingspells"] = {
 						["Grove Tending"] = {
@@ -2215,16 +2215,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1570759050.63002,
 									["amount"] = -128144,
-									["hp"] = 111099,
 									["spellid"] = 302207,
 									["srcname"] = "Unleashed Arcanofiend",
+									["hp"] = 111099,
 								}, -- [2]
 								{
 									["ts"] = 1570759050.63003,
 									["amount"] = -129731,
-									["hp"] = 1,
 									["spellid"] = 302207,
 									["srcname"] = "Unleashed Arcanofiend",
+									["hp"] = 1,
 								}, -- [3]
 								{
 									["spellname"] = "Xhifou dies",
@@ -2356,16 +2356,10 @@ SkadaPerCharDB = {
 					["overhealing"] = 725750,
 					["alert"] = {
 					},
-					["dispells"] = 0,
+					["alertDamage"] = 0,
 				}, -- [6]
 				{
 					["last"] = 1570759071,
-					["alertDamage"] = 0,
-					["healingabsorbed"] = 0,
-					["role"] = "HEALER",
-					["class"] = "PRIEST",
-					["damaged"] = {
-					},
 					["auras"] = {
 						["Renew"] = {
 							["name"] = "Renew",
@@ -2432,6 +2426,12 @@ SkadaPerCharDB = {
 							["uptime"] = 6,
 						},
 					},
+					["healingabsorbed"] = 0,
+					["role"] = "HEALER",
+					["class"] = "PRIEST",
+					["damaged"] = {
+					},
+					["dispells"] = 0,
 					["ccbreaks"] = 0,
 					["healingspells"] = {
 						["Egg on Your Face"] = {
@@ -2608,16 +2608,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1570759051.94712,
 									["amount"] = -125270,
-									["hp"] = 99631,
 									["spellid"] = 302207,
 									["srcname"] = "Unleashed Arcanofiend",
+									["hp"] = 99631,
 								}, -- [12]
 								{
 									["ts"] = 1570759054.18213,
 									["amount"] = -122802,
-									["hp"] = 0,
 									["spellid"] = 302207,
 									["srcname"] = "Unleashed Arcanofiend",
+									["hp"] = 0,
 								}, -- [13]
 								{
 									["spellname"] = "Béhémoth dies",
@@ -2669,19 +2669,10 @@ SkadaPerCharDB = {
 					["overhealing"] = 11367,
 					["alert"] = {
 					},
-					["dispells"] = 0,
+					["alertDamage"] = 0,
 				}, -- [7]
 				{
 					["last"] = 1570759059,
-					["alertDamage"] = 0,
-					["healingabsorbed"] = 0,
-					["role"] = "DAMAGER",
-					["class"] = "DRUID",
-					["damaged"] = {
-						["Unleashed Arcanospawn"] = 35502,
-						["Unleashed Arcanofiend"] = 90555,
-						["Tidespring Surger"] = 2056,
-					},
 					["auras"] = {
 						["Lethargy"] = {
 							["name"] = "Lethargy",
@@ -2723,13 +2714,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 13,
 						},
-						["Sunfire"] = {
-							["name"] = "Sunfire",
+						["Fury of Elune"] = {
+							["name"] = "Fury of Elune",
 							["active"] = 0,
-							["school"] = 8,
-							["id"] = 164815,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 32,
+							["school"] = 72,
+							["id"] = 202770,
+							["auratype"] = "BUFF",
+							["uptime"] = 8,
 						},
 						["Machinist's Brilliance"] = {
 							["name"] = "Machinist's Brilliance",
@@ -2747,14 +2738,6 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["uptime"] = 10,
 						},
-						["Fury of Elune"] = {
-							["name"] = "Fury of Elune",
-							["active"] = 0,
-							["school"] = 72,
-							["id"] = 202770,
-							["auratype"] = "BUFF",
-							["uptime"] = 8,
-						},
 						["Lunar Empowerment"] = {
 							["name"] = "Lunar Empowerment",
 							["active"] = 0,
@@ -2762,6 +2745,14 @@ SkadaPerCharDB = {
 							["id"] = 164547,
 							["auratype"] = "BUFF",
 							["uptime"] = 4,
+						},
+						["Sunfire"] = {
+							["name"] = "Sunfire",
+							["active"] = 0,
+							["school"] = 8,
+							["id"] = 164815,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 32,
 						},
 						["Swift Flying Wisp"] = {
 							["name"] = "Swift Flying Wisp",
@@ -2772,6 +2763,15 @@ SkadaPerCharDB = {
 							["uptime"] = 17,
 						},
 					},
+					["healingabsorbed"] = 0,
+					["role"] = "DAMAGER",
+					["class"] = "DRUID",
+					["damaged"] = {
+						["Unleashed Arcanospawn"] = 35502,
+						["Unleashed Arcanofiend"] = 90555,
+						["Tidespring Surger"] = 2056,
+					},
+					["dispells"] = 0,
 					["ccbreaks"] = 0,
 					["healingspells"] = {
 						["Ysera's Gift"] = {
@@ -2915,9 +2915,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1570759053.24002,
 									["amount"] = -78803,
-									["hp"] = 1351,
 									["spellid"] = 302207,
 									["srcname"] = "Unleashed Arcanofiend",
+									["hp"] = 1351,
 								}, -- [2]
 								{
 									["absorb"] = 0,
@@ -2986,9 +2986,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1570759056.13411,
 									["amount"] = -79311,
-									["hp"] = 1,
 									["spellid"] = 302207,
 									["srcname"] = "Unleashed Arcanofiend",
+									["hp"] = 1,
 								}, -- [11]
 								{
 									["spellname"] = "Druette dies",
@@ -3007,9 +3007,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1570759052.39614,
 									["amount"] = -82189,
-									["hp"] = 72593,
 									["spellid"] = 302207,
 									["srcname"] = "Unleashed Arcanofiend",
+									["hp"] = 72593,
 								}, -- [14]
 								{
 									["absorb"] = 0,
@@ -3063,17 +3063,11 @@ SkadaPerCharDB = {
 					["overhealing"] = 0,
 					["alert"] = {
 					},
-					["dispells"] = 0,
+					["alertDamage"] = 0,
 				}, -- [8]
 				{
 					["last"] = 1570759057,
 					["healingabsorbed"] = 0,
-					["dispells"] = 0,
-					["class"] = "PALADIN",
-					["damaged"] = {
-						["Unleashed Arcanofiend"] = 250148,
-						["Unleashed Arcanospawn"] = 23542,
-					},
 					["auras"] = {
 						["Unstable Flames"] = {
 							["name"] = "Unstable Flames",
@@ -3220,6 +3214,12 @@ SkadaPerCharDB = {
 							["uptime"] = 29,
 						},
 					},
+					["class"] = "PALADIN",
+					["damaged"] = {
+						["Unleashed Arcanofiend"] = 250148,
+						["Unleashed Arcanospawn"] = 23542,
+					},
+					["alertDamage"] = 0,
 					["healingspells"] = {
 						["Leech"] = {
 							["shielding"] = 0,
@@ -3374,17 +3374,10 @@ SkadaPerCharDB = {
 					["overhealing"] = 0,
 					["alert"] = {
 					},
-					["alertDamage"] = 0,
+					["dispells"] = 0,
 				}, -- [9]
 				{
 					["last"] = 1570759061,
-					["alertDamage"] = 0,
-					["healingabsorbed"] = 0,
-					["role"] = "DAMAGER",
-					["class"] = "HUNTER",
-					["damaged"] = {
-						["Unleashed Arcanofiend"] = 74361,
-					},
 					["auras"] = {
 						["Unstable Flames"] = {
 							["name"] = "Unstable Flames",
@@ -3419,6 +3412,13 @@ SkadaPerCharDB = {
 							["uptime"] = 25,
 						},
 					},
+					["healingabsorbed"] = 0,
+					["role"] = "DAMAGER",
+					["class"] = "HUNTER",
+					["damaged"] = {
+						["Unleashed Arcanofiend"] = 74361,
+					},
+					["dispells"] = 0,
 					["ccbreaks"] = 0,
 					["healingspells"] = {
 						["Hati: Leech"] = {
@@ -3469,17 +3469,21 @@ SkadaPerCharDB = {
 					},
 					["damage"] = 74361,
 					["damagespells"] = {
-						["Hati: Attack"] = {
-							["hitmin"] = 1537,
-							["id"] = 6603,
-							["min"] = 1537,
-							["hitamount"] = 6149,
-							["hitmax"] = 1538,
-							["hit"] = 4,
+						["Hati: Claw"] = {
+							["hitmin"] = 5511,
+							["criticalamount"] = 11022,
+							["id"] = 16827,
+							["hitamount"] = 5511,
+							["criticalmin"] = 11022,
+							["hitmax"] = 5511,
+							["min"] = 5511,
+							["criticalmax"] = 11022,
+							["critical"] = 1,
+							["hit"] = 1,
+							["totalhits"] = 2,
 							["school"] = 1,
-							["max"] = 1538,
-							["totalhits"] = 4,
-							["damage"] = 6149,
+							["max"] = 11022,
+							["damage"] = 16533,
 						},
 						["Cobra Shot"] = {
 							["hitmin"] = 3944,
@@ -3505,21 +3509,21 @@ SkadaPerCharDB = {
 							["totalhits"] = 1,
 							["damage"] = 7130,
 						},
-						["Hati: Claw"] = {
-							["hitmin"] = 5511,
-							["criticalamount"] = 11022,
-							["id"] = 16827,
-							["hitamount"] = 5511,
-							["criticalmin"] = 11022,
-							["hitmax"] = 5511,
-							["min"] = 5511,
-							["criticalmax"] = 11022,
-							["critical"] = 1,
-							["hit"] = 1,
-							["totalhits"] = 2,
+						["Auto Shot"] = {
+							["hitmin"] = 3005,
+							["criticalamount"] = 12633,
+							["id"] = 75,
+							["hitamount"] = 9171,
+							["criticalmin"] = 6205,
+							["hitmax"] = 3086,
+							["min"] = 3005,
+							["criticalmax"] = 6428,
+							["critical"] = 2,
+							["hit"] = 3,
+							["totalhits"] = 5,
 							["school"] = 1,
-							["max"] = 11022,
-							["damage"] = 16533,
+							["max"] = 6428,
+							["damage"] = 21804,
 						},
 						["Ancient Flame"] = {
 							["hitmin"] = 2586,
@@ -3549,21 +3553,17 @@ SkadaPerCharDB = {
 							["totalhits"] = 2,
 							["damage"] = 4354,
 						},
-						["Auto Shot"] = {
-							["hitmin"] = 3005,
-							["criticalamount"] = 12633,
-							["id"] = 75,
-							["hitamount"] = 9171,
-							["criticalmin"] = 6205,
-							["hitmax"] = 3086,
-							["min"] = 3005,
-							["criticalmax"] = 6428,
-							["critical"] = 2,
-							["hit"] = 3,
-							["totalhits"] = 5,
+						["Hati: Attack"] = {
+							["hitmin"] = 1537,
+							["id"] = 6603,
+							["min"] = 1537,
+							["hitamount"] = 6149,
+							["hitmax"] = 1538,
+							["hit"] = 4,
 							["school"] = 1,
-							["max"] = 6428,
-							["damage"] = 21804,
+							["max"] = 1538,
+							["totalhits"] = 4,
+							["damage"] = 6149,
 						},
 					},
 					["deaths"] = {
@@ -3574,9 +3574,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1570759055.82801,
 									["amount"] = -109677,
-									["hp"] = 1,
 									["spellid"] = 302207,
 									["srcname"] = "Unleashed Arcanofiend",
+									["hp"] = 1,
 								}, -- [1]
 								{
 									["spellname"] = "Asuraka dies",
@@ -3683,9 +3683,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1570759055.63315,
 									["amount"] = -111108,
-									["hp"] = 105182,
 									["spellid"] = 302207,
 									["srcname"] = "Unleashed Arcanofiend",
+									["hp"] = 105182,
 								}, -- [15]
 								["pos"] = 3,
 							},
@@ -3723,18 +3723,10 @@ SkadaPerCharDB = {
 					["overhealing"] = 0,
 					["alert"] = {
 					},
-					["dispells"] = 0,
+					["alertDamage"] = 0,
 				}, -- [10]
 				{
 					["last"] = 1570759059,
-					["alertDamage"] = 0,
-					["healingabsorbed"] = 0,
-					["role"] = "DAMAGER",
-					["class"] = "DEMONHUNTER",
-					["damaged"] = {
-						["Unleashed Arcanofiend"] = 107470,
-						["Unleashed Arcanospawn"] = 37353,
-					},
 					["auras"] = {
 						["Unstable Flames"] = {
 							["name"] = "Unstable Flames",
@@ -3817,6 +3809,14 @@ SkadaPerCharDB = {
 							["uptime"] = 1,
 						},
 					},
+					["healingabsorbed"] = 0,
+					["role"] = "DAMAGER",
+					["class"] = "DEMONHUNTER",
+					["damaged"] = {
+						["Unleashed Arcanofiend"] = 107470,
+						["Unleashed Arcanospawn"] = 37353,
+					},
+					["dispells"] = 0,
 					["ccbreaks"] = 0,
 					["healingspells"] = {
 						["Impassive Visage"] = {
@@ -4022,16 +4022,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1570759054.91206,
 									["amount"] = -118717,
-									["hp"] = 51985,
 									["spellid"] = 302207,
 									["srcname"] = "Unleashed Arcanofiend",
+									["hp"] = 51985,
 								}, -- [6]
 								{
 									["ts"] = 1570759055.09207,
 									["amount"] = -122153,
-									["hp"] = 1,
 									["spellid"] = 302207,
 									["srcname"] = "Unleashed Arcanofiend",
+									["hp"] = 1,
 								}, -- [7]
 								{
 									["spellname"] = "Morava dies",
@@ -4137,15 +4137,11 @@ SkadaPerCharDB = {
 					["overhealing"] = 11144,
 					["alert"] = {
 					},
-					["dispells"] = 0,
+					["alertDamage"] = 0,
 				}, -- [11]
 				{
 					["last"] = 1570759067,
 					["healingabsorbed"] = 0,
-					["dispells"] = 0,
-					["class"] = "PALADIN",
-					["damaged"] = {
-					},
 					["auras"] = {
 						["Swift Spectral Fathom Ray"] = {
 							["name"] = "Swift Spectral Fathom Ray",
@@ -4196,6 +4192,10 @@ SkadaPerCharDB = {
 							["uptime"] = 22,
 						},
 					},
+					["class"] = "PALADIN",
+					["damaged"] = {
+					},
+					["alertDamage"] = 0,
 					["healingspells"] = {
 						["Impassive Visage"] = {
 							["shielding"] = 0,
@@ -4261,7 +4261,7 @@ SkadaPerCharDB = {
 					["overhealing"] = 0,
 					["alert"] = {
 					},
-					["alertDamage"] = 0,
+					["dispells"] = 0,
 				}, -- [12]
 				{
 					["last"] = 1570759057,
@@ -4475,12 +4475,6 @@ SkadaPerCharDB = {
 				{
 					["last"] = 1570759057,
 					["healingabsorbed"] = 0,
-					["dispells"] = 0,
-					["class"] = "HUNTER",
-					["damaged"] = {
-						["Zanj'ir Myrmidon"] = 9288,
-						["Unleashed Arcanofiend"] = 99880,
-					},
 					["auras"] = {
 						["Unstable Flames"] = {
 							["name"] = "Unstable Flames",
@@ -4643,6 +4637,12 @@ SkadaPerCharDB = {
 							["uptime"] = 26,
 						},
 					},
+					["class"] = "HUNTER",
+					["damaged"] = {
+						["Zanj'ir Myrmidon"] = 9288,
+						["Unleashed Arcanofiend"] = 99880,
+					},
+					["alertDamage"] = 0,
 					["healingspells"] = {
 						["Hati: Leech"] = {
 							["shielding"] = 0,
@@ -4811,7 +4811,7 @@ SkadaPerCharDB = {
 					["overhealing"] = 0,
 					["alert"] = {
 					},
-					["alertDamage"] = 0,
+					["dispells"] = 0,
 				}, -- [16]
 				{
 					["last"] = 1570759050,
@@ -4865,12 +4865,6 @@ SkadaPerCharDB = {
 				{
 					["last"] = 1570759073,
 					["healingabsorbed"] = 0,
-					["dispells"] = 0,
-					["class"] = "WARLOCK",
-					["damaged"] = {
-						["Unleashed Arcanofiend"] = 7510,
-						["Azsh'ari Invoker"] = 18858,
-					},
 					["auras"] = {
 						["Rivintom: Felstorm"] = {
 							["name"] = "Rivintom: Felstorm",
@@ -4921,6 +4915,12 @@ SkadaPerCharDB = {
 							["uptime"] = 8,
 						},
 					},
+					["class"] = "WARLOCK",
+					["damaged"] = {
+						["Unleashed Arcanofiend"] = 7510,
+						["Azsh'ari Invoker"] = 18858,
+					},
+					["alertDamage"] = 0,
 					["healingspells"] = {
 						["Soul Leech"] = {
 							["shielding"] = 4062,
@@ -5048,7 +5048,7 @@ SkadaPerCharDB = {
 					["overhealing"] = 0,
 					["alert"] = {
 					},
-					["alertDamage"] = 0,
+					["dispells"] = 0,
 				}, -- [18]
 				{
 					["last"] = 1570759056,
@@ -5449,9 +5449,9 @@ SkadaPerCharDB = {
 							["role"] = "DAMAGER",
 							["class"] = "HUNTER",
 						},
-						["Zithras-Eitrigg"] = {
-							["taken"] = 250148,
-							["done"] = 0,
+						["Ruvan-CenarionCircle"] = {
+							["taken"] = 0,
+							["done"] = 91073,
 							["role"] = "DAMAGER",
 							["class"] = "PALADIN",
 						},
@@ -5484,11 +5484,11 @@ SkadaPerCharDB = {
 							["role"] = "TANK",
 							["class"] = "PALADIN",
 						},
-						["Ruvan-CenarionCircle"] = {
-							["taken"] = 0,
-							["done"] = 91073,
+						["Magapeki-Tichondrius"] = {
+							["taken"] = 210651,
+							["done"] = 716274,
 							["role"] = "DAMAGER",
-							["class"] = "PALADIN",
+							["class"] = "DEATHKNIGHT",
 						},
 						["Farseer Ori"] = {
 							["taken"] = 62728,
@@ -5530,11 +5530,11 @@ SkadaPerCharDB = {
 							["role"] = "HEALER",
 							["class"] = "DRUID",
 						},
-						["Magapeki-Tichondrius"] = {
-							["taken"] = 210651,
-							["done"] = 716274,
+						["Zithras-Eitrigg"] = {
+							["taken"] = 250148,
+							["done"] = 0,
 							["role"] = "DAMAGER",
-							["class"] = "DEATHKNIGHT",
+							["class"] = "PALADIN",
 						},
 					},
 					["hdone"] = 0,
@@ -5761,13 +5761,6 @@ SkadaPerCharDB = {
 				{
 					["last"] = 1570758938,
 					["healingabsorbed"] = 0,
-					["dispells"] = 0,
-					["class"] = "HUNTER",
-					["damaged"] = {
-						["Tidespring Surger"] = 4001,
-						["Azsh'ari Invoker"] = 6460,
-						["Azsh'ari Stormsurger"] = 47173,
-					},
 					["auras"] = {
 						["Unstable Flames"] = {
 							["name"] = "Unstable Flames",
@@ -5810,6 +5803,13 @@ SkadaPerCharDB = {
 							["uptime"] = 5,
 						},
 					},
+					["class"] = "HUNTER",
+					["damaged"] = {
+						["Tidespring Surger"] = 4001,
+						["Azsh'ari Invoker"] = 6460,
+						["Azsh'ari Stormsurger"] = 47173,
+					},
+					["alertDamage"] = 0,
 					["healingspells"] = {
 						["Hati: Leech"] = {
 							["shielding"] = 0,
@@ -6016,7 +6016,7 @@ SkadaPerCharDB = {
 					["overhealing"] = 16532,
 					["alert"] = {
 					},
-					["alertDamage"] = 0,
+					["dispells"] = 0,
 				}, -- [1]
 				{
 					["last"] = 1570758936,
@@ -6081,10 +6081,6 @@ SkadaPerCharDB = {
 				{
 					["last"] = 1570758942,
 					["healingabsorbed"] = 0,
-					["dispells"] = 0,
-					["class"] = "PRIEST",
-					["damaged"] = {
-					},
 					["auras"] = {
 						["Self Reliance"] = {
 							["name"] = "Self Reliance",
@@ -6111,6 +6107,10 @@ SkadaPerCharDB = {
 							["uptime"] = 9,
 						},
 					},
+					["class"] = "PRIEST",
+					["damaged"] = {
+					},
+					["alertDamage"] = 0,
 					["healingspells"] = {
 						["Renew"] = {
 							["shielding"] = 0,
@@ -6237,16 +6237,11 @@ SkadaPerCharDB = {
 					["overhealing"] = 55130,
 					["alert"] = {
 					},
-					["alertDamage"] = 0,
+					["dispells"] = 0,
 				}, -- [3]
 				{
 					["last"] = 1570758941,
 					["healingabsorbed"] = 0,
-					["dispells"] = 0,
-					["class"] = "HUNTER",
-					["damaged"] = {
-						["Azsh'ari Stormsurger"] = 215450,
-					},
 					["auras"] = {
 						["Hati: Growl"] = {
 							["name"] = "Hati: Growl",
@@ -6313,6 +6308,11 @@ SkadaPerCharDB = {
 							["uptime"] = 13,
 						},
 					},
+					["class"] = "HUNTER",
+					["damaged"] = {
+						["Azsh'ari Stormsurger"] = 215450,
+					},
+					["alertDamage"] = 0,
 					["healingspells"] = {
 						["Vampiric Speed"] = {
 							["shielding"] = 0,
@@ -6670,24 +6670,12 @@ SkadaPerCharDB = {
 					["overhealing"] = 27028,
 					["alert"] = {
 					},
-					["alertDamage"] = 0,
+					["dispells"] = 0,
 				}, -- [4]
 				{
 					["last"] = 1570758942,
 					["healingabsorbed"] = 0,
-					["dispells"] = 0,
-					["class"] = "DRUID",
-					["damaged"] = {
-					},
 					["auras"] = {
-						["Blessed Portents"] = {
-							["name"] = "Blessed Portents",
-							["active"] = 0,
-							["school"] = 2,
-							["id"] = 271843,
-							["auratype"] = "BUFF",
-							["uptime"] = 3,
-						},
 						["Flourish"] = {
 							["name"] = "Flourish",
 							["active"] = 0,
@@ -6695,6 +6683,14 @@ SkadaPerCharDB = {
 							["id"] = 197721,
 							["auratype"] = "BUFF",
 							["uptime"] = 8,
+						},
+						["Synergistic Growth"] = {
+							["name"] = "Synergistic Growth",
+							["active"] = 0,
+							["school"] = 8,
+							["id"] = 272090,
+							["auratype"] = "BUFF",
+							["uptime"] = 9,
 						},
 						["Vitality Conduit"] = {
 							["name"] = "Vitality Conduit",
@@ -6736,15 +6732,19 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 9,
 						},
-						["Synergistic Growth"] = {
-							["name"] = "Synergistic Growth",
+						["Blessed Portents"] = {
+							["name"] = "Blessed Portents",
 							["active"] = 0,
-							["school"] = 8,
-							["id"] = 272090,
+							["school"] = 2,
+							["id"] = 271843,
 							["auratype"] = "BUFF",
-							["uptime"] = 9,
+							["uptime"] = 3,
 						},
 					},
+					["class"] = "DRUID",
+					["damaged"] = {
+					},
+					["alertDamage"] = 0,
 					["healingspells"] = {
 						["Ysera's Gift"] = {
 							["shielding"] = 0,
@@ -6851,11 +6851,11 @@ SkadaPerCharDB = {
 							["name"] = "Ashaldur-Feathermoon",
 							["shielding"] = 0,
 						},
-						["Player-1169-0652F263"] = {
+						["Player-1169-06A1ACBD"] = {
 							["role"] = "DAMAGER",
-							["name"] = "Ruvan-CenarionCircle",
-							["amount"] = 0,
-							["class"] = "PALADIN",
+							["name"] = "Bracnar",
+							["amount"] = 17722,
+							["class"] = "HUNTER",
 							["shielding"] = 0,
 						},
 						["Player-125-082834A6"] = {
@@ -6865,10 +6865,10 @@ SkadaPerCharDB = {
 							["class"] = "PALADIN",
 							["shielding"] = 0,
 						},
-						["Player-1169-06A1ACBD"] = {
+						["Player-118-00503816"] = {
 							["role"] = "DAMAGER",
-							["name"] = "Bracnar",
-							["amount"] = 17722,
+							["name"] = "Asuraka-Feathermoon",
+							["amount"] = 16451,
 							["class"] = "HUNTER",
 							["shielding"] = 0,
 						},
@@ -6886,11 +6886,11 @@ SkadaPerCharDB = {
 							["class"] = "DRUID",
 							["shielding"] = 0,
 						},
-						["Player-118-00503816"] = {
+						["Player-1169-0652F263"] = {
 							["role"] = "DAMAGER",
-							["name"] = "Asuraka-Feathermoon",
-							["amount"] = 16451,
-							["class"] = "HUNTER",
+							["name"] = "Ruvan-CenarionCircle",
+							["amount"] = 0,
+							["class"] = "PALADIN",
 							["shielding"] = 0,
 						},
 					},
@@ -6917,17 +6917,11 @@ SkadaPerCharDB = {
 					["overhealing"] = 473280,
 					["alert"] = {
 					},
-					["alertDamage"] = 0,
+					["dispells"] = 0,
 				}, -- [5]
 				{
 					["last"] = 1570758941,
 					["healingabsorbed"] = 0,
-					["dispells"] = 0,
-					["class"] = "WARRIOR",
-					["damaged"] = {
-						["Azsh'ari Invoker"] = 18716,
-						["Azsh'ari Stormsurger"] = 89025,
-					},
 					["auras"] = {
 						["Brace for Impact"] = {
 							["name"] = "Brace for Impact",
@@ -7010,6 +7004,12 @@ SkadaPerCharDB = {
 							["uptime"] = 7,
 						},
 					},
+					["class"] = "WARRIOR",
+					["damaged"] = {
+						["Azsh'ari Invoker"] = 18716,
+						["Azsh'ari Stormsurger"] = 89025,
+					},
+					["alertDamage"] = 0,
 					["healingspells"] = {
 						["Stand Your Ground"] = {
 							["shielding"] = 0,
@@ -7175,17 +7175,17 @@ SkadaPerCharDB = {
 					["overhealing"] = 3285,
 					["alert"] = {
 					},
-					["alertDamage"] = 0,
+					["dispells"] = 0,
 				}, -- [6]
 				{
 					["last"] = 1570758934,
 					["healingabsorbed"] = 0,
-					["dispells"] = 0,
+					["auras"] = {
+					},
 					["class"] = "DRUID",
 					["damaged"] = {
 					},
-					["auras"] = {
-					},
+					["alertDamage"] = 0,
 					["healingspells"] = {
 						["Ysera's Gift"] = {
 							["shielding"] = 0,
@@ -7236,7 +7236,7 @@ SkadaPerCharDB = {
 					["overhealing"] = 0,
 					["alert"] = {
 					},
-					["alertDamage"] = 0,
+					["dispells"] = 0,
 				}, -- [7]
 				{
 					["last"] = 1570758937,
@@ -7290,12 +7290,12 @@ SkadaPerCharDB = {
 				{
 					["last"] = 1570758934,
 					["healingabsorbed"] = 0,
-					["dispells"] = 0,
+					["auras"] = {
+					},
 					["class"] = "PALADIN",
 					["damaged"] = {
 					},
-					["auras"] = {
-					},
+					["alertDamage"] = 0,
 					["healingspells"] = {
 						["Impassive Visage"] = {
 							["shielding"] = 0,
@@ -7361,7 +7361,7 @@ SkadaPerCharDB = {
 					["overhealing"] = 2443,
 					["alert"] = {
 					},
-					["alertDamage"] = 0,
+					["dispells"] = 0,
 				}, -- [9]
 				{
 					["last"] = 1570758939,
@@ -7598,66 +7598,11 @@ SkadaPerCharDB = {
 		["ffdamagedone"] = 6415,
 		["time"] = 56,
 		["interrupts"] = 1,
-		["alertDamage"] = 1261248,
+		["alertDamage"] = 1427687,
 		["starttime"] = 1570758717,
 		["damage"] = 2509285,
 		["players"] = {
 			{
-				["dispells"] = 0,
-				["healingabsorbed"] = 0,
-				["healingspells"] = {
-					["Hati: Leech"] = {
-						["shielding"] = 0,
-						["id"] = 143924,
-						["healing"] = 551,
-						["min"] = 144,
-						["name"] = "Hati: Leech",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 215,
-						["overhealing"] = 0,
-						["hits"] = 3,
-					},
-					["Leech"] = {
-						["shielding"] = 0,
-						["id"] = 143924,
-						["healing"] = 530,
-						["min"] = 23,
-						["name"] = "Leech",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 182,
-						["overhealing"] = 0,
-						["hits"] = 9,
-					},
-					["Vampiric Speed"] = {
-						["shielding"] = 0,
-						["id"] = 269238,
-						["healing"] = 8266,
-						["min"] = 0,
-						["name"] = "Vampiric Speed",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 8266,
-						["overhealing"] = 16532,
-						["hits"] = 3,
-					},
-					["Resounding Protection"] = {
-						["shielding"] = 4435,
-						["id"] = 269279,
-						["healing"] = 4435,
-						["min"] = 4435,
-						["name"] = "Resounding Protection",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 4435,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
-				},
-				["class"] = "HUNTER",
-				["damaged"] = {
-				},
 				["auras"] = {
 					["Unstable Flames"] = {
 						["name"] = "Unstable Flames",
@@ -7716,6 +7661,61 @@ SkadaPerCharDB = {
 						["name"] = "Resounding Protection",
 					},
 				},
+				["healingabsorbed"] = 0,
+				["healingspells"] = {
+					["Hati: Leech"] = {
+						["shielding"] = 0,
+						["id"] = 143924,
+						["healing"] = 551,
+						["min"] = 144,
+						["name"] = "Hati: Leech",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 215,
+						["overhealing"] = 0,
+						["hits"] = 3,
+					},
+					["Leech"] = {
+						["shielding"] = 0,
+						["id"] = 143924,
+						["healing"] = 530,
+						["min"] = 23,
+						["name"] = "Leech",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 182,
+						["overhealing"] = 0,
+						["hits"] = 9,
+					},
+					["Vampiric Speed"] = {
+						["shielding"] = 0,
+						["id"] = 269238,
+						["healing"] = 8266,
+						["min"] = 0,
+						["name"] = "Vampiric Speed",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 8266,
+						["overhealing"] = 16532,
+						["hits"] = 3,
+					},
+					["Resounding Protection"] = {
+						["shielding"] = 4435,
+						["id"] = 269279,
+						["healing"] = 4435,
+						["min"] = 4435,
+						["name"] = "Resounding Protection",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 4435,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+				},
+				["class"] = "HUNTER",
+				["damaged"] = {
+				},
+				["alertDamage"] = 0,
 				["overhealing"] = 16532,
 				["role"] = "DAMAGER",
 				["time"] = 37,
@@ -7726,6 +7726,22 @@ SkadaPerCharDB = {
 				},
 				["damage"] = 131995,
 				["damagespells"] = {
+					["Ancient Flame"] = {
+						["hitmin"] = 2464,
+						["criticalamount"] = 5329,
+						["id"] = 295367,
+						["hitamount"] = 7636,
+						["criticalmin"] = 5329,
+						["hitmax"] = 2586,
+						["min"] = 2464,
+						["criticalmax"] = 5329,
+						["critical"] = 1,
+						["hit"] = 3,
+						["totalhits"] = 4,
+						["school"] = 4,
+						["max"] = 5329,
+						["damage"] = 12965,
+					},
 					["Hati: Attack"] = {
 						["hitmin"] = 1537,
 						["criticalamount"] = 3271,
@@ -7741,22 +7757,6 @@ SkadaPerCharDB = {
 						["school"] = 1,
 						["max"] = 3271,
 						["damage"] = 12592,
-					},
-					["Hati: Claw"] = {
-						["hitmin"] = 5511,
-						["criticalamount"] = 11022,
-						["id"] = 16827,
-						["hitamount"] = 12546,
-						["criticalmin"] = 11022,
-						["hitmax"] = 7035,
-						["min"] = 5511,
-						["criticalmax"] = 11022,
-						["critical"] = 1,
-						["hit"] = 2,
-						["totalhits"] = 3,
-						["school"] = 1,
-						["max"] = 11022,
-						["damage"] = 23568,
 					},
 					["Cobra Shot"] = {
 						["hitmin"] = 3944,
@@ -7782,21 +7782,21 @@ SkadaPerCharDB = {
 						["totalhits"] = 2,
 						["damage"] = 18507,
 					},
-					["Ancient Flame"] = {
-						["hitmin"] = 2464,
-						["criticalamount"] = 5329,
-						["id"] = 295367,
-						["hitamount"] = 7636,
-						["criticalmin"] = 5329,
-						["hitmax"] = 2586,
-						["min"] = 2464,
-						["criticalmax"] = 5329,
+					["Hati: Claw"] = {
+						["hitmin"] = 5511,
+						["criticalamount"] = 11022,
+						["id"] = 16827,
+						["hitamount"] = 12546,
+						["criticalmin"] = 11022,
+						["hitmax"] = 7035,
+						["min"] = 5511,
+						["criticalmax"] = 11022,
 						["critical"] = 1,
-						["hit"] = 3,
-						["totalhits"] = 4,
-						["school"] = 4,
-						["max"] = 5329,
-						["damage"] = 12965,
+						["hit"] = 2,
+						["totalhits"] = 3,
+						["school"] = 1,
+						["max"] = 11022,
+						["damage"] = 23568,
 					},
 					["Auto Shot"] = {
 						["hitmin"] = 3005,
@@ -7851,9 +7851,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1570759055.82801,
 								["amount"] = -109677,
-								["hp"] = 1,
 								["spellid"] = 302207,
 								["srcname"] = "Unleashed Arcanofiend",
+								["hp"] = 1,
 							}, -- [1]
 							{
 								["spellname"] = "Asuraka dies",
@@ -7960,9 +7960,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1570759055.63315,
 								["amount"] = -111108,
-								["hp"] = 105182,
 								["spellid"] = 302207,
 								["srcname"] = "Unleashed Arcanofiend",
+								["hp"] = 105182,
 							}, -- [15]
 							["pos"] = 3,
 						},
@@ -7991,13 +7991,24 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["power"] = {
-					[2] = {
-						["amount"] = 20,
-						["spells"] = {
-							[204304] = 20,
-						},
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 23,
+						["ts"] = 1570759059.302,
+						["hp"] = 24,
+						["srcname"] = "Asuraka-Feathermoon",
+						["spellid"] = 143924,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 49,
+						["ts"] = 1570759060.942,
+						["hp"] = 73,
+						["srcname"] = "Asuraka-Feathermoon",
+						["spellid"] = 143924,
+					}, -- [2]
+					["pos"] = 3,
 				},
 				["id"] = "Player-118-00503816",
 				["maxhp"] = 237919,
@@ -8039,29 +8050,18 @@ SkadaPerCharDB = {
 				["damagetaken"] = 271412,
 				["name"] = "Asuraka",
 				["alertCount"] = 0,
-				["shielding"] = 4435,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 23,
-						["ts"] = 1570759059.302,
-						["hp"] = 24,
-						["srcname"] = "Asuraka-Feathermoon",
-						["spellid"] = 143924,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 49,
-						["ts"] = 1570759060.942,
-						["hp"] = 73,
-						["srcname"] = "Asuraka-Feathermoon",
-						["spellid"] = 143924,
-					}, -- [2]
-					["pos"] = 3,
+				["power"] = {
+					[2] = {
+						["amount"] = 20,
+						["spells"] = {
+							[204304] = 20,
+						},
+					},
 				},
+				["shielding"] = 4435,
 				["alert"] = {
 				},
-				["alertDamage"] = 0,
+				["dispells"] = 0,
 			}, -- [1]
 			{
 				["healingabsorbed"] = 0,
@@ -8122,7 +8122,80 @@ SkadaPerCharDB = {
 				["role"] = "NONE",
 			}, -- [2]
 			{
-				["dispells"] = 0,
+				["auras"] = {
+					["Egg on Your Face"] = {
+						["name"] = "Egg on Your Face",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 302935,
+						["auratype"] = "BUFF",
+						["uptime"] = 1,
+					},
+					["Spirit of Redemption"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 2,
+						["id"] = 27827,
+						["auratype"] = "BUFF",
+						["name"] = "Spirit of Redemption",
+					},
+					["Self Reliance"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 270661,
+						["auratype"] = "BUFF",
+						["name"] = "Self Reliance",
+					},
+					["Renew"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 2,
+						["id"] = 139,
+						["auratype"] = "BUFF",
+						["name"] = "Renew",
+					},
+					["Ancient Flame"] = {
+						["name"] = "Ancient Flame",
+						["active"] = 0,
+						["school"] = 4,
+						["id"] = 303380,
+						["auratype"] = "BUFF",
+						["uptime"] = 3,
+					},
+					["Sign of the Warrior"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 225787,
+						["auratype"] = "BUFF",
+						["name"] = "Sign of the Warrior",
+					},
+					["Find Herbs"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 2383,
+						["auratype"] = "BUFF",
+						["name"] = "Find Herbs",
+					},
+					["Seed of Eonar"] = {
+						["name"] = "Seed of Eonar",
+						["active"] = 0,
+						["school"] = 8,
+						["id"] = 296211,
+						["auratype"] = "BUFF",
+						["uptime"] = 2,
+					},
+					["Echo of Light"] = {
+						["uptime"] = 6,
+						["active"] = 0,
+						["school"] = 2,
+						["id"] = 77489,
+						["auratype"] = "BUFF",
+						["name"] = "Echo of Light",
+					},
+				},
 				["healingabsorbed"] = 0,
 				["healingspells"] = {
 					["Renew"] = {
@@ -8225,80 +8298,7 @@ SkadaPerCharDB = {
 				["class"] = "PRIEST",
 				["damaged"] = {
 				},
-				["auras"] = {
-					["Egg on Your Face"] = {
-						["name"] = "Egg on Your Face",
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 302935,
-						["auratype"] = "BUFF",
-						["uptime"] = 1,
-					},
-					["Spirit of Redemption"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 2,
-						["id"] = 27827,
-						["auratype"] = "BUFF",
-						["name"] = "Spirit of Redemption",
-					},
-					["Self Reliance"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 270661,
-						["auratype"] = "BUFF",
-						["name"] = "Self Reliance",
-					},
-					["Renew"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 2,
-						["id"] = 139,
-						["auratype"] = "BUFF",
-						["name"] = "Renew",
-					},
-					["Ancient Flame"] = {
-						["name"] = "Ancient Flame",
-						["active"] = 0,
-						["school"] = 4,
-						["id"] = 303380,
-						["auratype"] = "BUFF",
-						["uptime"] = 3,
-					},
-					["Sign of the Warrior"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 225787,
-						["auratype"] = "BUFF",
-						["name"] = "Sign of the Warrior",
-					},
-					["Find Herbs"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 2383,
-						["auratype"] = "BUFF",
-						["name"] = "Find Herbs",
-					},
-					["Seed of Eonar"] = {
-						["name"] = "Seed of Eonar",
-						["active"] = 0,
-						["school"] = 8,
-						["id"] = 296211,
-						["auratype"] = "BUFF",
-						["uptime"] = 2,
-					},
-					["Echo of Light"] = {
-						["uptime"] = 6,
-						["active"] = 0,
-						["school"] = 2,
-						["id"] = 77489,
-						["auratype"] = "BUFF",
-						["name"] = "Echo of Light",
-					},
-				},
+				["alertDamage"] = 0,
 				["overhealing"] = 66497,
 				["role"] = "HEALER",
 				["time"] = 50,
@@ -8406,16 +8406,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1570759051.94712,
 								["amount"] = -125270,
-								["hp"] = 99631,
 								["spellid"] = 302207,
 								["srcname"] = "Unleashed Arcanofiend",
+								["hp"] = 99631,
 							}, -- [12]
 							{
 								["ts"] = 1570759054.18213,
 								["amount"] = -122802,
-								["hp"] = 0,
 								["spellid"] = 302207,
 								["srcname"] = "Unleashed Arcanofiend",
+								["hp"] = 0,
 							}, -- [13]
 							{
 								["spellname"] = "Béhémoth dies",
@@ -8464,7 +8464,7 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Player-118-07DF9DA9",
 				["maxhp"] = 306000,
@@ -8506,19 +8506,92 @@ SkadaPerCharDB = {
 				["damagetaken"] = 231220,
 				["name"] = "Béhémoth",
 				["alertCount"] = 0,
-				["shielding"] = 15094,
-				["deathlog"] = {
+				["power"] = {
 				},
+				["shielding"] = 15094,
 				["alert"] = {
 				},
-				["alertDamage"] = 0,
+				["dispells"] = 0,
 			}, -- [3]
 			{
-				["alertDamage"] = 1261248,
-				["last"] = 1570882648,
+				["alertDamage"] = 1427687,
+				["last"] = 1570982787,
 				["dispells"] = 0,
 				["healingabsorbed"] = 0,
-				["role"] = "DAMAGER",
+				["healingspells"] = {
+					["Vitality Conduit"] = {
+						["shielding"] = 0,
+						["id"] = 296231,
+						["healing"] = 6416,
+						["min"] = 6416,
+						["name"] = "Vitality Conduit",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 6416,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+					["Impassive Visage"] = {
+						["shielding"] = 0,
+						["id"] = 270117,
+						["healing"] = 8899,
+						["min"] = 2987,
+						["name"] = "Impassive Visage",
+						["absorbed"] = 0,
+						["critical"] = 1,
+						["max"] = 5912,
+						["overhealing"] = 9073,
+						["hits"] = 2,
+					},
+					["Undulating Tides"] = {
+						["shielding"] = 44400,
+						["id"] = 303390,
+						["healing"] = 44400,
+						["min"] = 0,
+						["name"] = "Undulating Tides",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 44400,
+						["overhealing"] = 0,
+						["hits"] = 2,
+					},
+					["Uprooted"] = {
+						["shielding"] = 0,
+						["id"] = 287608,
+						["healing"] = 5911,
+						["min"] = 0,
+						["name"] = "Uprooted",
+						["absorbed"] = 0,
+						["critical"] = 3,
+						["max"] = 1485,
+						["overhealing"] = 728,
+						["hits"] = 6,
+					},
+					["Lucid Dreams"] = {
+						["shielding"] = 0,
+						["id"] = 298318,
+						["healing"] = 23176,
+						["min"] = 23176,
+						["name"] = "Lucid Dreams",
+						["absorbed"] = 0,
+						["critical"] = 1,
+						["max"] = 23176,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+					["Vampiric Speed"] = {
+						["shielding"] = 0,
+						["id"] = 269238,
+						["healing"] = 0,
+						["min"] = 0,
+						["name"] = "Vampiric Speed",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 0,
+						["overhealing"] = 35336,
+						["hits"] = 2,
+					},
+				},
 				["ffdamagedonespells"] = {
 					["Vitality Conduit"] = {
 						["id"] = 296231,
@@ -8609,14 +8682,6 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["name"] = "Vampiric Speed",
 					},
-					["Ancient Flame"] = {
-						["uptime"] = 10,
-						["active"] = 0,
-						["school"] = 4,
-						["id"] = 295367,
-						["auratype"] = "DEBUFF",
-						["name"] = "Ancient Flame",
-					},
 					["Overwhelming Power"] = {
 						["uptime"] = 0,
 						["active"] = 0,
@@ -8624,6 +8689,14 @@ SkadaPerCharDB = {
 						["id"] = 271711,
 						["auratype"] = "BUFF",
 						["name"] = "Overwhelming Power",
+					},
+					["Quick Navigation"] = {
+						["name"] = "Quick Navigation",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 268887,
+						["auratype"] = "BUFF",
+						["uptime"] = 18,
 					},
 					["Dance of Death"] = {
 						["name"] = "Dance of Death",
@@ -8633,13 +8706,13 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 8,
 					},
-					["Quick Navigation"] = {
-						["name"] = "Quick Navigation",
+					["Ancient Flame"] = {
+						["uptime"] = 10,
 						["active"] = 0,
-						["school"] = 1,
-						["id"] = 268887,
-						["auratype"] = "BUFF",
-						["uptime"] = 18,
+						["school"] = 4,
+						["id"] = 295367,
+						["auratype"] = "DEBUFF",
+						["name"] = "Ancient Flame",
 					},
 					["Three of Fathoms"] = {
 						["name"] = "Three of Fathoms",
@@ -8651,80 +8724,7 @@ SkadaPerCharDB = {
 					},
 				},
 				["overhealing"] = 45137,
-				["healingspells"] = {
-					["Vitality Conduit"] = {
-						["shielding"] = 0,
-						["id"] = 296231,
-						["healing"] = 6416,
-						["min"] = 6416,
-						["name"] = "Vitality Conduit",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 6416,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
-					["Impassive Visage"] = {
-						["shielding"] = 0,
-						["id"] = 270117,
-						["healing"] = 8899,
-						["min"] = 2987,
-						["name"] = "Impassive Visage",
-						["absorbed"] = 0,
-						["critical"] = 1,
-						["max"] = 5912,
-						["overhealing"] = 9073,
-						["hits"] = 2,
-					},
-					["Undulating Tides"] = {
-						["shielding"] = 44400,
-						["id"] = 303390,
-						["healing"] = 44400,
-						["min"] = 0,
-						["name"] = "Undulating Tides",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 44400,
-						["overhealing"] = 0,
-						["hits"] = 2,
-					},
-					["Uprooted"] = {
-						["shielding"] = 0,
-						["id"] = 287608,
-						["healing"] = 5911,
-						["min"] = 0,
-						["name"] = "Uprooted",
-						["absorbed"] = 0,
-						["critical"] = 3,
-						["max"] = 1485,
-						["overhealing"] = 728,
-						["hits"] = 6,
-					},
-					["Lucid Dreams"] = {
-						["shielding"] = 0,
-						["id"] = 298318,
-						["healing"] = 23176,
-						["min"] = 23176,
-						["name"] = "Lucid Dreams",
-						["absorbed"] = 0,
-						["critical"] = 1,
-						["max"] = 23176,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
-					["Vampiric Speed"] = {
-						["shielding"] = 0,
-						["id"] = 269238,
-						["healing"] = 0,
-						["min"] = 0,
-						["name"] = "Vampiric Speed",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 0,
-						["overhealing"] = 35336,
-						["hits"] = 2,
-					},
-				},
+				["ccbreaks"] = 0,
 				["time"] = 101,
 				["interrupts"] = 0,
 				["power"] = {
@@ -9136,9 +9136,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1570759055.39912,
 								["amount"] = -133808,
-								["hp"] = 1,
 								["spellid"] = 302207,
 								["srcname"] = "Unleashed Arcanofiend",
+								["hp"] = 1,
 							}, -- [12]
 							{
 								["spellname"] = "Bracnar dies",
@@ -9178,7 +9178,7 @@ SkadaPerCharDB = {
 				["deathlog"] = {
 				},
 				["id"] = "Player-1169-06A1ACBD",
-				["healing"] = 88802,
+				["first"] = 1570765026,
 				["ffdamagedone"] = 6415,
 				["damagetakenspells"] = {
 					["Water Bolt"] = {
@@ -9228,23 +9228,15 @@ SkadaPerCharDB = {
 					},
 				},
 				["damagetaken"] = 384766,
-				["maxhp"] = 277135,
+				["healing"] = 88802,
 				["name"] = "Bracnar",
-				["alertCount"] = 34,
-				["first"] = 1570765026,
-				["ccbreaks"] = 0,
+				["alertCount"] = 38,
+				["maxhp"] = 277135,
+				["role"] = "DAMAGER",
 				["alert"] = {
 					["Fail"] = {
-						["alertDamage"] = 934149,
+						["alertDamage"] = 1100588,
 						["spell"] = {
-							["+Proximal Chaos"] = {
-								["min"] = 0,
-								["alertCount"] = 4,
-								["id"] = 302207,
-								["alertID"] = "Fail",
-								["max"] = 0,
-								["alertDamage"] = 0,
-							},
 							["Shockwave"] = {
 								["min"] = 73431,
 								["alertCount"] = 3,
@@ -9252,6 +9244,22 @@ SkadaPerCharDB = {
 								["alertID"] = "Fail",
 								["max"] = 73432,
 								["alertDamage"] = 220294,
+							},
+							["Mystic Tornado"] = {
+								["min"] = 41977,
+								["alertCount"] = 2,
+								["id"] = 304176,
+								["alertID"] = "Fail",
+								["max"] = 41977,
+								["alertDamage"] = 83954,
+							},
+							["Tideslam"] = {
+								["min"] = 82485,
+								["alertCount"] = 1,
+								["id"] = 303167,
+								["alertID"] = "Fail",
+								["max"] = 82485,
+								["alertDamage"] = 82485,
 							},
 							["Proximal Chaos"] = {
 								["min"] = 90825,
@@ -9261,9 +9269,25 @@ SkadaPerCharDB = {
 								["max"] = 133808,
 								["alertDamage"] = 713855,
 							},
+							["+Proximal Chaos"] = {
+								["min"] = 0,
+								["alertCount"] = 4,
+								["id"] = 302207,
+								["alertID"] = "Fail",
+								["max"] = 0,
+								["alertDamage"] = 0,
+							},
+							["+Tideslam"] = {
+								["min"] = 0,
+								["alertCount"] = 1,
+								["id"] = 303167,
+								["alertID"] = "Fail",
+								["max"] = 0,
+								["alertDamage"] = 0,
+							},
 						},
 						["name"] = "Fail",
-						["alertCount"] = 13,
+						["alertCount"] = 17,
 					},
 					["High"] = {
 						["alertCount"] = 21,
@@ -9300,145 +9324,6 @@ SkadaPerCharDB = {
 				["class"] = "HUNTER",
 			}, -- [4]
 			{
-				["dispells"] = 0,
-				["healingabsorbed"] = 0,
-				["healingspells"] = {
-					["Grove Tending"] = {
-						["shielding"] = 0,
-						["id"] = 279793,
-						["healing"] = 0,
-						["min"] = 0,
-						["name"] = "Grove Tending",
-						["absorbed"] = 0,
-						["critical"] = 3,
-						["max"] = 0,
-						["overhealing"] = 174871,
-						["hits"] = 9,
-					},
-					["Regrowth"] = {
-						["shielding"] = 0,
-						["id"] = 8936,
-						["healing"] = 57889,
-						["min"] = 0,
-						["name"] = "Regrowth",
-						["absorbed"] = 0,
-						["critical"] = 5,
-						["max"] = 36660,
-						["overhealing"] = 113032,
-						["hits"] = 23,
-					},
-					["Wild Growth"] = {
-						["shielding"] = 0,
-						["id"] = 48438,
-						["healing"] = 125950,
-						["min"] = 0,
-						["name"] = "Wild Growth",
-						["absorbed"] = 0,
-						["critical"] = 57,
-						["max"] = 5144,
-						["overhealing"] = 600086,
-						["hits"] = 259,
-					},
-					["Ysera's Gift"] = {
-						["shielding"] = 0,
-						["id"] = 145110,
-						["healing"] = 78919,
-						["min"] = 10467,
-						["name"] = "Ysera's Gift",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 12526,
-						["overhealing"] = 4033,
-						["hits"] = 7,
-					},
-					["Leech"] = {
-						["shielding"] = 0,
-						["id"] = 143924,
-						["healing"] = 229,
-						["min"] = 26,
-						["name"] = "Leech",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 150,
-						["overhealing"] = 0,
-						["hits"] = 4,
-					},
-					["Vitality Conduit"] = {
-						["shielding"] = 0,
-						["id"] = 304722,
-						["healing"] = 0,
-						["min"] = 0,
-						["name"] = "Vitality Conduit",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 0,
-						["overhealing"] = 8455,
-						["hits"] = 1,
-					},
-					["Lifebloom"] = {
-						["shielding"] = 0,
-						["id"] = 33763,
-						["healing"] = 18446,
-						["min"] = 0,
-						["name"] = "Lifebloom",
-						["absorbed"] = 0,
-						["critical"] = 4,
-						["max"] = 4612,
-						["overhealing"] = 11552,
-						["hits"] = 9,
-					},
-					["Rejuvenation"] = {
-						["shielding"] = 0,
-						["id"] = 774,
-						["healing"] = 18446,
-						["min"] = 0,
-						["name"] = "Rejuvenation",
-						["absorbed"] = 0,
-						["critical"] = 4,
-						["max"] = 4612,
-						["overhealing"] = 76020,
-						["hits"] = 17,
-					},
-					["Efflorescence"] = {
-						["shielding"] = 0,
-						["id"] = 81269,
-						["healing"] = 21883,
-						["min"] = 0,
-						["name"] = "Efflorescence",
-						["absorbed"] = 0,
-						["critical"] = 11,
-						["max"] = 5833,
-						["overhealing"] = 132291,
-						["hits"] = 38,
-					},
-					["Seed of Eonar"] = {
-						["shielding"] = 0,
-						["id"] = 296212,
-						["healing"] = 11087,
-						["min"] = 0,
-						["name"] = "Seed of Eonar",
-						["absorbed"] = 0,
-						["critical"] = 11,
-						["max"] = 6491,
-						["overhealing"] = 78690,
-						["hits"] = 52,
-					},
-					["Resounding Protection"] = {
-						["shielding"] = 26414,
-						["id"] = 269279,
-						["healing"] = 26414,
-						["min"] = 0,
-						["name"] = "Resounding Protection",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 14934,
-						["overhealing"] = 0,
-						["hits"] = 3,
-					},
-				},
-				["class"] = "DRUID",
-				["damaged"] = {
-				},
 				["auras"] = {
 					["Blessed Portents"] = {
 						["uptime"] = 0,
@@ -9593,6 +9478,145 @@ SkadaPerCharDB = {
 						["name"] = "Swift Flying Wisp",
 					},
 				},
+				["healingabsorbed"] = 0,
+				["healingspells"] = {
+					["Grove Tending"] = {
+						["shielding"] = 0,
+						["id"] = 279793,
+						["healing"] = 0,
+						["min"] = 0,
+						["name"] = "Grove Tending",
+						["absorbed"] = 0,
+						["critical"] = 3,
+						["max"] = 0,
+						["overhealing"] = 174871,
+						["hits"] = 9,
+					},
+					["Regrowth"] = {
+						["shielding"] = 0,
+						["id"] = 8936,
+						["healing"] = 57889,
+						["min"] = 0,
+						["name"] = "Regrowth",
+						["absorbed"] = 0,
+						["critical"] = 5,
+						["max"] = 36660,
+						["overhealing"] = 113032,
+						["hits"] = 23,
+					},
+					["Wild Growth"] = {
+						["shielding"] = 0,
+						["id"] = 48438,
+						["healing"] = 125950,
+						["min"] = 0,
+						["name"] = "Wild Growth",
+						["absorbed"] = 0,
+						["critical"] = 57,
+						["max"] = 5144,
+						["overhealing"] = 600086,
+						["hits"] = 259,
+					},
+					["Ysera's Gift"] = {
+						["shielding"] = 0,
+						["id"] = 145110,
+						["healing"] = 78919,
+						["min"] = 10467,
+						["name"] = "Ysera's Gift",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 12526,
+						["overhealing"] = 4033,
+						["hits"] = 7,
+					},
+					["Leech"] = {
+						["shielding"] = 0,
+						["id"] = 143924,
+						["healing"] = 229,
+						["min"] = 26,
+						["name"] = "Leech",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 150,
+						["overhealing"] = 0,
+						["hits"] = 4,
+					},
+					["Vitality Conduit"] = {
+						["shielding"] = 0,
+						["id"] = 304722,
+						["healing"] = 0,
+						["min"] = 0,
+						["name"] = "Vitality Conduit",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 0,
+						["overhealing"] = 8455,
+						["hits"] = 1,
+					},
+					["Lifebloom"] = {
+						["shielding"] = 0,
+						["id"] = 33763,
+						["healing"] = 18446,
+						["min"] = 0,
+						["name"] = "Lifebloom",
+						["absorbed"] = 0,
+						["critical"] = 4,
+						["max"] = 4612,
+						["overhealing"] = 11552,
+						["hits"] = 9,
+					},
+					["Rejuvenation"] = {
+						["shielding"] = 0,
+						["id"] = 774,
+						["healing"] = 18446,
+						["min"] = 0,
+						["name"] = "Rejuvenation",
+						["absorbed"] = 0,
+						["critical"] = 4,
+						["max"] = 4612,
+						["overhealing"] = 76020,
+						["hits"] = 17,
+					},
+					["Efflorescence"] = {
+						["shielding"] = 0,
+						["id"] = 81269,
+						["healing"] = 21883,
+						["min"] = 0,
+						["name"] = "Efflorescence",
+						["absorbed"] = 0,
+						["critical"] = 11,
+						["max"] = 5833,
+						["overhealing"] = 132291,
+						["hits"] = 38,
+					},
+					["Seed of Eonar"] = {
+						["shielding"] = 0,
+						["id"] = 296212,
+						["healing"] = 11087,
+						["min"] = 0,
+						["name"] = "Seed of Eonar",
+						["absorbed"] = 0,
+						["critical"] = 11,
+						["max"] = 6491,
+						["overhealing"] = 78690,
+						["hits"] = 52,
+					},
+					["Resounding Protection"] = {
+						["shielding"] = 26414,
+						["id"] = 269279,
+						["healing"] = 26414,
+						["min"] = 0,
+						["name"] = "Resounding Protection",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 14934,
+						["overhealing"] = 0,
+						["hits"] = 3,
+					},
+				},
+				["class"] = "DRUID",
+				["damaged"] = {
+				},
+				["alertDamage"] = 0,
 				["overhealing"] = 1199030,
 				["role"] = "HEALER",
 				["time"] = 40,
@@ -9620,16 +9644,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1570759050.63002,
 								["amount"] = -128144,
-								["hp"] = 111099,
 								["spellid"] = 302207,
 								["srcname"] = "Unleashed Arcanofiend",
+								["hp"] = 111099,
 							}, -- [2]
 							{
 								["ts"] = 1570759050.63003,
 								["amount"] = -129731,
-								["hp"] = 1,
 								["spellid"] = 302207,
 								["srcname"] = "Unleashed Arcanofiend",
+								["hp"] = 1,
 							}, -- [3]
 							{
 								["spellname"] = "Xhifou dies",
@@ -9744,10 +9768,11 @@ SkadaPerCharDB = {
 						["class"] = "PALADIN",
 						["shielding"] = 0,
 					},
-					["Creature-0-3881-1718-24241-154297-00001FE17D"] = {
-						["amount"] = 0,
-						["role"] = "NONE",
-						["name"] = "Ankoan Bladesman",
+					["Player-1184-086F06B1"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Druette-Nazgrel",
+						["amount"] = 20280,
+						["class"] = "DRUID",
 						["shielding"] = 0,
 					},
 					["Player-11-05FB30CB"] = {
@@ -9763,11 +9788,10 @@ SkadaPerCharDB = {
 						["name"] = "Waveblade Shaman",
 						["shielding"] = 0,
 					},
-					["Player-1184-086F06B1"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Druette-Nazgrel",
-						["amount"] = 20280,
-						["class"] = "DRUID",
+					["Player-118-088FA552"] = {
+						["amount"] = 0,
+						["role"] = "NONE",
+						["name"] = "Ashaldur-Feathermoon",
 						["shielding"] = 0,
 					},
 					["Player-1169-0652F263"] = {
@@ -9784,10 +9808,10 @@ SkadaPerCharDB = {
 						["class"] = "PRIEST",
 						["shielding"] = 0,
 					},
-					["Player-118-088FA552"] = {
+					["Creature-0-3881-1718-24241-154297-00001FE17D"] = {
 						["amount"] = 0,
 						["role"] = "NONE",
-						["name"] = "Ashaldur-Feathermoon",
+						["name"] = "Ankoan Bladesman",
 						["shielding"] = 0,
 					},
 					["Pet-0-3881-1718-24241-151145-0C02A80CF7"] = {
@@ -9804,6 +9828,13 @@ SkadaPerCharDB = {
 						["class"] = "PALADIN",
 						["shielding"] = 0,
 					},
+					["Player-118-00503816"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Asuraka-Feathermoon",
+						["amount"] = 39444,
+						["class"] = "HUNTER",
+						["shielding"] = 0,
+					},
 					["Player-1169-06A1ACBD"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Bracnar",
@@ -9818,13 +9849,6 @@ SkadaPerCharDB = {
 						["class"] = "DRUID",
 						["shielding"] = 26414,
 					},
-					["Player-118-00503816"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Asuraka-Feathermoon",
-						["amount"] = 39444,
-						["class"] = "HUNTER",
-						["shielding"] = 0,
-					},
 					["Player-60-0AB0F23C"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Morava-Stormrage",
@@ -9833,34 +9857,6 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["power"] = {
-				},
-				["id"] = "Player-1428-098CABEA",
-				["maxhp"] = 386900,
-				["ffdamagedonespells"] = {
-				},
-				["damagetakenspells"] = {
-					["Proximal Chaos"] = {
-						["crushing"] = 0,
-						["id"] = 302207,
-						["absorbed"] = 14934,
-						["glancing"] = 0,
-						["critical"] = 0,
-						["min"] = 112497,
-						["school"] = 64,
-						["name"] = "Proximal Chaos",
-						["blocked"] = 0,
-						["totalhits"] = 3,
-						["resisted"] = 0,
-						["max"] = 129731,
-						["damage"] = 370372,
-					},
-				},
-				["ffdamagedone"] = 0,
-				["damagetaken"] = 370372,
-				["name"] = "Xhifou",
-				["alertCount"] = 0,
-				["shielding"] = 26414,
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -9896,9 +9892,37 @@ SkadaPerCharDB = {
 					}, -- [4]
 					["pos"] = 5,
 				},
+				["id"] = "Player-1428-098CABEA",
+				["maxhp"] = 386900,
+				["ffdamagedonespells"] = {
+				},
+				["damagetakenspells"] = {
+					["Proximal Chaos"] = {
+						["crushing"] = 0,
+						["id"] = 302207,
+						["absorbed"] = 14934,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 112497,
+						["school"] = 64,
+						["name"] = "Proximal Chaos",
+						["blocked"] = 0,
+						["totalhits"] = 3,
+						["resisted"] = 0,
+						["max"] = 129731,
+						["damage"] = 370372,
+					},
+				},
+				["ffdamagedone"] = 0,
+				["damagetaken"] = 370372,
+				["name"] = "Xhifou",
+				["alertCount"] = 0,
+				["power"] = {
+				},
+				["shielding"] = 26414,
 				["alert"] = {
 				},
-				["alertDamage"] = 0,
+				["dispells"] = 0,
 			}, -- [5]
 			{
 				["healingabsorbed"] = 0,
@@ -10170,26 +10194,6 @@ SkadaPerCharDB = {
 						["shielding"] = 20586,
 					},
 				},
-				["power"] = {
-					{
-						["amount"] = 50,
-						["spells"] = {
-							[23922] = 45,
-							[6343] = 5,
-						},
-					}, -- [1]
-				},
-				["id"] = "Player-1169-06648F7F",
-				["maxhp"] = 492180,
-				["ffdamagedonespells"] = {
-				},
-				["damagetakenspells"] = {
-				},
-				["ffdamagedone"] = 0,
-				["damagetaken"] = 0,
-				["name"] = "Grumblecakes",
-				["alertCount"] = 0,
-				["shielding"] = 20586,
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -10313,12 +10317,121 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 14,
 				},
+				["id"] = "Player-1169-06648F7F",
+				["maxhp"] = 492180,
+				["ffdamagedonespells"] = {
+				},
+				["damagetakenspells"] = {
+				},
+				["ffdamagedone"] = 0,
+				["damagetaken"] = 0,
+				["name"] = "Grumblecakes",
+				["alertCount"] = 0,
+				["power"] = {
+					{
+						["amount"] = 50,
+						["spells"] = {
+							[23922] = 45,
+							[6343] = 5,
+						},
+					}, -- [1]
+				},
+				["shielding"] = 20586,
 				["alert"] = {
 				},
 				["role"] = "TANK",
 			}, -- [6]
 			{
-				["dispells"] = 0,
+				["auras"] = {
+					["Lethargy"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 287825,
+						["auratype"] = "DEBUFF",
+						["name"] = "Lethargy",
+					},
+					["Moonfire"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 64,
+						["id"] = 164812,
+						["auratype"] = "DEBUFF",
+						["name"] = "Moonfire",
+					},
+					["Barkskin"] = {
+						["name"] = "Barkskin",
+						["active"] = 0,
+						["school"] = 8,
+						["id"] = 22812,
+						["auratype"] = "BUFF",
+						["uptime"] = 9,
+					},
+					["Fight or Flight"] = {
+						["name"] = "Fight or Flight",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 287827,
+						["auratype"] = "BUFF",
+						["uptime"] = 8,
+					},
+					["Reckless Force"] = {
+						["name"] = "Reckless Force",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 302917,
+						["auratype"] = "BUFF",
+						["uptime"] = 13,
+					},
+					["Fury of Elune"] = {
+						["name"] = "Fury of Elune",
+						["active"] = 0,
+						["school"] = 72,
+						["id"] = 202770,
+						["auratype"] = "BUFF",
+						["uptime"] = 8,
+					},
+					["Machinist's Brilliance"] = {
+						["name"] = "Machinist's Brilliance",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 300693,
+						["auratype"] = "BUFF",
+						["uptime"] = 13,
+					},
+					["Ancient Flame"] = {
+						["name"] = "Ancient Flame",
+						["active"] = 0,
+						["school"] = 4,
+						["id"] = 295367,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 10,
+					},
+					["Lunar Empowerment"] = {
+						["name"] = "Lunar Empowerment",
+						["active"] = 0,
+						["school"] = 64,
+						["id"] = 164547,
+						["auratype"] = "BUFF",
+						["uptime"] = 4,
+					},
+					["Sunfire"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 8,
+						["id"] = 164815,
+						["auratype"] = "DEBUFF",
+						["name"] = "Sunfire",
+					},
+					["Swift Flying Wisp"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 55173,
+						["auratype"] = "BUFF",
+						["name"] = "Swift Flying Wisp",
+					},
+				},
 				["healingabsorbed"] = 0,
 				["healingspells"] = {
 					["Ysera's Gift"] = {
@@ -10361,96 +10474,7 @@ SkadaPerCharDB = {
 				["class"] = "DRUID",
 				["damaged"] = {
 				},
-				["auras"] = {
-					["Lethargy"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 287825,
-						["auratype"] = "DEBUFF",
-						["name"] = "Lethargy",
-					},
-					["Moonfire"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 64,
-						["id"] = 164812,
-						["auratype"] = "DEBUFF",
-						["name"] = "Moonfire",
-					},
-					["Barkskin"] = {
-						["name"] = "Barkskin",
-						["active"] = 0,
-						["school"] = 8,
-						["id"] = 22812,
-						["auratype"] = "BUFF",
-						["uptime"] = 9,
-					},
-					["Fight or Flight"] = {
-						["name"] = "Fight or Flight",
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 287827,
-						["auratype"] = "BUFF",
-						["uptime"] = 8,
-					},
-					["Reckless Force"] = {
-						["name"] = "Reckless Force",
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 302917,
-						["auratype"] = "BUFF",
-						["uptime"] = 13,
-					},
-					["Sunfire"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 8,
-						["id"] = 164815,
-						["auratype"] = "DEBUFF",
-						["name"] = "Sunfire",
-					},
-					["Machinist's Brilliance"] = {
-						["name"] = "Machinist's Brilliance",
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 300693,
-						["auratype"] = "BUFF",
-						["uptime"] = 13,
-					},
-					["Ancient Flame"] = {
-						["name"] = "Ancient Flame",
-						["active"] = 0,
-						["school"] = 4,
-						["id"] = 295367,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 10,
-					},
-					["Fury of Elune"] = {
-						["name"] = "Fury of Elune",
-						["active"] = 0,
-						["school"] = 72,
-						["id"] = 202770,
-						["auratype"] = "BUFF",
-						["uptime"] = 8,
-					},
-					["Lunar Empowerment"] = {
-						["name"] = "Lunar Empowerment",
-						["active"] = 0,
-						["school"] = 64,
-						["id"] = 164547,
-						["auratype"] = "BUFF",
-						["uptime"] = 4,
-					},
-					["Swift Flying Wisp"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 55173,
-						["auratype"] = "BUFF",
-						["name"] = "Swift Flying Wisp",
-					},
-				},
+				["alertDamage"] = 0,
 				["overhealing"] = 0,
 				["role"] = "DAMAGER",
 				["time"] = 25,
@@ -10542,9 +10566,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1570759053.24002,
 								["amount"] = -78803,
-								["hp"] = 1351,
 								["spellid"] = 302207,
 								["srcname"] = "Unleashed Arcanofiend",
+								["hp"] = 1351,
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -10613,9 +10637,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1570759056.13411,
 								["amount"] = -79311,
-								["hp"] = 1,
 								["spellid"] = 302207,
 								["srcname"] = "Unleashed Arcanofiend",
+								["hp"] = 1,
 							}, -- [11]
 							{
 								["spellname"] = "Druette dies",
@@ -10634,9 +10658,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1570759052.39614,
 								["amount"] = -82189,
-								["hp"] = 72593,
 								["spellid"] = 302207,
 								["srcname"] = "Unleashed Arcanofiend",
+								["hp"] = 72593,
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -10666,15 +10690,7 @@ SkadaPerCharDB = {
 						["shielding"] = 18480,
 					},
 				},
-				["power"] = {
-					[8] = {
-						["amount"] = 46,
-						["spells"] = {
-							[93402] = 3,
-							[8921] = 3,
-							[202770] = 40,
-						},
-					},
+				["deathlog"] = {
 				},
 				["id"] = "Player-1184-086F06B1",
 				["maxhp"] = 305820,
@@ -10701,12 +10717,20 @@ SkadaPerCharDB = {
 				["damagetaken"] = 384098,
 				["name"] = "Druette",
 				["alertCount"] = 0,
-				["shielding"] = 18480,
-				["deathlog"] = {
+				["power"] = {
+					[8] = {
+						["amount"] = 46,
+						["spells"] = {
+							[93402] = 3,
+							[8921] = 3,
+							[202770] = 40,
+						},
+					},
 				},
+				["shielding"] = 18480,
 				["alert"] = {
 				},
-				["alertDamage"] = 0,
+				["dispells"] = 0,
 			}, -- [7]
 			{
 				["healingabsorbed"] = 0,
@@ -11002,42 +11026,6 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["power"] = {
-					[9] = {
-						["amount"] = 10,
-						["spells"] = {
-							[255937] = 5,
-							[184575] = 4,
-							[220637] = 1,
-						},
-					},
-				},
-				["id"] = "Player-47-0429F180",
-				["maxhp"] = 376560,
-				["ffdamagedonespells"] = {
-				},
-				["damagetakenspells"] = {
-					["Vitality Conduit"] = {
-						["crushing"] = 0,
-						["id"] = 296231,
-						["absorbed"] = 0,
-						["glancing"] = 0,
-						["critical"] = 0,
-						["min"] = 6416,
-						["school"] = 8,
-						["name"] = "Vitality Conduit",
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["max"] = 6416,
-						["damage"] = 6416,
-					},
-				},
-				["ffdamagedone"] = 0,
-				["damagetaken"] = 6416,
-				["name"] = "Zithras",
-				["alertCount"] = 0,
-				["shielding"] = 0,
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -11161,6 +11149,42 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 9,
 				},
+				["id"] = "Player-47-0429F180",
+				["maxhp"] = 376560,
+				["ffdamagedonespells"] = {
+				},
+				["damagetakenspells"] = {
+					["Vitality Conduit"] = {
+						["crushing"] = 0,
+						["id"] = 296231,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 6416,
+						["school"] = 8,
+						["name"] = "Vitality Conduit",
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["max"] = 6416,
+						["damage"] = 6416,
+					},
+				},
+				["ffdamagedone"] = 0,
+				["damagetaken"] = 6416,
+				["name"] = "Zithras",
+				["alertCount"] = 0,
+				["power"] = {
+					[9] = {
+						["amount"] = 10,
+						["spells"] = {
+							[255937] = 5,
+							[184575] = 4,
+							[220637] = 1,
+						},
+					},
+				},
+				["shielding"] = 0,
 				["alert"] = {
 				},
 				["role"] = "DAMAGER",
@@ -11215,61 +11239,6 @@ SkadaPerCharDB = {
 				["role"] = "NONE",
 			}, -- [9]
 			{
-				["dispells"] = 0,
-				["healingabsorbed"] = 0,
-				["healingspells"] = {
-					["Impassive Visage"] = {
-						["shielding"] = 0,
-						["id"] = 270117,
-						["healing"] = 5639,
-						["min"] = 5639,
-						["name"] = "Impassive Visage",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 5639,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
-					["Resounding Protection"] = {
-						["shielding"] = 32223,
-						["id"] = 269279,
-						["healing"] = 32223,
-						["min"] = 0,
-						["name"] = "Resounding Protection",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 32223,
-						["overhealing"] = 0,
-						["hits"] = 2,
-					},
-					["Consume Whole"] = {
-						["shielding"] = 0,
-						["id"] = 303895,
-						["healing"] = 0,
-						["min"] = 0,
-						["name"] = "Consume Whole",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 0,
-						["overhealing"] = 11144,
-						["hits"] = 4,
-					},
-					["Leech"] = {
-						["shielding"] = 0,
-						["id"] = 143924,
-						["healing"] = 2032,
-						["min"] = 261,
-						["name"] = "Leech",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 956,
-						["overhealing"] = 0,
-						["hits"] = 5,
-					},
-				},
-				["class"] = "DEMONHUNTER",
-				["damaged"] = {
-				},
 				["auras"] = {
 					["Unstable Flames"] = {
 						["name"] = "Unstable Flames",
@@ -11352,6 +11321,61 @@ SkadaPerCharDB = {
 						["uptime"] = 1,
 					},
 				},
+				["healingabsorbed"] = 0,
+				["healingspells"] = {
+					["Impassive Visage"] = {
+						["shielding"] = 0,
+						["id"] = 270117,
+						["healing"] = 5639,
+						["min"] = 5639,
+						["name"] = "Impassive Visage",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 5639,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+					["Resounding Protection"] = {
+						["shielding"] = 32223,
+						["id"] = 269279,
+						["healing"] = 32223,
+						["min"] = 0,
+						["name"] = "Resounding Protection",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 32223,
+						["overhealing"] = 0,
+						["hits"] = 2,
+					},
+					["Consume Whole"] = {
+						["shielding"] = 0,
+						["id"] = 303895,
+						["healing"] = 0,
+						["min"] = 0,
+						["name"] = "Consume Whole",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 0,
+						["overhealing"] = 11144,
+						["hits"] = 4,
+					},
+					["Leech"] = {
+						["shielding"] = 0,
+						["id"] = 143924,
+						["healing"] = 2032,
+						["min"] = 261,
+						["name"] = "Leech",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 956,
+						["overhealing"] = 0,
+						["hits"] = 5,
+					},
+				},
+				["class"] = "DEMONHUNTER",
+				["damaged"] = {
+				},
+				["alertDamage"] = 0,
 				["overhealing"] = 11144,
 				["role"] = "DAMAGER",
 				["time"] = 26,
@@ -11500,16 +11524,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1570759054.91206,
 								["amount"] = -118717,
-								["hp"] = 51985,
 								["spellid"] = 302207,
 								["srcname"] = "Unleashed Arcanofiend",
+								["hp"] = 51985,
 							}, -- [6]
 							{
 								["ts"] = 1570759055.09207,
 								["amount"] = -122153,
-								["hp"] = 1,
 								["spellid"] = 302207,
 								["srcname"] = "Unleashed Arcanofiend",
+								["hp"] = 1,
 							}, -- [7]
 							{
 								["spellname"] = "Morava dies",
@@ -11586,13 +11610,16 @@ SkadaPerCharDB = {
 						["shielding"] = 32223,
 					},
 				},
-				["power"] = {
-					[17] = {
-						["amount"] = 33,
-						["spells"] = {
-							[162243] = 33,
-						},
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 265,
+						["ts"] = 1570759058.689,
+						["hp"] = 266,
+						["srcname"] = "Morava-Stormrage",
+						["spellid"] = 143924,
+					}, -- [1]
+					["pos"] = 2,
 				},
 				["id"] = "Player-60-0AB0F23C",
 				["maxhp"] = 247420,
@@ -11619,21 +11646,18 @@ SkadaPerCharDB = {
 				["damagetaken"] = 311779,
 				["name"] = "Morava",
 				["alertCount"] = 0,
-				["shielding"] = 32223,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 265,
-						["ts"] = 1570759058.689,
-						["hp"] = 266,
-						["srcname"] = "Morava-Stormrage",
-						["spellid"] = 143924,
-					}, -- [1]
-					["pos"] = 2,
+				["power"] = {
+					[17] = {
+						["amount"] = 33,
+						["spells"] = {
+							[162243] = 33,
+						},
+					},
 				},
+				["shielding"] = 32223,
 				["alert"] = {
 				},
-				["alertDamage"] = 0,
+				["dispells"] = 0,
 			}, -- [10]
 			{
 				["healingabsorbed"] = 0,
@@ -11725,34 +11749,6 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["power"] = {
-				},
-				["id"] = "Player-1169-0652F263",
-				["maxhp"] = 229840,
-				["ffdamagedonespells"] = {
-				},
-				["damagetakenspells"] = {
-					["Proximal Chaos"] = {
-						["crushing"] = 0,
-						["id"] = 302207,
-						["absorbed"] = 0,
-						["glancing"] = 0,
-						["critical"] = 0,
-						["min"] = 91073,
-						["school"] = 64,
-						["name"] = "Proximal Chaos",
-						["blocked"] = 0,
-						["totalhits"] = 1,
-						["resisted"] = 0,
-						["max"] = 91073,
-						["damage"] = 91073,
-					},
-				},
-				["ffdamagedone"] = 0,
-				["damagetaken"] = 91073,
-				["name"] = "Ruvan",
-				["alertCount"] = 0,
-				["shielding"] = 0,
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -11837,9 +11833,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1570759055.827,
 						["amount"] = -91073,
-						["hp"] = 80557,
 						["spellid"] = 302207,
 						["srcname"] = "Unleashed Arcanofiend",
+						["hp"] = 80557,
 					}, -- [11]
 					{
 						["absorb"] = 0,
@@ -11875,6 +11871,34 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 13,
 				},
+				["id"] = "Player-1169-0652F263",
+				["maxhp"] = 229840,
+				["ffdamagedonespells"] = {
+				},
+				["damagetakenspells"] = {
+					["Proximal Chaos"] = {
+						["crushing"] = 0,
+						["id"] = 302207,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 91073,
+						["school"] = 64,
+						["name"] = "Proximal Chaos",
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["max"] = 91073,
+						["damage"] = 91073,
+					},
+				},
+				["ffdamagedone"] = 0,
+				["damagetaken"] = 91073,
+				["name"] = "Ruvan",
+				["alertCount"] = 0,
+				["power"] = {
+				},
+				["shielding"] = 0,
 				["alert"] = {
 				},
 				["role"] = "DAMAGER",
@@ -12242,34 +12266,6 @@ SkadaPerCharDB = {
 						["shielding"] = 31820,
 					},
 				},
-				["power"] = {
-				},
-				["id"] = "Player-125-082834A6",
-				["maxhp"] = 260540,
-				["ffdamagedonespells"] = {
-				},
-				["damagetakenspells"] = {
-					["Proximal Chaos"] = {
-						["crushing"] = 0,
-						["id"] = 302207,
-						["absorbed"] = 31820,
-						["glancing"] = 0,
-						["critical"] = 0,
-						["min"] = 40103,
-						["school"] = 64,
-						["name"] = "Proximal Chaos",
-						["blocked"] = 0,
-						["totalhits"] = 2,
-						["resisted"] = 0,
-						["max"] = 40756,
-						["damage"] = 80859,
-					},
-				},
-				["ffdamagedone"] = 0,
-				["damagetaken"] = 80859,
-				["name"] = "Lytreus",
-				["alertCount"] = 0,
-				["shielding"] = 31820,
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -12393,78 +12389,39 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 4,
 				},
+				["id"] = "Player-125-082834A6",
+				["maxhp"] = 260540,
+				["ffdamagedonespells"] = {
+				},
+				["damagetakenspells"] = {
+					["Proximal Chaos"] = {
+						["crushing"] = 0,
+						["id"] = 302207,
+						["absorbed"] = 31820,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 40103,
+						["school"] = 64,
+						["name"] = "Proximal Chaos",
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["max"] = 40756,
+						["damage"] = 80859,
+					},
+				},
+				["ffdamagedone"] = 0,
+				["damagetaken"] = 80859,
+				["name"] = "Lytreus",
+				["alertCount"] = 0,
+				["power"] = {
+				},
+				["shielding"] = 31820,
 				["alert"] = {
 				},
 				["role"] = "TANK",
 			}, -- [13]
 			{
-				["dispells"] = 0,
-				["healingabsorbed"] = 0,
-				["healingspells"] = {
-					["Gladiator's Safeguard"] = {
-						["shielding"] = 18573,
-						["id"] = 286342,
-						["healing"] = 18573,
-						["min"] = 0,
-						["name"] = "Gladiator's Safeguard",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 9870,
-						["overhealing"] = 78487,
-						["hits"] = 3,
-					},
-					["Unholy Strength"] = {
-						["shielding"] = 0,
-						["id"] = 53365,
-						["healing"] = 20135,
-						["min"] = 20135,
-						["name"] = "Unholy Strength",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 20135,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
-					["Cold Hearted"] = {
-						["shielding"] = 0,
-						["id"] = 288426,
-						["healing"] = 133426,
-						["min"] = 0,
-						["name"] = "Cold Hearted",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 13993,
-						["overhealing"] = 41976,
-						["hits"] = 13,
-					},
-					["Death Strike"] = {
-						["shielding"] = 0,
-						["id"] = 45470,
-						["healing"] = 73440,
-						["min"] = 73440,
-						["name"] = "Death Strike",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 73440,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
-					["Resounding Protection"] = {
-						["shielding"] = 20473,
-						["id"] = 269279,
-						["healing"] = 20473,
-						["min"] = 0,
-						["name"] = "Resounding Protection",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 11559,
-						["overhealing"] = 0,
-						["hits"] = 3,
-					},
-				},
-				["class"] = "DEATHKNIGHT",
-				["damaged"] = {
-				},
 				["auras"] = {
 					["Gladiator's Safeguard"] = {
 						["name"] = "Gladiator's Safeguard",
@@ -12587,6 +12544,73 @@ SkadaPerCharDB = {
 						["uptime"] = 4,
 					},
 				},
+				["healingabsorbed"] = 0,
+				["healingspells"] = {
+					["Gladiator's Safeguard"] = {
+						["shielding"] = 18573,
+						["id"] = 286342,
+						["healing"] = 18573,
+						["min"] = 0,
+						["name"] = "Gladiator's Safeguard",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 9870,
+						["overhealing"] = 78487,
+						["hits"] = 3,
+					},
+					["Unholy Strength"] = {
+						["shielding"] = 0,
+						["id"] = 53365,
+						["healing"] = 20135,
+						["min"] = 20135,
+						["name"] = "Unholy Strength",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 20135,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+					["Cold Hearted"] = {
+						["shielding"] = 0,
+						["id"] = 288426,
+						["healing"] = 133426,
+						["min"] = 0,
+						["name"] = "Cold Hearted",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 13993,
+						["overhealing"] = 41976,
+						["hits"] = 13,
+					},
+					["Death Strike"] = {
+						["shielding"] = 0,
+						["id"] = 45470,
+						["healing"] = 73440,
+						["min"] = 73440,
+						["name"] = "Death Strike",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 73440,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+					["Resounding Protection"] = {
+						["shielding"] = 20473,
+						["id"] = 269279,
+						["healing"] = 20473,
+						["min"] = 0,
+						["name"] = "Resounding Protection",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 11559,
+						["overhealing"] = 0,
+						["hits"] = 3,
+					},
+				},
+				["class"] = "DEATHKNIGHT",
+				["damaged"] = {
+				},
+				["alertDamage"] = 0,
 				["overhealing"] = 120463,
 				["role"] = "DAMAGER",
 				["time"] = 22,
@@ -12842,9 +12866,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1570759054.58705,
 								["amount"] = -101382,
-								["hp"] = 1,
 								["spellid"] = 302207,
 								["srcname"] = "Unleashed Arcanofiend",
+								["hp"] = 1,
 							}, -- [5]
 							{
 								["spellname"] = "Magapeki dies",
@@ -12879,9 +12903,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1570759051.6381,
 								["amount"] = -101990,
-								["hp"] = 192924,
 								["spellid"] = 302207,
 								["srcname"] = "Unleashed Arcanofiend",
+								["hp"] = 192924,
 							}, -- [10]
 							{
 								["absorb"] = 0,
@@ -12902,9 +12926,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1570759052.19813,
 								["amount"] = -98689,
-								["hp"] = 101215,
 								["spellid"] = 302207,
 								["srcname"] = "Unleashed Arcanofiend",
+								["hp"] = 101215,
 							}, -- [13]
 							{
 								["absorb"] = 0,
@@ -12917,9 +12941,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1570759052.85515,
 								["amount"] = -101301,
-								["hp"] = 2219,
 								["spellid"] = 302207,
 								["srcname"] = "Unleashed Arcanofiend",
+								["hp"] = 2219,
 							}, -- [15]
 							["pos"] = 7,
 						},
@@ -12934,16 +12958,7 @@ SkadaPerCharDB = {
 						["shielding"] = 39046,
 					},
 				},
-				["power"] = {
-					[6] = {
-						["amount"] = 56,
-						["spells"] = {
-							[195757] = 6,
-							[55090] = 20,
-							[77575] = 10,
-							[85948] = 20,
-						},
-					},
+				["deathlog"] = {
 				},
 				["id"] = "Player-11-05FB30CB",
 				["maxhp"] = 335580,
@@ -13030,12 +13045,21 @@ SkadaPerCharDB = {
 				["damagetaken"] = 782673,
 				["name"] = "Magapeki",
 				["alertCount"] = 0,
-				["shielding"] = 39046,
-				["deathlog"] = {
+				["power"] = {
+					[6] = {
+						["amount"] = 56,
+						["spells"] = {
+							[195757] = 6,
+							[55090] = 20,
+							[77575] = 10,
+							[85948] = 20,
+						},
+					},
 				},
+				["shielding"] = 39046,
 				["alert"] = {
 				},
-				["alertDamage"] = 0,
+				["dispells"] = 0,
 			}, -- [14]
 			{
 				["healingabsorbed"] = 0,
@@ -13601,14 +13625,14 @@ SkadaPerCharDB = {
 						["shielding"] = 5176,
 					},
 				},
-				["power"] = {
-					[2] = {
-						["amount"] = 15,
-						["spells"] = {
-							[193530] = 10,
-							[246152] = 5,
-						},
-					},
+				["deathlog"] = {
+					{
+						["spellid"] = 88163,
+						["ts"] = 1570759052.396,
+						["srcname"] = "Zanj'ir Myrmidon",
+						["hp"] = 365392,
+					}, -- [1]
+					["pos"] = 2,
 				},
 				["id"] = "Player-3208-054F96F9",
 				["maxhp"] = 365392,
@@ -13620,16 +13644,16 @@ SkadaPerCharDB = {
 				["damagetaken"] = 0,
 				["name"] = "Maheena",
 				["alertCount"] = 0,
-				["shielding"] = 5176,
-				["deathlog"] = {
-					{
-						["hp"] = 365392,
-						["ts"] = 1570759052.396,
-						["spellid"] = 88163,
-						["srcname"] = "Zanj'ir Myrmidon",
-					}, -- [1]
-					["pos"] = 2,
+				["power"] = {
+					[2] = {
+						["amount"] = 15,
+						["spells"] = {
+							[193530] = 10,
+							[246152] = 5,
+						},
+					},
 				},
+				["shielding"] = 5176,
 				["alert"] = {
 				},
 				["role"] = "DAMAGER",
@@ -13844,31 +13868,12 @@ SkadaPerCharDB = {
 						["shielding"] = 14085,
 					},
 				},
-				["power"] = {
-					[7] = {
-						["amount"] = 2,
-						["spells"] = {
-							[194192] = 2,
-						},
-					},
-				},
-				["id"] = "Player-64-0C28CC7B",
-				["maxhp"] = 308620,
-				["ffdamagedonespells"] = {
-				},
-				["damagetakenspells"] = {
-				},
-				["ffdamagedone"] = 0,
-				["damagetaken"] = 0,
-				["name"] = "Cicicela",
-				["alertCount"] = 0,
-				["shielding"] = 16269,
 				["deathlog"] = {
 					{
-						["hp"] = 308620,
-						["ts"] = 1570759052.804,
 						["spellid"] = 88163,
+						["ts"] = 1570759052.804,
 						["srcname"] = "Azsh'ari Invoker",
+						["hp"] = 308620,
 					}, -- [1]
 					{
 						["absorb"] = 0,
@@ -13880,6 +13885,25 @@ SkadaPerCharDB = {
 					}, -- [2]
 					["pos"] = 3,
 				},
+				["id"] = "Player-64-0C28CC7B",
+				["maxhp"] = 308620,
+				["ffdamagedonespells"] = {
+				},
+				["damagetakenspells"] = {
+				},
+				["ffdamagedone"] = 0,
+				["damagetaken"] = 0,
+				["name"] = "Cicicela",
+				["alertCount"] = 0,
+				["power"] = {
+					[7] = {
+						["amount"] = 2,
+						["spells"] = {
+							[194192] = 2,
+						},
+					},
+				},
+				["shielding"] = 16269,
 				["alert"] = {
 				},
 				["role"] = "DAMAGER",
@@ -14425,9 +14449,9 @@ SkadaPerCharDB = {
 						["role"] = "DAMAGER",
 						["class"] = "HUNTER",
 					},
-					["Zithras-Eitrigg"] = {
-						["taken"] = 250148,
-						["done"] = 0,
+					["Ruvan-CenarionCircle"] = {
+						["taken"] = 0,
+						["done"] = 91073,
 						["role"] = "DAMAGER",
 						["class"] = "PALADIN",
 					},
@@ -14460,11 +14484,11 @@ SkadaPerCharDB = {
 						["role"] = "TANK",
 						["class"] = "PALADIN",
 					},
-					["Ruvan-CenarionCircle"] = {
-						["taken"] = 0,
-						["done"] = 91073,
+					["Magapeki-Tichondrius"] = {
+						["taken"] = 210651,
+						["done"] = 716274,
 						["role"] = "DAMAGER",
-						["class"] = "PALADIN",
+						["class"] = "DEATHKNIGHT",
 					},
 					["Farseer Ori"] = {
 						["taken"] = 62728,
@@ -14506,11 +14530,11 @@ SkadaPerCharDB = {
 						["role"] = "HEALER",
 						["class"] = "DRUID",
 					},
-					["Magapeki-Tichondrius"] = {
-						["taken"] = 210651,
-						["done"] = 716274,
+					["Zithras-Eitrigg"] = {
+						["taken"] = 250148,
+						["done"] = 0,
 						["role"] = "DAMAGER",
-						["class"] = "DEATHKNIGHT",
+						["class"] = "PALADIN",
 					},
 				},
 				["hdone"] = 0,
@@ -14718,7 +14742,7 @@ SkadaPerCharDB = {
 		["overhealing"] = 1673545.98828125,
 		["mobtaken"] = 2509285,
 		["name"] = "Total",
-		["alertCount"] = 34,
+		["alertCount"] = 38,
 		["damagetaken"] = 2914668,
 		["mobhdone"] = 47057,
 		["last_action"] = 1570758717,
