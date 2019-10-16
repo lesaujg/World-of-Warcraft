@@ -28,7 +28,7 @@ FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
 		["date"] = "Tuesday 10/15",
-		["rows"] = 2,
+		["rows"] = 6,
 	}, -- [1]
 	{
 		["date"] = "Monday 10/14",
@@ -109,8 +109,12 @@ FactionAddictLogData = {
 }
 FactionAddictLogEntries = {
 	{
-		["Waveblade Ankoan"] = 1000,
-		["Rustbolt Resistance"] = 1840,
+		["Rustbolt Resistance"] = 3640,
+		["Champions of Azeroth"] = 1000,
+		["Waveblade Ankoan"] = 2800,
+		["Order of Embers"] = 1900,
+		["Proudmoore Admiralty"] = 975,
+		["7th Legion"] = 1050,
 	}, -- [1]
 	{
 		["Champions of Azeroth"] = 2000,

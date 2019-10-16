@@ -1,34 +1,28 @@
-VER 3 0100000000000069 "_AspectTurtle" "INV_MISC_QUESTIONMARK"
+VER 3 010000000000006E "__Barbed Shots" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cancelaura Aspect of the Turtle
-/cast Aspect of the Turtle
+/petassist
+/target [noexists] pettarget
+/cast Barbed Shot
 END
-VER 3 010000000000005B "_Bestial Wrath" "INV_MISC_QUESTIONMARK"
+VER 3 010000000000006F "__Chimera Shot" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [btn:2] Ancient Hysteria
-/cast Bestial Wrath
-/cast Aspect of the Wild
-/use Tabard of the Protector
-/use 13
-/use 14
+/petassist
+/target [noexists] pettarget
+/cast Chimaera Shot
 END
-VER 3 010000000000005E "_Cobra Shot" "INV_MISC_QUESTIONMARK"
+VER 3 010000000000005E "__Cobra Shot" "INV_MISC_QUESTIONMARK"
 #showtooltip
+/petassist
 /target [noexists] pettarget
 /cast Cobra Shot
 END
-VER 3 010000000000005F "_Dire Beast" "INV_MISC_QUESTIONMARK"
-#showtooltip Dire Beast
-#show Dire Beast
-/target [noexists] pettarget
-/cast Titan's Thunder
-/cast Dire Beast
+VER 3 010000000000006D "__Concen Flame" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@self, button:2] Concentrated Flame
+/cast [button:1, nomod] Concentrated Flame
+/cast [@pet, button:1, mode:ctrl] Concentrated Flame
 END
-VER 3 010000000000006A "_FeignDeath" "INV_MISC_QUESTIONMARK"
-/cast [nobtn:2]Feign Death
-/cast [btn:2][mod] Play Dead
-END
-VER 3 010000000000005C "_Kill Command" "INV_MISC_QUESTIONMARK"
+VER 3 010000000000005C "__Kill Command" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /dismount
 /petattack
@@ -36,8 +30,24 @@ VER 3 010000000000005C "_Kill Command" "INV_MISC_QUESTIONMARK"
 /petautocastoff [group] Growl
 /petautocaston [nogroup] Growl
 /target [noexists] pettarget
-/cast [@pet,dead][nopet:Voidwalker] Voidwalker
 /cast Kill Command
+END
+VER 3 0100000000000069 "_AspectTurtle" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cancelaura Aspect of the Turtle
+/cast Aspect of the Turtle
+END
+VER 3 010000000000005B "_Bestial Wrath" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [btn:2] Primal Rage
+/castsequence reset=combat/60 Bestial Wrath,Aspect of the Wild
+/use Tabard of the Protector
+/use 13
+/use 14
+END
+VER 3 010000000000006A "_FeignDeath" "INV_MISC_QUESTIONMARK"
+/cast [nobtn:2]Feign Death
+/cast [btn:2][mod] Play Dead
 END
 VER 3 0100000000000060 "_Kite" "132128"
 /use [button:1] 15
@@ -106,11 +116,4 @@ VER 3 0100000000000061 "Pet" "INV_MISC_QUESTIONMARK"
 /cast [button:2, nopet] Call Pet 5
 /cast [@pet,button:2,exists,nodead] Dismiss Pet
 /cast [@pet,exists,nodead] Mend Pet; Revive Pet
-END
-VER 3 0100000000000054 "Pet_stuff" "INV_Misc_QuestionMark"
-#showtooltip
-/cast [button:1, nopet] Call Pet 3
-/cast [button:2, nopet] Call Pet 4
-/cast [button:2, pet, nodead] Dismiss Pet
-/cast [@pet,dead]Revive Pet; [nopet,mod] Revive Pet;Mend Pet
 END

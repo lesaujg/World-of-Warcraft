@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0307,
+	["LastVersion"] = 2.0309,
 	["ItemLevels"] = {
 		{
 			["ID"] = 158049,
@@ -25,8 +25,8 @@ PawnOptions = {
 		}, -- [5]
 		{
 			["ID"] = 170369,
-			["Level"] = 405,
-			["Link"] = "|cffa335ee|Hitem:170369::::::::120:253:::4:6300:6290:1492:4786:::|h[Vim's Scalecrusher Chain]|h|r",
+			["Level"] = 420,
+			["Link"] = "|cffa335ee|Hitem:170369::::::::120:253:::4:6300:6293:1507:4786:::|h[Vim's Scalecrusher Chain]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 157986,
@@ -35,8 +35,8 @@ PawnOptions = {
 		}, -- [7]
 		{
 			["ID"] = 170373,
-			["Level"] = 400,
-			["Link"] = "|cffa335ee|Hitem:170373::::::::120:255:::4:6300:6289:1487:4786:::|h[Azsh'ari Stormsurger Striders]|h|r",
+			["Level"] = 420,
+			["Link"] = "|cffa335ee|Hitem:170373::::::::120:253:::4:6300:6293:1507:4786:::|h[Azsh'ari Stormsurger Striders]|h|r",
 		}, -- [8]
 		{
 			["ID"] = 165455,

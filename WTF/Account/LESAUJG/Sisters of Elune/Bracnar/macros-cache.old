@@ -14,8 +14,16 @@ VER 3 010000000000005B "_Bestial Wrath" "INV_MISC_QUESTIONMARK"
 END
 VER 3 010000000000005E "_Cobra Shot" "INV_MISC_QUESTIONMARK"
 #showtooltip
+/petassist
 /target [noexists] pettarget
 /cast Cobra Shot
+END
+VER 3 010000000000006D "_Concen Flame" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/target [noexists] pettarget
+/cast [@self, button:2] Concentrated Flame
+/cast [button:1, nomod] Concentrated Flameww
+/cast [@pet, button:1, mode:ctrl] Concentrated Flame
 END
 VER 3 010000000000005F "_Dire Beast" "INV_MISC_QUESTIONMARK"
 #showtooltip Dire Beast
@@ -23,10 +31,6 @@ VER 3 010000000000005F "_Dire Beast" "INV_MISC_QUESTIONMARK"
 /target [noexists] pettarget
 /cast Titan's Thunder
 /cast Dire Beast
-END
-VER 3 010000000000006B "_ExplosiveTrap" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/castsequence [@cursor] reset=combat/24 Explosive Trap, Caltrops,  Lacerate, Caltrops,  Lacerate
 END
 VER 3 010000000000006A "_FeignDeath" "INV_MISC_QUESTIONMARK"
 /cast [nobtn:2]Feign Death
@@ -39,9 +43,8 @@ VER 3 010000000000005C "_Kill Command" "INV_MISC_QUESTIONMARK"
 /petassist
 /petautocastoff [group] Growl
 /petautocaston [nogroup] Growl
-/petautocastoff [group] Thunderstomp
-/petautocaston [nogroup] Thunderstomp
 /target [noexists] pettarget
+/cast [@pet,dead][nopet:Voidwalker] Voidwalker
 /cast Kill Command
 END
 VER 3 0100000000000060 "_Kite" "132128"

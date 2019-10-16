@@ -4,6 +4,10 @@ VER 3 000000000000001E "_Clear Target" "Ability_CheapShot"
 /petfollow
 /petpassive
 END
+VER 3 00000000000000AA "df" "INV_MISC_QUESTIONMARK"
+/target Paper
+/click OverrideActionBarButton3
+END
 VER 3 0000000000000099 "Fish" "INV_MISC_QUESTIONMARK"
 /equipset Fishing
 /use Fishing
