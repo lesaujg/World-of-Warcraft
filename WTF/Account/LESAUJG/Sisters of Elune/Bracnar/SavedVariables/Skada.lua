@@ -467,7 +467,7 @@ SkadaPerCharDB = {
 						},
 					},
 					["id"] = "Player-1169-06A1ACBD",
-					["maxhp"] = 269502,
+					["maxhp"] = 269889,
 					["overhealing"] = 43925.74609375,
 					["damagetakenspells"] = {
 						["Spiteful Binding"] = {
@@ -969,15 +969,15 @@ SkadaPerCharDB = {
 						[2] = {
 							["spells"] = {
 								[204304] = 0,
+								[246851] = 10,
 								[246152] = 10,
 								[299058] = 15,
-								[246851] = 10,
 							},
 							["amount"] = 35,
 						},
 					},
 					["id"] = "Player-1169-06A1ACBD",
-					["maxhp"] = 269502,
+					["maxhp"] = 269889,
 					["overhealing"] = 0,
 					["damagetakenspells"] = {
 						["Firestorm"] = {
@@ -1478,7 +1478,7 @@ SkadaPerCharDB = {
 						},
 					},
 					["id"] = "Player-1169-06A1ACBD",
-					["maxhp"] = 269502,
+					["maxhp"] = 269889,
 					["overhealing"] = 5560,
 					["damagetakenspells"] = {
 						["Firestorm"] = {
@@ -1972,15 +1972,15 @@ SkadaPerCharDB = {
 						[2] = {
 							["spells"] = {
 								[204304] = 0,
+								[246152] = 15,
 								[246851] = 5,
 								[299058] = 15,
-								[246152] = 15,
 							},
 							["amount"] = 35,
 						},
 					},
 					["id"] = "Player-1169-06A1ACBD",
-					["maxhp"] = 269502,
+					["maxhp"] = 269889,
 					["overhealing"] = 38977,
 					["damagetakenspells"] = {
 						["Spiteful Binding"] = {
@@ -2436,7 +2436,7 @@ SkadaPerCharDB = {
 						},
 					},
 					["id"] = "Player-1169-06A1ACBD",
-					["maxhp"] = 269502,
+					["maxhp"] = 269889,
 					["overhealing"] = 19780,
 					["damagetakenspells"] = {
 						["Spiteful Binding"] = {
@@ -2951,15 +2951,15 @@ SkadaPerCharDB = {
 						[2] = {
 							["spells"] = {
 								[204304] = 0,
+								[299058] = 18,
 								[246851] = 15,
 								[246152] = 10,
-								[299058] = 18,
 							},
 							["amount"] = 43,
 						},
 					},
 					["id"] = "Player-1169-06A1ACBD",
-					["maxhp"] = 269502,
+					["maxhp"] = 269889,
 					["overhealing"] = 25509,
 					["damagetakenspells"] = {
 						["Spiteful Binding"] = {
@@ -3573,7 +3573,7 @@ SkadaPerCharDB = {
 						},
 					},
 					["id"] = "Player-1169-06A1ACBD",
-					["maxhp"] = 269502,
+					["maxhp"] = 269889,
 					["overhealing"] = 181694,
 					["damagetakenspells"] = {
 						["Spiteful Binding"] = {
@@ -4260,15 +4260,15 @@ SkadaPerCharDB = {
 						[2] = {
 							["spells"] = {
 								[204304] = 93,
+								[299058] = 123,
 								[246851] = 75,
 								[246152] = 85,
-								[299058] = 123,
 							},
 							["amount"] = 376,
 						},
 					},
 					["id"] = "Player-1169-06A1ACBD",
-					["maxhp"] = 269502,
+					["maxhp"] = 269889,
 					["overhealing"] = 197930,
 					["damagetakenspells"] = {
 						["Shoot"] = {
@@ -5100,7 +5100,7 @@ SkadaPerCharDB = {
 						},
 					},
 					["id"] = "Player-1169-06A1ACBD",
-					["maxhp"] = 269502,
+					["maxhp"] = 269889,
 					["overhealing"] = 438688,
 					["damagetakenspells"] = {
 						["Spiteful Binding"] = {
@@ -5171,18 +5171,6 @@ SkadaPerCharDB = {
 					["alertCount"] = 0,
 					["shielding"] = 0,
 					["healingspells"] = {
-						["Hati: Spirit Mend"] = {
-							["shielding"] = 0,
-							["id"] = 90361,
-							["healing"] = 248317,
-							["min"] = 3874,
-							["name"] = "Hati: Spirit Mend",
-							["hits"] = 12,
-							["overhealing"] = 13068,
-							["max"] = 51843,
-							["critical"] = 2,
-							["absorbed"] = 0,
-						},
 						["Vampiric Speed"] = {
 							["shielding"] = 0,
 							["id"] = 269238,
@@ -5204,6 +5192,18 @@ SkadaPerCharDB = {
 							["hits"] = 7,
 							["overhealing"] = 55860,
 							["max"] = 23813,
+							["critical"] = 2,
+							["absorbed"] = 0,
+						},
+						["Hati: Spirit Mend"] = {
+							["shielding"] = 0,
+							["id"] = 90361,
+							["healing"] = 248317,
+							["min"] = 3874,
+							["name"] = "Hati: Spirit Mend",
+							["hits"] = 12,
+							["overhealing"] = 13068,
+							["max"] = 51843,
 							["critical"] = 2,
 							["absorbed"] = 0,
 						},
@@ -5326,7 +5326,7 @@ SkadaPerCharDB = {
 			["time"] = 27,
 			["interrupts"] = 0,
 			["dispells"] = 0,
-			["gotboss"] = true,
+			["shielding"] = 0,
 			["alertCount"] = 0,
 			["damage"] = 770039,
 			["players"] = {
@@ -5774,15 +5774,15 @@ SkadaPerCharDB = {
 						[2] = {
 							["spells"] = {
 								[204304] = 40,
+								[246152] = 30,
 								[246851] = 20,
 								[299058] = 48,
-								[246152] = 30,
 							},
 							["amount"] = 138,
 						},
 					},
 					["id"] = "Player-1169-06A1ACBD",
-					["maxhp"] = 269502,
+					["maxhp"] = 269889,
 					["overhealing"] = 218501,
 					["damagetakenspells"] = {
 						["Shoot"] = {
@@ -5954,7 +5954,7 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["mobtaken"] = 770039,
+			["gotboss"] = true,
 			["overhealing"] = 218501,
 			["healing"] = 50490,
 			["power"] = {
@@ -5965,7 +5965,7 @@ SkadaPerCharDB = {
 			["damagetaken"] = 50490,
 			["name"] = "Dark Ranger (2)",
 			["mobname"] = "Dark Ranger",
-			["shielding"] = 0,
+			["mobtaken"] = 770039,
 			["mobhdone"] = 0,
 			["last_action"] = 1571191001,
 			["endtime"] = 1571191028,
@@ -5983,16 +5983,13 @@ SkadaPerCharDB = {
 		["damage"] = 20070263,
 		["players"] = {
 			{
-				["healingabsorbed"] = 0,
+				["last"] = 1571280432,
 				["role"] = "NONE",
+				["healingabsorbed"] = 0,
+				["dispells"] = 0,
 				["class"] = "HUNTER",
 				["damaged"] = {
 				},
-				["dispells"] = 0,
-				["ccbreaks"] = 0,
-				["ffdamagedone"] = 0,
-				["time"] = 656,
-				["interrupts"] = 0,
 				["auras"] = {
 					["Concentrated Flame"] = {
 						["uptime"] = 531,
@@ -6235,7 +6232,96 @@ SkadaPerCharDB = {
 						["id"] = 276192,
 					},
 				},
-				["alertDamage"] = 350235,
+				["ffdamagedone"] = 0,
+				["healingspells"] = {
+					["Undulating Tides"] = {
+						["shielding"] = 0,
+						["id"] = 303390,
+						["healing"] = 0,
+						["min"] = 0,
+						["name"] = "Undulating Tides",
+						["hits"] = 2,
+						["overhealing"] = 87851.4921875,
+						["max"] = 0,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+					["Vampiric Speed"] = {
+						["shielding"] = 0,
+						["id"] = 269238,
+						["healing"] = 463794,
+						["min"] = 0,
+						["name"] = "Vampiric Speed",
+						["hits"] = 92,
+						["overhealing"] = 1766860,
+						["max"] = 26126,
+						["critical"] = 24,
+						["absorbed"] = 0,
+					},
+					["Impassive Visage"] = {
+						["shielding"] = 0,
+						["id"] = 270117,
+						["healing"] = 388115,
+						["min"] = 621,
+						["name"] = "Impassive Visage",
+						["hits"] = 68,
+						["overhealing"] = 162411,
+						["max"] = 14153,
+						["critical"] = 13,
+						["absorbed"] = 0,
+					},
+					["Ancient Flame"] = {
+						["shielding"] = 0,
+						["id"] = 303380,
+						["healing"] = 24415,
+						["min"] = 0,
+						["name"] = "Ancient Flame",
+						["hits"] = 40,
+						["overhealing"] = 127917,
+						["max"] = 4894,
+						["critical"] = 15,
+						["absorbed"] = 0,
+					},
+					["Hati: Spirit Mend"] = {
+						["shielding"] = 0,
+						["id"] = 90361,
+						["healing"] = 1019246,
+						["min"] = 0,
+						["name"] = "Hati: Spirit Mend",
+						["hits"] = 59,
+						["overhealing"] = 43083,
+						["max"] = 51843,
+						["critical"] = 3,
+						["absorbed"] = 0,
+					},
+					["Lucid Dreams"] = {
+						["shielding"] = 0,
+						["id"] = 298318,
+						["healing"] = 300040,
+						["min"] = 0,
+						["name"] = "Lucid Dreams",
+						["hits"] = 57,
+						["overhealing"] = 528058,
+						["max"] = 24581,
+						["critical"] = 13,
+						["absorbed"] = 0,
+					},
+					["Exhilaration"] = {
+						["shielding"] = 0,
+						["id"] = 109304,
+						["healing"] = 246500,
+						["min"] = 9973,
+						["name"] = "Exhilaration",
+						["hits"] = 3,
+						["overhealing"] = 232261,
+						["max"] = 197895,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+				},
+				["time"] = 656,
+				["interrupts"] = 0,
+				["alertDamage"] = 426570,
 				["power"] = {
 					[2] = {
 						["spells"] = {
@@ -6249,6 +6335,7 @@ SkadaPerCharDB = {
 						["amount"] = 3582,
 					},
 				},
+				["name"] = "Bracnar",
 				["damage"] = 20067102,
 				["damagespells"] = {
 					["Malicor: Beast Cleave"] = {
@@ -6332,22 +6419,17 @@ SkadaPerCharDB = {
 						["criticalmin"] = 11427,
 						["hitamount"] = 421948,
 					},
-					["Hati: Kill Command"] = {
-						["damage"] = 909308,
-						["hitmin"] = 4749,
-						["criticalamount"] = 398516,
-						["id"] = 83381,
-						["max"] = 24548,
-						["ABSORB"] = 3,
-						["totalhits"] = 121,
-						["min"] = 4749,
-						["criticalmax"] = 24548,
-						["hitmax"] = 11983,
-						["hit"] = 87,
-						["school"] = 1,
-						["critical"] = 31,
-						["criticalmin"] = 9688,
-						["hitamount"] = 510792,
+					["Lady Jaina Proudmoore: Frostbolt"] = {
+						["hitmin"] = 6265,
+						["id"] = 279564,
+						["min"] = 6265,
+						["damage"] = 261258,
+						["hitmax"] = 7509,
+						["hit"] = 39,
+						["school"] = 16,
+						["totalhits"] = 39,
+						["max"] = 7509,
+						["hitamount"] = 261258,
 					},
 					["Chimaera Shot"] = {
 						["damage"] = 817803,
@@ -6366,17 +6448,22 @@ SkadaPerCharDB = {
 						["criticalmin"] = 14591,
 						["hitamount"] = 466505,
 					},
-					["Lady Jaina Proudmoore: Frostbolt"] = {
-						["hitmin"] = 6265,
-						["id"] = 279564,
-						["min"] = 6265,
-						["damage"] = 261258,
-						["hitmax"] = 7509,
-						["hit"] = 39,
-						["school"] = 16,
-						["totalhits"] = 39,
-						["max"] = 7509,
-						["hitamount"] = 261258,
+					["Hati: Kill Command"] = {
+						["damage"] = 909308,
+						["hitmin"] = 4749,
+						["criticalamount"] = 398516,
+						["id"] = 83381,
+						["max"] = 24548,
+						["ABSORB"] = 3,
+						["totalhits"] = 121,
+						["min"] = 4749,
+						["criticalmax"] = 24548,
+						["hitmax"] = 11983,
+						["hit"] = 87,
+						["school"] = 1,
+						["critical"] = 31,
+						["criticalmin"] = 9688,
+						["hitamount"] = 510792,
 					},
 					["Hati: Attack"] = {
 						["damage"] = 1203721,
@@ -6493,21 +6580,22 @@ SkadaPerCharDB = {
 						["MISS"] = 12,
 						["hitamount"] = 1494196,
 					},
-					["Volcanic Eruption"] = {
-						["hitmin"] = 6238,
-						["criticalamount"] = 76772,
-						["id"] = 300907,
-						["damage"] = 195705,
-						["max"] = 13138,
+					["Volcanic Pressure"] = {
+						["damage"] = 366220,
+						["hitmin"] = 104,
+						["criticalamount"] = 134031,
+						["id"] = 300832,
+						["max"] = 4014,
+						["ABSORB"] = 3,
+						["totalhits"] = 373,
+						["min"] = 103,
+						["criticalmax"] = 4014,
+						["hitmax"] = 1967,
+						["hit"] = 286,
 						["school"] = 4,
-						["min"] = 6238,
-						["criticalmax"] = 13138,
-						["hitmax"] = 6439,
-						["hit"] = 19,
-						["totalhits"] = 25,
-						["critical"] = 6,
-						["criticalmin"] = 12726,
-						["hitamount"] = 118933,
+						["critical"] = 84,
+						["criticalmin"] = 103,
+						["hitamount"] = 232189,
 					},
 					["Barbed Shot"] = {
 						["hitmin"] = 2919,
@@ -6522,17 +6610,22 @@ SkadaPerCharDB = {
 						["ABSORB"] = 4,
 						["hitamount"] = 953636,
 					},
-					["Master Mathias Shaw: Deadly Poison"] = {
-						["hitmin"] = 6036,
-						["id"] = 289078,
-						["min"] = 6036,
-						["damage"] = 18468,
-						["hitmax"] = 6216,
-						["hit"] = 3,
-						["school"] = 8,
-						["totalhits"] = 3,
-						["max"] = 6216,
-						["hitamount"] = 18468,
+					["Fathom Fall"] = {
+						["damage"] = 317243,
+						["hitmin"] = 648,
+						["criticalamount"] = 119787,
+						["id"] = 276199,
+						["max"] = 9567,
+						["ABSORB"] = 2,
+						["totalhits"] = 106,
+						["min"] = 648,
+						["criticalmax"] = 9567,
+						["critical"] = 25,
+						["hit"] = 79,
+						["school"] = 1,
+						["hitmax"] = 8437,
+						["criticalmin"] = 1323,
+						["hitamount"] = 197456,
 					},
 					["Firestorm"] = {
 						["hitmin"] = 28257,
@@ -6661,22 +6754,17 @@ SkadaPerCharDB = {
 						["criticalmin"] = 30787,
 						["hitamount"] = 490534,
 					},
-					["Fathom Fall"] = {
-						["damage"] = 317243,
-						["hitmin"] = 648,
-						["criticalamount"] = 119787,
-						["id"] = 276199,
-						["max"] = 9567,
-						["ABSORB"] = 2,
-						["totalhits"] = 106,
-						["min"] = 648,
-						["criticalmax"] = 9567,
-						["critical"] = 25,
-						["hit"] = 79,
-						["school"] = 1,
-						["hitmax"] = 8437,
-						["criticalmin"] = 1323,
-						["hitamount"] = 197456,
+					["Master Mathias Shaw: Deadly Poison"] = {
+						["hitmin"] = 6036,
+						["id"] = 289078,
+						["min"] = 6036,
+						["damage"] = 18468,
+						["hitmax"] = 6216,
+						["hit"] = 3,
+						["school"] = 8,
+						["totalhits"] = 3,
+						["max"] = 6216,
+						["hitamount"] = 18468,
 					},
 					["Master Mathias Shaw: Backstab"] = {
 						["hitmin"] = 24001,
@@ -6690,22 +6778,21 @@ SkadaPerCharDB = {
 						["max"] = 35561,
 						["hitamount"] = 152151,
 					},
-					["Volcanic Pressure"] = {
-						["damage"] = 366220,
-						["hitmin"] = 104,
-						["criticalamount"] = 134031,
-						["id"] = 300832,
-						["max"] = 4014,
-						["ABSORB"] = 3,
-						["totalhits"] = 373,
-						["min"] = 103,
-						["criticalmax"] = 4014,
-						["hitmax"] = 1967,
-						["hit"] = 286,
+					["Volcanic Eruption"] = {
+						["hitmin"] = 6238,
+						["criticalamount"] = 76772,
+						["id"] = 300907,
+						["damage"] = 195705,
+						["max"] = 13138,
 						["school"] = 4,
-						["critical"] = 84,
-						["criticalmin"] = 103,
-						["hitamount"] = 232189,
+						["min"] = 6238,
+						["criticalmax"] = 13138,
+						["hitmax"] = 6439,
+						["hit"] = 19,
+						["totalhits"] = 25,
+						["critical"] = 6,
+						["criticalmin"] = 12726,
+						["hitamount"] = 118933,
 					},
 					["Spiteful Binding"] = {
 						["damage"] = 291770,
@@ -6737,12 +6824,149 @@ SkadaPerCharDB = {
 						["hitamount"] = 121942,
 					},
 				},
-				["name"] = "Bracnar",
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 22512,
+						["spellid"] = 90361,
+						["srcname"] = "Bracnar",
+						["hp"] = 141565,
+						["ts"] = 1571191491.974,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 11672,
+						["spellid"] = 298318,
+						["srcname"] = "Bracnar",
+						["hp"] = 153237,
+						["ts"] = 1571191492.214,
+					}, -- [2]
+					{
+						["ts"] = 1571191493.984,
+						["amount"] = 15008,
+						["srcname"] = "Bracnar",
+						["spellid"] = 90361,
+						["hp"] = 168245,
+						["absorb"] = 0,
+					}, -- [3]
+					{
+						["ts"] = 1571191495.98,
+						["amount"] = 15008,
+						["srcname"] = "Bracnar",
+						["spellid"] = 90361,
+						["hp"] = 183253,
+						["absorb"] = 0,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 15008,
+						["srcname"] = "Bracnar",
+						["spellid"] = 90361,
+						["hp"] = 198261,
+						["ts"] = 1571191497.982,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 15008,
+						["spellid"] = 90361,
+						["srcname"] = "Bracnar",
+						["hp"] = 213260,
+						["ts"] = 1571191499.98,
+					}, -- [6]
+					{
+						["ts"] = 1571191501.138,
+						["amount"] = -12593,
+						["spellid"] = 304335,
+						["hp"] = 200667,
+						["srcname"] = "Magister Hathorel",
+					}, -- [7]
+					{
+						["ts"] = 1571191468.173,
+						["amount"] = -11584,
+						["srcname"] = "Magister Hathorel",
+						["hp"] = 249448,
+						["spellid"] = 79854,
+					}, -- [8]
+					{
+						["ts"] = 1571191481.859,
+						["amount"] = -2973,
+						["srcname"] = "Bracnar",
+						["hp"] = 246470,
+						["spellid"] = 295178,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 13711,
+						["srcname"] = "Bracnar",
+						["spellid"] = 270117,
+						["hp"] = 260181,
+						["ts"] = 1571191481.871,
+					}, -- [10]
+					{
+						["ts"] = 1571191485.312,
+						["amount"] = -12594,
+						["srcname"] = "Magister Hathorel",
+						["hp"] = 247578,
+						["spellid"] = 304335,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 11673,
+						["spellid"] = 298318,
+						["srcname"] = "Bracnar",
+						["hp"] = 259251,
+						["ts"] = 1571191486.829,
+					}, -- [12]
+					{
+						["ts"] = 1571191487.312,
+						["amount"] = -12593,
+						["srcname"] = "Magister Hathorel",
+						["hp"] = 246658,
+						["spellid"] = 304335,
+					}, -- [13]
+					{
+						["ts"] = 1571191491.805,
+						["amount"] = -134326,
+						["srcname"] = "Magister Hathorel",
+						["hp"] = 112332,
+						["spellid"] = 304348,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 6721,
+						["spellid"] = 270117,
+						["srcname"] = "Bracnar",
+						["hp"] = 119053,
+						["ts"] = 1571191491.821,
+					}, -- [15]
+					["pos"] = 8,
+				},
 				["damagetaken"] = 1428494,
 				["shielding"] = 0,
 				["id"] = "Player-1169-06A1ACBD",
-				["maxhp"] = 269502,
-				["overhealing"] = 2948441.4921875,
+				["maxhp"] = 269889,
+				["healed"] = {
+					["Player-1169-06A1ACBD"] = {
+						["role"] = "NONE",
+						["name"] = "Bracnar",
+						["amount"] = 1365075,
+						["class"] = "HUNTER",
+						["shielding"] = 0,
+					},
+					["Pet-0-3021-0-67-1201-0101EE0460"] = {
+						["shielding"] = 0,
+						["role"] = "NONE",
+						["name"] = "Malicor",
+						["amount"] = 9973,
+					},
+					["Pet-0-3021-0-67-151145-0102A80CF7"] = {
+						["role"] = "NONE",
+						["name"] = "Hati",
+						["amount"] = 1067062,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+				},
 				["damagetakenspells"] = {
 					["Fireball"] = {
 						["crushing"] = 0,
@@ -7000,235 +7224,13 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
-				["healed"] = {
-					["Player-1169-06A1ACBD"] = {
-						["role"] = "NONE",
-						["name"] = "Bracnar",
-						["amount"] = 1365075,
-						["class"] = "HUNTER",
-						["shielding"] = 0,
-					},
-					["Pet-0-3021-0-67-1201-0101EE0460"] = {
-						["shielding"] = 0,
-						["role"] = "NONE",
-						["name"] = "Malicor",
-						["amount"] = 9973,
-					},
-					["Pet-0-3021-0-67-151145-0102A80CF7"] = {
-						["role"] = "NONE",
-						["name"] = "Hati",
-						["amount"] = 1067062,
-						["class"] = "WARRIOR",
-						["shielding"] = 0,
-					},
-				},
 				["healing"] = 2442110,
+				["first"] = 1571280432,
 				["ffdamagedonetargets"] = {
 				},
-				["alertCount"] = 17,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 22512,
-						["spellid"] = 90361,
-						["srcname"] = "Bracnar",
-						["hp"] = 141565,
-						["ts"] = 1571191491.974,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 11672,
-						["spellid"] = 298318,
-						["srcname"] = "Bracnar",
-						["hp"] = 153237,
-						["ts"] = 1571191492.214,
-					}, -- [2]
-					{
-						["ts"] = 1571191493.984,
-						["amount"] = 15008,
-						["srcname"] = "Bracnar",
-						["spellid"] = 90361,
-						["hp"] = 168245,
-						["absorb"] = 0,
-					}, -- [3]
-					{
-						["ts"] = 1571191495.98,
-						["amount"] = 15008,
-						["srcname"] = "Bracnar",
-						["spellid"] = 90361,
-						["hp"] = 183253,
-						["absorb"] = 0,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 15008,
-						["srcname"] = "Bracnar",
-						["spellid"] = 90361,
-						["hp"] = 198261,
-						["ts"] = 1571191497.982,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 15008,
-						["spellid"] = 90361,
-						["srcname"] = "Bracnar",
-						["hp"] = 213260,
-						["ts"] = 1571191499.98,
-					}, -- [6]
-					{
-						["ts"] = 1571191501.138,
-						["amount"] = -12593,
-						["hp"] = 200667,
-						["srcname"] = "Magister Hathorel",
-						["spellid"] = 304335,
-					}, -- [7]
-					{
-						["ts"] = 1571191468.173,
-						["amount"] = -11584,
-						["hp"] = 249448,
-						["spellid"] = 79854,
-						["srcname"] = "Magister Hathorel",
-					}, -- [8]
-					{
-						["ts"] = 1571191481.859,
-						["amount"] = -2973,
-						["hp"] = 246470,
-						["spellid"] = 295178,
-						["srcname"] = "Bracnar",
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 13711,
-						["srcname"] = "Bracnar",
-						["spellid"] = 270117,
-						["hp"] = 260181,
-						["ts"] = 1571191481.871,
-					}, -- [10]
-					{
-						["ts"] = 1571191485.312,
-						["amount"] = -12594,
-						["hp"] = 247578,
-						["spellid"] = 304335,
-						["srcname"] = "Magister Hathorel",
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 11673,
-						["spellid"] = 298318,
-						["srcname"] = "Bracnar",
-						["hp"] = 259251,
-						["ts"] = 1571191486.829,
-					}, -- [12]
-					{
-						["ts"] = 1571191487.312,
-						["amount"] = -12593,
-						["hp"] = 246658,
-						["spellid"] = 304335,
-						["srcname"] = "Magister Hathorel",
-					}, -- [13]
-					{
-						["ts"] = 1571191491.805,
-						["amount"] = -134326,
-						["hp"] = 112332,
-						["spellid"] = 304348,
-						["srcname"] = "Magister Hathorel",
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 6721,
-						["spellid"] = 270117,
-						["srcname"] = "Bracnar",
-						["hp"] = 119053,
-						["ts"] = 1571191491.821,
-					}, -- [15]
-					["pos"] = 8,
-				},
-				["healingspells"] = {
-					["Undulating Tides"] = {
-						["shielding"] = 0,
-						["id"] = 303390,
-						["healing"] = 0,
-						["min"] = 0,
-						["name"] = "Undulating Tides",
-						["hits"] = 2,
-						["overhealing"] = 87851.4921875,
-						["max"] = 0,
-						["critical"] = 0,
-						["absorbed"] = 0,
-					},
-					["Vampiric Speed"] = {
-						["shielding"] = 0,
-						["id"] = 269238,
-						["healing"] = 463794,
-						["min"] = 0,
-						["name"] = "Vampiric Speed",
-						["hits"] = 92,
-						["overhealing"] = 1766860,
-						["max"] = 26126,
-						["critical"] = 24,
-						["absorbed"] = 0,
-					},
-					["Impassive Visage"] = {
-						["shielding"] = 0,
-						["id"] = 270117,
-						["healing"] = 388115,
-						["min"] = 621,
-						["name"] = "Impassive Visage",
-						["hits"] = 68,
-						["overhealing"] = 162411,
-						["max"] = 14153,
-						["critical"] = 13,
-						["absorbed"] = 0,
-					},
-					["Ancient Flame"] = {
-						["shielding"] = 0,
-						["id"] = 303380,
-						["healing"] = 24415,
-						["min"] = 0,
-						["name"] = "Ancient Flame",
-						["hits"] = 40,
-						["overhealing"] = 127917,
-						["max"] = 4894,
-						["critical"] = 15,
-						["absorbed"] = 0,
-					},
-					["Hati: Spirit Mend"] = {
-						["shielding"] = 0,
-						["id"] = 90361,
-						["healing"] = 1019246,
-						["min"] = 0,
-						["name"] = "Hati: Spirit Mend",
-						["hits"] = 59,
-						["overhealing"] = 43083,
-						["max"] = 51843,
-						["critical"] = 3,
-						["absorbed"] = 0,
-					},
-					["Lucid Dreams"] = {
-						["shielding"] = 0,
-						["id"] = 298318,
-						["healing"] = 300040,
-						["min"] = 0,
-						["name"] = "Lucid Dreams",
-						["hits"] = 57,
-						["overhealing"] = 528058,
-						["max"] = 24581,
-						["critical"] = 13,
-						["absorbed"] = 0,
-					},
-					["Exhilaration"] = {
-						["shielding"] = 0,
-						["id"] = 109304,
-						["healing"] = 246500,
-						["min"] = 9973,
-						["name"] = "Exhilaration",
-						["hits"] = 3,
-						["overhealing"] = 232261,
-						["max"] = 197895,
-						["critical"] = 0,
-						["absorbed"] = 0,
-					},
-				},
+				["alertCount"] = 18,
+				["overhealing"] = 2948441.4921875,
+				["ccbreaks"] = 0,
 				["alert"] = {
 					["High"] = {
 						["alertCount"] = 11,
@@ -7262,7 +7264,7 @@ SkadaPerCharDB = {
 						["alertDamage"] = 37780,
 					},
 					["Fail"] = {
-						["alertCount"] = 6,
+						["alertCount"] = 7,
 						["spell"] = {
 							["Annihilation"] = {
 								["min"] = 134326,
@@ -7271,6 +7273,14 @@ SkadaPerCharDB = {
 								["alertID"] = "Fail",
 								["max"] = 134326,
 								["alertDamage"] = 134326,
+							},
+							["Wide Swipe"] = {
+								["min"] = 76335,
+								["alertCount"] = 1,
+								["id"] = 244787,
+								["alertID"] = "Fail",
+								["max"] = 76335,
+								["alertDamage"] = 76335,
 							},
 							["Firestorm"] = {
 								["min"] = 27154,
@@ -7282,7 +7292,7 @@ SkadaPerCharDB = {
 							},
 						},
 						["name"] = "Fail",
-						["alertDamage"] = 312455,
+						["alertDamage"] = 388790,
 					},
 				},
 				["ffdamagedonespells"] = {
@@ -7295,8 +7305,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ffdamagedone"] = 0,
-				["ccbreaks"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["healingspells"] = {
@@ -7333,7 +7343,8 @@ SkadaPerCharDB = {
 				},
 				["healing"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["deathlog"] = {
+				},
 				["id"] = "Pet-0-3021-0-67-1201-0101EE0460",
 				["maxhp"] = 0,
 				["name"] = "Malicor",
@@ -7345,13 +7356,12 @@ SkadaPerCharDB = {
 				["ffdamagedonetargets"] = {
 				},
 				["alertCount"] = 0,
-				["deathlog"] = {
-				},
 				["power"] = {
 				},
+				["shielding"] = 0,
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ccbreaks"] = 0,
 			}, -- [2]
 			{
 				["healingabsorbed"] = 0,
@@ -7360,8 +7370,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ffdamagedone"] = 0,
-				["ccbreaks"] = 0,
 				["time"] = 56,
 				["interrupts"] = 0,
 				["healingspells"] = {
@@ -7382,7 +7392,8 @@ SkadaPerCharDB = {
 				},
 				["healing"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["deathlog"] = {
+				},
 				["id"] = "Creature-0-3018-2210-8068-153466-00002676B6",
 				["maxhp"] = 0,
 				["name"] = "Master Mathias Shaw",
@@ -7394,13 +7405,12 @@ SkadaPerCharDB = {
 				["ffdamagedonetargets"] = {
 				},
 				["alertCount"] = 0,
-				["deathlog"] = {
-				},
 				["power"] = {
 				},
+				["shielding"] = 0,
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ccbreaks"] = 0,
 			}, -- [3]
 			{
 				["healingabsorbed"] = 0,
@@ -7409,8 +7419,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ffdamagedone"] = 0,
-				["ccbreaks"] = 0,
 				["time"] = 24,
 				["interrupts"] = 0,
 				["healingspells"] = {
@@ -7431,7 +7441,8 @@ SkadaPerCharDB = {
 				},
 				["healing"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["deathlog"] = {
+				},
 				["id"] = "Creature-0-3018-2210-8068-153461-00002676B6",
 				["maxhp"] = 0,
 				["name"] = "Lady Jaina Proudmoore",
@@ -7443,13 +7454,12 @@ SkadaPerCharDB = {
 				["ffdamagedonetargets"] = {
 				},
 				["alertCount"] = 0,
-				["deathlog"] = {
-				},
 				["power"] = {
 				},
+				["shielding"] = 0,
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ccbreaks"] = 0,
 			}, -- [4]
 		},
 		["deaths"] = 0,
@@ -7879,13 +7889,13 @@ SkadaPerCharDB = {
 		["overhealing"] = 2948441.4921875,
 		["healing"] = 2442110,
 		["dispells"] = 0,
-		["alertDamage"] = 350235,
+		["alertDamage"] = 426570,
 		["starttime"] = 1571190426,
 		["power"] = {
 			[2] = 3582,
 		},
 		["name"] = "Total",
-		["alertCount"] = 17,
+		["alertCount"] = 18,
 		["damagetaken"] = 1428494,
 		["mobhdone"] = 0,
 		["last_action"] = 1571190426,
