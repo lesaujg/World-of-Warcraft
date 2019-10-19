@@ -26,23 +26,15 @@ SmexyMatsDB = {
 		["Sisters of Elune"] = {
 			["Alliance"] = {
 				["Cooking"] = {
-					["Bracnar"] = {
-					},
 				},
 				["Archaeology"] = {
-					["Bracnar"] = {
-					},
 				},
 				["Fishing"] = {
-					["Bracnar"] = {
-					},
 				},
 				["Engineering"] = {
-					["Bracnar"] = {
-					},
 				},
 				["Enchanting"] = {
-					["Bracnar"] = {
+					["Clothgar"] = {
 					},
 				},
 			},
