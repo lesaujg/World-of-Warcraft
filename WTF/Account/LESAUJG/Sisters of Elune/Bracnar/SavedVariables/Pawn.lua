@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0309,
-	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
-	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 158049,
@@ -86,7 +83,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163881:5963:::::::120:253::28:3:5125:1587:4786:::|h[7th Legionnaire's Longbow]|h|r",
 		}, -- [16]
 	},
-	["LastKeybindingsSet"] = 1,
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -123,6 +122,7 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",
