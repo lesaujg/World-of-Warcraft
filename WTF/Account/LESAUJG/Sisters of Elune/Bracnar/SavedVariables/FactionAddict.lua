@@ -27,113 +27,117 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Tuesday 10/22",
-		["rows"] = 4,
+		["date"] = "Thursday 10/24",
+		["rows"] = 2,
 	}, -- [1]
 	{
-		["date"] = "Sunday 10/20",
+		["date"] = "Tuesday 10/22",
 		["rows"] = 4,
 	}, -- [2]
 	{
+		["date"] = "Sunday 10/20",
+		["rows"] = 4,
+	}, -- [3]
+	{
 		["date"] = "Friday 10/18",
 		["rows"] = 3,
-	}, -- [3]
+	}, -- [4]
 	{
 		["date"] = "Thursday 10/17",
 		["rows"] = 4,
-	}, -- [4]
+	}, -- [5]
 	{
 		["date"] = "Wednesday 10/16",
 		["rows"] = 1,
-	}, -- [5]
+	}, -- [6]
 	{
 		["date"] = "Tuesday 10/15",
 		["rows"] = 6,
-	}, -- [6]
+	}, -- [7]
 	{
 		["date"] = "Monday 10/14",
 		["rows"] = 5,
-	}, -- [7]
+	}, -- [8]
 	{
 		["date"] = "Sunday 10/13",
 		["rows"] = 4,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Saturday 10/12",
 		["rows"] = 5,
-	}, -- [9]
+	}, -- [10]
 	{
 		["date"] = "Friday 10/11",
 		["rows"] = 1,
-	}, -- [10]
+	}, -- [11]
 	{
 		["date"] = "Thursday 10/10",
 		["rows"] = 1,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Wednesday 10/9",
 		["rows"] = 7,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Tuesday 10/8",
 		["rows"] = 2,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Monday 10/7",
 		["rows"] = 3,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Wednesday 7/3",
 		["rows"] = 6,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Sunday 6/30",
 		["rows"] = 2,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Monday 6/24",
 		["rows"] = 1,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Thursday 6/20",
 		["rows"] = 2,
-	}, -- [18]
-	{
-		["date"] = "Tuesday 6/18",
-		["rows"] = 1,
 	}, -- [19]
 	{
-		["date"] = "Sunday 6/16",
+		["date"] = "Tuesday 6/18",
 		["rows"] = 1,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
 	{
+		["Waveblade Ankoan"] = 150,
+		["Rustbolt Resistance"] = 1700,
+	}, -- [1]
+	{
 		["Waveblade Ankoan"] = 75,
 		["Order of Embers"] = 1800,
 		["7th Legion"] = 1975,
 		["Champions of Azeroth"] = 2000,
-	}, -- [1]
+	}, -- [2]
 	{
 		["Waveblade Ankoan"] = 1600,
 		["Proudmoore Admiralty"] = 2300,
 		["7th Legion"] = 950,
 		["Rustbolt Resistance"] = 1720,
-	}, -- [2]
+	}, -- [3]
 	{
 		["Waveblade Ankoan"] = 2900,
 		["Rustbolt Resistance"] = 110,
 		["7th Legion"] = 150,
-	}, -- [3]
+	}, -- [4]
 	{
 		["Waveblade Ankoan"] = 175,
 		["Rustbolt Resistance"] = 2540,
 		["7th Legion"] = 3400,
 		["Storm's Wake"] = 1900,
-	}, -- [4]
+	}, -- [5]
 	{
 		["Rustbolt Resistance"] = 1760,
-	}, -- [5]
+	}, -- [6]
 	{
 		["Rustbolt Resistance"] = 3640,
 		["Champions of Azeroth"] = 1000,
@@ -141,33 +145,33 @@ FactionAddictLogEntries = {
 		["Order of Embers"] = 1900,
 		["Proudmoore Admiralty"] = 975,
 		["7th Legion"] = 1050,
-	}, -- [6]
+	}, -- [7]
 	{
 		["Champions of Azeroth"] = 2000,
 		["Waveblade Ankoan"] = 300,
 		["Proudmoore Admiralty"] = 500,
 		["7th Legion"] = 250,
 		["Rustbolt Resistance"] = 1580,
-	}, -- [7]
+	}, -- [8]
 	{
 		["Waveblade Ankoan"] = 1350,
 		["Proudmoore Admiralty"] = 1800,
 		["Rustbolt Resistance"] = 150,
 		["Tortollan Seekers"] = 350,
-	}, -- [8]
+	}, -- [9]
 	{
 		["Storm's Wake"] = 2125,
 		["Waveblade Ankoan"] = 150,
 		["Rustbolt Resistance"] = 1750,
 		["Tortollan Seekers"] = 2025,
 		["7th Legion"] = 75,
-	}, -- [9]
-	{
-		["Rustbolt Resistance"] = 75,
 	}, -- [10]
 	{
-		["Waveblade Ankoan"] = 1675,
+		["Rustbolt Resistance"] = 75,
 	}, -- [11]
+	{
+		["Waveblade Ankoan"] = 1675,
+	}, -- [12]
 	{
 		["Rustbolt Resistance"] = 3900,
 		["Storm's Wake"] = 225,
@@ -176,16 +180,16 @@ FactionAddictLogEntries = {
 		["Tortollan Seekers"] = 175,
 		["Darkmoon Faire"] = 2000,
 		["7th Legion"] = 1950,
-	}, -- [12]
+	}, -- [13]
 	{
 		["Order of Embers"] = 75,
 		["Champions of Azeroth"] = 325,
-	}, -- [13]
+	}, -- [14]
 	{
 		["Waveblade Ankoan"] = 4875,
 		["Champions of Azeroth"] = 25,
 		["Tortollan Seekers"] = 225,
-	}, -- [14]
+	}, -- [15]
 	{
 		["Champions of Azeroth"] = 2000,
 		["Tortollan Seekers"] = 2275,
@@ -193,20 +197,17 @@ FactionAddictLogEntries = {
 		["Order of Embers"] = 75,
 		["Proudmoore Admiralty"] = 1725,
 		["7th Legion"] = 225,
-	}, -- [15]
+	}, -- [16]
 	{
 		["Order of Embers"] = 200,
 		["7th Legion"] = 200,
-	}, -- [16]
+	}, -- [17]
 	{
 		["7th Legion"] = 150,
-	}, -- [17]
+	}, -- [18]
 	{
 		["Proudmoore Admiralty"] = 650,
 		["Storm's Wake"] = 200,
-	}, -- [18]
-	{
-		["7th Legion"] = 75,
 	}, -- [19]
 	{
 		["7th Legion"] = 75,
