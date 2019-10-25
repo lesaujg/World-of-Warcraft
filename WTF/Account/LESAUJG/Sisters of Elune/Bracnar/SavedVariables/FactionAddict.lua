@@ -28,7 +28,7 @@ FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
 		["date"] = "Thursday 10/24",
-		["rows"] = 2,
+		["rows"] = 8,
 	}, -- [1]
 	{
 		["date"] = "Tuesday 10/22",
@@ -109,8 +109,14 @@ FactionAddictLogData = {
 }
 FactionAddictLogEntries = {
 	{
-		["Waveblade Ankoan"] = 150,
-		["Rustbolt Resistance"] = 1700,
+		["The Nightfallen"] = 750,
+		["7th Legion"] = 1125,
+		["Honeyback Hive"] = 4580,
+		["Storm's Wake"] = 325,
+		["The Wardens"] = 500,
+		["Proudmoore Admiralty"] = 800,
+		["Waveblade Ankoan"] = 2675,
+		["Rustbolt Resistance"] = 3225,
 	}, -- [1]
 	{
 		["Waveblade Ankoan"] = 75,

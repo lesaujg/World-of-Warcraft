@@ -78,9 +78,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:166668::168637::::::120:255::28:5:4803:4802:42:1587:4786:::|h[Battalion Veteran's Greatcloak]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 158084,
-			["Level"] = 415,
-			["Link"] = "|cffa335ee|Hitem:158084::::::::120:253::28:3:4803:1607:4786:::|h[Wavecaller Speargun]|h|r",
+			["ID"] = 163881,
+			["Level"] = 430,
+			["Link"] = "|cffa335ee|Hitem:163881::::::::120:253::23:3:5845:1622:4786:::|h[7th Legionnaire's Longbow]|h|r",
 		}, -- [16]
 	},
 	["AutoSelectScales"] = false,
