@@ -90,7 +90,7 @@ MasterPlan: disabled
 OPie: enabled
 RaidAchievement_WoDHeroics: enabled
 RaidAchievement_WoDRaids: enabled
-TradeSkillMaster: disabled
+TradeSkillMaster: enabled
 TradeSkillMaster_Accounting: disabled
 TradeSkillMaster_Additions: enabled
 TradeSkillMaster_AuctionDB: disabled
@@ -143,7 +143,7 @@ HandyNotes: enabled
 MacroToolkit: disabled
 MasterPlanA: disabled
 Pawn: enabled
-TradeSkillMaster_AppHelper: disabled
+TradeSkillMaster_AppHelper: enabled
 TradeSkillMaster_CoolDowns: disabled
 TradeSkillMaster_Destroying: disabled
 DBM-GarrisonInvasions: enabled
