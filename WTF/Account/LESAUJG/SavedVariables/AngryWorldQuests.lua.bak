@@ -1,7 +1,6 @@
 
 AngryWorldQuests_Config = {
 	["__version"] = 20,
-	["collapsed"] = true,
 	["__filters"] = 22,
 	["disabledFilters"] = 2080080,
 	["showContinentPOI"] = true,
