@@ -29,9 +29,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:170369::::::::120:253:::4:6300:6293:1507:4786:::|h[Vim's Scalecrusher Chain]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 157986,
-			["Level"] = 410,
-			["Link"] = "|cffa335ee|Hitem:157986::::::::120:255::28:3:4803:1602:4786:::|h[Crosswind Legguards]|h|r",
+			["ID"] = 158018,
+			["Level"] = 415,
+			["Link"] = "|cffa335ee|Hitem:158018::::::::120:254::28:3:4803:1607:4786:::|h[Ashenwood Legguards]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 170373,
