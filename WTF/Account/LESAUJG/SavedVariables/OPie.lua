@@ -143,9 +143,9 @@ OneRing_Config = {
 					140192, -- [2]
 					["sliceToken"] = "ABuefdBjkPe",
 				}, -- [9]
-				["name"] = "Teleport",
-				["save"] = true,
 				["limit"] = "Bracnar-SistersofElune",
+				["save"] = true,
+				["name"] = "Teleport",
 			},
 			["Vendor"] = {
 				{
@@ -168,9 +168,9 @@ OneRing_Config = {
 					49040, -- [2]
 					["sliceToken"] = "ABue3IpvlVi",
 				}, -- [4]
-				["limit"] = "Bracnar-SistersofElune",
-				["save"] = true,
 				["name"] = "Vendor",
+				["save"] = true,
+				["limit"] = "Bracnar-SistersofElune",
 			},
 			["OPieFlagStore"] = {
 				["StoreVersion"] = 2,
