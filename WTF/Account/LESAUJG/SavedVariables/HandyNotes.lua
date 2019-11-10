@@ -13,6 +13,7 @@ HandyNotesDB = {
 		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
 		["Herbinator - Sisters of Elune"] = "Herbinator - Sisters of Elune",
 		["Mandelbrot - Sisters of Elune"] = "Mandelbrot - Sisters of Elune",
+		["Toberd - Sisters of Elune"] = "Toberd - Sisters of Elune",
 		["Tauro - Sisters of Elune"] = "Tauro - Sisters of Elune",
 		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
 		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
@@ -43,6 +44,8 @@ HandyNotesDB = {
 		["Herbinator - Sisters of Elune"] = {
 		},
 		["Mandelbrot - Sisters of Elune"] = {
+		},
+		["Toberd - Sisters of Elune"] = {
 		},
 		["Tauro - Sisters of Elune"] = {
 		},
@@ -70,6 +73,7 @@ HandyNotes_HandyNotesDB = {
 		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
 		["Herbinator - Sisters of Elune"] = "Herbinator - Sisters of Elune",
 		["Mandelbrot - Sisters of Elune"] = "Mandelbrot - Sisters of Elune",
+		["Toberd - Sisters of Elune"] = "Toberd - Sisters of Elune",
 		["Tauro - Sisters of Elune"] = "Tauro - Sisters of Elune",
 		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
 		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
@@ -100,6 +104,8 @@ HandyNotes_HandyNotesDB = {
 		["Herbinator - Sisters of Elune"] = {
 		},
 		["Mandelbrot - Sisters of Elune"] = {
+		},
+		["Toberd - Sisters of Elune"] = {
 		},
 		["Tauro - Sisters of Elune"] = {
 		},
