@@ -40,6 +40,8 @@ SmexyMatsDB = {
 				["Engineering"] = {
 				},
 				["Enchanting"] = {
+					["Clothgar"] = {
+					},
 				},
 			},
 			["Neutral"] = {
