@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2364, "DBM-Nyalotha", nil, 1180)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20191110003914")
+mod:SetRevision("20191112032458")
 mod:SetCreatureID(156866)
 mod:SetEncounterID(2331)
 mod:SetZone()
@@ -449,6 +449,8 @@ function mod:SPELL_AURA_APPLIED(args)
 	elseif spellId == 309852 then--Ruin
 		warnPhase2:Show()
 		warnPhase2:Play("ptwo")
+		timerCallEssenceCD:Stop()
+		timerNullifyingStrikeCD:Stop()
 		timerChargedBondsCD:Start(10.6)
 		timerVoidEruptionCD:Start(14.5)
 		timerDecayingStrikeCD:Start(17)
@@ -460,8 +462,10 @@ function mod:SPELL_AURA_APPLIED(args)
 			warnChargedBondsTargets()
 			if ChargedBondsTargets[1] == UnitName("player") then
 				specWarnChargedBonds:Show(ChargedBondsTargets[2])
+				specWarnChargedBonds:Play("linegather")
 			elseif ChargedBondsTargets[2] == UnitName("player") then
 				specWarnChargedBonds:Show(ChargedBondsTargets[1])
+				specWarnChargedBonds:Play("linegather")
 			end
 		else
 			self:Schedule(0.3, warnChargedBondsTargets)

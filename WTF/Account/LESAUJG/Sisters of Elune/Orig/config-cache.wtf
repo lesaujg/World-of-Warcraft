@@ -1,7 +1,7 @@
 SET autoLootDefault "1"
 SET minimapInsideZoom "1"
 SET autoQuestPopUps "v##$"
-SET trackedQuests "v(Mi(jt)2t'\|(C='j8(I='c9'r&(CC(Ie"
+SET trackedQuests "v'\|'c9'j8'r&(C=(CC(I=(Ie(Mi(jt)2t"
 SET hardTrackedQuests "v"
 SET trackedWorldQuests "v"
 SET hardTrackedWorldQuests "v"

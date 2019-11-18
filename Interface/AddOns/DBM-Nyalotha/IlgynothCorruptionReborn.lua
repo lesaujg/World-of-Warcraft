@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2374, "DBM-Nyalotha", nil, 1180)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20191110003914")
+mod:SetRevision("20191111030008")
 mod:SetCreatureID(158328)
 mod:SetEncounterID(2345)
 mod:SetZone()
@@ -435,6 +435,7 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, spellId)
 	if spellId == 310965 and self:AntiSpam(3, 1) then--Energy Regen (Organ phase begin)
 		self.vb.organPhase = true
 		--self.vb.phase = self.vb.phase + 0.5
+		timerCorruptorsGazeCD:Stop()
 		timerTouchoftheCorruptorCD:Stop()
 		timerEyeofNZothCD:Stop()
 		if not self:IsMythic() then
