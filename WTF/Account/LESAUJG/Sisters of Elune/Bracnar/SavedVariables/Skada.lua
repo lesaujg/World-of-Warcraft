@@ -451,12 +451,12 @@ SkadaPerCharDB = {
 							["spells"] = {
 								[208232] = 12.5,
 								[278941] = 5,
-								[15407] = 19.24000012874603,
-								[205448] = 40,
+								[205385] = 40,
+								[34914] = 18,
 								[205351] = 30,
 								[589] = 12,
-								[34914] = 18,
-								[205385] = 40,
+								[205448] = 40,
+								[15407] = 19.24000012874603,
 							},
 						},
 					},
@@ -1039,9 +1039,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1573609721.19603,
 									["amount"] = -11366,
+									["srcname"] = "Azurethos",
 									["hp"] = 45497,
 									["spellid"] = 274840,
-									["srcname"] = "Azurethos",
 								}, -- [3]
 								{
 									["absorb"] = 0,
@@ -1054,9 +1054,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1573609723.41805,
 									["amount"] = -11367,
+									["srcname"] = "Azurethos",
 									["hp"] = 47865,
 									["spellid"] = 274840,
-									["srcname"] = "Azurethos",
 								}, -- [5]
 								{
 									["spellname"] = "Falling",
@@ -1890,9 +1890,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1573609720.65609,
 									["amount"] = -7624,
+									["srcname"] = "Azurethos",
 									["hp"] = 140601,
 									["spellid"] = 274840,
-									["srcname"] = "Azurethos",
 								}, -- [9]
 								{
 									["absorb"] = 0,
@@ -2393,6 +2393,14 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 22,
 						},
+						["Swirling Sands"] = {
+							["name"] = "Swirling Sands",
+							["active"] = 0,
+							["school"] = 1,
+							["id"] = 280433,
+							["auratype"] = "BUFF",
+							["uptime"] = 18,
+						},
 						["Razor Coral"] = {
 							["name"] = "Razor Coral",
 							["active"] = 0,
@@ -2400,14 +2408,6 @@ SkadaPerCharDB = {
 							["id"] = 303570,
 							["auratype"] = "BUFF",
 							["uptime"] = 0,
-						},
-						["Thirsting Blades"] = {
-							["name"] = "Thirsting Blades",
-							["active"] = 0,
-							["school"] = 1,
-							["id"] = 278736,
-							["auratype"] = "BUFF",
-							["uptime"] = 36,
 						},
 						["Revolving Blades"] = {
 							["name"] = "Revolving Blades",
@@ -2449,13 +2449,13 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["uptime"] = 29,
 						},
-						["Swirling Sands"] = {
-							["name"] = "Swirling Sands",
+						["Thirsting Blades"] = {
+							["name"] = "Thirsting Blades",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 280433,
+							["id"] = 278736,
 							["auratype"] = "BUFF",
-							["uptime"] = 18,
+							["uptime"] = 36,
 						},
 						["Overwhelming Power"] = {
 							["name"] = "Overwhelming Power",
@@ -2954,18 +2954,6 @@ SkadaPerCharDB = {
 					},
 					["healingabsorbed"] = 0,
 					["healingspells"] = {
-						["Vampiric Speed"] = {
-							["shielding"] = 0,
-							["id"] = 269238,
-							["healing"] = 8086,
-							["min"] = 8086,
-							["name"] = "Vampiric Speed",
-							["absorbed"] = 0,
-							["critical"] = 0,
-							["max"] = 8086,
-							["overhealing"] = 0,
-							["hits"] = 1,
-						},
 						["Lucid Dreams"] = {
 							["shielding"] = 0,
 							["id"] = 298318,
@@ -2989,6 +2977,18 @@ SkadaPerCharDB = {
 							["max"] = 1457,
 							["overhealing"] = 2912,
 							["hits"] = 10,
+						},
+						["Vampiric Speed"] = {
+							["shielding"] = 0,
+							["id"] = 269238,
+							["healing"] = 8086,
+							["min"] = 8086,
+							["name"] = "Vampiric Speed",
+							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 8086,
+							["overhealing"] = 0,
+							["hits"] = 1,
 						},
 						["Leech"] = {
 							["shielding"] = 0,
@@ -3428,9 +3428,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1573609723.77201,
 									["amount"] = -8978,
+									["srcname"] = "Azurethos",
 									["hp"] = 58748,
 									["spellid"] = 274840,
-									["srcname"] = "Azurethos",
 								}, -- [1]
 								{
 									["absorb"] = 0,
@@ -3511,9 +3511,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1573609721.64512,
 									["amount"] = -11223,
+									["srcname"] = "Azurethos",
 									["hp"] = 58148,
 									["spellid"] = 274840,
-									["srcname"] = "Azurethos",
 								}, -- [12]
 								{
 									["absorb"] = 0,
@@ -9039,18 +9039,6 @@ SkadaPerCharDB = {
 							["max"] = 10263,
 							["damage"] = 23998,
 						},
-						["Ancient Flame"] = {
-							["hitmin"] = 5798,
-							["id"] = 295367,
-							["min"] = 5798,
-							["hitamount"] = 56495,
-							["hitmax"] = 8698,
-							["hit"] = 7,
-							["school"] = 4,
-							["max"] = 8698,
-							["totalhits"] = 7,
-							["damage"] = 56495,
-						},
 						["Bladestorm Off-Hand"] = {
 							["hitmin"] = 1893,
 							["id"] = 95738,
@@ -9078,6 +9066,18 @@ SkadaPerCharDB = {
 							["school"] = 1,
 							["max"] = 7641,
 							["damage"] = 22993,
+						},
+						["Ancient Flame"] = {
+							["hitmin"] = 5798,
+							["id"] = 295367,
+							["min"] = 5798,
+							["hitamount"] = 56495,
+							["hitmax"] = 8698,
+							["hit"] = 7,
+							["school"] = 4,
+							["max"] = 8698,
+							["totalhits"] = 7,
+							["damage"] = 56495,
 						},
 						["Raging Blow"] = {
 							["hitmin"] = 2425,
@@ -9388,10 +9388,10 @@ SkadaPerCharDB = {
 						[11] = {
 							["amount"] = 200,
 							["spells"] = {
-								[188070] = -40,
-								[187890] = 90,
-								[298332] = 10,
 								[190185] = 140,
+								[188070] = -40,
+								[298332] = 10,
+								[187890] = 90,
 							},
 						},
 					},
@@ -9567,18 +9567,6 @@ SkadaPerCharDB = {
 							["max"] = 2059,
 							["damage"] = 37051,
 						},
-						["Sundering"] = {
-							["hitmin"] = 24304,
-							["id"] = 197214,
-							["min"] = 24304,
-							["hitamount"] = 24304,
-							["hitmax"] = 24304,
-							["hit"] = 1,
-							["school"] = 5,
-							["max"] = 24304,
-							["totalhits"] = 1,
-							["damage"] = 24304,
-						},
 						["Stormstrike"] = {
 							["hitmin"] = 10571,
 							["criticalamount"] = 29966,
@@ -9610,6 +9598,18 @@ SkadaPerCharDB = {
 							["school"] = 4,
 							["max"] = 5061,
 							["damage"] = 37960,
+						},
+						["Sundering"] = {
+							["hitmin"] = 24304,
+							["id"] = 197214,
+							["min"] = 24304,
+							["hitamount"] = 24304,
+							["hitmax"] = 24304,
+							["hit"] = 1,
+							["school"] = 5,
+							["max"] = 24304,
+							["totalhits"] = 1,
+							["damage"] = 24304,
 						},
 						["Attack"] = {
 							["hitamount"] = 19158,
@@ -10535,23 +10535,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1573609725.25703,
 									["amount"] = -281,
+									["srcname"] = "Brewsleena-TheUnderbog",
 									["hp"] = 126103,
 									["spellid"] = 124255,
-									["srcname"] = "Brewsleena-TheUnderbog",
 								}, -- [3]
 								{
 									["ts"] = 1573609725.74904,
 									["amount"] = -281,
+									["srcname"] = "Brewsleena-TheUnderbog",
 									["hp"] = 125822,
 									["spellid"] = 124255,
-									["srcname"] = "Brewsleena-TheUnderbog",
 								}, -- [4]
 								{
 									["ts"] = 1573609726.23905,
 									["amount"] = -281,
+									["srcname"] = "Brewsleena-TheUnderbog",
 									["hp"] = 159610,
 									["spellid"] = 124255,
-									["srcname"] = "Brewsleena-TheUnderbog",
 								}, -- [5]
 								{
 									["absorb"] = 0,
@@ -10596,9 +10596,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1573609726.79411,
 									["amount"] = -256,
+									["srcname"] = "Brewsleena-TheUnderbog",
 									["hp"] = 182778,
 									["spellid"] = 124255,
-									["srcname"] = "Brewsleena-TheUnderbog",
 								}, -- [11]
 								{
 									["spellname"] = "Falling",
@@ -10623,9 +10623,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1573609724.50215,
 									["amount"] = -233,
+									["srcname"] = "Brewsleena-TheUnderbog",
 									["hp"] = 119721,
 									["spellid"] = 124255,
-									["srcname"] = "Brewsleena-TheUnderbog",
 								}, -- [15]
 								["pos"] = 14,
 							},
@@ -10831,6 +10831,34 @@ SkadaPerCharDB = {
 							["max"] = 5113,
 							["damage"] = 30682,
 						},
+						["Light's Decree"] = {
+							["hitmin"] = 9406,
+							["criticalamount"] = 22574,
+							["id"] = 286232,
+							["hitamount"] = 52673,
+							["criticalmin"] = 22574,
+							["critical"] = 1,
+							["min"] = 9406,
+							["criticalmax"] = 22574,
+							["hitmax"] = 11287,
+							["hit"] = 5,
+							["totalhits"] = 6,
+							["school"] = 2,
+							["max"] = 22574,
+							["damage"] = 75247,
+						},
+						["Execution Sentence"] = {
+							["criticalamount"] = 55824,
+							["id"] = 267798,
+							["min"] = 55824,
+							["criticalmax"] = 55824,
+							["critical"] = 1,
+							["criticalmin"] = 55824,
+							["school"] = 2,
+							["max"] = 55824,
+							["totalhits"] = 1,
+							["damage"] = 55824,
+						},
 						["Templar's Verdict"] = {
 							["hitmin"] = 18263,
 							["criticalamount"] = 146203,
@@ -10847,18 +10875,6 @@ SkadaPerCharDB = {
 							["max"] = 81224,
 							["damage"] = 279788,
 						},
-						["Execution Sentence"] = {
-							["criticalamount"] = 55824,
-							["id"] = 267798,
-							["min"] = 55824,
-							["criticalmax"] = 55824,
-							["critical"] = 1,
-							["criticalmin"] = 55824,
-							["school"] = 2,
-							["max"] = 55824,
-							["totalhits"] = 1,
-							["damage"] = 55824,
-						},
 						["Crusader Strike"] = {
 							["hitmin"] = 3861,
 							["criticalamount"] = 9268,
@@ -10874,22 +10890,6 @@ SkadaPerCharDB = {
 							["school"] = 1,
 							["max"] = 9268,
 							["damage"] = 26257,
-						},
-						["Light's Decree"] = {
-							["hitmin"] = 9406,
-							["criticalamount"] = 22574,
-							["id"] = 286232,
-							["hitamount"] = 52673,
-							["criticalmin"] = 22574,
-							["critical"] = 1,
-							["min"] = 9406,
-							["criticalmax"] = 22574,
-							["hitmax"] = 11287,
-							["hit"] = 5,
-							["totalhits"] = 6,
-							["school"] = 2,
-							["max"] = 22574,
-							["damage"] = 75247,
 						},
 						["Attack"] = {
 							["hitmin"] = 3952,
@@ -12629,8 +12629,8 @@ SkadaPerCharDB = {
 						["Azurethos"] = 11690,
 					},
 					["dispells"] = 0,
+					["role"] = "NONE",
 					["ccbreaks"] = 0,
-					["ffdamagedone"] = 0,
 					["time"] = 4,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -12696,7 +12696,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["role"] = "NONE",
+					["ffdamagedone"] = 0,
 				}, -- [29]
 				{
 					["last"] = 1573609728,
@@ -14040,8 +14040,8 @@ SkadaPerCharDB = {
 						["Azurethos"] = 72137,
 					},
 					["dispells"] = 0,
+					["role"] = "NONE",
 					["ccbreaks"] = 0,
-					["ffdamagedone"] = 0,
 					["time"] = 29,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -14155,7 +14155,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["role"] = "NONE",
+					["ffdamagedone"] = 0,
 				}, -- [34]
 				{
 					["last"] = 1573609732,
@@ -15410,8 +15410,8 @@ SkadaPerCharDB = {
 						["Azurethos"] = 4562,
 					},
 					["dispells"] = 0,
+					["role"] = "NONE",
 					["ccbreaks"] = 0,
-					["ffdamagedone"] = 0,
 					["time"] = 0,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -15465,7 +15465,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["role"] = "NONE",
+					["ffdamagedone"] = 0,
 				}, -- [39]
 				{
 					["last"] = 1573609733,
@@ -15825,8 +15825,8 @@ SkadaPerCharDB = {
 					["damaged"] = {
 					},
 					["dispells"] = 0,
+					["role"] = "NONE",
 					["ccbreaks"] = 0,
-					["ffdamagedone"] = 0,
 					["time"] = 0,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -15864,7 +15864,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["role"] = "NONE",
+					["ffdamagedone"] = 0,
 				}, -- [41]
 				{
 					["last"] = 1573609703,
@@ -15874,8 +15874,8 @@ SkadaPerCharDB = {
 					["damaged"] = {
 					},
 					["dispells"] = 0,
+					["role"] = "NONE",
 					["ccbreaks"] = 0,
-					["ffdamagedone"] = 0,
 					["time"] = 0,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -15913,7 +15913,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["role"] = "NONE",
+					["ffdamagedone"] = 0,
 				}, -- [42]
 				{
 					["last"] = 1573609720,
@@ -17658,12 +17658,12 @@ SkadaPerCharDB = {
 						["spells"] = {
 							[208232] = 12.5,
 							[278941] = 5,
-							[15407] = 19.24000012874603,
-							[205448] = 40,
+							[205385] = 40,
+							[34914] = 18,
 							[205351] = 30,
 							[589] = 12,
-							[34914] = 18,
-							[205385] = 40,
+							[205448] = 40,
+							[15407] = 19.24000012874603,
 						},
 					},
 				},
@@ -18104,9 +18104,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1573609721.19603,
 								["amount"] = -11366,
+								["srcname"] = "Azurethos",
 								["hp"] = 45497,
 								["spellid"] = 274840,
-								["srcname"] = "Azurethos",
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -18119,9 +18119,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1573609723.41805,
 								["amount"] = -11367,
+								["srcname"] = "Azurethos",
 								["hp"] = 47865,
 								["spellid"] = 274840,
-								["srcname"] = "Azurethos",
 							}, -- [5]
 							{
 								["spellname"] = "Falling",
@@ -18944,9 +18944,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1573609720.65609,
 								["amount"] = -7624,
+								["srcname"] = "Azurethos",
 								["hp"] = 140601,
 								["spellid"] = 274840,
-								["srcname"] = "Azurethos",
 							}, -- [9]
 							{
 								["absorb"] = 0,
@@ -19584,6 +19584,14 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["name"] = "Deadly Navigation",
 					},
+					["Swirling Sands"] = {
+						["name"] = "Swirling Sands",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 280433,
+						["auratype"] = "BUFF",
+						["uptime"] = 18,
+					},
 					["Razor Coral"] = {
 						["name"] = "Razor Coral",
 						["active"] = 0,
@@ -19591,14 +19599,6 @@ SkadaPerCharDB = {
 						["id"] = 303570,
 						["auratype"] = "BUFF",
 						["uptime"] = 0,
-					},
-					["Thirsting Blades"] = {
-						["uptime"] = 22,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 278736,
-						["auratype"] = "BUFF",
-						["name"] = "Thirsting Blades",
 					},
 					["Revolving Blades"] = {
 						["name"] = "Revolving Blades",
@@ -19640,13 +19640,13 @@ SkadaPerCharDB = {
 						["auratype"] = "DEBUFF",
 						["name"] = "Temporal Displacement",
 					},
-					["Swirling Sands"] = {
-						["name"] = "Swirling Sands",
+					["Thirsting Blades"] = {
+						["uptime"] = 22,
 						["active"] = 0,
 						["school"] = 1,
-						["id"] = 280433,
+						["id"] = 278736,
 						["auratype"] = "BUFF",
-						["uptime"] = 18,
+						["name"] = "Thirsting Blades",
 					},
 					["Overwhelming Power"] = {
 						["name"] = "Overwhelming Power",
@@ -20447,18 +20447,6 @@ SkadaPerCharDB = {
 				},
 				["role"] = "DAMAGER",
 				["healingspells"] = {
-					["Vampiric Speed"] = {
-						["shielding"] = 0,
-						["id"] = 269238,
-						["healing"] = 8086,
-						["min"] = 8086,
-						["name"] = "Vampiric Speed",
-						["absorbed"] = 0,
-						["critical"] = 0,
-						["max"] = 8086,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
 					["Lucid Dreams"] = {
 						["shielding"] = 0,
 						["id"] = 298318,
@@ -20482,6 +20470,18 @@ SkadaPerCharDB = {
 						["max"] = 1457,
 						["overhealing"] = 2912,
 						["hits"] = 10,
+					},
+					["Vampiric Speed"] = {
+						["shielding"] = 0,
+						["id"] = 269238,
+						["healing"] = 8086,
+						["min"] = 8086,
+						["name"] = "Vampiric Speed",
+						["absorbed"] = 0,
+						["critical"] = 0,
+						["max"] = 8086,
+						["overhealing"] = 0,
+						["hits"] = 1,
 					},
 					["Leech"] = {
 						["shielding"] = 0,
@@ -20730,9 +20730,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1573609723.77201,
 								["amount"] = -8978,
+								["srcname"] = "Azurethos",
 								["hp"] = 58748,
 								["spellid"] = 274840,
-								["srcname"] = "Azurethos",
 							}, -- [1]
 							{
 								["absorb"] = 0,
@@ -20813,9 +20813,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1573609721.64512,
 								["amount"] = -11223,
+								["srcname"] = "Azurethos",
 								["hp"] = 58148,
 								["spellid"] = 274840,
-								["srcname"] = "Azurethos",
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -21023,9 +21023,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609723.771,
 						["amount"] = -10797,
+						["srcname"] = "Azurethos",
 						["hp"] = 111346,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [4]
 					{
 						["absorb"] = 0,
@@ -21046,9 +21046,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609724.98,
 						["amount"] = -10796,
+						["srcname"] = "Azurethos",
 						["hp"] = 214055,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [7]
 					{
 						["absorb"] = 0,
@@ -21069,9 +21069,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609726.793,
 						["amount"] = -10796,
+						["srcname"] = "Azurethos",
 						["hp"] = 263959,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [10]
 					{
 						["ts"] = 1573609731.21,
@@ -21558,16 +21558,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609723.771,
 						["amount"] = -9427,
+						["srcname"] = "Azurethos",
 						["hp"] = 357053,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [1]
 					{
 						["ts"] = 1573609724.98,
 						["amount"] = -9426,
+						["srcname"] = "Azurethos",
 						["hp"] = 355515,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [2]
 					{
 						["absorb"] = 0,
@@ -21660,16 +21660,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609718.809,
 						["amount"] = -9426,
+						["srcname"] = "Azurethos",
 						["hp"] = 375906,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [14]
 					{
 						["ts"] = 1573609720.937,
 						["amount"] = -9426,
+						["srcname"] = "Azurethos",
 						["hp"] = 366480,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [15]
 					["pos"] = 3,
 				},
@@ -22661,9 +22661,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609730.782,
 						["amount"] = -486,
+						["srcname"] = "Cosmo-Nemesis",
 						["hp"] = 243096,
 						["spellid"] = 124255,
-						["srcname"] = "Cosmo-Nemesis",
 					}, -- [1]
 					{
 						["absorb"] = 0,
@@ -22684,9 +22684,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609731.423,
 						["amount"] = -486,
+						["srcname"] = "Cosmo-Nemesis",
 						["hp"] = 243343,
 						["spellid"] = 124255,
-						["srcname"] = "Cosmo-Nemesis",
 					}, -- [4]
 					{
 						["absorb"] = 0,
@@ -22699,37 +22699,37 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609731.912,
 						["amount"] = -486,
+						["srcname"] = "Cosmo-Nemesis",
 						["spellid"] = 124255,
 						["hp"] = 244350,
-						["srcname"] = "Cosmo-Nemesis",
 					}, -- [6]
 					{
 						["ts"] = 1573609732.38,
 						["amount"] = -486,
+						["srcname"] = "Cosmo-Nemesis",
 						["hp"] = 243864,
 						["spellid"] = 124255,
-						["srcname"] = "Cosmo-Nemesis",
 					}, -- [7]
 					{
 						["ts"] = 1573609733.01,
 						["amount"] = -486,
+						["srcname"] = "Cosmo-Nemesis",
 						["hp"] = 243378,
 						["spellid"] = 124255,
-						["srcname"] = "Cosmo-Nemesis",
 					}, -- [8]
 					{
 						["ts"] = 1573609729.198,
 						["amount"] = -424,
+						["srcname"] = "Cosmo-Nemesis",
 						["hp"] = 234123,
 						["spellid"] = 124255,
-						["srcname"] = "Cosmo-Nemesis",
 					}, -- [9]
 					{
 						["ts"] = 1573609729.722,
 						["amount"] = -424,
+						["srcname"] = "Cosmo-Nemesis",
 						["hp"] = 233699,
 						["spellid"] = 124255,
-						["srcname"] = "Cosmo-Nemesis",
 					}, -- [10]
 					{
 						["absorb"] = 0,
@@ -22742,9 +22742,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609730.244,
 						["amount"] = -424,
+						["srcname"] = "Cosmo-Nemesis",
 						["hp"] = 235112,
 						["spellid"] = 124255,
-						["srcname"] = "Cosmo-Nemesis",
 					}, -- [12]
 					{
 						["absorb"] = -2516,
@@ -26270,9 +26270,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609721.526,
 						["amount"] = -4347,
+						["srcname"] = "Bracnar",
 						["hp"] = 311939,
 						["spellid"] = 295178,
-						["srcname"] = "Bracnar",
 					}, -- [8]
 					{
 						["absorb"] = 0,
@@ -27306,18 +27306,6 @@ SkadaPerCharDB = {
 						["max"] = 10263,
 						["damage"] = 23998,
 					},
-					["Ancient Flame"] = {
-						["hitmin"] = 5798,
-						["id"] = 295367,
-						["min"] = 5798,
-						["hitamount"] = 56495,
-						["hitmax"] = 8698,
-						["hit"] = 7,
-						["school"] = 4,
-						["max"] = 8698,
-						["totalhits"] = 7,
-						["damage"] = 56495,
-					},
 					["Bladestorm Off-Hand"] = {
 						["hitmin"] = 1893,
 						["id"] = 95738,
@@ -27345,6 +27333,18 @@ SkadaPerCharDB = {
 						["school"] = 1,
 						["max"] = 7641,
 						["damage"] = 22993,
+					},
+					["Ancient Flame"] = {
+						["hitmin"] = 5798,
+						["id"] = 295367,
+						["min"] = 5798,
+						["hitamount"] = 56495,
+						["hitmax"] = 8698,
+						["hit"] = 7,
+						["school"] = 4,
+						["max"] = 8698,
+						["totalhits"] = 7,
+						["damage"] = 56495,
 					},
 					["Raging Blow"] = {
 						["hitmin"] = 2425,
@@ -27668,9 +27668,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609726.349,
 						["amount"] = -10944,
+						["srcname"] = "Azurethos",
 						["hp"] = 136654,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [1]
 					{
 						["absorb"] = 0,
@@ -27955,18 +27955,6 @@ SkadaPerCharDB = {
 						["max"] = 2059,
 						["damage"] = 37051,
 					},
-					["Sundering"] = {
-						["hitmin"] = 24304,
-						["id"] = 197214,
-						["min"] = 24304,
-						["hitamount"] = 24304,
-						["hitmax"] = 24304,
-						["hit"] = 1,
-						["school"] = 5,
-						["max"] = 24304,
-						["totalhits"] = 1,
-						["damage"] = 24304,
-					},
 					["Stormstrike"] = {
 						["hitmin"] = 10571,
 						["criticalamount"] = 29966,
@@ -27999,6 +27987,18 @@ SkadaPerCharDB = {
 						["max"] = 5061,
 						["damage"] = 37960,
 					},
+					["Sundering"] = {
+						["hitmin"] = 24304,
+						["id"] = 197214,
+						["min"] = 24304,
+						["hitamount"] = 24304,
+						["hitmax"] = 24304,
+						["hit"] = 1,
+						["school"] = 5,
+						["max"] = 24304,
+						["totalhits"] = 1,
+						["damage"] = 24304,
+					},
 					["Attack"] = {
 						["hitamount"] = 19158,
 						["hitmin"] = 1424,
@@ -28024,10 +28024,10 @@ SkadaPerCharDB = {
 					[11] = {
 						["amount"] = 200,
 						["spells"] = {
-							[188070] = -40,
-							[187890] = 90,
-							[298332] = 10,
 							[190185] = 140,
+							[188070] = -40,
+							[298332] = 10,
+							[187890] = 90,
 						},
 					},
 				},
@@ -28297,9 +28297,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609718.081,
 						["amount"] = -11100,
+						["srcname"] = "Azurethos",
 						["hp"] = 191446,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -28366,9 +28366,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609724.226,
 						["amount"] = -11101,
+						["srcname"] = "Azurethos",
 						["hp"] = 181585,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -28389,9 +28389,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609725.967,
 						["amount"] = -11100,
+						["srcname"] = "Azurethos",
 						["hp"] = 182666,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [15]
 					["pos"] = 2,
 				},
@@ -29046,23 +29046,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1573609725.25703,
 								["amount"] = -281,
+								["srcname"] = "Brewsleena-TheUnderbog",
 								["hp"] = 126103,
 								["spellid"] = 124255,
-								["srcname"] = "Brewsleena-TheUnderbog",
 							}, -- [3]
 							{
 								["ts"] = 1573609725.74904,
 								["amount"] = -281,
+								["srcname"] = "Brewsleena-TheUnderbog",
 								["hp"] = 125822,
 								["spellid"] = 124255,
-								["srcname"] = "Brewsleena-TheUnderbog",
 							}, -- [4]
 							{
 								["ts"] = 1573609726.23905,
 								["amount"] = -281,
+								["srcname"] = "Brewsleena-TheUnderbog",
 								["hp"] = 159610,
 								["spellid"] = 124255,
-								["srcname"] = "Brewsleena-TheUnderbog",
 							}, -- [5]
 							{
 								["absorb"] = 0,
@@ -29107,9 +29107,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1573609726.79411,
 								["amount"] = -256,
+								["srcname"] = "Brewsleena-TheUnderbog",
 								["hp"] = 182778,
 								["spellid"] = 124255,
-								["srcname"] = "Brewsleena-TheUnderbog",
 							}, -- [11]
 							{
 								["spellname"] = "Falling",
@@ -29134,9 +29134,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1573609724.50215,
 								["amount"] = -233,
+								["srcname"] = "Brewsleena-TheUnderbog",
 								["hp"] = 119721,
 								["spellid"] = 124255,
-								["srcname"] = "Brewsleena-TheUnderbog",
 							}, -- [15]
 							["pos"] = 14,
 						},
@@ -29398,6 +29398,34 @@ SkadaPerCharDB = {
 						["max"] = 5113,
 						["damage"] = 30682,
 					},
+					["Light's Decree"] = {
+						["hitmin"] = 9406,
+						["criticalamount"] = 22574,
+						["id"] = 286232,
+						["hitamount"] = 52673,
+						["criticalmin"] = 22574,
+						["critical"] = 1,
+						["min"] = 9406,
+						["criticalmax"] = 22574,
+						["hitmax"] = 11287,
+						["hit"] = 5,
+						["totalhits"] = 6,
+						["school"] = 2,
+						["max"] = 22574,
+						["damage"] = 75247,
+					},
+					["Execution Sentence"] = {
+						["criticalamount"] = 55824,
+						["id"] = 267798,
+						["min"] = 55824,
+						["criticalmax"] = 55824,
+						["critical"] = 1,
+						["criticalmin"] = 55824,
+						["school"] = 2,
+						["max"] = 55824,
+						["totalhits"] = 1,
+						["damage"] = 55824,
+					},
 					["Templar's Verdict"] = {
 						["hitmin"] = 18263,
 						["criticalamount"] = 146203,
@@ -29414,18 +29442,6 @@ SkadaPerCharDB = {
 						["max"] = 81224,
 						["damage"] = 279788,
 					},
-					["Execution Sentence"] = {
-						["criticalamount"] = 55824,
-						["id"] = 267798,
-						["min"] = 55824,
-						["criticalmax"] = 55824,
-						["critical"] = 1,
-						["criticalmin"] = 55824,
-						["school"] = 2,
-						["max"] = 55824,
-						["totalhits"] = 1,
-						["damage"] = 55824,
-					},
 					["Crusader Strike"] = {
 						["hitmin"] = 3861,
 						["criticalamount"] = 9268,
@@ -29441,22 +29457,6 @@ SkadaPerCharDB = {
 						["school"] = 1,
 						["max"] = 9268,
 						["damage"] = 26257,
-					},
-					["Light's Decree"] = {
-						["hitmin"] = 9406,
-						["criticalamount"] = 22574,
-						["id"] = 286232,
-						["hitamount"] = 52673,
-						["criticalmin"] = 22574,
-						["critical"] = 1,
-						["min"] = 9406,
-						["criticalmax"] = 22574,
-						["hitmax"] = 11287,
-						["hit"] = 5,
-						["totalhits"] = 6,
-						["school"] = 2,
-						["max"] = 22574,
-						["damage"] = 75247,
 					},
 					["Attack"] = {
 						["hitmin"] = 3952,
@@ -30434,9 +30434,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609731.557,
 						["amount"] = -7763,
+						["srcname"] = "Azurethos",
 						["hp"] = 217764,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [10]
 					{
 						["absorb"] = 0,
@@ -31446,15 +31446,16 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ffdamagedone"] = 0,
-				["ccbreaks"] = 0,
 				["time"] = 4,
 				["interrupts"] = 0,
 				["healingspells"] = {
 				},
+				["power"] = {
+				},
 				["deathlog"] = {
 				},
-				["shielding"] = 0,
 				["damage"] = 11690,
 				["damagespells"] = {
 					["Stomp"] = {
@@ -31488,8 +31489,7 @@ SkadaPerCharDB = {
 				},
 				["maxhp"] = 0,
 				["damagetaken"] = 0,
-				["power"] = {
-				},
+				["shielding"] = 0,
 				["id"] = "Pet-0-3884-1643-6198-59534-0102BEAF2B",
 				["healing"] = 0,
 				["ffdamagedonetargets"] = {
@@ -31514,7 +31514,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ccbreaks"] = 0,
 			}, -- [29]
 			{
 				["healingabsorbed"] = 0,
@@ -31579,9 +31579,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609725.967,
 						["amount"] = -10880,
+						["srcname"] = "Azurethos",
 						["hp"] = 50717,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [2]
 					{
 						["absorb"] = 0,
@@ -31602,9 +31602,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609727.971,
 						["amount"] = -10880,
+						["srcname"] = "Azurethos",
 						["hp"] = 202530,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [5]
 					{
 						["absorb"] = 0,
@@ -31671,16 +31671,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609723.771,
 						["amount"] = -10881,
+						["srcname"] = "Azurethos",
 						["hp"] = 60570,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [14]
 					{
 						["ts"] = 1573609724.226,
 						["amount"] = -10880,
+						["srcname"] = "Azurethos",
 						["hp"] = 55655,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [15]
 					["pos"] = 6,
 				},
@@ -33121,15 +33121,16 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ffdamagedone"] = 0,
-				["ccbreaks"] = 0,
 				["time"] = 29,
 				["interrupts"] = 0,
 				["healingspells"] = {
 				},
+				["power"] = {
+				},
 				["deathlog"] = {
 				},
-				["shielding"] = 0,
 				["damage"] = 72137,
 				["damagespells"] = {
 					["Hati: Kill Command"] = {
@@ -33211,8 +33212,7 @@ SkadaPerCharDB = {
 				},
 				["maxhp"] = 251552,
 				["damagetaken"] = 0,
-				["power"] = {
-				},
+				["shielding"] = 0,
 				["id"] = "Player-3677-07ADB8BC",
 				["healing"] = 0,
 				["ffdamagedonetargets"] = {
@@ -33237,7 +33237,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ccbreaks"] = 0,
 			}, -- [34]
 			{
 				["healingabsorbed"] = 0,
@@ -33318,9 +33318,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609718.809,
 						["amount"] = -9218,
+						["srcname"] = "Azurethos",
 						["hp"] = 339728,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [1]
 					{
 						["absorb"] = 0,
@@ -33357,9 +33357,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609720.937,
 						["amount"] = -9218,
+						["srcname"] = "Azurethos",
 						["hp"] = 335599,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [6]
 					{
 						["absorb"] = 0,
@@ -33380,9 +33380,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609724.226,
 						["amount"] = -9218,
+						["srcname"] = "Azurethos",
 						["hp"] = 342402,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -33395,9 +33395,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609724.98,
 						["amount"] = -9218,
+						["srcname"] = "Azurethos",
 						["hp"] = 342402,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [11]
 					{
 						["absorb"] = 0,
@@ -33410,23 +33410,23 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1573609727,
 						["amount"] = -9219,
+						["srcname"] = "Azurethos",
 						["hp"] = 339458,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [13]
 					{
 						["ts"] = 1573609728.88,
 						["amount"] = -9219,
+						["srcname"] = "Azurethos",
 						["hp"] = 382982,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [14]
 					{
 						["ts"] = 1573609732.8,
 						["amount"] = -9219,
+						["srcname"] = "Azurethos",
 						["hp"] = 251552,
 						["spellid"] = 274840,
-						["srcname"] = "Azurethos",
 					}, -- [15]
 					["pos"] = 1,
 				},
@@ -34642,15 +34642,16 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ffdamagedone"] = 0,
-				["ccbreaks"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["healingspells"] = {
 				},
+				["power"] = {
+				},
 				["deathlog"] = {
 				},
-				["shielding"] = 0,
 				["damage"] = 4562,
 				["damagespells"] = {
 					["Stomp"] = {
@@ -34680,8 +34681,7 @@ SkadaPerCharDB = {
 				},
 				["maxhp"] = 251552,
 				["damagetaken"] = 0,
-				["power"] = {
-				},
+				["shielding"] = 0,
 				["id"] = "Pet-0-3884-1643-6198-1201-0101EE0460",
 				["healing"] = 0,
 				["ffdamagedonetargets"] = {
@@ -34698,7 +34698,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ccbreaks"] = 0,
 			}, -- [39]
 			{
 				["healingabsorbed"] = 0,
@@ -35065,22 +35065,22 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ffdamagedone"] = 0,
-				["ccbreaks"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["healingspells"] = {
 				},
+				["power"] = {
+				},
 				["deathlog"] = {
 				},
-				["shielding"] = 0,
 				["damage"] = 0,
 				["damagespells"] = {
 				},
 				["maxhp"] = 251552,
 				["damagetaken"] = 0,
-				["power"] = {
-				},
+				["shielding"] = 0,
 				["id"] = "Creature-0-3884-1643-6198-69792-00004B60E7",
 				["healing"] = 0,
 				["ffdamagedonetargets"] = {
@@ -35105,7 +35105,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ccbreaks"] = 0,
 			}, -- [41]
 			{
 				["healingabsorbed"] = 0,
@@ -35114,22 +35114,22 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ffdamagedone"] = 0,
-				["ccbreaks"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["healingspells"] = {
 				},
+				["power"] = {
+				},
 				["deathlog"] = {
 				},
-				["shielding"] = 0,
 				["damage"] = 0,
 				["damagespells"] = {
 				},
 				["maxhp"] = 251552,
 				["damagetaken"] = 0,
-				["power"] = {
-				},
+				["shielding"] = 0,
 				["id"] = "Creature-0-3884-1643-6198-69791-00004B60E7",
 				["healing"] = 0,
 				["ffdamagedonetargets"] = {
@@ -35154,7 +35154,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ccbreaks"] = 0,
 			}, -- [42]
 			{
 				["healingabsorbed"] = 0,
