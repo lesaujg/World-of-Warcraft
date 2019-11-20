@@ -43,8 +43,8 @@ PawnOptions = {
 		}, -- [8]
 		{
 			["ID"] = 163277,
-			["Level"] = 415,
-			["Link"] = "|cffa335ee|Hitem:163277::::::::120:253::28:3:5125:1607:4786:::|h[7th Legionnaire's Bindings]|h|r",
+			["Level"] = 430,
+			["Link"] = "|cffa335ee|Hitem:163277::::::::120:253::23:3:5845:1622:4786:::|h[7th Legionnaire's Bindings]|h|r",
 		}, -- [9]
 		{
 			["ID"] = 169934,
@@ -52,22 +52,22 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:169934::::::::120:255::5:3:4799:1502:4786:::|h[Deepcrawler's Handguards]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 166560,
-			["Level"] = 395,
+			["ID"] = 169008,
+			["Level"] = 420,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cffa335ee|Hitem:166560:6109:::::::120:255::14::::|h[Captain's Signet of Command]|h|r",
+			["Link"] = "|cffa335ee|Hitem:169008::::::::120:253::27:3:4803:1612:4786:::|h[Rust Resistant Loop]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 166560,
-			["Level"] = 395,
+			["ID"] = 169008,
+			["Level"] = 420,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cffa335ee|Hitem:166560:6109:::::::120:253::14::::|h[Captain's Signet of Command]|h|r",
+			["Link"] = "|cffa335ee|Hitem:169008::::::::120:255::27:3:4803:1612:4786:::|h[Rust Resistant Loop]|h|r",
 		}, -- [12]
 		{
-			["ID"] = 161415,
-			["Level"] = 400,
+			["ID"] = 161375,
+			["Level"] = 425,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cffa335ee|Hitem:161415::::::::120:255::3:3:5479:1517:4786:::|h[Forest Lord's Razorleaf]|h|r",
+			["Link"] = "|cffa335ee|Hitem:161375::::::::120:253::27:3:1542:5850:4783:::|h[Clockwork Re-Sharpener]|h|r",
 		}, -- [13]
 		{
 			["ID"] = 161415,

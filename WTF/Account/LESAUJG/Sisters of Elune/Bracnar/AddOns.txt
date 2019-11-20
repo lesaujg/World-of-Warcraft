@@ -236,9 +236,9 @@ DBM-ZuldazarRaid: enabled
 HandyNotes_WarfrontRares: enabled
 WeakAurasCompanion: enabled
 OPie_Classic: disabled
-TomCats: enabled
-TomCats-Mechagon: enabled
-TomCats-Nazjatar: enabled
+TomCats: disabled
+TomCats-Mechagon: disabled
+TomCats-Nazjatar: disabled
 SmexyMats: enabled
 MrrlsItemInformation: enabled
 Ace3: enabled

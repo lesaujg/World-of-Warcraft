@@ -1,5 +1,6 @@
 
 TomCats_Mechagon_Character = {
+	["enableHandyNotesPlugin"] = false,
 	["preferences"] = {
 		["TomCats-MechagonMinimapButton"] = {
 			["position"] = -2.631430374572092,

@@ -5,4 +5,5 @@ TomCats_Mechagon_Character = {
 			["position"] = -2.631430374572092,
 		},
 	},
+	["enableHandyNotesPlugin"] = false,
 }
