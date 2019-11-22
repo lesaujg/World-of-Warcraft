@@ -2,11 +2,15 @@
 HandyNotes_MechagonAndNazjatarDB = {
 	["profileKeys"] = {
 		["Bracnar - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["hide_minimap"] = true,
+			["chest_mech"] = true,
+			["always_show_rares"] = true,
 			["hide_done_rare"] = true,
+			["hide_minimap"] = true,
+			["pet_mech"] = false,
 		},
 	},
 }

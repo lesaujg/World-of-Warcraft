@@ -2,6 +2,7 @@
 HandyNotes_MechagonAndNazjatarDB = {
 	["profileKeys"] = {
 		["Bracnar - Sisters of Elune"] = "Default",
+		["Herbinator - Sisters of Elune"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
