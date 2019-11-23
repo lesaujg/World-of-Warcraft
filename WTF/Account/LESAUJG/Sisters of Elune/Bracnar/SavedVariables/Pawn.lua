@@ -52,10 +52,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:169934::::::::120:255::5:3:4799:1502:4786:::|h[Deepcrawler's Handguards]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 169008,
-			["Level"] = 420,
+			["ID"] = 169002,
+			["Level"] = 425,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cffa335ee|Hitem:169008::::::::120:253::27:3:4803:1612:4786:::|h[Rust Resistant Loop]|h|r",
+			["Link"] = "|cffa335ee|Hitem:169002::::::::120:254::27:4:4803:1612:5850:4783:::|h[Calibrated Hefty Cog]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 169008,
@@ -70,10 +70,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:161375::::::::120:253::27:3:1542:5850:4783:::|h[Clockwork Re-Sharpener]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 161415,
-			["Level"] = 400,
+			["ID"] = 161418,
+			["Level"] = 420,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cffa335ee|Hitem:161415::::::::120:253::3:3:5479:1517:4786:::|h[Forest Lord's Razorleaf]|h|r",
+			["Link"] = "|cffa335ee|Hitem:161418::::::::120:253::27:2:1542:4786:::|h[Deployable Vibro Enhancer]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 166668,
