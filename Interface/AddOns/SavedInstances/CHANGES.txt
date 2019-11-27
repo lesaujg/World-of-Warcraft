@@ -1,18 +1,33 @@
-tag 89bfa430a974492aa8e7cdcc9508f6dbb8faa6c4 8.2.4
+tag 3b1b2d3991e27c4f26a07aa8565e67f72fb9b541 8.2.5
 Author:	Benjamin Staneck <staneck@gmail.com>
-Date:	Wed Nov 6 18:33:17 2019 +0100
+Date:	Mon Nov 25 18:49:28 2019 +0100
 
-Tag as 8.2.4
+Tagging as 8.2.5
 
-commit d281bbc8b080cb7342b2143695c2713a91f98a63
+commit b1df2d0477f085177e664af22153b8b9899ce501
+Author: Anssi Mäkinen <anssi.a.makinen@gmail.com>
+Date:   Wed Nov 6 18:05:30 2019 +0200
+
+    Add indicator for unlooted PvP Weekly Chest
+
+commit 1647bf99ea86add091bb1e6927b172ccf92580c2
 Author: LiangYuxuan <lyx@lyx.es>
-Date:   Wed Nov 6 22:13:47 2019 +0800
+Date:   Tue Nov 12 11:51:13 2019 +0800
 
-    fix 15th anniversary raid
+    track weekly mechanized chest
+    closes #321
 
-commit 7fefb760fc9be36e21b280c7a77389bda5c8ecac
+commit 9b46f43c1dffb7df72ab6fd9202911c2472b26d3
 Author: LiangYuxuan <lyx@lyx.es>
-Date:   Thu Sep 26 09:50:16 2019 +0800
+Date:   Mon Nov 11 15:42:14 2019 +0800
 
-    Track Call to Arms and Battle for Nazjtar
+    use active lfd to check if timewalking is active
+    fixes #289
+
+commit 4cfe09e7c794d7ae8ed8f8ee2099c12494e653a3
+Author: LiangYuxuan <lyx@lyx.es>
+Date:   Mon Nov 11 15:22:24 2019 +0800
+
+    anniversary world boss lockouts is daily
+    fixes #320
 
