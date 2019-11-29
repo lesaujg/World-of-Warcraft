@@ -1,33 +1,12 @@
-tag 3b1b2d3991e27c4f26a07aa8565e67f72fb9b541 8.2.5
+tag e1d4ad1de60d649d02fb1375b1fa0b9f5eb28eb3 8.2.6
 Author:	Benjamin Staneck <staneck@gmail.com>
-Date:	Mon Nov 25 18:49:28 2019 +0100
+Date:	Thu Nov 28 13:58:11 2019 +0100
 
-Tagging as 8.2.5
+Tagging as 8.2.6
 
-commit b1df2d0477f085177e664af22153b8b9899ce501
-Author: Anssi Mäkinen <anssi.a.makinen@gmail.com>
-Date:   Wed Nov 6 18:05:30 2019 +0200
-
-    Add indicator for unlooted PvP Weekly Chest
-
-commit 1647bf99ea86add091bb1e6927b172ccf92580c2
+commit e3b115cdc4a3ebbb5f607e354f0b2df2a0ab9f04
 Author: LiangYuxuan <lyx@lyx.es>
-Date:   Tue Nov 12 11:51:13 2019 +0800
+Date:   Wed Nov 27 15:00:42 2019 +0800
 
-    track weekly mechanized chest
-    closes #321
-
-commit 9b46f43c1dffb7df72ab6fd9202911c2472b26d3
-Author: LiangYuxuan <lyx@lyx.es>
-Date:   Mon Nov 11 15:42:14 2019 +0800
-
-    use active lfd to check if timewalking is active
-    fixes #289
-
-commit 4cfe09e7c794d7ae8ed8f8ee2099c12494e653a3
-Author: LiangYuxuan <lyx@lyx.es>
-Date:   Mon Nov 11 15:22:24 2019 +0800
-
-    anniversary world boss lockouts is daily
-    fixes #320
+    fixes #325
 

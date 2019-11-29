@@ -617,8 +617,7 @@ La["List categories from the current expansion pack first"] = "현재 확장팩�
 La["List raid categories before dungeon categories"] = "던전 카테고리 앞에 공격대 카테고리 나열"
 La["Lord Kazzak"] = "군주 카자크"
 La["Manage"] = "관리"
---[[Translation missing --]]
-La["Mechanized Chest"] = "Mechanized Chest"
+La["Mechanized Chest"] = "기계 상자"
 La["Miscellaneous Tracking"] = "기타"
 La["ML"] = "왕노"
 La["Most recent first"] = "최근 것을 첫번째로"
@@ -979,8 +978,7 @@ La["List categories from the current expansion pack first"] = "Сортиров�
 La["List raid categories before dungeon categories"] = "Список категорий рейда до категорий подземелий"
 La["Lord Kazzak"] = "Владыка Каззак"
 La["Manage"] = "Управление"
---[[Translation missing --]]
-La["Mechanized Chest"] = "Mechanized Chest"
+La["Mechanized Chest"] = "Механизированный сундук"
 La["Miscellaneous Tracking"] = "Разнообразное отслеживание"
 La["ML"] = "ЗЖ"
 La["Most recent first"] = "Сначала новые"
