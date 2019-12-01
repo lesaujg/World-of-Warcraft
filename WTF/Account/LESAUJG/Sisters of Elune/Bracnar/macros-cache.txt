@@ -18,9 +18,9 @@ VER 3 010000000000005E "__Cobra Shot" "INV_MISC_QUESTIONMARK"
 END
 VER 3 010000000000006D "__Concen Flame" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@player, button:2] Concentrated Flame
-/cast [button:1, nomod] Concentrated Flame
-/cast [@pet, button:1, mode:ctrl] Concentrated Flame
+/cast [@player, button:2]Heart Essence
+/cast [button:1, nomod] Heart Essence
+/cast [@pet, button:1, mode:ctrl] Heart Essence
 END
 VER 3 010000000000005C "__Kill Command" "INV_MISC_QUESTIONMARK"
 #showtooltip

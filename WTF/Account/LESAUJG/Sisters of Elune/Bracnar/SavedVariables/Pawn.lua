@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0311,
-	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
-	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 158049,
@@ -64,16 +61,16 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:169008::::::::120:255::27:3:4803:1612:4786:::|h[Rust Resistant Loop]|h|r",
 		}, -- [12]
 		{
-			["ID"] = 161375,
-			["Level"] = 425,
+			["ID"] = 169307,
+			["Level"] = 455,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cffa335ee|Hitem:161375::::::::120:253::27:3:1542:5850:4783:::|h[Clockwork Re-Sharpener]|h|r",
+			["Link"] = "|cffa335ee|Hitem:169307::::::::120:253::3:6:4798:1808:40:1487:5885:4784:::|h[Vision of Demise]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 161418,
-			["Level"] = 420,
+			["ID"] = 169307,
+			["Level"] = 455,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cffa335ee|Hitem:161418::::::::120:253::27:2:1542:4786:::|h[Deployable Vibro Enhancer]|h|r",
+			["Link"] = "|cffa335ee|Hitem:169307::168639::::::120:253::3:6:4798:1808:40:1487:5885:4784:::|h[Vision of Demise]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 166668,
@@ -86,7 +83,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163881::::::::120:253::23:3:5845:1622:4786:::|h[7th Legionnaire's Longbow]|h|r",
 		}, -- [16]
 	},
-	["LastKeybindingsSet"] = 1,
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -123,6 +122,7 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",
