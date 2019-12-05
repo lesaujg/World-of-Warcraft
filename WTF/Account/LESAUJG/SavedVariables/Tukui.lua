@@ -1769,11 +1769,11 @@ TukuiData = {
 			["Guldahka"] = 2000,
 		},
 		["Sisters of Elune"] = {
-			["Bracnar"] = 20192795630,
+			["Bracnar"] = 20204700745,
 			["Ghiaccioli"] = 48845138,
 			["Mandelbrot"] = 734014,
 			["Torinar"] = 165719372,
-			["Clothgar"] = 12858355114,
+			["Clothgar"] = 12923119334,
 			["Tauro"] = 0,
 			["Orig"] = 334007819,
 			["Palani"] = 54600514,
