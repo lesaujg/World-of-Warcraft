@@ -50,6 +50,8 @@ SmexyMatsDB = {
 				["Enchanting"] = {
 					["Bracnar"] = {
 					},
+					["Clothgar"] = {
+					},
 				},
 			},
 			["Neutral"] = {
