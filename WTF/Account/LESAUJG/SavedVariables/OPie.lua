@@ -143,6 +143,11 @@ OneRing_Config = {
 					140192, -- [2]
 					["sliceToken"] = "ABuefdBjkPe",
 				}, -- [9]
+				{
+					"item", -- [1]
+					167075, -- [2]
+					["sliceToken"] = "ABuehDHrsye",
+				}, -- [10]
 				["limit"] = "Bracnar-SistersofElune",
 				["save"] = true,
 				["name"] = "Teleport",
