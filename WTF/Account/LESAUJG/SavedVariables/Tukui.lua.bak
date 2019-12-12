@@ -1769,7 +1769,7 @@ TukuiData = {
 			["Guldahka"] = 2000,
 		},
 		["Sisters of Elune"] = {
-			["Bracnar"] = 20484117541,
+			["Bracnar"] = 20701624645,
 			["Ghiaccioli"] = 49369856,
 			["Mandelbrot"] = 734014,
 			["Torinar"] = 165967082,
@@ -1779,12 +1779,12 @@ TukuiData = {
 			["Leanara"] = 449697980,
 			["Belrath"] = 100342620,
 			["Herbinator"] = 5408245,
-			["Galinar"] = 176106562,
+			["Galinar"] = 176349171,
 			["Sanjuri"] = 11460,
 			["Edaka"] = 0,
 			["Palani"] = 54964609,
 			["Tauro"] = 0,
-			["Clothgar"] = 13289545023,
+			["Clothgar"] = 13392896685,
 		},
 	},
 	["Ravenholdt"] = {

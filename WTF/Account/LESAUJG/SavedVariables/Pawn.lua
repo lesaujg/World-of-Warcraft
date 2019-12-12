@@ -11,8 +11,6 @@ PawnCommon = {
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
-	["ShowSpecIcons"] = true,
-	["ShowSocketingAdvisor"] = true,
 	["Scales"] = {
 		["\"MrRobot\":HUNTER3"] = {
 			["IconTexturePath"] = 461113,
@@ -458,7 +456,7 @@ PawnCommon = {
 			["Values"] = {
 				["IsWand"] = -1000000,
 				["Is2HMace"] = -1000000,
-				["MinDamage"] = 0.99,
+				["IsWarglaive"] = -1000000,
 				["MovementSpeed"] = 0.03,
 				["Agility"] = 1.65,
 				["HasteRating"] = 1.24,
@@ -467,13 +465,13 @@ PawnCommon = {
 				["IsFrill"] = -1000000,
 				["MaxDamage"] = 0.99,
 				["IsPlate"] = -1000000,
-				["IsMace"] = -1000000,
-				["Indestructible"] = 0.01,
 				["Leech"] = 0.01,
+				["Indestructible"] = 0.01,
+				["IsMace"] = -1000000,
 				["Avoidance"] = 0.02,
 				["CritRating"] = 1.06,
 				["IsShield"] = -1000000,
-				["IsWarglaive"] = -1000000,
+				["MinDamage"] = 0.99,
 			},
 		},
 		["\"MrRobot\":HUNTER1"] = {
@@ -497,10 +495,10 @@ PawnCommon = {
 		["\"MrRobot\":PALADIN3"] = {
 			["IconTexturePath"] = 135873,
 			["PerCharacterOptions"] = {
-				["Galinar-Sisters of Elune"] = {
+				["Herbinator-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
-				["Herbinator-Sisters of Elune"] = {
+				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
 			},
@@ -714,6 +712,8 @@ PawnCommon = {
 			["UnenchantedColor"] = "00bf70",
 		},
 	},
+	["ShowSocketingAdvisor"] = true,
+	["ShowSpecIcons"] = true,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ButtonPosition"] = 2,
 	["IgnoreGemsWhileLeveling"] = true,

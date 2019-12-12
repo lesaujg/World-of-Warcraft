@@ -41,10 +41,10 @@ OneRing_Config = {
 					["sliceToken"] = "ABueyhiySOp",
 					["id"] = 83245,
 				}, -- [5]
-				["limit"] = "Bracnar-SistersofElune",
+				["name"] = "Pets",
 				["save"] = true,
 				["hotkey"] = "ALT-W",
-				["name"] = "Pets",
+				["limit"] = "Bracnar-SistersofElune",
 			},
 			["sefulItems"] = {
 				{
