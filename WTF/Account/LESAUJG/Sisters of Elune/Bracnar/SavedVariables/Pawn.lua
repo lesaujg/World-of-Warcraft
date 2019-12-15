@@ -19,9 +19,9 @@ PawnOptions = {
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 168358,
-			["Level"] = 420,
-			["Link"] = "|cffa335ee|Hitem:168358::::::::120:255::3:5:4822:1487:4786:6263:4775:::|h[Chestguard of the Submerged]|h|r",
+			["ID"] = 163398,
+			["Level"] = 435,
+			["Link"] = "|cffa335ee|Hitem:163398::::::::120:254::23:5:5845:1622:4786:6266:4775:::|h[7th Legionnaire's Chainmail]|h|r",
 		}, -- [5]
 		{
 			["ID"] = 170369,
