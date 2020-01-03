@@ -56,9 +56,9 @@ PawnOptions = {
 		}, -- [11]
 		{
 			["ID"] = 169008,
-			["Level"] = 420,
+			["Level"] = 425,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cffa335ee|Hitem:169008::::::::120:255::27:3:4803:1612:4786:::|h[Rust Resistant Loop]|h|r",
+			["Link"] = "|cffa335ee|Hitem:169008::::::::120:253::27:4:4803:1612:5850:4783:::|h[Rust Resistant Loop]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 169307,
