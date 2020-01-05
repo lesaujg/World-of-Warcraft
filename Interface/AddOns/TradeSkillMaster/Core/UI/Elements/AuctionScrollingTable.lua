@@ -95,22 +95,36 @@ function AuctionScrollingTable.Acquire(self)
 			:SetJustifyH("RIGHT")
 			:SetTextFunction(private.GetItemLevelCellText)
 			:Commit()
-		:NewColumn("posts")
-			:SetTitles(L["Posts"])
-			:SetWidth(40)
-			:SetFont(TSM.UI.Fonts.RobotoMedium)
-			:SetFontHeight(12)
-			:SetJustifyH("RIGHT")
-			:SetTextFunction(private.GetAuctionsPostsText)
-			:Commit()
-		:NewColumn("stack")
-			:SetTitles(L["Stack"])
-			:SetWidth(40)
-			:SetFont(TSM.UI.Fonts.RobotoMedium)
-			:SetFontHeight(12)
-			:SetJustifyH("RIGHT")
-			:SetTextFunction(private.GetAuctionsStackText)
-			:Commit()
+	if TSM.IsWow83() then
+		self:GetScrollingTableInfo()
+			:NewColumn("qty")
+				:SetTitles(L["Qty"])
+				:SetWidth(40)
+				:SetFont(TSM.UI.Fonts.RobotoMedium)
+				:SetFontHeight(12)
+				:SetJustifyH("RIGHT")
+				:SetTextFunction(private.GetAuctionsQuantityText)
+				:Commit()
+	else
+		self:GetScrollingTableInfo()
+			:NewColumn("posts")
+				:SetTitles(L["Posts"])
+				:SetWidth(40)
+				:SetFont(TSM.UI.Fonts.RobotoMedium)
+				:SetFontHeight(12)
+				:SetJustifyH("RIGHT")
+				:SetTextFunction(private.GetAuctionsPostsText)
+				:Commit()
+			:NewColumn("stack")
+				:SetTitles(L["Stack"])
+				:SetWidth(40)
+				:SetFont(TSM.UI.Fonts.RobotoMedium)
+				:SetFontHeight(12)
+				:SetJustifyH("RIGHT")
+				:SetTextFunction(private.GetAuctionsStackText)
+				:Commit()
+	end
+	self:GetScrollingTableInfo()
 		:NewColumn("timeLeft")
 			:SetTitleIcon("iconPack.14x14/Clock")
 			:SetWidth(26)
@@ -318,6 +332,8 @@ function AuctionScrollingTable._UpdateData(self)
 			elseif sortKey == "posts" then
 				sortValue = record.stackSize
 			elseif sortKey == "stack" then
+				sortValue = record.stackSize
+			elseif sortKey == "qty" then
 				sortValue = record.stackSize
 			elseif sortKey == "timeLeft" then
 				sortValue = record.timeLeft
@@ -620,6 +636,11 @@ function private.GetItemLevelCellText(self, context)
 	return ItemInfo.GetItemLevel(record:GetField("itemLink"))
 end
 
+function private.GetAuctionsQuantityText(self, context)
+	local record = self._baseRecordByHash[context]
+	return self._numAuctionsByHash[record:GetField("hash")] * record:GetField("stackSize")
+end
+
 function private.GetAuctionsPostsText(self, context)
 	local record = self._baseRecordByHash[context]
 	return self._numAuctionsByHash[record:GetField("hash")]
@@ -650,7 +671,7 @@ function private.GetBidCellText(self, context, titleIndex)
 	else
 		error("Unexpected titleIndex: "..tostring(titleIndex))
 	end
-	return record:GetField("isHighBidder") and Money.ToString(value, "|cff00ff00") or Money.ToString(value)
+	return Money.ToString(value, record:GetField("isHighBidder") and "|cff00ff00" or nil, "OPT_83_NO_COPPER")
 end
 
 function private.GetBuyoutCellText(self, context, titleIndex)
@@ -663,7 +684,7 @@ function private.GetBuyoutCellText(self, context, titleIndex)
 	else
 		error("Unexpected titleIndex: "..tostring(titleIndex))
 	end
-	return Money.ToString(value)
+	return Money.ToString(value, nil, "OPT_83_NO_COPPER")
 end
 
 function private.GetPercentCellText(self, context)
