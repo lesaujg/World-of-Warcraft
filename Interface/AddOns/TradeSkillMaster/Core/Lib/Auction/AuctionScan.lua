@@ -730,9 +730,9 @@ function private.ProcessAuctionRows(auctionScan, filter, index, maxIndex, isComm
 	for i = index, maxIndex do
 		local isValid = nil
 		if TSM.IsWow83() then
-			isValid = private.ProcessAuctionRow(auctionScan, filter, auctionScan:_GetAuctionRowFields83(isCommodity, itemKey, i, filter))
+			isValid = private.ProcessAuctionRow(auctionScan, filter, not firstInvalidIndex, auctionScan:_GetAuctionRowFields83(isCommodity, itemKey, i, filter))
 		else
-			isValid = private.ProcessAuctionRow(auctionScan, filter, auctionScan:_GetAuctionRowFields(i, filter))
+			isValid = private.ProcessAuctionRow(auctionScan, filter, not firstInvalidIndex, auctionScan:_GetAuctionRowFields(i, filter))
 		end
 		if not isValid then
 			firstInvalidIndex = firstInvalidIndex or i
@@ -794,12 +794,14 @@ function private.ProcessAuctionRows(auctionScan, filter, index, maxIndex, isComm
 	return index, numInsertedRows
 end
 
-function private.ProcessAuctionRow(auctionScan, filter, rawName, rawLink, texture, stackSize, minBid, minIncrement, buyout, bid, isHighBidder, seller, timeLeft, displayedBid, itemDisplayedBid, itemBuyout, itemLink, itemString, hash, hashNoSeller, filterId, targetItem, targetItemRate, auctionId, numOwnerItems)
+function private.ProcessAuctionRow(auctionScan, filter, shouldInsert, rawName, rawLink, texture, stackSize, minBid, minIncrement, buyout, bid, isHighBidder, seller, timeLeft, displayedBid, itemDisplayedBid, itemBuyout, itemLink, itemString, hash, hashNoSeller, filterId, targetItem, targetItemRate, auctionId, numOwnerItems)
 	if not rawName then
 		return false
 	end
 	if not filter:_IsFiltered(auctionScan._ignoreItemLevel, itemString, itemBuyout, stackSize, targetItemRate) and not auctionScan:_IsFiltered(itemString, itemBuyout, stackSize, itemDisplayedBid) then
-		auctionScan._db:BulkInsertNewRow(rawName, rawLink, texture, stackSize, minBid, minIncrement, buyout, bid, isHighBidder, seller, timeLeft, displayedBid, itemDisplayedBid, itemBuyout, itemLink, itemString, hash, hashNoSeller, filterId, targetItem, targetItemRate, auctionId, numOwnerItems)
+		if shouldInsert then
+			auctionScan._db:BulkInsertNewRow(rawName, rawLink, texture, stackSize, minBid, minIncrement, buyout, bid, isHighBidder, seller, timeLeft, displayedBid, itemDisplayedBid, itemBuyout, itemLink, itemString, hash, hashNoSeller, filterId, targetItem, targetItemRate, auctionId, numOwnerItems)
+		end
 	end
 	return true
 end
@@ -1165,11 +1167,8 @@ function private.FindAuctionThreaded83(auctionScan, row, noSeller)
 	end
 	local result = nil
 	for i = 1, numItemResults do
-		local _, _, _, stackSize, _, _, _, _, _, _, _, _, _, _, _, _, hash, hashNoSeller, _, _, _, auctionId = auctionScan:_GetAuctionRowFields83(isCommodity, itemKey, i)
-		if isCommodity and auctionId == row:GetField("auctionId") then
-			result = stackSize
-			break
-		elseif not isCommodity and (noSeller and hashNoSeller or hash) == row:GetField(noSeller and "hashNoSeller" or "hash") then
+		local _, _, _, stackSize, _, _, _, _, _, _, _, _, _, _, _, _, hash, hashNoSeller = auctionScan:_GetAuctionRowFields83(isCommodity, itemKey, i)
+		if (noSeller and hashNoSeller or hash) == row:GetField(noSeller and "hashNoSeller" or "hash") then
 			result = (result or 0) + stackSize
 		end
 	end

@@ -28,18 +28,28 @@ SmexyMatsDB = {
 			},
 			["Alliance"] = {
 				["Cooking"] = {
+					["Bracnar"] = {
+					},
 				},
 				["Archaeology"] = {
+					["Bracnar"] = {
+					},
 				},
 				["Fishing"] = {
+					["Bracnar"] = {
+					},
 				},
 				["Herbalism"] = {
 				},
 				["Mining"] = {
 				},
 				["Engineering"] = {
+					["Bracnar"] = {
+					},
 				},
 				["Enchanting"] = {
+					["Bracnar"] = {
+					},
 					["Clothgar"] = {
 					},
 				},

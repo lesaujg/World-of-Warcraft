@@ -563,8 +563,9 @@ function private.FSMCreate()
 		:AddState(FSM.NewState("ST_AUCTION_FOUND")
 			:SetOnEnter(function(context, result)
 				if TSM.IsWow83() then
-					context.findResult = result
-					context.numFound = result
+					local numCanBuy = min(result, context.auctionScan:GetNumCanBuy(context.findAuction) or math.huge)
+					context.findResult = numCanBuy > 0
+					context.numFound = numCanBuy
 				else
 					context.findResult = result
 					context.numFound = min(#result, context.auctionScan:GetNumCanBuy(context.findAuction) or math.huge)

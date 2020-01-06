@@ -371,11 +371,19 @@ function AuctionScrollingTable._UpdateData(self)
 		end
 
 		-- count the number of auctions grouped by hash
-		if not self._numAuctionsByHash[hash] then
-			self._numAuctionsByItem[baseItemString] = (self._numAuctionsByItem[baseItemString] or 0) + 1
-			self._numAuctionsByHash[hash] = 0
+		if TSM.IsWow83() then
+			if not self._numAuctionsByHash[hash] then
+				self._numAuctionsByItem[baseItemString] = (self._numAuctionsByItem[baseItemString] or 0) + 1
+				self._numAuctionsByHash[hash] = 0
+			end
+			self._numAuctionsByHash[hash] = self._numAuctionsByHash[hash] + record.stackSize
+		else
+			if not self._numAuctionsByHash[hash] then
+				self._numAuctionsByItem[baseItemString] = (self._numAuctionsByItem[baseItemString] or 0) + 1
+				self._numAuctionsByHash[hash] = 0
+			end
+			self._numAuctionsByHash[hash] = self._numAuctionsByHash[hash] + 1
 		end
-		self._numAuctionsByHash[hash] = self._numAuctionsByHash[hash] + 1
 
 		-- use the highest filterId record so more recent auctions show up first in sniper
 		if not self._baseRecordByHash[hash] or record.filterId > self._baseRecordByHash[hash].filterId then
@@ -638,7 +646,7 @@ end
 
 function private.GetAuctionsQuantityText(self, context)
 	local record = self._baseRecordByHash[context]
-	return self._numAuctionsByHash[record:GetField("hash")] * record:GetField("stackSize")
+	return self._numAuctionsByHash[record:GetField("hash")]
 end
 
 function private.GetAuctionsPostsText(self, context)

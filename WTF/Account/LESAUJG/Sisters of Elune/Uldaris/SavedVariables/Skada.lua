@@ -1,5 +1,7 @@
 
 SkadaPerCharDB = {
+	["sets"] = {
+	},
 	["total"] = {
 		["healingabsorbed"] = 0,
 		["auras"] = {
@@ -18,58 +20,58 @@ SkadaPerCharDB = {
 				["role"] = "DAMAGER",
 				["time"] = 1,
 				["interrupts"] = 0,
-				["ccbreaks"] = 0,
-				["auras"] = {
+				["ffdamagedonespells"] = {
 				},
+				["ffdamagedone"] = 0,
 				["damage"] = 54314,
 				["damagespells"] = {
-					["Attack"] = {
-						["hitmin"] = 44846,
-						["id"] = 6603,
-						["min"] = 44846,
-						["damage"] = 44846,
-						["hitmax"] = 44846,
-						["hit"] = 1,
-						["school"] = 1,
-						["totalhits"] = 1,
-						["max"] = 44846,
-						["hitamount"] = 44846,
-					},
 					["Zeal"] = {
 						["hitmin"] = 9468,
 						["id"] = 269937,
 						["min"] = 9468,
-						["damage"] = 9468,
+						["hitamount"] = 9468,
 						["hitmax"] = 9468,
 						["hit"] = 1,
 						["school"] = 2,
-						["totalhits"] = 1,
 						["max"] = 9468,
-						["hitamount"] = 9468,
+						["totalhits"] = 1,
+						["damage"] = 9468,
+					},
+					["Attack"] = {
+						["hitmin"] = 44846,
+						["id"] = 6603,
+						["min"] = 44846,
+						["hitamount"] = 44846,
+						["hitmax"] = 44846,
+						["hit"] = 1,
+						["school"] = 1,
+						["max"] = 44846,
+						["totalhits"] = 1,
+						["damage"] = 44846,
 					},
 				},
-				["maxhp"] = 20540,
+				["healed"] = {
+				},
 				["damagetaken"] = 0,
 				["power"] = {
 				},
 				["id"] = "Player-1169-084C1696",
-				["healing"] = 0,
-				["shielding"] = 0,
-				["damagetakenspells"] = {
-				},
-				["healingspells"] = {
-				},
-				["name"] = "Allala",
-				["ffdamagedonetargets"] = {
-				},
-				["overhealing"] = 0,
+				["maxhp"] = 20540,
 				["deathlog"] = {
 				},
-				["healed"] = {
+				["damagetakenspells"] = {
 				},
-				["ffdamagedone"] = 0,
-				["ffdamagedonespells"] = {
+				["overhealing"] = 0,
+				["ffdamagedonetargets"] = {
 				},
+				["name"] = "Allala",
+				["healingspells"] = {
+				},
+				["shielding"] = 0,
+				["healing"] = 0,
+				["auras"] = {
+				},
+				["ccbreaks"] = 0,
 			}, -- [1]
 			{
 				["healingabsorbed"] = 0,
@@ -80,97 +82,97 @@ SkadaPerCharDB = {
 				["role"] = "DAMAGER",
 				["time"] = 2,
 				["interrupts"] = 0,
-				["ccbreaks"] = 0,
-				["auras"] = {
+				["ffdamagedonespells"] = {
 				},
+				["ffdamagedone"] = 0,
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["maxhp"] = 19720,
+				["healed"] = {
+				},
 				["damagetaken"] = 28,
 				["power"] = {
 				},
 				["id"] = "Player-1169-06A1AD17",
-				["healing"] = 0,
-				["shielding"] = 0,
-				["damagetakenspells"] = {
-					["Static Shield"] = {
-						["crushing"] = 0,
-						["id"] = 136343,
-						["damage"] = 28,
-						["max"] = 14,
-						["name"] = "Static Shield",
-						["glancing"] = 0,
-						["totalhits"] = 2,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 8,
-						["resisted"] = 0,
-						["min"] = 14,
-						["absorbed"] = 0,
-					},
-				},
-				["healingspells"] = {
-				},
-				["name"] = "Uldaris",
-				["ffdamagedonetargets"] = {
-				},
-				["overhealing"] = 0,
+				["maxhp"] = 19720,
 				["deathlog"] = {
 					{
 						["ts"] = 1575055833.578,
 						["amount"] = -14,
+						["srcname"] = "Nalak",
 						["hp"] = 19706,
 						["spellid"] = 136343,
-						["srcname"] = "Nalak",
 					}, -- [1]
 					{
 						["ts"] = 1575055835.59,
 						["amount"] = -14,
+						["srcname"] = "Nalak",
 						["hp"] = 19692,
 						["spellid"] = 136343,
-						["srcname"] = "Nalak",
 					}, -- [2]
 					["pos"] = 3,
 				},
-				["healed"] = {
+				["damagetakenspells"] = {
+					["Static Shield"] = {
+						["crushing"] = 0,
+						["id"] = 136343,
+						["absorbed"] = 0,
+						["min"] = 14,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["school"] = 8,
+						["name"] = "Static Shield",
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["max"] = 14,
+						["damage"] = 28,
+					},
 				},
-				["ffdamagedone"] = 0,
-				["ffdamagedonespells"] = {
+				["overhealing"] = 0,
+				["ffdamagedonetargets"] = {
 				},
+				["name"] = "Uldaris",
+				["healingspells"] = {
+				},
+				["shielding"] = 0,
+				["healing"] = 0,
+				["auras"] = {
+				},
+				["ccbreaks"] = 0,
 			}, -- [2]
 		},
 		["deaths"] = 0,
 		["mobs"] = {
 			["Nalak"] = {
 				["players"] = {
-					["Allala"] = {
-						["taken"] = 54314,
-						["done"] = 0,
-						["class"] = "PALADIN",
-						["role"] = "DAMAGER",
-					},
 					["Uldaris"] = {
 						["taken"] = 0,
 						["done"] = 28,
-						["class"] = "DRUID",
 						["role"] = "DAMAGER",
+						["class"] = "DRUID",
+					},
+					["Allala"] = {
+						["taken"] = 54314,
+						["done"] = 0,
+						["role"] = "DAMAGER",
+						["class"] = "PALADIN",
 					},
 				},
 				["hdone"] = 0,
-				["hdonespell"] = {
+				["htakenspell"] = {
 				},
 				["taken"] = 54314,
 				["done"] = 28,
 				["htaken"] = 0,
-				["htakenspell"] = {
+				["hdonespell"] = {
 				},
 			},
 			["Dalinia-CenarionCircle"] = {
 				["players"] = {
 				},
 				["hdone"] = 100,
-				["hdonespell"] = {
+				["htakenspell"] = {
 					["Leech"] = {
 						["min"] = 100,
 						["crits"] = 0,
@@ -183,7 +185,7 @@ SkadaPerCharDB = {
 				["taken"] = 0,
 				["done"] = 0,
 				["htaken"] = 100,
-				["htakenspell"] = {
+				["hdonespell"] = {
 					["Leech"] = {
 						["min"] = 100,
 						["crits"] = 0,
@@ -200,16 +202,14 @@ SkadaPerCharDB = {
 		["healing"] = 0,
 		["damagetaken"] = 28,
 		["overhealing"] = 0,
+		["shielding"] = 0,
+		["starttime"] = 1575055546,
+		["name"] = "Total",
+		["dispells"] = 0,
 		["power"] = {
 		},
-		["dispells"] = 0,
-		["name"] = "Total",
-		["starttime"] = 1575055546,
-		["shielding"] = 0,
 		["mobhdone"] = 100,
 		["last_action"] = 1575055546,
 		["mobdone"] = 28,
-	},
-	["sets"] = {
 	},
 }

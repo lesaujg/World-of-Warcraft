@@ -1,6 +1,9 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0311,
+	["LastVersion"] = 2.0314,
+	["LastPlayerFullName"] = "Torinar-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 151590,
@@ -83,12 +86,10 @@ PawnOptions = {
 			["Link"] = "|cffe6cc80|Hitem:128910::136684:141287:136689::::110:71:16777472:9:2:750:1496:295:1::3:1812:1469:1809:|h[Strom'kar, the Warbreaker]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Torinar-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "WARRIOR",
 	["LastAdded"] = 1,
 }
+PawnClassicScaleProviderOptions = nil

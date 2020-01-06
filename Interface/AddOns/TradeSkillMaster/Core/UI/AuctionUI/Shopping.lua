@@ -2156,8 +2156,9 @@ function private.FSMCreate()
 			:SetOnEnter(function(context, result)
 				TSM.UI.AuctionUI.EndedScan(L["Shopping"])
 				if TSM.IsWow83() then
-					context.findResult = result
-					context.numFound = result
+					local numCanBuy = min(result, context.auctionScan:GetNumCanBuy(context.findAuction) or math.huge)
+					context.findResult = numCanBuy > 0
+					context.numFound = numCanBuy
 				else
 					context.findResult = result
 					context.numFound = min(#result, context.auctionScan:GetNumCanBuy(context.findAuction) or math.huge)

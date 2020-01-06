@@ -1,6 +1,9 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0311,
+	["LastVersion"] = 2.0314,
+	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 128887,
@@ -83,12 +86,10 @@ PawnOptions = {
 			["Link"] = "|cffe6cc80|Hitem:128858::141292:143698:141292::::110:102:16777472:9:2:722:1501:244:1:3:1812:1469:1809:3:3394:1489:3528:3:1812:1469:1809|h[Scythe of Elune]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DRUID",
 	["LastAdded"] = 1,
 }
+PawnClassicScaleProviderOptions = nil
