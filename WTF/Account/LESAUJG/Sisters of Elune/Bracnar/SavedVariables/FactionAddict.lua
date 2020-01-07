@@ -109,7 +109,7 @@ FactionAddictLogData = {
 }
 FactionAddictLogEntries = {
 	{
-		["Rustbolt Resistance"] = 1236,
+		["Rustbolt Resistance"] = 2300,
 	}, -- [1]
 	{
 		["Rustbolt Resistance"] = 1495,
@@ -167,11 +167,11 @@ FactionAddictLogEntries = {
 	}, -- [13]
 	{
 		["7th Legion"] = 3393,
+		["Tortollan Seekers"] = 2616,
 		["Champions of Azeroth"] = 2300,
-		["Storm's Wake"] = 2645,
 		["Waveblade Ankoan"] = 57,
 		["Proudmoore Admiralty"] = 460,
-		["Tortollan Seekers"] = 2616,
+		["Storm's Wake"] = 2645,
 		["Rustbolt Resistance"] = 1236,
 	}, -- [14]
 	{

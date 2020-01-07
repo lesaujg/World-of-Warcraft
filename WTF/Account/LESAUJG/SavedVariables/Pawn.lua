@@ -416,20 +416,20 @@ PawnCommon = {
 			["UnenchantedColor"] = "bf5d07",
 			["SpecID"] = 2,
 		},
-		["\"MrRobot\":DEMONHUNTER2"] = {
-			["IconTexturePath"] = 1247265,
+		["\"MrRobot\":MAGE1"] = {
+			["IconTexturePath"] = 135932,
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "a330c9",
-			["LocalizedName"] = "Demon Hunter: Vengeance",
-			["ClassID"] = 12,
+			["Color"] = "3fc7eb",
+			["LocalizedName"] = "Mage: Arcane",
+			["ClassID"] = 8,
 			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "TANK",
-			["DoNotShow2HUpgrades"] = true,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["UnenchantedColor"] = "7a2496",
-			["SpecID"] = 2,
+			["UnenchantedColor"] = "2f95b0",
+			["SpecID"] = 1,
 		},
 		["\"MrRobot\":PALADIN2"] = {
 			["IconTexturePath"] = 236264,
@@ -620,21 +620,6 @@ PawnCommon = {
 				},
 			},
 		},
-		["\"MrRobot\":MAGE1"] = {
-			["IconTexturePath"] = 135932,
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "3fc7eb",
-			["LocalizedName"] = "Mage: Arcane",
-			["ClassID"] = 8,
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "DAMAGER",
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["UnenchantedColor"] = "2f95b0",
-			["SpecID"] = 1,
-		},
 		["\"MrRobot\":SHAMAN3"] = {
 			["IconTexturePath"] = 136052,
 			["PerCharacterOptions"] = {
@@ -649,6 +634,21 @@ PawnCommon = {
 			["Provider"] = "MrRobot",
 			["UnenchantedColor"] = "0054a6",
 			["SpecID"] = 3,
+		},
+		["\"MrRobot\":DEMONHUNTER2"] = {
+			["IconTexturePath"] = 1247265,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "a330c9",
+			["LocalizedName"] = "Demon Hunter: Vengeance",
+			["ClassID"] = 12,
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = true,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["UnenchantedColor"] = "7a2496",
+			["SpecID"] = 2,
 		},
 		["\"MrRobot\":DRUID3"] = {
 			["IconTexturePath"] = 132276,
