@@ -27,9 +27,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163398::::::::120:254::23:5:5845:1622:4786:6266:4775:::|h[7th Legionnaire's Chainmail]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 170369,
-			["Level"] = 420,
-			["Link"] = "|cffa335ee|Hitem:170369::::::::120:253:::4:6300:6293:1507:4786:::|h[Vim's Scalecrusher Chain]|h|r",
+			["ID"] = 163401,
+			["Level"] = 430,
+			["Link"] = "|cffa335ee|Hitem:163401::::::::120:253::23:3:5845:1622:4786:::|h[7th Legionnaire's Cincture]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 158018,
