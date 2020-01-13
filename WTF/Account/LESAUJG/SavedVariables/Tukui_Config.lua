@@ -19,71 +19,37 @@ TukuiConfigShared = {
 			["Bags"] = {
 				["Enable"] = false,
 			},
+			["Raid"] = {
+				["ShowPets"] = false,
+			},
 			["ActionBars"] = {
 				["OwnShadowDanceBar"] = true,
 				["OwnWarriorStanceBar"] = true,
 				["HotKey"] = true,
 			},
-			["Raid"] = {
-				["ShowPets"] = false,
-			},
 		},
 		["Ghiaccioli"] = {
-			["Auras"] = {
-				["BuffsPerRow"] = 12,
-			},
-			["Bags"] = {
-				["ItemsPerRow"] = 11,
-				["Spacing"] = 4,
-				["ButtonSize"] = 28,
-			},
-			["General"] = {
-				["UIScale"] = 0.64,
-			},
 			["ActionBars"] = {
 				["NormalButtonSize"] = 27,
 				["HotKey"] = true,
 				["ButtonSpacing"] = 4,
 				["PetButtonSize"] = 25,
 			},
+			["Bags"] = {
+				["ItemsPerRow"] = 11,
+				["ButtonSize"] = 28,
+				["Spacing"] = 4,
+			},
+			["General"] = {
+				["UIScale"] = 0.64,
+			},
+			["Auras"] = {
+				["BuffsPerRow"] = 12,
+			},
 		},
 		["Mandelbrot"] = {
 		},
 		["Torinar"] = {
-		},
-		["Clothgar"] = {
-			["General"] = {
-				["UIScale"] = 0.64,
-			},
-			["ActionBars"] = {
-				["HotKey"] = true,
-			},
-		},
-		["Tauro"] = {
-		},
-		["Orig"] = {
-			["General"] = {
-				["UIScale"] = 0.64,
-			},
-		},
-		["Leanara"] = {
-		},
-		["Belrath"] = {
-		},
-		["Herbinator"] = {
-		},
-		["Sanjuri"] = {
-		},
-		["Galinar"] = {
-			["General"] = {
-				["UIScale"] = 0.64,
-			},
-		},
-		["Edaka"] = {
-		},
-		["Palani"] = {
-		},
-		["Toberd"] = {
 		},
 		["Uldaris"] = {
 			["Bags"] = {
@@ -96,13 +62,47 @@ TukuiConfigShared = {
 				["HotKey"] = true,
 			},
 		},
+		["Toberd"] = {
+		},
+		["Orig"] = {
+			["General"] = {
+				["UIScale"] = 0.64,
+			},
+		},
+		["Palani"] = {
+		},
+		["Edaka"] = {
+		},
+		["Herbinator"] = {
+		},
+		["Galinar"] = {
+			["General"] = {
+				["UIScale"] = 0.64,
+			},
+		},
+		["Sanjuri"] = {
+		},
+		["Belrath"] = {
+		},
+		["Leanara"] = {
+		},
+		["Tauro"] = {
+		},
+		["Clothgar"] = {
+			["General"] = {
+				["UIScale"] = 0.64,
+			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+			},
+		},
 	},
 	["Account"] = {
-		["Bags"] = {
-			["Enable"] = false,
-		},
 		["ActionBars"] = {
 			["HotKey"] = true,
+		},
+		["Bags"] = {
+			["Enable"] = false,
 		},
 	},
 }
