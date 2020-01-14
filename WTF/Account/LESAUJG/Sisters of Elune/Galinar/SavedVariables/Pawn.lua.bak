@@ -1,9 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0311,
-	["LastPlayerFullName"] = "Galinar-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
+	["LastVersion"] = 2.0314,
 	["ItemLevels"] = {
 		{
 			["ID"] = 160906,
@@ -82,9 +79,13 @@ PawnOptions = {
 			["Link"] = "|cffe6cc80|Hitem:120978::141286:147756:::::112:70:16777472:9:2:737:1496:9:1:3:1812:1469:1809:3:3572:1476:3528:|h[Ashbringer]|h|r",
 		}, -- [16]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Galinar-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "PALADIN",
 	["LastAdded"] = 1,
 }
+PawnClassicScaleProviderOptions = nil
