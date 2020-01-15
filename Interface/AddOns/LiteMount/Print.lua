@@ -4,28 +4,13 @@
 
   AddMessage() into the currently displayed chat window.
 
-  Copyright 2011-2019 Mike Battersby
+  Copyright 2011-2020 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
 
-local ChatWindowCache = nil
-
-local function GetActiveChatFrame()
-    if not ChatWindowCache then
-        ChatWindowCache = { }
-        for i = 1,NUM_CHAT_WINDOWS do
-            tinsert(ChatWindowCache, _G["ChatFrame"..i])
-        end
-    end
-
-    for _,f in pairs(ChatWindowCache) do
-        if f:IsShown() then return f end
-    end
-    return DEFAULT_CHAT_FRAME
-end
-
 function LM_Print(msg)
-    GetActiveChatFrame():AddMessage("|cff00ff00LiteMount:|r " .. msg)
+    local f = SELECTED_CHAT_FRAME or DEFAULT_CHAT_FRAME
+    f:AddMessage("|cff00ff00LiteMount:|r " .. msg)
 end
 
 function LM_PrintError(msg)

@@ -195,6 +195,7 @@ function PostScan.HandleConfirm(success, canRetry)
 
 	private.DebugLogInsert(confirmRow:GetField("itemString"), "HandleConfirm(success=%s) x %d", tostring(success), confirmRow:GetField("stackSize"))
 	if canRetry then
+		assert(not success)
 		confirmRow:SetField("numFailed", confirmRow:GetField("numFailed") + 1)
 	end
 	confirmRow:SetField("numConfirmed", confirmRow:GetField("numConfirmed") + 1)
@@ -474,6 +475,7 @@ function private.AuctionScanOnFilterDone(_, filter)
 			:Equal(isBaseItemString and "baseItemString" or "itemString", itemString)
 			:GreaterThan("itemBuyout", 0)
 			:OrderBy("itemBuyout", true)
+			:OrderBy("auctionId", false)
 		local groupPath = TSM.Groups.GetPathByItem(itemString)
 		if groupPath then
 			local numHave = 0

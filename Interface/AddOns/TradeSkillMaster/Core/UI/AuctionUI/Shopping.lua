@@ -2318,7 +2318,7 @@ function private.FSMCreate()
 		:AddState(FSM.NewState("ST_PLACING_BID")
 			:SetOnEnter(function(context, quantity)
 				local index = not TSM.IsWow83() and tremove(context.findResult, #context.findResult) or nil
-				assert(not TSM.IsWow83() or index)
+				assert(TSM.IsWow83() or index)
 				-- bid on the auction
 				if context.auctionScan:PlaceBidOrBuyout(index, TSM.Auction.GetRequiredBidByScanResultRow(context.findAuction), context.findAuction, false, quantity) then
 					context.numBid = context.numBid + (TSM.IsWow83() and quantity or 1)

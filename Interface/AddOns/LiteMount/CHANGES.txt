@@ -1,12 +1,12 @@
-tag 4d51b7191c802c2e019d8363c514ab764caba840 8.2.10
+tag f6b1e40a313d38a919e176a4f878957923fc45d1 8.3.2
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Wed Sep 25 09:08:16 2019 +1000
+Date:	Wed Jan 15 12:55:45 2020 +1100
 
-LiteMount 8.2.10 - Update TOC for WoW 8.2.5
+LiteMount 8.3.2 to force a curseforge repackage
 
-commit 505f01ceb76a951a7384d1a485f7c8d60fd3ae2f
+commit e7eaaa212a7ad675ba6c56c5abfe221e7c2d9968
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Wed Sep 25 09:08:01 2019 +1000
+Date:   Tue Jan 14 08:31:18 2020 +1100
 
-    Update TOC for 8.2.5
+    Use SELECTED_CHAT_FRAME
 

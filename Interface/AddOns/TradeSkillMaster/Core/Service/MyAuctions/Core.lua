@@ -52,7 +52,7 @@ end
 function MyAuctions.CreateQuery()
 	return AuctionTracking.CreateQuery()
 		:LeftJoin(private.pendingDB, "index")
-		:OrderBy("index", false)
+		:OrderBy("index", TSM.IsWow83())
 end
 
 function MyAuctions.CancelAuction(auctionId)

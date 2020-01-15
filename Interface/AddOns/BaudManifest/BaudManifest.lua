@@ -736,16 +736,6 @@ EventFuncs = {
   end,
 
 ---------------------
--- Event NEW_AUCTION_UPDATE
----------------------
-
-  NEW_AUCTION_UPDATE = function()
-    --Prevents Baud Manifest from combining items split apart for auctioning, after the auction gets posted, and before the
-    --item disappears from your pack.  This is harmless anyways, but it is unnecessary, so I eliminate it.
-    DisableCombine = GetTime() + 1;
-  end,
-
----------------------
 -- Event CURSOR_UPDATE
 ---------------------
 

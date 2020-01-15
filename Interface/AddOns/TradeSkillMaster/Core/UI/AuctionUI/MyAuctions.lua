@@ -320,6 +320,7 @@ function private.FSMCreate()
 	local fsmContext = {
 		frame = nil,
 		currentSelectionIndex = nil,
+		currentSelectionAuctionId = nil,
 		durationFilter = nil,
 		keywordFilter = "",
 		bidFilter = false,
@@ -349,15 +350,29 @@ function private.FSMCreate()
 		-- select the next row we can cancel (or clear the selection otherwise)
 		local selectedRow = nil
 		if context.currentSelectionIndex then
-			-- find the highest index which is at most context.currentSelectionIndex
+			if TSM.IsWow83() and TSM.MyAuctions.CanCancel(context.currentSelectionAuctionId) then
+				-- try to select the same row
+				for _, row in private.query:Iterator() do
+					local auctionId = row:GetFields("auctionId")
+					if not selectedRow and auctionId == context.currentSelectionAuctionId then
+						selectedRow = row
+					end
+				end
+			end
+			-- find the next auction to cancel
 			for _, row in private.query:Iterator() do
-				local auctionId = row:GetFields("auctionId")
-				if auctionId <= context.currentSelectionIndex and auctionId > (selectedRow and selectedRow:GetField("auctionId") or 0) and TSM.MyAuctions.CanCancel(auctionId) then
+				local index, auctionId = row:GetFields("index", "auctionId")
+				if not selectedRow and TSM.MyAuctions.CanCancel(auctionId) and ((TSM.IsWow83() and index >= context.currentSelectionIndex) or (not TSM.IsWow83() and index <= context.currentSelectionIndex)) then
 					selectedRow = row
 				end
 			end
 		end
-		context.currentSelectionIndex = selectedRow and selectedRow:GetField("auctionId") or nil
+		if selectedRow then
+			context.currentSelectionIndex, context.currentSelectionAuctionId = selectedRow:GetFields("index", "auctionId")
+		else
+			context.currentSelectionIndex = nil
+			context.currentSelectionAuctionId = nil
+		end
 		auctions:SetSelection(selectedRow and selectedRow:GetUUID() or nil, true)
 
 		context.frame:GetElement("headerFrame.clearfilterBtn")
@@ -365,13 +380,6 @@ function private.FSMCreate()
 			:Draw()
 
 		local hasSelection = auctions:GetSelection() and true or false
-		local bottomFrame = context.frame:GetElement("bottom")
-		bottomFrame:GetElement("cancelBtn")
-			:SetDisabled(not hasSelection)
-			:Draw()
-		bottomFrame:GetElement("skipBtn")
-			:SetDisabled(not hasSelection)
-			:Draw()
 		local numPending = TSM.MyAuctions.GetNumPending()
 		local progressText = nil
 		if numPending > 0 then
@@ -381,6 +389,13 @@ function private.FSMCreate()
 		else
 			progressText = L["Select Auction to Cancel"]
 		end
+		local bottomFrame = context.frame:GetElement("bottom")
+		bottomFrame:GetElement("cancelBtn")
+			:SetDisabled(not hasSelection or (TSM.IsWow83() and numPending > 0))
+			:Draw()
+		bottomFrame:GetElement("skipBtn")
+			:SetDisabled(not hasSelection)
+			:Draw()
 		bottomFrame:GetElement("progressBar")
 			:SetProgressIconHidden(numPending == 0)
 			:SetText(progressText)
@@ -450,6 +465,7 @@ function private.FSMCreate()
 				if didChange then
 					context.filterChanged = true
 					context.currentSelectionIndex = nil
+					context.currentSelectionAuctionId = nil
 					return "ST_SHOWN"
 				end
 			end)
@@ -457,7 +473,8 @@ function private.FSMCreate()
 		:AddState(FSM.NewState("ST_CHANGING_SELECTION")
 			:SetOnEnter(function(context)
 				local row = context.frame:GetElement("auctions"):GetSelection()
-				context.currentSelectionIndex = row and row:GetField("auctionId") or nil
+				context.currentSelectionIndex = row and row:GetField("index") or nil
+				context.currentSelectionAuctionId = row and row:GetField("auctionId") or nil
 				return "ST_SHOWN"
 			end)
 			:AddTransition("ST_SHOWN")
@@ -479,14 +496,20 @@ function private.FSMCreate()
 		)
 		:AddState(FSM.NewState("ST_SKIPPING")
 			:SetOnEnter(function(context)
-				context.currentSelectionIndex = context.currentSelectionIndex - 1
 				local selectedRow = nil
 				for _, row in private.query:Iterator() do
-					if row:GetField("auctionId") == context.currentSelectionIndex then
-						selectedRow = row:GetUUID()
+					local index, auctionId = row:GetFields("index", "auctionId")
+					if not selectedRow and TSM.MyAuctions.CanCancel(auctionId) and (TSM.IsWow83() and index > context.currentSelectionIndex) or (not TSM.IsWow83() and index < context.currentSelectionIndex) then
+						selectedRow = row
 					end
 				end
-				context.frame:GetElement("auctions"):SetSelection(selectedRow)
+				if selectedRow then
+					context.currentSelectionIndex, context.currentSelectionAuctionId = selectedRow:GetFields("index", "auctionId")
+				else
+					context.currentSelectionIndex = nil
+					context.currentSelectionAuctionId = nil
+				end
+				context.frame:GetElement("auctions"):SetSelection(selectedRow and selectedRow:GetUUID() or nil)
 				return "ST_SHOWN"
 			end)
 			:AddTransition("ST_SHOWN")

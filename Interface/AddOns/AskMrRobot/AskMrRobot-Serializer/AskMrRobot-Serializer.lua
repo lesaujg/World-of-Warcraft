@@ -1,6 +1,6 @@
 -- AskMrRobot-Serializer will serialize and communicate character data between users.
 
-local MAJOR, MINOR = "AskMrRobot-Serializer", 80
+local MAJOR, MINOR = "AskMrRobot-Serializer", 81
 local Amr, oldminor = LibStub:NewLibrary(MAJOR, MINOR)
 
 if not Amr then return end -- already loaded by something else
@@ -144,7 +144,9 @@ Amr.RaceIds = {
 	["DarkIronDwarf"] = 18,
 	["MagharOrc"] = 19,
 	["ZandalariTroll"] = 20,
-	["KulTiran"] = 21
+	["KulTiran"] = 21,
+	["Vulpera"] = 22,
+	["Mechagnome"] = 23
 }
 
 Amr.FactionIds = {

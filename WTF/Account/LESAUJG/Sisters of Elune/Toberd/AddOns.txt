@@ -10,12 +10,12 @@ FactionAddict: disabled
 GTFO: disabled
 HandyNotes: disabled
 HandyNotes_WarfrontRares: disabled
-Ace3: disabled
-LiteMount: disabled
+Ace3: enabled
+LiteMount: enabled
 MountDropList: disabled
 MrrlsItemInformation: disabled
 NPCScan: disabled
-OPie: disabled
+OPie: enabled
 Pawn: disabled
 RaidAchieveFilter: disabled
 RaidAchievement: disabled
@@ -38,11 +38,11 @@ WeakAuras: disabled
 WeakAurasModelPaths: disabled
 WeakAurasOptions: disabled
 WeakAurasTemplates: disabled
-SmexyMats: disabled
-TradeSkillMaster: disabled
-TradeSkillMaster_AppHelper: disabled
-Tukui_Config: disabled
-Tukui: disabled
+SmexyMats: enabled
+TradeSkillMaster: enabled
+TradeSkillMaster_AppHelper: enabled
+Tukui_Config: enabled
+Tukui: enabled
 DBM-Core: disabled
 DBM-DefaultSkin: disabled
 DBM-GUI: disabled
@@ -90,3 +90,4 @@ DBM-Uldir: disabled
 DBM-Ulduar: disabled
 DBM-VoA: disabled
 DBM-WorldEvents: disabled
+HandyNotes_MechagonAndNazjatar: disabled

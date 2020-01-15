@@ -1,7 +1,7 @@
-changeset:   171:5d25f06e0633
-tag:         v80
+changeset:   173:556cb7c32580
+tag:         v81
 user:        yellowfive
-date:        Mon Sep 30 15:11:16 2019 -0700
-summary:     Interface version bumped.
+date:        Tue Jan 14 12:51:11 2020 -0800
+summary:     version bump for 8.3, new allied races
 
 

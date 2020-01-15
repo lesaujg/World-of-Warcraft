@@ -849,7 +849,7 @@
 								</Anchors>
 								<Layers>
 									<Layer level="ARTWORK">
-										<Texture file="Interface\FriendsFrame\ClearBroadcastIcon" alpha="0.5" parentKey="texture">
+										<Texture file="Interface\FriendsFrame\ClearBroadcastIcon" alpha="0.5" parentKey="Icon">
 											<Size>
 												<AbsDimension x="17" y="17"/>
 											</Size>
@@ -861,18 +861,18 @@
 								</Layers>
 								<Scripts>
 									<OnEnter>
-										self.texture:SetAlpha(1.0);
+										self.Icon:SetAlpha(1.0);
 									</OnEnter>
 									<OnLeave>
-										self.texture:SetAlpha(0.5);
+										self.Icon:SetAlpha(0.5);
 									</OnLeave>
 									<OnMouseDown>
 										if self:IsEnabled() then
-										self.texture:SetPoint("TOPLEFT", 1, -1);
+											self.Icon:SetPoint("TOPLEFT", 1, -1);
 										end
 									</OnMouseDown>
 									<OnMouseUp>
-										self.texture:SetPoint("TOPLEFT", 0, 0);
+										self.Icon:SetPoint("TOPLEFT", 0, 0);
 									</OnMouseUp>
 									<OnClick>
 										PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON);

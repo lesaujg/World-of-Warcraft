@@ -166,7 +166,7 @@ Grid2Options: disabled
 Grid2RaidDebuffs: disabled
 Grid2LDB: disabled
 Grid2RaidDebuffsOptions: disabled
-SavedInstances: enabled
+SavedInstances: disabled
 VuhDoOptions: disabled
 WeDontWipe: disabled
 WeDontWipe-WindwalkerMonk: disabled
@@ -229,3 +229,11 @@ MountDropList: disabled
 DBM-CrucibleofStorms: disabled
 DBM-ZuldazarRaid: disabled
 OPie_Classic: disabled
+DarkmoonQuestItems: disabled
+HandyNotes_MechagonAndNazjatar: disabled
+HandyNotes_WarfrontRares: disabled
+Ace3: enabled
+MrrlsItemInformation: disabled
+SmexyMats: enabled
+DBM-Nyalotha: disabled
+DBM-EternalPalace: disabled

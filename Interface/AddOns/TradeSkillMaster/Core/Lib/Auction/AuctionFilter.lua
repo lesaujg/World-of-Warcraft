@@ -324,16 +324,31 @@ function AuctionFilter._GetPageProgress(self)
 	return self._page, self._numPages
 end
 
-function AuctionFilter._IsItemFiltered(self, baseItemString, itemLevel)
+function AuctionFilter._IsItemFiltered(self, baseItemString, itemString, itemLevel, quality, itemName, totalQuantity, minPrice)
 	if #self._items > 0 then
 		local found = false
-		for _, filterItemString in ipairs(self:GetItems()) do
-			if ItemString.GetBaseFast(filterItemString) == baseItemString then
-				found = true
-				break
+		if itemString then
+			local rowBaseItemString = ItemString.GetBaseFast(itemString)
+			for _, filterItemString in ipairs(self:GetItems()) do
+				if filterItemString == itemString or filterItemString == rowBaseItemString then
+					found = true
+				end
+			end
+		else
+			for _, filterItemString in ipairs(self:GetItems()) do
+				if ItemString.GetBaseFast(filterItemString) == baseItemString then
+					found = true
+					break
+				end
 			end
 		end
 		if not found then
+			return true
+		end
+	end
+	if self._nameMatch and itemName then
+		local name = strlower(itemName)
+		if not strmatch(name, self._nameMatch) or (self._exact and name ~= strlower(self._name)) then
 			return true
 		end
 	end
@@ -342,6 +357,9 @@ function AuctionFilter._IsItemFiltered(self, baseItemString, itemLevel)
 		if minLevel < (self._minLevel or -math.huge) or minLevel > (self._maxLevel or math.huge) then
 			return true
 		end
+	end
+	if self._quality and quality and quality < self._quality then
+		return true
 	end
 	if self._class and ItemInfo.GetClassId(baseItemString) ~= self._class then
 		return true
@@ -352,13 +370,19 @@ function AuctionFilter._IsItemFiltered(self, baseItemString, itemLevel)
 	if self._invType and ItemInfo.GetInvSlotId(baseItemString) ~= self._invType then
 		return true
 	end
-	if itemLevel < (self._minItemLevel or 0) or itemLevel > (self._maxItemLevel or math.huge) then
+	if self._evenOnly and totalQuantity < 5 then
+		return true
+	end
+	if itemLevel and (itemLevel < (self._minItemLevel or 0) or itemLevel > (self._maxItemLevel or math.huge)) then
 		return true
 	end
 	if self._unlearned and CanIMogIt:PlayerKnowsTransmog(ItemInfo.GetLink(baseItemString)) then
 		return true
 	end
 	if self._canlearn and not CanIMogIt:CharacterCanLearnTransmog(ItemInfo.GetLink(baseItemString)) then
+		return true
+	end
+	if minPrice > (self._minPrice or math.huge) then
 		return true
 	end
 	return false
@@ -401,8 +425,14 @@ function AuctionFilter._IsFiltered(self, ignoreItemLevel, rowItemString, rowBuyo
 	if self._invType and ItemInfo.GetInvSlotId(rowItemString) ~= self._invType then
 		return true
 	end
-	if self._evenOnly and stackSize % 5 ~= 0 then
-		return true
+	if TSM.IsWow83() then
+		if self._evenOnly and stackSize < 5 then
+			return true
+		end
+	else
+		if self._evenOnly and stackSize % 5 ~= 0 then
+			return true
+		end
 	end
 	local itemLevel = ItemInfo.GetItemLevel(rowItemString)
 	if not ignoreItemLevel and (itemLevel < (self._minItemLevel or 0) or itemLevel > (self._maxItemLevel or math.huge)) then
@@ -445,8 +475,8 @@ function AuctionFilter._GetTargetItemRate(self, itemString)
 	return conversionInfo and conversionInfo[itemString] or 0
 end
 
-function AuctionFilter._ShouldScanItem(self, baseItemString, minPrice)
-	return not self._shouldScanItemFunction or self._shouldScanItemFunction(self, baseItemString, minPrice)
+function AuctionFilter._ShouldScanItem(self, baseItemString, itemString, minPrice)
+	return not self._shouldScanItemFunction or self._shouldScanItemFunction(self, baseItemString, itemString, minPrice)
 end
 
 function AuctionFilter._DoAuctionQueryThreaded(self)
@@ -468,7 +498,7 @@ function AuctionFilter._DoAuctionQueryThreaded(self)
 		if self._exact then
 			tinsert(filters, Enum.AuctionHouseFilter.ExactMatch)
 		end
-		for i = Enum.AuctionHouseFilter.PoorQuality, Enum.AuctionHouseFilter.ArtifactQuality do
+		for i = (self._quality or 0) + Enum.AuctionHouseFilter.PoorQuality, Enum.AuctionHouseFilter.ArtifactQuality do
 			tinsert(filters, i)
 		end
 		local itemClassFilters = TempTable.Acquire()
@@ -480,8 +510,7 @@ function AuctionFilter._DoAuctionQueryThreaded(self)
 			tinsert(itemClassFilters, info)
 		end
 
-		-- Blizzard currently doesn't handle search strings with a "." or "-" in them very well, so remove them
-		query.searchString = gsub(self._name or "", "[%-%.]", "")
+		query.searchString = self._name or ""
 		query.sorts = sorts
 		query.minLevel = self._minLevel or 0
 		query.maxLevel = self._maxLevel or 0
@@ -502,13 +531,14 @@ function AuctionFilter._DoAuctionQueryThreaded(self)
 
 		-- wait for the browse results to fully load
 		Threading.WaitForEvent("AUCTION_HOUSE_BROWSE_RESULTS_UPDATED")
+		Threading.Sleep(0.5)
 		while not C_AuctionHouse.HasFullBrowseResults() do
 			if self._scan:_IsCancelled() then
 				return false
 			end
 			Log.Info("Requesting more...")
 			C_AuctionHouse.RequestMoreBrowseResults()
-			Threading.WaitForEvent("AUCTION_HOUSE_BROWSE_RESULTS_ADDED")
+			Threading.Sleep(0.5)
 		end
 	else
 		if self:_IsSniper() then

@@ -243,3 +243,6 @@ SmexyMats: enabled
 MrrlsItemInformation: enabled
 Ace3: enabled
 DarkmoonQuestItems: enabled
+HandyNotes_MechagonAndNazjatar: enabled
+DBM-Nyalotha: enabled
+DBM-EternalPalace: enabled

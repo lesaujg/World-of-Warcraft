@@ -7,6 +7,10 @@ local Header = GameMenuFrameHeader
 local Logout = GameMenuButtonLogout
 local Addons = GameMenuButtonAddons
 
+if T.WoWBuild >= 33051 then
+    Header = GameMenuFrame.Header
+end
+
 function GameMenu:AddHooks()
 	Menu:SetHeight(Menu:GetHeight() + Logout:GetHeight() - 4)
 	local _, relTo, _, _, offY = Logout:GetPoint()
@@ -47,7 +51,11 @@ function GameMenu:Enable()
 	end
 
 	if not AddOnSkins then
-		Header:SetTexture("")
+        if T.WoWBuild >= 33051 then
+            Header:StripTextures()
+        else
+            Header:SetTexture("")
+        end
 		Header:ClearAllPoints()
 		Header:SetPoint("TOP", Menu, 0, 7)
 

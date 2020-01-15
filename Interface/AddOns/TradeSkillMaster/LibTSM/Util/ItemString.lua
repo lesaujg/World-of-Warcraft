@@ -113,7 +113,7 @@ function ItemString.GetBaseFromItemKey(itemKey)
 end
 
 function ItemString.HasNonBase(baseItemString)
-	return private.hasNonBaseItemStrings[baseItemString]
+	return private.hasNonBaseItemStrings[baseItemString] or false
 end
 
 --- Converts the parameter into a WoW itemString.

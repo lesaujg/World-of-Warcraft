@@ -6,7 +6,7 @@
   the mojo is done by IsUsableSpell to know if a mount can be cast, this
   just helps with the prioritization.
 
-  Copyright 2011-2019 Mike Battersby
+  Copyright 2011-2020 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
 
@@ -145,6 +145,7 @@ local InstanceNotFlyable = {
     [1893] = true,          -- Island Expedition The Dread Chain
     [1897] = true,          -- Island Expedition Molten Cay
     [1898] = true,          -- Island Expedition Skittering Hollow
+    [1906] = true,          -- Zuldazar Continent Finale
     [1907] = true,          -- Island Expedition Snowblossom Village
     [2124] = true,          -- Island Expedition Crestfall
 }

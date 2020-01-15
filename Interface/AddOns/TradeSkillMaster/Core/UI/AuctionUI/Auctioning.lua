@@ -810,7 +810,7 @@ function private.FSMCreate()
 	local POST_ERR_MSGS = {
 		-- errors where we can retry
 		[ERR_ITEM_NOT_FOUND] = true,
-		[ERR_AUCTION_DATABASE_ERROR] = true,
+		[ERR_AUCTION_DATABASE_ERROR] = not TSM.IsWow83() and true or nil,
 		-- errors where we can't retry
 		[ERR_AUCTION_REPAIR_ITEM] = false,
 		[ERR_AUCTION_LIMITED_DURATION_ITEM] = false,
@@ -851,30 +851,32 @@ function private.FSMCreate()
 			:GetFirstResultAndRelease()
 		local postTime = Table.GetDistinctKey(TSM.CONST.AUCTION_DURATIONS, detailsHeader2:GetElement("duration.dropdown"):GetSelection())
 		local stackSize = tonumber(currentRow:GetField("stackSize"))
-		local depositCost = nil
-		if not TSM.IsWow83() then
-			if postBag and postSlot then
+		local depositCost = 0
+		if postBag and postSlot then
+			if not TSM.IsWow83() then
 				ClearCursor()
 				PickupContainerItem(postBag, postSlot)
 				ClickAuctionSellItemButton(AuctionsItemButton, "LeftButton")
 				ClearCursor()
-			end
-			local bid = Money.FromString(detailsHeader1:GetElement("bid.text"):GetText())
-			local buyout = Money.FromString(detailsHeader1:GetElement("buyout.text"):GetText())
-			depositCost = GetAuctionDeposit(postTime, bid, buyout, stackSize, 1)
-			ClearCursor()
-			ClickAuctionSellItemButton(AuctionsItemButton, "LeftButton")
-			ClearCursor()
-		else
-			private.itemLocation:Clear()
-			private.itemLocation:SetBagAndSlot(postBag, postSlot)
-			local commodityStatus = C_AuctionHouse.GetItemCommodityStatus(private.itemLocation)
-			if commodityStatus == Enum.ItemCommodityStatus.Item then
-				depositCost = C_AuctionHouse.CalculateItemDeposit(private.itemLocation, postTime, stackSize)
-			elseif commodityStatus == Enum.ItemCommodityStatus.Commodity then
-				depositCost = C_AuctionHouse.CalculateCommodityDeposit(ItemString.ToId(itemString), postTime, stackSize)
+				local bid = Money.FromString(detailsHeader1:GetElement("bid.text"):GetText())
+				local buyout = Money.FromString(detailsHeader1:GetElement("buyout.text"):GetText())
+				depositCost = GetAuctionDeposit(postTime, bid, buyout, stackSize, 1)
+				ClearCursor()
+				ClickAuctionSellItemButton(AuctionsItemButton, "LeftButton")
+				ClearCursor()
 			else
-				error("Unknown commodity status: "..tostring(itemString))
+				private.itemLocation:Clear()
+				private.itemLocation:SetBagAndSlot(postBag, postSlot)
+				local commodityStatus = C_AuctionHouse.GetItemCommodityStatus(private.itemLocation)
+				if commodityStatus == Enum.ItemCommodityStatus.Item then
+					depositCost = C_AuctionHouse.CalculateItemDeposit(private.itemLocation, postTime, stackSize)
+				elseif commodityStatus == Enum.ItemCommodityStatus.Commodity then
+					depositCost = C_AuctionHouse.CalculateCommodityDeposit(ItemString.ToId(itemString), postTime, stackSize)
+				elseif commodityStatus == Enum.ItemCommodityStatus.Unknown then
+					return
+				else
+					error("Unknown commodity status: "..tostring(itemString))
+				end
 			end
 		end
 
@@ -1041,7 +1043,7 @@ function private.FSMCreate()
 				:SetProgress(totalNum > 0 and (numProcessed / totalNum) or 1)
 				:SetProgressIconHidden(iconHidden)
 				:SetText(progressText)
-			bottom:GetElement("processBtn"):SetDisabled(numProcessed == totalNum)
+			bottom:GetElement("processBtn"):SetDisabled(numProcessed == totalNum or (TSM.IsWow83() and numConfirmed ~= numProcessed))
 			bottom:GetElement("skipBtn"):SetDisabled(numProcessed == totalNum)
 		else
 			-- we're scanning
@@ -1164,7 +1166,7 @@ function private.FSMCreate()
 					end
 				elseif context.scanType == "CANCEL" then
 					TSM.Auctioning.CancelScan.HandleConfirm(success, canRetry)
-					local _, _, numConfirmed, numFailed, totalNum = TSM.Auctioning.CancelScan.GetStatus()
+					local _, numConfirmed, numFailed, totalNum = TSM.Auctioning.CancelScan.GetStatus()
 					if numConfirmed == totalNum then
 						if numFailed > 0 then
 							-- TODO: need to wait for the player's auctions to settle
