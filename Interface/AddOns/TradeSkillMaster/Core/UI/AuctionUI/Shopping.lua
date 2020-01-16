@@ -1111,9 +1111,11 @@ function private.PostingFrameOnUpdate(frame)
 	elseif bid > MAXIMUM_BID_PRICE then
 		bid = MAXIMUM_BID_PRICE
 	end
-	local buyout = floor(record.buyout / record.stackSize) - undercut
+	local buyout = nil
 	if TSM.IsWow83() then
-		buyout = Math.Round(buyout, COPPER_PER_SILVER)
+		buyout = Math.Round(record.buyout / record.stackSize - undercut, COPPER_PER_SILVER)
+	else
+		buyout = floor(record.buyout / record.stackSize) - undercut
 	end
 	if buyout < 0 then
 		buyout = 0

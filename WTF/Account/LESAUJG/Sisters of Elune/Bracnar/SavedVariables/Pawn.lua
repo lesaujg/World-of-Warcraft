@@ -1,9 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0316,
-	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
-	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
+	["LastVersion"] = 2.0317,
 	["ItemLevels"] = {
 		{
 			["ID"] = 158049,
@@ -12,13 +9,13 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 475,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:6316:4932:4933:1612:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 477,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:6316:4932:4933:1614:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 167772,
-			["Level"] = 420,
-			["Link"] = "|cffa335ee|Hitem:167772::::::::120:253:::6:6300:6298:1502:4786:6265:4775:::|h[Azsh'ari Stormsurger Shoulderguards]|h|r",
+			["ID"] = 173451,
+			["Level"] = 435,
+			["Link"] = "|cffa335ee|Hitem:173451::::::::120:253::29:4:1487:4786:6503:4775:::|h[Nefarious Tormentor's Spaulders]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -37,9 +34,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:158018::::::::120:254::28:3:4803:1607:4786:::|h[Ashenwood Legguards]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 170373,
-			["Level"] = 420,
-			["Link"] = "|cffa335ee|Hitem:170373::::::::120:253:::4:6300:6293:1507:4786:::|h[Azsh'ari Stormsurger Striders]|h|r",
+			["ID"] = 173447,
+			["Level"] = 430,
+			["Link"] = "|cffa335ee|Hitem:173447::::::::120:253::36:6:6412:4803:6515:6516:1487:4786:::|h[Nefarious Tormentor's Footguards]|h|r",
 		}, -- [8]
 		{
 			["ID"] = 174955,
@@ -76,9 +73,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:169307::168639::::::120:253::3:6:4798:1808:40:1487:5885:4784:::|h[Vision of Demise]|h|r",
 		}, -- [14]
 		{
-			["ID"] = 166668,
-			["Level"] = 395,
-			["Link"] = "|cffa335ee|Hitem:166668::168637::::::120:255::28:5:4803:4802:42:1587:4786:::|h[Battalion Veteran's Greatcloak]|h|r",
+			["ID"] = 169223,
+			["Level"] = 470,
+			["Link"] = "|cffff8000|Hitem:169223::::::::120:253::11:1:6272:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 163881,
@@ -86,7 +83,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163881::::::::120:253::23:3:5845:1622:4786:::|h[7th Legionnaire's Longbow]|h|r",
 		}, -- [16]
 	},
-	["LastKeybindingsSet"] = 1,
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -123,6 +122,7 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",

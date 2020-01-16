@@ -239,10 +239,10 @@ OPie_Classic: disabled
 TomCats: disabled
 TomCats-Mechagon: disabled
 TomCats-Nazjatar: disabled
-SmexyMats: enabled
-MrrlsItemInformation: enabled
+SmexyMats: disabled
+MrrlsItemInformation: disabled
 Ace3: enabled
-DarkmoonQuestItems: enabled
+DarkmoonQuestItems: disabled
 HandyNotes_MechagonAndNazjatar: enabled
 DBM-Nyalotha: enabled
 DBM-EternalPalace: enabled

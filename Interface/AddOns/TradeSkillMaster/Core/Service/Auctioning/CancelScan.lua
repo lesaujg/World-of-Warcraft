@@ -306,6 +306,8 @@ function private.GenerateCancel(auctionsDBRow, itemString, operationName, operat
 	elseif not TSM.db.global.auctioningOptions.cancelWithBid and highBidder ~= "" then
 		-- Don't cancel an auction if it has a bid and we're set to not cancel those
 		return true, "cancelBid", itemBuyout, nil, auctionId
+	elseif TSM.IsWow83() and C_AuctionHouse.GetCancelCost(auctionId) > GetMoney() then
+		return true, "cancelNoMoney", itemBuyout, nil, auctionId
 	end
 
 	local lowestAuction = TempTable.Acquire()

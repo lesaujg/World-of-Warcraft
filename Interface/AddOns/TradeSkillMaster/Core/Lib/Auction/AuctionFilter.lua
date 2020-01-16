@@ -327,19 +327,10 @@ end
 function AuctionFilter._IsItemFiltered(self, baseItemString, itemString, itemLevel, quality, itemName, totalQuantity, minPrice)
 	if #self._items > 0 then
 		local found = false
-		if itemString then
-			local rowBaseItemString = ItemString.GetBaseFast(itemString)
-			for _, filterItemString in ipairs(self:GetItems()) do
-				if filterItemString == itemString or filterItemString == rowBaseItemString then
-					found = true
-				end
-			end
-		else
-			for _, filterItemString in ipairs(self:GetItems()) do
-				if ItemString.GetBaseFast(filterItemString) == baseItemString then
-					found = true
-					break
-				end
+		for _, filterItemString in ipairs(self:GetItems()) do
+			if filterItemString == itemString or ItemString.GetBaseFast(filterItemString) == baseItemString then
+				found = true
+				break
 			end
 		end
 		if not found then

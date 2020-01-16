@@ -394,7 +394,7 @@ function AuctionScan._GetAuctionRowFields83(self, isCommodity, itemKey, index, f
 		end
 	else
 		rawLink = resultInfo.itemLink
-		buyout = resultInfo.buyoutAmount or 0
+		buyout = (resultInfo.buyoutAmount or 0) * resultInfo.quantity
 		timeLeft = resultInfo.timeLeft + 1
 	end
 	itemLink = ItemInfo.GeneralizeLink(rawLink)
@@ -419,20 +419,20 @@ function AuctionScan._GetAuctionRowFields83(self, isCommodity, itemKey, index, f
 	texture = ItemInfo.GetTexture(itemLink)
 	rawName = ItemInfo.GetName(rawLink)
 	stackSize = resultInfo.quantity
-	itemBuyout = isCommodity and (buyout / stackSize) or buyout
+	itemBuyout = buyout / stackSize
 	isHighBidder = resultInfo.bidder and resultInfo.bidder == UnitGUID("player") or false
 	minBid = resultInfo.minBid or buyout
 	bid = resultInfo.bidAmount or 0
 	displayedBid = minBid
 	minIncrement = 0 -- not used in 8.3
-	itemDisplayedBid = isCommodity and (displayedBid / stackSize) or displayedBid
+	itemDisplayedBid = displayedBid / stackSize
 	seller = table.concat(resultInfo.owners, ",")
 	if isCommodity then
 		hash = strjoin("~", tostringall(itemKey.itemID, itemBuyout, seller))
 		hashNoSeller = strjoin("~", tostringall(itemKey.itemID, itemBuyout))
 	else
-		hash = strjoin("~", tostringall(itemKey.itemID, itemKey.itemLevel, itemKey.itemSuffix, itemKey.battlePetSpeciesID, rawLink, minBid, buyout, bid, stackSize, isHighBidder, seller))
-		hashNoSeller = strjoin("~", tostringall(itemKey.itemID, itemKey.itemLevel, itemKey.itemSuffix, itemKey.battlePetSpeciesID, rawLink, minBid, buyout, bid, stackSize, isHighBidder))
+		hash = strjoin("~", tostringall(itemKey.itemID, itemKey.itemLevel, itemKey.itemSuffix, itemKey.battlePetSpeciesID, rawLink, itemDisplayedBid, itemBuyout, bid, stackSize, isHighBidder, seller))
+		hashNoSeller = strjoin("~", tostringall(itemKey.itemID, itemKey.itemLevel, itemKey.itemSuffix, itemKey.battlePetSpeciesID, rawLink, itemDisplayedBid, itemBuyout, bid, stackSize, isHighBidder))
 	end
 	targetItem = filter and filter:_GetTargetItem() or itemString
 	targetItemRate = filter and filter:_GetTargetItemRate(itemString)

@@ -147,7 +147,7 @@ function private.GetMyAuctionsFrame()
 					:SetFont(TSM.UI.Fonts.MontserratRegular)
 					:SetFontHeight(12)
 					:SetJustifyH("LEFT")
-					:SetTextInfo("highBidder")
+					:SetTextInfo(nil, private.AuctionsGetHighBidderText)
 					:Commit()
 				:NewColumn("group")
 					:SetTitles(GROUP)
@@ -391,7 +391,7 @@ function private.FSMCreate()
 		end
 		local bottomFrame = context.frame:GetElement("bottom")
 		bottomFrame:GetElement("cancelBtn")
-			:SetDisabled(not hasSelection or (TSM.IsWow83() and numPending > 0))
+			:SetDisabled(not hasSelection or (TSM.IsWow83() and numPending > 0) or (not TSM.IsWowClassic() and context.currentSelectionAuctionId and C_AuctionHouse.GetCancelCost(context.currentSelectionAuctionId) > GetMoney()))
 			:Draw()
 		bottomFrame:GetElement("skipBtn")
 			:SetDisabled(not hasSelection)
@@ -551,6 +551,11 @@ function private.AuctionsGetTimeLeftText(row)
 	else
 		return TSM.UI.GetTimeLeftString(duration)
 	end
+end
+
+function private.AuctionsGetHighBidderText(row)
+	local saleStatus = row:GetField("saleStatus")
+	return saleStatus == 1 and TSM.IsWow83() and "" or row:GetField("highBidder")
 end
 
 function private.AuctionsGetGroupText(itemString)

@@ -129,7 +129,7 @@ function private.ChatMsgSystemEventHandler(_, msg)
 end
 
 function private.UIErrorMessageEventHandler(_, _, msg)
-	if msg == ERR_ITEM_NOT_FOUND and #private.pendingHashes > 0 then
+	if (msg == ERR_ITEM_NOT_FOUND or msg == ERR_NOT_ENOUGH_MONEY) and #private.pendingHashes > 0 then
 		local hash = tremove(private.pendingHashes, 1)
 		assert(hash)
 		Log.Info("Failed to cancel (hash=%d)", hash)

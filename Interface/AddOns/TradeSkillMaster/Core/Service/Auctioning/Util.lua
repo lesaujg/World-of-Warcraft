@@ -12,6 +12,7 @@ local TempTable = TSM.Include("Util.TempTable")
 local Vararg = TSM.Include("Util.Vararg")
 local Money = TSM.Include("Util.Money")
 local String = TSM.Include("Util.String")
+local Math = TSM.Include("Util.Math")
 local CustomPrice = TSM.Include("Service.CustomPrice")
 local private = {
 	priceCache = {},
@@ -45,7 +46,9 @@ function Util.GetPrice(key, operation, itemString)
 			local normalPrice = CustomPrice.GetValue(operation.normalPrice, itemString)
 			if normalPrice and TSM.db.global.auctioningOptions.roundNormalPrice then
 				-- round up to the nearest gold
-				normalPrice = ceil(normalPrice / COPPER_PER_GOLD) * COPPER_PER_GOLD
+				normalPrice = Math.Ceil(normalPrice, COPPER_PER_GOLD)
+			elseif normalPrice and TSM.IsWow83() then
+				normalPrice = Math.Ceil(normalPrice, COPPER_PER_SILVER)
 			end
 			private.priceCache[cacheKey] = normalPrice
 		elseif key == "aboveMax" or key == "priceReset" then
@@ -58,6 +61,9 @@ function Util.GetPrice(key, operation, itemString)
 			private.priceCache[cacheKey] = 0
 		else
 			private.priceCache[cacheKey] = CustomPrice.GetValue(operation[key], itemString)
+			if TSM.IsWow83() and private.priceCache[cacheKey] then
+				private.priceCache[cacheKey] = Math.Round(private.priceCache[cacheKey], COPPER_PER_SILVER)
+			end
 		end
 		private.priceCache[cacheKey] = private.priceCache[cacheKey] or INVALID_PRICE
 	end

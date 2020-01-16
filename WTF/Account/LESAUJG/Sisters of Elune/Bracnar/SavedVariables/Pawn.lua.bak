@@ -1,6 +1,9 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0316,
+	["LastVersion"] = 2.0317,
+	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 158049,
@@ -9,13 +12,13 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 475,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:6316:4932:4933:1612:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 477,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:6316:4932:4933:1614:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 167772,
-			["Level"] = 420,
-			["Link"] = "|cffa335ee|Hitem:167772::::::::120:253:::6:6300:6298:1502:4786:6265:4775:::|h[Azsh'ari Stormsurger Shoulderguards]|h|r",
+			["ID"] = 173451,
+			["Level"] = 435,
+			["Link"] = "|cffa335ee|Hitem:173451::::::::120:253::29:4:1487:4786:6503:4775:::|h[Nefarious Tormentor's Spaulders]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -73,9 +76,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:169307::168639::::::120:253::3:6:4798:1808:40:1487:5885:4784:::|h[Vision of Demise]|h|r",
 		}, -- [14]
 		{
-			["ID"] = 166668,
-			["Level"] = 395,
-			["Link"] = "|cffa335ee|Hitem:166668::168637::::::120:255::28:5:4803:4802:42:1587:4786:::|h[Battalion Veteran's Greatcloak]|h|r",
+			["ID"] = 169223,
+			["Level"] = 470,
+			["Link"] = "|cffff8000|Hitem:169223::::::::120:253::11:1:6272:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 163881,
@@ -83,9 +86,7 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163881::::::::120:253::23:3:5845:1622:4786:::|h[7th Legionnaire's Longbow]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -122,7 +123,6 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",

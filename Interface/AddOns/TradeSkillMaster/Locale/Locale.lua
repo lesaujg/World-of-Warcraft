@@ -692,6 +692,7 @@ do
 		L["Not canceling auction below min price."] = "Not canceling auction below min price."
 		L["Not canceling."] = "Not canceling."
 		L["Not enough items in bags."] = "Not enough items in bags."
+		L["Not enough money to cancel."] = "Not enough money to cancel."
 		L["Nothing to move."] = "Nothing to move."
 		L["Number Owned"] = "Number Owned"
 		L["OPEN"] = "OPEN"

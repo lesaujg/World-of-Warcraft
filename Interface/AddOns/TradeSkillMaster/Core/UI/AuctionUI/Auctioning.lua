@@ -932,10 +932,10 @@ function private.FSMCreate()
 				:SetTooltip(itemString)
 				:Draw()
 			detailsHeader1:GetElement("bid.text")
-				:SetText(Money.ToString(currentRow:GetField("bid")))
+				:SetText(Money.ToString(currentRow:GetField("bid") / (TSM.IsWow83() and currentRow:GetField("stackSize") or 1), nil, "OPT_83_NO_COPPER"))
 				:Draw()
 			detailsHeader1:GetElement("buyout.text")
-				:SetText(Money.ToString(currentRow:GetField("buyout")))
+				:SetText(Money.ToString(currentRow:GetField(TSM.IsWow83() and "itemBuyout" or "buyout"), nil, "OPT_83_NO_COPPER"))
 				:Draw()
 			detailsHeader2:GetElement("quantity.text")
 				:SetText(format(L["%d of %d"], rowStacksRemaining, currentRow:GetField("stackSize")))
@@ -1141,7 +1141,7 @@ function private.FSMCreate()
 					else
 						progress = (filtersScanned + pagesScanned / numPages) / numFilters
 					end
-					text = format(L["Scanning %d / %d (Page %d / %d)"], filtersScanned + 1, numFilters, pagesScanned + 1, numPages)
+					text = format(L["Scanning %d / %d (Page %d / %d)"], filtersScanned + 1, numFilters, pagesScanned < numPages and pagesScanned + 1 or numPages, numPages)
 				end
 				context.scanProgress = progress
 				context.scanProgressText = text

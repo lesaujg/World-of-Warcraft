@@ -31,6 +31,7 @@ local private = {
 		list = {},
 		pending = {},
 	},
+	cancelAuctionId = nil,
 	lastScanNum = nil,
 	ignoreUpdateEvent = nil,
 	lastPurchase = {},
@@ -111,6 +112,9 @@ AuctionTracking:OnSettingsLoad(function()
 		end)
 		hooksecurefunc(C_AuctionHouse, "PostItem", function(_, duration)
 			private.PostAuctionHookHandler(duration)
+		end)
+		hooksecurefunc(C_AuctionHouse, "CancelAuction", function(auctionId)
+			private.cancelAuctionId = auctionId
 		end)
 	end
 
@@ -262,8 +266,9 @@ end
 
 function private.AuctionCanceledHandler(_, auctionId)
 	local row = private.indexDB:NewQuery()
-		:Equal("auctionId", auctionId)
+		:Equal("auctionId", auctionId == 0 and private.cancelAuctionId or auctionId)
 		:GetFirstResultAndRelease()
+	private.cancelAuctionId = nil
 	if not row then
 		return
 	end

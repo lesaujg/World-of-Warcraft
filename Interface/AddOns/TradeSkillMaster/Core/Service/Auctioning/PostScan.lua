@@ -624,7 +624,12 @@ function private.GeneratePosts(itemString, operationName, operationSettings, num
 	if lowestAuction then
 		TempTable.Release(lowestAuction)
 	end
-	bid = floor(bid)
+	if TSM.IsWow83() then
+		bid = max(Math.Round(bid, COPPER_PER_SILVER), COPPER_PER_SILVER)
+		buyout = max(buyout, COPPER_PER_SILVER)
+	else
+		bid = floor(bid)
+	end
 
 	-- check if we can't post anymore
 	local queueQuery = private.queueDB:NewQuery()
@@ -648,6 +653,12 @@ function private.GeneratePosts(itemString, operationName, operationSettings, num
 	-- insert the posts into our DB
 	local auctionId = private.nextQueueIndex
 	local postTime = operationSettings.duration
+	if TSM.IsWow83() and not ItemInfo.IsCommodity(itemString) then
+		-- post non-commodities as single stacks
+		assert(maxCanPost == 1)
+		maxCanPost = perAuction
+		perAuction = 1
+	end
 	private.AddToQueue(itemString, operationName, bid, buyout, perAuction, maxCanPost, postTime)
 	-- check if we can post an extra partial stack
 	local extraStack = (not TSM.IsWow83() and maxCanPost < operationSettings.postCap and operationSettings.stackSizeIsCap and (numHave % perAuction)) or 0
