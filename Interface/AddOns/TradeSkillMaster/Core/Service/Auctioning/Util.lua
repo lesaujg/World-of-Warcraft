@@ -47,8 +47,6 @@ function Util.GetPrice(key, operation, itemString)
 			if normalPrice and TSM.db.global.auctioningOptions.roundNormalPrice then
 				-- round up to the nearest gold
 				normalPrice = Math.Ceil(normalPrice, COPPER_PER_GOLD)
-			elseif normalPrice and TSM.IsWow83() then
-				normalPrice = Math.Ceil(normalPrice, COPPER_PER_SILVER)
 			end
 			private.priceCache[cacheKey] = normalPrice
 		elseif key == "aboveMax" or key == "priceReset" then
@@ -61,9 +59,6 @@ function Util.GetPrice(key, operation, itemString)
 			private.priceCache[cacheKey] = 0
 		else
 			private.priceCache[cacheKey] = CustomPrice.GetValue(operation[key], itemString)
-			if TSM.IsWow83() and private.priceCache[cacheKey] then
-				private.priceCache[cacheKey] = Math.Round(private.priceCache[cacheKey], COPPER_PER_SILVER)
-			end
 		end
 		private.priceCache[cacheKey] = private.priceCache[cacheKey] or INVALID_PRICE
 	end
@@ -168,13 +163,13 @@ function Util.GetPlayerAuctionCount(query, itemString, operationSettings, findBi
 end
 
 function Util.GetPlayerLowestBuyout(query, itemString, operationSettings)
-	local lowestItemBuyout = nil
+	local lowestItemBuyout, lowestItemAuctionId = nil, nil
 	for _, record in query:Iterator() do
 		if not lowestItemBuyout and not private.ShouldIgnoreAuctionRecord(record, itemString, operationSettings) and private.GetPlayerAuctionCount(record) > 0 then
-			lowestItemBuyout = record:GetField("itemBuyout")
+			lowestItemBuyout, lowestItemAuctionId = record:GetFields("itemBuyout", "auctionId")
 		end
 	end
-	return lowestItemBuyout
+	return lowestItemBuyout, lowestItemAuctionId
 end
 
 function Util.GetLowestNonPlayerAuctionId(query, itemString, operationSettings, itemBuyout)

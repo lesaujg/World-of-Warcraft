@@ -338,7 +338,7 @@ function private.GenerateCancel(auctionsDBRow, itemString, operationName, operat
 	end
 
 	local shouldCancel, logReason = false, nil
-	local playerLowestItemBuyout = TSM.Auctioning.Util.GetPlayerLowestBuyout(query, itemString, operationSettings)
+	local playerLowestItemBuyout, playerLowestAuctionId = TSM.Auctioning.Util.GetPlayerLowestBuyout(query, itemString, operationSettings)
 	local secondLowestBuyout = TSM.Auctioning.Util.GetNextLowestItemBuyout(query, itemString, lowestAuction, operationSettings)
 	local nonPlayerLowestAuctionId = TSM.IsWow83() and playerLowestItemBuyout and TSM.Auctioning.Util.GetLowestNonPlayerAuctionId(query, itemString, operationSettings, playerLowestItemBuyout)
 	if itemBuyout < minPrice and not lowestAuction.isBlacklist then
@@ -353,7 +353,7 @@ function private.GenerateCancel(auctionsDBRow, itemString, operationName, operat
 	elseif lowestAuction.buyout < minPrice and not lowestAuction.isBlacklist then
 		-- lowest buyout is below min price, so do nothing
 		logReason = "cancelBelowMin"
-	elseif operationSettings.cancelUndercut and playerLowestItemBuyout and ((itemBuyout - undercut) > playerLowestItemBuyout or (TSM.IsWow83() and (itemBuyout - undercut) == playerLowestItemBuyout and auctionId < (nonPlayerLowestAuctionId or 0))) then
+	elseif operationSettings.cancelUndercut and playerLowestItemBuyout and ((itemBuyout - undercut) > playerLowestItemBuyout or (TSM.IsWow83() and (itemBuyout - undercut) == playerLowestItemBuyout and auctionId ~= playerLowestAuctionId and auctionId < (nonPlayerLowestAuctionId or 0))) then
 		-- we've undercut this auction
 		shouldCancel = true
 		logReason = "cancelPlayerUndercut"

@@ -4,7 +4,7 @@
 -- Desc: Addon for World of Warcraft
 --
 -- Author: gmz323(Greg)
--- current version: v1.57
+-- current version: v1.58
 -- (c) 2011-2020
 --
 =============================================================================
@@ -68,6 +68,10 @@ My Other Addons:
 
 Changelog:
 ==========
+
+v1.58 (2020-01-16)
+------------------
+* Bugfix: When using search box - clear button will now work properly.
 
 v1.57 (2020-01-14)
 ------------------

@@ -828,7 +828,6 @@
 									self:SetFontObject("GameFontDisable");
 									self.searchIcon:SetVertexColor(0.6, 0.6, 0.6);
 								end
-								self.clearButton:Hide();
 							</OnEditFocusLost>
 							<OnEditFocusGained>
 								self:SetFontObject("ChatFontNormal");
@@ -842,14 +841,14 @@
 							</OnTextChanged>
 						</Scripts>
 						<Frames>
-							<Button name="$parentExitButton" parentKey="clearButton" hidden="true">
+							<Button name="$parentExitButton" parentKey="clearButton">
 								<Size x="17" y="17"/>
 								<Anchors>
 									<Anchor point="RIGHT" x="-3" y="0"/>
 								</Anchors>
 								<Layers>
 									<Layer level="ARTWORK">
-										<Texture file="Interface\FriendsFrame\ClearBroadcastIcon" alpha="0.5" parentKey="Icon">
+										<Texture file="Interface\FriendsFrame\ClearBroadcastIcon" alpha="0.5" parentKey="texture">
 											<Size>
 												<AbsDimension x="17" y="17"/>
 											</Size>
@@ -861,18 +860,18 @@
 								</Layers>
 								<Scripts>
 									<OnEnter>
-										self.Icon:SetAlpha(1.0);
+										self.texture:SetAlpha(1.0);
 									</OnEnter>
 									<OnLeave>
-										self.Icon:SetAlpha(0.5);
+										self.texture:SetAlpha(0.5);
 									</OnLeave>
 									<OnMouseDown>
 										if self:IsEnabled() then
-											self.Icon:SetPoint("TOPLEFT", 1, -1);
+											self.texture:SetPoint("TOPLEFT", 1, -1);
 										end
 									</OnMouseDown>
 									<OnMouseUp>
-										self.Icon:SetPoint("TOPLEFT", 0, 0);
+										self.texture:SetPoint("TOPLEFT", 0, 0);
 									</OnMouseUp>
 									<OnClick>
 										PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON);

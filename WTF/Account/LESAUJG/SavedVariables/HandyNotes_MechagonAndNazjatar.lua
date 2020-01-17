@@ -14,9 +14,8 @@ HandyNotes_MechagonAndNazjatarDB = {
 	["profiles"] = {
 		["Default"] = {
 			["chest_mech"] = true,
-			["pet_mech"] = false,
 			["hide_minimap"] = true,
-			["hide_done_rare"] = true,
+			["pet_mech"] = false,
 		},
 	},
 }

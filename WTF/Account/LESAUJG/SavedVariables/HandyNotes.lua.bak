@@ -50,6 +50,9 @@ HandyNotesDB = {
 		["Tauro - Sisters of Elune"] = {
 		},
 		["Bracnar - Sisters of Elune"] = {
+			["enabledPlugins"] = {
+				["HandyNotes_VisionsOfNZoth"] = false,
+			},
 		},
 		["Uldaris - Sisters of Elune"] = {
 		},

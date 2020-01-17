@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0317,
+	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 158049,
@@ -29,9 +32,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163401::::::::120:253::23:3:5845:1622:4786:::|h[7th Legionnaire's Cincture]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 158018,
-			["Level"] = 415,
-			["Link"] = "|cffa335ee|Hitem:158018::::::::120:254::28:3:4803:1607:4786:::|h[Ashenwood Legguards]|h|r",
+			["ID"] = 173485,
+			["Level"] = 420,
+			["Link"] = "|cffa335ee|Hitem:173485::::::::120:253::30:8:6412:4803:6515:6578:6579:6556:1477:4786:::|h[Nefarious Tormentor's Leggings]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 173447,
@@ -74,8 +77,8 @@ PawnOptions = {
 		}, -- [14]
 		{
 			["ID"] = 169223,
-			["Level"] = 470,
-			["Link"] = "|cffff8000|Hitem:169223::::::::120:253::11:1:6272:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
+			["Level"] = 478,
+			["Link"] = "|cffff8000|Hitem:169223::::::::120:253::11:2:6276:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 163881,
@@ -83,9 +86,6 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163881::::::::120:253::23:3:5845:1622:4786:::|h[7th Legionnaire's Longbow]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {

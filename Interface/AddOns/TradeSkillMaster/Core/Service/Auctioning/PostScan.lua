@@ -409,7 +409,7 @@ function private.IsOperationValid(itemString, num, operationName, operationSetti
 		local vendorSellPrice = ItemInfo.GetVendorSell(itemString) or 0
 		if vendorSellPrice > 0 and minPrice <= vendorSellPrice / 0.95 then
 			-- just a warning, not an error
-			Log.PrintfUser(L["WARNING: You minimum price for %s is below its vendorsell price (with AH cut taken into account). Consider raising your minimum price, or vendoring the item."], ItemInfo.GetLink(itemString))
+			Log.PrintfUser(L["WARNING: Your minimum price for %s is below its vendorsell price (with AH cut taken into account). Consider raising your minimum price, or vendoring the item."], ItemInfo.GetLink(itemString))
 		end
 		return true, (TSM.IsWow83() and 1 or operationSettings.stackSize) * operationSettings.postCap
 	end
@@ -626,10 +626,13 @@ function private.GeneratePosts(itemString, operationName, operationSettings, num
 	end
 	if TSM.IsWow83() then
 		bid = max(Math.Round(bid, COPPER_PER_SILVER), COPPER_PER_SILVER)
-		buyout = max(buyout, COPPER_PER_SILVER)
+		buyout = max(Math.Round(buyout, COPPER_PER_SILVER), COPPER_PER_SILVER)
 	else
 		bid = floor(bid)
 	end
+
+	bid = min(bid, TSM.IsWow83() and MAXIMUM_BID_PRICE - 99 or MAXIMUM_BID_PRICE)
+	buyout = min(buyout, TSM.IsWow83() and MAXIMUM_BID_PRICE - 99 or MAXIMUM_BID_PRICE)
 
 	-- check if we can't post anymore
 	local queueQuery = private.queueDB:NewQuery()
@@ -648,6 +651,11 @@ function private.GeneratePosts(itemString, operationName, operationSettings, num
 	end
 	if maxCanPost <= 0 or perAuction <= 0 then
 		return "postTooMany"
+	end
+
+	if TSM.IsWowClassic() and (bid * perAuction > MAXIMUM_BID_PRICE or buyout * perAuction > MAXIMUM_BID_PRICE) then
+		Log.PrintfUser(L["The buyout price for %s would be above the maximum allowed price. Skipping this item."], ItemInfo.GetLink(itemString))
+		return "invalidItemGroup"
 	end
 
 	-- insert the posts into our DB
@@ -674,8 +682,8 @@ function private.AddToQueue(itemString, operationName, itemBid, itemBuyout, stac
 		:SetField("auctionId", private.nextQueueIndex)
 		:SetField("itemString", itemString)
 		:SetField("operationName", operationName)
-		:SetField("bid", min(itemBid * stackSize, MAXIMUM_BID_PRICE))
-		:SetField("buyout", min(itemBuyout * stackSize, MAXIMUM_BID_PRICE))
+		:SetField("bid", itemBid * stackSize)
+		:SetField("buyout", itemBuyout * stackSize)
 		:SetField("itemBuyout", itemBuyout)
 		:SetField("stackSize", stackSize)
 		:SetField("numStacks", numStacks)

@@ -15,6 +15,7 @@ local Table = TSM.Include("Util.Table")
 local Sound = TSM.Include("Util.Sound")
 local Money = TSM.Include("Util.Money")
 local Log = TSM.Include("Util.Log")
+local Math = TSM.Include("Util.Math")
 local ItemString = TSM.Include("Util.ItemString")
 local Threading = TSM.Include("Service.Threading")
 local ItemInfo = TSM.Include("Service.ItemInfo")
@@ -763,7 +764,11 @@ end
 function private.BidBuyoutTextOnValueChanged(text, value)
 	value = Money.FromString(value)
 	if value then
-		value = min(value, MAXIMUM_BID_PRICE)
+		if TSM.IsWowClassic() then
+			value = max(min(value, MAXIMUM_BID_PRICE), 0)
+		else
+			value = max(min(Math.Round(value, COPPER_PER_SILVER), MAXIMUM_BID_PRICE - 99), COPPER_PER_SILVER)
+		end
 		private.fsm:ProcessEvent("EV_POST_DETAIL_CHANGED", text:GetContext(), value)
 	else
 		text:Draw()
@@ -932,10 +937,10 @@ function private.FSMCreate()
 				:SetTooltip(itemString)
 				:Draw()
 			detailsHeader1:GetElement("bid.text")
-				:SetText(Money.ToString(currentRow:GetField("bid") / (TSM.IsWow83() and currentRow:GetField("stackSize") or 1), nil, "OPT_83_NO_COPPER"))
+				:SetText(Money.ToString(currentRow:GetField((TSM.IsWow83() and ItemInfo.IsCommodity(itemString)) and "itemBuyout" or "bid"), nil, "OPT_83_NO_COPPER"))
 				:Draw()
 			detailsHeader1:GetElement("buyout.text")
-				:SetText(Money.ToString(currentRow:GetField(TSM.IsWow83() and "itemBuyout" or "buyout"), nil, "OPT_83_NO_COPPER"))
+				:SetText(Money.ToString(currentRow:GetField((TSM.IsWow83() and ItemInfo.IsCommodity(itemString)) and "itemBuyout" or "buyout"), nil, "OPT_83_NO_COPPER"))
 				:Draw()
 			detailsHeader2:GetElement("quantity.text")
 				:SetText(format(L["%d of %d"], rowStacksRemaining, currentRow:GetField("stackSize")))
@@ -1233,6 +1238,7 @@ function private.FSMCreate()
 			end)
 			:AddEvent("EV_POST_DETAIL_CHANGED", function(context, field, value)
 				assert(context.scanType == "POST")
+				-- TODO: support changing itemBuyout for commodities
 				TSM.Auctioning.PostScan.ChangePostDetail(field, value)
 				UpdateScanFrame(context)
 				UpdateDepositCost(context)
@@ -1288,7 +1294,7 @@ function private.BagGetOperationText(firstOperation)
 end
 
 function private.LogGetBuyoutText(buyout)
-	return buyout == 0 and "-" or Money.ToString(buyout)
+	return buyout == 0 and "-" or Money.ToString(buyout, nil, "OPT_83_NO_COPPER")
 end
 
 function private.LogGetIndexText(index)

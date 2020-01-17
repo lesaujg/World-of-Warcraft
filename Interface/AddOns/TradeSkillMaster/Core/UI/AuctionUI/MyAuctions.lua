@@ -337,7 +337,19 @@ function private.FSMCreate()
 			private.query:Release()
 			private.query = TSM.MyAuctions.CreateQuery()
 			if private.durationFilter then
-				private.query:Equal("duration", private.durationFilter)
+				if TSM.IsWow83() then
+					if private.durationFilter == 1 then
+						private.query:LessThan("duration", time() + (30 * SECONDS_PER_MIN))
+					elseif private.durationFilter == 2 then
+						private.query:LessThan("duration", time() + (2 * SECONDS_PER_HOUR))
+					elseif private.durationFilter == 3 then
+						private.query:LessThanOrEqual("duration", time() + (12 * SECONDS_PER_HOUR))
+					else
+						private.query:GreaterThan("duration", time() + (12 * SECONDS_PER_HOUR))
+					end
+				else
+					private.query:Equal("duration", private.durationFilter)
+				end
 			end
 			if private.keywordFilter then
 				private.query:Matches("itemName", private.keywordFilter)

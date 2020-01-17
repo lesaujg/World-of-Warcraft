@@ -16,11 +16,15 @@ local DisenchantInfo = TSM.Include("Data.DisenchantInfo")
 local TempTable = TSM.Include("Util.TempTable")
 local String = TSM.Include("Util.String")
 local Log = TSM.Include("Util.Log")
+local Event = TSM.Include("Util.Event")
 local ItemString = TSM.Include("Util.ItemString")
 local Threading = TSM.Include("Service.Threading")
 local ItemInfo = TSM.Include("Service.ItemInfo")
 local Conversions = TSM.Include("Service.Conversions")
 TSM.Auction.classes.AuctionFilter = AuctionFilter
+local private = {
+	gotBrowseResultsUpdate = false,
+}
 
 
 
@@ -474,9 +478,9 @@ function AuctionFilter._DoAuctionQueryThreaded(self)
 	if TSM.IsWow83() then
 		assert(not self:_IsGetAll()) -- GetAll is not supported on >= 8.3
 
-		local query = TempTable.Acquire()
-		local sorts = TempTable.Acquire()
-		local filters = TempTable.Acquire()
+		local query = Threading.AcquireSafeTempTable()
+		local sorts = Threading.AcquireSafeTempTable()
+		local filters = Threading.AcquireSafeTempTable()
 		if self._uncollected then
 			tinsert(filters, Enum.AuctionHouseFilter.UncollectedOnly)
 		end
@@ -492,9 +496,9 @@ function AuctionFilter._DoAuctionQueryThreaded(self)
 		for i = (self._quality or 0) + Enum.AuctionHouseFilter.PoorQuality, Enum.AuctionHouseFilter.ArtifactQuality do
 			tinsert(filters, i)
 		end
-		local itemClassFilters = TempTable.Acquire()
+		local itemClassFilters = Threading.AcquireSafeTempTable()
 		if self._class or self._subClass or self._invType then
-			local info = TempTable.Acquire()
+			local info = Threading.AcquireSafeTempTable()
 			info.classID = self._class
 			info.subClassID = self._subClass
 			info.inventoryType = self._invType
@@ -507,22 +511,35 @@ function AuctionFilter._DoAuctionQueryThreaded(self)
 		query.maxLevel = self._maxLevel or 0
 		query.filters = filters
 		query.itemClassFilters = itemClassFilters
-		local result = self._scan:_SendBrowseQuery83(query)
-		TempTable.Release(sorts)
-		TempTable.Release(filters)
+		while true do
+			private.gotBrowseResultsUpdate = false
+			local result = self._scan:_SendBrowseQuery83(query)
+			if result then
+				for _ = 1, 50 do
+					if private.gotBrowseResultsUpdate then
+						break
+					end
+					Threading.Sleep(0.1)
+				end
+				if private.gotBrowseResultsUpdate then
+					break
+				end
+				Log.Warn("Retrying browse query which didn't result in an update event")
+			else
+				Threading.Sleep(0.5)
+				Log.Warn("Retrying throttled browse query")
+			end
+		end
+		Threading.ReleaseSafeTempTable(sorts)
+		Threading.ReleaseSafeTempTable(filters)
 		for i = #itemClassFilters, 1, -1 do
-			TempTable.Release(itemClassFilters[i])
+			Threading.ReleaseSafeTempTable(itemClassFilters[i])
 			itemClassFilters[i] = nil
 		end
-		TempTable.Release(itemClassFilters)
-		TempTable.Release(query)
-		if not result then
-			return false
-		end
+		Threading.ReleaseSafeTempTable(itemClassFilters)
+		Threading.ReleaseSafeTempTable(query)
 
 		-- wait for the browse results to fully load
-		Threading.WaitForEvent("AUCTION_HOUSE_BROWSE_RESULTS_UPDATED")
-		Threading.Sleep(0.5)
 		while not C_AuctionHouse.HasFullBrowseResults() do
 			if self._scan:_IsCancelled() then
 				return false
@@ -713,4 +730,18 @@ function AuctionFilter._RemoveResultRows(self, db, row, numBought)
 		end
 	end
 	return result
+end
+
+
+
+-- ============================================================================
+-- Initialization Code
+-- ============================================================================
+
+do
+	if not TSM.IsWowClassic() then
+		Event.Register("AUCTION_HOUSE_BROWSE_RESULTS_UPDATED", function()
+			private.gotBrowseResultsUpdate = true
+		end)
+	end
 end
