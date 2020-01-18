@@ -230,7 +230,7 @@ local function GetItemString(Link)
   if not Link then return; end
 
   if strmatch(Link, "battlepet:") then
-    return strmatch(Link, "(battlepet:%d*:%d*:%d*:%d*:%d*:%d*:%d*)|");
+    return strmatch(Link, "(battlepet:%d*:%d*:%d*:%d*:%d*:%d*:%d*:%d*)|");
   elseif strmatch(Link, "keystone:") then
     return strmatch(Link, "(keystone:%d*:%d*:%d*:%d*:%d*:%d*:%d*)|");
   else
@@ -2761,7 +2761,7 @@ local function UpdateSlotFunc(Bag, Slot)
 
   ItemString = GetItemString(Link);
   if not ItemString then
-    --DebugMsg("Cannot get ItemID from: " .. DebugPrintLink(Link));
+    DEFAULT_CHAT_FRAME:AddMessage("Cannot get ItemID from: " .. DebugPrintLink(Link));
   end
 
   ItemID = strmatch(ItemString, "item:(%d+):");

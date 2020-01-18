@@ -32,6 +32,11 @@ local defaults = ns.optionDefaults.profile
 local MAN, MOG, EMP = 0, 1, 2 -- assaults
 
 -------------------------------------------------------------------------------
+
+local AssaultEvent = Class('AssaultEvent', ns.node.Quest, {scale=2, note=''})
+function AssaultEvent.getters:icon () return 'peg_yellow' end
+
+-------------------------------------------------------------------------------
 ------------------------------------- MAP -------------------------------------
 -------------------------------------------------------------------------------
 
@@ -77,6 +82,7 @@ function map:enabled (node, coord, minimap)
     if isinstance(node, Supply) then return profile.chest_vale end
     if isinstance(node, Rare) then return profile.rare_vale end
     if isinstance(node, PetBattle) then return profile.pet_vale end
+    if isinstance(node, AssaultEvent) then return profile.event_vale end
 
     return true
 end
@@ -87,6 +93,7 @@ end
 
 defaults['chest_vale'] = true
 defaults['rare_vale'] = true
+defaults['event_vale'] = false
 defaults['pet_vale'] = true
 
 options.groupVale = {
@@ -113,12 +120,21 @@ options.rareVale = {
     width = "normal",
 }
 
+options.eventVale = {
+    type = "toggle",
+    arg = "event_vale",
+    name = L["options_toggle_assault_events"],
+    desc = L["options_toggle_assault_events_desc"],
+    order = 13,
+    width = "normal",
+}
+
 options.petVale = {
     type = "toggle",
     arg = "pet_vale",
     name = L["options_toggle_battle_pets"],
     desc = L["options_toggle_battle_pets_desc"],
-    order = 13,
+    order = 14,
     width = "normal",
 }
 
@@ -141,18 +157,18 @@ function Intro.getters:label ()
     return select(2, GetAchievementInfo(14154)) -- Defend the Vale
 end
 
--- Where the Heart is => Surfacing Threats
-local Q1 = Quest({id={58583, 58506, 56374, 56209, 56375, 56472, 56376}})
+-- Network Diagnostics => Surfacing Threats
+local Q1 = Quest({id={58506, 56374, 56209, 56375, 56472, 56376}})
 -- Forging Onward => Magni's Findings
 local Q2 = Quest({id={56377, 56536, 56537, 56538, 56539, 56771, 56540}})
 
 if UnitFactionGroup('player') == 'Alliance' then
     map.intro = Intro({faction='Alliance', rewards={
-        Quest({id={58496, 58498}}), Q1, Q2
+        Quest({id={58496, 58498, 58502}}), Q1, Q2
     }})
 else
     map.intro = Intro({faction='Horde', rewards={
-        Quest({id={58582}}), Q1, Q2
+        Quest({id={58582, 58583}}), Q1, Q2
     }})
 end
 
@@ -358,30 +374,38 @@ nodes[46314037] = EMPTR1
 nodes[50673444] = EMPTR1
 nodes[52673967] = EMPTR1
 nodes[53884179] = EMPTR1
--- quest=57199
+-- quest=57199 (DONT FORGET TO ADD TO THE POOLS OF POWER MAP BELOW)
 nodes[56113034] = EMPTR2
 nodes[56152716] = EMPTR2
 nodes[61422747] = EMPTR2
+nodes[64932682] = EMPTR2
 nodes[67222783] = EMPTR2
 nodes[69933311] = EMPTR2
 nodes[70282286] = EMPTR2
 nodes[73242533] = EMPTR2
 -- quest=57200
 nodes[57334165] = EMPTR3
+nodes[59186181] = EMPTR3
 nodes[59605624] = EMPTR3
+nodes[62035159] = EMPTR3
 nodes[62585721] = EMPTR3
 nodes[65855969] = EMPTR3
 nodes[67565584] = EMPTR3
 -- quest=57201
+nodes[70215370] = EMPTR4
+nodes[77076363] = EMPTR4
 nodes[77413129] = EMPTR4
 nodes[78305251] = EMPTR4
 nodes[78435833] = EMPTR4
 nodes[79034330] = EMPTR4
+nodes[80733960] = EMPTR4
 nodes[81363381] = EMPTR4
 nodes[87813771] = EMPTR4
 -- quest=57202
 nodes[60806337] = EMPTR5
 nodes[63107059] = EMPTR5
+nodes[64297053] = EMPTR5
+nodes[68306247] = EMPTR5
 nodes[71516854] = EMPTR5
 -- quest=57203
 nodes[42456853] = EMPTR6
@@ -402,6 +426,38 @@ nodes[69516094] = EMPCOFF
 nodes[76626437] = EMPCOFF
 
 -------------------------------------------------------------------------------
+
+-- Blizzard added a separate map for the pools of power midway through the
+-- first week, yay ...
+
+local pmap = clone(map, {id=1579, nodes={}})
+local pnodes = pmap.nodes
+pmap.intro = nil
+
+-- quest=57199
+pnodes[09235255] = EMPTR2
+pnodes[09554460] = EMPTR2
+pnodes[23234539] = EMPTR2
+pnodes[32504372] = EMPTR2
+pnodes[38294622] = EMPTR2
+pnodes[45715972] = EMPTR2
+pnodes[46313359] = EMPTR2
+pnodes[54384017] = EMPTR2
+
+pnodes[42104690] = clone(EMPCOFF, {note=L["pools_of_power"]})
+
+-------------------------------------------------------------------------------
+-------------------------------- ASSAULT EVENTS -------------------------------
+-------------------------------------------------------------------------------
+
+nodes[41354535] = AssaultEvent({quest=58439, assault=EMP, note=L["consuming_maw"]}) -- Consuming Maw
+nodes[42316703] = AssaultEvent({quest=56090, assault=EMP, note=L["protect_stout"]}) -- Protecting the Stout
+nodes[56685933] = AssaultEvent({quest=56178, assault=EMP, note=L["void_conduit"]}) -- Void Conduit
+nodes[76365163] = AssaultEvent({quest=57379, assault=EMP, note=L["infested_statue"]}) -- Infested Jade Statue
+nodes[79233315] = AssaultEvent({quest=56177, assault=EMP, note=L["void_conduit"]}) -- Void Conduit
+nodes[81314952] = AssaultEvent({quest=58442, assault=EMP, note=L["consuming_maw"]}) -- Consuming Maw
+
+-------------------------------------------------------------------------------
 --------------------------------- BATTLE PETS ---------------------------------
 -------------------------------------------------------------------------------
 
@@ -413,3 +469,4 @@ nodes[07333190] = PetBattle({id=162471}) -- Vil'thik Hatchling
 -------------------------------------------------------------------------------
 
 ns.maps[map.id] = map
+ns.maps[pmap.id] = pmap

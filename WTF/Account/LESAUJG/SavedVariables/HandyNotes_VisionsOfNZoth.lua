@@ -5,6 +5,7 @@ HandyNotes_VisionsOfNZothDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["hide_minimap"] = true,
 		},
 	},
 }
