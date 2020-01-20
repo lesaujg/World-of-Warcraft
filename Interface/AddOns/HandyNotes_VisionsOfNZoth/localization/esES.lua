@@ -16,14 +16,16 @@ L["atekhramun"] = "Aplasta los Miniescorpión Escama Venenosa hasta que aparezca
 L["chamber_of_the_moon"] = "Subterráneo en la Cámara de la Luna."
 L["chamber_of_the_stars"] = "Subterráneo en la Cámara de las Estrellas."
 L["chamber_of_the_sun"] = "Subterráneo en la Cámara del Sol."
+L["dunewalker"] = "Click the Essence of the Sun on the platform above to release him."
 L["friendly_alpaca"] = "Alimenta a la alpaca con Verduras Gersahl siete veces para aprenderla como montura. Aparece durante 10 minutos en una localización, después tiene un largo tiempo de reaparición."
-L["gersahl"] = "Arbusto Gershal"
 L["gersahl_note"] = "Alimenta a una Alpaca Amistosa siete veces para una montura. No requiere Herboristería."
+L["gersahl"] = "Arbusto Gershal"
 L["hmiasma"] = "Feed it the surrounding oozes until it activates."
 L["left_eye"] = "Te da la mitad izquierda del juguete Ojos que todo lo ven."
 L["platform"] = "Aparece encima de la plataforma flotante."
 L["reshef"] = "Comparte lugar de aparición con Guardia superior distorsionado por el Vacío."
 L["spirit_cave"] = "Entrada de la cueva para el Espíritu del Ritualista Oscuro Zakahn."
+L["tomb_widow"] = "Para invocarlo: cuando los sacos de huevos blancos están presentes por los pilares, mata las arañas invisibles."
 L["uatka"] = "Junto con otros dos jugadores más, haced click al mismo tiempo al Dispositivo Misterioso. Requiere que cada uno tenga un Amuleto Fúlgido de un Relicario Amathet."
 L["wastewander"] = "Comparte lugar de aparición con Huésped Vagayermos."
 
@@ -35,7 +37,30 @@ L["infested_strongbox"] = "Infested Strongbox"
 L["amathet_reliquary"] = "Relicario Amathet"
 
 L["cursed_relic"] = "Requiere una Reliquia Maldita"
-L["tolvir_relic"] = "Requires una Reliquia de los Tol'vir"
+L["tolvir_relic"] = "Requiere una Reliquia de los Tol'vir"
+
+L["options_toggle_alpaca_uldum"] = "Alpaca de pelaje primaveral"
+L["options_toggle_alpaca_uldum_desc"] = "Mostrar las localizaciones donde aparecen los Arbustos Garsahl y las Alpacas Amigables."
+L["options_toggle_assault_events"] = "Eventos del Asalto"
+L["options_toggle_assault_events_desc"] = "Mostrar las localizaciones de los posibles eventos de asalto."
+L["options_toggle_coffers"] = "Alijos Cerrados"
+L["options_toggle_coffers_desc"] = "Muestra las localizaciones de los alijos cerrados (despojables una vez por asalto)."
+
+L["ambush_settlers"] = "Mata oleadas de bichos hasta que acabe el evento."
+L["burrowing_terrors"] = "Salta encima de los Escarabajos Excavadores para aplastarlos."
+L["combust_cocoon"] = "Lanza las bombas de fuego a las crisálidas del techo."
+L["dormant_destroyer"] = "Haz click en todos los cristales de Conducto del Vacío."
+L["hardened_hive"] = "Coge el Lanzallmas Vagayermos y quema todos los sacos de huevos."
+L["obsidian_extract"] = "Destruye los cristales de Obsidiana formada por el Vacío."
+L["purging_flames"] = "Recoge los cuerpos y tíralos al fuego."
+L["titanus_egg"] = "Destruye el Huevo de Titanus y mata el Titanus Joven."
+
+L["beacon_of_sun_king"] = "Gira los rayos de las tres estatuas hacia el orbe."
+L["engine_of_ascen"] = "Mueve las cuatro estatuas hasta interceptar los rayos."
+L["lightblade_training"] = "Mata Instructores y Siervos hasta que aparezca Kames, Hoja del Crepúsculo."
+L["raiding_fleet"] = "Quema todos los botes usando la antorcha de la misión."
+L["slave_camp"] = "Abre todos las jaulas cercanas."
+L["unsealed_tomb"] = "Protege a Heru de las oleadas de bichos."
 
 -------------------------------------------------------------------------------
 ------------------------------------ VALE -------------------------------------
@@ -55,6 +80,24 @@ L["ambered_cache"] = "Alijo ámbar"
 L["ambered_coffer"] = "Cofre ámbar"
 L["mogu_plunder"] = "Saqueo mogu"
 L["mogu_strongbox"] = "Caja fuerte mogu"
+
+L["abyssal_ritual"] = "Mata a los Partidarios Ahogados y después a la Monstruosidad de las Profundidades."
+L["bound_guardian"] = "Mata a los tres Vinculador Natoabisal y libera a la Gota Prístina."
+L["consuming_maw"] = "Purifica crecimientos y tentáculos hasta que te saque fuera."
+L["corruption_tear"] = "Coge el Faro Titánico y cierra la Rasgadura de Corrupción sin dejar que los ojos giratorios te golpeen."
+L["infested_statue"] = "Arranca los Ojos crispados hasta llevarlos a 15 metros de la estatua."
+L["protect_stout"] = "Protege la cueva de las oleadas de bichos."
+L["pulse_mound"] = "Kill the surrounding mobs, then the Living Growth."
+L["void_conduit"] = "Haz click en el Conducto del Vacío y aplasta los ojos del suelo hasta que te saque fuera."
+
+-------------------------------------------------------------------------------
+----------------------------------- VOLDUN ------------------------------------
+-------------------------------------------------------------------------------
+
+L["voldun"] = "Vol'dun"
+L["elusive_alpaca"] = "Alimenta a la alpaca con Mezcla de Lechugas Costeras para aprenderla como montura. Aparece durante 10 minutos en una localización y después tiene un largo tiempo de reaparición."
+L["options_toggle_alpaca_voldun_desc"] = "Muestra las localizaciones de aparición de la Pezuñapresta Esquiva."
+L["options_toggle_alpaca_voldun"] = "Pezuñapresta Esquiva"
 
 -------------------------------------------------------------------------------
 ------------------------------------ GEAR -------------------------------------
