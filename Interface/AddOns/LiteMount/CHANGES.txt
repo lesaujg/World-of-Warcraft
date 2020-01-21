@@ -1,12 +1,12 @@
-tag f6b1e40a313d38a919e176a4f878957923fc45d1 8.3.2
+tag 56e0ff08245c338bc695c6aee9599cde47f85838 8.3.3
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Wed Jan 15 12:55:45 2020 +1100
+Date:	Tue Jan 21 16:47:30 2020 +1100
 
-LiteMount 8.3.2 to force a curseforge repackage
+Release 8.3.3, mark first lesser vision non-flyable
 
-commit e7eaaa212a7ad675ba6c56c5abfe221e7c2d9968
+commit c5a3f03aea1e1bd66736909c9c2e86e22122e082
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Jan 14 08:31:18 2020 +1100
+Date:   Tue Jan 21 16:45:41 2020 +1100
 
-    Use SELECTED_CHAT_FRAME
+    Better comment about lesser vision
 
