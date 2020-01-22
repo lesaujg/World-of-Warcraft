@@ -11,6 +11,11 @@ SmexyMats.Sources = {
 	[1] = {
 		--BFA
 		[7] = {
+			--Patch 8.3.0
+			171320, -- Void Focus
+			171088,	-- Unbound Alchemist Stone
+			171085,	-- Peerless Alchemtist Stone
+			171087,	-- Awakened Alchemist Stone
 			--Patch 8.2.0
 				--None
 			--Patch 8.1.0
@@ -709,6 +714,36 @@ SmexyMats.Sources = {
 	[3] = {
 		--BFA
 		[7] = {
+			--Patch 8.3.0
+			171320,	--	Void Focus
+			170391,	--	Eldritch Osmenite Girdle
+			170388,	--	Eldritch Osmenite Legguards
+			170390,	--	Maddening Osmenite Girdle
+			170387,	--	Maddening Osmenite Legguards
+			170302,	--	Uncanny Combatant's Cutlass
+			170294,	--	Uncanny Combatant's Cutlass
+			170293,	--	Uncanny Combatant's Deckpounder
+			170366,	--	Uncanny Combatant's Deckpounder
+			170289,	--	Uncanny Combatant's Plate Armguards
+			170301,	--	Uncanny Combatant's Plate Armguards
+			170285,	--	Uncanny Combatant's Plate Boots
+			170295,	--	Uncanny Combatant's Plate Boots
+			170286,	--	Uncanny Combatant's Plate Gauntlets
+			170297,	--	Uncanny Combatant's Plate Gauntlets
+			170287,	--	Uncanny Combatant's Plate Greaves
+			170299,	--	Uncanny Combatant's Plate Greaves
+			170288,	--	Uncanny Combatant's Plate Waistguard
+			170300,	--	Uncanny Combatant's Plate Waistguard
+			170290,	--	Uncanny Combatant's Polearm
+			170311,	--	Uncanny Combatant's Polearm
+			170291,	--	Uncanny Combatant's Shanker
+			170310,	--	Uncanny Combatant's Shanker
+			170364,	--	Uncanny Combatant's Shield
+			170365,	--	Uncanny Combatant's Shield
+			170292,	--	Uncanny Combatant's Spellblade
+			170309,	--	Uncanny Combatant's Spellblade
+			170389,	--	Unsettling Osmenite Girdle
+			170386,	--	Unsettling Osmenite Legguards
 			--Patch 8.2.0
 				--None
 			--8.1.0
@@ -1162,6 +1197,12 @@ SmexyMats.Sources = {
 	[4] = {
 		--BFA
 		[7] = {
+			--Patch 8.3.0
+			174351, -- K'Bab
+			174352, -- Baked Voidfin
+			174348, -- Grilled Gnasher
+			174349, -- Ghastly Goulash
+			174350, -- Dubious Delight
 			--Patch 8.2.0
 				--None
 			--8.1.0
@@ -1623,6 +1664,9 @@ SmexyMats.Sources = {
 	[5] = {
 		--BFA
 		[7] = {
+			--Patch 8.3.0
+			170312, -- Uncanny Combatant's Sorcerous Scepter
+			170307, -- Uncanny Combatant's Sorcerous Scepter
 			--Patch 8.2.0
 				--None
 			--8.1.0
@@ -2145,6 +2189,25 @@ SmexyMats.Sources = {
 	[6] = {
 		--BFA
 		[7] = {
+			--Patch 8.3.0
+			171320,	--	Void Focus
+			171014,	--	A-N0M-A-L0U5 Bionic Bifocals
+			171005,	--	A-N0M-A-L0U5 Gearspun Goggles
+			171011,	--	A-N0M-A-L0U5 Orthogonal Optics
+			171008,	--	A-N0M-A-L0U5 Synthetic Specs
+			171012,	--	Paramount Bionic Bifocals
+			171003,	--	Paramount Gearspun Goggles
+			171009,	--	Paramount Orthogonal Optics
+			171006,	--	Paramount Synthetic Specs
+			171013,	--	Superior Bionic Bifocals
+			171004,	--	Superior Gearspun Goggles
+			171010,	--	Superior Orthogonal Optics
+			171007,	--	Superior Synthetic Specs
+			168522,	--	Ub3r Module: Ub3r-Coil
+			170313,	--	Uncanny Combatant's Discombobulator
+			170314,	--	Uncanny Combatant's Stormsteel Destroyer
+			170315,	--	Uncanny Combatant's Stormsteel Destroyer
+			--Patch 8.2.0
 			--Patch 8.2.0
 				--None
 			--8.1.0
@@ -2803,7 +2866,11 @@ SmexyMats.Sources = {
 	[7] = {
 		--BFA
 		[7] = {
-			--Patch 8.2.0
+			--8.3.0
+			174327, -- Malformed Gnasher
+			174328, -- Aberrant Voidfin
+			174456, -- Bottle of Goop
+			--8.2.0
 				168302,	--	Viper Fish
 				166971,	--	Empty Energy Cell
 				166970,	--	Energy Cell
@@ -2812,7 +2879,7 @@ SmexyMats.Sources = {
 				168262,	--	Sentry Fish
 				166846,	--	Spare Parts
 			--8.1.0
-			
+				--None
 			--8.0.1
 				160930,	--	Barnacled Greataxe
 				160927,	--	Chipped Stone Hatchet
@@ -4493,6 +4560,8 @@ SmexyMats.Sources = {
 	[8] = {
 		--BFA
 		[7] = {
+			--8.3.0
+				--None
 			--Patch 8.2.0
 				168487, -- Zin'anthid
 			--Previous Patches
@@ -4717,6 +4786,12 @@ SmexyMats.Sources = {
 	[9] = {
 		--BFA
 		[7] = {
+			--Patch 8.3.0
+			172008,	--	Contract: Rajani
+			172010,	--	Contract: Uldum Accord
+			170317,	--	Uncanny Combatant's Etched Vessel
+			170316,	--	Uncanny Combatant's Etched Vessel
+			171203,	--	Vantus Rune: Ny'alotha, the Waking City
 			--Patch 8.2.0
 				168487, --	Zin'anthid
 				168663,	--	Maroon Ink
@@ -5125,6 +5200,12 @@ SmexyMats.Sources = {
 	[10] = {
 		--BFA
 		[7] = {
+			--8.3.0
+			171320,	--	Void Focus
+			171076,	--	Awakened Leviathan's Eye Loop
+			171075,	--	Peerless Leviathan's Eye Loop
+			171077,	--	Unbound Leviathan's Eye Loop
+			170318,	--	Uncanny Combatant's Intuitive Staff
 			--8.2.0
 				168185, -- Osmenite Ore
 				168188,	--	Sage Agate
@@ -6330,6 +6411,90 @@ SmexyMats.Sources = {
 	[11] = {
 		--BFA
 		[7] = {
+			--8.3.0
+			171320,	--	Void Focus
+			170440,	--	Eldritch Cragscale Boots
+			170443,	--	Eldritch Cragscale Greaves
+			170434,	--	Eldritch Dredged Leather Boots
+			170437,	--	Eldritch Dredged Leather Leggings
+			170439,	--	Maddening Cragscale Boots
+			170442,	--	Maddening Cragscale Greaves
+			170433,	--	Maddening Dredged Leather Boots
+			170436,	--	Maddening Dredged Leather Leggings
+			170362,	--	Uncanny Combatant's Bow
+			170363,	--	Uncanny Combatant's Bow
+			170343,	--	Uncanny Combatant's Leather Armguards
+			170351,	--	Uncanny Combatant's Leather Armguards
+			170350,	--	Uncanny Combatant's Leather Gauntlets
+			170342,	--	Uncanny Combatant's Leather Gauntlets
+			170344,	--	Uncanny Combatant's Leather Leggings
+			170349,	--	Uncanny Combatant's Leather Leggings
+			170345,	--	Uncanny Combatant's Leather Treads
+			170348,	--	Uncanny Combatant's Leather Treads
+			170346,	--	Uncanny Combatant's Leather Waistguard
+			170347,	--	Uncanny Combatant's Leather Waistguard
+			170352,	--	Uncanny Combatant's Mail Armguards
+			170357,	--	Uncanny Combatant's Mail Armguards
+			170353,	--	Uncanny Combatant's Mail Gauntlets
+			170358,	--	Uncanny Combatant's Mail Gauntlets
+			170354,	--	Uncanny Combatant's Mail Leggings
+			170359,	--	Uncanny Combatant's Mail Leggings
+			170355,	--	Uncanny Combatant's Mail Treads
+			170360,	--	Uncanny Combatant's Mail Treads
+			170356,	--	Uncanny Combatant's Mail Waistguard
+			170361,	--	Uncanny Combatant's Mail Waistguard
+			170438,	--	Unsettling Cragscale Boots
+			170441,	--	Unsettling Cragscale Greaves
+			170432,	--	Unsettling Dredged Leather Boots
+			170435,	--	Unsettling Dredged Leather Leggings
+			--8.2.0
+			168724,	--	Banded Cragscale Boots
+			168721,	--	Banded Cragscale Greaves
+			168727,	--	Banded Cragscale Greaves
+			168706,	--	Banded Dredged Boots
+			168712,	--	Banded Dredged Boots
+			168709,	--	Banded Dredged Leggings
+			168715,	--	Banded Dredged Leggings
+			168419,	--	Comfortable Rider's Barding
+			168716,	--	Cragscale Boots
+			168722,	--	Cragscale Boots
+			168719,	--	Cragscale Greaves
+			168725,	--	Cragscale Greaves
+			169445,	--	Dredged Leather Bladder
+			168704,	--	Dredged Leather Boots
+			168710,	--	Dredged Leather Boots
+			168707,	--	Dredged Leather Leggings
+			168713,	--	Dredged Leather Leggings
+			167934,	--	Notorious Combatant's Bow
+			167935,	--	Notorious Combatant's Bow
+			167945,	--	Notorious Combatant's Leather Armguards
+			167944,	--	Notorious Combatant's Leather Armguards
+			167947,	--	Notorious Combatant's Leather Gauntlets
+			167946,	--	Notorious Combatant's Leather Gauntlets
+			167949,	--	Notorious Combatant's Leather Leggings
+			167948,	--	Notorious Combatant's Leather Leggings
+			167950,	--	Notorious Combatant's Leather Treads
+			167951,	--	Notorious Combatant's Leather Treads
+			167953,	--	Notorious Combatant's Leather Waistguard
+			167952,	--	Notorious Combatant's Leather Waistguard
+			167954,	--	Notorious Combatant's Mail Armguards
+			167955,	--	Notorious Combatant's Mail Armguards
+			167957,	--	Notorious Combatant's Mail Gauntlets
+			167956,	--	Notorious Combatant's Mail Gauntlets
+			167959,	--	Notorious Combatant's Mail Leggings
+			167958,	--	Notorious Combatant's Mail Leggings
+			167961,	--	Notorious Combatant's Mail Treads
+			167960,	--	Notorious Combatant's Mail Treads
+			167963,	--	Notorious Combatant's Mail Waistguard
+			167962,	--	Notorious Combatant's Mail Waistguard
+			168717,	--	Reinforced Cragscale Boots
+			168723,	--	Reinforced Cragscale Boots
+			168720,	--	Reinforced Cragscale Greaves
+			168726,	--	Reinforced Cragscale Greaves
+			168711,	--	Reinforced Dredged Boots
+			168705,	--	Reinforced Dredged Boots
+			168708,	--	Reinforced Dredged Leggings
+			168714,	--	Reinforced Dredged Leggings
 			--8.1.0
 			165749,	--	Amber Rallying Horn
 			165404,	--	Enhanced Mistscale Boots
@@ -7972,6 +8137,9 @@ SmexyMats.Sources = {
 	[13] = {
 		--BFA
 		[7] = {
+			--8.3.0
+				174353, -- Questionable Meat
+				174008, -- Rugged Hyena Pelt
 			--8.2.0
 				168650,	--	Cragscale
 				168649,	--	Dredged Leather
@@ -8155,6 +8323,53 @@ SmexyMats.Sources = {
 	[14] = {
 		--BFA
 		[7] = {
+			--8.3.0
+			171320,	--	Void Focus
+			170461,	--	Eldritch Seaweave Breeches
+			170458,	--	Eldritch Seaweave Gloves
+			170460,	--	Maddening Seaweave Breeches
+			170457,	--	Maddening Seaweave Gloves
+			170324,	--	Uncanny Combatant's Satin Belt
+			170332,	--	Uncanny Combatant's Satin Belt
+			170327,	--	Uncanny Combatant's Satin Boots
+			170337,	--	Uncanny Combatant's Satin Boots
+			170323,	--	Uncanny Combatant's Satin Bracers
+			170338,	--	Uncanny Combatant's Satin Bracers
+			170320,	--	Uncanny Combatant's Satin Cloak
+			170339,	--	Uncanny Combatant's Satin Cloak
+			170340,	--	Uncanny Combatant's Satin Mittens
+			170326,	--	Uncanny Combatant's Satin Mittens
+			170325,	--	Uncanny Combatant's Satin Pants
+			170341,	--	Uncanny Combatant's Satin Pants
+			170459,	--	Unsettling Seaweave Breeches
+			170456,	--	Unsettling Seaweave Gloves
+			--8.2.0
+			168733,	--	Banded Seaweave Breeches
+			168739,	--	Banded Seaweave Breeches
+			168736,	--	Banded Seaweave Gloves
+			168730,	--	Banded Seaweave Gloves
+			168731,	--	Gilded Seaweave Breeches
+			168737,	--	Gilded Seaweave Breeches
+			168728,	--	Gilded Seaweave Gloves
+			168734,	--	Gilded Seaweave Gloves
+			167976,	--	Notorious Combatant's Satin Belt
+			167977,	--	Notorious Combatant's Satin Belt
+			167979,	--	Notorious Combatant's Satin Boots
+			167978,	--	Notorious Combatant's Satin Boots
+			167981,	--	Notorious Combatant's Satin Bracers
+			167980,	--	Notorious Combatant's Satin Bracers
+			167983,	--	Notorious Combatant's Satin Cloak
+			167982,	--	Notorious Combatant's Satin Cloak
+			167985,	--	Notorious Combatant's Satin Mittens
+			167984,	--	Notorious Combatant's Satin Mittens
+			167987,	--	Notorious Combatant's Satin Pants
+			167986,	--	Notorious Combatant's Satin Pants
+			168732,	--	Reinforced Seaweave Breeches
+			168738,	--	Reinforced Seaweave Breeches
+			168729,	--	Reinforced Seaweave Gloves
+			168735,	--	Reinforced Seaweave Gloves
+			168427,	--	Saddlechute
+			169456,	--	Seabreeze Saddle Blanket
 			--8.1.0
 			165377,	--	Enhanced Deep Sea Breeches
 			165402,	--	Enhanced Deep Sea Gloves
@@ -9948,6 +10163,10 @@ SmexyMats.Reagents = {
 	[4] = {
 		--BFA
 		[7] = {
+			--Patch 8.3.0
+			173353, -- Questionable Meat
+			174327, -- Malformed Gnasher
+			174328, -- Aberrant Voidfin
 			--8.2.0
 				168302, --	Viper Fish
 				167562,	-- 	Ionized Minnow
@@ -12499,7 +12718,8 @@ SmexyMats.Reagents = {
 
 --These item reagents can be obtained from Drops
 SmexyMats.Drop = {
-
+	--8.3.0
+		174353, -- Questionable Meat
 	--8.2.0
 		168193,	--	Azsharine
 		168327,	--	Chain Ignitercoil
@@ -13197,11 +13417,12 @@ SmexyMats.Drop = {
 
 --These item reagents can be purchased from Vendors
 SmexyMats.Vendor = {
+	--8.3.0
+	
 
 	--8.2.0
 		168327, --	Chain Ignitercoil
 		166846, --	Spare Parts
-
 	--All previous
 		74853,	--	100 Year Soy Sauce
 		109143,	--	Abyssal Gulper Eel Flesh
@@ -13471,53 +13692,51 @@ SmexyMats.Vendor = {
 
 --These item reagents are from the Scrapper
 SmexyMats.Scrap = {
-	152507,	--	Akunda's Bite
-	160059,	--	Amber Tanning Oil
-	154123,	--	Amberblaze
-	152510,	--	Anchor Weed
-	154164,	--	Blood-Stained Bone
-	154165,	--	Calcified Bone
-	152541,	--	Coarse Leather
-	168650,	--	Cragscale
-	158188,	--	Crimson Ink
-	152577,	--	Deep Sea Satin
-	160298,	--	Durable Flux
-	158378,	--	Embroidered Deep Sea Satin
 	152668,	--	Expulsom
-	152875,	--	Gloom Dust
-	153700,	--	Golden Beryl
-	167738, --	Gilded Seaweave
-	152542,	--	Hardened Tempest Hide
+	152577,	--	Deep Sea Satin
+	152510,	--	Anchor Weed
 	162460,	--	Hydrocore
-	153702,	--	Kubiline
-	153705,	--	Kyanite
-	154124,	--	Laribole
-	168663,	--	Maroon Ink
-	153051,	--	Mistscale
-	152512,	--	Monelite Ore
-	159959,	--	Nylon Thread
-	168185, -- 	Osmenite Ore
-	154120,	--	Owlseye
-	152513,	--	Platinum Ore
-	152505,	--	Riverbud
-	154125,	--	Royal Quartz
-	153701,	--	Rubellite
+	152541,	--	Coarse Leather
 	162461,	--	Sanguicell
-	154121,	--	Scarlet Diamond
-	160266,	--	Scrapped Cloth
-	152511,	--	Sea Stalk
-	153050,	--	Shimmerscale
-	152509,	--	Siren's Pollen
-	153703,	--	Solstone
+	152512,	--	Monelite Ore
 	152506,	--	Star Moss
+	152508,	--	Winter's Kiss
+	152507,	--	Akunda's Bite
+	154164,	--	Blood-Stained Bone
+	153051,	--	Mistscale
+	152576,	--	Tidespray Linen
+	159959,	--	Nylon Thread
+	152509,	--	Siren's Pollen
 	152579,	--	Storm Silver Ore
 	154722,	--	Tempest Hide
-	154122,	--	Tidal Amethyst
-	152576,	--	Tidespray Linen
-	158187,	--	Ultramarine Ink
-	152876,	--	Umbra Shard
+	152505,	--	Riverbud
+	152511,	--	Sea Stalk
 	152877,	--	Veiled Crystal
-	158189,	--	Viridescent Ink
+	152876,	--	Umbra Shard
+	152513,	--	Platinum Ore
+	152875,	--	Gloom Dust
+	158187,	--	Ultramarine Ink
+	153050,	--	Shimmerscale
+	158188,	--	Crimson Ink
+	11291,	--	Star Wood
+	154123,	--	Amberblaze
+	158378,	--	Embroidered Deep Sea Satin
+	152542,	--	Hardened Tempest Hide
+	39354,	--	Light Parchment
+	154165,	--	Calcified Bone
+	160298,	--	Durable Flux
+	160059,	--	Amber Tanning Oil
 	153704,	--	Viridium
-	152508,	--	Winter's Kiss
+	158189,	--	Viridescent Ink
+	154121,	--	Scarlet Diamond
+	154124,	--	Laribole
+	154120,	--	Owlseye
+	153702,	--	Kubiline
+	153703,	--	Solstone
+	153700,	--	Golden Beryl
+	154122,	--	Tidal Amethyst
+	153705,	--	Kyanite
+	153701,	--	Rubellite
+	154125,	--	Royal Quartz
+	160266,	--	Scrapped Cloth
 };

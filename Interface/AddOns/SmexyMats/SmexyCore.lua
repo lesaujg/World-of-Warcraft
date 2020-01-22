@@ -10,7 +10,7 @@ if SmexyMatsAuto == nil then SmexyMatsAuto = {}; end;
 local L = LibStub("AceLocale-3.0"):GetLocale("SmexyMats");
 local AceConfig = LibStub("AceConfigDialog-3.0");
 local name = "SmexyMats(Retail)";
-local version = "v8.2.3";
+local version = "v8.3.0";
 local isTooltipDone = nil;
 local storedLink = nil;
 local LID = nil;

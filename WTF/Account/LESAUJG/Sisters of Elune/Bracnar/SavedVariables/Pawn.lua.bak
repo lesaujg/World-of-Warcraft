@@ -1,16 +1,19 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0318,
+	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 158049,
-			["Level"] = 420,
-			["Link"] = "|cffa335ee|Hitem:158049::::::::120:253::28:4:1607:4786:6264:4775:::|h[Deadwash Headguard]|h|r",
+			["Level"] = 435,
+			["Link"] = "|cffa335ee|Hitem:158049::::::::120:253::28:4:1622:4786:6502:4775:::|h[Deadwash Headguard]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 479,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:6316:4932:4933:1616:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 481,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:6316:4932:4933:1618:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173451,
@@ -19,14 +22,14 @@ PawnOptions = {
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 163398,
-			["Level"] = 435,
-			["Link"] = "|cffa335ee|Hitem:163398::::::::120:254::23:5:5845:1622:4786:6266:4775:::|h[7th Legionnaire's Chainmail]|h|r",
+			["ID"] = 165448,
+			["Level"] = 450,
+			["Link"] = "|cffa335ee|Hitem:165448::::::::120:253::51:4:1562:4786:6504:4775:::|h[Kaldorei Archer's Chainmail]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 163401,
-			["Level"] = 430,
-			["Link"] = "|cffa335ee|Hitem:163401::::::::120:253::23:3:5845:1622:4786:::|h[7th Legionnaire's Cincture]|h|r",
+			["ID"] = 173513,
+			["Level"] = 440,
+			["Link"] = "|cffa335ee|Hitem:173513::::::::120:253::29:6:6412:4803:6513:6516:1497:4786:::|h[Nefarious Tormentor's Chain]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 173485,
@@ -74,8 +77,8 @@ PawnOptions = {
 		}, -- [14]
 		{
 			["ID"] = 169223,
-			["Level"] = 478,
-			["Link"] = "|cffff8000|Hitem:169223::::::::120:253::11:2:6276:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
+			["Level"] = 480,
+			["Link"] = "|cffff8000|Hitem:169223::::::::120:253::11:2:6277:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 163881,
@@ -83,9 +86,6 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163881::::::::120:253::23:3:5845:1622:4786:::|h[7th Legionnaire's Longbow]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128826] = {
