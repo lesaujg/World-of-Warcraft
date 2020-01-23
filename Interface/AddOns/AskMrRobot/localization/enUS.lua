@@ -88,7 +88,8 @@ L.InstanceNames = {
     [1861] = "Uldir",
     [2070] = "Dazar'alor",
     [2096] = "Crucible of Storms",
-    [2164] = "The Eternal Palace"
+    [2164] = "The Eternal Palace",
+    [2217] = "Ny'alotha"
 }
 
 L.DifficultyNames = {

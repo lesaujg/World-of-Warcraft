@@ -13,11 +13,11 @@ g_auctionHouseSortsBySearchContext = {
 	{
 		{
 			["reverseSort"] = false,
-			["sortOrder"] = 0,
+			["sortOrder"] = 1,
 		}, -- [1]
 		{
 			["reverseSort"] = false,
-			["sortOrder"] = 1,
+			["sortOrder"] = 0,
 		}, -- [2]
 	}, -- [2]
 	{
@@ -43,11 +43,11 @@ g_auctionHouseSortsBySearchContext = {
 	{
 		{
 			["reverseSort"] = true,
-			["sortOrder"] = 2,
+			["sortOrder"] = 0,
 		}, -- [1]
 		{
-			["reverseSort"] = false,
-			["sortOrder"] = 0,
+			["reverseSort"] = true,
+			["sortOrder"] = 2,
 		}, -- [2]
 	}, -- [5]
 	{
