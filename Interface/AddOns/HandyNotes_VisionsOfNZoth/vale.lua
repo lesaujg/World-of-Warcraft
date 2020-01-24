@@ -41,13 +41,13 @@ local nodes = map.nodes
 local function GetAssault()
     local textures = C_MapExplorationInfo.GetExploredMapTextures(map.id)
     if textures and textures[1].fileDataIDs[1] == 3155826 then
-        ns.debug('Vale assault: MAN')
+        ns.debugMap('Vale assault: MAN')
         return MAN -- left
     elseif textures and textures[1].fileDataIDs[1] == 3155832 then
-        ns.debug('Vale assault: MOG')
+        ns.debugMap('Vale assault: MOG')
         return MOG -- middle
     elseif textures and textures[1].fileDataIDs[1] == 3155841 then
-        ns.debug('Vale assault: EMP')
+        ns.debugMap('Vale assault: EMP')
         return EMP -- right
     end
 end
@@ -244,7 +244,9 @@ nodes[21901232] = Rare({id=157162, quest=57346, assault=MOG, note=L["guolai_cent
     Mount({id=1313, item=174649}) -- Rajani Warserpent
 }}) -- Rei Lun
 nodes[64175175] = Rare({id=154490, quest=56302, assault=EMP}) -- Rijz'x the Devourer
-nodes[46425710] = Rare({id=156083, quest=56954, assault=MOG}) -- Sanguifang
+nodes[46425710] = Rare({id=156083, quest=56954, assault=MOG, rewards={
+    Item({item=174071}) -- Sanguifang's Pulsating Canine
+}}) -- Sanguifang
 nodes[17873752] = Rare({id=157291, quest=57351, assault=MOG}) -- Spymaster Hul'ach
 nodes[26057505] = Rare({id=157279, quest=57348, assault=MOG, pois={
     Path({23467717, 25247587, 26837367, 27117143})
@@ -260,9 +262,10 @@ nodes[09586736] = Rare({id=157468, quest=57364, note=L["tisiphon"]}) -- Tisiphon
 nodes[86664165] = Rare({id=154394, quest=56213, assault=EMP}) -- Veskan the Fallen
 nodes[66732812] = Rare({id=154332, quest=56183, assault=EMP, note=L["pools_of_power"]}) -- Voidtender Malketh
 nodes[52956225] = Rare({id=154495, quest=56303, assault=EMP, rewards={
+    Item({item=175141}), -- All-Seeing Left Eye
     Toy({item=175140}), -- All-Seeing Eye
     Pet({id=2846, item=174474}) -- Corrupted Tentacle
-}, note=L["right_eye"]}) -- Will of N'Zoth
+}, note=L["left_eye"]}) -- Will of N'Zoth
 nodes[53794889] = Rare({id=157443, quest=57358, assault=MOG}) -- Xiln the Mountain
 nodes[70954053] = Rare({id=154087, quest=56084, assault=EMP}) -- Zror'um the Infinite
 
@@ -483,9 +486,11 @@ nodes[25791737] = TimedEvent({quest=57339, assault=MOG, note=L["guolai_right"]..
 nodes[14582315] = TimedEvent({quest=57158, assault=MOG, note=L["electric_empower"]}) -- Electric Empowerment
 nodes[22423650] = TimedEvent({quest=58367, assault=MOG, note=L["empowered_demo"]}) -- Empowered Demolisher
 nodes[26661700] = TimedEvent({quest=58370, assault=MOG, note=L["empowered_demo"]}) -- Empowered Demolisher
+nodes[20421247] = TimedEvent({quest=57171, assault=MOG, note=L["goldbough_guardian"]}) -- Goldbough Guardian
 nodes[33477097] = TimedEvent({quest=58334, assault=MOG, note=L["in_flames"]}) -- Mistfall In Flames
 nodes[50236341] = TimedEvent({quest=57299, assault=MOG, note=L["mystery_sacro"]}) -- Mysterious Sarcophagus
 nodes[24824769] = TimedEvent({quest=57323, assault=MOG, note=L["serpent_binding"]}) -- Serpent Binding
+nodes[17054571] = TimedEvent({quest=57256, assault=MOG, note=L["stormchosen_arena"]}) -- Stormchosen Arena
 nodes[19870750] = TimedEvent({quest=57049, assault=MOG, note=L["guolai_left"]..' '..L["vault_of_souls"]}) -- Vault of Souls
 nodes[21411413] = TimedEvent({quest=57023, assault=MOG, note=L["guolai_center"]..' '..L["weighted_artifact"]}) -- Weighted Mogu Artifact
 nodes[47662165] = TimedEvent({quest=57101, assault=MOG, note=L["colored_flames"]}) -- Zan-Tien Serpent Cage

@@ -1,14 +1,11 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0318,
-	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
-	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
+	["LastVersion"] = 2.0319,
 	["ItemLevels"] = {
 		{
-			["ID"] = 158049,
-			["Level"] = 435,
-			["Link"] = "|cffa335ee|Hitem:158049::::::::120:253::28:4:1622:4786:6502:4775:::|h[Deadwash Headguard]|h|r",
+			["ID"] = 171014,
+			["Level"] = 450,
+			["Link"] = "|cffa335ee|Hitem:171014::::::::120:255::13:1:4775:::|h[A-N0M-A-L0U5 Bionic Bifocals]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
@@ -77,8 +74,8 @@ PawnOptions = {
 		}, -- [14]
 		{
 			["ID"] = 169223,
-			["Level"] = 480,
-			["Link"] = "|cffff8000|Hitem:169223::::::::120:253::11:2:6277:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
+			["Level"] = 482,
+			["Link"] = "|cffff8000|Hitem:169223::::::::120:253::11:2:6278:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 163881,
@@ -86,7 +83,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163881::::::::120:253::23:3:5845:1622:4786:::|h[7th Legionnaire's Longbow]|h|r",
 		}, -- [16]
 	},
-	["LastKeybindingsSet"] = 1,
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -123,6 +122,7 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",

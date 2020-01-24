@@ -43,13 +43,13 @@ local nodes = map.nodes
 local function GetAssault ()
     local textures = C_MapExplorationInfo.GetExploredMapTextures(map.id)
     if textures and textures[1].fileDataIDs[1] == 3165083 then
-        ns.debug('Uldum assault: AQR')
+        ns.debugMap('Uldum assault: AQR')
         return AQR -- left
     elseif textures and textures[1].fileDataIDs[1] == 3165092 then
-        ns.debug('Uldum assault: EMP')
+        ns.debugMap('Uldum assault: EMP')
         return EMP -- middle
     elseif textures and textures[1].fileDataIDs[1] == 3165098 then
-        ns.debug('Uldum assault: AMA')
+        ns.debugMap('Uldum assault: AMA')
         return AMA -- right
     end
 end
@@ -257,13 +257,18 @@ nodes[48657067] = Rare({id=158491, quest=57662, assault=EMP, pois={
     Path({53287082, 54066945, 53446815, 49866959, 48097382, 46537211, 46257561, 44217851})
 }}) -- Falconer Amenophis
 nodes[75056816] = Rare({id=157120, quest=57258, assault={AQR, AMA}}) -- Fangtaker Orsa
-nodes[55085317] = Rare({id=158633, quest=57680, assault=EMP, rewards={
+nodes[55475169] = Rare({id=158633, quest=57680, assault=EMP, pois={
+    POI({
+        53845079, 54215140, 54255185, 54575190, 54605233, 54635076, 54704963,
+        54925253, 55065317, 55214990, 55335305, 55445072, 55475169, 55495031,
+        55705404, 55835437, 55915107, 55935310, 56425386, 56485353
+    })
+}, rewards={
+    Item({item=175142}), -- All-Seeing Right Eye
     Toy({item=175140}) -- All-Seeing Eye
-}, note=L["left_eye"]}) -- Gaze of N'Zoth
+}, note=L["gaze_of_nzoth"]..' '..L["right_eye"]}) -- Gaze of N'Zoth
 nodes[54694317] = Rare({id=158597, quest=57675, assault=EMP}) -- High Executor Yothrim
-nodes[52398000] = Rare({id=158528, quest=57664, assault=EMP, note=L["reshef"], pois={
-    POI({51568173, 51578293, 53657939, 54147941, 49028263, 49008194}) -- Voidwarped High Guard
-}}) -- High Guard Reshef
+nodes[47507718] = Rare({id=158528, quest=57664, assault=EMP}) -- High Guard Reshef
 nodes[42485873] = Rare({id=162163, quest=58701, assault=AQR, pois={
     Path({42485873, 44396076, 46215988, 46785800, 46465623, 44545616, 43055653, 42485873})
 }}) -- High Priest Ytaessis
@@ -283,6 +288,7 @@ nodes[19755847] = Rare({id=155531, quest=56823, note=L["wastewander"], pois={
 nodes[73908353] = Rare({id=157134, quest=57259, rewards={
     Mount({id=1314, item=174641}) -- Drake of the Four Winds
 }}) -- Ishak of the Four Winds
+nodes[77005000] = Rare({id=152431, quest=nil, assault=AMA, note=L["kanebti"]}) -- Kaneb-ti
 nodes[71237375] = Rare({id=156655, quest=57433, assault=EMP}) -- Korzaran the Slaughterer
 nodes[34681890] = Rare({id=154604, quest=56340, assault=AQR, note=L["chamber_of_the_moon"], rewards={
     Pet({id=2847, item=174475}) -- Rotbreath
@@ -335,16 +341,45 @@ nodes[49328235] = Rare({id=158636, quest=57688, assault=EMP, note=L["platform"],
 }}) -- The Grand Executor
 nodes[84324729] = Rare({id=157188, quest=57285, assault=AMA, note=L["tomb_widow"]}) -- The Tomb Widow
 nodes[60014937] = Rare({id=158595, quest=57673, assault=EMP}) -- Thoughtstealer Vos
-nodes[67486382] = Rare({id=152788, quest=55716, assault=AMA, note=L["uatka"]}) -- Uat-ka the Sun's Wrath
+nodes[67486382] = Rare({id=152788, quest=55716, assault=AMA, note=L["uatka"], rewards={
+    Item({item=174875}) -- Obelisk of the Sun
+}}) -- Uat-ka the Sun's Wrath
 nodes[33592569] = Rare({id=162170, quest=58702, assault=AQR}) -- Warcaster Xeshro
 nodes[79505217] = Rare({id=151852, quest=55461, assault=AMA, pois={
     Path({77755217, 81265217})
 }}) -- Watcher Rehu
--- nodes[] = Rare({id=157473, quest=nil, rewards={
---     Toy({item=174874}) -- Budget K'thir Disguise
--- }}) -- Yiphrim the Will Ravager
+
 nodes[80165708] = Rare({id=157164, quest=57279, assault=AMA}) -- Zealot Tekem
 nodes[39694159] = Rare({id=162141, quest=58695, assault=AQR}) -- Zuythiz
+
+-------------------------------------------------------------------------------
+------------------------------- NEFERSET RARES --------------------------------
+-------------------------------------------------------------------------------
+
+local start = 45009400;
+local function coord(x, y)
+    return start + x*2500000 + y*400;
+end
+
+local NefRare = Class('NefersetRare', Rare, {
+    assault=EMP, note=L["neferset_rare"],
+    pois={POI({50007868, 50568833, 55207930})}
+})
+
+function NefRare:enabled (map, coord, minimap)
+    if not Rare.enabled(self, map, coord, minimap) then return false end
+    -- Only show if the Summoning Ritual event is active or completed
+    return C_TaskQuest.GetQuestTimeLeftMinutes(57359) or IsQuestFlaggedCompleted(57359)
+end
+
+nodes[coord(0, 0)] = NefRare({id=157472, quest=57437}) -- Aphrom the Guise of Madness
+nodes[coord(1, 0)] = NefRare({id=157470, quest=57436}) -- R'aas the Anima Devourer
+nodes[coord(2, 0)] = NefRare({id=157390, quest=57434}) -- R'oyolok the Reality Eater
+nodes[coord(3, 0)] = NefRare({id=157476, quest=57439}) -- Shugshul the Flesh Gorger
+nodes[coord(4, 0)] = NefRare({id=157473, quest=57438, rewards={
+    Toy({item=174874}) -- Budget K'thir Disguise
+}}) -- Yiphrim the Will Ravager
+nodes[coord(5, 0)] = NefRare({id=157469, quest=57435}) -- Zoth'rum the Intellect Pillager
 
 -------------------------------------------------------------------------------
 ---------------------------------- TREASURES ----------------------------------
@@ -429,6 +464,7 @@ nodes[60576213] = EMPTR3
 nodes[61778172] = EMPTR3
 nodes[62588188] = EMPTR3
 nodes[62977610] = EMPTR3
+nodes[64436501] = EMPTR3
 nodes[70217325] = EMPTR3
 -- quest=57627
 nodes[59867422] = EMPTR4
@@ -446,7 +482,7 @@ nodes[51777298] = EMPTR5
 nodes[52197757] = EMPTR5
 nodes[55397860] = EMPTR5
 
-local EMPCOFF = Supply({quest=nil, assault=EMP, note=L["cursed_relic"],
+local EMPCOFF = Supply({quest=57628, assault=EMP, note=L["cursed_relic"],
     label=L["black_empire_coffer"]})
 
 nodes[71657334] = EMPCOFF
@@ -542,21 +578,27 @@ nodes[31614380] = TimedEvent({quest=58660, assault=AQR, note=L["burrowing_terror
 
 nodes[55382132] = TimedEvent({quest=58257, assault=EMP, note=L["consuming_maw"], rewards=MAWREWARD}) -- Consuming Maw
 nodes[62407931] = TimedEvent({quest=58258, assault=EMP, note=L["consuming_maw"], rewards=MAWREWARD}) -- Consuming Maw
--- nodes[] = TimedEvent({quest=58256, assault=EMP, note=L["consuming_maw"], rewards=MAWREWARD}) -- Consuming Maw
+nodes[46793424] = TimedEvent({quest=58256, assault=EMP, note=L["consuming_maw"], rewards=MAWREWARD}) -- Consuming Maw
 -- nodes[] = TimedEvent({quest=58216, assault=EMP, note=L["consuming_maw"], rewards=MAWREWARD}) -- Consuming Maw
 
 nodes[48518489] = TimedEvent({quest=57522, assault=EMP, note=L["call_of_void"]}) -- Call of the Void
+nodes[53677575] = TimedEvent({quest=57585, assault=EMP, note=L["call_of_void"]}) -- Call of the Void
 nodes[52015072] = TimedEvent({quest=57543, assault=EMP, note=L["executor_nzoth"]}) -- Executor of N'Zoth
+nodes[59014663] = TimedEvent({quest=57580, assault=EMP, note=L["executor_nzoth"]}) -- Executor of N'Zoth
+nodes[66476806] = TimedEvent({quest=57582, assault=EMP, note=L["executor_nzoth"]}) -- Executor of N'Zoth
 nodes[49443920] = TimedEvent({quest=58276, assault=EMP, note=L["in_flames"]}) -- Mar'at In Flames
 nodes[59767241] = TimedEvent({quest=57429, assault=EMP, note=L["pyre_amalgamated"], rewards={
     Pet({id=2851, item=174478}) -- Wicked Lurker
 }}) -- Pyre of the Amalgamated One (also 58330?)
--- nodes[60005506] = TimedEvent({quest=, assault=EMP, pois={
---     Path({60315245, 59785364, 60005506, 60385696, 60495866})
--- }}) -- Spirit Drinker (57456, 57590, 57591, 57586, 57587)
+nodes[47174044] = TimedEvent({quest=57456, assault=EMP, pois={
+    Path({47944278, 47084245, 47254116, 47053964, 46583882, 46943783})
+}}) -- Spirit Drinker
 nodes[59022780] = TimedEvent({quest=57588, assault=EMP, pois={
     Path({58102290, 58422547, 59022780, 59602914, 60063133, 60753296, 60453467})
 }}) -- Spirit Drinker
+-- nodes[60005506] = TimedEvent({quest=, assault=EMP, pois={
+--     Path({60315245, 59785364, 60005506, 60385696, 60495866})
+-- }}) -- Spirit Drinker (57590, 57591, 57586, 57587)
 nodes[50568833] = TimedEvent({quest=57359, assault=EMP, note=L["summoning_ritual"]}) -- Summoning Ritual
 nodes[62037070] = TimedEvent({quest=58271, assault=EMP, note=L["voidflame_ritual"]}) -- Voidflame Ritual
 
@@ -598,11 +640,13 @@ nodes[61745440] = PetBattle({id=162461}) -- Whispers
 nodes[58005169] = Node({icon=134190, alpaca=true, label=L["gersahl"],
     note=L["gersahl_note"], pois={
     POI({
-        46922961, 49453556, 50583294, 55484468, 56265101, 56691882, 57112548,
-        57235056, 57458491, 57474682, 57741910, 58005169, 58202808, 58967759,
-        59027433, 59098568, 59567664, 60447755, 65167045, 65427433, 66047881,
-        66257753, 67377771, 68097535, 68117202, 68517407, 68947308, 71087875,
-        71657803
+        46922961, 49453556, 50504167, 50583294, 53133577, 55484468, 56114967,
+        56265101, 56691882, 57112548, 57235056, 57281602, 57458491, 57474682,
+        57741910, 58005169, 58131768, 58202808, 58967759, 59027433, 59098568,
+        59266302, 59557986, 59567664, 59628482, 60018165, 60447755, 60627655,
+        61371430, 64717249, 65167045, 65427433, 66047881, 66137572, 66217063,
+        66257753, 66557212, 67377771, 68097535, 68117202, 68517407, 68947308,
+        69237501, 71087875, 71657803
     })
 }, rewards={Item({item=174858})}})
 
