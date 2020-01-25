@@ -471,14 +471,17 @@ nodes[59867422] = EMPTR4
 nodes[60757493] = EMPTR4
 nodes[62157346] = EMPTR4
 nodes[62737184] = EMPTR4
+nodes[64607503] = EMPTR4
 nodes[65357117] = EMPTR4
 nodes[67167394] = EMPTR4
 -- quest=57635
 nodes[45697961] = EMPTR5
 nodes[47507687] = EMPTR5
+nodes[49037684] = EMPTR5
 nodes[49398584] = EMPTR5
 nodes[51707135] = EMPTR5
 nodes[51777298] = EMPTR5
+nodes[51897858] = EMPTR5
 nodes[52197757] = EMPTR5
 nodes[55397860] = EMPTR5
 
@@ -584,12 +587,17 @@ nodes[46793424] = TimedEvent({quest=58256, assault=EMP, note=L["consuming_maw"],
 nodes[48518489] = TimedEvent({quest=57522, assault=EMP, note=L["call_of_void"]}) -- Call of the Void
 nodes[53677575] = TimedEvent({quest=57585, assault=EMP, note=L["call_of_void"]}) -- Call of the Void
 nodes[52015072] = TimedEvent({quest=57543, assault=EMP, note=L["executor_nzoth"]}) -- Executor of N'Zoth
+nodes[57044951] = TimedEvent({quest=57592, assault=EMP, note=L["executor_nzoth"]}) -- Executor of N'Zoth
 nodes[59014663] = TimedEvent({quest=57580, assault=EMP, note=L["executor_nzoth"]}) -- Executor of N'Zoth
 nodes[66476806] = TimedEvent({quest=57582, assault=EMP, note=L["executor_nzoth"]}) -- Executor of N'Zoth
 nodes[49443920] = TimedEvent({quest=58276, assault=EMP, note=L["in_flames"]}) -- Mar'at In Flames
+nodes[50578232] = TimedEvent({quest=58275, assault=EMP, note=L["monstrous_summon"]}) -- Monstrous Summoning
 nodes[59767241] = TimedEvent({quest=57429, assault=EMP, note=L["pyre_amalgamated"], rewards={
     Pet({id=2851, item=174478}) -- Wicked Lurker
 }}) -- Pyre of the Amalgamated One (also 58330?)
+nodes[50568833] = TimedEvent({quest=57359, assault=EMP, note=L["summoning_ritual"]}) -- Summoning Ritual
+nodes[62037070] = TimedEvent({quest=58271, assault=EMP, note=L["voidflame_ritual"]}) -- Voidflame Ritual
+
 nodes[47174044] = TimedEvent({quest=57456, assault=EMP, pois={
     Path({47944278, 47084245, 47254116, 47053964, 46583882, 46943783})
 }}) -- Spirit Drinker
@@ -599,8 +607,6 @@ nodes[59022780] = TimedEvent({quest=57588, assault=EMP, pois={
 -- nodes[60005506] = TimedEvent({quest=, assault=EMP, pois={
 --     Path({60315245, 59785364, 60005506, 60385696, 60495866})
 -- }}) -- Spirit Drinker (57590, 57591, 57586, 57587)
-nodes[50568833] = TimedEvent({quest=57359, assault=EMP, note=L["summoning_ritual"]}) -- Summoning Ritual
-nodes[62037070] = TimedEvent({quest=58271, assault=EMP, note=L["voidflame_ritual"]}) -- Voidflame Ritual
 
 -------------------------------------------------------------------------------
 
@@ -637,9 +643,24 @@ nodes[61745440] = PetBattle({id=162461}) -- Whispers
 ------------------------------- SPRINGFUR ALPACA ------------------------------
 -------------------------------------------------------------------------------
 
-nodes[58005169] = Node({icon=134190, alpaca=true, label=L["gersahl"],
-    note=L["gersahl_note"], pois={
-    POI({
+local function GetAlpacaStatus ()
+    local count = select(4, GetQuestObjectiveInfo(58881, 0, false))
+    if count ~= nil then return ns.status.Gray(tostring(count)..'/7') end
+end
+
+local Alpaca = Class('Alpaca', NPC, {
+    id=162765, icon=2916287, quest=58879, alpaca=true,
+    note=L["friendly_alpaca"],
+    pois={POI({
+        15006200, 24000900, 27004800, 30002900, 39000800, 41007000, 47004800,
+        52001900, 55006900, 62705340, 63011446, 69001300, 70003900, 76636813
+    })},
+    rewards={Mount({id=1329, item=174859})} -- Springfur Alpaca
+})
+
+local Gersahl = Class('Gersahl', Node, {
+    icon=134190, alpaca=true, label=L["gersahl"], note=L["gersahl_note"],
+    pois={POI({
         46922961, 49453556, 50504167, 50583294, 53133577, 55484468, 56114967,
         56265101, 56691882, 57112548, 57235056, 57281602, 57458491, 57474682,
         57741910, 58005169, 58131768, 58202808, 58967759, 59027433, 59098568,
@@ -647,18 +668,15 @@ nodes[58005169] = Node({icon=134190, alpaca=true, label=L["gersahl"],
         61371430, 64717249, 65167045, 65427433, 66047881, 66137572, 66217063,
         66257753, 66557212, 67377771, 68097535, 68117202, 68517407, 68947308,
         69237501, 71087875, 71657803
-    })
-}, rewards={Item({item=174858})}})
+    })},
+    rewards={Item({item=174858})} -- Gersahl Greens
+})
 
-nodes[47004800] = NPC({id=162765, icon=2916287, quest=58879, alpaca=true,
-    note=L["friendly_alpaca"], pois={
-    POI({
-        15006200, 24000900, 27004800, 30002900, 39000800, 41007000, 47004800,
-        52001900, 55006900, 62705340, 63011446, 69001300, 70003900, 76636813
-    })
-}, rewards={
-    Mount({id=1329, item=174859}) -- Springfur Alpaca
-}})
+Alpaca.getters.rlabel = GetAlpacaStatus
+Gersahl.getters.rlabel = GetAlpacaStatus
+
+nodes[47004800] = Alpaca()
+nodes[58005169] = Gersahl()
 
 -------------------------------------------------------------------------------
 

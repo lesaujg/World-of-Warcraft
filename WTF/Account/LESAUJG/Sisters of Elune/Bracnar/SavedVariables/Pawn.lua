@@ -13,9 +13,9 @@ PawnOptions = {
 			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:6316:4932:4933:1618:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 173451,
-			["Level"] = 435,
-			["Link"] = "|cffa335ee|Hitem:173451::::::::120:253::29:4:1487:4786:6503:4775:::|h[Nefarious Tormentor's Spaulders]|h|r",
+			["ID"] = 173838,
+			["Level"] = 450,
+			["Link"] = "|cffa335ee|Hitem:173838::::::::120:253::28:4:1502:4786:6506:4775:::|h[Nefarious Tormentor's Epaulets]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -34,9 +34,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:173485::::::::120:253::30:8:6412:4803:6515:6578:6579:6556:1477:4786:::|h[Nefarious Tormentor's Leggings]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 173447,
-			["Level"] = 430,
-			["Link"] = "|cffa335ee|Hitem:173447::::::::120:253::36:6:6412:4803:6515:6516:1487:4786:::|h[Nefarious Tormentor's Footguards]|h|r",
+			["ID"] = 163400,
+			["Level"] = 445,
+			["Link"] = "|cffa335ee|Hitem:163400::::::::120:253::28:5:5125:6516:6513:1637:4786:::|h[7th Legionnaire's Sabatons]|h|r",
 		}, -- [8]
 		{
 			["ID"] = 174955,

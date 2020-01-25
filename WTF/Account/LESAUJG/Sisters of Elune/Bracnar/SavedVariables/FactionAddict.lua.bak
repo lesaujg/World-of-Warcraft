@@ -27,91 +27,94 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
+		["date"] = "Friday 1/24",
+		["rows"] = 1,
+	}, -- [1]
+	{
 		["date"] = "Thursday 1/23",
 		["rows"] = 2,
-	}, -- [1]
+	}, -- [2]
 	{
 		["date"] = "Wednesday 1/22",
 		["rows"] = 10,
-	}, -- [2]
+	}, -- [3]
 	{
 		["date"] = "Tuesday 1/21",
 		["rows"] = 6,
-	}, -- [3]
+	}, -- [4]
 	{
 		["date"] = "Monday 1/20",
 		["rows"] = 5,
-	}, -- [4]
+	}, -- [5]
 	{
 		["date"] = "Sunday 1/19",
 		["rows"] = 2,
-	}, -- [5]
+	}, -- [6]
 	{
 		["date"] = "Saturday 1/18",
 		["rows"] = 2,
-	}, -- [6]
+	}, -- [7]
 	{
 		["date"] = "Friday 1/17",
 		["rows"] = 3,
-	}, -- [7]
+	}, -- [8]
 	{
 		["date"] = "Thursday 1/16",
 		["rows"] = 6,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Wednesday 1/15",
 		["rows"] = 4,
-	}, -- [9]
+	}, -- [10]
 	{
 		["date"] = "Tuesday 1/14",
 		["rows"] = 8,
-	}, -- [10]
+	}, -- [11]
 	{
 		["date"] = "Monday 1/13",
 		["rows"] = 1,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Sunday 1/12",
 		["rows"] = 1,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Friday 1/10",
 		["rows"] = 5,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Thursday 1/9",
 		["rows"] = 1,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Monday 1/6",
 		["rows"] = 1,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Friday 12/20",
 		["rows"] = 1,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Thursday 12/19",
 		["rows"] = 1,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Wednesday 12/18",
 		["rows"] = 1,
-	}, -- [18]
+	}, -- [19]
 	{
 		["date"] = "Tuesday 12/17",
 		["rows"] = 2,
-	}, -- [19]
-	{
-		["date"] = "Monday 12/16",
-		["rows"] = 1,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
 	{
+		["Rajani"] = 1000,
+	}, -- [1]
+	{
 		["Rajani"] = 700,
 		["Uldum Accord"] = 800,
-	}, -- [1]
+	}, -- [2]
 	{
 		["Armies of Legionfall"] = 150,
 		["Champions of Azeroth"] = 125,
@@ -123,7 +126,7 @@ FactionAddictLogEntries = {
 		["Proudmoore Admiralty"] = 1925,
 		["Rustbolt Resistance"] = 1225,
 		["7th Legion"] = 1575,
-	}, -- [2]
+	}, -- [3]
 	{
 		["Uldum Accord"] = 2075,
 		["Storm's Wake"] = 2375,
@@ -131,27 +134,27 @@ FactionAddictLogEntries = {
 		["Rustbolt Resistance"] = 850,
 		["Champions of Azeroth"] = 125,
 		["Rajani"] = 1125,
-	}, -- [3]
+	}, -- [4]
 	{
 		["Uldum Accord"] = 200,
 		["Tortollan Seekers"] = 1500,
 		["Rajani"] = 650,
 		["Rustbolt Resistance"] = 75,
 		["7th Legion"] = 1675,
-	}, -- [4]
+	}, -- [5]
 	{
 		["Rajani"] = 300,
 		["Uldum Accord"] = 225,
-	}, -- [5]
+	}, -- [6]
 	{
 		["Uldum Accord"] = 225,
 		["Order of Embers"] = 75,
-	}, -- [6]
+	}, -- [7]
 	{
 		["Uldum Accord"] = 275,
 		["Rajani"] = 450,
 		["7th Legion"] = 150,
-	}, -- [7]
+	}, -- [8]
 	{
 		["Uldum Accord"] = 350,
 		["Champions of Azeroth"] = 1520,
@@ -159,57 +162,54 @@ FactionAddictLogEntries = {
 		["Rustbolt Resistance"] = 1450,
 		["Bizmo's Brawlpub"] = 500,
 		["Rajani"] = 450,
-	}, -- [8]
+	}, -- [9]
 	{
 		["7th Legion"] = 150,
 		["Uldum Accord"] = 975,
 		["Rajani"] = 2875,
 		["Champions of Azeroth"] = 1870,
-	}, -- [9]
+	}, -- [10]
 	{
 		["Rustbolt Resistance"] = 1180,
 		["Uldum Accord"] = 1925,
+		["Champions of Azeroth"] = 3670,
 		["Tortollan Seekers"] = 2275,
-		["Storm's Wake"] = 225,
 		["Order of Embers"] = 150,
 		["Proudmoore Admiralty"] = 75,
-		["Champions of Azeroth"] = 3670,
+		["Storm's Wake"] = 225,
 		["7th Legion"] = 2100,
-	}, -- [10]
-	{
-		["Rustbolt Resistance"] = 1375,
 	}, -- [11]
 	{
-		["Rustbolt Resistance"] = 925,
+		["Rustbolt Resistance"] = 1375,
 	}, -- [12]
+	{
+		["Rustbolt Resistance"] = 925,
+	}, -- [13]
 	{
 		["Champions of Azeroth"] = 1150,
 		["Rustbolt Resistance"] = 1800,
 		["Order of Embers"] = 200,
 		["Storm's Wake"] = 2310,
 		["7th Legion"] = 800,
-	}, -- [13]
-	{
-		["Rustbolt Resistance"] = 925,
 	}, -- [14]
 	{
-		["Rustbolt Resistance"] = 2300,
+		["Rustbolt Resistance"] = 925,
 	}, -- [15]
 	{
-		["Rustbolt Resistance"] = 1495,
+		["Rustbolt Resistance"] = 2300,
 	}, -- [16]
 	{
-		["Rustbolt Resistance"] = 1237,
+		["Rustbolt Resistance"] = 1495,
 	}, -- [17]
 	{
-		["Rustbolt Resistance"] = 1322,
+		["Rustbolt Resistance"] = 1237,
 	}, -- [18]
+	{
+		["Rustbolt Resistance"] = 1322,
+	}, -- [19]
 	{
 		["Waveblade Ankoan"] = 86,
 		["Rustbolt Resistance"] = 1840,
-	}, -- [19]
-	{
-		["Rustbolt Resistance"] = 1495,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -330,14 +330,14 @@ FactionAddictConfigIsInactive = {
 	[1714] = false,
 	[1718] = false,
 	[1272] = false,
+	[2156] = false,
 	[1337] = false,
-	[1847] = false,
 	[989] = false,
 	[1273] = false,
-	[2156] = false,
+	[1847] = false,
 	[2415] = false,
 	[1975] = false,
-	[1085] = false,
+	[2417] = false,
 	[2158] = false,
 	[2163] = false,
 	[990] = false,
@@ -346,7 +346,7 @@ FactionAddictConfigIsInactive = {
 	[576] = false,
 	[2161] = false,
 	[1276] = false,
-	[2162] = false,
+	[1850] = false,
 	[1341] = false,
 	[369] = false,
 	[1277] = false,
@@ -359,25 +359,25 @@ FactionAddictConfigIsInactive = {
 	[1388] = false,
 	[1279] = false,
 	[69] = false,
-	[2045] = false,
+	[81] = false,
 	[1216] = false,
-	[1280] = false,
+	[2045] = false,
 	[2170] = false,
 	[1090] = false,
 	[93] = false,
 	[1281] = false,
 	[1345] = false,
 	[1848] = false,
-	[81] = false,
+	[1280] = false,
 	[1282] = false,
 	[930] = false,
 	[2165] = false,
 	[1984] = false,
 	[1283] = false,
-	[1850] = false,
+	[2162] = false,
 	[1156] = false,
 	[2159] = false,
-	[2417] = false,
+	[1085] = false,
 	[2157] = false,
 	[1849] = false,
 	[1731] = false,
