@@ -6,10 +6,3 @@ X: 175
 Y: 0
 W: 250
 H: 663
-Frame: AmrUiFrame1
-FrameLevel: 1
-Anchor: CENTER
-X: 106
-Y: 97
-W: 1000
-H: 700
