@@ -9,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 481,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:6316:4932:4933:1618:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 483,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:6316:4932:4933:1620:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173838,
@@ -49,10 +49,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:169934::::::::120:255::5:3:4799:1502:4786:::|h[Deepcrawler's Handguards]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 169002,
-			["Level"] = 425,
+			["ID"] = 165679,
+			["Level"] = 445,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cffa335ee|Hitem:169002::::::::120:254::27:4:4803:1612:5850:4783:::|h[Calibrated Hefty Cog]|h|r",
+			["Link"] = "|cffa335ee|Hitem:165679::::::::120:253::28:8:4803:4802:6578:6579:6537:6515:1637:4786:::|h[Ornate Elun'dris Ring]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 169008,
