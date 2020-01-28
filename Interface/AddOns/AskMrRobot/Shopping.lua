@@ -47,7 +47,13 @@ end
 local function onItemClick(widget)
 	local name = widget:GetUserData("itemName")
 	if name then
-		QueryAuctionItems(name)
+
+		local query = {}
+		query.searchString = name
+		query.sorts = {}
+		C_AuctionHouse.SendBrowseQuery(query)
+		
+		--QueryAuctionItems(name)
 	end
 end
 

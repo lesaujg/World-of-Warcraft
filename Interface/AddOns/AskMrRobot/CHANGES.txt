@@ -1,7 +1,7 @@
-changeset:   175:731cb3cedd3d
-tag:         v82
+changeset:   177:44ce007189e0
+tag:         v83
 user:        yellowfive
-date:        Tue Jan 21 15:55:09 2020 -0800
-summary:     added auto-logging for ny'alotha
+date:        Sun Jan 26 12:37:12 2020 -0800
+summary:     Fix to automatic search on shopping list at auction house.
 
 
