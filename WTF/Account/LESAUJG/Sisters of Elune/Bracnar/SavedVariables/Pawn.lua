@@ -29,9 +29,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:173513::::::::120:253::29:6:6412:4803:6513:6516:1497:4786:::|h[Nefarious Tormentor's Chain]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 173485,
-			["Level"] = 420,
-			["Link"] = "|cffa335ee|Hitem:173485::::::::120:253::30:8:6412:4803:6515:6578:6579:6556:1477:4786:::|h[Nefarious Tormentor's Leggings]|h|r",
+			["ID"] = 173817,
+			["Level"] = 445,
+			["Link"] = "|cffa335ee|Hitem:173817::::::::120:253::29:6:6412:4803:6513:6516:1502:4786:::|h[Nefarious Tormentor's Trousers]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 163400,
@@ -55,10 +55,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:165679::::::::120:253::28:8:4803:4802:6578:6579:6537:6515:1637:4786:::|h[Ornate Elun'dris Ring]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 169008,
-			["Level"] = 425,
+			["ID"] = 165679,
+			["Level"] = 445,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cffa335ee|Hitem:169008::::::::120:253::27:4:4803:1612:5850:4783:::|h[Rust Resistant Loop]|h|r",
+			["Link"] = "|cffa335ee|Hitem:165679::168639::::::120:253::28:8:4803:4802:6578:6579:6537:6515:1637:4786:::|h[Ornate Elun'dris Ring]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 169307,
@@ -74,8 +74,8 @@ PawnOptions = {
 		}, -- [14]
 		{
 			["ID"] = 169223,
-			["Level"] = 482,
-			["Link"] = "|cffff8000|Hitem:169223::::::::120:253::11:2:6278:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
+			["Level"] = 484,
+			["Link"] = "|cffff8000|Hitem:169223::::::::120:253::11:2:6279:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 163881,
