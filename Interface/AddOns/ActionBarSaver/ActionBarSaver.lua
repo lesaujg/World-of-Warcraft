@@ -86,7 +86,7 @@ function ABS:SaveProfile(name)
 			-- Save a spell
 			elseif( type == "spell" and id > 0 ) then
 			    local spellName, spellStance = GetSpellInfo(id)
-				if( spellName and spellStance ) then
+				if( spellName or spellStance ) then
 					set[actionID] = string.format("%s|%d|%s|%s|%s|%s", type, id, "", spellName, spellStance or "", extraID or "")
 				end
 			-- Save a macro

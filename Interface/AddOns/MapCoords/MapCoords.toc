@@ -1,4 +1,4 @@
-## Interface: 80300
+## Interface: 11303
 ## Author: ReCover, Jim-Bim, Urmelus (TOC Update)
 ## Version: 0.33
 ## Title: MapCoords
