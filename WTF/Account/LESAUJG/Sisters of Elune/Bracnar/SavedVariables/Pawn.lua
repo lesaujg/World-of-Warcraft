@@ -9,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 483,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:6316:4932:4933:1620:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 485,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:6316:4932:4933:1622:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173838,
@@ -19,9 +19,9 @@ PawnOptions = {
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 165448,
-			["Level"] = 450,
-			["Link"] = "|cffa335ee|Hitem:165448::::::::120:253::51:4:1562:4786:6504:4775:::|h[Kaldorei Archer's Chainmail]|h|r",
+			["ID"] = 174147,
+			["Level"] = 460,
+			["Link"] = "|cffa335ee|Hitem:174147::::::::120:253::3:5:4822:1487:4786:6504:4775:::|h[Last Vestige of Neltharion]|h|r",
 		}, -- [5]
 		{
 			["ID"] = 173513,
@@ -39,14 +39,14 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163400::::::::120:253::28:5:5125:6516:6513:1637:4786:::|h[7th Legionnaire's Sabatons]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 174955,
-			["Level"] = 440,
-			["Link"] = "|cffa335ee|Hitem:174955::::::::120:253::28:5:6540:6513:6578:6579:4803:::|h[Nefarious Tormentor's Vambraces]|h|r",
+			["ID"] = 158053,
+			["Level"] = 445,
+			["Link"] = "|cffa335ee|Hitem:158053::::::::120:253::28:5:4803:6516:6513:1637:4786:::|h[Deadwash Bracers]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 169934,
-			["Level"] = 430,
-			["Link"] = "|cffa335ee|Hitem:169934::::::::120:255::5:3:4799:1502:4786:::|h[Deepcrawler's Handguards]|h|r",
+			["ID"] = 173448,
+			["Level"] = 445,
+			["Link"] = "|cffa335ee|Hitem:173448::::::::120:253::28:9:6412:4803:4802:6513:6578:6579:6546:1502:4786:::|h[Nefarious Tormentor's Handguards]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 165679,
