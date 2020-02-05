@@ -247,3 +247,4 @@ HandyNotes_MechagonAndNazjatar: enabled
 DBM-Nyalotha: enabled
 DBM-EternalPalace: enabled
 HandyNotes_VisionsOfNZoth: enabled
+WeakAurasArchive: enabled

@@ -81,9 +81,9 @@ PawnOptions = {
 			["Link"] = "|cffff8000|Hitem:169223::::::::120:253::11:2:6279:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 163881,
-			["Level"] = 430,
-			["Link"] = "|cffa335ee|Hitem:163881::::::::120:253::23:3:5845:1622:4786:::|h[7th Legionnaire's Longbow]|h|r",
+			["ID"] = 158090,
+			["Level"] = 445,
+			["Link"] = "|cffa335ee|Hitem:158090::::::::120:253::28:8:4803:6578:6579:6482:6470:6513:1637:4786:::|h[Ironcrest Longrifle]|h|r",
 		}, -- [16]
 	},
 	["LastKeybindingsSet"] = 1,

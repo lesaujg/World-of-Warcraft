@@ -2,7 +2,7 @@
 g_auctionHouseSortsBySearchContext = {
 	{
 		{
-			["reverseSort"] = true,
+			["reverseSort"] = false,
 			["sortOrder"] = 0,
 		}, -- [1]
 		{
@@ -13,21 +13,21 @@ g_auctionHouseSortsBySearchContext = {
 	{
 		{
 			["reverseSort"] = false,
-			["sortOrder"] = 1,
+			["sortOrder"] = 0,
 		}, -- [1]
 		{
 			["reverseSort"] = false,
-			["sortOrder"] = 0,
+			["sortOrder"] = 1,
 		}, -- [2]
 	}, -- [2]
 	{
 		{
-			["reverseSort"] = true,
-			["sortOrder"] = 2,
+			["reverseSort"] = false,
+			["sortOrder"] = 0,
 		}, -- [1]
 		{
-			["reverseSort"] = true,
-			["sortOrder"] = 0,
+			["reverseSort"] = false,
+			["sortOrder"] = 1,
 		}, -- [2]
 	}, -- [3]
 	{
@@ -42,12 +42,12 @@ g_auctionHouseSortsBySearchContext = {
 	}, -- [4]
 	{
 		{
-			["reverseSort"] = true,
+			["reverseSort"] = false,
 			["sortOrder"] = 0,
 		}, -- [1]
 		{
-			["reverseSort"] = true,
-			["sortOrder"] = 2,
+			["reverseSort"] = false,
+			["sortOrder"] = 1,
 		}, -- [2]
 	}, -- [5]
 	{
@@ -189,22 +189,22 @@ g_auctionHouseSortsBySearchContext = {
 	{
 		{
 			["reverseSort"] = false,
-			["sortOrder"] = 4,
+			["sortOrder"] = 1,
 		}, -- [1]
 		{
 			["reverseSort"] = false,
-			["sortOrder"] = 3,
+			["sortOrder"] = 0,
 		}, -- [2]
 	}, -- [22]
 	{
 		{
 			["reverseSort"] = false,
-			["sortOrder"] = 4,
+			["sortOrder"] = 1,
 		}, -- [1]
 		{
 			["reverseSort"] = false,
-			["sortOrder"] = 3,
+			["sortOrder"] = 0,
 		}, -- [2]
 	}, -- [23]
-	["auctionHouseSortVersion"] = 1,
+	["auctionHouseSortVersion"] = 2,
 }
