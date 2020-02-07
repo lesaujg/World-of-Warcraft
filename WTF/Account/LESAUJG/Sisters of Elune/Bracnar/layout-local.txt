@@ -1,4 +1,11 @@
 Version: 1
+Frame: AmrUiFrame1
+FrameLevel: 1
+Anchor: RIGHT
+X: 20
+Y: 71
+W: 1000
+H: 700
 Frame: BaudManifestDisplay2
 FrameLevel: 1
 Anchor: LEFT
