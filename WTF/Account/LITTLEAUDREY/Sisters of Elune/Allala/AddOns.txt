@@ -92,3 +92,4 @@ DBM-WorldEvents: enabled
 DBM-ZuldazarRaid: enabled
 WeakAurasCompanion: enabled
 OPie_Classic: disabled
+WeakAurasArchive: enabled

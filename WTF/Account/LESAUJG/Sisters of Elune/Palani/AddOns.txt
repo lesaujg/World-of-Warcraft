@@ -40,7 +40,7 @@ TradeSkillMaster: enabled
 TradeSkillMaster_AppHelper: enabled
 Tukui_17_Layout: enabled
 Tukui_Config: enabled
-BaudManifest: disabled
+BaudManifest: enabled
 KSpeedO: enabled
 GTFO: disabled
 OPie_Classic: disabled

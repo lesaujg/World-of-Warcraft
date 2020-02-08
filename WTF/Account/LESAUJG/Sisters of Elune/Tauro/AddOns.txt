@@ -1,7 +1,7 @@
 AchievementsReminder: disabled
 AngryWorldQuests: disabled
 AskMrRobot: disabled
-BaudManifest: disabled
+BaudManifest: enabled
 FactionAddict: disabled
 GTFO: disabled
 HandyNotes: disabled

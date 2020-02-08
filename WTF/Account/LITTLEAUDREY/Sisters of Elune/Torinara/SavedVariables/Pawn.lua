@@ -1,9 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0311,
-	["LastPlayerFullName"] = "Torinara-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
+	["LastVersion"] = 2.032,
 	["ItemLevels"] = {
 		{
 			["ID"] = 152765,
@@ -91,7 +88,9 @@ PawnOptions = {
 			["Link"] = "|cffe6cc80|Hitem:128873::::::::110:263:256:::117:::|h[Fury of the Stonemother]|h|r",
 		}, -- [17]
 	},
-	["LastKeybindingsSet"] = 1,
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Torinara-Sisters of Elune",
 	["Artifacts"] = {
 		[128819] = {
 			["Relics"] = {
@@ -111,8 +110,10 @@ PawnOptions = {
 			["Name"] = "Doomhammer",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "SHAMAN",
 	["LastAdded"] = 1,
 }
+PawnClassicScaleProviderOptions = nil
