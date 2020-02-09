@@ -54,7 +54,7 @@ RaidAchievement_Naxxramas: disabled
 RaidAchievement_Ulduar: disabled
 RaidAchievement_WotlkHeroics: disabled
 RaidAchievement_OldModules: disabled
-SavedInstances: disabled
+SavedInstances: enabled
 WeakAurasModelPaths: disabled
 WeakAurasOptions: disabled
 WeakAurasTemplates: disabled

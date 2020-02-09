@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.032,
+	["LastPlayerFullName"] = "Torinara-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 152765,
@@ -67,10 +70,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:134203::::::::110:263::27:4:3394:603:1489:3528:::|h[Three-Toed Rabbit Foot]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 147275,
-			["Level"] = 170,
+			["ID"] = 134203,
+			["Level"] = 178,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cffa335ee|Hitem:147275::::::::110:263:::4:607:3574:1504:3528:::|h[Beguiler's Talisman]|h|r",
+			["Link"] = "|cffa335ee|Hitem:134203::::::::111:263::27:4:3394:603:1489:3528:::|h[Three-Toed Rabbit Foot]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 127033,
@@ -84,13 +87,11 @@ PawnOptions = {
 		}, -- [16]
 		{
 			["ID"] = 128873,
-			["Level"] = 152,
-			["Link"] = "|cffe6cc80|Hitem:128873::::::::110:263:256:::117:::|h[Fury of the Stonemother]|h|r",
+			["Level"] = 181,
+			["Link"] = "|cffe6cc80|Hitem:128873::::::::111:263:256:::117:::|h[Fury of the Stonemother]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Torinara-Sisters of Elune",
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128819] = {
 			["Relics"] = {
@@ -110,7 +111,6 @@ PawnOptions = {
 			["Name"] = "Doomhammer",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "SHAMAN",

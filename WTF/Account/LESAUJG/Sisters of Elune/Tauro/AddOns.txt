@@ -23,7 +23,7 @@ RaidAchievement_Naxxramas: disabled
 RaidAchievement_Ulduar: disabled
 RaidAchievement_WotlkHeroics: disabled
 RaidAchievement_OldModules: disabled
-SavedInstances: disabled
+SavedInstances: enabled
 Skada: disabled
 TeleportCloak: disabled
 WeakAuras: disabled

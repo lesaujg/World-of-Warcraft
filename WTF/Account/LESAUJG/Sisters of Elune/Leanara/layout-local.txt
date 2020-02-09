@@ -13,6 +13,13 @@ X: -107
 Y: 0
 W: 250
 H: 417
+Frame: SavedInstancesDetachHeader
+FrameLevel: 100
+Anchor: TOPRIGHT
+X: -116
+Y: -156
+W: 575
+H: 459
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: CENTER

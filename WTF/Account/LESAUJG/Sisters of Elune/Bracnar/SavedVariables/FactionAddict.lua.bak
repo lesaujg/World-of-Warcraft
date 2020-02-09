@@ -28,7 +28,7 @@ FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
 		["date"] = "Saturday 2/8",
-		["rows"] = 1,
+		["rows"] = 6,
 	}, -- [1]
 	{
 		["date"] = "Friday 2/7",
@@ -109,7 +109,12 @@ FactionAddictLogData = {
 }
 FactionAddictLogEntries = {
 	{
-		["Rajani"] = 1100,
+		["Uldum Accord"] = 800,
+		["Champions of Azeroth"] = 325,
+		["Rustbolt Resistance"] = 850,
+		["Proudmoore Admiralty"] = 1900,
+		["Rajani"] = 1475,
+		["7th Legion"] = 575,
 	}, -- [1]
 	{
 		["Argussian Reach"] = 6200,
@@ -371,7 +376,7 @@ FactionAddictConfigIsInactive = {
 	[2159] = false,
 	[989] = false,
 	[1273] = false,
-	[1337] = false,
+	[1847] = false,
 	[2160] = false,
 	[1975] = false,
 	[2162] = false,
@@ -396,16 +401,16 @@ FactionAddictConfigIsInactive = {
 	[1388] = false,
 	[1279] = false,
 	[69] = false,
-	[81] = false,
-	[1216] = false,
 	[2045] = false,
+	[1216] = false,
+	[1280] = false,
 	[2170] = false,
 	[1848] = false,
 	[93] = false,
 	[1281] = false,
 	[1090] = false,
 	[1345] = false,
-	[1280] = false,
+	[81] = false,
 	[1282] = false,
 	[1091] = false,
 	[270] = false,
@@ -413,8 +418,8 @@ FactionAddictConfigIsInactive = {
 	[1283] = false,
 	[1850] = false,
 	[1156] = false,
+	[1337] = false,
 	[2156] = false,
-	[1847] = false,
 	[1714] = false,
 	[1738] = false,
 	[1731] = false,

@@ -161,7 +161,7 @@ BalanceSpellSuggest: disabled
 CrossRealmAssist: enabled
 Decursive: disabled
 Ketho_InstanceTimer: disabled
-SavedInstances: disabled
+SavedInstances: enabled
 TeleportCloak: disabled
 TradeSkillMaster_Vendoring: disabled
 DBM-Nighthold: enabled
