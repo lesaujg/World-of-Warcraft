@@ -231,8 +231,8 @@ DBMWorldEvents_AllSavedVars = {
 				["Timer47310cast2TColor"] = 2,
 				["announce47310cast"] = false,
 				["specWarnBrewStunSWSound"] = 1,
-				["Timer47340targetTColor"] = 3,
 				["Yell47442"] = false,
+				["Timer47340targetTColor"] = 3,
 				["specWarnBrewSWNote"] = true,
 				["Timer47310cast2"] = false,
 			}, -- [1]
@@ -369,24 +369,18 @@ DBMWorldEvents_AllSavedVars = {
 				["Timer101938cdCVoice"] = 0,
 			}, -- [3]
 		},
-		["Omen"] = {
+		["Brew"] = {
 			{
 				["Enabled"] = true,
+				["NormalizeVolume"] = true,
 			}, -- [1]
 			{
 				["Enabled"] = true,
-				["announce26540spell"] = true,
-				["announce104903spell"] = true,
-				["Timer26540cdTColor"] = 2,
-				["Timer26540cd"] = true,
-				["Timer104903cd"] = true,
-				["SpecWarn26540moveSWNote"] = true,
-				["SpecWarn26540move"] = true,
-				["Timer104903cdTColor"] = 6,
-				["SpecWarn26540moveSWSound"] = 1,
+				["NormalizeVolume"] = true,
 			}, -- [2]
 			{
 				["Enabled"] = true,
+				["NormalizeVolume"] = true,
 			}, -- [3]
 		},
 		["PlantsVsZombies"] = {
@@ -426,18 +420,24 @@ DBMWorldEvents_AllSavedVars = {
 		},
 		["talent3"] = "Retribution",
 		["talent1"] = "Holy",
-		["Brew"] = {
+		["Omen"] = {
 			{
 				["Enabled"] = true,
-				["NormalizeVolume"] = true,
 			}, -- [1]
 			{
 				["Enabled"] = true,
-				["NormalizeVolume"] = true,
+				["announce26540spell"] = true,
+				["announce104903spell"] = true,
+				["Timer26540cdTColor"] = 2,
+				["Timer26540cd"] = true,
+				["Timer104903cd"] = true,
+				["SpecWarn26540moveSWNote"] = true,
+				["SpecWarn26540move"] = true,
+				["Timer104903cdTColor"] = 6,
+				["SpecWarn26540moveSWSound"] = 1,
 			}, -- [2]
 			{
 				["Enabled"] = true,
-				["NormalizeVolume"] = true,
 			}, -- [3]
 		},
 		["d285"] = {
@@ -474,9 +474,9 @@ DBMWorldEvents_AllSavedVars = {
 				["WarnPhase"] = true,
 				["Timer42380targetTColor"] = 3,
 				["Enabled"] = true,
-				["Timer42380target"] = false,
-				["Timer42514target2"] = false,
 				["Timer42380targetCVoice"] = 0,
+				["Timer42514target2"] = false,
+				["Timer42380target"] = false,
 				["Timer42514target2CVoice"] = 0,
 			}, -- [3]
 		},
@@ -589,8 +589,8 @@ DBMWorldEvents_AllSavedVars = {
 				["announceother99268target"] = true,
 				["SpecWarn82235moveawaySWNote"] = true,
 				["Yell99268"] = true,
-				["Yell82235"] = false,
 				["Timer98495cd"] = true,
+				["Yell82235"] = false,
 				["SpecWarn99268closeSWNote"] = true,
 				["SpecWarn82524tauntSWNote"] = true,
 				["SpecWarn99849runSWNote"] = true,
@@ -693,8 +693,8 @@ DBMWorldEvents_AllSavedVars = {
 				["specWarnBrewSWSound"] = 1,
 				["Timer47310cast2"] = false,
 				["announce47310cast"] = false,
-				["Timer47340targetTColor"] = 3,
 				["Yell47442"] = false,
+				["Timer47340targetTColor"] = 3,
 				["specWarnBrewStunSWSound"] = 1,
 				["specWarnBrewSWNote"] = true,
 				["Timer47310cast2TColor"] = 2,
@@ -846,14 +846,14 @@ DBMWorldEvents_AllSavedVars = {
 				["RangeFrame"] = true,
 				["SpecWarn99268closeSWSound"] = 1,
 				["SpecWarn99171dodge"] = true,
-				["Enabled"] = true,
 				["SpecWarn99399taunt"] = true,
+				["Enabled"] = true,
 				["announceother99399stack"] = false,
 				["SpecWarn99849runSWNote"] = true,
 				["SpecWarn82524tauntSWNote"] = true,
 				["SpecWarn99268closeSWNote"] = true,
-				["Yell82235"] = false,
 				["Timer98495cd"] = true,
+				["Yell82235"] = false,
 				["Yell99268"] = true,
 				["SpecWarn82235moveawaySWNote"] = true,
 				["announceother99268target"] = true,
@@ -924,8 +924,8 @@ DBMWorldEvents_AllSavedVars = {
 				["announceother42514target2"] = false,
 				["WarnPhase"] = true,
 				["Timer42514target2CVoice"] = 0,
-				["Timer42380target"] = false,
 				["Timer42380targetCVoice"] = 0,
+				["Timer42380target"] = false,
 				["Timer42514target2"] = false,
 				["Enabled"] = true,
 				["Timer42380targetTColor"] = 3,
@@ -943,6 +943,14 @@ DBMWorldEvents_AllSavedVars = {
 				["Timer42380targetTColor"] = 3,
 			},
 		},
+		["Omen"] = {
+			[2] = {
+				["Enabled"] = true,
+			},
+			[3] = {
+				["Enabled"] = true,
+			},
+		},
 		["Brew"] = {
 			[2] = {
 				["Enabled"] = true,
@@ -951,14 +959,6 @@ DBMWorldEvents_AllSavedVars = {
 			[3] = {
 				["Enabled"] = true,
 				["NormalizeVolume"] = true,
-			},
-		},
-		["Omen"] = {
-			[2] = {
-				["Enabled"] = true,
-			},
-			[3] = {
-				["Enabled"] = true,
 			},
 		},
 	},
