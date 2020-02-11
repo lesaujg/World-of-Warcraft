@@ -10,6 +10,8 @@ PawnCommon = {
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
+	["ShowSpecIcons"] = true,
+	["ShowSocketingAdvisor"] = true,
 	["Scales"] = {
 		["\"MrRobot\":HUNTER3"] = {
 			["IconTexturePath"] = 461113,
@@ -269,9 +271,6 @@ PawnCommon = {
 		["\"MrRobot\":PALADIN3"] = {
 			["IconTexturePath"] = 135873,
 			["PerCharacterOptions"] = {
-				["Allala-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "f58cba",
 			["LocalizedName"] = "Paladin: Retribution",
@@ -299,6 +298,24 @@ PawnCommon = {
 			["UnenchantedColor"] = "6566b2",
 			["SpecID"] = 2,
 		},
+		["\"MrRobot\":SHAMAN3"] = {
+			["IconTexturePath"] = 136052,
+			["PerCharacterOptions"] = {
+				["Torinara-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
+			},
+			["Color"] = "0070de",
+			["LocalizedName"] = "Shaman: Restoration",
+			["ClassID"] = 7,
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "HEALER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["UnenchantedColor"] = "0054a6",
+			["SpecID"] = 3,
+		},
 		["\"MrRobot\":DEMONHUNTER2"] = {
 			["IconTexturePath"] = 1247265,
 			["PerCharacterOptions"] = {
@@ -314,34 +331,19 @@ PawnCommon = {
 			["UnenchantedColor"] = "7a2496",
 			["SpecID"] = 2,
 		},
-		["\"MrRobot\":SHAMAN3"] = {
-			["IconTexturePath"] = 136052,
+		["\"MrRobot\":PALADIN2"] = {
+			["IconTexturePath"] = 236264,
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "0070de",
-			["LocalizedName"] = "Shaman: Restoration",
-			["ClassID"] = 7,
+			["Color"] = "f58cba",
+			["LocalizedName"] = "Paladin: Protection",
+			["ClassID"] = 2,
 			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "HEALER",
-			["DoNotShow2HUpgrades"] = false,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = true,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["UnenchantedColor"] = "0054a6",
-			["SpecID"] = 3,
-		},
-		["\"MrRobot\":DRUID2"] = {
-			["IconTexturePath"] = 132115,
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "ff7d0a",
-			["LocalizedName"] = "Druid: Feral",
-			["ClassID"] = 11,
-			["DoNotShow1HUpgrades"] = true,
-			["Role"] = "DAMAGER",
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["UnenchantedColor"] = "bf5d07",
+			["UnenchantedColor"] = "b7698b",
 			["SpecID"] = 2,
 		},
 		["\"MrRobot\":DEATHKNIGHT1"] = {
@@ -482,19 +484,19 @@ PawnCommon = {
 			["UnenchantedColor"] = "2f95b0",
 			["SpecID"] = 1,
 		},
-		["\"MrRobot\":PALADIN2"] = {
-			["IconTexturePath"] = 236264,
+		["\"MrRobot\":DRUID2"] = {
+			["IconTexturePath"] = 132115,
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "f58cba",
-			["LocalizedName"] = "Paladin: Protection",
-			["ClassID"] = 2,
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "TANK",
-			["DoNotShow2HUpgrades"] = true,
+			["Color"] = "ff7d0a",
+			["LocalizedName"] = "Druid: Feral",
+			["ClassID"] = 11,
+			["DoNotShow1HUpgrades"] = true,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["UnenchantedColor"] = "b7698b",
+			["UnenchantedColor"] = "bf5d07",
 			["SpecID"] = 2,
 		},
 		["\"MrRobot\":DRUID3"] = {
@@ -515,6 +517,9 @@ PawnCommon = {
 		["\"MrRobot\":PALADIN1"] = {
 			["IconTexturePath"] = 135920,
 			["PerCharacterOptions"] = {
+				["Allala-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "f58cba",
 			["LocalizedName"] = "Paladin: Holy",
@@ -530,9 +535,6 @@ PawnCommon = {
 		["\"MrRobot\":SHAMAN2"] = {
 			["IconTexturePath"] = 237581,
 			["PerCharacterOptions"] = {
-				["Torinara-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "0070de",
 			["LocalizedName"] = "Shaman: Enhancement",
@@ -561,8 +563,6 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 	},
-	["ShowSocketingAdvisor"] = true,
-	["ShowSpecIcons"] = true,
 	["IgnoreGemsWhileLeveling"] = true,
 	["ButtonPosition"] = 2,
 	["ShowLootUpgradeAdvisor"] = true,

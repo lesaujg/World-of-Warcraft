@@ -369,8 +369,16 @@ function AuctionFilter._IsItemFiltered(self, baseItemString, itemString, itemLev
 	if self._evenOnly and totalQuantity < 5 then
 		return true
 	end
-	if itemLevel and (itemLevel < (self._minItemLevel or 0) or itemLevel > (self._maxItemLevel or math.huge)) then
-		return true
+	if itemLevel and itemString then
+		-- we know the exact itemLevel
+		if itemLevel < (self._minItemLevel or 0) or itemLevel > (self._maxItemLevel or math.huge) then
+			return true
+		end
+	elseif itemLevel then
+		-- we know the max itemLevel
+		if itemLevel < (self._minItemLevel or 0) then
+			return true
+		end
 	end
 	if self._unlearned and CanIMogIt:PlayerKnowsTransmog(ItemInfo.GetLink(baseItemString)) then
 		return true

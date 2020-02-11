@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.032,
-	["LastPlayerFullName"] = "Torinara-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 152765,
@@ -11,9 +8,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:152765::::::::110:263:::4:1712:3629:1472:3528:::|h[Oronaar Disciple's Coif of the Harmonious]|h|r",
 		}, -- [1]
 		{
-			["ID"] = 143908,
-			["Level"] = 180,
-			["Link"] = "|cffa335ee|Hitem:143908::::::::110:263:512:1:1:3628:110:::|h[Choker of the Pure Heart]|h|r",
+			["ID"] = 143909,
+			["Level"] = 210,
+			["Link"] = "|cffa335ee|Hitem:143909::::::::111:263:512::1:6423:111:::|h[Sweet Perfume Brooch]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 152769,
@@ -91,7 +88,9 @@ PawnOptions = {
 			["Link"] = "|cffe6cc80|Hitem:128873::::::::111:263:256:::117:::|h[Fury of the Stonemother]|h|r",
 		}, -- [17]
 	},
-	["LastKeybindingsSet"] = 1,
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Torinara-Sisters of Elune",
 	["Artifacts"] = {
 		[128819] = {
 			["Relics"] = {
@@ -111,6 +110,7 @@ PawnOptions = {
 			["Name"] = "Doomhammer",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "SHAMAN",
