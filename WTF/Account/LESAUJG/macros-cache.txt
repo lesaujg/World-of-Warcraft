@@ -21,6 +21,11 @@ VER 3 000000000000009D "Reload" "132096"
 /console worldPreloadNonCritical 0
 /reload
 END
+VER 3 00000000000000AA "sdfg" "INV_MISC_QUESTIONMARK"
+/petstay
+/petdefensive
+/petattack
+END
 VER 3 00000000000000A9 "TSMMacro" "Achievement_Faction_GoldenLotus"
 /click TSMCancelAuctionBtn
 /click TSMAuctioningBtn
