@@ -351,6 +351,8 @@ end
 function Amr:Show()
 	if not self:IsEnabled() then return end
 	
+	if InCombatLockdown() then return end
+
 	if _mainFrame then 
 		_mainFrame:Show()
 	else	
@@ -367,6 +369,7 @@ function Amr:Reset()
 	Amr:Hide()
 	--Amr:HideLootWindow()
 	Amr:HideShopWindow()
+	Amr:HideJunkWindow()
 	Amr.db.profile.options.uiScale = 1
 	Amr.db.profile.window = {}
 	Amr.db.profile.lootWindow = {}
