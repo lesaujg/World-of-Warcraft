@@ -418,6 +418,20 @@ function Amr:SetSpellTooltip(obj, spellId, anchor, x, y)
 	end)
 end
 
+function Amr:SetEssenceTooltip(obj, essenceLink, anchor, x, y)
+	obj:SetUserData("ttEssenceLink", essenceLink)
+	obj:SetCallback("OnEnter", function(widget)
+		local tooltipLink = widget:GetUserData("ttEssenceLink")
+		if tooltipLink then
+			GameTooltip:SetOwner(widget.frame, anchor and anchor or "ANCHOR_CURSOR", x, y)
+			GameTooltip:SetHyperlink(tooltipLink)
+		end
+	end)
+	obj:SetCallback("OnLeave", function(widget)
+		GameTooltip:Hide()
+	end)			
+end
+
 function Amr:RenderCoverChrome(container, width, height)
 
 	local border = AceGUI:Create("AmrUiPanel")
