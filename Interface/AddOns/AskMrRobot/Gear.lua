@@ -1297,16 +1297,16 @@ function Amr:CleanBags()
 	-- TODO: implement
 end
 
-
+--[[
 local function testfunc(message)
 	print(strsub(message, 13))
 end
-
+]]
 
 function Amr:InitializeGear()
 	Amr:AddEventHandler("ACTIVE_TALENT_GROUP_CHANGED", onActiveTalentGroupChanged)
 
-	Amr:AddEventHandler("CHAT_MSG_CHANNEL", testfunc)
+	--Amr:AddEventHandler("CHAT_MSG_CHANNEL", testfunc)
 	
 	Amr:AddEventHandler("UNIT_INVENTORY_CHANGED", function(unitID)
 		if unitID and unitID ~= "player" then return end

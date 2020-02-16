@@ -27,32 +27,40 @@ SmexyMatsDB = {
 			["Horde"] = {
 			},
 			["Alliance"] = {
+				["Tailoring"] = {
+					["Ghiaccioli"] = {
+					},
+				},
+				["Fishing"] = {
+					["Bracnar"] = {
+					},
+					["Ghiaccioli"] = {
+					},
+				},
+				["Mining"] = {
+				},
 				["Cooking"] = {
 					["Bracnar"] = {
+					},
+					["Ghiaccioli"] = {
 					},
 				},
 				["Archaeology"] = {
 					["Bracnar"] = {
 					},
 				},
-				["Herbalism"] = {
-				},
-				["Fishing"] = {
-					["Bracnar"] = {
-					},
-				},
-				["Mining"] = {
-				},
 				["Engineering"] = {
 					["Bracnar"] = {
 					},
-					["Clothgar"] = {
+				},
+				["Inscription"] = {
+					["Ghiaccioli"] = {
 					},
+				},
+				["Herbalism"] = {
 				},
 				["Enchanting"] = {
 					["Bracnar"] = {
-					},
-					["Clothgar"] = {
 					},
 				},
 			},

@@ -460,8 +460,8 @@ DBMWorldEvents_AllSavedVars = {
 				["announceother99268target"] = true,
 				["SpecWarn82235moveawaySWNote"] = true,
 				["Yell99268"] = true,
-				["Yell82235"] = false,
 				["Timer98495cd"] = true,
+				["Yell82235"] = false,
 				["SpecWarn99268closeSWNote"] = true,
 				["SpecWarn82524tauntSWNote"] = true,
 				["SpecWarn99849runSWNote"] = true,
@@ -530,8 +530,8 @@ DBMWorldEvents_AllSavedVars = {
 				["SpecWarn99849runSWNote"] = true,
 				["SpecWarn82524tauntSWNote"] = true,
 				["SpecWarn99268closeSWNote"] = true,
-				["Yell82235"] = false,
 				["Timer98495cd"] = true,
+				["Yell82235"] = false,
 				["Yell99268"] = true,
 				["SpecWarn82235moveawaySWNote"] = true,
 				["announceother99268target"] = true,
@@ -687,9 +687,9 @@ DBMWorldEvents_AllSavedVars = {
 				["WarnPhase"] = true,
 				["Timer42380targetTColor"] = 3,
 				["Enabled"] = true,
-				["Timer42380target"] = true,
-				["Timer42514target2"] = false,
 				["Timer42380targetCVoice"] = 0,
+				["Timer42514target2"] = false,
+				["Timer42380target"] = true,
 				["Timer42514target2CVoice"] = 0,
 			}, -- [1]
 			{
@@ -712,25 +712,11 @@ DBMWorldEvents_AllSavedVars = {
 				["announceother42514target2"] = false,
 				["WarnPhase"] = true,
 				["Timer42514target2CVoice"] = 0,
-				["Timer42380target"] = false,
 				["Timer42380targetCVoice"] = 0,
+				["Timer42380target"] = false,
 				["Timer42514target2"] = false,
 				["Enabled"] = true,
 				["Timer42380targetTColor"] = 3,
-			}, -- [3]
-		},
-		["Brew"] = {
-			{
-				["Enabled"] = true,
-				["NormalizeVolume"] = true,
-			}, -- [1]
-			{
-				["Enabled"] = true,
-				["NormalizeVolume"] = true,
-			}, -- [2]
-			{
-				["Enabled"] = true,
-				["NormalizeVolume"] = true,
 			}, -- [3]
 		},
 		["Omen"] = {
@@ -751,6 +737,20 @@ DBMWorldEvents_AllSavedVars = {
 			}, -- [2]
 			{
 				["Enabled"] = true,
+			}, -- [3]
+		},
+		["Brew"] = {
+			{
+				["Enabled"] = true,
+				["NormalizeVolume"] = true,
+			}, -- [1]
+			{
+				["Enabled"] = true,
+				["NormalizeVolume"] = true,
+			}, -- [2]
+			{
+				["Enabled"] = true,
+				["NormalizeVolume"] = true,
 			}, -- [3]
 		},
 	},
@@ -975,6 +975,14 @@ DBMWorldEvents_AllSavedVars = {
 			},
 		},
 		["talent3"] = "Restoration",
+		["Omen"] = {
+			[2] = {
+				["Enabled"] = true,
+			},
+			[3] = {
+				["Enabled"] = true,
+			},
+		},
 		["Brew"] = {
 			[2] = {
 				["Enabled"] = true,
@@ -983,14 +991,6 @@ DBMWorldEvents_AllSavedVars = {
 			[3] = {
 				["Enabled"] = true,
 				["NormalizeVolume"] = true,
-			},
-		},
-		["Omen"] = {
-			[2] = {
-				["Enabled"] = true,
-			},
-			[3] = {
-				["Enabled"] = true,
 			},
 		},
 		["d285"] = {
@@ -1003,9 +1003,9 @@ DBMWorldEvents_AllSavedVars = {
 				["WarnPhase"] = true,
 				["Timer42380targetTColor"] = 3,
 				["Enabled"] = true,
-				["Timer42380targetCVoice"] = 0,
-				["Timer42514target2"] = false,
 				["Timer42380target"] = false,
+				["Timer42514target2"] = false,
+				["Timer42380targetCVoice"] = 0,
 				["Timer42514target2CVoice"] = 0,
 			},
 			[3] = {
@@ -1016,8 +1016,8 @@ DBMWorldEvents_AllSavedVars = {
 				["announceother42514target2"] = false,
 				["WarnPhase"] = true,
 				["Timer42514target2CVoice"] = 0,
-				["Timer42380targetCVoice"] = 0,
 				["Timer42380target"] = true,
+				["Timer42380targetCVoice"] = 0,
 				["Timer42514target2"] = false,
 				["Enabled"] = true,
 				["Timer42380targetTColor"] = 3,
@@ -1179,8 +1179,8 @@ DBMWorldEvents_AllSavedVars = {
 				["announceother99268target"] = true,
 				["SpecWarn82235moveawaySWNote"] = true,
 				["Yell99268"] = true,
-				["Timer98495cd"] = true,
 				["Yell82235"] = false,
+				["Timer98495cd"] = true,
 				["SpecWarn99268closeSWNote"] = true,
 				["SpecWarn82524tauntSWNote"] = true,
 				["SpecWarn99849runSWNote"] = true,
@@ -1249,8 +1249,8 @@ DBMWorldEvents_AllSavedVars = {
 				["SpecWarn99849runSWNote"] = true,
 				["SpecWarn82524tauntSWNote"] = true,
 				["SpecWarn99268closeSWNote"] = true,
-				["Timer98495cd"] = true,
 				["Yell82235"] = false,
+				["Timer98495cd"] = true,
 				["Yell99268"] = true,
 				["SpecWarn82235moveawaySWNote"] = true,
 				["announceother99268target"] = true,
