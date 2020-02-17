@@ -32,26 +32,18 @@ SmexyMatsDB = {
 					},
 				},
 				["Fishing"] = {
-					["Bracnar"] = {
-					},
 					["Ghiaccioli"] = {
 					},
 				},
 				["Mining"] = {
 				},
 				["Cooking"] = {
-					["Bracnar"] = {
-					},
 					["Ghiaccioli"] = {
 					},
 				},
 				["Archaeology"] = {
-					["Bracnar"] = {
-					},
 				},
 				["Engineering"] = {
-					["Bracnar"] = {
-					},
 					["Clothgar"] = {
 					},
 				},
@@ -62,8 +54,6 @@ SmexyMatsDB = {
 				["Herbalism"] = {
 				},
 				["Enchanting"] = {
-					["Bracnar"] = {
-					},
 					["Clothgar"] = {
 					},
 				},
