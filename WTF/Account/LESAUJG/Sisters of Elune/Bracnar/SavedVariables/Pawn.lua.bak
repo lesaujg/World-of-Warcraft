@@ -9,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 491,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:6316:4932:4933:1628:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 493,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:6316:4932:4933:1630:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173838,
@@ -34,9 +34,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:173817::::::::120:253::29:6:6412:4803:6513:6516:1502:4786:::|h[Nefarious Tormentor's Trousers]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 163400,
-			["Level"] = 445,
-			["Link"] = "|cffa335ee|Hitem:163400::::::::120:253::28:5:5125:6516:6513:1637:4786:::|h[7th Legionnaire's Sabatons]|h|r",
+			["ID"] = 165449,
+			["Level"] = 460,
+			["Link"] = "|cffa335ee|Hitem:165449::::::::120:253::23:6:5845:6578:6579:6541:1577:4786:::|h[Kaldorei Archer's Greaves]|h|r",
 		}, -- [8]
 		{
 			["ID"] = 158053,
