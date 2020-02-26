@@ -29,8 +29,8 @@ VER 3 010000000000005C "__Kill Command" "INV_MISC_QUESTIONMARK"
 /dismount
 /petassist
 /petattack
-/petautocastoff [group] Growl
-/petautocaston [nogroup] Growl
+#/petautocastoff [group] Growl
+#/petautocaston [nogroup] Growl
 /target [noexists] pettarget
 /cast Kill Command
 END

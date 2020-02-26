@@ -1,35 +1,30 @@
 # Deadly Boss Mods Core
 
-## [8.3.14](https://github.com/DeadlyBossMods/DeadlyBossMods/tree/8.3.14) (2020-02-18)
-[Full Changelog](https://github.com/DeadlyBossMods/DeadlyBossMods/compare/8.3.13...8.3.14)
+## [8.3.15](https://github.com/DeadlyBossMods/DeadlyBossMods/tree/8.3.15) (2020-02-25)
+[Full Changelog](https://github.com/DeadlyBossMods/DeadlyBossMods/compare/8.3.14...8.3.15)
 
-- Prep Tag, since there been a few fixes since then  
-- Prevent GetSpellInfo from being queried on phase announces, to eliminate false debug reports  
-- Some minor sync code cleanup, no changes  
-- Further optimize guild communication by no longer sending version information in guild comms if our version is out of date (since guild version comms are ONLY used by update notification). This is miniscule at best, but it's still a better practice.  
-    Fixed a bug where mod hotfix notification never actually notified that a newer RELEASE was available with mod fixes, it only ever notified alpha  
-- Fix another shadhar lua error  
-- harvester spawn data tweaks  
-- Fix a nil error (#153)  
-    Another lowercase start :P  
-- Attempt to fix black volley, gaze, and cataclysmic flames timers continuing when a psychus phase has ended with additional blocks from the timers starting if a CLEU occures after psychus death.  
-    Moved flash checkbox over 10 pixels in special warning GUI so it's less likely to be slightly covered when users have long file name sounds installed  
-- Fix error on nil value (#152)  
-- One last attempt to fix shadhar taunt warnings. If this still doesn't work I'll be removing the taunt warnings since I can't personally get into raid and run debug code myself on it.  
-- Fix lua error on ra-den  
-- Cleaned up hivemind now that it's confirmed LFR timers are in fact identical to normal. Fight only has 3 energy rates, not 4  
-- Re-Add more heroic harvester timer data  
-- KR Update (#151)  
-    * KR Update  
-- Improved logic for Annihilation on Vexiona  
-     - If you are tanking the mob casting it, dbm will no longer incorrectly tell you to dodge it. Instead it'll show you defensive warning instead.  
-     - If you are the player CASTING it, dbm will no longer tell you to dodge it, because obviously you're the caster. you need no warning for that.  
-- Update GUI zhTW.lua (#150)  
-- Added interrupt rotation control to Xanesh to allow raiders to control how many people they want in reach rotation  
-- Added icon marking option for Thought Harvesters, using same icons as corruptors earlier in fight.  
-    Finished cleaning up dungeons of unused stuff.  
-- Add more normal harvester data  
-- Fix vexiona's creature Id so boss health reporting works  
-- Reverted second thought harvester timer on phase 3 mythic back to old timer, the wierd 82 timer was a fluke and the 76.9 feels more accurate.  
-    Fixed missing stage 2 paranoia timer that accidentally got removed when managing mod in offline mode  
-    Began dungeon mod cleanup of unused stuff, starting with shrine of the storms  
+- Copy those harvester timers to LFR too (for now)  
+- Disabled berserk timer on normal nzoth, at least til the berserk for normal is known (it doesn't match heroic)  
+    Added more timer data to Thought Harvesters to normal Nzoth  
+    Added a special warning to move when boss is casting creeping anquish is cast that's on by default for tanks.  
+- Fix error  
+- Fixed a couple missing timers on Council of Tribes in kings rest from some public high key logs. The inactive boss ability timers are still disabled because I'm still not confident they are actually timed and not triggered on thresholds for the active boss.  
+    Added target scanning to Poropellant Blast on Rixxa in motherload so it can give a more precise target and target yell warning instead of generic dodge warning.  
+- Added RP timer for Tonks fight in Mechagon  
+- Removed the infoframe from KUJ0 encounter. It clearly doesn't work.  
+- Fixed a bug that caused chemical burn timer not to show up if you weren't a healer with a dispel not on cooldown (ie it was locked behind the dispel cooldown check, sorry about that).  
+    While at it, made chemical burn timer on by default for everyone instead of just healers  
+- Don't call DBM:GetModLocalization() if nothing is set. This is just inefficient and bad practice. From now on, these will be templated as commented, in case they are needed, when content is current.  When content is not current, they'll be removed and cleaned up  
+- Changed nettles warning to on by default for all instead of just healer and added an attempt at using target scanning, despite previous information leading me to believe that wouldn't be accurate. if it's inaccurate I'll find out fast enough.  
+- Fixed a bug with jagged Nettles warning that caused it to always say the wrong spell name and also caused option to not appear correctly in GUI  
+- Fix oopsy that'd break a whole lot of things  
+- Should be last round of fixes  
+- Dial back the luacheck for now, the rest of shadowing is fine  
+- Updated luacheckrc with a few more functions and globals  
+    - With FAR stricter error checking now functioning. A few bugs have been found and are now fixed  
+     - Fixed a bug that caused Cleansing Protocol timers to stop working in heart chamber on mythic N'zoth  
+     - Fixed SPELL\_PERIODIC\_ENERGIZE being defined twice in Combat log handler  
+     - Fixed a ton of unnessesary shadowed definitions and tweaked a improved a few variable names that weren't shadowed but get tagged that way by luacheck.  
+- Actually run luacheck file instead of generic SUPER basic checking. Let the real errors come in  
+- - Maut adds will now say addcount and offering count in the offering warnings so it's clearer when multiple adds are up, what's what.  
+    - Added count to Soul Flay timer at user request.  

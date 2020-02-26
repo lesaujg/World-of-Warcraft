@@ -1,20 +1,20 @@
 VER 3 010000000000006E "__Barbed Shots" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/petdefensive
+/petassist
 /petattack
 /target [noexists] pettarget
 /cast Barbed Shot
 END
 VER 3 010000000000006F "__Chimera Shot" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/petdefensive
+/petassist
 /petattack
 /target [noexists] pettarget
 /cast Chimaera Shot
 END
 VER 3 010000000000005E "__Cobra Shot" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/petdefensive
+/petassist
 /target [noexists] pettarget
 /cast Cobra Shot
 END
@@ -27,11 +27,12 @@ END
 VER 3 010000000000005C "__Kill Command" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /dismount
+/petassist
+/petattack
 /petautocastoff [group] Growl
 /petautocaston [nogroup] Growl
 /target [noexists] pettarget
 /cast Kill Command
-/petdefensive
 END
 VER 3 0100000000000069 "_AspectTurtle" "INV_MISC_QUESTIONMARK"
 #showtooltip

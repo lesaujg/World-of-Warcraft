@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2375, "DBM-Nyalotha", nil, 1180)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20200214232418")
+mod:SetRevision("20200225040315")
 mod:SetCreatureID(158041)
 mod:SetEncounterID(2344)
 mod:SetZone()
@@ -87,6 +87,7 @@ local specWarnMentalDecay					= mod:NewSpecialWarningInterrupt(313611, "HasInter
 local specWarnGTFO							= mod:NewSpecialWarningGTFO(309991, nil, nil, nil, 1, 8)
 --Stage 1: Dominant Mind
 ----Psychus
+local specWarnCreepingAnguish				= mod:NewSpecialWarningMove(310184, "Tank", nil, nil, 3, 2)
 local specWarnMindwrack						= mod:NewSpecialWarningInterruptCount(316711, "HasInterrupt", nil, nil, 1, 2)
 local specWarnMindwrackTaunt				= mod:NewSpecialWarningTaunt(316711, nil, nil, nil, 1, 2)
 local specWarnManifestMadness				= mod:NewSpecialWarningSpell(310134, nil, nil, nil, 3)--Basically an automatic wipe unless Psychus was like sub 1% health, no voice because there isn't really one that says "you're fucked"
@@ -230,7 +231,7 @@ local allTimers = {
 			--Eternal Torment
 			[318449] = {32.8, 70.9, 10.9, 34.1, 60.7, 10.5, 33.2},
 			--Thought Harvester spawns
-			[316711] = {15, 27, 45},
+			[316711] = {15, 25.6, 44.9, 29.7, 30.1, 43, 30.5, 30.4},
 			--Evoke Anquish
 			[317102] = {15.3, 46.2, 31.6, 44.9, 37.7, 15.8, 51, 37.7},
 			--Stupefying Glare
@@ -250,7 +251,7 @@ local allTimers = {
 			--Eternal Torment
 			[318449] = {32.8, 70.9, 10.9, 34.1, 60.7, 10.5, 33.2},
 			--Thought Harvester spawns
-			[316711] = {15, 25.6, 44.9, 29.7, 30.1},--, 43, 31.7
+			[316711] = {15, 25.6, 44.9, 29.7, 30.1, 43, 30.5, 30.4},
 			--Evoke Anquish
 			[317102] = {15.3, 46.2, 31.6, 44.9, 37.7, 15.8, 51, 37.7},
 			--Stupefying Glare
@@ -270,7 +271,7 @@ local allTimers = {
 			--Eternal Torment
 			[318449] = {32.8, 70.9, 10.5, 24.5, 10.9, 23.2, 11, 23.1},--It might be that after first two casts it just alternates between 10.5 and 23.1?
 			--Thought Harvester spawns
-			[316711] = {15.1, 25.1, 45, 31, 3.3, 30.2, 3.8},--, 31.6, 3.7, 30.4, 4.8 It might be that after 3rd cast, it just alternates between 29-30 and 3.7-4.8
+			[316711] = {15.1, 25.1, 45, 29.4, 3.3, 30.2, 3.8},--, 31.6, 3.7, 30.4, 4.8 It might be that after 3rd cast, it just alternates between 29-30 and 3.7-4.8
 			--Evoke Anquish
 			[317102] = {15.3, 45.2, 32.6, 30.6, 35.3, 35.3},
 			--Stupefying Glare
@@ -300,7 +301,7 @@ local allTimers = {
 			--Eternal Torment (Nzoth)
 			[318449] = {20, 6.1},--6.1 repeating
 			--Cleansing Protocol (Chamber)
-			[318449] = {25, 16, 12, 27, 29.9},
+			[316970] = {25, 16, 12, 27, 29.9},
 			--Event Horizon (Chamber)
 			[318196] = {20, 30, 30, 30},
 			--Dark Matter (Chamber)
@@ -486,13 +487,13 @@ function mod:OnCombatStart(delay)
 	else
 		if self:IsHeroic() then
 			self.vb.difficultyName = "heroic"
+			berserkTimer:Start(720-delay)
 		elseif self:IsNormal() then
 			self.vb.difficultyName = "normal"
 		else
 			self.vb.difficultyName = "lfr"
 		end
 		self.vb.phase = 0
-		berserkTimer:Start(720-delay)
 	end
 	UpdateTimerFades(self)
 	if UnitIsGroupLeader("player") and not self:IsLFR() then
@@ -587,7 +588,12 @@ function mod:SPELL_CAST_START(args)
 		end
 	elseif spellId == 310184 then
 		if selfInMind then
-			warnCreepingAnguish:Show()
+			if self.Options.SpecWarn310184move then
+				specWarnCreepingAnguish:Show()
+				specWarnCreepingAnguish:Play("moveboss")
+			else
+				warnCreepingAnguish:Show()
+			end
 		end
 		timerCreepingAnguishCD:Start(self:IsMythic() and 26.6 or 28.2)
 	elseif spellId == 310134 then

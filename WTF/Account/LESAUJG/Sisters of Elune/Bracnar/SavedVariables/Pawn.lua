@@ -27,9 +27,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:174147::::::::120:253::3:5:4822:1487:4786:6504:4775:::|h[Last Vestige of Neltharion]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 173819,
-			["Level"] = 445,
-			["Link"] = "|cffa335ee|Hitem:173819::::::::120:253::29:6:6412:4803:6515:6516:1502:4786:::|h[Nefarious Tormentor's Waistguard]|h|r",
+			["ID"] = 173452,
+			["Level"] = 450,
+			["Link"] = "|cffa335ee|Hitem:173452::::::::120:253::42:6:6412:4803:6515:6578:1507:4786:::|h[Nefarious Tormentor's Belt]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 173817,
@@ -77,8 +77,8 @@ PawnOptions = {
 		}, -- [14]
 		{
 			["ID"] = 169223,
-			["Level"] = 490,
-			["Link"] = "|cffff8000|Hitem:169223::::::::120:253::11:2:6282:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
+			["Level"] = 492,
+			["Link"] = "|cffff8000|Hitem:169223::::::::120:253::11:2:6283:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 158090,
