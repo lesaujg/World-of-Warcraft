@@ -1,9 +1,10 @@
 
 Blizzard_Console_SavedVars = {
 	["version"] = 3,
+	["height"] = 299.9998168945313,
 	["messageHistory"] = {
 		{
-			"  P1 PET 1 performs PET_SWAP       on P1 PET 2 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"  P1 PET 0 performs PET_SWAP       on P1 PET 2 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
 			0, -- [2]
 		}, -- [1]
 		{
@@ -31,7 +32,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [7]
 		{
-			"     Slot   0, Species 2872, Health 992, Level  16, DisplayID 91811, CollarID 0", -- [1]
+			"     Slot   0, Species 2872, Health 1159, Level  19, DisplayID 91811, CollarID 0", -- [1]
 			0, -- [2]
 		}, -- [8]
 		{
@@ -39,19 +40,19 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [9]
 		{
-			"     Slot   1, Species 1155, Health 1335, Level  19, DisplayID 46922, CollarID 0", -- [1]
+			"     Slot   1, Species 1155, Health 1465, Level  21, DisplayID 46922, CollarID 0", -- [1]
 			0, -- [2]
 		}, -- [10]
 		{
-			"        abilities : 406, 436, 490,", -- [1]
+			"        abilities : 406, 453, 814,", -- [1]
 			0, -- [2]
 		}, -- [11]
 		{
-			"     Slot   2, Species 256, Health 1083, Level  17, DisplayID 32031, CollarID 0", -- [1]
+			"     Slot   2, Species 256, Health 1257, Level  20, DisplayID 32031, CollarID 0", -- [1]
 			0, -- [2]
 		}, -- [12]
 		{
-			"        abilities : 202, 278, 386,", -- [1]
+			"        abilities : 202, 278, 387,", -- [1]
 			0, -- [2]
 		}, -- [13]
 		{
@@ -59,27 +60,27 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [14]
 		{
-			"     Slot   0, Species 926, Health 916, Level  17, DisplayID 0, CollarID 0", -- [1]
+			"     Slot   0, Species 961, Health 1204, Level  23, DisplayID 0, CollarID 0", -- [1]
 			0, -- [2]
 		}, -- [15]
 		{
-			"        abilities : 115, 122, 347,", -- [1]
+			"        abilities : 803, 509, 538,", -- [1]
 			0, -- [2]
 		}, -- [16]
 		{
-			"     Slot   1, Species 925, Health 1008, Level  17, DisplayID 0, CollarID 0", -- [1]
+			"     Slot   1, Species 960, Health 1204, Level  23, DisplayID 0, CollarID 0", -- [1]
 			0, -- [2]
 		}, -- [17]
 		{
-			"        abilities : 114, 460, 463,", -- [1]
+			"        abilities : 803, 538, 423,", -- [1]
 			0, -- [2]
 		}, -- [18]
 		{
-			"     Slot   2, Species 924, Health 1008, Level  17, DisplayID 0, CollarID 0", -- [1]
+			"     Slot   2, Species 959, Health 1204, Level  23, DisplayID 0, CollarID 0", -- [1]
 			0, -- [2]
 		}, -- [19]
 		{
-			"        abilities : 420, 506, 162,", -- [1]
+			"        abilities : 160, 118, 423,", -- [1]
 			0, -- [2]
 		}, -- [20]
 		{
@@ -111,7 +112,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [27]
 		{
-			"  P1 PET 1 performs NPC_EMOTE      on P1 PET 1 : (68095) :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"  P1 PET 1 performs NPC_EMOTE      on P1 PET 1 : (68245) :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
 			0, -- [2]
 		}, -- [28]
 		{
@@ -127,11 +128,11 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [31]
 		{
-			"  P1 PET 2 performs NPC_EMOTE      on P1 PET 2 : (68095) :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"  P1 PET 1 performs NPC_EMOTE      on P1 PET 1 : (68245) :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
 			0, -- [2]
 		}, -- [32]
 		{
-			"  P1 PET 1 performs PET_SWAP       on P1 PET 2 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"  P1 PET 2 performs PET_SWAP       on P1 PET 1 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
 			0, -- [2]
 		}, -- [33]
 		{
@@ -151,87 +152,87 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [37]
 		{
-			"Weather changed to 3, intensity 0.200000\n", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [38]
 		{
-			"Weather changed to 3, intensity 0.300000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [39]
 		{
-			"PetBattle Initial Update", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [40]
 		{
-			"   Player 0 Player-1169-06A1ACBD  frontPet 0 ", -- [1]
+			"PetBattle Initial Update", -- [1]
 			0, -- [2]
 		}, -- [41]
 		{
-			"     Slot   0, Species 2872, Health 1048, Level  17, DisplayID 91811, CollarID 0", -- [1]
+			"   Player 0 Player-1169-06A1ACBD  frontPet 0 ", -- [1]
 			0, -- [2]
 		}, -- [42]
 		{
-			"        abilities : 1238, 2102, 2360,", -- [1]
+			"     Slot   0, Species 2872, Health 1215, Level  20, DisplayID 91811, CollarID 0", -- [1]
 			0, -- [2]
 		}, -- [43]
 		{
-			"     Slot   1, Species 1155, Health 1335, Level  19, DisplayID 46922, CollarID 0", -- [1]
+			"        abilities : 1238, 2102, 2360,", -- [1]
 			0, -- [2]
 		}, -- [44]
 		{
-			"        abilities : 406, 436, 490,", -- [1]
+			"     Slot   1, Species 1155, Health 1465, Level  21, DisplayID 46922, CollarID 0", -- [1]
 			0, -- [2]
 		}, -- [45]
 		{
-			"     Slot   2, Species 256, Health 1083, Level  17, DisplayID 32031, CollarID 0", -- [1]
+			"        abilities : 406, 453, 814,", -- [1]
 			0, -- [2]
 		}, -- [46]
 		{
-			"        abilities : 202, 278, 386,", -- [1]
+			"     Slot   2, Species 256, Health 1257, Level  20, DisplayID 32031, CollarID 0", -- [1]
 			0, -- [2]
 		}, -- [47]
 		{
-			"   Player 1 0000000000000000  frontPet 0 ", -- [1]
+			"        abilities : 202, 278, 387,", -- [1]
 			0, -- [2]
 		}, -- [48]
 		{
-			"     Slot   0, Species 929, Health 1115, Level  19, DisplayID 0, CollarID 0", -- [1]
+			"   Player 1 0000000000000000  frontPet 0 ", -- [1]
 			0, -- [2]
 		}, -- [49]
 		{
-			"        abilities : 589, 592, 593,", -- [1]
+			"     Slot   0, Species 964, Health 1426, Level  24, DisplayID 0, CollarID 0", -- [1]
 			0, -- [2]
 		}, -- [50]
 		{
-			"     Slot   1, Species 928, Health 1012, Level  19, DisplayID 0, CollarID 0", -- [1]
+			"        abilities : 484, 486, 488,", -- [1]
 			0, -- [2]
 		}, -- [51]
 		{
-			"        abilities : 429, 492, 536,", -- [1]
+			"     Slot   1, Species 963, Health 1488, Level  24, DisplayID 0, CollarID 0", -- [1]
 			0, -- [2]
 		}, -- [52]
 		{
-			"     Slot   2, Species 927, Health 1012, Level  19, DisplayID 0, CollarID 0", -- [1]
+			"        abilities : 113, 178, 179,", -- [1]
 			0, -- [2]
 		}, -- [53]
 		{
-			"        abilities : 184, 518, 517,", -- [1]
+			"     Slot   2, Species 962, Health 1348, Level  24, DisplayID 0, CollarID 0", -- [1]
 			0, -- [2]
 		}, -- [54]
 		{
-			"<waiting for PetBattleReadyToStart command>", -- [1]
+			"        abilities : 764, 608, 751,", -- [1]
 			0, -- [2]
 		}, -- [55]
 		{
-			"---Battle Begin---", -- [1]
+			"<waiting for PetBattleReadyToStart command>", -- [1]
 			0, -- [2]
 		}, -- [56]
 		{
-			"  PetSwap P0 PET 0", -- [1]
+			"---Battle Begin---", -- [1]
 			0, -- [2]
 		}, -- [57]
 		{
-			"  PetSwap P1 PET 0", -- [1]
+			"  PetSwap P0 PET 0", -- [1]
 			0, -- [2]
 		}, -- [58]
 		{
@@ -239,1691 +240,1691 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [59]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"  PetSwap P1 PET 0", -- [1]
 			0, -- [2]
 		}, -- [60]
 		{
-			"---Replacements made---", -- [1]
+			"<waiting for PetBattleInput command>", -- [1]
 			0, -- [2]
 		}, -- [61]
 		{
-			"  P1 PET 1 performs NPC_EMOTE      on P1 PET 1 : (67634) :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"---Replacements made---", -- [1]
 			0, -- [2]
 		}, -- [62]
 		{
-			"  P1 PET 0 performs PET_SWAP       on P1 PET 1 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"  P1 PET 1 performs NPC_EMOTE      on P1 PET 1 : (68254) :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
 			0, -- [2]
 		}, -- [63]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"  P1 PET 0 performs PET_SWAP       on P1 PET 1 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
 			0, -- [2]
 		}, -- [64]
 		{
-			"---Replacements made---", -- [1]
+			"<waiting for PetBattleInput command>", -- [1]
 			0, -- [2]
 		}, -- [65]
 		{
-			"  P1 PET 2 performs NPC_EMOTE      on P1 PET 2 : (68745) :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"---BattleAbandoned---", -- [1]
 			0, -- [2]
 		}, -- [66]
 		{
-			"  P1 PET 1 performs PET_SWAP       on P1 PET 2 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"<waiting for PetBattleInput final>", -- [1]
 			0, -- [2]
 		}, -- [67]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"---ClientPetBattleFinished---", -- [1]
 			0, -- [2]
 		}, -- [68]
 		{
-			"---Replacements made---", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [69]
 		{
-			"  P0 PET 0 performs PET_SWAP       on P0 PET 1 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [70]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [71]
 		{
-			"---Replacements made---", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [72]
 		{
-			"  P0 PET 1 performs PET_SWAP       on P0 PET 2 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"World preload non critical disabled.", -- [1]
 			0, -- [2]
 		}, -- [73]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [74]
 		{
-			"---BattleFinished: You Won ---", -- [1]
+			"Total: 433d 19h 37m 11s", -- [1]
 			0, -- [2]
 		}, -- [75]
 		{
-			"<waiting for PetBattleInput final>", -- [1]
+			"Level: 30d 11h 39m 51s", -- [1]
 			0, -- [2]
 		}, -- [76]
 		{
-			"---ClientPetBattleFinished---", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [77]
 		{
-			"PetBattle Initial Update", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [78]
 		{
-			"   Player 0 Player-1169-06A1ACBD  frontPet 0 ", -- [1]
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
 		}, -- [79]
 		{
-			"     Slot   0, Species 1155, Health 1335, Level  19, DisplayID 46922, CollarID 0", -- [1]
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
 			0, -- [2]
 		}, -- [80]
 		{
-			"        abilities : 406, 453, 490,", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [81]
 		{
-			"     Slot   1, Species 2872, Health 1048, Level  17, DisplayID 91811, CollarID 0", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [82]
 		{
-			"        abilities : 1238, 2102, 2360,", -- [1]
+			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
 		}, -- [83]
 		{
-			"     Slot   2, Species 256, Health 1141, Level  18, DisplayID 32031, CollarID 0", -- [1]
+			"Proficiency in item class 2 set to 0x0000000085", -- [1]
 			0, -- [2]
 		}, -- [84]
 		{
-			"        abilities : 116, 278, 386,", -- [1]
+			"Proficiency in item class 2 set to 0x000000008d", -- [1]
 			0, -- [2]
 		}, -- [85]
 		{
-			"   Player 1 0000000000000000  frontPet 0 ", -- [1]
+			"Proficiency in item class 2 set to 0x000000009d", -- [1]
 			0, -- [2]
 		}, -- [86]
 		{
-			"     Slot   0, Species 929, Health 1115, Level  19, DisplayID 0, CollarID 0", -- [1]
+			"Proficiency in item class 2 set to 0x000000809d", -- [1]
 			0, -- [2]
 		}, -- [87]
 		{
-			"        abilities : 589, 592, 593,", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [88]
 		{
-			"     Slot   1, Species 928, Health 1012, Level  19, DisplayID 0, CollarID 0", -- [1]
+			"Proficiency in item class 2 set to 0x000000c09d", -- [1]
 			0, -- [2]
 		}, -- [89]
 		{
-			"        abilities : 429, 492, 536,", -- [1]
+			"Proficiency in item class 2 set to 0x000004c09d", -- [1]
 			0, -- [2]
 		}, -- [90]
 		{
-			"     Slot   2, Species 927, Health 1012, Level  19, DisplayID 0, CollarID 0", -- [1]
+			"Proficiency in item class 4 set to 0x0000000025", -- [1]
 			0, -- [2]
 		}, -- [91]
 		{
-			"        abilities : 184, 518, 517,", -- [1]
+			"Proficiency in item class 4 set to 0x0000000027", -- [1]
 			0, -- [2]
 		}, -- [92]
 		{
-			"<waiting for PetBattleReadyToStart command>", -- [1]
+			"Proficiency in item class 2 set to 0x000004e09d", -- [1]
 			0, -- [2]
 		}, -- [93]
 		{
-			"---Battle Begin---", -- [1]
+			"Proficiency in item class 2 set to 0x000004e09d", -- [1]
 			0, -- [2]
 		}, -- [94]
 		{
-			"  PetSwap P0 PET 0", -- [1]
+			"Proficiency in item class 4 set to 0x0000000027", -- [1]
 			0, -- [2]
 		}, -- [95]
 		{
-			"  PetSwap P1 PET 0", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [96]
 		{
-			"  PetSwap P1 PET 0", -- [1]
+			"Time set to 3/1/2020 (Sun) 5:11", -- [1]
 			0, -- [2]
 		}, -- [97]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [98]
 		{
-			"---Replacements made---", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [99]
 		{
-			"  P1 PET 1 performs NPC_EMOTE      on P1 PET 1 : (67634) :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"Total: 3d 12h 54m 7s", -- [1]
 			0, -- [2]
 		}, -- [100]
 		{
-			"  P1 PET 0 performs PET_SWAP       on P1 PET 1 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"Level: 0d 1h 58m 46s", -- [1]
 			0, -- [2]
 		}, -- [101]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [102]
 		{
-			"---Replacements made---", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [103]
 		{
-			"  P1 PET 2 performs NPC_EMOTE      on P1 PET 2 : (68745) :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
 		}, -- [104]
 		{
-			"  P1 PET 1 performs PET_SWAP       on P1 PET 2 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
 			0, -- [2]
 		}, -- [105]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [106]
 		{
-			"---BattleFinished: You Won ---", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [107]
 		{
-			"<waiting for PetBattleInput final>", -- [1]
+			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
 		}, -- [108]
 		{
-			"---ClientPetBattleFinished---", -- [1]
+			"Proficiency in item class 2 set to 0x0000000085", -- [1]
 			0, -- [2]
 		}, -- [109]
 		{
-			"World transfer pending...", -- [1]
+			"Proficiency in item class 2 set to 0x000000008d", -- [1]
 			0, -- [2]
 		}, -- [110]
 		{
-			"Got new connection 3", -- [1]
+			"Proficiency in item class 2 set to 0x000000018d", -- [1]
 			0, -- [2]
 		}, -- [111]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Proficiency in item class 2 set to 0x000000058d", -- [1]
 			0, -- [2]
 		}, -- [112]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Proficiency in item class 2 set to 0x000000058f", -- [1]
 			0, -- [2]
 		}, -- [113]
 		{
-			"NetClient::HandleDisconnect()\n", -- [1]
+			"Proficiency in item class 2 set to 0x000000858f", -- [1]
 			0, -- [2]
 		}, -- [114]
 		{
-			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [115]
 		{
-			"[GlueLogin] Disconnected from WoWpreviouslyConnected=\"true\"", -- [1]
+			"Proficiency in item class 2 set to 0x000000c58f", -- [1]
 			0, -- [2]
 		}, -- [116]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Proficiency in item class 2 set to 0x000004c58f", -- [1]
 			0, -- [2]
 		}, -- [117]
 		{
-			"Sorting particles normally.", -- [1]
+			"Proficiency in item class 2 set to 0x000004c5cf", -- [1]
 			0, -- [2]
 		}, -- [118]
 		{
-			"Multithreaded rendering enabled.", -- [1]
+			"Proficiency in item class 2 set to 0x000014c5cf", -- [1]
 			0, -- [2]
 		}, -- [119]
 		{
-			"Multithreaded BeginDraw enabled.", -- [1]
+			"Proficiency in item class 4 set to 0x0000000029", -- [1]
 			0, -- [2]
 		}, -- [120]
 		{
-			"Multithread shadows changed to 1.", -- [1]
+			"Proficiency in item class 4 set to 0x000000002d", -- [1]
 			0, -- [2]
 		}, -- [121]
 		{
-			"Multithreaded prepass enabled.", -- [1]
+			"Proficiency in item class 4 set to 0x000000002f", -- [1]
 			0, -- [2]
 		}, -- [122]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
+			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
 			0, -- [2]
 		}, -- [123]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
+			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
 			0, -- [2]
 		}, -- [124]
 		{
-			"Multithreaded alpha M2 pass enabled.", -- [1]
+			"Proficiency in item class 4 set to 0x000000002f", -- [1]
 			0, -- [2]
 		}, -- [125]
 		{
-			"Multithreaded opaque WMO pass enabled.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [126]
 		{
-			"Multithreaded terrain pass enabled.", -- [1]
+			"Time set to 3/1/2020 (Sun) 5:16", -- [1]
 			0, -- [2]
 		}, -- [127]
 		{
-			"Water detail changed to 3", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [128]
 		{
-			"Ripple detail changed to 2", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [129]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"Total: 433d 19h 41m 27s", -- [1]
 			0, -- [2]
 		}, -- [130]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"Level: 30d 11h 44m 7s", -- [1]
 			0, -- [2]
 		}, -- [131]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [132]
 		{
-			"Refraction mode changed to 2", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [133]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [134]
 		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [135]
 		{
-			"Volume fog enabled.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [136]
 		{
-			"Projected textures enabled.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [137]
 		{
-			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [138]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [139]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [140]
 		{
-			"SSAO mode set to 4", -- [1]
+			"Weather changed to 5, intensity 1.000000\n", -- [1]
 			0, -- [2]
 		}, -- [141]
 		{
-			"Depth Based Opacity Enabled", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [142]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [143]
 		{
-			"Texture filtering mode updated. Pending GxRestart", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [144]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [145]
 		{
-			"Outline mode changed to 2", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [146]
 		{
-			"Physics interaction level changed to 1", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [147]
 		{
-			"Render scale changed to 1", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [148]
 		{
-			"Resample quality changed to 0", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [149]
 		{
-			"MSAA set to 8 color samples, 8 coverage samples", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [150]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [151]
 		{
-			"World preload object sort enabled.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [152]
 		{
-			"World load object sort enabled.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [153]
 		{
-			"World preload non critical disabled.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [154]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [155]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [156]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [157]
 		{
-			"Error display disabled", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [158]
 		{
-			"Error display shown", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [159]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [160]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [161]
 		{
-			"Now filtering: all messages", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [162]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [163]
 		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [164]
 		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [165]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [166]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [167]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [168]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [169]
 		{
-			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
+			"Weather changed to 2, intensity 0.600000\n", -- [1]
 			0, -- [2]
 		}, -- [170]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Weather changed to 2, intensity 0.600000\n", -- [1]
 			0, -- [2]
 		}, -- [171]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [172]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Weather changed to 3, intensity 0.361221\n", -- [1]
 			0, -- [2]
 		}, -- [173]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [174]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Weather changed to 3, intensity 0.361221\n", -- [1]
 			0, -- [2]
 		}, -- [175]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [176]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"Weather changed to 5, intensity 1.000000\n", -- [1]
 			0, -- [2]
 		}, -- [177]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [178]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [179]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [180]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [181]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-6-19\"", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [182]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [183]
 		{
-			"NetClient::HandleConnect()\n", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [184]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [185]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [186]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [187]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [188]
 		{
-			"[WowEntitlements] [BNetAccount-0-0000030C6B47] [WowAccount-0-0000003AE5B6] Initialized with 48 entitlements.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [189]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [190]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"World preload non critical disabled.", -- [1]
 			0, -- [2]
 		}, -- [191]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [192]
 		{
-			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
+			"Total: 433d 20h 55m 56s", -- [1]
+			0, -- [2]
 		}, -- [193]
 		{
-			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
+			"Level: 30d 12h 58m 36s", -- [1]
+			0, -- [2]
 		}, -- [194]
 		{
-			"Got new connection 3", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [195]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [196]
 		{
-			"Proficiency in item class 2 set to 0x0000000480", -- [1]
+			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
 		}, -- [197]
 		{
-			"Proficiency in item class 2 set to 0x0000008480", -- [1]
+			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
 		}, -- [198]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [199]
 		{
-			"Proficiency in item class 2 set to 0x000000c480", -- [1]
+			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
 		}, -- [200]
 		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [201]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [202]
 		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [203]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [204]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Multithreaded terrain pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [205]
 		{
-			"Time set to 3/1/2020 (Sun) 4:41", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [206]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [207]
 		{
-			"Time played:", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [208]
 		{
-			"Total: 49d 1h 29m 37s", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [209]
 		{
-			"Level: 0d 7h 10m 51s", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [210]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [211]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [212]
 		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
 		}, -- [213]
 		{
-			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [214]
 		{
-			"Got new connection 3", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [215]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [216]
 		{
-			"Proficiency in item class 2 set to 0x0000000081", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [217]
 		{
-			"Proficiency in item class 2 set to 0x0000000085", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [218]
 		{
-			"Proficiency in item class 2 set to 0x000000008d", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [219]
 		{
-			"Proficiency in item class 2 set to 0x000000018d", -- [1]
+			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
 		}, -- [220]
 		{
-			"Proficiency in item class 2 set to 0x000000058d", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [221]
 		{
-			"Proficiency in item class 2 set to 0x000000058f", -- [1]
+			"Texture filtering mode updated. Pending GxRestart", -- [1]
 			0, -- [2]
 		}, -- [222]
 		{
-			"Proficiency in item class 2 set to 0x000000858f", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [223]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"Outline mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [224]
 		{
-			"Proficiency in item class 2 set to 0x000000c58f", -- [1]
+			"Physics interaction level changed to 1", -- [1]
 			0, -- [2]
 		}, -- [225]
 		{
-			"Proficiency in item class 2 set to 0x000004c58f", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [226]
 		{
-			"Proficiency in item class 2 set to 0x000004c5cf", -- [1]
+			"Resample quality changed to 0", -- [1]
 			0, -- [2]
 		}, -- [227]
 		{
-			"Proficiency in item class 2 set to 0x000014c5cf", -- [1]
+			"MSAA set to 8 color samples, 8 coverage samples", -- [1]
 			0, -- [2]
 		}, -- [228]
 		{
-			"Proficiency in item class 4 set to 0x0000000029", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [229]
 		{
-			"Proficiency in item class 4 set to 0x000000002d", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [230]
 		{
-			"Proficiency in item class 4 set to 0x000000002f", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [231]
 		{
-			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
+			"World preload non critical disabled.", -- [1]
 			0, -- [2]
 		}, -- [232]
 		{
-			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [233]
 		{
-			"Proficiency in item class 4 set to 0x000000002f", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [234]
 		{
-			"Weather changed to 2, intensity 0.800000\n", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [235]
 		{
-			"Time set to 3/1/2020 (Sun) 4:44", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [236]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [237]
 		{
-			"Time played:", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [238]
 		{
-			"Total: 433d 19h 15m 37s", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [239]
 		{
-			"Level: 30d 11h 18m 17s", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [240]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [241]
 		{
-			"Got new connection 3", -- [1]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [242]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [243]
 		{
-			"PetBattle Initial Update", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [244]
 		{
-			"   Player 0 Player-1169-06A1ACBD  frontPet 0 ", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [245]
 		{
-			"     Slot   0, Species 2872, Health 1159, Level  19, DisplayID 91811, CollarID 0", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [246]
 		{
-			"        abilities : 1238, 2102, 2360,", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [247]
 		{
-			"     Slot   1, Species 1155, Health 1400, Level  20, DisplayID 46922, CollarID 0", -- [1]
+			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [248]
 		{
-			"        abilities : 406, 453, 814,", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [249]
 		{
-			"   Player 1 0000000000000000  frontPet 0 ", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [250]
 		{
-			"     Slot   0, Species 958, Health 1222, Level  22, DisplayID 0, CollarID 0", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [251]
 		{
-			"        abilities : 228, 233, 232,", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [252]
 		{
-			"     Slot   1, Species 957, Health 1156, Level  22, DisplayID 0, CollarID 0", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [253]
 		{
-			"        abilities : 367, 165, 253,", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [254]
 		{
-			"     Slot   2, Species 956, Health 1420, Level  22, DisplayID 0, CollarID 0", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [255]
 		{
-			"        abilities : 377, 375, 571,", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [256]
 		{
-			"<waiting for PetBattleReadyToStart command>", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [257]
 		{
-			"---Battle Begin---", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
 			0, -- [2]
 		}, -- [258]
 		{
-			"  PetSwap P0 PET 0", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [259]
 		{
-			"  PetSwap P1 PET 0", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-6-19\"", -- [1]
 			0, -- [2]
 		}, -- [260]
 		{
-			"  PetSwap P1 PET 0", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [261]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [262]
 		{
-			"---BattleAbandoned---", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [263]
 		{
-			"<waiting for PetBattleInput final>", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [264]
 		{
-			"---ClientPetBattleFinished---", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [265]
 		{
-			"PetBattle Initial Update", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [266]
 		{
-			"   Player 0 Player-1169-06A1ACBD  frontPet 0 ", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [267]
 		{
-			"     Slot   0, Species 2872, Health 1159, Level  19, DisplayID 91811, CollarID 0", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [268]
 		{
-			"        abilities : 1238, 2102, 2360,", -- [1]
+			"[WowEntitlements] [BNetAccount-0-0000030C6B47] [WowAccount-0-0000003AE5B6] Initialized with 48 entitlements.", -- [1]
 			0, -- [2]
 		}, -- [269]
 		{
-			"     Slot   1, Species 1155, Health 1400, Level  20, DisplayID 46922, CollarID 0", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [270]
 		{
-			"        abilities : 406, 453, 814,", -- [1]
-			0, -- [2]
+			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
 		}, -- [271]
 		{
-			"     Slot   2, Species 256, Health 1199, Level  19, DisplayID 32031, CollarID 0", -- [1]
-			0, -- [2]
+			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
 		}, -- [272]
 		{
-			"        abilities : 116, 278, 386,", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [273]
 		{
-			"   Player 1 0000000000000000  frontPet 0 ", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [274]
 		{
-			"     Slot   0, Species 958, Health 1222, Level  22, DisplayID 0, CollarID 0", -- [1]
+			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
 		}, -- [275]
 		{
-			"        abilities : 228, 233, 232,", -- [1]
+			"Proficiency in item class 2 set to 0x0000000085", -- [1]
 			0, -- [2]
 		}, -- [276]
 		{
-			"     Slot   1, Species 957, Health 1156, Level  22, DisplayID 0, CollarID 0", -- [1]
+			"Proficiency in item class 2 set to 0x000000008d", -- [1]
 			0, -- [2]
 		}, -- [277]
 		{
-			"        abilities : 367, 165, 253,", -- [1]
+			"Proficiency in item class 2 set to 0x000000018d", -- [1]
 			0, -- [2]
 		}, -- [278]
 		{
-			"     Slot   2, Species 956, Health 1420, Level  22, DisplayID 0, CollarID 0", -- [1]
+			"Proficiency in item class 2 set to 0x000000058d", -- [1]
 			0, -- [2]
 		}, -- [279]
 		{
-			"        abilities : 377, 375, 571,", -- [1]
+			"Proficiency in item class 2 set to 0x000000058f", -- [1]
 			0, -- [2]
 		}, -- [280]
 		{
-			"<waiting for PetBattleReadyToStart command>", -- [1]
+			"Proficiency in item class 2 set to 0x000000858f", -- [1]
 			0, -- [2]
 		}, -- [281]
 		{
-			"---Battle Begin---", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [282]
 		{
-			"  PetSwap P0 PET 0", -- [1]
+			"Proficiency in item class 2 set to 0x000000c58f", -- [1]
 			0, -- [2]
 		}, -- [283]
 		{
-			"  PetSwap P1 PET 0", -- [1]
+			"Proficiency in item class 2 set to 0x000004c58f", -- [1]
 			0, -- [2]
 		}, -- [284]
 		{
-			"  PetSwap P1 PET 0", -- [1]
+			"Proficiency in item class 2 set to 0x000004c5cf", -- [1]
 			0, -- [2]
 		}, -- [285]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"Proficiency in item class 2 set to 0x000014c5cf", -- [1]
 			0, -- [2]
 		}, -- [286]
 		{
-			"---Replacements made---", -- [1]
+			"Proficiency in item class 4 set to 0x0000000029", -- [1]
 			0, -- [2]
 		}, -- [287]
 		{
-			"  P1 PET 0 performs NPC_EMOTE      on P1 PET 0 : (68239) :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"Proficiency in item class 4 set to 0x000000002d", -- [1]
 			0, -- [2]
 		}, -- [288]
 		{
-			"  P1 PET 1 performs PET_SWAP       on P1 PET 0 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"Proficiency in item class 4 set to 0x000000002f", -- [1]
 			0, -- [2]
 		}, -- [289]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
 			0, -- [2]
 		}, -- [290]
 		{
-			"---Replacements made---", -- [1]
+			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
 			0, -- [2]
 		}, -- [291]
 		{
-			"  P1 PET 2 performs NPC_EMOTE      on P1 PET 2 : (68754) :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"Proficiency in item class 4 set to 0x000000002f", -- [1]
 			0, -- [2]
 		}, -- [292]
 		{
-			"  P1 PET 0 performs PET_SWAP       on P1 PET 2 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [293]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"Time set to 3/1/2020 (Sun) 7:17", -- [1]
 			0, -- [2]
 		}, -- [294]
 		{
-			"---BattleFinished: You Won ---", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [295]
 		{
-			"<waiting for PetBattleInput final>", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [296]
 		{
-			"---ClientPetBattleFinished---", -- [1]
+			"Total: 433d 21h 0m 40s", -- [1]
 			0, -- [2]
 		}, -- [297]
 		{
-			"PetBattle Initial Update", -- [1]
+			"Level: 30d 13h 3m 20s", -- [1]
 			0, -- [2]
 		}, -- [298]
 		{
-			"   Player 0 Player-1169-06A1ACBD  frontPet 0 ", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [299]
 		{
-			"     Slot   0, Species 2872, Health 1159, Level  19, DisplayID 91811, CollarID 0", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [300]
 		{
-			"        abilities : 1238, 2102, 2360,", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [301]
 		{
-			"     Slot   1, Species 1155, Health 1465, Level  21, DisplayID 46922, CollarID 0", -- [1]
+			"Weather changed to 5, intensity 1.000000\n", -- [1]
 			0, -- [2]
 		}, -- [302]
 		{
-			"        abilities : 406, 453, 814,", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [303]
 		{
-			"     Slot   2, Species 256, Health 1257, Level  20, DisplayID 32031, CollarID 0", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [304]
 		{
-			"        abilities : 202, 278, 387,", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [305]
 		{
-			"   Player 1 0000000000000000  frontPet 0 ", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [306]
 		{
-			"     Slot   0, Species 961, Health 1204, Level  23, DisplayID 0, CollarID 0", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [307]
 		{
-			"        abilities : 803, 509, 538,", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [308]
 		{
-			"     Slot   1, Species 960, Health 1204, Level  23, DisplayID 0, CollarID 0", -- [1]
+			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
 		}, -- [309]
 		{
-			"        abilities : 803, 538, 423,", -- [1]
+			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
 		}, -- [310]
 		{
-			"     Slot   2, Species 959, Health 1204, Level  23, DisplayID 0, CollarID 0", -- [1]
+			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [311]
 		{
-			"        abilities : 160, 118, 423,", -- [1]
+			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
 		}, -- [312]
 		{
-			"<waiting for PetBattleReadyToStart command>", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [313]
 		{
-			"---Battle Begin---", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [314]
 		{
-			"  PetSwap P0 PET 0", -- [1]
+			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [315]
 		{
-			"  PetSwap P1 PET 0", -- [1]
+			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [316]
 		{
-			"  PetSwap P1 PET 0", -- [1]
+			"Multithreaded terrain pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [317]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [318]
 		{
-			"---Replacements made---", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [319]
 		{
-			"  P1 PET 1 performs NPC_EMOTE      on P1 PET 1 : (68245) :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [320]
 		{
-			"  P1 PET 0 performs PET_SWAP       on P1 PET 1 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [321]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [322]
 		{
-			"---Replacements made---", -- [1]
+			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [323]
 		{
-			"  P1 PET 1 performs NPC_EMOTE      on P1 PET 1 : (68245) :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [324]
 		{
-			"  P1 PET 2 performs PET_SWAP       on P1 PET 1 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
 		}, -- [325]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [326]
 		{
-			"---BattleFinished: You Won ---", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [327]
 		{
-			"<waiting for PetBattleInput final>", -- [1]
+			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [328]
 		{
-			"---ClientPetBattleFinished---", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [329]
 		{
-			"World transfer pending...", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [330]
 		{
-			"Got new connection 3", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [331]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
 		}, -- [332]
 		{
-			"PetBattle Initial Update", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [333]
 		{
-			"   Player 0 Player-1169-06A1ACBD  frontPet 0 ", -- [1]
+			"Texture filtering mode updated. Pending GxRestart", -- [1]
 			0, -- [2]
 		}, -- [334]
 		{
-			"     Slot   0, Species 2872, Health 1215, Level  20, DisplayID 91811, CollarID 0", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [335]
 		{
-			"        abilities : 1238, 2102, 2360,", -- [1]
+			"Outline mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [336]
 		{
-			"     Slot   1, Species 1155, Health 1465, Level  21, DisplayID 46922, CollarID 0", -- [1]
+			"Physics interaction level changed to 1", -- [1]
 			0, -- [2]
 		}, -- [337]
 		{
-			"        abilities : 406, 453, 814,", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [338]
 		{
-			"     Slot   2, Species 256, Health 1257, Level  20, DisplayID 32031, CollarID 0", -- [1]
+			"Resample quality changed to 0", -- [1]
 			0, -- [2]
 		}, -- [339]
 		{
-			"        abilities : 202, 278, 387,", -- [1]
+			"MSAA set to 8 color samples, 8 coverage samples", -- [1]
 			0, -- [2]
 		}, -- [340]
 		{
-			"   Player 1 0000000000000000  frontPet 0 ", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [341]
 		{
-			"     Slot   0, Species 964, Health 1426, Level  24, DisplayID 0, CollarID 0", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [342]
 		{
-			"        abilities : 484, 486, 488,", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [343]
 		{
-			"     Slot   1, Species 963, Health 1488, Level  24, DisplayID 0, CollarID 0", -- [1]
+			"World preload non critical disabled.", -- [1]
 			0, -- [2]
 		}, -- [344]
 		{
-			"        abilities : 113, 178, 179,", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [345]
 		{
-			"     Slot   2, Species 962, Health 1348, Level  24, DisplayID 0, CollarID 0", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [346]
 		{
-			"        abilities : 764, 608, 751,", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [347]
 		{
-			"<waiting for PetBattleReadyToStart command>", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [348]
 		{
-			"---Battle Begin---", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [349]
 		{
-			"  PetSwap P0 PET 0", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [350]
 		{
-			"  PetSwap P1 PET 0", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [351]
 		{
-			"  PetSwap P1 PET 0", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [352]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [353]
 		{
-			"---Replacements made---", -- [1]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [354]
 		{
-			"  P1 PET 1 performs NPC_EMOTE      on P1 PET 1 : (68254) :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [355]
 		{
-			"  P1 PET 0 performs PET_SWAP       on P1 PET 1 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [356]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [357]
 		{
-			"---BattleAbandoned---", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [358]
 		{
-			"<waiting for PetBattleInput final>", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [359]
 		{
-			"---ClientPetBattleFinished---", -- [1]
+			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [360]
 		{
-			"World transfer pending...", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [361]
 		{
-			"Got new connection 3", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [362]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [363]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [364]
 		{
-			"World preload non critical disabled.", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [365]
 		{
-			"Time played:", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [366]
 		{
-			"Total: 433d 19h 37m 11s", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [367]
 		{
-			"Level: 30d 11h 39m 51s", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [368]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [369]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
 			0, -- [2]
 		}, -- [370]
 		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [371]
 		{
-			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-6-19\"", -- [1]
 			0, -- [2]
 		}, -- [372]
 		{
-			"Got new connection 3", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [373]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [374]
 		{
-			"Proficiency in item class 2 set to 0x0000000081", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [375]
 		{
-			"Proficiency in item class 2 set to 0x0000000085", -- [1]
+			"Got new connection 2", -- [1]
 			0, -- [2]
 		}, -- [376]
 		{
-			"Proficiency in item class 2 set to 0x000000008d", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [377]
 		{
-			"Proficiency in item class 2 set to 0x000000009d", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [378]
 		{
-			"Proficiency in item class 2 set to 0x000000809d", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [379]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [380]
 		{
-			"Proficiency in item class 2 set to 0x000000c09d", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [381]
 		{
-			"Proficiency in item class 2 set to 0x000004c09d", -- [1]
+			"[WowEntitlements] [BNetAccount-0-0000030C6B47] [WowAccount-0-0000003AE5B6] Initialized with 48 entitlements.", -- [1]
 			0, -- [2]
 		}, -- [382]
 		{
-			"Proficiency in item class 4 set to 0x0000000025", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [383]
 		{
-			"Proficiency in item class 4 set to 0x0000000027", -- [1]
-			0, -- [2]
+			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
 		}, -- [384]
 		{
-			"Proficiency in item class 2 set to 0x000004e09d", -- [1]
-			0, -- [2]
+			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
 		}, -- [385]
 		{
-			"Proficiency in item class 2 set to 0x000004e09d", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [386]
 		{
-			"Proficiency in item class 4 set to 0x0000000027", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [387]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Proficiency in item class 2 set to 0x0000000480", -- [1]
 			0, -- [2]
 		}, -- [388]
 		{
-			"Time set to 3/1/2020 (Sun) 5:11", -- [1]
+			"Proficiency in item class 2 set to 0x0000008480", -- [1]
 			0, -- [2]
 		}, -- [389]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [390]
 		{
-			"Time played:", -- [1]
+			"Proficiency in item class 2 set to 0x000000c480", -- [1]
 			0, -- [2]
 		}, -- [391]
 		{
-			"Total: 3d 12h 54m 7s", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [392]
 		{
-			"Level: 0d 1h 58m 46s", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [393]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [394]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [395]
 		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [396]
 		{
-			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			"Time set to 3/1/2020 (Sun) 13:36", -- [1]
 			0, -- [2]
 		}, -- [397]
 		{
-			"Got new connection 3", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [398]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [399]
 		{
-			"Proficiency in item class 2 set to 0x0000000081", -- [1]
+			"Total: 49d 1h 33m 6s", -- [1]
 			0, -- [2]
 		}, -- [400]
 		{
-			"Proficiency in item class 2 set to 0x0000000085", -- [1]
+			"Level: 0d 7h 14m 20s", -- [1]
 			0, -- [2]
 		}, -- [401]
 		{
-			"Proficiency in item class 2 set to 0x000000008d", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [402]
 		{
-			"Proficiency in item class 2 set to 0x000000018d", -- [1]
+			"NetClient::HandleDisconnect()\n", -- [1]
 			0, -- [2]
 		}, -- [403]
 		{
-			"Proficiency in item class 2 set to 0x000000058d", -- [1]
+			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
 			0, -- [2]
 		}, -- [404]
 		{
-			"Proficiency in item class 2 set to 0x000000058f", -- [1]
+			"[GlueLogin] Disconnected from WoWpreviouslyConnected=\"true\"", -- [1]
 			0, -- [2]
 		}, -- [405]
 		{
-			"Proficiency in item class 2 set to 0x000000858f", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [406]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [407]
 		{
-			"Proficiency in item class 2 set to 0x000000c58f", -- [1]
+			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
 		}, -- [408]
 		{
-			"Proficiency in item class 2 set to 0x000004c58f", -- [1]
+			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
 		}, -- [409]
 		{
-			"Proficiency in item class 2 set to 0x000004c5cf", -- [1]
+			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [410]
 		{
-			"Proficiency in item class 2 set to 0x000014c5cf", -- [1]
+			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
 		}, -- [411]
 		{
-			"Proficiency in item class 4 set to 0x0000000029", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [412]
 		{
-			"Proficiency in item class 4 set to 0x000000002d", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [413]
 		{
-			"Proficiency in item class 4 set to 0x000000002f", -- [1]
+			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [414]
 		{
-			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
+			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [415]
 		{
-			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
+			"Multithreaded terrain pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [416]
 		{
-			"Proficiency in item class 4 set to 0x000000002f", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [417]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [418]
 		{
-			"Time set to 3/1/2020 (Sun) 5:16", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [419]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [420]
 		{
-			"Time played:", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [421]
 		{
-			"Total: 433d 19h 41m 27s", -- [1]
+			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [422]
 		{
-			"Level: 30d 11h 44m 7s", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [423]
 		{
-			"World transfer pending...", -- [1]
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
 		}, -- [424]
 		{
-			"Got new connection 3", -- [1]
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [425]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [426]
 		{
-			"World transfer pending...", -- [1]
+			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [427]
 		{
-			"Got new connection 3", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [428]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [429]
 		{
-			"World transfer pending...", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [430]
 		{
-			"Got new connection 3", -- [1]
+			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
 		}, -- [431]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [432]
 		{
-			"Weather changed to 5, intensity 1.000000\n", -- [1]
+			"Texture filtering mode updated. Pending GxRestart", -- [1]
 			0, -- [2]
 		}, -- [433]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [434]
 		{
-			"World transfer pending...", -- [1]
+			"Outline mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [435]
 		{
-			"Got new connection 3", -- [1]
+			"Physics interaction level changed to 1", -- [1]
 			0, -- [2]
 		}, -- [436]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [437]
 		{
-			"World transfer pending...", -- [1]
+			"Resample quality changed to 0", -- [1]
 			0, -- [2]
 		}, -- [438]
 		{
-			"Got new connection 3", -- [1]
+			"MSAA set to 8 color samples, 8 coverage samples", -- [1]
 			0, -- [2]
 		}, -- [439]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [440]
 		{
-			"World transfer pending...", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [441]
 		{
-			"Got new connection 3", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [442]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"World preload non critical disabled.", -- [1]
 			0, -- [2]
 		}, -- [443]
 		{
-			"World transfer pending...", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [444]
 		{
-			"Got new connection 3", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [445]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [446]
 		{
-			"World transfer pending...", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [447]
 		{
-			"Got new connection 3", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [448]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [449]
 		{
-			"Got new connection 3", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [450]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [451]
 		{
-			"Got new connection 3", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [452]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [453]
 		{
-			"Got new connection 3", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [454]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [455]
 		{
-			"Got new connection 3", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [456]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [457]
 		{
-			"Got new connection 3", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [458]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [459]
 		{
-			"World transfer pending...", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [460]
 		{
-			"Got new connection 3", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [461]
 		{
-			"Weather changed to 2, intensity 0.600000\n", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [462]
 		{
-			"Weather changed to 2, intensity 0.600000\n", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [463]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [464]
 		{
-			"Weather changed to 3, intensity 0.361221\n", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [465]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [466]
 		{
-			"Weather changed to 3, intensity 0.361221\n", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [467]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [468]
 		{
-			"Weather changed to 5, intensity 1.000000\n", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
 			0, -- [2]
 		}, -- [469]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [470]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-6-19\"", -- [1]
 			0, -- [2]
 		}, -- [471]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [472]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [473]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [474]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Got new connection 2", -- [1]
 			0, -- [2]
 		}, -- [475]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [476]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [477]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [478]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [479]
 		{
-			"Got new connection 3", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [480]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[WowEntitlements] [BNetAccount-0-0000030C6B47] [WowAccount-0-0000003AE5B6] Initialized with 48 entitlements.", -- [1]
 			0, -- [2]
 		}, -- [481]
 		{
@@ -1931,1463 +1932,1463 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [482]
 		{
-			"World preload non critical disabled.", -- [1]
-			0, -- [2]
+			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
 		}, -- [483]
 		{
-			"Time played:", -- [1]
-			0, -- [2]
+			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
 		}, -- [484]
 		{
-			"Total: 433d 20h 55m 56s", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [485]
 		{
-			"Level: 30d 12h 58m 36s", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [486]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Proficiency in item class 2 set to 0x0000000480", -- [1]
 			0, -- [2]
 		}, -- [487]
 		{
-			"Sorting particles normally.", -- [1]
+			"Proficiency in item class 2 set to 0x0000008480", -- [1]
 			0, -- [2]
 		}, -- [488]
 		{
-			"Multithreaded rendering enabled.", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [489]
 		{
-			"Multithreaded BeginDraw enabled.", -- [1]
+			"Proficiency in item class 2 set to 0x000000c480", -- [1]
 			0, -- [2]
 		}, -- [490]
 		{
-			"Multithread shadows changed to 1.", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [491]
 		{
-			"Multithreaded prepass enabled.", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [492]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [493]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [494]
 		{
-			"Multithreaded alpha M2 pass enabled.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [495]
 		{
-			"Multithreaded opaque WMO pass enabled.", -- [1]
+			"Time set to 3/1/2020 (Sun) 16:17", -- [1]
 			0, -- [2]
 		}, -- [496]
 		{
-			"Multithreaded terrain pass enabled.", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [497]
 		{
-			"Water detail changed to 3", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [498]
 		{
-			"Ripple detail changed to 2", -- [1]
+			"Total: 49d 1h 37m 14s", -- [1]
 			0, -- [2]
 		}, -- [499]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"Level: 0d 7h 18m 28s", -- [1]
 			0, -- [2]
 		}, -- [500]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [501]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [502]
 		{
-			"Refraction mode changed to 2", -- [1]
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
 		}, -- [503]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
 			0, -- [2]
 		}, -- [504]
 		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [505]
 		{
-			"Volume fog enabled.", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [506]
 		{
-			"Projected textures enabled.", -- [1]
+			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
 		}, -- [507]
 		{
-			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
+			"Proficiency in item class 2 set to 0x0000000085", -- [1]
 			0, -- [2]
 		}, -- [508]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"Proficiency in item class 2 set to 0x000000008d", -- [1]
 			0, -- [2]
 		}, -- [509]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"Proficiency in item class 2 set to 0x000000018d", -- [1]
 			0, -- [2]
 		}, -- [510]
 		{
-			"SSAO mode set to 4", -- [1]
+			"Proficiency in item class 2 set to 0x000000058d", -- [1]
 			0, -- [2]
 		}, -- [511]
 		{
-			"Depth Based Opacity Enabled", -- [1]
+			"Proficiency in item class 2 set to 0x000000058f", -- [1]
 			0, -- [2]
 		}, -- [512]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"Proficiency in item class 2 set to 0x000000858f", -- [1]
 			0, -- [2]
 		}, -- [513]
 		{
-			"Texture filtering mode updated. Pending GxRestart", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [514]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"Proficiency in item class 2 set to 0x000000c58f", -- [1]
 			0, -- [2]
 		}, -- [515]
 		{
-			"Outline mode changed to 2", -- [1]
+			"Proficiency in item class 2 set to 0x000004c58f", -- [1]
 			0, -- [2]
 		}, -- [516]
 		{
-			"Physics interaction level changed to 1", -- [1]
+			"Proficiency in item class 2 set to 0x000004c5cf", -- [1]
 			0, -- [2]
 		}, -- [517]
 		{
-			"Render scale changed to 1", -- [1]
+			"Proficiency in item class 2 set to 0x000014c5cf", -- [1]
 			0, -- [2]
 		}, -- [518]
 		{
-			"Resample quality changed to 0", -- [1]
+			"Proficiency in item class 4 set to 0x0000000029", -- [1]
 			0, -- [2]
 		}, -- [519]
 		{
-			"MSAA set to 8 color samples, 8 coverage samples", -- [1]
+			"Proficiency in item class 4 set to 0x000000002d", -- [1]
 			0, -- [2]
 		}, -- [520]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"Proficiency in item class 4 set to 0x000000002f", -- [1]
 			0, -- [2]
 		}, -- [521]
 		{
-			"World preload object sort enabled.", -- [1]
+			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
 			0, -- [2]
 		}, -- [522]
 		{
-			"World load object sort enabled.", -- [1]
+			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
 			0, -- [2]
 		}, -- [523]
 		{
-			"World preload non critical disabled.", -- [1]
+			"Proficiency in item class 4 set to 0x000000002f", -- [1]
 			0, -- [2]
 		}, -- [524]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [525]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"Time set to 3/1/2020 (Sun) 16:23", -- [1]
 			0, -- [2]
 		}, -- [526]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [527]
 		{
-			"Error display disabled", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [528]
 		{
-			"Error display shown", -- [1]
+			"Total: 433d 21h 11m 32s", -- [1]
 			0, -- [2]
 		}, -- [529]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Level: 30d 13h 14m 12s", -- [1]
 			0, -- [2]
 		}, -- [530]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [531]
 		{
-			"Now filtering: all messages", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [532]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [533]
 		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [534]
 		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [535]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [536]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [537]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [538]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [539]
 		{
-			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
+			"Weather changed to 5, intensity 1.000000\n", -- [1]
 			0, -- [2]
 		}, -- [540]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [541]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [542]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [543]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [544]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [545]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [546]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [547]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [548]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [549]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [550]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [551]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-6-19\"", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [552]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [553]
 		{
-			"NetClient::HandleConnect()\n", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [554]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [555]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [556]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [557]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [558]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
 		}, -- [559]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
 		}, -- [560]
 		{
-			"[WowEntitlements] [BNetAccount-0-0000030C6B47] [WowAccount-0-0000003AE5B6] Initialized with 48 entitlements.", -- [1]
+			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [561]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
 		}, -- [562]
 		{
-			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
 		}, -- [563]
 		{
-			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
 		}, -- [564]
 		{
-			"Got new connection 3", -- [1]
+			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [565]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [566]
 		{
-			"Proficiency in item class 2 set to 0x0000000081", -- [1]
+			"Multithreaded terrain pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [567]
 		{
-			"Proficiency in item class 2 set to 0x0000000085", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [568]
 		{
-			"Proficiency in item class 2 set to 0x000000008d", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [569]
 		{
-			"Proficiency in item class 2 set to 0x000000018d", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [570]
 		{
-			"Proficiency in item class 2 set to 0x000000058d", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [571]
 		{
-			"Proficiency in item class 2 set to 0x000000058f", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [572]
 		{
-			"Proficiency in item class 2 set to 0x000000858f", -- [1]
+			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [573]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [574]
 		{
-			"Proficiency in item class 2 set to 0x000000c58f", -- [1]
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
 		}, -- [575]
 		{
-			"Proficiency in item class 2 set to 0x000004c58f", -- [1]
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [576]
 		{
-			"Proficiency in item class 2 set to 0x000004c5cf", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [577]
 		{
-			"Proficiency in item class 2 set to 0x000014c5cf", -- [1]
+			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [578]
 		{
-			"Proficiency in item class 4 set to 0x0000000029", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [579]
 		{
-			"Proficiency in item class 4 set to 0x000000002d", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [580]
 		{
-			"Proficiency in item class 4 set to 0x000000002f", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [581]
 		{
-			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
+			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
 		}, -- [582]
 		{
-			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [583]
 		{
-			"Proficiency in item class 4 set to 0x000000002f", -- [1]
+			"Texture filtering mode updated. Pending GxRestart", -- [1]
 			0, -- [2]
 		}, -- [584]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [585]
 		{
-			"Time set to 3/1/2020 (Sun) 7:17", -- [1]
+			"Outline mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [586]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Physics interaction level changed to 1", -- [1]
 			0, -- [2]
 		}, -- [587]
 		{
-			"Time played:", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [588]
 		{
-			"Total: 433d 21h 0m 40s", -- [1]
+			"Resample quality changed to 0", -- [1]
 			0, -- [2]
 		}, -- [589]
 		{
-			"Level: 30d 13h 3m 20s", -- [1]
+			"MSAA set to 8 color samples, 8 coverage samples", -- [1]
 			0, -- [2]
 		}, -- [590]
 		{
-			"World transfer pending...", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [591]
 		{
-			"Got new connection 3", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [592]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [593]
 		{
-			"Weather changed to 5, intensity 1.000000\n", -- [1]
+			"World preload non critical disabled.", -- [1]
 			0, -- [2]
 		}, -- [594]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [595]
 		{
-			"World transfer pending...", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [596]
 		{
-			"Got new connection 3", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [597]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [598]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [599]
 		{
-			"Sorting particles normally.", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [600]
 		{
-			"Multithreaded rendering enabled.", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [601]
 		{
-			"Multithreaded BeginDraw enabled.", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [602]
 		{
-			"Multithread shadows changed to 1.", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [603]
 		{
-			"Multithreaded prepass enabled.", -- [1]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [604]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [605]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [606]
 		{
-			"Multithreaded alpha M2 pass enabled.", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [607]
 		{
-			"Multithreaded opaque WMO pass enabled.", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [608]
 		{
-			"Multithreaded terrain pass enabled.", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [609]
 		{
-			"Water detail changed to 3", -- [1]
+			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [610]
 		{
-			"Ripple detail changed to 2", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [611]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [612]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [613]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [614]
 		{
-			"Refraction mode changed to 2", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [615]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [616]
 		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [617]
 		{
-			"Volume fog enabled.", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [618]
 		{
-			"Projected textures enabled.", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [619]
 		{
-			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
 			0, -- [2]
 		}, -- [620]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [621]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-6-19\"", -- [1]
 			0, -- [2]
 		}, -- [622]
 		{
-			"SSAO mode set to 4", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [623]
 		{
-			"Depth Based Opacity Enabled", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [624]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [625]
 		{
-			"Texture filtering mode updated. Pending GxRestart", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [626]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [627]
 		{
-			"Outline mode changed to 2", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [628]
 		{
-			"Physics interaction level changed to 1", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [629]
 		{
-			"Render scale changed to 1", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [630]
 		{
-			"Resample quality changed to 0", -- [1]
+			"[WowEntitlements] [BNetAccount-0-0000030C6B47] [WowAccount-0-0000003AE5B6] Initialized with 48 entitlements.", -- [1]
 			0, -- [2]
 		}, -- [631]
 		{
-			"MSAA set to 8 color samples, 8 coverage samples", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [632]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
-			0, -- [2]
+			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
 		}, -- [633]
 		{
-			"World preload object sort enabled.", -- [1]
-			0, -- [2]
+			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
 		}, -- [634]
 		{
-			"World load object sort enabled.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [635]
 		{
-			"World preload non critical disabled.", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [636]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
 		}, -- [637]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"Proficiency in item class 2 set to 0x0000000085", -- [1]
 			0, -- [2]
 		}, -- [638]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"Proficiency in item class 2 set to 0x000000008d", -- [1]
 			0, -- [2]
 		}, -- [639]
 		{
-			"Error display disabled", -- [1]
+			"Proficiency in item class 2 set to 0x000000018d", -- [1]
 			0, -- [2]
 		}, -- [640]
 		{
-			"Error display shown", -- [1]
+			"Proficiency in item class 2 set to 0x000000058d", -- [1]
 			0, -- [2]
 		}, -- [641]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Proficiency in item class 2 set to 0x000000058f", -- [1]
 			0, -- [2]
 		}, -- [642]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Proficiency in item class 2 set to 0x000000858f", -- [1]
 			0, -- [2]
 		}, -- [643]
 		{
-			"Now filtering: all messages", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [644]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Proficiency in item class 2 set to 0x000000c58f", -- [1]
 			0, -- [2]
 		}, -- [645]
 		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Proficiency in item class 2 set to 0x000004c58f", -- [1]
 			0, -- [2]
 		}, -- [646]
 		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Proficiency in item class 2 set to 0x000004c5cf", -- [1]
 			0, -- [2]
 		}, -- [647]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Proficiency in item class 2 set to 0x000014c5cf", -- [1]
 			0, -- [2]
 		}, -- [648]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
+			"Proficiency in item class 4 set to 0x0000000029", -- [1]
 			0, -- [2]
 		}, -- [649]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"Proficiency in item class 4 set to 0x000000002d", -- [1]
 			0, -- [2]
 		}, -- [650]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"Proficiency in item class 4 set to 0x000000002f", -- [1]
 			0, -- [2]
 		}, -- [651]
 		{
-			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
+			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
 			0, -- [2]
 		}, -- [652]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
 			0, -- [2]
 		}, -- [653]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Proficiency in item class 4 set to 0x000000002f", -- [1]
 			0, -- [2]
 		}, -- [654]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [655]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
+			"Time set to 3/1/2020 (Sun) 18:45", -- [1]
 			0, -- [2]
 		}, -- [656]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [657]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [658]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"Total: 433d 21h 40m 40s", -- [1]
 			0, -- [2]
 		}, -- [659]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Level: 30d 13h 43m 20s", -- [1]
 			0, -- [2]
 		}, -- [660]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [661]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [662]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [663]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-6-19\"", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [664]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"PetBattle Initial Update", -- [1]
 			0, -- [2]
 		}, -- [665]
 		{
-			"NetClient::HandleConnect()\n", -- [1]
+			"   Player 0 Player-1169-06A1ACBD  frontPet 0 ", -- [1]
 			0, -- [2]
 		}, -- [666]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"     Slot   0, Species 2872, Health 1215, Level  20, DisplayID 91811, CollarID 0", -- [1]
 			0, -- [2]
 		}, -- [667]
 		{
-			"Got new connection 2", -- [1]
+			"        abilities : 1238, 2102, 2360,", -- [1]
 			0, -- [2]
 		}, -- [668]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"     Slot   1, Species 1155, Health 1465, Level  21, DisplayID 46922, CollarID 0", -- [1]
 			0, -- [2]
 		}, -- [669]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"        abilities : 406, 453, 814,", -- [1]
 			0, -- [2]
 		}, -- [670]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"     Slot   2, Species 256, Health 1257, Level  20, DisplayID 32031, CollarID 0", -- [1]
 			0, -- [2]
 		}, -- [671]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"        abilities : 202, 278, 387,", -- [1]
 			0, -- [2]
 		}, -- [672]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"   Player 1 0000000000000000  frontPet 0 ", -- [1]
 			0, -- [2]
 		}, -- [673]
 		{
-			"[WowEntitlements] [BNetAccount-0-0000030C6B47] [WowAccount-0-0000003AE5B6] Initialized with 48 entitlements.", -- [1]
+			"     Slot   0, Species 2854, Health 2609, Level  21, DisplayID 92438, CollarID 0", -- [1]
 			0, -- [2]
 		}, -- [674]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"        abilities : 1938, 1731, 2358,", -- [1]
 			0, -- [2]
 		}, -- [675]
 		{
-			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
+			"<waiting for PetBattleReadyToStart command>", -- [1]
+			0, -- [2]
 		}, -- [676]
 		{
-			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
+			"---Battle Begin---", -- [1]
+			0, -- [2]
 		}, -- [677]
 		{
-			"Got new connection 3", -- [1]
+			"  PetSwap P0 PET 0", -- [1]
 			0, -- [2]
 		}, -- [678]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"  PetSwap P1 PET 0", -- [1]
 			0, -- [2]
 		}, -- [679]
 		{
-			"Proficiency in item class 2 set to 0x0000000480", -- [1]
+			"<waiting for PetBattleInput command>", -- [1]
 			0, -- [2]
 		}, -- [680]
 		{
-			"Proficiency in item class 2 set to 0x0000008480", -- [1]
+			"---Replacements made---", -- [1]
 			0, -- [2]
 		}, -- [681]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"  P0 PET 0 performs PET_SWAP       on P0 PET 1 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
 			0, -- [2]
 		}, -- [682]
 		{
-			"Proficiency in item class 2 set to 0x000000c480", -- [1]
+			"<waiting for PetBattleInput command>", -- [1]
 			0, -- [2]
 		}, -- [683]
 		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			"---Replacements made---", -- [1]
 			0, -- [2]
 		}, -- [684]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"  P0 PET 1 performs PET_SWAP       on P0 PET 2 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
 			0, -- [2]
 		}, -- [685]
 		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			"<waiting for PetBattleInput command>", -- [1]
 			0, -- [2]
 		}, -- [686]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"---BattleFinished: You Lost ---", -- [1]
 			0, -- [2]
 		}, -- [687]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"<waiting for PetBattleInput final>", -- [1]
 			0, -- [2]
 		}, -- [688]
 		{
-			"Time set to 3/1/2020 (Sun) 13:36", -- [1]
+			"---ClientPetBattleFinished---", -- [1]
 			0, -- [2]
 		}, -- [689]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [690]
 		{
-			"Time played:", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [691]
 		{
-			"Total: 49d 1h 33m 6s", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [692]
 		{
-			"Level: 0d 7h 14m 20s", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [693]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [694]
 		{
-			"NetClient::HandleDisconnect()\n", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [695]
 		{
-			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [696]
 		{
-			"[GlueLogin] Disconnected from WoWpreviouslyConnected=\"true\"", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [697]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Weather changed to 5, intensity 1.000000\n", -- [1]
 			0, -- [2]
 		}, -- [698]
 		{
-			"Sorting particles normally.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [699]
 		{
-			"Multithreaded rendering enabled.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [700]
 		{
-			"Multithreaded BeginDraw enabled.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [701]
 		{
-			"Multithread shadows changed to 1.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [702]
 		{
-			"Multithreaded prepass enabled.", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [703]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
+			"World preload non critical disabled.", -- [1]
 			0, -- [2]
 		}, -- [704]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [705]
 		{
-			"Multithreaded alpha M2 pass enabled.", -- [1]
+			"Total: 433d 22h 21m 46s", -- [1]
 			0, -- [2]
 		}, -- [706]
 		{
-			"Multithreaded opaque WMO pass enabled.", -- [1]
+			"Level: 30d 14h 24m 26s", -- [1]
 			0, -- [2]
 		}, -- [707]
 		{
-			"Multithreaded terrain pass enabled.", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [708]
 		{
-			"Water detail changed to 3", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [709]
 		{
-			"Ripple detail changed to 2", -- [1]
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
 		}, -- [710]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
 			0, -- [2]
 		}, -- [711]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [712]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [713]
 		{
-			"Refraction mode changed to 2", -- [1]
+			"Proficiency in item class 2 set to 0x0000000480", -- [1]
 			0, -- [2]
 		}, -- [714]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"Proficiency in item class 2 set to 0x0000008480", -- [1]
 			0, -- [2]
 		}, -- [715]
 		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [716]
 		{
-			"Volume fog enabled.", -- [1]
+			"Proficiency in item class 2 set to 0x000000c480", -- [1]
 			0, -- [2]
 		}, -- [717]
 		{
-			"Projected textures enabled.", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [718]
 		{
-			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [719]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [720]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [721]
 		{
-			"SSAO mode set to 4", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [722]
 		{
-			"Depth Based Opacity Enabled", -- [1]
+			"Time set to 3/1/2020 (Sun) 19:26", -- [1]
 			0, -- [2]
 		}, -- [723]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [724]
 		{
-			"Texture filtering mode updated. Pending GxRestart", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [725]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"Total: 49d 1h 41m 41s", -- [1]
 			0, -- [2]
 		}, -- [726]
 		{
-			"Outline mode changed to 2", -- [1]
+			"Level: 0d 7h 22m 55s", -- [1]
 			0, -- [2]
 		}, -- [727]
 		{
-			"Physics interaction level changed to 1", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [728]
 		{
-			"Render scale changed to 1", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [729]
 		{
-			"Resample quality changed to 0", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [730]
 		{
-			"MSAA set to 8 color samples, 8 coverage samples", -- [1]
+			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
 		}, -- [731]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
 		}, -- [732]
 		{
-			"World preload object sort enabled.", -- [1]
+			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [733]
 		{
-			"World load object sort enabled.", -- [1]
+			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
 		}, -- [734]
 		{
-			"World preload non critical disabled.", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [735]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [736]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [737]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [738]
 		{
-			"Error display disabled", -- [1]
+			"Multithreaded terrain pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [739]
 		{
-			"Error display shown", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [740]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [741]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [742]
 		{
-			"Now filtering: all messages", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [743]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [744]
 		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [745]
 		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [746]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
 		}, -- [747]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [748]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [749]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [750]
 		{
-			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [751]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [752]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [753]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
 		}, -- [754]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [755]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Texture filtering mode updated. Pending GxRestart", -- [1]
 			0, -- [2]
 		}, -- [756]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [757]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"Outline mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [758]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Physics interaction level changed to 1", -- [1]
 			0, -- [2]
 		}, -- [759]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [760]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
+			"Resample quality changed to 0", -- [1]
 			0, -- [2]
 		}, -- [761]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"MSAA set to 8 color samples, 8 coverage samples", -- [1]
 			0, -- [2]
 		}, -- [762]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-6-19\"", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [763]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [764]
 		{
-			"NetClient::HandleConnect()\n", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [765]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"World preload non critical disabled.", -- [1]
 			0, -- [2]
 		}, -- [766]
 		{
-			"Got new connection 2", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [767]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [768]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [769]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [770]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [771]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [772]
 		{
-			"[WowEntitlements] [BNetAccount-0-0000030C6B47] [WowAccount-0-0000003AE5B6] Initialized with 48 entitlements.", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [773]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [774]
 		{
-			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
 		}, -- [775]
 		{
-			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
 		}, -- [776]
 		{
-			"Got new connection 3", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [777]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [778]
 		{
-			"Proficiency in item class 2 set to 0x0000000480", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [779]
 		{
-			"Proficiency in item class 2 set to 0x0000008480", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [780]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [781]
 		{
-			"Proficiency in item class 2 set to 0x000000c480", -- [1]
+			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [782]
 		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [783]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [784]
 		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [785]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [786]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [787]
 		{
-			"Time set to 3/1/2020 (Sun) 16:17", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [788]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [789]
 		{
-			"Time played:", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [790]
 		{
-			"Total: 49d 1h 37m 14s", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [791]
 		{
-			"Level: 0d 7h 18m 28s", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
 			0, -- [2]
 		}, -- [792]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [793]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-6-19\"", -- [1]
 			0, -- [2]
 		}, -- [794]
 		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [795]
 		{
-			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [796]
 		{
-			"Got new connection 3", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [797]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"Got new connection 2", -- [1]
 			0, -- [2]
 		}, -- [798]
 		{
-			"Proficiency in item class 2 set to 0x0000000081", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [799]
 		{
-			"Proficiency in item class 2 set to 0x0000000085", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [800]
 		{
-			"Proficiency in item class 2 set to 0x000000008d", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [801]
 		{
-			"Proficiency in item class 2 set to 0x000000018d", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [802]
 		{
-			"Proficiency in item class 2 set to 0x000000058d", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [803]
 		{
-			"Proficiency in item class 2 set to 0x000000058f", -- [1]
+			"[WowEntitlements] [BNetAccount-0-0000030C6B47] [WowAccount-0-0000003AE5B6] Initialized with 48 entitlements.", -- [1]
 			0, -- [2]
 		}, -- [804]
 		{
-			"Proficiency in item class 2 set to 0x000000858f", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [805]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
-			0, -- [2]
+			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
 		}, -- [806]
 		{
-			"Proficiency in item class 2 set to 0x000000c58f", -- [1]
-			0, -- [2]
+			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
 		}, -- [807]
 		{
-			"Proficiency in item class 2 set to 0x000004c58f", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [808]
 		{
-			"Proficiency in item class 2 set to 0x000004c5cf", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [809]
 		{
-			"Proficiency in item class 2 set to 0x000014c5cf", -- [1]
+			"Proficiency in item class 2 set to 0x0000000480", -- [1]
 			0, -- [2]
 		}, -- [810]
 		{
-			"Proficiency in item class 4 set to 0x0000000029", -- [1]
+			"Proficiency in item class 2 set to 0x0000008480", -- [1]
 			0, -- [2]
 		}, -- [811]
 		{
-			"Proficiency in item class 4 set to 0x000000002d", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [812]
 		{
-			"Proficiency in item class 4 set to 0x000000002f", -- [1]
+			"Proficiency in item class 2 set to 0x000000c480", -- [1]
 			0, -- [2]
 		}, -- [813]
 		{
-			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [814]
 		{
-			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [815]
 		{
-			"Proficiency in item class 4 set to 0x000000002f", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [816]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [817]
 		{
-			"Time set to 3/1/2020 (Sun) 16:23", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [818]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Time set to 3/2/2020 (Mon) 16:17", -- [1]
 			0, -- [2]
 		}, -- [819]
 		{
-			"Time played:", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [820]
 		{
-			"Total: 433d 21h 11m 32s", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [821]
 		{
-			"Level: 30d 13h 14m 12s", -- [1]
+			"Total: 49d 1h 42m 27s", -- [1]
 			0, -- [2]
 		}, -- [822]
 		{
-			"World transfer pending...", -- [1]
+			"Level: 0d 7h 23m 41s", -- [1]
 			0, -- [2]
 		}, -- [823]
 		{
-			"Got new connection 3", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [824]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [825]
 		{
-			"World transfer pending...", -- [1]
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
 		}, -- [826]
 		{
-			"Got new connection 3", -- [1]
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
 			0, -- [2]
 		}, -- [827]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [828]
 		{
-			"World transfer pending...", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [829]
 		{
-			"Got new connection 3", -- [1]
+			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
 		}, -- [830]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Proficiency in item class 2 set to 0x0000000085", -- [1]
 			0, -- [2]
 		}, -- [831]
 		{
-			"Weather changed to 5, intensity 1.000000\n", -- [1]
+			"Proficiency in item class 2 set to 0x000000008d", -- [1]
 			0, -- [2]
 		}, -- [832]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Proficiency in item class 2 set to 0x000000018d", -- [1]
 			0, -- [2]
 		}, -- [833]
 		{
-			"World transfer pending...", -- [1]
+			"Proficiency in item class 2 set to 0x000000058d", -- [1]
 			0, -- [2]
 		}, -- [834]
 		{
-			"Got new connection 3", -- [1]
+			"Proficiency in item class 2 set to 0x000000058f", -- [1]
 			0, -- [2]
 		}, -- [835]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Proficiency in item class 2 set to 0x000000858f", -- [1]
 			0, -- [2]
 		}, -- [836]
 		{
-			"World transfer pending...", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [837]
 		{
-			"Got new connection 3", -- [1]
+			"Proficiency in item class 2 set to 0x000000c58f", -- [1]
 			0, -- [2]
 		}, -- [838]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Proficiency in item class 2 set to 0x000004c58f", -- [1]
 			0, -- [2]
 		}, -- [839]
 		{
-			"World transfer pending...", -- [1]
+			"Proficiency in item class 2 set to 0x000004c5cf", -- [1]
 			0, -- [2]
 		}, -- [840]
 		{
-			"Got new connection 3", -- [1]
+			"Proficiency in item class 2 set to 0x000014c5cf", -- [1]
 			0, -- [2]
 		}, -- [841]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Proficiency in item class 4 set to 0x0000000029", -- [1]
 			0, -- [2]
 		}, -- [842]
 		{
-			"Got new connection 3", -- [1]
+			"Proficiency in item class 4 set to 0x000000002d", -- [1]
 			0, -- [2]
 		}, -- [843]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Proficiency in item class 4 set to 0x000000002f", -- [1]
 			0, -- [2]
 		}, -- [844]
 		{
-			"Got new connection 3", -- [1]
+			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
 			0, -- [2]
 		}, -- [845]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
 			0, -- [2]
 		}, -- [846]
 		{
-			"Got new connection 3", -- [1]
+			"Proficiency in item class 4 set to 0x000000002f", -- [1]
 			0, -- [2]
 		}, -- [847]
 		{
@@ -3395,427 +3396,427 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [848]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Time set to 3/2/2020 (Mon) 16:34", -- [1]
 			0, -- [2]
 		}, -- [849]
 		{
-			"Sorting particles normally.", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [850]
 		{
-			"Multithreaded rendering enabled.", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [851]
 		{
-			"Multithreaded BeginDraw enabled.", -- [1]
+			"Total: 433d 22h 22m 17s", -- [1]
 			0, -- [2]
 		}, -- [852]
 		{
-			"Multithread shadows changed to 1.", -- [1]
+			"Level: 30d 14h 24m 57s", -- [1]
 			0, -- [2]
 		}, -- [853]
 		{
-			"Multithreaded prepass enabled.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [854]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [855]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [856]
 		{
-			"Multithreaded alpha M2 pass enabled.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [857]
 		{
-			"Multithreaded opaque WMO pass enabled.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [858]
 		{
-			"Multithreaded terrain pass enabled.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [859]
 		{
-			"Water detail changed to 3", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [860]
 		{
-			"Ripple detail changed to 2", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [861]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [862]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [863]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [864]
 		{
-			"Refraction mode changed to 2", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [865]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [866]
 		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [867]
 		{
-			"Volume fog enabled.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [868]
 		{
-			"Projected textures enabled.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [869]
 		{
-			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [870]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"Dissolve Effect ID 1075 has invalid fade out time. This will result in the record beign ignore and a regular fade out being applied to the creature.", -- [1]
 			0, -- [2]
 		}, -- [871]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [872]
 		{
-			"SSAO mode set to 4", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [873]
 		{
-			"Depth Based Opacity Enabled", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [874]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [875]
 		{
-			"Texture filtering mode updated. Pending GxRestart", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [876]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"Weather changed to 5, intensity 1.000000\n", -- [1]
 			0, -- [2]
 		}, -- [877]
 		{
-			"Outline mode changed to 2", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [878]
 		{
-			"Physics interaction level changed to 1", -- [1]
+			"Weather changed to 2, intensity 0.500000\n", -- [1]
 			0, -- [2]
 		}, -- [879]
 		{
-			"Render scale changed to 1", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [880]
 		{
-			"Resample quality changed to 0", -- [1]
+			"Weather changed to 2, intensity 0.500000\n", -- [1]
 			0, -- [2]
 		}, -- [881]
 		{
-			"MSAA set to 8 color samples, 8 coverage samples", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [882]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [883]
 		{
-			"World preload object sort enabled.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [884]
 		{
-			"World load object sort enabled.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [885]
 		{
-			"World preload non critical disabled.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [886]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [887]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [888]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [889]
 		{
-			"Error display disabled", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [890]
 		{
-			"Error display shown", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [891]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [892]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [893]
 		{
-			"Now filtering: all messages", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [894]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [895]
 		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [896]
 		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Weather changed to 5, intensity 0.294506\n", -- [1]
 			0, -- [2]
 		}, -- [897]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [898]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
+			"Weather changed to 5, intensity 0.262250\n", -- [1]
 			0, -- [2]
 		}, -- [899]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [900]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"Weather changed to 5, intensity 0.289057\n", -- [1]
 			0, -- [2]
 		}, -- [901]
 		{
-			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
+			"Weather changed to 5, intensity 0.207893\n", -- [1]
 			0, -- [2]
 		}, -- [902]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [903]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Weather changed to 5, intensity 0.291945\n", -- [1]
 			0, -- [2]
 		}, -- [904]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [905]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
+			"Weather changed to 5, intensity 0.201955\n", -- [1]
 			0, -- [2]
 		}, -- [906]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [907]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"Weather changed to 5, intensity 0.275399\n", -- [1]
 			0, -- [2]
 		}, -- [908]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [909]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [910]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [911]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [912]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [913]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-6-19\"", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [914]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"Weather changed to 5, intensity 0.248347\n", -- [1]
 			0, -- [2]
 		}, -- [915]
 		{
-			"NetClient::HandleConnect()\n", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [916]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"Weather changed to 5, intensity 0.239151\n", -- [1]
 			0, -- [2]
 		}, -- [917]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [918]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"Weather changed to 5, intensity 0.265708\n", -- [1]
 			0, -- [2]
 		}, -- [919]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"Weather changed to 5, intensity 0.208895\n", -- [1]
 			0, -- [2]
 		}, -- [920]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [921]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [922]
 		{
-			"[WowEntitlements] [BNetAccount-0-0000030C6B47] [WowAccount-0-0000003AE5B6] Initialized with 48 entitlements.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [923]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [924]
 		{
-			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
+			"World transfer pending...", -- [1]
+			0, -- [2]
 		}, -- [925]
 		{
-			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
+			"Got new connection 3", -- [1]
+			0, -- [2]
 		}, -- [926]
 		{
-			"Got new connection 3", -- [1]
+			"Weather changed to 5, intensity 0.257217\n", -- [1]
 			0, -- [2]
 		}, -- [927]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [928]
 		{
-			"Proficiency in item class 2 set to 0x0000000081", -- [1]
+			"Weather changed to 5, intensity 0.234866\n", -- [1]
 			0, -- [2]
 		}, -- [929]
 		{
-			"Proficiency in item class 2 set to 0x0000000085", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [930]
 		{
-			"Proficiency in item class 2 set to 0x000000008d", -- [1]
+			"Weather changed to 5, intensity 0.270461\n", -- [1]
 			0, -- [2]
 		}, -- [931]
 		{
-			"Proficiency in item class 2 set to 0x000000018d", -- [1]
+			"Weather changed to 5, intensity 0.297434\n", -- [1]
 			0, -- [2]
 		}, -- [932]
 		{
-			"Proficiency in item class 2 set to 0x000000058d", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [933]
 		{
-			"Proficiency in item class 2 set to 0x000000058f", -- [1]
+			"Weather changed to 5, intensity 0.234039\n", -- [1]
 			0, -- [2]
 		}, -- [934]
 		{
-			"Proficiency in item class 2 set to 0x000000858f", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [935]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"Weather changed to 5, intensity 0.213344\n", -- [1]
 			0, -- [2]
 		}, -- [936]
 		{
-			"Proficiency in item class 2 set to 0x000000c58f", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [937]
 		{
-			"Proficiency in item class 2 set to 0x000004c58f", -- [1]
+			"Weather changed to 5, intensity 0.236522\n", -- [1]
 			0, -- [2]
 		}, -- [938]
 		{
-			"Proficiency in item class 2 set to 0x000004c5cf", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [939]
 		{
-			"Proficiency in item class 2 set to 0x000014c5cf", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [940]
 		{
-			"Proficiency in item class 4 set to 0x0000000029", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [941]
 		{
-			"Proficiency in item class 4 set to 0x000000002d", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [942]
 		{
-			"Proficiency in item class 4 set to 0x000000002f", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [943]
 		{
-			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [944]
 		{
-			"Proficiency in item class 2 set to 0x000014e5cf", -- [1]
+			"Weather changed to 5, intensity 0.246385\n", -- [1]
 			0, -- [2]
 		}, -- [945]
 		{
-			"Proficiency in item class 4 set to 0x000000002f", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [946]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Weather changed to 5, intensity 0.292370\n", -- [1]
 			0, -- [2]
 		}, -- [947]
 		{
-			"Time set to 3/1/2020 (Sun) 18:45", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [948]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Weather changed to 5, intensity 0.275708\n", -- [1]
 			0, -- [2]
 		}, -- [949]
 		{
-			"Time played:", -- [1]
+			"Weather changed to 5, intensity 0.265821\n", -- [1]
 			0, -- [2]
 		}, -- [950]
 		{
-			"Total: 433d 21h 40m 40s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [951]
 		{
-			"Level: 30d 13h 43m 20s", -- [1]
+			"Weather changed to 5, intensity 0.235986\n", -- [1]
 			0, -- [2]
 		}, -- [952]
 		{
-			"Got new connection 3", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [953]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [954]
 		{
@@ -3827,107 +3828,107 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [956]
 		{
-			"PetBattle Initial Update", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [957]
 		{
-			"   Player 0 Player-1169-06A1ACBD  frontPet 0 ", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [958]
 		{
-			"     Slot   0, Species 2872, Health 1215, Level  20, DisplayID 91811, CollarID 0", -- [1]
+			"Weather changed to 5, intensity 0.234707\n", -- [1]
 			0, -- [2]
 		}, -- [959]
 		{
-			"        abilities : 1238, 2102, 2360,", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [960]
 		{
-			"     Slot   1, Species 1155, Health 1465, Level  21, DisplayID 46922, CollarID 0", -- [1]
+			"Weather changed to 5, intensity 0.216914\n", -- [1]
 			0, -- [2]
 		}, -- [961]
 		{
-			"        abilities : 406, 453, 814,", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [962]
 		{
-			"     Slot   2, Species 256, Health 1257, Level  20, DisplayID 32031, CollarID 0", -- [1]
+			"Weather changed to 5, intensity 0.218648\n", -- [1]
 			0, -- [2]
 		}, -- [963]
 		{
-			"        abilities : 202, 278, 387,", -- [1]
+			"Weather changed to 5, intensity 0.252887\n", -- [1]
 			0, -- [2]
 		}, -- [964]
 		{
-			"   Player 1 0000000000000000  frontPet 0 ", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [965]
 		{
-			"     Slot   0, Species 2854, Health 2609, Level  21, DisplayID 92438, CollarID 0", -- [1]
+			"Weather changed to 5, intensity 0.262225\n", -- [1]
 			0, -- [2]
 		}, -- [966]
 		{
-			"        abilities : 1938, 1731, 2358,", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [967]
 		{
-			"<waiting for PetBattleReadyToStart command>", -- [1]
+			"Weather changed to 5, intensity 0.264602\n", -- [1]
 			0, -- [2]
 		}, -- [968]
 		{
-			"---Battle Begin---", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [969]
 		{
-			"  PetSwap P0 PET 0", -- [1]
+			"Weather changed to 5, intensity 0.268032\n", -- [1]
 			0, -- [2]
 		}, -- [970]
 		{
-			"  PetSwap P1 PET 0", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [971]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [972]
 		{
-			"---Replacements made---", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [973]
 		{
-			"  P0 PET 0 performs PET_SWAP       on P0 PET 1 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [974]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [975]
 		{
-			"---Replacements made---", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [976]
 		{
-			"  P0 PET 1 performs PET_SWAP       on P0 PET 2 : () :Ability(-1), Turn(-1), Effect(0), Flags(0)", -- [1]
+			"Weather changed to 5, intensity 0.270789\n", -- [1]
 			0, -- [2]
 		}, -- [977]
 		{
-			"<waiting for PetBattleInput command>", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [978]
 		{
-			"---BattleFinished: You Lost ---", -- [1]
+			"Weather changed to 5, intensity 0.242008\n", -- [1]
 			0, -- [2]
 		}, -- [979]
 		{
-			"<waiting for PetBattleInput final>", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [980]
 		{
-			"---ClientPetBattleFinished---", -- [1]
+			"Weather changed to 5, intensity 0.229758\n", -- [1]
 			0, -- [2]
 		}, -- [981]
 		{
-			"Got new connection 3", -- [1]
+			"Weather changed to 5, intensity 0.256906\n", -- [1]
 			0, -- [2]
 		}, -- [982]
 		{
@@ -3935,67 +3936,67 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [983]
 		{
-			"World transfer pending...", -- [1]
+			"Weather changed to 5, intensity 0.279941\n", -- [1]
 			0, -- [2]
 		}, -- [984]
 		{
-			"Got new connection 3", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [985]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Weather changed to 5, intensity 0.201034\n", -- [1]
 			0, -- [2]
 		}, -- [986]
 		{
-			"World transfer pending...", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [987]
 		{
-			"Got new connection 3", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [988]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [989]
 		{
-			"Weather changed to 5, intensity 1.000000\n", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [990]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [991]
 		{
-			"World transfer pending...", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [992]
 		{
-			"Got new connection 3", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [993]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [994]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [995]
 		{
-			"World preload non critical disabled.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [996]
 		{
-			"Time played:", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [997]
 		{
-			"Total: 433d 22h 21m 46s", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [998]
 		{
-			"Level: 30d 14h 24m 26s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [999]
 		{
@@ -4059,7 +4060,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [1014]
 		{
-			"Time set to 3/1/2020 (Sun) 19:26", -- [1]
+			"Time set to 3/2/2020 (Mon) 19:58", -- [1]
 			0, -- [2]
 		}, -- [1015]
 		{
@@ -4071,17 +4072,16 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [1017]
 		{
-			"Total: 49d 1h 41m 41s", -- [1]
+			"Total: 49d 1h 58m 34s", -- [1]
 			0, -- [2]
 		}, -- [1018]
 		{
-			"Level: 0d 7h 22m 55s", -- [1]
+			"Level: 0d 7h 39m 48s", -- [1]
 			0, -- [2]
 		}, -- [1019]
 	},
-	["height"] = 299.9998168945313,
-	["fontHeight"] = 14,
 	["isShown"] = false,
+	["fontHeight"] = 14,
 	["commandHistory"] = {
 	},
 }
