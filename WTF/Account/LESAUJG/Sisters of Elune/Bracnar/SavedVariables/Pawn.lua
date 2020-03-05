@@ -74,8 +74,8 @@ PawnOptions = {
 		}, -- [14]
 		{
 			["ID"] = 169223,
-			["Level"] = 492,
-			["Link"] = "|cffff8000|Hitem:169223::::::::120:253::11:2:6283:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
+			["Level"] = 494,
+			["Link"] = "|cffff8000|Hitem:169223::::::::120:253::11:2:6284:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 158090,
