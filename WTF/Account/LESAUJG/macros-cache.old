@@ -4,6 +4,13 @@ VER 3 000000000000001E "_Clear Target" "Ability_CheapShot"
 /petfollow
 /petpassive
 END
+VER 3 00000000000000AB "df" "INV_MISC_QUESTIONMARK"
+#showtooltip item:174927
+/stopmacro [channeling:Catching]
+/cleartarget
+/tar Ivory Cloud Serpent
+/use Zan-Tien Lasso
+END
 VER 3 0000000000000099 "Fish" "INV_MISC_QUESTIONMARK"
 /equipset Fishing
 /use Fishing
