@@ -205,7 +205,7 @@ Details_RaidInfo-EmeraldNightmare: enabled
 Details_RaidInfo-Nighthold: enabled
 Details_RaidInfo-TrialOfValor: enabled
 FactionAddict: enabled
-NPCScan: enabled
+NPCScan: disabled
 RaidAchievement_LegionHeroics: enabled
 RaidAchievement_LegionRaids: enabled
 Bagnon: disabled
