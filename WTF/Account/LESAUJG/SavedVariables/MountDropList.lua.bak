@@ -20,7 +20,7 @@ MountDropListDB = {
 	["profiles"] = {
 		["Default"] = {
 			["minimap"] = {
-				["minimapPos"] = 318.856746299967,
+				["minimapPos"] = 304.4840994374415,
 			},
 		},
 	},
