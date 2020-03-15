@@ -248,3 +248,4 @@ DBM-Nyalotha: enabled
 DBM-EternalPalace: enabled
 HandyNotes_VisionsOfNZoth: enabled
 WeakAurasArchive: enabled
+SilverDragon: disabled

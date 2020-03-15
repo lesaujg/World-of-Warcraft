@@ -132,3 +132,4 @@ DBM-Uldir: disabled
 DBM-Ulduar: disabled
 DBM-VoA: disabled
 DBM-WorldEvents: disabled
+SilverDragon: disabled

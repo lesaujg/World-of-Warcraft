@@ -89,3 +89,4 @@ MrrlsItemInformation: disabled
 SmexyMats: enabled
 DBM-Nyalotha: disabled
 DBM-EternalPalace: disabled
+SilverDragon: disabled
