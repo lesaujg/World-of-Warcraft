@@ -5,12 +5,12 @@ Anchor: LEFT
 X: 250
 Y: 6
 W: 250
-H: 499
+H: 498
 Frame: BaudManifestDisplay3
 FrameLevel: 1
-Anchor: CENTER
-X: -135
-Y: 0
+Anchor: RIGHT
+X: -200
+Y: 70
 W: 250
 H: 417
 Frame: PawnUIFrame
