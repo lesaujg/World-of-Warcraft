@@ -38,12 +38,16 @@ SmexyMatsDB = {
 				["Archaeology"] = {
 				},
 				["Engineering"] = {
+					["Clothgar"] = {
+					},
 				},
 				["Inscription"] = {
 				},
 				["Herbalism"] = {
 				},
 				["Enchanting"] = {
+					["Clothgar"] = {
+					},
 				},
 			},
 			["Neutral"] = {
