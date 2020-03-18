@@ -22,8 +22,8 @@ W: 800
 H: 525
 Frame: BaudManifestDisplay1
 FrameLevel: 1
-Anchor: BOTTOM
-X: 73
-Y: 34
+Anchor: CENTER
+X: 252
+Y: -55
 W: 310
 H: 725

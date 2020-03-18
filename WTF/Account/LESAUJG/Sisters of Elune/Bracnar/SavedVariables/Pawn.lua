@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0323,
-	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
-	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 171014,
@@ -12,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 497,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:6316:4932:4933:1634:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 499,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:6316:4932:4933:1636:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173838,
@@ -86,7 +83,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:158090::::::::120:253::28:8:4803:6578:6579:6482:6470:6513:1637:4786:::|h[Ironcrest Longrifle]|h|r",
 		}, -- [16]
 	},
-	["LastKeybindingsSet"] = 1,
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -123,6 +122,7 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",
