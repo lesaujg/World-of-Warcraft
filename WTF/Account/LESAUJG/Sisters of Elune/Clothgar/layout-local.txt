@@ -1,15 +1,1 @@
 Version: 1
-Frame: ScriptErrorsFrame
-FrameLevel: 0
-Anchor: LEFT
-X: 147
-Y: -17
-W: 384
-H: 260
-Frame: BaudManifestDisplay1
-FrameLevel: 1
-Anchor: RIGHT
-X: -32
-Y: -83
-W: 250
-H: 417
