@@ -13,9 +13,9 @@ PawnOptions = {
 			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:6316:4932:4933:1636:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 173838,
-			["Level"] = 450,
-			["Link"] = "|cffa335ee|Hitem:173838::::::::120:253::28:4:1502:4786:6506:4775:::|h[Nefarious Tormentor's Epaulets]|h|r",
+			["ID"] = 173451,
+			["Level"] = 460,
+			["Link"] = "|cffa335ee|Hitem:173451::::::::120:255::53:3:1517:4786:6509:::|h[Nefarious Tormentor's Spaulders]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -39,9 +39,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:165449::::::::120:253::23:6:5845:6578:6579:6541:1577:4786:::|h[Kaldorei Archer's Greaves]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 158053,
-			["Level"] = 445,
-			["Link"] = "|cffa335ee|Hitem:158053::::::::120:253::28:5:4803:6516:6513:1637:4786:::|h[Deadwash Bracers]|h|r",
+			["ID"] = 173473,
+			["Level"] = 465,
+			["Link"] = "|cffa335ee|Hitem:173473::::::::120:254::54:5:6412:6515:6516:1522:4786:::|h[Nefarious Tormentor's Bracers]|h|r",
 		}, -- [9]
 		{
 			["ID"] = 173448,
@@ -74,8 +74,8 @@ PawnOptions = {
 		}, -- [14]
 		{
 			["ID"] = 169223,
-			["Level"] = 496,
-			["Link"] = "|cffff8000|Hitem:169223::::::::120:253::11:2:6285:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
+			["Level"] = 500,
+			["Link"] = "|cffff8000|Hitem:169223::::::::120:253::11:2:6286:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 158090,
