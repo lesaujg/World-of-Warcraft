@@ -4,6 +4,9 @@ VER 3 000000000000001E "_Clear Target" "Ability_CheapShot"
 /petfollow
 /petpassive
 END
+VER 3 00000000000000AD "Alpaca" "136224"
+/tar Elusive Quickhoof
+END
 VER 3 00000000000000AB "df" "INV_MISC_QUESTIONMARK"
 #showtooltip item:174927
 /stopmacro [channeling:Catching]
@@ -14,6 +17,9 @@ END
 VER 3 0000000000000099 "Fish" "INV_MISC_QUESTIONMARK"
 /equipset Fishing
 /use Fishing
+END
+VER 3 00000000000000AC "Heal Battle Pets" "INV_MISC_QUESTIONMARK"
+/cast [btn:2] Battle Pet Bandage; Revive Battle Pets
 END
 VER 3 0000000000000087 "RandomMount" "INV_MISC_QUESTIONMARK"
 /petpassive

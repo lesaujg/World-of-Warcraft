@@ -4,6 +4,12 @@ VER 3 000000000000001E "_Clear Target" "Ability_CheapShot"
 /petfollow
 /petpassive
 END
+VER 3 00000000000000AD "Alpaca" "136224"
+/cleartarget
+/tar Elusive Quickhoof
+/stopmacro [noexists]
+/run local mp = C_Map.GetPlayerMapPosition(C_Map.GetBestMapForUnit("player"), "player"); SendChatMessage("%t is at " .. tostring(floor(mp.x * 100)) .. ", " .. tostring(floor(mp.y * 100)), "RAID")
+END
 VER 3 00000000000000AB "df" "INV_MISC_QUESTIONMARK"
 #showtooltip item:174927
 /stopmacro [channeling:Catching]

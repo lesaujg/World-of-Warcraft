@@ -228,4 +228,4 @@ DBM-Party-BfA: disabled
 DBM-Nyalotha: disabled
 DBM-EternalPalace: disabled
 DBM-Uldir: disabled
-SilverDragon: disabled
+SilverDragon: enabled
