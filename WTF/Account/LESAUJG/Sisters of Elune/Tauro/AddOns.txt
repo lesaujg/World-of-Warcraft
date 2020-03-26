@@ -90,3 +90,4 @@ SmexyMats: enabled
 DBM-Nyalotha: disabled
 DBM-EternalPalace: disabled
 SilverDragon: enabled
+HandyNotes_VisionsOfNZoth: disabled
