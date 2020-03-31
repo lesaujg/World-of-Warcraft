@@ -25,7 +25,7 @@ FrameLevel: 1
 Anchor: LEFT
 X: 250
 Y: 6
-W: 250
+W: 394
 H: 498
 Frame: BaudManifestDisplay1
 FrameLevel: 1

@@ -46,8 +46,6 @@ SmexyMatsDB = {
 				["Engineering"] = {
 					["Bracnar"] = {
 					},
-					["Clothgar"] = {
-					},
 				},
 				["Inscription"] = {
 				},
@@ -55,8 +53,6 @@ SmexyMatsDB = {
 				},
 				["Enchanting"] = {
 					["Bracnar"] = {
-					},
-					["Clothgar"] = {
 					},
 				},
 			},
