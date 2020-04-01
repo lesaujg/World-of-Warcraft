@@ -28,7 +28,7 @@ FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
 		["date"] = "Tuesday 3/31",
-		["rows"] = 4,
+		["rows"] = 9,
 	}, -- [1]
 	{
 		["date"] = "Monday 3/30",
@@ -109,10 +109,15 @@ FactionAddictLogData = {
 }
 FactionAddictLogEntries = {
 	{
-		["The Nightfallen"] = 2200,
 		["Armies of Legionfall"] = 150,
-		["The Wardens"] = 150,
+		["Syndicate"] = -175,
+		["The Nightfallen"] = 2200,
+		["Uldum Accord"] = 2150,
 		["Highmountain Tribe"] = 150,
+		["Ravenholdt"] = 35,
+		["The Wardens"] = 150,
+		["Army of the Light"] = 1000,
+		["7th Legion"] = 2600,
 	}, -- [1]
 	{
 		["Rustbolt Resistance"] = 850,
@@ -337,7 +342,7 @@ FactionAddictConfigIsInactive = {
 	[990] = false,
 	[989] = false,
 	[1273] = false,
-	[2156] = false,
+	[1337] = false,
 	[1849] = false,
 	[2157] = false,
 	[2417] = false,
@@ -362,16 +367,16 @@ FactionAddictConfigIsInactive = {
 	[1388] = false,
 	[1279] = false,
 	[69] = false,
-	[1280] = false,
-	[1216] = false,
 	[81] = false,
+	[1216] = false,
+	[2045] = false,
 	[2170] = false,
 	[1848] = false,
 	[93] = false,
 	[1281] = false,
 	[1345] = false,
 	[1090] = false,
-	[2045] = false,
+	[1280] = false,
 	[1282] = false,
 	[1091] = false,
 	[270] = false,
@@ -379,8 +384,8 @@ FactionAddictConfigIsInactive = {
 	[1283] = false,
 	[1085] = false,
 	[1156] = false,
+	[2156] = false,
 	[1847] = false,
-	[1337] = false,
 	[1714] = false,
 	[1738] = false,
 	[1731] = false,
