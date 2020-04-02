@@ -116,10 +116,10 @@ Shrapnel: disabled
 Ovale: disabled
 Quartz: disabled
 BaudManifest: enabled
-AskMrRobot: disabled
+AskMrRobot: enabled
 Factionizer: disabled
 GTFO: disabled
-HandyNotes: disabled
+HandyNotes: enabled
 MacroToolkit: disabled
 MasterPlanA: enabled
 Pawn: disabled
