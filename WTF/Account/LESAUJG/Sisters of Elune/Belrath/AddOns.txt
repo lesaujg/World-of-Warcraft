@@ -139,7 +139,7 @@ BaudManifest: enabled
 AskMrRobot: disabled
 Factionizer: disabled
 GTFO: disabled
-HandyNotes: disabled
+HandyNotes: enabled
 MacroToolkit: disabled
 MasterPlanA: enabled
 Pawn: disabled
