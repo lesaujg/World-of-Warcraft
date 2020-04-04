@@ -32,12 +32,8 @@ SmexyMatsDB = {
 				["Fishing"] = {
 				},
 				["Mining"] = {
-					["Belrath"] = {
-					},
 				},
 				["Cooking"] = {
-					["Belrath"] = {
-					},
 				},
 				["Archaeology"] = {
 				},
@@ -48,8 +44,6 @@ SmexyMatsDB = {
 					},
 				},
 				["Herbalism"] = {
-					["Belrath"] = {
-					},
 				},
 				["Inscription"] = {
 				},
