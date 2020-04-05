@@ -92,4 +92,4 @@ DBM-VoA: disabled
 DBM-WorldEvents: disabled
 HandyNotes_MechagonAndNazjatar: disabled
 SilverDragon: enabled
-HandyNotes_VisionsOfNZoth: disabled
+HandyNotes_VisionsOfNZoth: enabled

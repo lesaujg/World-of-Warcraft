@@ -132,4 +132,4 @@ DBM-Ulduar: disabled
 DBM-VoA: disabled
 DBM-WorldEvents: disabled
 SilverDragon: enabled
-HandyNotes_VisionsOfNZoth: disabled
+HandyNotes_VisionsOfNZoth: enabled
