@@ -32,6 +32,8 @@ SmexyMatsDB = {
 				["Fishing"] = {
 				},
 				["Mining"] = {
+					["Torinar"] = {
+					},
 				},
 				["Cooking"] = {
 				},
@@ -44,6 +46,8 @@ SmexyMatsDB = {
 					},
 				},
 				["Herbalism"] = {
+					["Torinar"] = {
+					},
 				},
 				["Inscription"] = {
 				},
