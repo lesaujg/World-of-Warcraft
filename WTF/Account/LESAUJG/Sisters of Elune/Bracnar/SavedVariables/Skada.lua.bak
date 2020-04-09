@@ -12,17 +12,15 @@ SkadaPerCharDB = {
 		["damage"] = 58592892,
 		["players"] = {
 			{
-				["healingabsorbed"] = 60003,
+				["last"] = 1586387099,
 				["class"] = "HUNTER",
+				["healingabsorbed"] = 60003,
+				["ffdamagedone"] = 0,
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 3,
-				["ffdamagedone"] = 0,
-				["ccbreaks"] = 0,
-				["time"] = 1260,
-				["interrupts"] = 4,
 				["healingspells"] = {
 					["Purification Protocol"] = {
 						["shielding"] = 0,
@@ -157,6 +155,9 @@ SkadaPerCharDB = {
 						["hits"] = 106,
 					},
 				},
+				["ccbreaks"] = 0,
+				["time"] = 1260,
+				["interrupts"] = 4,
 				["shielding"] = 0,
 				["deathlog"] = {
 					{
@@ -280,6 +281,8 @@ SkadaPerCharDB = {
 						["spellid"] = 295310,
 					}, -- [15]
 					["pos"] = 15,
+				},
+				["ffdamagedonetargets"] = {
 				},
 				["damage"] = 58592892,
 				["damagespells"] = {
@@ -541,8 +544,7 @@ SkadaPerCharDB = {
 						["damage"] = 5732070,
 					},
 				},
-				["ffdamagedonetargets"] = {
-				},
+				["healing"] = 11890612,
 				["damagetaken"] = 8039860,
 				["power"] = {
 					[2] = {
@@ -565,8 +567,56 @@ SkadaPerCharDB = {
 					},
 				},
 				["id"] = "Player-1169-06A1ACBD",
-				["maxhp"] = 412240,
-				["healing"] = 11890612,
+				["first"] = 1586387072,
+				["healed"] = {
+					["Pet-0-3132-2212-25646-76946-0102B8B3D6"] = {
+						["role"] = "NONE",
+						["name"] = "McBurney",
+						["amount"] = 1478207,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+					["Pet-0-3781-1-63-76946-0102B8B3D6"] = {
+						["role"] = "NONE",
+						["name"] = "McBurney",
+						["amount"] = 3208881,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+					["Pet-0-3132-2212-25646-76946-0302B8B3D6"] = {
+						["role"] = "NONE",
+						["name"] = "McBurney",
+						["amount"] = 1854178,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+					["Player-1169-06A1ACBD"] = {
+						["role"] = "NONE",
+						["name"] = "Bracnar",
+						["amount"] = 4540643,
+						["class"] = "HUNTER",
+						["shielding"] = 0,
+					},
+					["Pet-0-3132-2212-25646-76946-0202B8B3D6"] = {
+						["role"] = "NONE",
+						["name"] = "McBurney",
+						["amount"] = 805675,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+					["Creature-0-3132-2212-25646-62005-00000D470F"] = {
+						["amount"] = 1375,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["shielding"] = 0,
+					},
+					["Creature-0-3132-2212-25646-62005-00000D445D"] = {
+						["amount"] = 1653,
+						["role"] = "NONE",
+						["name"] = "Beast",
+						["shielding"] = 0,
+					},
+				},
 				["damagetakenspells"] = {
 					["Charge"] = {
 						["crushing"] = 0,
@@ -1109,59 +1159,11 @@ SkadaPerCharDB = {
 						["damage"] = 2048770,
 					},
 				},
-				["healed"] = {
-					["Pet-0-3132-2212-25646-76946-0102B8B3D6"] = {
-						["role"] = "NONE",
-						["name"] = "McBurney",
-						["amount"] = 1478207,
-						["class"] = "WARRIOR",
-						["shielding"] = 0,
-					},
-					["Pet-0-3781-1-63-76946-0102B8B3D6"] = {
-						["role"] = "NONE",
-						["name"] = "McBurney",
-						["amount"] = 3208881,
-						["class"] = "WARRIOR",
-						["shielding"] = 0,
-					},
-					["Pet-0-3132-2212-25646-76946-0302B8B3D6"] = {
-						["role"] = "NONE",
-						["name"] = "McBurney",
-						["amount"] = 1854178,
-						["class"] = "WARRIOR",
-						["shielding"] = 0,
-					},
-					["Player-1169-06A1ACBD"] = {
-						["role"] = "NONE",
-						["name"] = "Bracnar",
-						["amount"] = 4540643,
-						["class"] = "HUNTER",
-						["shielding"] = 0,
-					},
-					["Pet-0-3132-2212-25646-76946-0202B8B3D6"] = {
-						["role"] = "NONE",
-						["name"] = "McBurney",
-						["amount"] = 805675,
-						["class"] = "WARRIOR",
-						["shielding"] = 0,
-					},
-					["Creature-0-3132-2212-25646-62005-00000D470F"] = {
-						["amount"] = 1375,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["shielding"] = 0,
-					},
-					["Creature-0-3132-2212-25646-62005-00000D445D"] = {
-						["amount"] = 1653,
-						["role"] = "NONE",
-						["name"] = "Beast",
-						["shielding"] = 0,
-					},
-				},
 				["overhealing"] = 13549570,
+				["maxhp"] = 412240,
 				["name"] = "Bracnar",
-				["alertCount"] = 3,
-				["alertDamage"] = 226512,
+				["alertCount"] = 7,
+				["alertDamage"] = 278788,
 				["auras"] = {
 					["McBurney: Dash"] = {
 						["uptime"] = 446,
@@ -1446,8 +1448,16 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 					["Fail"] = {
-						["alertDamage"] = 226512,
+						["alertDamage"] = 278788,
 						["spell"] = {
+							["Lightning Strike"] = {
+								["min"] = -10,
+								["alertCount"] = 4,
+								["id"] = 310066,
+								["alertID"] = "Fail",
+								["max"] = 26792,
+								["alertDamage"] = 52276,
+							},
 							["Break Spirit"] = {
 								["min"] = 74844,
 								["alertCount"] = 3,
@@ -1458,7 +1468,7 @@ SkadaPerCharDB = {
 							},
 						},
 						["name"] = "Fail",
-						["alertCount"] = 3,
+						["alertCount"] = 7,
 					},
 				},
 				["role"] = "NONE",
@@ -1470,21 +1480,21 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["ffdamagedone"] = 0,
 				["ccbreaks"] = 0,
-				["role"] = "NONE",
 				["time"] = 0,
 				["interrupts"] = 0,
 				["healingspells"] = {
 				},
-				["shielding"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
+				["shielding"] = 0,
 				["damage"] = 0,
 				["damagespells"] = {
 				},
 				["maxhp"] = 0,
 				["damagetaken"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
 				["id"] = "Creature-0-3132-2212-25646-157425-00000D44B2",
 				["healing"] = 0,
@@ -1510,7 +1520,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["role"] = "NONE",
 			}, -- [2]
 		},
 		["deaths"] = 0,
@@ -2338,14 +2348,14 @@ SkadaPerCharDB = {
 		["overhealing"] = 13549570,
 		["healing"] = 11890612,
 		["damagetaken"] = 8039860,
-		["alertDamage"] = 226512,
+		["alertDamage"] = 278788,
 		["starttime"] = 1586315928,
 		["power"] = {
 			[2] = 6413,
 			[10] = 2259,
 		},
 		["name"] = "Total",
-		["alertCount"] = 3,
+		["alertCount"] = 7,
 		["dispells"] = 3,
 		["mobhdone"] = 89908,
 		["last_action"] = 1586315928,
@@ -2362,7 +2372,7 @@ SkadaPerCharDB = {
 			["time"] = 128,
 			["interrupts"] = 0,
 			["dispells"] = 0,
-			["mobtaken"] = 4857504,
+			["gotboss"] = true,
 			["mobname"] = "Thrall the Corrupted",
 			["damage"] = 5160654,
 			["players"] = {
@@ -2745,6 +2755,21 @@ SkadaPerCharDB = {
 					["first"] = 1586317868,
 					["healing"] = 1387671,
 					["damagetakenspells"] = {
+						["Void Quills"] = {
+							["crushing"] = 0,
+							["id"] = 304251,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 35423,
+							["school"] = 32,
+							["name"] = "Void Quills",
+							["blocked"] = 0,
+							["totalhits"] = 2,
+							["resisted"] = 0,
+							["max"] = 35423,
+							["damage"] = 70846,
+						},
 						["Charge"] = {
 							["crushing"] = 0,
 							["id"] = 304256,
@@ -2759,21 +2784,6 @@ SkadaPerCharDB = {
 							["resisted"] = 0,
 							["max"] = 32528,
 							["damage"] = 65056,
-						},
-						["Defiled Ground"] = {
-							["crushing"] = 0,
-							["id"] = 306752,
-							["absorbed"] = 0,
-							["glancing"] = 0,
-							["critical"] = 0,
-							["min"] = 25881,
-							["school"] = 32,
-							["name"] = "Defiled Ground",
-							["blocked"] = 0,
-							["totalhits"] = 11,
-							["resisted"] = 0,
-							["max"] = 34145,
-							["damage"] = 309780,
 						},
 						["Cries of the Void"] = {
 							["crushing"] = 0,
@@ -2790,20 +2800,20 @@ SkadaPerCharDB = {
 							["max"] = 220609,
 							["damage"] = 220609,
 						},
-						["Void Quills"] = {
+						["Defiled Ground"] = {
 							["crushing"] = 0,
-							["id"] = 304251,
+							["id"] = 306752,
 							["absorbed"] = 0,
 							["glancing"] = 0,
 							["critical"] = 0,
-							["min"] = 35423,
+							["min"] = 25881,
 							["school"] = 32,
-							["name"] = "Void Quills",
+							["name"] = "Defiled Ground",
 							["blocked"] = 0,
-							["totalhits"] = 2,
+							["totalhits"] = 11,
 							["resisted"] = 0,
-							["max"] = 35423,
-							["damage"] = 70846,
+							["max"] = 34145,
+							["damage"] = 309780,
 						},
 					},
 					["healed"] = {
@@ -3072,7 +3082,7 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["shielding"] = 0,
+			["mobtaken"] = 4857504,
 			["overhealing"] = 1034494,
 			["healing"] = 1387671,
 			["damagetaken"] = 666291,
@@ -3084,7 +3094,7 @@ SkadaPerCharDB = {
 			},
 			["name"] = "Thrall the Corrupted",
 			["alertCount"] = 0,
-			["gotboss"] = true,
+			["shielding"] = 0,
 			["mobhdone"] = 0,
 			["last_action"] = 1586317868,
 			["mobdone"] = 666291,
@@ -3195,10 +3205,10 @@ SkadaPerCharDB = {
 						[2] = {
 							["amount"] = 123,
 							["spells"] = {
-								[246851] = 27,
-								[246852] = 21,
-								[246152] = 42,
 								[299058] = 33,
+								[246852] = 21,
+								[246851] = 27,
+								[246152] = 42,
 							},
 						},
 					},
@@ -3757,9 +3767,9 @@ SkadaPerCharDB = {
 						[2] = {
 							["amount"] = 61,
 							["spells"] = {
+								[246851] = 7,
 								[246152] = 21,
 								[299058] = 33,
-								[246851] = 7,
 							},
 						},
 					},
@@ -4129,9 +4139,9 @@ SkadaPerCharDB = {
 						[2] = {
 							["amount"] = 67,
 							["spells"] = {
+								[246152] = 21,
 								[299058] = 18,
 								[246851] = 28,
-								[246152] = 21,
 							},
 						},
 					},
@@ -4508,9 +4518,9 @@ SkadaPerCharDB = {
 						[2] = {
 							["amount"] = 67,
 							["spells"] = {
+								[299058] = 18,
 								[246851] = 21,
 								[246152] = 28,
-								[299058] = 18,
 							},
 						},
 					},
@@ -5366,9 +5376,9 @@ SkadaPerCharDB = {
 						[2] = {
 							["amount"] = 142,
 							["spells"] = {
+								[246851] = 28,
 								[299058] = 51,
 								[246152] = 63,
-								[246851] = 28,
 							},
 						},
 					},
@@ -6036,9 +6046,9 @@ SkadaPerCharDB = {
 						[2] = {
 							["amount"] = 50,
 							["spells"] = {
+								[246851] = 14,
 								[246152] = 21,
 								[299058] = 15,
-								[246851] = 14,
 							},
 						},
 					},
@@ -6356,7 +6366,7 @@ SkadaPerCharDB = {
 			["time"] = 65,
 			["interrupts"] = 0,
 			["dispells"] = 0,
-			["mobtaken"] = 3543993,
+			["gotboss"] = true,
 			["mobname"] = "Rexxar",
 			["damage"] = 3543993,
 			["players"] = {
@@ -6463,10 +6473,10 @@ SkadaPerCharDB = {
 						[2] = {
 							["amount"] = 363,
 							["spells"] = {
-								[246152] = 140,
-								[246852] = 29,
-								[246851] = 77,
 								[299058] = 117,
+								[246852] = 29,
+								[246152] = 140,
+								[246851] = 77,
 							},
 						},
 					},
@@ -7004,7 +7014,7 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["shielding"] = 0,
+			["mobtaken"] = 3543993,
 			["overhealing"] = 474938,
 			["healing"] = 810406,
 			["damagetaken"] = 373409,
@@ -7016,7 +7026,7 @@ SkadaPerCharDB = {
 			},
 			["name"] = "Rexxar",
 			["alertCount"] = 0,
-			["gotboss"] = true,
+			["shielding"] = 0,
 			["mobhdone"] = 0,
 			["last_action"] = 1586317402,
 			["mobdone"] = 373409,
@@ -7216,12 +7226,12 @@ SkadaPerCharDB = {
 					["alertCount"] = 0,
 					["alertDamage"] = 0,
 					["auras"] = {
-						["McBurney: Growl"] = {
-							["name"] = "McBurney: Growl",
+						["Vampiric Speed"] = {
+							["name"] = "Vampiric Speed",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 2649,
-							["auratype"] = "DEBUFF",
+							["id"] = 269239,
+							["auratype"] = "BUFF",
 							["uptime"] = 2,
 						},
 						["Draconic Empowerment"] = {
@@ -7232,6 +7242,14 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 5,
 						},
+						["McBurney: Growl"] = {
+							["name"] = "McBurney: Growl",
+							["active"] = 0,
+							["school"] = 1,
+							["id"] = 2649,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 2,
+						},
 						["Lucid Dreams"] = {
 							["name"] = "Lucid Dreams",
 							["active"] = 0,
@@ -7239,14 +7257,6 @@ SkadaPerCharDB = {
 							["id"] = 298343,
 							["auratype"] = "BUFF",
 							["uptime"] = 3,
-						},
-						["Vampiric Speed"] = {
-							["name"] = "Vampiric Speed",
-							["active"] = 0,
-							["school"] = 1,
-							["id"] = 269239,
-							["auratype"] = "BUFF",
-							["uptime"] = 2,
 						},
 					},
 					["alert"] = {
