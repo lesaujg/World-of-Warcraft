@@ -122,7 +122,7 @@ GTFO: disabled
 HandyNotes: enabled
 MacroToolkit: disabled
 MasterPlanA: enabled
-Pawn: disabled
+Pawn: enabled
 TradeSkillMaster_AppHelper: enabled
 TradeSkillMaster_CoolDowns: disabled
 TradeSkillMaster_Destroying: disabled
