@@ -81,7 +81,7 @@ MountDropList: disabled
 MrrlsItemInformation: disabled
 NPCScan: disabled
 OPie: enabled
-Pawn: disabled
+Pawn: enabled
 TeleportCloak: disabled
 SmexyMats: enabled
 DBM-Core: disabled

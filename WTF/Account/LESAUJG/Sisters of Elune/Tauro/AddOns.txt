@@ -10,7 +10,7 @@ LiteMount: enabled
 MountDropList: disabled
 NPCScan: disabled
 OPie: enabled
-Pawn: disabled
+Pawn: enabled
 RaidAchieveFilter: disabled
 RaidAchievement_CataHeroics: disabled
 RaidAchievement: disabled

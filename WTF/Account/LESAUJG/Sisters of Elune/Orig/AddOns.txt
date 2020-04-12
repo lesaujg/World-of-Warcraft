@@ -49,7 +49,7 @@ Grid2RaidDebuffsOptions: disabled
 Grid2LDB: disabled
 GTFO: disabled
 LiteMount: enabled
-Pawn: disabled
+Pawn: enabled
 RaidAchieveFilter: disabled
 AdvancedIconSelector: disabled
 HandyNotes: disabled

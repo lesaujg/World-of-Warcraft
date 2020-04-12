@@ -1,94 +1,95 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0311,
-	["LastPlayerFullName"] = "Belrath-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
+	["LastVersion"] = 2.0324,
 	["ItemLevels"] = {
 		{
-			["ID"] = 122245,
-			["Level"] = 123,
-			["Link"] = "|cff00ccff|Hitem:122245::::::::91:250::14:1:3592:::|h[Polished Helm of Valor]|h|r",
+			["ID"] = 122263,
+			["Level"] = 159,
+			["Link"] = "|cff00ccff|Hitem:122263::::::::107:250:::1:5805:::|h[Burnished Helm of Might]|h|r",
 		}, -- [1]
 		{
-			["ID"] = 143907,
-			["Level"] = 124,
-			["Link"] = "|cffa335ee|Hitem:143907::::::::91:250:512:1:1:615:91:::|h[Shard of Pirouetting Happiness]|h|r",
+			["ID"] = 113959,
+			["Level"] = 140,
+			["Link"] = "|cffa335ee|Hitem:113959::::::::106:250::6:1:567:::|h[Thogar's Serrated Chain]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 122358,
-			["Level"] = 123,
-			["Link"] = "|cff00ccff|Hitem:122358::::::::91:250:::1:3592:::|h[Stained Shadowcraft Spaulders]|h|r",
+			["ID"] = 122388,
+			["Level"] = 159,
+			["Link"] = "|cff00ccff|Hitem:122388::::::::107:250:::1:5805:::|h[Burnished Pauldrons of Might]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 122383,
-			["Level"] = 123,
-			["Link"] = "|cff00ccff|Hitem:122383::::::::91:250:::1:3592:::|h[Stained Shadowcraft Tunic]|h|r",
+			["ID"] = 122387,
+			["Level"] = 159,
+			["Link"] = "|cff00ccff|Hitem:122387::::::::107:250:::1:5805:::|h[Burnished Breastplate of Might]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 35873,
-			["Level"] = 81,
-			["Link"] = "|cff1eff00|Hitem:35873::::::::91:250::::::|h[Interlinked Chain Girdle]|h|r",
+			["ID"] = 123897,
+			["Level"] = 145,
+			["Link"] = "|cff0070dd|Hitem:123897::::::::106:250::13:3:1686:3392:3408:::|h[Leystone Waistguard of the Peerless]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 122251,
-			["Level"] = 123,
-			["Link"] = "|cff00ccff|Hitem:122251::::::::91:250::14:1:3592:::|h[Polished Legplates of Valor]|h|r",
+			["ID"] = 122264,
+			["Level"] = 159,
+			["Link"] = "|cff00ccff|Hitem:122264::::::::107:250:::1:5805:::|h[Burnished Legplates of Might]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 35934,
-			["Level"] = 81,
-			["Link"] = "|cff1eff00|Hitem:35934::::::::91:250::11::::|h[Ghoul-Crushing Stompers]|h|r",
+			["ID"] = 113546,
+			["Level"] = 136,
+			["Link"] = "|cff0070dd|Hitem:113546::::::::106:250:512::1:3784:96:::|h[Uzko's Dusty Boots]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 35910,
-			["Level"] = 81,
-			["Link"] = "|cff1eff00|Hitem:35910::::::::91:250::11::::|h[Shaleground Bracers]|h|r",
+			["ID"] = 123898,
+			["Level"] = 145,
+			["Link"] = "|cff0070dd|Hitem:123898::::::::106:250::13:3:1681:3392:3408:::|h[Leystone Armguards of the Quickblade]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 35903,
-			["Level"] = 81,
-			["Link"] = "|cff1eff00|Hitem:35903::::::::91:250::11::::|h[Onyx Grips]|h|r",
+			["ID"] = 113632,
+			["Level"] = 140,
+			["Link"] = "|cffa335ee|Hitem:113632::::::::106:250::6:1:567:::|h[Gauntlets of the Heavy Hand]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 38671,
-			["Level"] = 58,
+			["ID"] = 151640,
+			["Level"] = 265,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff0070dd|Hitem:38671::::::::91:250::::::|h[Valanar's Signet Ring]|h|r",
+			["Link"] = "|cffff8000|Hitem:151640::153714::::::106:250:::2:1811:3630:::|h[Soul of the Deathlord]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 38672,
-			["Level"] = 58,
+			["ID"] = 151640,
+			["Level"] = 265,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff0070dd|Hitem:38672::::::::91:250::::::|h[Keleseth's Signet Ring]|h|r",
+			["Link"] = "|cffff8000|Hitem:151640::153714::::::107:250:::2:1811:3630:::|h[Soul of the Deathlord]|h|r",
 		}, -- [12]
 		{
-			["ID"] = 38259,
-			["Level"] = 81,
+			["ID"] = 122361,
+			["Level"] = 159,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff0070dd|Hitem:38259::::::::91:250::11::::|h[First Mate's Pocketwatch]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::107:250:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 36871,
-			["Level"] = 81,
+			["ID"] = 122361,
+			["Level"] = 156,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff0070dd|Hitem:36871::::::::91:250::11::::|h[Fury of the Encroaching Storm]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::106:250:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122260,
-			["Level"] = 123,
-			["Link"] = "|cff00ccff|Hitem:122260::::::::91:250::14:1:3592:::|h[Worn Stoneskin Gargoyle Cape]|h|r",
+			["Level"] = 159,
+			["Link"] = "|cff00ccff|Hitem:122260::::::::107:250:::1:5805:::|h[Worn Stoneskin Gargoyle Cape]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 122349,
-			["Level"] = 123,
-			["Link"] = "|cff00ccff|Hitem:122349::::::::91:250:::1:583:::|h[Bloodied Arcanite Reaper]|h|r",
+			["ID"] = 128402,
+			["Level"] = 152,
+			["Link"] = "|cffe6cc80|Hitem:128402::::::::106:250::9::::|h[Maw of the Damned]|h|r",
 		}, -- [16]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Belrath-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DEATHKNIGHT",
 	["LastAdded"] = 1,
 }
+PawnClassicScaleProviderOptions = nil

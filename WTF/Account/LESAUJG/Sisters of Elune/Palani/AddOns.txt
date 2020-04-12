@@ -54,7 +54,7 @@ MountDropList: disabled
 MrrlsItemInformation: disabled
 NPCScan: disabled
 OPie: enabled
-Pawn: disabled
+Pawn: enabled
 Skada: disabled
 TeleportCloak: disabled
 SmexyMats: enabled

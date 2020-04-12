@@ -142,7 +142,7 @@ GTFO: disabled
 HandyNotes: disabled
 MacroToolkit: disabled
 MasterPlanA: disabled
-Pawn: disabled
+Pawn: enabled
 TradeSkillMaster_AppHelper: enabled
 TradeSkillMaster_CoolDowns: disabled
 TradeSkillMaster_Destroying: disabled

@@ -1,90 +1,96 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0314,
+	["LastVersion"] = 2.0324,
 	["LastPlayerFullName"] = "Torinar-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
-			["ID"] = 151590,
-			["Level"] = 182,
-			["Link"] = "|cffa335ee|Hitem:151590::::::::110:71::13:5:601:1699:3408:3598:3609:::|h[Empyrial Titan Crown of the Feverflare]|h|r",
+			["ID"] = 173457,
+			["Level"] = 415,
+			["Link"] = "|cff0070dd|Hitem:173457::::::::120:73::14:3:1472:4785:6258:::|h[Malignant Leviathan's Headguard]|h|r",
 		}, -- [1]
 		{
-			["ID"] = 143905,
-			["Level"] = 180,
-			["Link"] = "|cffa335ee|Hitem:143905::::::::110:71:512:1:1:3628:110:::|h[Winking Eye of Love]|h|r",
+			["ID"] = 158075,
+			["Level"] = 290,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:73::11:4:4932:4933:4935:1482:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 147252,
-			["Level"] = 170,
-			["Link"] = "|cffa335ee|Hitem:147252::::::::110:71:::5:1680:1808:3574:1504:3528:::|h[Storm-Tempered Shoulderguard of the Quickblade]|h|r",
+			["ID"] = 122388,
+			["Level"] = 284,
+			["Link"] = "|cff00ccff|Hitem:122388::::::::120:73:::1:5805:::|h[Burnished Pauldrons of Might]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 151576,
-			["Level"] = 182,
-			["Link"] = "|cffa335ee|Hitem:151576::::::::110:71::13:5:3598:600:1700:3408:3609:::|h[Empyrial Breastplate of the Feverflare]|h|r",
+			["ID"] = 173837,
+			["Level"] = 415,
+			["Link"] = "|cff0070dd|Hitem:173837::::::::120:73::14:3:1472:4785:6257:::|h[Malignant Leviathan's Hauberk]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 86903,
-			["Level"] = 116,
-			["Link"] = "|cffa335ee|Hitem:86903::::::::110:71::::::|h[Protector's Girdle of Endless Spring]|h|r",
+			["ID"] = 173822,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173822::::::::120:73::14:4:6412:6515:1467:4785:::|h[Malignant Leviathan's Waistguard]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 123914,
-			["Level"] = 165,
-			["Link"] = "|cffa335ee|Hitem:123914::::::::110:71::13:5:669:600:689:1697:3408:::|h[Demonsteel Greaves of the Feverflare]|h|r",
+			["ID"] = 173459,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173459::::::::120:73::14:4:6412:6515:1467:4785:::|h[Malignant Leviathan's Wargreaves]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 123911,
-			["Level"] = 165,
-			["Link"] = "|cffa335ee|Hitem:123911::::::::110:71::13:5:669:600:689:1703:3408:::|h[Demonsteel Boots of the Feverflare]|h|r",
+			["ID"] = 173475,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173475::::::::120:73::14:4:6412:6513:1467:4785:::|h[Malignant Leviathan's Warboots]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 123917,
-			["Level"] = 165,
-			["Link"] = "|cffa335ee|Hitem:123917::::::::110:71::13:5:669:601:689:1714:3408:::|h[Demonsteel Armguards of the Harmonious]|h|r",
+			["ID"] = 173462,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173462::::::::120:73::14:4:6412:6515:1467:4785:::|h[Malignant Leviathan's Armguards]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 123912,
-			["Level"] = 165,
-			["Link"] = "|cffa335ee|Hitem:123912::::::::110:71::13:5:669:601:689:1696:3408:::|h[Demonsteel Gauntlets of the Fireflash]|h|r",
+			["ID"] = 173494,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173494::::::::120:73::14:4:6412:6513:1467:4785:::|h[Malignant Leviathan's Fists]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 136713,
-			["Level"] = 165,
+			["ID"] = 153685,
+			["Level"] = 310,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cffa335ee|Hitem:136713::::::::110:71::13:4:3354:669:600:689:::|h[Shadowruby Band of the Peerless]|h|r",
+			["Link"] = "|cffa335ee|Hitem:153685::::::::120:73::13:2:4928:3378:::|h[Owlseye Loop of the Aurora]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 130230,
-			["Level"] = 165,
+			["ID"] = 153685,
+			["Level"] = 310,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cffa335ee|Hitem:130230::::::::110:71::13:4:3368:669:601:689:::|h[Maelstrom Band of the Harmonious]|h|r",
+			["Link"] = "|cffa335ee|Hitem:153685::::::::120:73::13:2:4928:3371:::|h[Owlseye Loop of the Fireflash]|h|r",
 		}, -- [12]
+		{
+			["ID"] = 122361,
+			["Level"] = 284,
+			["AlsoFitsIn"] = 14,
+			["Link"] = "|cff00ccff|Hitem:122361::::::::120:73:::1:5805:::|h[Swift Hand of Justice]|h|r",
+		}, -- [13]
 		{
 			["ID"] = 153172,
 			["Level"] = 182,
-			["AlsoFitsIn"] = 14,
-			["Link"] = "|cffa335ee|Hitem:153172::::::::110:71:::3:3629:1474:3336:::|h[Doomed Exarch's Memento]|h|r",
-		}, -- [13]
-		{
-			["ID"] = 147278,
-			["Level"] = 170,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cffa335ee|Hitem:147278::::::::110:71:::4:603:3574:1504:3528:::|h[Stalwart Crest]|h|r",
+			["Link"] = "|cffa335ee|Hitem:153172::::::::110:71:::3:3629:1474:3336:::|h[Doomed Exarch's Memento]|h|r",
 		}, -- [14]
 		{
-			["ID"] = 147269,
-			["Level"] = 170,
-			["Link"] = "|cffa335ee|Hitem:147269::::::::110:71:::4:1688:3574:1504:3528:::|h[Unifying Drape of the Peerless]|h|r",
+			["ID"] = 122260,
+			["Level"] = 284,
+			["Link"] = "|cff00ccff|Hitem:122260::::::::120:73:::1:5805:::|h[Worn Stoneskin Gargoyle Cape]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 128910,
-			["Level"] = 176,
-			["Link"] = "|cffe6cc80|Hitem:128910::136684:141287:136689::::110:71:16777472:9:2:750:1496:295:1::3:1812:1469:1809:|h[Strom'kar, the Warbreaker]|h|r",
+			["ID"] = 170313,
+			["Level"] = 400,
+			["AlsoFitsIn"] = 17,
+			["Link"] = "|cffa335ee|Hitem:170313::::::::120:73::13:1:1690:::|h[Uncanny Combatant's Discombobulator of the Fireflash]|h|r",
 		}, -- [16]
+		{
+			["ID"] = 170364,
+			["Level"] = 400,
+			["Link"] = "|cffa335ee|Hitem:170364::::::::120:73::13:2:1699:5804:::|h[Uncanny Combatant's Shield of the Feverflare]|h|r",
+		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,
 }
