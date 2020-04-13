@@ -1,6 +1,6 @@
 AchievementsReminder: disabled
-AngryWorldQuests: disabled
-AskMrRobot: disabled
+AngryWorldQuests: enabled
+AskMrRobot: enabled
 BaudManifest: enabled
 FactionAddict: disabled
 GTFO: disabled

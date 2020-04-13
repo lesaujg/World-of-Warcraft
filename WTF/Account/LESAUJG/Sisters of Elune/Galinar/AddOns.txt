@@ -187,7 +187,7 @@ RaidAchievement_LegionHeroics: disabled
 RaidAchievement_LegionRaids: disabled
 WeakAurasTemplates: disabled
 ProjectAzilroka: disabled
-AngryWorldQuests: disabled
+AngryWorldQuests: enabled
 Tukui_17_Layout: enabled
 KSpeedO: enabled
 OPie_Classic: disabled

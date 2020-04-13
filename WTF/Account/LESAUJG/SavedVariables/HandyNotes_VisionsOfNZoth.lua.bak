@@ -1,8 +1,8 @@
 
 HandyNotes_VisionsOfNZothDB = {
 	["profileKeys"] = {
-		["Galinar - Sisters of Elune"] = "Default",
 		["Bracnar - Sisters of Elune"] = "Default",
+		["Galinar - Sisters of Elune"] = "Default",
 		["Belrath - Sisters of Elune"] = "Default",
 	},
 	["profiles"] = {

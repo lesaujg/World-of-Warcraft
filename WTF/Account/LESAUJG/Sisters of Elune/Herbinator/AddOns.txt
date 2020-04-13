@@ -136,7 +136,7 @@ Shrapnel: disabled
 Ovale: disabled
 Quartz: disabled
 BaudManifest: enabled
-AskMrRobot: disabled
+AskMrRobot: enabled
 Factionizer: disabled
 GTFO: disabled
 HandyNotes: disabled
@@ -178,7 +178,7 @@ DBM-BrokenIsles: disabled
 DBM-Party-Legion: disabled
 !KalielsTracker: disabled
 WorldQuestTracker: disabled
-AngryWorldQuests: disabled
+AngryWorldQuests: enabled
 FactionAddict: disabled
 HandyNotes_LegionRaresTreasures: enabled
 mOnArs_WardrobeHelper: enabled

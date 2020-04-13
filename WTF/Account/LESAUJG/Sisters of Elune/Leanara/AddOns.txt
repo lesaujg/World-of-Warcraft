@@ -33,7 +33,7 @@ AddOnSkins: disabled
 TradeSkillMaster_Destroying: disabled
 ActionBarProfiles: disabled
 IceHUD: disabled
-AskMrRobot: disabled
+AskMrRobot: enabled
 AchievementsReminder: disabled
 ActionBarSaver: disabled
 AdvancedIconSelector: disabled
@@ -59,7 +59,7 @@ WeakAurasModelPaths: disabled
 WeakAurasOptions: disabled
 WeakAurasTemplates: disabled
 ProjectAzilroka: disabled
-AngryWorldQuests: disabled
+AngryWorldQuests: enabled
 TradeSkillMaster_Accounting: disabled
 TradeSkillMaster_Auctioning: disabled
 TradeSkillMaster_Crafting: disabled

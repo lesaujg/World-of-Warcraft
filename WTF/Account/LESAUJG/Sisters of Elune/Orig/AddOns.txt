@@ -40,7 +40,7 @@ Tukui_Config: enabled
 WeakAuras: disabled
 DBM-Nighthold: enabled
 DBM-EmeraldNightmare: enabled
-AskMrRobot: disabled
+AskMrRobot: enabled
 Grid2: disabled
 Grid2Options: disabled
 Grid2RaidDebuffs: disabled
@@ -149,7 +149,7 @@ WeakAurasModelPaths: disabled
 WeakAurasOptions: disabled
 WeakAurasTemplates: disabled
 ProjectAzilroka: disabled
-AngryWorldQuests: disabled
+AngryWorldQuests: enabled
 Tukui_17_Layout: enabled
 KSpeedO: enabled
 OPie_Classic: disabled

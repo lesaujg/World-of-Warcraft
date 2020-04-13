@@ -13,14 +13,14 @@ SmexyMatsDB = {
 		["cbOneB"] = 1,
 		["cbOneG"] = 1,
 		["SMText"] = false,
-		["cbTwoG"] = 1,
+		["SM_EP_One_Text"] = "|cFFFFFF00",
 		["AllRealms"] = true,
 		["IDs"] = {
 		},
 		["Professions"] = false,
 		["cbTwoR"] = 1,
 		["SM_EP_One_Title"] = "|cFF00CCFF",
-		["SM_EP_One_Text"] = "|cFFFFFF00",
+		["cbTwoG"] = 1,
 	},
 	["ProTree"] = {
 		["Sisters of Elune"] = {
@@ -34,25 +34,27 @@ SmexyMatsDB = {
 				["Fishing"] = {
 					["Bracnar"] = {
 					},
-					["Uldaris"] = {
-					},
 				},
 				["Mining"] = {
+					["Galinar"] = {
+					},
 				},
 				["Jewelcrafting"] = {
-					["Uldaris"] = {
-					},
 				},
 				["Cooking"] = {
 					["Bracnar"] = {
 					},
-					["Uldaris"] = {
+					["Galinar"] = {
 					},
 				},
-				["Inscription"] = {
+				["Herbalism"] = {
+					["Galinar"] = {
+					},
 				},
 				["Archaeology"] = {
 					["Bracnar"] = {
+					},
+					["Galinar"] = {
 					},
 				},
 				["Alchemy"] = {
@@ -65,9 +67,7 @@ SmexyMatsDB = {
 				},
 				["Leatherworking"] = {
 				},
-				["Herbalism"] = {
-					["Uldaris"] = {
-					},
+				["Inscription"] = {
 				},
 				["Enchanting"] = {
 					["Bracnar"] = {

@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0324,
+	["LastPlayerFullName"] = "Clothgar-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		[8] = {
 			["ID"] = 59,
@@ -18,9 +21,6 @@ PawnOptions = {
 			["Link"] = "|cffffffff|Hitem:10035::::::::111:267::::::|h[Tuxedo Pants]|h|r",
 		},
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Clothgar-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
