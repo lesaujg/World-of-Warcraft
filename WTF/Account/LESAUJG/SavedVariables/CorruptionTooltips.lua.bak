@@ -15,13 +15,17 @@ CorruptionTooltipsDB = {
 		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 	},
 	["profiles"] = {
+		["Orig - Sisters of Elune"] = {
+		},
 		["Leanara - Sisters of Elune"] = {
 		},
-		["Galinar - Sisters of Elune"] = {
+		["Palani - Sisters of Elune"] = {
 		},
 		["Belrath - Sisters of Elune"] = {
 		},
 		["Bracnar - Sisters of Elune"] = {
+		},
+		["Galinar - Sisters of Elune"] = {
 		},
 		["Torinar - Sisters of Elune"] = {
 		},

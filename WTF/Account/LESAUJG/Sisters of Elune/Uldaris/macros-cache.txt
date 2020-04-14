@@ -1,3 +1,7 @@
+VER 3 0100000000000011 "Bear" "INV_MISC_QUESTIONMARK"
+/cast [stance:2][] !Bear Form
+/cast swipe
+END
 VER 3 0100000000000005 "Cenarion Ward" "INV_Misc_QuestionMark"
 #showtooltip
 /cast [@mouseover,exists,nodead,help,][exists,nodead,help][@player] Cenarion Ward

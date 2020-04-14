@@ -1,6 +1,9 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0311,
+	["LastVersion"] = 2.0314,
+	["LastPlayerFullName"] = "Palani-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 153938,
@@ -83,12 +86,10 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:140552::::::::110:258::14::::|h[Netherlight Spire]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Palani-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "PRIEST",
 	["LastAdded"] = 1,
 }
+PawnClassicScaleProviderOptions = nil

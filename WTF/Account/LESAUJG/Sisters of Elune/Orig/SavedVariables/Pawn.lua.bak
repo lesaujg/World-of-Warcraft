@@ -1,9 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0311,
-	["LastPlayerFullName"] = "Orig-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
+	["LastVersion"] = 2.0314,
 	["ItemLevels"] = {
 		{
 			["ID"] = 152759,
@@ -91,9 +88,13 @@ PawnOptions = {
 			["Link"] = "|cffe6cc80|Hitem:133948::::::::110:269:256:::290:::|h[Fists of the Heavens]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Orig-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "MONK",
 	["LastAdded"] = 1,
 }
+PawnClassicScaleProviderOptions = nil
