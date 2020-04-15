@@ -11,7 +11,7 @@ SkadaPerCharDB = {
 			["time"] = 35,
 			["interrupts"] = 0,
 			["dispells"] = 0,
-			["mobtaken"] = 1476082,
+			["gotboss"] = true,
 			["mobname"] = "Vez'okk the Lightless",
 			["damage"] = 1476082,
 			["players"] = {
@@ -20,6 +20,73 @@ SkadaPerCharDB = {
 					["ffdamagedonespells"] = {
 					},
 					["healingabsorbed"] = 0,
+					["healingspells"] = {
+						["Purification Protocol"] = {
+							["shielding"] = 0,
+							["id"] = 295310,
+							["healing"] = 11080,
+							["min"] = 0,
+							["name"] = "Purification Protocol",
+							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 5540,
+							["overhealing"] = 29021,
+							["hits"] = 7,
+						},
+						["Leech"] = {
+							["shielding"] = 0,
+							["id"] = 143924,
+							["healing"] = 25540,
+							["min"] = 703,
+							["name"] = "Leech",
+							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 9145,
+							["overhealing"] = 0,
+							["hits"] = 9,
+						},
+						["McBurney: Leech"] = {
+							["shielding"] = 0,
+							["id"] = 143924,
+							["healing"] = 346761,
+							["min"] = 19534,
+							["name"] = "McBurney: Leech",
+							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 79998,
+							["overhealing"] = 16756,
+							["hits"] = 7,
+						},
+						["Lucid Dreams"] = {
+							["shielding"] = 0,
+							["id"] = 298318,
+							["healing"] = 11463,
+							["min"] = 0,
+							["name"] = "Lucid Dreams",
+							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 11463,
+							["overhealing"] = 38386,
+							["hits"] = 2,
+						},
+						["Lethal Strikes"] = {
+							["shielding"] = 0,
+							["id"] = 311201,
+							["healing"] = 42231,
+							["min"] = 17449,
+							["name"] = "Lethal Strikes",
+							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 24782,
+							["overhealing"] = 22797,
+							["hits"] = 2,
+						},
+					},
+					["class"] = "HUNTER",
+					["damaged"] = {
+						["Vez'okk the Lightless"] = 1454132,
+						["Crawling Corruption"] = 21950,
+					},
 					["auras"] = {
 						["Bestial Wrath"] = {
 							["name"] = "Bestial Wrath",
@@ -190,74 +257,7 @@ SkadaPerCharDB = {
 							["uptime"] = 8,
 						},
 					},
-					["class"] = "HUNTER",
-					["damaged"] = {
-						["Vez'okk the Lightless"] = 1454132,
-						["Crawling Corruption"] = 21950,
-					},
-					["dispells"] = 0,
-					["healingspells"] = {
-						["Purification Protocol"] = {
-							["shielding"] = 0,
-							["id"] = 295310,
-							["healing"] = 11080,
-							["min"] = 0,
-							["name"] = "Purification Protocol",
-							["absorbed"] = 0,
-							["critical"] = 0,
-							["max"] = 5540,
-							["overhealing"] = 29021,
-							["hits"] = 7,
-						},
-						["Leech"] = {
-							["shielding"] = 0,
-							["id"] = 143924,
-							["healing"] = 25540,
-							["min"] = 703,
-							["name"] = "Leech",
-							["absorbed"] = 0,
-							["critical"] = 0,
-							["max"] = 9145,
-							["overhealing"] = 0,
-							["hits"] = 9,
-						},
-						["McBurney: Leech"] = {
-							["shielding"] = 0,
-							["id"] = 143924,
-							["healing"] = 346761,
-							["min"] = 19534,
-							["name"] = "McBurney: Leech",
-							["absorbed"] = 0,
-							["critical"] = 0,
-							["max"] = 79998,
-							["overhealing"] = 16756,
-							["hits"] = 7,
-						},
-						["Lucid Dreams"] = {
-							["shielding"] = 0,
-							["id"] = 298318,
-							["healing"] = 11463,
-							["min"] = 0,
-							["name"] = "Lucid Dreams",
-							["absorbed"] = 0,
-							["critical"] = 0,
-							["max"] = 11463,
-							["overhealing"] = 38386,
-							["hits"] = 2,
-						},
-						["Lethal Strikes"] = {
-							["shielding"] = 0,
-							["id"] = 311201,
-							["healing"] = 42231,
-							["min"] = 17449,
-							["name"] = "Lethal Strikes",
-							["absorbed"] = 0,
-							["critical"] = 0,
-							["max"] = 24782,
-							["overhealing"] = 22797,
-							["hits"] = 2,
-						},
-					},
+					["ffdamagedone"] = 0,
 					["ccbreaks"] = 0,
 					["time"] = 35,
 					["interrupts"] = 0,
@@ -451,9 +451,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1586693484.84502,
 									["amount"] = -4881,
+									["srcname"] = "Crawling Corruption",
 									["spellid"] = 88163,
 									["hp"] = 407359,
-									["srcname"] = "Crawling Corruption",
 								}, -- [2]
 								{
 									["ts"] = 1586693485.52003,
@@ -466,9 +466,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1586693486.83904,
 									["amount"] = -4982,
+									["srcname"] = "Crawling Corruption",
 									["spellid"] = 88163,
 									["hp"] = 412240,
-									["srcname"] = "Crawling Corruption",
 								}, -- [4]
 								{
 									["ts"] = 1586693486.90805,
@@ -489,9 +489,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1586693488.77907,
 									["amount"] = -26163,
+									["hp"] = 386077,
 									["spellid"] = 306752,
 									["srcname"] = "Vez'okk the Lightless",
-									["hp"] = 386077,
 								}, -- [7]
 								{
 									["ts"] = 1586693489.52508,
@@ -512,23 +512,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1586693494.2131,
 									["amount"] = -32754,
+									["hp"] = 379486,
 									["spellid"] = 306726,
 									["srcname"] = "Vez'okk the Lightless",
-									["hp"] = 379486,
 								}, -- [10]
 								{
 									["ts"] = 1586693494.56111,
 									["amount"] = -21245,
+									["hp"] = 379486,
 									["spellid"] = 88163,
 									["srcname"] = "Crawling Corruption",
-									["hp"] = 379486,
 								}, -- [11]
 								{
 									["ts"] = 1586693494.59012,
 									["amount"] = -4531,
+									["hp"] = 353710,
 									["spellid"] = 88163,
 									["srcname"] = "Crawling Corruption",
-									["hp"] = 353710,
 								}, -- [12]
 								{
 									["absorb"] = 0,
@@ -541,17 +541,17 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1586693495.30414,
 									["amount"] = -25485,
+									["hp"] = 330572,
 									["spellid"] = 306752,
 									["srcname"] = "Vez'okk the Lightless",
-									["hp"] = 330572,
 								}, -- [14]
 								{
 									["ts"] = 1586693495.89415,
 									["amount"] = -1000000000,
 									["spellname"] = "Mind Collapse",
+									["hp"] = 339701,
 									["spellid"] = 316771,
 									["srcname"] = "Bracnar",
-									["hp"] = 339701,
 								}, -- [15]
 								["pos"] = 2,
 							},
@@ -617,7 +617,7 @@ SkadaPerCharDB = {
 					["role"] = "NONE",
 					["alert"] = {
 					},
-					["ffdamagedone"] = 0,
+					["dispells"] = 0,
 				}, -- [1]
 			},
 			["deaths"] = 1,
@@ -659,7 +659,7 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["shielding"] = 0,
+			["mobtaken"] = 1476082,
 			["overhealing"] = 106960,
 			["healing"] = 437075,
 			["damagetaken"] = 283804,
@@ -671,7 +671,7 @@ SkadaPerCharDB = {
 			},
 			["name"] = "Vez'okk the Lightless",
 			["alertCount"] = 0,
-			["gotboss"] = true,
+			["shielding"] = 0,
 			["mobhdone"] = 0,
 			["last_action"] = 1586693461,
 			["mobdone"] = 283804,
@@ -798,10 +798,10 @@ SkadaPerCharDB = {
 						[2] = {
 							["amount"] = 319,
 							["spells"] = {
-								[246851] = 97,
-								[246852] = 42,
-								[246152] = 109,
 								[299058] = 71,
+								[246852] = 42,
+								[246851] = 97,
+								[246152] = 109,
 							},
 						},
 						[10] = {
@@ -1554,9 +1554,9 @@ SkadaPerCharDB = {
 						[2] = {
 							["amount"] = 193,
 							["spells"] = {
+								[299058] = 48,
 								[246152] = 117,
 								[246851] = 28,
-								[299058] = 48,
 							},
 						},
 						[10] = {
@@ -3272,10 +3272,10 @@ SkadaPerCharDB = {
 						[2] = {
 							["amount"] = 137,
 							["spells"] = {
-								[246152] = 34,
-								[246852] = 28,
-								[246851] = 42,
 								[299058] = 33,
+								[246852] = 28,
+								[246152] = 34,
+								[246851] = 42,
 							},
 						},
 					},
@@ -3755,9 +3755,9 @@ SkadaPerCharDB = {
 						[2] = {
 							["amount"] = 158,
 							["spells"] = {
+								[299058] = 35,
 								[246851] = 63,
 								[246152] = 60,
-								[299058] = 35,
 							},
 						},
 					},
@@ -4337,9 +4337,9 @@ SkadaPerCharDB = {
 						[2] = {
 							["amount"] = 50,
 							["spells"] = {
+								[246851] = 13,
 								[299058] = 15,
 								[246152] = 22,
-								[246851] = 13,
 							},
 						},
 					},
@@ -4761,10 +4761,10 @@ SkadaPerCharDB = {
 						[2] = {
 							["amount"] = 266,
 							["spells"] = {
-								[299058] = 105,
-								[246852] = 28,
-								[246851] = 49,
 								[246152] = 84,
+								[246852] = 28,
+								[299058] = 105,
+								[246851] = 49,
 							},
 						},
 						[10] = {
@@ -5586,6 +5586,11 @@ SkadaPerCharDB = {
 			{
 				["class"] = "HUNTER",
 				["healingabsorbed"] = 0,
+				["ccbreaks"] = 0,
+				["ffdamagedonespells"] = {
+				},
+				["damaged"] = {
+				},
 				["auras"] = {
 					["McBurney: Dash"] = {
 						["uptime"] = 10,
@@ -5860,16 +5865,7 @@ SkadaPerCharDB = {
 						["name"] = "Fatigued",
 					},
 				},
-				["ffdamagedonespells"] = {
-				},
-				["damaged"] = {
-				},
-				["dispells"] = 3,
-				["deathlog"] = {
-				},
-				["ccbreaks"] = 0,
-				["time"] = 358,
-				["interrupts"] = 0,
+				["role"] = "NONE",
 				["healingspells"] = {
 					["McBurney: Leech"] = {
 						["shielding"] = 0,
@@ -5967,6 +5963,10 @@ SkadaPerCharDB = {
 						["overhealing"] = 532291,
 						["hits"] = 28,
 					},
+				},
+				["time"] = 358,
+				["interrupts"] = 0,
+				["deathlog"] = {
 				},
 				["shielding"] = 0,
 				["ffdamagedonetargets"] = {
@@ -6237,9 +6237,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586693484.84502,
 								["amount"] = -4881,
+								["srcname"] = "Crawling Corruption",
 								["spellid"] = 88163,
 								["hp"] = 407359,
-								["srcname"] = "Crawling Corruption",
 							}, -- [2]
 							{
 								["ts"] = 1586693485.52003,
@@ -6252,9 +6252,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586693486.83904,
 								["amount"] = -4982,
+								["srcname"] = "Crawling Corruption",
 								["spellid"] = 88163,
 								["hp"] = 412240,
-								["srcname"] = "Crawling Corruption",
 							}, -- [4]
 							{
 								["ts"] = 1586693486.90805,
@@ -6275,9 +6275,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586693488.77907,
 								["amount"] = -26163,
+								["hp"] = 386077,
 								["spellid"] = 306752,
 								["srcname"] = "Vez'okk the Lightless",
-								["hp"] = 386077,
 							}, -- [7]
 							{
 								["ts"] = 1586693489.52508,
@@ -6298,23 +6298,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586693494.2131,
 								["amount"] = -32754,
+								["hp"] = 379486,
 								["spellid"] = 306726,
 								["srcname"] = "Vez'okk the Lightless",
-								["hp"] = 379486,
 							}, -- [10]
 							{
 								["ts"] = 1586693494.56111,
 								["amount"] = -21245,
+								["hp"] = 379486,
 								["spellid"] = 88163,
 								["srcname"] = "Crawling Corruption",
-								["hp"] = 379486,
 							}, -- [11]
 							{
 								["ts"] = 1586693494.59012,
 								["amount"] = -4531,
+								["hp"] = 353710,
 								["spellid"] = 88163,
 								["srcname"] = "Crawling Corruption",
-								["hp"] = 353710,
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -6327,17 +6327,17 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1586693495.30414,
 								["amount"] = -25485,
+								["hp"] = 330572,
 								["spellid"] = 306752,
 								["srcname"] = "Vez'okk the Lightless",
-								["hp"] = 330572,
 							}, -- [14]
 							{
 								["ts"] = 1586693495.89415,
 								["amount"] = -1000000000,
 								["spellname"] = "Mind Collapse",
+								["hp"] = 339701,
 								["spellid"] = 316771,
 								["srcname"] = "Bracnar",
-								["hp"] = 339701,
 							}, -- [15]
 							["pos"] = 2,
 						},
@@ -6607,7 +6607,7 @@ SkadaPerCharDB = {
 						["alertCount"] = 4,
 					},
 				},
-				["role"] = "NONE",
+				["dispells"] = 3,
 			}, -- [1]
 		},
 		["deaths"] = 1,

@@ -1,42 +1,45 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0324,
+	["LastPlayerFullName"] = "Orig-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 122248,
-			["Level"] = 216,
-			["Link"] = "|cff00ccff|Hitem:122248::::::::111:268:::1:5805:::|h[Stained Shadowcraft Cap]|h|r",
+			["Level"] = 242,
+			["Link"] = "|cff00ccff|Hitem:122248::::::::114:268:::1:5805:::|h[Stained Shadowcraft Cap]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 280,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::111:268::11:4:4932:4933:4935:1472:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 282,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::113:268::11:4:4932:4933:4935:1474:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 122358,
-			["Level"] = 216,
-			["Link"] = "|cff00ccff|Hitem:122358::::::::111:268:::1:5805:::|h[Stained Shadowcraft Spaulders]|h|r",
+			["Level"] = 242,
+			["Link"] = "|cff00ccff|Hitem:122358::::::::114:268:::1:5805:::|h[Stained Shadowcraft Spaulders]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
 			["ID"] = 122383,
-			["Level"] = 216,
-			["Link"] = "|cff00ccff|Hitem:122383::::::::111:268:::1:5805:::|h[Stained Shadowcraft Tunic]|h|r",
+			["Level"] = 242,
+			["Link"] = "|cff00ccff|Hitem:122383::::::::114:268:::1:5805:::|h[Stained Shadowcraft Tunic]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 152756,
-			["Level"] = 180,
-			["Link"] = "|cffa335ee|Hitem:152756::::::::110:269:::5:1701:1808:3629:1472:3528:::|h[Arinor Keeper's Belt of the Feverflare]|h|r",
+			["ID"] = 158287,
+			["Level"] = 232,
+			["Link"] = "|cff1eff00|Hitem:158287::::::::113:268:512:11:1:4790:113:::|h[Freebooter Buckle]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 122254,
-			["Level"] = 216,
-			["Link"] = "|cff00ccff|Hitem:122254::::::::111:268:::1:5805:::|h[Stained Shadowcraft Pants]|h|r",
+			["Level"] = 242,
+			["Link"] = "|cff00ccff|Hitem:122254::::::::114:268:::1:5805:::|h[Stained Shadowcraft Pants]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 128885,
-			["Level"] = 165,
-			["Link"] = "|cffa335ee|Hitem:128885::::::::110:269::13:5:669:601:689:1715:3408:::|h[Dreadleather Footpads of the Harmonious]|h|r",
+			["ID"] = 155026,
+			["Level"] = 218,
+			["Link"] = "|cff1eff00|Hitem:155026::::::::112:268:512:11:1:4787:112:::|h[Freebooter Boots]|h|r",
 		}, -- [8]
 		{
 			["ID"] = 128891,
@@ -44,43 +47,43 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:128891::::::::110:269::13:5:669:601:689:1682:3408:::|h[Dreadleather Bindings of the Quickblade]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 152755,
-			["Level"] = 180,
-			["Link"] = "|cffa335ee|Hitem:152755::::::::110:269:::4:1699:3629:1472:3528:::|h[Arinor Keeper's Grips of the Feverflare]|h|r",
+			["ID"] = 155027,
+			["Level"] = 209,
+			["Link"] = "|cff1eff00|Hitem:155027::::::::111:268:512:11:1:4787:111:::|h[Freebooter Gloves]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 128173,
-			["Level"] = 216,
+			["Level"] = 242,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:128173::::::::111:268:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128173::::::::114:268:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 130229,
-			["Level"] = 165,
+			["ID"] = 160261,
+			["Level"] = 235,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cffa335ee|Hitem:130229::::::::110:269::13:4:3343:669:601:689:::|h[Prophetic Band of the Quickblade]|h|r",
+			["Link"] = "|cff0070dd|Hitem:160261::::::::113:268:512:11:1:4811:113:::|h[Soul of the Sea]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 133597,
-			["Level"] = 220,
+			["Level"] = 246,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:133597::::::::111:269::::::|h[Infallible Tracking Charm]|h|r",
+			["Link"] = "|cff00ccff|Hitem:133597::::::::114:268:::1:5817:::|h[Infallible Tracking Charm]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 133597,
-			["Level"] = 220,
+			["ID"] = 122361,
+			["Level"] = 242,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:133597::::::::111:268::::::|h[Infallible Tracking Charm]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::114:268:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122261,
-			["Level"] = 216,
-			["Link"] = "|cff00ccff|Hitem:122261::::::::111:268:::1:5805:::|h[Inherited Cape of the Black Baron]|h|r",
+			["Level"] = 242,
+			["Link"] = "|cff00ccff|Hitem:122261::::::::114:268:::1:5805:::|h[Inherited Cape of the Black Baron]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 163539,
-			["Level"] = 180,
-			["Link"] = "|cff0070dd|Hitem:163539::::::::111:268::11::::|h[Spear of the Hunt]|h|r",
+			["ID"] = 155073,
+			["Level"] = 232,
+			["Link"] = "|cff1eff00|Hitem:155073::::::::113:268:512:11:1:4790:113:::|h[Waverider Warstaff]|h|r",
 		}, -- [16]
 		{
 			["ID"] = 133948,
@@ -88,8 +91,7 @@ PawnOptions = {
 			["Link"] = "|cffe6cc80|Hitem:133948::::::::110:269:256:::290:::|h[Fists of the Heavens]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128938] = {
 			["Relics"] = {
@@ -109,8 +111,6 @@ PawnOptions = {
 			["Name"] = "Fu Zan, the Wanderer's Companion",
 		},
 	},
-	["LastPlayerFullName"] = "Orig-Sisters of Elune",
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "MONK",

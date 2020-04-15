@@ -1,0 +1,8 @@
+## Author: Sparkida
+## Interface: 80200
+## Title: Monk Stagger Meter
+## Version: 1.3.4
+## SavedVariablesPerCharacter: spkStaggerConfig
+
+Enums.lua
+Frame.lua
