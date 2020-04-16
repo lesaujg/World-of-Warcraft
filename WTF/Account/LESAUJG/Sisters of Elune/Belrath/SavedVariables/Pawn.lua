@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0324,
-	["LastPlayerFullName"] = "Belrath-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 122263,
@@ -70,10 +67,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:147278::::::::110:250:::5:603:3574:1502:5870:3337:::|h[Stalwart Crest]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 122361,
-			["Level"] = 170,
+			["ID"] = 133595,
+			["Level"] = 173,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::110:250:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:133595::::::::110:250:::1:5817:::|h[Gronntooth War Horn]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122260,
@@ -87,6 +84,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:163533::::::::110:250::11::::|h[Footman's Cleaver]|h|r",
 		}, -- [16]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Belrath-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

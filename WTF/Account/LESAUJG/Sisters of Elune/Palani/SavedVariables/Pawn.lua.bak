@@ -1,24 +1,24 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0314,
+	["LastVersion"] = 2.0324,
 	["LastPlayerFullName"] = "Palani-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
-			["ID"] = 153938,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:153938::::::::110:258::::::|h[Communal Cowl]|h|r",
+			["ID"] = 122250,
+			["Level"] = 250,
+			["Link"] = "|cff00ccff|Hitem:122250::::::::115:258:::1:5805:::|h[Tattered Dreadmist Mask]|h|r",
 		}, -- [1]
 		{
-			["ID"] = 153914,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:153914::::::::110:258::::::|h[Communal Medallion]|h|r",
+			["ID"] = 158075,
+			["Level"] = 282,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::114:256::11:4:4932:4933:4935:1474:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 153941,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:153941::::::::110:258::::::|h[Communal Mantle]|h|r",
+			["ID"] = 122360,
+			["Level"] = 250,
+			["Link"] = "|cff00ccff|Hitem:122360::::::::115:258:::1:5805:::|h[Tattered Dreadmist Mantle]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -27,14 +27,14 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:153940::::::::110:258::::::|h[Communal Robe]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 153942,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:153942::::::::110:258::::::|h[Communal Sash]|h|r",
+			["ID"] = 155118,
+			["Level"] = 245,
+			["Link"] = "|cff1eff00|Hitem:155118::::::::115:258:512:11:1:4787:115:::|h[Wickerwoven Sash]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 153939,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:153939::::::::110:258::::::|h[Communal Pants]|h|r",
+			["ID"] = 122256,
+			["Level"] = 250,
+			["Link"] = "|cff00ccff|Hitem:122256::::::::115:258:::1:5805:::|h[Tattered Dreadmist Leggings]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 153936,
@@ -42,48 +42,49 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:153936::::::::110:258::::::|h[Communal Boots]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 153943,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:153943::::::::110:258::::::|h[Communal Bindings]|h|r",
+			["ID"] = 155121,
+			["Level"] = 218,
+			["Link"] = "|cff1eff00|Hitem:155121::::::::112:256:512:11:1:4787:112:::|h[Wickerwoven Cuffs]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 153937,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:153937::::::::110:258::::::|h[Communal Gloves]|h|r",
+			["ID"] = 155102,
+			["Level"] = 236,
+			["Link"] = "|cff1eff00|Hitem:155102::::::::114:258:512:11:1:4787:114:::|h[Wickerwoven Gloves]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 153916,
-			["Level"] = 176,
+			["ID"] = 128169,
+			["Level"] = 250,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff1eff00|Hitem:153916::::::::110:258::::::|h[Communal Band of Destruction]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128169::::::::115:258:::1:5805:::|h[Signet of the Third Fleet]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 153917,
-			["Level"] = 176,
+			["ID"] = 128169,
+			["Level"] = 242,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff1eff00|Hitem:153917::::::::110:258::::::|h[Communal Ring of Destruction]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128169::::::::114:258:::1:5805:::|h[Signet of the Third Fleet]|h|r",
 		}, -- [12]
 		{
-			["ID"] = 153918,
-			["Level"] = 176,
+			["ID"] = 122361,
+			["Level"] = 250,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff1eff00|Hitem:153918::::::::110:258::::::|h[Communal Stone of Destruction]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::115:258:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 153915,
-			["Level"] = 176,
+			["ID"] = 122362,
+			["Level"] = 250,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff1eff00|Hitem:153915::::::::110:258::::::|h[Communal Idol of Destruction]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122362::::::::115:258:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
 		}, -- [14]
 		{
-			["ID"] = 153935,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:153935::::::::110:258::::::|h[Communal Cloak of Destruction]|h|r",
+			["ID"] = 122262,
+			["Level"] = 250,
+			["Link"] = "|cff00ccff|Hitem:122262::::::::115:258:::1:5805:::|h[Ancient Bloodmoon Cloak]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 140552,
-			["Level"] = 150,
-			["Link"] = "|cff1eff00|Hitem:140552::::::::110:258::14::::|h[Netherlight Spire]|h|r",
+			["ID"] = 155139,
+			["Level"] = 227,
+			["AlsoFitsIn"] = 17,
+			["Link"] = "|cff1eff00|Hitem:155139::::::::113:256:512:11:1:4787:113:::|h[Mad-Butcher's Mallet]|h|r",
 		}, -- [16]
 	},
 	["LastKeybindingsSet"] = 1,

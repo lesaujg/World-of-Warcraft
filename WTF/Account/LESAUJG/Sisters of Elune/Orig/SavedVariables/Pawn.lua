@@ -7,8 +7,8 @@ PawnOptions = {
 	["ItemLevels"] = {
 		{
 			["ID"] = 122248,
-			["Level"] = 242,
-			["Link"] = "|cff00ccff|Hitem:122248::::::::114:268:::1:5805:::|h[Stained Shadowcraft Cap]|h|r",
+			["Level"] = 267,
+			["Link"] = "|cff00ccff|Hitem:122248::::::::117:268:::1:5805:::|h[Stained Shadowcraft Cap]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
@@ -17,14 +17,14 @@ PawnOptions = {
 		}, -- [2]
 		{
 			["ID"] = 122358,
-			["Level"] = 242,
-			["Link"] = "|cff00ccff|Hitem:122358::::::::114:268:::1:5805:::|h[Stained Shadowcraft Spaulders]|h|r",
+			["Level"] = 267,
+			["Link"] = "|cff00ccff|Hitem:122358::::::::117:268:::1:5805:::|h[Stained Shadowcraft Spaulders]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
 			["ID"] = 122383,
-			["Level"] = 242,
-			["Link"] = "|cff00ccff|Hitem:122383::::::::114:268:::1:5805:::|h[Stained Shadowcraft Tunic]|h|r",
+			["Level"] = 267,
+			["Link"] = "|cff00ccff|Hitem:122383::::::::117:268:::1:5805:::|h[Stained Shadowcraft Tunic]|h|r",
 		}, -- [5]
 		{
 			["ID"] = 158287,
@@ -33,8 +33,8 @@ PawnOptions = {
 		}, -- [6]
 		{
 			["ID"] = 122254,
-			["Level"] = 242,
-			["Link"] = "|cff00ccff|Hitem:122254::::::::114:268:::1:5805:::|h[Stained Shadowcraft Pants]|h|r",
+			["Level"] = 267,
+			["Link"] = "|cff00ccff|Hitem:122254::::::::117:268:::1:5805:::|h[Stained Shadowcraft Pants]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 155026,
@@ -42,9 +42,9 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:155026::::::::112:268:512:11:1:4787:112:::|h[Freebooter Boots]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 128891,
-			["Level"] = 165,
-			["Link"] = "|cffa335ee|Hitem:128891::::::::110:269::13:5:669:601:689:1682:3408:::|h[Dreadleather Bindings of the Quickblade]|h|r",
+			["ID"] = 158275,
+			["Level"] = 245,
+			["Link"] = "|cff1eff00|Hitem:158275::::::::116:268:512:11:1:4787:115:::|h[Freebooter Wristwraps]|h|r",
 		}, -- [9]
 		{
 			["ID"] = 155027,
@@ -53,32 +53,32 @@ PawnOptions = {
 		}, -- [10]
 		{
 			["ID"] = 128173,
-			["Level"] = 242,
+			["Level"] = 267,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:128173::::::::114:268:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128173::::::::117:268:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 160261,
-			["Level"] = 235,
+			["ID"] = 128173,
+			["Level"] = 258,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff0070dd|Hitem:160261::::::::113:268:512:11:1:4811:113:::|h[Soul of the Sea]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128173::::::::116:268:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 133597,
-			["Level"] = 246,
+			["Level"] = 272,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:133597::::::::114:268:::1:5817:::|h[Infallible Tracking Charm]|h|r",
+			["Link"] = "|cff00ccff|Hitem:133597::::::::117:268:::1:5817:::|h[Infallible Tracking Charm]|h|r",
 		}, -- [13]
 		{
 			["ID"] = 122361,
-			["Level"] = 242,
+			["Level"] = 267,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::114:268:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::117:268:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122261,
-			["Level"] = 242,
-			["Link"] = "|cff00ccff|Hitem:122261::::::::114:268:::1:5805:::|h[Inherited Cape of the Black Baron]|h|r",
+			["Level"] = 267,
+			["Link"] = "|cff00ccff|Hitem:122261::::::::117:268:::1:5805:::|h[Inherited Cape of the Black Baron]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 155073,
