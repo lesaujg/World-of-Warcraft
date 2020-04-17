@@ -9,6 +9,43 @@ TukuiConfigShared = {
 		},
 	},
 	["Sisters of Elune"] = {
+		["Leanara"] = {
+		},
+		["Torinar"] = {
+		},
+		["Orig"] = {
+			["General"] = {
+				["UIScale"] = 0.64,
+			},
+		},
+		["Galinar"] = {
+			["General"] = {
+				["UIScale"] = 0.64,
+			},
+		},
+		["Belrath"] = {
+		},
+		["Tauro"] = {
+		},
+		["Toberd"] = {
+		},
+		["Mandelbrot"] = {
+		},
+		["Palani"] = {
+		},
+		["Uldaris"] = {
+			["Bags"] = {
+				["Enable"] = false,
+			},
+			["General"] = {
+				["UIScale"] = 0.64,
+			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+			},
+		},
+		["Herbinator"] = {
+		},
 		["Bracnar"] = {
 			["General"] = {
 				["UIScale"] = 0.64,
@@ -27,6 +64,10 @@ TukuiConfigShared = {
 				["OwnWarriorStanceBar"] = true,
 				["HotKey"] = true,
 			},
+		},
+		["Sanjuri"] = {
+		},
+		["Torinara"] = {
 		},
 		["Ghiaccioli"] = {
 			["ActionBars"] = {
@@ -47,46 +88,7 @@ TukuiConfigShared = {
 				["BuffsPerRow"] = 12,
 			},
 		},
-		["Mandelbrot"] = {
-		},
-		["Torinar"] = {
-		},
-		["Uldaris"] = {
-			["Bags"] = {
-				["Enable"] = false,
-			},
-			["General"] = {
-				["UIScale"] = 0.64,
-			},
-			["ActionBars"] = {
-				["HotKey"] = true,
-			},
-		},
-		["Toberd"] = {
-		},
-		["Orig"] = {
-			["General"] = {
-				["UIScale"] = 0.64,
-			},
-		},
-		["Palani"] = {
-		},
 		["Edaka"] = {
-		},
-		["Herbinator"] = {
-		},
-		["Galinar"] = {
-			["General"] = {
-				["UIScale"] = 0.64,
-			},
-		},
-		["Sanjuri"] = {
-		},
-		["Belrath"] = {
-		},
-		["Leanara"] = {
-		},
-		["Tauro"] = {
 		},
 		["Clothgar"] = {
 			["General"] = {

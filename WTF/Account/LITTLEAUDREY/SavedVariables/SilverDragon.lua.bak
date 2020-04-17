@@ -1,0 +1,35 @@
+
+SilverDragon3DB = {
+	["namespaces"] = {
+		["VignetteStretch"] = {
+		},
+		["Macro"] = {
+		},
+		["Scan_Targets"] = {
+		},
+		["HandyNotes"] = {
+		},
+		["ClickTarget"] = {
+		},
+		["LDB"] = {
+		},
+		["Scan_Vignettes"] = {
+		},
+		["Marker"] = {
+		},
+		["Sync"] = {
+		},
+		["Announce"] = {
+		},
+		["Tooltip"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Torinara - Sisters of Elune"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}
+SilverDragon2DB = nil

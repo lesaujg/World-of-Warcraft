@@ -1,26 +1,22 @@
-# [2.16.6](https://github.com/WeakAuras/WeakAuras2/tree/2.16.6) (2020-02-14)
+# [2.17.1](https://github.com/WeakAuras/WeakAuras2/tree/2.17.1) (2020-04-16)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.16.5...2.16.6)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.17.0...2.17.1)
 
 ## Highlights
 
- - Actually enable templates for classic
-- Bug fixes 
+ - b
+- u
+- g
+- f
+- i
+- x
+- e
+- s 
 
 ## Commits
 
-InfusOnWoW (4):
+mrbuds (2):
 
-- BuffTrigger2: Fix ghost states
-- Fix Masque integration with clones and zoom/keep aspect ratio
-- Adjust conditions on moving/deleting/duplicating conditions
-- Fix multiple display of encounter ids
-
-emptyrivers (1):
-
-- add 'reset entry' button to arrays in user mode
-
-mrbuds (1):
-
-- classic: WeakAurasTemplates was not moved to correct folder
+- aura trigger: fix error with empty specific unit
+- classic: fix ZG not matched for 20 man raid load condition
 

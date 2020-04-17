@@ -1,6 +1,7 @@
 
 CorruptionTooltipsDB = {
 	["profileKeys"] = {
+		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
 		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
 		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
 		["Herbinator - Sisters of Elune"] = "Herbinator - Sisters of Elune",
@@ -15,6 +16,10 @@ CorruptionTooltipsDB = {
 		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 	},
 	["profiles"] = {
+		["Torinara - Sisters of Elune"] = {
+		},
+		["Galinar - Sisters of Elune"] = {
+		},
 		["Orig - Sisters of Elune"] = {
 		},
 		["Leanara - Sisters of Elune"] = {
@@ -23,9 +28,9 @@ CorruptionTooltipsDB = {
 		},
 		["Belrath - Sisters of Elune"] = {
 		},
-		["Bracnar - Sisters of Elune"] = {
+		["Clothgar - Sisters of Elune"] = {
 		},
-		["Galinar - Sisters of Elune"] = {
+		["Bracnar - Sisters of Elune"] = {
 		},
 		["Torinar - Sisters of Elune"] = {
 		},

@@ -1,59 +1,21 @@
-tag f1962a7d86efdfac75bf50e7bbb2c4c715121ef8 8.3.5
+tag 8e3c04ab18704d26645201c0fd8aebc5bee3d3ee 8.3.6
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Sun Apr 5 18:28:23 2020 +1000
+Date:	Tue Apr 14 15:13:27 2020 +1000
 
-LiteMount 8.3.5
-- New action line format removing [filter=] and adding params to line end
-- IF/ELSEIF/ELSE/END follow control actions
-- Limit is now joined by EndLimit
-- Support for @unit conditions for actions that use units
-- Retire the VASHJIR, NAGRAND and AQ default mount flags
-- Fix ~FLAG negation
-- Allow specifing mounts to Mount and SmartMount by name
-- Make the font on the action list edit box a bit smaller
-- Add {RACE} variable, and localized {CLASS_L}, {FACTION_L}, {RACE_L}
-- {SPEC} now returns the spec name, {SPECID} added for the number
-- Fix {MAPID} for BfA (only a bit late)
+LiteMount 8.3.6
 
-commit 3719281835d01d46301159f7842e89e979e2feb9
+ - Add [jump] condition
+ - Add visual and clear button for when mount filters are enabled
+
+commit 397ce334af5ca22e867e06d82560472afeeb0e7d
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sun Apr 5 18:18:41 2020 +1000
+Date:   Tue Apr 14 15:07:03 2020 +1000
 
-    ABOUT.md spacing
+    On the mounts frame, add the filter visual X to clear
 
-commit d65662d0dffba363e06a6ecfcba63602c9e3d0ab
+commit 9af13806d9a904145fe42750e50c8cc2ad090035
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sun Apr 5 13:29:39 2020 +1000
+Date:   Tue Apr 14 14:57:44 2020 +1000
 
-    Add [sameunit:unit1/unit2] condition
-
-commit 9759d98bb2b0a729fd995c22e95f970116710557
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sun Apr 5 13:29:23 2020 +1000
-
-    Use PlayerHasAura in waterwalking condition
-
-commit b28a5954fd2fa6cc701d113423fb774499a54033
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Apr 2 06:52:31 2020 +1100
-
-    Fix some leaking globals from Globe scan
-
-commit 71c942017ddda12e670a4c9a9f8755dd49a4b946
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Apr 2 06:48:22 2020 +1100
-
-    Some widget fixups from Globe
-
-commit b446563ffa8c8f8e7d704c88507219a0f9cbbb37
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Wed Apr 1 10:11:57 2020 +1100
-
-    Comment falling spells in default action list
-
-commit 727b6de81cac80f11fe6374998939fe0f671e6b4
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue Mar 31 13:04:55 2020 +1100
-
-    Update github markdowns
+    Add [jump] condition
 

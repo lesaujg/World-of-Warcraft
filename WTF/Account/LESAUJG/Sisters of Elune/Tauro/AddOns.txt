@@ -89,5 +89,5 @@ MrrlsItemInformation: disabled
 SmexyMats: enabled
 DBM-Nyalotha: disabled
 DBM-EternalPalace: disabled
-SilverDragon: enabled
+SilverDragon: disabled
 HandyNotes_VisionsOfNZoth: enabled

@@ -91,5 +91,5 @@ DBM-Ulduar: disabled
 DBM-VoA: disabled
 DBM-WorldEvents: disabled
 HandyNotes_MechagonAndNazjatar: disabled
-SilverDragon: enabled
+SilverDragon: disabled
 HandyNotes_VisionsOfNZoth: enabled

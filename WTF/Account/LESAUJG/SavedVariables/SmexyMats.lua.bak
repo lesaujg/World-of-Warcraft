@@ -36,6 +36,8 @@ SmexyMatsDB = {
 					},
 				},
 				["Mining"] = {
+					["Torinara"] = {
+					},
 				},
 				["Jewelcrafting"] = {
 				},
@@ -44,6 +46,8 @@ SmexyMatsDB = {
 					},
 				},
 				["Herbalism"] = {
+					["Torinara"] = {
+					},
 				},
 				["Archaeology"] = {
 					["Bracnar"] = {
@@ -54,8 +58,6 @@ SmexyMatsDB = {
 				["Engineering"] = {
 					["Bracnar"] = {
 					},
-					["Clothgar"] = {
-					},
 				},
 				["Leatherworking"] = {
 				},
@@ -63,8 +65,6 @@ SmexyMatsDB = {
 				},
 				["Enchanting"] = {
 					["Bracnar"] = {
-					},
-					["Clothgar"] = {
 					},
 				},
 			},
