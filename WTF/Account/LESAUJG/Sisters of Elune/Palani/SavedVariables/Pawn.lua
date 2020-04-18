@@ -1,24 +1,21 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0324,
-	["LastPlayerFullName"] = "Palani-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 122250,
-			["Level"] = 258,
-			["Link"] = "|cff00ccff|Hitem:122250::::::::116:257:::1:5805:::|h[Tattered Dreadmist Mask]|h|r",
+			["Level"] = 267,
+			["Link"] = "|cff00ccff|Hitem:122250::::::::117:258:::1:5805:::|h[Tattered Dreadmist Mask]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 282,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::114:256::11:4:4932:4933:4935:1474:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 286,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::116:258::11:4:4932:4933:4935:1478:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 122360,
-			["Level"] = 258,
-			["Link"] = "|cff00ccff|Hitem:122360::::::::116:257:::1:5805:::|h[Tattered Dreadmist Mantle]|h|r",
+			["Level"] = 267,
+			["Link"] = "|cff00ccff|Hitem:122360::::::::117:258:::1:5805:::|h[Tattered Dreadmist Mantle]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -33,8 +30,8 @@ PawnOptions = {
 		}, -- [6]
 		{
 			["ID"] = 122256,
-			["Level"] = 258,
-			["Link"] = "|cff00ccff|Hitem:122256::::::::116:257:::1:5805:::|h[Tattered Dreadmist Leggings]|h|r",
+			["Level"] = 267,
+			["Link"] = "|cff00ccff|Hitem:122256::::::::117:258:::1:5805:::|h[Tattered Dreadmist Leggings]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 153936,
@@ -53,9 +50,9 @@ PawnOptions = {
 		}, -- [10]
 		{
 			["ID"] = 128169,
-			["Level"] = 258,
+			["Level"] = 267,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:128169::::::::116:257:::1:5805:::|h[Signet of the Third Fleet]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128169::::::::117:258:::1:5805:::|h[Signet of the Third Fleet]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 128169,
@@ -65,20 +62,20 @@ PawnOptions = {
 		}, -- [12]
 		{
 			["ID"] = 122361,
-			["Level"] = 258,
+			["Level"] = 267,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::116:257:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::117:258:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [13]
 		{
 			["ID"] = 122362,
-			["Level"] = 258,
+			["Level"] = 267,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122362::::::::116:257:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122362::::::::117:258:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122262,
-			["Level"] = 258,
-			["Link"] = "|cff00ccff|Hitem:122262::::::::116:257:::1:5805:::|h[Ancient Bloodmoon Cloak]|h|r",
+			["Level"] = 267,
+			["Link"] = "|cff00ccff|Hitem:122262::::::::117:258:::1:5805:::|h[Ancient Bloodmoon Cloak]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 155139,
@@ -87,6 +84,9 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:155139::::::::113:256:512:11:1:4787:113:::|h[Mad-Butcher's Mallet]|h|r",
 		}, -- [16]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Palani-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

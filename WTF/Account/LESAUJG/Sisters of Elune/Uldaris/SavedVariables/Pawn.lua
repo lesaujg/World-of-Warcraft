@@ -6,79 +6,79 @@ PawnOptions = {
 	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
-			["ID"] = 122248,
-			["Level"] = 276,
-			["Link"] = "|cff00ccff|Hitem:122248::::::::118:104:::1:5805:::|h[Stained Shadowcraft Cap]|h|r",
+			["ID"] = 173441,
+			["Level"] = 415,
+			["Link"] = "|cff0070dd|Hitem:173441::::::::120:104::14:3:1472:4785:6258:::|h[Guise of the Insatiable Maw]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 286,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::116:104::11:4:4932:4933:4935:1478:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 288,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::119:104::11:4:4932:4933:4935:1480:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 122358,
-			["Level"] = 276,
-			["Link"] = "|cff00ccff|Hitem:122358::::::::118:104:::1:5805:::|h[Stained Shadowcraft Spaulders]|h|r",
+			["ID"] = 173443,
+			["Level"] = 415,
+			["Link"] = "|cff0070dd|Hitem:173443::::::::120:104::14:3:1472:4785:6259:::|h[Shoulderpads of the Insatiable Maw]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 122383,
-			["Level"] = 276,
-			["Link"] = "|cff00ccff|Hitem:122383::::::::118:104:::1:5805:::|h[Stained Shadowcraft Tunic]|h|r",
+			["ID"] = 173843,
+			["Level"] = 415,
+			["Link"] = "|cff0070dd|Hitem:173843::::::::120:104::14:3:1472:4785:6257:::|h[Vest of the Insatiable Maw]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 158616,
-			["Level"] = 236,
-			["Link"] = "|cff1eff00|Hitem:158616::::::::114:104:512:11:1:4787:114:::|h[Banisher Waistcord]|h|r",
+			["ID"] = 173816,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173816::::::::120:104::14:4:6412:6513:1467:4785:::|h[Belt of the Insatiable Maw]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 122254,
-			["Level"] = 276,
-			["Link"] = "|cff00ccff|Hitem:122254::::::::118:104:::1:5805:::|h[Stained Shadowcraft Pants]|h|r",
+			["ID"] = 173468,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173468::::::::120:104::14:4:6412:6515:1467:4785:::|h[Leggings of the Insatiable Maw]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 155468,
-			["Level"] = 244,
-			["Link"] = "|cff0070dd|Hitem:155468::::::::115:104:512:11:2:4787:4788:114:::|h[Anglin' Art's Treads]|h|r",
+			["ID"] = 173516,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173516::::::::120:104::14:4:6412:6513:1467:4785:::|h[Footguards of the Insatiable Maw]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 155124,
-			["Level"] = 226,
-			["Link"] = "|cff0070dd|Hitem:155124::::::::112:104:512:11:2:4787:4788:112:::|h[Banisher Bracers]|h|r",
+			["ID"] = 173480,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173480::::::::120:104::14:4:6412:6515:1467:4785:::|h[Bindings of the Insatiable Maw]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 155100,
-			["Level"] = 236,
-			["Link"] = "|cff1eff00|Hitem:155100::::::::114:104:512:11:1:4787:114:::|h[Banisher Gloves]|h|r",
+			["ID"] = 173464,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173464::::::::120:104::14:4:6412:6515:1467:4785:::|h[Gloves of the Insatiable Maw]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 128173,
-			["Level"] = 276,
+			["Level"] = 284,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:128173::::::::118:104:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128173::::::::119:104:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 128173,
-			["Level"] = 267,
+			["Level"] = 284,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:128173::::::::117:104:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128173::::::::120:104:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 133597,
-			["Level"] = 281,
+			["Level"] = 290,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:133597::::::::118:104:::1:5817:::|h[Infallible Tracking Charm]|h|r",
+			["Link"] = "|cff00ccff|Hitem:133597::::::::119:104:::1:5817:::|h[Infallible Tracking Charm]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 122361,
-			["Level"] = 276,
+			["ID"] = 133597,
+			["Level"] = 290,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::118:104:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:133597::::::::120:104:::1:5817:::|h[Infallible Tracking Charm]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122261,
-			["Level"] = 276,
-			["Link"] = "|cff00ccff|Hitem:122261::::::::118:104:::1:5805:::|h[Inherited Cape of the Black Baron]|h|r",
+			["Level"] = 284,
+			["Link"] = "|cff00ccff|Hitem:122261::::::::119:104:::1:5805:::|h[Inherited Cape of the Black Baron]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 155543,

@@ -7,13 +7,13 @@ PawnOptions = {
 	["ItemLevels"] = {
 		{
 			["ID"] = 122250,
-			["Level"] = 216,
-			["Link"] = "|cff00ccff|Hitem:122250::::::::111:267:::1:5805:::|h[Tattered Dreadmist Mask]|h|r",
+			["Level"] = 250,
+			["Link"] = "|cff00ccff|Hitem:122250::::::::115:267:::1:5805:::|h[Tattered Dreadmist Mask]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 280,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::111:267::11:4:4932:4933:4935:1472:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 286,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::115:267::11:4:4932:4933:4935:1478:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 154019,
@@ -23,8 +23,8 @@ PawnOptions = {
 		nil, -- [4]
 		{
 			["ID"] = 122384,
-			["Level"] = 216,
-			["Link"] = "|cff00ccff|Hitem:122384::::::::111:267:::1:5805:::|h[Tattered Dreadmist Robe]|h|r",
+			["Level"] = 250,
+			["Link"] = "|cff00ccff|Hitem:122384::::::::115:267:::1:5805:::|h[Tattered Dreadmist Robe]|h|r",
 		}, -- [5]
 		{
 			["ID"] = 154020,
@@ -33,8 +33,8 @@ PawnOptions = {
 		}, -- [6]
 		{
 			["ID"] = 122256,
-			["Level"] = 216,
-			["Link"] = "|cff00ccff|Hitem:122256::::::::111:267:::1:5805:::|h[Tattered Dreadmist Leggings]|h|r",
+			["Level"] = 250,
+			["Link"] = "|cff00ccff|Hitem:122256::::::::115:267:::1:5805:::|h[Tattered Dreadmist Leggings]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 154014,
@@ -42,43 +42,43 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:154014::::::::111:267::::::|h[Felsoul Sandals]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 154021,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:154021::::::::111:267::::::|h[Felsoul Wristwraps]|h|r",
+			["ID"] = 160454,
+			["Level"] = 231,
+			["Link"] = "|cff0070dd|Hitem:160454::::::::113:267:512:17:2:4776:43:113:::|h[Foxhollow Falconer's Bracers]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 154015,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:154015::::::::111:267::::::|h[Felsoul Handwraps]|h|r",
+			["ID"] = 158256,
+			["Level"] = 227,
+			["Link"] = "|cff1eff00|Hitem:158256::::::::113:267:512:11:1:4787:113:::|h[Navigator's Mitts]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 153689,
-			["Level"] = 225,
+			["ID"] = 128169,
+			["Level"] = 250,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff1eff00|Hitem:153689::::::::111:267::13:2:4927:3370:::|h[Golden Beryl Ring of the Fireflash]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128169::::::::115:267:::1:5805:::|h[Signet of the Third Fleet]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 153689,
-			["Level"] = 225,
+			["ID"] = 128169,
+			["Level"] = 242,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff1eff00|Hitem:153689::153714::::::111:267::13:2:4927:3370:::|h[Golden Beryl Ring of the Fireflash]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128169::::::::114:267:::1:5805:::|h[Signet of the Third Fleet]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 122362,
-			["Level"] = 216,
+			["Level"] = 250,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:122362::::::::111:267:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122362::::::::115:267:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
 		}, -- [13]
 		{
 			["ID"] = 122361,
-			["Level"] = 216,
+			["Level"] = 250,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::111:267:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::115:267:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122262,
-			["Level"] = 216,
-			["Link"] = "|cff00ccff|Hitem:122262::::::::111:267:::1:5805:::|h[Ancient Bloodmoon Cloak]|h|r",
+			["Level"] = 250,
+			["Link"] = "|cff00ccff|Hitem:122262::::::::115:267:::1:5805:::|h[Ancient Bloodmoon Cloak]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 154024,

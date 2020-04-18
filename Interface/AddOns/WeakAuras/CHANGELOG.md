@@ -1,22 +1,18 @@
-# [2.17.1](https://github.com/WeakAuras/WeakAuras2/tree/2.17.1) (2020-04-16)
+# [2.17.2](https://github.com/WeakAuras/WeakAuras2/tree/2.17.2) (2020-04-17)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.17.0...2.17.1)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.17.1...2.17.2)
 
 ## Highlights
 
- - b
-- u
-- g
-- f
-- i
-- x
-- e
-- s 
+ - Fixed a few regressiosn 
 
 ## Commits
 
-mrbuds (2):
+InfusOnWoW (1):
 
-- aura trigger: fix error with empty specific unit
-- classic: fix ZG not matched for 20 man raid load condition
+- Fix Health/Power triggers having not duration for animations
+
+mrbuds (1):
+
+- Add missing migration for action's glow_type fixes #2120
 

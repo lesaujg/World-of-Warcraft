@@ -4,25 +4,18 @@ VER 3 000000000000001E "_Clear Target" "Ability_CheapShot"
 /petfollow
 /petpassive
 END
-VER 3 00000000000000AD "Alpaca" "136224"
-/cleartarget
-/tar Elusive Quickhoof
-/stopmacro [noexists]
-/run local mp = C_Map.GetPlayerMapPosition(C_Map.GetBestMapForUnit("player"), "player"); SendChatMessage("%t is at " .. tostring(floor(mp.x * 100)) .. ", " .. tostring(floor(mp.y * 100)), "RAID")
-END
-VER 3 00000000000000AB "df" "INV_MISC_QUESTIONMARK"
-#showtooltip item:174927
-/stopmacro [channeling:Catching]
-/cleartarget
-/tar Ivory Cloud Serpent
-/use Zan-Tien Lasso
-END
 VER 3 0000000000000099 "Fish" "INV_MISC_QUESTIONMARK"
 /equipset Fishing
 /use Fishing
 END
 VER 3 00000000000000AC "Heal Battle Pets" "INV_MISC_QUESTIONMARK"
 /cast [btn:2] Battle Pet Bandage; Revive Battle Pets
+END
+VER 3 00000000000000AD "pet" "INV_MISC_QUESTIONMARK"
+/petfollow [button:2]
+/dismount
+/petdefensive
+/petattack
 END
 VER 3 0000000000000087 "RandomMount" "INV_MISC_QUESTIONMARK"
 /petpassive
@@ -36,11 +29,6 @@ END
 VER 3 000000000000009D "Reload" "132096"
 /console worldPreloadNonCritical 0
 /reload
-END
-VER 3 00000000000000AA "sdfg" "INV_MISC_QUESTIONMARK"
-/petstay
-/petdefensive
-/petattack
 END
 VER 3 00000000000000A9 "TSMMacro" "Achievement_Faction_GoldenLotus"
 /click TSMCancelAuctionBtn
