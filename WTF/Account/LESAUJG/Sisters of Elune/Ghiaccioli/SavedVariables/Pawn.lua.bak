@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0311,
+	["LastVersion"] = 2.0324,
 	["ItemLevels"] = {
 		{
 			["ID"] = 170809,
@@ -92,3 +92,4 @@ PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "MAGE",
 	["LastAdded"] = 1,
 }
+PawnClassicScaleProviderOptions = nil

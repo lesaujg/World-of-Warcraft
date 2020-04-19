@@ -104,11 +104,11 @@ TukuiConfigShared = {
 			["ReputationEnable"] = false,
 			["AltPowerBarEnable"] = false,
 		},
-		["ActionBars"] = {
-			["HotKey"] = true,
-		},
 		["Bags"] = {
 			["Enable"] = false,
+		},
+		["ActionBars"] = {
+			["HotKey"] = true,
 		},
 	},
 }

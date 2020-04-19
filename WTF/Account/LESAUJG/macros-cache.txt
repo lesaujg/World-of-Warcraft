@@ -11,6 +11,10 @@ END
 VER 3 00000000000000AC "Heal Battle Pets" "INV_MISC_QUESTIONMARK"
 /cast [btn:2] Battle Pet Bandage; Revive Battle Pets
 END
+VER 3 00000000000000AF "LiteMount Custom" "INV_MISC_QUESTIONMARK"
+#showtooltip [nomod]White Ram
+/click LM_B4
+END
 VER 3 00000000000000AE "Mount2" "INV_MISC_QUESTIONMARK"
 /petpassive
 /use [mod:ctrlshift]Grand Expedition Yak
