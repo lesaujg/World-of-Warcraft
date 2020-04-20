@@ -6,24 +6,24 @@ PawnOptions = {
 	["ItemLevels"] = {
 		{
 			["ID"] = 122247,
-			["Level"] = 250,
-			["Link"] = "|cff00ccff|Hitem:122247::::::::115:263:::1:5805:::|h[Mystical Coif of Elements]|h|r",
+			["Level"] = 258,
+			["Link"] = "|cff00ccff|Hitem:122247::::::::116:263:::1:5805:::|h[Mystical Coif of Elements]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 284,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::114:263::11:4:4932:4933:4935:1476:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 286,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::115:263::11:4:4932:4933:4935:1478:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 122375,
-			["Level"] = 250,
-			["Link"] = "|cff00ccff|Hitem:122375::::::::115:263:::1:5805:::|h[Aged Pauldrons of The Five Thunders]|h|r",
+			["Level"] = 258,
+			["Link"] = "|cff00ccff|Hitem:122375::::::::116:263:::1:5805:::|h[Aged Pauldrons of The Five Thunders]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
 			["ID"] = 122380,
-			["Level"] = 250,
-			["Link"] = "|cff00ccff|Hitem:122380::::::::115:263:::1:5805:::|h[Mystical Vest of Elements]|h|r",
+			["Level"] = 258,
+			["Link"] = "|cff00ccff|Hitem:122380::::::::116:263:::1:5805:::|h[Mystical Vest of Elements]|h|r",
 		}, -- [5]
 		{
 			["ID"] = 152767,
@@ -32,8 +32,8 @@ PawnOptions = {
 		}, -- [6]
 		{
 			["ID"] = 122252,
-			["Level"] = 250,
-			["Link"] = "|cff00ccff|Hitem:122252::::::::115:263:::1:5805:::|h[Tarnished Leggings of Destruction]|h|r",
+			["Level"] = 258,
+			["Link"] = "|cff00ccff|Hitem:122252::::::::116:263:::1:5805:::|h[Tarnished Leggings of Destruction]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 152766,
@@ -52,32 +52,32 @@ PawnOptions = {
 		}, -- [10]
 		{
 			["ID"] = 128173,
-			["Level"] = 250,
+			["Level"] = 258,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:128173::::::::115:263:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128173::::::::116:263:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 128173,
-			["Level"] = 242,
+			["Level"] = 250,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:128173::::::::114:263:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128173::::::::115:263:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 133597,
-			["Level"] = 255,
+			["Level"] = 264,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:133597::::::::115:263:::1:5817:::|h[Infallible Tracking Charm]|h|r",
+			["Link"] = "|cff00ccff|Hitem:133597::::::::116:263:::1:5817:::|h[Infallible Tracking Charm]|h|r",
 		}, -- [13]
 		{
 			["ID"] = 122361,
-			["Level"] = 250,
+			["Level"] = 258,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::115:263:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::116:263:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122261,
-			["Level"] = 250,
-			["Link"] = "|cff00ccff|Hitem:122261::::::::115:263:::1:5805:::|h[Inherited Cape of the Black Baron]|h|r",
+			["Level"] = 258,
+			["Link"] = "|cff00ccff|Hitem:122261::::::::116:263:::1:5805:::|h[Inherited Cape of the Black Baron]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 128819,

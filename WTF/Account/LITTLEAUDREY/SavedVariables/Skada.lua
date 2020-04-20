@@ -8,6 +8,7 @@ SkadaDB = {
 		["Noeraa - Sisters of Elune"] = "Default",
 		["Torinara - Sisters of Elune"] = "Default",
 		["Allala - Sisters of Elune"] = "Default",
+		["Brennie - Sisters of Elune"] = "Default",
 		["Aloraal - Sisters of Elune"] = "Default",
 	},
 	["profiles"] = {
@@ -15,15 +16,15 @@ SkadaDB = {
 			["windows"] = {
 				{
 					["hidden"] = true,
-					["y"] = 0.00555419921875,
+					["y"] = 0.0055999755859375,
 					["point"] = "CENTER",
-					["x"] = 0.009307861328125,
+					["x"] = 0.00933837890625,
 				}, -- [1]
 			},
 			["versions"] = {
-				["1.6.3"] = true,
-				["1.6.4"] = true,
 				["1.6.7"] = true,
+				["1.6.4"] = true,
+				["1.6.3"] = true,
 			},
 		},
 	},

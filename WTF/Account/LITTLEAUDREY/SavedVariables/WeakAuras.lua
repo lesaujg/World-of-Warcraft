@@ -8,8 +8,8 @@ WeakAurasSaved = {
 	["minimap"] = {
 		["hide"] = false,
 	},
-	["lastUpgrade"] = 1581168220,
-	["dbVersion"] = 26,
+	["lastUpgrade"] = 1587315150,
+	["dbVersion"] = 29,
 	["clearOldHistory"] = 30,
 	["registered"] = {
 	},

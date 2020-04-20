@@ -1,5 +1,8 @@
 
 SilverDragon3DB = {
+	["profileKeys"] = {
+		["Torinara - Sisters of Elune"] = "Default",
+	},
 	["namespaces"] = {
 		["VignetteStretch"] = {
 		},
@@ -15,17 +18,14 @@ SilverDragon3DB = {
 		},
 		["Scan_Vignettes"] = {
 		},
-		["Marker"] = {
+		["Tooltip"] = {
 		},
 		["Sync"] = {
 		},
 		["Announce"] = {
 		},
-		["Tooltip"] = {
+		["Marker"] = {
 		},
-	},
-	["profileKeys"] = {
-		["Torinara - Sisters of Elune"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

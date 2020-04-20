@@ -52,6 +52,7 @@ VER 3 010000000000006A "_FeignDeath" "INV_MISC_QUESTIONMARK"
 /cast [btn:2][mod] Play Dead
 END
 VER 3 0100000000000060 "_Kite" "132128"
+/equip "Azsh'ari Stormsurger Cape"
 /use [button:1] 15
 /use [button:1] Rocfeather Skyhorn Kite
 /use [button:2] Brulfist Idol

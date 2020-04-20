@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0324,
+	["LastPlayerFullName"] = "Clothgar-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 122250,
@@ -13,9 +16,9 @@ PawnOptions = {
 			["Link"] = "|cffe6cc80|Hitem:158075::::::::115:267::11:4:4932:4933:4935:1478:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 154019,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:154019::::::::111:267::::::|h[Felsoul Shoulderpads]|h|r",
+			["ID"] = 122360,
+			["Level"] = 250,
+			["Link"] = "|cff00ccff|Hitem:122360::::::::115:267:::1:5805:::|h[Tattered Dreadmist Mantle]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -83,9 +86,6 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:154024::::::::111:267::::::|h[Felsoul Staff]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Clothgar-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

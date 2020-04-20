@@ -108,6 +108,7 @@ VER 3 0100000000000067 "Eagle/Cobra" "INV_MISC_QUESTIONMARK"
 END
 VER 3 010000000000004D "MD+" "INV_Misc_QuestionMark"
 #show Misdirection
+/dismount
 /focus [button:2] target
 /clearfocus [button:2,mod:ctrl]
 /stopmacro [button:2][mod:ctrl]
