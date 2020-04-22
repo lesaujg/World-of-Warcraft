@@ -36,23 +36,17 @@ SmexyMatsDB = {
 					},
 				},
 				["Mining"] = {
-					["Galinar"] = {
-					},
 				},
 				["Jewelcrafting"] = {
 				},
 				["Cooking"] = {
 					["Bracnar"] = {
 					},
-					["Galinar"] = {
-					},
 				},
 				["Inscription"] = {
 				},
 				["Archaeology"] = {
 					["Bracnar"] = {
-					},
-					["Galinar"] = {
 					},
 				},
 				["Alchemy"] = {
@@ -64,8 +58,6 @@ SmexyMatsDB = {
 				["Leatherworking"] = {
 				},
 				["Herbalism"] = {
-					["Galinar"] = {
-					},
 				},
 				["Enchanting"] = {
 					["Bracnar"] = {
