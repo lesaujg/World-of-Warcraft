@@ -27,42 +27,60 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Tuesday 4/21",
+		["date"] = "Thursday 4/23",
 		["rows"] = 2,
 	}, -- [1]
 	{
-		["date"] = "Monday 4/20",
-		["rows"] = 3,
+		["date"] = "Wednesday 4/22",
+		["rows"] = 4,
 	}, -- [2]
 	{
-		["date"] = "Friday 4/17",
+		["date"] = "Tuesday 4/21",
 		["rows"] = 2,
 	}, -- [3]
 	{
+		["date"] = "Monday 4/20",
+		["rows"] = 3,
+	}, -- [4]
+	{
+		["date"] = "Friday 4/17",
+		["rows"] = 2,
+	}, -- [5]
+	{
 		["date"] = "Thursday 4/16",
 		["rows"] = 4,
-	}, -- [4]
+	}, -- [6]
 }
 FactionAddictLogEntries = {
 	{
+		["Emperor Shaohao"] = 1270,
+		["Cult of Malicor"] = 500,
+	}, -- [1]
+	{
+		["Cult of Malicor"] = 4750,
+		["Proudmoore Admiralty"] = 3900,
+		["Emperor Shaohao"] = 1100,
+		["7th Legion"] = 1750,
+	}, -- [2]
+	{
 		["Cult of Malicor"] = 1500,
 		["7th Legion"] = 3500,
-	}, -- [1]
+	}, -- [3]
 	{
 		["Cult of Malicor"] = 3000,
 		["Order of Embers"] = 1750,
 		["7th Legion"] = 3500,
-	}, -- [2]
+	}, -- [4]
 	{
 		["7th Legion"] = 875,
 		["Proudmoore Admiralty"] = 875,
-	}, -- [3]
+	}, -- [5]
 	{
 		["Champions of Azeroth"] = 1000,
 		["Proudmoore Admiralty"] = 300,
 		["Storm's Wake"] = 2650,
 		["7th Legion"] = 1750,
-	}, -- [4]
+	}, -- [6]
 }
 FactionAddictConfigIsInactive = {
 	[1737] = false,
@@ -136,7 +154,7 @@ FactionAddictConfigIsInactive = {
 	[1515] = false,
 	[2098] = false,
 	[349] = false,
-	[729] = false,
+	[2135] = false,
 	[1015] = false,
 	[933] = false,
 	[1134] = false,
@@ -144,15 +162,15 @@ FactionAddictConfigIsInactive = {
 	[270] = false,
 	[889] = false,
 	[1135] = false,
-	[2135] = false,
+	[729] = false,
 	[509] = false,
 	[2391] = false,
-	[72] = false,
+	[2264] = false,
 	[76] = false,
 	[2265] = false,
 	[1073] = false,
 	[2100] = false,
-	[92] = false,
+	[730] = false,
 	[1520] = false,
 	[2099] = false,
 	[1738] = false,
@@ -162,8 +180,8 @@ FactionAddictConfigIsInactive = {
 	[2097] = false,
 	[1713] = false,
 	[510] = false,
-	[2400] = false,
 	[1714] = false,
+	[2400] = false,
 	[1204] = false,
 	[1388] = false,
 	[1077] = false,
@@ -183,24 +201,24 @@ FactionAddictConfigIsInactive = {
 	[1718] = false,
 	[1272] = false,
 	[2417] = false,
-	[2158] = false,
+	[1848] = false,
 	[989] = false,
 	[1273] = false,
 	[2156] = false,
 	[1849] = false,
-	[1975] = false,
+	[2157] = false,
 	[2162] = false,
-	[1848] = false,
+	[2158] = false,
 	[1341] = false,
-	[2159] = false,
+	[990] = false,
 	[1275] = false,
-	[2415] = false,
+	[2160] = false,
 	[576] = false,
 	[2161] = false,
 	[1276] = false,
 	[1085] = false,
 	[2165] = false,
-	[2163] = false,
+	[369] = false,
 	[1277] = false,
 	[2164] = false,
 	[577] = false,
@@ -218,19 +236,19 @@ FactionAddictConfigIsInactive = {
 	[1681] = false,
 	[93] = false,
 	[1281] = false,
-	[1090] = false,
 	[1345] = false,
+	[1090] = false,
 	[2045] = false,
 	[1282] = false,
 	[930] = false,
 	[70] = false,
 	[1984] = false,
 	[1283] = false,
-	[369] = false,
+	[2163] = false,
 	[1156] = false,
-	[990] = false,
-	[2157] = false,
-	[2160] = false,
+	[2159] = false,
+	[1975] = false,
+	[2415] = false,
 	[1847] = false,
 	[1731] = false,
 	[1900] = false,
@@ -243,9 +261,9 @@ FactionAddictConfigIsInactive = {
 	[1733] = false,
 	[2018] = false,
 	[1133] = false,
-	[730] = false,
+	[92] = false,
 	[1989] = false,
-	[2264] = false,
+	[72] = false,
 	[1352] = false,
 	[68] = false,
 	[1735] = false,

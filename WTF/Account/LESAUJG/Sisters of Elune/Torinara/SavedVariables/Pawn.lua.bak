@@ -5,89 +5,91 @@ PawnOptions = {
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
-			["ID"] = 122247,
-			["Level"] = 276,
-			["Link"] = "|cff00ccff|Hitem:122247::::::::118:263:::1:5805:::|h[Mystical Coif of Elements]|h|r",
+			["ID"] = 173449,
+			["Level"] = 415,
+			["Link"] = "|cff0070dd|Hitem:173449::::::::120:263::14:3:1472:4785:6258:::|h[Nefarious Tormentor's Mask]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 292,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::118:263::11:4:4932:4933:4935:1484:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 294,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::119:263::11:4:4932:4933:4935:1486:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 122375,
-			["Level"] = 276,
-			["Link"] = "|cff00ccff|Hitem:122375::::::::118:263:::1:5805:::|h[Aged Pauldrons of The Five Thunders]|h|r",
+			["ID"] = 173838,
+			["Level"] = 415,
+			["Link"] = "|cff0070dd|Hitem:173838::::::::120:263::14:3:1472:4785:6259:::|h[Nefarious Tormentor's Epaulets]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 122380,
-			["Level"] = 276,
-			["Link"] = "|cff00ccff|Hitem:122380::::::::118:263:::1:5805:::|h[Mystical Vest of Elements]|h|r",
+			["ID"] = 173840,
+			["Level"] = 415,
+			["Link"] = "|cff0070dd|Hitem:173840::::::::120:263::14:3:1472:4785:6257:::|h[Nefarious Tormentor's Chestpiece]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 152767,
-			["Level"] = 180,
-			["Link"] = "|cffa335ee|Hitem:152767::::::::111:263:::5:1688:3629:41:1472:3528:::|h[Oronaar Disciple's Girdle of the Peerless]|h|r",
+			["ID"] = 173818,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173818::::::::120:263::14:4:6412:6513:1467:4785:::|h[Nefarious Tormentor's Girdle]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 122252,
-			["Level"] = 276,
-			["Link"] = "|cff00ccff|Hitem:122252::::::::118:263:::1:5805:::|h[Tarnished Leggings of Destruction]|h|r",
+			["ID"] = 173485,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173485::::::::120:263::14:4:6412:6515:1467:4785:::|h[Nefarious Tormentor's Leggings]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 152766,
-			["Level"] = 180,
-			["Link"] = "|cffa335ee|Hitem:152766::::::::111:263:::4:1713:3629:1472:3528:::|h[Oronaar Disciple's Boots of the Harmonious]|h|r",
+			["ID"] = 173517,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173517::::::::120:263::14:4:6412:6513:1467:4785:::|h[Nefarious Tormentor's Striders]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 152762,
-			["Level"] = 180,
-			["Link"] = "|cffa335ee|Hitem:152762::::::::111:263:::4:1686:3629:1472:3528:::|h[Oronaar Disciple's Bracers of the Peerless]|h|r",
+			["ID"] = 173481,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173481::::::::120:263::14:4:6412:6513:1467:4785:::|h[Nefarious Tormentor's Bindings]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 152763,
-			["Level"] = 180,
-			["Link"] = "|cffa335ee|Hitem:152763::::::::111:263:::4:1698:3629:1472:3528:::|h[Oronaar Disciple's Gloves of the Feverflare]|h|r",
+			["ID"] = 173493,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173493::::::::120:263::14:4:6412:6513:1467:4785:::|h[Nefarious Tormentor's Handwraps]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 128173,
-			["Level"] = 276,
+			["ID"] = 153685,
+			["Level"] = 310,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:128173::::::::118:263:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
+			["Link"] = "|cffa335ee|Hitem:153685::::::::120:263::13:2:4928:3378:::|h[Owlseye Loop of the Aurora]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 128173,
-			["Level"] = 267,
+			["ID"] = 153685,
+			["Level"] = 310,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:128173::::::::117:263:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
+			["Link"] = "|cffa335ee|Hitem:153685::168641::::::120:263::13:2:4928:3378:::|h[Owlseye Loop of the Aurora]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 133597,
-			["Level"] = 281,
+			["Level"] = 290,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:133597::::::::118:263:::1:5817:::|h[Infallible Tracking Charm]|h|r",
+			["Link"] = "|cff00ccff|Hitem:133597::::::::119:263:::1:5817:::|h[Infallible Tracking Charm]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 122361,
-			["Level"] = 276,
+			["ID"] = 133597,
+			["Level"] = 290,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::118:263:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:133597::::::::120:263:::1:5817:::|h[Infallible Tracking Charm]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122261,
-			["Level"] = 276,
-			["Link"] = "|cff00ccff|Hitem:122261::::::::118:263:::1:5805:::|h[Inherited Cape of the Black Baron]|h|r",
+			["Level"] = 284,
+			["Link"] = "|cff00ccff|Hitem:122261::::::::119:263:::1:5805:::|h[Inherited Cape of the Black Baron]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 128819,
-			["Level"] = 181,
-			["Link"] = "|cffe6cc80|Hitem:128819::136686:141288:143688::::111:263:16777472:9:2:745:1501:117:1::3:1812:1469:1809:3:3394:1487:3528|h[Doomhammer]|h|r",
+			["ID"] = 170313,
+			["Level"] = 400,
+			["AlsoFitsIn"] = 17,
+			["Link"] = "|cffa335ee|Hitem:170313::::::::120:263::13:1:1695:::|h[Uncanny Combatant's Discombobulator of the Fireflash]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 128873,
-			["Level"] = 181,
-			["Link"] = "|cffe6cc80|Hitem:128873::::::::112:263:256:::117:::|h[Fury of the Stonemother]|h|r",
+			["ID"] = 170313,
+			["Level"] = 400,
+			["AlsoFitsIn"] = 16,
+			["Link"] = "|cffa335ee|Hitem:170313::::::::120:263::13:1:1708:::|h[Uncanny Combatant's Discombobulator of the Aurora]|h|r",
 		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,

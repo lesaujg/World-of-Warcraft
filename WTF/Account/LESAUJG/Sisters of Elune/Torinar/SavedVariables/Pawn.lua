@@ -61,16 +61,16 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:153685::::::::120:73::13:2:4928:3371:::|h[Owlseye Loop of the Fireflash]|h|r",
 		}, -- [12]
 		{
-			["ID"] = 122361,
-			["Level"] = 284,
+			["ID"] = 133595,
+			["Level"] = 290,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::120:73:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:133595::::::::120:73:::1:5817:::|h[Gronntooth War Horn]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 153172,
-			["Level"] = 182,
+			["ID"] = 122361,
+			["Level"] = 284,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cffa335ee|Hitem:153172::::::::110:71:::3:3629:1474:3336:::|h[Doomed Exarch's Memento]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::120:73:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122260,

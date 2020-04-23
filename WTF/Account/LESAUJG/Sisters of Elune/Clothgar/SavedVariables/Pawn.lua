@@ -1,30 +1,27 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0324,
-	["LastPlayerFullName"] = "Clothgar-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 122250,
-			["Level"] = 258,
-			["Link"] = "|cff00ccff|Hitem:122250::::::::116:267:::1:5805:::|h[Tattered Dreadmist Mask]|h|r",
+			["Level"] = 276,
+			["Link"] = "|cff00ccff|Hitem:122250::::::::118:267:::1:5805:::|h[Tattered Dreadmist Mask]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 290,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::116:267::11:4:4932:4933:4935:1482:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 292,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::117:267::11:4:4932:4933:4935:1484:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 122360,
-			["Level"] = 258,
-			["Link"] = "|cff00ccff|Hitem:122360::::::::116:267:::1:5805:::|h[Tattered Dreadmist Mantle]|h|r",
+			["Level"] = 276,
+			["Link"] = "|cff00ccff|Hitem:122360::::::::118:267:::1:5805:::|h[Tattered Dreadmist Mantle]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
 			["ID"] = 122384,
-			["Level"] = 258,
-			["Link"] = "|cff00ccff|Hitem:122384::::::::116:267:::1:5805:::|h[Tattered Dreadmist Robe]|h|r",
+			["Level"] = 276,
+			["Link"] = "|cff00ccff|Hitem:122384::::::::118:267:::1:5805:::|h[Tattered Dreadmist Robe]|h|r",
 		}, -- [5]
 		{
 			["ID"] = 154020,
@@ -33,8 +30,8 @@ PawnOptions = {
 		}, -- [6]
 		{
 			["ID"] = 122256,
-			["Level"] = 258,
-			["Link"] = "|cff00ccff|Hitem:122256::::::::116:267:::1:5805:::|h[Tattered Dreadmist Leggings]|h|r",
+			["Level"] = 276,
+			["Link"] = "|cff00ccff|Hitem:122256::::::::118:267:::1:5805:::|h[Tattered Dreadmist Leggings]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 154014,
@@ -53,32 +50,32 @@ PawnOptions = {
 		}, -- [10]
 		{
 			["ID"] = 128169,
-			["Level"] = 258,
+			["Level"] = 276,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:128169::::::::116:267:::1:5805:::|h[Signet of the Third Fleet]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128169::::::::118:267:::1:5805:::|h[Signet of the Third Fleet]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 128169,
-			["Level"] = 250,
+			["Level"] = 267,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:128169::::::::115:267:::1:5805:::|h[Signet of the Third Fleet]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128169::::::::117:267:::1:5805:::|h[Signet of the Third Fleet]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 122362,
-			["Level"] = 258,
+			["Level"] = 276,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:122362::::::::116:267:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122362::::::::118:267:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
 		}, -- [13]
 		{
 			["ID"] = 122361,
-			["Level"] = 258,
+			["Level"] = 276,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::116:267:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::118:267:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122262,
-			["Level"] = 258,
-			["Link"] = "|cff00ccff|Hitem:122262::::::::116:267:::1:5805:::|h[Ancient Bloodmoon Cloak]|h|r",
+			["Level"] = 276,
+			["Link"] = "|cff00ccff|Hitem:122262::::::::118:267:::1:5805:::|h[Ancient Bloodmoon Cloak]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 154024,
@@ -86,6 +83,9 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:154024::::::::111:267::::::|h[Felsoul Staff]|h|r",
 		}, -- [16]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Clothgar-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

@@ -124,6 +124,9 @@ TukuiData = {
 			},
 		},
 		["Torinar"] = {
+			["HideBar4"] = false,
+			["Move"] = {
+			},
 			["InstallDone"] = true,
 			["Chat"] = {
 				["Frame1"] = {
@@ -206,8 +209,6 @@ TukuiData = {
 					370, -- [5]
 					108, -- [6]
 				},
-			},
-			["Move"] = {
 			},
 			["Texts"] = {
 				["Durability"] = {
@@ -1887,23 +1888,23 @@ TukuiData = {
 			["Guldahka"] = 2000,
 		},
 		["Sisters of Elune"] = {
-			["Leanara"] = 285236833,
-			["Torinar"] = 45861923,
+			["Leanara"] = 285247901,
+			["Torinar"] = 53416518,
 			["Orig"] = 353935588,
-			["Galinar"] = 200334257,
+			["Galinar"] = 200065656,
 			["Edaka"] = 0,
 			["Tauro"] = 0,
 			["Toberd"] = 0,
 			["Mandelbrot"] = 3857215,
 			["Palani"] = 64858782,
-			["Uldaris"] = 791685642,
+			["Uldaris"] = 791860816,
 			["Herbinator"] = 5405545,
-			["Bracnar"] = 20554564293,
+			["Bracnar"] = 20554564173,
 			["Sanjuri"] = 11460,
-			["Torinara"] = 266540266,
+			["Torinara"] = 254493381,
 			["Ghiaccioli"] = 61592495,
 			["Belrath"] = 3799320,
-			["Clothgar"] = 22149371645,
+			["Clothgar"] = 22273157795,
 		},
 	},
 	["Ravenholdt"] = {

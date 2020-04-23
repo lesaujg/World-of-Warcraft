@@ -4,6 +4,10 @@ VER 3 000000000000001E "_Clear Target" "Ability_CheapShot"
 /petfollow
 /petpassive
 END
+VER 3 00000000000000B1 "Elder Charm" "INV_MISC_QUESTIONMARK"
+#showtooltip Elder Charm of Good Fortune
+/run BuyMerchantItem(1,1)
+END
 VER 3 0000000000000099 "Fish" "INV_MISC_QUESTIONMARK"
 /equipset Fishing
 /use Fishing
@@ -43,6 +47,9 @@ END
 VER 3 000000000000009D "Reload" "132096"
 /console worldPreloadNonCritical 0
 /reload
+END
+VER 3 00000000000000B0 "Ruen ofi Fate" "INV_MISC_QUESTIONMARK"
+/run for i=1,GetMerchantNumItems() do if GetMerchantItemInfo(i)=="Mogu Rune of Fate" then BuyMerchantItem(i,1) break end end
 END
 VER 3 00000000000000A9 "TSMMacro" "Achievement_Faction_GoldenLotus"
 /click TSMCancelAuctionBtn
