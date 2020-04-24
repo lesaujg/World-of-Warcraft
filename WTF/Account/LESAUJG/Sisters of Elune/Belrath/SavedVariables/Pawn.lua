@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0324,
+	["LastPlayerFullName"] = "Belrath-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 122263,
@@ -34,9 +37,9 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:122264::::::::110:250:::1:5805:::|h[Burnished Legplates of Might]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 113546,
-			["Level"] = 136,
-			["Link"] = "|cff0070dd|Hitem:113546::::::::106:250:512::1:3784:96:::|h[Uzko's Dusty Boots]|h|r",
+			["ID"] = 120114,
+			["Level"] = 139,
+			["Link"] = "|cffa335ee|Hitem:120114::::::::110:250:::1:560:::|h[Wing-Forged Greatboots]|h|r",
 		}, -- [8]
 		{
 			["ID"] = 121063,
@@ -84,9 +87,6 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:163533::::::::110:250::11::::|h[Footman's Cleaver]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Belrath-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
