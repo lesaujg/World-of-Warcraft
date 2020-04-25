@@ -4,44 +4,44 @@ PawnOptions = {
 	["ItemLevels"] = {
 		{
 			["ID"] = 122263,
-			["Level"] = 170,
-			["Link"] = "|cff00ccff|Hitem:122263::::::::110:250:::1:5805:::|h[Burnished Helm of Might]|h|r",
+			["Level"] = 224,
+			["Link"] = "|cff00ccff|Hitem:122263::::::::112:250:::1:5805:::|h[Burnished Helm of Might]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 280,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::110:250::11:4:4932:4933:4935:1472:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 282,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::112:250::11:4:4932:4933:4935:1474:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 122388,
-			["Level"] = 170,
-			["Link"] = "|cff00ccff|Hitem:122388::::::::110:250:::1:5805:::|h[Burnished Pauldrons of Might]|h|r",
+			["Level"] = 224,
+			["Link"] = "|cff00ccff|Hitem:122388::::::::112:250:::1:5805:::|h[Burnished Pauldrons of Might]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
 			["ID"] = 122387,
-			["Level"] = 170,
-			["Link"] = "|cff00ccff|Hitem:122387::::::::110:250:::1:5805:::|h[Burnished Breastplate of Might]|h|r",
+			["Level"] = 224,
+			["Link"] = "|cff00ccff|Hitem:122387::::::::112:250:::1:5805:::|h[Burnished Breastplate of Might]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 123897,
-			["Level"] = 145,
-			["Link"] = "|cff0070dd|Hitem:123897::::::::106:250::13:3:1686:3392:3408:::|h[Leystone Waistguard of the Peerless]|h|r",
+			["ID"] = 155190,
+			["Level"] = 218,
+			["Link"] = "|cff1eff00|Hitem:155190::::::::112:250:512:11:1:4787:112:::|h[Dread Corsair Girdle]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 122264,
-			["Level"] = 170,
-			["Link"] = "|cff00ccff|Hitem:122264::::::::110:250:::1:5805:::|h[Burnished Legplates of Might]|h|r",
+			["Level"] = 224,
+			["Link"] = "|cff00ccff|Hitem:122264::::::::112:250:::1:5805:::|h[Burnished Legplates of Might]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 113546,
-			["Level"] = 136,
-			["Link"] = "|cff0070dd|Hitem:113546::::::::106:250:512::1:3784:96:::|h[Uzko's Dusty Boots]|h|r",
+			["ID"] = 120114,
+			["Level"] = 139,
+			["Link"] = "|cffa335ee|Hitem:120114::::::::110:250:::1:560:::|h[Wing-Forged Greatboots]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 121063,
-			["Level"] = 158,
-			["Link"] = "|cff1eff00|Hitem:121063::::::::110:250:512::2:1812:1696:110:::|h[Ettinbone Vambraces of the Fireflash]|h|r",
+			["ID"] = 154476,
+			["Level"] = 217,
+			["Link"] = "|cff0070dd|Hitem:154476::::::::111:250:512:17:1:4776:111:::|h[Honey-Glazed Vambraces]|h|r",
 		}, -- [9]
 		{
 			["ID"] = 123893,
@@ -61,28 +61,33 @@ PawnOptions = {
 			["Link"] = "|cffff8000|Hitem:151640::153714::::::107:250:::2:1811:3630:::|h[Soul of the Deathlord]|h|r",
 		}, -- [12]
 		{
-			["ID"] = 147278,
-			["Level"] = 193,
+			["ID"] = 133595,
+			["Level"] = 229,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cffa335ee|Hitem:147278::::::::110:250:::5:603:3574:1502:5870:3337:::|h[Stalwart Crest]|h|r",
+			["Link"] = "|cff00ccff|Hitem:133595::::::::112:250:::1:5817:::|h[Gronntooth War Horn]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 133595,
-			["Level"] = 173,
+			["ID"] = 122361,
+			["Level"] = 224,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:133595::::::::110:250:::1:5817:::|h[Gronntooth War Horn]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::112:250:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122260,
-			["Level"] = 170,
-			["Link"] = "|cff00ccff|Hitem:122260::::::::110:250:::1:5805:::|h[Worn Stoneskin Gargoyle Cape]|h|r",
+			["Level"] = 224,
+			["Link"] = "|cff00ccff|Hitem:122260::::::::112:250:::1:5805:::|h[Worn Stoneskin Gargoyle Cape]|h|r",
 		}, -- [15]
+		{
+			["ID"] = 155214,
+			["Level"] = 223,
+			["Link"] = "|cff1eff00|Hitem:155214::::::::112:250:512:11:1:4790:112:::|h[Brineworks Hullcracker]|h|r",
+		}, -- [16]
 		{
 			["ID"] = 163533,
 			["Level"] = 180,
-			["AlsoFitsIn"] = 17,
+			["AlsoFitsIn"] = 16,
 			["Link"] = "|cff0070dd|Hitem:163533::::::::110:250::11::::|h[Footman's Cleaver]|h|r",
-		}, -- [16]
+		}, -- [17]
 	},
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,

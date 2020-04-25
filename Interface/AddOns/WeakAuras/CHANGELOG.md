@@ -1,18 +1,16 @@
-# [2.17.2](https://github.com/WeakAuras/WeakAuras2/tree/2.17.2) (2020-04-17)
+# [2.17.4](https://github.com/WeakAuras/WeakAuras2/tree/2.17.4) (2020-04-22)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.17.1...2.17.2)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.17.3...2.17.4)
 
 ## Highlights
 
- - Fixed a few regressiosn 
+ - fix a buff tracking and nameplates regression 
 
 ## Commits
 
-InfusOnWoW (1):
+InfusOnWoW (3):
 
-- Fix Health/Power triggers having not duration for animations
-
-mrbuds (1):
-
-- Add missing migration for action's glow_type fixes #2120
+- BT2 Fix Multi by adjusting it to recent changes (#2139)
+- Clean up match data if a unit ceases to exists
+- Fix nameplates auras sometimes not being applied if in a raid group
 
