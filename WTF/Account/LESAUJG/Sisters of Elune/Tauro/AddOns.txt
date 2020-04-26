@@ -25,7 +25,7 @@ RaidAchievement_WotlkHeroics: disabled
 RaidAchievement_OldModules: disabled
 SavedInstances: enabled
 Skada: disabled
-TeleportCloak: disabled
+TeleportCloak: enabled
 WeakAuras: disabled
 WeakAurasModelPaths: disabled
 WeakAurasOptions: disabled

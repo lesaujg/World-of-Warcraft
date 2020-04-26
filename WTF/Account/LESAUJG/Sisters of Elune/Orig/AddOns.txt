@@ -33,7 +33,7 @@ RaidAchievement_WotlkHeroics: disabled
 RaidAchievement_OldModules: disabled
 SavedInstances: enabled
 Skada: disabled
-TeleportCloak: disabled
+TeleportCloak: enabled
 TradeSkillMaster_Vendoring: disabled
 AddOnSkins: disabled
 Tukui_Config: enabled

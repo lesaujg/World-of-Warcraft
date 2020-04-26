@@ -162,7 +162,7 @@ CrossRealmAssist: enabled
 Decursive: disabled
 Ketho_InstanceTimer: disabled
 SavedInstances: enabled
-TeleportCloak: disabled
+TeleportCloak: enabled
 TradeSkillMaster_Vendoring: disabled
 DBM-Nighthold: enabled
 DBM-EmeraldNightmare: enabled

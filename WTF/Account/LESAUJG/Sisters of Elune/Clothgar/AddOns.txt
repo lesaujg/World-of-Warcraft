@@ -172,7 +172,7 @@ WeDontWipe: disabled
 WeDontWipe-WindwalkerMonk: disabled
 CrossRealmAssist: disabled
 Ketho_InstanceTimer: disabled
-TeleportCloak: disabled
+TeleportCloak: enabled
 TradeSkillMaster_Vendoring: disabled
 WeakAurasTemplates: disabled
 DBM-BrokenIsles: disabled

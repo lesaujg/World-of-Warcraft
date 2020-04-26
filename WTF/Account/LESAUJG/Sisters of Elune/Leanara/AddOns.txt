@@ -83,7 +83,7 @@ MrrlsItemInformation: disabled
 NPCScan: disabled
 OPie: enabled
 Pawn: enabled
-TeleportCloak: disabled
+TeleportCloak: enabled
 SmexyMats: enabled
 DBM-Core: disabled
 DBM-DefaultSkin: disabled

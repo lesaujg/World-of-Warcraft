@@ -170,7 +170,7 @@ WeDontWipe: disabled
 WeDontWipe-WindwalkerMonk: disabled
 CrossRealmAssist: enabled
 Ketho_InstanceTimer: disabled
-TeleportCloak: disabled
+TeleportCloak: enabled
 TradeSkillMaster_Vendoring: disabled
 DBM-Nighthold: enabled
 DBM-EmeraldNightmare: enabled

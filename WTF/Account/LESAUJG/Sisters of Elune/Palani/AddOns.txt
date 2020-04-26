@@ -56,7 +56,7 @@ NPCScan: disabled
 OPie: enabled
 Pawn: enabled
 Skada: disabled
-TeleportCloak: disabled
+TeleportCloak: enabled
 SmexyMats: enabled
 DBM-Core: disabled
 DBM-DefaultSkin: disabled
