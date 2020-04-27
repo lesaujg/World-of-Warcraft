@@ -7,24 +7,24 @@ PawnOptions = {
 	["ItemLevels"] = {
 		{
 			["ID"] = 173842,
-			["Level"] = 415,
-			["Link"] = "|cff0070dd|Hitem:173842::::::::120:581::14:3:1472:4785:6258:::|h[Visage of the Insatiable Maw]|h|r",
+			["Level"] = 420,
+			["Link"] = "|cff0070dd|Hitem:173842::::::::120:581::14:4:1472:4785:6258:4775:::|h[Visage of the Insatiable Maw]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 288,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::119:581::11:4:4932:4933:4935:1480:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 435,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:581::11:4:4932:4933:6316:1572:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 122358,
-			["Level"] = 284,
-			["Link"] = "|cff00ccff|Hitem:122358::::::::119:581:::1:5805:::|h[Stained Shadowcraft Spaulders]|h|r",
+			["ID"] = 170521,
+			["Level"] = 390,
+			["Link"] = "|cffa335ee|Hitem:170521::::::::120:581::11:4:1577:4786:5415:4775:::|h[7th Legionnaire's Leather Mantle]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
 			["ID"] = 173843,
-			["Level"] = 415,
-			["Link"] = "|cff0070dd|Hitem:173843::::::::120:581::14:3:1472:4785:6257:::|h[Vest of the Insatiable Maw]|h|r",
+			["Level"] = 420,
+			["Link"] = "|cff0070dd|Hitem:173843::::::::120:581::14:4:1472:4785:6257:4775:::|h[Vest of the Insatiable Maw]|h|r",
 		}, -- [5]
 		{
 			["ID"] = 173816,
@@ -76,21 +76,21 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:133597::::::::120:581:::1:5817:::|h[Infallible Tracking Charm]|h|r",
 		}, -- [14]
 		{
-			["ID"] = 122261,
-			["Level"] = 284,
-			["Link"] = "|cff00ccff|Hitem:122261::::::::119:581:::1:5805:::|h[Inherited Cape of the Black Baron]|h|r",
+			["ID"] = 160536,
+			["Level"] = 320,
+			["Link"] = "|cff0070dd|Hitem:160536::::::::120:581::14::::|h[7th Legionnaire's Cloak]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 155208,
-			["Level"] = 231,
+			["ID"] = 158079,
+			["Level"] = 385,
 			["AlsoFitsIn"] = 17,
-			["Link"] = "|cff0070dd|Hitem:155208::::::::112:581:512:11:2:4790:4791:112:::|h[Stormfused Striker]|h|r",
+			["Link"] = "|cff0070dd|Hitem:158079::::::::120:581::28:5:4803:6516:6513:1577:4785:::|h[Stagheart Hatchet]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 155208,
-			["Level"] = 231,
+			["ID"] = 158079,
+			["Level"] = 385,
 			["AlsoFitsIn"] = 16,
-			["Link"] = "|cff0070dd|Hitem:155208::::::::113:581:512:11:2:4790:4791:112:::|h[Stormfused Striker]|h|r",
+			["Link"] = "|cff0070dd|Hitem:158079::::::::120:577::28:5:4803:6516:6513:1577:4785:::|h[Stagheart Hatchet]|h|r",
 		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,

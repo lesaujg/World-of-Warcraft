@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0324,
-	["LastPlayerFullName"] = "Orig-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 122248,
@@ -12,19 +9,19 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 288,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::119:268::11:4:4932:4933:4935:1480:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 435,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:268::11:4:4932:4933:6316:1572:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 122358,
-			["Level"] = 284,
-			["Link"] = "|cff00ccff|Hitem:122358::::::::119:268:::1:5805:::|h[Stained Shadowcraft Spaulders]|h|r",
+			["ID"] = 170521,
+			["Level"] = 390,
+			["Link"] = "|cffa335ee|Hitem:170521::::::::120:268::11:4:1577:4786:5415:4775:::|h[7th Legionnaire's Leather Mantle]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
 			["ID"] = 173843,
-			["Level"] = 415,
-			["Link"] = "|cff0070dd|Hitem:173843::::::::120:268::14:3:1472:4785:6257:::|h[Vest of the Insatiable Maw]|h|r",
+			["Level"] = 420,
+			["Link"] = "|cff0070dd|Hitem:173843::::::::120:268::14:4:1472:4785:6257:4775:::|h[Vest of the Insatiable Maw]|h|r",
 		}, -- [5]
 		{
 			["ID"] = 173815,
@@ -52,16 +49,16 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:173440::::::::120:268::14:4:6412:6515:1467:4785:::|h[Grips of the Insatiable Maw]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 128173,
-			["Level"] = 284,
+			["ID"] = 158161,
+			["Level"] = 390,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:128173::::::::119:268:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
+			["Link"] = "|cff0070dd|Hitem:158161::::::::120:268::26:5:4803:6516:6513:1582:4785:::|h[Spearfisher's Band]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 128173,
-			["Level"] = 284,
+			["ID"] = 158161,
+			["Level"] = 390,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:128173::::::::120:268:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
+			["Link"] = "|cff0070dd|Hitem:158161::::::::120:269::26:5:4803:6516:6513:1582:4785:::|h[Spearfisher's Band]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 133597,
@@ -76,14 +73,14 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:133597::::::::120:268:::1:5817:::|h[Infallible Tracking Charm]|h|r",
 		}, -- [14]
 		{
-			["ID"] = 122261,
-			["Level"] = 284,
-			["Link"] = "|cff00ccff|Hitem:122261::::::::119:268:::1:5805:::|h[Inherited Cape of the Black Baron]|h|r",
+			["ID"] = 160536,
+			["Level"] = 320,
+			["Link"] = "|cff0070dd|Hitem:160536::::::::120:268::14::::|h[7th Legionnaire's Cloak]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 155073,
-			["Level"] = 232,
-			["Link"] = "|cff1eff00|Hitem:155073::::::::113:268:512:11:1:4790:113:::|h[Waverider Warstaff]|h|r",
+			["ID"] = 158097,
+			["Level"] = 385,
+			["Link"] = "|cff0070dd|Hitem:158097::::::::120:268::28:5:4803:6516:6515:1577:4785:::|h[Tideguard Pike]|h|r",
 		}, -- [16]
 		{
 			["ID"] = 133948,
@@ -91,7 +88,9 @@ PawnOptions = {
 			["Link"] = "|cffe6cc80|Hitem:133948::::::::110:269:256:::290:::|h[Fists of the Heavens]|h|r",
 		}, -- [17]
 	},
-	["LastKeybindingsSet"] = 1,
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Orig-Sisters of Elune",
 	["Artifacts"] = {
 		[128938] = {
 			["Relics"] = {
@@ -111,6 +110,7 @@ PawnOptions = {
 			["Name"] = "Fu Zan, the Wanderer's Companion",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "MONK",

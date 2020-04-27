@@ -27,126 +27,129 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
+		["date"] = "Monday 4/27",
+		["rows"] = 1,
+	}, -- [1]
+	{
 		["date"] = "Friday 4/24",
 		["rows"] = 2,
-	}, -- [1]
+	}, -- [2]
 	{
 		["date"] = "Wednesday 4/22",
 		["rows"] = 1,
-	}, -- [2]
+	}, -- [3]
 	{
 		["date"] = "Sunday 4/19",
 		["rows"] = 2,
-	}, -- [3]
+	}, -- [4]
 	{
 		["date"] = "Friday 4/17",
 		["rows"] = 1,
-	}, -- [4]
+	}, -- [5]
 	{
 		["date"] = "Thursday 4/9",
 		["rows"] = 2,
-	}, -- [5]
+	}, -- [6]
 	{
 		["date"] = "Tuesday 4/7",
 		["rows"] = 5,
-	}, -- [6]
+	}, -- [7]
 	{
 		["date"] = "Monday 4/6",
 		["rows"] = 2,
-	}, -- [7]
+	}, -- [8]
 	{
 		["date"] = "Sunday 4/5",
 		["rows"] = 1,
-	}, -- [8]
+	}, -- [9]
 	{
 		["date"] = "Saturday 4/4",
 		["rows"] = 1,
-	}, -- [9]
+	}, -- [10]
 	{
 		["date"] = "Wednesday 4/1",
 		["rows"] = 2,
-	}, -- [10]
+	}, -- [11]
 	{
 		["date"] = "Tuesday 3/31",
 		["rows"] = 9,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Monday 3/30",
 		["rows"] = 2,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Sunday 3/29",
 		["rows"] = 2,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Saturday 3/28",
 		["rows"] = 1,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Friday 3/27",
 		["rows"] = 5,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Thursday 3/26",
 		["rows"] = 5,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Wednesday 3/25",
 		["rows"] = 8,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Tuesday 3/24",
 		["rows"] = 7,
-	}, -- [18]
+	}, -- [19]
 	{
 		["date"] = "Monday 3/23",
 		["rows"] = 3,
-	}, -- [19]
-	{
-		["date"] = "Sunday 3/22",
-		["rows"] = 2,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
 	{
-		["Uldum Accord"] = 675,
-		["Rajani"] = 1725,
+		["Uldum Accord"] = 725,
 	}, -- [1]
 	{
-		["Uldum Accord"] = 100,
+		["Uldum Accord"] = 675,
+		["Rajani"] = 1725,
 	}, -- [2]
+	{
+		["Uldum Accord"] = 100,
+	}, -- [3]
 	{
 		["Uldum Accord"] = 2000,
 		["Rajani"] = 975,
-	}, -- [3]
+	}, -- [4]
 	{
 		["Rajani"] = 1125,
-	}, -- [4]
+	}, -- [5]
 	{
 		["7th Legion"] = 75,
 		["Uldum Accord"] = 375,
-	}, -- [5]
+	}, -- [6]
 	{
 		["The Nightfallen"] = 500,
 		["Uldum Accord"] = 1100,
 		["Court of Farondis"] = 1500,
 		["7th Legion"] = 150,
 		["Rajani"] = 2175,
-	}, -- [6]
-	{
-		["Rajani"] = 375,
-		["Rustbolt Resistance"] = 150,
 	}, -- [7]
 	{
 		["Rajani"] = 375,
+		["Rustbolt Resistance"] = 150,
 	}, -- [8]
 	{
-		["Rajani"] = 1025,
+		["Rajani"] = 375,
 	}, -- [9]
+	{
+		["Rajani"] = 1025,
+	}, -- [10]
 	{
 		["7th Legion"] = 113,
 		["Uldum Accord"] = 375,
-	}, -- [10]
+	}, -- [11]
 	{
 		["Armies of Legionfall"] = 150,
 		["Syndicate"] = -175,
@@ -157,32 +160,32 @@ FactionAddictLogEntries = {
 		["The Wardens"] = 150,
 		["Army of the Light"] = 1000,
 		["7th Legion"] = 2600,
-	}, -- [11]
+	}, -- [12]
 	{
 		["Rustbolt Resistance"] = 850,
 		["Uldum Accord"] = 375,
-	}, -- [12]
+	}, -- [13]
 	{
 		["Rajani"] = 500,
 		["Rustbolt Resistance"] = 850,
-	}, -- [13]
+	}, -- [14]
 	{
 		["Uldum Accord"] = 1375,
-	}, -- [14]
+	}, -- [15]
 	{
 		["Armies of Legionfall"] = 150,
 		["Highmountain Tribe"] = 75,
 		["7th Legion"] = 150,
 		["Uldum Accord"] = 375,
 		["Rajani"] = 500,
-	}, -- [15]
+	}, -- [16]
 	{
 		["Armies of Legionfall"] = 1400,
 		["The Wardens"] = 650,
 		["Court of Farondis"] = 300,
 		["Dreamweavers"] = 1500,
 		["7th Legion"] = 150,
-	}, -- [16]
+	}, -- [17]
 	{
 		["The Nightfallen"] = 825,
 		["Armies of Legionfall"] = 150,
@@ -192,7 +195,7 @@ FactionAddictLogEntries = {
 		["Court of Farondis"] = 1900,
 		["Army of the Light"] = 6850,
 		["Dreamweavers"] = 150,
-	}, -- [17]
+	}, -- [18]
 	{
 		["Uldum Accord"] = 1100,
 		["Rajani"] = 2150,
@@ -201,15 +204,11 @@ FactionAddictLogEntries = {
 		["Court of Farondis"] = 650,
 		["Army of the Light"] = 1000,
 		["Rustbolt Resistance"] = 850,
-	}, -- [18]
+	}, -- [19]
 	{
 		["Uldum Accord"] = 550,
 		["Storm's Wake"] = 225,
 		["Rustbolt Resistance"] = 150,
-	}, -- [19]
-	{
-		["Rajani"] = 375,
-		["Uldum Accord"] = 500,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -330,14 +329,14 @@ FactionAddictConfigIsInactive = {
 	[1975] = false,
 	[1718] = false,
 	[1272] = false,
-	[1850] = false,
+	[2162] = false,
 	[990] = false,
 	[989] = false,
 	[1273] = false,
-	[1337] = false,
+	[2156] = false,
 	[1849] = false,
 	[2157] = false,
-	[1085] = false,
+	[2417] = false,
 	[2158] = false,
 	[369] = false,
 	[2159] = false,
@@ -346,7 +345,7 @@ FactionAddictConfigIsInactive = {
 	[576] = false,
 	[2161] = false,
 	[1276] = false,
-	[2162] = false,
+	[1850] = false,
 	[2164] = false,
 	[2163] = false,
 	[1277] = false,
@@ -359,25 +358,25 @@ FactionAddictConfigIsInactive = {
 	[1388] = false,
 	[1279] = false,
 	[69] = false,
-	[81] = false,
+	[1280] = false,
 	[1216] = false,
-	[2045] = false,
+	[81] = false,
 	[2170] = false,
 	[1848] = false,
 	[93] = false,
 	[1281] = false,
 	[1345] = false,
 	[1090] = false,
-	[1280] = false,
+	[2045] = false,
 	[1282] = false,
 	[1091] = false,
 	[270] = false,
 	[1984] = false,
 	[1283] = false,
-	[2417] = false,
+	[1085] = false,
 	[1156] = false,
-	[2156] = false,
 	[1847] = false,
+	[1337] = false,
 	[1714] = false,
 	[1738] = false,
 	[1731] = false,
