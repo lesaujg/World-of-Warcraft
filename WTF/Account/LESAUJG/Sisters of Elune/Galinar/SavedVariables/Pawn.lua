@@ -9,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 461,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:66::11:4:4932:4933:6316:1598:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 463,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:66::11:4:4932:4933:6316:1600:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173835,
@@ -61,16 +61,16 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:174469::::::::120:70::3:5:4822:6516:6513:1487:4786:::|h[Band of Insidious Ruminations]|h|r",
 		}, -- [12]
 		{
-			["ID"] = 160262,
-			["Level"] = 215,
+			["ID"] = 160263,
+			["Level"] = 420,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cffa335ee|Hitem:160262::::::::112:70:512:11:2:4787:4789:110:::|h[\"Relic of the Makers\"]|h|r",
+			["Link"] = "|cff0070dd|Hitem:160263::::::::120:66::27:3:4803:1612:4785:::|h[Snowpelt Mangler]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 160262,
-			["Level"] = 215,
+			["ID"] = 160263,
+			["Level"] = 420,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cffa335ee|Hitem:160262::::::::120:66:512:11:2:4787:4789:110:::|h[\"Relic of the Makers\"]|h|r",
+			["Link"] = "|cff0070dd|Hitem:160263::::::::120:70::27:3:4803:1612:4785:::|h[Snowpelt Mangler]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 169223,

@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0324,
+	["LastPlayerFullName"] = "Torinar-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173457,
@@ -9,8 +12,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 290,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:73::11:4:4932:4933:4935:1482:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 435,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:73::11:4:4932:4933:6316:1572:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173460,
@@ -49,10 +52,10 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:173494::::::::120:73::14:4:6412:6513:1467:4785:::|h[Malignant Leviathan's Fists]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 153685,
-			["Level"] = 310,
+			["ID"] = 158161,
+			["Level"] = 410,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cffa335ee|Hitem:153685::::::::120:73::13:2:4928:3378:::|h[Owlseye Loop of the Aurora]|h|r",
+			["Link"] = "|cff0070dd|Hitem:158161::::::::120:73::26:5:4803:6516:6513:1602:4785:::|h[Spearfisher's Band]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 153685,
@@ -89,9 +92,6 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:170364::::::::120:73::13:2:1699:5804:::|h[Uncanny Combatant's Shield of the Feverflare]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Torinar-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

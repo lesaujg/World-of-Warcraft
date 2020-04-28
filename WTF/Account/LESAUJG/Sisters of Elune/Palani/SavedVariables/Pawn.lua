@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0324,
-	["LastPlayerFullName"] = "Palani-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173433,
@@ -12,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 292,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::119:256::11:4:4932:4933:4935:1484:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 435,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:256::11:4:4932:4933:6316:1572:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173844,
@@ -52,10 +49,10 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:173463::::::::120:256::14:4:6412:6513:1467:4785:::|h[Vile Manipulator's Gloves]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 128169,
-			["Level"] = 284,
+			["ID"] = 158161,
+			["Level"] = 415,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:128169::::::::119:256:::1:5805:::|h[Signet of the Third Fleet]|h|r",
+			["Link"] = "|cff0070dd|Hitem:158161::::::::120:256::26:8:4803:6578:6579:6484:6457:6515:1607:4785:::|h[Spearfisher's Band]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 128169,
@@ -64,10 +61,10 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:128169::::::::120:256:::1:5805:::|h[Signet of the Third Fleet]|h|r",
 		}, -- [12]
 		{
-			["ID"] = 122361,
-			["Level"] = 284,
+			["ID"] = 160263,
+			["Level"] = 410,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::119:256:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff0070dd|Hitem:160263::::::::120:256::27:3:4803:1602:4785:::|h[Snowpelt Mangler]|h|r",
 		}, -- [13]
 		{
 			["ID"] = 122362,
@@ -76,14 +73,14 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:122362::::::::119:256:::1:5805:::|h[Discerning Eye of the Beast]|h|r",
 		}, -- [14]
 		{
-			["ID"] = 122262,
-			["Level"] = 284,
-			["Link"] = "|cff00ccff|Hitem:122262::::::::119:256:::1:5805:::|h[Ancient Bloodmoon Cloak]|h|r",
+			["ID"] = 160536,
+			["Level"] = 320,
+			["Link"] = "|cff0070dd|Hitem:160536::::::::120:258::14::::|h[7th Legionnaire's Cloak]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 159578,
-			["Level"] = 257,
-			["Link"] = "|cff1eff00|Hitem:159578::::::::120:258:512::2:4796:1714:118:::|h[Loa-Blessed Stave of the Harmonious]|h|r",
+			["ID"] = 163886,
+			["Level"] = 370,
+			["Link"] = "|cffa335ee|Hitem:163886::::::::120:256::30:2:1562:4786:::|h[7th Legionnaire's Stave]|h|r",
 		}, -- [16]
 		{
 			["ID"] = 155139,
@@ -92,6 +89,9 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:155139::::::::113:256:512:11:1:4787:113:::|h[Mad-Butcher's Mallet]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Palani-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
