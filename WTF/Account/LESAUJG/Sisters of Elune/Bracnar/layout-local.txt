@@ -27,3 +27,10 @@ X: -90
 Y: -25
 W: 310
 H: 719
+Frame: AmrUiFrame1
+FrameLevel: 1
+Anchor: CENTER
+X: -91
+Y: 70
+W: 1000
+H: 700
