@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0324,
-	["LastPlayerFullName"] = "Torinar-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173457,
@@ -12,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 435,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:73::11:4:4932:4933:6316:1572:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 437,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:73::11:4:4932:4933:6316:1574:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173460,
@@ -92,6 +89,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:170364::::::::120:73::13:2:1699:5804:::|h[Uncanny Combatant's Shield of the Feverflare]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Torinar-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

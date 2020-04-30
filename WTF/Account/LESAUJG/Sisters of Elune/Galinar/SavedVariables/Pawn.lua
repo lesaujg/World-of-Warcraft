@@ -9,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 465,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:66::11:4:4932:4933:6316:1602:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 467,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:66::11:4:4932:4933:6316:1604:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173835,
@@ -44,9 +44,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:174956::::::::120:66::28:5:6540:6513:6578:6579:4803:::|h[Malignant Leviathan's Armguards]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 173494,
-			["Level"] = 410,
-			["Link"] = "|cff0070dd|Hitem:173494::::::::120:66::14:4:6412:6513:1467:4785:::|h[Malignant Leviathan's Fists]|h|r",
+			["ID"] = 157928,
+			["Level"] = 420,
+			["Link"] = "|cff0070dd|Hitem:157928::::::::120:66::27:7:4803:6578:6579:6562:6513:1612:4785:::|h[Battlegloves of Rezan's Bladeguard]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 174469,
@@ -78,10 +78,10 @@ PawnOptions = {
 			["Link"] = "|cffff8000|Hitem:169223::::::::120:66::11:1:6272:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 170313,
-			["Level"] = 400,
+			["ID"] = 155273,
+			["Level"] = 415,
 			["AlsoFitsIn"] = 17,
-			["Link"] = "|cffa335ee|Hitem:170313::::::::120:66::13:1:1681:::|h[Uncanny Combatant's Discombobulator of the Quickblade]|h|r",
+			["Link"] = "|cff0070dd|Hitem:155273::::::::120:65::26:3:4803:1607:4785:::|h[Sharktooth Hatchet]|h|r",
 		}, -- [16]
 		{
 			["ID"] = 159798,
