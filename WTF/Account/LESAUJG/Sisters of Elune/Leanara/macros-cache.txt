@@ -1,0 +1,5 @@
+VER 3 0100000000000001 "asdf" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/tar creature of madness
+/cast Torment
+END

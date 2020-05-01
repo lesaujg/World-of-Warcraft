@@ -14,8 +14,8 @@ VER 3 010000000000006F "__Chimera Shot" "INV_MISC_QUESTIONMARK"
 END
 VER 3 010000000000005E "__Cobra Shot" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/petassist
-/target [noexists] pettarget
+#/petassist
+#/target [noexists] pettarget
 /cast Cobra Shot
 END
 VER 3 010000000000006D "__Concen Flame" "INV_MISC_QUESTIONMARK"
@@ -69,7 +69,7 @@ VER 3 0100000000000068 "_MangooseBite" "INV_MISC_QUESTIONMARK"
 /cast Mongoose Bite
 END
 VER 3 010000000000005D "_Multi-Shot" "INV_MISC_QUESTIONMARK"
-/target [noexists] pettarget
+#/target [noexists] pettarget
 /cast Multi-Shot
 END
 VER 3 010000000000000E "_Pet Attack/Foll" "Ability_Druid_ChallangingRoar"

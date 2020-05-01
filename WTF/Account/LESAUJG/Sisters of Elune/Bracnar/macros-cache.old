@@ -69,7 +69,7 @@ VER 3 0100000000000068 "_MangooseBite" "INV_MISC_QUESTIONMARK"
 /cast Mongoose Bite
 END
 VER 3 010000000000005D "_Multi-Shot" "INV_MISC_QUESTIONMARK"
-/target [noexists] pettarget
+#/target [noexists] pettarget
 /cast Multi-Shot
 END
 VER 3 010000000000000E "_Pet Attack/Foll" "Ability_Druid_ChallangingRoar"
@@ -108,6 +108,7 @@ VER 3 0100000000000067 "Eagle/Cobra" "INV_MISC_QUESTIONMARK"
 END
 VER 3 010000000000004D "MD+" "INV_Misc_QuestionMark"
 #show Misdirection
+/dismount
 /focus [button:2] target
 /clearfocus [button:2,mod:ctrl]
 /stopmacro [button:2][mod:ctrl]
