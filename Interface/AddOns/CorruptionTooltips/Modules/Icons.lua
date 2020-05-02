@@ -12,6 +12,9 @@ end
 
 local function CreateCorruptionIcon(button, icon)
     local position = Config:GetOption("iconposition")
+    local iconsize = 12
+    local offset_x = 2
+    local offset_y = 2
     if not button.corruption then
         button.corruption = CreateFrame("Frame", "$parent.corruption", button);
         button.corruption:SetPoint(position, button, position)
@@ -25,8 +28,8 @@ local function CreateCorruptionIcon(button, icon)
     if not button.corruption.icon then
         -- Icon
         button.corruption.icon = button.corruption:CreateTexture("CorruptionIcon", "OVERLAY", button.corruption)
-        button.corruption.icon:SetPoint(position, button, position)
-        button.corruption.icon:SetSize(16, 16)
+        button.corruption.icon:SetPoint(position, button, position, offset_x, offset_y)
+        button.corruption.icon:SetSize(iconsize, iconsize)
         button.corruption.icon:SetTexture(icon)
         -- Glow Border
         button.corruption.icon.overlay = button.corruption:CreateTexture(nil, "ARTWORK", nil, 7)
@@ -37,7 +40,7 @@ local function CreateCorruptionIcon(button, icon)
         button.corruption.icon.overlay:SetBlendMode("ADD")
     else
         button.corruption.icon:ClearAllPoints()
-        button.corruption.icon:SetPoint(position, button, position)
+        button.corruption.icon:SetPoint(position, button, position, offset_x, offset_y)
         button.corruption.icon:SetTexture(icon)
         button.corruption.icon.overlay:SetVertexColor(color["r"], color["g"], color["b"], color["a"])
     end
@@ -57,15 +60,7 @@ local function SetPaperDollCorruption(button, unit)
 
     if hasItem then
         local itemLink = GetInventoryItemLink(unit, slotId)
-        if (itemLink) then
-            if IsCorruptedItem(itemLink) then
-                Module:ApplyIcon(button, itemLink)
-            else
-                if button.corruption then
-                    button.corruption:Hide()
-                end
-            end
-        end
+        Module:ApplyIcon(button, itemLink)
     else
         if button.corruption then
             button.corruption:Hide()
@@ -104,6 +99,11 @@ local function SetContainerButtonCorruption(button, bag)
         button.corruption:Hide()
     end
 
+    -- ignore reagent bank tab
+    if (bag == BANK_CONTAINER and _G.BankFrame.selectedTab == 2) then
+        return
+    end
+
     local slot = button:GetID()
     local item = Item:CreateFromBagAndSlot(bag, slot)
     if item:IsItemEmpty() then
@@ -131,9 +131,11 @@ end
 function Module:OnLoad(event, ...)
     if (...) == "Blizzard_InspectUI" then
         self:UnregisterEvent(event)
-        self:SecureHook("InspectPaperDollItemSlotButton_Update", function(button)
-            SetPaperDollCorruption(button, "target")
-        end)
+        if Config:GetOption("itemicon") ~= false then
+            self:SecureHook("InspectPaperDollItemSlotButton_Update", function(button)
+                SetPaperDollCorruption(button, "target")
+            end)
+        end
     end
 end
 
@@ -159,7 +161,7 @@ function Module:OnEnable()
         -- bank
         self:SecureHook("BankFrameItemButton_Update", function(button)
             if not button.isBag then
-                SetContainerButtonCorruption(button, -1)
+                SetContainerButtonCorruption(button, BANK_CONTAINER)
             end
         end)
         -- loot
@@ -170,14 +172,22 @@ function Module:OnEnable()
 end
 
 function Module:ApplyIcon(button, itemLink)
-    if itemLink and IsCorruptedItem(itemLink) then
-        local _, icon = Scanner:GetCorruptionByItemLink(itemLink)
-        CreateCorruptionIcon(button, icon)
-        AddNzothIconOverlay(button)
-    else
-        if button.corruption then
-            button.corruption:Hide()
+    if itemLink then
+        if IsCorruptedItem(itemLink) then
+            local _, icon = Scanner:GetCorruptionByItemLink(itemLink)
+            CreateCorruptionIcon(button, icon)
+            AddNzothIconOverlay(button)
+        else
+            if button.corruption then
+                button.corruption:Hide()
+            end
         end
-        button.IconOverlay:Hide();
     end
+end
+
+function Module:ClearIcon(button)
+    if button.corruption then
+        button.corruption:Hide()
+    end
+    button.IconOverlay:Hide();
 end
