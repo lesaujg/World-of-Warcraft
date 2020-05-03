@@ -4,8 +4,8 @@ PawnOptions = {
 	["ItemLevels"] = {
 		{
 			["ID"] = 122263,
-			["Level"] = 233,
-			["Link"] = "|cff00ccff|Hitem:122263::::::::113:250:::1:5805:::|h[Burnished Helm of Might]|h|r",
+			["Level"] = 250,
+			["Link"] = "|cff00ccff|Hitem:122263::::::::115:250:::1:5805:::|h[Burnished Helm of Might]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
@@ -14,14 +14,14 @@ PawnOptions = {
 		}, -- [2]
 		{
 			["ID"] = 122388,
-			["Level"] = 233,
-			["Link"] = "|cff00ccff|Hitem:122388::::::::113:250:::1:5805:::|h[Burnished Pauldrons of Might]|h|r",
+			["Level"] = 250,
+			["Link"] = "|cff00ccff|Hitem:122388::::::::115:250:::1:5805:::|h[Burnished Pauldrons of Might]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
 			["ID"] = 122387,
-			["Level"] = 233,
-			["Link"] = "|cff00ccff|Hitem:122387::::::::113:250:::1:5805:::|h[Burnished Breastplate of Might]|h|r",
+			["Level"] = 250,
+			["Link"] = "|cff00ccff|Hitem:122387::::::::115:250:::1:5805:::|h[Burnished Breastplate of Might]|h|r",
 		}, -- [5]
 		{
 			["ID"] = 155190,
@@ -30,8 +30,8 @@ PawnOptions = {
 		}, -- [6]
 		{
 			["ID"] = 122264,
-			["Level"] = 233,
-			["Link"] = "|cff00ccff|Hitem:122264::::::::113:250:::1:5805:::|h[Burnished Legplates of Might]|h|r",
+			["Level"] = 250,
+			["Link"] = "|cff00ccff|Hitem:122264::::::::115:250:::1:5805:::|h[Burnished Legplates of Might]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 160476,
@@ -39,9 +39,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:160476::::::::112:250:512:17:2:4776:4802:112:::|h[Fogtide Warboots]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 154476,
-			["Level"] = 217,
-			["Link"] = "|cff0070dd|Hitem:154476::::::::111:250:512:17:1:4776:111:::|h[Honey-Glazed Vambraces]|h|r",
+			["ID"] = 158700,
+			["Level"] = 236,
+			["Link"] = "|cff1eff00|Hitem:158700::::::::113:250:512:11:1:4793:113:::|h[Dread Corsair Vambraces]|h|r",
 		}, -- [9]
 		{
 			["ID"] = 123893,
@@ -62,20 +62,20 @@ PawnOptions = {
 		}, -- [12]
 		{
 			["ID"] = 133595,
-			["Level"] = 238,
+			["Level"] = 255,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:133595::::::::113:250:::1:5817:::|h[Gronntooth War Horn]|h|r",
+			["Link"] = "|cff00ccff|Hitem:133595::::::::115:250:::1:5817:::|h[Gronntooth War Horn]|h|r",
 		}, -- [13]
 		{
 			["ID"] = 122361,
-			["Level"] = 233,
+			["Level"] = 250,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::113:250:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::115:250:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122260,
-			["Level"] = 233,
-			["Link"] = "|cff00ccff|Hitem:122260::::::::113:250:::1:5805:::|h[Worn Stoneskin Gargoyle Cape]|h|r",
+			["Level"] = 250,
+			["Link"] = "|cff00ccff|Hitem:122260::::::::115:250:::1:5805:::|h[Worn Stoneskin Gargoyle Cape]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 155214,

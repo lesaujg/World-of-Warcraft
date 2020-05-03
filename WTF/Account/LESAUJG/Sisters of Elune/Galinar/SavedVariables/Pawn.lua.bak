@@ -12,8 +12,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 469,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:66::11:4:4932:4933:6316:1606:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 473,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:66::11:4:4932:4933:6316:1610:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173835,
@@ -32,9 +32,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:173822::::::::120:66::14:4:6412:6513:1467:4785:::|h[Malignant Leviathan's Waistguard]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 173459,
-			["Level"] = 410,
-			["Link"] = "|cff0070dd|Hitem:173459::::::::120:66::14:4:6412:6513:1467:4785:::|h[Malignant Leviathan's Wargreaves]|h|r",
+			["ID"] = 174264,
+			["Level"] = 445,
+			["Link"] = "|cffa335ee|Hitem:174264::::::::120:66::3:5:4822:6516:6513:1487:4786:::|h[Chitinous Conqueror's Legplates]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 173455,
