@@ -11,11 +11,11 @@ OneRing_Config = {
 			["Bindings"] = {
 				["Pets"] = "ALT-W",
 				["RaidSymbols"] = false,
-				["Teleport"] = "ALT-Y",
+				["sefulItems"] = "ALT-E",
 				["WorldMarkers"] = "ALT-R",
 				["Food"] = "ALT-F",
 				["Vendor"] = "ALT-V",
-				["sefulItems"] = "ALT-E",
+				["Teleport"] = "ALT-Y",
 			},
 		},
 	},

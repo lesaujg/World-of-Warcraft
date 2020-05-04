@@ -48,6 +48,8 @@ SmexyMatsDB = {
 				["Herbalism"] = {
 					["Torinara"] = {
 					},
+					["Clothgar"] = {
+					},
 				},
 				["Archaeology"] = {
 					["Bracnar"] = {
@@ -57,6 +59,8 @@ SmexyMatsDB = {
 				},
 				["Engineering"] = {
 					["Bracnar"] = {
+					},
+					["Clothgar"] = {
 					},
 				},
 				["Leatherworking"] = {

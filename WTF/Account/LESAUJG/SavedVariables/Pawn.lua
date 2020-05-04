@@ -11,8 +11,6 @@ PawnCommon = {
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
-	["ShowSpecIcons"] = true,
-	["ShowSocketingAdvisor"] = true,
 	["Scales"] = {
 		["\"MrRobot\":HUNTER3"] = {
 			["IconTexturePath"] = 461113,
@@ -80,10 +78,10 @@ PawnCommon = {
 				["IsShield"] = -1000000,
 				["IsDagger"] = -1000000,
 				["IsSword"] = -1000000,
-				["Is2HSword"] = -1000000,
+				["Avoidance"] = 0.03,
 				["Leech"] = 0.01,
 				["IsAxe"] = -1000000,
-				["Avoidance"] = 0.03,
+				["Is2HSword"] = -1000000,
 			},
 		},
 		["\"MrRobot\":SHAMAN1"] = {
@@ -338,24 +336,6 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "2f95b0",
 		},
-		["\"MrRobot\":DEMONHUNTER2"] = {
-			["IconTexturePath"] = 1247265,
-			["PerCharacterOptions"] = {
-				["Leanara-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
-			},
-			["Color"] = "a330c9",
-			["ClassID"] = 12,
-			["LocalizedName"] = "Demon Hunter: Vengeance",
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "TANK",
-			["DoNotShow2HUpgrades"] = true,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["SpecID"] = 2,
-			["UnenchantedColor"] = "7a2496",
-		},
 		["\"MrRobot\":SHAMAN3"] = {
 			["IconTexturePath"] = 136052,
 			["PerCharacterOptions"] = {
@@ -370,6 +350,21 @@ PawnCommon = {
 			["Provider"] = "MrRobot",
 			["SpecID"] = 3,
 			["UnenchantedColor"] = "0054a6",
+		},
+		["\"MrRobot\":MAGE1"] = {
+			["IconTexturePath"] = 135932,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "3fc7eb",
+			["ClassID"] = 8,
+			["LocalizedName"] = "Mage: Arcane",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "2f95b0",
 		},
 		["\"MrRobot\":WARRIOR1"] = {
 			["IconTexturePath"] = 132355,
@@ -419,24 +414,30 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "b7698b",
 		},
-		["\"MrRobot\":MAGE1"] = {
-			["IconTexturePath"] = 135932,
+		["\"MrRobot\":DEMONHUNTER2"] = {
+			["IconTexturePath"] = 1247265,
 			["PerCharacterOptions"] = {
+				["Leanara-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
-			["Color"] = "3fc7eb",
-			["ClassID"] = 8,
-			["LocalizedName"] = "Mage: Arcane",
+			["Color"] = "a330c9",
+			["ClassID"] = 12,
+			["LocalizedName"] = "Demon Hunter: Vengeance",
 			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "DAMAGER",
-			["DoNotShow2HUpgrades"] = false,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = true,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["SpecID"] = 1,
-			["UnenchantedColor"] = "2f95b0",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "7a2496",
 		},
 		["\"MrRobot\":DRUID2"] = {
 			["IconTexturePath"] = 132115,
 			["PerCharacterOptions"] = {
+				["Uldaris-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ff7d0a",
 			["ClassID"] = 11,
@@ -464,7 +465,7 @@ PawnCommon = {
 			["Values"] = {
 				["IsWand"] = -1000000,
 				["Is2HMace"] = -1000000,
-				["MinDamage"] = 0.99,
+				["IsWarglaive"] = -1000000,
 				["MovementSpeed"] = 0.03,
 				["Agility"] = 1.65,
 				["HasteRating"] = 1.24,
@@ -473,13 +474,13 @@ PawnCommon = {
 				["IsFrill"] = -1000000,
 				["MaxDamage"] = 0.99,
 				["IsPlate"] = -1000000,
-				["IsMace"] = -1000000,
-				["Indestructible"] = 0.01,
 				["Leech"] = 0.01,
+				["Indestructible"] = 0.01,
+				["IsMace"] = -1000000,
 				["Avoidance"] = 0.02,
 				["CritRating"] = 1.06,
 				["IsShield"] = -1000000,
-				["IsWarglaive"] = -1000000,
+				["MinDamage"] = 0.99,
 			},
 		},
 		["\"MrRobot\":HUNTER1"] = {
@@ -614,10 +615,10 @@ PawnCommon = {
 				["IsShield"] = -1000000,
 				["IsDagger"] = -1000000,
 				["IsSword"] = -1000000,
-				["Is2HSword"] = -1000000,
+				["Avoidance"] = 0.03,
 				["Leech"] = 0.01,
 				["IsAxe"] = -1000000,
-				["Avoidance"] = 0.03,
+				["Is2HSword"] = -1000000,
 			},
 		},
 		["\"MrRobot\":MAGE3"] = {
@@ -656,9 +657,6 @@ PawnCommon = {
 		["\"MrRobot\":DRUID3"] = {
 			["IconTexturePath"] = 132276,
 			["PerCharacterOptions"] = {
-				["Uldaris-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "ff7d0a",
 			["ClassID"] = 11,
@@ -720,6 +718,8 @@ PawnCommon = {
 			["UnenchantedColor"] = "00bf70",
 		},
 	},
+	["ShowSocketingAdvisor"] = true,
+	["ShowSpecIcons"] = true,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ButtonPosition"] = 2,
 	["IgnoreGemsWhileLeveling"] = true,
