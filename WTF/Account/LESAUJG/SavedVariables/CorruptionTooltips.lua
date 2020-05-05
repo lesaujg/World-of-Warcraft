@@ -20,11 +20,13 @@ CorruptionTooltipsDB = {
 		},
 		["Galinar - Sisters of Elune"] = {
 		},
+		["Uldaris - Sisters of Elune"] = {
+		},
 		["Ghiaccioli - Sisters of Elune"] = {
 		},
 		["Orig - Sisters of Elune"] = {
 		},
-		["Uldaris - Sisters of Elune"] = {
+		["Mandelbrot - Sisters of Elune"] = {
 		},
 		["Leanara - Sisters of Elune"] = {
 		},

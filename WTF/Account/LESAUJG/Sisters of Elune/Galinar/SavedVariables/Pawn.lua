@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0324,
-	["LastPlayerFullName"] = "Galinar-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173836,
@@ -92,6 +89,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:159798::::::::120:66::28:5:4803:6516:6513:1607:4785:::|h[Gnarlwood Barrier]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Galinar-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

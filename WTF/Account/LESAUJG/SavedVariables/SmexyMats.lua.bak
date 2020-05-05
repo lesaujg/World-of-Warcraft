@@ -56,15 +56,11 @@ SmexyMatsDB = {
 				["Engineering"] = {
 					["Bracnar"] = {
 					},
-					["Clothgar"] = {
-					},
 				},
 				["Leatherworking"] = {
 				},
 				["Herbalism"] = {
 					["Torinara"] = {
-					},
-					["Clothgar"] = {
 					},
 				},
 				["Enchanting"] = {

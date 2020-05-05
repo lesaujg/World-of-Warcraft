@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0324,
+	["LastPlayerFullName"] = "Mandelbrot-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 33243,
@@ -60,16 +63,16 @@ PawnOptions = {
 			["AlsoFitsIn"] = 11,
 			["Link"] = "|cff0070dd|Hitem:29158::::::::49:260::::::|h[Truesilver Commander's Ring]|h|r",
 		}, -- [12]
-		[15] = {
-			["ID"] = 33261,
-			["Level"] = 38,
-			["Link"] = "|cff1eff00|Hitem:33261::::::::49:260::::::|h[Destroyer's Cloak]|h|r",
-		},
 		[16] = {
 			["ID"] = 15216,
 			["Level"] = 51,
 			["AlsoFitsIn"] = 17,
 			["Link"] = "|cff1eff00|Hitem:15216:1900:::::::49:260:::1:1681:::|h[Rune Sword of the Quickblade]|h|r",
+		},
+		[15] = {
+			["ID"] = 33261,
+			["Level"] = 38,
+			["Link"] = "|cff1eff00|Hitem:33261::::::::49:260::::::|h[Destroyer's Cloak]|h|r",
 		},
 		[17] = {
 			["ID"] = 15215,
@@ -78,9 +81,6 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:15215:1900:::::::49:260:::1:1708:::|h[Furious Falchion of the Aurora]|h|r",
 		},
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Mandelbrot-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
