@@ -13,6 +13,13 @@ X: 190
 Y: 19
 W: 250
 H: 417
+Frame: AmrUiFrame1
+FrameLevel: 1
+Anchor: TOPRIGHT
+X: 46
+Y: -42
+W: 1000
+H: 700
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: TOPRIGHT

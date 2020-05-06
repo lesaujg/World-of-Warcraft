@@ -1,16 +1,16 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0324,
+	["LastVersion"] = 2.0325,
 	["ItemLevels"] = {
 		{
-			["ID"] = 173836,
-			["Level"] = 420,
-			["Link"] = "|cff0070dd|Hitem:173836::::::::120:66::14:4:1472:4785:6258:4775:::|h[Malignant Leviathan's Helm]|h|r",
+			["ID"] = 174258,
+			["Level"] = 450,
+			["Link"] = "|cffa335ee|Hitem:174258::::::::120:66::3:5:4822:1487:4786:6505:4775:::|h[Greathelm of Indiscriminate Brutality]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 473,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:66::11:4:4932:4933:6316:1610:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 479,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:66::11:4:4932:4933:6316:1616:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173835,
