@@ -1,4 +1,4 @@
 
 PetTracker_Sets = {
-	["tutorial"] = 3,
+	["tutorial"] = 4,
 }

@@ -1,6 +1,9 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0323,
+	["LastVersion"] = 2.0325,
+	["LastPlayerFullName"] = "Allala-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 153904,
@@ -82,10 +85,12 @@ PawnOptions = {
 			["Level"] = 152,
 			["Link"] = "|cffe6cc80|Hitem:120978::::::::110:70:16777472:9:1:737:9:1:::|h[Ashbringer]|h|r",
 		}, -- [16]
+		{
+			["ID"] = 128866,
+			["Level"] = 152,
+			["Link"] = "|cffe6cc80|Hitem:128866::156816:156817:156803::::111:66:16777472::2:736:1510:291:1:::|h[Truthguard]|h|r",
+		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Allala-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
