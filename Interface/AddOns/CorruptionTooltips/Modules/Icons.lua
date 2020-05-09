@@ -10,11 +10,24 @@ function Module:OnInitialize()
 
 end
 
+local offset_x_directions = {
+    ["TOPLEFT"] = 1,
+    ["TOPRIGHT"] = -1,
+    ["BOTTOMLEFT"] = 1,
+    ["BOTTOMRIGHT"] = -1,
+}
+local offset_y_directions = {
+    ["TOPLEFT"] = -1,
+    ["TOPRIGHT"] = -1,
+    ["BOTTOMLEFT"] = 1,
+    ["BOTTOMRIGHT"] = 1,
+}
+
 local function CreateCorruptionIcon(button, icon)
     local position = Config:GetOption("iconposition")
     local iconsize = 12
-    local offset_x = 2
-    local offset_y = 2
+    local offset_x = 2 * offset_x_directions[position]
+    local offset_y = 2 * offset_y_directions[position]
     if not button.corruption then
         button.corruption = CreateFrame("Frame", "$parent.corruption", button);
         button.corruption:SetPoint(position, button, position)
@@ -133,7 +146,7 @@ function Module:OnLoad(event, ...)
         self:UnregisterEvent(event)
         if Config:GetOption("itemicon") ~= false then
             self:SecureHook("InspectPaperDollItemSlotButton_Update", function(button)
-                SetPaperDollCorruption(button, "target")
+                SetPaperDollCorruption(button, InspectFrame.unit)
             end)
         end
     end

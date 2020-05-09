@@ -10,12 +10,12 @@ GTFOData = {
 		true, -- [4]
 	},
 	["DataCode"] = "4",
-	["UnmuteMode"] = false,
+	["SoundOverrides"] = {
+	},
 	["Volume"] = 3,
 	["IgnoreOptions"] = {
 	},
-	["SoundOverrides"] = {
-	},
 	["SoundChannel"] = "Master",
+	["UnmuteMode"] = false,
 	["TrivialMode"] = false,
 }

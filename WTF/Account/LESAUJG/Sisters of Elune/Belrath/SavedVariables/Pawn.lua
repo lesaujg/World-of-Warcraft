@@ -1,27 +1,30 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0325,
+	["LastPlayerFullName"] = "Belrath-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 122263,
-			["Level"] = 250,
-			["Link"] = "|cff00ccff|Hitem:122263::::::::115:250:::1:5805:::|h[Burnished Helm of Might]|h|r",
+			["Level"] = 258,
+			["Link"] = "|cff00ccff|Hitem:122263::::::::116:250:::1:5805:::|h[Burnished Helm of Might]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 282,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::112:250::11:4:4932:4933:4935:1474:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 284,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::115:250::11:4:4932:4933:4935:1476:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 122388,
-			["Level"] = 250,
-			["Link"] = "|cff00ccff|Hitem:122388::::::::115:250:::1:5805:::|h[Burnished Pauldrons of Might]|h|r",
+			["Level"] = 258,
+			["Link"] = "|cff00ccff|Hitem:122388::::::::116:250:::1:5805:::|h[Burnished Pauldrons of Might]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
 			["ID"] = 122387,
-			["Level"] = 250,
-			["Link"] = "|cff00ccff|Hitem:122387::::::::115:250:::1:5805:::|h[Burnished Breastplate of Might]|h|r",
+			["Level"] = 258,
+			["Link"] = "|cff00ccff|Hitem:122387::::::::116:250:::1:5805:::|h[Burnished Breastplate of Might]|h|r",
 		}, -- [5]
 		{
 			["ID"] = 155190,
@@ -30,8 +33,8 @@ PawnOptions = {
 		}, -- [6]
 		{
 			["ID"] = 122264,
-			["Level"] = 250,
-			["Link"] = "|cff00ccff|Hitem:122264::::::::115:250:::1:5805:::|h[Burnished Legplates of Might]|h|r",
+			["Level"] = 258,
+			["Link"] = "|cff00ccff|Hitem:122264::::::::116:250:::1:5805:::|h[Burnished Legplates of Might]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 160476,
@@ -62,20 +65,20 @@ PawnOptions = {
 		}, -- [12]
 		{
 			["ID"] = 133595,
-			["Level"] = 255,
+			["Level"] = 264,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:133595::::::::115:250:::1:5817:::|h[Gronntooth War Horn]|h|r",
+			["Link"] = "|cff00ccff|Hitem:133595::::::::116:250:::1:5817:::|h[Gronntooth War Horn]|h|r",
 		}, -- [13]
 		{
 			["ID"] = 122361,
-			["Level"] = 250,
+			["Level"] = 258,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::115:250:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::116:250:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122260,
-			["Level"] = 250,
-			["Link"] = "|cff00ccff|Hitem:122260::::::::115:250:::1:5805:::|h[Worn Stoneskin Gargoyle Cape]|h|r",
+			["Level"] = 258,
+			["Link"] = "|cff00ccff|Hitem:122260::::::::116:250:::1:5805:::|h[Worn Stoneskin Gargoyle Cape]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 155214,
@@ -89,9 +92,6 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:163533::::::::110:250::11::::|h[Footman's Cleaver]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Belrath-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

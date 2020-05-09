@@ -1,96 +1,97 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0325,
+	["LastPlayerFullName"] = "Allala-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
-			["ID"] = 153904,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:153904::::::::110:70::::::|h[Sunsoul Faceguard]|h|r",
+			["ID"] = 174258,
+			["Level"] = 450,
+			["Link"] = "|cffa335ee|Hitem:174258::::::::120:66::3:5:4822:1487:4786:6505:4775:::|h[Greathelm of Indiscriminate Brutality]|h|r",
 		}, -- [1]
 		{
-			["ID"] = 132444,
-			["Level"] = 265,
-			["Link"] = "|cffff8000|Hitem:132444::::::::110:70:::2:3459:3630:::|h[Prydaz, Xavaric's Magnum Opus]|h|r",
+			["ID"] = 158075,
+			["Level"] = 483,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:66::11:4:4932:4933:6316:1620:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 153911,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:153911::::::::110:70::::::|h[Sunsoul Shoulderguards]|h|r",
+			["ID"] = 173835,
+			["Level"] = 435,
+			["Link"] = "|cffa335ee|Hitem:173835::::::::120:66::9:4:1487:4786:6503:4775:::|h[Malignant Leviathan's Pauldrons]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 153900,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:153900::::::::110:70::::::|h[Sunsoul Chestguard]|h|r",
+			["ID"] = 158054,
+			["Level"] = 420,
+			["Link"] = "|cff0070dd|Hitem:158054::::::::120:66::28:4:1607:4785:6257:4775:::|h[Shoalbreach Breastplate]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 153912,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:153912::::::::110:70::::::|h[Sunsoul Waistband]|h|r",
+			["ID"] = 163422,
+			["Level"] = 440,
+			["Link"] = "|cffa335ee|Hitem:163422::::::::120:66::28:5:5125:6516:6515:1632:4786:::|h[7th Legionnaire's Greatbelt]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 153905,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:153905::::::::110:70::::::|h[Sunsoul Legguards]|h|r",
+			["ID"] = 174264,
+			["Level"] = 445,
+			["Link"] = "|cffa335ee|Hitem:174264::::::::120:66::3:5:4822:6516:6513:1487:4786:::|h[Chitinous Conqueror's Legplates]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 153902,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:153902::::::::110:70::::::|h[Sunsoul Greaves]|h|r",
+			["ID"] = 173455,
+			["Level"] = 430,
+			["Link"] = "|cffa335ee|Hitem:173455::::::::120:66::9:5:6412:6513:6516:1487:4786:::|h[Malignant Leviathan's Stompers]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 153913,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:153913::::::::110:70::::::|h[Sunsoul Armguards]|h|r",
+			["ID"] = 174956,
+			["Level"] = 440,
+			["Link"] = "|cffa335ee|Hitem:174956::::::::120:66::28:5:6540:6513:6578:6579:4803:::|h[Malignant Leviathan's Armguards]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 153903,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:153903::::::::110:70::::::|h[Sunsoul Handguards]|h|r",
+			["ID"] = 163414,
+			["Level"] = 435,
+			["Link"] = "|cffa335ee|Hitem:163414::::::::120:66::28:7:5125:6578:6579:6544:6513:1627:4786:::|h[7th Legionnaire's Gauntlets]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 153908,
-			["Level"] = 176,
+			["ID"] = 174469,
+			["Level"] = 445,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff1eff00|Hitem:153908::::::::110:70::::::|h[Sunsoul Ring of Stoicism]|h|r",
+			["Link"] = "|cffa335ee|Hitem:174469::::::::120:66::3:5:4822:6516:6513:1487:4786:::|h[Band of Insidious Ruminations]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 153909,
-			["Level"] = 176,
+			["ID"] = 174469,
+			["Level"] = 445,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff1eff00|Hitem:153909::::::::110:70::::::|h[Sunsoul Band of Stoicism]|h|r",
+			["Link"] = "|cffa335ee|Hitem:174469::::::::120:70::3:5:4822:6516:6513:1487:4786:::|h[Band of Insidious Ruminations]|h|r",
 		}, -- [12]
 		{
-			["ID"] = 153907,
-			["Level"] = 176,
+			["ID"] = 160263,
+			["Level"] = 420,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff1eff00|Hitem:153907::::::::110:70::::::|h[Sunsoul Defender Idol]|h|r",
+			["Link"] = "|cff0070dd|Hitem:160263::::::::120:66::27:3:4803:1612:4785:::|h[Snowpelt Mangler]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 153910,
-			["Level"] = 176,
+			["ID"] = 160263,
+			["Level"] = 420,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff1eff00|Hitem:153910::::::::110:70::::::|h[Sunsoul Defender Stone]|h|r",
+			["Link"] = "|cff0070dd|Hitem:160263::::::::120:70::27:3:4803:1612:4785:::|h[Snowpelt Mangler]|h|r",
 		}, -- [14]
 		{
-			["ID"] = 153901,
-			["Level"] = 176,
-			["Link"] = "|cff1eff00|Hitem:153901::::::::110:70::::::|h[Sunsoul Cloak of Stoicism]|h|r",
+			["ID"] = 169223,
+			["Level"] = 470,
+			["Link"] = "|cffff8000|Hitem:169223::::::::120:66::11:1:6272:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 120978,
-			["Level"] = 152,
-			["Link"] = "|cffe6cc80|Hitem:120978::::::::110:70:16777472:9:1:737:9:1:::|h[Ashbringer]|h|r",
+			["ID"] = 155273,
+			["Level"] = 415,
+			["AlsoFitsIn"] = 17,
+			["Link"] = "|cff0070dd|Hitem:155273::::::::120:65::26:3:4803:1607:4785:::|h[Sharktooth Hatchet]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 128866,
-			["Level"] = 152,
-			["Link"] = "|cffe6cc80|Hitem:128866::156816:156817:156803::::111:66:16777472::2:736:1510:291:1:::|h[Truthguard]|h|r",
+			["ID"] = 159798,
+			["Level"] = 415,
+			["Link"] = "|cff0070dd|Hitem:159798::::::::120:66::28:5:4803:6516:6513:1607:4785:::|h[Gnarlwood Barrier]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Allala-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

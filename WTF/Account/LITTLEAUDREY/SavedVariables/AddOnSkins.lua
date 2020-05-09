@@ -1,27 +1,118 @@
 
 AddOnSkinsDB = {
 	["profileKeys"] = {
-		["Noeraa - Sisters of Elune"] = "Noeraa - Sisters of Elune",
-		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
-		["Allala - Sisters of Elune"] = "Allala - Sisters of Elune",
-		["Aloraal - Sisters of Elune"] = "Aloraal - Sisters of Elune",
+		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
+		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
+		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
+		["Mandelbrot - Sisters of Elune"] = "Mandelbrot - Sisters of Elune",
+		["Edaka - Sisters of Elune"] = "Edaka - Sisters of Elune",
+		["Palani - Sisters of Elune"] = "Palani - Sisters of Elune",
+		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
+		["Herbinator - Sisters of Elune"] = "Default",
+		["Vellamun - Ravenholdt"] = "Default",
+		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
 	},
 	["profiles"] = {
-		["Noeraa - Sisters of Elune"] = {
+		["Galinar - Sisters of Elune"] = {
+			["Blizzard_WorldStateCaptureBar"] = true,
+			["TalentSetManager"] = true,
+			["Details"] = true,
+			["TomeOfTeleportation"] = true,
+			["WeakAuras"] = true,
+			["Blizzard_Transmogrify"] = true,
+			["MasterPlan"] = true,
 		},
-		["Torinara - Sisters of Elune"] = {
-			["ChangeLogVersion"] = 4.15,
-			["Blizzard_Spellbook"] = false,
-			["Blizzard_StackSplit"] = false,
+		["Uldaris - Sisters of Elune"] = {
+			["Blizzard_WorldStateCaptureBar"] = true,
+			["TalentSetManager"] = true,
+			["TomeOfTeleportation"] = true,
+			["Blizzard_Transmogrify"] = true,
+			["MasterPlan"] = true,
 		},
-		["Allala - Sisters of Elune"] = {
-			["Blizzard_Spellbook"] = false,
-			["Blizzard_StackSplit"] = false,
-			["ChangeLogVersion"] = 4.15,
+		["Bracnar - Sisters of Elune"] = {
+			["Blizzard_WorldStateCaptureBar"] = true,
+			["TalentSetManager"] = true,
+			["TomeOfTeleportation"] = true,
+			["Details"] = true,
+			["Blizzard_Transmogrify"] = true,
+			["Bagnon"] = true,
 		},
-		["Aloraal - Sisters of Elune"] = {
+		["Ghiaccioli - Sisters of Elune"] = {
+			["Blizzard_WorldStateCaptureBar"] = true,
+			["TalentSetManager"] = true,
+			["TomeOfTeleportation"] = true,
+			["WeakAuras"] = true,
+			["Blizzard_Transmogrify"] = true,
+			["MasterPlan"] = true,
+		},
+		["Orig - Sisters of Elune"] = {
+			["Blizzard_WorldStateCaptureBar"] = true,
+			["TalentSetManager"] = true,
+			["TomeOfTeleportation"] = true,
+			["Blizzard_Transmogrify"] = true,
+			["WeakAuras"] = true,
+			["MasterPlan"] = true,
+		},
+		["Mandelbrot - Sisters of Elune"] = {
+			["Blizzard_WorldStateCaptureBar"] = true,
+			["TalentSetManager"] = true,
+			["Blizzard_Transmogrify"] = true,
+			["WeakAuras"] = true,
+			["MasterPlan"] = true,
+		},
+		["Edaka - Sisters of Elune"] = {
+		},
+		["Palani - Sisters of Elune"] = {
+		},
+		["Belrath - Sisters of Elune"] = {
+			["Blizzard_WorldStateCaptureBar"] = true,
+			["TalentSetManager"] = true,
+			["Blizzard_Transmogrify"] = true,
+			["WeakAuras"] = true,
+			["MasterPlan"] = true,
+		},
+		["Leanara - Sisters of Elune"] = {
+			["Blizzard_WorldStateCaptureBar"] = true,
+			["TalentSetManager"] = true,
+			["TomeOfTeleportation"] = true,
+			["Blizzard_Transmogrify"] = true,
+			["WeakAuras"] = true,
+			["MasterPlan"] = true,
+		},
+		["Default"] = {
+			["Blizzard_Transmogrify"] = true,
+			["TalentSetManager"] = true,
+			["AdvancedIconSelector"] = true,
+			["Blizzard_Bags"] = false,
+			["DBM"] = true,
+			["TomeOfTeleportation"] = true,
+			["MasterPlan"] = true,
+			["Blizzard_WorldStateCaptureBar"] = true,
+		},
+		["Torinar - Sisters of Elune"] = {
+			["Blizzard_WorldStateCaptureBar"] = true,
+			["TalentSetManager"] = true,
+			["TomeOfTeleportation"] = true,
+			["WeakAuras"] = true,
+			["Blizzard_Transmogrify"] = true,
+			["MasterPlan"] = true,
+		},
+		["Clothgar - Sisters of Elune"] = {
+			["Blizzard_WorldStateCaptureBar"] = true,
+			["TalentSetManager"] = true,
+			["TomeOfTeleportation"] = true,
+			["Details"] = true,
+			["Blizzard_Transmogrify"] = true,
+			["WeakAuras"] = true,
+			["Bagnon"] = true,
 		},
 	},
 }
 AddOnSkinsDS = {
+	[4.08] = {
+	},
 }

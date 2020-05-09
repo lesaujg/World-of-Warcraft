@@ -6,25 +6,55 @@ SmexyMatsDB = {
 		["IsColorBlind"] = false,
 		["ItemIDs"] = false,
 		["cbOneR"] = 1,
-		["Sources"] = true,
+		["Sources"] = false,
 		["cbTwoB"] = 1,
 		["ErrorReporting"] = true,
 		["Enabled"] = true,
 		["cbOneB"] = 1,
 		["cbOneG"] = 1,
-		["SMText"] = true,
-		["cbTwoG"] = 1,
+		["SMText"] = false,
+		["SM_EP_One_Text"] = "|cFFFFFF00",
 		["AllRealms"] = true,
 		["IDs"] = {
 		},
-		["Professions"] = true,
+		["Professions"] = false,
 		["cbTwoR"] = 1,
 		["SM_EP_One_Title"] = "|cFF00CCFF",
-		["SM_EP_One_Text"] = "|cFFFFFF00",
+		["cbTwoG"] = 1,
 	},
 	["ProTree"] = {
 		["Sisters of Elune"] = {
+			["Horde"] = {
+			},
 			["Alliance"] = {
+				["Tailoring"] = {
+				},
+				["Skinning"] = {
+				},
+				["Fishing"] = {
+				},
+				["Mining"] = {
+				},
+				["Jewelcrafting"] = {
+				},
+				["Cooking"] = {
+				},
+				["Herbalism"] = {
+				},
+				["Archaeology"] = {
+				},
+				["Alchemy"] = {
+				},
+				["Engineering"] = {
+				},
+				["Leatherworking"] = {
+				},
+				["Inscription"] = {
+				},
+				["Enchanting"] = {
+				},
+			},
+			["Neutral"] = {
 			},
 		},
 	},

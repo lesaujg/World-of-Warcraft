@@ -1,0 +1,28 @@
+
+ARLDB2 = {
+	["namespaces"] = {
+		["Enchanting"] = {
+		},
+	},
+	["global"] = {
+		["tradeskill"] = {
+			["Sisters of Elune"] = {
+				["Bracnar"] = {
+				},
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+	},
+	["profiles"] = {
+		["Bracnar - Sisters of Elune"] = {
+			["frameopts"] = {
+				["offsety"] = -121.999977111816,
+				["anchorTo"] = "TOP",
+				["offsetx"] = 334.500244140625,
+				["anchorFrom"] = "TOP",
+			},
+		},
+	},
+}

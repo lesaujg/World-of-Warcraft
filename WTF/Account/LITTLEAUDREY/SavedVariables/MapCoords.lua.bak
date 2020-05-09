@@ -1,12 +1,12 @@
 
 MapCoords2 = {
 	["show decimals"] = false,
-	["portrait party4"] = true,
-	["portrait party3"] = true,
-	["worldmap player"] = true,
-	["portrait party1"] = true,
-	["portrait party2"] = true,
-	["portrait player"] = true,
+	["portrait party4"] = false,
+	["portrait party3"] = false,
+	["worldmap player"] = false,
+	["portrait party1"] = false,
+	["portrait party2"] = false,
+	["portrait player"] = false,
+	["minimap"] = false,
 	["worldmap cursor"] = true,
-	["minimap"] = true,
 }

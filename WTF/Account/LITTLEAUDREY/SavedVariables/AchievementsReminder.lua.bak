@@ -21,8 +21,18 @@ ralllocationnames = {
 	"Ahn'kahet: The Old Kingdom", -- [19]
 	"Azjol-Nerub", -- [20]
 	"The Culling of Stratholme", -- [21]
-	"Trial of the Champion", -- [22]
-	"Drak'Tharon Keep", -- [23]
+	{
+		["mapType"] = 3,
+		["mapID"] = 542,
+		["name"] = "Spires of Arak",
+		["parentMapID"] = 572,
+	}, -- [22]
+	{
+		["mapType"] = 3,
+		["mapID"] = 534,
+		["name"] = "Tanaan Jungle",
+		["parentMapID"] = 572,
+	}, -- [23]
 	"Gundrak", -- [24]
 	"Halls of Reflection", -- [25]
 	"Pit of Saron", -- [26]
@@ -61,7 +71,12 @@ ralllocationnames = {
 	"Strand of the Ancients", -- [59]
 	"Isle of Conquest", -- [60]
 	"The Battle for Gilneas", -- [61]
-	"Twin Peaks", -- [62]
+	{
+		["mapType"] = 4,
+		["mapID"] = 626,
+		["name"] = "Dalaran",
+		["parentMapID"] = 619,
+	}, -- [62]
 	"Scarlet Halls", -- [63]
 	"Scarlet Monastery", -- [64]
 	"Scholomance", -- [65]
@@ -75,12 +90,17 @@ ralllocationnames = {
 	"Mogu'shan Vaults", -- [73]
 	"Terrace of Endless Spring", -- [74]
 	"A Brewing Storm", -- [75]
-	"Arena of Annihilation", -- [76]
+	"Proving Grounds", -- [76]
 	"Brewmoon Festval", -- [77]
 	"Crypt of Forgotten Kings", -- [78]
 	"Greenstone Village", -- [79]
 	"Theramore's Fall", -- [80]
-	"Unga Ingoo", -- [81]
+	{
+		["mapType"] = 3,
+		["mapID"] = 882,
+		["name"] = "Mac'Aree",
+		["parentMapID"] = 905,
+	}, -- [81]
 	"Temple of Kotmogu", -- [82]
 	"A Little Patience", -- [83]
 	"Lion's Landing", -- [84]
@@ -108,7 +128,7 @@ ralllocationnames = {
 	"Darkheart Thicket", -- [106]
 	"Eye of Azshara", -- [107]
 	"Halls of Valor", -- [108]
-	"Maw of Souls", -- [109]
+	"Helmouth Cliffs", -- [109]
 	"Neltharion's Lair", -- [110]
 	"The Arcway", -- [111]
 	"Vault of the Wardens", -- [112]
