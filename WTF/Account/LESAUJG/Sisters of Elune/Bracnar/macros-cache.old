@@ -14,8 +14,8 @@ VER 3 010000000000006F "__Chimera Shot" "INV_MISC_QUESTIONMARK"
 END
 VER 3 010000000000005E "__Cobra Shot" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/petassist
-/target [noexists] pettarget
+#/petassist
+#/target [noexists] pettarget
 /cast Cobra Shot
 END
 VER 3 010000000000006D "__Concen Flame" "INV_MISC_QUESTIONMARK"

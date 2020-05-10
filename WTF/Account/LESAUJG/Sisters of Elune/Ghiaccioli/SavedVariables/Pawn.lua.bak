@@ -1,14 +1,11 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0324,
-	["LastPlayerFullName"] = "Ghiaccioli-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
+	["LastVersion"] = 2.0325,
 	["ItemLevels"] = {
 		{
-			["ID"] = 170809,
-			["Level"] = 385,
-			["Link"] = "|cff0070dd|Hitem:170809::::::::120:63::::::|h[Mountainsage Hood]|h|r",
+			["ID"] = 173433,
+			["Level"] = 415,
+			["Link"] = "|cff0070dd|Hitem:173433::::::::120:63::14:3:1472:4785:6258:::|h[Vile Manipulator's Cowl]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
@@ -16,9 +13,9 @@ PawnOptions = {
 			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:63:::4:4932:4933:4935:1570:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 170812,
-			["Level"] = 385,
-			["Link"] = "|cff0070dd|Hitem:170812::::::::120:63::::::|h[Mountainsage Shoulderpads]|h|r",
+			["ID"] = 173435,
+			["Level"] = 415,
+			["Link"] = "|cff0070dd|Hitem:173435::::::::120:63::14:3:1472:4785:6259:::|h[Vile Manipulator's Mantle]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -27,29 +24,29 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:170811::::::::120:63::::::|h[Mountainsage Robe]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 170813,
-			["Level"] = 390,
-			["Link"] = "|cff1eff00|Hitem:170813::::::::120:63::::::|h[Mountainsage Cord]|h|r",
+			["ID"] = 173813,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173813::::::::120:63::14:4:6412:6513:1467:4785:::|h[Vile Manipulator's Girdle]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 170810,
-			["Level"] = 390,
-			["Link"] = "|cff1eff00|Hitem:170810::::::::120:63::::::|h[Mountainsage Leggings]|h|r",
+			["ID"] = 173467,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173467::::::::120:63::14:4:6412:6513:1467:4785:::|h[Vile Manipulator's Legwraps]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 170807,
-			["Level"] = 390,
-			["Link"] = "|cff1eff00|Hitem:170807::::::::120:63::::::|h[Mountainsage Sandals]|h|r",
+			["ID"] = 173495,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173495::::::::120:63::14:4:6412:6513:1467:4785:::|h[Vile Manipulator's Soles]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 170814,
-			["Level"] = 390,
-			["Link"] = "|cff1eff00|Hitem:170814::::::::120:63::::::|h[Mountainsage Wristwraps]|h|r",
+			["ID"] = 173479,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173479::::::::120:63::14:4:6412:6515:1467:4785:::|h[Vile Manipulator's Armwraps]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 170808,
-			["Level"] = 390,
-			["Link"] = "|cff1eff00|Hitem:170808::::::::120:63::::::|h[Mountainsage Handwraps]|h|r",
+			["ID"] = 173432,
+			["Level"] = 410,
+			["Link"] = "|cff0070dd|Hitem:173432::::::::120:63::14:4:6412:6515:1467:4785:::|h[Vile Manipulator's Handwraps]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 170642,
@@ -86,6 +83,9 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:170646::::::::120:63::::::|h[Mountainsage Staff]|h|r",
 		}, -- [16]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Ghiaccioli-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
