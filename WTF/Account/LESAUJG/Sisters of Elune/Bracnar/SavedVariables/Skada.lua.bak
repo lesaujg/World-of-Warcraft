@@ -1,5 +1,7 @@
 
 SkadaPerCharDB = {
+	["sets"] = {
+	},
 	["total"] = {
 		["healingabsorbed"] = 0,
 		["auras"] = {
@@ -8,28 +10,123 @@ SkadaPerCharDB = {
 		["time"] = 0,
 		["interrupts"] = 0,
 		["ffdamagedone"] = 0,
-		["shielding"] = 0,
+		["mobtaken"] = 0,
 		["damage"] = 0,
 		["players"] = {
+			{
+				["last"] = 1589156494,
+				["ccbreaks"] = 0,
+				["healingabsorbed"] = 0,
+				["role"] = "NONE",
+				["ffdamagedonespells"] = {
+				},
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["auras"] = {
+				},
+				["ffdamagedone"] = 0,
+				["time"] = 0,
+				["interrupts"] = 0,
+				["alertDamage"] = 1004604,
+				["power"] = {
+				},
+				["name"] = "Bracnar",
+				["damage"] = 0,
+				["damagespells"] = {
+				},
+				["overhealing"] = 0,
+				["damagetaken"] = 0,
+				["deathlog"] = {
+				},
+				["id"] = "Player-1169-06A1ACBD",
+				["maxhp"] = 423640,
+				["healed"] = {
+				},
+				["damagetakenspells"] = {
+				},
+				["healing"] = 0,
+				["first"] = 1589143798,
+				["ffdamagedonetargets"] = {
+				},
+				["alertCount"] = 34,
+				["shielding"] = 0,
+				["healingspells"] = {
+				},
+				["alert"] = {
+					["Low"] = {
+						["alertDamage"] = 314579,
+						["spell"] = {
+							["Eye of Corruption"] = {
+								["min"] = 16403,
+								["alertCount"] = 13,
+								["id"] = 315161,
+								["alertID"] = "Low",
+								["max"] = 34535,
+								["alertDamage"] = 314579,
+							},
+							["+Eye of Corruption"] = {
+								["min"] = 0,
+								["alertCount"] = 13,
+								["id"] = 315161,
+								["alertID"] = "Low",
+								["max"] = 0,
+								["alertDamage"] = 0,
+							},
+						},
+						["name"] = "Low",
+						["alertCount"] = 26,
+					},
+					["High"] = {
+						["alertDamage"] = 164354,
+						["spell"] = {
+							["Fel Lava"] = {
+								["min"] = 41088,
+								["alertCount"] = 4,
+								["id"] = 251701,
+								["alertID"] = "High",
+								["max"] = 41089,
+								["alertDamage"] = 164354,
+							},
+						},
+						["name"] = "High",
+						["alertCount"] = 4,
+					},
+					["Fail"] = {
+						["alertCount"] = 4,
+						["spell"] = {
+							["Grand Delusions"] = {
+								["min"] = 98023,
+								["alertCount"] = 4,
+								["id"] = 315197,
+								["alertID"] = "Fail",
+								["max"] = 143808,
+								["alertDamage"] = 525671,
+							},
+						},
+						["name"] = "Fail",
+						["alertDamage"] = 525671,
+					},
+				},
+				["class"] = "HUNTER",
+			}, -- [1]
 		},
 		["deaths"] = 0,
 		["mobs"] = {
 		},
-		["mobtaken"] = 0,
+		["shielding"] = 0,
 		["overhealing"] = 0,
 		["healing"] = 0,
-		["damagetaken"] = 0,
-		["alertDamage"] = 0,
+		["dispells"] = 0,
+		["alertDamage"] = 1004604,
 		["starttime"] = 1589069454,
 		["power"] = {
 		},
 		["name"] = "Total",
-		["alertCount"] = 0,
-		["dispells"] = 0,
+		["alertCount"] = 34,
+		["damagetaken"] = 0,
 		["mobhdone"] = 0,
 		["last_action"] = 1589069454,
 		["mobdone"] = 0,
-	},
-	["sets"] = {
 	},
 }

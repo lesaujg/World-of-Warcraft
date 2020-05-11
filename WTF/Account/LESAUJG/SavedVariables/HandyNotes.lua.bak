@@ -37,6 +37,7 @@ HandyNotesDB = {
 		["Palani - Sisters of Elune"] = {
 		},
 		["Belrath - Sisters of Elune"] = {
+			["enabled"] = false,
 		},
 		["Vellamun - Ravenholdt"] = {
 		},
