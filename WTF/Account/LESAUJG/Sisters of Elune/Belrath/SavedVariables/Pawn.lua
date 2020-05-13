@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0325,
+	["LastPlayerFullName"] = "Belrath-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173457,
@@ -9,13 +12,13 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 288,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::119:250::11:4:4932:4933:4935:1480:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 433,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:250::11:4:4932:4933:6316:1570:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 122388,
-			["Level"] = 284,
-			["Link"] = "|cff00ccff|Hitem:122388::::::::119:250:::1:5805:::|h[Burnished Pauldrons of Might]|h|r",
+			["ID"] = 170526,
+			["Level"] = 385,
+			["Link"] = "|cffa335ee|Hitem:170526::::::::120:250::11:3:1577:4786:5415:::|h[7th Legionnaire's Shoulderplates]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -78,9 +81,9 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:122260::::::::119:250:::1:5805:::|h[Worn Stoneskin Gargoyle Cape]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 155225,
-			["Level"] = 285,
-			["Link"] = "|cff0070dd|Hitem:155225::::::::118:250:512:11:2:4790:4791:118:::|h[Bramblehulk Greatsword]|h|r",
+			["ID"] = 163890,
+			["Level"] = 370,
+			["Link"] = "|cffa335ee|Hitem:163890::::::::120:250::30:2:1562:4786:::|h[7th Legionnaire's Claymore]|h|r",
 		}, -- [16]
 		{
 			["ID"] = 163533,
@@ -89,9 +92,6 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:163533::::::::110:250::11::::|h[Footman's Cleaver]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Belrath-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
