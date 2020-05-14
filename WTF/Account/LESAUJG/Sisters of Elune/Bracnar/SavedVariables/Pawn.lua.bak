@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0325,
-	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
-	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 171014,
@@ -27,9 +24,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:174147::::::::120:253::3:5:4822:1487:4786:6504:4775:::|h[Last Vestige of Neltharion]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 173513,
-			["Level"] = 455,
-			["Link"] = "|cffa335ee|Hitem:173513::::::::120:254::43:6:6412:4803:6513:6516:1512:4786:::|h[Nefarious Tormentor's Chain]|h|r",
+			["ID"] = 173452,
+			["Level"] = 470,
+			["Link"] = "|cffa335ee|Hitem:173452::::::::120:253::55:5:6412:6513:6578:1527:4786:::|h[Nefarious Tormentor's Belt]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 173817,
@@ -86,7 +83,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:158090::::::::120:253::28:8:4803:6578:6579:6482:6470:6513:1637:4786:::|h[Ironcrest Longrifle]|h|r",
 		}, -- [16]
 	},
-	["LastKeybindingsSet"] = 1,
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -123,6 +122,7 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",

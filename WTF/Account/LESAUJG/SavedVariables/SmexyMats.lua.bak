@@ -30,8 +30,6 @@ SmexyMatsDB = {
 				["Tailoring"] = {
 				},
 				["Skinning"] = {
-					["Leanara"] = {
-					},
 				},
 				["Fishing"] = {
 				},
@@ -40,6 +38,8 @@ SmexyMatsDB = {
 				["Jewelcrafting"] = {
 				},
 				["Cooking"] = {
+					["Mandelbrot"] = {
+					},
 				},
 				["Inscription"] = {
 				},
@@ -52,14 +52,16 @@ SmexyMatsDB = {
 					},
 				},
 				["Leatherworking"] = {
-					["Leanara"] = {
-					},
 				},
 				["Herbalism"] = {
+					["Mandelbrot"] = {
+					},
 					["Clothgar"] = {
 					},
 				},
 				["Enchanting"] = {
+					["Mandelbrot"] = {
+					},
 				},
 			},
 			["Neutral"] = {
