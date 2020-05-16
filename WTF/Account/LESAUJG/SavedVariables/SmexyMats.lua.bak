@@ -38,11 +38,9 @@ SmexyMatsDB = {
 				["Jewelcrafting"] = {
 				},
 				["Cooking"] = {
-					["Mandelbrot"] = {
-					},
 				},
 				["Herbalism"] = {
-					["Mandelbrot"] = {
+					["Clothgar"] = {
 					},
 				},
 				["Archaeology"] = {
@@ -50,14 +48,14 @@ SmexyMatsDB = {
 				["Alchemy"] = {
 				},
 				["Engineering"] = {
+					["Clothgar"] = {
+					},
 				},
 				["Leatherworking"] = {
 				},
 				["Inscription"] = {
 				},
 				["Enchanting"] = {
-					["Mandelbrot"] = {
-					},
 				},
 			},
 			["Neutral"] = {

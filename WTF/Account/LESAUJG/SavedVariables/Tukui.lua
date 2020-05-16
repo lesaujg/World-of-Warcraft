@@ -1891,7 +1891,7 @@ TukuiData = {
 			["Leanara"] = 325811838,
 			["Torinar"] = 79960469,
 			["Orig"] = 374068451,
-			["Galinar"] = 332221734,
+			["Galinar"] = 355077854,
 			["Edaka"] = 0,
 			["Tauro"] = 0,
 			["Toberd"] = 0,
@@ -1904,7 +1904,7 @@ TukuiData = {
 			["Torinara"] = 279348250,
 			["Ghiaccioli"] = 87016042,
 			["Belrath"] = 38303895,
-			["Clothgar"] = 24658394927,
+			["Clothgar"] = 24709709633,
 		},
 	},
 	["Ravenholdt"] = {

@@ -38,8 +38,8 @@ PawnOptions = {
 		}, -- [7]
 		{
 			["ID"] = 173455,
-			["Level"] = 430,
-			["Link"] = "|cffa335ee|Hitem:173455::::::::120:66::9:5:6412:6513:6516:1487:4786:::|h[Malignant Leviathan's Stompers]|h|r",
+			["Level"] = 445,
+			["Link"] = "|cffa335ee|Hitem:173455::::::::120:66::29:6:6412:4803:6513:6516:1502:4786:::|h[Malignant Leviathan's Stompers]|h|r",
 		}, -- [8]
 		{
 			["ID"] = 174956,
