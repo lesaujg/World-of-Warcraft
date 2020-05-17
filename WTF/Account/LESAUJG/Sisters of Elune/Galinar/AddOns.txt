@@ -193,7 +193,7 @@ KSpeedO: enabled
 OPie_Classic: disabled
 DarkmoonQuestItems: disabled
 FactionAddict: disabled
-HandyNotes_MechagonAndNazjatar: disabled
+HandyNotes_MechagonAndNazjatar: enabled
 HandyNotes_WarfrontRares: disabled
 Ace3: enabled
 MountDropList: disabled
