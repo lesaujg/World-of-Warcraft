@@ -39,9 +39,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:173455::::::::120:66::29:6:6412:4803:6513:6516:1502:4786:::|h[Malignant Leviathan's Stompers]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 174956,
-			["Level"] = 440,
-			["Link"] = "|cffa335ee|Hitem:174956::::::::120:66::28:5:6540:6513:6578:6579:4803:::|h[Malignant Leviathan's Armguards]|h|r",
+			["ID"] = 157998,
+			["Level"] = 445,
+			["Link"] = "|cffa335ee|Hitem:157998::::::::120:66::28:8:4803:4802:6578:6579:6573:6513:1637:4786:::|h[Harbormaster Wristplates]|h|r",
 		}, -- [9]
 		{
 			["ID"] = 163414,
@@ -61,10 +61,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:174469::::::::120:70::3:5:4822:6516:6513:1487:4786:::|h[Band of Insidious Ruminations]|h|r",
 		}, -- [12]
 		{
-			["ID"] = 160263,
-			["Level"] = 420,
+			["ID"] = 165661,
+			["Level"] = 445,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff0070dd|Hitem:160263::::::::120:66::27:3:4803:1612:4785:::|h[Snowpelt Mangler]|h|r",
+			["Link"] = "|cffa335ee|Hitem:165661::::::::120:66::28:4:4803:6513:1637:4786:::|h[Ancient Tuskarr Sea Charm]|h|r",
 		}, -- [13]
 		{
 			["ID"] = 160263,
@@ -84,9 +84,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:155273::::::::120:65::26:3:4803:1607:4785:::|h[Sharktooth Hatchet]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 159798,
-			["Level"] = 415,
-			["Link"] = "|cff0070dd|Hitem:159798::::::::120:66::28:5:4803:6516:6513:1607:4785:::|h[Gnarlwood Barrier]|h|r",
+			["ID"] = 159804,
+			["Level"] = 445,
+			["Link"] = "|cffa335ee|Hitem:159804::::::::120:66::28:5:4803:6516:6513:1637:4786:::|h[Ironcrest Bulwark]|h|r",
 		}, -- [17]
 	},
 	["AutoSelectScales"] = true,
