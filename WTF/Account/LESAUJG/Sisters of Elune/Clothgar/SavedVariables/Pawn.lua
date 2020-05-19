@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0325,
+	["LastVersion"] = 2.0326,
 	["LastPlayerFullName"] = "Clothgar-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,

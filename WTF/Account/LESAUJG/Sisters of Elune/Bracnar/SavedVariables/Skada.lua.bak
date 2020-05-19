@@ -754,12 +754,12 @@ SkadaPerCharDB = {
 				["power"] = {
 					[13] = {
 						["spells"] = {
+							[205385] = 20,
 							[34914] = 6,
-							[205448] = 80,
 							[205351] = 60,
 							[589] = 4,
 							[15407] = 45,
-							[205385] = 20,
+							[205448] = 80,
 						},
 						["amount"] = 215,
 					},
@@ -834,46 +834,6 @@ SkadaPerCharDB = {
 						["max"] = 13401,
 						["hitamount"] = 22783,
 					},
-					["Shadow Word: Void"] = {
-						["hitmin"] = 16910,
-						["criticalamount"] = 39572,
-						["id"] = 205351,
-						["damage"] = 94543,
-						["max"] = 39572,
-						["totalhits"] = 4,
-						["min"] = 16910,
-						["criticalmax"] = 39572,
-						["critical"] = 1,
-						["hit"] = 3,
-						["school"] = 32,
-						["hitmax"] = 19217,
-						["criticalmin"] = 39572,
-						["hitamount"] = 54971,
-					},
-					["Heed My Call"] = {
-						["hitmin"] = 2646,
-						["id"] = 271685,
-						["min"] = 2646,
-						["damage"] = 15241,
-						["hitmax"] = 8817,
-						["hit"] = 3,
-						["school"] = 8,
-						["totalhits"] = 3,
-						["max"] = 8817,
-						["hitamount"] = 15241,
-					},
-					["Ancient Flame"] = {
-						["hitmin"] = 2371,
-						["id"] = 295367,
-						["min"] = 2371,
-						["damage"] = 4742,
-						["hitmax"] = 2371,
-						["hit"] = 2,
-						["school"] = 4,
-						["totalhits"] = 2,
-						["max"] = 2371,
-						["hitamount"] = 4742,
-					},
 					["Vampiric Touch"] = {
 						["hitmin"] = 3949,
 						["criticalamount"] = 9241,
@@ -905,6 +865,46 @@ SkadaPerCharDB = {
 						["hitmax"] = 18264,
 						["criticalmin"] = 35477,
 						["hitamount"] = 53052,
+					},
+					["Ancient Flame"] = {
+						["hitmin"] = 2371,
+						["id"] = 295367,
+						["min"] = 2371,
+						["damage"] = 4742,
+						["hitmax"] = 2371,
+						["hit"] = 2,
+						["school"] = 4,
+						["totalhits"] = 2,
+						["max"] = 2371,
+						["hitamount"] = 4742,
+					},
+					["Shadow Word: Void"] = {
+						["hitmin"] = 16910,
+						["criticalamount"] = 39572,
+						["id"] = 205351,
+						["damage"] = 94543,
+						["max"] = 39572,
+						["totalhits"] = 4,
+						["min"] = 16910,
+						["criticalmax"] = 39572,
+						["critical"] = 1,
+						["hit"] = 3,
+						["school"] = 32,
+						["hitmax"] = 19217,
+						["criticalmin"] = 39572,
+						["hitamount"] = 54971,
+					},
+					["Heed My Call"] = {
+						["hitmin"] = 2646,
+						["id"] = 271685,
+						["min"] = 2646,
+						["damage"] = 15241,
+						["hitmax"] = 8817,
+						["hit"] = 3,
+						["school"] = 8,
+						["totalhits"] = 3,
+						["max"] = 8817,
+						["hitamount"] = 15241,
 					},
 					["Dagger in the Back"] = {
 						["hitmin"] = 1477,
@@ -1259,9 +1259,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589514806.767,
 						["amount"] = -13213,
+						["srcname"] = "Baruk Stoneshaper",
 						["hp"] = 348571,
 						["spellid"] = 309055,
-						["srcname"] = "Baruk Stoneshaper",
 					}, -- [4]
 					{
 						["absorb"] = 0,
@@ -3773,9 +3773,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589514787.225,
 						["amount"] = -117741,
+						["srcname"] = "Unstable Lazuli",
 						["hp"] = 258804,
 						["spellid"] = 309427,
-						["srcname"] = "Unstable Lazuli",
 					}, -- [2]
 					{
 						["absorb"] = 0,
@@ -3912,7 +3912,7 @@ SkadaPerCharDB = {
 				["class"] = "SHAMAN",
 			}, -- [9]
 			{
-				["last"] = 1589774337,
+				["last"] = 1589813707,
 				["auras"] = {
 					["McBurney: Dash"] = {
 						["name"] = "McBurney: Dash",
@@ -4127,13 +4127,13 @@ SkadaPerCharDB = {
 				["ffdamagedone"] = 0,
 				["time"] = 34,
 				["interrupts"] = 0,
-				["alertDamage"] = 194769,
+				["alertDamage"] = 207605,
 				["power"] = {
 					[2] = {
 						["spells"] = {
+							[299058] = 33,
 							[246851] = 21,
 							[246152] = 56,
-							[299058] = 33,
 						},
 						["amount"] = 110,
 					},
@@ -4404,9 +4404,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589514802.194,
 						["amount"] = -13611,
+						["srcname"] = "Baruk Stoneshaper",
 						["hp"] = 417069,
 						["spellid"] = 313762,
-						["srcname"] = "Baruk Stoneshaper",
 					}, -- [10]
 					{
 						["absorb"] = 0,
@@ -4435,9 +4435,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1589514806.767,
 						["amount"] = -9715,
+						["srcname"] = "Baruk Stoneshaper",
 						["hp"] = 414904,
 						["spellid"] = 309055,
-						["srcname"] = "Baruk Stoneshaper",
 					}, -- [14]
 					{
 						["absorb"] = 0,
@@ -4518,24 +4518,24 @@ SkadaPerCharDB = {
 				["first"] = 1589514996,
 				["ffdamagedonetargets"] = {
 				},
-				["alertCount"] = 22,
+				["alertCount"] = 24,
 				["overhealing"] = 224116,
 				["role"] = "DAMAGER",
 				["alert"] = {
 					["Low"] = {
-						["alertCount"] = 22,
+						["alertCount"] = 24,
 						["spell"] = {
 							["Eye of Corruption"] = {
 								["min"] = 12497,
-								["alertCount"] = 11,
+								["alertCount"] = 12,
 								["id"] = 315161,
 								["alertID"] = "Low",
 								["max"] = 26314,
-								["alertDamage"] = 194769,
+								["alertDamage"] = 207605,
 							},
 							["+Eye of Corruption"] = {
 								["min"] = 0,
-								["alertCount"] = 11,
+								["alertCount"] = 12,
 								["id"] = 315161,
 								["alertID"] = "Low",
 								["max"] = 0,
@@ -4543,7 +4543,7 @@ SkadaPerCharDB = {
 							},
 						},
 						["name"] = "Low",
-						["alertDamage"] = 194769,
+						["alertDamage"] = 207605,
 					},
 				},
 				["class"] = "HUNTER",
@@ -4555,8 +4555,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ffdamagedone"] = 0,
-				["ccbreaks"] = 0,
 				["time"] = 18,
 				["interrupts"] = 0,
 				["healingspells"] = {
@@ -4601,7 +4601,8 @@ SkadaPerCharDB = {
 				},
 				["healing"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["deathlog"] = {
+				},
 				["id"] = "Guardian of Azeroth",
 				["maxhp"] = 0,
 				["name"] = "Guardian of Azeroth",
@@ -4613,13 +4614,12 @@ SkadaPerCharDB = {
 				["ffdamagedonetargets"] = {
 				},
 				["alertCount"] = 0,
-				["deathlog"] = {
-				},
 				["power"] = {
 				},
+				["shielding"] = 0,
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ccbreaks"] = 0,
 			}, -- [11]
 			{
 				["healingabsorbed"] = 0,
@@ -5970,8 +5970,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ffdamagedone"] = 0,
-				["ccbreaks"] = 0,
 				["time"] = 4,
 				["interrupts"] = 0,
 				["healingspells"] = {
@@ -6076,7 +6076,8 @@ SkadaPerCharDB = {
 				},
 				["healing"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["deathlog"] = {
+				},
 				["id"] = "Player-3693-09EC2A91",
 				["maxhp"] = 0,
 				["name"] = "Drstíffy",
@@ -6088,13 +6089,12 @@ SkadaPerCharDB = {
 				["ffdamagedonetargets"] = {
 				},
 				["alertCount"] = 0,
-				["deathlog"] = {
-				},
 				["power"] = {
 				},
+				["shielding"] = 0,
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ccbreaks"] = 0,
 			}, -- [19]
 		},
 		["deaths"] = 0,
@@ -6725,7 +6725,7 @@ SkadaPerCharDB = {
 		["overhealing"] = 1610895.203125,
 		["healing"] = 1677655,
 		["dispells"] = 0,
-		["alertDamage"] = 194769,
+		["alertDamage"] = 207605,
 		["starttime"] = 1589514768,
 		["power"] = {
 			237, -- [1]
@@ -6737,7 +6737,7 @@ SkadaPerCharDB = {
 			[11] = 354,
 		},
 		["name"] = "Total",
-		["alertCount"] = 22,
+		["alertCount"] = 24,
 		["damagetaken"] = 709220,
 		["mobhdone"] = 608632,
 		["last_action"] = 1589514768,
@@ -7451,46 +7451,6 @@ SkadaPerCharDB = {
 							["max"] = 13401,
 							["hitamount"] = 22783,
 						},
-						["Shadow Word: Void"] = {
-							["hitmin"] = 16910,
-							["criticalamount"] = 39572,
-							["id"] = 205351,
-							["damage"] = 94543,
-							["max"] = 39572,
-							["totalhits"] = 4,
-							["min"] = 16910,
-							["criticalmax"] = 39572,
-							["critical"] = 1,
-							["hit"] = 3,
-							["school"] = 32,
-							["hitmax"] = 19217,
-							["criticalmin"] = 39572,
-							["hitamount"] = 54971,
-						},
-						["Heed My Call"] = {
-							["hitmin"] = 2646,
-							["id"] = 271685,
-							["min"] = 2646,
-							["damage"] = 15241,
-							["hitmax"] = 8817,
-							["hit"] = 3,
-							["school"] = 8,
-							["totalhits"] = 3,
-							["max"] = 8817,
-							["hitamount"] = 15241,
-						},
-						["Ancient Flame"] = {
-							["hitmin"] = 2371,
-							["id"] = 295367,
-							["min"] = 2371,
-							["damage"] = 4742,
-							["hitmax"] = 2371,
-							["hit"] = 2,
-							["school"] = 4,
-							["totalhits"] = 2,
-							["max"] = 2371,
-							["hitamount"] = 4742,
-						},
 						["Vampiric Touch"] = {
 							["hitmin"] = 3949,
 							["criticalamount"] = 9241,
@@ -7522,6 +7482,46 @@ SkadaPerCharDB = {
 							["hitmax"] = 18264,
 							["criticalmin"] = 35477,
 							["hitamount"] = 53052,
+						},
+						["Ancient Flame"] = {
+							["hitmin"] = 2371,
+							["id"] = 295367,
+							["min"] = 2371,
+							["damage"] = 4742,
+							["hitmax"] = 2371,
+							["hit"] = 2,
+							["school"] = 4,
+							["totalhits"] = 2,
+							["max"] = 2371,
+							["hitamount"] = 4742,
+						},
+						["Shadow Word: Void"] = {
+							["hitmin"] = 16910,
+							["criticalamount"] = 39572,
+							["id"] = 205351,
+							["damage"] = 94543,
+							["max"] = 39572,
+							["totalhits"] = 4,
+							["min"] = 16910,
+							["criticalmax"] = 39572,
+							["critical"] = 1,
+							["hit"] = 3,
+							["school"] = 32,
+							["hitmax"] = 19217,
+							["criticalmin"] = 39572,
+							["hitamount"] = 54971,
+						},
+						["Heed My Call"] = {
+							["hitmin"] = 2646,
+							["id"] = 271685,
+							["min"] = 2646,
+							["damage"] = 15241,
+							["hitmax"] = 8817,
+							["hit"] = 3,
+							["school"] = 8,
+							["totalhits"] = 3,
+							["max"] = 8817,
+							["hitamount"] = 15241,
 						},
 						["Dagger in the Back"] = {
 							["hitmin"] = 1477,
@@ -7560,12 +7560,12 @@ SkadaPerCharDB = {
 					["power"] = {
 						[13] = {
 							["spells"] = {
+								[205385] = 20,
 								[34914] = 6,
-								[205448] = 80,
 								[205351] = 60,
 								[589] = 4,
 								[15407] = 45,
-								[205385] = 20,
+								[205448] = 80,
 							},
 							["amount"] = 215,
 						},
@@ -10389,9 +10389,9 @@ SkadaPerCharDB = {
 					["power"] = {
 						[2] = {
 							["spells"] = {
+								[299058] = 33,
 								[246851] = 21,
 								[246152] = 56,
-								[299058] = 33,
 							},
 							["amount"] = 110,
 						},
@@ -10485,8 +10485,8 @@ SkadaPerCharDB = {
 						["Baruk Protector"] = 44044,
 					},
 					["dispells"] = 0,
+					["role"] = "NONE",
 					["ccbreaks"] = 0,
-					["ffdamagedone"] = 0,
 					["time"] = 18,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -10548,7 +10548,7 @@ SkadaPerCharDB = {
 					["first"] = 1589514778,
 					["alert"] = {
 					},
-					["role"] = "NONE",
+					["ffdamagedone"] = 0,
 				}, -- [11]
 				{
 					["last"] = 1589514805,
@@ -11624,8 +11624,8 @@ SkadaPerCharDB = {
 						["Jade Colossus"] = 78084,
 					},
 					["dispells"] = 0,
+					["role"] = "NONE",
 					["ccbreaks"] = 0,
-					["ffdamagedone"] = 0,
 					["time"] = 4,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -11747,7 +11747,7 @@ SkadaPerCharDB = {
 					["first"] = 1589514800,
 					["alert"] = {
 					},
-					["role"] = "NONE",
+					["ffdamagedone"] = 0,
 				}, -- [19]
 			},
 			["deaths"] = 0,
