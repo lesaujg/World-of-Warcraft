@@ -1,7 +1,7 @@
 
 PetTracker_Sets = {
 	["mapSearch"] = "fdg",
-	["tutorial"] = 11,
+	["tutorial"] = 12,
 	["trackPets"] = false,
 	["rivalSearch"] = "",
 	["rivalHistory"] = {
