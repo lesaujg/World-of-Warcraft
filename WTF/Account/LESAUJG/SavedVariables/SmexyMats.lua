@@ -30,6 +30,8 @@ SmexyMatsDB = {
 				["Tailoring"] = {
 				},
 				["Skinning"] = {
+					["Leanara"] = {
+					},
 				},
 				["Fishing"] = {
 					["Bracnar"] = {
@@ -60,6 +62,8 @@ SmexyMatsDB = {
 					},
 				},
 				["Leatherworking"] = {
+					["Leanara"] = {
+					},
 				},
 				["Herbalism"] = {
 					["Orig"] = {
