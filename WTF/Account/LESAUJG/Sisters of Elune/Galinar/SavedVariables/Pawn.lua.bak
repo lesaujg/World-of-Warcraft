@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0326,
+	["LastPlayerFullName"] = "Galinar-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 174258,
@@ -9,13 +12,13 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 493,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:70::11:4:4932:4933:6316:1630:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 497,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:66::11:4:4932:4933:6316:1634:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 173835,
-			["Level"] = 435,
-			["Link"] = "|cffa335ee|Hitem:173835::::::::120:66::9:4:1487:4786:6503:4775:::|h[Malignant Leviathan's Pauldrons]|h|r",
+			["ID"] = 158060,
+			["Level"] = 450,
+			["Link"] = "|cffa335ee|Hitem:158060::::::::120:70::28:4:1637:4786:6506:4775:::|h[Shoalbreach Pauldrons]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -67,10 +70,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:165661::::::::120:66::28:4:4803:6513:1637:4786:::|h[Ancient Tuskarr Sea Charm]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 160263,
-			["Level"] = 420,
+			["ID"] = 165661,
+			["Level"] = 445,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff0070dd|Hitem:160263::::::::120:70::27:3:4803:1612:4785:::|h[Snowpelt Mangler]|h|r",
+			["Link"] = "|cffa335ee|Hitem:165661::::::::120:70::28:4:4803:6513:1637:4786:::|h[Ancient Tuskarr Sea Charm]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 169223,
@@ -89,9 +92,6 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:159804::::::::120:66::28:5:4803:6516:6513:1637:4786:::|h[Ironcrest Bulwark]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Galinar-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
