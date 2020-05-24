@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0326,
-	["LastPlayerFullName"] = "Torinar-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173457,
@@ -92,6 +89,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:170364::::::::120:73::13:2:1699:5804:::|h[Uncanny Combatant's Shield of the Feverflare]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Torinar-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
