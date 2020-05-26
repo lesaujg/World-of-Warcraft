@@ -338,21 +338,6 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "2f95b0",
 		},
-		["\"MrRobot\":MAGE1"] = {
-			["IconTexturePath"] = 135932,
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "3fc7eb",
-			["ClassID"] = 8,
-			["LocalizedName"] = "Mage: Arcane",
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "DAMAGER",
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["SpecID"] = 1,
-			["UnenchantedColor"] = "2f95b0",
-		},
 		["\"MrRobot\":DEMONHUNTER2"] = {
 			["IconTexturePath"] = 1247265,
 			["PerCharacterOptions"] = {
@@ -370,6 +355,21 @@ PawnCommon = {
 			["Provider"] = "MrRobot",
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "7a2496",
+		},
+		["\"MrRobot\":SHAMAN3"] = {
+			["IconTexturePath"] = 136052,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "0070de",
+			["ClassID"] = 7,
+			["LocalizedName"] = "Shaman: Restoration",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "HEALER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "0054a6",
 		},
 		["\"MrRobot\":WARRIOR1"] = {
 			["IconTexturePath"] = 132355,
@@ -404,9 +404,6 @@ PawnCommon = {
 		["\"MrRobot\":PALADIN2"] = {
 			["IconTexturePath"] = 236264,
 			["PerCharacterOptions"] = {
-				["Galinar-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "f58cba",
 			["ClassID"] = 2,
@@ -419,20 +416,20 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "b7698b",
 		},
-		["\"MrRobot\":SHAMAN3"] = {
-			["IconTexturePath"] = 136052,
+		["\"MrRobot\":MAGE1"] = {
+			["IconTexturePath"] = 135932,
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "0070de",
-			["ClassID"] = 7,
-			["LocalizedName"] = "Shaman: Restoration",
+			["Color"] = "3fc7eb",
+			["ClassID"] = 8,
+			["LocalizedName"] = "Mage: Arcane",
 			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "HEALER",
+			["Role"] = "DAMAGER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["SpecID"] = 3,
-			["UnenchantedColor"] = "0054a6",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "2f95b0",
 		},
 		["\"MrRobot\":DRUID2"] = {
 			["IconTexturePath"] = 132115,
@@ -504,6 +501,9 @@ PawnCommon = {
 			["IconTexturePath"] = 135873,
 			["PerCharacterOptions"] = {
 				["Herbinator-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
+				["Galinar-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
 			},

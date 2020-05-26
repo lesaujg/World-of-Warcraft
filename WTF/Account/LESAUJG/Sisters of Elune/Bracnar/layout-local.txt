@@ -1,11 +1,4 @@
 Version: 1
-Frame: BaudManifestDisplay3
-FrameLevel: 1
-Anchor: RIGHT
-X: -200
-Y: 70
-W: 500
-H: 417
 Frame: PawnUIFrame
 FrameLevel: 1
 Anchor: CENTER
@@ -13,6 +6,13 @@ X: 0
 Y: 0
 W: 800
 H: 525
+Frame: BaudManifestDisplay3
+FrameLevel: 1
+Anchor: RIGHT
+X: -200
+Y: 70
+W: 500
+H: 417
 Frame: BaudManifestDisplay2
 FrameLevel: 1
 Anchor: TOP
@@ -27,3 +27,10 @@ X: 0
 Y: -31
 W: 310
 H: 619
+Frame: AmrUiFrame1
+FrameLevel: 1
+Anchor: TOP
+X: -158
+Y: -92
+W: 1000
+H: 700

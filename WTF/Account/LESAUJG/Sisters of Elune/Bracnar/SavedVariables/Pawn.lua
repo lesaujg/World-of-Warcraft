@@ -1,14 +1,11 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0326,
-	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
-	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
-			["ID"] = 171014,
-			["Level"] = 450,
-			["Link"] = "|cffa335ee|Hitem:171014::::::::120:255::13:1:4775:::|h[A-N0M-A-L0U5 Bionic Bifocals]|h|r",
+			["ID"] = 155887,
+			["Level"] = 465,
+			["Link"] = "|cffa335ee|Hitem:155887::::::::120:254::35:5:5445:1632:4786:6508:4775:::|h[Sweete's Jeweled Headgear]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
@@ -86,7 +83,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:158090::::::::120:253::28:8:4803:6578:6579:6482:6470:6513:1637:4786:::|h[Ironcrest Longrifle]|h|r",
 		}, -- [16]
 	},
-	["LastKeybindingsSet"] = 1,
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -123,6 +122,7 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",
