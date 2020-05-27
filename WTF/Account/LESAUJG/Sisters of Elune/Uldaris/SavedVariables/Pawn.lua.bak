@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0326,
-	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173441,
@@ -12,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 435,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:104::11:4:4932:4933:6316:1572:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 437,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:104::11:4:4932:4933:6316:1574:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173443,
@@ -76,9 +73,9 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:133597::::::::120:104:::1:5817:::|h[Infallible Tracking Charm]|h|r",
 		}, -- [14]
 		{
-			["ID"] = 122261,
-			["Level"] = 284,
-			["Link"] = "|cff00ccff|Hitem:122261::::::::119:104:::1:5805:::|h[Inherited Cape of the Black Baron]|h|r",
+			["ID"] = 160536,
+			["Level"] = 320,
+			["Link"] = "|cff0070dd|Hitem:160536::::::::120:104::14::::|h[7th Legionnaire's Cloak]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 158100,
@@ -86,6 +83,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158100::::::::120:104::28:5:4803:6516:6515:1577:4785:::|h[Tideguard Spire]|h|r",
 		}, -- [16]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

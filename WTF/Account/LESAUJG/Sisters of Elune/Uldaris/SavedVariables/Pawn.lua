@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0326,
+	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173441,
@@ -83,9 +86,6 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158100::::::::120:104::28:5:4803:6516:6515:1577:4785:::|h[Tideguard Spire]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
