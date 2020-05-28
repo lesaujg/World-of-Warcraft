@@ -187,10 +187,10 @@ OneRing_Config = {
 					49040, -- [2]
 					["sliceToken"] = "ABuepmAOjSe",
 				}, -- [5]
-				["limit"] = "Bracnar-SistersofElune",
+				["name"] = "Useful Items",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Useful Items",
+				["limit"] = "Bracnar-SistersofElune",
 			},
 			["Vendor"] = {
 				{
@@ -214,8 +214,8 @@ OneRing_Config = {
 					["sliceToken"] = "ABue3IpvlVi",
 				}, -- [4]
 				["save"] = true,
-				["limit"] = "Bracnar-SistersofElune",
 				["name"] = "Vendor",
+				["limit"] = "Bracnar-SistersofElune",
 			},
 			["OPieFlagStore"] = {
 				["StoreVersion"] = 2,
