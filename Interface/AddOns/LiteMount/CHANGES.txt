@@ -1,26 +1,57 @@
-tag 20b19af434dfe9cf20ea9daf19cec484ab896c4e 8.3.7
+tag 8386ca8c5a685aa1326b99327e373c890ca2d3b8 8.3.8
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Sun Apr 19 10:13:28 2020 +1000
+Date:	Thu May 28 18:16:29 2020 +1000
 
-LiteMount 8.3.7
-- [falling] condition now requires more than 1s since a jump
-- flag Seething Shore battleground as non-flyable
+LiteMount 8.3.8
 
-commit 8c2915ec3abc5567cdb11c547dab3c7ee4159e6d
+ - stop the "Use" action from equipping items
+
+ - allow conditions to use @unit in the same clause
+
+ - the following conditions now use @unit, default is "player"
+   [aura]
+   [channeling]
+   [class]
+   [combat]
+   [dead]
+   [faction]
+   [name]
+   [pet]
+   [pvp]
+   [race]
+   [role]
+   [sex]
+
+ - the following condtions now only use @unit instead of a unit arg
+
+   [exists] - default is "target"
+   [harm] - default is "target"
+   [help] - default is "target"
+   [party] - default is "target"
+   [raid] - default is "target"
+   [sameunit] - no longer takes 2 args, only 1 which is compared to @unit
+
+commit 669c3320a6c5075d36974be6f2b6b6d441840192
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sun Apr 19 10:11:36 2020 +1000
+Date:   Thu May 28 18:15:17 2020 +1000
 
-    Flag Seething Shore as non-flyable
+    Make [sameunit] only take 1 arg and use @unit
 
-commit e0533207012af8d7c780ef7c63f77a593665e567
+commit 20d7c39fa1bc9149330ae20adae36072e01c1a73
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sun Apr 19 10:11:18 2020 +1000
+Date:   Tue May 26 22:46:22 2020 +1000
 
-    Start recording instances, just in case it's helpful
+    Make unit-base conditions obey @unit in the same [condition]
 
-commit 0b4ae397d21d98fdb83375dde901c8264fbd3070
+commit bcc6142c9e01193b2bdb95a12ba6054f9e83d9c7
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Apr 17 14:07:46 2020 +1000
+Date:   Mon May 18 08:58:00 2020 +1000
 
-    Adjust [falling] so it won't trigger within 1s of a jump
+    Stop items from equipping with Use
+
+commit c451854e415e901df05914aac9c242f4826407b5
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Sun Apr 19 10:16:09 2020 +1000
+
+    Properly record instances
 
