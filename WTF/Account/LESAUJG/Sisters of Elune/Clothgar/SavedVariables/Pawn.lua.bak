@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0327,
-	["LastPlayerFullName"] = "Clothgar-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173433,
@@ -12,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 296,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:267::11:4:4932:4933:4935:1488:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 298,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:267::11:4:4932:4933:4935:1490:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173844,
@@ -91,6 +88,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:163892::::::::120:267::29:4:5125:41:1517:4785:::|h[7th Legionnaire's Censer]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Clothgar-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
