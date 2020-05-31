@@ -1,6 +1,9 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0327,
+	["LastVersion"] = 2.0328,
+	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173441,
@@ -9,8 +12,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 451,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:103::11:4:4932:4933:6316:1588:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 455,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:104::11:4:4932:4933:6316:1592:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173443,
@@ -29,9 +32,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:173816::::::::120:104::14:4:6412:6513:1467:4785:::|h[Belt of the Insatiable Maw]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 157978,
-			["Level"] = 420,
-			["Link"] = "|cff0070dd|Hitem:157978::::::::120:104::27:6:4803:4802:6516:6513:1612:4785:::|h[Seafarer Breeches]|h|r",
+			["ID"] = 158010,
+			["Level"] = 425,
+			["Link"] = "|cff0070dd|Hitem:158010::::::::120:104::28:5:4803:6516:6515:1617:4785:::|h[Gravethorn Breeches]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 158007,
@@ -83,9 +86,6 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158131::::::::120:104::25:5:4803:6516:6515:1602:4785:::|h[Whisperfen Staff]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

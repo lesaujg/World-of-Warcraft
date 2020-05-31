@@ -27,10 +27,3 @@ X: 206
 Y: 24
 W: 250
 H: 750
-Frame: AmrUiFrame1
-FrameLevel: 1
-Anchor: RIGHT
-X: -104
-Y: -55
-W: 1000
-H: 700
