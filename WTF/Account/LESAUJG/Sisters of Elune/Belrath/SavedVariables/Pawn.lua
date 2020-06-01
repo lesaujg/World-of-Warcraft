@@ -1,6 +1,9 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0327,
+	["LastVersion"] = 2.0328,
+	["LastPlayerFullName"] = "Belrath-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173457,
@@ -9,8 +12,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 433,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:250::11:4:4932:4933:6316:1570:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 435,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:250::11:4:4932:4933:6316:1572:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 170526,
@@ -89,9 +92,6 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:163533::::::::110:250::11::::|h[Footman's Cleaver]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Belrath-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
