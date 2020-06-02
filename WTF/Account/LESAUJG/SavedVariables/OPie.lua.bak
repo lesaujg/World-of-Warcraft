@@ -187,10 +187,10 @@ OneRing_Config = {
 					49040, -- [2]
 					["sliceToken"] = "ABuepmAOjSe",
 				}, -- [5]
-				["name"] = "Useful Items",
+				["limit"] = "Bracnar-SistersofElune",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["limit"] = "Bracnar-SistersofElune",
+				["name"] = "Useful Items",
 			},
 			["Vendor"] = {
 				{
