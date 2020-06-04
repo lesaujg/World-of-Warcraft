@@ -67,10 +67,10 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:161115::::::::120:104::27:3:4803:1612:4785:::|h[Cursed Captain's Charm]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 169317,
-			["Level"] = 415,
+			["ID"] = 165660,
+			["Level"] = 420,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cffa335ee|Hitem:169317::::::::120:104::3:3:4798:1487:4786:::|h[Enthraller's Bindstone]|h|r",
+			["Link"] = "|cff0070dd|Hitem:165660::::::::120:104::27:5:4803:4802:6513:1612:4785:::|h[Chargestone of the Thunder King's Court]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 166668,

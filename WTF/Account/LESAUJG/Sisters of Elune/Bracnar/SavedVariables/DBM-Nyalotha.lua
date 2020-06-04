@@ -1,16 +1,18 @@
 
 DBMNyalotha_SavedStats = {
 	["2368"] = {
-		["normalPulls"] = 0,
+		["normalPulls"] = 2,
 		["challengeKills"] = 0,
 		["challengeBestRank"] = 0,
 		["mythicKills"] = 0,
 		["lfr25Kills"] = 1,
 		["heroic25Pulls"] = 0,
+		["normalBestTime"] = 309.1490000000922,
+		["normalLastTime"] = 309.1490000000922,
 		["lfr25Pulls"] = 3,
 		["normal25Pulls"] = 0,
 		["lfr25BestTime"] = 319.469000000041,
-		["normalKills"] = 0,
+		["normalKills"] = 1,
 		["lfr25LastTime"] = 319.469000000041,
 		["heroic25Kills"] = 0,
 		["timewalkerPulls"] = 0,
@@ -174,7 +176,7 @@ DBMNyalotha_SavedStats = {
 		["challengePulls"] = 0,
 	},
 	["2365"] = {
-		["normalPulls"] = 0,
+		["normalPulls"] = 2,
 		["challengeKills"] = 0,
 		["challengeBestRank"] = 0,
 		["mythicKills"] = 0,
