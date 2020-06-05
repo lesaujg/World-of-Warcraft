@@ -9,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 457,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:104::11:4:4932:4933:6316:1594:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 473,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:104::11:4:4932:4933:6316:1610:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173443,
@@ -19,14 +19,14 @@ PawnOptions = {
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 157878,
-			["Level"] = 420,
-			["Link"] = "|cff0070dd|Hitem:157878::::::::120:104::26:4:1607:4785:6257:4775:::|h[Blood Bog Wraps]|h|r",
+			["ID"] = 173843,
+			["Level"] = 435,
+			["Link"] = "|cffa335ee|Hitem:173843::::::::120:104::9:4:1487:4786:6501:4775:::|h[Vest of the Insatiable Maw]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 173816,
-			["Level"] = 410,
-			["Link"] = "|cff0070dd|Hitem:173816::::::::120:104::14:4:6412:6513:1467:4785:::|h[Belt of the Insatiable Maw]|h|r",
+			["ID"] = 173815,
+			["Level"] = 425,
+			["Link"] = "|cff0070dd|Hitem:173815::::::::120:104::29:6:6412:4803:6515:6516:1482:4785:::|h[Girdle of the Insatiable Maw]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 158010,
@@ -39,9 +39,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158007::::::::120:104::27:9:4803:4802:6578:6579:6484:6457:6513:1612:4785:::|h[Gravethorn Striders]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 157981,
-			["Level"] = 420,
-			["Link"] = "|cff0070dd|Hitem:157981::::::::120:104::28:5:4803:6516:6515:1612:4785:::|h[Seafarer Armguards]|h|r",
+			["ID"] = 174954,
+			["Level"] = 440,
+			["Link"] = "|cffa335ee|Hitem:174954::::::::120:104::28:5:6540:6513:6578:6579:4803:::|h[Wristwraps of the Insatiable Maw]|h|r",
 		}, -- [9]
 		{
 			["ID"] = 158040,
@@ -73,9 +73,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:165660::::::::120:104::27:5:4803:4802:6513:1612:4785:::|h[Chargestone of the Thunder King's Court]|h|r",
 		}, -- [14]
 		{
-			["ID"] = 166668,
-			["Level"] = 420,
-			["Link"] = "|cff0070dd|Hitem:166668::::::::120:104::27:3:4803:1612:4785:::|h[Battalion Veteran's Greatcloak]|h|r",
+			["ID"] = 169223,
+			["Level"] = 470,
+			["Link"] = "|cffff8000|Hitem:169223::::::::120:104::11:1:6272:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 158131,

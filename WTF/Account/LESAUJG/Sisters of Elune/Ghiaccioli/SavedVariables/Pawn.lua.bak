@@ -1,6 +1,9 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0327,
+	["LastVersion"] = 2.0328,
+	["LastPlayerFullName"] = "Ghiaccioli-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173433,
@@ -9,8 +12,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 378,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:63:::4:4932:4933:4935:1570:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 380,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:63:::4:4932:4933:4935:1572:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173435,
@@ -83,9 +86,6 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:170646::::::::120:63::::::|h[Mountainsage Staff]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Ghiaccioli-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

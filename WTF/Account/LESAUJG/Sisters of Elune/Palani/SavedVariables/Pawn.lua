@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0328,
+	["LastPlayerFullName"] = "Palani-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173433,
@@ -89,9 +92,6 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:155139::::::::113:256:512:11:1:4787:113:::|h[Mad-Butcher's Mallet]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Palani-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
