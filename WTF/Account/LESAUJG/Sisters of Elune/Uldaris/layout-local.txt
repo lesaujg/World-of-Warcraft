@@ -20,13 +20,6 @@ X: 157
 Y: 17
 W: 250
 H: 417
-Frame: AmrUiFrame1
-FrameLevel: 1
-Anchor: RIGHT
-X: 48
-Y: 100
-W: 1000
-H: 700
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: CENTER

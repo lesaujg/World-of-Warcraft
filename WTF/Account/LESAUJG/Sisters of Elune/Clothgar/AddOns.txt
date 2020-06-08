@@ -84,7 +84,7 @@ BagBrother: disabled
 BittensSpellFlash_Hunter: disabled
 Basic_Resources: disabled
 Claw: disabled
-HandyNotes_DraenorTreasures: disabled
+HandyNotes_DraenorTreasures: enabled
 LiteMount: enabled
 MasterPlan: disabled
 OPie: enabled
@@ -139,7 +139,7 @@ BaudManifest: enabled
 AskMrRobot: enabled
 Factionizer: disabled
 GTFO: disabled
-HandyNotes: disabled
+HandyNotes: enabled
 MacroToolkit: disabled
 MasterPlanA: disabled
 Pawn: enabled
@@ -230,7 +230,7 @@ DBM-CrucibleofStorms: disabled
 DBM-ZuldazarRaid: disabled
 OPie_Classic: disabled
 DarkmoonQuestItems: disabled
-HandyNotes_MechagonAndNazjatar: disabled
+HandyNotes_MechagonAndNazjatar: enabled
 HandyNotes_WarfrontRares: disabled
 Ace3: enabled
 MrrlsItemInformation: disabled

@@ -2,3 +2,6 @@ OPie_Classic: disabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 TeleportCloak: enabled
+HandyNotes: enabled
+HandyNotes_MechagonAndNazjatar: enabled
+HandyNotes_DraenorTreasures: enabled

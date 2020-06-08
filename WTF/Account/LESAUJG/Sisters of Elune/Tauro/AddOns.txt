@@ -4,7 +4,7 @@ AskMrRobot: enabled
 BaudManifest: enabled
 FactionAddict: disabled
 GTFO: disabled
-HandyNotes: disabled
+HandyNotes: enabled
 HandyNotes_WarfrontRares: disabled
 LiteMount: enabled
 MountDropList: disabled
@@ -83,7 +83,7 @@ DBM-VoA: disabled
 DBM-WorldEvents: disabled
 OPie_Classic: disabled
 DarkmoonQuestItems: disabled
-HandyNotes_MechagonAndNazjatar: disabled
+HandyNotes_MechagonAndNazjatar: enabled
 Ace3: enabled
 MrrlsItemInformation: disabled
 SmexyMats: enabled
@@ -91,3 +91,4 @@ DBM-Nyalotha: disabled
 DBM-EternalPalace: disabled
 SilverDragon: disabled
 HandyNotes_VisionsOfNZoth: enabled
+HandyNotes_DraenorTreasures: enabled

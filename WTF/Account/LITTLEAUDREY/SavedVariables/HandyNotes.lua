@@ -12,15 +12,15 @@ HandyNotesDB = {
 		["Vellamun - Ravenholdt"] = "Vellamun - Ravenholdt",
 		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
 		["Herbinator - Sisters of Elune"] = "Herbinator - Sisters of Elune",
-		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
-		["Mandelbrot - Sisters of Elune"] = "Mandelbrot - Sisters of Elune",
-		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
-		["Toberd - Sisters of Elune"] = "Toberd - Sisters of Elune",
-		["Tauro - Sisters of Elune"] = "Tauro - Sisters of Elune",
-		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
-		["Edaka - Sisters of Elune"] = "Edaka - Sisters of Elune",
-		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
 		["Allala - Sisters of Elune"] = "Allala - Sisters of Elune",
+		["Mandelbrot - Sisters of Elune"] = "Mandelbrot - Sisters of Elune",
+		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Toberd - Sisters of Elune"] = "Toberd - Sisters of Elune",
+		["Edaka - Sisters of Elune"] = "Edaka - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
+		["Tauro - Sisters of Elune"] = "Tauro - Sisters of Elune",
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
 	},
 	["profiles"] = {
 		["Sanjuri - Sisters of Elune"] = {
@@ -45,23 +45,23 @@ HandyNotesDB = {
 		},
 		["Herbinator - Sisters of Elune"] = {
 		},
-		["Torinara - Sisters of Elune"] = {
+		["Allala - Sisters of Elune"] = {
 		},
 		["Mandelbrot - Sisters of Elune"] = {
 		},
-		["Bracnar - Sisters of Elune"] = {
+		["Torinar - Sisters of Elune"] = {
 		},
 		["Toberd - Sisters of Elune"] = {
 		},
-		["Tauro - Sisters of Elune"] = {
+		["Edaka - Sisters of Elune"] = {
 		},
 		["Uldaris - Sisters of Elune"] = {
 		},
-		["Edaka - Sisters of Elune"] = {
+		["Tauro - Sisters of Elune"] = {
 		},
-		["Torinar - Sisters of Elune"] = {
+		["Bracnar - Sisters of Elune"] = {
 		},
-		["Allala - Sisters of Elune"] = {
+		["Torinara - Sisters of Elune"] = {
 		},
 	},
 }
@@ -78,15 +78,15 @@ HandyNotes_HandyNotesDB = {
 		["Vellamun - Ravenholdt"] = "Vellamun - Ravenholdt",
 		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
 		["Herbinator - Sisters of Elune"] = "Herbinator - Sisters of Elune",
-		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
-		["Mandelbrot - Sisters of Elune"] = "Mandelbrot - Sisters of Elune",
-		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
-		["Toberd - Sisters of Elune"] = "Toberd - Sisters of Elune",
-		["Tauro - Sisters of Elune"] = "Tauro - Sisters of Elune",
-		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
-		["Edaka - Sisters of Elune"] = "Edaka - Sisters of Elune",
-		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
 		["Allala - Sisters of Elune"] = "Allala - Sisters of Elune",
+		["Mandelbrot - Sisters of Elune"] = "Mandelbrot - Sisters of Elune",
+		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
+		["Toberd - Sisters of Elune"] = "Toberd - Sisters of Elune",
+		["Edaka - Sisters of Elune"] = "Edaka - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
+		["Tauro - Sisters of Elune"] = "Tauro - Sisters of Elune",
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
 	},
 	["profiles"] = {
 		["Sanjuri - Sisters of Elune"] = {
@@ -111,23 +111,23 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Herbinator - Sisters of Elune"] = {
 		},
-		["Torinara - Sisters of Elune"] = {
+		["Allala - Sisters of Elune"] = {
 		},
 		["Mandelbrot - Sisters of Elune"] = {
 		},
-		["Bracnar - Sisters of Elune"] = {
+		["Torinar - Sisters of Elune"] = {
 		},
 		["Toberd - Sisters of Elune"] = {
 		},
-		["Tauro - Sisters of Elune"] = {
+		["Edaka - Sisters of Elune"] = {
 		},
 		["Uldaris - Sisters of Elune"] = {
 		},
-		["Edaka - Sisters of Elune"] = {
+		["Tauro - Sisters of Elune"] = {
 		},
-		["Torinar - Sisters of Elune"] = {
+		["Bracnar - Sisters of Elune"] = {
 		},
-		["Allala - Sisters of Elune"] = {
+		["Torinara - Sisters of Elune"] = {
 		},
 	},
 }

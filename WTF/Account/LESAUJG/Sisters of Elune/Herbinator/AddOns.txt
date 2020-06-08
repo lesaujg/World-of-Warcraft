@@ -139,7 +139,7 @@ BaudManifest: enabled
 AskMrRobot: enabled
 Factionizer: disabled
 GTFO: disabled
-HandyNotes: disabled
+HandyNotes: enabled
 MacroToolkit: disabled
 MasterPlanA: disabled
 Pawn: enabled
@@ -221,7 +221,7 @@ Tukui_17_Layout: enabled
 KSpeedO: enabled
 OPie_Classic: disabled
 DarkmoonQuestItems: disabled
-HandyNotes_MechagonAndNazjatar: disabled
+HandyNotes_MechagonAndNazjatar: enabled
 HandyNotes_WarfrontRares: disabled
 Ace3: enabled
 MountDropList: disabled

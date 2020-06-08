@@ -52,7 +52,7 @@ LiteMount: enabled
 Pawn: enabled
 RaidAchieveFilter: disabled
 AdvancedIconSelector: disabled
-HandyNotes: disabled
+HandyNotes: enabled
 IskarAssist: disabled
 TradeSkillMaster: enabled
 TradeSkillMaster_Accounting: disabled
@@ -155,7 +155,7 @@ KSpeedO: enabled
 OPie_Classic: disabled
 DarkmoonQuestItems: disabled
 FactionAddict: disabled
-HandyNotes_MechagonAndNazjatar: disabled
+HandyNotes_MechagonAndNazjatar: enabled
 HandyNotes_WarfrontRares: disabled
 Ace3: enabled
 MountDropList: disabled

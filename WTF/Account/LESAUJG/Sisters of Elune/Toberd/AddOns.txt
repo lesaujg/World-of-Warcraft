@@ -8,7 +8,7 @@ BaudManifest: enabled
 DarkmoonQuestItems: disabled
 FactionAddict: disabled
 GTFO: disabled
-HandyNotes: disabled
+HandyNotes: enabled
 HandyNotes_WarfrontRares: disabled
 Ace3: enabled
 LiteMount: enabled
@@ -90,6 +90,7 @@ DBM-Uldir: disabled
 DBM-Ulduar: disabled
 DBM-VoA: disabled
 DBM-WorldEvents: disabled
-HandyNotes_MechagonAndNazjatar: disabled
+HandyNotes_MechagonAndNazjatar: enabled
 SilverDragon: disabled
 HandyNotes_VisionsOfNZoth: enabled
+HandyNotes_DraenorTreasures: enabled
