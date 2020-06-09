@@ -1,28 +1,48 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0311,
+	["LastVersion"] = 2.0328,
 	["LastPlayerFullName"] = "Toberd-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
-		[5] = {
-			["ID"] = 72019,
-			["Level"] = 1,
-			["Link"] = "|cffffffff|Hitem:72019::::::::1:253::::::|h[Trainee's Vest]|h|r",
-		},
 		[6] = {
-			["ID"] = 77509,
-			["Level"] = 1,
-			["Link"] = "|cffffffff|Hitem:77509::::::::1:253::::::|h[Trainee's Cord]|h|r",
+			["ID"] = 131907,
+			["Level"] = 7,
+			["Link"] = "|cffffffff|Hitem:131907::::::::9:253:512:11:1:3803:7:::|h[Unmarred Chain]|h|r",
 		},
 		[7] = {
-			["ID"] = 72020,
-			["Level"] = 1,
-			["Link"] = "|cffffffff|Hitem:72020::::::::1:253::::::|h[Trainee's Leggings]|h|r",
+			["ID"] = 131911,
+			["Level"] = 10,
+			["Link"] = "|cffffffff|Hitem:131911::::::::10:253:512:11:1:3803:10:::|h[Padded Greaves]|h|r",
+		},
+		[8] = {
+			["ID"] = 131912,
+			["Level"] = 10,
+			["Link"] = "|cffffffff|Hitem:131912::::::::11:253:512:11:1:3803:10:::|h[Ringing Boots]|h|r",
+		},
+		[10] = {
+			["ID"] = 131908,
+			["Level"] = 8,
+			["Link"] = "|cffffffff|Hitem:131908::::::::9:253:512:11:1:3803:8:::|h[Gauntlets of Splashing Water]|h|r",
+		},
+		[5] = {
+			["ID"] = 131909,
+			["Level"] = 8,
+			["Link"] = "|cffffffff|Hitem:131909::::::::9:253:512:11:1:3803:8:::|h[Sun Pearl Chainmail]|h|r",
 		},
 		[9] = {
-			["ID"] = 77526,
-			["Level"] = 1,
-			["Link"] = "|cffffffff|Hitem:77526::::::::1:253::::::|h[Trainee's Wristwraps]|h|r",
+			["ID"] = 131901,
+			["Level"] = 2,
+			["Link"] = "|cffffffff|Hitem:131901::::::::9:253::11::::|h[Initiate's Cuffs]|h|r",
+		},
+		[16] = {
+			["ID"] = 73234,
+			["Level"] = 5,
+			["Link"] = "|cffffffff|Hitem:73234::::::::9:253::11::::|h[Flameheart Crossbow]|h|r",
+		},
+		[15] = {
+			["ID"] = 4662,
+			["Level"] = 7,
+			["Link"] = "|cffffffff|Hitem:4662::::::::9:253:512:25:1:4768:6:::|h[Journeyman's Cloak]|h|r",
 		},
 	},
 	["LastKeybindingsSet"] = 1,
@@ -31,3 +51,4 @@ PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",
 	["LastAdded"] = 1,
 }
+PawnClassicScaleProviderOptions = nil

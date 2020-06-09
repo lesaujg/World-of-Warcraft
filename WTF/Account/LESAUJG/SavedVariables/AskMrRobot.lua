@@ -4983,11 +4983,11 @@ AskMrRobotDb4 = {
 				[159868] = 5,
 				[173441] = 1,
 				[163853] = 1,
-				[152549] = 10,
+				[158010] = 1,
 				[163885] = 1,
 				[170172] = 1,
 				[152868] = 1,
-				[158010] = 1,
+				[40586] = 1,
 				[168267] = 1,
 				[114943] = 1,
 				[162584] = 1,
@@ -5033,13 +5033,13 @@ AskMrRobotDb4 = {
 				[46017] = 1,
 				[69210] = 1,
 				[170114] = 1,
-				[158161] = 2,
+				[6948] = 1,
 				[170512] = 1,
 				[173464] = 1,
 				[173480] = 1,
 				[152668] = 5,
 				[163278] = 1,
-				[160447] = 1,
+				[158161] = 2,
 				[163019] = 1,
 				[63206] = 1,
 				[20815] = 1,
@@ -5057,13 +5057,13 @@ AskMrRobotDb4 = {
 				[152512] = 67,
 				[158751] = 3,
 				[85380] = 1,
-				[91103] = 1,
-				[157910] = 1,
+				[173816] = 1,
+				[152576] = 21,
 				[158100] = 1,
 				[155830] = 3,
 				[153687] = 1,
+				[157910] = 1,
 				[6833] = 1,
-				[152576] = 21,
 				[170372] = 1,
 				[159847] = 1,
 				[152545] = 9,
@@ -5075,14 +5075,14 @@ AskMrRobotDb4 = {
 				[170515] = 1,
 				[157878] = 1,
 				[167738] = 13,
-				[173816] = 1,
 				[159846] = 2,
+				[91103] = 1,
 				[158007] = 1,
 				[166846] = 260,
 				[71086] = 1,
 				[118084] = 1,
 				[159849] = 1,
-				[6948] = 1,
+				[160447] = 1,
 				[152509] = 43,
 				[154795] = 1,
 				[152547] = 10,
@@ -5101,7 +5101,7 @@ AskMrRobotDb4 = {
 				[162026] = 1,
 				[152506] = 13,
 				[174758] = 2,
-				[40586] = 1,
+				[152549] = 10,
 				[173363] = 3,
 				[155629] = 2,
 				[69897] = 1,
@@ -5187,7 +5187,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 158041,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								275906, -- [1]
 								273344, -- [2]
@@ -5195,13 +5200,8 @@ AskMrRobotDb4 = {
 								268437, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 226,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						}, -- [1]
@@ -5234,7 +5234,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 158011,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								273344, -- [1]
 								273823, -- [2]
@@ -5242,13 +5247,8 @@ AskMrRobotDb4 = {
 								280013, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 174,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						}, -- [3]
@@ -5262,7 +5262,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 173843,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								273344, -- [1]
 								317137, -- [2]
@@ -5270,13 +5275,8 @@ AskMrRobotDb4 = {
 								263962, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 237,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						}, -- [5]
@@ -5548,19 +5548,19 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 158009,
-							["level"] = 0,
-							["azerite"] = {
-								273823, -- [1]
-								268594, -- [2]
-								263978, -- [3]
-							},
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["azerite"] = {
+								273823, -- [1]
+								268594, -- [2]
+								263978, -- [3]
+							},
 							["inventoryId"] = 172,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						}, -- [1]
@@ -5593,7 +5593,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 158011,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								273344, -- [1]
 								273823, -- [2]
@@ -5601,13 +5606,8 @@ AskMrRobotDb4 = {
 								280013, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 174,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						}, -- [3]
@@ -5621,7 +5621,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 173843,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								273344, -- [1]
 								317137, -- [2]
@@ -5629,13 +5634,8 @@ AskMrRobotDb4 = {
 								263962, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 237,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						}, -- [5]
@@ -10186,7 +10186,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["enchantId"] = 0,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								272898, -- [1]
 								317137, -- [2]
@@ -10194,13 +10199,8 @@ AskMrRobotDb4 = {
 								268437, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 164,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["id"] = 173457,
 						}, -- [1]
@@ -10233,7 +10233,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["enchantId"] = 0,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								278609, -- [1]
 								281841, -- [2]
@@ -10241,13 +10246,8 @@ AskMrRobotDb4 = {
 								268596, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 114,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["id"] = 157996,
 						}, -- [3]
@@ -10261,7 +10261,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["enchantId"] = 0,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								272898, -- [1]
 								278605, -- [2]
@@ -10269,13 +10274,8 @@ AskMrRobotDb4 = {
 								268596, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 184,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["id"] = 158054,
 						}, -- [5]
@@ -10573,7 +10573,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["enchantId"] = 0,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								273473, -- [1]
 								317137, -- [2]
@@ -10581,13 +10586,8 @@ AskMrRobotDb4 = {
 								268437, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 195,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["id"] = 174258,
 						}, -- [1]
@@ -10620,7 +10620,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["enchantId"] = 0,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								278617, -- [1]
 								286229, -- [2]
@@ -10628,13 +10633,8 @@ AskMrRobotDb4 = {
 								263962, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 185,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["id"] = 158060,
 						}, -- [3]
@@ -10648,7 +10648,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["enchantId"] = 0,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								272898, -- [1]
 								278605, -- [2]
@@ -10656,13 +10661,8 @@ AskMrRobotDb4 = {
 								268596, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 184,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["id"] = 158054,
 						}, -- [5]
@@ -10941,7 +10941,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["enchantId"] = 0,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								277674, -- [1]
 								287268, -- [2]
@@ -10949,13 +10954,8 @@ AskMrRobotDb4 = {
 								268599, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 154,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["id"] = 168366,
 						}, -- [1]
@@ -10988,7 +10988,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["enchantId"] = 0,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								287268, -- [1]
 								280402, -- [2]
@@ -10996,13 +11001,8 @@ AskMrRobotDb4 = {
 								263962, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 119,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["id"] = 158060,
 						}, -- [3]
@@ -11156,7 +11156,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["enchantId"] = 0,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								287268, -- [1]
 								287818, -- [2]
@@ -11164,13 +11169,8 @@ AskMrRobotDb4 = {
 								274388, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 161,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["id"] = 170528,
 						},
@@ -11356,10 +11356,10 @@ AskMrRobotDb4 = {
 				[161053] = 12,
 				[155608] = 1,
 				[161117] = 1,
-				[173486] = 1,
+				[157992] = 1,
 				[163403] = 1,
 				[157990] = 1,
-				[157992] = 1,
+				[174756] = 1,
 				[169928] = 1,
 				[86143] = 3,
 				[158022] = 1,
@@ -11376,7 +11376,7 @@ AskMrRobotDb4 = {
 				[157996] = 1,
 				[159230] = 1,
 				[173470] = 1,
-				[174756] = 1,
+				[173486] = 1,
 				[174264] = 2,
 				[157897] = 1,
 				[152579] = 11,
@@ -12617,2521 +12617,2661 @@ AskMrRobotDb4 = {
 			["BankItems"] = {
 				[7] = {
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:132517::::::::120:253::::::|h[Intra-Dalaran Wormhole Generator]|h|r",
+						["id"] = 132517,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:132517::::::::120:253::::::|h[Intra-Dalaran Wormhole Generator]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 132517,
+						["enchantId"] = 0,
 					}, -- [1]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:160109::::::::120:253::::::|h[The Fall of Corlain]|h|r",
+						["id"] = 160109,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:160109::::::::120:253::::::|h[The Fall of Corlain]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 160109,
+						["enchantId"] = 0,
 					}, -- [2]
 					{
 						["bonusIds"] = {
 							3459, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:137033::::::::120:253:::2:3459:3630:::|h[Ullr's Feather Snowshoes]|h|r",
+						["id"] = 137033,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:137033::::::::120:253:::2:3459:3630:::|h[Ullr's Feather Snowshoes]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 137033,
+						["enchantId"] = 0,
 					}, -- [3]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:153203::::::::120:253::::::|h[Ancient Fishing Line]|h|r",
+						["id"] = 153203,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:153203::::::::120:253::::::|h[Ancient Fishing Line]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 153203,
+						["enchantId"] = 0,
 					}, -- [4]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:153203::::::::120:253::::::|h[Ancient Fishing Line]|h|r",
+						["id"] = 153203,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:153203::::::::120:253::::::|h[Ancient Fishing Line]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 153203,
+						["enchantId"] = 0,
 					}, -- [5]
 					{
-						["enchantId"] = 1441,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:32420:1441:::::::120:253::::::|h[Night's End]|h|r",
+						["id"] = 32420,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:32420:1441:::::::120:253::::::|h[Night's End]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 32420,
+						["enchantId"] = 1441,
 					}, -- [6]
 					{
 						["bonusIds"] = {
 							3459, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:151805::::::::120:253:::2:3459:3630:::|h[Parsel's Tongue]|h|r",
+						["id"] = 151805,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:151805::::::::120:253:::2:3459:3630:::|h[Parsel's Tongue]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 151805,
+						["enchantId"] = 0,
 					}, -- [7]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:15138::::::::120:253::::::|h[Onyxia Scale Cloak]|h|r",
+						["id"] = 15138,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:15138::::::::120:253::::::|h[Onyxia Scale Cloak]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 15138,
+						["enchantId"] = 0,
 					}, -- [8]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:98114::::::::120:253::::::|h[Pet Treat]|h|r",
+						["id"] = 98114,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:98114::::::::120:253::::::|h[Pet Treat]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 98114,
+						["enchantId"] = 0,
 					}, -- [9]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:162580::::::::120:253::::::|h[Fading Treasure Map]|h|r",
+						["id"] = 162580,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:162580::::::::120:253::::::|h[Fading Treasure Map]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 162580,
+						["enchantId"] = 0,
 					}, -- [10]
 					{
 						["bonusIds"] = {
 							1811, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:137227::::::::120:253:::2:1811:3630:::|h[Qa'pla, Eredun War Order]|h|r",
+						["id"] = 137227,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:137227::::::::120:253:::2:1811:3630:::|h[Qa'pla, Eredun War Order]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 137227,
+						["enchantId"] = 0,
 					}, -- [11]
 					{
 						["bonusIds"] = {
 							1811, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 5429,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:151641:5429:130247::::::120:253:::2:1811:3630:::|h[Soul of the Huntmaster]|h|r",
+						["id"] = 151641,
 						["gemIds"] = {
 							130247, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:151641:5429:130247::::::120:253:::2:1811:3630:::|h[Soul of the Huntmaster]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 151641,
+						["enchantId"] = 5429,
 					}, -- [12]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:19621::::::::120:253::::::|h[Maelstrom's Wrath]|h|r",
+						["id"] = 19621,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:19621::::::::120:253::::::|h[Maelstrom's Wrath]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 19621,
+						["enchantId"] = 0,
 					}, -- [13]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:163929::::::::120:253::::::|h[Aether of the Abyss]|h|r",
+						["id"] = 163929,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:163929::::::::120:253::::::|h[Aether of the Abyss]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 163929,
+						["enchantId"] = 0,
 					}, -- [14]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:50402::::::::120:253::::::|h[Ashen Band of Endless Vengeance]|h|r",
+						["id"] = 50402,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:50402::::::::120:253::::::|h[Ashen Band of Endless Vengeance]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 50402,
+						["enchantId"] = 0,
 					}, -- [15]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:29301::::::::120:253::::::|h[Band of the Eternal Champion]|h|r",
+						["id"] = 29301,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:29301::::::::120:253::::::|h[Band of the Eternal Champion]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 29301,
+						["enchantId"] = 0,
 					}, -- [16]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:21526::::::::120:253::::::|h[Band of Icy Depths]|h|r",
+						["id"] = 21526,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:21526::::::::120:253::::::|h[Band of Icy Depths]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 21526,
+						["enchantId"] = 0,
 					}, -- [17]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:12344::::::::120:253::::::|h[Seal of Ascension]|h|r",
+						["id"] = 12344,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:12344::::::::120:253::::::|h[Seal of Ascension]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 12344,
+						["enchantId"] = 0,
 					}, -- [18]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:162584::::::::120:253::::::|h[Singed Treasure Map]|h|r",
+						["id"] = 162584,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:162584::::::::120:253::::::|h[Singed Treasure Map]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 162584,
+						["enchantId"] = 0,
 					}, -- [19]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:168804::::::::120:253::::::|h[Powered Piscine Procurement Pole]|h|r",
+						["id"] = 168804,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:168804::::::::120:253::::::|h[Powered Piscine Procurement Pole]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 168804,
+						["enchantId"] = 0,
 					}, -- [20]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:167077::::::::120:253::11::::|h[Scrying Stone]|h|r",
+						["id"] = 167077,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:167077::::::::120:253::11::::|h[Scrying Stone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 167077,
+						["enchantId"] = 0,
 					}, -- [21]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:162571::::::::120:253::::::|h[Soggy Treasure Map]|h|r",
+						["id"] = 162571,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:162571::::::::120:253::::::|h[Soggy Treasure Map]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 162571,
+						["enchantId"] = 0,
 					}, -- [22]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:98715::::::::120:253::::::|h[Marked Flawless Battle-Stone]|h|r",
+						["id"] = 98715,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:98715::::::::120:253::::::|h[Marked Flawless Battle-Stone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 98715,
+						["enchantId"] = 0,
 					}, -- [23]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:162581::::::::120:253::::::|h[Yellowed Treasure Map]|h|r",
+						["id"] = 162581,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:162581::::::::120:253::::::|h[Yellowed Treasure Map]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 162581,
+						["enchantId"] = 0,
 					}, -- [24]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:168825::::::::120:253::::::|h[Rich Jelly]|h|r",
+						["id"] = 168825,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:168825::::::::120:253::::::|h[Rich Jelly]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 168825,
+						["enchantId"] = 0,
 					}, -- [25]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:116154::::::::120:253::11::::|h[Barov Lumberjack Caller]|h|r",
+						["id"] = 116154,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:116154::::::::120:253::11::::|h[Barov Lumberjack Caller]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 116154,
+						["enchantId"] = 0,
 					}, -- [26]
 					{
 						["bonusIds"] = {
 							545, -- [1]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:108903::::::::120:253:::1:545:::|h[Tiny Iron Star]|h|r",
+						["id"] = 108903,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:108903::::::::120:253:::1:545:::|h[Tiny Iron Star]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 108903,
+						["enchantId"] = 0,
 					}, -- [27]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:108907::::::::120:253::::::|h[Mushroom of Destiny]|h|r",
+						["id"] = 108907,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:108907::::::::120:253::::::|h[Mushroom of Destiny]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 108907,
+						["enchantId"] = 0,
 					}, -- [28]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:86576::::::::120:253::::::|h[Dynasty of Steel]|h|r",
+						["id"] = 86576,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:86576::::::::120:253::::::|h[Dynasty of Steel]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 86576,
+						["enchantId"] = 0,
 					}, -- [29]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:88376::::::::120:253::::::|h[Orange Painted Turnip]|h|r",
+						["id"] = 88376,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:88376::::::::120:253::::::|h[Orange Painted Turnip]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 88376,
+						["enchantId"] = 0,
 					}, -- [30]
 				},
 				[-3] = {
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:123918::::::::120:253::::::|h[Leystone Ore]|h|r",
+						["id"] = 123918,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:123918::::::::120:253::::::|h[Leystone Ore]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 123918,
+						["enchantId"] = 0,
 					}, -- [1]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:152877::::::::120:253::::::|h[Veiled Crystal]|h|r",
+						["id"] = 152877,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:152877::::::::120:253::::::|h[Veiled Crystal]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152877,
+						["enchantId"] = 0,
 					}, -- [2]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:166846::::::::120:253::::::|h[Spare Parts]|h|r",
+						["id"] = 166846,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:166846::::::::120:253::::::|h[Spare Parts]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 166846,
+						["enchantId"] = 0,
 					}, -- [3]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152548::::::::120:253::::::|h[Tiragarde Perch]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152548,
+						["enchantId"] = 0,
 					}, -- [4]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:158188::::::::120:253::::::|h[Crimson Ink]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 158188,
+						["enchantId"] = 0,
 					}, -- [5]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152576::::::::120:253::::::|h[Tidespray Linen]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152576,
+						["enchantId"] = 0,
 					}, -- [6]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152576::::::::120:253::::::|h[Tidespray Linen]|h|r",
+						["id"] = 152576,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:154898::::::::120:253::::::|h[Meaty Haunch]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 154898,
+						["enchantId"] = 0,
 					}, -- [7]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:154898::::::::120:253::::::|h[Meaty Haunch]|h|r",
+						["id"] = 154898,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:87399::::::::120:253::::::|h[Restored Artifact]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 87399,
+						["enchantId"] = 0,
 					}, -- [8]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:87399::::::::120:253::::::|h[Restored Artifact]|h|r",
+						["id"] = 87399,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:160398::::::::120:253::::::|h[Choral Honey]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 160398,
+						["enchantId"] = 0,
 					}, -- [9]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:160398::::::::120:253::::::|h[Choral Honey]|h|r",
+						["id"] = 160398,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:109119::::::::120:253::::::|h[True Iron Ore]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 109119,
+						["enchantId"] = 0,
 					}, -- [10]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:109119::::::::120:253::::::|h[True Iron Ore]|h|r",
+						["id"] = 109119,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:168327::::::::120:253::::::|h[Chain Ignitercoil]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 168327,
+						["enchantId"] = 0,
 					}, -- [11]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:168327::::::::120:253::::::|h[Chain Ignitercoil]|h|r",
+						["id"] = 168327,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:120945::::::::120:253::::::|h[Primal Spirit]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 120945,
+						["enchantId"] = 0,
 					}, -- [12]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:120945::::::::120:253::::::|h[Primal Spirit]|h|r",
+						["id"] = 120945,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:160399::::::::120:253::::::|h[Wild Flour]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 160399,
+						["enchantId"] = 0,
 					}, -- [13]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:124440::::::::120:253::::::|h[Arkhana]|h|r",
+						["id"] = 124440,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:174328::::::::120:253::::::|h[Aberrant Voidfin]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 174328,
+						["enchantId"] = 0,
 					}, -- [14]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:152876::::::::120:253::::::|h[Umbra Shard]|h|r",
+						["id"] = 152876,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:166971::::::::120:253::::::|h[Empty Energy Cell]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 166971,
+						["enchantId"] = 0,
 					}, -- [15]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:166971::::::::120:253::::::|h[Empty Energy Cell]|h|r",
+						["id"] = 166971,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:168832::::::::120:253::::::|h[Galvanic Oscillator]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 168832,
+						["enchantId"] = 0,
 					}, -- [16]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:168832::::::::120:253::::::|h[Galvanic Oscillator]|h|r",
+						["id"] = 168832,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:167738::::::::120:253::::::|h[Gilded Seaweave]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 167738,
+						["enchantId"] = 0,
 					}, -- [17]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:167738::::::::120:253::::::|h[Gilded Seaweave]|h|r",
+						["id"] = 167738,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:166846::::::::120:253::::::|h[Spare Parts]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 166846,
+						["enchantId"] = 0,
 					}, -- [18]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:166846::::::::120:253::::::|h[Spare Parts]|h|r",
+						["id"] = 166846,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:152876::::::::120:253::::::|h[Umbra Shard]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152876,
+						["enchantId"] = 0,
 					}, -- [19]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:152876::::::::120:253::::::|h[Umbra Shard]|h|r",
+						["id"] = 152876,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:166971::::::::120:253::::::|h[Empty Energy Cell]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 166971,
+						["enchantId"] = 0,
 					}, -- [20]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:166971::::::::120:253::::::|h[Empty Energy Cell]|h|r",
+						["id"] = 166971,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:152577::::::::120:253::::::|h[Deep Sea Satin]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152577,
+						["enchantId"] = 0,
 					}, -- [21]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:152577::::::::120:253::::::|h[Deep Sea Satin]|h|r",
+						["id"] = 152577,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:162461::::::::120:253::::::|h[Sanguicell]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 162461,
+						["enchantId"] = 0,
 					}, -- [22]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:162461::::::::120:253::::::|h[Sanguicell]|h|r",
+						["id"] = 162461,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:152542::::::::120:253::::::|h[Hardened Tempest Hide]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152542,
+						["enchantId"] = 0,
 					}, -- [23]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152549::::::::120:253::::::|h[Redtail Loach]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152549,
+						["enchantId"] = 0,
 					}, -- [24]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:152542::::::::120:253::::::|h[Hardened Tempest Hide]|h|r",
+						["id"] = 152542,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152507::::::::120:253::::::|h[Akunda's Bite]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152507,
+						["enchantId"] = 0,
 					}, -- [25]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:174328::::::::120:253::::::|h[Aberrant Voidfin]|h|r",
+						["id"] = 174328,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:154899::::::::120:253::::::|h[Thick Paleo Steak]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 154899,
+						["enchantId"] = 0,
 					}, -- [26]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152507::::::::120:253::::::|h[Akunda's Bite]|h|r",
+						["id"] = 152507,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:160711::::::::120:253::::::|h[Aromatic Fish Oil]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 160711,
+						["enchantId"] = 0,
 					}, -- [27]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:154899::::::::120:253::::::|h[Thick Paleo Steak]|h|r",
+						["id"] = 154899,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:115508::::::::120:253::::::|h[Draenic Stone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 115508,
+						["enchantId"] = 0,
 					}, -- [28]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:160711::::::::120:253::::::|h[Aromatic Fish Oil]|h|r",
+						["id"] = 160711,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:163569::::::::120:253::::::|h[Insulated Wiring]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 163569,
+						["enchantId"] = 0,
 					}, -- [29]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152512::::::::120:253::::::|h[Monelite Ore]|h|r",
+						["id"] = 152512,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:169610::::::::120:253::::::|h[S.P.A.R.E. Crate]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 169610,
+						["enchantId"] = 0,
 					}, -- [30]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:163569::::::::120:253::::::|h[Insulated Wiring]|h|r",
+						["id"] = 163569,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:109118::::::::120:253::::::|h[Blackrock Ore]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 109118,
+						["enchantId"] = 0,
 					}, -- [31]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:169610::::::::120:253::::::|h[S.P.A.R.E. Crate]|h|r",
+						["id"] = 169610,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:124442::::::::120:253::::::|h[Chaos Crystal]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 124442,
+						["enchantId"] = 0,
 					}, -- [32]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:109118::::::::120:253::::::|h[Blackrock Ore]|h|r",
+						["id"] = 109118,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:124124::::::::120:253::::::|h[Blood of Sargeras]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 124124,
+						["enchantId"] = 0,
 					}, -- [33]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:174327::::::::120:253::::::|h[Malformed Gnasher]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 174327,
+						["enchantId"] = 0,
 					}, -- [34]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:124442::::::::120:253::::::|h[Chaos Crystal]|h|r",
+						["id"] = 124442,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152576::::::::120:253::::::|h[Tidespray Linen]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152576,
+						["enchantId"] = 0,
 					}, -- [35]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:124124::::::::120:253::::::|h[Blood of Sargeras]|h|r",
+						["id"] = 124124,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:124437::::::::120:253::::::|h[Shal'dorei Silk]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 124437,
+						["enchantId"] = 0,
 					}, -- [36]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:174327::::::::120:253::::::|h[Malformed Gnasher]|h|r",
+						["id"] = 174327,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:168327::::::::120:253::::::|h[Chain Ignitercoil]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 168327,
+						["enchantId"] = 0,
 					}, -- [37]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152576::::::::120:253::::::|h[Tidespray Linen]|h|r",
+						["id"] = 152576,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:160502::::::::120:253::::::|h[Chemical Blasting Cap]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 160502,
+						["enchantId"] = 0,
 					}, -- [38]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152579::::::::120:253::::::|h[Storm Silver Ore]|h|r",
+						["id"] = 152579,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:152876::::::::120:253::::::|h[Umbra Shard]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152876,
+						["enchantId"] = 0,
 					}, -- [39]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:111366::::::::120:253::::::|h[Gearspring Parts]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 111366,
+						["enchantId"] = 0,
 					}, -- [40]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:168327::::::::120:253::::::|h[Chain Ignitercoil]|h|r",
+						["id"] = 168327,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:152877::::::::120:253::::::|h[Veiled Crystal]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152877,
+						["enchantId"] = 0,
 					}, -- [41]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:160502::::::::120:253::::::|h[Chemical Blasting Cap]|h|r",
+						["id"] = 160502,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:166971::::::::120:253::::::|h[Empty Energy Cell]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 166971,
+						["enchantId"] = 0,
 					}, -- [42]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:154165::::::::120:253::::::|h[Calcified Bone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 154165,
+						["enchantId"] = 0,
 					}, -- [43]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:111366::::::::120:253::::::|h[Gearspring Parts]|h|r",
+						["id"] = 111366,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:152668::::::::120:253::::::|h[Expulsom]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152668,
+						["enchantId"] = 0,
 					}, -- [44]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:152877::::::::120:253::::::|h[Veiled Crystal]|h|r",
+						["id"] = 152877,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:152876::::::::120:253::::::|h[Umbra Shard]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152876,
+						["enchantId"] = 0,
 					}, -- [45]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:166971::::::::120:253::::::|h[Empty Energy Cell]|h|r",
+						["id"] = 166971,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:111366::::::::120:253::::::|h[Gearspring Parts]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 111366,
+						["enchantId"] = 0,
 					}, -- [46]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:154165::::::::120:253::::::|h[Calcified Bone]|h|r",
+						["id"] = 154165,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:152876::::::::120:253::::::|h[Umbra Shard]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152876,
+						["enchantId"] = 0,
 					}, -- [47]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:152668::::::::120:253::::::|h[Expulsom]|h|r",
+						["id"] = 152668,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:166970::::::::120:253::::::|h[Energy Cell]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 166970,
+						["enchantId"] = 0,
 					}, -- [48]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:152876::::::::120:253::::::|h[Umbra Shard]|h|r",
+						["id"] = 152876,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152875,
+						["enchantId"] = 0,
 					}, -- [49]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:111366::::::::120:253::::::|h[Gearspring Parts]|h|r",
+						["id"] = 111366,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:158187::::::::120:253::::::|h[Ultramarine Ink]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 158187,
+						["enchantId"] = 0,
 					}, -- [50]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:152876::::::::120:253::::::|h[Umbra Shard]|h|r",
+						["id"] = 152876,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152875,
+						["enchantId"] = 0,
 					}, -- [51]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:166970::::::::120:253::::::|h[Energy Cell]|h|r",
+						["id"] = 166970,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:153050::::::::120:253::::::|h[Shimmerscale]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 153050,
+						["enchantId"] = 0,
 					}, -- [52]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:151568::::::::120:253::::::|h[Primal Sargerite]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 151568,
+						["enchantId"] = 0,
 					}, -- [53]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:158187::::::::120:253::::::|h[Ultramarine Ink]|h|r",
+						["id"] = 158187,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:167738::::::::120:253::::::|h[Gilded Seaweave]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 167738,
+						["enchantId"] = 0,
 					}, -- [54]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:154897::::::::120:253::::::|h[Stringy Loins]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 154897,
+						["enchantId"] = 0,
 					}, -- [55]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:153050::::::::120:253::::::|h[Shimmerscale]|h|r",
+						["id"] = 153050,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:90146::::::::120:253::::::|h[Tinker's Kit]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 90146,
+						["enchantId"] = 0,
 					}, -- [56]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:151568::::::::120:253::::::|h[Primal Sargerite]|h|r",
+						["id"] = 151568,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:168303::::::::120:253::::::|h[Rubbery Flank]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 168303,
+						["enchantId"] = 0,
 					}, -- [57]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152875,
+						["enchantId"] = 0,
 					}, -- [58]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:167738::::::::120:253::::::|h[Gilded Seaweave]|h|r",
+						["id"] = 167738,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152875,
+						["enchantId"] = 0,
 					}, -- [59]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:154897::::::::120:253::::::|h[Stringy Loins]|h|r",
+						["id"] = 154897,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:153051::::::::120:253::::::|h[Mistscale]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 153051,
+						["enchantId"] = 0,
 					}, -- [60]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:90146::::::::120:253::::::|h[Tinker's Kit]|h|r",
+						["id"] = 90146,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152875,
+						["enchantId"] = 0,
 					}, -- [61]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:168303::::::::120:253::::::|h[Rubbery Flank]|h|r",
+						["id"] = 168303,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:168832::::::::120:253::::::|h[Galvanic Oscillator]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 168832,
+						["enchantId"] = 0,
 					}, -- [62]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152875,
+						["enchantId"] = 0,
 					}, -- [63]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152875,
+						["enchantId"] = 0,
 					}, -- [64]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153051::::::::120:253::::::|h[Mistscale]|h|r",
+						["id"] = 153051,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:174353::::::::120:253::::::|h[Questionable Meat]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 174353,
+						["enchantId"] = 0,
 					}, -- [65]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152875,
+						["enchantId"] = 0,
 					}, -- [66]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:168832::::::::120:253::::::|h[Galvanic Oscillator]|h|r",
+						["id"] = 168832,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152875,
+						["enchantId"] = 0,
 					}, -- [67]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:124440::::::::120:253::::::|h[Arkhana]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 124440,
+						["enchantId"] = 0,
 					}, -- [68]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152546::::::::120:253::::::|h[Lane Snapper]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152546,
+						["enchantId"] = 0,
 					}, -- [69]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:174353::::::::120:253::::::|h[Questionable Meat]|h|r",
+						["id"] = 174353,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:151567::::::::120:253::::::|h[Lightweave Cloth]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 151567,
+						["enchantId"] = 0,
 					}, -- [70]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:124461::::::::120:253::::::|h[Demonsteel Bar]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 124461,
+						["enchantId"] = 0,
 					}, -- [71]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152875,
+						["enchantId"] = 0,
 					}, -- [72]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:124440::::::::120:253::::::|h[Arkhana]|h|r",
+						["id"] = 124440,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152875,
+						["enchantId"] = 0,
 					}, -- [73]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152546::::::::120:253::::::|h[Lane Snapper]|h|r",
+						["id"] = 152546,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:124106::::::::120:253::::::|h[Felwort]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 124106,
+						["enchantId"] = 0,
 					}, -- [74]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:151567::::::::120:253::::::|h[Lightweave Cloth]|h|r",
+						["id"] = 151567,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:165948::::::::120:253::::::|h[Tidalcore]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 165948,
+						["enchantId"] = 0,
 					}, -- [75]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:124461::::::::120:253::::::|h[Demonsteel Bar]|h|r",
+						["id"] = 124461,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:165703::::::::120:253::::::|h[Breath of Bwonsamdi]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 165703,
+						["enchantId"] = 0,
 					}, -- [76]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152875,
+						["enchantId"] = 0,
 					}, -- [77]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152875,
+						["enchantId"] = 0,
 					}, -- [78]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:124106::::::::120:253::::::|h[Felwort]|h|r",
+						["id"] = 124106,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152875,
+						["enchantId"] = 0,
 					}, -- [79]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:165948::::::::120:253::::::|h[Tidalcore]|h|r",
+						["id"] = 165948,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:154164::::::::120:253::::::|h[Blood-Stained Bone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 154164,
+						["enchantId"] = 0,
 					}, -- [80]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:166846::::::::120:253::::::|h[Spare Parts]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 166846,
+						["enchantId"] = 0,
 					}, -- [81]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:165703::::::::120:253::::::|h[Breath of Bwonsamdi]|h|r",
+						["id"] = 165703,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152875,
+						["enchantId"] = 0,
 					}, -- [82]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:158378::::::::120:253::::::|h[Embroidered Deep Sea Satin]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 158378,
+						["enchantId"] = 0,
 					}, -- [83]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152875,
+						["enchantId"] = 0,
 					}, -- [84]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:124441::::::::120:253::::::|h[Leylight Shard]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 124441,
+						["enchantId"] = 0,
 					}, -- [85]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:154164::::::::120:253::::::|h[Blood-Stained Bone]|h|r",
+						["id"] = 154164,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:168327::::::::120:253::::::|h[Chain Ignitercoil]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 168327,
+						["enchantId"] = 0,
 					}, -- [86]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:124440::::::::120:253::::::|h[Arkhana]|h|r",
+						["id"] = 124440,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152875,
+						["enchantId"] = 0,
 					}, -- [87]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:166846::::::::120:253::::::|h[Spare Parts]|h|r",
+						["id"] = 166846,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:154125::::::::120:253::::::|h[Royal Quartz]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 154125,
+						["enchantId"] = 0,
 					}, -- [88]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [89]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:158378::::::::120:253::::::|h[Embroidered Deep Sea Satin]|h|r",
+						["id"] = 158378,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [90]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [91]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:124441::::::::120:253::::::|h[Leylight Shard]|h|r",
+						["id"] = 124441,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [92]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:124440::::::::120:253::::::|h[Arkhana]|h|r",
+						["id"] = 124440,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [93]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:168327::::::::120:253::::::|h[Chain Ignitercoil]|h|r",
+						["id"] = 168327,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [94]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:124440::::::::120:253::::::|h[Arkhana]|h|r",
+						["id"] = 124440,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [95]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:124440::::::::120:253::::::|h[Arkhana]|h|r",
+						["id"] = 124440,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [96]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+						["id"] = 152875,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [97]
+					{
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152512::::::::120:253::::::|h[Monelite Ore]|h|r",
+						["id"] = 152512,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [98]
 				},
 				[8] = {
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:88371::::::::120:253::::::|h[Watermelon Bomb]|h|r",
+						["id"] = 88371,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:88371::::::::120:253::::::|h[Watermelon Bomb]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 88371,
+						["enchantId"] = 0,
 					}, -- [1]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:82984::::::::120:253::::::|h[Jade Raccoon]|h|r",
+						["id"] = 82984,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:82984::::::::120:253::::::|h[Jade Raccoon]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 82984,
+						["enchantId"] = 0,
 					}, -- [2]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:50362::::::::120:253::::::|h[Deathbringer's Will]|h|r",
+						["id"] = 50362,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:50362::::::::120:253::::::|h[Deathbringer's Will]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 50362,
+						["enchantId"] = 0,
 					}, -- [3]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:44597::::::::120:253::::::|h[Medallion of Heroism]|h|r",
+						["id"] = 44597,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:44597::::::::120:253::::::|h[Medallion of Heroism]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 44597,
+						["enchantId"] = 0,
 					}, -- [4]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:40601::::::::120:253::::::|h[Argent Dawn Banner]|h|r",
+						["id"] = 40601,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:40601::::::::120:253::::::|h[Argent Dawn Banner]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 40601,
+						["enchantId"] = 0,
 					}, -- [5]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:40593::::::::120:253::::::|h[Argent Tome]|h|r",
+						["id"] = 40593,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:40593::::::::120:253::::::|h[Argent Tome]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 40593,
+						["enchantId"] = 0,
 					}, -- [6]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:40492::::::::120:253::::::|h[Argent War Horn]|h|r",
+						["id"] = 40492,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:40492::::::::120:253::::::|h[Argent War Horn]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 40492,
+						["enchantId"] = 0,
 					}, -- [7]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:28237::::::::120:253::::::|h[Medallion of the Alliance]|h|r",
+						["id"] = 28237,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:28237::::::::120:253::::::|h[Medallion of the Alliance]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 28237,
+						["enchantId"] = 0,
 					}, -- [8]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:32864::::::::120:253::::::|h[Commander's Badge]|h|r",
+						["id"] = 32864,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:32864::::::::120:253::::::|h[Commander's Badge]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 32864,
+						["enchantId"] = 0,
 					}, -- [9]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:19290::::::::120:253::::::|h[Darkmoon Card: Twisting Nether]|h|r",
+						["id"] = 19290,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:19290::::::::120:253::::::|h[Darkmoon Card: Twisting Nether]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 19290,
+						["enchantId"] = 0,
 					}, -- [10]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:21326::::::::120:253::::::|h[Defender of the Timbermaw]|h|r",
+						["id"] = 21326,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:21326::::::::120:253::::::|h[Defender of the Timbermaw]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 21326,
+						["enchantId"] = 0,
 					}, -- [11]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:14023::::::::120:253::::::|h[Barov Peasant Caller]|h|r",
+						["id"] = 14023,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:14023::::::::120:253::::::|h[Barov Peasant Caller]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 14023,
+						["enchantId"] = 0,
 					}, -- [12]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:17904::::::::120:253::::::|h[Stormpike Insignia Rank 6]|h|r",
+						["id"] = 17904,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:17904::::::::120:253::::::|h[Stormpike Insignia Rank 6]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 17904,
+						["enchantId"] = 0,
 					}, -- [13]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:11122::::::::120:253::::::|h[Carrot on a Stick]|h|r",
+						["id"] = 11122,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:11122::::::::120:253::::::|h[Carrot on a Stick]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 11122,
+						["enchantId"] = 0,
 					}, -- [14]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:2820::::::::120:253::::::|h[Nifty Stopwatch]|h|r",
+						["id"] = 2820,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:2820::::::::120:253::::::|h[Nifty Stopwatch]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 2820,
+						["enchantId"] = 0,
 					}, -- [15]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:13382::::::::120:253::::::|h[Cannonball Runner]|h|r",
+						["id"] = 13382,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:13382::::::::120:253::::::|h[Cannonball Runner]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 13382,
+						["enchantId"] = 0,
 					}, -- [16]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:52019::::::::120:253::::::|h[Precious' Ribbon]|h|r",
+						["id"] = 52019,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:52019::::::::120:253::::::|h[Precious' Ribbon]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 52019,
+						["enchantId"] = 0,
 					}, -- [17]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:140575::::::::120:253::14::::|h[Nightfallen Tabard]|h|r",
+						["id"] = 140575,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:140575::::::::120:253::14::::|h[Nightfallen Tabard]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 140575,
+						["enchantId"] = 0,
 					}, -- [18]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:65908::::::::120:253::::::|h[Tabard of the Wildhammer Clan]|h|r",
+						["id"] = 65908,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:65908::::::::120:253::::::|h[Tabard of the Wildhammer Clan]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 65908,
+						["enchantId"] = 0,
 					}, -- [19]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:65907::::::::120:253::::::|h[Tabard of Therazane]|h|r",
+						["id"] = 65907,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:65907::::::::120:253::::::|h[Tabard of Therazane]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 65907,
+						["enchantId"] = 0,
 					}, -- [20]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:65906::::::::120:253::::::|h[Tabard of the Guardians of Hyjal]|h|r",
+						["id"] = 65906,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:65906::::::::120:253::::::|h[Tabard of the Guardians of Hyjal]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 65906,
+						["enchantId"] = 0,
 					}, -- [21]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:65905::::::::120:253::::::|h[Tabard of the Earthen Ring]|h|r",
+						["id"] = 65905,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:65905::::::::120:253::::::|h[Tabard of the Earthen Ring]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 65905,
+						["enchantId"] = 0,
 					}, -- [22]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:65904::::::::120:253::::::|h[Tabard of Ramkahen]|h|r",
+						["id"] = 65904,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:65904::::::::120:253::::::|h[Tabard of Ramkahen]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 65904,
+						["enchantId"] = 0,
 					}, -- [23]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:22999::::::::120:253::::::|h[Tabard of the Argent Dawn]|h|r",
+						["id"] = 22999,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:22999::::::::120:253::::::|h[Tabard of the Argent Dawn]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 22999,
+						["enchantId"] = 0,
 					}, -- [24]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:69210::::::::120:253::::::|h[Renowned Guild Tabard]|h|r",
+						["id"] = 69210,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:69210::::::::120:253::::::|h[Renowned Guild Tabard]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 69210,
+						["enchantId"] = 0,
 					}, -- [25]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:43348::::::::120:253::::::|h[Tabard of the Explorer]|h|r",
+						["id"] = 43348,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:43348::::::::120:253::::::|h[Tabard of the Explorer]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 43348,
+						["enchantId"] = 0,
 					}, -- [26]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:43300::::::::120:253::::::|h[Loremaster's Colors]|h|r",
+						["id"] = 43300,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:43300::::::::120:253::::::|h[Loremaster's Colors]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 43300,
+						["enchantId"] = 0,
 					}, -- [27]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:40643::::::::120:253::::::|h[Tabard of the Achiever]|h|r",
+						["id"] = 40643,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:40643::::::::120:253::::::|h[Tabard of the Achiever]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 40643,
+						["enchantId"] = 0,
 					}, -- [28]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:35280::::::::120:253::::::|h[Tabard of Summer Flames]|h|r",
+						["id"] = 35280,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:35280::::::::120:253::::::|h[Tabard of Summer Flames]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 35280,
+						["enchantId"] = 0,
 					}, -- [29]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:64882::::::::120:253::::::|h[Gilneas Tabard]|h|r",
+						["id"] = 64882,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:64882::::::::120:253::::::|h[Gilneas Tabard]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 64882,
+						["enchantId"] = 0,
 					}, -- [30]
 				},
 				[9] = {
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:46817::::::::120:253::::::|h[Silver Covenant Tabard]|h|r",
+						["id"] = 46817,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:46817::::::::120:253::::::|h[Silver Covenant Tabard]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 46817,
+						["enchantId"] = 0,
 					}, -- [1]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:31404::::::::120:253::::::|h[Green Trophy Tabard of the Illidari]|h|r",
+						["id"] = 31404,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:31404::::::::120:253::::::|h[Green Trophy Tabard of the Illidari]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 31404,
+						["enchantId"] = 0,
 					}, -- [2]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:23192::::::::120:253::::::|h[Tabard of the Scarlet Crusade]|h|r",
+						["id"] = 23192,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:23192::::::::120:253::::::|h[Tabard of the Scarlet Crusade]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 23192,
+						["enchantId"] = 0,
 					}, -- [3]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:109585::::::::120:253::::::|h[Arakkoa Cipher]|h|r",
+						["id"] = 109585,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:109585::::::::120:253::::::|h[Arakkoa Cipher]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 109585,
+						["enchantId"] = 0,
 					}, -- [4]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:109584::::::::120:253::::::|h[Ogre Missive]|h|r",
+						["id"] = 109584,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:109584::::::::120:253::::::|h[Ogre Missive]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 109584,
+						["enchantId"] = 0,
 					}, -- [5]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:108439::::::::120:253::::::|h[Draenor Clan Orator Cane]|h|r",
+						["id"] = 108439,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:108439::::::::120:253::::::|h[Draenor Clan Orator Cane]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 108439,
+						["enchantId"] = 0,
 					}, -- [6]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:63128::::::::120:253::::::|h[Troll Tablet]|h|r",
+						["id"] = 63128,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:63128::::::::120:253::::::|h[Troll Tablet]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 63128,
+						["enchantId"] = 0,
 					}, -- [7]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:52843::::::::120:253::::::|h[Dwarf Rune Stone]|h|r",
+						["id"] = 52843,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:52843::::::::120:253::::::|h[Dwarf Rune Stone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 52843,
+						["enchantId"] = 0,
 					}, -- [8]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:167077::::::::120:253::11::::|h[Scrying Stone]|h|r",
+						["id"] = 167077,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:167077::::::::120:253::11::::|h[Scrying Stone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 167077,
+						["enchantId"] = 0,
 					}, -- [9]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:156963::::::::120:253::::::|h[Golden Ravasaur Egg]|h|r",
+						["id"] = 156963,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:156963::::::::120:253::::::|h[Golden Ravasaur Egg]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 156963,
+						["enchantId"] = 0,
 					}, -- [10]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:130320::::::::120:253::::::|h[Addie's Ink-Stained Satchel]|h|r",
+						["id"] = 130320,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:130320::::::::120:253::::::|h[Addie's Ink-Stained Satchel]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 130320,
+						["enchantId"] = 0,
 					}, -- [11]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:38082::::::::120:253::::::|h[\"Gigantique\" Bag]|h|r",
+						["id"] = 38082,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:38082::::::::120:253::::::|h[\"Gigantique\" Bag]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 38082,
+						["enchantId"] = 0,
 					}, -- [12]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:69748::::::::120:253::::::|h[Tattered Hexcloth Bag]|h|r",
+						["id"] = 69748,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:69748::::::::120:253::::::|h[Tattered Hexcloth Bag]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 69748,
+						["enchantId"] = 0,
 					}, -- [13]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:49295::::::::120:253::::::|h[Enlarged Onyxia Hide Backpack]|h|r",
+						["id"] = 49295,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:49295::::::::120:253::::::|h[Enlarged Onyxia Hide Backpack]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 49295,
+						["enchantId"] = 0,
 					}, -- [14]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:158924::::::::120:253::11::::|h[Portable Revealing Occular]|h|r",
+						["id"] = 158924,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:158924::::::::120:253::11::::|h[Portable Revealing Occular]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 158924,
+						["enchantId"] = 0,
 					}, -- [15]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:169943::::::::120:253::::::|h[Little Princess Cap]|h|r",
+						["id"] = 169943,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:169943::::::::120:253::::::|h[Little Princess Cap]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 169943,
+						["enchantId"] = 0,
 					}, -- [16]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:158879::::::::120:253::::::|h[Bloodstained Message]|h|r",
+						["id"] = 158879,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:158879::::::::120:253::::::|h[Bloodstained Message]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 158879,
+						["enchantId"] = 0,
 					}, -- [17]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:161247::::::::120:253::11::::|h[Marshal's Regalia]|h|r",
+						["id"] = 161247,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:161247::::::::120:253::11::::|h[Marshal's Regalia]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 161247,
+						["enchantId"] = 0,
 					}, -- [18]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:94130::::::::120:253::::::|h[Incantation of Haqin]|h|r",
+						["id"] = 94130,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:94130::::::::120:253::::::|h[Incantation of Haqin]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 94130,
+						["enchantId"] = 0,
 					}, -- [19]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:160735::::::::120:253::::::|h[Ashvane Garb]|h|r",
+						["id"] = 160735,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:160735::::::::120:253::::::|h[Ashvane Garb]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 160735,
+						["enchantId"] = 0,
 					}, -- [20]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff9d9d9d|Hitem:161437::::::::120:253::::::|h[Shipping Contract]|h|r",
+						["id"] = 161437,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff9d9d9d|Hitem:161437::::::::120:253::::::|h[Shipping Contract]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 161437,
+						["enchantId"] = 0,
 					}, -- [21]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:167077::::::::120:253::11::::|h[Scrying Stone]|h|r",
+						["id"] = 167077,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:167077::::::::120:253::11::::|h[Scrying Stone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 167077,
+						["enchantId"] = 0,
 					}, -- [22]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:141351::::::::120:253::::::|h[Tear of Elune]|h|r",
+						["id"] = 141351,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:141351::::::::120:253::::::|h[Tear of Elune]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 141351,
+						["enchantId"] = 0,
 					}, -- [23]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:138815::::::::120:253::11::::|h[Old Grizzleback's Staff]|h|r",
+						["id"] = 138815,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:138815::::::::120:253::11::::|h[Old Grizzleback's Staff]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 138815,
+						["enchantId"] = 0,
 					}, -- [24]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:91877::::::::120:253::::::|h[Domination Point Commission]|h|r",
+						["id"] = 91877,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:91877::::::::120:253::::::|h[Domination Point Commission]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 91877,
+						["enchantId"] = 0,
 					}, -- [25]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:34078::::::::120:253::::::|h[Icehammer's Harpoon Controller]|h|r",
+						["id"] = 34078,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:34078::::::::120:253::::::|h[Icehammer's Harpoon Controller]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 34078,
+						["enchantId"] = 0,
 					}, -- [26]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:30688::::::::120:253::::::|h[Deathforge Key]|h|r",
+						["id"] = 30688,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:30688::::::::120:253::::::|h[Deathforge Key]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 30688,
+						["enchantId"] = 0,
 					}, -- [27]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:25509::::::::120:253::::::|h[Northwind Cleft Key]|h|r",
+						["id"] = 25509,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:25509::::::::120:253::::::|h[Northwind Cleft Key]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 25509,
+						["enchantId"] = 0,
 					}, -- [28]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:5462::::::::120:253::::::|h[Dartol's Rod of Transformation]|h|r",
+						["id"] = 5462,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:5462::::::::120:253::::::|h[Dartol's Rod of Transformation]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 5462,
+						["enchantId"] = 0,
 					}, -- [29]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:122618::::::::120:253::::::|h[Misprinted Draenic Coin]|h|r",
+						["id"] = 122618,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:122618::::::::120:253::::::|h[Misprinted Draenic Coin]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 122618,
+						["enchantId"] = 0,
 					}, -- [30]
 				},
 				[5] = {
@@ -15140,718 +15280,718 @@ AskMrRobotDb4 = {
 							1811, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:151807::::::::120:253:::2:1811:3630:::|h[Unseen Predator's Cloak]|h|r",
+						["id"] = 151807,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:151807::::::::120:253:::2:1811:3630:::|h[Unseen Predator's Cloak]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 151807,
+						["enchantId"] = 0,
 					}, -- [1]
 					{
 						["bonusIds"] = {
 							3459, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:137043::::::::120:253:::2:3459:3630:::|h[Frizzo's Fingertrap]|h|r",
+						["id"] = 137043,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:137043::::::::120:253:::2:3459:3630:::|h[Frizzo's Fingertrap]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 137043,
+						["enchantId"] = 0,
 					}, -- [2]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:5816::::::::120:253::::::|h[Light of Elune]|h|r",
+						["id"] = 5816,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:5816::::::::120:253::::::|h[Light of Elune]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 5816,
+						["enchantId"] = 0,
 					}, -- [3]
 					{
 						["bonusIds"] = {
 							1472, -- [1]
 							4785, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:168756::::::::120:253::2:2:1472:4785:::|h[Hijack Synaptic Circuits]|h|r",
+						["id"] = 168756,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:168756::::::::120:253::2:2:1472:4785:::|h[Hijack Synaptic Circuits]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 168756,
+						["enchantId"] = 0,
 					}, -- [4]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:164942::::::::120:253::::::|h[Shadowscrawled Tome]|h|r",
+						["id"] = 164942,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:164942::::::::120:253::::::|h[Shadowscrawled Tome]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 164942,
+						["enchantId"] = 0,
 					}, -- [5]
 					{
 						["bonusIds"] = {
 							1811, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:137080::::::::120:253:::2:1811:3630:::|h[Roar of the Seven Lions]|h|r",
+						["id"] = 137080,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:137080::::::::120:253:::2:1811:3630:::|h[Roar of the Seven Lions]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 137080,
+						["enchantId"] = 0,
 					}, -- [6]
 					{
 						["bonusIds"] = {
 							3459, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:144361::::::::120:253:::2:3459:3630:::|h[Butcher's Bone Apron]|h|r",
+						["id"] = 144361,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:144361::::::::120:253:::2:3459:3630:::|h[Butcher's Bone Apron]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 144361,
+						["enchantId"] = 0,
 					}, -- [7]
 					{
 						["bonusIds"] = {
 							1811, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:141353::::::::120:253:::2:1811:3630:::|h[Magnetized Blasting Cap Launcher]|h|r",
+						["id"] = 141353,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:141353::::::::120:253:::2:1811:3630:::|h[Magnetized Blasting Cap Launcher]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 141353,
+						["enchantId"] = 0,
 					}, -- [8]
 					{
 						["bonusIds"] = {
 							1811, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:137081::::::::120:253:::2:1811:3630:::|h[War Belt of the Sentinel Army]|h|r",
+						["id"] = 137081,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:137081::::::::120:253:::2:1811:3630:::|h[War Belt of the Sentinel Army]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 137081,
+						["enchantId"] = 0,
 					}, -- [9]
 					{
 						["bonusIds"] = {
 							3985, -- [1]
 							3997, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:154174::::::::120:253::3:2:3985:3997:::|h[Golganneth's Vitality]|h|r",
+						["id"] = 154174,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:154174::::::::120:253::3:2:3985:3997:::|h[Golganneth's Vitality]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 154174,
+						["enchantId"] = 0,
 					}, -- [10]
 					{
 						["bonusIds"] = {
 							1811, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:151803::::::::120:253:::2:1811:3630:::|h[Celerity of the Windrunners]|h|r",
+						["id"] = 151803,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:151803::::::::120:253:::2:1811:3630:::|h[Celerity of the Windrunners]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 151803,
+						["enchantId"] = 0,
 					}, -- [11]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:169334::::::::120:253::::::|h[Strange Oceanic Sediment]|h|r",
+						["id"] = 169334,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:169334::::::::120:253::::::|h[Strange Oceanic Sediment]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 169334,
+						["enchantId"] = 0,
 					}, -- [12]
 					{
 						["bonusIds"] = {
 							1811, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 5429,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:132452:5429:151584::::::120:253:::2:1811:3630:::|h[Sephuz's Secret]|h|r",
+						["id"] = 132452,
 						["gemIds"] = {
 							151584, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:132452:5429:151584::::::120:253:::2:1811:3630:::|h[Sephuz's Secret]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 132452,
+						["enchantId"] = 5429,
 					}, -- [13]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:22442::::::::120:253::15::::|h[Cryptstalker Girdle]|h|r",
+						["id"] = 22442,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:22442::::::::120:253::15::::|h[Cryptstalker Girdle]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 22442,
+						["enchantId"] = 0,
 					}, -- [14]
 					{
-						["enchantId"] = 4699,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:86889:4699:89873::::::120:253::::::|h[Taoren, the Soul Burner]|h|r",
+						["id"] = 86889,
 						["gemIds"] = {
 							89873, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:86889:4699:89873::::::120:253::::::|h[Taoren, the Soul Burner]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 86889,
+						["enchantId"] = 4699,
 					}, -- [15]
 					{
-						["enchantId"] = 3827,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:50049:3827:::::::120:253::::::|h[Quel'Delar, Ferocity of the Scorned]|h|r",
+						["id"] = 50049,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:50049:3827:::::::120:253::::::|h[Quel'Delar, Ferocity of the Scorned]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 50049,
+						["enchantId"] = 3827,
 					}, -- [16]
 					{
-						["enchantId"] = 2646,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:18715:2646:::::::120:253::::::|h[Lok'delar, Stave of the Ancient Keepers]|h|r",
+						["id"] = 18715,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:18715:2646:::::::120:253::::::|h[Lok'delar, Stave of the Ancient Keepers]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 18715,
+						["enchantId"] = 2646,
 					}, -- [17]
 					{
-						["enchantId"] = 2523,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:18713:2523:::::::120:253::::::|h[Rhok'delar, Longbow of the Ancient Keepers]|h|r",
+						["id"] = 18713,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:18713:2523:::::::120:253::::::|h[Rhok'delar, Longbow of the Ancient Keepers]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 18713,
+						["enchantId"] = 2523,
 					}, -- [18]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:19854::::::::120:253::::::|h[Zin'rokh, Destroyer of Worlds]|h|r",
+						["id"] = 19854,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:19854::::::::120:253::::::|h[Zin'rokh, Destroyer of Worlds]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 19854,
+						["enchantId"] = 0,
 					}, -- [19]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:116913::::::::120:253::::::|h[Peon's Mining Pick]|h|r",
+						["id"] = 116913,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:116913::::::::120:253::::::|h[Peon's Mining Pick]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 116913,
+						["enchantId"] = 0,
 					}, -- [20]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:31336::::::::120:253::::::|h[Blade of Wizardry]|h|r",
+						["id"] = 31336,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:31336::::::::120:253::::::|h[Blade of Wizardry]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 31336,
+						["enchantId"] = 0,
 					}, -- [21]
 					{
-						["enchantId"] = 2564,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:22816:2564:::::::120:253::::::|h[Hatchet of Sundered Bone]|h|r",
+						["id"] = 22816,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:22816:2564:::::::120:253::::::|h[Hatchet of Sundered Bone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 22816,
+						["enchantId"] = 2564,
 					}, -- [22]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:21520::::::::120:253::::::|h[Ravencrest's Legacy]|h|r",
+						["id"] = 21520,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:21520::::::::120:253::::::|h[Ravencrest's Legacy]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 21520,
+						["enchantId"] = 0,
 					}, -- [23]
 					{
-						["enchantId"] = 2564,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:19859:2564:::::::120:253::::::|h[Fang of the Faceless]|h|r",
+						["id"] = 19859,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:19859:2564:::::::120:253::::::|h[Fang of the Faceless]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 19859,
+						["enchantId"] = 2564,
 					}, -- [24]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:19901::::::::120:253::::::|h[Zulian Slicer]|h|r",
+						["id"] = 19901,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:19901::::::::120:253::::::|h[Zulian Slicer]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 19901,
+						["enchantId"] = 0,
 					}, -- [25]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:19901::::::::120:253::::::|h[Zulian Slicer]|h|r",
+						["id"] = 19901,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:19901::::::::120:253::::::|h[Zulian Slicer]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 19901,
+						["enchantId"] = 0,
 					}, -- [26]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:19910::::::::120:253::::::|h[Arlokk's Grasp]|h|r",
+						["id"] = 19910,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:19910::::::::120:253::::::|h[Arlokk's Grasp]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 19910,
+						["enchantId"] = 0,
 					}, -- [27]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:19896::::::::120:253::::::|h[Thekal's Grasp]|h|r",
+						["id"] = 19896,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:19896::::::::120:253::::::|h[Thekal's Grasp]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 19896,
+						["enchantId"] = 0,
 					}, -- [28]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:37892::::::::120:253::::::|h[Green Brewfest Stein]|h|r",
+						["id"] = 37892,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:37892::::::::120:253::::::|h[Green Brewfest Stein]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 37892,
+						["enchantId"] = 0,
 					}, -- [29]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:33016::::::::120:253::::::|h[Blue Brewfest Stein]|h|r",
+						["id"] = 33016,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:33016::::::::120:253::::::|h[Blue Brewfest Stein]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 33016,
+						["enchantId"] = 0,
 					}, -- [30]
 				},
 				[10] = {
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:95567::::::::120:253::::::|h[Kirin Tor Beacon]|h|r",
+						["id"] = 95567,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:95567::::::::120:253::::::|h[Kirin Tor Beacon]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 95567,
+						["enchantId"] = 0,
 					}, -- [1]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:52251::::::::120:253::11::::|h[Jaina's Locket]|h|r",
+						["id"] = 52251,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:52251::::::::120:253::11::::|h[Jaina's Locket]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 52251,
+						["enchantId"] = 0,
 					}, -- [2]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:92665::::::::120:253::::::|h[Flawless Elemental Battle-Stone]|h|r",
+						["id"] = 92665,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:92665::::::::120:253::::::|h[Flawless Elemental Battle-Stone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 92665,
+						["enchantId"] = 0,
 					}, -- [3]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:118100::::::::120:253::::::|h[Highmaul Relic]|h|r",
+						["id"] = 118100,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:118100::::::::120:253::::::|h[Highmaul Relic]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 118100,
+						["enchantId"] = 0,
 					}, -- [4]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:138135::::::::120:253::11::::|h[Rax's Magnifying Glass]|h|r",
+						["id"] = 138135,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:138135::::::::120:253::11::::|h[Rax's Magnifying Glass]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 138135,
+						["enchantId"] = 0,
 					}, -- [5]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:18250::::::::120:253::::::|h[Gordok Shackle Key]|h|r",
+						["id"] = 18250,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:18250::::::::120:253::::::|h[Gordok Shackle Key]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 18250,
+						["enchantId"] = 0,
 					}, -- [6]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:139783::::::::120:253::::::|h[Weathered Relic]|h|r",
+						["id"] = 139783,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:139783::::::::120:253::::::|h[Weathered Relic]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 139783,
+						["enchantId"] = 0,
 					}, -- [7]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:128513::::::::120:253::::::|h[Anniversary Gift]|h|r",
+						["id"] = 128513,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:128513::::::::120:253::::::|h[Anniversary Gift]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 128513,
+						["enchantId"] = 0,
 					}, -- [8]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:52252::::::::120:253::11::::|h[Tabard of the Lightbringer]|h|r",
+						["id"] = 52252,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:52252::::::::120:253::11::::|h[Tabard of the Lightbringer]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 52252,
+						["enchantId"] = 0,
 					}, -- [9]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:122154::::::::120:253::::::|h[Artificer Maatun's Journal]|h|r",
+						["id"] = 122154,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:122154::::::::120:253::::::|h[Artificer Maatun's Journal]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 122154,
+						["enchantId"] = 0,
 					}, -- [10]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:122147::::::::120:253::::::|h[Grinning Tolg's Journal]|h|r",
+						["id"] = 122147,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:122147::::::::120:253::::::|h[Grinning Tolg's Journal]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 122147,
+						["enchantId"] = 0,
 					}, -- [11]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:122101::::::::120:253::::::|h[Argoram's Journal]|h|r",
+						["id"] = 122101,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:122101::::::::120:253::::::|h[Argoram's Journal]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 122101,
+						["enchantId"] = 0,
 					}, -- [12]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:121837::::::::120:253::::::|h[Megacharge's Cookbook]|h|r",
+						["id"] = 121837,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:121837::::::::120:253::::::|h[Megacharge's Cookbook]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 121837,
+						["enchantId"] = 0,
 					}, -- [13]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:121820::::::::120:253::::::|h[Compiled Research]|h|r",
+						["id"] = 121820,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:121820::::::::120:253::::::|h[Compiled Research]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 121820,
+						["enchantId"] = 0,
 					}, -- [14]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:120989::::::::120:253::::::|h[Goldspade's Journal]|h|r",
+						["id"] = 120989,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:120989::::::::120:253::::::|h[Goldspade's Journal]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 120989,
+						["enchantId"] = 0,
 					}, -- [15]
 					{
 						["bonusIds"] = {
 							1811, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:146668::130222:130222:130222::::120:253::13:2:1811:3630:::|h[Vigilance Perch]|h|r",
+						["id"] = 146668,
 						["gemIds"] = {
 							130222, -- [1]
 							130222, -- [2]
 							130222, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:146668::130222:130222:130222::::120:253::13:2:1811:3630:::|h[Vigilance Perch]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 146668,
+						["enchantId"] = 0,
 					}, -- [16]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:107277::::::::120:253::::::|h[Fur-Lined Scroll]|h|r",
+						["id"] = 107277,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:107277::::::::120:253::::::|h[Fur-Lined Scroll]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 107277,
+						["enchantId"] = 0,
 					}, -- [17]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:103977::::::::120:253::::::|h[Time-Worn Journal]|h|r",
+						["id"] = 103977,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:103977::::::::120:253::::::|h[Time-Worn Journal]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 103977,
+						["enchantId"] = 0,
 					}, -- [18]
 					{
 						["bonusIds"] = {
@@ -15859,1398 +15999,1356 @@ AskMrRobotDb4 = {
 							3529, -- [2]
 							3630, -- [3]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:132466::::::::120:253:::3:3529:1811:3630:::|h[Roots of Shaladrassil]|h|r",
+						["id"] = 132466,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:132466::::::::120:253:::3:3529:1811:3630:::|h[Roots of Shaladrassil]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 132466,
+						["enchantId"] = 0,
 					}, -- [19]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:169873::::::::120:253::::::|h[Mechanized Supply Key]|h|r",
+						["id"] = 169873,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:169873::::::::120:253::::::|h[Mechanized Supply Key]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 169873,
+						["enchantId"] = 0,
 					}, -- [20]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:94130::::::::120:253::::::|h[Incantation of Haqin]|h|r",
+						["id"] = 94130,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:94130::::::::120:253::::::|h[Incantation of Haqin]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 94130,
+						["enchantId"] = 0,
 					}, -- [21]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:21130::::::::120:253::::::|h[Diary of Weavil]|h|r",
+						["id"] = 21130,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:21130::::::::120:253::::::|h[Diary of Weavil]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 21130,
+						["enchantId"] = 0,
 					}, -- [22]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:31664::::::::120:253::::::|h[Zuluhed's Key]|h|r",
+						["id"] = 31664,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:31664::::::::120:253::::::|h[Zuluhed's Key]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 31664,
+						["enchantId"] = 0,
 					}, -- [23]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:31655::::::::120:253::::::|h[Veil Skith Prison Key]|h|r",
+						["id"] = 31655,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:31655::::::::120:253::::::|h[Veil Skith Prison Key]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 31655,
+						["enchantId"] = 0,
 					}, -- [24]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:169218::::::::120:253::::::|h[Old Rusty Key]|h|r",
+						["id"] = 169218,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:169218::::::::120:253::::::|h[Old Rusty Key]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 169218,
+						["enchantId"] = 0,
 					}, -- [25]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:169944::::::::120:253::::::|h[Minuscule Fez]|h|r",
+						["id"] = 169944,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:169944::::::::120:253::::::|h[Minuscule Fez]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 169944,
+						["enchantId"] = 0,
 					}, -- [26]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:92677::::::::120:253::::::|h[Flawless Flying Battle-Stone]|h|r",
+						["id"] = 92677,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:92677::::::::120:253::::::|h[Flawless Flying Battle-Stone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 92677,
+						["enchantId"] = 0,
 					}, -- [27]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:169872::::::::120:253::::::|h[Irontide Lockbox Key]|h|r",
+						["id"] = 169872,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:169872::::::::120:253::::::|h[Irontide Lockbox Key]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 169872,
+						["enchantId"] = 0,
 					}, -- [28]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:37431::::::::120:253::::::|h[Fetch Ball]|h|r",
+						["id"] = 37431,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:37431::::::::120:253::::::|h[Fetch Ball]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 37431,
+						["enchantId"] = 0,
 					}, -- [29]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:167077::::::::120:253::11::::|h[Scrying Stone]|h|r",
+						["id"] = 167077,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:167077::::::::120:253::11::::|h[Scrying Stone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 167077,
+						["enchantId"] = 0,
 					}, -- [30]
 				},
 				[-1] = {
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:128453::::::::120:253::14::::|h[Saberstalkers Battle Standard]|h|r",
+						["id"] = 128453,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:128453::::::::120:253::14::::|h[Saberstalkers Battle Standard]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 128453,
+						["enchantId"] = 0,
 					}, -- [1]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:15723::::::::120:253::::::|h[Tea with Sugar]|h|r",
+						["id"] = 15723,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:15723::::::::120:253::::::|h[Tea with Sugar]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 15723,
+						["enchantId"] = 0,
 					}, -- [2]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:15778::::::::120:253::::::|h[Mechanical Yeti]|h|r",
+						["id"] = 15778,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:15778::::::::120:253::::::|h[Mechanical Yeti]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 15778,
+						["enchantId"] = 0,
 					}, -- [3]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:85219::::::::120:253::::::|h[Ominous Seed]|h|r",
+						["id"] = 85219,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:85219::::::::120:253::::::|h[Ominous Seed]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 85219,
+						["enchantId"] = 0,
 					}, -- [4]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:5951::::::::120:253::::::|h[Moist Towelette]|h|r",
+						["id"] = 5951,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:5951::::::::120:253::::::|h[Moist Towelette]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 5951,
+						["enchantId"] = 0,
 					}, -- [5]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:88487::::::::120:253::::::|h[Volatile Orb]|h|r",
+						["id"] = 88487,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:88487::::::::120:253::::::|h[Volatile Orb]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 88487,
+						["enchantId"] = 0,
 					}, -- [6]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:116415::::::::120:253::::::|h[Shiny Pet Charm]|h|r",
+						["id"] = 116415,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:116415::::::::120:253::::::|h[Shiny Pet Charm]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 116415,
+						["enchantId"] = 0,
 					}, -- [7]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:168632::::::::120:253::2::::|h[Slipstream Generator]|h|r",
+						["id"] = 168632,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:168632::::::::120:253::2::::|h[Slipstream Generator]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 168632,
+						["enchantId"] = 0,
 					}, -- [8]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:128320::::::::120:253::::::|h[Corrupted Primal Obelisk]|h|r",
+						["id"] = 128320,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:128320::::::::120:253::::::|h[Corrupted Primal Obelisk]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 128320,
+						["enchantId"] = 0,
 					}, -- [9]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:151651::::::::120:253::::::|h[Gravitational Reduction Slippers]|h|r",
+						["id"] = 151651,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:151651::::::::120:253::::::|h[Gravitational Reduction Slippers]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 151651,
+						["enchantId"] = 0,
 					}, -- [10]
 					{
-						["enchantId"] = 1889,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:32539:1889:::::::120:253::::::|h[Skyguard's Drape]|h|r",
+						["id"] = 32539,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:32539:1889:::::::120:253::::::|h[Skyguard's Drape]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 32539,
+						["enchantId"] = 1889,
 					}, -- [11]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:22440::::::::120:253::15::::|h[Cryptstalker Boots]|h|r",
+						["id"] = 22440,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:22440::::::::120:253::15::::|h[Cryptstalker Boots]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 22440,
+						["enchantId"] = 0,
 					}, -- [12]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:128503::::::::120:253::14::::|h[Master Hunter's Seeking Crystal]|h|r",
+						["id"] = 128503,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:128503::::::::120:253::14::::|h[Master Hunter's Seeking Crystal]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 128503,
+						["enchantId"] = 0,
 					}, -- [13]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:138111::::::::120:253::::::|h[Stormforged Grapple Launcher]|h|r",
+						["id"] = 138111,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:138111::::::::120:253::::::|h[Stormforged Grapple Launcher]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 138111,
+						["enchantId"] = 0,
 					}, -- [14]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:168671::::::::120:253::2::::|h[Electromagnetic Resistors]|h|r",
+						["id"] = 168671,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:168671::::::::120:253::2::::|h[Electromagnetic Resistors]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 168671,
+						["enchantId"] = 0,
 					}, -- [15]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:113545::::::::120:253::::::|h[Carved Drinking Horn]|h|r",
+						["id"] = 113545,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:113545::::::::120:253::::::|h[Carved Drinking Horn]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 113545,
+						["enchantId"] = 0,
 					}, -- [16]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:88384::::::::120:253::::::|h[Burlap Ritual Bag]|h|r",
+						["id"] = 88384,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:88384::::::::120:253::::::|h[Burlap Ritual Bag]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 88384,
+						["enchantId"] = 0,
 					}, -- [17]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:45038::::::::120:253::::::|h[Fragment of Val'anyr]|h|r",
+						["id"] = 45038,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:45038::::::::120:253::::::|h[Fragment of Val'anyr]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 45038,
+						["enchantId"] = 0,
 					}, -- [18]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:22437::::::::120:253::15::::|h[Cryptstalker Legguards]|h|r",
+						["id"] = 22437,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:22437::::::::120:253::15::::|h[Cryptstalker Legguards]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 22437,
+						["enchantId"] = 0,
 					}, -- [19]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:169491::::::::120:253::::::|h[Focused Life Anima]|h|r",
+						["id"] = 169491,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:169491::::::::120:253::::::|h[Focused Life Anima]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 169491,
+						["enchantId"] = 0,
 					}, -- [20]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:140782::::::::120:253::::::|h[Neural Net Detangler]|h|r",
+						["id"] = 140782,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:140782::::::::120:253::::::|h[Neural Net Detangler]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 140782,
+						["enchantId"] = 0,
 					}, -- [21]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:117398::::::::120:253::11::::|h[Everbloom Seed Pouch]|h|r",
+						["id"] = 117398,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:117398::::::::120:253::11::::|h[Everbloom Seed Pouch]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 117398,
+						["enchantId"] = 0,
 					}, -- [22]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:115463::::::::120:253::::::|h[Elixir of Shadow Sight]|h|r",
+						["id"] = 115463,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:115463::::::::120:253::::::|h[Elixir of Shadow Sight]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 115463,
+						["enchantId"] = 0,
 					}, -- [23]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:107273::::::::120:253::::::|h[Snow Hare's Foot]|h|r",
+						["id"] = 107273,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:107273::::::::120:253::::::|h[Snow Hare's Foot]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 107273,
+						["enchantId"] = 0,
 					}, -- [24]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:45798::::::::120:253::11::::|h[Heroic Celestial Planetarium Key]|h|r",
+						["id"] = 45798,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:45798::::::::120:253::11::::|h[Heroic Celestial Planetarium Key]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 45798,
+						["enchantId"] = 0,
 					}, -- [25]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:142210::::::::120:253::::::|h[Celestial Invitation]|h|r",
+						["id"] = 142210,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:142210::::::::120:253::::::|h[Celestial Invitation]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 142210,
+						["enchantId"] = 0,
 					}, -- [26]
 					{
 						["bonusIds"] = {
 							3459, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:137082::::::::120:253:::2:3459:3630:::|h[Helbrine, Rope of the Mist Marauder]|h|r",
+						["id"] = 137082,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:137082::::::::120:253:::2:3459:3630:::|h[Helbrine, Rope of the Mist Marauder]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 137082,
+						["enchantId"] = 0,
 					}, -- [27]
 					{
 						["bonusIds"] = {
 							3459, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:137034::::::::120:253:::2:3459:3630:::|h[Nesingwary's Trapping Treads]|h|r",
+						["id"] = 137034,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:137034::::::::120:253:::2:3459:3630:::|h[Nesingwary's Trapping Treads]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 137034,
+						["enchantId"] = 0,
 					}, -- [28]
 				},
 				[11] = {
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:167077::::::::120:253::11::::|h[Scrying Stone]|h|r",
+						["id"] = 167077,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:167077::::::::120:253::11::::|h[Scrying Stone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 167077,
+						["enchantId"] = 0,
 					}, -- [1]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:167077::::::::120:253::11::::|h[Scrying Stone]|h|r",
+						["id"] = 167077,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:167077::::::::120:253::11::::|h[Scrying Stone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 167077,
+						["enchantId"] = 0,
 					}, -- [2]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:167077::::::::120:253::31::::|h[Scrying Stone]|h|r",
+						["id"] = 167077,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:167077::::::::120:253::31::::|h[Scrying Stone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 167077,
+						["enchantId"] = 0,
 					}, -- [3]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:169860::::::::120:253::::::|h[Tiny Dapper Hat]|h|r",
+						["id"] = 169860,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:169860::::::::120:253::::::|h[Tiny Dapper Hat]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 169860,
+						["enchantId"] = 0,
 					}, -- [4]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:169329::::::::120:253::::::|h[Eternal Ornament]|h|r",
+						["id"] = 169329,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:169329::::::::120:253::::::|h[Eternal Ornament]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 169329,
+						["enchantId"] = 0,
 					}, -- [5]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:169694::::::::120:253::::::|h[Aqueous Reliquary]|h|r",
+						["id"] = 169694,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:169694::::::::120:253::::::|h[Aqueous Reliquary]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 169694,
+						["enchantId"] = 0,
 					}, -- [6]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:169332::::::::120:253::::::|h[Strange Mineralized Water]|h|r",
+						["id"] = 169332,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:169332::::::::120:253::::::|h[Strange Mineralized Water]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 169332,
+						["enchantId"] = 0,
 					}, -- [7]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:168222::::::::120:253::::::|h[Encrypted Black Market Radio]|h|r",
+						["id"] = 168222,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:168222::::::::120:253::::::|h[Encrypted Black Market Radio]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 168222,
+						["enchantId"] = 0,
 					}, -- [8]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:18653::::::::120:253::1::::|h[Schematic: Goblin Jumper Cables XL]|h|r",
+						["id"] = 18653,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:18653::::::::120:253::1::::|h[Schematic: Goblin Jumper Cables XL]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 18653,
+						["enchantId"] = 0,
 					}, -- [9]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:167832::::::::120:253::::::|h[Canned Minnows]|h|r",
+						["id"] = 167832,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:167832::::::::120:253::::::|h[Canned Minnows]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 167832,
+						["enchantId"] = 0,
 					}, -- [10]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:116416::::::::120:253::::::|h[Humanoid Battle-Training Stone]|h|r",
+						["id"] = 116416,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:116416::::::::120:253::::::|h[Humanoid Battle-Training Stone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 116416,
+						["enchantId"] = 0,
 					}, -- [11]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:43626::::::::120:253::::::|h[Happy Pet Snack]|h|r",
+						["id"] = 43626,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152512::::::::120:253::::::|h[Monelite Ore]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152512,
+						["enchantId"] = 0,
 					}, -- [12]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:167012::::::::120:253::::::|h[Brinestone Pickaxe]|h|r",
+						["id"] = 167012,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:43626::::::::120:253::::::|h[Happy Pet Snack]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 43626,
+						["enchantId"] = 0,
 					}, -- [13]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:22441::::::::120:253::15::::|h[Cryptstalker Handguards]|h|r",
+						["id"] = 22441,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:167012::::::::120:253::::::|h[Brinestone Pickaxe]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 167012,
+						["enchantId"] = 0,
 					}, -- [14]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:167077::::::::120:253::11::::|h[Scrying Stone]|h|r",
+						["id"] = 167077,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:22441::::::::120:253::15::::|h[Cryptstalker Handguards]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 22441,
+						["enchantId"] = 0,
 					}, -- [15]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:89906::::::::120:253::::::|h[Magical Mini-Treat]|h|r",
+						["id"] = 89906,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:167077::::::::120:253::11::::|h[Scrying Stone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 167077,
+						["enchantId"] = 0,
 					}, -- [16]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:168633::::::::120:253::::::|h[Supplemental Oxygenation Device]|h|r",
+						["id"] = 168633,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:89906::::::::120:253::::::|h[Magical Mini-Treat]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 89906,
+						["enchantId"] = 0,
 					}, -- [17]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:127770::::::::120:253::::::|h[Brazier of Awakening]|h|r",
+						["id"] = 127770,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:168633::::::::120:253::::::|h[Supplemental Oxygenation Device]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 168633,
+						["enchantId"] = 0,
 					}, -- [18]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:22436::::::::120:253::15::::|h[Cryptstalker Tunic]|h|r",
+						["id"] = 22436,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:127770::::::::120:253::::::|h[Brazier of Awakening]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 127770,
+						["enchantId"] = 0,
 					}, -- [19]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:143661::::::::120:253::11::::|h[Soul Prism of the Illidari]|h|r",
+						["id"] = 143661,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152579::::::::120:253::::::|h[Storm Silver Ore]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152579,
+						["enchantId"] = 0,
 					}, -- [20]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:71083::::::::120:253::::::|h[Darkmoon Game Token]|h|r",
+						["id"] = 71083,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:22436::::::::120:253::15::::|h[Cryptstalker Tunic]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 22436,
+						["enchantId"] = 0,
 					}, -- [21]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:163743::::::::120:253::::::|h[Drust Soulcatcher]|h|r",
+						["id"] = 163743,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:143661::::::::120:253::11::::|h[Soul Prism of the Illidari]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 143661,
+						["enchantId"] = 0,
 					}, -- [22]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:78919::::::::120:253::::::|h[Experiment 12-B]|h|r",
+						["id"] = 78919,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:152512::::::::120:253::::::|h[Monelite Ore]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152512,
+						["enchantId"] = 0,
 					}, -- [23]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:152579::::::::120:253::::::|h[Storm Silver Ore]|h|r",
+						["id"] = 152579,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:71083::::::::120:253::::::|h[Darkmoon Game Token]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 71083,
+						["enchantId"] = 0,
 					}, -- [24]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff9d9d9d|Hitem:73410::::::::120:253::::::|h[Partially Soaked Pages]|h|r",
+						["id"] = 73410,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:163743::::::::120:253::::::|h[Drust Soulcatcher]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 163743,
+						["enchantId"] = 0,
 					}, -- [25]
 					{
-						["enchantId"] = 0,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["link"] = "|cffa335ee|Hitem:78919::::::::120:253::::::|h[Experiment 12-B]|h|r",
-						["suffixId"] = 0,
 						["level"] = 0,
-						["upgradeId"] = 0,
-						["id"] = 78919,
-					}, -- [26]
-					{
-						["enchantId"] = 0,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["link"] = "|cffffffff|Hitem:152579::::::::120:253::::::|h[Storm Silver Ore]|h|r",
 						["suffixId"] = 0,
-						["level"] = 0,
-						["upgradeId"] = 0,
-						["id"] = 152579,
-					}, -- [27]
-					{
-						["enchantId"] = 0,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["link"] = "|cff9d9d9d|Hitem:73410::::::::120:253::::::|h[Partially Soaked Pages]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
-						["upgradeId"] = 0,
-						["id"] = 73410,
-					}, -- [28]
-					{
-						["enchantId"] = 0,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
 						["link"] = "|cff9d9d9d|Hitem:81231::::::::120:253::::::|h[Crumpled Bill of Sale]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
-						["upgradeId"] = 0,
 						["id"] = 81231,
-					}, -- [29]
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [26]
 				},
 				[6] = {
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:113547::::::::120:253::::::|h[Bouquet of Dried Flowers]|h|r",
+						["id"] = 113547,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:113547::::::::120:253::::::|h[Bouquet of Dried Flowers]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 113547,
+						["enchantId"] = 0,
 					}, -- [1]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:44731::::::::120:253::::::|h[Bouquet of Ebon Roses]|h|r",
+						["id"] = 44731,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:44731::::::::120:253::::::|h[Bouquet of Ebon Roses]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 44731,
+						["enchantId"] = 0,
 					}, -- [2]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:22206::::::::120:253::::::|h[Bouquet of Red Roses]|h|r",
+						["id"] = 22206,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:22206::::::::120:253::::::|h[Bouquet of Red Roses]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 22206,
+						["enchantId"] = 0,
 					}, -- [3]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff9d9d9d|Hitem:133760::::::::120:253::::::|h[Bloodstained Note]|h|r",
+						["id"] = 133760,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff9d9d9d|Hitem:133760::::::::120:253::::::|h[Bloodstained Note]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 133760,
+						["enchantId"] = 0,
 					}, -- [4]
 					{
 						["bonusIds"] = {
 							3459, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:137055::::::::120:253:::2:3459:3630:::|h[Zevrim's Hunger]|h|r",
+						["id"] = 137055,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:137055::::::::120:253:::2:3459:3630:::|h[Zevrim's Hunger]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 137055,
+						["enchantId"] = 0,
 					}, -- [5]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:22438::::::::120:253::15::::|h[Cryptstalker Headpiece]|h|r",
+						["id"] = 22438,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:22438::::::::120:253::15::::|h[Cryptstalker Headpiece]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 22438,
+						["enchantId"] = 0,
 					}, -- [6]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:147295::::::::120:253::::::|h[Demonslayer's Soul-Sealed Satchel]|h|r",
+						["id"] = 147295,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:147295::::::::120:253::::::|h[Demonslayer's Soul-Sealed Satchel]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 147295,
+						["enchantId"] = 0,
 					}, -- [7]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:50741::::::::120:253::::::|h[Vile Fumigator's Mask]|h|r",
+						["id"] = 50741,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:50741::::::::120:253::::::|h[Vile Fumigator's Mask]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 50741,
+						["enchantId"] = 0,
 					}, -- [8]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:33047::::::::120:253::::::|h[Belbi's Eyesight Enhancing Romance Goggles]|h|r",
+						["id"] = 33047,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:33047::::::::120:253::::::|h[Belbi's Eyesight Enhancing Romance Goggles]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 33047,
+						["enchantId"] = 0,
 					}, -- [9]
 					{
 						["bonusIds"] = {
 							3459, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:137101::::::::120:253:::2:3459:3630:::|h[Call of the Wild]|h|r",
+						["id"] = 137101,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:137101::::::::120:253:::2:3459:3630:::|h[Call of the Wild]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 137101,
+						["enchantId"] = 0,
 					}, -- [10]
 					{
 						["bonusIds"] = {
 							1811, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:137064::::::::120:253:::2:1811:3630:::|h[The Shadow Hunter's Voodoo Mask]|h|r",
+						["id"] = 137064,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:137064::::::::120:253:::2:1811:3630:::|h[The Shadow Hunter's Voodoo Mask]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 137064,
+						["enchantId"] = 0,
 					}, -- [11]
 					{
 						["bonusIds"] = {
 							3459, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:152626::::::::120:253::11:2:3459:3630:::|h[Insignia of the Grand Army]|h|r",
+						["id"] = 152626,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:152626::::::::120:253::11:2:3459:3630:::|h[Insignia of the Grand Army]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 152626,
+						["enchantId"] = 0,
 					}, -- [12]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:22439::::::::120:253::15::::|h[Cryptstalker Spaulders]|h|r",
+						["id"] = 22439,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:22439::::::::120:253::15::::|h[Cryptstalker Spaulders]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 22439,
+						["enchantId"] = 0,
 					}, -- [13]
 					{
 						["bonusIds"] = {
 							1811, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 5890,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:132444:5890:151584::::::120:253:::2:1811:3630:::|h[Prydaz, Xavaric's Magnum Opus]|h|r",
+						["id"] = 132444,
 						["gemIds"] = {
 							151584, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:132444:5890:151584::::::120:253:::2:1811:3630:::|h[Prydaz, Xavaric's Magnum Opus]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 132444,
+						["enchantId"] = 5890,
 					}, -- [14]
 					{
 						["bonusIds"] = {
 							3459, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 5883,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:144326:5883:::::::120:253:::2:3459:3630:::|h[The Mantle of Command]|h|r",
+						["id"] = 144326,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:144326:5883:::::::120:253:::2:3459:3630:::|h[The Mantle of Command]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 144326,
+						["enchantId"] = 5883,
 					}, -- [15]
 					{
 						["bonusIds"] = {
 							1811, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 5429,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:137382:5429:130222::::::120:253:::2:1811:3630:::|h[The Apex Predator's Claw]|h|r",
+						["id"] = 137382,
 						["gemIds"] = {
 							130222, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:137382:5429:130222::::::120:253:::2:1811:3630:::|h[The Apex Predator's Claw]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 137382,
+						["enchantId"] = 5429,
 					}, -- [16]
 					{
 						["bonusIds"] = {
 							3459, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:144303::::::::120:253:::2:3459:3630:::|h[MKII Gyroscopic Stabilizer]|h|r",
+						["id"] = 144303,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:144303::::::::120:253:::2:3459:3630:::|h[MKII Gyroscopic Stabilizer]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 144303,
+						["enchantId"] = 0,
 					}, -- [17]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:169333::::::::120:253::::::|h[Strange Volcanic Rock]|h|r",
+						["id"] = 169333,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:169333::::::::120:253::::::|h[Strange Volcanic Rock]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 169333,
+						["enchantId"] = 0,
 					}, -- [18]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:22443::::::::120:253::15::::|h[Cryptstalker Wristguards]|h|r",
+						["id"] = 22443,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:22443::::::::120:253::15::::|h[Cryptstalker Wristguards]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 22443,
+						["enchantId"] = 0,
 					}, -- [19]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:92678::::::::120:253::::::|h[Flawless Magic Battle-Stone]|h|r",
+						["id"] = 92678,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:92678::::::::120:253::::::|h[Flawless Magic Battle-Stone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 92678,
+						["enchantId"] = 0,
 					}, -- [20]
 					{
 						["bonusIds"] = {
 							1811, -- [1]
 							3630, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:144259::::::::120:253:::2:1811:3630:::|h[Kil'jaeden's Burning Wish]|h|r",
+						["id"] = 144259,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:144259::::::::120:253:::2:1811:3630:::|h[Kil'jaeden's Burning Wish]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 144259,
+						["enchantId"] = 0,
 					}, -- [21]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:116429::::::::120:253::::::|h[Flawless Battle-Training Stone]|h|r",
+						["id"] = 116429,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:116429::::::::120:253::::::|h[Flawless Battle-Training Stone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 116429,
+						["enchantId"] = 0,
 					}, -- [22]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:71153::::::::120:253::::::|h[Magical Pet Biscuit]|h|r",
+						["id"] = 71153,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:71153::::::::120:253::::::|h[Magical Pet Biscuit]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 71153,
+						["enchantId"] = 0,
 					}, -- [23]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff1eff00|Hitem:167077::::::::120:253::11::::|h[Scrying Stone]|h|r",
+						["id"] = 167077,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff1eff00|Hitem:167077::::::::120:253::11::::|h[Scrying Stone]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 167077,
+						["enchantId"] = 0,
 					}, -- [24]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:116916::::::::120:253::::::|h[Gorepetal's Gentle Grasp]|h|r",
+						["id"] = 116916,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:116916::::::::120:253::::::|h[Gorepetal's Gentle Grasp]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 116916,
+						["enchantId"] = 0,
 					}, -- [25]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:86547::::::::120:253::::::|h[Skyshard]|h|r",
+						["id"] = 86547,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:86547::::::::120:253::::::|h[Skyshard]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 86547,
+						["enchantId"] = 0,
 					}, -- [26]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffffffff|Hitem:163036::::::::120:253::::::|h[Polished Pet Charm]|h|r",
+						["id"] = 163036,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffffffff|Hitem:163036::::::::120:253::::::|h[Polished Pet Charm]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 163036,
+						["enchantId"] = 0,
 					}, -- [27]
 					{
 						["bonusIds"] = {
@@ -17258,46 +17356,46 @@ AskMrRobotDb4 = {
 							4786, -- [2]
 							4799, -- [3]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:169934::::::::120:253::5:3:4799:1502:4786:::|h[Deepcrawler's Handguards]|h|r",
+						["id"] = 169934,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:169934::::::::120:253::5:3:4799:1502:4786:::|h[Deepcrawler's Handguards]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 169934,
+						["enchantId"] = 0,
 					}, -- [28]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cff0070dd|Hitem:129276::::::::120:253::14::::|h[Beginner's Guide to Dimensional Rifting]|h|r",
+						["id"] = 129276,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:129276::::::::120:253::14::::|h[Beginner's Guide to Dimensional Rifting]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 129276,
+						["enchantId"] = 0,
 					}, -- [29]
 					{
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:147303::::::::120:253::::::|h[Giant Elemental's Closed Stone Fist]|h|r",
+						["id"] = 147303,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:147303::::::::120:253::::::|h[Giant Elemental's Closed Stone Fist]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 147303,
+						["enchantId"] = 0,
 					}, -- [30]
 				},
 			},
@@ -17533,7 +17631,7 @@ AskMrRobotDb4 = {
 				{
 					{
 						0, -- [1]
-						4, -- [2]
+						6, -- [2]
 						3, -- [3]
 					}, -- [1]
 					{
@@ -17635,7 +17733,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 173839,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								274441, -- [1]
 								287093, -- [2]
@@ -17643,13 +17746,8 @@ AskMrRobotDb4 = {
 								268599, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 376,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						}, -- [1]
@@ -17682,7 +17780,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 173838,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								274441, -- [1]
 								317137, -- [2]
@@ -17690,13 +17793,8 @@ AskMrRobotDb4 = {
 								268599, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 375,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						}, -- [3]
@@ -17711,7 +17809,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 174147,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								279806, -- [1]
 								274441, -- [2]
@@ -17719,13 +17822,8 @@ AskMrRobotDb4 = {
 								268594, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 377,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						}, -- [5]
@@ -18007,20 +18105,20 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 171013,
-							["level"] = 0,
-							["azerite"] = {
-								273283, -- [1]
-								280178, -- [2]
-								266180, -- [3]
-								263978, -- [4]
-							},
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["azerite"] = {
+								273283, -- [1]
+								280178, -- [2]
+								266180, -- [3]
+								263978, -- [4]
+							},
 							["inventoryId"] = 326,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						}, -- [1]
@@ -18053,7 +18151,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 173451,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								273283, -- [1]
 								317137, -- [2]
@@ -18061,13 +18164,8 @@ AskMrRobotDb4 = {
 								268437, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 333,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						}, -- [3]
@@ -18081,20 +18179,20 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 173446,
-							["level"] = 0,
-							["azerite"] = {
-								278532, -- [1]
-								317137, -- [2]
-								266180, -- [3]
-								263978, -- [4]
-							},
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["azerite"] = {
+								278532, -- [1]
+								317137, -- [2]
+								266180, -- [3]
+								263978, -- [4]
+							},
 							["inventoryId"] = 329,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						}, -- [5]
@@ -18371,7 +18469,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 155887,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								274444, -- [1]
 								287707, -- [2]
@@ -18379,13 +18482,8 @@ AskMrRobotDb4 = {
 								268599, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 256,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						}, -- [1]
@@ -18418,7 +18516,12 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 158019,
-							["level"] = 0,
+							["gemIds"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+							},
 							["azerite"] = {
 								278531, -- [1]
 								273823, -- [2]
@@ -18426,13 +18529,8 @@ AskMrRobotDb4 = {
 								280014, -- [4]
 								263978, -- [5]
 							},
-							["gemIds"] = {
-								0, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-							},
 							["inventoryId"] = 258,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						}, -- [3]
@@ -18447,20 +18545,20 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 165448,
-							["level"] = 0,
-							["azerite"] = {
-								264198, -- [1]
-								274444, -- [2]
-								263984, -- [3]
-								263978, -- [4]
-							},
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["azerite"] = {
+								264198, -- [1]
+								274444, -- [2]
+								263984, -- [3]
+								263978, -- [4]
+							},
 							["inventoryId"] = 283,
+							["level"] = 0,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						}, -- [5]
@@ -18812,20 +18910,6 @@ AskMrRobotDb4 = {
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
-					["link"] = "|cffa335ee|Hitem:169477::::::::120:253::26::::|h[Benthic Girdle]|h|r",
-					["id"] = 169477,
-					["gemIds"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["upgradeId"] = 0,
-					["enchantId"] = 0,
-				}, -- [7]
-				{
-					["suffixId"] = 0,
-					["level"] = 0,
 					["link"] = "|cffffffff|Hitem:118711::::::::120:253::::::|h[Draenic Water Walking Elixir]|h|r",
 					["id"] = 118711,
 					["gemIds"] = {
@@ -18836,7 +18920,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [8]
+				}, -- [7]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -18850,7 +18934,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [9]
+				}, -- [8]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -18864,7 +18948,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 846,
-				}, -- [10]
+				}, -- [9]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -18878,12 +18962,26 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
+				}, -- [10]
+				{
+					["suffixId"] = 0,
+					["level"] = 0,
+					["link"] = "|cff0070dd|Hitem:152876::::::::120:253::::::|h[Umbra Shard]|h|r",
+					["id"] = 152876,
+					["gemIds"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0, -- [4]
+					},
+					["upgradeId"] = 0,
+					["enchantId"] = 0,
 				}, -- [11]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
-					["link"] = "|cffa335ee|Hitem:169484::::::::120:253::14::::|h[Benthic Spaulders]|h|r",
-					["id"] = 169484,
+					["link"] = "|cffa335ee|Hitem:152877::::::::120:253::::::|h[Veiled Crystal]|h|r",
+					["id"] = 152877,
 					["gemIds"] = {
 						0, -- [1]
 						0, -- [2]
@@ -18893,20 +18991,6 @@ AskMrRobotDb4 = {
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
 				}, -- [12]
-				{
-					["suffixId"] = 0,
-					["level"] = 0,
-					["link"] = "|cff1eff00|Hitem:167059::::::::120:253::::::|h[Chum]|h|r",
-					["id"] = 167059,
-					["gemIds"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["upgradeId"] = 0,
-					["enchantId"] = 0,
-				}, -- [13]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -18920,43 +19004,21 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
+				}, -- [13]
+				{
+					["suffixId"] = 0,
+					["level"] = 0,
+					["link"] = "|cffa335ee|Hitem:166560:6109:::::::120:253::14::::|h[Captain's Signet of Command]|h|r",
+					["id"] = 166560,
+					["gemIds"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0, -- [4]
+					},
+					["upgradeId"] = 0,
+					["enchantId"] = 6109,
 				}, -- [14]
-				{
-					["bonusIds"] = {
-						42, -- [1]
-						1487, -- [2]
-						4786, -- [3]
-						4822, -- [4]
-						6515, -- [5]
-						6516, -- [6]
-					},
-					["suffixId"] = 0,
-					["level"] = 0,
-					["link"] = "|cffa335ee|Hitem:174268:6108:::::::120:253::3:6:4822:42:6516:6515:1487:4786:::|h[Loop of Abhorrent Celerity]|h|r",
-					["id"] = 174268,
-					["gemIds"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["upgradeId"] = 0,
-					["enchantId"] = 6108,
-				}, -- [15]
-				{
-					["suffixId"] = 0,
-					["level"] = 0,
-					["link"] = "|cffa335ee|Hitem:169484::::::::120:253::14::::|h[Benthic Spaulders]|h|r",
-					["id"] = 169484,
-					["gemIds"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["upgradeId"] = 0,
-					["enchantId"] = 0,
-				}, -- [16]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -18970,7 +19032,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [17]
+				}, -- [15]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -18984,7 +19046,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [18]
+				}, -- [16]
 				{
 					["bonusIds"] = {
 						1637, -- [1]
@@ -19005,21 +19067,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 5963,
-				}, -- [19]
-				{
-					["suffixId"] = 0,
-					["level"] = 0,
-					["link"] = "|cffa335ee|Hitem:169484::::::::120:253::14::::|h[Benthic Spaulders]|h|r",
-					["id"] = 169484,
-					["gemIds"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["upgradeId"] = 0,
-					["enchantId"] = 0,
-				}, -- [20]
+				}, -- [17]
 				{
 					["bonusIds"] = {
 						1487, -- [1]
@@ -19043,21 +19091,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["suffixId"] = 0,
-				}, -- [21]
-				{
-					["suffixId"] = 0,
-					["level"] = 0,
-					["link"] = "|cffa335ee|Hitem:169484::::::::120:253::14::::|h[Benthic Spaulders]|h|r",
-					["id"] = 169484,
-					["gemIds"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["upgradeId"] = 0,
-					["enchantId"] = 0,
-				}, -- [22]
+				}, -- [18]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19071,7 +19105,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [23]
+				}, -- [19]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19085,7 +19119,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [24]
+				}, -- [20]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19099,7 +19133,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [25]
+				}, -- [21]
 				{
 					["bonusIds"] = {
 						1637, -- [1]
@@ -19126,7 +19160,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["suffixId"] = 0,
-				}, -- [26]
+				}, -- [22]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19140,7 +19174,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [27]
+				}, -- [23]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19154,7 +19188,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [28]
+				}, -- [24]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19168,7 +19202,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [29]
+				}, -- [25]
 				{
 					["bonusIds"] = {
 						1637, -- [1]
@@ -19187,7 +19221,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [30]
+				}, -- [26]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19201,7 +19235,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [31]
+				}, -- [27]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19215,7 +19249,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [32]
+				}, -- [28]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19229,7 +19263,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [33]
+				}, -- [29]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19243,7 +19277,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [34]
+				}, -- [30]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19257,7 +19291,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [35]
+				}, -- [31]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19271,12 +19305,77 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [36]
+				}, -- [32]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
 					["link"] = "|cff0070dd|Hitem:138393::::::::120:253::11::::|h[Essence Swapper]|h|r",
 					["id"] = 138393,
+					["gemIds"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0, -- [4]
+					},
+					["upgradeId"] = 0,
+					["enchantId"] = 0,
+				}, -- [33]
+				{
+					["suffixId"] = 0,
+					["level"] = 0,
+					["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+					["id"] = 152875,
+					["gemIds"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0, -- [4]
+					},
+					["upgradeId"] = 0,
+					["enchantId"] = 0,
+				}, -- [34]
+				{
+					["suffixId"] = 0,
+					["level"] = 0,
+					["link"] = "|cffffffff|Hitem:21175::::::::120:253::::::|h[The Scepter of the Shifting Sands]|h|r",
+					["id"] = 21175,
+					["gemIds"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0, -- [4]
+					},
+					["upgradeId"] = 0,
+					["enchantId"] = 0,
+				}, -- [35]
+				{
+					["suffixId"] = 0,
+					["level"] = 0,
+					["link"] = "|cff1eff00|Hitem:174758::::::::120:253::::::|h[Voidwarped Relic Fragment]|h|r",
+					["id"] = 174758,
+					["gemIds"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0, -- [4]
+					},
+					["upgradeId"] = 0,
+					["enchantId"] = 0,
+				}, -- [36]
+				{
+					["bonusIds"] = {
+						1522, -- [1]
+						4786, -- [2]
+						6412, -- [3]
+						6513, -- [4]
+						6561, -- [5]
+						6578, -- [6]
+						6579, -- [7]
+					},
+					["suffixId"] = 0,
+					["level"] = 0,
+					["link"] = "|cffa335ee|Hitem:173465::::::::120:253::54:7:6412:6513:6578:6579:6561:1522:4786:::|h[Nefarious Tormentor's Gloves]|h|r",
+					["id"] = 173465,
 					["gemIds"] = {
 						0, -- [1]
 						0, -- [2]
@@ -19300,99 +19399,6 @@ AskMrRobotDb4 = {
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
 				}, -- [38]
-				{
-					["suffixId"] = 0,
-					["level"] = 0,
-					["link"] = "|cffffffff|Hitem:21175::::::::120:253::::::|h[The Scepter of the Shifting Sands]|h|r",
-					["id"] = 21175,
-					["gemIds"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["upgradeId"] = 0,
-					["enchantId"] = 0,
-				}, -- [39]
-				{
-					["suffixId"] = 0,
-					["level"] = 0,
-					["link"] = "|cffa335ee|Hitem:169482::::::::120:253::::::|h[Benthic Leggings]|h|r",
-					["id"] = 169482,
-					["gemIds"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["upgradeId"] = 0,
-					["enchantId"] = 0,
-				}, -- [40]
-				{
-					["suffixId"] = 0,
-					["level"] = 0,
-					["link"] = "|cff1eff00|Hitem:174758::::::::120:253::::::|h[Voidwarped Relic Fragment]|h|r",
-					["id"] = 174758,
-					["gemIds"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["upgradeId"] = 0,
-					["enchantId"] = 0,
-				}, -- [41]
-				{
-					["bonusIds"] = {
-						1522, -- [1]
-						4786, -- [2]
-						6412, -- [3]
-						6513, -- [4]
-						6561, -- [5]
-						6578, -- [6]
-						6579, -- [7]
-					},
-					["suffixId"] = 0,
-					["level"] = 0,
-					["link"] = "|cffa335ee|Hitem:173465::::::::120:253::54:7:6412:6513:6578:6579:6561:1522:4786:::|h[Nefarious Tormentor's Gloves]|h|r",
-					["id"] = 173465,
-					["gemIds"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["upgradeId"] = 0,
-					["enchantId"] = 0,
-				}, -- [42]
-				{
-					["suffixId"] = 0,
-					["level"] = 0,
-					["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
-					["id"] = 152875,
-					["gemIds"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["upgradeId"] = 0,
-					["enchantId"] = 0,
-				}, -- [43]
-				{
-					["suffixId"] = 0,
-					["level"] = 0,
-					["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
-					["id"] = 152875,
-					["gemIds"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["upgradeId"] = 0,
-					["enchantId"] = 0,
-				}, -- [44]
 				{
 					["bonusIds"] = {
 						1517, -- [1]
@@ -19419,35 +19425,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["suffixId"] = 0,
-				}, -- [45]
-				{
-					["suffixId"] = 0,
-					["level"] = 0,
-					["link"] = "|cffa335ee|Hitem:169481::::::::120:253::25::::|h[Benthic Cloak]|h|r",
-					["id"] = 169481,
-					["gemIds"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["upgradeId"] = 0,
-					["enchantId"] = 0,
-				}, -- [46]
-				{
-					["suffixId"] = 0,
-					["level"] = 0,
-					["link"] = "|cffa335ee|Hitem:169484::::::::120:253::14::::|h[Benthic Spaulders]|h|r",
-					["id"] = 169484,
-					["gemIds"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["upgradeId"] = 0,
-					["enchantId"] = 0,
-				}, -- [47]
+				}, -- [39]
 				{
 					["bonusIds"] = {
 						1502, -- [1]
@@ -19466,39 +19444,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [48]
-				{
-					["suffixId"] = 0,
-					["level"] = 0,
-					["link"] = "|cffa335ee|Hitem:169484::::::::120:253::14::::|h[Benthic Spaulders]|h|r",
-					["id"] = 169484,
-					["gemIds"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["upgradeId"] = 0,
-					["enchantId"] = 0,
-				}, -- [49]
-				{
-					["bonusIds"] = {
-						1701, -- [1]
-						4796, -- [2]
-					},
-					["suffixId"] = 0,
-					["level"] = 120,
-					["link"] = "|cff1eff00|Hitem:170201::::::::120:253:512::2:4796:1701:120:::|h[Deeptide Scroll of the Feverflare]|h|r",
-					["id"] = 170201,
-					["gemIds"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["upgradeId"] = 0,
-					["enchantId"] = 0,
-				}, -- [50]
+				}, -- [40]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19512,21 +19458,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [51]
-				{
-					["suffixId"] = 0,
-					["level"] = 0,
-					["link"] = "|cffa335ee|Hitem:169484::::::::120:253::14::::|h[Benthic Spaulders]|h|r",
-					["id"] = 169484,
-					["gemIds"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["upgradeId"] = 0,
-					["enchantId"] = 0,
-				}, -- [52]
+				}, -- [41]
 				{
 					["bonusIds"] = {
 						1502, -- [1]
@@ -19549,7 +19481,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 5937,
-				}, -- [53]
+				}, -- [42]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19563,7 +19495,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [54]
+				}, -- [43]
 				{
 					["bonusIds"] = {
 						1527, -- [1]
@@ -19586,7 +19518,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [55]
+				}, -- [44]
 				{
 					["bonusIds"] = {
 						1502, -- [1]
@@ -19613,7 +19545,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["suffixId"] = 0,
-				}, -- [56]
+				}, -- [45]
 				{
 					["bonusIds"] = {
 						4775, -- [1]
@@ -19637,7 +19569,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["suffixId"] = 0,
-				}, -- [57]
+				}, -- [46]
 				{
 					["bonusIds"] = {
 						1517, -- [1]
@@ -19658,12 +19590,12 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [58]
+				}, -- [47]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
-					["link"] = "|cffa335ee|Hitem:170502::::::::120:253::31::::|h[Waterlogged Toolbox]|h|r",
-					["id"] = 170502,
+					["link"] = "|cff1eff00|Hitem:166888::::::::120:253::::::|h[Germinating Seed]|h|r",
+					["id"] = 166888,
 					["gemIds"] = {
 						0, -- [1]
 						0, -- [2]
@@ -19672,19 +19604,12 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [59]
+				}, -- [48]
 				{
-					["bonusIds"] = {
-						1487, -- [1]
-						4786, -- [2]
-						4822, -- [3]
-						6515, -- [4]
-						6516, -- [5]
-					},
 					["suffixId"] = 0,
 					["level"] = 0,
-					["link"] = "|cffa335ee|Hitem:174255::::::::120:253::3:5:4822:6516:6515:1487:4786:::|h[Greaves of Shattered Thoughts]|h|r",
-					["id"] = 174255,
+					["link"] = "|cff0070dd|Hitem:152954::::::::120:253::::::|h[Greater Argussian Reach Insignia]|h|r",
+					["id"] = 152954,
 					["gemIds"] = {
 						0, -- [1]
 						0, -- [2]
@@ -19693,12 +19618,12 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [60]
+				}, -- [49]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
-					["link"] = "|cffa335ee|Hitem:169484::::::::120:253::14::::|h[Benthic Spaulders]|h|r",
-					["id"] = 169484,
+					["link"] = "|cffffffff|Hitem:152875::::::::120:253::::::|h[Gloom Dust]|h|r",
+					["id"] = 152875,
 					["gemIds"] = {
 						0, -- [1]
 						0, -- [2]
@@ -19707,7 +19632,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [61]
+				}, -- [50]
 				{
 					["bonusIds"] = {
 						1502, -- [1]
@@ -19730,7 +19655,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [62]
+				}, -- [51]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19744,12 +19669,22 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [63]
+				}, -- [52]
 				{
+					["bonusIds"] = {
+						1522, -- [1]
+						4786, -- [2]
+						6412, -- [3]
+						6462, -- [4]
+						6472, -- [5]
+						6513, -- [6]
+						6578, -- [7]
+						6579, -- [8]
+					},
 					["suffixId"] = 0,
 					["level"] = 0,
-					["link"] = "|cffa335ee|Hitem:169484::::::::120:253::14::::|h[Benthic Spaulders]|h|r",
-					["id"] = 169484,
+					["link"] = "|cffa335ee|Hitem:173448::::::::120:253::54:8:6412:6513:6578:6579:6472:6462:1522:4786:::|h[Nefarious Tormentor's Handguards]|h|r",
+					["id"] = 173448,
 					["gemIds"] = {
 						0, -- [1]
 						0, -- [2]
@@ -19758,7 +19693,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [64]
+				}, -- [53]
 				{
 					["bonusIds"] = {
 						1527, -- [1]
@@ -19780,7 +19715,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [65]
+				}, -- [54]
 				{
 					["bonusIds"] = {
 						1577, -- [1]
@@ -19802,7 +19737,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [66]
+				}, -- [55]
 				{
 					["bonusIds"] = {
 						6288, -- [1]
@@ -19820,7 +19755,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [67]
+				}, -- [56]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19834,7 +19769,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [68]
+				}, -- [57]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19848,7 +19783,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [69]
+				}, -- [58]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19862,7 +19797,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [70]
+				}, -- [59]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19876,7 +19811,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [71]
+				}, -- [60]
 				{
 					["bonusIds"] = {
 						1502, -- [1]
@@ -19901,7 +19836,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 5937,
-				}, -- [72]
+				}, -- [61]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19915,7 +19850,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [73]
+				}, -- [62]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19929,7 +19864,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [74]
+				}, -- [63]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -19943,7 +19878,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [75]
+				}, -- [64]
 				{
 					["bonusIds"] = {
 						1522, -- [1]
@@ -19965,7 +19900,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [76]
+				}, -- [65]
 				{
 					["bonusIds"] = {
 						1577, -- [1]
@@ -19993,7 +19928,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["suffixId"] = 0,
-				}, -- [77]
+				}, -- [66]
 				{
 					["bonusIds"] = {
 						40, -- [1]
@@ -20017,7 +19952,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [78]
+				}, -- [67]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20031,12 +19966,12 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [79]
+				}, -- [68]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
-					["link"] = "|cffa335ee|Hitem:169484::::::::120:253::14::::|h[Benthic Spaulders]|h|r",
-					["id"] = 169484,
+					["link"] = "|cff0070dd|Hitem:174461::::::::120:253::9::::|h[Swirling Black Bottle]|h|r",
+					["id"] = 174461,
 					["gemIds"] = {
 						0, -- [1]
 						0, -- [2]
@@ -20045,7 +19980,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [80]
+				}, -- [69]
 				{
 					["bonusIds"] = {
 						1637, -- [1]
@@ -20069,7 +20004,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [81]
+				}, -- [70]
 				{
 					["bonusIds"] = {
 						641, -- [1]
@@ -20087,21 +20022,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 5326,
-				}, -- [82]
-				{
-					["suffixId"] = 0,
-					["level"] = 0,
-					["link"] = "|cffa335ee|Hitem:169484::::::::120:253::14::::|h[Benthic Spaulders]|h|r",
-					["id"] = 169484,
-					["gemIds"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["upgradeId"] = 0,
-					["enchantId"] = 0,
-				}, -- [83]
+				}, -- [71]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20115,7 +20036,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [84]
+				}, -- [72]
 				{
 					["bonusIds"] = {
 						1522, -- [1]
@@ -20140,7 +20061,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 5971,
-				}, -- [85]
+				}, -- [73]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20154,7 +20075,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [86]
+				}, -- [74]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20168,7 +20089,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [87]
+				}, -- [75]
 				{
 					["bonusIds"] = {
 						1487, -- [1]
@@ -20189,7 +20110,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [88]
+				}, -- [76]
 				{
 					["bonusIds"] = {
 						1512, -- [1]
@@ -20213,7 +20134,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [89]
+				}, -- [77]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20227,7 +20148,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [90]
+				}, -- [78]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20241,7 +20162,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [91]
+				}, -- [79]
 				{
 					["bonusIds"] = {
 						1477, -- [1]
@@ -20265,7 +20186,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [92]
+				}, -- [80]
 				{
 					["bonusIds"] = {
 						727, -- [1]
@@ -20300,7 +20221,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["suffixId"] = 0,
-				}, -- [93]
+				}, -- [81]
 				{
 					["bonusIds"] = {
 						728, -- [1]
@@ -20335,7 +20256,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["suffixId"] = 0,
-				}, -- [94]
+				}, -- [82]
 				{
 					["bonusIds"] = {
 						726, -- [1]
@@ -20370,7 +20291,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["suffixId"] = 0,
-				}, -- [95]
+				}, -- [83]
 				{
 					["bonusIds"] = {
 						74, -- [1]
@@ -20389,7 +20310,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 5276,
-				}, -- [96]
+				}, -- [84]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20403,7 +20324,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 3608,
-				}, -- [97]
+				}, -- [85]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20417,7 +20338,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 2673,
-				}, -- [98]
+				}, -- [86]
 				{
 					["bonusIds"] = {
 						1632, -- [1]
@@ -20445,7 +20366,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["suffixId"] = 0,
-				}, -- [99]
+				}, -- [87]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20459,7 +20380,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [100]
+				}, -- [88]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20473,7 +20394,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [101]
+				}, -- [89]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20487,7 +20408,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [102]
+				}, -- [90]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20501,17 +20422,12 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [103]
+				}, -- [91]
 				{
-					["bonusIds"] = {
-						1637, -- [1]
-						4786, -- [2]
-						6504, -- [3]
-					},
 					["suffixId"] = 0,
 					["level"] = 0,
-					["link"] = "|cffa335ee|Hitem:158046::::::::120:253::28:3:1637:4786:6504:::|h[Deadwash Hauberk]|h|r",
-					["id"] = 158046,
+					["link"] = "|cff0070dd|Hitem:152960::::::::120:253::::::|h[Argussian Reach Insignia]|h|r",
+					["id"] = 152960,
 					["gemIds"] = {
 						0, -- [1]
 						0, -- [2]
@@ -20520,7 +20436,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [104]
+				}, -- [92]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20534,7 +20450,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [105]
+				}, -- [93]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20548,7 +20464,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [106]
+				}, -- [94]
 				{
 					["bonusIds"] = {
 						1502, -- [1]
@@ -20573,7 +20489,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [107]
+				}, -- [95]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20587,7 +20503,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [108]
+				}, -- [96]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20601,7 +20517,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [109]
+				}, -- [97]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20615,7 +20531,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [110]
+				}, -- [98]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20629,7 +20545,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [111]
+				}, -- [99]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20643,7 +20559,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [112]
+				}, -- [100]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20657,7 +20573,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 41,
-				}, -- [113]
+				}, -- [101]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20671,7 +20587,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [114]
+				}, -- [102]
 				{
 					["bonusIds"] = {
 						1487, -- [1]
@@ -20695,7 +20611,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [115]
+				}, -- [103]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20709,7 +20625,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [116]
+				}, -- [104]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20723,7 +20639,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [117]
+				}, -- [105]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20737,7 +20653,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [118]
+				}, -- [106]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20751,7 +20667,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [119]
+				}, -- [107]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20765,7 +20681,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [120]
+				}, -- [108]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20779,7 +20695,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [121]
+				}, -- [109]
 				{
 					["bonusIds"] = {
 						1522, -- [1]
@@ -20802,7 +20718,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [122]
+				}, -- [110]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20816,7 +20732,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [123]
+				}, -- [111]
 				{
 					["bonusIds"] = {
 						1527, -- [1]
@@ -20839,7 +20755,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [124]
+				}, -- [112]
 				{
 					["bonusIds"] = {
 						1477, -- [1]
@@ -20863,7 +20779,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [125]
+				}, -- [113]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20877,7 +20793,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [126]
+				}, -- [114]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20891,7 +20807,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [127]
+				}, -- [115]
 				{
 					["bonusIds"] = {
 						1522, -- [1]
@@ -20915,7 +20831,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [128]
+				}, -- [116]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20929,7 +20845,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [129]
+				}, -- [117]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20943,7 +20859,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [130]
+				}, -- [118]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20957,7 +20873,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [131]
+				}, -- [119]
 				{
 					["bonusIds"] = {
 						1517, -- [1]
@@ -20979,7 +20895,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [132]
+				}, -- [120]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -20993,7 +20909,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [133]
+				}, -- [121]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -21007,7 +20923,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [134]
+				}, -- [122]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -21021,7 +20937,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [135]
+				}, -- [123]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -21035,7 +20951,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [136]
+				}, -- [124]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -21049,7 +20965,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [137]
+				}, -- [125]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -21063,7 +20979,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [138]
+				}, -- [126]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -21077,7 +20993,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [139]
+				}, -- [127]
 				{
 					["suffixId"] = 0,
 					["level"] = 0,
@@ -21091,7 +21007,7 @@ AskMrRobotDb4 = {
 					},
 					["upgradeId"] = 0,
 					["enchantId"] = 0,
-				}, -- [140]
+				}, -- [128]
 			},
 			["LastVersion"] = 86,
 			["JunkData"] = {
@@ -21148,7 +21064,7 @@ AskMrRobotDb4 = {
 				[51560] = 1,
 				[144391] = 1,
 				[174760] = 5,
-				[174268] = 2,
+				[174268] = 1,
 				[122452] = 20,
 				[52723] = 1,
 				[167077] = 1,
@@ -21156,67 +21072,65 @@ AskMrRobotDb4 = {
 				[91877] = 75,
 				[163569] = 60,
 				[33820] = 1,
-				[174349] = 3,
+				[174349] = 2,
 				[173476] = 1,
-				[38682] = 60,
+				[166888] = 1,
+				[38682] = 57,
 				[167555] = 1,
 				[65360] = 1,
 				[138393] = 1,
 				[168651] = 1,
-				[174255] = 1,
+				[173493] = 2,
 				[63352] = 1,
-				[169477] = 1,
 				[165683] = 1,
 				[173446] = 1,
-				[174351] = 35,
+				[174351] = 33,
 				[174875] = 1,
 				[172494] = 1,
 				[173447] = 1,
 				[174352] = 14,
 				[116276] = 9,
-				[167059] = 1,
+				[46874] = 1,
 				[173509] = 1,
+				[173448] = 2,
+				[19019] = 1,
 				[64399] = 1,
 				[173488] = 1,
-				[173448] = 1,
-				[19019] = 1,
-				[163223] = 1,
-				[128353] = 1,
 				[169321] = 1,
-				[6948] = 1,
-				[140192] = 1,
+				[152954] = 1,
+				[163036] = 281,
 				[63206] = 1,
-				[152875] = 873,
+				[152875] = 825,
 				[173465] = 3,
 				[173481] = 1,
 				[173497] = 1,
-				[158019] = 2,
+				[32757] = 1,
 				[164766] = 1,
-				[169481] = 1,
+				[166560] = 1,
 				[124440] = 200,
-				[163036] = 281,
+				[173450] = 1,
 				[8383] = 1,
 				[141605] = 1,
-				[173450] = 1,
+				[140192] = 1,
+				[6948] = 1,
+				[165449] = 1,
+				[163223] = 1,
 				[173363] = 6,
-				[158046] = 1,
-				[169482] = 1,
-				[164740] = 1,
 				[173451] = 1,
 				[158100] = 1,
-				[173493] = 2,
-				[155887] = 1,
+				[169299] = 19,
+				[141652] = 1,
 				[34334] = 1,
-				[109168] = 1,
-				[174328] = 1,
+				[160053] = 96,
+				[155887] = 1,
 				[173817] = 2,
 				[6263] = 1,
-				[128861] = 1,
+				[174328] = 1,
+				[109168] = 1,
 				[37863] = 1,
-				[32757] = 1,
-				[86143] = 90,
+				[128861] = 1,
 				[173818] = 1,
-				[169484] = 11,
+				[86143] = 90,
 				[118663] = 1,
 				[174469] = 1,
 				[49040] = 1,
@@ -21224,31 +21138,31 @@ AskMrRobotDb4 = {
 				[114943] = 1,
 				[44050] = 1,
 				[118711] = 4,
-				[173840] = 1,
+				[128353] = 1,
 				[173819] = 1,
 				[124636] = 1,
-				[158084] = 1,
+				[173840] = 1,
 				[174756] = 1,
 				[171014] = 1,
-				[165448] = 1,
+				[174461] = 1,
 				[128808] = 1,
-				[170502] = 1,
+				[152960] = 1,
 				[103678] = 1,
-				[152812] = 89,
-				[160053] = 97,
+				[165448] = 1,
+				[152812] = 88,
 				[110560] = 1,
-				[170201] = 1,
-				[171013] = 1,
-				[141652] = 1,
+				[164740] = 1,
+				[158084] = 1,
+				[152877] = 43,
 				[144341] = 1,
 				[21175] = 1,
-				[165449] = 1,
+				[171013] = 1,
 				[173726] = 1,
 				[174758] = 2,
-				[169299] = 19,
-				[169109] = 1,
+				[158019] = 2,
+				[152876] = 44,
 				[174044] = 1,
-				[46874] = 1,
+				[169109] = 1,
 			},
 			["UnlockedEssences"] = {
 				{
@@ -21290,7 +21204,7 @@ AskMrRobotDb4 = {
 			},
 			["Logging"] = {
 				["LastDiff"] = 0,
-				["LastZone"] = "Broken Isles",
+				["LastZone"] = "Kul Tiras",
 			},
 			["FirstUse"] = false,
 			["Equipped"] = {
@@ -21304,7 +21218,6 @@ AskMrRobotDb4 = {
 						},
 						["link"] = "|cffa335ee|Hitem:173839::::::::120:253::37:4:1502:4786:6505:4775:::|h[Nefarious Tormentor's Cover]|h|r",
 						["id"] = 173839,
-						["suffixId"] = 0,
 						["azerite"] = {
 							274441, -- [1]
 							287093, -- [2]
@@ -21312,15 +21225,16 @@ AskMrRobotDb4 = {
 							268599, -- [4]
 							263978, -- [5]
 						},
+						["enchantId"] = 0,
+						["level"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["enchantId"] = 0,
+						["suffixId"] = 0,
 					}, -- [1]
 					{
 						["bonusIds"] = {
@@ -21329,18 +21243,18 @@ AskMrRobotDb4 = {
 							4933, -- [3]
 							6316, -- [4]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:6316:4932:4933:1648:::|h[Heart of Azeroth]|h|r",
+						["id"] = 158075,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:6316:4932:4933:1648:::|h[Heart of Azeroth]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 158075,
+						["enchantId"] = 0,
 					}, -- [2]
 					{
 						["bonusIds"] = {
@@ -21351,7 +21265,6 @@ AskMrRobotDb4 = {
 						},
 						["link"] = "|cffa335ee|Hitem:173838:5883:::::::120:253::28:4:1502:4786:6506:4775:::|h[Nefarious Tormentor's Epaulets]|h|r",
 						["id"] = 173838,
-						["suffixId"] = 0,
 						["azerite"] = {
 							274441, -- [1]
 							317137, -- [2]
@@ -21359,15 +21272,16 @@ AskMrRobotDb4 = {
 							268599, -- [4]
 							263978, -- [5]
 						},
+						["enchantId"] = 5883,
+						["level"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["enchantId"] = 5883,
+						["suffixId"] = 0,
 					}, -- [3]
 					nil, -- [4]
 					{
@@ -21380,7 +21294,6 @@ AskMrRobotDb4 = {
 						},
 						["link"] = "|cffa335ee|Hitem:174147::::::::120:253::3:5:4822:1487:4786:6504:4775:::|h[Last Vestige of Neltharion]|h|r",
 						["id"] = 174147,
-						["suffixId"] = 0,
 						["azerite"] = {
 							279806, -- [1]
 							274441, -- [2]
@@ -21388,15 +21301,16 @@ AskMrRobotDb4 = {
 							268594, -- [4]
 							263978, -- [5]
 						},
+						["enchantId"] = 0,
+						["level"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["enchantId"] = 0,
+						["suffixId"] = 0,
 					}, -- [5]
 					{
 						["bonusIds"] = {
@@ -21407,18 +21321,18 @@ AskMrRobotDb4 = {
 							6516, -- [5]
 							6578, -- [6]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:173452::::::::120:253::55:6:6412:6513:6578:1527:4786:6516:::|h[Nefarious Tormentor's Belt]|h|r",
+						["id"] = 173452,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:173452::::::::120:253::55:6:6412:6513:6578:1527:4786:6516:::|h[Nefarious Tormentor's Belt]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 173452,
+						["enchantId"] = 0,
 					}, -- [6]
 					{
 						["bonusIds"] = {
@@ -21429,18 +21343,18 @@ AskMrRobotDb4 = {
 							6578, -- [5]
 							6579, -- [6]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:165452::::::::120:253::23:6:5845:6578:6579:6554:1577:4786:::|h[Kaldorei Archer's Legguards]|h|r",
+						["id"] = 165452,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:165452::::::::120:253::23:6:5845:6578:6579:6554:1577:4786:::|h[Kaldorei Archer's Legguards]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 165452,
+						["enchantId"] = 0,
 					}, -- [7]
 					{
 						["bonusIds"] = {
@@ -21450,18 +21364,18 @@ AskMrRobotDb4 = {
 							6515, -- [4]
 							6516, -- [5]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:173517::::::::120:253::53:5:6412:6515:6516:1517:4786:::|h[Nefarious Tormentor's Striders]|h|r",
+						["id"] = 173517,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:173517::::::::120:253::53:5:6412:6515:6516:1517:4786:::|h[Nefarious Tormentor's Striders]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 173517,
+						["enchantId"] = 0,
 					}, -- [8]
 					{
 						["bonusIds"] = {
@@ -21474,18 +21388,18 @@ AskMrRobotDb4 = {
 							6578, -- [7]
 							6579, -- [8]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:173488::::::::120:253::53:8:6412:6515:6578:6579:6476:6470:1517:4786:::|h[Nefarious Tormentor's Armwraps]|h|r",
+						["id"] = 173488,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:173488::::::::120:253::53:8:6412:6515:6578:6579:6476:6470:1517:4786:::|h[Nefarious Tormentor's Armwraps]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 173488,
+						["enchantId"] = 0,
 					}, -- [9]
 					{
 						["bonusIds"] = {
@@ -21498,32 +21412,40 @@ AskMrRobotDb4 = {
 							6578, -- [7]
 							6579, -- [8]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:173509::::::::120:253::54:8:6412:6513:6578:6579:6474:6455:1522:4786:::|h[Nefarious Tormentor's Handgrips]|h|r",
+						["id"] = 173509,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:173509::::::::120:253::54:8:6412:6513:6578:6579:6474:6455:1522:4786:::|h[Nefarious Tormentor's Handgrips]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 173509,
+						["enchantId"] = 0,
 					}, -- [10]
 					{
-						["enchantId"] = 6109,
+						["bonusIds"] = {
+							42, -- [1]
+							1487, -- [2]
+							4786, -- [3]
+							4822, -- [4]
+							6515, -- [5]
+							6516, -- [6]
+						},
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:174268:6108:::::::120:253::3:6:4822:42:6516:6515:1487:4786:::|h[Loop of Abhorrent Celerity]|h|r",
+						["id"] = 174268,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:166560:6109:::::::120:253::14::::|h[Captain's Signet of Command]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 166560,
+						["enchantId"] = 6108,
 					}, -- [11]
 					{
 						["bonusIds"] = {
@@ -21535,18 +21457,18 @@ AskMrRobotDb4 = {
 							6516, -- [6]
 							6578, -- [7]
 						},
-						["enchantId"] = 6108,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:165679:6108:168639::::::120:253::28:7:4803:4802:6578:6515:1637:4786:6516:::|h[Ornate Elun'dris Ring]|h|r",
+						["id"] = 165679,
 						["gemIds"] = {
 							168639, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:165679:6108:168639::::::120:253::28:7:4803:4802:6578:6515:1637:4786:6516:::|h[Ornate Elun'dris Ring]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 165679,
+						["enchantId"] = 6108,
 					}, -- [12]
 					{
 						["bonusIds"] = {
@@ -21557,18 +21479,18 @@ AskMrRobotDb4 = {
 							4798, -- [5]
 							5885, -- [6]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:169307::168639::::::120:253::3:6:4798:1808:40:1487:5885:4784:::|h[Vision of Demise]|h|r",
+						["id"] = 169307,
 						["gemIds"] = {
 							168639, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:169307::168639::::::120:253::3:6:4798:1808:40:1487:5885:4784:::|h[Vision of Demise]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 169307,
+						["enchantId"] = 0,
 					}, -- [13]
 					{
 						["bonusIds"] = {
@@ -21577,36 +21499,36 @@ AskMrRobotDb4 = {
 							4803, -- [3]
 							6513, -- [4]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:165667::::::::120:253::28:4:4803:6513:1637:4786:::|h[Razzashi Tooth Medallion]|h|r",
+						["id"] = 165667,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:165667::::::::120:253::28:4:4803:6513:1637:4786:::|h[Razzashi Tooth Medallion]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 165667,
+						["enchantId"] = 0,
 					}, -- [14]
 					{
 						["bonusIds"] = {
 							1472, -- [1]
-							6588, -- [2]
+							6589, -- [2]
 						},
-						["enchantId"] = 0,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffff8000|Hitem:169223::::::::120:253::11:2:6589:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
+						["id"] = 169223,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffff8000|Hitem:169223::::::::120:253::11:2:6588:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 169223,
+						["enchantId"] = 0,
 					}, -- [15]
 					{
 						["bonusIds"] = {
@@ -21619,18 +21541,18 @@ AskMrRobotDb4 = {
 							6578, -- [7]
 							6579, -- [8]
 						},
-						["enchantId"] = 5950,
+						["level"] = 0,
+						["suffixId"] = 0,
+						["link"] = "|cffa335ee|Hitem:158090:5950:::::::120:253::28:8:4803:6578:6579:6482:6470:6513:1637:4786:::|h[Ironcrest Longrifle]|h|r",
+						["id"] = 158090,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["link"] = "|cffa335ee|Hitem:158090:5950:::::::120:253::28:8:4803:6578:6579:6482:6470:6513:1637:4786:::|h[Ironcrest Longrifle]|h|r",
-						["suffixId"] = 0,
-						["level"] = 0,
 						["upgradeId"] = 0,
-						["id"] = 158090,
+						["enchantId"] = 5950,
 					}, -- [16]
 				}, -- [1]
 				{
@@ -21931,7 +21853,7 @@ AskMrRobotDb4 = {
 						["suffixId"] = 0,
 					}, -- [13]
 					{
-						["slot"] = 14,
+						["link"] = "|cffa335ee|Hitem:169321::::::::120:254::13::::|h[Highborne Compendium of Sundering]|h|r",
 						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
@@ -21939,11 +21861,11 @@ AskMrRobotDb4 = {
 							0, -- [3]
 							0, -- [4]
 						},
-						["enchantId"] = 0,
+						["slot"] = 14,
 						["id"] = 169321,
 						["level"] = 0,
 						["upgradeId"] = 0,
-						["link"] = "|cffa335ee|Hitem:169321::::::::120:254::13::::|h[Highborne Compendium of Sundering]|h|r",
+						["enchantId"] = 0,
 					}, -- [14]
 					{
 						["bonusIds"] = {
@@ -21990,7 +21912,7 @@ AskMrRobotDb4 = {
 				}, -- [2]
 				{
 					{
-						["slot"] = 1,
+						["link"] = "|cffa335ee|Hitem:171013::::::::120:255::13::::|h[Superior Bionic Bifocals]|h|r",
 						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
@@ -21998,11 +21920,11 @@ AskMrRobotDb4 = {
 							0, -- [3]
 							0, -- [4]
 						},
-						["enchantId"] = 0,
+						["slot"] = 1,
 						["id"] = 171013,
 						["level"] = 0,
 						["upgradeId"] = 0,
-						["link"] = "|cffa335ee|Hitem:171013::::::::120:255::13::::|h[Superior Bionic Bifocals]|h|r",
+						["enchantId"] = 0,
 					}, -- [1]
 					{
 						["bonusIds"] = {
@@ -22263,7 +22185,7 @@ AskMrRobotDb4 = {
 						["suffixId"] = 0,
 					}, -- [13]
 					{
-						["slot"] = 14,
+						["link"] = "|cffa335ee|Hitem:169321::::::::120:255::13::::|h[Highborne Compendium of Sundering]|h|r",
 						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
@@ -22271,11 +22193,11 @@ AskMrRobotDb4 = {
 							0, -- [3]
 							0, -- [4]
 						},
-						["enchantId"] = 0,
+						["slot"] = 14,
 						["id"] = 169321,
 						["level"] = 0,
 						["upgradeId"] = 0,
-						["link"] = "|cffa335ee|Hitem:169321::::::::120:255::13::::|h[Highborne Compendium of Sundering]|h|r",
+						["enchantId"] = 0,
 					}, -- [14]
 					{
 						["bonusIds"] = {
@@ -22326,91 +22248,86 @@ AskMrRobotDb4 = {
 					[32420] = 1,
 					[12344] = 1,
 					[21526] = 1,
-					[50402] = 1,
+					[88376] = 1,
 					[168825] = 6,
 					[19621] = 1,
-					[162571] = 1,
-					[160109] = 1,
-					[137227] = 1,
-					[162581] = 1,
+					[50402] = 1,
+					[86576] = 1,
+					[98715] = 1,
+					[116154] = 1,
 					[132517] = 1,
 					[108903] = 1,
-					[137033] = 1,
+					[98114] = 1,
 					[108907] = 1,
+					[162571] = 1,
 					[167077] = 1,
-					[151641] = 1,
 					[162580] = 1,
 					[15138] = 1,
-					[153203] = 2,
-					[162584] = 1,
 					[163929] = 1,
+					[162584] = 1,
+					[153203] = 2,
 					[29301] = 1,
 					[168804] = 1,
-					[86576] = 1,
-					[88376] = 1,
-					[116154] = 1,
-					[98114] = 1,
-					[98715] = 1,
+					[137033] = 1,
+					[162581] = 1,
+					[137227] = 1,
+					[160109] = 1,
+					[151641] = 1,
 				},
 				[-3] = {
-					[153051] = 37,
+					[153051] = 22,
 					[167738] = 347,
 					[124461] = 85,
-					[160399] = 113,
+					[152579] = 200,
+					[120945] = 208,
 					[90146] = 176,
-					[152548] = 10,
+					[123918] = 7,
 					[160502] = 111,
 					[158187] = 22,
 					[124442] = 96,
-					[120945] = 208,
-					[158188] = 15,
-					[115508] = 50,
-					[160398] = 170,
-					[168832] = 58,
-					[162461] = 5,
 					[111366] = 305,
 					[154164] = 7,
+					[124441] = 40,
 					[152542] = 70,
-					[152668] = 78,
-					[154125] = 2,
+					[158378] = 4,
 					[109118] = 34,
 					[154897] = 190,
-					[152549] = 10,
-					[158378] = 4,
-					[87399] = 31,
-					[153050] = 18,
-					[166970] = 137,
+					[152875] = 5161,
 					[124124] = 3,
-					[163569] = 34,
-					[154898] = 167,
-					[151567] = 22,
-					[109119] = 28,
-					[152577] = 14,
-					[165703] = 3,
-					[166971] = 514,
-					[160711] = 72,
-					[152875] = 3371,
-					[154899] = 177,
-					[151568] = 155,
-					[124440] = 197,
+					[87399] = 31,
 					[165948] = 11,
+					[166970] = 137,
+					[124106] = 46,
+					[151567] = 22,
+					[154898] = 167,
+					[152512] = 400,
+					[152546] = 145,
+					[174353] = 105,
+					[165703] = 3,
+					[163569] = 94,
+					[151568] = 155,
+					[109119] = 28,
+					[154899] = 177,
+					[152576] = 290,
+					[124440] = 1197,
+					[174327] = 65,
 					[169610] = 3,
 					[166846] = 716,
 					[168303] = 76,
-					[152876] = 634,
-					[174327] = 65,
+					[152876] = 605,
+					[152668] = 38,
 					[168327] = 81,
-					[152576] = 290,
-					[174328] = 1,
 					[154165] = 3,
-					[124106] = 46,
-					[152546] = 145,
-					[152877] = 370,
+					[174328] = 1,
 					[152507] = 8,
-					[124437] = 8,
-					[124441] = 40,
-					[123918] = 7,
-					[174353] = 105,
+					[153050] = 18,
+					[152577] = 14,
+					[152877] = 397,
+					[162461] = 5,
+					[168832] = 58,
+					[160398] = 170,
+					[160711] = 92,
+					[166971] = 514,
 				},
 				[8] = {
 					[65907] = 1,
@@ -22419,30 +22336,30 @@ AskMrRobotDb4 = {
 					[13382] = 1,
 					[28237] = 1,
 					[22999] = 1,
-					[40643] = 1,
+					[43300] = 1,
 					[21326] = 1,
 					[88371] = 1,
 					[35280] = 1,
-					[19290] = 1,
+					[40643] = 1,
 					[64882] = 1,
 					[65904] = 1,
 					[11122] = 1,
 					[17904] = 1,
-					[82984] = 1,
-					[32864] = 1,
-					[52019] = 1,
-					[40492] = 1,
-					[65908] = 1,
-					[14023] = 1,
-					[69210] = 1,
 					[43348] = 1,
-					[2820] = 1,
-					[65906] = 1,
-					[40601] = 1,
-					[40593] = 1,
+					[32864] = 1,
 					[140575] = 1,
+					[40492] = 1,
+					[40601] = 1,
+					[65906] = 1,
+					[65908] = 1,
+					[69210] = 1,
+					[2820] = 1,
+					[52019] = 1,
+					[82984] = 1,
+					[40593] = 1,
+					[19290] = 1,
 					[65905] = 1,
-					[43300] = 1,
+					[14023] = 1,
 				},
 				[9] = {
 					[108439] = 7,
@@ -22450,69 +22367,69 @@ AskMrRobotDb4 = {
 					[156963] = 1,
 					[158924] = 1,
 					[141351] = 1,
-					[25509] = 1,
+					[122618] = 38,
 					[30688] = 1,
-					[167077] = 2,
-					[46817] = 1,
-					[38082] = 1,
+					[5462] = 1,
+					[25509] = 1,
+					[34078] = 1,
 					[130320] = 1,
 					[69748] = 1,
-					[109585] = 2,
+					[31404] = 1,
 					[160735] = 10,
 					[158879] = 1,
-					[138815] = 1,
+					[167077] = 2,
 					[49295] = 1,
 					[161247] = 1,
 					[23192] = 1,
 					[94130] = 1,
-					[34078] = 1,
+					[138815] = 1,
 					[169943] = 4,
 					[161437] = 1,
 					[63128] = 8,
 					[91877] = 36,
-					[5462] = 1,
-					[31404] = 1,
+					[38082] = 1,
+					[46817] = 1,
 					[109584] = 1,
-					[122618] = 38,
+					[109585] = 2,
 				},
 				[5] = {
 					[137080] = 1,
 					[19896] = 1,
 					[31336] = 1,
 					[164942] = 1,
-					[168756] = 1,
+					[33016] = 1,
 					[5816] = 1,
 					[22442] = 1,
 					[19854] = 1,
 					[154174] = 1,
-					[151803] = 1,
 					[22816] = 1,
+					[86889] = 1,
 					[137043] = 1,
-					[33016] = 1,
+					[151803] = 1,
 					[151807] = 1,
-					[50049] = 1,
-					[137081] = 1,
+					[19910] = 1,
+					[19901] = 2,
 					[169334] = 7,
 					[19859] = 1,
 					[132452] = 1,
 					[141353] = 1,
-					[18713] = 1,
+					[116913] = 1,
 					[37892] = 1,
 					[21520] = 1,
 					[18715] = 1,
-					[116913] = 1,
-					[19901] = 2,
-					[19910] = 1,
+					[18713] = 1,
+					[137081] = 1,
+					[50049] = 1,
 					[144361] = 1,
-					[86889] = 1,
+					[168756] = 1,
 				},
 				[10] = {
 					[52252] = 1,
 					[103977] = 1,
 					[121837] = 1,
 					[167077] = 1,
-					[122147] = 1,
 					[146668] = 1,
+					[92677] = 2,
 					[138135] = 1,
 					[132466] = 1,
 					[118100] = 7,
@@ -22520,23 +22437,23 @@ AskMrRobotDb4 = {
 					[95567] = 1,
 					[120989] = 1,
 					[169872] = 1,
-					[121820] = 1,
-					[107277] = 1,
+					[169944] = 4,
+					[169218] = 1,
 					[139783] = 1,
 					[92665] = 1,
-					[31655] = 1,
+					[31664] = 1,
 					[21130] = 1,
-					[169218] = 1,
+					[31655] = 1,
 					[122154] = 1,
+					[94130] = 1,
 					[128513] = 1,
-					[92677] = 2,
 					[169873] = 1,
 					[18250] = 1,
-					[94130] = 1,
+					[107277] = 1,
 					[37431] = 3,
-					[31664] = 1,
+					[121820] = 1,
 					[52251] = 1,
-					[169944] = 4,
+					[122147] = 1,
 				},
 				[-1] = {
 					[117398] = 1,
@@ -22552,21 +22469,21 @@ AskMrRobotDb4 = {
 					[168632] = 1,
 					[85219] = 1,
 					[168671] = 1,
-					[151651] = 1,
+					[137034] = 1,
 					[137082] = 1,
 					[128503] = 1,
 					[116415] = 135,
-					[22440] = 1,
+					[140782] = 1,
 					[32539] = 1,
-					[15723] = 1,
-					[128453] = 1,
 					[45798] = 1,
+					[107273] = 1,
+					[128453] = 1,
 					[115463] = 1,
 					[142210] = 1,
-					[107273] = 1,
-					[140782] = 1,
+					[15723] = 1,
+					[22440] = 1,
 					[22437] = 1,
-					[137034] = 1,
+					[151651] = 1,
 				},
 				[11] = {
 					[167832] = 20,
@@ -22577,22 +22494,21 @@ AskMrRobotDb4 = {
 					[169329] = 11,
 					[169860] = 3,
 					[167012] = 1,
-					[152512] = 400,
 					[71083] = 2,
 					[169694] = 3,
 					[89906] = 3,
 					[168222] = 57,
-					[167077] = 4,
+					[81231] = 1,
 					[168633] = 1,
 					[43626] = 9,
 					[163743] = 1,
-					[152579] = 400,
+					[73410] = 1,
 					[18653] = 1,
 					[78919] = 1,
 					[22436] = 1,
+					[152579] = 200,
 					[143661] = 1,
-					[73410] = 1,
-					[81231] = 1,
+					[167077] = 4,
 				},
 				[6] = {
 					[144303] = 1,
@@ -22615,20 +22531,21 @@ AskMrRobotDb4 = {
 					[129276] = 1,
 					[132444] = 1,
 					[144259] = 1,
+					[113547] = 1,
+					[116916] = 1,
 					[71153] = 8,
-					[22443] = 1,
-					[144326] = 1,
-					[152626] = 1,
 					[116429] = 13,
-					[137064] = 1,
+					[22443] = 1,
+					[152626] = 1,
 					[86547] = 3,
 					[137382] = 1,
-					[116916] = 1,
-					[113547] = 1,
+					[137064] = 1,
+					[144326] = 1,
 				},
 			},
 		},
 		["Ghiaccioli - Sisters of Elune"] = {
+			["LastVersion"] = 86,
 			["Talents"] = {
 				[2] = "0000000",
 			},
@@ -25986,7 +25903,6 @@ AskMrRobotDb4 = {
 				["LastDiff"] = 0,
 				["LastZone"] = "Draenor",
 			},
-			["LastVersion"] = 86,
 			["Equipped"] = {
 				[2] = {
 					{
@@ -25995,8 +25911,8 @@ AskMrRobotDb4 = {
 							4785, -- [2]
 							6258, -- [3]
 						},
-						["level"] = 0,
 						["suffixId"] = 0,
+						["level"] = 0,
 						["link"] = "|cff0070dd|Hitem:173433::::::::120:63::14:3:1472:4785:6258:::|h[Vile Manipulator's Cowl]|h|r",
 						["id"] = 173433,
 						["gemIds"] = {
@@ -26015,8 +25931,8 @@ AskMrRobotDb4 = {
 							4933, -- [3]
 							4935, -- [4]
 						},
-						["level"] = 0,
 						["suffixId"] = 0,
+						["level"] = 0,
 						["link"] = "|cffe6cc80|Hitem:158075::::::::120:63:::4:4932:4933:4935:1572:::|h[Heart of Azeroth]|h|r",
 						["id"] = 158075,
 						["gemIds"] = {
@@ -26034,8 +25950,8 @@ AskMrRobotDb4 = {
 							4785, -- [2]
 							6259, -- [3]
 						},
-						["level"] = 0,
 						["suffixId"] = 0,
+						["level"] = 0,
 						["link"] = "|cff0070dd|Hitem:173435::::::::120:63::14:3:1472:4785:6259:::|h[Vile Manipulator's Mantle]|h|r",
 						["id"] = 173435,
 						["gemIds"] = {
@@ -26049,8 +25965,8 @@ AskMrRobotDb4 = {
 					}, -- [3]
 					nil, -- [4]
 					{
-						["level"] = 0,
 						["suffixId"] = 0,
+						["level"] = 0,
 						["link"] = "|cff0070dd|Hitem:170811::::::::120:63::::::|h[Mountainsage Robe]|h|r",
 						["id"] = 170811,
 						["gemIds"] = {
@@ -26069,8 +25985,8 @@ AskMrRobotDb4 = {
 							6412, -- [3]
 							6513, -- [4]
 						},
-						["level"] = 0,
 						["suffixId"] = 0,
+						["level"] = 0,
 						["link"] = "|cff0070dd|Hitem:173813::::::::120:63::14:4:6412:6513:1467:4785:::|h[Vile Manipulator's Girdle]|h|r",
 						["id"] = 173813,
 						["gemIds"] = {
@@ -26089,8 +26005,8 @@ AskMrRobotDb4 = {
 							6412, -- [3]
 							6513, -- [4]
 						},
-						["level"] = 0,
 						["suffixId"] = 0,
+						["level"] = 0,
 						["link"] = "|cff0070dd|Hitem:173467::::::::120:63::14:4:6412:6513:1467:4785:::|h[Vile Manipulator's Legwraps]|h|r",
 						["id"] = 173467,
 						["gemIds"] = {
@@ -26109,8 +26025,8 @@ AskMrRobotDb4 = {
 							6412, -- [3]
 							6513, -- [4]
 						},
-						["level"] = 0,
 						["suffixId"] = 0,
+						["level"] = 0,
 						["link"] = "|cff0070dd|Hitem:173495::::::::120:63::14:4:6412:6513:1467:4785:::|h[Vile Manipulator's Soles]|h|r",
 						["id"] = 173495,
 						["gemIds"] = {
@@ -26129,8 +26045,8 @@ AskMrRobotDb4 = {
 							6412, -- [3]
 							6515, -- [4]
 						},
-						["level"] = 0,
 						["suffixId"] = 0,
+						["level"] = 0,
 						["link"] = "|cff0070dd|Hitem:173479::::::::120:63::14:4:6412:6515:1467:4785:::|h[Vile Manipulator's Armwraps]|h|r",
 						["id"] = 173479,
 						["gemIds"] = {
@@ -26149,8 +26065,8 @@ AskMrRobotDb4 = {
 							6412, -- [3]
 							6515, -- [4]
 						},
-						["level"] = 0,
 						["suffixId"] = 0,
+						["level"] = 0,
 						["link"] = "|cff0070dd|Hitem:173432::::::::120:63::14:4:6412:6515:1467:4785:::|h[Vile Manipulator's Handwraps]|h|r",
 						["id"] = 173432,
 						["gemIds"] = {
@@ -26163,8 +26079,8 @@ AskMrRobotDb4 = {
 						["enchantId"] = 0,
 					}, -- [10]
 					{
-						["level"] = 0,
 						["suffixId"] = 0,
+						["level"] = 0,
 						["link"] = "|cff1eff00|Hitem:170642::::::::120:63::::::|h[Mountainsage Band of Destruction]|h|r",
 						["id"] = 170642,
 						["gemIds"] = {
@@ -26177,8 +26093,8 @@ AskMrRobotDb4 = {
 						["enchantId"] = 0,
 					}, -- [11]
 					{
-						["level"] = 0,
 						["suffixId"] = 0,
+						["level"] = 0,
 						["link"] = "|cff1eff00|Hitem:170643::::::::120:63::::::|h[Mountainsage Ring of Destruction]|h|r",
 						["id"] = 170643,
 						["gemIds"] = {
@@ -26191,8 +26107,8 @@ AskMrRobotDb4 = {
 						["enchantId"] = 0,
 					}, -- [12]
 					{
-						["level"] = 0,
 						["suffixId"] = 0,
+						["level"] = 0,
 						["link"] = "|cff1eff00|Hitem:170644::::::::120:63::::::|h[Mountainsage Stone of Destruction]|h|r",
 						["id"] = 170644,
 						["gemIds"] = {
@@ -26205,8 +26121,8 @@ AskMrRobotDb4 = {
 						["enchantId"] = 0,
 					}, -- [13]
 					{
-						["level"] = 0,
 						["suffixId"] = 0,
+						["level"] = 0,
 						["link"] = "|cff1eff00|Hitem:170641::::::::120:63::::::|h[Mountainsage Idol of Destruction]|h|r",
 						["id"] = 170641,
 						["gemIds"] = {
@@ -26219,8 +26135,8 @@ AskMrRobotDb4 = {
 						["enchantId"] = 0,
 					}, -- [14]
 					{
-						["level"] = 0,
 						["suffixId"] = 0,
+						["level"] = 0,
 						["link"] = "|cff1eff00|Hitem:170645::::::::120:63::::::|h[Mountainsage Cloak of Destruction]|h|r",
 						["id"] = 170645,
 						["gemIds"] = {
@@ -26233,8 +26149,8 @@ AskMrRobotDb4 = {
 						["enchantId"] = 0,
 					}, -- [15]
 					{
-						["level"] = 0,
 						["suffixId"] = 0,
+						["level"] = 0,
 						["link"] = "|cff1eff00|Hitem:170646::::::::120:63::::::|h[Mountainsage Staff]|h|r",
 						["id"] = 170646,
 						["gemIds"] = {
@@ -26315,17 +26231,17 @@ AskMrRobotDb4 = {
 					[109133] = 37,
 					[124101] = 18,
 					[34664] = 12,
-					[109123] = 170,
+					[34053] = 36,
 					[130173] = 4,
 					[130181] = 4,
 					[111671] = 13,
 					[52718] = 80,
-					[108996] = 613,
+					[109123] = 170,
 					[109131] = 26,
 					[34056] = 125,
 					[124111] = 20,
 					[76135] = 11,
-					[34053] = 36,
+					[108996] = 613,
 					[124119] = 89,
 					[151567] = 39,
 					[123919] = 65,
@@ -26345,9 +26261,9 @@ AskMrRobotDb4 = {
 					[22794] = 3,
 					[127779] = 1,
 					[86574] = 3,
+					[22448] = 10,
 					[127784] = 7,
 					[109143] = 10,
-					[22448] = 10,
 				},
 				[9] = {
 					[109126] = 800,
@@ -26374,10 +26290,10 @@ AskMrRobotDb4 = {
 					[39505] = 2,
 					[30748] = 1,
 					[18587] = 1,
-					[22248] = 1,
-					[109148] = 3,
-					[33448] = 2,
 					[21843] = 1,
+					[109148] = 3,
+					[22248] = 1,
+					[33448] = 2,
 					[9224] = 3,
 					[109124] = 139,
 				},
@@ -27897,15 +27813,15 @@ AskMrRobotDb4 = {
 								289322, -- [4]
 								263978, -- [5]
 							},
-							["inventoryId"] = 79,
-							["enchantId"] = 0,
 							["level"] = 0,
+							["enchantId"] = 0,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["inventoryId"] = 79,
 							["upgradeId"] = 0,
 							["id"] = 170521,
 						}, -- [3]
@@ -27923,15 +27839,15 @@ AskMrRobotDb4 = {
 								263962, -- [2]
 								263978, -- [3]
 							},
-							["inventoryId"] = 85,
-							["enchantId"] = 0,
 							["level"] = 0,
+							["enchantId"] = 0,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["inventoryId"] = 85,
 							["upgradeId"] = 0,
 							["id"] = 173843,
 						}, -- [5]
@@ -28224,15 +28140,15 @@ AskMrRobotDb4 = {
 								289322, -- [4]
 								263978, -- [5]
 							},
-							["inventoryId"] = 79,
-							["enchantId"] = 0,
 							["level"] = 0,
+							["enchantId"] = 0,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["inventoryId"] = 79,
 							["upgradeId"] = 0,
 							["id"] = 170521,
 						}, -- [3]
@@ -28250,15 +28166,15 @@ AskMrRobotDb4 = {
 								263962, -- [2]
 								263978, -- [3]
 							},
-							["inventoryId"] = 85,
-							["enchantId"] = 0,
 							["level"] = 0,
+							["enchantId"] = 0,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["inventoryId"] = 85,
 							["upgradeId"] = 0,
 							["id"] = 173843,
 						}, -- [5]
@@ -29502,8 +29418,8 @@ AskMrRobotDb4 = {
 					[152577] = 3,
 					[159959] = 1,
 					[153701] = 1,
-					[154897] = 19,
 					[152510] = 2,
+					[152541] = 8,
 					[154899] = 10,
 					[152508] = 26,
 					[152512] = 25,
@@ -29514,14 +29430,14 @@ AskMrRobotDb4 = {
 					[109128] = 191,
 					[152505] = 2,
 					[152509] = 6,
-					[120945] = 220,
+					[152668] = 1,
 					[152579] = 11,
 					[154164] = 11,
 					[153703] = 1,
-					[152668] = 1,
 					[152513] = 2,
+					[120945] = 220,
 					[152506] = 15,
-					[152541] = 8,
+					[154897] = 19,
 					[152576] = 36,
 					[109125] = 101,
 				},
@@ -32478,10 +32394,10 @@ AskMrRobotDb4 = {
 						["slot"] = 14,
 					}, -- [14]
 					{
-						["link"] = "|cff0070dd|Hitem:160536::::::::120:577::14::::|h[7th Legionnaire's Cloak]|h|r",
+						["enchantId"] = 0,
 						["id"] = 160536,
 						["level"] = 0,
-						["slot"] = 15,
+						["link"] = "|cff0070dd|Hitem:160536::::::::120:577::14::::|h[7th Legionnaire's Cloak]|h|r",
 						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
@@ -32490,7 +32406,7 @@ AskMrRobotDb4 = {
 							0, -- [4]
 						},
 						["upgradeId"] = 0,
-						["enchantId"] = 0,
+						["slot"] = 15,
 					}, -- [15]
 					{
 						["bonusIds"] = {
@@ -32545,40 +32461,40 @@ AskMrRobotDb4 = {
 						["link"] = "|cff0070dd|Hitem:173842::::::::120:581::14:4:1472:4785:6258:4775:::|h[Visage of the Insatiable Maw]|h|r",
 						["id"] = 173842,
 						["suffixId"] = 0,
-						["enchantId"] = 0,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["level"] = 0,
-						["upgradeId"] = 0,
 						["azerite"] = {
 							272983, -- [1]
 							263962, -- [2]
 							263978, -- [3]
 						},
-					}, -- [1]
-					{
-						["bonusIds"] = {
-							1590, -- [1]
-							4932, -- [2]
-							4933, -- [3]
-							6316, -- [4]
-						},
-						["link"] = "|cffe6cc80|Hitem:158075::::::::120:581::11:4:4932:4933:6316:1590:::|h[Heart of Azeroth]|h|r",
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["enchantId"] = 0,
-						["id"] = 158075,
 						["level"] = 0,
 						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					}, -- [1]
+					{
+						["bonusIds"] = {
+							1596, -- [1]
+							4932, -- [2]
+							4933, -- [3]
+							6316, -- [4]
+						},
+						["enchantId"] = 0,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["link"] = "|cffe6cc80|Hitem:158075::::::::120:581::11:4:4932:4933:6316:1596:::|h[Heart of Azeroth]|h|r",
 						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 158075,
 					}, -- [2]
 					{
 						["bonusIds"] = {
@@ -32590,7 +32506,13 @@ AskMrRobotDb4 = {
 						["link"] = "|cffa335ee|Hitem:170521::::::::120:581::11:4:1577:4786:5415:4775:::|h[7th Legionnaire's Leather Mantle]|h|r",
 						["id"] = 170521,
 						["suffixId"] = 0,
-						["enchantId"] = 0,
+						["azerite"] = {
+							278501, -- [1]
+							287818, -- [2]
+							266180, -- [3]
+							288973, -- [4]
+							263978, -- [5]
+						},
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
@@ -32599,13 +32521,7 @@ AskMrRobotDb4 = {
 						},
 						["level"] = 0,
 						["upgradeId"] = 0,
-						["azerite"] = {
-							278501, -- [1]
-							287818, -- [2]
-							266180, -- [3]
-							288973, -- [4]
-							263978, -- [5]
-						},
+						["enchantId"] = 0,
 					}, -- [3]
 					nil, -- [4]
 					{
@@ -32618,7 +32534,11 @@ AskMrRobotDb4 = {
 						["link"] = "|cff0070dd|Hitem:173843::::::::120:581::14:4:1472:4785:6257:4775:::|h[Vest of the Insatiable Maw]|h|r",
 						["id"] = 173843,
 						["suffixId"] = 0,
-						["enchantId"] = 0,
+						["azerite"] = {
+							278502, -- [1]
+							288973, -- [2]
+							263978, -- [3]
+						},
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
@@ -32627,11 +32547,7 @@ AskMrRobotDb4 = {
 						},
 						["level"] = 0,
 						["upgradeId"] = 0,
-						["azerite"] = {
-							278502, -- [1]
-							288973, -- [2]
-							263978, -- [3]
-						},
+						["enchantId"] = 0,
 					}, -- [5]
 					{
 						["bonusIds"] = {
@@ -32640,18 +32556,18 @@ AskMrRobotDb4 = {
 							6412, -- [3]
 							6515, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:173816::::::::120:581::14:4:6412:6515:1467:4785:::|h[Belt of the Insatiable Maw]|h|r",
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["enchantId"] = 0,
-						["id"] = 173816,
+						["link"] = "|cff0070dd|Hitem:173816::::::::120:581::14:4:6412:6515:1467:4785:::|h[Belt of the Insatiable Maw]|h|r",
+						["suffixId"] = 0,
 						["level"] = 0,
 						["upgradeId"] = 0,
-						["suffixId"] = 0,
+						["id"] = 173816,
 					}, -- [6]
 					{
 						["bonusIds"] = {
@@ -32660,18 +32576,18 @@ AskMrRobotDb4 = {
 							6412, -- [3]
 							6515, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:173484::::::::120:581::14:4:6412:6515:1467:4785:::|h[Breeches of the Insatiable Maw]|h|r",
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["enchantId"] = 0,
-						["id"] = 173484,
+						["link"] = "|cff0070dd|Hitem:173484::::::::120:581::14:4:6412:6515:1467:4785:::|h[Breeches of the Insatiable Maw]|h|r",
+						["suffixId"] = 0,
 						["level"] = 0,
 						["upgradeId"] = 0,
-						["suffixId"] = 0,
+						["id"] = 173484,
 					}, -- [7]
 					{
 						["bonusIds"] = {
@@ -32680,18 +32596,18 @@ AskMrRobotDb4 = {
 							6412, -- [3]
 							6515, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:173477::::::::120:581::14:4:6412:6515:1467:4785:::|h[Boots of the Insatiable Maw]|h|r",
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["enchantId"] = 0,
-						["id"] = 173477,
+						["link"] = "|cff0070dd|Hitem:173477::::::::120:581::14:4:6412:6515:1467:4785:::|h[Boots of the Insatiable Maw]|h|r",
+						["suffixId"] = 0,
 						["level"] = 0,
 						["upgradeId"] = 0,
-						["suffixId"] = 0,
+						["id"] = 173477,
 					}, -- [8]
 					{
 						["bonusIds"] = {
@@ -32701,18 +32617,18 @@ AskMrRobotDb4 = {
 							6578, -- [4]
 							6579, -- [5]
 						},
-						["link"] = "|cffa335ee|Hitem:174954::::::::120:581::28:5:6578:6579:4803:6515:6540:::|h[Wristwraps of the Insatiable Maw]|h|r",
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["enchantId"] = 0,
-						["id"] = 174954,
+						["link"] = "|cffa335ee|Hitem:174954::::::::120:581::28:5:6578:6579:4803:6515:6540:::|h[Wristwraps of the Insatiable Maw]|h|r",
+						["suffixId"] = 0,
 						["level"] = 0,
 						["upgradeId"] = 0,
-						["suffixId"] = 0,
+						["id"] = 174954,
 					}, -- [9]
 					{
 						["bonusIds"] = {
@@ -32721,100 +32637,100 @@ AskMrRobotDb4 = {
 							6412, -- [3]
 							6515, -- [4]
 						},
-						["link"] = "|cff0070dd|Hitem:173492::::::::120:581::14:4:6412:6515:1467:4785:::|h[Handwraps of the Insatiable Maw]|h|r",
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["enchantId"] = 0,
-						["id"] = 173492,
+						["link"] = "|cff0070dd|Hitem:173492::::::::120:581::14:4:6412:6515:1467:4785:::|h[Handwraps of the Insatiable Maw]|h|r",
+						["suffixId"] = 0,
 						["level"] = 0,
 						["upgradeId"] = 0,
-						["suffixId"] = 0,
+						["id"] = 173492,
 					}, -- [10]
 					{
 						["bonusIds"] = {
 							5805, -- [1]
 						},
-						["link"] = "|cff00ccff|Hitem:128173::::::::120:581:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["enchantId"] = 0,
-						["id"] = 128173,
+						["link"] = "|cff00ccff|Hitem:128173::::::::120:581:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
+						["suffixId"] = 0,
 						["level"] = 0,
 						["upgradeId"] = 0,
-						["suffixId"] = 0,
+						["id"] = 128173,
 					}, -- [11]
 					{
 						["bonusIds"] = {
 							4787, -- [1]
 						},
-						["link"] = "|cff1eff00|Hitem:160346::::::::120:581:512:11:1:4787:115:::|h[Honey-Artisan's Ring]|h|r",
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["enchantId"] = 0,
-						["id"] = 160346,
+						["link"] = "|cff1eff00|Hitem:160346::::::::120:581:512:11:1:4787:115:::|h[Honey-Artisan's Ring]|h|r",
+						["suffixId"] = 0,
 						["level"] = 115,
 						["upgradeId"] = 0,
-						["suffixId"] = 0,
+						["id"] = 160346,
 					}, -- [12]
 					{
 						["bonusIds"] = {
 							5817, -- [1]
 						},
-						["link"] = "|cff00ccff|Hitem:133597::::::::120:581:::1:5817:::|h[Infallible Tracking Charm]|h|r",
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["enchantId"] = 0,
-						["id"] = 133597,
+						["link"] = "|cff00ccff|Hitem:133597::::::::120:581:::1:5817:::|h[Infallible Tracking Charm]|h|r",
+						["suffixId"] = 0,
 						["level"] = 0,
 						["upgradeId"] = 0,
-						["suffixId"] = 0,
+						["id"] = 133597,
 					}, -- [13]
 					{
 						["bonusIds"] = {
 							5805, -- [1]
 						},
-						["link"] = "|cff00ccff|Hitem:122361::::::::120:581:::1:5805:::|h[Swift Hand of Justice]|h|r",
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["enchantId"] = 0,
-						["id"] = 122361,
+						["link"] = "|cff00ccff|Hitem:122361::::::::120:581:::1:5805:::|h[Swift Hand of Justice]|h|r",
+						["suffixId"] = 0,
 						["level"] = 0,
 						["upgradeId"] = 0,
-						["suffixId"] = 0,
+						["id"] = 122361,
 					}, -- [14]
 					{
-						["link"] = "|cff0070dd|Hitem:160536::::::::120:581::14::::|h[7th Legionnaire's Cloak]|h|r",
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["enchantId"] = 0,
-						["id"] = 160536,
+						["link"] = "|cff0070dd|Hitem:160536::::::::120:581::14::::|h[7th Legionnaire's Cloak]|h|r",
+						["suffixId"] = 0,
 						["level"] = 0,
 						["upgradeId"] = 0,
-						["suffixId"] = 0,
+						["id"] = 160536,
 					}, -- [15]
 					{
 						["bonusIds"] = {
@@ -32824,36 +32740,36 @@ AskMrRobotDb4 = {
 							6513, -- [4]
 							6516, -- [5]
 						},
-						["link"] = "|cff0070dd|Hitem:158079::::::::120:581::28:5:4803:6516:6513:1577:4785:::|h[Stagheart Hatchet]|h|r",
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["enchantId"] = 0,
-						["id"] = 158079,
+						["link"] = "|cff0070dd|Hitem:158079::::::::120:581::28:5:4803:6516:6513:1577:4785:::|h[Stagheart Hatchet]|h|r",
+						["suffixId"] = 0,
 						["level"] = 0,
 						["upgradeId"] = 0,
-						["suffixId"] = 0,
+						["id"] = 158079,
 					}, -- [16]
 					{
 						["bonusIds"] = {
 							1562, -- [1]
 							4786, -- [2]
 						},
-						["link"] = "|cffa335ee|Hitem:166336::::::::120:581::30:2:1562:4786:::|h[7th Legionnaire's Skullcleaver]|h|r",
+						["enchantId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["enchantId"] = 0,
-						["id"] = 166336,
+						["link"] = "|cffa335ee|Hitem:166336::::::::120:581::30:2:1562:4786:::|h[7th Legionnaire's Skullcleaver]|h|r",
+						["suffixId"] = 0,
 						["level"] = 0,
 						["upgradeId"] = 0,
-						["suffixId"] = 0,
+						["id"] = 166336,
 					}, -- [17]
 				}, -- [2]
 			},
@@ -32918,10 +32834,10 @@ AskMrRobotDb4 = {
 				[158863] = 2,
 				[21877] = 60,
 				[169420] = 1,
-				[32428] = 5,
-				[17057] = 1,
 				[21887] = 8,
+				[17057] = 1,
 				[104304] = 1,
+				[32428] = 5,
 				[32328] = 1,
 				[167738] = 6,
 				[24687] = 1,
@@ -32963,7 +32879,7 @@ AskMrRobotDb4 = {
 			},
 			["Logging"] = {
 				["LastDiff"] = 0,
-				["LastZone"] = "Pandaria",
+				["LastZone"] = "Nazjatar",
 			},
 			["Talents"] = {
 				"1111211", -- [1]
@@ -33007,19 +32923,19 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 173842,
-							["inventoryId"] = 149,
+							["level"] = 0,
 							["azerite"] = {
 								272983, -- [1]
 								263962, -- [2]
 								263978, -- [3]
 							},
-							["level"] = 0,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["inventoryId"] = 149,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						}, -- [1]
@@ -33052,7 +32968,7 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 170521,
-							["inventoryId"] = 144,
+							["level"] = 0,
 							["azerite"] = {
 								278501, -- [1]
 								287818, -- [2]
@@ -33060,13 +32976,13 @@ AskMrRobotDb4 = {
 								288973, -- [4]
 								263978, -- [5]
 							},
-							["level"] = 0,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["inventoryId"] = 144,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						}, -- [3]
@@ -33209,19 +33125,19 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 173843,
-							["inventoryId"] = 150,
+							["level"] = 0,
 							["azerite"] = {
 								278502, -- [1]
 								288973, -- [2]
 								263978, -- [3]
 							},
-							["level"] = 0,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["inventoryId"] = 150,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						},
@@ -33356,19 +33272,19 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 173842,
-							["inventoryId"] = 149,
+							["level"] = 0,
 							["azerite"] = {
 								272983, -- [1]
 								263962, -- [2]
 								263978, -- [3]
 							},
-							["level"] = 0,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["inventoryId"] = 149,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						}, -- [1]
@@ -33401,7 +33317,7 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 170521,
-							["inventoryId"] = 144,
+							["level"] = 0,
 							["azerite"] = {
 								278501, -- [1]
 								287818, -- [2]
@@ -33409,13 +33325,13 @@ AskMrRobotDb4 = {
 								288973, -- [4]
 								263978, -- [5]
 							},
-							["level"] = 0,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["inventoryId"] = 144,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						}, -- [3]
@@ -33558,19 +33474,19 @@ AskMrRobotDb4 = {
 							},
 							["suffixId"] = 0,
 							["id"] = 173843,
-							["inventoryId"] = 150,
+							["level"] = 0,
 							["azerite"] = {
 								278502, -- [1]
 								288973, -- [2]
 								263978, -- [3]
 							},
-							["level"] = 0,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["inventoryId"] = 150,
 							["upgradeId"] = 0,
 							["enchantId"] = 0,
 						},
@@ -33738,9 +33654,143 @@ AskMrRobotDb4 = {
 			},
 		},
 		["Toberd - Sisters of Elune"] = {
-			["LastVersion"] = 80,
+			["LastVersion"] = 86,
 			["Talents"] = {
 				"0000000", -- [1]
+			},
+			["Equipped"] = {
+				{
+					[6] = {
+						["bonusIds"] = {
+							3803, -- [1]
+						},
+						["suffixId"] = 0,
+						["level"] = 7,
+						["link"] = "|cffffffff|Hitem:131907::::::::12:253:512:11:1:3803:7:::|h[Unmarred Chain]|h|r",
+						["id"] = 131907,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					},
+					[7] = {
+						["bonusIds"] = {
+							3803, -- [1]
+						},
+						["suffixId"] = 0,
+						["level"] = 10,
+						["link"] = "|cffffffff|Hitem:131911::::::::12:253:512:11:1:3803:10:::|h[Padded Greaves]|h|r",
+						["id"] = 131911,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					},
+					[15] = {
+						["bonusIds"] = {
+							4768, -- [1]
+						},
+						["suffixId"] = 0,
+						["level"] = 6,
+						["link"] = "|cffffffff|Hitem:4662::::::::12:253:512:25:1:4768:6:::|h[Journeyman's Cloak]|h|r",
+						["id"] = 4662,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					},
+					[10] = {
+						["bonusIds"] = {
+							3803, -- [1]
+						},
+						["suffixId"] = 0,
+						["level"] = 8,
+						["link"] = "|cffffffff|Hitem:131908::::::::12:253:512:11:1:3803:8:::|h[Gauntlets of Splashing Water]|h|r",
+						["id"] = 131908,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					},
+					[8] = {
+						["bonusIds"] = {
+							3803, -- [1]
+						},
+						["suffixId"] = 0,
+						["level"] = 10,
+						["link"] = "|cffffffff|Hitem:131912::::::::12:253:512:11:1:3803:10:::|h[Ringing Boots]|h|r",
+						["id"] = 131912,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					},
+					[5] = {
+						["bonusIds"] = {
+							3803, -- [1]
+						},
+						["suffixId"] = 0,
+						["level"] = 8,
+						["link"] = "|cffffffff|Hitem:131909::::::::12:253:512:11:1:3803:8:::|h[Sun Pearl Chainmail]|h|r",
+						["id"] = 131909,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					},
+					[9] = {
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffffffff|Hitem:131901::::::::12:253::11::::|h[Initiate's Cuffs]|h|r",
+						["id"] = 131901,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					},
+					[16] = {
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffffffff|Hitem:73234::::::::12:253::11::::|h[Flameheart Crossbow]|h|r",
+						["id"] = 73234,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["enchantId"] = 0,
+					},
+				}, -- [1]
 			},
 			["Logging"] = {
 				["LastDiff"] = 0,
@@ -36916,13 +36966,13 @@ AskMrRobotDb4 = {
 					[38663] = 1,
 					[89112] = 200,
 					[94227] = 110,
-					[38675] = 1,
-					[38665] = 1,
 					[108309] = 9,
+					[38665] = 1,
+					[39320] = 1,
 					[94223] = 106,
 					[38674] = 1,
 					[38667] = 1,
-					[39320] = 1,
+					[38675] = 1,
 					[38668] = 1,
 					[38661] = 1,
 					[74247] = 8,
@@ -38415,10 +38465,10 @@ AskMrRobotDb4 = {
 					}, -- [3]
 					nil, -- [4]
 					{
-						["link"] = "|cff1eff00|Hitem:153940::::::::116:257::::::|h[Communal Robe]|h|r",
+						["slot"] = 5,
 						["suffixId"] = 0,
 						["level"] = 0,
-						["enchantId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153940::::::::116:257::::::|h[Communal Robe]|h|r",
 						["id"] = 153940,
 						["gemIds"] = {
 							0, -- [1]
@@ -38427,7 +38477,7 @@ AskMrRobotDb4 = {
 							0, -- [4]
 						},
 						["upgradeId"] = 0,
-						["slot"] = 5,
+						["enchantId"] = 0,
 					}, -- [5]
 					{
 						["bonusIds"] = {
@@ -38466,10 +38516,10 @@ AskMrRobotDb4 = {
 						["slot"] = 7,
 					}, -- [7]
 					{
-						["link"] = "|cff1eff00|Hitem:153936::::::::116:257::::::|h[Communal Boots]|h|r",
+						["slot"] = 8,
 						["suffixId"] = 0,
 						["level"] = 0,
-						["enchantId"] = 0,
+						["link"] = "|cff1eff00|Hitem:153936::::::::116:257::::::|h[Communal Boots]|h|r",
 						["id"] = 153936,
 						["gemIds"] = {
 							0, -- [1]
@@ -38478,7 +38528,7 @@ AskMrRobotDb4 = {
 							0, -- [4]
 						},
 						["upgradeId"] = 0,
-						["slot"] = 8,
+						["enchantId"] = 0,
 					}, -- [8]
 					{
 						["bonusIds"] = {
@@ -38608,10 +38658,10 @@ AskMrRobotDb4 = {
 						["slot"] = 15,
 					}, -- [15]
 					{
-						["link"] = "|cff0070dd|Hitem:163536::::::::116:257::11::::|h[Warmage's Spire]|h|r",
+						["slot"] = 16,
 						["suffixId"] = 0,
 						["level"] = 0,
-						["enchantId"] = 0,
+						["link"] = "|cff0070dd|Hitem:163536::::::::116:257::11::::|h[Warmage's Spire]|h|r",
 						["id"] = 163536,
 						["gemIds"] = {
 							0, -- [1]
@@ -38620,7 +38670,7 @@ AskMrRobotDb4 = {
 							0, -- [4]
 						},
 						["upgradeId"] = 0,
-						["slot"] = 16,
+						["enchantId"] = 0,
 					}, -- [16]
 				}, -- [2]
 				{
@@ -38885,7 +38935,7 @@ AskMrRobotDb4 = {
 						["slot"] = 14,
 					}, -- [14]
 					{
-						["link"] = "|cff0070dd|Hitem:160536::::::::120:258::14::::|h[7th Legionnaire's Cloak]|h|r",
+						["slot"] = 15,
 						["id"] = 160536,
 						["gemIds"] = {
 							0, -- [1]
@@ -38893,11 +38943,11 @@ AskMrRobotDb4 = {
 							0, -- [3]
 							0, -- [4]
 						},
-						["enchantId"] = 0,
+						["link"] = "|cff0070dd|Hitem:160536::::::::120:258::14::::|h[7th Legionnaire's Cloak]|h|r",
 						["suffixId"] = 0,
 						["level"] = 0,
 						["upgradeId"] = 0,
-						["slot"] = 15,
+						["enchantId"] = 0,
 					}, -- [15]
 					{
 						["bonusIds"] = {
@@ -38931,11 +38981,11 @@ AskMrRobotDb4 = {
 				[154848] = 2,
 				[159605] = 1,
 				[153943] = 1,
-				[154898] = 34,
+				[158615] = 1,
 				[152510] = 3,
 				[54443] = 4,
 				[141652] = 1,
-				[141605] = 1,
+				[154898] = 34,
 				[143785] = 4,
 				[153936] = 1,
 				[103643] = 20,
@@ -38947,7 +38997,7 @@ AskMrRobotDb4 = {
 				[155567] = 1,
 				[89112] = 17,
 				[72988] = 87,
-				[158615] = 1,
+				[141605] = 1,
 				[163852] = 2,
 				[170514] = 1,
 				[169475] = 1,
@@ -40108,9 +40158,11 @@ AskMrRobotDb4 = {
 		},
 		["Clothgar - Sisters of Elune"] = {
 			["LastVersion"] = 86,
-			["Talents"] = {
-				"3222323", -- [1]
-				[3] = "1113323",
+			["Essences"] = {
+				{
+				}, -- [1]
+				[3] = {
+				},
 			},
 			["BankItems"] = {
 				[7] = {
@@ -42558,11 +42610,9 @@ AskMrRobotDb4 = {
 				["LastDiff"] = 0,
 				["LastZone"] = "Eastern Kingdoms",
 			},
-			["Essences"] = {
-				{
-				}, -- [1]
-				[3] = {
-				},
+			["Talents"] = {
+				"3222323", -- [1]
+				[3] = "1113323",
 			},
 			["Equipped"] = {
 				{
@@ -42821,97 +42871,97 @@ AskMrRobotDb4 = {
 				}, -- [1]
 				[3] = {
 					{
-						["id"] = 45998,
-						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffffffff|Hitem:45998::::::::120:267::::::|h[Battered Jungle Hat]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 45998,
 					}, -- [1]
 					{
-						["id"] = 69863,
-						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffffffff|Hitem:69863::::::::120:267::::::|h[Golden Necklace]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 69863,
 					}, -- [2]
 					[8] = {
-						["id"] = 59,
-						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffffffff|Hitem:59::::::::120:267::::::|h[Acolyte's Shoes]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 59,
 					},
 					[16] = {
-						["id"] = 45861,
-						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffffffff|Hitem:45861::::::::120:267::::::|h[Diamond-Tipped Cane]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 45861,
 					},
 					[9] = {
-						["id"] = 69865,
-						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffffffff|Hitem:69865::::::::120:267::::::|h[Gem Studded Bracelets]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 69865,
 					},
 					[7] = {
-						["id"] = 10035,
-						["level"] = 0,
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
-						["upgradeId"] = 0,
 						["link"] = "|cffffffff|Hitem:10035::::::::120:267::::::|h[Tuxedo Pants]|h|r",
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["id"] = 10035,
 					},
 				},
 			},
 			["BankItemsAndCounts"] = {
 				[7] = {
-					[8827] = 40,
-					[19974] = 48,
-					[109223] = 200,
 					[18640] = 1,
+					[19974] = 48,
+					[8827] = 40,
+					[109223] = 200,
 				},
 				[-3] = {
 					[42253] = 3,
@@ -42963,21 +43013,21 @@ AskMrRobotDb4 = {
 					[74840] = 58,
 					[74848] = 94,
 					[39970] = 18,
-					[52178] = 80,
 					[153705] = 2,
-					[36934] = 1,
 					[89112] = 53,
+					[36934] = 1,
+					[52178] = 80,
 					[123918] = 167,
 					[52186] = 2,
 					[69237] = 29,
 					[14256] = 1,
 					[56516] = 3,
 					[12607] = 1,
-					[74849] = 6,
+					[23572] = 4,
 					[23439] = 1,
 					[74833] = 21,
-					[23572] = 4,
 					[154897] = 5,
+					[74849] = 6,
 					[74857] = 2,
 					[159959] = 3,
 					[97620] = 6,
@@ -43021,11 +43071,11 @@ AskMrRobotDb4 = {
 				[10] = {
 				},
 				[-1] = {
-					[22276] = 1,
+					[14155] = 5,
 					[22279] = 3,
 					[19028] = 2,
 					[6835] = 2,
-					[34599] = 15,
+					[22276] = 1,
 					[49667] = 1,
 					[6833] = 1,
 					[18283] = 1,
@@ -43035,7 +43085,7 @@ AskMrRobotDb4 = {
 					[4333] = 1,
 					[69864] = 1,
 					[4500] = 4,
-					[14155] = 5,
+					[34599] = 15,
 				},
 				[11] = {
 					[24368] = 8,
@@ -43369,16 +43419,17 @@ AskMrRobotDb4 = {
 						},
 					},
 					["Holy"] = {
-						[105] = {
+						[178] = {
 							["gems"] = {
+								[168640] = 1,
 							},
 							["enchants"] = {
-								[159786] = 1,
+								[168448] = 1,
 							},
 							["materials"] = {
-								[152875] = 20,
-								[152877] = 1,
-								[152876] = 8,
+								[152875] = 18,
+								[152877] = 5,
+								[152876] = 4,
 							},
 						},
 						[188] = {
@@ -43394,6 +43445,18 @@ AskMrRobotDb4 = {
 								[152876] = 4,
 							},
 						},
+						[105] = {
+							["gems"] = {
+							},
+							["enchants"] = {
+								[159786] = 1,
+							},
+							["materials"] = {
+								[152875] = 20,
+								[152877] = 1,
+								[152876] = 8,
+							},
+						},
 						[187] = {
 							["gems"] = {
 								[168640] = 1,
@@ -43401,19 +43464,6 @@ AskMrRobotDb4 = {
 							["enchants"] = {
 							},
 							["materials"] = {
-							},
-						},
-						[178] = {
-							["gems"] = {
-								[168640] = 1,
-							},
-							["enchants"] = {
-								[168448] = 1,
-							},
-							["materials"] = {
-								[152875] = 18,
-								[152877] = 5,
-								[152876] = 4,
 							},
 						},
 					},
@@ -43974,13 +44024,13 @@ AskMrRobotDb4 = {
 		["Toberd - Sisters of Elune"] = {
 			["Logging"] = {
 				["Auto"] = {
-					[2164] = {
+					[2070] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
 						[15] = false,
 					},
-					[2070] = {
+					[1861] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -43992,7 +44042,13 @@ AskMrRobotDb4 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1861] = {
+					[2164] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
+					},
+					[2217] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
