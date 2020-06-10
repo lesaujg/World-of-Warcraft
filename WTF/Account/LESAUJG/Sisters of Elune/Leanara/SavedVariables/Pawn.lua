@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0328,
-	["LastPlayerFullName"] = "Leanara-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173842,
@@ -12,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 459,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:581::11:4:4932:4933:6316:1596:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 461,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:581::11:4:4932:4933:6316:1598:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 170521,
@@ -93,6 +90,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158079::::::::120:577::28:5:4803:6516:6513:1577:4785:::|h[Stagheart Hatchet]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Leanara-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

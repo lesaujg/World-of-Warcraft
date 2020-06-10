@@ -5,9 +5,9 @@ PawnOptions = {
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		[6] = {
-			["ID"] = 131907,
-			["Level"] = 7,
-			["Link"] = "|cffffffff|Hitem:131907::::::::9:253:512:11:1:3803:7:::|h[Unmarred Chain]|h|r",
+			["ID"] = 131914,
+			["Level"] = 16,
+			["Link"] = "|cffffffff|Hitem:131914::::::::16:253:512:11:1:3803:16:::|h[Links of Grieving]|h|r",
 		},
 		[7] = {
 			["ID"] = 131911,
@@ -20,9 +20,19 @@ PawnOptions = {
 			["Link"] = "|cffffffff|Hitem:131912::::::::11:253:512:11:1:3803:10:::|h[Ringing Boots]|h|r",
 		},
 		[10] = {
-			["ID"] = 131908,
-			["Level"] = 8,
-			["Link"] = "|cffffffff|Hitem:131908::::::::9:253:512:11:1:3803:8:::|h[Gauntlets of Splashing Water]|h|r",
+			["ID"] = 131913,
+			["Level"] = 13,
+			["Link"] = "|cffffffff|Hitem:131913::::::::13:253:512:11:1:3803:13:::|h[Handgrips of Verity]|h|r",
+		},
+		[15] = {
+			["ID"] = 74586,
+			["Level"] = 15,
+			["Link"] = "|cffffffff|Hitem:74586::::::::15:253:512:11:1:3803:15:::|h[Cloak of the Fiery Skies]|h|r",
+		},
+		[16] = {
+			["ID"] = 74588,
+			["Level"] = 13,
+			["Link"] = "|cffffffff|Hitem:74588::::::::14:253:512:11:1:3803:13:::|h[Jade Crossbow]|h|r",
 		},
 		[5] = {
 			["ID"] = 131909,
@@ -30,19 +40,9 @@ PawnOptions = {
 			["Link"] = "|cffffffff|Hitem:131909::::::::9:253:512:11:1:3803:8:::|h[Sun Pearl Chainmail]|h|r",
 		},
 		[9] = {
-			["ID"] = 131901,
-			["Level"] = 2,
-			["Link"] = "|cffffffff|Hitem:131901::::::::9:253::11::::|h[Initiate's Cuffs]|h|r",
-		},
-		[16] = {
-			["ID"] = 73234,
-			["Level"] = 5,
-			["Link"] = "|cffffffff|Hitem:73234::::::::9:253::11::::|h[Flameheart Crossbow]|h|r",
-		},
-		[15] = {
-			["ID"] = 4662,
-			["Level"] = 7,
-			["Link"] = "|cffffffff|Hitem:4662::::::::9:253:512:25:1:4768:6:::|h[Journeyman's Cloak]|h|r",
+			["ID"] = 131910,
+			["Level"] = 11,
+			["Link"] = "|cffffffff|Hitem:131910::::::::13:253:512:11:1:3803:11:::|h[Bracers of the Earth Spirit]|h|r",
 		},
 	},
 	["LastKeybindingsSet"] = 1,
