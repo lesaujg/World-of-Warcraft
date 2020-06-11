@@ -12,8 +12,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 437,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:268::11:4:4932:4933:6316:1574:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 439,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:268::11:4:4932:4933:6316:1576:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 170521,
@@ -52,10 +52,10 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:173440::::::::120:268::14:4:6412:6515:1467:4785:::|h[Grips of the Insatiable Maw]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 158161,
-			["Level"] = 390,
+			["ID"] = 165678,
+			["Level"] = 405,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff0070dd|Hitem:158161::::::::120:268::26:5:4803:6516:6513:1582:4785:::|h[Spearfisher's Band]|h|r",
+			["Link"] = "|cff0070dd|Hitem:165678::::::::120:268::26:6:4803:41:6516:6513:1597:4785:::|h[Stonemason's Guild Band]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 158161,

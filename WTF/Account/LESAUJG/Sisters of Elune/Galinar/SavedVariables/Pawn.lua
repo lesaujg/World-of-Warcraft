@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0328,
-	["LastPlayerFullName"] = "Galinar-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 174258,
@@ -47,9 +44,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:157998::::::::120:66::28:8:4803:4802:6578:6579:6573:6513:1637:4786:::|h[Harbormaster Wristplates]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 163414,
-			["Level"] = 435,
-			["Link"] = "|cffa335ee|Hitem:163414::::::::120:66::28:7:5125:6578:6579:6544:6513:1627:4786:::|h[7th Legionnaire's Gauntlets]|h|r",
+			["ID"] = 157992,
+			["Level"] = 445,
+			["Link"] = "|cffa335ee|Hitem:157992::::::::120:66::28:7:4803:6578:6579:6562:6513:1637:4786:::|h[Harbormaster Gauntlets]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 174469,
@@ -92,6 +89,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:159804::::::::120:66::28:5:4803:6516:6513:1637:4786:::|h[Ironcrest Bulwark]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Galinar-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

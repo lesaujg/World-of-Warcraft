@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0328,
+	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 158041,
@@ -9,8 +12,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 479,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:104::11:4:4932:4933:6316:1616:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 485,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:104::11:4:4932:4933:6316:1622:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 158011,
@@ -34,9 +37,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158010::::::::120:104::28:5:4803:6516:6515:1617:4785:::|h[Gravethorn Breeches]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 158007,
-			["Level"] = 420,
-			["Link"] = "|cff0070dd|Hitem:158007::::::::120:104::27:9:4803:4802:6578:6579:6484:6457:6513:1612:4785:::|h[Gravethorn Striders]|h|r",
+			["ID"] = 173439,
+			["Level"] = 430,
+			["Link"] = "|cffa335ee|Hitem:173439::::::::120:104::9:5:6412:6515:6516:1487:4786:::|h[Footpads of the Insatiable Maw]|h|r",
 		}, -- [8]
 		{
 			["ID"] = 174954,
@@ -44,9 +47,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:174954::::::::120:104::28:5:6540:6513:6578:6579:4803:::|h[Wristwraps of the Insatiable Maw]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 158040,
-			["Level"] = 415,
-			["Link"] = "|cff0070dd|Hitem:158040::::::::120:104::26:5:4803:6516:6513:1607:4785:::|h[Fairweather Gloves]|h|r",
+			["ID"] = 158008,
+			["Level"] = 420,
+			["Link"] = "|cff0070dd|Hitem:158008::::::::120:104::27:7:4803:6578:6579:6564:6513:1612:4785:::|h[Gravethorn Grips]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 158152,
@@ -83,9 +86,6 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158131::::::::120:104::25:5:4803:6516:6515:1602:4785:::|h[Whisperfen Staff]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0325,
-	["LastPlayerFullName"] = "Mandelbrot-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 33243,
@@ -81,6 +78,9 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:15215:1900:::::::49:260:::1:1708:::|h[Furious Falchion of the Aurora]|h|r",
 		},
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Mandelbrot-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
