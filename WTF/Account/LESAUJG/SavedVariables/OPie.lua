@@ -148,24 +148,24 @@ OneRing_Config = {
 			},
 			["Pets"] = {
 				{
-					["id"] = 883,
 					["sliceToken"] = "ABueyhiySOd",
+					["id"] = 883,
 				}, -- [1]
 				{
-					["id"] = 83242,
 					["sliceToken"] = "ABueyhiySO3",
+					["id"] = 83242,
 				}, -- [2]
 				{
-					["id"] = 83243,
 					["sliceToken"] = "ABueyhiySOs",
+					["id"] = 83243,
 				}, -- [3]
 				{
-					["id"] = 83244,
 					["sliceToken"] = "ABueyhiySOa",
+					["id"] = 83244,
 				}, -- [4]
 				{
-					["id"] = 83245,
 					["sliceToken"] = "ABueyhiySOp",
+					["id"] = 83245,
 				}, -- [5]
 				["limit"] = "Bracnar-SistersofElune",
 				["save"] = true,
@@ -188,8 +188,8 @@ OneRing_Config = {
 					140587, -- [2]
 					["sliceToken"] = "ABueoVMF3Ht",
 				}, -- [3]
-				["save"] = true,
 				["limit"] = "Bracnar-SistersofElune",
+				["save"] = true,
 				["name"] = "Food",
 			},
 			["Vendor"] = {
@@ -213,9 +213,9 @@ OneRing_Config = {
 					49040, -- [2]
 					["sliceToken"] = "ABue3IpvlVi",
 				}, -- [4]
+				["limit"] = "Bracnar-SistersofElune",
 				["save"] = true,
 				["name"] = "Vendor",
-				["limit"] = "Bracnar-SistersofElune",
 			},
 			["OPieFlagStore"] = {
 				["StoreVersion"] = 2,
