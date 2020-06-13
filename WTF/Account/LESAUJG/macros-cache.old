@@ -53,7 +53,7 @@ END
 VER 3 00000000000000B0 "Rune of Fate" "INV_MISC_QUESTIONMARK"
 /run for i=1,GetMerchantNumItems() do if GetMerchantItemInfo(i)=="Mogu Rune of Fate" then BuyMerchantItem(i,1) break end end
 END
-VER 3 0000000000000094 "TSMPostCancel" "133784"
-/click TSMAuctioningCancelButton
-/click TSMAuctioningPostButton
+VER 3 00000000000000B5 "TSMMacro" "Achievement_Faction_GoldenLotus"
+/click TSMCancelAuctionBtn
+/click TSMAuctioningBtn
 END

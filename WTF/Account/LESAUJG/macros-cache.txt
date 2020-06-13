@@ -34,14 +34,14 @@ END
 VER 3 00000000000000AD "pet" "INV_MISC_QUESTIONMARK"
 /petfollow [button:2]
 /dismount
-/petdefensive
+/click PetActionButton9
 /petattack
 END
 VER 3 0000000000000087 "RandomMount" "INV_MISC_QUESTIONMARK"
 /petpassive
-/use [mod:ctrlshift]Grand Expedition Yak
+/use [mod:ctrl]Grand Expedition Yak
 /use [mod:shift]Traveler's Tundra Mammoth
-/use [mod:alt] Mimiron's Head
+/use [mod:alt] Mighty Caravan Brutosaur
 #showtooltip [nomod]White Ram
 /click [nobtn:2]LiteMount
 /click [btn:2]LiteMount RightButton
