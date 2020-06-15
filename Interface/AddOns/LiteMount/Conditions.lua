@@ -42,7 +42,6 @@ local L = LM_Localize
 local function UnitHasAura(unit, spellID, filter)
     local i = 1
     local auraID
-    unit = unit or "player"
     while true do
         auraID = select(10, UnitAura(unit, i, filter))
         if not auraID then
@@ -56,7 +55,7 @@ local function UnitHasAura(unit, spellID, filter)
 end
 
 -- If any condition starts with "no" we're screwed
--- ":args" functions take a fixed set of arguments rather than 0 or one with / separators
+-- ":args" functions take a fixed set of arguments rather using / for OR
 
 local CONDITIONS = { }
 
@@ -71,6 +70,8 @@ CONDITIONS["aura"] =
         if not v then
             return
         end
+
+        unit = unit or "player"
 
         if UnitHasAura(unit, v) or UnitHasAura(unit, v, "HARMFUL") then
             return true
@@ -135,7 +136,7 @@ CONDITIONS["draw:args"] =
             for i = 1,x do cond.deck[i] = true end
             for i = x+1,y do cond.deck[i] = false end
         end
-        if cond.deckIndex > #cond.deck then 
+        if cond.deckIndex > #cond.deck then
             -- shuffle
             for i = #cond.deck, 2, -1 do
                 local j = math.random(i)
@@ -158,7 +159,7 @@ CONDITIONS["equipped"] =
             return true
         end
 
-        local v = tonumber(v) or v
+        v = tonumber(v) or v
         if IsEquippedItem(v) then
             return true
         end
@@ -176,7 +177,7 @@ CONDITIONS["exists"] =
 
 -- Check for an extraactionbutton, optionally with a specific spell
 CONDITIONS["extra"] =
-    function (cond, v)
+    function (cond, unit, v)
         if HasExtraActionBar() and HasAction(169) then
             if v then
                 local aType, aID = GetActionInfo(169)

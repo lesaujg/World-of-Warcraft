@@ -2,7 +2,7 @@ local L		= DBM_GUI_L
 local CL	= DBM_CORE_L
 
 --Hard code STANDARD_TEXT_FONT since skinning mods like to taint it (or worse, set it to nil, wtf?)
-local standardFont = STANDARD_TEXT_FONT
+local standardFont
 if LOCALE_koKR then
 	standardFont = "Fonts\\2002.TTF"
 elseif LOCALE_zhCN then
@@ -17,7 +17,7 @@ end
 
 local RaidWarningPanel = DBM_GUI_Frame:CreateNewPanel(L.Tab_RaidWarning, "option")
 
-local raidwarnoptions = RaidWarningPanel:CreateArea(L.RaidWarning_Header, 375)
+local raidwarnoptions = RaidWarningPanel:CreateArea(L.RaidWarning_Header)
 
 raidwarnoptions:CreateCheckButton(L.ShowWarningsInChat, true, nil, "ShowWarningsInChat")
 raidwarnoptions:CreateCheckButton(L.WarningIconLeft, true, nil, "WarningIconLeft")
@@ -149,7 +149,7 @@ movemebutton:SetHighlightFontObject(GameFontNormalSmall)
 movemebutton:SetScript("OnClick", function() DBM:MoveWarning() end)
 
 --Raid Warning Colors
-local raidwarncolors = RaidWarningPanel:CreateArea(L.RaidWarnColors, 150)
+local raidwarncolors = RaidWarningPanel:CreateArea(L.RaidWarnColors)
 
 local color1 = raidwarncolors:CreateColorSelect(64)
 local color2 = raidwarncolors:CreateColorSelect(64)
@@ -163,6 +163,11 @@ local color1reset = raidwarncolors:CreateButton(L.Reset, 60, 10, nil, GameFontNo
 local color2reset = raidwarncolors:CreateButton(L.Reset, 60, 10, nil, GameFontNormalSmall)
 local color3reset = raidwarncolors:CreateButton(L.Reset, 60, 10, nil, GameFontNormalSmall)
 local color4reset = raidwarncolors:CreateButton(L.Reset, 60, 10, nil, GameFontNormalSmall)
+
+color1.myheight = 84
+color2.myheight = 0
+color3.myheight = 0
+color4.myheight = 0
 
 color1:SetPoint("TOPLEFT", 30, -10)
 color2:SetPoint("TOPLEFT", color1, "TOPRIGHT", 30, 0)
@@ -190,7 +195,7 @@ local function UpdateColorFrames(color, text, rset, id)
 	color:SetScript("OnColorSelect", UpdateColor)
 	color:SetColorRGB(DBM.Options.WarningColors[id].r, DBM.Options.WarningColors[id].g, DBM.Options.WarningColors[id].b)
 	text:SetPoint("TOPLEFT", color, "BOTTOMLEFT", 3, -10)
-	text:SetJustifyH("CENTER")
+	text.myheight = 0
 	rset:SetPoint("TOP", text, "BOTTOM", 0, -5)
 	rset:SetScript("OnClick", ResetColor(id, color))
 end

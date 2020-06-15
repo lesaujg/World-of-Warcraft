@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2375, "DBM-Nyalotha", nil, 1180)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20200524143937")
+mod:SetRevision("20200612160310")
 mod:SetCreatureID(158041)
 mod:SetEncounterID(2344)
 mod:SetZone()
@@ -14,7 +14,7 @@ mod:RegisterCombat("combat")
 
 mod:RegisterEventsInCombat(
 	"SPELL_CAST_START 311176 316711 310184 310134 310130 317292 310331 315772 309698 310042 313400 308885 317066 319349 319350 319351 316970 318449 312782 316463 318971 313611",
-	"SPELL_CAST_SUCCESS 315927 319257 317102 317066 316970 319349 319350 319351 318460 312866 318741",
+	"SPELL_CAST_SUCCESS 315927 319257 317102 317066 316970 319349 319350 319351 318460 312866 318741 318763",
 	"SPELL_SUMMON 318091",
 	"SPELL_AURA_APPLIED 313334 308996 309991 313184 316541 316542 313793 315709 315710 312155 318196 318459 319309 319015 317112 319346 316711 318714 313960",
 	"SPELL_AURA_APPLIED_DOSE 313184 319309",
@@ -98,7 +98,7 @@ local specWarnCollapsingMindscape			= mod:NewSpecialWarningMoveTo(317292, nil, n
 local specWarnMindgrasp						= mod:NewSpecialWarningSpell(315772, nil, nil, nil, 2, 2)
 local specWarnParanoia						= mod:NewSpecialWarningMoveTo(309980, nil, nil, nil, 1, 2)
 local yellParanoia							= mod:NewShortYell(309980)
-local yellParanoiaRepeater					= mod:NewPosYell(309980, DBM_CORE_L.AUTO_YELL_ANNOUNCE_TEXT.shortyell)
+local yellParanoiaRepeater					= mod:NewIconRepeatYell(309980, DBM_CORE_L.AUTO_YELL_ANNOUNCE_TEXT.shortyell)--using custom yell text "%s" because of custom needs (it has to use not only icons but two asci emoji
 local specWarnEternalTorment				= mod:NewSpecialWarningCount(318449, nil, 311383, nil, 2, 2)
 ----Basher Tentacle
 local specWarnBasherTentacle				= mod:NewSpecialWarningSwitch("ej21286", "-Healer", nil, 2, 1, 2)
@@ -183,6 +183,7 @@ mod:AddInfoFrameOption(307831, true)
 mod:AddSetIconOption("SetIconOnCorruptor", "ej21441", true, true, {1, 2, 3, 4})
 mod:AddSetIconOption("SetIconOnHarvester", "ej21308", true, true, {1, 2, 3, 4})
 mod:AddBoolOption("ArrowOnGlare", true)
+mod:AddBoolOption("HideDead", true)
 mod:AddMiscLine(DBM_CORE_L.OPTION_CATEGORY_DROPDOWNS)
 mod:AddDropdownOption("InterruptBehavior", {"Four", "Five", "Six", "NoReset"}, "Five", "misc")
 
@@ -428,7 +429,7 @@ end
 
 local updateInfoFrame
 do
-	local floor, tsort = math.floor, table.sort
+	local twipe, tsort = table.wipe, table.sort
 	local lines = {}
 	local sortedLines = {}
 	local tempLines = {}
@@ -440,13 +441,13 @@ do
 		sortedLines[#sortedLines + 1] = key
 	end
 	updateInfoFrame = function()
-		table.wipe(lines)
-		table.wipe(sortedLines)
-		table.wipe(tempLines)
-		table.wipe(tempLinesSorted)
+		twipe(lines)
+		twipe(sortedLines)
+		twipe(tempLines)
+		twipe(tempLinesSorted)
 		--Build Sanity Table
 		for uId in DBM:GetGroupMembers() do
-			if select(4, UnitPosition(uId)) == currentMapId then
+			if select(4, UnitPosition(uId)) == currentMapId and (difficultyName == "mythic" or not mod.Options.HideDead or not UnitIsDeadOrGhost(uId)) then
 				local unitName = DBM:GetUnitFullName(uId)
 				local count = UnitPower(uId, ALTERNATE_POWER_INDEX)
 				tempLines[unitName] = count
@@ -462,12 +463,6 @@ do
 		end
 		return lines, sortedLines
 	end
-end
-
---/run DBM:GetModByName("2375"):Test()
-function mod:Test()
-	specWarnStupefyingGlare:Show(1)
-	warnStupefyingGlareSoon:Countdown(10, 5)
 end
 
 function mod:OnCombatStart(delay)
@@ -788,7 +783,7 @@ function mod:SPELL_CAST_SUCCESS(args)
 		timerHarvestThoughtsCD:Start(30.2, args.sourceGUID)
 	elseif spellId == 316970 or spellId == 319349 or spellId == 319350 or spellId == 319351 then
 		self.vb.cleansingActive = self.vb.cleansingActive - 1
-	elseif spellId == 318741 then--Neck Used
+	elseif spellId == 318741 or spellId == 318763 then--Neck Used
 		neckAvailable[args.sourceName] = false
 	elseif spellId == 318460 then
 		self.vb.annihilateCastCount = self.vb.annihilateCastCount + 1
@@ -873,11 +868,11 @@ function mod:SPELL_AURA_APPLIED(args)
 			elseif icon == 10 then
 				icon = "(•_•)"
 			end
-			if ParanoiaTargets[#ParanoiaTargets-1] == UnitName("player") then
+			if ParanoiaTargets[#ParanoiaTargets-1] == playerName then
 				specWarnParanoia:Show(ParanoiaTargets[#ParanoiaTargets])
 				specWarnParanoia:Play("gather")
 				playerIsInPair = true
-			elseif ParanoiaTargets[#ParanoiaTargets] == UnitName("player") then
+			elseif ParanoiaTargets[#ParanoiaTargets] == playerName then
 				specWarnParanoia:Show(ParanoiaTargets[#ParanoiaTargets-1])
 				specWarnParanoia:Play("gather")
 				playerIsInPair = true
@@ -925,7 +920,6 @@ function mod:SPELL_AURA_APPLIED(args)
 			specWarnEventHorizon:Show()
 			specWarnEventHorizon:Play("defensive")
 		else
-			local uId = DBM:GetRaidUnitId(args.destName)
 			if self:IsTank() then
 				specWarnEventHorizonSwap:Show(args.destName)
 				specWarnEventHorizonSwap:Play("tauntboss")

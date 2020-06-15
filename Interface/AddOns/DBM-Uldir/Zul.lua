@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2195, "DBM-Uldir", nil, 1031)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20200524143937")
+mod:SetRevision("20200610172832")
 mod:SetCreatureID(138967)
 mod:SetEncounterID(2145)
 mod:DisableESCombatDetection()--ES fires moment you throw out CC, so it can't be trusted for combatstart
@@ -107,7 +107,7 @@ local corruptedBloodTarget = {}
 
 local updateInfoFrame
 do
-	local floor, tsort = math.floor, table.sort
+	local twipe, tsort = table.wipe, table.sort
 	local lines = {}
 	local tempLines = {}
 	local tempLinesSorted = {}
@@ -119,10 +119,10 @@ do
 		sortedLines[#sortedLines + 1] = key
 	end
 	updateInfoFrame = function()
-		table.wipe(lines)
-		table.wipe(tempLines)
-		table.wipe(tempLinesSorted)
-		table.wipe(sortedLines)
+		twipe(lines)
+		twipe(tempLines)
+		twipe(tempLinesSorted)
+		twipe(sortedLines)
 		--Boss Powers first
 		for i = 1, 5 do
 			local uId = "boss"..i
@@ -143,7 +143,7 @@ do
 				local uId = DBM:GetRaidUnitId(name)
 				local spellName, _, count = DBM:UnitDebuff(uId, 274195)
 				if spellName and count then
-					local unitName = UnitName(uId)
+					local unitName = DBM:GetUnitFullName(uId)
 					tempLines[unitName] = count
 					tempLinesSorted[#tempLinesSorted + 1] = unitName
 				end

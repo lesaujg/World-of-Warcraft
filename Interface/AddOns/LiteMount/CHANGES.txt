@@ -1,57 +1,32 @@
-tag 8386ca8c5a685aa1326b99327e373c890ca2d3b8 8.3.8
+tag 81935d3021f80d336333b4636f171140c1145a6d 8.3.10
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Thu May 28 18:16:29 2020 +1000
+Date:	Mon Jun 8 20:55:22 2020 +1000
 
-LiteMount 8.3.8
+LiteMount 8.3.10
+ - try to detect the in-combat druid travel form
+ - fix URL to advanced options page (thanks nlopez)
 
- - stop the "Use" action from equipping items
-
- - allow conditions to use @unit in the same clause
-
- - the following conditions now use @unit, default is "player"
-   [aura]
-   [channeling]
-   [class]
-   [combat]
-   [dead]
-   [faction]
-   [name]
-   [pet]
-   [pvp]
-   [race]
-   [role]
-   [sex]
-
- - the following condtions now only use @unit instead of a unit arg
-
-   [exists] - default is "target"
-   [harm] - default is "target"
-   [help] - default is "target"
-   [party] - default is "target"
-   [raid] - default is "target"
-   [sameunit] - no longer takes 2 args, only 1 which is compared to @unit
-
-commit 669c3320a6c5075d36974be6f2b6b6d441840192
+commit fb2d02863375d6cc8b36fbb216c5394c2d403383
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu May 28 18:15:17 2020 +1000
+Date:   Mon Jun 8 20:54:35 2020 +1000
 
-    Make [sameunit] only take 1 arg and use @unit
+    Try to detect the bad 'in combat' druid travel form
 
-commit 20d7c39fa1bc9149330ae20adae36072e01c1a73
+commit a39a4b5789b9b67c89dbe7a93bf601358c27298f
+Author: Nick Lopez <20211302+nlopez@users.noreply.github.com>
+Date:   Sun Jun 7 19:35:14 2020 +0000
+
+    Fix advanced options link
+
+commit 433b4d50da0b07b90db2c77814130059cf93f40a
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Tue May 26 22:46:22 2020 +1000
+Date:   Fri Jun 5 09:42:51 2020 +1000
 
-    Make unit-base conditions obey @unit in the same [condition]
+    Minor cleanup to aura code
 
-commit bcc6142c9e01193b2bdb95a12ba6054f9e83d9c7
+commit bcd7c24886de0709faeb2a3810de4400a8b26f2a
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon May 18 08:58:00 2020 +1000
+Date:   Fri Jun 5 09:40:57 2020 +1000
 
-    Stop items from equipping with Use
-
-commit c451854e415e901df05914aac9c242f4826407b5
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sun Apr 19 10:16:09 2020 +1000
-
-    Properly record instances
+    Remove old UnitAura compabilitiblity from Ghost Wolf
 

@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2351, "DBM-EternalPalace", nil, 1179)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20200524143937")
+mod:SetRevision("20200610150404")
 mod:SetCreatureID(152128)
 mod:SetEncounterID(2303)
 mod:SetZone()
@@ -63,7 +63,7 @@ local timerArcingCurrentCD					= mod:NewCDCountTimer(30.1, 295825, nil, nil, nil
 local timerCalloftheTenderCD				= mod:NewCDCountTimer(35, 305057, nil, nil, nil, 1, nil, DBM_CORE_L.MYTHIC_ICON, nil, 2, 4)--30.4-42
 --Transition
 local timerMassiveIncubator					= mod:NewCastTimer(20, 298548, nil, nil, nil, 4, nil, DBM_CORE_L.INTERRUPT_ICON, nil, 1, 4)--was 45, is 20 now
-mod:AddTimerLine(DBM_ADDS)
+mod:AddTimerLine(DBM_CORE_L.ADDS)
 local timerAmnioticEruption					= mod:NewCastTimer(5, 298465, nil, nil, nil, 2, nil, DBM_CORE_L.TANK_ICON)
 local timerAquaLanceCD						= mod:NewCDTimer(25.5, 295779, nil, nil, nil, 3)
 local timerShockingLightningCD				= mod:NewCDTimer(4.8, 295818, nil, false, nil, 3)
@@ -289,7 +289,7 @@ end
 
 --"<216.58 17:04:01> [UNIT_SPELLCAST_SUCCEEDED] Orgozoa(??) -Absorb Fluids- [[boss1:Cast-3-3198-2164-287-298689-0041D5E741:298689]]", -- [6915]
 --"<236.77 17:04:22> [UNIT_SPELLCAST_START] Orgozoa(??) - Massive Incubator - 45s [[boss1:Cast-3-3198-2164-287-298548-005955E755:298548]]", -- [7466]
-function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, spellId)
+function mod:UNIT_SPELLCAST_SUCCEEDED(_, _, spellId)
 	if spellId == 298689 then--Absorb Fluids
 		self.vb.phase = 2
 		self.vb.addCount = 0
