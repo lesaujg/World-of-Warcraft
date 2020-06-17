@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0328,
+	["LastPlayerFullName"] = "Herbinator-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		[8] = {
 			["ID"] = 43,
@@ -18,9 +21,6 @@ PawnOptions = {
 			["Link"] = "|cffffffff|Hitem:44::::::::1:70::::::|h[Squire's Pants]|h|r",
 		},
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Herbinator-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

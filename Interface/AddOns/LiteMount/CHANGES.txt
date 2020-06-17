@@ -1,32 +1,13 @@
-tag 81935d3021f80d336333b4636f171140c1145a6d 8.3.10
+tag d879e5f3d3ba80822c904ba3b1f1364239f98c9c 8.3.11
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Mon Jun 8 20:55:22 2020 +1000
+Date:	Mon Jun 15 10:38:54 2020 +1000
 
-LiteMount 8.3.10
- - try to detect the in-combat druid travel form
- - fix URL to advanced options page (thanks nlopez)
+LiteMount 8.3.11
+Druid forms fix
 
-commit fb2d02863375d6cc8b36fbb216c5394c2d403383
+commit 9ec92ee958fca6cc0b54741c15d4ea8f0d3aa64f
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Jun 8 20:54:35 2020 +1000
+Date:   Mon Jun 15 10:37:32 2020 +1000
 
-    Try to detect the bad 'in combat' druid travel form
-
-commit a39a4b5789b9b67c89dbe7a93bf601358c27298f
-Author: Nick Lopez <20211302+nlopez@users.noreply.github.com>
-Date:   Sun Jun 7 19:35:14 2020 +0000
-
-    Fix advanced options link
-
-commit 433b4d50da0b07b90db2c77814130059cf93f40a
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Jun 5 09:42:51 2020 +1000
-
-    Minor cleanup to aura code
-
-commit bcd7c24886de0709faeb2a3810de4400a8b26f2a
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Jun 5 09:40:57 2020 +1000
-
-    Remove old UnitAura compabilitiblity from Ghost Wolf
+    Try to repair druid form saving
 
