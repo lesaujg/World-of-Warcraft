@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0328,
-	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 158041,
@@ -12,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 487,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:104::11:4:4932:4933:6316:1624:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 489,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:104::11:4:4932:4933:6316:1626:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 158011,
@@ -81,11 +78,14 @@ PawnOptions = {
 			["Link"] = "|cffff8000|Hitem:169223::::::::120:104::11:1:6272:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 158131,
-			["Level"] = 410,
-			["Link"] = "|cff0070dd|Hitem:158131::::::::120:104::25:5:4803:6516:6515:1602:4785:::|h[Whisperfen Staff]|h|r",
+			["ID"] = 163885,
+			["Level"] = 440,
+			["Link"] = "|cffa335ee|Hitem:163885::::::::120:104::28:5:5125:6516:6515:1632:4786:::|h[7th Legionnaire's Halberd]|h|r",
 		}, -- [16]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
