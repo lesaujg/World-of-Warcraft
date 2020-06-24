@@ -70,10 +70,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:174044::::::::120:253::5:4:4823:6515:1502:4786:::|h[Humming Black Dragonscale]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 169307,
-			["Level"] = 455,
+			["ID"] = 174044,
+			["Level"] = 460,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cffa335ee|Hitem:169307::168639::::::120:253::3:6:4798:1808:40:1487:5885:4784:::|h[Vision of Demise]|h|r",
+			["Link"] = "|cffa335ee|Hitem:174044::::::::120:255::5:4:4823:6515:1502:4786:::|h[Humming Black Dragonscale]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 169223,
@@ -81,9 +81,9 @@ PawnOptions = {
 			["Link"] = "|cffff8000|Hitem:169223::::::::120:253::11:2:6286:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 158090,
-			["Level"] = 445,
-			["Link"] = "|cffa335ee|Hitem:158090::::::::120:253::28:8:4803:6578:6579:6482:6470:6513:1637:4786:::|h[Ironcrest Longrifle]|h|r",
+			["ID"] = 159643,
+			["Level"] = 460,
+			["Link"] = "|cffa335ee|Hitem:159643::::::::120:253::35:7:5008:6578:6579:6544:6513:1632:4786:::|h[Crossbow of Forgotten Majesty]|h|r",
 		}, -- [16]
 	},
 	["LastKeybindingsSet"] = 1,
