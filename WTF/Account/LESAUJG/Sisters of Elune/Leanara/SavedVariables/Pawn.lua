@@ -9,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 467,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:581::11:4:4932:4933:6316:1604:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 471,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:581::11:4:4932:4933:6316:1608:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 170521,
@@ -49,10 +49,10 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:173492::::::::120:581::14:4:6412:6515:1467:4785:::|h[Handwraps of the Insatiable Maw]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 128173,
-			["Level"] = 284,
+			["ID"] = 165683,
+			["Level"] = 390,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:128173::::::::119:581:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
+			["Link"] = "|cff0070dd|Hitem:165683::::::::120:581::28:5:4803:6516:6513:1582:4785:::|h[Seal of Dath'Remar]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 128173,
