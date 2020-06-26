@@ -49,10 +49,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:173509::::::::120:255::54:8:6412:6513:6578:6579:6474:6455:1522:4786:::|h[Nefarious Tormentor's Handgrips]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 165679,
-			["Level"] = 445,
+			["ID"] = 174530,
+			["Level"] = 460,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cffa335ee|Hitem:165679::::::::120:253::28:8:4803:4802:6578:6579:6537:6515:1637:4786:::|h[Ornate Elun'dris Ring]|h|r",
+			["Link"] = "|cffa335ee|Hitem:174530:6108:168639::::::120:253::5:6:4823:1808:6516:6515:1502:4786:::|h[Ring of Collective Consciousness]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 165679,

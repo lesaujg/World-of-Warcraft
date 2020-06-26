@@ -26,11 +26,13 @@ SkadaDB = {
 	["profiles"] = {
 		["Default"] = {
 			["modeclicks"] = {
-				["Damage"] = 1,
+				["Holy power gained"] = 1,
+				["Damage"] = 2,
 			},
 			["windows"] = {
 				{
-					["y"] = -223.6132202148438,
+					["set"] = 1,
+					["y"] = -223.6131134033203,
 					["point"] = "LEFT",
 					["mode"] = "Damage",
 					["barwidth"] = 251.880035400391,
