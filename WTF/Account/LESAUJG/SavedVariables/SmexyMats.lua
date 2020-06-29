@@ -34,12 +34,16 @@ SmexyMatsDB = {
 				["Fishing"] = {
 				},
 				["Mining"] = {
+					["Palani"] = {
+					},
 				},
 				["Jewelcrafting"] = {
 				},
 				["Cooking"] = {
 				},
 				["Herbalism"] = {
+					["Palani"] = {
+					},
 				},
 				["Archaeology"] = {
 				},
