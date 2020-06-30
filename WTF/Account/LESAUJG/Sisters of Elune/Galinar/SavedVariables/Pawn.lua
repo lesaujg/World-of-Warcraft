@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0328,
-	["LastPlayerFullName"] = "Galinar-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 174258,
@@ -12,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 503,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:66::11:4:4932:4933:6316:1640:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 505,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:66::11:4:4932:4933:6316:1642:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 158060,
@@ -92,6 +89,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:159804::::::::120:66::28:5:4803:6516:6513:1637:4786:::|h[Ironcrest Bulwark]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Galinar-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

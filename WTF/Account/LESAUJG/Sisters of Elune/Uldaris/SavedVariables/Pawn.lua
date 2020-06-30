@@ -1,16 +1,19 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0328,
+	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 158041,
-			["Level"] = 435,
-			["Link"] = "|cffa335ee|Hitem:158041::::::::120:104::28:4:1622:4786:6502:4775:::|h[Fairweather Helm]|h|r",
+			["Level"] = 450,
+			["Link"] = "|cffa335ee|Hitem:158041::::::::120:104::28:4:1637:4786:6505:4775:::|h[Fairweather Helm]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 489,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:104::11:4:4932:4933:6316:1626:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 491,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:104::11:4:4932:4933:6316:1628:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 158011,
@@ -29,9 +32,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:173815::::::::120:104::29:6:6412:4803:6515:6516:1482:4785:::|h[Girdle of the Insatiable Maw]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 158010,
-			["Level"] = 425,
-			["Link"] = "|cff0070dd|Hitem:158010::::::::120:104::28:5:4803:6516:6515:1617:4785:::|h[Gravethorn Breeches]|h|r",
+			["ID"] = 163266,
+			["Level"] = 445,
+			["Link"] = "|cffa335ee|Hitem:163266::::::::120:104::28:7:5125:4802:41:6516:6513:1637:4786:::|h[7th Legionnaire's Britches]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 173439,
@@ -49,10 +52,10 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158008::::::::120:104::27:7:4803:6578:6579:6564:6513:1612:4785:::|h[Gravethorn Grips]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 158152,
-			["Level"] = 415,
+			["ID"] = 165680,
+			["Level"] = 440,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff0070dd|Hitem:158152::::::::120:104::26:5:4803:6516:6515:1607:4785:::|h[Golden Empire Signet]|h|r",
+			["Link"] = "|cffa335ee|Hitem:165680::::::::120:104::28:6:4803:42:6516:6513:1632:4786:::|h[Igneous Winterskorn Loop]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 158152,
@@ -83,9 +86,6 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163885::::::::120:104::28:5:5125:6516:6515:1632:4786:::|h[7th Legionnaire's Halberd]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
