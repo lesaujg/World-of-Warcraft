@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0328,
+	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 155887,
@@ -30,8 +33,8 @@ PawnOptions = {
 		}, -- [6]
 		{
 			["ID"] = 173817,
-			["Level"] = 460,
-			["Link"] = "|cffa335ee|Hitem:173817::::::::120:253::53:5:6412:6513:6516:1517:4786:::|h[Nefarious Tormentor's Trousers]|h|r",
+			["Level"] = 470,
+			["Link"] = "|cffa335ee|Hitem:173817::::::::120:253::55:6:6412:6515:6578:1527:4786:6516:::|h[Nefarious Tormentor's Trousers]|h|r",
 		}, -- [7]
 		{
 			["ID"] = 173497,
@@ -83,9 +86,7 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:159643::::::::120:253::35:7:5008:6578:6579:6544:6513:1632:4786:::|h[Crossbow of Forgotten Majesty]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -122,7 +123,6 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",
