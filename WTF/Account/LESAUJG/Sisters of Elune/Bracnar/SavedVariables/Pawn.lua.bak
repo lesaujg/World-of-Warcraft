@@ -19,9 +19,9 @@ PawnOptions = {
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 165448,
-			["Level"] = 465,
-			["Link"] = "|cffa335ee|Hitem:165448::::::::120:255::23:5:5845:1577:4786:6507:4775:::|h[Kaldorei Archer's Chainmail]|h|r",
+			["ID"] = 174147,
+			["Level"] = 475,
+			["Link"] = "|cffa335ee|Hitem:174147::::::::120:253::5:5:4823:1502:4786:6507:4775:::|h[Last Vestige of Neltharion]|h|r",
 		}, -- [5]
 		{
 			["ID"] = 173452,

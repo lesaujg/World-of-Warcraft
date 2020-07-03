@@ -22,9 +22,9 @@ PawnOptions = {
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 165448,
-			["Level"] = 465,
-			["Link"] = "|cffa335ee|Hitem:165448::::::::120:255::23:5:5845:1577:4786:6507:4775:::|h[Kaldorei Archer's Chainmail]|h|r",
+			["ID"] = 174147,
+			["Level"] = 475,
+			["Link"] = "|cffa335ee|Hitem:174147::::::::120:253::5:5:4823:1502:4786:6507:4775:::|h[Last Vestige of Neltharion]|h|r",
 		}, -- [5]
 		{
 			["ID"] = 173452,
@@ -58,10 +58,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:174530:6108:168639::::::120:253::5:6:4823:1808:6516:6515:1502:4786:::|h[Ring of Collective Consciousness]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 165679,
-			["Level"] = 445,
+			["ID"] = 174530,
+			["Level"] = 460,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cffa335ee|Hitem:165679::168639::::::120:253::28:8:4803:4802:6578:6579:6537:6515:1637:4786:::|h[Ornate Elun'dris Ring]|h|r",
+			["Link"] = "|cffa335ee|Hitem:174530:6108:168639::::::120:254::5:6:4823:1808:6516:6515:1502:4786:::|h[Ring of Collective Consciousness]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 174044,
