@@ -1,13 +1,26 @@
-tag d879e5f3d3ba80822c904ba3b1f1364239f98c9c 8.3.11
+tag a18afa31658a400170c1af9525d8f5d650313bd9 8.3.12
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Mon Jun 15 10:38:54 2020 +1000
+Date:	Fri Jul 3 14:30:04 2020 +1000
 
-LiteMount 8.3.11
-Druid forms fix
+LiteMount 8.3.12
+ - Fix ELSEIF and ELSE
+ - add [difficulty] condition
 
-commit 9ec92ee958fca6cc0b54741c15d4ea8f0d3aa64f
+commit 3d2ebd1d76f43cf1b165333e01dd9612b73dfca8
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Jun 15 10:37:32 2020 +1000
+Date:   Fri Jul 3 14:23:20 2020 +1000
 
-    Try to repair druid form saving
+    Fix ELSEIF and ELSE flow control actions.
+
+commit d47c4b61d7d7fef20bc2a889100f1986345729ac
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Sat Jun 27 21:23:44 2020 +1000
+
+    Switch [dead] back to player by default
+
+commit 77555a424bd63745f03b0b316d16b453e72a2464
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Sat Jun 27 20:26:26 2020 +1000
+
+    Add [difficulty] condition
 

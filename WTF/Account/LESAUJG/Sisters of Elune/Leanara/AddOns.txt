@@ -134,3 +134,4 @@ DBM-VoA: disabled
 DBM-WorldEvents: disabled
 SilverDragon: disabled
 HandyNotes_VisionsOfNZoth: enabled
+Quartz: enabled

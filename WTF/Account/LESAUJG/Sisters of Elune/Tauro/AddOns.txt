@@ -92,3 +92,4 @@ DBM-EternalPalace: disabled
 SilverDragon: disabled
 HandyNotes_VisionsOfNZoth: enabled
 HandyNotes_DraenorTreasures: enabled
+Quartz: enabled

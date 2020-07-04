@@ -5,3 +5,4 @@ TeleportCloak: enabled
 HandyNotes: enabled
 HandyNotes_MechagonAndNazjatar: enabled
 HandyNotes_DraenorTreasures: enabled
+Quartz: enabled

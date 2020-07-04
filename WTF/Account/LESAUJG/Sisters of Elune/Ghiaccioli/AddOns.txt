@@ -134,7 +134,7 @@ TradeSkillMaster_CompetitorTracker: disabled
 TomTom: disabled
 Shrapnel: disabled
 Ovale: disabled
-Quartz: disabled
+Quartz: enabled
 BaudManifest: enabled
 AskMrRobot: enabled
 Factionizer: disabled

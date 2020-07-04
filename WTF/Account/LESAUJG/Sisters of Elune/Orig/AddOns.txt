@@ -172,3 +172,4 @@ DBM-EternalPalace: disabled
 DBM-Uldir: disabled
 SilverDragon: disabled
 HandyNotes_VisionsOfNZoth: enabled
+Quartz: enabled
