@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0328,
+	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 158041,
@@ -34,9 +37,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163266::::::::120:104::28:7:5125:4802:41:6516:6513:1637:4786:::|h[7th Legionnaire's Britches]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 173439,
-			["Level"] = 430,
-			["Link"] = "|cffa335ee|Hitem:173439::::::::120:104::9:5:6412:6515:6516:1487:4786:::|h[Footpads of the Insatiable Maw]|h|r",
+			["ID"] = 163383,
+			["Level"] = 445,
+			["Link"] = "|cffa335ee|Hitem:163383::::::::120:104::28:5:5125:6516:6515:1637:4786:::|h[7th Legionnaire's Boots]|h|r",
 		}, -- [8]
 		{
 			["ID"] = 174954,
@@ -83,9 +86,6 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163885::::::::120:104::28:5:5125:6516:6515:1632:4786:::|h[7th Legionnaire's Halberd]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

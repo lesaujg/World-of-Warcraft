@@ -31,6 +31,8 @@ SkadaDB = {
 			},
 			["windows"] = {
 				{
+					["set"] = 1,
+					["hidden"] = true,
 					["y"] = 205.9581604003906,
 					["point"] = "BOTTOMLEFT",
 					["mode"] = "Damage",

@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0328,
-	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 158041,
@@ -12,13 +9,13 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 491,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:104::11:4:4932:4933:6316:1628:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 493,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:104::11:4:4932:4933:6316:1630:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 158011,
-			["Level"] = 435,
-			["Link"] = "|cffa335ee|Hitem:158011::::::::120:104::28:4:1622:4786:6503:4775:::|h[Gravethorn Shoulderguards]|h|r",
+			["ID"] = 157979,
+			["Level"] = 450,
+			["Link"] = "|cffa335ee|Hitem:157979::::::::120:104::28:4:1637:4786:6506:4775:::|h[Seafarer Shoulderpads]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -86,6 +83,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163885::::::::120:104::28:5:5125:6516:6515:1632:4786:::|h[7th Legionnaire's Halberd]|h|r",
 		}, -- [16]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
