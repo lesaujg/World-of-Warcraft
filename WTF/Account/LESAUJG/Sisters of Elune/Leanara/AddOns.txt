@@ -132,6 +132,7 @@ DBM-Uldir: disabled
 DBM-Ulduar: disabled
 DBM-VoA: disabled
 DBM-WorldEvents: disabled
-SilverDragon: disabled
+SilverDragon: enabled
 HandyNotes_VisionsOfNZoth: enabled
 Quartz: enabled
+TomTom: disabled
