@@ -13,3 +13,10 @@ X: -107
 Y: 0
 W: 250
 H: 417
+Frame: SilverDragonPopupButton
+FrameLevel: 1
+Anchor: RIGHT
+X: -260
+Y: -221
+W: 302
+H: 119
