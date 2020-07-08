@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0328,
+	["LastPlayerFullName"] = "Belrath-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173457,
@@ -89,9 +92,6 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:163533::::::::110:250::11::::|h[Footman's Cleaver]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Belrath-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

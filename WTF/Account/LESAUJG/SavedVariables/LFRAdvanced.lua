@@ -11,5 +11,5 @@ LFRAdvancedOptions = {
 	["HideLegionHeroics"] = false,
 	["HideBFAHeroics"] = false,
 	["HideLegionNormals"] = false,
-	["LastSearchText"] = "fabious",
+	["LastSearchText"] = "Ny'alotha, the Waking City (Heroic)",
 }
