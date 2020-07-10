@@ -63,9 +63,8 @@ WeakAurasSaved = {
 		["Kill Command"] = {
 			[259277] = 132176,
 		},
-		["Survival of the Fittest"] = {
-			[264735] = 136051,
-			[281195] = 136094,
+		["Precise Shots"] = {
+			[260242] = 236179,
 		},
 		["Misdirection"] = {
 			[35079] = 132180,
@@ -90,15 +89,15 @@ WeakAurasSaved = {
 		["Frenzy"] = {
 			[272790] = 2058007,
 		},
-		["Heroism"] = {
-			[32182] = 132313,
+		["Hunter's Mark"] = {
+			[185365] = 236188,
 		},
 		["Binding Shot"] = {
 			[117405] = 462650,
 			[117526] = 462650,
 		},
-		["Hunter's Mark"] = {
-			[185365] = 236188,
+		["Pheromone Bomb"] = {
+			[270332] = 2065635,
 		},
 		["Fatigued"] = {
 			[264689] = 136035,
@@ -109,8 +108,8 @@ WeakAurasSaved = {
 		["Volatile Bomb"] = {
 			[271049] = 2065636,
 		},
-		["Pheromone Bomb"] = {
-			[270332] = 2065635,
+		["Heroism"] = {
+			[32182] = 132313,
 		},
 		["Shrapnel Bomb"] = {
 			[270339] = 2065637,
@@ -160,11 +159,12 @@ WeakAurasSaved = {
 		["Steady Focus"] = {
 			[193534] = 236182,
 		},
+		["Survival of the Fittest"] = {
+			[264735] = 136051,
+			[281195] = 136094,
+		},
 		["Posthaste"] = {
 			[118922] = 461119,
-		},
-		["Precise Shots"] = {
-			[260242] = 236179,
 		},
 		["Volley"] = {
 			[194386] = 132222,
@@ -902,7 +902,6 @@ WeakAurasSaved = {
 			["regionType"] = "icon",
 			["authorOptions"] = {
 			},
-			["stickyDuration"] = false,
 			["icon"] = true,
 			["animation"] = {
 				["start"] = {
@@ -926,6 +925,7 @@ WeakAurasSaved = {
 					["preset"] = "spiral",
 				},
 			},
+			["stickyDuration"] = false,
 			["zoom"] = 0,
 			["auto"] = true,
 			["frameStrata"] = 1,
@@ -1426,7 +1426,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["anchorPoint"] = "CENTER",
+			["xOffset"] = -113.2230224609375,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -1435,15 +1435,15 @@ WeakAurasSaved = {
 			},
 			["rowSpace"] = 1,
 			["animate"] = false,
-			["xOffset"] = -113.2230224609375,
+			["yOffset"] = -243.2216491699219,
 			["scale"] = 1,
-			["radius"] = 200,
+			["useLimit"] = false,
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
-			["yOffset"] = -243.2216491699219,
+			["selfPoint"] = "LEFT",
 			["sort"] = "none",
 			["constantFactor"] = "RADIUS",
 			["borderInset"] = 1,
@@ -1458,11 +1458,11 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["uid"] = "6N0f)5QDjqW",
-			["selfPoint"] = "LEFT",
+			["stagger"] = 0,
 			["conditions"] = {
 			},
-			["useLimit"] = false,
-			["stagger"] = 0,
+			["anchorPoint"] = "CENTER",
+			["radius"] = 200,
 		},
 		["Dance of Death"] = {
 			["sparkWidth"] = 10,
@@ -1740,7 +1740,6 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -1749,6 +1748,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["use_combat"] = true,
 				["class"] = {
 					["single"] = "HUNTER",
@@ -2227,7 +2227,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["groupIcon"] = 2058007,
+			["arcLength"] = 360,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -2236,8 +2236,32 @@ WeakAurasSaved = {
 			},
 			["anchorFrameFrame"] = "WeakAuras:Focus",
 			["animate"] = false,
-			["radius"] = 200,
+			["selfPoint"] = "BOTTOM",
 			["scale"] = 1,
+			["borderInset"] = 1,
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["regionType"] = "dynamicgroup",
+			["borderSize"] = 2,
+			["limit"] = 5,
+			["authorOptions"] = {
+			},
+			["rowSpace"] = 1,
+			["constantFactor"] = "RADIUS",
+			["sort"] = "none",
+			["borderOffset"] = 4,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80205,
+			["id"] = "Hunter - 0.4 (Barbed Shot Bars) BM",
+			["gridWidth"] = 5,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SELECTFRAME",
+			["gridType"] = "RD",
+			["uid"] = "cCYibeyxPJ1",
+			["groupIcon"] = 2058007,
+			["stagger"] = 0,
+			["conditions"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -2258,31 +2282,7 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["limit"] = 5,
-			["borderInset"] = 1,
-			["stagger"] = 0,
-			["constantFactor"] = "RADIUS",
-			["sort"] = "none",
-			["borderOffset"] = 4,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80205,
-			["id"] = "Hunter - 0.4 (Barbed Shot Bars) BM",
-			["gridWidth"] = 5,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SELECTFRAME",
-			["gridType"] = "RD",
-			["uid"] = "cCYibeyxPJ1",
-			["rowSpace"] = 1,
-			["authorOptions"] = {
-			},
-			["conditions"] = {
-			},
-			["selfPoint"] = "BOTTOM",
-			["arcLength"] = 360,
+			["radius"] = 200,
 		},
 		["S - DD - Therum Deepforge - Empowered Forge Breath"] = {
 			["xOffset"] = 0,
@@ -3671,13 +3671,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["use_spec"] = true,
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["use_class"] = true,
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -3706,10 +3706,15 @@ WeakAurasSaved = {
 				0, -- [3]
 				0.5, -- [4]
 			},
-			["config"] = {
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["useAdjustedMax"] = false,
-			["uid"] = "uYBkg0eaimR",
+			["config"] = {
+			},
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
 			["borderInFront"] = true,
@@ -3737,12 +3742,7 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["uid"] = "uYBkg0eaimR",
 			["inverse"] = false,
 			["useAdjustededMax"] = false,
 			["orientation"] = "HORIZONTAL",
@@ -9393,7 +9393,6 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -9402,6 +9401,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["use_combat"] = true,
 				["class"] = {
 					["single"] = "HUNTER",
@@ -9556,16 +9556,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["use_spec"] = true,
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -16135,13 +16135,8 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
+			["uid"] = "oVMqroAlu8A",
 			["config"] = {
-			},
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
 			},
 			["desaturate"] = false,
 			["anchorFrameType"] = "SCREEN",
@@ -16169,7 +16164,12 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["width"] = 180.00004577637,
 			["xOffset"] = 0,
-			["uid"] = "oVMqroAlu8A",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["inverse"] = false,
 			["auto"] = true,
 			["orientation"] = "HORIZONTAL",
@@ -18127,15 +18127,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["use_combat"] = true,
 				["class"] = {
 					["single"] = "HUNTER",
