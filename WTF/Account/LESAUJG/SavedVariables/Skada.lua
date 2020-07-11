@@ -18,20 +18,20 @@ SkadaDB = {
 		["Herbinator - Sisters of Elune"] = "Default",
 		["Mandelbrot - Sisters of Elune"] = "Default",
 		["Toberd - Sisters of Elune"] = "Default",
-		["Uldaris - Sisters of Elune"] = "Default",
-		["Torinar - Sisters of Elune"] = "Default",
-		["Bracnar - Sisters of Elune"] = "Default",
 		["Edaka - Sisters of Elune"] = "Default",
+		["Bracnar - Sisters of Elune"] = "Default",
+		["Torinar - Sisters of Elune"] = "Default",
+		["Uldaris - Sisters of Elune"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["modeclicks"] = {
 				["Holy power gained"] = 1,
-				["Damage"] = 2,
+				["Damage"] = 3,
 			},
 			["windows"] = {
 				{
-					["y"] = 205.9581909179688,
+					["y"] = 205.9581756591797,
 					["point"] = "BOTTOMLEFT",
 					["mode"] = "Damage",
 					["barwidth"] = 251.880035400391,
@@ -47,9 +47,9 @@ SkadaDB = {
 			},
 			["hidesolo"] = true,
 			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
 				["1.6.3"] = true,
+				["1.6.4"] = true,
+				["1.6.7"] = true,
 			},
 			["reset"] = {
 				["join"] = 2,

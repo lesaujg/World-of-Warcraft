@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0329,
-	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 158041,
@@ -12,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 493,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:104::11:4:4932:4933:6316:1630:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 495,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:104::11:4:4932:4933:6316:1632:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 157979,
@@ -86,6 +83,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163885::::::::120:104::28:5:5125:6516:6515:1632:4786:::|h[7th Legionnaire's Halberd]|h|r",
 		}, -- [16]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
