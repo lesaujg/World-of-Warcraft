@@ -42,7 +42,7 @@ END
 VER 3 010000000000005B "_Bestial Wrath" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [btn:2] Primal Rage
-/castsequence reset=combat/60 Bestial Wrath,Aspect of the Wild
+/castsequence reset=combat/15 Bestial Wrath,Aspect of the Wild
 /use Tabard of the Protector
 /use 13
 /use 14

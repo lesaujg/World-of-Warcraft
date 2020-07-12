@@ -4,8 +4,9 @@ PasteDB = {
 		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
 		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
 		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
-		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
 		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
+		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
+		["Palani - Sisters of Elune"] = "Palani - Sisters of Elune",
 		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
 		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
 		["Herbinator - Sisters of Elune"] = "Herbinator - Sisters of Elune",
@@ -22,10 +23,13 @@ PasteDB = {
 		["Orig - Sisters of Elune"] = {
 			["loaded"] = true,
 		},
+		["Uldaris - Sisters of Elune"] = {
+			["loaded"] = true,
+		},
 		["Leanara - Sisters of Elune"] = {
 			["loaded"] = true,
 		},
-		["Uldaris - Sisters of Elune"] = {
+		["Palani - Sisters of Elune"] = {
 			["loaded"] = true,
 		},
 		["Belrath - Sisters of Elune"] = {

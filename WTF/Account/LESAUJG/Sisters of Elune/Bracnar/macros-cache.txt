@@ -1,6 +1,6 @@
 VER 3 010000000000006E "__Barbed Shots" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/click PetActionButton9
+#/click PetActionButton9
 /petattack
 /target [noexists] pettarget
 /cast Barbed Shot
@@ -14,7 +14,7 @@ VER 3 010000000000006F "__Chimera Shot" "INV_MISC_QUESTIONMARK"
 END
 VER 3 010000000000005E "__Cobra Shot" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/click PetActionButton9
+#/click PetActionButton9
 /target [noexists] pettarget
 /cast Cobra Shot
 END
@@ -27,7 +27,8 @@ END
 VER 3 010000000000005C "__Kill Command" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /dismount
-/click PetActionButton9
+#/click PetActionButton9
+/petassist
 /petattack
 #/petautocastoff [group] Growl
 #/petautocaston [nogroup] Growl
@@ -41,11 +42,11 @@ VER 3 0100000000000069 "_AspectTurtle" "INV_MISC_QUESTIONMARK"
 END
 VER 3 010000000000005B "_Bestial Wrath" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [btn:2] Primal Rage
+#/cast [btn:2] Primal Rage
 /castsequence reset=combat/15 Bestial Wrath,Aspect of the Wild
-/use Tabard of the Protector
-/use 13
-/use 14
+#/use Tabard of the Protector
+#/use 13
+#/use 14
 END
 VER 3 010000000000006A "_FeignDeath" "INV_MISC_QUESTIONMARK"
 /cast [nobtn:2]Feign Death
@@ -75,6 +76,7 @@ END
 VER 3 010000000000000E "_Pet Attack/Foll" "Ability_Druid_ChallangingRoar"
 /petfollow [button:2]
 /dismount
+/petassist
 /petattack
 /cast Warp
 /cast Dash
@@ -97,6 +99,7 @@ VER 3 010000000000005A "Disengage" "INV_MISC_QUESTIONMARK"
 /stopcasting
 /cast Disengage
 /cast Auto Shot
+/petpassive
 END
 VER 3 0100000000000067 "Eagle/Cobra" "INV_MISC_QUESTIONMARK"
 #showtooltip

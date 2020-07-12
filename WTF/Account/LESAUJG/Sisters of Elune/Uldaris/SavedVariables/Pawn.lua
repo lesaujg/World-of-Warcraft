@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0329,
+	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 158041,
@@ -19,9 +22,9 @@ PawnOptions = {
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 173843,
-			["Level"] = 435,
-			["Link"] = "|cffa335ee|Hitem:173843::::::::120:104::9:4:1487:4786:6501:4775:::|h[Vest of the Insatiable Maw]|h|r",
+			["ID"] = 158038,
+			["Level"] = 445,
+			["Link"] = "|cffa335ee|Hitem:158038::::::::120:104::28:3:1637:4786:6504:::|h[Fairweather Tunic]|h|r",
 		}, -- [5]
 		{
 			["ID"] = 173815,
@@ -83,9 +86,6 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163885::::::::120:104::28:5:5125:6516:6515:1632:4786:::|h[7th Legionnaire's Halberd]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
