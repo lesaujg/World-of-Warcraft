@@ -49,6 +49,7 @@ Quartz3DB = {
 		},
 	},
 	["profileKeys"] = {
+		["Torinara - Sisters of Elune"] = "Default",
 		["Galinar - Sisters of Elune"] = "Default",
 		["Ghiaccioli - Sisters of Elune"] = "Default",
 		["Orig - Sisters of Elune"] = "Default",
@@ -64,10 +65,10 @@ Quartz3DB = {
 	["profiles"] = {
 		["Default"] = {
 			["modules"] = {
-				["Player"] = false,
-				["GCD"] = false,
-				["Tradeskill"] = false,
 				["Swing"] = false,
+				["GCD"] = false,
+				["Player"] = false,
+				["Tradeskill"] = false,
 			},
 		},
 	},

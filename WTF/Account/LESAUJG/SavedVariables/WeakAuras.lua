@@ -37,8 +37,9 @@ WeakAurasSaved = {
 		["Flask of the Seventh Demon"] = {
 			[188033] = 1385241,
 		},
-		["Precise Shots"] = {
-			[260242] = 236179,
+		["Survival of the Fittest"] = {
+			[264735] = 136051,
+			[281195] = 136094,
 		},
 		["Coordinated Assault"] = {
 			[266779] = 2065565,
@@ -46,8 +47,8 @@ WeakAurasSaved = {
 		["Lock and Load"] = {
 			[194594] = 236185,
 		},
-		["Posthaste"] = {
-			[118922] = 461119,
+		["Precise Shots"] = {
+			[260242] = 236179,
 		},
 		["Steady Focus"] = {
 			[193534] = 236182,
@@ -62,9 +63,8 @@ WeakAurasSaved = {
 		["Frenzy"] = {
 			[272790] = 2058007,
 		},
-		["Survival of the Fittest"] = {
-			[264735] = 136051,
-			[281195] = 136094,
+		["Posthaste"] = {
+			[118922] = 461119,
 		},
 		["Binding Shot"] = {
 			[117405] = 462650,
@@ -108,8 +108,8 @@ WeakAurasSaved = {
 		["Aspect of the Turtle"] = {
 			[186265] = 132199,
 		},
-		["Heroism"] = {
-			[32182] = 132313,
+		["Pheromone Bomb"] = {
+			[270332] = 2065635,
 		},
 		["Shrapnel Bomb"] = {
 			[270339] = 2065637,
@@ -137,11 +137,11 @@ WeakAurasSaved = {
 			[193526] = 132329,
 			[288613] = 132329,
 		},
-		["Pheromone Bomb"] = {
-			[270332] = 2065635,
-		},
 		["Hunter's Mark"] = {
 			[185365] = 236188,
+		},
+		["Heroism"] = {
+			[32182] = 132313,
 		},
 		["Intimidation"] = {
 			[24394] = 132111,
@@ -906,6 +906,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.379999995231628, -- [4]
 			},
+			["stickyDuration"] = false,
 			["icon"] = true,
 			["animation"] = {
 				["start"] = {
@@ -929,7 +930,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 				},
 			},
-			["stickyDuration"] = false,
 			["zoom"] = 0,
 			["auto"] = true,
 			["cooldownTextDisabled"] = false,
@@ -976,13 +976,13 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["debuffType"] = "HELPFUL",
+						["events"] = "MRRL_DELAYED_MERCHANT_SHOW, MERCHANT_CLOSED",
 						["custom"] = "function(e, ...)\n    if e == \"MRRL_DELAYED_MERCHANT_SHOW\" then\n        local unit = \"target\"\n        local NPCID = aura_env.GetNPCID(unit)\n        if NPCID and aura_env.Murlocs[NPCID] then\n            local NPCname = UnitName(unit)\n            \n            for itemIndex = 1, GetMerchantNumItems() do\n                local ItemLink = GetMerchantItemLink(itemIndex)\n                if ItemLink then\n                    local ItemID = aura_env.GetItemID(ItemLink)\n                    local ItemReq = {}\n                    \n                    --# isItemCountMoreThanReqAmount checks buyList. This is the automatic buying function, and will only be used after buylist is generated.\n                    if aura_env.isItemCountMoreThanReqAmount(ItemID) then\n                        if aura_env.Database.BuyList[ItemID].amount > 0 and (not aura_env.config.manuallyBuyItems)then\n                            aura_env.queueBuyMerchantItem(itemIndex, aura_env.Database.BuyList[ItemID].amount)\n                            \n                        end\n                    end\n                    \n                    local _, _, price, _, _, isPurchasable = GetMerchantItemInfo(itemIndex)\n                    if isPurchasable or aura_env.debug.forceValueablePurchase then\n                        if price > 0 then\n                            ItemReq[1] = {\n                                amount = price,\n                                item = \"c\",\n                            }     \n                            \n                        else                            \n                            \n                            for currencyIndex = 1, GetMerchantItemCostInfo(itemIndex) do\n                                local _, CurrencyNum, Currency = GetMerchantItemCostItem(itemIndex, currencyIndex)\n                                ItemReq[currencyIndex] = {\n                                    amount = CurrencyNum,\n                                    item = aura_env.GetItemID(Currency),\n                                }                                \n                            end\n                        end\n                        \n                        local _, _, rarity, _, _, _, _, _, _, icon = GetItemInfo(ItemID)\n                        \n                        aura_env.Database.Merchant[ItemID] = {\n                            Req = ItemReq,\n                            NPC = NPCID,\n                            rarity = rarity,\n                            icon = icon, \n                        }\n                        \n                        if NPCID == 152084 then\n                            aura_env.Database.Valueable[ItemID] = {\n                                itemType = ((select(3, GetItemInfo(ItemReq[1].item)))== 4 and \"rare\") or \"normal\",\n                                Stallion = (ItemID == aura_env.Database.Special.Stallion.itemID) and true or false\n                            }\n                            \n                        end\n                        \n                    else\n                        aura_env.Murlocs[NPCID].talked = false\n                    end                \n                    \n                end \n            end     \n            \n            aura_env.Murlocs[NPCID].talked = true\n            \n            if aura_env.debug.showMurlocsTalked then\n                for k,v in pairs(aura_env.Murlocs) do print(k, v.name, v.talked) end\n            end\n            \n            if aura_env.Murlocs[152084].talked and (aura_env.size(aura_env.Database.Valueable) == 0) then\n                aura_env.MrrlAllLocked = true\n            end\n            \n            if aura_env.allMurlocsTalked() then            \n                if not aura_env.buyListEverGenerated then\n                    aura_env.setValueableListTaco()\n                    aura_env.buildValueableListBuyAmount()\n                    aura_env.generateBuyListInfoFromValueable()\n                    aura_env.buyListEverGenerated = true\n                end\n            end\n            \n            return true\n        end       \n        \n    end\nend",
-						["spellIds"] = {
-						},
 						["subeventPrefix"] = "SPELL",
 						["unit"] = "player",
 						["custom_type"] = "event",
-						["events"] = "MRRL_DELAYED_MERCHANT_SHOW, MERCHANT_CLOSED",
+						["spellIds"] = {
+						},
 						["custom_hide"] = "custom",
 					},
 					["untrigger"] = {
@@ -1434,18 +1434,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["anchorPoint"] = "CENTER",
+			["stagger"] = 0,
 			["animate"] = false,
 			["limit"] = 5,
 			["scale"] = 1,
-			["yOffset"] = -243.2216491699219,
+			["useLimit"] = false,
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["stagger"] = 0,
-			["useLimit"] = false,
+			["xOffset"] = -113.2230224609375,
+			["selfPoint"] = "LEFT",
 			["constantFactor"] = "RADIUS",
 			["config"] = {
 			},
@@ -1458,12 +1458,12 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
 			["borderInset"] = 1,
-			["selfPoint"] = "LEFT",
+			["anchorPoint"] = "CENTER",
 			["rowSpace"] = 1,
 			["conditions"] = {
 			},
+			["yOffset"] = -243.2216491699219,
 			["radius"] = 200,
-			["xOffset"] = -113.2230224609375,
 		},
 		["Dance of Death"] = {
 			["sparkWidth"] = 10,
@@ -1837,28 +1837,28 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
 				["role"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
 				["race"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
 				["use_combat"] = true,
 				["ingroup"] = {
 					["multi"] = {
@@ -2084,11 +2084,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469,1470,1570,1571",
 				["class"] = {
 					["multi"] = {
 					},
@@ -2227,6 +2227,17 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["borderEdge"] = "Square Full White",
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["limit"] = 5,
+			["animate"] = false,
+			["radius"] = 200,
+			["scale"] = 1,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -2247,25 +2258,13 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["limit"] = 5,
-			["animate"] = false,
-			["authorOptions"] = {
-			},
-			["scale"] = 1,
-			["rowSpace"] = 1,
 			["border"] = false,
 			["anchorFrameFrame"] = "WeakAuras:Focus",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["borderEdge"] = "Square Full White",
-			["radius"] = 200,
+			["stagger"] = 0,
+			["groupIcon"] = 2058007,
 			["constantFactor"] = "RADIUS",
 			["gridType"] = "RD",
 			["borderOffset"] = 4,
@@ -2278,12 +2277,13 @@ WeakAurasSaved = {
 			["borderInset"] = 1,
 			["config"] = {
 			},
-			["selfPoint"] = "BOTTOM",
-			["arcLength"] = 360,
+			["rowSpace"] = 1,
+			["authorOptions"] = {
+			},
 			["conditions"] = {
 			},
-			["groupIcon"] = 2058007,
-			["stagger"] = 0,
+			["selfPoint"] = "BOTTOM",
+			["arcLength"] = 360,
 		},
 		["S - DD - Therum Deepforge - Empowered Forge Breath"] = {
 			["xOffset"] = 0,
@@ -2817,11 +2817,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["class"] = {
 					["multi"] = {
 					},
@@ -3015,11 +3015,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["class"] = {
 					["multi"] = {
 					},
@@ -3615,16 +3615,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_spec"] = true,
 				["race"] = {
 					["multi"] = {
 					},
@@ -3644,13 +3644,14 @@ WeakAurasSaved = {
 			["version"] = 11,
 			["sparkRotationMode"] = "AUTO",
 			["useAdjustededMax"] = false,
-			["uid"] = "uYBkg0eaimR",
-			["useAdjustedMax"] = false,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
+			},
+			["useAdjustedMax"] = false,
+			["config"] = {
 			},
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -3679,8 +3680,7 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["sparkOffsetX"] = 0,
-			["config"] = {
-			},
+			["uid"] = "uYBkg0eaimR",
 			["inverse"] = false,
 			["backgroundColor"] = {
 				0, -- [1]
@@ -4065,11 +4065,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469,1470,1570,1571",
 				["class"] = {
 					["multi"] = {
 					},
@@ -4271,11 +4271,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = true,
+				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469,1470,1570,1571",
 				["class"] = {
 					["multi"] = {
 					},
@@ -4675,11 +4675,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
@@ -5244,11 +5244,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
@@ -5465,11 +5465,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1470",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1470",
 				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
@@ -5696,11 +5696,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469,1470,1570,1571",
 				["class"] = {
 					["multi"] = {
 					},
@@ -5894,11 +5894,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469,1470,1570,1571",
 				["class"] = {
 					["multi"] = {
 					},
@@ -6269,11 +6269,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469,1470,1570,1571",
 				["class"] = {
 					["multi"] = {
 					},
@@ -7420,11 +7420,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["class"] = {
 					["multi"] = {
 					},
@@ -7635,11 +7635,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["class"] = {
 					["multi"] = {
 					},
@@ -7798,11 +7798,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1470",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1470",
 				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
@@ -7905,14 +7905,14 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["names"] = {
 						},
+						["subeventPrefix"] = "SPELL",
+						["custom"] = "function(event, _, subEvent, _, _, _, _, _, destGUID, ...)\n    -- Don't mark if not leader. We really shouldn't even load the WA, but there's no leader condition.\n    if not UnitIsGroupLeader(\"player\") then\n        return true\n    end\n    \n    -- Clear out the usedMarkers list if new combat is entered and add pre-existing\n    -- visible markers to the table to prevent them from being moved\n    if event == \"PLAYER_REGEN_DISABLED\" then\n        aura_env.usedMarkers = {}\n        \n        -- Create list of pre-placed markers\n        for i = 1, #aura_env.preScan do\n            local mark = GetRaidTargetIndex(aura_env.preScan[i])\n            if ( mark ) then\n                local newGUID = UnitGUID(aura_env.preScan[i])\n                aura_env.usedMarkers[newGUID] = mark\n            end\n        end\n        \n        -- Free up usedMarkers from marked targets who died\n    elseif subEvent == \"UNIT_DIED\" then\n        aura_env.usedMarkers[destGUID] = nil\n        \n    else\n        -- Don't scan too often\n        if GetTime() - (aura_env.lastScan or 0) < 0.3 then\n            return true\n        end\n        aura_env.lastScan = GetTime()\n        \n        -- Loop through the visible nameplates for something to mark\n        for i = 1,40 do\n            local target = \"nameplate\"..i\n            local uGUID = UnitGUID(target)\n            \n            if uGUID and not GetRaidTargetIndex(target) and UnitAffectingCombat(target) then\n                local npcID = select(6, strsplit(\"-\", uGUID))\n                \n                if npcID then\n                    for _, ttm in ipairs(aura_env.targetsToMark) do\n                        if ttm == npcID then\n                            local mark = aura_env.GetFirstFreeMarker()\n                            if mark then\n                                SetRaidTarget(target, mark)\n                                aura_env.usedMarkers[uGUID] = mark\n                                break\n                            end\n                        end\n                    end\n                end\n            end\n        end\n    end\n    \n    return true\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 						["spellIds"] = {
 						},
-						["subeventPrefix"] = "SPELL",
-						["events"] = "PLAYER_REGEN_DISABLED, COMBAT_LOG_EVENT_UNFILTERED",
 						["unit"] = "player",
 						["check"] = "event",
 						["custom_type"] = "status",
-						["custom"] = "function(event, _, subEvent, _, _, _, _, _, destGUID, ...)\n    -- Don't mark if not leader. We really shouldn't even load the WA, but there's no leader condition.\n    if not UnitIsGroupLeader(\"player\") then\n        return true\n    end\n    \n    -- Clear out the usedMarkers list if new combat is entered and add pre-existing\n    -- visible markers to the table to prevent them from being moved\n    if event == \"PLAYER_REGEN_DISABLED\" then\n        aura_env.usedMarkers = {}\n        \n        -- Create list of pre-placed markers\n        for i = 1, #aura_env.preScan do\n            local mark = GetRaidTargetIndex(aura_env.preScan[i])\n            if ( mark ) then\n                local newGUID = UnitGUID(aura_env.preScan[i])\n                aura_env.usedMarkers[newGUID] = mark\n            end\n        end\n        \n        -- Free up usedMarkers from marked targets who died\n    elseif subEvent == \"UNIT_DIED\" then\n        aura_env.usedMarkers[destGUID] = nil\n        \n    else\n        -- Don't scan too often\n        if GetTime() - (aura_env.lastScan or 0) < 0.3 then\n            return true\n        end\n        aura_env.lastScan = GetTime()\n        \n        -- Loop through the visible nameplates for something to mark\n        for i = 1,40 do\n            local target = \"nameplate\"..i\n            local uGUID = UnitGUID(target)\n            \n            if uGUID and not GetRaidTargetIndex(target) and UnitAffectingCombat(target) then\n                local npcID = select(6, strsplit(\"-\", uGUID))\n                \n                if npcID then\n                    for _, ttm in ipairs(aura_env.targetsToMark) do\n                        if ttm == npcID then\n                            local mark = aura_env.GetFirstFreeMarker()\n                            if mark then\n                                SetRaidTarget(target, mark)\n                                aura_env.usedMarkers[uGUID] = mark\n                                break\n                            end\n                        end\n                    end\n                end\n            end\n        end\n    end\n    \n    return true\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+						["events"] = "PLAYER_REGEN_DISABLED, COMBAT_LOG_EVENT_UNFILTERED",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -8528,11 +8528,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["class"] = {
 					["multi"] = {
 					},
@@ -8962,11 +8962,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["class"] = {
 					["multi"] = {
 					},
@@ -9274,28 +9274,28 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
 				["role"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
 				["race"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
 				["use_combat"] = true,
 				["ingroup"] = {
 					["multi"] = {
@@ -9546,26 +9546,26 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_talent"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
+				["use_talent"] = true,
+				["use_class"] = true,
 				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["race"] = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -9988,11 +9988,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
@@ -10415,6 +10415,93 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 15,
+			["uid"] = "S0O)AZIqaX7",
+			["load"] = {
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["sparkBlendMode"] = "ADD",
+			["useAdjustededMax"] = false,
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["desaturate"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["selfPoint"] = "CENTER",
+			["id"] = "Aspect of Wild",
+			["useAdjustededMin"] = false,
+			["regionType"] = "aurabar",
+			["borderInFront"] = true,
+			["_table"] = "d",
+			["icon_side"] = "RIGHT",
+			["semver"] = "1.0.0",
+			["sparkHeight"] = 30,
+			["texture"] = "Aluminium",
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0,
+			["spark"] = false,
+			["tocversion"] = 80205,
+			["sparkHidden"] = "NEVER",
+			["sparkOffsetY"] = 0,
+			["frameStrata"] = 1,
+			["width"] = 178.0000762939453,
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
 			["config"] = {
 				["gcdCol"] = {
 					1, -- [1]
@@ -10454,93 +10541,6 @@ WeakAurasSaved = {
 					1, -- [3]
 					1, -- [4]
 				},
-			},
-			["load"] = {
-				["ingroup"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["single"] = "HUNTER",
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["single"] = 1,
-					["multi"] = {
-					},
-				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["use_class"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = true,
-				["use_combat"] = true,
-				["talent2"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["sparkBlendMode"] = "ADD",
-			["useAdjustededMax"] = false,
-			["uid"] = "S0O)AZIqaX7",
-			["desaturate"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["selfPoint"] = "CENTER",
-			["id"] = "Aspect of Wild",
-			["useAdjustededMin"] = false,
-			["regionType"] = "aurabar",
-			["borderInFront"] = true,
-			["_table"] = "d",
-			["icon_side"] = "RIGHT",
-			["semver"] = "1.0.0",
-			["sparkHeight"] = 30,
-			["texture"] = "Aluminium",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["zoom"] = 0,
-			["spark"] = false,
-			["tocversion"] = 80205,
-			["sparkHidden"] = "NEVER",
-			["sparkOffsetY"] = 0,
-			["frameStrata"] = 1,
-			["width"] = 178.0000762939453,
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
 			},
 			["inverse"] = false,
 			["sparkDesature"] = false,
@@ -10708,11 +10708,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["class"] = {
 					["multi"] = {
 					},
@@ -10896,11 +10896,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
@@ -11692,11 +11692,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["class"] = {
 					["multi"] = {
 					},
@@ -11889,11 +11889,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
@@ -12263,11 +12263,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
@@ -12833,11 +12833,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469,1470,1570,1571",
 				["class"] = {
 					["multi"] = {
 					},
@@ -13094,8 +13094,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 19.999994277954,
-			["config"] = {
-			},
+			["xOffset"] = 0,
 			["load"] = {
 				["use_class"] = true,
 				["use_petbattle"] = false,
@@ -13117,12 +13116,17 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["xOffset"] = 0,
 			["uid"] = "oVMqroAlu8A",
-			["useAdjustededMin"] = false,
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["spark"] = false,
 			["width"] = 180.00004577637,
 			["frameStrata"] = 1,
-			["spark"] = false,
+			["useAdjustededMin"] = false,
 			["anchorFrameFrame"] = "WeakAuras:Mongoose Fury",
 			["regionType"] = "aurabar",
 			["borderInFront"] = true,
@@ -13145,11 +13149,7 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["desaturate"] = false,
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["config"] = {
 			},
 			["inverse"] = false,
 			["backgroundColor"] = {
@@ -13707,11 +13707,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469,1470,1570,1571",
 				["class"] = {
 					["multi"] = {
 					},
@@ -13937,11 +13937,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["class"] = {
 					["multi"] = {
 					},
@@ -14317,6 +14317,29 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["xOffset"] = -927.9999580383301,
+			["selfPoint"] = "CENTER",
+			["cooldownEdge"] = false,
+			["auto"] = false,
+			["config"] = {
+				["option7"] = false,
+				["option6"] = false,
+				["option1"] = false,
+				["option5"] = false,
+				["option4"] = false,
+				["option2"] = false,
+				["option3"] = false,
+			},
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.0.5",
+			["tocversion"] = 80300,
+			["id"] = "HV ECD",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["width"] = 50,
+			["anchorFrameType"] = "SCREEN",
+			["uid"] = "A1VzOF1aXSg",
+			["inverse"] = false,
 			["authorOptions"] = {
 				{
 					["type"] = "toggle",
@@ -14375,6 +14398,8 @@ WeakAurasSaved = {
 					["width"] = 1,
 				}, -- [7]
 			},
+			["displayIcon"] = "236225",
+			["cooldown"] = false,
 			["actions"] = {
 				["start"] = {
 				},
@@ -14383,31 +14408,6 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["cooldownEdge"] = false,
-			["auto"] = false,
-			["config"] = {
-				["option7"] = false,
-				["option6"] = false,
-				["option1"] = false,
-				["option5"] = false,
-				["option4"] = false,
-				["option2"] = false,
-				["option3"] = false,
-			},
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.0.5",
-			["tocversion"] = 80300,
-			["id"] = "HV ECD",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["width"] = 50,
-			["anchorFrameType"] = "SCREEN",
-			["uid"] = "A1VzOF1aXSg",
-			["inverse"] = false,
-			["xOffset"] = -927.9999580383301,
-			["displayIcon"] = "236225",
-			["cooldown"] = false,
-			["selfPoint"] = "CENTER",
 		},
 		["MADNESS - Madness Leaden Foot"] = {
 			["authorOptions"] = {
@@ -14554,11 +14554,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469,1470,1570,1571",
 				["class"] = {
 					["multi"] = {
 					},
@@ -14763,11 +14763,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["class"] = {
 					["multi"] = {
 					},
@@ -15206,11 +15206,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
@@ -15592,11 +15592,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469,1470,1570,1571",
 				["class"] = {
 					["multi"] = {
 					},
@@ -16817,11 +16817,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
@@ -17014,11 +17014,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["class"] = {
 					["multi"] = {
 					},
@@ -17574,11 +17574,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["class"] = {
 					["multi"] = {
 					},
@@ -17965,11 +17965,11 @@ WeakAurasSaved = {
 				},
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {

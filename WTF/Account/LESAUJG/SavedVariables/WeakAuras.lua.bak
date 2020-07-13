@@ -63,9 +63,8 @@ WeakAurasSaved = {
 		["Kill Command"] = {
 			[259277] = 132176,
 		},
-		["Survival of the Fittest"] = {
-			[264735] = 136051,
-			[281195] = 136094,
+		["Posthaste"] = {
+			[118922] = 461119,
 		},
 		["Misdirection"] = {
 			[35079] = 132180,
@@ -90,15 +89,15 @@ WeakAurasSaved = {
 		["Frenzy"] = {
 			[272790] = 2058007,
 		},
-		["Heroism"] = {
-			[32182] = 132313,
+		["Pheromone Bomb"] = {
+			[270332] = 2065635,
 		},
 		["Binding Shot"] = {
 			[117405] = 462650,
 			[117526] = 462650,
 		},
-		["Hunter's Mark"] = {
-			[185365] = 236188,
+		["Heroism"] = {
+			[32182] = 132313,
 		},
 		["Fatigued"] = {
 			[264689] = 136035,
@@ -109,8 +108,8 @@ WeakAurasSaved = {
 		["Volatile Bomb"] = {
 			[271049] = 2065636,
 		},
-		["Pheromone Bomb"] = {
-			[270332] = 2065635,
+		["Hunter's Mark"] = {
+			[185365] = 236188,
 		},
 		["Shrapnel Bomb"] = {
 			[270339] = 2065637,
@@ -160,11 +159,12 @@ WeakAurasSaved = {
 		["Steady Focus"] = {
 			[193534] = 236182,
 		},
-		["Posthaste"] = {
-			[118922] = 461119,
-		},
 		["Precise Shots"] = {
 			[260242] = 236179,
+		},
+		["Survival of the Fittest"] = {
+			[264735] = 136051,
+			[281195] = 136094,
 		},
 		["Volley"] = {
 			[194386] = 132222,
@@ -209,14 +209,14 @@ WeakAurasSaved = {
 						["duration"] = "4",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
+						["sourceUnit"] = "player",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["names"] = {
 						},
-						["sourceUnit"] = "player",
+						["unit"] = "player",
 						["use_cloneId"] = true,
 						["debuffType"] = "HELPFUL",
 					},
@@ -314,7 +314,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "E(iUfeJVLKj",
 			["xOffset"] = 0,
 			["icon"] = true,
 			["regionType"] = "icon",
@@ -342,13 +342,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["parent"] = "Horrific Visions",
-			["uid"] = "E(iUfeJVLKj",
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - MQ - Magister Umbric - Tainted Polymorph",
-			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -380,14 +380,14 @@ WeakAurasSaved = {
 						["duration"] = "2",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
+						["sourceUnit"] = "player",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["names"] = {
 						},
-						["sourceUnit"] = "player",
+						["unit"] = "player",
 						["use_cloneId"] = true,
 						["debuffType"] = "HELPFUL",
 					},
@@ -504,7 +504,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "fun5X8T920w",
 			["cooldownEdge"] = false,
 			["authorOptions"] = {
 			},
@@ -530,13 +530,13 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["uid"] = "fun5X8T920w",
-			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["width"] = 80,
 			["zoom"] = 0.003,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "S - OT - Alx'kov the Infested - Lurking Appendage",
-			["width"] = 80,
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = false,
@@ -583,14 +583,14 @@ WeakAurasSaved = {
 						["duration"] = "2",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["names"] = {
-						},
+						["use_cloneId"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["unit"] = "player",
-						["use_cloneId"] = true,
+						["names"] = {
+						},
 						["sourceUnit"] = "player",
 						["debuffType"] = "HELPFUL",
 					},
@@ -707,7 +707,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "FWlICquYu4e",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["icon"] = true,
 			["regionType"] = "icon",
@@ -717,13 +717,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["parent"] = "Horrific Visions",
-			["uid"] = "FWlICquYu4e",
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - TRASH - Endless Hunger Totem",
-			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -762,11 +762,11 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["spellIds"] = {
 						},
+						["debuffType"] = "HELPFUL",
+						["unit"] = "pet",
 						["names"] = {
 							"Mend Pet", -- [1]
 						},
-						["unit"] = "pet",
-						["debuffType"] = "HELPFUL",
 						["buffShowOn"] = "showOnActive",
 					},
 					["untrigger"] = {
@@ -852,19 +852,15 @@ WeakAurasSaved = {
 			},
 			["height"] = 50,
 			["load"] = {
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["talent2"] = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
+				["talent"] = {
 					["multi"] = {
 					},
 				},
-				["talent"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -873,11 +869,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["role"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -902,6 +902,7 @@ WeakAurasSaved = {
 			["regionType"] = "icon",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -925,7 +926,6 @@ WeakAurasSaved = {
 				},
 			},
 			["stickyDuration"] = false,
-			["icon"] = true,
 			["zoom"] = 0,
 			["auto"] = true,
 			["frameStrata"] = 1,
@@ -975,14 +975,14 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["names"] = {
 						},
-						["subeventPrefix"] = "SPELL",
-						["spellIds"] = {
-						},
-						["events"] = "MRRL_DELAYED_MERCHANT_SHOW, MERCHANT_CLOSED",
-						["custom_type"] = "event",
-						["unit"] = "player",
 						["custom_hide"] = "custom",
 						["custom"] = "function(e, ...)\n    if e == \"MRRL_DELAYED_MERCHANT_SHOW\" then\n        local unit = \"target\"\n        local NPCID = aura_env.GetNPCID(unit)\n        if NPCID and aura_env.Murlocs[NPCID] then\n            local NPCname = UnitName(unit)\n            \n            for itemIndex = 1, GetMerchantNumItems() do\n                local ItemLink = GetMerchantItemLink(itemIndex)\n                if ItemLink then\n                    local ItemID = aura_env.GetItemID(ItemLink)\n                    local ItemReq = {}\n                    \n                    --# isItemCountMoreThanReqAmount checks buyList. This is the automatic buying function, and will only be used after buylist is generated.\n                    if aura_env.isItemCountMoreThanReqAmount(ItemID) then\n                        if aura_env.Database.BuyList[ItemID].amount > 0 and (not aura_env.config.manuallyBuyItems)then\n                            aura_env.queueBuyMerchantItem(itemIndex, aura_env.Database.BuyList[ItemID].amount)\n                            \n                        end\n                    end\n                    \n                    local _, _, price, _, _, isPurchasable = GetMerchantItemInfo(itemIndex)\n                    if isPurchasable or aura_env.debug.forceValueablePurchase then\n                        if price > 0 then\n                            ItemReq[1] = {\n                                amount = price,\n                                item = \"c\",\n                            }     \n                            \n                        else                            \n                            \n                            for currencyIndex = 1, GetMerchantItemCostInfo(itemIndex) do\n                                local _, CurrencyNum, Currency = GetMerchantItemCostItem(itemIndex, currencyIndex)\n                                ItemReq[currencyIndex] = {\n                                    amount = CurrencyNum,\n                                    item = aura_env.GetItemID(Currency),\n                                }                                \n                            end\n                        end\n                        \n                        local _, _, rarity, _, _, _, _, _, _, icon = GetItemInfo(ItemID)\n                        \n                        aura_env.Database.Merchant[ItemID] = {\n                            Req = ItemReq,\n                            NPC = NPCID,\n                            rarity = rarity,\n                            icon = icon, \n                        }\n                        \n                        if NPCID == 152084 then\n                            aura_env.Database.Valueable[ItemID] = {\n                                itemType = ((select(3, GetItemInfo(ItemReq[1].item)))== 4 and \"rare\") or \"normal\",\n                                Stallion = (ItemID == aura_env.Database.Special.Stallion.itemID) and true or false\n                            }\n                            \n                        end\n                        \n                    else\n                        aura_env.Murlocs[NPCID].talked = false\n                    end                \n                    \n                end \n            end     \n            \n            aura_env.Murlocs[NPCID].talked = true\n            \n            if aura_env.debug.showMurlocsTalked then\n                for k,v in pairs(aura_env.Murlocs) do print(k, v.name, v.talked) end\n            end\n            \n            if aura_env.Murlocs[152084].talked and (aura_env.size(aura_env.Database.Valueable) == 0) then\n                aura_env.MrrlAllLocked = true\n            end\n            \n            if aura_env.allMurlocsTalked() then            \n                if not aura_env.buyListEverGenerated then\n                    aura_env.setValueableListTaco()\n                    aura_env.buildValueableListBuyAmount()\n                    aura_env.generateBuyListInfoFromValueable()\n                    aura_env.buyListEverGenerated = true\n                end\n            end\n            \n            return true\n        end       \n        \n    end\nend",
+						["spellIds"] = {
+						},
+						["custom_type"] = "event",
+						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
+						["events"] = "MRRL_DELAYED_MERCHANT_SHOW, MERCHANT_CLOSED",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -1079,8 +1079,8 @@ WeakAurasSaved = {
 			["font"] = "Friz Quadrata TT",
 			["version"] = 52,
 			["load"] = {
-				["zoneId"] = "1355",
 				["use_zone"] = false,
+				["zoneId"] = "1355",
 				["use_never"] = false,
 				["use_zoneId"] = true,
 				["class"] = {
@@ -1370,15 +1370,15 @@ WeakAurasSaved = {
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["type"] = "aura2",
-						["subeventSuffix"] = "_CAST_START",
-						["event"] = "Health",
 						["unit"] = "player",
-						["names"] = {
-						},
+						["type"] = "aura2",
 						["spellIds"] = {
 						},
+						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
+						["names"] = {
+						},
+						["event"] = "Health",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -1434,36 +1434,36 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["xOffset"] = -113.2230224609375,
-			["animate"] = false,
 			["radius"] = 200,
+			["animate"] = false,
+			["yOffset"] = -243.2216491699219,
 			["scale"] = 1,
-			["useLimit"] = false,
+			["selfPoint"] = "LEFT",
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
 			["rowSpace"] = 1,
-			["selfPoint"] = "LEFT",
+			["anchorPoint"] = "CENTER",
 			["constantFactor"] = "RADIUS",
-			["gridWidth"] = 5,
+			["borderInset"] = 1,
 			["borderOffset"] = 4,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "Horrific Visions",
-			["borderInset"] = 1,
+			["gridWidth"] = 5,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["arcLength"] = 360,
 			["config"] = {
 			},
 			["uid"] = "6N0f)5QDjqW",
-			["anchorPoint"] = "CENTER",
+			["stagger"] = 0,
 			["conditions"] = {
 			},
-			["stagger"] = 0,
-			["yOffset"] = -243.2216491699219,
+			["xOffset"] = -113.2230224609375,
+			["useLimit"] = false,
 		},
 		["Dance of Death"] = {
 			["sparkWidth"] = 10,
@@ -1545,25 +1545,25 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["use_tooltip"] = false,
 						["debuffType"] = "HELPFUL",
-						["subeventPrefix"] = "SPELL",
 						["useName"] = true,
 						["use_debuffClass"] = false,
 						["unevent"] = "timed",
-						["buffShowOn"] = "showOnActive",
+						["subeventPrefix"] = "SPELL",
 						["event"] = "Health",
-						["names"] = {
-							"Frenzy", -- [1]
-						},
+						["buffShowOn"] = "showOnActive",
+						["type"] = "aura2",
 						["subeventSuffix"] = "_CAST_START",
-						["matchesShowOn"] = "showAlways",
 						["spellIds"] = {
 							272790, -- [1]
 						},
+						["matchesShowOn"] = "showAlways",
 						["auranames"] = {
 							"Dance of Death", -- [1]
 						},
-						["type"] = "aura2",
 						["combineMatches"] = "showLowest",
+						["names"] = {
+							"Frenzy", -- [1]
+						},
 						["use_specific_unit"] = false,
 					},
 					["untrigger"] = {
@@ -1711,17 +1711,16 @@ WeakAurasSaved = {
 			["height"] = 15,
 			["useAdjustededMax"] = false,
 			["load"] = {
-				["use_spec"] = true,
 				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
 					["multi"] = {
 					},
 				},
 				["spec"] = {
 					["single"] = 1,
-					["multi"] = {
-					},
-				},
-				["talent"] = {
 					["multi"] = {
 					},
 				},
@@ -1734,25 +1733,26 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["use_class"] = true,
 				["role"] = {
 					["multi"] = {
 					},
 				},
-				["difficulty"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
 				["use_combat"] = true,
-				["pvptalent"] = {
+				["difficulty"] = {
 					["multi"] = {
 					},
 				},
@@ -1982,17 +1982,17 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "aura2",
-						["use_unit"] = true,
 						["subeventSuffix"] = "_CAST_SUCCESS",
+						["event"] = "Combat Log",
+						["use_unit"] = true,
 						["names"] = {
 						},
-						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["useName"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
 						["use_absorbMode"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -2077,26 +2077,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469,1470,1570,1571",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "apFsvSMWHd5",
 			["xOffset"] = 0,
 			["actions"] = {
 				["start"] = {
@@ -2137,13 +2137,13 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["uid"] = "apFsvSMWHd5",
-			["alpha"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "[TEST] MADNESS -  Madness Shortsighted",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -2187,15 +2187,15 @@ WeakAurasSaved = {
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["type"] = "aura2",
-						["subeventSuffix"] = "_CAST_START",
-						["event"] = "Health",
 						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
+						["type"] = "aura2",
 						["spellIds"] = {
 						},
+						["subeventSuffix"] = "_CAST_START",
 						["names"] = {
 						},
+						["unit"] = "player",
+						["event"] = "Health",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -2210,7 +2210,8 @@ WeakAurasSaved = {
 			["version"] = 1,
 			["subRegions"] = {
 			},
-			["sort"] = "none",
+			["config"] = {
+			},
 			["load"] = {
 				["use_class"] = "true",
 				["class"] = {
@@ -2227,26 +2228,26 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["config"] = {
-			},
+			["arcLength"] = 360,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["anchorFrameFrame"] = "WeakAuras:Focus",
+			["sort"] = "none",
 			["animate"] = false,
-			["stagger"] = 0,
+			["selfPoint"] = "BOTTOM",
 			["scale"] = 1,
-			["groupIcon"] = 2058007,
+			["stagger"] = 0,
 			["border"] = false,
-			["borderEdge"] = "Square Full White",
+			["anchorFrameFrame"] = "WeakAuras:Focus",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
-			["arcLength"] = 360,
-			["selfPoint"] = "BOTTOM",
+			["authorOptions"] = {
+			},
+			["rowSpace"] = 1,
 			["constantFactor"] = "RADIUS",
 			["borderInset"] = 1,
 			["borderOffset"] = 4,
@@ -2258,6 +2259,10 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SELECTFRAME",
 			["gridType"] = "RD",
 			["uid"] = "cCYibeyxPJ1",
+			["borderEdge"] = "Square Full White",
+			["groupIcon"] = 2058007,
+			["conditions"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -2279,11 +2284,6 @@ WeakAurasSaved = {
 				},
 			},
 			["radius"] = 200,
-			["conditions"] = {
-			},
-			["rowSpace"] = 1,
-			["authorOptions"] = {
-			},
 		},
 		["S - DD - Therum Deepforge - Empowered Forge Breath"] = {
 			["xOffset"] = 0,
@@ -2304,14 +2304,14 @@ WeakAurasSaved = {
 						["duration"] = "5",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
+						["sourceUnit"] = "player",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["names"] = {
 						},
-						["sourceUnit"] = "player",
+						["unit"] = "player",
 						["use_cloneId"] = true,
 						["debuffType"] = "HELPFUL",
 					},
@@ -2428,7 +2428,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["config"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Front.ogg",
@@ -2454,14 +2455,13 @@ WeakAurasSaved = {
 			},
 			["authorOptions"] = {
 			},
-			["config"] = {
-			},
-			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
+			["width"] = 80,
 			["zoom"] = 0.003,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - DD - Therum Deepforge - Empowered Forge Breath",
-			["width"] = 80,
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "1.0.0",
@@ -2490,21 +2490,21 @@ WeakAurasSaved = {
 						["use_cloneId"] = true,
 						["debuffType"] = "HELPFUL",
 						["type"] = "aura2",
-						["names"] = {
-						},
 						["auraspellids"] = {
 							"309451", -- [1]
 						},
-						["unevent"] = "timed",
 						["event"] = "Combat Log",
-						["subeventSuffix"] = "_CAST_START",
-						["useExactSpellId"] = true,
+						["names"] = {
+						},
+						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
-						["subeventPrefix"] = "SPELL",
+						["subeventSuffix"] = "_CAST_START",
+						["useExactSpellId"] = true,
 						["sourceUnit"] = "player",
+						["unevent"] = "timed",
 					},
 					["untrigger"] = {
 					},
@@ -2600,7 +2600,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "cQu5AOosLym",
 			["authorOptions"] = {
 			},
 			["actions"] = {
@@ -2645,13 +2645,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["uid"] = "cQu5AOosLym",
-			["alpha"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - MQ - Magister Umbric - Frozen Storm",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -2696,17 +2696,17 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "aura2",
-						["use_unit"] = true,
 						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Combat Log",
+						["use_unit"] = true,
 						["names"] = {
 						},
-						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["useName"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
 						["use_absorbMode"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -2810,26 +2810,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "DJ9JFJwWrzb",
 			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
@@ -2843,13 +2843,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["selfPoint"] = "CENTER",
-			["uid"] = "DJ9JFJwWrzb",
-			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - VoH - Misha - Desperate Retching DEBUFF",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -2894,17 +2894,17 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
-						["use_unit"] = true,
 						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Combat Log",
+						["use_unit"] = true,
 						["names"] = {
 						},
-						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["useName"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
 						["use_absorbMode"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -3008,26 +3008,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "ESBNiYntKpf",
 			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
@@ -3041,13 +3041,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["selfPoint"] = "CENTER",
-			["uid"] = "ESBNiYntKpf",
-			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - VoH - Misha - Maddening Roar",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -3089,14 +3089,14 @@ WeakAurasSaved = {
 						["duration"] = "5",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
+						["sourceUnit"] = "player",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["names"] = {
 						},
-						["sourceUnit"] = "player",
+						["unit"] = "player",
 						["use_cloneId"] = true,
 						["debuffType"] = "HELPFUL",
 					},
@@ -3194,7 +3194,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "FqJ3zuHsAK4",
 			["cooldownEdge"] = false,
 			["color"] = {
 				1, -- [1]
@@ -3209,13 +3209,13 @@ WeakAurasSaved = {
 			},
 			["authorOptions"] = {
 			},
-			["uid"] = "FqJ3zuHsAK4",
-			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "S - OT - Armsmaster Terenson - Blade Flourish",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["auto"] = false,
@@ -3270,14 +3270,14 @@ WeakAurasSaved = {
 						["duration"] = "1.5",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["names"] = {
-						},
+						["use_cloneId"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["unit"] = "player",
-						["use_cloneId"] = true,
+						["names"] = {
+						},
 						["sourceUnit"] = "player",
 						["debuffType"] = "HELPFUL",
 					},
@@ -3394,7 +3394,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "f(C956)k21r",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["actions"] = {
 				["start"] = {
@@ -3415,13 +3415,13 @@ WeakAurasSaved = {
 			},
 			["authorOptions"] = {
 			},
-			["uid"] = "f(C956)k21r",
-			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - VoS - Decimator Shiq'voth - Surging Fist",
-			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -3474,10 +3474,10 @@ WeakAurasSaved = {
 						["spellIds"] = {
 							272790, -- [1]
 						},
-						["use_specific_unit"] = false,
+						["debuffType"] = "HELPFUL",
 						["unit"] = "pet",
 						["subeventPrefix"] = "SPELL",
-						["debuffType"] = "HELPFUL",
+						["use_specific_unit"] = false,
 						["buffShowOn"] = "showOnActive",
 					},
 					["untrigger"] = {
@@ -3643,15 +3643,7 @@ WeakAurasSaved = {
 				},
 			},
 			["load"] = {
-				["role"] = {
-					["multi"] = {
-					},
-				},
 				["talent2"] = {
-					["multi"] = {
-					},
-				},
-				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -3668,6 +3660,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -3676,12 +3672,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_class"] = true,
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["use_spec"] = true,
 				["class"] = {
 					["single"] = "HUNTER",
 					["multi"] = {
@@ -3707,10 +3707,14 @@ WeakAurasSaved = {
 				0, -- [3]
 				0.5, -- [4]
 			},
-			["config"] = {
-			},
-			["useAdjustedMax"] = false,
 			["uid"] = "uYBkg0eaimR",
+			["useAdjustedMax"] = false,
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
 			["borderInFront"] = true,
@@ -3738,11 +3742,7 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["config"] = {
 			},
 			["inverse"] = false,
 			["useAdjustededMax"] = false,
@@ -3777,14 +3777,14 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["event"] = "Combat Log",
 						["unit"] = "player",
-						["subeventPrefix"] = "SPELL",
+						["sourceUnit"] = "player",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["names"] = {
 						},
-						["sourceUnit"] = "player",
+						["subeventPrefix"] = "SPELL",
 						["use_cloneId"] = true,
 						["debuffType"] = "HELPFUL",
 					},
@@ -3882,7 +3882,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "8gslbtuatcw",
 			["xOffset"] = 0,
 			["authorOptions"] = {
 			},
@@ -3922,13 +3922,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldownEdge"] = false,
-			["uid"] = "8gslbtuatcw",
-			["alpha"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - VoH - Aqir Mindhunter - Toxic Breath",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -3959,20 +3959,20 @@ WeakAurasSaved = {
 						["use_absorbMode"] = true,
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
-						["duration"] = "3",
 						["type"] = "aura2",
 						["unevent"] = "timed",
+						["duration"] = "3",
+						["event"] = "Combat Log",
 						["auraspellids"] = {
 							"311560", -- [1]
 						},
 						["use_unit"] = true,
-						["event"] = "Combat Log",
-						["subeventSuffix"] = "_CAST_SUCCESS",
-						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["subeventSuffix"] = "_CAST_SUCCESS",
+						["subeventPrefix"] = "SPELL",
 						["useExactSpellId"] = true,
 						["names"] = {
 						},
@@ -4058,26 +4058,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469,1470,1570,1571",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = ")L0MsB(PfoV",
 			["authorOptions"] = {
 			},
 			["actions"] = {
@@ -4123,13 +4123,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["uid"] = ")L0MsB(PfoV",
-			["alpha"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "[TEST] MADNESS - Madness Volatile Intent",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -4165,21 +4165,21 @@ WeakAurasSaved = {
 						["use_absorbMode"] = true,
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
-						["duration"] = "3",
 						["type"] = "aura2",
 						["unevent"] = "timed",
+						["duration"] = "3",
+						["event"] = "Combat Log",
 						["auraspellids"] = {
 							"306531", -- [1]
 						},
 						["subeventSuffix"] = "_CAST_SUCCESS",
-						["event"] = "Combat Log",
-						["subeventPrefix"] = "SPELL",
-						["names"] = {
-						},
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["subeventPrefix"] = "SPELL",
+						["names"] = {
+						},
 						["useExactSpellId"] = true,
 						["use_unit"] = true,
 					},
@@ -4264,26 +4264,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = true,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469,1470,1570,1571",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "fRxxJbLDX7Q",
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -4305,13 +4305,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["xOffset"] = 0,
-			["uid"] = "fRxxJbLDX7Q",
-			["alpha"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "[NOT WORKING] MADNESS - Haunting Shadows",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["auto"] = false,
@@ -4367,13 +4367,13 @@ WeakAurasSaved = {
 						["event"] = "Combat Log",
 						["names"] = {
 						},
-						["subeventPrefix"] = "SPELL",
+						["use_cloneId"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["unit"] = "player",
-						["use_cloneId"] = true,
+						["subeventPrefix"] = "SPELL",
 						["sourceUnit"] = "player",
 						["debuffType"] = "HELPFUL",
 					},
@@ -4471,7 +4471,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "C(vWtaCSNWM",
 			["xOffset"] = 0,
 			["authorOptions"] = {
 			},
@@ -4511,13 +4511,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["uid"] = "C(vWtaCSNWM",
-			["alpha"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - DD - Forge Guard Hurrul - Entropic Leap",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -4554,17 +4554,17 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
-						["use_absorbMode"] = true,
 						["subeventSuffix"] = "_CAST_START",
-						["subeventPrefix"] = "SPELL",
 						["event"] = "Combat Log",
-						["useName"] = true,
-						["names"] = {
-						},
+						["use_absorbMode"] = true,
+						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["useName"] = true,
+						["names"] = {
+						},
 						["unevent"] = "timed",
 						["unit"] = "player",
 					},
@@ -4668,26 +4668,27 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
-				["use_never"] = false,
-				["encounterid"] = "2329",
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
+				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["config"] = {
+			},
 			["cooldownEdge"] = false,
 			["xOffset"] = 0,
 			["regionType"] = "icon",
@@ -4709,14 +4710,13 @@ WeakAurasSaved = {
 			},
 			["authorOptions"] = {
 			},
-			["config"] = {
-			},
-			["alpha"] = 1,
+			["zoom"] = 0.003,
+			["width"] = 80,
 			["cooldownTextDisabled"] = true,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "O - GH - Thrall - Defiled Ground",
-			["width"] = 80,
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = false,
@@ -4745,21 +4745,21 @@ WeakAurasSaved = {
 						["use_cloneId"] = true,
 						["debuffType"] = "HARMFUL",
 						["type"] = "aura2",
-						["names"] = {
-						},
 						["auraspellids"] = {
 							"298701", -- [1]
 						},
-						["unevent"] = "timed",
 						["event"] = "Combat Log",
-						["subeventSuffix"] = "_CAST_START",
-						["useExactSpellId"] = true,
+						["names"] = {
+						},
+						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
-						["subeventPrefix"] = "SPELL",
+						["subeventSuffix"] = "_CAST_START",
+						["useExactSpellId"] = true,
 						["sourceUnit"] = "player",
+						["unevent"] = "timed",
 					},
 					["untrigger"] = {
 					},
@@ -4855,7 +4855,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "WRELKR8OMgu",
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Linked.ogg",
@@ -4881,13 +4881,13 @@ WeakAurasSaved = {
 			},
 			["authorOptions"] = {
 			},
-			["uid"] = "WRELKR8OMgu",
-			["alpha"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "S - TD - Slavemaster Ul'rok - Chains of Servitude DEBUFF",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["auto"] = false,
@@ -4942,21 +4942,21 @@ WeakAurasSaved = {
 						["debuffType"] = "HARMFUL",
 						["showClones"] = true,
 						["type"] = "aura2",
-						["names"] = {
-						},
 						["auraspellids"] = {
 							"298033", -- [1]
 						},
-						["unevent"] = "timed",
 						["event"] = "Combat Log",
-						["subeventSuffix"] = "_CAST_START",
-						["subeventPrefix"] = "SPELL",
+						["names"] = {
+						},
+						["useExactSpellId"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
-						["useExactSpellId"] = true,
+						["subeventSuffix"] = "_CAST_START",
+						["subeventPrefix"] = "SPELL",
 						["sourceUnit"] = "player",
+						["unevent"] = "timed",
 					},
 					["untrigger"] = {
 					},
@@ -5071,7 +5071,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "N7SxWg(cIVK",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["actions"] = {
 				["start"] = {
@@ -5092,13 +5092,13 @@ WeakAurasSaved = {
 			},
 			["authorOptions"] = {
 			},
-			["uid"] = "N7SxWg(cIVK",
-			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - TRASH - Touch of the Abyss DEBUFF",
-			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -5142,16 +5142,16 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
-						["use_unit"] = true,
 						["subeventSuffix"] = "_CAST_START",
-						["subeventPrefix"] = "SPELL",
 						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["useName"] = true,
+						["use_unit"] = true,
+						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
 						["use_absorbMode"] = true,
 						["names"] = {
 						},
@@ -5237,26 +5237,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
-				["use_never"] = false,
-				["encounterid"] = "2329",
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
+				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "VdzETLhB0n3",
 			["authorOptions"] = {
 			},
 			["icon"] = true,
@@ -5290,13 +5290,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["parent"] = "Horrific Visions",
-			["uid"] = "VdzETLhB0n3",
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - GH - Thrall - Seismic Slam",
-			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -5329,18 +5329,18 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["use_sourceNpcId"] = false,
 						["debuffType"] = "HARMFUL",
-						["use_absorbMode"] = true,
 						["useName"] = true,
-						["unit"] = "player",
 						["unevent"] = "timed",
-						["type"] = "event",
+						["use_absorbMode"] = true,
 						["event"] = "Combat Log",
-						["subeventSuffix"] = "_CAST_START",
+						["unit"] = "player",
 						["sourceNpcId"] = "158315",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["type"] = "event",
+						["subeventSuffix"] = "_CAST_START",
 						["names"] = {
 						},
 						["use_unit"] = true,
@@ -5351,15 +5351,15 @@ WeakAurasSaved = {
 				}, -- [1]
 				{
 					["trigger"] = {
+						["unit"] = "player",
 						["type"] = "aura2",
+						["subeventPrefix"] = "SPELL",
 						["subeventSuffix"] = "_CAST_START",
 						["useExactSpellId"] = true,
-						["event"] = "Health",
-						["unit"] = "player",
 						["auraspellids"] = {
 							"308380", -- [1]
 						},
-						["subeventPrefix"] = "SPELL",
+						["event"] = "Health",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -5367,15 +5367,15 @@ WeakAurasSaved = {
 				}, -- [2]
 				{
 					["trigger"] = {
+						["unit"] = "player",
 						["type"] = "aura2",
+						["subeventPrefix"] = "SPELL",
 						["subeventSuffix"] = "_CAST_START",
 						["useExactSpellId"] = true,
-						["event"] = "Health",
-						["unit"] = "player",
 						["auraspellids"] = {
 							"308380", -- [1]
 						},
-						["subeventPrefix"] = "SPELL",
+						["event"] = "Health",
 						["debuffType"] = "HARMFUL",
 					},
 					["untrigger"] = {
@@ -5458,26 +5458,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
-				["use_never"] = false,
-				["encounterid"] = "2329",
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
+				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1470",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1470",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "KRoElTgfYGT",
 			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
@@ -5522,13 +5522,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["parent"] = "Horrific Visions",
-			["uid"] = "KRoElTgfYGT",
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["width"] = 80,
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - TD - Inquisitor Darkspeak - Agonizing Torment - Convert",
-			["width"] = 80,
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "1.0.0",
@@ -5571,20 +5571,20 @@ WeakAurasSaved = {
 						["use_absorbMode"] = true,
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
-						["duration"] = "3",
 						["type"] = "aura2",
 						["unevent"] = "timed",
+						["duration"] = "3",
+						["event"] = "Combat Log",
 						["auraspellids"] = {
 							"316557", -- [1]
 						},
 						["subeventSuffix"] = "_CAST_SUCCESS",
-						["event"] = "Combat Log",
-						["subeventPrefix"] = "SPELL",
-						["use_unit"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["subeventPrefix"] = "SPELL",
+						["use_unit"] = true,
 						["useExactSpellId"] = true,
 						["names"] = {
 						},
@@ -5689,26 +5689,27 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469,1470,1570,1571",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["config"] = {
+			},
 			["selfPoint"] = "CENTER",
 			["parent"] = "Horrific Visions",
 			["regionType"] = "icon",
@@ -5722,14 +5723,13 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["config"] = {
-			},
-			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "[NOT WORKING] MADNESS - Madness Split Personallity",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["auto"] = false,
@@ -5773,16 +5773,16 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "aura2",
-						["use_unit"] = true,
 						["subeventSuffix"] = "_CAST_START",
-						["subeventPrefix"] = "SPELL",
 						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["useName"] = true,
+						["use_unit"] = true,
+						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
 						["use_absorbMode"] = true,
 						["names"] = {
 						},
@@ -5887,26 +5887,27 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469,1470,1570,1571",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["config"] = {
+			},
 			["selfPoint"] = "CENTER",
 			["parent"] = "Horrific Visions",
 			["regionType"] = "icon",
@@ -5920,14 +5921,13 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["config"] = {
-			},
-			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "MADNESS - Madness Desynchronized",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["auto"] = true,
@@ -5974,14 +5974,14 @@ WeakAurasSaved = {
 						["duration"] = "7",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
+						["sourceUnit"] = "player",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["names"] = {
 						},
-						["sourceUnit"] = "player",
+						["unit"] = "player",
 						["use_cloneId"] = true,
 						["debuffType"] = "HELPFUL",
 					},
@@ -6118,7 +6118,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "ogDBYlT)DYS",
 			["selfPoint"] = "CENTER",
 			["icon"] = true,
 			["regionType"] = "icon",
@@ -6128,13 +6128,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldownEdge"] = false,
-			["uid"] = "ogDBYlT)DYS",
-			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - CS - Alleria Windrunner - Void Eruption",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -6167,17 +6167,17 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "aura2",
-						["use_unit"] = true,
 						["subeventSuffix"] = "_CAST_SUCCESS",
+						["event"] = "Combat Log",
+						["use_unit"] = true,
 						["names"] = {
 						},
-						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["useName"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
 						["use_absorbMode"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -6262,26 +6262,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469,1470,1570,1571",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "tHnrY83fyA3",
 			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
@@ -6326,13 +6326,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["parent"] = "Horrific Visions",
-			["uid"] = "tHnrY83fyA3",
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["width"] = 80,
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "MADNESS - Madness Promised Power",
-			["width"] = 80,
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "1.0.0",
@@ -6363,14 +6363,14 @@ WeakAurasSaved = {
 						["duration"] = "3",
 						["event"] = "Combat Log",
 						["unit"] = "player",
-						["subeventPrefix"] = "SPELL",
+						["sourceUnit"] = "player",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["names"] = {
 						},
-						["sourceUnit"] = "player",
+						["subeventPrefix"] = "SPELL",
 						["use_cloneId"] = true,
 						["debuffType"] = "HELPFUL",
 					},
@@ -6487,7 +6487,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["config"] = {
+			},
 			["authorOptions"] = {
 			},
 			["selfPoint"] = "CENTER",
@@ -6508,14 +6509,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["parent"] = "Horrific Visions",
-			["config"] = {
-			},
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["width"] = 80,
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - TRASH - Brutal Smash",
-			["width"] = 80,
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "1.0.0",
@@ -6551,13 +6551,13 @@ WeakAurasSaved = {
 						["event"] = "Combat Log",
 						["names"] = {
 						},
-						["subeventPrefix"] = "SPELL",
+						["use_cloneId"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["unit"] = "player",
-						["use_cloneId"] = true,
+						["subeventPrefix"] = "SPELL",
 						["sourceUnit"] = "player",
 						["debuffType"] = "HELPFUL",
 					},
@@ -6674,7 +6674,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "hWYoPic3DnV",
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Front.ogg",
@@ -6699,13 +6699,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldownEdge"] = false,
-			["uid"] = "hWYoPic3DnV",
-			["alpha"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "S - OT - Armsmaster Terenson - Roaring Blast",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["auto"] = false,
@@ -6748,14 +6748,14 @@ WeakAurasSaved = {
 						["duration"] = "2",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
+						["sourceUnit"] = "player",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["names"] = {
 						},
-						["sourceUnit"] = "player",
+						["unit"] = "player",
 						["use_cloneId"] = true,
 						["debuffType"] = "HELPFUL",
 					},
@@ -6853,7 +6853,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "dy8Bf51Kl4W",
 			["authorOptions"] = {
 			},
 			["icon"] = true,
@@ -6887,13 +6887,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["parent"] = "Horrific Visions",
-			["uid"] = "dy8Bf51Kl4W",
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - MQ - Zardeth of the Black Claw - Rain of Fire ",
-			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -6936,14 +6936,14 @@ WeakAurasSaved = {
 						["duration"] = "3",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
+						["sourceUnit"] = "player",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["names"] = {
 						},
-						["sourceUnit"] = "player",
+						["unit"] = "player",
 						["use_cloneId"] = true,
 						["debuffType"] = "HELPFUL",
 					},
@@ -7060,7 +7060,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "YgRUMhPGw5b",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["xOffset"] = 0,
 			["regionType"] = "icon",
@@ -7074,13 +7074,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["icon"] = true,
-			["uid"] = "YgRUMhPGw5b",
-			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["width"] = 80,
 			["zoom"] = 0.003,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "O - TRASH - Endless Hunger Totem 2",
-			["width"] = 80,
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = false,
@@ -7122,14 +7122,14 @@ WeakAurasSaved = {
 						["duration"] = "2.5",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["names"] = {
-						},
+						["use_cloneId"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["unit"] = "player",
-						["use_cloneId"] = true,
+						["names"] = {
+						},
 						["sourceUnit"] = "player",
 						["debuffType"] = "HELPFUL",
 					},
@@ -7246,7 +7246,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["config"] = {
+			},
 			["selfPoint"] = "CENTER",
 			["parent"] = "Horrific Visions",
 			["regionType"] = "icon",
@@ -7260,14 +7261,13 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["config"] = {
-			},
-			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "O - TRASH - Break Spirit",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["auto"] = false,
@@ -7299,17 +7299,17 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Combat Log",
 						["names"] = {
 						},
-						["subeventSuffix"] = "_CAST_START",
 						["use_unit"] = true,
-						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["useName"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
 						["use_absorbMode"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -7413,26 +7413,27 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["config"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -7459,14 +7460,13 @@ WeakAurasSaved = {
 			},
 			["authorOptions"] = {
 			},
-			["config"] = {
-			},
-			["alpha"] = 1,
+			["zoom"] = 0.003,
+			["width"] = 80,
 			["cooldownTextDisabled"] = true,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "O - TD - Annihilator Lak'hal - Orb of Annihilation",
-			["width"] = 80,
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = false,
@@ -7514,16 +7514,16 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
-						["use_unit"] = true,
 						["subeventSuffix"] = "_CAST_START",
-						["subeventPrefix"] = "SPELL",
 						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["useName"] = true,
+						["use_unit"] = true,
+						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
 						["use_absorbMode"] = true,
 						["names"] = {
 						},
@@ -7628,26 +7628,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "iPIsS1pu)Km",
 			["selfPoint"] = "CENTER",
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
@@ -7657,13 +7657,13 @@ WeakAurasSaved = {
 			},
 			["authorOptions"] = {
 			},
-			["uid"] = "iPIsS1pu)Km",
-			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - VoW - Vez'okk the Lightless - Defiled Ground",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -7697,16 +7697,16 @@ WeakAurasSaved = {
 						},
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
-						["use_absorbMode"] = true,
 						["subeventSuffix"] = "_CAST_START",
-						["subeventPrefix"] = "SPELL",
 						["event"] = "Combat Log",
-						["useName"] = true,
-						["use_unit"] = true,
+						["use_absorbMode"] = true,
+						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["useName"] = true,
+						["use_unit"] = true,
 						["unevent"] = "timed",
 						["unit"] = "player",
 					},
@@ -7791,26 +7791,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
-				["use_never"] = false,
-				["encounterid"] = "2329",
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
+				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1470",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1470",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "jT4XQkSwZw1",
 			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
@@ -7855,13 +7855,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["parent"] = "Horrific Visions",
-			["uid"] = "jT4XQkSwZw1",
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["width"] = 80,
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - CS - Alleria Windrunner - Darkened Sky",
-			["width"] = 80,
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "1.0.0",
@@ -7905,14 +7905,14 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["names"] = {
 						},
-						["events"] = "PLAYER_REGEN_DISABLED, COMBAT_LOG_EVENT_UNFILTERED",
+						["subeventPrefix"] = "SPELL",
 						["spellIds"] = {
 						},
-						["custom"] = "function(event, _, subEvent, _, _, _, _, _, destGUID, ...)\n    -- Don't mark if not leader. We really shouldn't even load the WA, but there's no leader condition.\n    if not UnitIsGroupLeader(\"player\") then\n        return true\n    end\n    \n    -- Clear out the usedMarkers list if new combat is entered and add pre-existing\n    -- visible markers to the table to prevent them from being moved\n    if event == \"PLAYER_REGEN_DISABLED\" then\n        aura_env.usedMarkers = {}\n        \n        -- Create list of pre-placed markers\n        for i = 1, #aura_env.preScan do\n            local mark = GetRaidTargetIndex(aura_env.preScan[i])\n            if ( mark ) then\n                local newGUID = UnitGUID(aura_env.preScan[i])\n                aura_env.usedMarkers[newGUID] = mark\n            end\n        end\n        \n        -- Free up usedMarkers from marked targets who died\n    elseif subEvent == \"UNIT_DIED\" then\n        aura_env.usedMarkers[destGUID] = nil\n        \n    else\n        -- Don't scan too often\n        if GetTime() - (aura_env.lastScan or 0) < 0.3 then\n            return true\n        end\n        aura_env.lastScan = GetTime()\n        \n        -- Loop through the visible nameplates for something to mark\n        for i = 1,40 do\n            local target = \"nameplate\"..i\n            local uGUID = UnitGUID(target)\n            \n            if uGUID and not GetRaidTargetIndex(target) and UnitAffectingCombat(target) then\n                local npcID = select(6, strsplit(\"-\", uGUID))\n                \n                if npcID then\n                    for _, ttm in ipairs(aura_env.targetsToMark) do\n                        if ttm == npcID then\n                            local mark = aura_env.GetFirstFreeMarker()\n                            if mark then\n                                SetRaidTarget(target, mark)\n                                aura_env.usedMarkers[uGUID] = mark\n                                break\n                            end\n                        end\n                    end\n                end\n            end\n        end\n    end\n    \n    return true\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+						["events"] = "PLAYER_REGEN_DISABLED, COMBAT_LOG_EVENT_UNFILTERED",
 						["custom_type"] = "status",
 						["check"] = "event",
 						["unit"] = "player",
-						["subeventPrefix"] = "SPELL",
+						["custom"] = "function(event, _, subEvent, _, _, _, _, _, destGUID, ...)\n    -- Don't mark if not leader. We really shouldn't even load the WA, but there's no leader condition.\n    if not UnitIsGroupLeader(\"player\") then\n        return true\n    end\n    \n    -- Clear out the usedMarkers list if new combat is entered and add pre-existing\n    -- visible markers to the table to prevent them from being moved\n    if event == \"PLAYER_REGEN_DISABLED\" then\n        aura_env.usedMarkers = {}\n        \n        -- Create list of pre-placed markers\n        for i = 1, #aura_env.preScan do\n            local mark = GetRaidTargetIndex(aura_env.preScan[i])\n            if ( mark ) then\n                local newGUID = UnitGUID(aura_env.preScan[i])\n                aura_env.usedMarkers[newGUID] = mark\n            end\n        end\n        \n        -- Free up usedMarkers from marked targets who died\n    elseif subEvent == \"UNIT_DIED\" then\n        aura_env.usedMarkers[destGUID] = nil\n        \n    else\n        -- Don't scan too often\n        if GetTime() - (aura_env.lastScan or 0) < 0.3 then\n            return true\n        end\n        aura_env.lastScan = GetTime()\n        \n        -- Loop through the visible nameplates for something to mark\n        for i = 1,40 do\n            local target = \"nameplate\"..i\n            local uGUID = UnitGUID(target)\n            \n            if uGUID and not GetRaidTargetIndex(target) and UnitAffectingCombat(target) then\n                local npcID = select(6, strsplit(\"-\", uGUID))\n                \n                if npcID then\n                    for _, ttm in ipairs(aura_env.targetsToMark) do\n                        if ttm == npcID then\n                            local mark = aura_env.GetFirstFreeMarker()\n                            if mark then\n                                SetRaidTarget(target, mark)\n                                aura_env.usedMarkers[uGUID] = mark\n                                break\n                            end\n                        end\n                    end\n                end\n            end\n        end\n    end\n    \n    return true\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -8220,13 +8220,13 @@ WeakAurasSaved = {
 						["event"] = "Combat Log",
 						["names"] = {
 						},
-						["subeventPrefix"] = "SPELL",
+						["use_cloneId"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["unit"] = "player",
-						["use_cloneId"] = true,
+						["subeventPrefix"] = "SPELL",
 						["sourceUnit"] = "player",
 						["debuffType"] = "HELPFUL",
 					},
@@ -8324,7 +8324,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "qjSkdH46WCG",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["authorOptions"] = {
 			},
@@ -8369,13 +8369,13 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["uid"] = "qjSkdH46WCG",
-			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["width"] = 80,
 			["zoom"] = 0.003,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "S - TD - Slavemaster Ul'rok - Chains of Servitude",
-			["width"] = 80,
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = false,
@@ -8407,17 +8407,17 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Combat Log",
 						["names"] = {
 						},
-						["subeventSuffix"] = "_CAST_START",
 						["use_unit"] = true,
-						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["useName"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
 						["use_absorbMode"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -8521,26 +8521,27 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["config"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -8567,14 +8568,13 @@ WeakAurasSaved = {
 			},
 			["authorOptions"] = {
 			},
-			["config"] = {
-			},
-			["alpha"] = 1,
+			["zoom"] = 0.003,
+			["width"] = 80,
 			["cooldownTextDisabled"] = true,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "O - TD - Inquisitor Gnshal - Void Torrent",
-			["width"] = 80,
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = false,
@@ -8615,21 +8615,21 @@ WeakAurasSaved = {
 						["use_cloneId"] = true,
 						["debuffType"] = "HARMFUL",
 						["type"] = "aura2",
-						["names"] = {
-						},
 						["auraspellids"] = {
 							"297315", -- [1]
 						},
-						["unevent"] = "timed",
 						["event"] = "Combat Log",
-						["subeventSuffix"] = "_CAST_START",
-						["useExactSpellId"] = true,
+						["names"] = {
+						},
+						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
-						["subeventPrefix"] = "SPELL",
+						["subeventSuffix"] = "_CAST_START",
+						["useExactSpellId"] = true,
 						["sourceUnit"] = "player",
+						["unevent"] = "timed",
 					},
 					["untrigger"] = {
 					},
@@ -8776,7 +8776,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "M6sLNvDgv)X",
 			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
@@ -8790,13 +8790,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["selfPoint"] = "CENTER",
-			["uid"] = "M6sLNvDgv)X",
-			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "COMMON - TRASH - Void Buffet",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -8841,17 +8841,17 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Combat Log",
 						["names"] = {
 						},
-						["subeventSuffix"] = "_CAST_START",
 						["use_unit"] = true,
-						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["useName"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
 						["use_absorbMode"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -8955,26 +8955,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "xgfdYBVjMmY",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["xOffset"] = 0,
 			["regionType"] = "icon",
@@ -8988,13 +8988,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["icon"] = true,
-			["uid"] = "xgfdYBVjMmY",
-			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["width"] = 80,
 			["zoom"] = 0.003,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "O - VoS - Oblivion Elemental - Hopelessness",
-			["width"] = 80,
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = false,
@@ -9142,23 +9142,23 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["use_tooltip"] = false,
 						["debuffType"] = "HELPFUL",
-						["unit"] = "pet",
 						["useName"] = true,
 						["use_debuffClass"] = false,
 						["unevent"] = "timed",
-						["buffShowOn"] = "showOnActive",
+						["unit"] = "pet",
 						["event"] = "Health",
-						["names"] = {
-							"Frenzy", -- [1]
-						},
+						["buffShowOn"] = "showOnActive",
+						["type"] = "aura2",
 						["subeventSuffix"] = "_CAST_START",
-						["matchesShowOn"] = "showAlways",
 						["spellIds"] = {
 							272790, -- [1]
 						},
+						["matchesShowOn"] = "showAlways",
 						["useGroup_count"] = false,
-						["type"] = "aura2",
 						["combineMatches"] = "showLowest",
+						["names"] = {
+							"Frenzy", -- [1]
+						},
 						["use_specific_unit"] = false,
 					},
 					["untrigger"] = {
@@ -9364,17 +9364,16 @@ WeakAurasSaved = {
 				0.5, -- [4]
 			},
 			["load"] = {
-				["use_spec"] = true,
 				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
 					["multi"] = {
 					},
 				},
 				["spec"] = {
 					["single"] = 1,
-					["multi"] = {
-					},
-				},
-				["talent"] = {
 					["multi"] = {
 					},
 				},
@@ -9387,25 +9386,26 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["use_class"] = true,
 				["role"] = {
 					["multi"] = {
 					},
 				},
-				["difficulty"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
 				["use_combat"] = true,
-				["pvptalent"] = {
+				["difficulty"] = {
 					["multi"] = {
 					},
 				},
@@ -9528,10 +9528,6 @@ WeakAurasSaved = {
 			["sparkOffsetY"] = 0,
 			["text2FontFlags"] = "OUTLINE",
 			["load"] = {
-				["faction"] = {
-					["multi"] = {
-					},
-				},
 				["talent2"] = {
 					["multi"] = {
 					},
@@ -9541,21 +9537,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
-					["single"] = "HUNTER",
-					["multi"] = {
-					},
-				},
 				["ingroup"] = {
 					["multi"] = {
 					},
 				},
-				["use_talent"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
+				["class"] = {
+					["single"] = "HUNTER",
 					["multi"] = {
 					},
 				},
@@ -9565,7 +9552,14 @@ WeakAurasSaved = {
 						true, -- [1]
 					},
 				},
-				["pvptalent"] = {
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -9573,8 +9567,14 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -9607,15 +9607,15 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HELPFUL",
 						["type"] = "aura",
+						["unevent"] = "auto",
+						["event"] = "Power",
+						["buffShowOn"] = "showOnActive",
+						["use_specific_unit"] = false,
+						["use_spellId"] = true,
 						["spellIds"] = {
 							259388, -- [1]
 						},
-						["unevent"] = "auto",
-						["buffShowOn"] = "showOnActive",
-						["event"] = "Power",
-						["use_specific_unit"] = false,
 						["subeventSuffix"] = "_CAST_START",
-						["use_spellId"] = true,
 						["name"] = "Wildfire Bomb",
 						["subeventPrefix"] = "SPELL",
 						["names"] = {
@@ -9633,8 +9633,8 @@ WeakAurasSaved = {
 						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Health",
 						["subeventPrefix"] = "SPELL",
-						["custom_type"] = "event",
 						["custom"] = "function(event, unit)\n    if WeakAuras.triggerState[aura_env.id].triggers[1] then        \n        if event == \"COMBAT_RATING_UPDATE\" then\n            aura_env.UpdateHaste()\n        elseif event == \"UNIT_POWER_UPDATE\" and unit == \"player\" then\n            aura_env.UpdateCasts()\n        end\n    end\nend\n\n\n\n",
+						["custom_type"] = "event",
 						["events"] = "COMBAT_RATING_UPDATE, UNIT_POWER_UPDATE",
 						["genericShowOn"] = "showOnActive",
 						["custom_hide"] = "custom",
@@ -9886,17 +9886,17 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Combat Log",
 						["names"] = {
 						},
-						["subeventSuffix"] = "_CAST_START",
 						["unit"] = "player",
-						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["useName"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
 						["use_absorbMode"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -9981,26 +9981,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
-				["use_never"] = false,
-				["encounterid"] = "2329",
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
+				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "SRlEHHptIIU",
 			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
@@ -10045,13 +10045,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["parent"] = "Horrific Visions",
-			["uid"] = "SRlEHHptIIU",
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["width"] = 80,
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - VoW - Voidcrazed Hulk - Howling in Pain",
-			["width"] = 80,
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "1.0.0",
@@ -10082,22 +10082,22 @@ WeakAurasSaved = {
 						["destUnit"] = "player",
 						["use_cloneId"] = true,
 						["debuffType"] = "HELPFUL",
-						["unit"] = "player",
 						["type"] = "aura2",
 						["auraspellids"] = {
 							"313698", -- [1]
 						},
-						["subeventSuffix"] = "_AURA_APPLIED",
+						["unit"] = "player",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["unevent"] = "timed",
+						["useExactSpellId"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
-						["useExactSpellId"] = true,
+						["unevent"] = "timed",
 						["use_destUnit"] = true,
 						["sourceUnit"] = "player",
+						["subeventSuffix"] = "_AURA_APPLIED",
 					},
 					["untrigger"] = {
 					},
@@ -10233,7 +10233,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "m30)9PJY8EQ",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -10259,13 +10259,13 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["uid"] = "m30)9PJY8EQ",
-			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["width"] = 80,
 			["zoom"] = 0.003,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "COMMON - Gift of the Titans",
-			["width"] = 80,
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = true,
@@ -10309,17 +10309,17 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Combat Log",
 						["names"] = {
 						},
-						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
-						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["useName"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
 						["use_absorbMode"] = true,
 						["use_unit"] = true,
 					},
@@ -10423,26 +10423,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "afcIicq(Wz)",
 			["authorOptions"] = {
 			},
 			["icon"] = true,
@@ -10457,13 +10457,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldownEdge"] = false,
-			["uid"] = "afcIicq(Wz)",
-			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "O - GH - Thrall - Surging Darkness",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["auto"] = false,
@@ -10501,16 +10501,16 @@ WeakAurasSaved = {
 						["use_cloneId"] = true,
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
-						["use_absorbMode"] = true,
 						["unevent"] = "timed",
-						["subeventPrefix"] = "SPELL",
 						["event"] = "Combat Log",
-						["unit"] = "player",
-						["subeventSuffix"] = "_CAST_START",
+						["use_absorbMode"] = true,
+						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unit"] = "player",
+						["subeventSuffix"] = "_CAST_START",
 						["useName"] = true,
 						["names"] = {
 						},
@@ -10615,26 +10615,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
-				["use_never"] = false,
-				["encounterid"] = "2329",
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
+				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "pQ(Eoa6Cy9T",
 			["cooldownEdge"] = false,
 			["actions"] = {
 				["start"] = {
@@ -10656,13 +10656,13 @@ WeakAurasSaved = {
 			},
 			["authorOptions"] = {
 			},
-			["uid"] = "pQ(Eoa6Cy9T",
-			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - VoW - Voidcrazed Hulk - Explosive Leap",
-			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -10694,12 +10694,12 @@ WeakAurasSaved = {
 						["spellIds"] = {
 							118455, -- [1]
 						},
-						["subeventPrefix"] = "SPELL",
+						["debuffType"] = "HELPFUL",
 						["names"] = {
 							"Beast Cleave", -- [1]
 						},
 						["use_specific_unit"] = false,
-						["debuffType"] = "HELPFUL",
+						["subeventPrefix"] = "SPELL",
 						["buffShowOn"] = "showOnActive",
 					},
 					["untrigger"] = {
@@ -10867,37 +10867,37 @@ WeakAurasSaved = {
 						["destUnit"] = "player",
 						["use_cloneId"] = true,
 						["debuffType"] = "HARMFUL",
-						["unit"] = "player",
 						["type"] = "event",
 						["auraspellids"] = {
 							"315385", -- [1]
 						},
-						["subeventSuffix"] = "_AURA_APPLIED",
+						["unit"] = "player",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["unevent"] = "timed",
+						["useExactSpellId"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
-						["useExactSpellId"] = true,
+						["unevent"] = "timed",
 						["use_destUnit"] = true,
 						["sourceUnit"] = "player",
+						["subeventSuffix"] = "_AURA_APPLIED",
 					},
 					["untrigger"] = {
 					},
 				}, -- [1]
 				{
 					["trigger"] = {
+						["unit"] = "player",
 						["type"] = "aura2",
+						["subeventPrefix"] = "SPELL",
 						["useExactSpellId"] = true,
 						["subeventSuffix"] = "_CAST_START",
-						["event"] = "Health",
-						["unit"] = "player",
 						["auraspellids"] = {
 							"315385", -- [1]
 						},
-						["subeventPrefix"] = "SPELL",
+						["event"] = "Health",
 						["debuffType"] = "HARMFUL",
 					},
 					["untrigger"] = {
@@ -10995,7 +10995,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "qd1syA7sWfO",
 			["xOffset"] = 0,
 			["icon"] = true,
 			["regionType"] = "icon",
@@ -11023,13 +11023,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["parent"] = "Horrific Visions",
-			["uid"] = "qd1syA7sWfO",
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "MADNESS - Scorched Feet DEBUFF",
-			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -11076,22 +11076,22 @@ WeakAurasSaved = {
 						["destUnit"] = "player",
 						["use_cloneId"] = true,
 						["debuffType"] = "HARMFUL",
-						["unit"] = "player",
 						["type"] = "aura2",
 						["auraspellids"] = {
 							"300261", -- [1]
 						},
-						["subeventSuffix"] = "_AURA_APPLIED",
+						["unit"] = "player",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["unevent"] = "timed",
+						["useExactSpellId"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
-						["useExactSpellId"] = true,
+						["unevent"] = "timed",
 						["use_destUnit"] = true,
 						["sourceUnit"] = "player",
+						["subeventSuffix"] = "_AURA_APPLIED",
 					},
 					["untrigger"] = {
 					},
@@ -11227,7 +11227,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["config"] = {
+			},
 			["selfPoint"] = "CENTER",
 			["parent"] = "Horrific Visions",
 			["regionType"] = "icon",
@@ -11241,14 +11242,13 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["config"] = {
-			},
-			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "COMMON - N'Zoth's Burning Vision",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["auto"] = true,
@@ -11293,17 +11293,17 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Combat Log",
 						["names"] = {
 						},
-						["subeventSuffix"] = "_CAST_START",
 						["use_unit"] = true,
-						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["useName"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
 						["use_absorbMode"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -11407,26 +11407,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "yZi81I6n2lp",
 			["cooldownEdge"] = false,
 			["xOffset"] = 0,
 			["regionType"] = "icon",
@@ -11440,13 +11440,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["icon"] = true,
-			["uid"] = "yZi81I6n2lp",
-			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["width"] = 80,
 			["zoom"] = 0.003,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "O - VoW - Coagulated Horror - Sanguine Residue",
-			["width"] = 80,
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = false,
@@ -11490,16 +11490,16 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
-						["use_absorbMode"] = true,
 						["unevent"] = "timed",
-						["subeventPrefix"] = "SPELL",
 						["event"] = "Combat Log",
-						["use_unit"] = true,
-						["useName"] = true,
+						["use_absorbMode"] = true,
+						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["use_unit"] = true,
+						["useName"] = true,
 						["subeventSuffix"] = "_CAST_START",
 						["names"] = {
 						},
@@ -11604,26 +11604,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
-				["use_never"] = false,
-				["encounterid"] = "2329",
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
+				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "18nJK(EUVyh",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -11637,13 +11637,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["parent"] = "Horrific Visions",
-			["uid"] = "18nJK(EUVyh",
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - GH - Thrall - Cries of the void1",
-			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -11688,17 +11688,17 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
-						["use_absorbMode"] = true,
 						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Combat Log",
+						["use_absorbMode"] = true,
 						["names"] = {
 						},
-						["event"] = "Combat Log",
-						["useName"] = true,
-						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["useName"] = true,
+						["subeventPrefix"] = "SPELL",
 						["unevent"] = "timed",
 						["use_unit"] = true,
 					},
@@ -11802,26 +11802,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "orK(XGcDxsF",
 			["parent"] = "Horrific Visions",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["regionType"] = "icon",
@@ -11835,13 +11835,13 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["uid"] = "orK(XGcDxsF",
-			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - TD - Annihilator Lak'hal - Dark Force",
-			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -11875,16 +11875,16 @@ WeakAurasSaved = {
 						["use_cloneId"] = true,
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
-						["use_absorbMode"] = true,
 						["unevent"] = "timed",
-						["subeventPrefix"] = "SPELL",
 						["event"] = "Combat Log",
-						["unit"] = "player",
-						["subeventSuffix"] = "_CAST_START",
+						["use_absorbMode"] = true,
+						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unit"] = "player",
+						["subeventSuffix"] = "_CAST_START",
 						["useName"] = true,
 						["names"] = {
 						},
@@ -11989,26 +11989,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
-				["use_never"] = false,
-				["encounterid"] = "2329",
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
+				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "btWfec3)bxE",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["authorOptions"] = {
 			},
@@ -12035,13 +12035,13 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["uid"] = "btWfec3)bxE",
-			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["width"] = 80,
 			["zoom"] = 0.003,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "O - VoH - Rexxar - Stampeding Corruption",
-			["width"] = 80,
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = false,
@@ -12084,13 +12084,13 @@ WeakAurasSaved = {
 						["event"] = "Combat Log",
 						["names"] = {
 						},
-						["subeventPrefix"] = "SPELL",
+						["use_cloneId"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["unit"] = "player",
-						["use_cloneId"] = true,
+						["subeventPrefix"] = "SPELL",
 						["sourceUnit"] = "player",
 						["debuffType"] = "HELPFUL",
 					},
@@ -12207,7 +12207,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["config"] = {
+			},
 			["parent"] = "Horrific Visions",
 			["icon"] = true,
 			["regionType"] = "icon",
@@ -12221,14 +12222,13 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["config"] = {
-			},
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - MQ - Boundless Corruption - Chaos Breath",
-			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -12260,13 +12260,13 @@ WeakAurasSaved = {
 						["event"] = "Combat Log",
 						["names"] = {
 						},
-						["unit"] = "player",
+						["sourceUnit"] = "player",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["subeventPrefix"] = "SPELL",
-						["sourceUnit"] = "player",
+						["unit"] = "player",
 						["use_cloneId"] = true,
 						["debuffType"] = "HELPFUL",
 					},
@@ -12383,7 +12383,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["config"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Front.ogg",
@@ -12409,14 +12410,13 @@ WeakAurasSaved = {
 			},
 			["authorOptions"] = {
 			},
-			["config"] = {
-			},
-			["alpha"] = 1,
+			["zoom"] = 0.003,
+			["width"] = 80,
 			["cooldownTextDisabled"] = true,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "S - TRASH - Forge Breath",
-			["width"] = 80,
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = false,
@@ -12456,21 +12456,21 @@ WeakAurasSaved = {
 						["use_cloneId"] = true,
 						["debuffType"] = "HARMFUL",
 						["type"] = "aura2",
-						["names"] = {
-						},
 						["auraspellids"] = {
 							"308265", -- [1]
 						},
-						["unevent"] = "timed",
 						["event"] = "Combat Log",
-						["subeventSuffix"] = "_CAST_START",
-						["useExactSpellId"] = true,
+						["names"] = {
+						},
+						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
-						["subeventPrefix"] = "SPELL",
+						["subeventSuffix"] = "_CAST_START",
+						["useExactSpellId"] = true,
 						["sourceUnit"] = "player",
+						["unevent"] = "timed",
 					},
 					["untrigger"] = {
 					},
@@ -12566,7 +12566,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "(eJHmE)vZhg",
 			["authorOptions"] = {
 			},
 			["icon"] = true,
@@ -12600,13 +12600,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["parent"] = "Horrific Visions",
-			["uid"] = "(eJHmE)vZhg",
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - OT - Alx'kov the Infested - Corrupted Blight DEBUFF",
-			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -12638,14 +12638,14 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["names"] = {
-						},
+						["use_cloneId"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["unit"] = "player",
-						["use_cloneId"] = true,
+						["names"] = {
+						},
 						["sourceUnit"] = "player",
 						["debuffType"] = "HELPFUL",
 					},
@@ -12743,7 +12743,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "JUyB7ImhykJ",
 			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
@@ -12787,13 +12787,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["parent"] = "Horrific Visions",
-			["uid"] = "JUyB7ImhykJ",
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["width"] = 80,
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - VoH - Aqir Mindhunter - Toxic Volley",
-			["width"] = 80,
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "1.0.0",
@@ -12837,17 +12837,17 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "aura2",
+						["subeventSuffix"] = "_CAST_SUCCESS",
+						["event"] = "Combat Log",
 						["names"] = {
 						},
-						["subeventSuffix"] = "_CAST_SUCCESS",
 						["use_unit"] = true,
-						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["useName"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
 						["use_absorbMode"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -12992,7 +12992,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "9Nz6FPv5Fim",
 			["selfPoint"] = "CENTER",
 			["cooldownEdge"] = false,
 			["regionType"] = "icon",
@@ -13021,13 +13021,13 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["icon"] = true,
-			["uid"] = "9Nz6FPv5Fim",
-			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
+			["width"] = 80,
 			["zoom"] = 0.003,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "MADNESS - Madness Entomophobia",
-			["width"] = 80,
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = false,
@@ -13058,14 +13058,14 @@ WeakAurasSaved = {
 						["duration"] = "1.5",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
+						["sourceUnit"] = "player",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["names"] = {
 						},
-						["sourceUnit"] = "player",
+						["unit"] = "player",
 						["use_cloneId"] = true,
 						["debuffType"] = "HELPFUL",
 					},
@@ -13182,7 +13182,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["config"] = {
+			},
 			["authorOptions"] = {
 			},
 			["color"] = {
@@ -13208,14 +13209,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["parent"] = "Horrific Visions",
-			["config"] = {
-			},
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["width"] = 80,
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - TD - Inquisitor Darkspeak - Agonizing Torment",
-			["width"] = 80,
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "1.0.0",
@@ -13250,14 +13250,14 @@ WeakAurasSaved = {
 						["duration"] = "2.25",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["names"] = {
-						},
+						["use_cloneId"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["unit"] = "player",
-						["use_cloneId"] = true,
+						["names"] = {
+						},
 						["sourceUnit"] = "player",
 						["debuffType"] = "HELPFUL",
 					},
@@ -13374,7 +13374,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "J8TuEOLJr38",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["actions"] = {
 				["start"] = {
@@ -13395,13 +13395,13 @@ WeakAurasSaved = {
 			},
 			["authorOptions"] = {
 			},
-			["uid"] = "J8TuEOLJr38",
-			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - TRASH - Rift Strike",
-			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -13446,17 +13446,17 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "aura2",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Combat Log",
 						["names"] = {
 						},
-						["subeventSuffix"] = "_CAST_START",
 						["use_unit"] = true,
-						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["useName"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
 						["use_absorbMode"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -13560,26 +13560,27 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["config"] = {
+			},
 			["selfPoint"] = "CENTER",
 			["icon"] = true,
 			["regionType"] = "icon",
@@ -13593,14 +13594,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["xOffset"] = 0,
-			["config"] = {
-			},
-			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
+			["width"] = 80,
 			["zoom"] = 0.003,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - VoH - Misha - Maddening Roar DEBUFF",
-			["width"] = 80,
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "1.0.0",
@@ -13629,21 +13629,21 @@ WeakAurasSaved = {
 						["use_cloneId"] = true,
 						["debuffType"] = "HARMFUL",
 						["type"] = "aura2",
-						["names"] = {
-						},
 						["auraspellids"] = {
 							"298510", -- [1]
 						},
-						["unevent"] = "timed",
 						["event"] = "Combat Log",
-						["subeventSuffix"] = "_CAST_START",
-						["useExactSpellId"] = true,
+						["names"] = {
+						},
+						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
-						["subeventPrefix"] = "SPELL",
+						["subeventSuffix"] = "_CAST_START",
+						["useExactSpellId"] = true,
 						["sourceUnit"] = "player",
+						["unevent"] = "timed",
 					},
 					["untrigger"] = {
 					},
@@ -13811,7 +13811,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "7efO3b3w01E",
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Front.ogg",
@@ -13867,13 +13867,13 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["uid"] = "7efO3b3w01E",
-			["alpha"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "O - TRASH - Aqiri Mind Toxin",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["auto"] = true,
@@ -13905,22 +13905,22 @@ WeakAurasSaved = {
 						},
 						["use_absorbMode"] = true,
 						["unit"] = "player",
-						["useExactSpellId"] = true,
 						["debuffType"] = "HARMFUL",
-						["duration"] = "3",
 						["type"] = "aura2",
+						["useExactSpellId"] = true,
+						["duration"] = "3",
+						["fetchTooltip"] = true,
+						["event"] = "Combat Log",
 						["unevent"] = "timed",
 						["auraspellids"] = {
 							"306583", -- [1]
 						},
-						["fetchTooltip"] = true,
-						["event"] = "Combat Log",
-						["subeventSuffix"] = "_CAST_SUCCESS",
-						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["subeventSuffix"] = "_CAST_SUCCESS",
+						["subeventPrefix"] = "SPELL",
 						["use_unit"] = true,
 						["names"] = {
 						},
@@ -14024,26 +14024,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469,1470,1570,1571",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "HKozdrJdVbw",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -14069,13 +14069,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["selfPoint"] = "CENTER",
-			["uid"] = "HKozdrJdVbw",
-			["alpha"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "MADNESS - Madness Leaden Foot",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["auto"] = false,
@@ -14120,17 +14120,17 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "aura2",
-						["use_unit"] = true,
 						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Combat Log",
+						["use_unit"] = true,
 						["names"] = {
 						},
-						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["useName"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
 						["use_absorbMode"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -14234,26 +14234,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469,1470,1570,1571",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "DqQH81zxdtj",
 			["cooldownEdge"] = false,
 			["xOffset"] = 0,
 			["regionType"] = "icon",
@@ -14267,13 +14267,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["icon"] = true,
-			["uid"] = "DqQH81zxdtj",
-			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["width"] = 80,
 			["zoom"] = 0.003,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "[NOT WORKING] MADNESS -  Madness Bloddthirsty",
-			["width"] = 80,
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = true,
@@ -14317,17 +14317,17 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
-						["use_unit"] = true,
 						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Combat Log",
+						["use_unit"] = true,
 						["names"] = {
 						},
-						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["useName"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
 						["use_absorbMode"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -14431,26 +14431,27 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["config"] = {
+			},
 			["selfPoint"] = "CENTER",
 			["parent"] = "Horrific Visions",
 			["regionType"] = "icon",
@@ -14464,14 +14465,13 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["config"] = {
-			},
-			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "O - VoW - Vez'okk the Lightless - Ring of Chaos",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["auto"] = false,
@@ -14503,37 +14503,37 @@ WeakAurasSaved = {
 						["destUnit"] = "player",
 						["use_cloneId"] = true,
 						["debuffType"] = "HELPFUL",
-						["unit"] = "player",
 						["type"] = "event",
 						["auraspellids"] = {
 							"313698", -- [1]
 						},
-						["subeventSuffix"] = "_CAST_SUCCESS",
+						["unit"] = "player",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["unevent"] = "timed",
+						["useExactSpellId"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
-						["useExactSpellId"] = true,
+						["unevent"] = "timed",
 						["use_destUnit"] = false,
 						["sourceUnit"] = "player",
+						["subeventSuffix"] = "_CAST_SUCCESS",
 					},
 					["untrigger"] = {
 					},
 				}, -- [1]
 				{
 					["trigger"] = {
+						["unit"] = "player",
 						["type"] = "aura2",
+						["subeventPrefix"] = "SPELL",
 						["subeventSuffix"] = "_CAST_START",
 						["useExactSpellId"] = true,
-						["event"] = "Health",
-						["unit"] = "player",
 						["auraspellids"] = {
 							"289298", -- [1]
 						},
-						["subeventPrefix"] = "SPELL",
+						["event"] = "Health",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -14653,7 +14653,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "jgHHStWcPf5",
 			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
@@ -14710,13 +14710,13 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["parent"] = "Horrific Visions",
-			["uid"] = "jgHHStWcPf5",
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["width"] = 80,
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "COMMON - Orb Operation Manual",
-			["width"] = 80,
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "1.0.0",
@@ -14760,17 +14760,17 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
-						["use_absorbMode"] = true,
 						["subeventSuffix"] = "_CAST_START",
-						["subeventPrefix"] = "SPELL",
 						["event"] = "Combat Log",
-						["useName"] = true,
-						["names"] = {
-						},
+						["use_absorbMode"] = true,
+						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["useName"] = true,
+						["names"] = {
+						},
 						["unevent"] = "timed",
 						["unit"] = "player",
 					},
@@ -14874,26 +14874,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
-				["use_never"] = false,
-				["encounterid"] = "2329",
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
+				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "lK9bt)03HP3",
 			["selfPoint"] = "CENTER",
 			["icon"] = true,
 			["regionType"] = "icon",
@@ -14907,13 +14907,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldownEdge"] = false,
-			["uid"] = "lK9bt)03HP3",
-			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - VoW - Vez'okk the Lightless - Unleash Corruption",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -14945,14 +14945,14 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
+						["sourceUnit"] = "player",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["names"] = {
 						},
-						["sourceUnit"] = "player",
+						["unit"] = "player",
 						["use_cloneId"] = true,
 						["debuffType"] = "HELPFUL",
 					},
@@ -15069,7 +15069,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "851UIXIwouV",
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Front.ogg",
@@ -15094,13 +15094,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldownEdge"] = false,
-			["uid"] = "851UIXIwouV",
-			["alpha"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "O - VoS - Decimator Shiq'voth - Decimator",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["auto"] = false,
@@ -15131,14 +15131,14 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "custom",
 						["custom_type"] = "stateupdate",
-						["spellIds"] = {
-						},
-						["subeventSuffix"] = "_CAST_START",
-						["event"] = "Health",
+						["debuffType"] = "HELPFUL",
 						["names"] = {
 						},
+						["event"] = "Health",
 						["unit"] = "player",
-						["debuffType"] = "HELPFUL",
+						["subeventSuffix"] = "_CAST_START",
+						["spellIds"] = {
+						},
 						["custom"] = "function(allstates, event, ...)\n    local hasvalue = aura_env.hasvalue\n    \n    if not tIndexOf({\"PLAYER_ENTERING_WORLD\", \"COMBAT_LOG_EVENT_UNFILTERED\"}, event) then return end\n    \n    -- Init\n    if event == \"PLAYER_ENTERING_WORLD\" then\n        allstates.cheatdeath = allstates.cheatdeath or {\n            icon = 236225,\n            autoHide = false,\n            progressType = \"static\",\n            value = 0,\n            total = 0,\n            changed = true,\n            show = true,\n            triggered = false,\n        }\n        return true\n    end\n    \n    -- check cleu\n    local player = WeakAuras.myGUID\n    local subevent, _, sourceGUID, sourceName, _, _, destGUID, destName = select(2, ...)\n    local spellId, spellName = select(12, ...)\n    if sourceGUID == player and destGUID == player then\n        if subevent == \"SPELL_AURA_APPLIED\" then\n            if (spellName == \"Emergency Cranial Defibrillation\"\n                or tIndexOf({\"304815\", \"304816\", \"317864\", \"317865\"}, spellId)) then\n                allstates.cheatdeath.triggered = true\n            end\n        end\n    end\n    \n    return true\nend",
 						["subeventPrefix"] = "SPELL",
 						["check"] = "event",
@@ -15227,10 +15227,18 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["regionType"] = "icon",
 			["displayIcon"] = "236225",
 			["cooldownEdge"] = false,
+			["xOffset"] = -927.9999580383301,
 			["authorOptions"] = {
 				{
 					["type"] = "toggle",
@@ -15289,14 +15297,13 @@ WeakAurasSaved = {
 					["width"] = 1,
 				}, -- [7]
 			},
-			["xOffset"] = -927.9999580383301,
 			["semver"] = "1.0.5",
-			["width"] = 50,
+			["uid"] = "A1VzOF1aXSg",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "HV ECD",
-			["uid"] = "A1VzOF1aXSg",
+			["width"] = 50,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 1,
@@ -15341,14 +15348,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["S - TD - Inquisitor Darkspeak - Agonizing Torment DEBUFF"] = {
 			["xOffset"] = 0,
@@ -15379,21 +15379,21 @@ WeakAurasSaved = {
 						["use_cloneId"] = true,
 						["debuffType"] = "HARMFUL",
 						["type"] = "aura2",
-						["names"] = {
-						},
 						["auraspellids"] = {
 							"308366", -- [1]
 						},
-						["unevent"] = "timed",
 						["event"] = "Combat Log",
-						["subeventSuffix"] = "_CAST_START",
-						["useExactSpellId"] = true,
+						["names"] = {
+						},
+						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
-						["subeventPrefix"] = "SPELL",
+						["subeventSuffix"] = "_CAST_START",
+						["useExactSpellId"] = true,
 						["sourceUnit"] = "player",
+						["unevent"] = "timed",
 					},
 					["untrigger"] = {
 					},
@@ -15489,7 +15489,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "9Ts41(1tet8",
 			["authorOptions"] = {
 			},
 			["icon"] = true,
@@ -15523,13 +15523,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["parent"] = "Horrific Visions",
-			["uid"] = "9Ts41(1tet8",
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - TD - Inquisitor Darkspeak - Agonizing Torment DEBUFF",
-			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -15561,17 +15561,17 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["debuffType"] = "HARMFUL",
 						["type"] = "aura2",
-						["use_absorbMode"] = true,
 						["subeventSuffix"] = "_CAST_START",
-						["subeventPrefix"] = "SPELL",
 						["event"] = "Combat Log",
-						["useName"] = true,
-						["names"] = {
-						},
+						["use_absorbMode"] = true,
+						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["useName"] = true,
+						["names"] = {
+						},
 						["unevent"] = "timed",
 						["unit"] = "player",
 					},
@@ -15656,26 +15656,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469,1470,1570,1571",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "SoanlJdc5dY",
 			["authorOptions"] = {
 			},
 			["actions"] = {
@@ -15721,13 +15721,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldownEdge"] = false,
-			["uid"] = "SoanlJdc5dY",
-			["alpha"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = true,
 			["tocversion"] = 80300,
 			["id"] = "MADNESS - Madness Desynchronized SPEED",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -15769,14 +15769,14 @@ WeakAurasSaved = {
 						["duration"] = "2.5",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
+						["sourceUnit"] = "player",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["names"] = {
 						},
-						["sourceUnit"] = "player",
+						["unit"] = "player",
 						["use_cloneId"] = true,
 						["debuffType"] = "HELPFUL",
 					},
@@ -15893,7 +15893,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["config"] = {
+			},
 			["selfPoint"] = "CENTER",
 			["parent"] = "Horrific Visions",
 			["regionType"] = "icon",
@@ -15907,14 +15908,13 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["config"] = {
-			},
-			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "O - TRASH - Horrifying Shout",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["auto"] = false,
@@ -16136,13 +16136,9 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["xOffset"] = 0,
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["config"] = {
 			},
+			["uid"] = "oVMqroAlu8A",
 			["desaturate"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 1,
@@ -16165,14 +16161,18 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["tocversion"] = 80205,
 			["id"] = "AOE",
-			["spark"] = false,
+			["useAdjustededMin"] = false,
 			["frameStrata"] = 1,
 			["width"] = 180.00004577637,
-			["useAdjustededMin"] = false,
-			["uid"] = "oVMqroAlu8A",
-			["inverse"] = false,
-			["config"] = {
+			["spark"] = false,
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
+			["inverse"] = false,
+			["xOffset"] = 0,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -16235,17 +16235,17 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "aura2",
-						["use_unit"] = true,
 						["subeventSuffix"] = "_CAST_SUCCESS",
+						["event"] = "Combat Log",
+						["use_unit"] = true,
 						["names"] = {
 						},
-						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["useName"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
 						["use_absorbMode"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -16330,26 +16330,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469,1470,1570,1571",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469,1470,1570,1571",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "0iwEVOwuMX2",
 			["xOffset"] = 0,
 			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["regionType"] = "icon",
@@ -16377,13 +16377,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["parent"] = "Horrific Visions",
-			["uid"] = "0iwEVOwuMX2",
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "[NOT WORKING] MADNESS -  Madness Dark Delusions",
-			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -16429,16 +16429,16 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
-						["use_absorbMode"] = true,
 						["unevent"] = "timed",
-						["subeventPrefix"] = "SPELL",
 						["event"] = "Combat Log",
-						["use_unit"] = true,
-						["useName"] = true,
+						["use_absorbMode"] = true,
+						["subeventPrefix"] = "SPELL",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["use_unit"] = true,
+						["useName"] = true,
 						["subeventSuffix"] = "_CAST_START",
 						["names"] = {
 						},
@@ -16543,26 +16543,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
-				["use_never"] = false,
-				["encounterid"] = "2329",
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
+				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
+			["uid"] = "TjfF9YQzLVd",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["xOffset"] = 0,
 			["regionType"] = "icon",
@@ -16576,13 +16576,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["icon"] = true,
-			["uid"] = "TjfF9YQzLVd",
-			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["width"] = 80,
 			["zoom"] = 0.003,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "O - TD - Inquisitor Gnshal - Cries of the void1",
-			["width"] = 80,
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = false,
@@ -16613,14 +16613,14 @@ WeakAurasSaved = {
 						["duration"] = "2",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
+						["sourceUnit"] = "player",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["names"] = {
 						},
-						["sourceUnit"] = "player",
+						["unit"] = "player",
 						["use_cloneId"] = true,
 						["debuffType"] = "HELPFUL",
 					},
@@ -16718,7 +16718,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "7dRI9k2UTqE",
 			["authorOptions"] = {
 			},
 			["actions"] = {
@@ -16763,13 +16763,13 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["uid"] = "7dRI9k2UTqE",
-			["alpha"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "COMMON - TRASH - Touch of the Abyss",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -16801,14 +16801,14 @@ WeakAurasSaved = {
 						["duration"] = "2",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["names"] = {
-						},
+						["use_cloneId"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["unit"] = "player",
-						["use_cloneId"] = true,
+						["names"] = {
+						},
 						["sourceUnit"] = "player",
 						["debuffType"] = "HELPFUL",
 					},
@@ -16925,7 +16925,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "Nh3xDzcGPLP",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -16950,13 +16950,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["selfPoint"] = "CENTER",
-			["uid"] = "Nh3xDzcGPLP",
-			["alpha"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "S - TRASH - Psychic Scream",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["auto"] = false,
@@ -16992,14 +16992,14 @@ WeakAurasSaved = {
 						["duration"] = "2",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
+						["sourceUnit"] = "player",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
 						["names"] = {
 						},
-						["sourceUnit"] = "player",
+						["unit"] = "player",
 						["use_cloneId"] = true,
 						["debuffType"] = "HELPFUL",
 					},
@@ -17097,7 +17097,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "fAnRivcp9xN",
 			["xOffset"] = 0,
 			["authorOptions"] = {
 			},
@@ -17137,13 +17137,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldownEdge"] = false,
-			["uid"] = "fAnRivcp9xN",
-			["alpha"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - TRASH - Shockwave",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["frameStrata"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -17175,17 +17175,17 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Combat Log",
 						["names"] = {
 						},
-						["subeventSuffix"] = "_CAST_START",
 						["use_unit"] = true,
-						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["useName"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
 						["use_absorbMode"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -17289,26 +17289,27 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
 				["use_never"] = false,
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
 				["encounterid"] = "2329",
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["config"] = {
+			},
 			["authorOptions"] = {
 			},
 			["selfPoint"] = "CENTER",
@@ -17330,14 +17331,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["parent"] = "Horrific Visions",
-			["config"] = {
-			},
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["width"] = 80,
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - VoW - Coagulated Horror - Visceral Fluid",
-			["width"] = 80,
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "1.0.0",
@@ -17368,7 +17368,7 @@ WeakAurasSaved = {
 						["type"] = "event",
 						["spellId"] = "309373",
 						["custom_type"] = "event",
-						["subeventSuffix"] = "_CAST_SUCCESS",
+						["custom_hide"] = "timed",
 						["duration"] = "3",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
@@ -17380,7 +17380,7 @@ WeakAurasSaved = {
 						},
 						["names"] = {
 						},
-						["custom_hide"] = "timed",
+						["subeventSuffix"] = "_CAST_SUCCESS",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -17496,7 +17496,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "2KOQ71jUuiS",
 			["selfPoint"] = "CENTER",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["regionType"] = "icon",
@@ -17521,13 +17521,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["parent"] = "Horrific Visions",
-			["uid"] = "2KOQ71jUuiS",
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - MQ - Magister Umbric - Entropic Missiles",
-			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -17563,16 +17563,16 @@ WeakAurasSaved = {
 						["use_cloneId"] = true,
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
-						["subeventPrefix"] = "SPELL",
 						["unevent"] = "timed",
-						["unit"] = "player",
 						["event"] = "Combat Log",
-						["use_unit"] = true,
-						["subeventSuffix"] = "_CAST_START",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = false,
+						["use_unit"] = true,
+						["subeventSuffix"] = "_CAST_START",
 						["useName"] = true,
 						["use_absorbMode"] = true,
 					},
@@ -17676,26 +17676,26 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
-				["use_never"] = false,
-				["encounterid"] = "2329",
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
+				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1469",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["zoneId"] = "1469",
 				["size"] = {
 					["single"] = "scenario",
 					["multi"] = {
 					},
 				},
 			},
-			["zoom"] = 0.003,
+			["uid"] = "F(ezI78YWpm",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
@@ -17716,13 +17716,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["parent"] = "Horrific Visions",
-			["uid"] = "F(ezI78YWpm",
-			["frameStrata"] = 1,
+			["zoom"] = 0.003,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - VoH - Rexxar - Void Quils",
-			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["width"] = 80,
 			["semver"] = "1.0.0",
@@ -17935,21 +17935,21 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["use_tooltip"] = false,
 						["debuffType"] = "HELPFUL",
-						["buffShowOn"] = "showOnActive",
 						["type"] = "aura2",
 						["use_debuffClass"] = false,
 						["unevent"] = "timed",
-						["use_specific_unit"] = false,
+						["buffShowOn"] = "showOnActive",
 						["event"] = "Health",
-						["subeventSuffix"] = "_CAST_START",
+						["use_specific_unit"] = false,
+						["matchesShowOn"] = "showAlways",
 						["unit"] = "player",
-						["useGroup_count"] = false,
 						["spellIds"] = {
 							272790, -- [1]
 						},
+						["useGroup_count"] = false,
 						["useName"] = true,
-						["matchesShowOn"] = "showAlways",
 						["combineMatches"] = "showLowest",
+						["subeventSuffix"] = "_CAST_START",
 						["names"] = {
 							"Frenzy", -- [1]
 						},
@@ -18096,65 +18096,6 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 15,
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["load"] = {
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["ingroup"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["single"] = 1,
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["single"] = "HUNTER",
-					["multi"] = {
-					},
-				},
-				["talent2"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_class"] = true,
-				["use_spec"] = true,
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["use_combat"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["sparkBlendMode"] = "ADD",
-			["useAdjustededMax"] = false,
 			["config"] = {
 				["gcdCol"] = {
 					1, -- [1]
@@ -18195,6 +18136,60 @@ WeakAurasSaved = {
 					1, -- [4]
 				},
 			},
+			["load"] = {
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["use_combat"] = true,
+				["use_class"] = true,
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["sparkBlendMode"] = "ADD",
+			["useAdjustededMax"] = false,
+			["uid"] = "S0O)AZIqaX7",
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -18222,7 +18217,12 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["desaturate"] = false,
-			["uid"] = "S0O)AZIqaX7",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["inverse"] = false,
 			["sparkDesature"] = false,
 			["orientation"] = "HORIZONTAL",

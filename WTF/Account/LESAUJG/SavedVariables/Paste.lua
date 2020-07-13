@@ -1,6 +1,7 @@
 
 PasteDB = {
 	["profileKeys"] = {
+		["Torinara - Sisters of Elune"] = "Torinara - Sisters of Elune",
 		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
 		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
 		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
@@ -14,6 +15,9 @@ PasteDB = {
 		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
 	},
 	["profiles"] = {
+		["Torinara - Sisters of Elune"] = {
+			["loaded"] = true,
+		},
 		["Galinar - Sisters of Elune"] = {
 			["loaded"] = true,
 		},
@@ -45,10 +49,10 @@ PasteDB = {
 			["whispertarget"] = "",
 			["where"] = "Default",
 			["loaded"] = true,
-			["pos"] = {
-			},
 			["minimap"] = {
 				["minimapPos"] = 161.8219138936436,
+			},
+			["pos"] = {
 			},
 		},
 		["Clothgar - Sisters of Elune"] = {
