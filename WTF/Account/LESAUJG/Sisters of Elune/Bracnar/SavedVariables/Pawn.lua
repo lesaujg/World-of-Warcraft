@@ -6,9 +6,9 @@ PawnOptions = {
 	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
-			["ID"] = 155887,
-			["Level"] = 465,
-			["Link"] = "|cffa335ee|Hitem:155887::::::::120:254::35:5:5445:1632:4786:6508:4775:::|h[Sweete's Jeweled Headgear]|h|r",
+			["ID"] = 171012,
+			["Level"] = 480,
+			["Link"] = "|cffa335ee|Hitem:171012::::::::120:255::13:1:4775:::|h[Paramount Bionic Bifocals]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 158075,
