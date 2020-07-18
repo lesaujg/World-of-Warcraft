@@ -5,14 +5,14 @@ PasteDB = {
 		["Galinar - Sisters of Elune"] = "Galinar - Sisters of Elune",
 		["Ghiaccioli - Sisters of Elune"] = "Ghiaccioli - Sisters of Elune",
 		["Orig - Sisters of Elune"] = "Orig - Sisters of Elune",
-		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
+		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
 		["Leanara - Sisters of Elune"] = "Leanara - Sisters of Elune",
 		["Palani - Sisters of Elune"] = "Palani - Sisters of Elune",
 		["Belrath - Sisters of Elune"] = "Belrath - Sisters of Elune",
-		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
-		["Herbinator - Sisters of Elune"] = "Herbinator - Sisters of Elune",
 		["Torinar - Sisters of Elune"] = "Torinar - Sisters of Elune",
-		["Uldaris - Sisters of Elune"] = "Uldaris - Sisters of Elune",
+		["Herbinator - Sisters of Elune"] = "Herbinator - Sisters of Elune",
+		["Bracnar - Sisters of Elune"] = "Bracnar - Sisters of Elune",
+		["Clothgar - Sisters of Elune"] = "Clothgar - Sisters of Elune",
 	},
 	["profiles"] = {
 		["Torinara - Sisters of Elune"] = {
@@ -27,7 +27,7 @@ PasteDB = {
 		["Orig - Sisters of Elune"] = {
 			["loaded"] = true,
 		},
-		["Clothgar - Sisters of Elune"] = {
+		["Uldaris - Sisters of Elune"] = {
 			["loaded"] = true,
 		},
 		["Leanara - Sisters of Elune"] = {
@@ -39,23 +39,23 @@ PasteDB = {
 		["Belrath - Sisters of Elune"] = {
 			["loaded"] = true,
 		},
-		["Bracnar - Sisters of Elune"] = {
-			["whispertarget"] = "",
-			["where"] = "Default",
+		["Torinar - Sisters of Elune"] = {
 			["loaded"] = true,
-			["minimap"] = {
-				["minimapPos"] = 161.8219138936436,
-			},
-			["pos"] = {
-			},
 		},
 		["Herbinator - Sisters of Elune"] = {
 			["loaded"] = true,
 		},
-		["Torinar - Sisters of Elune"] = {
+		["Bracnar - Sisters of Elune"] = {
+			["whispertarget"] = "",
+			["where"] = "Default",
 			["loaded"] = true,
+			["pos"] = {
+			},
+			["minimap"] = {
+				["minimapPos"] = 161.8219138936436,
+			},
 		},
-		["Uldaris - Sisters of Elune"] = {
+		["Clothgar - Sisters of Elune"] = {
 			["loaded"] = true,
 		},
 	},

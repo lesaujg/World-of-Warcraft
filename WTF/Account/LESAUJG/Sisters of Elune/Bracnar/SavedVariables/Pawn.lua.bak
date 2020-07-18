@@ -82,9 +82,16 @@ PawnOptions = {
 			["Level"] = 460,
 			["Link"] = "|cffa335ee|Hitem:159643::::::::120:253::35:7:5008:6578:6579:6544:6513:1632:4786:::|h[Crossbow of Forgotten Majesty]|h|r",
 		}, -- [16]
+		{
+			["ID"] = 160927,
+			["Level"] = 108,
+			["AlsoFitsIn"] = 16,
+			["Link"] = "|cff9d9d9d|Hitem:160927::::::::120:253::::::|h[Chipped Stone Hatchet]|h|r",
+		}, -- [17]
 	},
 	["AutoSelectScales"] = false,
 	["UpgradeTracking"] = false,
+	["LastKeybindingsSet"] = 1,
 	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
 	["Artifacts"] = {
 		[128826] = {
@@ -122,7 +129,6 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",
