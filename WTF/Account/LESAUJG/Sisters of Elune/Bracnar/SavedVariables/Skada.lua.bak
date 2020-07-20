@@ -1,5 +1,7 @@
 
 SkadaPerCharDB = {
+	["sets"] = {
+	},
 	["total"] = {
 		["healingabsorbed"] = 0,
 		["dispells"] = 0,
@@ -7,56 +9,57 @@ SkadaPerCharDB = {
 		["time"] = 0,
 		["interrupts"] = 0,
 		["ffdamagedone"] = 0,
-		["damagetaken"] = 0,
+		["mobs"] = {
+		},
 		["damage"] = 0,
 		["players"] = {
 			{
-				["last"] = 1595022992,
-				["maxhp"] = 480520,
-				["healingabsorbed"] = 0,
-				["role"] = "NONE",
+				["last"] = 1595163225,
 				["ffdamagedonespells"] = {
 				},
+				["healingabsorbed"] = 0,
+				["auras"] = {
+				},
+				["class"] = "HUNTER",
 				["damaged"] = {
 				},
 				["dispells"] = 0,
-				["ccbreaks"] = 0,
-				["ffdamagedone"] = 0,
 				["time"] = 0,
+				["ccbreaks"] = 0,
+				["overhealing"] = 0,
 				["interrupts"] = 0,
-				["auras"] = {
+				["healingspells"] = {
 				},
-				["healed"] = {
+				["damagetaken"] = 0,
+				["ffdamagedonetargets"] = {
 				},
-				["name"] = "Bracnar",
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["alertDamage"] = 337081,
-				["damagetaken"] = 0,
 				["shielding"] = 0,
-				["id"] = "Player-1169-06A1ACBD",
-				["first"] = 1595018892,
-				["power"] = {
+				["healed"] = {
 				},
-				["damagetakenspells"] = {
-				},
-				["healing"] = 0,
 				["deathlog"] = {
 				},
-				["ffdamagedonetargets"] = {
+				["id"] = "Player-1169-06A1ACBD",
+				["first"] = 1595018892,
+				["healing"] = 0,
+				["damagetakenspells"] = {
 				},
-				["alertCount"] = 55,
-				["healingspells"] = {
+				["power"] = {
 				},
-				["overhealing"] = 0,
+				["maxhp"] = 480520,
+				["name"] = "Bracnar",
+				["alertCount"] = 120,
+				["alertDamage"] = 864235,
+				["ffdamagedone"] = 0,
 				["alert"] = {
 					["Low"] = {
-						["alertCount"] = 54,
+						["alertDamage"] = 637415,
 						["spell"] = {
 							["+Eye of Corruption"] = {
 								["min"] = 0,
-								["alertCount"] = 32,
+								["alertCount"] = 59,
 								["id"] = 315161,
 								["alertID"] = "Low",
 								["max"] = 0,
@@ -64,19 +67,27 @@ SkadaPerCharDB = {
 							},
 							["Eye of Corruption"] = {
 								["min"] = 11816,
-								["alertCount"] = 22,
+								["alertCount"] = 41,
 								["id"] = 315161,
 								["alertID"] = "Low",
-								["max"] = 20821,
-								["alertDamage"] = 337081,
+								["max"] = 24042,
+								["alertDamage"] = 637415,
 							},
 						},
 						["name"] = "Low",
-						["alertDamage"] = 337081,
+						["alertCount"] = 100,
 					},
 					["High"] = {
-						["alertCount"] = 1,
+						["alertDamage"] = 159871,
 						["spell"] = {
+							["+Residual Gas"] = {
+								["min"] = 0,
+								["alertCount"] = 8,
+								["id"] = 297252,
+								["alertID"] = "High",
+								["max"] = 0,
+								["alertDamage"] = 0,
+							},
 							["+Void Tear"] = {
 								["min"] = 0,
 								["alertCount"] = 1,
@@ -85,33 +96,53 @@ SkadaPerCharDB = {
 								["max"] = 0,
 								["alertDamage"] = 0,
 							},
+							["Residual Gas"] = {
+								["min"] = 19983,
+								["alertCount"] = 8,
+								["id"] = 297252,
+								["alertID"] = "High",
+								["max"] = 19984,
+								["alertDamage"] = 159871,
+							},
 						},
 						["name"] = "High",
-						["alertDamage"] = 0,
+						["alertCount"] = 17,
+					},
+					["Fail"] = {
+						["alertDamage"] = 66949,
+						["spell"] = {
+							["Shattering Smash"] = {
+								["min"] = 22316,
+								["alertCount"] = 3,
+								["id"] = 301146,
+								["alertID"] = "Fail",
+								["max"] = 22317,
+								["alertDamage"] = 66949,
+							},
+						},
+						["name"] = "Fail",
+						["alertCount"] = 3,
 					},
 				},
-				["class"] = "HUNTER",
+				["role"] = "NONE",
 			}, -- [1]
 		},
 		["deaths"] = 0,
-		["mobs"] = {
-		},
+		["damagetaken"] = 0,
 		["power"] = {
 		},
 		["shielding"] = 0,
 		["healing"] = 0,
-		["overhealing"] = 0,
-		["alertDamage"] = 337081,
+		["auras"] = {
+		},
+		["alertDamage"] = 864235,
 		["mobtaken"] = 0,
 		["starttime"] = 1594865689,
 		["name"] = "Total",
-		["alertCount"] = 55,
-		["auras"] = {
-		},
+		["alertCount"] = 120,
+		["overhealing"] = 0,
 		["mobhdone"] = 0,
 		["last_action"] = 1594865689,
 		["mobdone"] = 0,
-	},
-	["sets"] = {
 	},
 }
