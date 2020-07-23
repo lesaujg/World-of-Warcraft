@@ -1,3 +1,21 @@
+commit 349b582489a6c041e7ce6b68bc44cad80365bfb5
+Author: TOM_RUS <tom_rus@github.com>
+Date:   Mon Jul 20 03:12:55 2020 +0300
+
+    Fix
+
+commit 0061df5bb79b75a8a2511228f31e12a2c0758570
+Author: TOM_RUS <tom_rus@github.com>
+Date:   Mon Jul 20 00:49:15 2020 +0300
+
+    Fix
+
+commit 199ce8250e0d3bbe455ba149d8a9a29754d26554
+Author: TOM_RUS <tom_rus@github.com>
+Date:   Sun Jul 19 21:34:00 2020 +0300
+
+    Fix
+
 commit f8225d153b0ad95c7d437f9fcb06484d9a192bb8
 Author: TOM_RUS <tom_rus@github.com>
 Date:   Wed Jan 15 08:13:14 2020 +0300
@@ -597,22 +615,4 @@ Author: TOM_RUS <tom_rus@github.com>
 Date:   Sat Jun 7 10:00:23 2014 +0400
 
     Fixed class filter dropdown not working properly while list sorted by ilvl
-
-commit 31c003599b9174dcb036c32984fd5eef8483553e
-Author: TOM_RUS <tom_rus@github.com>
-Date:   Fri May 30 18:07:49 2014 +0400
-
-    Fix
-
-commit ff509ff8fbc02d4e75d7d098cf8863f0adfe31dc
-Author: TOM_RUS <tom_rus@github.com>
-Date:   Sun Apr 20 02:45:13 2014 +0400
-
-    Tooltip improvements
-
-commit 23b95ed9165330ce53590e9dec70d5191ab4df74
-Author: TOM_RUS <tom_rus@github.com>
-Date:   Tue Feb 25 05:45:17 2014 +0400
-
-    Ignore min level req for listing option (gui), flex raids also have item level requirement that can't be ignored (enforced server side)
 

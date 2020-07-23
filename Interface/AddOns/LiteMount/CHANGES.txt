@@ -1,26 +1,31 @@
-tag a18afa31658a400170c1af9525d8f5d650313bd9 8.3.12
+tag 04d3f84b3f30da82d5e7f07e3deddcc511cef87c 8.3.14
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Fri Jul 3 14:30:04 2020 +1000
+Date:	Fri Jul 17 11:37:45 2020 +1000
 
-LiteMount 8.3.12
- - Fix ELSEIF and ELSE
- - add [difficulty] condition
+LiteMount 8.3.14
+- Futilely hope that random changes will fix problems.
 
-commit 3d2ebd1d76f43cf1b165333e01dd9612b73dfca8
+commit 85786481fac2daa5b44ffec757c3bf6d479b0df1
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Jul 3 14:23:20 2020 +1000
+Date:   Fri Jul 17 11:24:08 2020 +1000
 
-    Fix ELSEIF and ELSE flow control actions.
+    Fix typo
 
-commit d47c4b61d7d7fef20bc2a889100f1986345729ac
+commit dd1a95b37de3c55bb582e4477f110a955d43f220
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sat Jun 27 21:23:44 2020 +1000
+Date:   Fri Jul 17 11:17:00 2020 +1000
 
-    Switch [dead] back to player by default
+    Fix error with resetting options in UI
 
-commit 77555a424bd63745f03b0b316d16b453e72a2464
+commit 3696b309f8fa673e579758d7de4710db498133d4
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sat Jun 27 20:26:26 2020 +1000
+Date:   Fri Jul 17 11:16:44 2020 +1000
 
-    Add [difficulty] condition
+    Move instance tracking to DB properly
+
+commit 71477b20596b28bf241a07eeeb1e7c692eb14333
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Fri Jul 17 11:16:19 2020 +1000
+
+    Try another way of dealing with the profile mods
 

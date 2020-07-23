@@ -420,7 +420,9 @@ function LFGListDropDown_SetUp(self)
 end
 
 function LFGListDropDown_UpdateText(activity, text)
+	--print("LFGListDropDown_UpdateText", activity, text);
 	if activity <= 0 then
+		C_LFGList.ClearSearchTextFields();
 		local text = C_LFGList.GetCategoryInfo(LFGListFrame.SearchPanel.categoryID);
 		UIDropDownMenu_SetText(LFGListDropDown, text or LFG_TYPE_NONE);
 	else
@@ -436,11 +438,11 @@ local function ShouldHideActivity(activityID, categoryID, shortName)
 	if categoryID ~= 2 then return false end
 	if activityToExpansion[categoryID..":"..activityID] == LE_EXPANSION_LEGION then
 		if LFRAdvancedOptions.HideLegionNormals and categoryID == 2 and shortName == normalDifficultyText then return true end
-		if LFRAdvancedOptions.HideLegionHeroics and categoryID == 2 and shortName == heroicDifficultyText then return true end		
+		if LFRAdvancedOptions.HideLegionHeroics and categoryID == 2 and shortName == heroicDifficultyText then return true end
 	end
 	if activityToExpansion[categoryID..":"..activityID] == LE_EXPANSION_BATTLE_FOR_AZEROTH then
 		if LFRAdvancedOptions.HideBFANormals and categoryID == 2 and shortName == normalDifficultyText then return true end
-		if LFRAdvancedOptions.HideBFAHeroics and categoryID == 2 and shortName == heroicDifficultyText then return true end		
+		if LFRAdvancedOptions.HideBFAHeroics and categoryID == 2 and shortName == heroicDifficultyText then return true end
 	end
 	return false
 end
@@ -549,7 +551,7 @@ function LFGListDropDownButton_OnClick(self, arg1, arg2, checked)
 end
 
 function LFGListDropDownButton_OnClickCategory(self, arg1, arg2, checked)
-	LFGListDropDown.activeValue = -self.value;
+	LFGListDropDown.activeValue = self.value;
 	CloseDropDownMenus();
 	if self.value ~= 0 then 
 		LFGListFrame.SearchPanel.categoryID = self.value;

@@ -28,7 +28,6 @@ function LiteMountOptionsBit_OnClick(self)
     else
         LM_Options:ClearMountFlag(mount, self.flag)
     end
-    LiteMountOptions_UpdateMountList()
 end
 
 -- Because we get attached inside the blizzard options container, we
@@ -315,7 +314,6 @@ function LiteMountOptions_AllSelect_OnClick(self)
     end
 
     self:GetScript("OnEnter")(self)
-    LiteMountOptions_UpdateMountList()
 
 end
 
@@ -409,11 +407,8 @@ function LiteMountOptionsMounts_OnLoad(self)
 
     self.name = MOUNTS
     self.default = function ()
-            for m in LM_PlayerMounts:Iterate() do
-                LM_Options:ResetMountFlags(m)
-            end
+            LM_Options:ResetAllMountFlags()
             LM_Options:SetExcludedMounts({})
-            LiteMountOptions_UpdateMountList()
         end
 
     self.currentFlagPage = 1
