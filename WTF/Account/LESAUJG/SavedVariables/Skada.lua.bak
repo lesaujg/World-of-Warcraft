@@ -31,7 +31,7 @@ SkadaDB = {
 			},
 			["windows"] = {
 				{
-					["y"] = 203.9582672119141,
+					["y"] = 203.958251953125,
 					["point"] = "BOTTOMLEFT",
 					["mode"] = "Damage",
 					["barwidth"] = 251.880035400391,
