@@ -1988,7 +1988,7 @@ TukuiData = {
 			["Torinara"] = 55831693,
 			["Ghiaccioli"] = 50539023,
 			["Belrath"] = 52525567,
-			["Clothgar"] = 4663946484,
+			["Clothgar"] = 4766546019,
 		},
 	},
 	["Ravenholdt"] = {
