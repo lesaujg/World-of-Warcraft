@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0329,
+	["LastPlayerFullName"] = "Galinar-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 174258,
@@ -78,10 +81,10 @@ PawnOptions = {
 			["Link"] = "|cffff8000|Hitem:169223::::::::120:66::11:2:6277:1472:::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 155273,
-			["Level"] = 415,
+			["ID"] = 158104,
+			["Level"] = 445,
 			["AlsoFitsIn"] = 17,
-			["Link"] = "|cff0070dd|Hitem:155273::::::::120:65::26:3:4803:1607:4785:::|h[Sharktooth Hatchet]|h|r",
+			["Link"] = "|cffa335ee|Hitem:158104::::::::120:66::28:5:4803:6516:6513:1637:4786:::|h[Gnarlwood Cutlass]|h|r",
 		}, -- [16]
 		{
 			["ID"] = 159804,
@@ -89,9 +92,6 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:159804::::::::120:66::28:5:4803:6516:6513:1637:4786:::|h[Ironcrest Bulwark]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Galinar-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
