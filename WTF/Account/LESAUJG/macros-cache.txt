@@ -31,6 +31,9 @@ VER 3 00000000000000AE "Mount2" "INV_MISC_QUESTIONMARK"
 /click [nobtn:2]LiteMount
 /click [btn:2]LiteMount RightButton
 END
+VER 3 00000000000000B6 "Muck Slug" "INV_MISC_QUESTIONMARK"
+/tar Muck slug
+END
 VER 3 0000000000000087 "RandomMount" "INV_MISC_QUESTIONMARK"
 /petpassive
 /use [mod:ctrl]Grand Expedition Yak
