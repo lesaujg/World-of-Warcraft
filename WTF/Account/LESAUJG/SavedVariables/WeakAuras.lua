@@ -63,8 +63,8 @@ WeakAurasSaved = {
 		["Kill Command"] = {
 			[259277] = 132176,
 		},
-		["Posthaste"] = {
-			[118922] = 461119,
+		["Precise Shots"] = {
+			[260242] = 236179,
 		},
 		["Fel Focus"] = {
 			[242551] = 134924,
@@ -87,15 +87,15 @@ WeakAurasSaved = {
 		["Frenzy"] = {
 			[272790] = 2058007,
 		},
-		["Pheromone Bomb"] = {
-			[270332] = 2065635,
+		["Hunter's Mark"] = {
+			[185365] = 236188,
 		},
 		["Binding Shot"] = {
 			[117405] = 462650,
 			[117526] = 462650,
 		},
-		["Heroism"] = {
-			[32182] = 132313,
+		["Pheromone Bomb"] = {
+			[270332] = 2065635,
 		},
 		["Trick Shots"] = {
 			[257622] = 461846,
@@ -107,8 +107,8 @@ WeakAurasSaved = {
 			[193526] = 132329,
 			[288613] = 132329,
 		},
-		["Hunter's Mark"] = {
-			[185365] = 236188,
+		["Heroism"] = {
+			[32182] = 132313,
 		},
 		["Shrapnel Bomb"] = {
 			[270339] = 2065637,
@@ -159,12 +159,12 @@ WeakAurasSaved = {
 		["Steady Focus"] = {
 			[193534] = 236182,
 		},
-		["Precise Shots"] = {
-			[260242] = 236179,
-		},
 		["Survival of the Fittest"] = {
 			[264735] = 136051,
 			[281195] = 136094,
+		},
+		["Posthaste"] = {
+			[118922] = 461119,
 		},
 		["Bullseye"] = {
 			[204090] = 236179,
@@ -1300,18 +1300,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["arcLength"] = 360,
-			["animate"] = false,
 			["useLimit"] = false,
+			["animate"] = false,
+			["rowSpace"] = 1,
 			["scale"] = 1,
-			["yOffset"] = -243.2216491699219,
+			["stagger"] = 0,
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
 			["anchorPoint"] = "CENTER",
-			["stagger"] = 0,
+			["selfPoint"] = "LEFT",
 			["constantFactor"] = "RADIUS",
 			["borderInset"] = 1,
 			["borderOffset"] = 4,
@@ -1325,11 +1325,11 @@ WeakAurasSaved = {
 			["uid"] = "6N0f)5QDjqW",
 			["config"] = {
 			},
-			["selfPoint"] = "LEFT",
+			["xOffset"] = -113.2230224609375,
 			["conditions"] = {
 			},
-			["xOffset"] = -113.2230224609375,
-			["rowSpace"] = 1,
+			["arcLength"] = 360,
+			["yOffset"] = -243.2216491699219,
 		},
 		["Dance of Death"] = {
 			["sparkWidth"] = 10,
@@ -1611,15 +1611,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
 				["use_combat"] = true,
 				["use_class"] = true,
 				["size"] = {
@@ -2094,7 +2094,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["radius"] = 200,
+			["gridType"] = "RD",
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -2103,6 +2103,29 @@ WeakAurasSaved = {
 			},
 			["borderEdge"] = "Square Full White",
 			["animate"] = false,
+			["arcLength"] = 360,
+			["scale"] = 1,
+			["radius"] = 200,
+			["border"] = false,
+			["anchorFrameFrame"] = "WeakAuras:Focus",
+			["regionType"] = "dynamicgroup",
+			["borderSize"] = 2,
+			["sort"] = "none",
+			["rowSpace"] = 1,
+			["authorOptions"] = {
+			},
+			["constantFactor"] = "RADIUS",
+			["limit"] = 5,
+			["borderOffset"] = 4,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80205,
+			["id"] = "Hunter - 0.4 (Barbed Shot Bars) BM",
+			["gridWidth"] = 5,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SELECTFRAME",
+			["borderInset"] = 1,
+			["uid"] = "cCYibeyxPJ1",
+			["selfPoint"] = "BOTTOM",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -2123,33 +2146,10 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["scale"] = 1,
-			["selfPoint"] = "BOTTOM",
-			["border"] = false,
-			["anchorFrameFrame"] = "WeakAuras:Focus",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["sort"] = "none",
-			["gridType"] = "RD",
-			["arcLength"] = 360,
-			["constantFactor"] = "RADIUS",
-			["limit"] = 5,
-			["borderOffset"] = 4,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80205,
-			["id"] = "Hunter - 0.4 (Barbed Shot Bars) BM",
-			["gridWidth"] = 5,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SELECTFRAME",
-			["borderInset"] = 1,
-			["uid"] = "cCYibeyxPJ1",
-			["groupIcon"] = 2058007,
-			["stagger"] = 0,
 			["conditions"] = {
 			},
-			["authorOptions"] = {
-			},
-			["rowSpace"] = 1,
+			["groupIcon"] = 2058007,
+			["stagger"] = 0,
 		},
 		["S - DD - Therum Deepforge - Empowered Forge Breath"] = {
 			["xOffset"] = 0,
@@ -3538,16 +3538,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
-				["use_spec"] = true,
 				["class"] = {
 					["single"] = "HUNTER",
 					["multi"] = {
@@ -3573,13 +3573,14 @@ WeakAurasSaved = {
 				0, -- [3]
 				0.5, -- [4]
 			},
-			["uid"] = "uYBkg0eaimR",
-			["useAdjustedMax"] = false,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
+			},
+			["useAdjustedMax"] = false,
+			["config"] = {
 			},
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
@@ -3608,8 +3609,7 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["config"] = {
-			},
+			["uid"] = "uYBkg0eaimR",
 			["inverse"] = false,
 			["useAdjustededMax"] = false,
 			["orientation"] = "HORIZONTAL",
@@ -7772,13 +7772,13 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["subeventPrefix"] = "SPELL",
+						["custom"] = "function(event, _, subEvent, _, _, _, _, _, destGUID, ...)\n    -- Don't mark if not leader. We really shouldn't even load the WA, but there's no leader condition.\n    if not UnitIsGroupLeader(\"player\") then\n        return true\n    end\n    \n    -- Clear out the usedMarkers list if new combat is entered and add pre-existing\n    -- visible markers to the table to prevent them from being moved\n    if event == \"PLAYER_REGEN_DISABLED\" then\n        aura_env.usedMarkers = {}\n        \n        -- Create list of pre-placed markers\n        for i = 1, #aura_env.preScan do\n            local mark = GetRaidTargetIndex(aura_env.preScan[i])\n            if ( mark ) then\n                local newGUID = UnitGUID(aura_env.preScan[i])\n                aura_env.usedMarkers[newGUID] = mark\n            end\n        end\n        \n        -- Free up usedMarkers from marked targets who died\n    elseif subEvent == \"UNIT_DIED\" then\n        aura_env.usedMarkers[destGUID] = nil\n        \n    else\n        -- Don't scan too often\n        if GetTime() - (aura_env.lastScan or 0) < 0.3 then\n            return true\n        end\n        aura_env.lastScan = GetTime()\n        \n        -- Loop through the visible nameplates for something to mark\n        for i = 1,40 do\n            local target = \"nameplate\"..i\n            local uGUID = UnitGUID(target)\n            \n            if uGUID and not GetRaidTargetIndex(target) and UnitAffectingCombat(target) then\n                local npcID = select(6, strsplit(\"-\", uGUID))\n                \n                if npcID then\n                    for _, ttm in ipairs(aura_env.targetsToMark) do\n                        if ttm == npcID then\n                            local mark = aura_env.GetFirstFreeMarker()\n                            if mark then\n                                SetRaidTarget(target, mark)\n                                aura_env.usedMarkers[uGUID] = mark\n                                break\n                            end\n                        end\n                    end\n                end\n            end\n        end\n    end\n    \n    return true\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 						["spellIds"] = {
 						},
-						["events"] = "PLAYER_REGEN_DISABLED, COMBAT_LOG_EVENT_UNFILTERED",
 						["custom_type"] = "status",
 						["check"] = "event",
 						["unit"] = "player",
-						["custom"] = "function(event, _, subEvent, _, _, _, _, _, destGUID, ...)\n    -- Don't mark if not leader. We really shouldn't even load the WA, but there's no leader condition.\n    if not UnitIsGroupLeader(\"player\") then\n        return true\n    end\n    \n    -- Clear out the usedMarkers list if new combat is entered and add pre-existing\n    -- visible markers to the table to prevent them from being moved\n    if event == \"PLAYER_REGEN_DISABLED\" then\n        aura_env.usedMarkers = {}\n        \n        -- Create list of pre-placed markers\n        for i = 1, #aura_env.preScan do\n            local mark = GetRaidTargetIndex(aura_env.preScan[i])\n            if ( mark ) then\n                local newGUID = UnitGUID(aura_env.preScan[i])\n                aura_env.usedMarkers[newGUID] = mark\n            end\n        end\n        \n        -- Free up usedMarkers from marked targets who died\n    elseif subEvent == \"UNIT_DIED\" then\n        aura_env.usedMarkers[destGUID] = nil\n        \n    else\n        -- Don't scan too often\n        if GetTime() - (aura_env.lastScan or 0) < 0.3 then\n            return true\n        end\n        aura_env.lastScan = GetTime()\n        \n        -- Loop through the visible nameplates for something to mark\n        for i = 1,40 do\n            local target = \"nameplate\"..i\n            local uGUID = UnitGUID(target)\n            \n            if uGUID and not GetRaidTargetIndex(target) and UnitAffectingCombat(target) then\n                local npcID = select(6, strsplit(\"-\", uGUID))\n                \n                if npcID then\n                    for _, ttm in ipairs(aura_env.targetsToMark) do\n                        if ttm == npcID then\n                            local mark = aura_env.GetFirstFreeMarker()\n                            if mark then\n                                SetRaidTarget(target, mark)\n                                aura_env.usedMarkers[uGUID] = mark\n                                break\n                            end\n                        end\n                    end\n                end\n            end\n        end\n    end\n    \n    return true\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+						["events"] = "PLAYER_REGEN_DISABLED, COMBAT_LOG_EVENT_UNFILTERED",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -9264,15 +9264,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
 				["use_combat"] = true,
 				["use_class"] = true,
 				["size"] = {
@@ -9427,16 +9427,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["race"] = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -14906,70 +14906,6 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["regionType"] = "icon",
-			["displayIcon"] = "236225",
-			["selfPoint"] = "CENTER",
-			["xOffset"] = -927.9999580383301,
-			["cooldownEdge"] = false,
-			["auto"] = false,
-			["uid"] = "A1VzOF1aXSg",
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.0.5",
-			["tocversion"] = 80300,
-			["id"] = "HV ECD",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 50,
-			["anchorFrameType"] = "SCREEN",
-			["config"] = {
-				["option7"] = false,
-				["option4"] = false,
-				["option1"] = false,
-				["option5"] = false,
-				["option6"] = false,
-				["option2"] = false,
-				["option3"] = false,
-			},
-			["inverse"] = false,
-			["zoom"] = 0.28,
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["variable"] = "triggered",
-						["value"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								0.50980392156863, -- [1]
-								0.2078431372549, -- [2]
-								0.2078431372549, -- [3]
-								1, -- [4]
-							},
-							["property"] = "color",
-						}, -- [1]
-						{
-							["value"] = {
-								0.29411764705882, -- [1]
-								0.13333333333333, -- [2]
-								0.13333333333333, -- [3]
-								0.6700000166893, -- [4]
-							},
-							["property"] = "sub.2.border_color",
-						}, -- [2]
-					},
-				}, -- [1]
-			},
-			["cooldown"] = false,
 			["authorOptions"] = {
 				{
 					["type"] = "toggle",
@@ -15027,6 +14963,70 @@ WeakAurasSaved = {
 					["name"] = "Option 7",
 					["width"] = 1,
 				}, -- [7]
+			},
+			["regionType"] = "icon",
+			["displayIcon"] = "236225",
+			["selfPoint"] = "CENTER",
+			["cooldownEdge"] = false,
+			["xOffset"] = -927.9999580383301,
+			["auto"] = false,
+			["uid"] = "A1VzOF1aXSg",
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.0.5",
+			["tocversion"] = 80300,
+			["id"] = "HV ECD",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 50,
+			["anchorFrameType"] = "SCREEN",
+			["config"] = {
+				["option7"] = false,
+				["option4"] = false,
+				["option1"] = false,
+				["option5"] = false,
+				["option6"] = false,
+				["option2"] = false,
+				["option3"] = false,
+			},
+			["inverse"] = false,
+			["zoom"] = 0.28,
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["variable"] = "triggered",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								0.50980392156863, -- [1]
+								0.2078431372549, -- [2]
+								0.2078431372549, -- [3]
+								1, -- [4]
+							},
+							["property"] = "color",
+						}, -- [1]
+						{
+							["value"] = {
+								0.29411764705882, -- [1]
+								0.13333333333333, -- [2]
+								0.13333333333333, -- [3]
+								0.6700000166893, -- [4]
+							},
+							["property"] = "sub.2.border_color",
+						}, -- [2]
+					},
+				}, -- [1]
+			},
+			["cooldown"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 		},
 		["S - TD - Inquisitor Darkspeak - Agonizing Torment DEBUFF"] = {
@@ -15815,9 +15815,13 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["config"] = {
-			},
 			["uid"] = "oVMqroAlu8A",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["desaturate"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 1,
@@ -15844,11 +15848,7 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["width"] = 180.00004577637,
 			["auto"] = true,
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["config"] = {
 			},
 			["inverse"] = false,
 			["xOffset"] = 0,
@@ -17775,6 +17775,93 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 15,
+			["uid"] = "S0O)AZIqaX7",
+			["load"] = {
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["sparkBlendMode"] = "ADD",
+			["useAdjustededMax"] = false,
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["width"] = 178.0000762939453,
+			["frameStrata"] = 1,
+			["sparkOffsetY"] = 0,
+			["sparkHidden"] = "NEVER",
+			["useAdjustededMin"] = false,
+			["regionType"] = "aurabar",
+			["borderInFront"] = true,
+			["_table"] = "d",
+			["icon_side"] = "RIGHT",
+			["auto"] = true,
+			["sparkHeight"] = 30,
+			["texture"] = "Aluminium",
+			["zoom"] = 0,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["semver"] = "1.0.0",
+			["tocversion"] = 80205,
+			["id"] = "Aspect of Wild",
+			["selfPoint"] = "CENTER",
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["desaturate"] = false,
 			["config"] = {
 				["gcdCol"] = {
 					1, -- [1]
@@ -17814,93 +17901,6 @@ WeakAurasSaved = {
 					1, -- [3]
 					1, -- [4]
 				},
-			},
-			["load"] = {
-				["ingroup"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["single"] = 1,
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["single"] = "HUNTER",
-					["multi"] = {
-					},
-				},
-				["talent2"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["use_class"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = true,
-				["use_combat"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["sparkBlendMode"] = "ADD",
-			["useAdjustededMax"] = false,
-			["uid"] = "S0O)AZIqaX7",
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["width"] = 178.0000762939453,
-			["frameStrata"] = 1,
-			["sparkOffsetY"] = 0,
-			["sparkHidden"] = "NEVER",
-			["useAdjustededMin"] = false,
-			["regionType"] = "aurabar",
-			["borderInFront"] = true,
-			["_table"] = "d",
-			["icon_side"] = "RIGHT",
-			["auto"] = true,
-			["sparkHeight"] = 30,
-			["texture"] = "Aluminium",
-			["zoom"] = 0,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["semver"] = "1.0.0",
-			["tocversion"] = 80205,
-			["id"] = "Aspect of Wild",
-			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["desaturate"] = false,
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
 			},
 			["inverse"] = false,
 			["sparkDesature"] = false,

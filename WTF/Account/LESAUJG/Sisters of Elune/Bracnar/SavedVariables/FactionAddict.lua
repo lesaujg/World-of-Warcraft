@@ -27,122 +27,126 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Tuesday 8/11",
-		["rows"] = 1,
+		["date"] = "Wednesday 8/12",
+		["rows"] = 2,
 	}, -- [1]
 	{
-		["date"] = "Monday 8/10",
+		["date"] = "Tuesday 8/11",
 		["rows"] = 1,
 	}, -- [2]
 	{
-		["date"] = "Sunday 8/9",
+		["date"] = "Monday 8/10",
 		["rows"] = 1,
 	}, -- [3]
 	{
-		["date"] = "Saturday 8/8",
+		["date"] = "Sunday 8/9",
 		["rows"] = 1,
 	}, -- [4]
 	{
-		["date"] = "Friday 8/7",
+		["date"] = "Saturday 8/8",
 		["rows"] = 1,
 	}, -- [5]
 	{
-		["date"] = "Thursday 8/6",
+		["date"] = "Friday 8/7",
 		["rows"] = 1,
 	}, -- [6]
 	{
-		["date"] = "Wednesday 8/5",
+		["date"] = "Thursday 8/6",
 		["rows"] = 1,
 	}, -- [7]
 	{
-		["date"] = "Tuesday 8/4",
+		["date"] = "Wednesday 8/5",
 		["rows"] = 1,
 	}, -- [8]
 	{
-		["date"] = "Monday 8/3",
+		["date"] = "Tuesday 8/4",
 		["rows"] = 1,
 	}, -- [9]
 	{
-		["date"] = "Saturday 8/1",
+		["date"] = "Monday 8/3",
 		["rows"] = 1,
 	}, -- [10]
 	{
+		["date"] = "Saturday 8/1",
+		["rows"] = 1,
+	}, -- [11]
+	{
 		["date"] = "Friday 7/31",
 		["rows"] = 3,
-	}, -- [11]
+	}, -- [12]
 	{
 		["date"] = "Thursday 7/30",
 		["rows"] = 7,
-	}, -- [12]
+	}, -- [13]
 	{
 		["date"] = "Wednesday 7/29",
 		["rows"] = 1,
-	}, -- [13]
+	}, -- [14]
 	{
 		["date"] = "Tuesday 7/28",
 		["rows"] = 1,
-	}, -- [14]
+	}, -- [15]
 	{
 		["date"] = "Monday 7/27",
 		["rows"] = 1,
-	}, -- [15]
+	}, -- [16]
 	{
 		["date"] = "Saturday 7/25",
 		["rows"] = 1,
-	}, -- [16]
+	}, -- [17]
 	{
 		["date"] = "Friday 7/24",
 		["rows"] = 1,
-	}, -- [17]
+	}, -- [18]
 	{
 		["date"] = "Thursday 7/23",
 		["rows"] = 1,
-	}, -- [18]
-	{
-		["date"] = "Wednesday 7/22",
-		["rows"] = 1,
 	}, -- [19]
 	{
-		["date"] = "Tuesday 7/21",
+		["date"] = "Wednesday 7/22",
 		["rows"] = 1,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
 	{
-		["Waveblade Ankoan"] = 250,
+		["Waveblade Ankoan"] = 850,
+		["7th Legion"] = 150,
 	}, -- [1]
 	{
-		["Waveblade Ankoan"] = 325,
+		["Waveblade Ankoan"] = 250,
 	}, -- [2]
 	{
-		["Waveblade Ankoan"] = 600,
+		["Waveblade Ankoan"] = 325,
 	}, -- [3]
 	{
-		["Waveblade Ankoan"] = 325,
+		["Waveblade Ankoan"] = 600,
 	}, -- [4]
 	{
-		["Waveblade Ankoan"] = 250,
+		["Waveblade Ankoan"] = 325,
 	}, -- [5]
 	{
 		["Waveblade Ankoan"] = 250,
 	}, -- [6]
 	{
-		["Waveblade Ankoan"] = 650,
+		["Waveblade Ankoan"] = 250,
 	}, -- [7]
 	{
-		["Waveblade Ankoan"] = 925,
+		["Waveblade Ankoan"] = 650,
 	}, -- [8]
 	{
-		["Waveblade Ankoan"] = 2150,
+		["Waveblade Ankoan"] = 925,
 	}, -- [9]
 	{
-		["Waveblade Ankoan"] = 475,
+		["Waveblade Ankoan"] = 2150,
 	}, -- [10]
+	{
+		["Waveblade Ankoan"] = 475,
+	}, -- [11]
 	{
 		["Waveblade Ankoan"] = 775,
 		["Order of Embers"] = 1800,
 		["Champions of Azeroth"] = 1750,
-	}, -- [11]
+	}, -- [12]
 	{
 		["Tortollan Seekers"] = 2025,
 		["Storm's Wake"] = 75,
@@ -151,15 +155,12 @@ FactionAddictLogEntries = {
 		["Proudmoore Admiralty"] = 1800,
 		["Order of Embers"] = 225,
 		["7th Legion"] = 150,
-	}, -- [12]
-	{
-		["Waveblade Ankoan"] = 2050,
 	}, -- [13]
 	{
-		["Waveblade Ankoan"] = 2025,
+		["Waveblade Ankoan"] = 2050,
 	}, -- [14]
 	{
-		["Waveblade Ankoan"] = 250,
+		["Waveblade Ankoan"] = 2025,
 	}, -- [15]
 	{
 		["Waveblade Ankoan"] = 250,
@@ -168,13 +169,13 @@ FactionAddictLogEntries = {
 		["Waveblade Ankoan"] = 250,
 	}, -- [17]
 	{
-		["Waveblade Ankoan"] = 550,
+		["Waveblade Ankoan"] = 250,
 	}, -- [18]
 	{
-		["Waveblade Ankoan"] = 575,
+		["Waveblade Ankoan"] = 550,
 	}, -- [19]
 	{
-		["Waveblade Ankoan"] = 375,
+		["Waveblade Ankoan"] = 575,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -295,14 +296,14 @@ FactionAddictConfigIsInactive = {
 	[2157] = false,
 	[1718] = false,
 	[1272] = false,
-	[1085] = false,
+	[2417] = false,
 	[2159] = false,
 	[989] = false,
 	[1273] = false,
-	[1337] = false,
+	[2156] = false,
 	[2160] = false,
 	[1975] = false,
-	[2162] = false,
+	[1850] = false,
 	[2158] = false,
 	[369] = false,
 	[990] = false,
@@ -311,7 +312,7 @@ FactionAddictConfigIsInactive = {
 	[576] = false,
 	[2161] = false,
 	[1276] = false,
-	[2417] = false,
+	[1085] = false,
 	[2164] = false,
 	[2163] = false,
 	[1277] = false,
@@ -324,25 +325,25 @@ FactionAddictConfigIsInactive = {
 	[1388] = false,
 	[1279] = false,
 	[69] = false,
-	[81] = false,
+	[1280] = false,
 	[1216] = false,
-	[2045] = false,
+	[81] = false,
 	[2170] = false,
 	[1848] = false,
 	[93] = false,
 	[1281] = false,
 	[1090] = false,
 	[1345] = false,
-	[1280] = false,
+	[2045] = false,
 	[1282] = false,
 	[1091] = false,
 	[270] = false,
 	[1984] = false,
 	[1283] = false,
-	[1850] = false,
+	[2162] = false,
 	[1156] = false,
-	[2156] = false,
 	[1847] = false,
+	[1337] = false,
 	[1714] = false,
 	[1738] = false,
 	[1731] = false,
