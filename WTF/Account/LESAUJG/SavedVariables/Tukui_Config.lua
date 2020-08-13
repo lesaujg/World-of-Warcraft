@@ -33,7 +33,10 @@ TukuiConfigShared = {
 		},
 		["Palani"] = {
 		},
-		["Clothgar"] = {
+		["Uldaris"] = {
+			["Bags"] = {
+				["Enable"] = false,
+			},
 			["General"] = {
 				["UIScale"] = 0.64,
 			},
@@ -42,31 +45,6 @@ TukuiConfigShared = {
 			},
 		},
 		["Herbinator"] = {
-		},
-		["Edaka"] = {
-		},
-		["Sanjuri"] = {
-		},
-		["Torinara"] = {
-		},
-		["Ghiaccioli"] = {
-			["Auras"] = {
-				["BuffsPerRow"] = 12,
-			},
-			["Bags"] = {
-				["ItemsPerRow"] = 11,
-				["Spacing"] = 4,
-				["ButtonSize"] = 28,
-			},
-			["General"] = {
-				["UIScale"] = 0.64,
-			},
-			["ActionBars"] = {
-				["NormalButtonSize"] = 27,
-				["HotKey"] = true,
-				["ButtonSpacing"] = 4,
-				["PetButtonSize"] = 25,
-			},
 		},
 		["Bracnar"] = {
 			["General"] = {
@@ -78,19 +56,41 @@ TukuiConfigShared = {
 			["Bags"] = {
 				["Enable"] = false,
 			},
+			["Raid"] = {
+				["ShowPets"] = false,
+			},
 			["ActionBars"] = {
 				["OwnShadowDanceBar"] = true,
 				["OwnWarriorStanceBar"] = true,
 				["HotKey"] = true,
 			},
-			["Raid"] = {
-				["ShowPets"] = false,
+		},
+		["Sanjuri"] = {
+		},
+		["Torinara"] = {
+		},
+		["Ghiaccioli"] = {
+			["ActionBars"] = {
+				["NormalButtonSize"] = 27,
+				["HotKey"] = true,
+				["ButtonSpacing"] = 4,
+				["PetButtonSize"] = 25,
+			},
+			["Bags"] = {
+				["ItemsPerRow"] = 11,
+				["ButtonSize"] = 28,
+				["Spacing"] = 4,
+			},
+			["General"] = {
+				["UIScale"] = 0.64,
+			},
+			["Auras"] = {
+				["BuffsPerRow"] = 12,
 			},
 		},
-		["Uldaris"] = {
-			["Bags"] = {
-				["Enable"] = false,
-			},
+		["Edaka"] = {
+		},
+		["Clothgar"] = {
 			["General"] = {
 				["UIScale"] = 0.64,
 			},
