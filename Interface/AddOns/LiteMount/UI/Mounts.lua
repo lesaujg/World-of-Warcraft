@@ -10,7 +10,7 @@
 
 local L = LM_Localize
 
-local NUM_FLAG_BUTTONS = 6
+local NUM_FLAG_BUTTONS = 5
 
 local function tslice(t, first, last)
     local out = { }
@@ -18,6 +18,86 @@ local function tslice(t, first, last)
         tinsert(out, t[i])
     end
     return out
+end
+
+local PriorityColors = {
+    [''] = COMMON_GRAY_COLOR,
+    [0] =  RED_FONT_COLOR,
+    [1] =  RARE_BLUE_COLOR,
+    [2] =  EPIC_PURPLE_COLOR,
+    [3] =  LEGENDARY_ORANGE_COLOR,
+}
+
+local function LiteMountOptionsPriority_Update(self)
+    local value = self:GetOption()
+    if value then
+        self.Minus:SetShown(value > LM_Options.MIN_PRIORITY)
+        self.Plus:SetShown(value < LM_Options.MAX_PRIORITY)
+        self.Priority:SetText(value)
+    else
+        self.Minus:Show()
+        self.Plus:Show()
+        self.Priority:SetText('')
+    end
+    local r, g, b = PriorityColors[value or '']:GetRGB()
+    self.Background:SetColorTexture(r, g, b, 0.25)
+end
+
+local function LiteMountOptionsPriority_GetOption(self)
+    local mount = self:GetParent().mount
+    if mount then
+        return LM_Options:GetPriority(mount)
+    end
+end
+
+local function LiteMountOptionsPriority_SetOption(self, v)
+    local mount = self:GetParent().mount
+    if mount then
+        LM_Options:SetPriority(mount, v or LM_Options.DEFAULT_PRIORITY)
+    end
+end
+
+local function LiteMountOptionsPriority_IncrementOption(self)
+    local v = self:GetOption()
+    if v then
+        self:SetOption(v + 1)
+    else
+        self:SetOption(LM_Options.DEFAULT_PRIORITY)
+    end
+end
+
+local function LiteMountOptionsPriority_DecrementOption(self)
+    local v = self:GetOption() or LM_Options.DEFAULT_PRIORITY
+    self:SetOption(v - 1)
+end
+
+function LiteMountOptionsPriority_OnLoad(self)
+    self.SetOption = LiteMountOptionsPriority_SetOption
+    self.GetOption = LiteMountOptionsPriority_GetOption
+    self.Plus:SetScript('OnClick',
+        function ()
+            LiteMountOptionsPriority_IncrementOption(self)
+        end)
+
+    self.Minus:SetScript('OnClick',
+        function ()
+            LiteMountOptionsPriority_DecrementOption(self)
+        end)
+end
+
+function LiteMountOptionsPriority_OnEnter(self)
+    GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+    GameTooltip:ClearLines()
+    GameTooltip:AddLine(L.LM_PRIORITY)
+    for _,p in ipairs(LM_UIFilter.GetPriorities()) do
+        local t, d = LM_UIFilter.GetPriorityText(p)
+        GameTooltip:AddLine(t .. ' - ' .. d)
+    end
+    GameTooltip:Show()
+end
+
+function LiteMountOptionsPriority_OnLeave(self)
+    GameTooltip:Hide()
 end
 
 function LiteMountOptionsBit_OnClick(self)
@@ -41,14 +121,6 @@ local function CreateMoreButtons(self)
     -- Note: the buttons are laid out right to left
     for _,b in ipairs(self.buttons) do
         b:SetWidth(b:GetParent():GetWidth())
-    end
-end
-
-local function EnableDisableMount(mount, onoff)
-    if onoff == "0" then
-        LM_Options:AddExcludedMount(mount)
-    else
-        LM_Options:RemoveExcludedMount(mount)
     end
 end
 
@@ -76,28 +148,6 @@ function LiteMountOptionsMountsFilterDropDown_Initialize(self, level)
 
     if level == 1 then
         info.isNotRadio = true
-
-        info.text = VIDEO_OPTIONS_ENABLED
-        info.arg1 = "ENABLED"
-        info.checked = function ()
-                return LM_UIFilter.IsFlagChecked("ENABLED")
-            end
-        info.func = function (_, _, _, v)
-                LM_UIFilter.SetFlagFilter("ENABLED", v)
-                LiteMountOptions_UpdateMountList()
-            end
-        UIDropDownMenu_AddButton(info, level)
-
-        info.text = VIDEO_OPTIONS_DISABLED
-        info.arg1 = "DISABLED"
-        info.checked = function ()
-                return LM_UIFilter.IsFlagChecked("DISABLED")
-            end
-        info.func = function (_, _, _, v)
-                LM_UIFilter.SetFlagFilter("DISABLED", v)
-                LiteMountOptions_UpdateMountList()
-            end
-        UIDropDownMenu_AddButton(info, level)
 
         info.text = COLLECTED
         info.arg1 = "COLLECTED"
@@ -138,23 +188,27 @@ function LiteMountOptionsMountsFilterDropDown_Initialize(self, level)
         info.hasArrow = true
         info.notCheckable = true
 
-        info.text = L.LM_FLAGS
+        info.text = L.LM_PRIORITY
         info.value = 1
         UIDropDownMenu_AddButton(info, level)
 
-        info.text = SOURCES
+        info.text = L.LM_FLAGS
         info.value = 2
+        UIDropDownMenu_AddButton(info, level)
+
+        info.text = SOURCES
+        info.value = 3
         UIDropDownMenu_AddButton(info, level)
     elseif level == 2 then
         info.hasArrow = false
         info.isNotRadio = true
         info.notCheckable = true
 
-        if UIDROPDOWNMENU_MENU_VALUE == 2 then -- Sources
+        if UIDROPDOWNMENU_MENU_VALUE == 3 then -- Sources
             info.text = CHECK_ALL
             info.func = function ()
                     LM_UIFilter.SetAllSourceFilters(true)
-                    UIDropDownMenu_Refresh(LiteMountOptionsMountsFilterDropDown, false, 2)
+                    UIDropDownMenu_Refresh(LiteMountOptionsMounts.FilterDropDown, false, 2)
                     LiteMountOptions_UpdateMountList()
                 end
             UIDropDownMenu_AddButton(info, level)
@@ -162,7 +216,7 @@ function LiteMountOptionsMountsFilterDropDown_Initialize(self, level)
             info.text = UNCHECK_ALL
             info.func = function ()
                     LM_UIFilter.SetAllSourceFilters(false)
-                    UIDropDownMenu_Refresh(LiteMountOptionsMountsFilterDropDown, false, 2)
+                    UIDropDownMenu_Refresh(LiteMountOptionsMounts.FilterDropDown, false, 2)
                     LiteMountOptions_UpdateMountList()
                 end
             UIDropDownMenu_AddButton(info, level)
@@ -184,13 +238,13 @@ function LiteMountOptionsMountsFilterDropDown_Initialize(self, level)
                 end
             end
 
-        elseif UIDROPDOWNMENU_MENU_VALUE == 1 then -- Flags
+        elseif UIDROPDOWNMENU_MENU_VALUE == 2 then -- Flags
             local flags = LM_UIFilter.GetFlags()
 
             info.text = CHECK_ALL
             info.func = function ()
                     LM_UIFilter:SetAllFlagFilters(true)
-                    UIDropDownMenu_Refresh(LiteMountOptionsMountsFilterDropDown, false, 2)
+                    UIDropDownMenu_Refresh(LiteMountOptionsMounts.FilterDropDown, false, 2)
                     LiteMountOptions_UpdateMountList()
                 end
             UIDropDownMenu_AddButton(info, level)
@@ -198,7 +252,7 @@ function LiteMountOptionsMountsFilterDropDown_Initialize(self, level)
             info.text = UNCHECK_ALL
             info.func = function ()
                     LM_UIFilter:SetAllFlagFilters(false)
-                    UIDropDownMenu_Refresh(LiteMountOptionsMountsFilterDropDown, false, 2)
+                    UIDropDownMenu_Refresh(LiteMountOptionsMounts.FilterDropDown, false, 2)
                     LiteMountOptions_UpdateMountList()
                 end
             UIDropDownMenu_AddButton(info, level)
@@ -217,6 +271,40 @@ function LiteMountOptionsMountsFilterDropDown_Initialize(self, level)
                     end
                 UIDropDownMenu_AddButton(info, level)
             end
+        elseif UIDROPDOWNMENU_MENU_VALUE == 1 then -- Priority
+            local priorities = LM_UIFilter.GetPriorities()
+
+            info.text = CHECK_ALL
+            info.func = function ()
+                    LM_UIFilter:SetAllPriorityFilters(true)
+                    UIDropDownMenu_Refresh(LiteMountOptionsMounts.FilterDropDown, false, 2)
+                    LiteMountOptions_UpdateMountList()
+                end
+            UIDropDownMenu_AddButton(info, level)
+
+            info.text = UNCHECK_ALL
+            info.func = function ()
+                    LM_UIFilter:SetAllPriorityFilters(false)
+                    UIDropDownMenu_Refresh(LiteMountOptionsMounts.FilterDropDown, false, 2)
+                    LiteMountOptions_UpdateMountList()
+                end
+            UIDropDownMenu_AddButton(info, level)
+
+            info.notCheckable = false
+
+            for _,p in ipairs(priorities) do
+                info.text = LM_UIFilter.GetPriorityText(p)
+                info.arg1 = p
+                info.func = function (_, _, _, v)
+                        LM_UIFilter.SetPriorityFilter(p, v)
+                        LiteMountOptions_UpdateMountList()
+                    end
+                info.checked = function ()
+                        return LM_UIFilter.IsPriorityChecked(p)
+                    end
+                UIDropDownMenu_AddButton(info, level)
+            end
+
         end
     end
 end
@@ -225,34 +313,27 @@ function LiteMountOptionsMountsFilterDropDown_OnLoad(self)
     UIDropDownMenu_Initialize(self, LiteMountOptionsMountsFilterDropDown_Initialize, "MENU")
 end
 
-local function UpdateAllSelected(mounts)
+local function AllPriority_SetOption(self, v)
+    local mounts = LM_UIFilter.GetFilteredMountList()
+    LM_Options:SetPriorities(mounts, v or LM_Options.DEFAULT_PRIORITY)
+end
 
-    if not mounts then
-        mounts = LM_UIFilter.GetFilteredMountList()
-    end
+local function AllPriority_GetOption(self)
+    local mounts = LM_UIFilter.GetFilteredMountList()
 
-    local allEnabled = 1
-    local allDisabled = 1
+    local allValue
 
-    for _,m in ipairs(mounts) do
-        if LM_Options:IsExcludedMount(m) then
-            allEnabled = 0
+    for _,mount in ipairs(mounts) do
+        local v = LM_Options:GetPriority(mount)
+        if (allValue or v) ~= v then
+            allValue = nil
+            break
         else
-            allDisabled = 0
+            allValue = v
         end
     end
 
-    local checkedTexture = LiteMountOptionsMounts.AllSelect:GetCheckedTexture()
-    if allDisabled == 1 then
-        LiteMountOptionsMounts.AllSelect:SetChecked(false)
-    else
-        LiteMountOptionsMounts.AllSelect:SetChecked(true)
-        if allEnabled == 1 then
-            checkedTexture:SetDesaturated(false)
-        else
-            checkedTexture:SetDesaturated(true)
-        end
-    end
+    return allValue
 end
 
 local function UpdateMountButton(button, pageFlags, mount)
@@ -280,43 +361,8 @@ local function UpdateMountButton(button, pageFlags, mount)
         button.Icon:GetNormalTexture():SetDesaturated(false)
     end
 
-    if LM_Options:IsExcludedMount(mount) then
-        button.Enabled:SetChecked(false)
-    else
-        button.Enabled:SetChecked(true)
-    end
-
-    button.Enabled.SetValue = function (self, setting)
-                            EnableDisableMount(button.mount, setting)
-                            self:GetScript("OnEnter")(self)
-                            UpdateAllSelected()
-                        end
-
-    if GameTooltip:GetOwner() == button.Enabled then
-        button.Enabled:GetScript("OnEnter")(button.Enabled)
-    end
-
+    LiteMountOptionsPriority_Update(button.Priority)
 end
-
-function LiteMountOptions_AllSelect_OnClick(self)
-    local mounts = LM_UIFilter.GetFilteredMountList()
-
-    local on
-
-    if self:GetChecked() then
-        on = "1"
-    else
-        on = "0"
-    end
-
-    for _,m in ipairs(mounts) do
-        EnableDisableMount(m, on)
-    end
-
-    self:GetScript("OnEnter")(self)
-
-end
-
 
 -- local FPCount = 0
 
@@ -334,14 +380,14 @@ function LiteMountOptions_UpdateFlagPaging()
     local pageOffset = (self.currentFlagPage - 1 ) * NUM_FLAG_BUTTONS + 1
     self.pageFlags = tslice(allFlags, pageOffset, pageOffset+NUM_FLAG_BUTTONS-1)
 
-    local bt
+    local label
     for i = 1, NUM_FLAG_BUTTONS do
-        bt = self["BitText"..i]
+        label = self["BitLabel"..i]
         if self.pageFlags[i] then
-            bt:SetText(L[self.pageFlags[i]])
-            bt:Show()
+            label:SetText(L[self.pageFlags[i]])
+            label:Show()
         else
-            bt:Hide()
+            label:Hide()
         end
     end
 end
@@ -378,7 +424,7 @@ function LiteMountOptions_UpdateMountList()
         end
     end
 
-    UpdateAllSelected(mounts)
+    LiteMountOptionsPriority_Update(LiteMountOptionsMounts.AllPriority)
 
     if LM_UIFilter.IsFiltered() then
         LiteMountOptionsMounts.FilterButton.ClearButton:Show()
@@ -411,6 +457,30 @@ function LiteMountOptionsMounts_OnLoad(self)
             LM_Options:SetExcludedMounts({})
         end
 
+    self.okay =
+        function (self)
+            -- remove backup
+        end
+
+    self.cancel =
+        function (self)
+            -- undo
+        end
+
+    -- Refresh is trigged from OnOptionsModified which means its cached
+    -- ideas about mounts are wrong and need to be cleared. In an ideal world
+    -- it would listen itself but the order is non-deterministic so we're
+    -- force clearing it here, even though it's ugly encapsulation breakage.
+
+    self.refresh = function (self, isProfileChange)
+        LM_UIFilter.ClearCache()
+        LiteMountOptions_UpdateFlagPaging(self)
+        LiteMountOptions_UpdateMountList(self)
+    end
+
+    self.AllPriority.GetOption = AllPriority_GetOption
+    self.AllPriority.SetOption = AllPriority_SetOption
+
     self.currentFlagPage = 1
     self.maxFlagPages = 1
     self.pageFlags = { }
@@ -423,11 +493,6 @@ function LiteMountOptionsMounts_OnLoad(self)
         self.currentFlagPage = Clamp(self.currentFlagPage - 1, 1, self.maxFlagPages)
         LiteMountOptions_UpdateFlagPaging()
         LiteMountOptions_UpdateMountList()
-    end
-
-    self.refresh = function (self)
-        LiteMountOptions_UpdateFlagPaging(self)
-        LiteMountOptions_UpdateMountList(self)
     end
 
     LiteMountOptionsPanel_OnLoad(self)

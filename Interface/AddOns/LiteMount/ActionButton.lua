@@ -38,17 +38,9 @@ function LM_ActionButton:Dispatch(action, env)
         return
     end
 
-    -- This is not right, because it relies on there being another action
-    -- it really needs to be handled at a higher level
-    local nextAction = self:GetAttribute('lm-nextaction')
-    if nextAction then
-        LM_Debug("Setting up button as with override from previous action.")
-        self:SetAttribute('lm-nextaction', nil)
-        self:SetupActionButton(nextAction)
-        return true
+    if not isTrue or LM_Actions:IsFlowSkipped(env) then
+        return
     end
-
-    if not isTrue or LM_Actions:IsFlowSkipped(env) then return end
 
     handler = LM_Actions:GetHandler(action.action)
     if not handler then
@@ -58,18 +50,16 @@ function LM_ActionButton:Dispatch(action, env)
 
     LM_Debug("Dispatching action " .. action.action)
 
-    -- This is super ugly.
     local m = handler(action.args or {}, env)
-    if not m then return end
-
-    LM_Debug("Setting up button as " .. (m.name or action.action) .. ".")
-    self:SetupActionButton(m)
-
-    return true
+    if m then
+        LM_Debug("Setting up button as " .. (m.name or action.action) .. ".")
+        self:SetupActionButton(m)
+        return true
+    end
 end
 
 function LM_ActionButton:CompileActions()
-    local actionList = LM_Options.db.profile.buttonActions[self.id]
+    local actionList = LM_Options:GetButtonAction(self.id)
     self.actions = LM_ActionList:Compile(actionList)
 end
 
@@ -81,19 +71,27 @@ function LM_ActionButton:PreClick(mouseButton)
 
     LM_PlayerMounts:RefreshMounts()
 
-    local env = {
-        ['mounts'] = { LM_PlayerMounts:FilterSearch("CASTABLE", "ENABLED") },
-	['flowControl'] = { },
-    }
+    -- Re-randomize if it's time
+    local keepRandomForSeconds = LM_Options:GetRandomPersistence()
+    if GetTime() - (self.globalEnv.randomTime or 0) > keepRandomForSeconds then
+        self.globalEnv.random = math.random()
+        self.globalEnv.randomTime = GetTime()
+    end
 
-    LM_Debug("Found " .. #env.mounts[1] .. " CASTABLE and ENABLED mounts.")
+    -- New sub-environment for this run
+    local subEnv = CopyTable(self.globalEnv)
+
+    -- Set up the fresh run environment for a new run.
+    subEnv.filters = { { "CASTABLE" } }
+    subEnv.flowControl = { }
+
     for _,a in ipairs(self.actions) do
-        if self:Dispatch(a, env) then
+        if self:Dispatch(a, subEnv) then
             return
         end
     end
 
-    self:Dispatch({ ['action'] = "CantMount" }, env)
+    self:Dispatch({ ['action'] = "CantMount" }, subEnv)
 end
 
 function LM_ActionButton:PostClick()
@@ -120,9 +118,12 @@ function LM_ActionButton:Create(n)
     -- So we can look up action lists in LM_Options
     b.id = n
 
-    b:CompileActions()
+    -- Global actions environment
+    b.globalEnv = { }
 
     -- Button-fu
+    b:CompileActions()
+
     b:RegisterForClicks("AnyDown")
 
     -- SecureActionButton setup

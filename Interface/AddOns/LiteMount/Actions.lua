@@ -12,6 +12,16 @@
 if LibDebug then LibDebug() end
 --@end-debug@]===]
 
+local function tJoin(...)
+    local out = { }
+    for _,t in ipairs({ ... }) do
+        for _,v in ipairs(t) do
+            table.insert(out, v)
+        end
+    end
+    return out
+end
+
 local function ReplaceVars(list)
     local out = {}
     for _,l in ipairs(list) do
@@ -25,11 +35,13 @@ local FLOWCONTROLS = { }
 
 FLOWCONTROLS['IF'] =
     function (args, env, isTrue)
+        LM_Debug(' - IF test is ' .. tostring(isTrue))
         table.insert(env.flowControl, isTrue)
     end
 
 FLOWCONTROLS['ELSEIF'] =
     function (args, env, isTrue)
+        LM_Debug(' - ELSEIF test is ' .. tostring(isTrue))
         table.remove(env.flowControl)
         table.insert(env.flowControl, isTrue)
     end
@@ -38,7 +50,9 @@ FLOWCONTROLS['ELSE'] =
     function (args, env, isTrue)
         local n = #env.flowControl
         if n > 0 then
-            env.flowControl[n] = not env.flowControl[n]
+            isTrue =  not env.flowControl[n]
+            LM_Debug(' - ELSE test is ' .. tostring(isTrue))
+            env.flowControl[n] = isTrue
         end
     end
 
@@ -54,15 +68,16 @@ local ACTIONS = { }
 
 ACTIONS['Limit'] =
     function (args, env)
-        args = ReplaceVars(args)
-        table.insert(env.mounts, 1, env.mounts[1]:FilterSearch(unpack(args)))
-        LM_Debug(format(" - limit from %d to %d", #env.mounts[2], #env.mounts[1]))
+        local filters = tJoin(env.filters[1], args)
+        table.insert(env.filters, 1, filters)
+        LM_Debug(" - new filter: " .. table.concat(env.filters[1], ' '))
     end
 
 ACTIONS['Endlimit'] =
     function (args, env)
-        if #env.mounts == 1 then return end
-        table.remove(env.mounts, 1)
+        if #env.filters == 1 then return end
+        table.remove(env.filters, 1)
+        LM_Debug(" - restored filter: " .. table.concat(env.filters[1], ' '))
     end
 
 local function GetKnownSpell(arg)
@@ -167,7 +182,7 @@ ACTIONS['CancelForm'] =
             end
         end
 
-        LM_Debug("- previous form is " .. tostring(savedFormName))
+        LM_Debug(" - previous form is " .. tostring(savedFormName))
 
         -- The logic here is really ugly.
 
@@ -195,7 +210,7 @@ ACTIONS['CancelForm'] =
             savedFormName = nil
         end
 
-        if inMountForm and not LM_Options:IsExcludedMount(inMountForm) then
+        if inMountForm and LM_Options:GetPriority(inMountForm) > 0 then
             LM_Debug(" - setting action to cancelform")
             return LM_SecureAction:Macro(SLASH_CANCELFORM1)
         end
@@ -214,50 +229,60 @@ ACTIONS['CopyTargetsMount'] =
 ACTIONS['SmartMount'] =
     function (args, env)
 
-        args = ReplaceVars(args)
-        local filteredList = env.mounts[1]:FilterSearch(unpack(args))
+        local filters = ReplaceVars(tJoin(env.filters[1], args))
+        local filteredList = LM_PlayerMounts:FilterSearch(unpack(filters))
 
+        LM_Debug(" - filters: " .. table.concat(filters, ' '))
         LM_Debug(" - filtered list contains " .. #filteredList .. " mounts")
 
         if next(filteredList) == nil then return end
-
-        filteredList:Shuffle()
 
         local m
 
         if LM_Conditions:Check("[submerged]") then
             LM_Debug(" - trying Swimming Mount (underwater)")
-            m = filteredList:FilterFind('SWIM')
+            local swim = filteredList:FilterSearch('SWIM')
+            LM_Debug(" - found " .. #swim .. " mounts.")
+            m = swim:PriorityRandom(env.random)
             if m then return m end
         end
 
         if LM_Conditions:Check("[flyable]") then
             LM_Debug(" - trying Flying Mount")
-            m = filteredList:FilterFind('FLY')
+            local fly = filteredList:FilterSearch('FLY')
+            LM_Debug(" - found " .. #fly .. " mounts.")
+            m = fly:PriorityRandom(env.random)
             if m then return m end
         end
 
         if LM_Conditions:Check("[floating,nowaterwalking]") then
             LM_Debug(" - trying Swimming Mount (on the surface)")
-            m = filteredList:FilterFind('SWIM')
+            local swim = filteredList:FilterSearch('SWIM')
+            LM_Debug(" - found " .. #swim .. " mounts.")
+            m = swim:PriorityRandom(env.random)
             if m then return m end
         end
 
         LM_Debug(" - trying Running Mount")
-        m = filteredList:FilterFind('RUN')
+        local run = filteredList:FilterSearch('RUN')
+        LM_Debug(" - found " .. #run .. " mounts.")
+        m = run:PriorityRandom(env.random)
         if m then return m end
 
         LM_Debug(" - trying Walking Mount")
-        m = filteredList:FilterFind('WALK')
+        local walk = filteredList:FilterSearch('WALK')
+        LM_Debug(" - found " .. #walk .. " mounts.")
+        m = walk:PriorityRandom(env.random)
         if m then return m end
+
     end
 
 ACTIONS['Mount'] =
     function (args, env)
-        args = ReplaceVars(args)
-        local filteredList = env.mounts[1]:FilterSearch(unpack(args))
-        LM_Debug(" - filtered list contains " .. #filteredList .. " mounts")
-        return filteredList:Random()
+        local filters = ReplaceVars(tJoin(env.filters[1], args))
+        LM_Debug(" - filters: " .. table.concat(filters, ' '))
+        local mounts = LM_PlayerMounts:FilterSearch(unpack(filters))
+        return mounts:PriorityRandom(env.random)
     end
 
 ACTIONS['Macro'] =
@@ -374,13 +399,13 @@ function LM_Actions:DefaultCombatMacro()
     if playerClass ==  "DRUID" then
         local forms = GetDruidMountForms()
         local mount = LM_PlayerMounts:GetMountBySpell(LM_SPELL.TRAVEL_FORM)
-        if mount and not LM_Options:IsExcludedMount(mount) then
+        if mount and LM_Options:GetPriority(mount) > 0 then
             mt = mt .. format("/cast [noform:%s] %s\n", forms, mount.name)
             mt = mt .. format("/cancelform [form:%s]\n", forms)
         end
     elseif playerClass == "SHAMAN" then
         local mount = LM_PlayerMounts:GetMountBySpell(LM_SPELL.GHOST_WOLF)
-        if mount and not LM_Options:IsExcludedMount(mount) then
+        if mount and LM_Options:GetPriority(mount) > 0 then
             local s = GetSpellInfo(LM_SPELL.GHOST_WOLF)
             mt = mt .. "/cast [noform] " .. s .. "\n"
             mt = mt .. "/cancelform [form]\n"

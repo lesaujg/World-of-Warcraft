@@ -27,21 +27,6 @@ local function CreateOrUpdateMacro()
     return index
 end
 
-local function UpdateActiveMount(arg)
-    local m = LM_PlayerMounts:GetMountFromUnitAura("player")
-    if not m then return end
-
-    local mDisabled = LM_Options:IsExcludedMount(m)
-
-    if arg == "enable" or (arg == "toggle" and mDisabled) then
-        LM_Print(format(L.LM_ENABLING_MOUNT, m.name))
-        LM_Options:RemoveExcludedMount(m)
-    elseif arg == "disable" or (arg == "toggle" and not mDisabled) then
-        LM_Print(format(L.LM_DISABLING_MOUNT, m.name))
-        LM_Options:AddExcludedMount(m)
-    end
-end
-
 local function IsTrue(x)
     if x == nil or x == false or x == "0" or x == "off" then
         return false
@@ -52,7 +37,7 @@ end
 
 local function PrintUsage()
     LM_Print(GAMEMENU_HELP .. ":")
-    LM_Print("  /litemount enable | disable | toggle")
+    LM_Print("  /litemount priority <0-3>")
     LM_Print("  /litemount mounts [<substring>]")
     LM_Print("  /litemount maps [<substring>]")
     LM_Print("  /litemount continents [<substring>]")
@@ -80,8 +65,11 @@ _G.LiteMount_SlashCommandFunc = function (argstr)
         local i = CreateOrUpdateMacro()
         if i then PickupMacro(i) end
         return true
-    elseif cmd == "toggle" or cmd == "enable" or cmd == "disable" then
-        UpdateActiveMount(cmd)
+    elseif cmd == "priority" then
+        local mount = LM_PlayerMounts:GetActiveMount()
+        if mount then
+            LM_Options:SetPriority(mount, tonumber(args[1]))
+        end
         return true
     elseif cmd == "location" then
         LM_Print(LOCATION_COLON)
@@ -157,19 +145,19 @@ _G.LiteMount_SlashCommandFunc = function (argstr)
     elseif cmd == "debug" then
         if IsTrue(args[1]) then
             LM_Print(L.LM_DEBUGGING_ENABLED)
-            LM_Options.db.char.debugEnabled = true
+            LM_Options:SetDebug(true)
         else
             LM_Print(L.LM_DEBUGGING_DISABLED)
-            LM_Options.db.char.debugEnabled = false
+            LM_Options:SetDebug(False)
         end
         return true
     elseif cmd == "uidebug" then
         if IsTrue(args[1]) then
             LM_Print(BUG_CATEGORY5 .. ' ' .. L.LM_DEBUGGING_ENABLED)
-            LM_Options.db.char.uiDebugEnabled = true
+            LM_Options:SetUIDebug(true)
         else
             LM_Print(BUG_CATEGORY5 .. ' ' .. L.LM_DEBUGGING_DISABLED)
-            LM_Options.db.char.uiDebugEnabled = false
+            LM_Options:SetUIDebug(false)
         end
         return true
 --[===[@debug@

@@ -7,7 +7,7 @@
 <Frame name="LiteMountOptionsCombatMacro" hidden="true" inherits="LiteMountOptionsPanelTemplate">
 
     <Frames>
-        <Frame name="$parentEditBoxContainer" parentKey="EditBoxContainer">
+        <Frame parentKey="EditBoxContainer">
 
             <Size x="400" y="200" />
 
@@ -32,7 +32,7 @@
 
         </Frame>
 
-        <EditBox name="$parentEditBox" parentKey="EditBox" multiLine="true" letters="255" autoFocus="false" countInvisibleLetters="true">
+        <EditBox parentKey="EditBox" multiLine="true" letters="255" autoFocus="false" countInvisibleLetters="true">
 
             <Anchors>
                 <Anchor point="TOPLEFT" x="8" y="-8" relativeKey="$parent.EditBoxContainer" />
@@ -42,24 +42,11 @@
             <Scripts>
                 <OnTextChanged function="LiteMountOptionsCombatMacro_OnTextChanged" />
                 <OnEscapePressed function="EditBox_ClearFocus" />
-                <OnLoad>
-                    self.GetOption = function (self)
-                            return LM_Options.db.char.combatMacro or ""
-                        end
-                    self.SetOption = function (self, v)
-                            LM_Options.db.char.combatMacro = v
-                            LiteMount:Refresh()
-                        end
-                    self.GetOptionDefault = function (self)
-                            return LM_Actions:DefaultCombatMacro()
-                        end
-                    LiteMountOptionsControl_OnLoad(self, LiteMountOptionsCombatMacro)
-                </OnLoad>
             </Scripts>
             <FontString inherits="GameFontHighlight" />
         </EditBox>
 
-        <Button name="$parentDeleteButton" parentKey="DeleteButton" inherits="UIPanelButtonTemplate" text="DELETE">
+        <Button parentKey="DeleteButton" inherits="UIPanelButtonTemplate" text="DELETE">
             <Size x="96" y="22" />
             <Anchors>
                 <Anchor point="TOPRIGHT" relativePoint="BOTTOMRIGHT" relativeKey="$parent.EditBoxContainer" x="-8" y="-3" />
@@ -70,7 +57,7 @@
                 </OnClick>
             </Scripts>
         </Button>
-        <Button name="$parentDefaultButton" parentKey="DefaultButton" inherits="UIPanelButtonTemplate" text="DEFAULT">
+        <Button parentKey="DefaultButton" inherits="UIPanelButtonTemplate" text="DEFAULT">
             <Size x="96" y="22" />
             <Anchors>
                 <Anchor point="BOTTOMRIGHT" relativePoint="TOPRIGHT" relativeKey="$parent.EditBoxContainer" x="-8" y="3" />
@@ -81,7 +68,7 @@
                 </OnClick>
             </Scripts>
         </Button>
-        <Button name="$parentRevertButton" parentKey="RevertButton" inherits="UIPanelButtonTemplate" text="REVERT">
+        <Button parentKey="RevertButton" inherits="UIPanelButtonTemplate" text="REVERT">
             <Size x="96" y="22" />
             <Anchors>
                 <Anchor point="BOTTOMLEFT" x="24" y="16" />
@@ -95,21 +82,11 @@
             </Scripts>
         </Button>
 
-        <CheckButton name="$parentEnableButton" parentKey="EnableButton" inherits="OptionsBaseCheckButtonTemplate">
+        <CheckButton parentKey="EnableButton" inherits="OptionsBaseCheckButtonTemplate">
             <Anchors>
                 <Anchor point="BOTTOMLEFT" relativePoint="TOPLEFT" relativeKey="$parent.EditBoxContainer" y="32" />
             </Anchors>
             <Scripts>
-                <OnLoad>
-                    self.GetOption = function (self)
-                            return LM_Options.db.char.useCombatMacro
-                        end
-                    self.GetOptionDefault = function (self) return false end
-                    self.SetOption = function (self, v)
-                            LM_Options.db.char.useCombatMacro = (v or false)
-                        end
-                    LiteMountOptionsControl_OnLoad(self)
-                </OnLoad>
                 <OnClick function="LiteMountOptionsControl_OnChanged" />
             </Scripts>
         </CheckButton>
@@ -126,7 +103,7 @@
                 </Anchors>
             </FontString>
 
-            <FontString inherits="GameFontNormalLarge" name="$parentEnable" parentKey="Enable" text="ENABLE">
+            <FontString inherits="GameFontNormalLarge" parentKey="Enable" text="ENABLE">
                 <Anchors>
                     <Anchor point="LEFT" relativePoint="RIGHT" relativeKey="$parent.EnableButton" x="4" />
                 </Anchors>
@@ -137,7 +114,7 @@
                 </Anchors>
             </FontString>
 
-            <FontString name="$parentCount" parentKey="Count" inherits="GameFontHighlightSmall">
+            <FontString parentKey="Count" inherits="GameFontHighlightSmall">
                 <Anchors>
                     <Anchor point="TOP" relativePoint="BOTTOM" relativeKey="$parent.EditBoxContainer" y="-3" />
                 </Anchors>

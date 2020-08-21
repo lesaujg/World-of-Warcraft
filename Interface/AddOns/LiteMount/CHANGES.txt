@@ -1,31 +1,25 @@
-tag 04d3f84b3f30da82d5e7f07e3deddcc511cef87c 8.3.14
+tag 8f49321943dfdb3b16580f92aff00be47f829ec9 8.3.19
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Fri Jul 17 11:37:45 2020 +1000
+Date:	Wed Aug 19 13:02:51 2020 +1000
 
-LiteMount 8.3.14
-- Futilely hope that random changes will fix problems.
+LiteMount 8.3.19
 
-commit 85786481fac2daa5b44ffec757c3bf6d479b0df1
+- Fix serious error where changing profiles and hitting Cancel would
+  overwrite the values in the new profile with the values from the
+  old profile.
+
+- This bug has been around forever but is much more noticable now
+  because the action lists are hooked into the Cancel behaviour.
+
+commit 2c36bb68f534226a7b522adbb65f81d2209f3900
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Jul 17 11:24:08 2020 +1000
+Date:   Wed Aug 19 13:00:25 2020 +1000
 
-    Fix typo
+    Second set of fixups for profile change bug
 
-commit dd1a95b37de3c55bb582e4477f110a955d43f220
+commit c7e3925b89bfb6809c1156f6e1a7296720563a4e
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Jul 17 11:17:00 2020 +1000
+Date:   Wed Aug 19 12:31:59 2020 +1000
 
-    Fix error with resetting options in UI
-
-commit 3696b309f8fa673e579758d7de4710db498133d4
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Jul 17 11:16:44 2020 +1000
-
-    Move instance tracking to DB properly
-
-commit 71477b20596b28bf241a07eeeb1e7c692eb14333
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Jul 17 11:16:19 2020 +1000
-
-    Try another way of dealing with the profile mods
+    Fix error with switching profiles and hitting Cancel
 

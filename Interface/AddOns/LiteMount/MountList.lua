@@ -102,29 +102,46 @@ function LM_MountList:Shuffle()
     end
 end
 
-function LM_MountList:Random()
-    local n = #self
-    if n == 0 then
-        return nil
-    else
-        return self[math.random(n)]
+function LM_MountList:Random(r)
+    if #self > 0 then
+        if r then
+            r = math.ceil(r * #self)
+        else
+            r = math.random(#self)
+        end
+        return self[r]
     end
 end
 
-function LM_MountList:WeightedRandom(weightfunc)
-    local n = #self
-    if n == 0 then return nil end
+function LM_MountList:PriorityRandom(r)
 
-    local weightsum = 0
+    if #self == 0 then return end
+
+    local priorityCounts = { }
+
     for _,m in ipairs(self) do
-        weightsum = weightsum + (weightfunc(m) or 10)
+        local p = LM_Options:GetPriority(m)
+        priorityCounts[p] = ( priorityCounts[p] or 0 ) + 1
     end
 
-    local r = math.random(weightsum)
+    local weights, totalWeight = {}, 0
+
+    for i,m in ipairs(self) do
+        local p, w  = LM_Options:GetPriority(m)
+        weights[i] = w / ( priorityCounts[p] + 1 )
+        totalWeight = totalWeight + weights[i]
+    end
+
+    local cutoff = (r or math.random()) * totalWeight
+
+    LM_Debug(format(' - PriorityRandom n=%d, t=%0.3f, c=%0.3f', #self, totalWeight, cutoff))
+
     local t = 0
-    for _,m in ipairs(self) do
-        t = t + (weightfunc(m) or 10)
-        if t >= r then return m end
+    for i = 1, #self do
+        t = t + weights[i]
+        if t > cutoff then
+            return self[i]
+        end
     end
 end
 
@@ -136,8 +153,12 @@ function LM_MountList:FilterSearch(...)
     return self:Search(filterMatch, ...)
 end
 
-function LM_MountList:FilterFind(...)
-    return self:Find(filterMatch, ...)
+local function cmpName(a, b)
+    return a.name < b.name
+end
+
+function LM_MountList:Sort(cmp)
+    table.sort(self, cmp or cmpName)
 end
 
 function LM_MountList:Dump()

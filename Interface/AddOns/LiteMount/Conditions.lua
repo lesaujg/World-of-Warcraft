@@ -159,6 +159,17 @@ CONDITIONS["draw:args"] =
         return result
     end
 
+CONDITIONS["elapsed"] =
+    function (cond, unit, v)
+        v = tonumber(v)
+        if v then
+            if time() - (cond.elapsed or 0) >= v then
+                cond.elapsed = time()
+                return true
+            end
+        end
+    end
+
 CONDITIONS["equipped"] =
     function (cond, unit, v)
         if not v then
@@ -381,7 +392,7 @@ CONDITIONS["qfc"] =
     function (cond, unit, v)
         if v then
             v = tonumber(v)
-            return v and IsQuestFlaggedCompleted(v)
+            return v and C_QuestLog.IsQuestFlaggedCompleted(v)
         end
     end
 

@@ -22,7 +22,6 @@ local LM_MOUNT_SPELLS = {
     { "TravelForm", LM_SPELL.TRAVEL_FORM },
     { "Nagrand", LM_SPELL.FROSTWOLF_WAR_WOLF },
     { "Nagrand", LM_SPELL.TELAARI_TALBUK },
-    { "Tarecgosa" },
     { "Spell", LM_SPELL.STAG_FORM, 'RUN' },
     { "ItemSummoned",
         LM_ITEM.LOANED_GRYPHON_REINS, LM_SPELL.LOANED_GRYPHON, 'FLY' },
@@ -40,6 +39,8 @@ local LM_MOUNT_SPELLS = {
         LM_ITEM.SAPPHIRE_QIRAJI_RESONATING_CRYSTAL, LM_SPELL.BLUE_QIRAJI_WAR_TANK, 'RUN', },
     { "ItemSummoned",
         LM_ITEM.RUBY_QIRAJI_RESONATING_CRYSTAL, LM_SPELL.RED_QIRAJI_WAR_TANK, 'RUN', },
+    { "ItemSummoned",
+        LM_ITEM.DRAGONWRATH_TARECGOSAS_REST, LM_SPELL.TARECGOSAS_VISAGE, 'FLY' },
 }
 
 local RefreshEvents = {
@@ -64,9 +65,11 @@ function LM_PlayerMounts:Initialize()
     self:AddSpellMounts()
     self:AddJournalMounts()
 
-    for _,m in ipairs(self.mounts) do
-        LM_Options:InitializeExcludedMount(m)
-    end
+    -- We need to trigger this here for the active profile because LM_Options
+    -- was initialized earlier before we had any mounts, meaning it can't do it
+    -- for itself.
+
+    LM_Options:InitializePriorities()
 
     -- Refresh event setup
     self:SetScript("OnEvent",
@@ -116,10 +119,6 @@ function LM_PlayerMounts:FilterSearch(...)
     return self.mounts:FilterSearch(...)
 end
 
-function LM_PlayerMounts:FilterFind(...)
-    return self.mounts:FilterFind(...)
-end
-
 -- This is deliberately by spell name instead of using the
 -- spell ID because there are some horde/alliance mounts with
 -- the same name but different spells.
@@ -137,6 +136,10 @@ function LM_PlayerMounts:GetMountFromUnitAura(unitid)
         return m.isCollected and buffs[spellName] and m:IsCastable()
     end
     return self.mounts:Find(match)
+end
+
+function LM_PlayerMounts:GetActiveMount()
+    return self:GetMountFromUnitAura('player')
 end
 
 function LM_PlayerMounts:GetMountByName(name)
