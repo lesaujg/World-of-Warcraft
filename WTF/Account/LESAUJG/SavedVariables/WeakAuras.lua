@@ -63,8 +63,9 @@ WeakAurasSaved = {
 		["Kill Command"] = {
 			[259277] = 132176,
 		},
-		["Precise Shots"] = {
-			[260242] = 236179,
+		["Survival of the Fittest"] = {
+			[264735] = 136051,
+			[281195] = 136094,
 		},
 		["Misdirection"] = {
 			[35079] = 132180,
@@ -89,15 +90,15 @@ WeakAurasSaved = {
 		["Frenzy"] = {
 			[272790] = 2058007,
 		},
-		["Hunter's Mark"] = {
-			[185365] = 236188,
+		["Heroism"] = {
+			[32182] = 132313,
 		},
 		["Binding Shot"] = {
 			[117405] = 462650,
 			[117526] = 462650,
 		},
-		["Pheromone Bomb"] = {
-			[270332] = 2065635,
+		["Hunter's Mark"] = {
+			[185365] = 236188,
 		},
 		["Fatigued"] = {
 			[264689] = 136035,
@@ -108,8 +109,8 @@ WeakAurasSaved = {
 		["Volatile Bomb"] = {
 			[271049] = 2065636,
 		},
-		["Heroism"] = {
-			[32182] = 132313,
+		["Pheromone Bomb"] = {
+			[270332] = 2065635,
 		},
 		["Shrapnel Bomb"] = {
 			[270339] = 2065637,
@@ -159,12 +160,11 @@ WeakAurasSaved = {
 		["Steady Focus"] = {
 			[193534] = 236182,
 		},
-		["Survival of the Fittest"] = {
-			[264735] = 136051,
-			[281195] = 136094,
-		},
 		["Posthaste"] = {
 			[118922] = 461119,
+		},
+		["Precise Shots"] = {
+			[260242] = 236179,
 		},
 		["Volley"] = {
 			[194386] = 132222,
@@ -1293,7 +1293,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["selfPoint"] = "LEFT",
+			["xOffset"] = -113.2230224609375,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -1302,15 +1302,15 @@ WeakAurasSaved = {
 			},
 			["anchorPoint"] = "CENTER",
 			["animate"] = false,
-			["arcLength"] = 360,
-			["scale"] = 1,
 			["useLimit"] = false,
+			["scale"] = 1,
+			["rowSpace"] = 1,
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["rowSpace"] = 1,
+			["yOffset"] = -243.2216491699219,
 			["limit"] = 5,
 			["constantFactor"] = "RADIUS",
 			["borderInset"] = 1,
@@ -1325,11 +1325,11 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["uid"] = "6N0f)5QDjqW",
-			["stagger"] = 0,
+			["selfPoint"] = "LEFT",
 			["conditions"] = {
 			},
-			["yOffset"] = -243.2216491699219,
-			["xOffset"] = -113.2230224609375,
+			["stagger"] = 0,
+			["arcLength"] = 360,
 		},
 		["Dance of Death"] = {
 			["sparkWidth"] = 10,
@@ -1608,6 +1608,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
@@ -1616,7 +1617,6 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["use_combat"] = true,
 				["difficulty"] = {
 					["multi"] = {
@@ -2094,6 +2094,17 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["arcLength"] = 360,
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["borderEdge"] = "Square Full White",
+			["animate"] = false,
+			["radius"] = 200,
+			["scale"] = 1,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -2114,24 +2125,14 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["borderEdge"] = "Square Full White",
-			["animate"] = false,
-			["selfPoint"] = "BOTTOM",
-			["scale"] = 1,
-			["stagger"] = 0,
 			["border"] = false,
 			["anchorFrameFrame"] = "WeakAuras:Focus",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["arcLength"] = 360,
-			["radius"] = 200,
+			["authorOptions"] = {
+			},
+			["gridType"] = "RD",
 			["constantFactor"] = "RADIUS",
 			["limit"] = 5,
 			["borderOffset"] = 4,
@@ -2143,13 +2144,12 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SELECTFRAME",
 			["borderInset"] = 1,
 			["uid"] = "cCYibeyxPJ1",
-			["rowSpace"] = 1,
-			["groupIcon"] = 2058007,
+			["stagger"] = 0,
+			["selfPoint"] = "BOTTOM",
 			["conditions"] = {
 			},
-			["gridType"] = "RD",
-			["authorOptions"] = {
-			},
+			["rowSpace"] = 1,
+			["groupIcon"] = 2058007,
 		},
 		["S - DD - Therum Deepforge - Empowered Forge Breath"] = {
 			["xOffset"] = 0,
@@ -3538,13 +3538,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["use_class"] = true,
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -3573,15 +3573,10 @@ WeakAurasSaved = {
 				0, -- [3]
 				0.5, -- [4]
 			},
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["useAdjustedMax"] = false,
 			["config"] = {
 			},
+			["useAdjustedMax"] = false,
+			["uid"] = "uYBkg0eaimR",
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
 			["borderInFront"] = true,
@@ -3609,7 +3604,12 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["uid"] = "uYBkg0eaimR",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["inverse"] = false,
 			["useAdjustededMax"] = false,
 			["orientation"] = "HORIZONTAL",
@@ -7772,13 +7772,13 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["subeventPrefix"] = "SPELL",
+						["events"] = "PLAYER_REGEN_DISABLED, COMBAT_LOG_EVENT_UNFILTERED",
 						["custom"] = "function(event, _, subEvent, _, _, _, _, _, destGUID, ...)\n    -- Don't mark if not leader. We really shouldn't even load the WA, but there's no leader condition.\n    if not UnitIsGroupLeader(\"player\") then\n        return true\n    end\n    \n    -- Clear out the usedMarkers list if new combat is entered and add pre-existing\n    -- visible markers to the table to prevent them from being moved\n    if event == \"PLAYER_REGEN_DISABLED\" then\n        aura_env.usedMarkers = {}\n        \n        -- Create list of pre-placed markers\n        for i = 1, #aura_env.preScan do\n            local mark = GetRaidTargetIndex(aura_env.preScan[i])\n            if ( mark ) then\n                local newGUID = UnitGUID(aura_env.preScan[i])\n                aura_env.usedMarkers[newGUID] = mark\n            end\n        end\n        \n        -- Free up usedMarkers from marked targets who died\n    elseif subEvent == \"UNIT_DIED\" then\n        aura_env.usedMarkers[destGUID] = nil\n        \n    else\n        -- Don't scan too often\n        if GetTime() - (aura_env.lastScan or 0) < 0.3 then\n            return true\n        end\n        aura_env.lastScan = GetTime()\n        \n        -- Loop through the visible nameplates for something to mark\n        for i = 1,40 do\n            local target = \"nameplate\"..i\n            local uGUID = UnitGUID(target)\n            \n            if uGUID and not GetRaidTargetIndex(target) and UnitAffectingCombat(target) then\n                local npcID = select(6, strsplit(\"-\", uGUID))\n                \n                if npcID then\n                    for _, ttm in ipairs(aura_env.targetsToMark) do\n                        if ttm == npcID then\n                            local mark = aura_env.GetFirstFreeMarker()\n                            if mark then\n                                SetRaidTarget(target, mark)\n                                aura_env.usedMarkers[uGUID] = mark\n                                break\n                            end\n                        end\n                    end\n                end\n            end\n        end\n    end\n    \n    return true\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-						["spellIds"] = {
-						},
 						["custom_type"] = "status",
 						["check"] = "event",
 						["unit"] = "player",
-						["events"] = "PLAYER_REGEN_DISABLED, COMBAT_LOG_EVENT_UNFILTERED",
+						["spellIds"] = {
+						},
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -9261,6 +9261,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
@@ -9269,7 +9270,6 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["use_combat"] = true,
 				["difficulty"] = {
 					["multi"] = {
@@ -9424,19 +9424,19 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
@@ -14906,18 +14906,10 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownEdge"] = false,
+			["xOffset"] = -927.9999580383301,
 			["regionType"] = "icon",
 			["displayIcon"] = "236225",
 			["selfPoint"] = "CENTER",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
 			["authorOptions"] = {
 				{
 					["type"] = "toggle",
@@ -14976,6 +14968,14 @@ WeakAurasSaved = {
 					["width"] = 1,
 				}, -- [7]
 			},
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["auto"] = false,
 			["uid"] = "A1VzOF1aXSg",
 			["zoom"] = 0.28,
@@ -15027,7 +15027,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = false,
-			["xOffset"] = -927.9999580383301,
+			["cooldownEdge"] = false,
 		},
 		["S - TD - Inquisitor Darkspeak - Agonizing Torment DEBUFF"] = {
 			["xOffset"] = 0,
@@ -15815,12 +15815,13 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["uid"] = "oVMqroAlu8A",
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
+			},
+			["config"] = {
 			},
 			["desaturate"] = false,
 			["anchorFrameType"] = "SCREEN",
@@ -15848,8 +15849,7 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["width"] = 180.00004577637,
 			["auto"] = true,
-			["config"] = {
-			},
+			["uid"] = "oVMqroAlu8A",
 			["inverse"] = false,
 			["xOffset"] = 0,
 			["orientation"] = "HORIZONTAL",
@@ -17775,7 +17775,12 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 15,
-			["uid"] = "S0O)AZIqaX7",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -17811,12 +17816,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["use_spec"] = true,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -17829,39 +17834,6 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["width"] = 178.0000762939453,
-			["frameStrata"] = 1,
-			["sparkOffsetY"] = 0,
-			["sparkHidden"] = "NEVER",
-			["useAdjustededMin"] = false,
-			["regionType"] = "aurabar",
-			["borderInFront"] = true,
-			["_table"] = "d",
-			["icon_side"] = "RIGHT",
-			["auto"] = true,
-			["sparkHeight"] = 30,
-			["texture"] = "Aluminium",
-			["zoom"] = 0,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["semver"] = "1.0.0",
-			["tocversion"] = 80205,
-			["id"] = "Aspect of Wild",
-			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["desaturate"] = false,
 			["config"] = {
 				["gcdCol"] = {
 					1, -- [1]
@@ -17902,6 +17874,34 @@ WeakAurasSaved = {
 					1, -- [4]
 				},
 			},
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["width"] = 178.0000762939453,
+			["frameStrata"] = 1,
+			["sparkOffsetY"] = 0,
+			["sparkHidden"] = "NEVER",
+			["useAdjustededMin"] = false,
+			["regionType"] = "aurabar",
+			["borderInFront"] = true,
+			["_table"] = "d",
+			["icon_side"] = "RIGHT",
+			["auto"] = true,
+			["sparkHeight"] = 30,
+			["texture"] = "Aluminium",
+			["zoom"] = 0,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["semver"] = "1.0.0",
+			["tocversion"] = 80205,
+			["id"] = "Aspect of Wild",
+			["selfPoint"] = "CENTER",
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["desaturate"] = false,
+			["uid"] = "S0O)AZIqaX7",
 			["inverse"] = false,
 			["sparkDesature"] = false,
 			["orientation"] = "HORIZONTAL",
