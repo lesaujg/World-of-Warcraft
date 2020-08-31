@@ -66,10 +66,10 @@ Quartz3DB = {
 	["profiles"] = {
 		["Default"] = {
 			["modules"] = {
-				["Player"] = false,
-				["GCD"] = false,
-				["Tradeskill"] = false,
 				["Swing"] = false,
+				["GCD"] = false,
+				["Player"] = false,
+				["Tradeskill"] = false,
 			},
 		},
 	},
