@@ -2,9 +2,9 @@
 spkStaggerConfig = {
 	["hideBorder"] = false,
 	["levels"] = {
-		["Light"] = 0,
-		["Medium"] = 6,
 		["Heavy"] = 11,
+		["Medium"] = 6,
+		["Light"] = 0,
 	},
 	["movable"] = true,
 	["autoHide"] = true,
