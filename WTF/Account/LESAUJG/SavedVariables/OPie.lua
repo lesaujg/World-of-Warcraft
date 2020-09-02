@@ -219,8 +219,8 @@ OneRing_Config = {
 					["sliceToken"] = "ABue3IpvlVi",
 				}, -- [4]
 				["save"] = true,
-				["name"] = "Vendor",
 				["limit"] = "Bracnar-SistersofElune",
+				["name"] = "Vendor",
 			},
 			["OPieFlagStore"] = {
 				["StoreVersion"] = 2,
