@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0334,
+	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 171012,
@@ -89,10 +92,6 @@ PawnOptions = {
 			["Link"] = "|cff9d9d9d|Hitem:160927::::::::120:253::::::|h[Chipped Stone Hatchet]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
-	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -129,6 +128,7 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",
