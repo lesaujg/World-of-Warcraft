@@ -27,6 +27,7 @@ LSM:Register("sound", "|cFFFF000009|r", [[Interface\Addons\SharedMedia_Causese\s
 LSM:Register("sound", "|cFFFF000010|r", [[Interface\Addons\SharedMedia_Causese\sound\10.ogg]]) 
 LSM:Register("sound", "|cFFFF0000Add|r", [[Interface\Addons\SharedMedia_Causese\sound\Add.ogg]]) 
 LSM:Register("sound", "|cFFFF0000Adds|r", [[Interface\Addons\SharedMedia_Causese\sound\Adds.ogg]]) 
+LSM:Register("sound", "|cFFFF0000Avoid|r", [[Interface\Addons\SharedMedia_Causese\sound\Avoid.ogg]]) 
 LSM:Register("sound", "|cFFFF0000Backup|r", [[Interface\Addons\SharedMedia_Causese\sound\Backup.ogg]])
 LSM:Register("sound", "|cFFFF0000Bait|r", [[Interface\Addons\SharedMedia_Causese\sound\Bait.ogg]]) 
 LSM:Register("sound", "|cFFFF0000Beam|r", [[Interface\Addons\SharedMedia_Causese\sound\Beam.ogg]]) 

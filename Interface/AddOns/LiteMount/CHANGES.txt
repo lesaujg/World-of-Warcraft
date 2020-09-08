@@ -1,25 +1,62 @@
-tag 8f49321943dfdb3b16580f92aff00be47f829ec9 8.3.19
+tag b761f218f4236c88cac6601e584dfbe5c1741b7b 8.3.21
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Wed Aug 19 13:02:51 2020 +1000
+Date:	Fri Aug 28 09:35:36 2020 +1000
 
-LiteMount 8.3.19
+LiteMount 8.3.21
 
-- Fix serious error where changing profiles and hitting Cancel would
-  overwrite the values in the new profile with the values from the
-  old profile.
+- fix UI error with entering the unavailable macro
 
-- This bug has been around forever but is much more noticable now
-  because the action lists are hooked into the Cancel behaviour.
-
-commit 2c36bb68f534226a7b522adbb65f81d2209f3900
+commit 7626349db9b38942cd69d74fce841d5be641d905
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Wed Aug 19 13:00:25 2020 +1000
+Date:   Fri Aug 28 09:34:57 2020 +1000
 
-    Second set of fixups for profile change bug
+    Fix unavailable macro edit box text entry.
 
-commit c7e3925b89bfb6809c1156f6e1a7296720563a4e
+commit a327d8ac667f422e1213e7aa1ad4cc399da29333
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Wed Aug 19 12:31:59 2020 +1000
+Date:   Thu Aug 27 23:35:34 2020 +1000
 
-    Fix error with switching profiles and hitting Cancel
+    developer notes to markdown
+
+commit 797f312760fec1de86b668442c0719a8fa68f399
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Thu Aug 27 23:28:59 2020 +1000
+
+    Markdown 5
+
+commit 54dd80a7a49660b58ee3a26e1bda524ad8af8982
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Thu Aug 27 23:25:38 2020 +1000
+
+    Markdown 5
+
+commit c8d349fc116c0d730e21df473e9897e8321c9bdc
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Thu Aug 27 23:24:33 2020 +1000
+
+    Markdown 4
+
+commit e79e1f12d28b4b0f6758f8c415127bcbb3c0d9c2
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Thu Aug 27 23:21:42 2020 +1000
+
+    Markdown 3. I hope I don't get up to the fast and the markdown.
+
+commit 318faba915bf1eef25ac64544d70d6f7978d06ee
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Thu Aug 27 23:20:03 2020 +1000
+
+    Markdown 2, electric boogaloo
+
+commit c7b17dd7a0e5c3fbdc74af9c06a0e57ca9a72754
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Thu Aug 27 23:16:56 2020 +1000
+
+    Markdown
+
+commit 2b977b94a91ec82a090026f5e645d5693a222d22
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Thu Aug 27 23:13:25 2020 +1000
+
+    Doco updating
 

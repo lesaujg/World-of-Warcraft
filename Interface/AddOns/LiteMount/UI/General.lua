@@ -6,7 +6,9 @@
 
 ----------------------------------------------------------------------------]]--
 
-local L = LM_Localize
+local _, LM = ...
+
+local L = LM.Localize
 
 local persistOptions = {
     { 0,    L.LM_EVERY_TIME },
@@ -16,8 +18,7 @@ local persistOptions = {
     { 1800, format(L.LM_EVERY_D_MINUTES, 30) },
 }
 
-local function RandomPersistDropDown_UpdateText(dropdown)
-    local keepSeconds = LM_Options:GetRandomPersistence()
+local function RandomPersistDropDown_UpdateText(dropdown, keepSeconds)
     for _,opt in ipairs(persistOptions) do
         if opt[1] == keepSeconds then
             UIDropDownMenu_SetText(dropdown, opt[2])
@@ -30,22 +31,26 @@ end
 local function RandomPersistDropDown_Initialize(dropdown, level)
     local info = UIDropDownMenu_CreateInfo()
     if level == 1 then
-        local keepSeconds = LM_Options:GetRandomPersistence()
+        local keepSeconds = LM.Options:GetRandomPersistence()
         for _,opt in ipairs(persistOptions) do
             info.arg1 = opt[1]
             info.text = opt[2]
             info.checked = ( opt[1] == keepSeconds )
             info.func =
                 function (_, seconds)
-                    LM_Options:SetRandomPersistence(seconds)
-                    RandomPersistDropDown_UpdateText(dropdown)
+                    LM.Options:SetRandomPersistence(seconds)
+                    dropdown.isDirty = true
                 end
             UIDropDownMenu_AddButton(info, level)
         end
     end
 end
 
-function LiteMountOptionsGeneral_OnLoad(self)
+--[[--------------------------------------------------------------------------]]--
+
+LiteMountGeneralPanelMixin = {}
+
+function LiteMountGeneralPanelMixin:OnLoad()
 
     -- CopyTargetsMount --
 
@@ -53,16 +58,16 @@ function LiteMountOptionsGeneral_OnLoad(self)
     self.CopyTargetsMount.SetOption =
         function (self, setting)
             if not setting or setting == "0" then
-                LM_Options.db.profile.copyTargetsMount = false
+                LM.Options:SetCopyTargetsMount(false)
             else
-                LM_Options.db.profile.copyTargetsMount = true
+                LM.Options:SetCopyTargetsMount(true)
             end
         end
     self.CopyTargetsMount.GetOption =
-        function (self) return LM_Options.db.profile.copyTargetsMount end
+        function (self) return LM.Options:GetCopyTargetsMount() end
     self.CopyTargetsMount.GetOptionDefault =
         function (self) return true end
-    LiteMountOptionsControl_OnLoad(self.CopyTargetsMount)
+    LiteMountOptionsPanel_RegisterControl(self.CopyTargetsMount)
 
     -- ExcludeNewMounts --
 
@@ -70,20 +75,28 @@ function LiteMountOptionsGeneral_OnLoad(self)
     self.ExcludeNewMounts.SetOption =
         function (self, setting)
             if not setting or setting == "0" then
-                LM_Options.db.profile.excludeNewMounts = false
+                LM.Options:SetExcludeNewMounts(false)
             else
-                LM_Options.db.profile.excludeNewMounts = true
+                LM.Options:SetExcludeNewMounts(true)
             end
         end
     self.ExcludeNewMounts.GetOptionDefault =
         function (self) return false end
     self.ExcludeNewMounts.GetOption =
-        function (self) return LM_Options.db.profile.excludeNewMounts end
-    LiteMountOptionsControl_OnLoad(self.ExcludeNewMounts)
+        function (self) return LM.Options:GetExcludeNewMounts() end
+    LiteMountOptionsPanel_RegisterControl(self.ExcludeNewMounts)
 
     -- RandomPersistDropDown --
 
     UIDropDownMenu_Initialize(self.RandomPersistDropDown, RandomPersistDropDown_Initialize)
+    self.RandomPersistDropDown.GetOption =
+        function () return LM.Options:GetRandomPersistence() end
+    self.RandomPersistDropDown.GetOptionDefault =
+        function () return 0 end
+    self.RandomPersistDropDown.SetOption =
+        function (self, v) LM.Options:SetRandomPersistence(v) end
+    self.RandomPersistDropDown.SetControl = RandomPersistDropDown_UpdateText
+    LiteMountOptionsPanel_RegisterControl(self.RandomPersistDropDown)
 
     -- Debugging --
 
@@ -91,25 +104,16 @@ function LiteMountOptionsGeneral_OnLoad(self)
     self.Debugging.SetOption =
         function (self, setting)
             if not setting or setting == "0" then
-                LM_Options:SetDebug(false)
+                LM.Options:SetDebug(false)
             else
-                LM_Options:SetDebug(true)
+                LM.Options:SetDebug(true)
             end
         end
     self.Debugging.GetOptionDefault =
         function (self) return false end
     self.Debugging.GetOption =
-        function (self) return LM_Options:GetDebug() end
-    LiteMountOptionsControl_OnLoad(self.Debugging)
-
-    -- Hook in --
-
-    self.refresh =
-        function (self, isProfileChange)
-            RandomPersistDropDown_UpdateText(self.RandomPersistDropDown)
-            LiteMountOptionsPanel_Refresh(self, isProfileChange)
-        end
+        function (self) return LM.Options:GetDebug() end
+    LiteMountOptionsPanel_RegisterControl(self.Debugging)
 
     LiteMountOptionsPanel_OnLoad(self)
 end
-

@@ -8,26 +8,40 @@
 
 ----------------------------------------------------------------------------]]--
 
-function LiteMountOptionsMacro_OnLoad(self)
+local _, LM = ...
+
+LiteMountMacroEditBoxMixin = {}
+
+function LiteMountMacroEditBoxMixin:OnTextChanged(userInput)
+    local c = strlen(self:GetText() or "")
+    self:GetParent().Count:SetText(format(MACROFRAME_CHAR_LIMIT, c))
+    LiteMountOptionsControl_OnTextChanged(self, userInput)
+end
+
+function LiteMountMacroEditBoxMixin:GetOption()
+    return LM.Options:GetUnavailableMacro() or ""
+end
+function LiteMountMacroEditBoxMixin:GetOptionDefault()
+    return ""
+end
+
+function LiteMountMacroEditBoxMixin:SetOption(v)
+    LM.Options:SetUnavailableMacro(v)
+end
+
+--[[--------------------------------------------------------------------------]]--
+
+LiteMountMacroPanelMixin = {}
+
+function LiteMountMacroPanelMixin:OnLoad()
     self.name = MACRO .. " : " .. UNAVAILABLE
 
-    self.EditBox.SetOption =
-        function (self, v)
-            LM_Options.db.char.unavailableMacro = v
-            LM_Options.db.char.useUnavailableMacro = (v ~= "")
-        end
-    self.EditBox.GetOption =
-        function (self) return LM_Options.db.char.unavailableMacro or "" end
-    self.EditBox.GetOptionDefault =
-        function (self) return "" end
-    LiteMountOptionsControl_OnLoad(self.EditBox)
+    self.EditBoxContainer:SetBackdropBorderColor(0.6, 0.6, 0.6, 0.8)
+    self.EditBoxContainer:SetBackdropColor(0, 0, 0, 0.5)
 
+    LiteMountOptionsPanel_RegisterControl(self.EditBox)
+
+    self.DeleteButton:SetScript("OnClick",
+            function () self.EditBox:SetOption("") end)
     LiteMountOptionsPanel_OnLoad(self)
 end
-
-function LiteMountOptionsMacro_OnTextChanged(self)
-    local c = strlen(self:GetText() or "")
-    LiteMountOptionsMacro.Count:SetText(format(MACROFRAME_CHAR_LIMIT, c))
-    LiteMountOptionsControl_OnChanged(self)
-end
-
