@@ -1581,8 +1581,8 @@ SkadaPerCharDB = {
 						["Rei Lun"] = 11819,
 					},
 					["dispells"] = 0,
-					["ffdamagedone"] = 0,
 					["ccbreaks"] = 0,
+					["role"] = "NONE",
 					["time"] = 4,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -1640,7 +1640,7 @@ SkadaPerCharDB = {
 					["healing"] = 0,
 					["alert"] = {
 					},
-					["role"] = "NONE",
+					["ffdamagedone"] = 0,
 				}, -- [4]
 				{
 					["last"] = 1598189461,
@@ -3201,8 +3201,8 @@ SkadaPerCharDB = {
 						["Animated Warden"] = 10298,
 					},
 					["dispells"] = 0,
-					["ffdamagedone"] = 0,
 					["ccbreaks"] = 0,
+					["role"] = "NONE",
 					["time"] = 42,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -3304,7 +3304,7 @@ SkadaPerCharDB = {
 					["healing"] = 0,
 					["alert"] = {
 					},
-					["role"] = "NONE",
+					["ffdamagedone"] = 0,
 				}, -- [8]
 				{
 					["last"] = 1598189461,
@@ -3700,8 +3700,8 @@ SkadaPerCharDB = {
 						["Baruk Protector"] = 2221,
 					},
 					["dispells"] = 0,
-					["ffdamagedone"] = 0,
 					["ccbreaks"] = 0,
+					["role"] = "NONE",
 					["time"] = 29,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -3869,7 +3869,7 @@ SkadaPerCharDB = {
 					["healing"] = 45301,
 					["alert"] = {
 					},
-					["role"] = "NONE",
+					["ffdamagedone"] = 0,
 				}, -- [10]
 			},
 			["deaths"] = 0,
@@ -4112,12 +4112,6 @@ SkadaPerCharDB = {
 							["done"] = 0,
 							["role"] = "NONE",
 						},
-						["Gracefairfax-Sargeras"] = {
-							["taken"] = 52241,
-							["done"] = 0,
-							["class"] = "MAGE",
-							["role"] = "DAMAGER",
-						},
 						["Einjelle-Destromath"] = {
 							["taken"] = 28322,
 							["done"] = 0,
@@ -4128,6 +4122,12 @@ SkadaPerCharDB = {
 							["taken"] = 112598,
 							["done"] = 0,
 							["role"] = "NONE",
+						},
+						["Gracefairfax-Sargeras"] = {
+							["taken"] = 52241,
+							["done"] = 0,
+							["class"] = "MAGE",
+							["role"] = "DAMAGER",
 						},
 					},
 					["hdone"] = 0,
@@ -4630,12 +4630,6 @@ SkadaPerCharDB = {
 						["done"] = 0,
 						["role"] = "NONE",
 					},
-					["Gracefairfax-Sargeras"] = {
-						["taken"] = 52241,
-						["done"] = 0,
-						["class"] = "MAGE",
-						["role"] = "DAMAGER",
-					},
 					["Einjelle-Destromath"] = {
 						["taken"] = 28322,
 						["done"] = 0,
@@ -4646,6 +4640,12 @@ SkadaPerCharDB = {
 						["taken"] = 112598,
 						["done"] = 0,
 						["role"] = "NONE",
+					},
+					["Gracefairfax-Sargeras"] = {
+						["taken"] = 52241,
+						["done"] = 0,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
 					},
 				},
 				["hdone"] = 0,
@@ -5381,9 +5381,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1598189460.045,
 						["amount"] = -9873,
-						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 148935,
+						["spellid"] = 309456,
 					}, -- [8]
 					{
 						["absorb"] = 0,
@@ -5396,9 +5396,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1598189461.034,
 						["amount"] = -9872,
-						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 198578,
+						["spellid"] = 309456,
 					}, -- [10]
 					{
 						["absorb"] = 0,
@@ -5435,9 +5435,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1598189455.02,
 						["amount"] = -123407,
-						["spellid"] = 309427,
 						["srcname"] = "Unstable Lazuli",
 						["hp"] = 128073,
+						["spellid"] = 309427,
 					}, -- [15]
 					["pos"] = 13,
 				},
@@ -6438,7 +6438,7 @@ SkadaPerCharDB = {
 						["hitamount"] = 62536,
 					},
 				},
-				["first"] = 1598571057,
+				["maxhp"] = 481080,
 				["healed"] = {
 					["Player-1169-06A1ACBD"] = {
 						["role"] = "DAMAGER",
@@ -6463,7 +6463,7 @@ SkadaPerCharDB = {
 				},
 				["shielding"] = 90838,
 				["id"] = "Player-1169-06A1ACBD",
-				["maxhp"] = 481080,
+				["healing"] = 457772,
 				["power"] = {
 					[2] = {
 						["spells"] = {
@@ -6613,9 +6613,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1598189460.292,
 						["amount"] = -6793,
-						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 474287,
+						["spellid"] = 309456,
 					}, -- [8]
 					{
 						["absorb"] = 0,
@@ -6636,9 +6636,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1598189461.227,
 						["amount"] = -6947,
-						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 474133,
+						["spellid"] = 309456,
 					}, -- [11]
 					{
 						["absorb"] = 0,
@@ -6674,7 +6674,7 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 13,
 				},
-				["healing"] = 457772,
+				["first"] = 1598571057,
 				["ffdamagedonetargets"] = {
 				},
 				["alertCount"] = 14,
@@ -6824,8 +6824,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
-				["role"] = "NONE",
 				["ccbreaks"] = 0,
+				["ffdamagedone"] = 0,
 				["time"] = 4,
 				["interrupts"] = 0,
 				["overhealing"] = 0,
@@ -6884,7 +6884,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["role"] = "NONE",
 			}, -- [4]
 			{
 				["healingabsorbed"] = 0,
@@ -8634,9 +8634,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1598189461.126,
 						["amount"] = -9741,
-						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 465459,
+						["spellid"] = 309456,
 					}, -- [5]
 					{
 						["absorb"] = 0,
@@ -8798,8 +8798,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
-				["role"] = "NONE",
 				["ccbreaks"] = 0,
+				["ffdamagedone"] = 0,
 				["time"] = 42,
 				["interrupts"] = 0,
 				["overhealing"] = 0,
@@ -8902,7 +8902,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["role"] = "NONE",
 			}, -- [8]
 			{
 				["healingabsorbed"] = 0,
@@ -9415,8 +9415,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
-				["role"] = "NONE",
 				["ccbreaks"] = 0,
+				["ffdamagedone"] = 0,
 				["time"] = 29,
 				["interrupts"] = 0,
 				["overhealing"] = 23804,
@@ -9585,21 +9585,21 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["role"] = "NONE",
 			}, -- [10]
 			{
 				["last"] = 1599508108,
 				["ffdamagedonespells"] = {
 				},
 				["healingabsorbed"] = 0,
-				["auras"] = {
-				},
+				["ccbreaks"] = 0,
 				["class"] = "HUNTER",
 				["damaged"] = {
 				},
-				["dispells"] = 0,
+				["auras"] = {
+				},
 				["time"] = 0,
-				["ccbreaks"] = 0,
+				["role"] = "NONE",
 				["overhealing"] = 0,
 				["interrupts"] = 0,
 				["healingspells"] = {
@@ -9644,7 +9644,7 @@ SkadaPerCharDB = {
 						["alertCount"] = 1,
 					},
 				},
-				["role"] = "NONE",
+				["dispells"] = 0,
 			}, -- [11]
 		},
 		["deaths"] = 0,
