@@ -50,13 +50,13 @@ PasteDB = {
 			["loaded"] = true,
 		},
 		["Bracnar - Sisters of Elune"] = {
+			["whispertarget"] = "",
+			["where"] = "Default",
 			["loaded"] = true,
+			["pos"] = {
+			},
 			["minimap"] = {
 				["minimapPos"] = 161.8219138936436,
-			},
-			["where"] = "Default",
-			["whispertarget"] = "",
-			["pos"] = {
 			},
 		},
 		["Clothgar - Sisters of Elune"] = {

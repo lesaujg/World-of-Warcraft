@@ -27,83 +27,83 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Friday 9/11",
+		["date"] = "Saturday 9/12",
 		["rows"] = 1,
 	}, -- [1]
 	{
-		["date"] = "Thursday 9/10",
+		["date"] = "Friday 9/11",
 		["rows"] = 1,
 	}, -- [2]
 	{
-		["date"] = "Wednesday 9/9",
+		["date"] = "Thursday 9/10",
 		["rows"] = 1,
 	}, -- [3]
 	{
-		["date"] = "Tuesday 9/8",
+		["date"] = "Wednesday 9/9",
 		["rows"] = 1,
 	}, -- [4]
 	{
-		["date"] = "Monday 9/7",
+		["date"] = "Tuesday 9/8",
 		["rows"] = 1,
 	}, -- [5]
 	{
-		["date"] = "Sunday 9/6",
+		["date"] = "Monday 9/7",
 		["rows"] = 1,
 	}, -- [6]
 	{
-		["date"] = "Saturday 9/5",
+		["date"] = "Sunday 9/6",
 		["rows"] = 1,
 	}, -- [7]
 	{
-		["date"] = "Friday 9/4",
+		["date"] = "Saturday 9/5",
 		["rows"] = 1,
 	}, -- [8]
 	{
-		["date"] = "Wednesday 9/2",
+		["date"] = "Friday 9/4",
 		["rows"] = 1,
 	}, -- [9]
 	{
-		["date"] = "Tuesday 9/1",
+		["date"] = "Wednesday 9/2",
 		["rows"] = 1,
 	}, -- [10]
 	{
-		["date"] = "Sunday 8/30",
+		["date"] = "Tuesday 9/1",
 		["rows"] = 1,
 	}, -- [11]
 	{
-		["date"] = "Saturday 8/29",
+		["date"] = "Sunday 8/30",
 		["rows"] = 1,
 	}, -- [12]
 	{
-		["date"] = "Thursday 8/27",
+		["date"] = "Saturday 8/29",
 		["rows"] = 1,
 	}, -- [13]
 	{
-		["date"] = "Sunday 8/23",
+		["date"] = "Thursday 8/27",
 		["rows"] = 1,
 	}, -- [14]
 	{
-		["date"] = "Friday 8/21",
+		["date"] = "Sunday 8/23",
 		["rows"] = 1,
 	}, -- [15]
 	{
-		["date"] = "Thursday 8/20",
+		["date"] = "Friday 8/21",
 		["rows"] = 1,
 	}, -- [16]
 	{
-		["date"] = "Wednesday 8/19",
+		["date"] = "Thursday 8/20",
 		["rows"] = 1,
 	}, -- [17]
 	{
-		["date"] = "Sunday 8/16",
+		["date"] = "Wednesday 8/19",
 		["rows"] = 1,
 	}, -- [18]
 	{
-		["date"] = "Friday 8/14",
+		["date"] = "Sunday 8/16",
 		["rows"] = 1,
 	}, -- [19]
 	{
-		["date"] = "Thursday 8/13",
+		["date"] = "Friday 8/14",
 		["rows"] = 1,
 	}, -- [20]
 }
@@ -115,10 +115,10 @@ FactionAddictLogEntries = {
 		["Waveblade Ankoan"] = 500,
 	}, -- [2]
 	{
-		["Waveblade Ankoan"] = 1350,
+		["Waveblade Ankoan"] = 500,
 	}, -- [3]
 	{
-		["Waveblade Ankoan"] = 500,
+		["Waveblade Ankoan"] = 1350,
 	}, -- [4]
 	{
 		["Waveblade Ankoan"] = 500,
@@ -127,43 +127,43 @@ FactionAddictLogEntries = {
 		["Waveblade Ankoan"] = 500,
 	}, -- [6]
 	{
-		["Waveblade Ankoan"] = 1000,
+		["Waveblade Ankoan"] = 500,
 	}, -- [7]
 	{
-		["Waveblade Ankoan"] = 500,
+		["Waveblade Ankoan"] = 1000,
 	}, -- [8]
 	{
-		["Waveblade Ankoan"] = 1700,
+		["Waveblade Ankoan"] = 500,
 	}, -- [9]
 	{
-		["Waveblade Ankoan"] = 500,
+		["Waveblade Ankoan"] = 1700,
 	}, -- [10]
 	{
-		["Waveblade Ankoan"] = 725,
+		["Waveblade Ankoan"] = 500,
 	}, -- [11]
 	{
-		["Waveblade Ankoan"] = 1400,
+		["Waveblade Ankoan"] = 725,
 	}, -- [12]
 	{
-		["Waveblade Ankoan"] = 750,
+		["Waveblade Ankoan"] = 1400,
 	}, -- [13]
 	{
-		["Waveblade Ankoan"] = 250,
+		["Waveblade Ankoan"] = 750,
 	}, -- [14]
 	{
-		["Waveblade Ankoan"] = 600,
+		["Waveblade Ankoan"] = 250,
 	}, -- [15]
 	{
-		["Waveblade Ankoan"] = 650,
+		["Waveblade Ankoan"] = 600,
 	}, -- [16]
 	{
-		["Waveblade Ankoan"] = 875,
+		["Waveblade Ankoan"] = 650,
 	}, -- [17]
 	{
-		["Waveblade Ankoan"] = 500,
+		["Waveblade Ankoan"] = 875,
 	}, -- [18]
 	{
-		["Waveblade Ankoan"] = 250,
+		["Waveblade Ankoan"] = 500,
 	}, -- [19]
 	{
 		["Waveblade Ankoan"] = 250,
@@ -241,23 +241,23 @@ FactionAddictConfigIsInactive = {
 	[1515] = false,
 	[54] = false,
 	[349] = false,
-	[72] = false,
+	[2264] = false,
 	[1015] = false,
 	[1352] = false,
 	[1134] = false,
 	[1708] = false,
-	[1710] = false,
+	[76] = false,
 	[2265] = false,
 	[1135] = false,
-	[729] = false,
+	[2135] = false,
 	[509] = false,
-	[68] = false,
-	[2264] = false,
-	[76] = false,
+	[2391] = false,
+	[72] = false,
+	[1710] = false,
 	[889] = false,
 	[1073] = false,
-	[92] = false,
 	[730] = false,
+	[92] = false,
 	[1520] = false,
 	[1681] = false,
 	[2097] = false,
@@ -287,23 +287,23 @@ FactionAddictConfigIsInactive = {
 	[1714] = false,
 	[1718] = false,
 	[1272] = false,
-	[2156] = false,
 	[1337] = false,
+	[1847] = false,
 	[989] = false,
 	[1273] = false,
-	[1847] = false,
+	[2156] = false,
 	[2415] = false,
-	[1975] = false,
-	[2417] = false,
+	[2157] = false,
+	[1850] = false,
 	[2158] = false,
 	[2163] = false,
-	[990] = false,
+	[2159] = false,
 	[1275] = false,
-	[2160] = false,
+	[1849] = false,
 	[576] = false,
 	[2161] = false,
 	[1276] = false,
-	[1850] = false,
+	[1085] = false,
 	[1341] = false,
 	[369] = false,
 	[1277] = false,
@@ -316,27 +316,27 @@ FactionAddictConfigIsInactive = {
 	[1388] = false,
 	[1279] = false,
 	[69] = false,
-	[81] = false,
-	[1216] = false,
 	[2045] = false,
+	[1216] = false,
+	[1280] = false,
 	[2170] = false,
-	[1090] = false,
+	[1345] = false,
 	[93] = false,
 	[1281] = false,
-	[1345] = false,
+	[1090] = false,
 	[1848] = false,
-	[1280] = false,
+	[81] = false,
 	[1282] = false,
 	[930] = false,
 	[2165] = false,
 	[1984] = false,
 	[1283] = false,
-	[2162] = false,
+	[2417] = false,
 	[1156] = false,
-	[2159] = false,
-	[1085] = false,
-	[2157] = false,
-	[1849] = false,
+	[990] = false,
+	[2162] = false,
+	[1975] = false,
+	[2160] = false,
 	[1731] = false,
 	[1739] = false,
 	[1859] = false,
@@ -350,9 +350,9 @@ FactionAddictConfigIsInactive = {
 	[1358] = false,
 	[1682] = false,
 	[1989] = false,
-	[2391] = false,
+	[68] = false,
 	[933] = false,
-	[2135] = false,
+	[729] = false,
 	[1735] = false,
 	[70] = false,
 	[1098] = false,
