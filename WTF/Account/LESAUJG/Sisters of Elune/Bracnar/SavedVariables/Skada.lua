@@ -312,9 +312,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1598189460.045,
 						["amount"] = -9873,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 148935,
-						["spellid"] = 309456,
 					}, -- [8]
 					{
 						["absorb"] = 0,
@@ -327,9 +327,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1598189461.034,
 						["amount"] = -9872,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 198578,
-						["spellid"] = 309456,
 					}, -- [10]
 					{
 						["absorb"] = 0,
@@ -366,9 +366,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1598189455.02,
 						["amount"] = -123407,
+						["spellid"] = 309427,
 						["srcname"] = "Unstable Lazuli",
 						["hp"] = 128073,
-						["spellid"] = 309427,
 					}, -- [15]
 					["pos"] = 13,
 				},
@@ -1520,11 +1520,11 @@ SkadaPerCharDB = {
 						["damage"] = 201823,
 					},
 				},
-				["maxhp"] = 481080,
+				["first"] = 1598571057,
 				["damagetaken"] = 407710,
 				["shielding"] = 90838,
 				["id"] = "Player-1169-06A1ACBD",
-				["healing"] = 457772,
+				["maxhp"] = 481080,
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -1585,9 +1585,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1598189460.292,
 						["amount"] = -6793,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 474287,
-						["spellid"] = 309456,
 					}, -- [8]
 					{
 						["absorb"] = 0,
@@ -1608,9 +1608,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1598189461.227,
 						["amount"] = -6947,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 474133,
-						["spellid"] = 309456,
 					}, -- [11]
 					{
 						["absorb"] = 0,
@@ -1735,7 +1735,7 @@ SkadaPerCharDB = {
 						},
 					},
 				},
-				["first"] = 1598571057,
+				["healing"] = 457772,
 				["name"] = "Bracnar",
 				["alertCount"] = 14,
 				["alertDamage"] = 73322,
@@ -1951,8 +1951,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ccbreaks"] = 0,
-				["ffdamagedone"] = 0,
 				["time"] = 4,
 				["interrupts"] = 0,
 				["overhealing"] = 0,
@@ -2011,7 +2011,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 			}, -- [4]
 			{
 				["healingabsorbed"] = 0,
@@ -3598,9 +3598,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1598189461.126,
 						["amount"] = -9741,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 465459,
-						["spellid"] = 309456,
 					}, -- [5]
 					{
 						["absorb"] = 0,
@@ -3833,13 +3833,13 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 10,
 					},
-					["Machinist's Brilliance"] = {
-						["name"] = "Machinist's Brilliance",
+					["Ignite"] = {
+						["name"] = "Ignite",
 						["active"] = 0,
-						["school"] = 1,
-						["id"] = 300693,
-						["auratype"] = "BUFF",
-						["uptime"] = 22,
+						["school"] = 4,
+						["id"] = 12654,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 41,
 					},
 					["Enhanced Pyrotechnics"] = {
 						["uptime"] = 12,
@@ -3857,13 +3857,13 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["name"] = "Focused Energy",
 					},
-					["Smolder"] = {
-						["name"] = "Smolder",
+					["Shimmer"] = {
+						["name"] = "Shimmer",
 						["active"] = 0,
-						["school"] = 1,
-						["id"] = 219589,
+						["school"] = 64,
+						["id"] = 212653,
 						["auratype"] = "BUFF",
-						["uptime"] = 6,
+						["uptime"] = 1,
 					},
 					["Memory of Lucid Dreams"] = {
 						["name"] = "Memory of Lucid Dreams",
@@ -3873,13 +3873,13 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 12,
 					},
-					["Shimmer"] = {
-						["name"] = "Shimmer",
+					["Smolder"] = {
+						["name"] = "Smolder",
 						["active"] = 0,
-						["school"] = 64,
-						["id"] = 212653,
+						["school"] = 1,
+						["id"] = 219589,
 						["auratype"] = "BUFF",
-						["uptime"] = 1,
+						["uptime"] = 6,
 					},
 					["Blaster Master"] = {
 						["name"] = "Blaster Master",
@@ -3897,13 +3897,13 @@ SkadaPerCharDB = {
 						["auratype"] = "DEBUFF",
 						["uptime"] = 6,
 					},
-					["Ignite"] = {
-						["name"] = "Ignite",
+					["Machinist's Brilliance"] = {
+						["name"] = "Machinist's Brilliance",
 						["active"] = 0,
-						["school"] = 4,
-						["id"] = 12654,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 41,
+						["school"] = 1,
+						["id"] = 300693,
+						["auratype"] = "BUFF",
+						["uptime"] = 22,
 					},
 					["Dragon's Flight"] = {
 						["name"] = "Dragon's Flight",
@@ -3925,8 +3925,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ccbreaks"] = 0,
-				["ffdamagedone"] = 0,
 				["time"] = 42,
 				["interrupts"] = 0,
 				["overhealing"] = 0,
@@ -4029,7 +4029,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 			}, -- [8]
 			{
 				["healingabsorbed"] = 0,
@@ -4542,8 +4542,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ccbreaks"] = 0,
-				["ffdamagedone"] = 0,
 				["time"] = 29,
 				["interrupts"] = 0,
 				["overhealing"] = 23804,
@@ -4712,7 +4712,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 			}, -- [10]
 			{
 				["last"] = 1599508108,
@@ -5014,6 +5014,12 @@ SkadaPerCharDB = {
 						["done"] = 0,
 						["role"] = "NONE",
 					},
+					["Gracefairfax-Sargeras"] = {
+						["taken"] = 52241,
+						["done"] = 0,
+						["role"] = "DAMAGER",
+						["class"] = "MAGE",
+					},
 					["Einjelle-Destromath"] = {
 						["taken"] = 28322,
 						["done"] = 0,
@@ -5024,12 +5030,6 @@ SkadaPerCharDB = {
 						["taken"] = 112598,
 						["done"] = 0,
 						["role"] = "NONE",
-					},
-					["Gracefairfax-Sargeras"] = {
-						["taken"] = 52241,
-						["done"] = 0,
-						["role"] = "DAMAGER",
-						["class"] = "MAGE",
 					},
 				},
 				["hdone"] = 0,
@@ -6867,8 +6867,8 @@ SkadaPerCharDB = {
 						["Rei Lun"] = 11819,
 					},
 					["dispells"] = 0,
+					["ffdamagedone"] = 0,
 					["ccbreaks"] = 0,
-					["role"] = "NONE",
 					["time"] = 4,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -6926,7 +6926,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["ffdamagedone"] = 0,
+					["role"] = "NONE",
 				}, -- [4]
 				{
 					["last"] = 1598189461,
@@ -8116,13 +8116,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 10,
 						},
-						["Machinist's Brilliance"] = {
-							["name"] = "Machinist's Brilliance",
+						["Ignite"] = {
+							["name"] = "Ignite",
 							["active"] = 0,
-							["school"] = 1,
-							["id"] = 300693,
-							["auratype"] = "BUFF",
-							["uptime"] = 22,
+							["school"] = 4,
+							["id"] = 12654,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 41,
 						},
 						["Enhanced Pyrotechnics"] = {
 							["name"] = "Enhanced Pyrotechnics",
@@ -8140,13 +8140,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 43,
 						},
-						["Smolder"] = {
-							["name"] = "Smolder",
+						["Shimmer"] = {
+							["name"] = "Shimmer",
 							["active"] = 0,
-							["school"] = 1,
-							["id"] = 219589,
+							["school"] = 64,
+							["id"] = 212653,
 							["auratype"] = "BUFF",
-							["uptime"] = 6,
+							["uptime"] = 1,
 						},
 						["Memory of Lucid Dreams"] = {
 							["name"] = "Memory of Lucid Dreams",
@@ -8156,13 +8156,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 12,
 						},
-						["Shimmer"] = {
-							["name"] = "Shimmer",
+						["Smolder"] = {
+							["name"] = "Smolder",
 							["active"] = 0,
-							["school"] = 64,
-							["id"] = 212653,
+							["school"] = 1,
+							["id"] = 219589,
 							["auratype"] = "BUFF",
-							["uptime"] = 1,
+							["uptime"] = 6,
 						},
 						["Blaster Master"] = {
 							["name"] = "Blaster Master",
@@ -8180,13 +8180,13 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["uptime"] = 6,
 						},
-						["Ignite"] = {
-							["name"] = "Ignite",
+						["Machinist's Brilliance"] = {
+							["name"] = "Machinist's Brilliance",
 							["active"] = 0,
-							["school"] = 4,
-							["id"] = 12654,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 41,
+							["school"] = 1,
+							["id"] = 300693,
+							["auratype"] = "BUFF",
+							["uptime"] = 22,
 						},
 						["Dragon's Flight"] = {
 							["name"] = "Dragon's Flight",
@@ -8487,8 +8487,8 @@ SkadaPerCharDB = {
 						["Rei Lun"] = 954794,
 					},
 					["dispells"] = 0,
+					["ffdamagedone"] = 0,
 					["ccbreaks"] = 0,
-					["role"] = "NONE",
 					["time"] = 42,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -8590,7 +8590,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["ffdamagedone"] = 0,
+					["role"] = "NONE",
 				}, -- [8]
 				{
 					["last"] = 1598189461,
@@ -8986,8 +8986,8 @@ SkadaPerCharDB = {
 						["Rei Lun"] = 468126,
 					},
 					["dispells"] = 0,
+					["ffdamagedone"] = 0,
 					["ccbreaks"] = 0,
-					["role"] = "NONE",
 					["time"] = 29,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -9155,7 +9155,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["ffdamagedone"] = 0,
+					["role"] = "NONE",
 				}, -- [10]
 			},
 			["deaths"] = 0,
@@ -9398,6 +9398,12 @@ SkadaPerCharDB = {
 							["done"] = 0,
 							["role"] = "NONE",
 						},
+						["Gracefairfax-Sargeras"] = {
+							["taken"] = 52241,
+							["done"] = 0,
+							["role"] = "DAMAGER",
+							["class"] = "MAGE",
+						},
 						["Einjelle-Destromath"] = {
 							["taken"] = 28322,
 							["done"] = 0,
@@ -9408,12 +9414,6 @@ SkadaPerCharDB = {
 							["taken"] = 112598,
 							["done"] = 0,
 							["role"] = "NONE",
-						},
-						["Gracefairfax-Sargeras"] = {
-							["taken"] = 52241,
-							["done"] = 0,
-							["role"] = "DAMAGER",
-							["class"] = "MAGE",
 						},
 					},
 					["hdone"] = 0,
