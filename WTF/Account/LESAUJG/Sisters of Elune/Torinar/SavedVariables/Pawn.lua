@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0333,
+	["LastVersion"] = 2.0335,
 	["LastPlayerFullName"] = "Torinar-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
@@ -12,8 +12,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 469,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:73::11:4:4932:4933:6316:1606:::|h[Heart of Azeroth]|h|r",
+			["Level"] = 471,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:73::11:4:4932:4933:6316:1608:::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173460,
