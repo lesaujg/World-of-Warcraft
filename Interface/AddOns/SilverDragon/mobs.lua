@@ -26,6 +26,7 @@ local function input_to_mobid(value)
 	end
 	return core:IdForMob(value)
 end
+ns.input_to_mobid = input_to_mobid
 
 local function mob_input(name, desc, order, setter)
 	return {
@@ -188,7 +189,36 @@ function module:BuildMobList(options)
 							inline = false,
 							name = core.zone_names[zone] or ("map"..zone),
 							desc = "ID: " .. zone,
-							args = {},
+							args = {
+								all = {
+									type = "execute",
+									name = ALL,
+									desc = "Select every mob in the list",
+									func = function(info)
+										if not ns.mobsByZone[zone] then return end
+										for mobid, locations in pairs(ns.mobsByZone[zone]) do
+											core.db.global.ignore[mobid] = false
+										end
+										self:BuildIgnoreList(info.options)
+									end,
+									width = "half",
+									order = 1,
+								},
+								none = {
+									type = "execute",
+									name = NONE,
+									desc = "Deselect every mob in the list",
+									func = function(info)
+										if not ns.mobsByZone[zone] then return end
+										for mobid, locations in pairs(ns.mobsByZone[zone]) do
+											core.db.global.ignore[mobid] = true
+										end
+										self:BuildIgnoreList(info.options)
+									end,
+									width = "half",
+									order = 2,
+								},
+							},
 						}
 					end
 					local toggle = toggle_mob(id)

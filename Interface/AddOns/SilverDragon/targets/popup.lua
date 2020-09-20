@@ -51,7 +51,7 @@ end
 
 function module:RefreshMobData(popup)
 	local data = popup.data
-	popup.title:SetText(core:GetMobLabel(data.id) or UNKNOWN)
+	popup.title:SetText(core:GetMobLabel(data.id))
 	popup.source:SetText(data.source or "")
 
 	local achievement, achievement_name, completed = ns:AchievementMobStatus(data.id)
@@ -59,6 +59,12 @@ function module:RefreshMobData(popup)
 		popup.status:SetFormattedText("%s%s|r", completed and escapes.green or escapes.red, achievement_name)
 	else
 		popup.status:SetText("")
+	end
+
+	if ns.mobdb[data.id] and (ns.mobdb[data.id].mount or ns.mobdb[data.id].pet or ns.mobdb[data.id].toy) then
+		popup.lootIcon:Show()
+	else
+		popup.lootIcon:Hide()
 	end
 end
 
@@ -150,6 +156,14 @@ function module:CreatePopup()
 	raidIcon:SetSize(16, 16)
 	raidIcon:SetTexture([[Interface\TargetingFrame\UI-RaidTargetingIcons]])
 	raidIcon:Hide()
+
+	local lootIcon = CreateFrame("Frame", nil, popup)
+	popup.lootIcon = lootIcon
+	lootIcon:SetSize(40, 40)
+	lootIcon.texture = lootIcon:CreateTexture(nil, "OVERLAY")
+	lootIcon.texture:SetAllPoints(lootIcon)
+	lootIcon.texture:SetAtlas("ShipMissionIcon-Treasure-MapBadge")
+	lootIcon:Hide()
 
 	local dead = model:CreateTexture(nil, "OVERLAY")
 	popup.dead = dead
@@ -250,9 +264,13 @@ function module:CreatePopup()
 	popup:SetScript("OnUpdate", popup.scripts.OnUpdate)
 	popup:SetScript("OnDragStart", popup.scripts.OnDragStart)
 	popup:SetScript("OnDragStop", popup.scripts.OnDragStop)
+	popup:SetScript("OnMouseDown", popup.scripts.OnMouseDown)
 
 	popup.close:SetScript("OnEnter", popup.scripts.CloseOnEnter)
 	popup.close:SetScript("OnLeave", popup.scripts.CloseOnLeave)
+
+	popup.lootIcon:SetScript("OnEnter", popup.scripts.LootOnEnter)
+	popup.lootIcon:SetScript("OnLeave", popup.scripts.LootOnLeave)
 
 	self:ApplyLook(popup, self.db.profile.style)
 
@@ -311,6 +329,7 @@ PopupClass.scripts = {
 		else
 			GameTooltip:AddLine(escapes.leftClick .. " + " .. DRAG_MODEL .. "  " .. MOVE_FRAME)
 		end
+		GameTooltip:AddLine(escapes.rightClick .. " " .. CLOSE)
 		GameTooltip:Show()
 
 		self.glow.animIn:Stop() -- in case
@@ -351,6 +370,11 @@ PopupClass.scripts = {
 	OnDragStop = function(self)
 		self:StopMovingOrSizing()
 	end,
+	OnMouseDown = function(self, button)
+		if button == "RightButton" then
+			self:HideWhenPossible()
+		end
+	end,
 	-- hooked:
 	OnShow = function(self)
 		self:SetAlpha(1)
@@ -383,6 +407,7 @@ PopupClass.scripts = {
 		self.animFade:Stop()
 
 		self.raidIcon:Hide()
+		self.lootIcon:Hide()
 		self.dead:SetAlpha(0)
 		self.model:ClearModel()
 
@@ -398,6 +423,19 @@ PopupClass.scripts = {
 		GameTooltip:Show()
 	end,
 	CloseOnLeave = function(self)
+		GameTooltip:Hide()
+	end,
+	-- Loot icon
+	LootOnEnter = function(self)
+		local id = self:GetParent().data.id
+		if not ns.mobdb[id] then
+			return
+		end
+		GameTooltip:SetOwner(self, "ANCHOR_CURSOR", 0, 0)
+		ns:UpdateTooltipWithLootDetails(GameTooltip, id)
+		GameTooltip:Show()
+	end,
+	LootOnLeave = function(self)
 		GameTooltip:Hide()
 	end,
 	-- Common animations

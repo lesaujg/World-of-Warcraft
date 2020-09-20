@@ -399,6 +399,7 @@ local achievements = {
 		[155060] = 45433, -- The Doppel Gang
 	},
 	[13691] = {}, -- I Thought You Said They'd Be Rare (Nazjatar)
+	[14159] = {}, -- Combating the Corruption (Assaults)
 }
 core.achievements = achievements
 local mobs_to_achievement = {
@@ -415,26 +416,26 @@ function ns:AchievementMobStatus(id)
 		return
 	end
 	local criteria = achievements[achievement][id]
-	local _, name = GetAchievementInfo(achievement)
+	local _, name, _, achievement_completed, _, _, _, _, _, _, _, _, completedByMe = GetAchievementInfo(achievement)
 	local completed
 	if criteria < 40 then
 		_, _, completed = GetAchievementCriteriaInfo(achievement, criteria)
 	else
 		_, _, completed = GetAchievementCriteriaInfoByID(achievement, criteria)
 	end
-	return achievement, name, completed
+	return achievement, name, completed, achievement_completed and not completedByMe
 end
 
--- return quest_complete, achievement_complete
+-- return quest_complete, criteria_complete, achievement_completed_by_alt
 -- `nil` if completion not knowable, true/false if knowable
 function ns:CompletionStatus(id)
 	local _, questid = core:GetMobInfo(id)
-	local _, _, achievement_complete = ns:AchievementMobStatus(id)
+	local _, _, criteria_complete, achievement_completed_by_alt = ns:AchievementMobStatus(id)
 	local quest_complete
 	if questid then
-		quest_complete = IsQuestFlaggedCompleted(questid)
+		quest_complete = C_QuestLog.IsQuestFlaggedCompleted(questid)
 	end
-	return quest_complete, achievement_complete
+	return quest_complete, criteria_complete, achievement_completed_by_alt
 end
 
 function ns:LoadAllAchievementMobs()
@@ -492,12 +493,85 @@ function ns:UpdateTooltipWithCompletion(tooltip, id)
 	end
 	local _, questid = core:GetMobInfo(id)
 	if questid then
-		completed = IsQuestFlaggedCompleted(questid)
+		completed = C_QuestLog.IsQuestFlaggedCompleted(questid)
 		tooltip:AddDoubleLine(
 			QUESTS_COLON:gsub(":", ""),
 			completed and COMPLETE or INCOMPLETE,
 			1, 1, 0,
 			completed and 0 or 1, completed and 1 or 0, 0
 		)
+	end
+end
+
+function ns:UpdateTooltipWithLootDetails(tooltip, id)
+	if not (id and ns.mobdb[id]) then
+		return
+	end
+
+	if ns.mobdb[id].toy then
+		tooltip:SetHyperlink(("item:%d"):format(ns.mobdb[id].toy))
+	end
+	if ns.mobdb[id].mount then
+		local name, spellid, texture = C_MountJournal.GetMountInfoByID(ns.mobdb[id].mount)
+		local _, description, source = C_MountJournal.GetMountInfoExtraByID(ns.mobdb[id].mount)
+
+		tooltip:AddLine(name)
+		tooltip:AddTexture(texture)
+		tooltip:AddLine(description, 1, 1, 1, true)
+		tooltip:AddLine(source)
+	end
+	if ns.mobdb[id].pet then
+		local name, texture, _, mobid, source, description = C_PetJournal.GetPetInfoBySpeciesID(ns.mobdb[id].pet)
+		tooltip:AddLine(name)
+		tooltip:AddTexture(texture)
+		tooltip:AddLine(description, 1, 1, 1, true)
+		tooltip:AddLine(source)
+	end
+end
+function ns:UpdateTooltipWithLootSummary(tooltip, id)
+	if not (id and ns.mobdb[id]) then
+		return
+	end
+
+	if ns.mobdb[id].mount then
+		local name, _, icon, _, _, _, _, _, _, _, isCollected = C_MountJournal.GetMountInfoByID(ns.mobdb[id].mount)
+		if name then
+			tooltip:AddDoubleLine(
+				MOUNT,
+				"|T" .. icon .. ":0|t " .. name,
+				1, 1, 0,
+				isCollected and 0 or 1, isCollected and 1 or 0, 0
+			)
+		end
+	end
+	if ns.mobdb[id].pet then
+		local name, icon = C_PetJournal.GetPetInfoBySpeciesID(ns.mobdb[id].pet)
+		local owned, limit = C_PetJournal.GetNumCollectedInfo(ns.mobdb[id].pet)
+		if name then
+			local r, g, b = 1, 0, 0
+			if owned == limit then
+				r, g, b = 0, 1, 0
+			elseif owned > 0 then
+				r, g, b = 1, 1, 0
+			end
+			tooltip:AddDoubleLine(
+				TOOLTIP_BATTLE_PET,
+				"|T" .. icon .. ":0|t " .. (ITEM_SET_NAME):format(name, owned, limit),
+				1, 1, 0,
+				r, g, b
+			)
+		end
+	end
+	if ns.mobdb[id].toy then
+		local _, name, icon = C_ToyBox.GetToyInfo(ns.mobdb[id].toy)
+		local owned = PlayerHasToy(ns.mobdb[id].toy)
+		if name then
+			tooltip:AddDoubleLine(
+				TOY,
+				"|T" .. icon .. ":0|t " .. name,
+				1, 1, 0,
+				owned and 0 or 1, owned and 1 or 0, 0
+			)
+		end
 	end
 end

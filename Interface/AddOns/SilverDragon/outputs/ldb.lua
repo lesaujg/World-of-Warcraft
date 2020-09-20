@@ -83,24 +83,92 @@ function module:SetupDataObject()
 		text = "",
 	})
 
-	local ShieldCellProvider, ShieldCellPrototype = LibQTip:CreateCellProvider()
-	function ShieldCellPrototype:InitializeCell()
-		self.texture = self:CreateTexture(nil, 'ARTWORK')
-		self.texture:SetSize(16, 16)
-		self.texture:SetPoint("CENTER", self)
-		self.texture:Show()
+	local CompletableCellProvider, CompletableCellPrototype = LibQTip:CreateCellProvider()
+	function CompletableCellPrototype:InitializeCell()
+		if not self.texture then
+			self.texture = self:CreateTexture(nil, 'ARTWORK')
+			self.texture:SetSize(16, 16)
+			self.texture:SetPoint("CENTER", self)
+			self.texture:Show()
+		end
+		if not self.completionTexture then
+			self.completionTexture = self:CreateTexture(nil, "OVERLAY")
+			self.completionTexture:SetAtlas("Tracker-Check")
+			self.completionTexture:SetAllPoints(self)
+			self.completionTexture:Hide()
+		end
 	end
-	function ShieldCellPrototype:ReleaseCell()
+	function CompletableCellPrototype:SetupCell(tooltip, value, justification, font, r, g, b, ...)
+		self:SetupTexture(value)
+		self:SetupCompletion(value)
+		return self.texture:GetSize()
 	end
-	function ShieldCellPrototype:SetupCell(tooltip, value)
+	function CompletableCellPrototype:SetupCompletion(value)
+		if value then
+			self.completionTexture:Show()
+		else
+			self.completionTexture:Hide()
+		end
+	end
+	function CompletableCellPrototype:ReleaseCell()
+	end
+	function CompletableCellPrototype:getContentHeight()
+		return self.texture:GetHeight()
+	end
+
+	local AchievementCellProvider, AchievementCellPrototype = LibQTip:CreateCellProvider(CompletableCellProvider)
+	function AchievementCellPrototype:SetupTexture()
 		self.texture:SetTexture("Interface\\AchievementFrame\\UI-Achievement-TinyShield")
 		self.texture:SetTexCoord(0, 0.625, 0, 0.625)
-		return self.texture:GetSize()
 	end
-	local QuestCellProvider, QuestCellPrototype = LibQTip:CreateCellProvider(ShieldCellProvider)
-	function QuestCellPrototype:SetupCell(tooltip, value)
+	local QuestCellProvider, QuestCellPrototype = LibQTip:CreateCellProvider(CompletableCellProvider)
+	function QuestCellPrototype:SetupTexture()
 		self.texture:SetAtlas("QuestNormal")
-		return self.texture:GetSize()
+	end
+	local MountCellProvider, MountCellPrototype = LibQTip:CreateCellProvider(CompletableCellProvider)
+	function MountCellPrototype:SetupTexture()
+		self.texture:SetAtlas("StableMaster")
+	end
+	function MountCellPrototype:SetupCompletion(value)
+		local name, _, texture, _, _, _, _, _, _, _, isCollected = C_MountJournal.GetMountInfoByID(value)
+		return CompletableCellPrototype.SetupCompletion(self, isCollected)
+	end
+	local ToyCellProvider, ToyCellPrototype = LibQTip:CreateCellProvider(CompletableCellProvider)
+	function ToyCellPrototype:SetupTexture()
+		self.texture:SetAtlas("mechagon-projects")
+	end
+	function ToyCellPrototype:SetupCompletion(value)
+		local isCollected = PlayerHasToy(value)
+		return CompletableCellPrototype.SetupCompletion(self, isCollected)
+	end
+	local PetCellProvider, PetCellPrototype = LibQTip:CreateCellProvider(CompletableCellProvider)
+	function PetCellPrototype:SetupTexture()
+		self.texture:SetAtlas("WildBattlePetCapturable")
+	end
+	function PetCellPrototype:SetupCompletion(value)
+		local isCollected = C_PetJournal.GetNumCollectedInfo(value) > 0
+		return CompletableCellPrototype.SetupCompletion(self, isCollected)
+	end
+
+	local tooltip
+
+	local function show_loot_tooltip(cell, mobid)
+		tooltip:SetFrameStrata("DIALOG")
+		GameTooltip_SetDefaultAnchor(GameTooltip, cell)
+		ns:UpdateTooltipWithLootDetails(GameTooltip, mobid)
+		GameTooltip:Show()
+	end
+	local function show_achievement_tooltip(cell, mobid)
+		local achievementid = ns:AchievementMobStatus(mobid)
+
+		tooltip:SetFrameStrata("DIALOG")
+		GameTooltip_SetDefaultAnchor(GameTooltip, cell)
+		GameTooltip:SetHyperlink(("achievement:%d:%s"):format(achievementid, UnitGUID('player')))
+		GameTooltip:Show()
+	end
+	local function hide_subtooltip()
+		tooltip:SetFrameStrata("TOOLTIP")
+		GameTooltip:Hide()
 	end
 
 	local function mob_sorter(aid, bid)
@@ -114,13 +182,22 @@ function module:SetupDataObject()
 
 	local rares_seen = {}
 	local sorted_mobs = {}
-	local tooltip
-	function dataobject:OnEnter()
+
+	local function draw_tooltip(self)
 		if not core.db then
 			return
 		end
 
-		tooltip = LibQTip:Acquire("SilverDragonTooltip", 8, "LEFT", "CENTER", "RIGHT", "CENTER", "RIGHT", "RIGHT", "RIGHT", "RIGHT")
+		if not tooltip then
+			tooltip = LibQTip:Acquire("SilverDragonTooltip", 9, "LEFT", "CENTER", "RIGHT", "CENTER", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT")
+			tooltip:SetAutoHideDelay(0.25, self)
+			tooltip:SmartAnchorTo(self)
+			tooltip.OnRelease = function(self)
+				tooltip = nil
+			end
+		end
+
+		tooltip:Clear()
 
 		local zone = HBD:GetPlayerZone()
 		if ns.mobsByZone[zone] then
@@ -138,15 +215,38 @@ function module:SetupDataObject()
 			for _, id in ipairs(sorted_mobs) do
 				local name, questid, vignette, tameable, last_seen, times_seen = core:GetMobInfo(id)
 				local index, col = tooltip:AddLine(
-					core:GetMobLabel(id) or UNKNOWN,
+					core:GetMobLabel(id),
 					times_seen,
 					core:FormatLastSeen(last_seen),
 					(tameable and 'Tameable' or '')
 				)
+				if ns.mobdb[id] and ns.mobdb[id].mount then
+					index, col = tooltip:SetCell(index, col, ns.mobdb[id].mount, MountCellProvider)
+					tooltip:SetCellScript(index, col - 1, "OnEnter", show_loot_tooltip, id)
+					tooltip:SetCellScript(index, col - 1, "OnLeave", hide_subtooltip)
+				else
+					index, col = tooltip:SetCell(index, col, '')
+				end
+				if ns.mobdb[id] and ns.mobdb[id].toy then
+					index, col = tooltip:SetCell(index, col, ns.mobdb[id].toy, ToyCellProvider)
+					tooltip:SetCellScript(index, col -1, "OnEnter", show_loot_tooltip, id)
+					tooltip:SetCellScript(index, col -1, "OnLeave", hide_subtooltip)
+				else
+					index, col = tooltip:SetCell(index, col, '')
+				end
+				if ns.mobdb[id] and ns.mobdb[id].pet then
+					index, col = tooltip:SetCell(index, col, ns.mobdb[id].pet, PetCellProvider)
+					tooltip:SetCellScript(index, col - 1, "OnEnter", show_loot_tooltip, id)
+					tooltip:SetCellScript(index, col - 1, "OnLeave", hide_subtooltip)
+				else
+					index, col = tooltip:SetCell(index, col, '')
+				end
 				local quest, achievement = ns:CompletionStatus(id)
 				if quest ~= nil or achievement ~= nil then
 					if achievement ~= nil then
-						index, col = tooltip:SetCell(index, col, achievement, ShieldCellProvider)
+						index, col = tooltip:SetCell(index, col, achievement, AchievementCellProvider)
+						tooltip:SetCellScript(index, col - 1, "OnEnter", show_achievement_tooltip, id)
+						tooltip:SetCellScript(index, col - 1, "OnLeave", hide_subtooltip)
 					else
 						index, col = tooltip:SetCell(index, col, '')
 					end
@@ -197,13 +297,18 @@ function module:SetupDataObject()
 			tooltip:SetLineTextColor(index, 0, 1, 1)
 		end
 
-		tooltip:SmartAnchorTo(self)
+		tooltip:UpdateScrolling()
 		tooltip:Show()
 	end
 
+	function dataobject:OnEnter()
+		if not tooltip or not tooltip:IsShown() then
+			draw_tooltip(self)
+		end
+	end
+
 	function dataobject:OnLeave()
-		LibQTip:Release(tooltip)
-		tooltip = nil
+		-- we rely on libqtip's autohide
 	end
 
 	function dataobject:OnClick(button)

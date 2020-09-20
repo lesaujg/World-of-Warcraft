@@ -9,7 +9,7 @@ addon.events = LibStub("CallbackHandler-1.0"):New(addon)
 local Debug
 do
 	local TextDump = LibStub("LibTextDump-1.0")
-	local debuggable = GetAddOnMetadata(myname, "Version") == 'v80300.2'
+	local debuggable = GetAddOnMetadata(myname, "Version") == 'v80300.3.1'
 	local _window
 	local function GetDebugWindow()
 		if not _window then
@@ -226,11 +226,6 @@ function addon:OnInitialize()
 
 		_G["SilverDragon2DB"] = nil
 	end
-
-	-- TODO: move to miner, remove at the source
-	-- Total hack. I'm very disappointed in myself. Blood Seeker is flagged as tamemable, but really isn't.
-	-- (It despawns in 10-ish seconds, and shows up high in the sky.)
-	-- globaldb.mob_tameable[3868] = nil
 end
 
 function addon:OnEnable()
@@ -274,7 +269,8 @@ do
 	end
 	function addon:NameForQuest(id)
 		if not self.db.locale.quest_name[id] then
-			local name = TextFromHyperlink(("quest:%d"):format(id))
+			-- TODO: after 9.0.1 this check can be removed
+			local name = C_QuestLog.GetTitleForQuestID and C_QuestLog.GetTitleForQuestID(id) or C_QuestLog.GetQuestInfo(id)
 			if name then
 				name = name:gsub("Vignette: ", "")
 				self.db.locale.quest_name[id] = name
@@ -357,14 +353,7 @@ function addon:GetMobByCoord(zone, coord)
 end
 
 function addon:GetMobLabel(id)
-	local name = self:NameForMob(id)
-	if not name then
-		return UNKNOWN
-	end
-	if not mobdb[id] then
-		return name
-	end
-	return name .. (mobdb[id].notes and (" (" .. mobdb[id].notes .. ")") or "")
+	return self:NameForMob(id) or UNKNOWN
 end
 
 do
