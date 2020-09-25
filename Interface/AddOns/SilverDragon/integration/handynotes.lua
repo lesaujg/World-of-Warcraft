@@ -50,6 +50,14 @@ do
 			mount_partial = tex("VignetteKillElite", 1, 1, 0.33, 1.3), -- yellow shiny skull
 			mount_done = tex("VignetteKillElite", 0.33, 1, 0.33, 1.3), -- green shiny skull
 		},
+		stars = {
+			default = tex("VignetteKill", 1, 0.33, 1, 1.3), -- red star
+			partial = tex("VignetteKill", 1, 1, 1, 1.3), -- gold star
+			done = tex("VignetteKill", 0, 1, 1), -- green star
+			mount = tex("VignetteKillElite", 1, 0.33, 1),
+			mount_partial = tex("VignetteKillElite", 0, 1, 1), -- yellow shiny skull
+			mount_done = tex("VignetteKillElite", 0, 1, 0), -- green shiny skull
+		}
 	}
 	local function should_show_mob(id)
 		if db.hidden[id] or core:ShouldIgnoreMob(id) then
@@ -136,6 +144,9 @@ do
 	end
 	function handler:GetNodes2(uiMapID, minimap)
 		Debug("HandyNotes GetNodes2", uiMapID, minimap)
+		if minimap and not db.minimap then
+			return iter, {}, nil
+		end
 		return iter, nodes[uiMapID], nil
 	end
 end
@@ -289,6 +300,7 @@ function module:OnInitialize()
 			questcomplete = false,
 			achievementless = true,
 			hidden = {},
+			minimap = true,
 		},
 	})
 	db = self.db.profile
@@ -336,6 +348,7 @@ function module:OnInitialize()
 						values = {
 							["skulls"] = "Skulls",
 							["circles"] = "Circles",
+							["stars"] = "Stars",
 						},
 						arg = "icon_theme",
 						order = 40,
@@ -379,6 +392,13 @@ function module:OnInitialize()
 						arg = "achievementless",
 						width = "full",
 						order = 20,
+					},
+					minimap = {
+						type = "toggle",
+						name = "Minimap",
+						desc = "Whether to show icons on the minimap as well as the zone map",
+						arg = "minimap",
+						order = 30,
 					},
 					unhide = {
 						type = "execute",
