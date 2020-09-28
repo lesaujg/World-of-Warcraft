@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0335,
+	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 158041,
@@ -83,9 +86,6 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:158094::::::::120:104::28:6:4803:40:6516:6515:1637:4786:::|h[Shipwrecker Maul]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
