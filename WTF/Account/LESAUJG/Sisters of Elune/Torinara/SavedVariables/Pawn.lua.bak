@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0329,
+	["LastVersion"] = 2.0335,
 	["LastPlayerFullName"] = "Torinara-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {

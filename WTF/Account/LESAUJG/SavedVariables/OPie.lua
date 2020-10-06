@@ -10,13 +10,13 @@ OneRing_Config = {
 			["ClickActivation"] = true,
 			["Bindings"] = {
 				["Pets"] = "ALT-W",
-				["RaidSymbols"] = false,
-				["sefulItems"] = "ALT-E",
-				["Teleport"] = "ALT-Y",
-				["Food"] = "ALT-F",
-				["WorldMarkers"] = "ALT-R",
-				["Vendor"] = "ALT-V",
 				["Mounts"] = "ALT-M",
+				["Teleport"] = "ALT-Y",
+				["sefulItems"] = "ALT-E",
+				["WorldMarkers"] = "ALT-R",
+				["Food"] = "ALT-F",
+				["Vendor"] = "ALT-V",
+				["RaidSymbols"] = false,
 			},
 		},
 	},
@@ -43,10 +43,10 @@ OneRing_Config = {
 					["id"] = 83245,
 					["sliceToken"] = "ABueyhiySOp",
 				}, -- [5]
-				["limit"] = "Bracnar-SistersofElune",
+				["name"] = "Pets",
 				["save"] = true,
 				["hotkey"] = "ALT-W",
-				["name"] = "Pets",
+				["limit"] = "Bracnar-SistersofElune",
 			},
 			["Teleport"] = {
 				{
@@ -117,24 +117,35 @@ OneRing_Config = {
 				["name"] = "Teleport",
 				["save"] = true,
 			},
-			["Food"] = {
+			["sefulItems"] = {
 				{
-					"item", -- [1]
-					142334, -- [2]
-					["sliceToken"] = "ABueoVMF3Hu",
+					"toy", -- [1]
+					40768, -- [2]
+					["sliceToken"] = "ABue2czclk1",
 				}, -- [1]
 				{
-					"item", -- [1]
-					133572, -- [2]
-					["sliceToken"] = "ABueoVMF3Hy",
+					"toy", -- [1]
+					131900, -- [2]
+					["sliceToken"] = "ABue2czclkr",
 				}, -- [2]
 				{
 					"item", -- [1]
-					140587, -- [2]
-					["sliceToken"] = "ABueoVMF3Ht",
+					114943, -- [2]
+					["sliceToken"] = "ABue2mKEUVe",
 				}, -- [3]
+				{
+					"item", -- [1]
+					144341, -- [2]
+					["sliceToken"] = "ABueodD4zme",
+				}, -- [4]
+				{
+					"item", -- [1]
+					49040, -- [2]
+					["sliceToken"] = "ABuepmAOjSe",
+				}, -- [5]
+				["name"] = "Useful Items",
 				["save"] = true,
-				["name"] = "Food",
+				["hotkey"] = "ALT-E",
 				["limit"] = "Bracnar-SistersofElune",
 			},
 			["Mounts"] = {
@@ -166,36 +177,25 @@ OneRing_Config = {
 				["name"] = "Mounts",
 				["save"] = true,
 			},
-			["sefulItems"] = {
+			["Food"] = {
 				{
-					"toy", -- [1]
-					40768, -- [2]
-					["sliceToken"] = "ABue2czclk1",
+					"item", -- [1]
+					142334, -- [2]
+					["sliceToken"] = "ABueoVMF3Hu",
 				}, -- [1]
 				{
-					"toy", -- [1]
-					131900, -- [2]
-					["sliceToken"] = "ABue2czclkr",
+					"item", -- [1]
+					133572, -- [2]
+					["sliceToken"] = "ABueoVMF3Hy",
 				}, -- [2]
 				{
 					"item", -- [1]
-					114943, -- [2]
-					["sliceToken"] = "ABue2mKEUVe",
+					140587, -- [2]
+					["sliceToken"] = "ABueoVMF3Ht",
 				}, -- [3]
-				{
-					"item", -- [1]
-					144341, -- [2]
-					["sliceToken"] = "ABueodD4zme",
-				}, -- [4]
-				{
-					"item", -- [1]
-					49040, -- [2]
-					["sliceToken"] = "ABuepmAOjSe",
-				}, -- [5]
-				["limit"] = "Bracnar-SistersofElune",
 				["save"] = true,
-				["hotkey"] = "ALT-E",
-				["name"] = "Useful Items",
+				["limit"] = "Bracnar-SistersofElune",
+				["name"] = "Food",
 			},
 			["Vendor"] = {
 				{
