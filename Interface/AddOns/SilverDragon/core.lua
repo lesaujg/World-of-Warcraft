@@ -9,7 +9,7 @@ addon.events = LibStub("CallbackHandler-1.0"):New(addon)
 local Debug
 do
 	local TextDump = LibStub("LibTextDump-1.0")
-	local debuggable = GetAddOnMetadata(myname, "Version") == 'v80300.4'
+	local debuggable = GetAddOnMetadata(myname, "Version") == 'v80300.5'
 	local _window
 	local function GetDebugWindow()
 		if not _window then
@@ -236,6 +236,34 @@ function addon:OnEnable()
 	end
 end
 
+-- returns true if the change had an effect
+function addon:SetIgnore(id, ignore, quiet)
+	if not id then return false end
+	if (ignore and globaldb.ignore[id]) or (not ignore and not globaldb.ignore[id]) then
+		-- to avoid the nil/false issue
+		return false
+	end
+	globaldb.ignore[id] = ignore
+	if not quiet then
+		self.events:Fire("IgnoreChanged", id, globaldb.ignore[id])
+	end
+	return true
+end
+
+-- returns true if the change had an effect
+function addon:SetCustom(id, watch, quiet)
+	if not id then return false end
+	if (watch and globaldb.always[id]) or (not watch and not globaldb.always[id]) then
+		-- to avoid the nil/false issue
+		return false
+	end
+	globaldb.always[id] = watch or nil
+	if not quiet then
+		self.events:Fire("CustomChanged", id, globaldb.always[id])
+	end
+	return true
+end
+
 do
 	local mobNameToId = {}
 	local questNameToId = {}
@@ -345,7 +373,7 @@ end
 function addon:GetMobByCoord(zone, coord, include_ignored)
 	if not mobsByZone[zone] then return end
 	for id, locations in pairs(mobsByZone[zone]) do
-		if include_ignored or not self:ShouldIgnoreMob(id) then
+		if self:IsMobInPhase(id, zone) and include_ignored or not self:ShouldIgnoreMob(id) then
 			for _, mob_coord in ipairs(locations) do
 				if coord == mob_coord then
 					return id, self:GetMobInfo(id)

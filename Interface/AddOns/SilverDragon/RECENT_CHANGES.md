@@ -1,7 +1,7 @@
-* Loot was missing from the Warfront rares
-* Warfront rares all had Alliance questids; now they know to check for the Horde ones, too
-* New map icon theme: stars
-* Option to not show icons on the minimap
-* Show a checkmark on the target popup's loot icon if you've got everything
-* Broker popup loot details tooltips will behave properly on the tiny number of mobs with multiple loot drops
-* Fix an error if your target popup theme was set to LessAwesome before v80300.3
+* Watch for known rares which announce themselves in chat (e.g. Arachnoid Harvester)
+* Add the broker dropdown to the world map frame -- now you can look at the rare list with loot for any zone
+* Add right-clicking on the target popup's close button to ignore the mob
+* Allow the waypoint auto-clear timer to be set in 5 second increments
+* Fix the target popup not showing up after combat ends if you noticed a rare during combat
+* Cleaned up some of the warfront map locations
+* Stop the achievement completed-by-alt check from behaving differently than whether your current character has completed it
