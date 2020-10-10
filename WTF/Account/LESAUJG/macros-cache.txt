@@ -5,7 +5,9 @@ VER 3 000000000000001E "_Clear Target" "Ability_CheapShot"
 /petpassive
 END
 VER 3 00000000000000B7 "Buy" "INV_MISC_QUESTIONMARK"
-/run BuyMerchantItem(3,40)
+/use Benthic Chestguard
+/cast disenchant
+/use item:167767
 END
 VER 3 00000000000000B1 "Elder Charm" "INV_MISC_QUESTIONMARK"
 #showtooltip Elder Charm of Good Fortune

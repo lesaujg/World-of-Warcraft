@@ -51,7 +51,13 @@ local _specialQuests = {
   [56139] = { daily=true, zid=1462, }, -- Junkyard Treasures
   [55901] = { daily=true, zid=1462, }, -- Rustbolt Rebellion
   [56141] = { daily=true, zid=1462, }, -- Security First
+  
+  -- Mechagon rares
+  [55512] = { zid=1462, aid=13470, acid=7, daily=true }, -- Arachnoid Harvester
 
+  -- Nazjatar rares
+  [56298] = { zid=1355, aid=13691, acid=31, daily=true }, -- Soundless
+  
   -- Old Vanilla Bosses during Anniversary Event
   [47461] = { daily=true, name=L["Lord Kazzak"] },          -- Lord Kazzak
   [47462] = { daily=true, name=L["Azuregos"] },             -- Azuregos
