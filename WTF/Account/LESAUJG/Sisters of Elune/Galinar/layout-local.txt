@@ -13,6 +13,13 @@ X: -150
 Y: 19
 W: 250
 H: 417
+Frame: SavedInstancesDetachHeader
+FrameLevel: 100
+Anchor: TOP
+X: 146
+Y: -97
+W: 680
+H: 249
 Frame: SilverDragonPopupButton
 FrameLevel: 1
 Anchor: BOTTOM
