@@ -19,12 +19,13 @@ LM.PlayerMounts = CreateFrame("Frame", nil, UIParent)
 -- Type, type class create args
 local MOUNT_SPELLS = {
     { "RunningWild", LM.SPELL.RUNNING_WILD },
-    { "FlightForm", LM.SPELL.FLIGHT_FORM },
-    { "GhostWolf", LM.SPELL.GHOST_WOLF },
-    { "TravelForm", LM.SPELL.TRAVEL_FORM },
-    { "Nagrand", LM.SPELL.FROSTWOLF_WAR_WOLF },
-    { "Nagrand", LM.SPELL.TELAARI_TALBUK },
-    { "Spell", LM.SPELL.STAG_FORM, 'RUN' },
+    { "GhostWolf", LM.SPELL.GHOST_WOLF, 'WALK' },
+    { "TravelForm", LM.SPELL.TRAVEL_FORM, 'RUN', 'FLY', 'SWIM' },
+    { "TravelForm", LM.SPELL.FLIGHT_FORM, 'FLY' },
+    { "TravelForm", LM.SPELL.STAG_FORM, 'RUN' },
+    { "Nagrand", LM.SPELL.FROSTWOLF_WAR_WOLF, 'Horde', 'RUN' },
+    { "Nagrand", LM.SPELL.TELAARI_TALBUK, 'Alliance', 'RUN' },
+    { "Soulshape", LM.SPELL.SOULSHAPE, 'WALK' },
     { "ItemSummoned",
         LM.ITEM.LOANED_GRYPHON_REINS, LM.SPELL.LOANED_GRYPHON, 'FLY' },
     { "ItemSummoned",
@@ -85,8 +86,24 @@ function LM.PlayerMounts:AddMount(m)
 end
 
 function LM.PlayerMounts:AddJournalMounts()
+    -- This is horrible but I can't find any other way to get the "unusable" flag
+    local usableMounts = {}
+
+    C_MountJournal.SetCollectedFilterSetting(LE_MOUNT_JOURNAL_FILTER_COLLECTED, true)
+    C_MountJournal.SetCollectedFilterSetting(LE_MOUNT_JOURNAL_FILTER_NOT_COLLECTED, true)
+    C_MountJournal.SetCollectedFilterSetting(LE_MOUNT_JOURNAL_FILTER_UNUSABLE, false)
+    C_MountJournal.SetAllSourceFilters(true)
+    C_MountJournal.SetSearch('')
+
+    for i = 1, C_MountJournal.GetNumDisplayedMounts() do
+        local mountID = select(12, C_MountJournal.GetDisplayedMountInfo(i))
+        usableMounts[mountID] = true
+    end
+
+    C_MountJournal.SetCollectedFilterSetting(LE_MOUNT_JOURNAL_FILTER_UNUSABLE, true)
+
     for _, mountID in ipairs(C_MountJournal.GetMountIDs()) do
-        local m = LM.Mount:Get("Journal", mountID)
+        local m = LM.Mount:Get("Journal", mountID, usableMounts[mountID])
         self:AddMount(m)
     end
 end
@@ -127,11 +144,7 @@ function LM.PlayerMounts:GetMountFromUnitAura(unitid)
         if aura then buffs[aura] = true else break end
         i = i + 1
     end
-    local function match(m)
-        local spellName = GetSpellInfo(m.spellID)
-        return m.isCollected and buffs[spellName] and m:IsCastable()
-    end
-    return self.mounts:Find(match)
+    return self.mounts:Find(function (m) return buffs[m.name] end)
 end
 
 function LM.PlayerMounts:GetActiveMount()

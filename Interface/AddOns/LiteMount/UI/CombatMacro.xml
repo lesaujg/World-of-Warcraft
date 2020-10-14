@@ -7,7 +7,7 @@
 <Frame name="LiteMountCombatMacroPanel" hidden="true" inherits="LiteMountOptionsPanelTemplate" mixin="LiteMountCombatMacroPanelMixin">
 
     <KeyValues>
-        <KeyValue key="dontShowProfile" value="true" type="boolean" />
+        <KeyValue key="hideProfileButton" value="true" type="boolean" />
     </KeyValues>
 
     <Scripts>
@@ -15,21 +15,11 @@
     </Scripts>
 
     <Frames>
-        <Frame parentKey="EditBoxContainer">
-
+        <Frame parentKey="EditBoxContainer" inherits="LiteMountOptionsContainerTemplate">
             <Size x="400" y="200" />
-
             <Anchors>
                 <Anchor point="CENTER" />
             </Anchors>
-
-            <Backdrop edgefile="Interface\Tooltips\UI-Tooltip-Border" bgfile="Interface\Tooltips\UI-Tooltip-Background" tile="true">
-                <EdgeSize val="16" />
-                <TileSize val="16" />
-                <BackgroundInsets>
-                    <AbsInset left="5" right="5" top="5" bottom="5" />
-                </BackgroundInsets>
-            </Backdrop>
         </Frame>
 
         <EditBox parentKey="EditBox" multiLine="true" letters="255" autoFocus="false" countInvisibleLetters="true" mixin="LiteMountCombatMacroEditBoxMixin">

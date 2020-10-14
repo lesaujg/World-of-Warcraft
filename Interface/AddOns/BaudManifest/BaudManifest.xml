@@ -189,7 +189,7 @@
     </Frames>
   </Button>
 
-  <Button name="BaudManifestDisplayTemplate" hidden="true" frameStrata="MEDIUM" virtual="true">
+  <Button name="BaudManifestDisplayTemplate" hidden="true" frameStrata="MEDIUM" virtual="true" inherits="BackdropTemplate">
     <Size><AbsDimension x="250" y="417"/></Size>
     <Layers>
       <Layer level="ARTWORK">
@@ -636,7 +636,7 @@
     </Scripts>
   </Button>
 
-  <Button name="BaudManifestCharacters" toplevel="true" frameStrata="MEDIUM" movable="true" parent="UIParent" hidden="true">
+  <Button name="BaudManifestCharacters" parent="UIParent" movable="true" toplevel="true" frameStrata="MEDIUM" inherits="BackdropTemplate" hidden="true">
     <Size><AbsDimension x="700" y="500"/></Size>
     <Anchors><Anchor point="CENTER"/></Anchors>
     <Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
@@ -666,7 +666,7 @@
       </Layer>
     </Layers>
     <Frames>
-      <Frame name="$parentScrollBox">
+      <Frame name="$parentScrollBox" inherits="BackdropTemplate">
         <Size><AbsDimension x="120" /></Size>
         <Anchors>
           <Anchor point="TOPRIGHT">
@@ -834,7 +834,7 @@
     </Scripts>
   </Button>
 
-  <Frame name="BaudManifestProperties" parent="UIParent" movable="true" toplevel="true" hidden="true">
+  <Frame name="BaudManifestProperties" parent="UIParent" movable="true" toplevel="true" inherits="BackdropTemplate" hidden="true">
     <Size><AbsDimension x="300" y="270"/></Size>
     <Anchors><Anchor point="CENTER"/></Anchors>
     <Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
@@ -890,7 +890,7 @@
       </Layer>
     </Layers>
     <Frames>
-      <Frame name="$parentRestock">
+      <Frame name="$parentRestock" inherits="BackdropTemplate">
         <Size><AbsDimension y="115"/></Size>
         <Anchors>
           <Anchor point="BOTTOMLEFT">

@@ -368,9 +368,6 @@ TukuiData = {
 		},
 		["Galinar"] = {
 			["HideBar4"] = false,
-			["Move"] = {
-			},
-			["InstallDone"] = true,
 			["Chat"] = {
 				["Frame1"] = {
 					"BOTTOMLEFT", -- [1]
@@ -452,6 +449,45 @@ TukuiData = {
 					370, -- [5]
 					108, -- [6]
 				},
+			},
+			["Move"] = {
+			},
+			["InstallDone"] = true,
+			["DataTexts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Character"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["MicroMenu"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["System"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+			},
+			["ActionBars"] = {
+				["HideBar5"] = true,
+			},
+			["Installation"] = {
+				["Done"] = true,
 			},
 			["Texts"] = {
 				["Durability"] = {
@@ -761,6 +797,45 @@ TukuiData = {
 			},
 		},
 		["Mandelbrot"] = {
+			["Installation"] = {
+				["Done"] = true,
+			},
+			["Move"] = {
+			},
+			["InstallDone"] = true,
+			["DataTexts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Character"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["MicroMenu"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["System"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+			},
+			["ActionBars"] = {
+				["HideBar5"] = true,
+			},
 			["Texts"] = {
 				["Durability"] = {
 					true, -- [1]
@@ -877,9 +952,6 @@ TukuiData = {
 					108, -- [6]
 				},
 			},
-			["Move"] = {
-			},
-			["InstallDone"] = true,
 		},
 		["Palani"] = {
 			["InstallDone"] = true,
@@ -1003,9 +1075,9 @@ TukuiData = {
 			},
 		},
 		["Uldaris"] = {
-			["Move"] = {
+			["Installation"] = {
+				["Done"] = true,
 			},
-			["InstallDone"] = true,
 			["Texts"] = {
 				["Durability"] = {
 					true, -- [1]
@@ -1040,6 +1112,42 @@ TukuiData = {
 					7, -- [2]
 				},
 			},
+			["Move"] = {
+			},
+			["DataTexts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Character"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["MicroMenu"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["System"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+			},
+			["ActionBars"] = {
+				["HideBar5"] = true,
+			},
+			["InstallDone"] = true,
 			["HideBar3"] = false,
 			["Chat"] = {
 				["Frame1"] = {
@@ -1727,10 +1835,14 @@ TukuiData = {
 			["InstallDone"] = true,
 		},
 		["Bracnar"] = {
-			["HideBar4"] = false,
+			["Installation"] = {
+				["Done"] = true,
+			},
 			["Move"] = {
 			},
-			["InstallDone"] = true,
+			["ActionBars"] = {
+				["HideBar5"] = true,
+			},
 			["Chat"] = {
 				["Frame1"] = {
 					"BOTTOMLEFT", -- [1]
@@ -1813,6 +1925,38 @@ TukuiData = {
 					108, -- [6]
 				},
 			},
+			["HideBar4"] = false,
+			["DataTexts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Character"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["System"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["MicroMenu"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+			},
+			["InstallDone"] = true,
 			["HideBar3"] = false,
 			["Texts"] = {
 				["Durability"] = {
@@ -1846,9 +1990,9 @@ TukuiData = {
 			},
 		},
 		["Clothgar"] = {
-			["Move"] = {
+			["Installation"] = {
+				["Done"] = true,
 			},
-			["InstallDone"] = true,
 			["Texts"] = {
 				["Durability"] = {
 					true, -- [1]
@@ -1879,6 +2023,42 @@ TukuiData = {
 					7, -- [2]
 				},
 			},
+			["Move"] = {
+			},
+			["DataTexts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Character"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["MicroMenu"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["System"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+			},
+			["ActionBars"] = {
+				["HideBar5"] = true,
+			},
+			["InstallDone"] = true,
 			["HideBar3"] = false,
 			["Chat"] = {
 				["Frame1"] = {
@@ -1981,7 +2161,7 @@ TukuiData = {
 			["Toberd"] = 36006,
 			["Mandelbrot"] = 3856555,
 			["Palani"] = 52352516,
-			["Clothgar"] = 7106888044,
+			["Clothgar"] = 7081944625,
 			["Herbinator"] = 4111625,
 			["Belrath"] = 53695567,
 			["Sanjuri"] = 11460,
@@ -2161,6 +2341,42 @@ TukuiData = {
 		["Andorhal"] = {
 			["Clothgar"] = 45,
 			["Herbinator"] = 0,
+		},
+	},
+}
+TukuiSettings = {
+}
+TukuiGold = {
+	["Sisters of Elune"] = {
+		["Bracnar"] = 1126654562,
+		["Mandelbrot"] = 3856555,
+		["Galinar"] = 57638058,
+		["Uldaris"] = 102923726,
+		["Clothgar"] = 7081454726,
+	},
+}
+TukuiSettingsPerCharacter = {
+	["Sisters of Elune"] = {
+		["Bracnar"] = {
+			["ActionBars"] = {
+				["LeftBar"] = true,
+				["RightBar"] = true,
+			},
+		},
+		["Mandelbrot"] = {
+		},
+		["Galinar"] = {
+		},
+		["Uldaris"] = {
+		},
+		["Clothgar"] = {
+			["General"] = {
+				["Themes"] = "Tukui",
+			},
+			["ActionBars"] = {
+				["RightBar"] = true,
+				["LeftBar"] = true,
+			},
 		},
 	},
 }

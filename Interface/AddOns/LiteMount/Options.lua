@@ -10,6 +10,9 @@
 
 local _, LM = ...
 
+local Serializer = LibStub("AceSerializer-3.0")
+local LibDeflate = LibStub("LibDeflate")
+
 --[===[@debug@
 if LibDebug then LibDebug() end
 --@end-debug@]===]
@@ -39,7 +42,6 @@ local DefaultButtonAction = [[
 # Slow Fall, Levitate, Zen Flight, Glide
 Spell [falling] 130, 1706, 125883, 131347
 LeaveVehicle
-CancelForm
 Dismount
 CopyTargetsMount
 # Swimming mount to fly in Nazjatar with Budding Deepcoral
@@ -71,7 +73,6 @@ local defaults = {
         mountPriorities     = { },
         buttonActions       = { ['*'] = DefaultButtonAction },
         copyTargetsMount    = true,
-        enableTwoPress      = false,
         excludeNewMounts    = false,
         priorityWeights     = { 1, 2, 6 },
         randomKeepSeconds   = 0,
@@ -98,7 +99,9 @@ local function FlagDiff(allFlags, a, b)
     local diff = { }
 
     for _,flagName in ipairs(allFlags) do
-        if a[flagName] and not b[flagName] then
+        if flagName == "FAVORITES" then
+            -- Do nothing
+        elseif a[flagName] and not b[flagName] then
             diff[flagName] = '-'
         elseif not a[flagName] and b[flagName] then
             diff[flagName] = '+'
@@ -119,65 +122,92 @@ function LM.Options:FlagIsUsed(f)
     return false
 end
 
--- Note to self. In any profile except the active one, the defaults
--- are not applied and you can't rely on them being there.
+-- Note to self. In any profile except the active one, the defaults are not
+-- applied and you can't rely on them being there. This is super annoying.
+-- Any time you loop over the profiles table one profile has all the defaults
+-- jammed into it and all the other don't. You can't assume the profile has
+-- any valeus in it at all.
 
-function LM.Options:VersionUpgrade()
-
-    -- From 1 -> 2 moved a bunch of stuff from char to profile that
-    -- can't be migrated.
-
-    if (self.db.global.configVersion or 2) < 2 then
-        self.db.global.enableTwoPress = nil
+-- Version 3 moved flag stuff global, and now version 4 is putting them
+-- back into profile. I hope I'm not making the same mistakes all over
+-- again. "Those who cannot remember the past are condemned to repeat it."
+function LM.Options:VersionUpgrade4()
+    if (self.db.global.configVersion or 4) >= 4 then
+        return
     end
 
-    if (self.db.char.configVersion or 2) < 2 then
-        self.db.char.copyTargetsMount = nil
-        self.db.char.uiMountFilterList = nil
-    end
+    LM.Debug('VersionUpgrade: 4')
 
-    -- Version 3 moved flag stuff global, and now version 4 is putting them
-    -- back into profile. I hope I'm not making the same mistakes all over
-    -- again. "Those who cannot remember the past are condemned to repeat it."
-
-    if (self.db.global.configVersion or 4) < 4 then
-        for _,p in pairs(self.db.profiles) do
+    if self.db.global.flagChanges then
+        LM.Debug(' - migrating global.flagChanges')
+        for n, p in pairs(self.db.profiles) do
+            LM.Debug('   - into profile: ' .. n)
             p.flagChanges = p.flagChanges or {}
-            p.customFlags = p.customFlags or {}
-            for spellID,changes in pairs(self.db.global.flagChanges or {}) do
+            for spellID,changes in pairs(self.db.global.flagChanges) do
                 p.flagChanges[spellID] = Mixin(p.flagChanges[spellID] or {}, changes)
             end
-            Mixin(p.customFlags, self.db.global.customFlags or {})
-            p.configVersion = 4
         end
-        self.db.global.customFlags = nil
-        self.db.global.flagChanges = nil
     end
 
-    -- Version 5
-    -- Changed profile.excludedSpells into profile.mountPriorities
-    -- Removed any persistance for the GUI filters
+    if self.db.global.customFlags then
+        LM.Debug(' - migrating global.customFlags')
+        for n, p in pairs(self.db.profiles) do
+            LM.Debug('   - into profile: ' .. n)
+            p.customFlags = p.customFlags or {}
+            Mixin(p.customFlags, self.db.global.customFlags)
+        end
+    end
 
-    if (self.db.global.configVersion or 5) < 5 then
-        for _,p in pairs(self.db.profiles) do
+    self.db.global.customFlags = nil
+    self.db.global.flagChanges = nil
+
+    for _, p in pairs(self.db.profiles) do p.configVersion = 4 end
+    self.db.global.configVersion = 4
+end
+
+function LM.Options:VersionUpgrade5()
+    LM.Debug('VersionUpgrade: 5')
+
+    for n, p in pairs(self.db.profiles) do
+        LM.Debug(' - checking profile: ' .. n)
+        if (p.configVersion or 5) < 5 then
+            LM.Debug('   - upgrading profile: ' .. n)
             p.mountPriorities = p.mountPriorities or {}
+            local nTotal, nExcluded, nIncluded = 0, 0, 0
             for spellID,isExcluded in pairs(p.excludedSpells or {}) do
+                nTotal = nTotal + 1
                 if isExcluded then
+                    nExcluded = nExcluded + 1
                     p.mountPriorities[spellID] = self.DISABLED_PRIORITY
                 else
+                    nIncluded = nIncluded + 1
                     p.mountPriorities[spellID] = self.DEFAULT_PRIORITY
                 end
             end
-            p.excludedSpells = nil
+            -- p.excludedSpells = nil
             p.uiMountFilterList = nil
             p.enableTwoPress = nil
-            p.configVersion = 5
+            LM.Debug(string.format('   - finished: total=%d, p0=%d, p1=%d', nTotal, nExcluded, nIncluded))
         end
+        p.uiMountFilterList = nil
+        p.enableTwoPress = nil
+        p.configVersion = 5
     end
 
-    -- Set current version
+    for _, p in pairs(self.db.profiles) do p.configVersion = 5 end
     self.db.global.configVersion = 5
     self.db.char.configVersion = 5
+end
+
+function LM.Options:VersionUpgrade()
+    local savedDefaults = self.db.defaults
+    self.db:RegisterDefaults(nil)
+
+    self:VersionUpgrade4()
+
+    self:VersionUpgrade5()
+
+    self.db:RegisterDefaults(savedDefaults)
 end
 
 -- We don't delete flags from the profile flagChanges on delete, because
@@ -186,9 +216,12 @@ end
 function LM.Options:PruneDeletedFlags()
     for spellID,changes in pairs(self.db.profile.flagChanges) do
         for f in pairs(changes) do
-            if not self:IsActiveFlag(f) then
-                self.db.profile.flagChanges[f] = nil
+            if f == 'FAVORITES' or not self:IsActiveFlag(f) then
+                changes[f] = nil
             end
+        end
+        if next(changes) == nil then
+            self.db.profile.flagChanges[spellID] = nil
         end
     end
 end
@@ -206,13 +239,9 @@ end
 -- run OnProfile() until the action buttons are set up as RecompileActions
 -- won't work yet.
 
-function LM.Options:Load()
+function LM.Options:Initialize()
     self.db = LibStub("AceDB-3.0"):New("LiteMountDB", defaults, true)
     self:VersionUpgrade()
-end
-
-function LM.Options:Initialize()
-    self:OnProfile()
     self.db.RegisterCallback(self, "OnProfileChanged", "OnProfile")
     self.db.RegisterCallback(self, "OnProfileCopied", "OnProfile")
     self.db.RegisterCallback(self, "OnProfileReset", "OnProfile")
@@ -568,9 +597,7 @@ end
 
 function LM.Options:RecordInstance()
     local name, _, _, _, _, _, _, id = GetInstanceInfo()
-    if not self.db.global.instances[id] then
-        self.db.global.instances[id] = name
-    end
+    self.db.global.instances[id] = name
 end
 
 
@@ -595,3 +622,72 @@ function LM.Options:SetUIDebug(v)
     self.db.char.uiDebugEnabled = not not v
     self.db.callbacks:Fire("OnOptionsModified")
 end
+
+--[[----------------------------------------------------------------------------
+    Import/Export Profile
+----------------------------------------------------------------------------]]--
+
+function LM.Options:ExportProfile(profileName)
+    local currentProfileName = self.db:GetCurrentProfile()
+
+    -- remove all the defaults from the DB before export
+    local savedDefaults = self.db.defaults
+    self.db:RegisterDefaults(nil)
+
+    -- Add an export time into the profile
+
+    self.db.profiles[profileName].__export__ = time()
+
+    local data = LibDeflate:EncodeForPrint(
+                    LibDeflate:CompressDeflate(
+                     Serializer:Serialize(
+                       self.db.profiles[profileName]
+                     ) ) )
+
+    self.db.profiles[profileName].__export__ = nil
+
+    -- put the defaults back
+    self.db:RegisterDefaults(savedDefaults)
+
+    -- If something went wrong upstream this could be nil
+    return data
+end
+
+function LM.Options:DecodeProfileData(str)
+    local decoded = LibDeflate:DecodeForPrint(str)
+    if not decoded then return end
+
+    local deflated = LibDeflate:DecompressDeflate(decoded)
+    if not deflated then return end
+
+    local isValid, data = Serializer:Deserialize(deflated)
+    if not isValid then return end
+
+    if not data.__export__ then return end
+    data.__export__ = nil
+
+    return data
+end
+
+
+function LM.Options:ImportProfile(profileName, str)
+
+    -- I really just can't be bothered fighting with AceDB to make it safe to
+    -- import the current profile, given that they don't expose enough
+    -- functionality to do so in an "approved" way.
+
+    if profileName == self.db:GetCurrentProfile() then return false end
+
+    local data = self:DecodeProfileData(str)
+    if not data then return false end
+
+    local savedDefaults = self.db.defaults
+
+    self.db.profiles[profileName] = data
+    self:VersionUpgrade()
+
+    self.db:RegisterDefaults(savedDefaults)
+
+    return true
+end
+

@@ -14,7 +14,8 @@ function StaticPopups:Skin()
 	local Name = self:GetName()
 
 	_G[Name]:StripTextures()
-	_G[Name]:SetTemplate("Transparent")
+	_G[Name].Border:SetAlpha(0)
+	_G[Name]:CreateBackdrop("Transparent")
 	_G[Name]:CreateShadow()
 	_G[Name.."Button1"]:SkinButton()
 	_G[Name.."Button2"]:SkinButton()
@@ -30,23 +31,19 @@ function StaticPopups:Skin()
 	_G[Name.."MoneyInputFrameGold"].Backdrop:SetBackdropBorderColor(0, 0, 0, 0)
 	_G[Name.."MoneyInputFrameSilver"].Backdrop:SetBackdropBorderColor(0, 0, 0, 0)
 	_G[Name.."MoneyInputFrameCopper"].Backdrop:SetBackdropBorderColor(0, 0, 0, 0)
-	_G[Name.."EditBox"].Backdrop:Point("TOPLEFT", -2, -4)
-	_G[Name.."EditBox"].Backdrop:Point("BOTTOMRIGHT", 2, 4)
+	_G[Name.."EditBox"].Backdrop:SetPoint("TOPLEFT", -2, -4)
+	_G[Name.."EditBox"].Backdrop:SetPoint("BOTTOMRIGHT", 2, 4)
 	_G[Name.."ItemFrameNameFrame"]:Kill()
 	_G[Name.."ItemFrame"]:GetNormalTexture():Kill()
-	_G[Name.."ItemFrame"]:SetTemplate("Default")
+	_G[Name.."ItemFrame"]:CreateBackdrop("Default")
 	_G[Name.."ItemFrame"]:StyleButton()
 	_G[Name.."ItemFrameIconTexture"]:SetTexCoord(.08, .92, .08, .92)
 	_G[Name.."ItemFrameIconTexture"]:ClearAllPoints()
-	_G[Name.."ItemFrameIconTexture"]:Point("TOPLEFT", 2, -2)
-	_G[Name.."ItemFrameIconTexture"]:Point("BOTTOMRIGHT", -2, 2)
+	_G[Name.."ItemFrameIconTexture"]:SetPoint("TOPLEFT", 2, -2)
+	_G[Name.."ItemFrameIconTexture"]:SetPoint("BOTTOMRIGHT", -2, 2)
 	_G[Name.."CloseButton"]:SkinCloseButton()
 	_G[Name.."CloseButton"].SetNormalTexture = function() end
 	_G[Name.."CloseButton"].SetPushedTexture = function() end
-
-	if T.WoWBuild >= 30827 then
-		_G[Name].Border:StripTextures()
-	end
 end
 
 function StaticPopups:Enable()

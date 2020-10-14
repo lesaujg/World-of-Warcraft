@@ -5,7 +5,7 @@ local Status = CreateFrame("Frame", "TukuiStatus", UIParent)
 function Status:AddonsCheck()
 	for i = 1, GetNumAddOns() do
 		local Name = GetAddOnInfo(i)
-		if ((Name ~= "Tukui" and Name ~= "Tukui_Config") and IsAddOnLoaded(Name)) then
+		if ((Name ~= "Tukui") and IsAddOnLoaded(Name)) then
 			return "Yes"
 		end
 	end
@@ -15,15 +15,19 @@ end
 
 function Status:ShowWindow()
 	self:Show()
-	self:Size(300, 430)
+	self:SetSize(300, 430)
 	self:SetPoint("CENTER")
-	self:SetTemplate("Transparent")
+	self:CreateBackdrop("Transparent")
 	self:CreateShadow()
 
-	self.Logo = Status:CreateTexture(nil, "OVERLAY")
-	self.Logo:Size(256, 128)
+	self.FrameLogo = CreateFrame("Frame", nil, self)
+	self.FrameLogo:SetAllPoints()
+	self.FrameLogo:SetFrameLevel(self:GetFrameLevel() + 1)
+
+	self.Logo = self.FrameLogo:CreateTexture(nil, "OVERLAY")
+	self.Logo:SetSize(256, 128)
 	self.Logo:SetTexture(C.Medias.Logo)
-	self.Logo:Point("TOP", Status, "TOP", -8, 68)
+	self.Logo:SetPoint("TOP", self, "TOP", -8, 68)
 
 	self.Title = self:CreateFontString(nil, "OVERLAY")
 	self.Title:SetFont(C.Medias.Font, 16, "THINOUTLINE")
@@ -43,7 +47,7 @@ function Status:ShowWindow()
 	self.Addons:SetText("Other AddOns Enabled: "..self.Addons.Value)
 
 	self.UIScale = self:CreateFontString(nil, "OVERLAY")
-	self.UIScale.Value = C.General.Scaling.Value.." ("..T.UIScale..")"
+	self.UIScale.Value = C.General.UIScale
 	self.UIScale:SetFont(C.Medias.Font, 12, "THINOUTLINE")
 	self.UIScale:SetPoint("TOP", self.Addons, 0, -20)
 	self.UIScale:SetText("Scaling: "..self.UIScale.Value)
@@ -67,7 +71,7 @@ function Status:ShowWindow()
 	self.Resolution:SetText("Resolution: "..self.Resolution.Value)
 
 	self.Mac = self:CreateFontString(nil, "OVERLAY")
-	self.Mac.Value = IsMacClient() == 1 and "Yes" or "No"
+	self.Mac.Value = IsMacClient() == true and "Yes" or "No"
 	self.Mac:SetFont(C.Medias.Font, 12, "THINOUTLINE")
 	self.Mac:SetPoint("TOP", self.Resolution, 0, -20)
 	self.Mac:SetText("Mac client: "..self.Mac.Value)
@@ -90,16 +94,10 @@ function Status:ShowWindow()
 	self.Class:SetPoint("TOP", self.Race, 0, -20)
 	self.Class:SetText("Class: "..self.Class.Value)
 
-	self.Spec = self:CreateFontString(nil, "OVERLAY")
-	self.Spec.Value = select(2, GetSpecializationInfo(GetSpecialization()))
-	self.Spec:SetFont(C.Medias.Font, 12, "THINOUTLINE")
-	self.Spec:SetPoint("TOP", self.Class, 0, -20)
-	self.Spec:SetText("Specialization: "..self.Spec.Value)
-
 	self.Level = self:CreateFontString(nil, "OVERLAY")
 	self.Level.Value = UnitLevel("player")
 	self.Level:SetFont(C.Medias.Font, 12, "THINOUTLINE")
-	self.Level:SetPoint("TOP", self.Spec, 0, -20)
+	self.Level:SetPoint("TOP", self.Class, 0, -20)
 	self.Level:SetText("Level: "..self.Level.Value)
 
 	self.Zone = self:CreateFontString(nil, "OVERLAY")
@@ -109,8 +107,8 @@ function Status:ShowWindow()
 	self.Zone:SetText("Current zone: "..self.Zone.Value)
 
 	self.Close = CreateFrame("Button", nil, self)
-	self.Close:Size(120, 30)
-	self.Close:SetTemplate()
+	self.Close:SetSize(120, 30)
+	self.Close:CreateBackdrop()
 	self.Close:SetPoint("TOP", self.Zone, 0, -40)
 	self.Close.Text = self.Close:CreateFontString(nil, "OVERLAY")
 	self.Close.Text:SetFont(C.Medias.Font, 12, "THINOUTLINE")

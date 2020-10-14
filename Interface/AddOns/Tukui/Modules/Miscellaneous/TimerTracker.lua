@@ -5,16 +5,9 @@ local Timer = CreateFrame("Frame", nil, UIParent)
 local TimerTracker = TimerTracker
 
 -- [[ Dummy Bar Commands ]] --
--- /run TimerTracker_OnLoad(TimerTracker)
--- /run TimerTracker_OnEvent(TimerTracker, "START_TIMER", 1, 20, 20)
--- /run Tukui[1].Miscellaneous.TimerTracker:Update()
+-- /run TimerTracker_OnLoad(TimerTracker) TimerTracker_OnEvent(TimerTracker, "START_TIMER", 1, 60, 60) Tukui[1].Miscellaneous.TimerTracker:Update()
 
 function Timer:UpdateBar()
-	local Backdrop = {
-		bgFile = C.Medias.Blank,
-		insets = {top = -T.Mult, left = -T.Mult, bottom = -T.Mult, right = -T.Mult},
-	}
-
 	for i = 1, self:GetNumRegions() do
 		local Region = select(i, self:GetRegions())
 
@@ -26,13 +19,14 @@ function Timer:UpdateBar()
 		end
 	end
 
-	self:Height(26)
+	self:SetHeight(26)
 	self:StripTextures()
-	self:SetBackdrop(Backdrop)
-	self:SetBackdropColor(unpack(C.General.BackdropColor))
+	self:CreateBackdrop()
+	self.Backdrop:SetOutside(self, 1, 1)
+	self.Backdrop:SetBackdropColor(unpack(C.General.BackdropColor))
 	self:SetStatusBarTexture(C.Medias.Normal)
 	self:SetStatusBarColor(170 / 255, 10 / 255, 10 / 255)
-	self:CreateShadow()
+	self.Backdrop:CreateShadow()
 end
 
 function Timer:Update()

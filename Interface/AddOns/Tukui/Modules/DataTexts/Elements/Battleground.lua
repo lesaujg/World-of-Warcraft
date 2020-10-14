@@ -5,22 +5,22 @@ local MyName = UnitName("player")
 local format = format
 local int = 2
 local BGFrame = CreateFrame("Frame", nil, UIParent)
+local Color = {}
 
 function BGFrame:OnEnter()
 	local NumScores = GetNumBattlefieldScores()
 	local NumExtraStats = GetNumBattlefieldStats()
 
 	for i = 1, NumScores do
-		local Name, KillingBlows, HonorableKills, Deaths, HonorGained, _, _, _, _, DamageDone, HealingDone = GetBattlefieldScore(i)
+		local Name, KillingBlows, HonorableKills, Deaths, HonorGained = GetBattlefieldScore(i)
 
 		if (Name and Name == MyName) then
 			local CurrentMapID = C_Map.GetBestMapForUnit("player")
-			local Color = RAID_CLASS_COLORS[select(2, UnitClass("player"))]
 			local ClassColor = format("|cff%.2x%.2x%.2x", Color.r * 255, Color.g * 255, Color.b * 255)
 
-			GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT", 0, T.Scale(4))
+			GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT", 0, 4)
 			GameTooltip:ClearLines()
-			GameTooltip:Point("BOTTOM", self, "TOP", 0, 1)
+			GameTooltip:SetPoint("BOTTOM", self, "TOP", 0, 1)
 			GameTooltip:ClearLines()
 			GameTooltip:AddDoubleLine(L.DataText.StatsFor, ClassColor..Name.."|r")
 			GameTooltip:AddLine(" ")
@@ -28,8 +28,6 @@ function BGFrame:OnEnter()
 			GameTooltip:AddDoubleLine(HONORABLE_KILLS, HonorableKills, 1, 1, 1)
 			GameTooltip:AddDoubleLine(DEATHS, Deaths, 1, 1, 1)
 			GameTooltip:AddDoubleLine(HONOR, format("%d", HonorGained), 1, 1, 1)
-			GameTooltip:AddDoubleLine(DAMAGE, DamageDone, 1, 1, 1)
-			GameTooltip:AddDoubleLine(HEALS, HealingDone, 1, 1, 1)
 
 			for j = 1, NumExtraStats do
 				GameTooltip:AddDoubleLine(GetBattlefieldStatInfo(j), GetBattlefieldStatData(i, j), 1,1,1)
@@ -42,32 +40,21 @@ function BGFrame:OnEnter()
 	GameTooltip:Show()
 end
 
-function BGFrame:OnLeave()
-	GameTooltip:Hide()
-end
-
 function BGFrame:OnUpdate(t)
 	int = int - t
 
 	if (int < 0) then
-		local Amount
 		local NumScores = GetNumBattlefieldScores()
 
 		RequestBattlefieldScoreData()
 
 		for i = 1, NumScores do
-			local Name, KillingBlows, _, _, HonorGained, _, _, _, _, DamageDone, HealingDone = GetBattlefieldScore(i)
-
-			if (HealingDone > DamageDone) then
-				Amount = (DataText.NameColor..L.DataText.Healing.."|r"..DataText.ValueColor..HealingDone.."|r")
-			else
-				Amount = (DataText.NameColor..L.DataText.Damage.."|r"..DataText.ValueColor..DamageDone.."|r")
-			end
+			local Name, KillingBlows, HonorableKills, Deaths, HonorGained = GetBattlefieldScore(i)
 
 			if (Name and Name == MyName) then
-				self.Text1:SetText(Amount)
-				self.Text2:SetText(DataText.NameColor..L.DataText.Honor.."|r"..DataText.ValueColor..format("%d", HonorGained).."|r")
-				self.Text3:SetText(DataText.NameColor..L.DataText.KillingBlow.."|r"..DataText.ValueColor..KillingBlows.."|r")
+				self.Text1:SetText(DataText.NameColor..HONORABLE_KILLS..": |r"..DataText.ValueColor..HonorableKills.."|r")
+				self.Text2:SetText(DataText.NameColor..HONOR..": |r"..DataText.ValueColor..format("%d", HonorGained).."|r")
+				self.Text3:SetText(DataText.NameColor..KILLING_BLOWS..": |r"..DataText.ValueColor..KillingBlows.."|r")
 			end
 		end
 
@@ -93,9 +80,12 @@ function BGFrame:Enable()
 		return
 	end
 
-	local DataTextLeft = T["Panels"].DataTextLeft
+	Color.r, Color.g, Color.b = unpack(T.Colors.class[T.MyClass])
+
+	local DataTextLeft = T.DataTexts.Panels.Left
+
 	BGFrame:SetAllPoints(DataTextLeft)
-	BGFrame:SetTemplate()
+	BGFrame:CreateBackdrop()
 	BGFrame:SetFrameLevel(4)
 	BGFrame:SetFrameStrata("BACKGROUND")
 
@@ -121,7 +111,7 @@ function BGFrame:Enable()
 	BGFrame:SetScript("OnUpdate", BGFrame.OnUpdate)
 	BGFrame:SetScript("OnEvent", BGFrame.OnEvent)
 	BGFrame:SetScript("OnEnter", BGFrame.OnEnter)
-	BGFrame:SetScript("OnLeave", BGFrame.OnLeave)
+	BGFrame:SetScript("OnLeave", GameTooltip_Hide)
 end
 
 DataText.BGFrame = BGFrame

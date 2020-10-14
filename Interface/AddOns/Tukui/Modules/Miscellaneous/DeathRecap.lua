@@ -11,7 +11,7 @@ function DeathRecap:OnEvent(event, addon)
 	local DeathRecapFrame = _G["DeathRecapFrame"]
 	DeathRecapFrame:StripTextures()
 	DeathRecapFrame.CloseXButton:SkinCloseButton()
-	DeathRecapFrame:SetTemplate("Transparent")
+	DeathRecapFrame:CreateBackdrop("Transparent")
 	DeathRecapFrame:CreateShadow()
 	DeathRecapFrame.CloseButton:SkinButton()
 

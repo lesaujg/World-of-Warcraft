@@ -19,9 +19,10 @@ end
 
 Engine[1].WindowedMode = Windowed
 Engine[1].FullscreenMode = Fullscreen
-Engine[1].Resolution = Resolution
-Engine[1].ScreenHeight = tonumber(string.match(Engine[1].Resolution, "%d+x(%d+)"))
-Engine[1].ScreenWidth = tonumber(string.match(Engine[1].Resolution, "(%d+)x+%d"))
+Engine[1].Resolution = Resolution or (Windowed and GetCVar("gxWindowedResolution")) or GetCVar("gxFullscreenResolution")
+Engine[1].ScreenHeight = select(2, GetPhysicalScreenSize())
+Engine[1].ScreenWidth = select(1, GetPhysicalScreenSize())
+Engine[1].PerfectScale = min(1, max(0.3, 768 / string.match(Resolution, "%d+x(%d+)")))
 Engine[1].MyName = UnitName("player")
 Engine[1].MyClass = select(2, UnitClass("player"))
 Engine[1].MyLevel = UnitLevel("player")
@@ -32,7 +33,8 @@ Engine[1].Version = GetAddOnMetadata(AddOn, "Version")
 Engine[1].VersionNumber = tonumber(Engine[1].Version)
 Engine[1].WoWPatch, Engine[1].WoWBuild, Engine[1].WoWPatchReleaseDate, Engine[1].TocVersion = GetBuildInfo()
 Engine[1].WoWBuild = tonumber(Engine[1].WoWBuild)
-Engine[1].WelcomeMessage = "|cffff8000Tukui "..Engine[1].Version.."|r - /tukui help"
+Engine[1].Hider = CreateFrame("Frame", nil, UIParent)
+Engine[1].PetHider = CreateFrame("Frame", "TukuiPetHider", UIParent, "SecureHandlerStateTemplate")
 
 SLASH_RELOADUI1 = "/rl"
 SlashCmdList.RELOADUI = ReloadUI

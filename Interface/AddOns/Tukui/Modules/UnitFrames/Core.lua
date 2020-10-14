@@ -1,9 +1,8 @@
 local T, C, L = select(2, ...):unpack()
 local AddOn, Plugin = ...
 local oUF = Plugin.oUF or oUF
-local Panels = T["Panels"]
 local Noop = function() end
-local TukuiUnitFrames = CreateFrame("Frame")
+local UnitFrames = T["UnitFrames"]
 
 -- Lib globals
 local strfind = strfind
@@ -20,28 +19,31 @@ local UnitIsGhost = UnitIsGhost
 local UnitIsDead = UnitIsDead
 local UnitPowerType = UnitPowerType
 
-TukuiUnitFrames.Units = {}
-TukuiUnitFrames.Headers = {}
-TukuiUnitFrames.Framework = TukuiUnitFrameFramework
-TukuiUnitFrames.HighlightBorder = {
+UnitFrames.oUF = oUF
+UnitFrames.Units = {}
+UnitFrames.Headers = {}
+
+UnitFrames.HighlightBorder = {
 	bgFile = "Interface\\Buttons\\WHITE8x8",
 	insets = {top = -2, left = -2, bottom = -2, right = -2}
 }
 
-TukuiUnitFrames.AddClassFeatures = {}
+UnitFrames.AddClassFeatures = {}
 
-TukuiUnitFrames.RaidBuffsTrackingPosition = {
-	TOPLEFT = {6, 1},
-	TOPRIGHT = {-6, 1},
-	BOTTOMLEFT = {6, 1},
-	BOTTOMRIGHT = {-6, 1},
-	LEFT = {6, 1},
-	RIGHT = {-6, 1},
-	TOP = {0, 0},
-	BOTTOM = {0, 0},
+UnitFrames.NameplatesVariables = {
+	nameplateMaxAlpha = 1,
+	nameplateMinAlpha = 1,
+	nameplateSelectedAlpha = 1,
+	nameplateNotSelectedAlpha = 1,
+	nameplateMaxScale = 1,
+	nameplateMinScale = 1,
+	nameplateSelectedScale = 1,
+	nameplateSelfScale = 1,
+	nameplateSelfAlpha = 1,
+	nameplateOccludedAlphaMult = 1,
 }
 
-function TukuiUnitFrames:DisableBlizzard()
+function UnitFrames:DisableBlizzard()
 	if not C.UnitFrames.Enable then
 		return
 	end
@@ -60,7 +62,7 @@ function TukuiUnitFrames:DisableBlizzard()
 	end
 end
 
-function TukuiUnitFrames:ShortValue()
+function UnitFrames:ShortValue()
 	if self <= 999 then
 		return self
 	end
@@ -76,7 +78,7 @@ function TukuiUnitFrames:ShortValue()
 	end
 end
 
-function TukuiUnitFrames:UTF8Sub(i, dots)
+function UnitFrames:UTF8Sub(i, dots)
 	if not self then return end
 
 	local Bytes = self:len()
@@ -107,7 +109,7 @@ function TukuiUnitFrames:UTF8Sub(i, dots)
 	end
 end
 
-function TukuiUnitFrames:MouseOnPlayer()
+function UnitFrames:MouseOnPlayer()
 	local Status = self.Status
 	local MouseOver = GetMouseFocus()
 
@@ -123,60 +125,40 @@ function TukuiUnitFrames:MouseOnPlayer()
 	end
 end
 
-function TukuiUnitFrames:Highlight()
-	if UnitIsUnit("focus", self.unit) then
-		if C.General.HideShadows then
-			self.Shadow:SetBackdrop( {edgeFile = C.Medias.Glow, edgeSize = T.Scale(4) })
-		end
+function UnitFrames:Highlight()
+	local Highlight = self.Highlight or self.Shadow
 
-		self.Shadow:SetBackdropBorderColor(0, 1, 0, 1)
-	elseif UnitIsUnit("target", self.unit) then
-		if C.General.HideShadows then
-			self.Shadow:SetBackdrop( {edgeFile = C.Medias.Glow, edgeSize = T.Scale(4) })
-		end
-
-		self.Shadow:SetBackdropBorderColor(1, 1, 0, 1)
-	else
-		if C.General.HideShadows then
-			self.Shadow:SetBackdrop( {edgeFile = nil, edgeSize = 0 })
-		end
-
-		self.Shadow:SetBackdropBorderColor(0, 0, 0, 1)
-	end
-end
-
-function TukuiUnitFrames:HighlightPlate()
-	local Shadow = self.Shadow
-
-	if Shadow then
-		if UnitIsUnit("target", self.unit) then
-			if not Shadow:IsShown() then
-				Shadow:Show()
-			end
-
-			Shadow:SetBackdropBorderColor(1, 1, 0, 1)
-		else
-			if C.General.HideShadows then
-				Shadow:Hide()
-			else
-				Shadow:SetBackdropBorderColor(0, 0, 0, 1)
-			end
-		end
-	end
-end
-
-function TukuiUnitFrames:UpdateShadow(height)
-	local Frame = self:GetParent()
-	local Shadow = Frame.Shadow
-
-	if not Shadow then
+	if not Highlight then
 		return
 	end
 
-	Shadow:Point("TOPLEFT", -4, height)
+	if UnitIsUnit("target", self.unit) then
+		if self.Highlight then
+			Highlight:Show()
+		else
+			Highlight:SetBackdropBorderColor(1, 1, 0, 1)
+		end
+	else
+		if self.Highlight then
+			Highlight:Hide()
+		else
+			Highlight:SetBackdropBorderColor(0, 0, 0, 1)
+		end
+	end
 end
 
-function TukuiUnitFrames:UpdateBuffsHeaderPosition(height)
+function UnitFrames:PostCreateAuraBar(bar)
+	if not bar.Backdrop then
+		bar:CreateBackdrop("Transparent")
+		bar.Backdrop:CreateShadow()
+
+		bar.IconBackdrop = CreateFrame("Frame", nil, bar)
+		bar.IconBackdrop:SetAllPoints(bar.icon)
+		bar.IconBackdrop:CreateShadow()
+	end
+end
+
+function UnitFrames:UpdateBuffsHeaderPosition(height)
 	local Frame = self:GetParent()
 	local Buffs = Frame.Buffs
 
@@ -185,40 +167,46 @@ function TukuiUnitFrames:UpdateBuffsHeaderPosition(height)
 	end
 
 	Buffs:ClearAllPoints()
-	Buffs:Point("BOTTOMLEFT", Frame, "TOPLEFT", 0, height)
+	Buffs:SetPoint("BOTTOMLEFT", Frame, "TOPLEFT", -1, height)
 end
 
-function TukuiUnitFrames:UpdateDebuffsHeaderPosition()
+function UnitFrames:UpdateDebuffsHeaderPosition()
 	local NumBuffs = self.visibleBuffs
 	local PerRow = self.numRow
 	local Size = self.size
-	local Row = math.ceil((NumBuffs / PerRow))
+	local Row = math.ceil((NumBuffs / 8))
 	local Parent = self:GetParent()
 	local Debuffs = Parent.Debuffs
+	local Spacing = Debuffs.spacing
 	local Y = Size * Row
-	local Addition = Size
+	local Addition = (Spacing * Row)
 
 	if NumBuffs == 0 then
 		Addition = 0
 	end
 
 	Debuffs:ClearAllPoints()
-	Debuffs:SetPoint("BOTTOMLEFT", self, "BOTTOMLEFT", -2, Y + Addition)
+
+	if C.UnitFrames.AurasBelow then
+		Debuffs:SetPoint("BOTTOMLEFT", self, "BOTTOMLEFT", 0, -Y - Addition)
+	else
+		Debuffs:SetPoint("BOTTOMLEFT", self, "BOTTOMLEFT", 0, Y + Addition)
+	end
 end
 
-function TukuiUnitFrames:CustomCastTimeText(duration)
+function UnitFrames:CustomCastTimeText(duration)
 	local Value = format("%.1f / %.1f", self.channeling and duration or self.max - duration, self.max)
 
 	self.Time:SetText(Value)
 end
 
-function TukuiUnitFrames:CustomCastDelayText(duration)
+function UnitFrames:CustomCastDelayText(duration)
 	local Value = format("%.1f |cffaf5050%s %.1f|r", self.channeling and duration or self.max - duration, self.channeling and "- " or "+", self.delay)
 
 	self.Time:SetText(Value)
 end
 
-function TukuiUnitFrames:CheckInterrupt(unit)
+function UnitFrames:CheckInterrupt(unit)
 	if (unit == "vehicle") then
 		unit = "player"
 	end
@@ -233,44 +221,15 @@ function TukuiUnitFrames:CheckInterrupt(unit)
 	end
 end
 
-function TukuiUnitFrames:CheckCast(unit, name, rank, castid)
-	TukuiUnitFrames.CheckInterrupt(self, unit)
+function UnitFrames:CheckCast(unit, name, rank, castid)
+	UnitFrames.CheckInterrupt(self, unit)
 end
 
-function TukuiUnitFrames:CheckChannel(unit, name, rank)
-	TukuiUnitFrames.CheckInterrupt(self, unit)
+function UnitFrames:CheckChannel(unit, name, rank)
+	UnitFrames.CheckInterrupt(self, unit)
 end
 
-function TukuiUnitFrames:UpdateNamePosition()
-	if (self.Power.Value:GetText() and UnitIsEnemy("player", "target")) then
-		self.Name:ClearAllPoints()
-		self.Name:SetPoint("CENTER", self.Panel, "CENTER", 0, 0)
-	else
-		self.Name:ClearAllPoints()
-		self.Power.Value:SetAlpha(0)
-		self.Name:SetPoint("LEFT", self.Panel, "LEFT", 4, 0)
-	end
-end
-
-function TukuiUnitFrames:UpdateThreat(event, unit)
-	if (not C.UnitFrames.Threat) or (unit ~= self.unit) then
-		return
-	end
-
-	local Panel = self.Panel
-
-	if Panel then
-		local Status = UnitThreatSituation(unit)
-
-		if Status and Status > 0 then
-			Panel:SetBackdropBorderColor(1, 0, 0)
-		else
-			Panel:SetBackdropBorderColor(C["General"].BorderColor[1] * 0.7, C["General"].BorderColor[2] * 0.7, C["General"].BorderColor[3] * 0.7)
-		end
-	end
-end
-
-function TukuiUnitFrames:PreUpdateHealth(unit)
+function UnitFrames:PreUpdateHealth(unit)
 	local HostileColor = C["UnitFrames"].TargetEnemyHostileColor
 
 	if (HostileColor ~= true) then
@@ -284,7 +243,29 @@ function TukuiUnitFrames:PreUpdateHealth(unit)
 	end
 end
 
-function TukuiUnitFrames:PostUpdateHealth(unit, min, max)
+function UnitFrames:DisplayPlayerAndPetNames(event)
+	if event == "PLAYER_REGEN_DISABLED" then
+		self.Power.Value:SetAlpha(1)
+		self.Name:SetAlpha(0)
+
+		if self.unit ~= "player" then
+			self.Health.Value:SetAlpha(1)
+		end
+	else
+		self.Power.Value:SetAlpha(0)
+		self.Name:SetAlpha(1)
+
+		if self.unit ~= "player" then
+			self.Health.Value:SetAlpha(0)
+		end
+	end
+end
+
+function UnitFrames:PostUpdateHealth(unit, min, max)
+	if (not self.Value) then
+		return
+	end
+
 	if (not UnitIsConnected(unit) or UnitIsDead(unit) or UnitIsGhost(unit)) then
 		if (not UnitIsConnected(unit)) then
 			self.Value:SetText("|cffD7BEA5"..FRIENDS_LIST_OFFLINE.."|r")
@@ -294,41 +275,23 @@ function TukuiUnitFrames:PostUpdateHealth(unit, min, max)
 			self.Value:SetText("|cffD7BEA5"..L.UnitFrames.Ghost.."|r")
 		end
 	else
-		local r, g, b
 		local IsRaid = string.match(self:GetParent():GetName(), "Button") or false
-
-		if (min ~= max) then
-			r, g, b = T.ColorGradient(min, max, 0.69, 0.31, 0.31, 0.65, 0.63, 0.35, 0.33, 0.59, 0.33)
-			if (unit == "player" and self:GetAttribute("normalUnit") ~= "pet") then
-				if (IsRaid) then
-					self.Value:SetText("|cffff2222-"..TukuiUnitFrames.ShortValue(max-min).."|r")
-				else
-					self.Value:SetFormattedText("|cffAF5050%d|r |cffD7BEA5-|r |cff%02x%02x%02x%d%%|r", min, r * 255, g * 255, b * 255, floor(min / max * 100))
-				end
-			elseif (unit == "target" or (unit and strfind(unit, "boss%d"))) then
-				self.Value:SetFormattedText("|cffAF5050%s|r |cffD7BEA5-|r |cff%02x%02x%02x%d%%|r", TukuiUnitFrames.ShortValue(min), r * 255, g * 255, b * 255, floor(min / max * 100))
-			elseif (unit and strfind(unit, "arena%d")) or (unit == "focus") or (unit == "focustarget") then
-				self.Value:SetText("|cff559655"..TukuiUnitFrames.ShortValue(min).."|r")
-			else
-				self.Value:SetText("|cffff2222-"..TukuiUnitFrames.ShortValue(max-min).."|r")
-			end
+		
+		if (IsRaid) and (min == max) then
+			self.Value:SetText("")
 		else
-			if (unit == "player" and self:GetAttribute("normalUnit") ~= "pet") then
-				if (IsRaid) then
-					self.Value:SetText(" ")
-				else
-					self.Value:SetText("|cff559655"..max.."|r")
-				end
-			elseif (unit == "target" or unit == "focus"  or unit == "focustarget" or (unit and strfind(unit, "arena%d")) or (unit and strfind(unit, "boss%d"))) then
-				self.Value:SetText("|cff559655"..TukuiUnitFrames.ShortValue(max).."|r")
-			else
-				self.Value:SetText(" ")
-			end
+			local r, g, b = T.ColorGradient(min, max, 0.69, 0.31, 0.31, 0.65, 0.63, 0.35, 0.33, 0.59, 0.33)
+
+			self.Value:SetFormattedText("|cff%02x%02x%02x%s|r", r * 255, g * 255, b * 255, UnitFrames.ShortValue(min))
 		end
 	end
 end
 
-function TukuiUnitFrames:PostUpdatePower(unit, current, min, max)
+function UnitFrames:PostUpdatePower(unit, current, min, max)
+	if (not self.Value) then
+		return
+	end
+
 	local Parent = self:GetParent()
 	local pType, pToken = UnitPowerType(unit)
 	local Colors = T["Colors"]
@@ -338,52 +301,245 @@ function TukuiUnitFrames:PostUpdatePower(unit, current, min, max)
 		self.Value:SetTextColor(Color[1], Color[2], Color[3])
 	end
 
-	if (not UnitIsPlayer(unit) and not UnitPlayerControlled(unit) or not UnitIsConnected(unit)) then
-		self.Value:SetText()
-	elseif (UnitIsDead(unit) or UnitIsGhost(unit)) then
-		self.Value:SetText()
+	if (UnitIsDead(unit) or UnitIsGhost(unit)) then
+		self.Value:SetText("")
 	else
-		if (current ~= max) then
-			if (pType == 0) then
-				if (unit == "target" or (unit and strfind(unit, "boss%d"))) then
-					self.Value:SetFormattedText("%d%% |cffD7BEA5-|r %s", floor(current / max * 100), TukuiUnitFrames.ShortValue(max - (max - current)))
-				elseif (unit == "player" and Parent:GetAttribute("normalUnit") == "pet" or unit == "pet") then
-					self.Value:SetFormattedText("%d%%", floor(current / max * 100))
-				elseif (unit and strfind(unit, "arena%d")) or unit == "focus" or unit == "focustarget" then
-					self.Value:SetText(TukuiUnitFrames.ShortValue(current))
+		self.Value:SetText(UnitFrames.ShortValue(current))
+	end
+end
+
+function UnitFrames:UpdateAltPower(minimum, current, maximum)
+	if (not current) or (not maximum) then return end
+
+	local r, g, b = T.ColorGradient(current, maximum, 0, .8 , 0, .8 , .8, 0, .8 , 0 , 0)
+
+	self:SetStatusBarColor(r, g, b)
+
+	if self.Value then
+		local Text = self.Value
+
+		Text:SetText(current.." / "..maximum)
+	end
+end
+
+function UnitFrames:SetAuraTimer(elapsed)
+	if (self.TimeLeft) then
+		self.Elapsed = (self.Elapsed or 0) + elapsed
+
+		if self.Elapsed >= 0.1 then
+			self.TimeLeft = self.TimeLeft - self.Elapsed
+
+			if self.TimeLeft > 0 then
+				local Time = T.FormatTime(self.TimeLeft)
+				self.Remaining:SetText(Time)
+
+				if self.TimeLeft <= 5 then
+					self.Remaining:SetTextColor(0.99, 0.31, 0.31)
 				else
-					self.Value:SetFormattedText("%d%% |cffD7BEA5-|r %d", floor(current / max * 100), max - (max - current))
+					self.Remaining:SetTextColor(1, 1, 1)
 				end
 			else
-				self.Value:SetText(max - (max - current))
+				self.Remaining:Hide()
 			end
-		else
-			if (unit == "pet" or unit == "target" or unit == "focus" or unit == "focustarget" or (unit and strfind(unit, "arena%d")) or (unit and strfind(unit, "boss%d"))) then
-				self.Value:SetText(TukuiUnitFrames.ShortValue(current))
-			else
-				self.Value:SetText(current)
-			end
+
+			self.Elapsed = 0
 		end
 	end
+end
 
-	if (Parent.Name and unit == "target") then
-		TukuiUnitFrames.UpdateNamePosition(Parent)
+function UnitFrames:CancelPlayerBuff(index)
+	if InCombatLockdown() then
+		return
+	end
+
+	CancelUnitBuff("player", self.index)
+end
+
+function UnitFrames:PostCreateAura(button)
+	-- Set "self.Buffs.isCancellable" to true to a buffs frame to be able to cancel click
+	local isCancellable = button:GetParent().isCancellable
+
+	-- Right-click-cancel script
+	if isCancellable then
+		-- Add a button.index to allow CancelUnitAura to work with player
+		local Name = button:GetName()
+		local Index = tonumber(Name:gsub("%D",""))
+
+		button.index = Index
+		button:SetScript("OnMouseUp", UnitFrames.CancelPlayerBuff)
+	end
+
+	-- Skin aura button
+	button:CreateBackdrop("Default")
+
+	if not button:GetParent().IsRaid then
+		button:CreateShadow()
+	end
+
+	button.cd.noOCC = true
+	button.cd.noCooldownCount = true
+	button.cd:SetReverse(true)
+	button.cd:ClearAllPoints()
+	button.cd:SetInside()
+	button.cd:SetHideCountdownNumbers(true)
+	
+	button.Remaining = button.cd:CreateFontString(nil, "OVERLAY")
+	button.Remaining:SetFont(C.Medias.Font, 12, "THINOUTLINE")
+	button.Remaining:SetPoint("CENTER", 1, 0)
+
+	button.icon:SetInside()
+	button.icon:SetTexCoord(unpack(T.IconCoord))
+	button.icon:SetDrawLayer("ARTWORK")
+
+	button.count:SetPoint("BOTTOMRIGHT", 3, -3)
+	button.count:SetJustifyH("RIGHT")
+	button.count:SetFont(C.Medias.Font, 9, "THICKOUTLINE")
+	button.count:SetTextColor(0.84, 0.75, 0.65)
+
+	button.Animation = button:CreateAnimationGroup()
+	button.Animation:SetLooping("BOUNCE")
+
+	button.Animation.FadeOut = button.Animation:CreateAnimation("Alpha")
+	button.Animation.FadeOut:SetFromAlpha(1)
+	button.Animation.FadeOut:SetToAlpha(.3)
+	button.Animation.FadeOut:SetDuration(.3)
+	button.Animation.FadeOut:SetSmoothing("IN_OUT")
+end
+
+function UnitFrames:PostUpdateAura(unit, button, index, offset, filter, isDebuff, duration, timeLeft)
+	local Name, _, _, DType, Duration, ExpirationTime, UnitCaster, IsStealable, _, SpellID = UnitAura(unit, index, button.filter)
+
+	if button then
+		if(button.filter == "HARMFUL") then
+			if (not UnitIsFriend("player", unit) and not button.isPlayer) then
+				button.icon:SetDesaturated(true)
+				button.Backdrop:SetBorderColor(unpack(C["General"].BorderColor))
+			else
+				local color = DebuffTypeColor[DType] or DebuffTypeColor.none
+				button.icon:SetDesaturated(false)
+				button.Backdrop:SetBorderColor(color.r * 0.8, color.g * 0.8, color.b * 0.8)
+			end
+		else
+			-- These classes can purge, show them
+			if (button.Animation) and (T.MyClass == "PRIEST") or (T.MyClass == "SHAMAN") then
+				if (DType == "Magic") and (not UnitIsFriend("player", unit)) and (not button.Animation.Playing) then
+					button.Animation:Play()
+					button.Animation.Playing = true
+				else
+					button.Animation:Stop()
+					button.Animation.Playing = false
+				end
+			end
+		end
+
+		if button.Remaining then
+			local Size = button:GetSize()
+			
+			if (Duration and Duration > 0 and Size > 20) then
+				button.Remaining:Show()
+				
+				button:SetScript("OnUpdate", UnitFrames.SetAuraTimer)
+			else
+				button.Remaining:Hide()
+				
+				button:SetScript("OnUpdate", nil)
+			end
+
+			
+		end
+
+		if (button.cd) then
+			if (Duration and Duration > 0) then
+				button.cd:SetCooldown(ExpirationTime - Duration, Duration)
+				button.cd:Show()
+			else
+				button.cd:Hide()
+			end
+		end
+
+		button.Duration = Duration
+		button.TimeLeft = ExpirationTime
+		button.Elapsed = GetTime()
 	end
 end
 
-local function hasbit(x, p)
-	return x % (p + p) >= p
+function UnitFrames:Update()
+	for _, element in ipairs(self.__elements) do
+		element(self, "UpdateElement", self.unit)
+	end
 end
 
-local function setbit(x, p)
-	return hasbit(x, p) and x or x + p
+function UnitFrames:DisplayNameplatePowerAndCastBar(unit, cur, min, max)
+	if not unit then
+		unit = self:GetParent().unit
+	end
+
+	if not unit then
+		return
+	end
+
+	if not cur then
+		cur, max = UnitPower(unit), UnitPowerMax(unit)
+	end
+
+	local CurrentPower = cur
+	local MaxPower = max
+	local Nameplate = self:GetParent()
+	local PowerBar = Nameplate.Power
+	local Health = Nameplate.Health
+	local IsPowerHidden = PowerBar.IsHidden
+
+	if (CurrentPower and CurrentPower == 0) and (MaxPower and MaxPower == 0) then
+		if (not IsPowerHidden) then
+			Health:ClearAllPoints()
+			Health:SetAllPoints()
+
+			PowerBar:SetAlpha(0)
+			PowerBar.IsHidden = true
+		end
+	else
+		if IsPowerHidden then
+			Health:ClearAllPoints()
+			Health:SetPoint("TOPLEFT")
+			Health:SetPoint("TOPRIGHT")
+			Health:SetHeight(Nameplate:GetHeight() - PowerBar:GetHeight() - 1)
+
+			PowerBar:SetAlpha(1)
+			PowerBar.IsHidden = false
+		end
+	end
 end
 
-local function clearbit(x, p)
-	return hasbit(x, p) and x - p or x
+function UnitFrames:RunesPostUpdate(runemap)
+	local Bar = self
+	local RuneMap = runemap
+
+	for i, RuneID in next, RuneMap do
+		local IsReady = select(3, GetRuneCooldown(RuneID))
+
+		if IsReady then
+			Bar[i]:SetAlpha(1)
+		else
+			Bar[i]:SetAlpha(0.5)
+		end
+	end
 end
 
-function TukuiUnitFrames:UpdateTotemOverride(event, slot)
+function UnitFrames:UpdateTotemTimer(elapsed)
+	self.Elapsed = (self.Elapsed) - elapsed
+
+	if self.Elapsed < 0 then
+		local TimeLeft = math.ceil(self.Duration - (GetTime() - self.Start))
+
+		if TimeLeft > -.5 then
+			self.Text:SetText(TimeLeft)
+		end
+		
+		self.Elapsed = 0.5
+	end
+end
+
+function UnitFrames:UpdateTotemOverride(event, slot)
 	if slot > 4 then
 		return
 	end
@@ -399,6 +555,10 @@ function TukuiUnitFrames:UpdateTotemOverride(event, slot)
 	local Colors = T["Colors"]
 
 	if (HaveTotem) then
+		Totem.Slot = slot
+		Totem.Duration = Duration
+		Totem.Start = Start
+		Totem.Elapsed = 0
 		Totem:Show()
 
 		if Totem.Icon then
@@ -407,6 +567,8 @@ function TukuiUnitFrames:UpdateTotemOverride(event, slot)
 
 		if (Totem.Cooldown) then
 			Totem.Cooldown:SetCooldown(Start, Duration)
+
+			Totem:SetScript("OnUpdate", UnitFrames.UpdateTotemTimer)
 		end
 
 		-- Workaround to allow right-click destroy totem
@@ -427,6 +589,8 @@ function TukuiUnitFrames:UpdateTotemOverride(event, slot)
 		end
 	else
 		Totem:Hide()
+		Totem:SetScript("OnUpdate", nil)
+		Totem.Elapsed = 0
 
 		if Totem.Icon then
 			Totem.Icon:SetTexture(nil)
@@ -438,310 +602,7 @@ function TukuiUnitFrames:UpdateTotemOverride(event, slot)
 	end
 end
 
-function TukuiUnitFrames:CreateAuraTimer(elapsed)
-	if (self.TimeLeft) then
-		self.Elapsed = (self.Elapsed or 0) + elapsed
-
-		if self.Elapsed >= 0.1 then
-			if not self.First then
-				self.TimeLeft = self.TimeLeft - self.Elapsed
-			else
-				self.TimeLeft = self.TimeLeft - GetTime()
-				self.First = false
-			end
-
-			if self.TimeLeft > 0 then
-				local Time = T.FormatTime(self.TimeLeft)
-				self.Remaining:SetText(Time)
-
-				if self.TimeLeft <= 5 then
-					self.Remaining:SetTextColor(0.99, 0.31, 0.31)
-				else
-					self.Remaining:SetTextColor(1, 1, 1)
-				end
-			else
-				self.Remaining:Hide()
-				self:SetScript("OnUpdate", nil)
-			end
-
-			self.Elapsed = 0
-		end
-	end
-end
-
-function TukuiUnitFrames:CancelPlayerBuff(index)
-	if InCombatLockdown() then
-		return
-	end
-
-	CancelUnitBuff("player", self.index)
-end
-
-function TukuiUnitFrames:PostCreateAura(button)
-	-- Set "self.Buffs.isCancellable" to true to a buffs frame to be able to cancel click
-	local isCancellable = button:GetParent().isCancellable
-
-	-- Right-click-cancel script
-	if isCancellable then
-		-- Add a button.index to allow CancelUnitAura to work with player
-		local Name = button:GetName()
-		local Index = tonumber(Name:gsub('%D',''))
-
-		button.index = Index
-		button:SetScript("OnMouseUp", TukuiUnitFrames.CancelPlayerBuff)
-	end
-
-	-- Skin aura button
-	button:SetTemplate("Default")
-	button:CreateShadow()
-
-	button.Remaining = button:CreateFontString(nil, "OVERLAY")
-	button.Remaining:SetFont(C.Medias.Font, 12, "THINOUTLINE")
-	button.Remaining:Point("CENTER", 1, 0)
-
-	button.cd.noOCC = true
-	button.cd.noCooldownCount = true
-	button.cd:SetReverse(true)
-	button.cd:SetFrameLevel(button:GetFrameLevel() + 1)
-	button.cd:ClearAllPoints()
-	button.cd:SetInside()
-	button.cd:SetHideCountdownNumbers(true)
-
-	button.icon:SetInside()
-	button.icon:SetTexCoord(unpack(T.IconCoord))
-	button.icon:SetDrawLayer("ARTWORK")
-
-	button.count:Point("BOTTOMRIGHT", 3, 3)
-	button.count:SetJustifyH("RIGHT")
-	button.count:SetFont(C.Medias.Font, 9, "THICKOUTLINE")
-	button.count:SetTextColor(0.84, 0.75, 0.65)
-
-	button.OverlayFrame = CreateFrame("Frame", nil, button, nil)
-	button.OverlayFrame:SetFrameLevel(button.cd:GetFrameLevel() + 1)
-	button.overlay:SetParent(button.OverlayFrame)
-	button.count:SetParent(button.OverlayFrame)
-	button.Remaining:SetParent(button.OverlayFrame)
-
-	button.Animation = button:CreateAnimationGroup()
-	button.Animation:SetLooping("BOUNCE")
-
-	button.Animation.FadeOut = button.Animation:CreateAnimation("Alpha")
-	button.Animation.FadeOut:SetFromAlpha(1)
-	button.Animation.FadeOut:SetToAlpha(0)
-	button.Animation.FadeOut:SetDuration(.6)
-	button.Animation.FadeOut:SetSmoothing("IN_OUT")
-end
-
-function TukuiUnitFrames:PostUpdateAura(unit, button, index, offset, filter, isDebuff, duration, timeLeft)
-	local _, _, _, DType, Duration, ExpirationTime, UnitCaster, IsStealable = UnitAura(unit, index, button.filter)
-
-	if button then
-		if(button.filter == "HARMFUL") then
-			if(not UnitIsFriend("player", unit) and not button.isPlayer) then
-				button.icon:SetDesaturated(true)
-				button:SetBackdropBorderColor(unpack(C["General"].BorderColor))
-			else
-				local color = DebuffTypeColor[DType] or DebuffTypeColor.none
-				button.icon:SetDesaturated(false)
-				button:SetBackdropBorderColor(color.r * 0.8, color.g * 0.8, color.b * 0.8)
-			end
-		else
-			if button.Animation then
-				if (IsStealable or DType == "Magic") and not UnitIsFriend("player", unit) and not button.Animation.Playing then
-					button.Animation:Play()
-					button.Animation.Playing = true
-				else
-					button.Animation:Stop()
-					button.Animation.Playing = false
-				end
-			end
-		end
-
-		if button.Remaining then
-			if Duration and Duration > 0 then
-				button.Remaining:Show()
-			else
-				button.Remaining:Hide()
-			end
-
-			button:SetScript("OnUpdate", TukuiUnitFrames.CreateAuraTimer)
-		end
-
-		button.Duration = Duration
-		button.TimeLeft = ExpirationTime
-		button.First = true
-	end
-end
-
-function TukuiUnitFrames:CreateAuraWatchIcon(icon)
-	icon:SetTemplate()
-	icon.icon:Point("TOPLEFT", 1, -1)
-	icon.icon:Point("BOTTOMRIGHT", -1, 1)
-	icon.icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
-	icon.icon:SetDrawLayer("ARTWORK")
-
-	if (icon.cd) then
-		icon.cd:SetHideCountdownNumbers(true)
-		icon.cd:SetReverse(true)
-	end
-
-	icon.overlay:SetTexture()
-end
-
--- create the icon
-function TukuiUnitFrames:CreateAuraWatch(frame)
-	local Class = select(2, UnitClass("player"))
-
-	local Auras = CreateFrame("Frame", nil, frame)
-	Auras:SetPoint("TOPLEFT", frame.Health, 2, -2)
-	Auras:SetPoint("BOTTOMRIGHT", frame.Health, -2, 2)
-	Auras.presentAlpha = 1
-	Auras.missingAlpha = 0
-	Auras.icons = {}
-	Auras.PostCreateIcon = TukuiUnitFrames.CreateAuraWatchIcon
-	Auras.strictMatching = true
-
-	if (not C["Raid"].AuraWatchTimers) then
-		Auras.hideCooldown = true
-	end
-
-	local buffs = {}
-
-	if (TukuiUnitFrames.RaidBuffsTracking["ALL"]) then
-		for key, value in pairs(TukuiUnitFrames.RaidBuffsTracking["ALL"]) do
-			tinsert(buffs, value)
-		end
-	end
-
-	if (TukuiUnitFrames.RaidBuffsTracking[Class]) then
-		for key, value in pairs(TukuiUnitFrames.RaidBuffsTracking[Class]) do
-			tinsert(buffs, value)
-		end
-	end
-
-	-- Cornerbuffs
-	if buffs then
-		for key, spell in pairs(buffs) do
-			local Icon = CreateFrame("Frame", nil, Auras)
-			Icon.spellID = spell[1]
-			Icon.anyUnit = spell[4]
-			Icon:Width(8)
-			Icon:Height(8)
-			Icon:SetPoint(spell[2], 0, 0)
-
-			local Texture = Icon:CreateTexture(nil, "OVERLAY")
-			Texture:SetInside(Icon)
-			Texture:SetTexture(C.Medias.Blank)
-
-			if (spell[3]) then
-				Texture:SetVertexColor(unpack(spell[3]))
-			else
-				Texture:SetVertexColor(0.8, 0.8, 0.8)
-			end
-
-			local Count = Icon:CreateFontString(nil, "OVERLAY")
-			Count:SetFont(C.Medias.Font, 8, "THINOUTLINE")
-			Count:SetPoint("CENTER", unpack(TukuiUnitFrames.RaidBuffsTrackingPosition[spell[2]]))
-			Icon.count = Count
-
-			Auras.icons[spell[1]] = Icon
-		end
-	end
-
-	frame.AuraWatch = Auras
-end
-
-function TukuiUnitFrames:EclipseDirection()
-	local Power = UnitPower("Player", SPELL_POWER_ECLIPSE)
-
-	if (Power < 0) then
-		self.Text:SetText("|cffE5994C"..L.UnitFrames.Starfire.."|r")
-	elseif (Power > 0) then
-		self.Text:SetText("|cff4478BC"..L.UnitFrames.Wrath.."|r")
-	else
-		self.Text:SetText("")
-	end
-end
-
-function TukuiUnitFrames:UpdateAltPower(minimum, current, maximum)
-	if (not current) or (not maximum) then return end
-
-	local r, g, b = T.ColorGradient(current, maximum, 0, .8 ,0 ,.8 ,.8 ,0 ,.8 ,0 ,0)
-
-	self:SetStatusBarColor(r, g, b)
-	self:SetBackdropColor(r * 0.1, g * 0.1, b * 0.1)
-
-	if self.Value then
-		local Text = self.Value
-
-		Text:SetText(current.." / "..maximum)
-	end
-end
-
-function TukuiUnitFrames:Update()
-	for _, element in ipairs(self.__elements) do
-		element(self, "UpdateElement", self.unit)
-	end
-end
-
-function TukuiUnitFrames:DisplayNameplatePowerAndCastBar(unit, cur, min, max)
-	if not unit then
-		unit = self:GetParent().unit
-	end
-
-	if not unit then
-		return
-	end
-
-	if not cur then
-		cur, max = UnitPower(unit), UnitPowerMax(unit)
-	end
-
-	local CurrentPower = cur
-	local MaxPower = max
-	local Nameplate = self:GetParent()
-	local PowerBar = Nameplate.Power
-	local CastBar = Nameplate.Castbar
-	local Health = Nameplate.Health
-	local IsPowerHidden = PowerBar.IsHidden
-
-	if (not CastBar:IsShown()) and (CurrentPower and CurrentPower == 0) and (MaxPower and MaxPower == 0) then
-		if (not IsPowerHidden) then
-			Health:ClearAllPoints()
-			Health:SetAllPoints()
-
-			PowerBar:Hide()
-			PowerBar.IsHidden = true
-		end
-	else
-		if IsPowerHidden then
-			Health:ClearAllPoints()
-			Health:SetPoint("TOPLEFT")
-			Health:SetHeight(C.NamePlates.Height - C.NamePlates.CastHeight - 1)
-			Health:SetWidth(Nameplate:GetWidth())
-
-			PowerBar:Show()
-			PowerBar.IsHidden = false
-		end
-	end
-end
-
-function TukuiUnitFrames:RunesPostUpdate(runemap)
-	local Bar = self
-	local RuneMap = runemap
-
-	for i, RuneID in next, RuneMap do
-		local IsReady = select(3, GetRuneCooldown(RuneID))
-
-		if IsReady then
-			Bar[i]:SetAlpha(1)
-		else
-			Bar[i]:SetAlpha(0.5)
-		end
-	end
-end
-
-function TukuiUnitFrames:GetPartyFramesAttributes()
+function UnitFrames:GetPartyFramesAttributes()
 	return
 		"TukuiParty",
 		nil,
@@ -751,8 +612,8 @@ function TukuiUnitFrames:GetPartyFramesAttributes()
 			self:SetWidth(header:GetAttribute("initial-width"))
 			self:SetHeight(header:GetAttribute("initial-height"))
 		]],
-		"initial-width", T.Scale(180),
-		"initial-height", T.Scale(24),
+		"initial-width", 180,
+		"initial-height", 24,
 		"showSolo", false,
 		"showParty", true,
 		"showPlayer", C["Party"].ShowPlayer,
@@ -760,10 +621,32 @@ function TukuiUnitFrames:GetPartyFramesAttributes()
 		"groupFilter", "1,2,3,4,5,6,7,8",
 		"groupingOrder", "1,2,3,4,5,6,7,8",
 		"groupBy", "GROUP",
-		"yOffset", T.Scale(-50)
+		"yOffset", -50
 end
 
-function TukuiUnitFrames:GetRaidFramesAttributes()
+function UnitFrames:GetPetPartyFramesAttributes()
+	return
+		"TukuiPartyPet",
+		"SecureGroupPetHeaderTemplate",
+		"custom [@raid6,exists] hide;show",
+		"oUF-initialConfigFunction", [[
+			local header = self:GetParent()
+			self:SetWidth(header:GetAttribute("initial-width"))
+			self:SetHeight(header:GetAttribute("initial-height"))
+		]],
+		"initial-width", 180,
+		"initial-height", 24,
+		"showSolo", false,
+		"showParty", true,
+		"showPlayer", C["Party"].ShowPlayer,
+		"showRaid", true,
+		"groupFilter", "1,2,3,4,5,6,7,8",
+		"groupingOrder", "1,2,3,4,5,6,7,8",
+		"groupBy", "GROUP",
+		"yOffset", -50
+end
+
+function UnitFrames:GetRaidFramesAttributes()
 	local Properties = C.Party.Enable and "custom [@raid6,exists] show;hide" or "solo,party,raid"
 
 	return
@@ -775,43 +658,44 @@ function TukuiUnitFrames:GetRaidFramesAttributes()
 			self:SetWidth(header:GetAttribute("initial-width"))
 			self:SetHeight(header:GetAttribute("initial-height"))
 		]],
-		"initial-width", T.Scale(66),
-		"initial-height", T.Scale(50),
+		"initial-width", C.Raid.WidthSize,
+		"initial-height", C.Raid.HeightSize,
 		"showParty", true,
 		"showRaid", true,
 		"showPlayer", true,
 		"showSolo", false,
-		"xoffset", T.Scale(4),
-		"yOffset", T.Scale(-4),
+		"xoffset", 4,
+		"yOffset", -4,
 		"point", "TOP",
 		"groupFilter", "1,2,3,4,5,6,7,8",
 		"groupingOrder", "1,2,3,4,5,6,7,8",
 		"groupBy", C["Raid"].GroupBy.Value,
 		"maxColumns", math.ceil(40 / 5),
 		"unitsPerColumn", C["Raid"].MaxUnitPerColumn,
-		"columnSpacing", T.Scale(4),
+		"columnSpacing", 4,
 		"columnAnchorPoint", "LEFT"
 end
 
-function TukuiUnitFrames:GetPetRaidFramesAttributes()
+function UnitFrames:GetPetRaidFramesAttributes()
 	local Properties = C.Party.Enable and "custom [@raid6,exists] show;hide" or "solo,party,raid"
 
 	return
 		"TukuiRaidPet",
 		"SecureGroupPetHeaderTemplate",
 		Properties,
-		"showParty", false,
+		"showParty", C["Raid"].ShowPets,
 		"showRaid", C["Raid"].ShowPets,
+		"showPlayer", true,
 		"showSolo", false,
 		"maxColumns", math.ceil(40 / 5),
 		"point", "TOP",
 		"unitsPerColumn", C["Raid"].MaxUnitPerColumn,
-		"columnSpacing", T.Scale(4),
+		"columnSpacing", 4,
 		"columnAnchorPoint", "LEFT",
-		"yOffset", T.Scale(-4),
-		"xOffset", T.Scale(4),
-		"initial-width", T.Scale(66),
-		"initial-height", T.Scale(50),
+		"yOffset", -4,
+		"xOffset", 4,
+		"initial-width", C.Raid.WidthSize,
+		"initial-height", C.Raid.HeightSize,
 		"oUF-initialConfigFunction", [[
 			local header = self:GetParent()
 			self:SetWidth(header:GetAttribute("initial-width"))
@@ -819,58 +703,7 @@ function TukuiUnitFrames:GetPetRaidFramesAttributes()
 		]]
 end
 
-function TukuiUnitFrames:MainTankAttibutes()
-	return
-		"TukuiMainTank",
-		nil,
-		"solo,party,raid",
-		"oUF-initialConfigFunction", [[
-			local header = self:GetParent()
-			self:SetWidth(header:GetAttribute("initial-width"))
-			self:SetHeight(header:GetAttribute("initial-height"))
-		]],
-		"initial-width", T.Scale(150),
-		"initial-height", T.Scale(22),
-		"showParty", false,
-		"showRaid", true,
-		"showPlayer", false,
-		"showSolo", false,
-		"groupFilter", "MAINTANK",
-		"xoffset", T.Scale(10),
-		"yOffset", T.Scale(-10),
-		"point", "TOP",
-		"unitsPerColumn", C["Raid"].MaxUnitPerColumn,
-		"columnSpacing", T.Scale(7),
-		"columnAnchorPoint", "LEFT"
-end
-
-function TukuiUnitFrames:MainTankTargetAttibutes()
-	return
-		"TukuiMainTankTarget",
-		nil,
-		"solo,party,raid",
-		"oUF-initialConfigFunction", [[
-			local header = self:GetParent()
-			self:SetWidth(header:GetAttribute("initial-width"))
-			self:SetHeight(header:GetAttribute("initial-height"))
-			self:SetAttribute("unitsuffix", "target")
-		]],
-		"initial-width", T.Scale(150),
-		"initial-height", T.Scale(22),
-		"showParty", false,
-		"showRaid", true,
-		"showPlayer", false,
-		"showSolo", false,
-		"groupFilter", "MAINTANK",
-		"xoffset", T.Scale(4),
-		"yOffset", T.Scale(-4),
-		"point", "TOP",
-		"unitsPerColumn", C["Raid"].MaxUnitPerColumn,
-		"columnSpacing", T.Scale(4),
-		"columnAnchorPoint", "LEFT"
-end
-
-function TukuiUnitFrames:Style(unit)
+function UnitFrames:Style(unit)
 	if (not unit) then
 		return
 	end
@@ -878,86 +711,67 @@ function TukuiUnitFrames:Style(unit)
 	local Parent = self:GetParent():GetName()
 
 	if (unit == "player") then
-		TukuiUnitFrames.Player(self)
+		UnitFrames.Player(self)
 	elseif (unit == "target") then
-		TukuiUnitFrames.Target(self)
+		UnitFrames.Target(self)
 	elseif (unit == "targettarget") then
-		TukuiUnitFrames.TargetOfTarget(self)
+		UnitFrames.TargetOfTarget(self)
 	elseif (unit == "pet") then
-		TukuiUnitFrames.Pet(self)
+		UnitFrames.Pet(self)
 	elseif (unit == "focus") then
-		TukuiUnitFrames.Focus(self)
-	elseif (unit == "focustarget") then
-		TukuiUnitFrames.FocusTarget(self)
-	elseif unit:find("arena%d") then
-		TukuiUnitFrames.Arena(self)
-	elseif unit:find("boss%d") then
-		TukuiUnitFrames.Boss(self)
-	elseif (unit:find("raid") or unit:find("raidpet")) then
+		UnitFrames.Focus(self)
+	elseif (unit == "focustarget")  then
+		UnitFrames.FocusTarget(self)
+	elseif (unit:find("raid")) or (unit:find("raidpet")) then
 		if Parent:match("Party") then
-			TukuiUnitFrames.Party(self)
+			UnitFrames.Party(self)
 		else
-			TukuiUnitFrames.Raid(self)
+			UnitFrames.Raid(self)
 		end
+	elseif unit:find("boss%d") then
+		UnitFrames.Boss(self)
+	elseif unit:find("arena%d") then
+		UnitFrames.Arena(self)
 	elseif unit:match("nameplate") then
-		TukuiUnitFrames.Nameplates(self)
+		UnitFrames.Nameplates(self)
 	end
 
 	return self
 end
 
-function TukuiUnitFrames:CreateAnchor()
-	if not C.UnitFrames.Enable then
-		return
-	end
-
-	local Anchor = CreateFrame("Frame", "TukuiActionBarAnchor", UIParent)
-
-	if T.Panels.ActionBar2 and T.Panels.ActionBar3 then
-		Anchor:SetPoint("TOPLEFT", T.Panels.ActionBar2)
-		Anchor:SetPoint("BottomRight", T.Panels.ActionBar3)
-	else
-		Anchor:SetHeight(1)
-		Anchor:SetWidth(800)
-		Anchor:SetPoint("BOTTOM", 0, 106)
-	end
-
-	TukuiUnitFrames.Anchor = Anchor
-end
-
-function TukuiUnitFrames:CreateUnits()
+function UnitFrames:CreateUnits()
 	local Movers = T["Movers"]
 
 	if C.UnitFrames.Enable then
-		local Player = oUF:Spawn("player")
-		Player:SetPoint("BOTTOMLEFT", TukuiUnitFrames.Anchor, "TOPLEFT", 0, 8)
-		Player:SetParent(Panels.PetBattleHider)
-		Player:Size(250, 57)
+		local Player = oUF:Spawn("player", "TukuiPlayerFrame")
+		Player:SetPoint("BOTTOM", T.PetHider, "BOTTOM", -235, 102)
+		Player:SetParent(T.PetHider)
+		Player:SetSize(250, 57)
 
-		local Target = oUF:Spawn("target")
-		Target:SetPoint("BOTTOMRIGHT", TukuiUnitFrames.Anchor, "TOPRIGHT", 0, 8)
-		Target:SetParent(Panels.PetBattleHider)
-		Target:Size(250, 57)
+		local Target = oUF:Spawn("target", "TukuiTargetFrame")
+		Target:SetPoint("BOTTOM", T.PetHider, "BOTTOM", 235, 102)
+		Target:SetParent(T.PetHider)
+		Target:SetSize(250, 57)
 
-		local TargetOfTarget = oUF:Spawn("targettarget")
-		TargetOfTarget:SetPoint("BOTTOM", TukuiUnitFrames.Anchor, "TOP", 0, 8)
-		TargetOfTarget:SetParent(Panels.PetBattleHider)
-		TargetOfTarget:Size(129, 36)
+		local TargetOfTarget = oUF:Spawn("targettarget", "TukuiTargetTargetFrame")
+		TargetOfTarget:SetPoint("BOTTOM", T.PetHider, "BOTTOM", 0, 102)
+		TargetOfTarget:SetParent(T.PetHider)
+		TargetOfTarget:SetSize(130, 36)
 
-		local Pet = oUF:Spawn("pet")
-		Pet:SetParent(Panels.PetBattleHider)
-		Pet:SetPoint("BOTTOM", TukuiUnitFrames.Anchor, "TOP", 0, 49)
-		Pet:Size(129, 36)
-
-		local Focus = oUF:Spawn("focus")
-		Focus:SetPoint("BOTTOMLEFT", TukuiUnitFrames.Anchor, "TOPLEFT", 0, 200)
-		Focus:SetParent(Panels.PetBattleHider)
-		Focus:Size(200, 29)
-
-		local FocusTarget = oUF:Spawn("focustarget")
-		FocusTarget:SetPoint("BOTTOM", Focus, "TOP", 0, 35)
-		FocusTarget:SetParent(Panels.PetBattleHider)
-		FocusTarget:Size(200, 29)
+		local Pet = oUF:Spawn("pet", "TukuiPetFrame")
+		Pet:SetParent(T.PetHider)
+		Pet:SetPoint("BOTTOM", T.PetHider, "BOTTOM", 0, 176)
+		Pet:SetSize(130, 36)
+		
+		local Focus = oUF:Spawn("focus", "TukuiFocusFrame")
+		Focus:SetPoint("BOTTOM", T.PetHider, "BOTTOM", -279, 316)
+		Focus:SetParent(T.PetHider)
+		Focus:SetSize(164, 20)
+		
+		local FocusTarget = oUF:Spawn("focustarget", "TukuiFocusTargetFrame")
+		FocusTarget:SetPoint("BOTTOM", Focus, "TOP", 0, 62)
+		FocusTarget:SetParent(T.PetHider)
+		FocusTarget:SetSize(164, 20)
 
 		self.Units.Player = Player
 		self.Units.Target = Target
@@ -966,18 +780,59 @@ function TukuiUnitFrames:CreateUnits()
 		self.Units.Focus = Focus
 		self.Units.FocusTarget = FocusTarget
 
+		if C.Party.Enable then
+			local Party = oUF:SpawnHeader(UnitFrames:GetPartyFramesAttributes())
+		
+			Party:SetParent(T.PetHider)
+			Party:SetPoint("TOPLEFT", T.PetHider, "TOPLEFT", 28, -(T.PetHider:GetHeight() / 2) + 200)
+
+			if C.Party.ShowPets then
+				local Pet = oUF:SpawnHeader(UnitFrames:GetPetPartyFramesAttributes())
+				Pet:SetParent(T.PetHider)
+				Pet:SetPoint("TOPLEFT", T.PetHider, "TOPLEFT", 28, -28)
+
+				UnitFrames.Headers.RaidPet = Pet
+
+				Movers:RegisterFrame(Pet)
+			end
+
+			UnitFrames.Headers.Party = Party
+
+			Movers:RegisterFrame(Party)
+		end
+
+		if C.Raid.Enable then
+			local Raid = oUF:SpawnHeader(UnitFrames:GetRaidFramesAttributes())
+			Raid:SetParent(T.PetHider)
+			Raid:SetPoint("TOPLEFT", T.PetHider, "TOPLEFT", 30, -30)
+
+			if C.Raid.ShowPets then
+				local Pet = oUF:SpawnHeader(UnitFrames:GetPetRaidFramesAttributes())
+				Pet:SetParent(T.PetHider)
+				Pet:SetPoint("TOPLEFT", Raid, "TOPRIGHT", 4, 0)
+
+				UnitFrames.Headers.RaidPet = Pet
+
+				Movers:RegisterFrame(Pet)
+			end
+
+			UnitFrames.Headers.Raid = Raid
+
+			Movers:RegisterFrame(Raid)
+		end
+		
 		if (C.UnitFrames.Arena) then
 			local Arena = {}
 
 			for i = 1, 5 do
-				Arena[i] = oUF:Spawn("arena"..i, nil)
-				Arena[i]:SetParent(Panels.PetBattleHider)
+				Arena[i] = oUF:Spawn("arena"..i, "TukuiArenaFrame"..i)
+				Arena[i]:SetParent(T.PetHider)
 				if (i == 1) then
-					Arena[i]:SetPoint("BOTTOMRIGHT", TukuiUnitFrames.Anchor, "TOPRIGHT", 0, 200)
+					Arena[i]:SetPoint("BOTTOM", T.PetHider, "BOTTOM", 279, 316)
 				else
-					Arena[i]:SetPoint("BOTTOM", Arena[i - 1], "TOP", 0, 35)
+					Arena[i]:SetPoint("BOTTOM", Arena[i - 1], "TOP", 0, 62)
 				end
-				Arena[i]:Size(200, 29)
+				Arena[i]:SetSize(164, 20)
 
 				Movers:RegisterFrame(Arena[i])
 			end
@@ -985,61 +840,24 @@ function TukuiUnitFrames:CreateUnits()
 			self.Units.Arena = Arena
 		end
 
+		
 		if (C.UnitFrames.Boss) then
 			local Boss = {}
 
 			for i = 1, 5 do
-				Boss[i] = oUF:Spawn("boss"..i, nil)
-				Boss[i]:SetParent(Panels.PetBattleHider)
+				Boss[i] = oUF:Spawn("boss"..i, "TukuiBossFrame"..i)
+				Boss[i]:SetParent(T.PetHider)
 				if (i == 1) then
-					Boss[i]:SetPoint("BOTTOMRIGHT", TukuiUnitFrames.Anchor, "TOPRIGHT", 0, 200)
+					Boss[i]:SetPoint("BOTTOM", T.PetHider, "BOTTOM", 279, 316)
 				else
-					Boss[i]:SetPoint("BOTTOM", Boss[i - 1], "TOP", 0, 35)
+					Boss[i]:SetPoint("BOTTOM", Boss[i - 1], "TOP", 0, 62)
 				end
-				Boss[i]:Size(200, 29)
+				Boss[i]:SetSize(164, 20)
 
 				Movers:RegisterFrame(Boss[i])
 			end
 
 			self.Units.Boss = Boss
-		end
-
-		if C.Party.Enable then
-			local Party = oUF:SpawnHeader(TukuiUnitFrames:GetPartyFramesAttributes())
-			Party:SetParent(Panels.PetBattleHider)
-			Party:Point("TOPLEFT", UIParent, "TOPLEFT", 28, -(UIParent:GetHeight() / 2) + 200)
-
-			TukuiUnitFrames.Headers.Party = Party
-
-			Movers:RegisterFrame(Party)
-		end
-
-		if C.Raid.Enable then
-			local Raid = oUF:SpawnHeader(TukuiUnitFrames:GetRaidFramesAttributes())
-			Raid:SetParent(Panels.PetBattleHider)
-			Raid:Point("TOPLEFT", UIParent, "TOPLEFT", 30, -30)
-
-			if C.Raid.ShowPets then
-				local Pet = oUF:SpawnHeader(TukuiUnitFrames:GetPetRaidFramesAttributes())
-				Pet:SetParent(Panels.PetBattleHider)
-				Pet:Point("TOPLEFT", Raid, "TOPRIGHT", 4, 0)
-
-				TukuiUnitFrames.Headers.RaidPet = Pet
-
-				Movers:RegisterFrame(Pet)
-			end
-	--[[
-			local MainTank = oUF:SpawnHeader(TukuiUnitFrames:MainTankAttibutes())
-			MainTank:SetPoint("CENTER", UIParent, "CENTER", 0, 0)
-			Movers:RegisterFrame(MainTank)
-
-			local MainTankTarget = oUF:SpawnHeader(TukuiUnitFrames:MainTankTargetAttibutes())
-			MainTankTarget:SetPoint("CENTER", UIParent, "CENTER", 0, 0)
-			Movers:RegisterFrame(MainTankTarget)
-	]]
-			TukuiUnitFrames.Headers.Raid = Raid
-
-			Movers:RegisterFrame(Raid)
 		end
 
 		Movers:RegisterFrame(Player)
@@ -1051,20 +869,16 @@ function TukuiUnitFrames:CreateUnits()
 	end
 
 	if C.NamePlates.Enable then
-		SetCVar("nameplateGlobalScale", 1)
-		SetCVar("NamePlateHorizontalScale", 1)
-		SetCVar("NamePlateVerticalScale", 1)
-		SetCVar("nameplateLargerScale", 1)
-		SetCVar("nameplateMaxScale", 1)
-		SetCVar("nameplateMinScale", 1)
-		SetCVar("nameplateSelectedScale", 1)
-		SetCVar("nameplateSelfScale", 1)
-
-		oUF:SpawnNamePlates()
+		local PersonalResource = ClassNameplateManaBarFrame
+		
+		-- No need for this bar, already included with oUF
+		PersonalResource:SetAlpha(0)
+		
+		oUF:SpawnNamePlates("Tukui", nil, UnitFrames.NameplatesVariables)
 	end
 end
 
-function TukuiUnitFrames:UpdateRaidDebuffIndicator()
+function UnitFrames:UpdateRaidDebuffIndicator()
 	local ORD = Plugin.oUF_RaidDebuffs or oUF_RaidDebuffs
 
 	if (ORD) then
@@ -1072,76 +886,28 @@ function TukuiUnitFrames:UpdateRaidDebuffIndicator()
 
 		if (ORD.RegisteredList ~= "RD") and (InstanceType == "party" or InstanceType == "raid") then
 			ORD:ResetDebuffData()
-			ORD:RegisterDebuffs(TukuiUnitFrames.DebuffsTracking.RaidDebuffs.spells)
+			ORD:RegisterDebuffs(UnitFrames.DebuffsTracking.RaidDebuffs.spells)
 			ORD.RegisteredList = "RD"
 		else
 			if ORD.RegisteredList ~= "CC" then
 				ORD:ResetDebuffData()
-				ORD:RegisterDebuffs(TukuiUnitFrames.DebuffsTracking.CCDebuffs.spells)
+				ORD:RegisterDebuffs(UnitFrames.DebuffsTracking.CCDebuffs.spells)
 				ORD.RegisteredList = "CC"
 			end
 		end
 	end
 end
 
-function TukuiUnitFrames:PostUpdateArenaPreparationSpec()
-	local specIcon = self.PVPSpecIcon
-	local instanceType = select(2, IsInInstance())
-
-	if (instanceType == "arena") then
-		local specID = self.id and GetArenaOpponentSpec(tonumber(self.id))
-
-		if specID and specID > 0 then
-			local icon = select(4, GetSpecializationInfoByID(specID))
-
-			specIcon.Icon:SetTexture(icon)
-		else
-			specIcon.Icon:SetTexture([[INTERFACE\ICONS\INV_MISC_QUESTIONMARK]])
-		end
-	else
-		local faction = UnitFactionGroup(self.unit)
-
-		if faction == "Horde" then
-			specIcon.Icon:SetTexture([[Interface\Icons\INV_BannerPVP_01]])
-		elseif faction == "Alliance" then
-			specIcon.Icon:SetTexture([[Interface\Icons\INV_BannerPVP_02]])
-		else
-			specIcon.Icon:SetTexture([[INTERFACE\ICONS\INV_MISC_QUESTIONMARK]])
-		end
-	end
-end
-
-function TukuiUnitFrames:UpdatePowerColorArenaPreparation(specID)
-	-- oUF is unable to get power color on arena preparation, so we add this feature here.
-	local Power = self
-	local Frame = Power:GetParent()
-	local Health = Frame.Health
-	local Class = select(6, GetSpecializationInfoByID(specID))
-
-	if Class then
-		local PowerColor = oUF.colors.specpowertypes[Class][specID]
-
-		if PowerColor then
-			local R, G, B = unpack(PowerColor)
-
-			Power:SetStatusBarColor(R, G, B)
-		else
-			Power:SetStatusBarColor(0, 0, 0)
-		end
-	end
-end
-
-function TukuiUnitFrames:Enable()
+function UnitFrames:Enable()
 	self.Backdrop = {
 		bgFile = C.Medias.Blank,
-		insets = {top = -T.Mult, left = -T.Mult, bottom = -T.Mult, right = -T.Mult},
+		insets = {top = -1, left = -1, bottom = -1, right = -1},
 	}
 
-	oUF:RegisterStyle("Tukui", TukuiUnitFrames.Style)
+	oUF:RegisterStyle("Tukui", UnitFrames.Style)
 	oUF:SetActiveStyle("Tukui")
 
 	self:DisableBlizzard()
-	self:CreateAnchor()
 	self:CreateUnits()
 
 	if (C.Raid.DebuffWatch) then
@@ -1149,7 +915,7 @@ function TukuiUnitFrames:Enable()
 		local RaidDebuffs = CreateFrame("Frame")
 
 		RaidDebuffs:RegisterEvent("PLAYER_ENTERING_WORLD")
-		RaidDebuffs:SetScript("OnEvent", TukuiUnitFrames.UpdateRaidDebuffIndicator)
+		RaidDebuffs:SetScript("OnEvent", UnitFrames.UpdateRaidDebuffIndicator)
 
 		if (ORD) then
 			ORD.ShowDispellableDebuff = true
@@ -1157,24 +923,7 @@ function TukuiUnitFrames:Enable()
 			ORD.MatchBySpellName = false
 		end
 	end
-
-	if T.WoWBuild >= 28724 then
-		-- Remove this 8.1 ugly bar
-		local PNPFrames = {
-			ClassNameplateManaBarFrame,
-			ClassNameplateManaBarFrame.Border,
-			ClassNameplateManaBarFrame.FeedbackFrame,
-			ClassNameplateManaBarFrame.FullPowerFrame,
-			ClassNameplateManaBarFrame.ManaCostPredictionBar,
-			ClassNameplateManaBarFrame.background,
-			ClassNameplateManaBarFrame.Texture
-		}
-
-		for _, PNPFrame in pairs(PNPFrames) do
-			PNPFrame:ClearAllPoints()
-			PNPFrame:SetParent(T.Panels.Hider)
-		end
-	end
+	
+	-- Overwrite oUF Pet Battle frame visibility
+	RegisterStateDriver(Tukui_PetBattleFrameHider, "visibility", "hide")
 end
-
-T["UnitFrames"] = TukuiUnitFrames

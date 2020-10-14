@@ -1,7 +1,13 @@
-* Watch for known rares which announce themselves in chat (e.g. Arachnoid Harvester)
-* Add the broker dropdown to the world map frame -- now you can look at the rare list with loot for any zone
-* Add right-clicking on the target popup's close button to ignore the mob
-* Allow the waypoint auto-clear timer to be set in 5 second increments
-* Fix the target popup not showing up after combat ends if you noticed a rare during combat
-* Cleaned up some of the warfront map locations
-* Stop the achievement completed-by-alt check from behaving differently than whether your current character has completed it
+* Shadowlands data: most of the new rares are included, with questids and loot. Some are still missing quests, but we've got time.
+* Integration with "TomTom" is now "Waypoints", and can use the new built-in waypointing system or TomTom as you choose.
+    * Ctrl-clicking the target popup will set a waypoint for the mob.
+    * Shift-clicking the target popup will paste a clickable link to the mob to an open chatbox.
+    * These waypoints will only be accurate for mobs detected through minimap vignettes, otherwise it's just going to point at wherever you were when you saw it.
+    * The built-in waypointing can only have one waypoint at a time, so things like waypointing every spawn of a mob at once aren't possible.
+    * If you already have a waypoint, SilverDragon will replace it and then try to restore it. (Or can be configured to not add waypoints if you already have one.)
+* Added missing toys in Warlords, Mists, and Legion
+* The macro targeting now better respects mobs that should be ignored
+* Fixed target scanning to work in instances again
+* Fixed chat scanning not opening the target popup
+* Fixed an error from chat scanning in instances
+* Fixed the id for Rukhmar

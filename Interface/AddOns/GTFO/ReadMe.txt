@@ -1517,3 +1517,7 @@ Change Log:
 * Added SL spells for Theater of Pain
 * Added SL spells for The Necrotic Wake
 * Added SL spells for De Other Side
+
+4.56.1
+* Added Battle for Azeroth spells (world)
+* Added BFA spells for Ny'alotha, the Waking City

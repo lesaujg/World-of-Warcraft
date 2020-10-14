@@ -31,8 +31,8 @@ WeakAurasSaved = {
 		["Serpent Sting"] = {
 			[259491] = 1033905,
 		},
-		["Volley"] = {
-			[194386] = 132222,
+		["Bullseye"] = {
+			[204090] = 236179,
 		},
 		["Flask of the Seventh Demon"] = {
 			[188033] = 1385241,
@@ -66,8 +66,8 @@ WeakAurasSaved = {
 		["Posthaste"] = {
 			[118922] = 461119,
 		},
-		["Fel Focus"] = {
-			[242551] = 134924,
+		["Misdirection"] = {
+			[35079] = 132180,
 		},
 		["Dire Frenzy"] = {
 			[217200] = 132133,
@@ -75,8 +75,10 @@ WeakAurasSaved = {
 		["Intimidation"] = {
 			[24394] = 132111,
 		},
-		["Tip of the Spear"] = {
-			[260286] = 1117879,
+		["Bestial Wrath"] = {
+			[19574] = 132127,
+			[186254] = "Interface\\Icons\\Ability_Druid_FerociousBite",
+			[211183] = "Interface\\Icons\\Ability_Druid_FerociousBite",
 		},
 		["Parsel's Tongue"] = {
 			[248085] = 461114,
@@ -97,15 +99,14 @@ WeakAurasSaved = {
 		["Heroism"] = {
 			[32182] = 132313,
 		},
-		["Trick Shots"] = {
-			[257622] = 461846,
+		["Fatigued"] = {
+			[264689] = 136035,
 		},
 		["Latent Poison"] = {
 			[273286] = 136016,
 		},
-		["Trueshot"] = {
-			[193526] = 132329,
-			[288613] = 132329,
+		["Volatile Bomb"] = {
+			[271049] = 2065636,
 		},
 		["Hunter's Mark"] = {
 			[185365] = 236188,
@@ -116,8 +117,8 @@ WeakAurasSaved = {
 		["Bombardment"] = {
 			[82921] = 461846,
 		},
-		["Aspect of the Turtle"] = {
-			[186265] = 132199,
+		["Aspect of the Wild"] = {
+			[193530] = 136074,
 		},
 		["Time Warp"] = {
 			[80353] = 458224,
@@ -126,20 +127,21 @@ WeakAurasSaved = {
 		["Beast Cleave"] = {
 			[118455] = 461121,
 		},
-		["Volatile Bomb"] = {
-			[271049] = 2065636,
+		["Trueshot"] = {
+			[193526] = 132329,
+			[288613] = 132329,
 		},
 		["Camouflage"] = {
 			[199483] = 461113,
 		},
-		["Aspect of the Wild"] = {
-			[193530] = 136074,
+		["Aspect of the Turtle"] = {
+			[186265] = 132199,
 		},
-		["Fatigued"] = {
-			[264689] = 136035,
+		["Trick Shots"] = {
+			[257622] = 461846,
 		},
-		["Misdirection"] = {
-			[35079] = 132180,
+		["Fel Focus"] = {
+			[242551] = 134924,
 		},
 		["Aspect of the Eagle"] = {
 			[186289] = 612363,
@@ -151,10 +153,8 @@ WeakAurasSaved = {
 			[186257] = 132242,
 			[186258] = 132242,
 		},
-		["Bestial Wrath"] = {
-			[19574] = 132127,
-			[186254] = "Interface\\Icons\\Ability_Druid_FerociousBite",
-			[211183] = "Interface\\Icons\\Ability_Druid_FerociousBite",
+		["Tip of the Spear"] = {
+			[260286] = 1117879,
 		},
 		["Steady Focus"] = {
 			[193534] = 236182,
@@ -166,8 +166,8 @@ WeakAurasSaved = {
 			[264735] = 136051,
 			[281195] = 136094,
 		},
-		["Bullseye"] = {
-			[204090] = 236179,
+		["Volley"] = {
+			[194386] = 132222,
 		},
 		["Caltrops"] = {
 			[194279] = 1035047,
@@ -225,7 +225,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -314,15 +314,30 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "E(iUfeJVLKj",
-			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["authorOptions"] = {
 			},
-			["regionType"] = "icon",
 			["xOffset"] = 0,
-			["icon"] = true,
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
 			["conditions"] = {
 			},
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["icon"] = true,
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "S - MQ - Magister Umbric - Tainted Polymorph",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["semver"] = "1.0.0",
+			["config"] = {
+			},
+			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -343,20 +358,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "S - MQ - Magister Umbric - Tainted Polymorph",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["width"] = 80,
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Horrific Visions",
 			["displayIcon"] = 136071,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -396,7 +397,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -504,34 +505,11 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["uid"] = "fun5X8T920w",
-			["selfPoint"] = "CENTER",
-			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
-			["cooldownEdge"] = false,
-			["authorOptions"] = {
-			},
-			["conditions"] = {
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["zoom"] = 0.003,
-			["width"] = 80,
 			["cooldownTextDisabled"] = true,
-			["auto"] = false,
-			["tocversion"] = 80300,
-			["id"] = "S - OT - Alx'kov the Infested - Lurking Appendage",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "1.0.0",
-			["config"] = {
-			},
-			["inverse"] = false,
+			["uid"] = "fun5X8T920w",
+			["parent"] = "Horrific Visions",
+			["cooldownEdge"] = false,
+			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Avoid.ogg",
@@ -543,6 +521,30 @@ WeakAurasSaved = {
 					["custom"] = "local locale = GetLocale();\n-- These locales are equivalent\nif (locale ~= \"ruRU\") then\n    locale = \"enGB\"\nend\n\nlocal i18n_strings = {\n    -- English (United Kingdom enGB | United States enUS)\n    [\"enGB\"] = {\n        [\"text\"] = \"Avoid\"\n    },\n    -- Russian (Russia)\n    [\"ruRU\"] = {\n        [\"text\"] = \"Избегай\"\n    }\n}\n\naura_env.i18n_strings = i18n_strings[locale];\n\n\n\n",
 					["do_custom"] = true,
 				},
+			},
+			["conditions"] = {
+			},
+			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["zoom"] = 0.003,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80300,
+			["id"] = "S - OT - Alx'kov the Infested - Lurking Appendage",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = false,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["displayIcon"] = 537022,
 			["cooldown"] = true,
@@ -599,7 +601,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -707,30 +709,31 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "FWlICquYu4e",
-			["selfPoint"] = "CENTER",
 			["xOffset"] = 0,
-			["regionType"] = "icon",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["icon"] = true,
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
 			["conditions"] = {
 			},
-			["authorOptions"] = {
-			},
-			["cooldownTextDisabled"] = true,
+			["selfPoint"] = "CENTER",
+			["icon"] = true,
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - TRASH - Endless Hunger Totem",
-			["alpha"] = 1,
 			["frameStrata"] = 1,
+			["alpha"] = 1,
 			["width"] = 80,
-			["auto"] = false,
+			["semver"] = "1.0.0",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["parent"] = "Horrific Visions",
+			["authorOptions"] = {
+			},
 			["displayIcon"] = 2101983,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -790,7 +793,7 @@ WeakAurasSaved = {
 				}, -- [2]
 				["activeTriggerMode"] = 1,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -900,10 +903,15 @@ WeakAurasSaved = {
 				},
 			},
 			["regionType"] = "icon",
-			["authorOptions"] = {
+			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.379999995231628, -- [4]
 			},
 			["cooldownTextDisabled"] = false,
-			["icon"] = true,
+			["ignoreOptionsEventErrors"] = true,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -930,9 +938,9 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["stickyDuration"] = false,
 			["id"] = "Mend Pet",
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
 			["width"] = 50,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
 			["config"] = {
 			},
 			["uid"] = "IlCxQmAgTQe",
@@ -941,11 +949,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.379999995231628, -- [4]
+			["authorOptions"] = {
 			},
 		},
 		["S - TD - Inquisitor Darkspeak - Agonizing Torment"] = {
@@ -983,7 +987,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -1091,21 +1095,35 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["config"] = {
 			},
-			["cooldownEdge"] = false,
 			["selfPoint"] = "CENTER",
-			["regionType"] = "icon",
 			["authorOptions"] = {
 			},
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
+			["conditions"] = {
+			},
+			["cooldownEdge"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["conditions"] = {
-			},
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "S - TD - Inquisitor Darkspeak - Agonizing Torment",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["semver"] = "1.0.0",
+			["uid"] = "PiceK4Io6y3",
+			["inverse"] = false,
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Interrupt.ogg",
@@ -1118,19 +1136,6 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["width"] = 80,
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "S - TD - Inquisitor Darkspeak - Agonizing Torment",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["auto"] = false,
-			["uid"] = "PiceK4Io6y3",
-			["inverse"] = false,
-			["parent"] = "Horrific Visions",
 			["displayIcon"] = 1386551,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -1252,7 +1257,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["columnSpace"] = 1,
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -1278,6 +1283,8 @@ WeakAurasSaved = {
 			["version"] = 1,
 			["subRegions"] = {
 			},
+			["ignoreOptionsEventErrors"] = true,
+			["borderInset"] = 1,
 			["load"] = {
 				["use_class"] = false,
 				["spec"] = {
@@ -1293,55 +1300,56 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["limit"] = 5,
+			["selfPoint"] = "LEFT",
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["selfPoint"] = "LEFT",
+			["stagger"] = 0,
 			["animate"] = false,
-			["xOffset"] = -113.2230224609375,
+			["anchorPoint"] = "CENTER",
 			["scale"] = 1,
-			["useLimit"] = false,
+			["radius"] = 200,
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["anchorPoint"] = "CENTER",
-			["rowSpace"] = 1,
+			["limit"] = 5,
+			["xOffset"] = -113.2230224609375,
 			["constantFactor"] = "RADIUS",
-			["borderInset"] = 1,
+			["useLimit"] = false,
 			["borderOffset"] = 4,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "Horrific Visions",
-			["radius"] = 200,
+			["frameStrata"] = 1,
 			["gridWidth"] = 5,
 			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
 			["uid"] = "6N0f)5QDjqW",
 			["config"] = {
 			},
+			["fullCircle"] = true,
 			["yOffset"] = -243.2216491699219,
 			["conditions"] = {
 			},
-			["stagger"] = 0,
 			["arcLength"] = 360,
+			["rowSpace"] = 1,
 		},
 		["Dance of Death"] = {
 			["sparkWidth"] = 10,
 			["borderBackdrop"] = "Blizzard Tooltip",
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["xOffset"] = 0,
 			["preferToUpdate"] = false,
-			["semver"] = "1.0.0",
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["parent"] = "Hunter - 0.4 (Barbed Shot Bars) BM",
-			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
+			["sparkRotation"] = 0,
+			["sparkRotationMode"] = "AUTO",
 			["url"] = "https://wago.io/QM6DPA9wM/1",
 			["icon"] = false,
 			["fontFlags"] = "OUTLINE",
@@ -1351,8 +1359,13 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 33,
-			["sparkRotationMode"] = "AUTO",
+			["internalVersion"] = 37,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -1390,19 +1403,6 @@ WeakAurasSaved = {
 				},
 			},
 			["backdropInFront"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
-			["barColor"] = {
-				0.69411764705882, -- [1]
-				0.50196078431373, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["stickyDuration"] = false,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -1455,7 +1455,15 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(t) return t[1] end",
 				["activeTriggerMode"] = -10,
 			},
+			["barColor"] = {
+				0.69411764705882, -- [1]
+				0.50196078431373, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["stickyDuration"] = false,
 			["version"] = 1,
+			["useAdjustededMax"] = false,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -1575,65 +1583,6 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 15,
-			["useAdjustededMax"] = false,
-			["load"] = {
-				["talent2"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["single"] = 1,
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["single"] = "HUNTER",
-					["multi"] = {
-					},
-				},
-				["ingroup"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["use_spec"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["use_combat"] = true,
-				["use_class"] = true,
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["sparkBlendMode"] = "ADD",
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
 			["config"] = {
 				["gcdCol"] = {
 					1, -- [1]
@@ -1674,11 +1623,70 @@ WeakAurasSaved = {
 					1, -- [4]
 				},
 			},
+			["load"] = {
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "HUNTER",
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["use_class"] = true,
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["sparkBlendMode"] = "ADD",
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
 			["uid"] = "cDigmsTozaR",
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
 			["desaturate"] = false,
 			["sparkHidden"] = "NEVER",
+			["auto"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
 			["borderInFront"] = true,
@@ -1686,10 +1694,10 @@ WeakAurasSaved = {
 			["icon_side"] = "RIGHT",
 			["spark"] = false,
 			["sparkHeight"] = 30,
+			["ignoreOptionsEventErrors"] = true,
 			["texture"] = "Aluminium",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["zoom"] = 0,
-			["auto"] = true,
+			["semver"] = "1.0.0",
 			["tocversion"] = 80205,
 			["id"] = "Dance of Death",
 			["selfPoint"] = "CENTER",
@@ -1869,7 +1877,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -1946,11 +1954,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -1962,41 +1970,11 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["uid"] = "apFsvSMWHd5",
-			["authorOptions"] = {
-			},
-			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Escort.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "local locale = GetLocale();\n-- These locales are equivalent\nif (locale ~= \"ruRU\") then\n    locale = \"enGB\"\nend\n\nlocal i18n_strings = {\n    -- English (United Kingdom enGB | United States enUS)\n    [\"enGB\"] = {\n        [\"text\"] = \"Closer\\nTEST\"\n    },\n    -- Russian (Russia)\n    [\"ruRU\"] = {\n        [\"text\"] = \"Кучнее\\nTEST\"\n    }\n}\n\naura_env.i18n_strings = i18n_strings[locale];\n\n\n\n",
-					["do_custom"] = true,
-				},
-			},
-			["conditions"] = {
-			},
-			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["cooldownTextDisabled"] = true,
-			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "[TEST] MADNESS -  Madness Shortsighted",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
+			["uid"] = "apFsvSMWHd5",
+			["parent"] = "Horrific Visions",
+			["xOffset"] = 0,
+			["regionType"] = "icon",
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -2017,6 +1995,37 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["conditions"] = {
+			},
+			["authorOptions"] = {
+			},
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Escort.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "local locale = GetLocale();\n-- These locales are equivalent\nif (locale ~= \"ruRU\") then\n    locale = \"enGB\"\nend\n\nlocal i18n_strings = {\n    -- English (United Kingdom enGB | United States enUS)\n    [\"enGB\"] = {\n        [\"text\"] = \"Closer\\nTEST\"\n    },\n    -- Russian (Russia)\n    [\"ruRU\"] = {\n        [\"text\"] = \"Кучнее\\nTEST\"\n    }\n}\n\naura_env.i18n_strings = i18n_strings[locale];\n\n\n\n",
+					["do_custom"] = true,
+				},
+			},
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "[TEST] MADNESS -  Madness Shortsighted",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["width"] = 80,
+			["semver"] = "1.0.0",
+			["config"] = {
+			},
+			["inverse"] = false,
+			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["displayIcon"] = "3163628",
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -2069,15 +2078,16 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["columnSpace"] = 1,
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["useLimit"] = false,
 			["align"] = "CENTER",
 			["rotation"] = 0,
+			["constantFactor"] = "RADIUS",
 			["version"] = 1,
 			["subRegions"] = {
 			},
-			["config"] = {
-			},
+			["gridType"] = "RD",
+			["rowSpace"] = 1,
 			["load"] = {
 				["use_class"] = "true",
 				["class"] = {
@@ -2094,37 +2104,39 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["arcLength"] = 360,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["borderEdge"] = "Square Full White",
+			["radius"] = 200,
 			["animate"] = false,
-			["gridType"] = "RD",
+			["selfPoint"] = "BOTTOM",
 			["scale"] = 1,
-			["arcLength"] = 360,
+			["stagger"] = 0,
 			["border"] = false,
-			["anchorFrameFrame"] = "WeakAuras:Focus",
+			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["groupIcon"] = 2058007,
-			["rowSpace"] = 1,
-			["constantFactor"] = "RADIUS",
-			["limit"] = 5,
+			["authorOptions"] = {
+			},
+			["config"] = {
+			},
+			["ignoreOptionsEventErrors"] = true,
+			["frameStrata"] = 1,
 			["borderOffset"] = 4,
 			["semver"] = "1.0.0",
 			["tocversion"] = 80205,
 			["id"] = "Hunter - 0.4 (Barbed Shot Bars) BM",
+			["limit"] = 5,
 			["gridWidth"] = 5,
-			["frameStrata"] = 1,
 			["anchorFrameType"] = "SELECTFRAME",
 			["borderInset"] = 1,
 			["uid"] = "cCYibeyxPJ1",
+			["anchorFrameFrame"] = "WeakAuras:Focus",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -2145,11 +2157,10 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["radius"] = 200,
 			["conditions"] = {
 			},
-			["stagger"] = 0,
-			["selfPoint"] = "BOTTOM",
+			["fullCircle"] = true,
+			["groupIcon"] = 2058007,
 		},
 		["S - DD - Therum Deepforge - Empowered Forge Breath"] = {
 			["xOffset"] = 0,
@@ -2186,7 +2197,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -2294,11 +2305,10 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["config"] = {
 			},
-			["cooldownEdge"] = false,
 			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Front.ogg",
@@ -2311,29 +2321,31 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
+			["regionType"] = "icon",
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+			},
+			["cooldownEdge"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["conditions"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["zoom"] = 0.003,
+			["ignoreOptionsEventErrors"] = true,
 			["width"] = 80,
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.0",
+			["zoom"] = 0.003,
+			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - DD - Therum Deepforge - Empowered Forge Breath",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["auto"] = false,
+			["semver"] = "1.0.0",
 			["uid"] = "p33s4v9EAh2",
 			["inverse"] = false,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["displayIcon"] = 615339,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -2377,7 +2389,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -2466,7 +2478,15 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "cQu5AOosLym",
+			["parent"] = "Horrific Visions",
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["conditions"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -2487,10 +2507,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
-			["authorOptions"] = {
-			},
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Dodge.ogg",
@@ -2503,28 +2519,25 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["conditions"] = {
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "S - MQ - Magister Umbric - Frozen Storm",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["width"] = 80,
+			["semver"] = "1.0.0",
+			["config"] = {
 			},
+			["inverse"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["cooldownTextDisabled"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "S - MQ - Magister Umbric - Frozen Storm",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["displayIcon"] = 629077,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -2583,7 +2596,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -2679,11 +2692,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -2695,34 +2708,35 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "DJ9JFJwWrzb",
-			["icon"] = true,
 			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["regionType"] = "icon",
 			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["selfPoint"] = "CENTER",
+			["conditions"] = {
+			},
+			["icon"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["conditions"] = {
-			},
-			["parent"] = "Horrific Visions",
-			["zoom"] = 0.003,
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.0",
+			["zoom"] = 0.003,
+			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - VoH - Misha - Desperate Retching DEBUFF",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["width"] = 80,
-			["auto"] = false,
+			["semver"] = "1.0.0",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["selfPoint"] = "CENTER",
+			["parent"] = "Horrific Visions",
 			["displayIcon"] = 136182,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -2781,7 +2795,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -2877,11 +2891,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -2893,34 +2907,35 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "ESBNiYntKpf",
-			["icon"] = true,
 			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["regionType"] = "icon",
 			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["selfPoint"] = "CENTER",
+			["conditions"] = {
+			},
+			["icon"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["conditions"] = {
-			},
-			["parent"] = "Horrific Visions",
-			["zoom"] = 0.003,
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.0",
+			["zoom"] = 0.003,
+			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - VoH - Misha - Maddening Roar",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["width"] = 80,
-			["auto"] = false,
+			["semver"] = "1.0.0",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["selfPoint"] = "CENTER",
+			["parent"] = "Horrific Visions",
 			["displayIcon"] = 132117,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -2971,7 +2986,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -3060,8 +3075,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "FqJ3zuHsAK4",
-			["icon"] = true,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -3082,32 +3097,33 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["regionType"] = "icon",
 			["cooldownEdge"] = false,
+			["regionType"] = "icon",
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+			},
+			["icon"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["conditions"] = {
-			},
-			["parent"] = "Horrific Visions",
-			["zoom"] = 0.003,
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["auto"] = false,
+			["zoom"] = 0.003,
+			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "S - OT - Armsmaster Terenson - Blade Flourish",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["width"] = 80,
-			["semver"] = "1.0.0",
+			["auto"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["authorOptions"] = {
-			},
+			["parent"] = "Horrific Visions",
 			["displayIcon"] = 1035036,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -3152,7 +3168,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -3260,11 +3276,16 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "f(C956)k21r",
-			["xOffset"] = 0,
 			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["regionType"] = "icon",
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+			},
+			["xOffset"] = 0,
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Front.ogg",
@@ -3277,24 +3298,20 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["conditions"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["zoom"] = 0.003,
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.0",
+			["zoom"] = 0.003,
+			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - VoS - Decimator Shiq'voth - Surging Fist",
-			["alpha"] = 1,
 			["frameStrata"] = 1,
+			["alpha"] = 1,
 			["width"] = 80,
-			["auto"] = false,
+			["semver"] = "1.0.0",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["displayIcon"] = 877699,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -3305,6 +3322,7 @@ WeakAurasSaved = {
 			["xOffset"] = 3.754150390625,
 			["yOffset"] = -379.97346496582,
 			["anchorPoint"] = "CENTER",
+			["ignoreOptionsEventErrors"] = true,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/FrenzyTracker/11",
@@ -3316,11 +3334,10 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["useAdjustedMin"] = false,
 			["selfPoint"] = "CENTER",
 			["backdropInFront"] = false,
-			["alpha"] = 1,
 			["barColor"] = {
 				0.67058823529412, -- [1]
 				0.82745098039216, -- [2]
@@ -3352,6 +3369,42 @@ WeakAurasSaved = {
 				["disjunctive"] = "custom",
 				["customTriggerLogic"] = "function(t) return t[1] end",
 				["activeTriggerMode"] = -10,
+			},
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["scalex"] = 1,
+					["alphaType"] = "custom",
+					["colorA"] = 1,
+					["colorG"] = 0,
+					["alphaFunc"] = "\n\n",
+					["use_alpha"] = false,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["colorB"] = 0,
+					["y"] = 0,
+					["colorType"] = "custom",
+					["x"] = 0,
+					["easeStrength"] = 3,
+					["colorFunc"] = "function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n    if aura_env.state and aura_env.state.expirationTime then\n        local aura_env = aura_env\n        \n        -- currentGCD\n        local gcdStart, gcdDur = GetSpellCooldown(61304)\n        if gcdStart > 0 then\n            local remainingGCD = (gcdStart+gcdDur)-GetTime()\n            local width = min( aura_env.region.bar.fg:GetWidth(),(aura_env.region.width/aura_env.state.duration)*remainingGCD)\n            aura_env.region.bar.currentGCD:SetWidth(width)\n            aura_env.region.bar.currentGCD:SetAlpha(1)\n        else\n            aura_env.region.bar.currentGCD:SetWidth(1)\n            aura_env.region.bar.currentGCD:SetAlpha(0)\n        end\n        \n        --Calc the GCD\n        if not aura_env.gcd then\n            aura_env.gcd = gcdDur > 0 and gcdDur or (1.5/(1 + (0.01 * UnitSpellHaste(\"player\"))))\n        elseif gcdDur > 0 and gcdDur ~= aura_env.gcd then\n            aura_env.gcd = gcdDur\n        end\n        \n        -- if we need to redraw ticks (GCD changed or buff refreshed)    \n        if not aura_env.prevGCD or aura_env.gcd ~= aura_env.prevGCD \n        or not aura_env.prevDur or aura_env.prevDur ~= aura_env.state.duration \n        then\n            aura_env.prevDur = aura_env.state.duration\n            aura_env.prevGCD = aura_env.gcd\n            aura_env.region.tickPool:ReleaseAll()\n            -- make ticks and anchor them\n            local ticks = floor(aura_env.state.duration / aura_env.gcd)\n            for i = 1, ticks do\n                local tick = aura_env.Acquire()\n                local offset = (aura_env.region.width/aura_env.state.duration)*(aura_env.gcd*i)\n                tick:ClearAllPoints()\n                local alphaMulti = 1 - (i / (ticks+1))\n                tick:SetColorTexture(aura_env.red, aura_env.green, aura_env.blue, aura_env.alpha*alphaMulti)\n                tick:SetPoint(\"CENTER\", aura_env.region.bar.currentGCD, \"LEFT\", 0-offset, 0)\n                tick:Show()\n            end\n        end\n        \n        -- handle the CD bar\n        local charges, maxCharges, start, duration = GetSpellCharges(217200)\n        if charges < maxCharges then\n            local remainingCD = (start+duration)-GetTime()\n            aura_env.state.CD = string.format(\"%.1f\", remainingCD)\n            local width = (aura_env.region.width/aura_env.state.duration)*min(remainingCD, aura_env.state.duration)\n            aura_env.region.bar.CD:SetWidth(width)\n            if not aura_env.prevCharges or charges ~= aura_env.prevCharges then\n                aura_env.prevCharges = charges\n                if charges > 0 then\n                    aura_env.region.bar.CD:SetColorTexture(aura_env.red1, aura_env.green1, aura_env.blue1, aura_env.alpha1)\n                else\n                    aura_env.region.bar.CD:SetColorTexture(aura_env.red2, aura_env.green2, aura_env.blue2, aura_env.alpha2)\n                end\n            end\n            if charges == 0 and (start+duration) > aura_env.state.expirationTime then\n                return r2,g2,b2,a2\n            end\n        end\n    end\n    return r1,g1,b1,a1 \n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+					["rotate"] = 0,
+					["use_color"] = true,
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -3472,42 +3525,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 20,
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["scalex"] = 1,
-					["alphaType"] = "custom",
-					["colorA"] = 1,
-					["colorG"] = 0,
-					["alphaFunc"] = "\n\n",
-					["use_alpha"] = false,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["colorB"] = 0,
-					["y"] = 0,
-					["colorType"] = "custom",
-					["x"] = 0,
-					["easeStrength"] = 3,
-					["colorFunc"] = "function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n    if aura_env.state and aura_env.state.expirationTime then\n        local aura_env = aura_env\n        \n        -- currentGCD\n        local gcdStart, gcdDur = GetSpellCooldown(61304)\n        if gcdStart > 0 then\n            local remainingGCD = (gcdStart+gcdDur)-GetTime()\n            local width = min( aura_env.region.bar.fg:GetWidth(),(aura_env.region.width/aura_env.state.duration)*remainingGCD)\n            aura_env.region.bar.currentGCD:SetWidth(width)\n            aura_env.region.bar.currentGCD:SetAlpha(1)\n        else\n            aura_env.region.bar.currentGCD:SetWidth(1)\n            aura_env.region.bar.currentGCD:SetAlpha(0)\n        end\n        \n        --Calc the GCD\n        if not aura_env.gcd then\n            aura_env.gcd = gcdDur > 0 and gcdDur or (1.5/(1 + (0.01 * UnitSpellHaste(\"player\"))))\n        elseif gcdDur > 0 and gcdDur ~= aura_env.gcd then\n            aura_env.gcd = gcdDur\n        end\n        \n        -- if we need to redraw ticks (GCD changed or buff refreshed)    \n        if not aura_env.prevGCD or aura_env.gcd ~= aura_env.prevGCD \n        or not aura_env.prevDur or aura_env.prevDur ~= aura_env.state.duration \n        then\n            aura_env.prevDur = aura_env.state.duration\n            aura_env.prevGCD = aura_env.gcd\n            aura_env.region.tickPool:ReleaseAll()\n            -- make ticks and anchor them\n            local ticks = floor(aura_env.state.duration / aura_env.gcd)\n            for i = 1, ticks do\n                local tick = aura_env.Acquire()\n                local offset = (aura_env.region.width/aura_env.state.duration)*(aura_env.gcd*i)\n                tick:ClearAllPoints()\n                local alphaMulti = 1 - (i / (ticks+1))\n                tick:SetColorTexture(aura_env.red, aura_env.green, aura_env.blue, aura_env.alpha*alphaMulti)\n                tick:SetPoint(\"CENTER\", aura_env.region.bar.currentGCD, \"LEFT\", 0-offset, 0)\n                tick:Show()\n            end\n        end\n        \n        -- handle the CD bar\n        local charges, maxCharges, start, duration = GetSpellCharges(217200)\n        if charges < maxCharges then\n            local remainingCD = (start+duration)-GetTime()\n            aura_env.state.CD = string.format(\"%.1f\", remainingCD)\n            local width = (aura_env.region.width/aura_env.state.duration)*min(remainingCD, aura_env.state.duration)\n            aura_env.region.bar.CD:SetWidth(width)\n            if not aura_env.prevCharges or charges ~= aura_env.prevCharges then\n                aura_env.prevCharges = charges\n                if charges > 0 then\n                    aura_env.region.bar.CD:SetColorTexture(aura_env.red1, aura_env.green1, aura_env.blue1, aura_env.alpha1)\n                else\n                    aura_env.region.bar.CD:SetColorTexture(aura_env.red2, aura_env.green2, aura_env.blue2, aura_env.alpha2)\n                end\n            end\n            if charges == 0 and (start+duration) > aura_env.state.expirationTime then\n                return r2,g2,b2,a2\n            end\n        end\n    end\n    return r1,g1,b1,a1 \n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-					["rotate"] = 0,
-					["use_color"] = true,
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-			},
+			["version"] = 11,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -3526,7 +3544,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -3534,7 +3552,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -3565,7 +3583,6 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["version"] = 11,
 			["sparkRotationMode"] = "AUTO",
 			["backgroundColor"] = {
 				0, -- [1]
@@ -3574,27 +3591,28 @@ WeakAurasSaved = {
 				0.5, -- [4]
 			},
 			["uid"] = "uYBkg0eaimR",
-			["useAdjustedMax"] = false,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["useAdjustedMax"] = false,
+			["sparkOffsetX"] = 0,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
 			["borderInFront"] = true,
-			["sparkOffsetX"] = 0,
-			["icon_side"] = "RIGHT",
 			["anchorFrameType"] = "SCREEN",
+			["icon_side"] = "RIGHT",
+			["alpha"] = 1,
 			["sparkHeight"] = 30,
 			["texture"] = "Blizzard",
-			["spark"] = false,
-			["zoom"] = 0,
-			["auto"] = true,
 			["id"] = "FrenzyTracker",
-			["sparkHidden"] = "NEVER",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["auto"] = true,
+			["spark"] = false,
+			["sparkHidden"] = "NEVER",
+			["zoom"] = 0,
 			["frameStrata"] = 1,
 			["width"] = 200,
 			["actions"] = {
@@ -3659,7 +3677,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -3748,7 +3766,14 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "8gslbtuatcw",
+			["parent"] = "Horrific Visions",
+			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["cooldownEdge"] = false,
+			["conditions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Front.ogg",
@@ -3761,13 +3786,21 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
-			["xOffset"] = 0,
 			["authorOptions"] = {
 			},
-			["conditions"] = {
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "O - VoH - Aqir Mindhunter - Toxic Breath",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["width"] = 80,
+			["semver"] = "1.0.0",
+			["config"] = {
 			},
+			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -3788,20 +3821,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "O - VoH - Aqir Mindhunter - Toxic Breath",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["cooldownEdge"] = false,
 			["displayIcon"] = 136016,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -3850,7 +3869,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -3927,11 +3946,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -3943,7 +3962,15 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = ")L0MsB(PfoV",
+			["parent"] = "Horrific Visions",
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["conditions"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -3964,10 +3991,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
-			["authorOptions"] = {
-			},
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -3981,28 +4004,25 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["conditions"] = {
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "[TEST] MADNESS - Madness Volatile Intent",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["width"] = 80,
+			["semver"] = "1.0.0",
+			["config"] = {
 			},
+			["inverse"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["cooldownTextDisabled"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "[TEST] MADNESS - Madness Volatile Intent",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["displayIcon"] = "3163620",
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -4056,7 +4076,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -4133,11 +4153,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = true,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -4149,8 +4169,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "fRxxJbLDX7Q",
-			["cooldownEdge"] = false,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -4171,7 +4191,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -4185,25 +4204,27 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["authorOptions"] = {
-			},
+			["regionType"] = "icon",
+			["xOffset"] = 0,
 			["conditions"] = {
 			},
-			["parent"] = "Horrific Visions",
-			["cooldownTextDisabled"] = true,
+			["cooldownEdge"] = false,
+			["authorOptions"] = {
+			},
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["auto"] = false,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "[NOT WORKING] MADNESS - Haunting Shadows",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["width"] = 80,
-			["semver"] = "1.0.0",
+			["auto"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 0,
+			["parent"] = "Horrific Visions",
 			["displayIcon"] = "3163626",
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -4248,7 +4269,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -4337,7 +4358,14 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "C(vWtaCSNWM",
+			["parent"] = "Horrific Visions",
+			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["conditions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Avoid.ogg",
@@ -4350,13 +4378,21 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
-			["xOffset"] = 0,
 			["authorOptions"] = {
 			},
-			["conditions"] = {
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "S - DD - Forge Guard Hurrul - Entropic Leap",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["width"] = 80,
+			["semver"] = "1.0.0",
+			["config"] = {
 			},
+			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -4377,20 +4413,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "S - DD - Forge Guard Hurrul - Entropic Leap",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["displayIcon"] = 878213,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -4441,7 +4463,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -4537,11 +4559,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -4553,7 +4575,15 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["config"] = {
+			},
+			["parent"] = "Horrific Visions",
+			["cooldownEdge"] = false,
+			["regionType"] = "icon",
+			["authorOptions"] = {
+			},
+			["conditions"] = {
 			},
 			["actions"] = {
 				["start"] = {
@@ -4568,27 +4598,20 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
-			["cooldownEdge"] = false,
 			["xOffset"] = 0,
-			["conditions"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["cooldownTextDisabled"] = true,
+			["ignoreOptionsEventErrors"] = true,
 			["width"] = 80,
-			["zoom"] = 0.003,
-			["auto"] = false,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "O - GH - Thrall - Defiled Ground",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["semver"] = "1.0.0",
+			["auto"] = false,
 			["uid"] = "fSfDx7SOzO1",
 			["inverse"] = false,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["displayIcon"] = 136201,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -4632,7 +4655,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -4721,8 +4744,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "WRELKR8OMgu",
-			["cooldownEdge"] = false,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -4743,7 +4766,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Linked.ogg",
@@ -4756,30 +4778,32 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
+			["regionType"] = "icon",
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+			},
+			["cooldownEdge"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["conditions"] = {
-			},
-			["parent"] = "Horrific Visions",
-			["cooldownTextDisabled"] = true,
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["auto"] = false,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "S - TD - Slavemaster Ul'rok - Chains of Servitude DEBUFF",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["width"] = 80,
-			["semver"] = "1.0.0",
+			["auto"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["authorOptions"] = {
-			},
+			["parent"] = "Horrific Visions",
 			["displayIcon"] = 463560,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -4829,7 +4853,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -4937,11 +4961,16 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "N7SxWg(cIVK",
-			["xOffset"] = 0,
 			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["regionType"] = "icon",
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+			},
+			["xOffset"] = 0,
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Interrupt.ogg",
@@ -4954,24 +4983,20 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["conditions"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["zoom"] = 0.003,
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.0",
+			["zoom"] = 0.003,
+			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - TRASH - Touch of the Abyss DEBUFF",
-			["alpha"] = 1,
 			["frameStrata"] = 1,
+			["alpha"] = 1,
 			["width"] = 80,
-			["auto"] = false,
+			["semver"] = "1.0.0",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["displayIcon"] = 1386547,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -5029,7 +5054,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -5106,11 +5131,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -5122,20 +5147,35 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "VdzETLhB0n3",
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
+			["conditions"] = {
+			},
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["regionType"] = "icon",
-			["authorOptions"] = {
-			},
 			["icon"] = true,
-			["conditions"] = {
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "O - GH - Thrall - Seismic Slam",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["semver"] = "1.0.0",
+			["config"] = {
 			},
+			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -5156,20 +5196,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "O - GH - Thrall - Seismic Slam",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["width"] = 80,
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Horrific Visions",
 			["displayIcon"] = "1016245",
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -5250,7 +5276,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -5327,11 +5353,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -5343,7 +5369,14 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "KRoElTgfYGT",
+			["cooldownEdge"] = false,
+			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
+			["conditions"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -5364,17 +5397,25 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldownEdge"] = false,
-			["regionType"] = "icon",
-			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["conditions"] = {
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "S - TD - Inquisitor Darkspeak - Agonizing Torment - Convert",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["semver"] = "1.0.0",
+			["config"] = {
 			},
+			["inverse"] = false,
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -5388,20 +5429,6 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["width"] = 80,
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "S - TD - Inquisitor Darkspeak - Agonizing Torment - Convert",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Horrific Visions",
 			["displayIcon"] = "135740",
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -5462,7 +5489,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -5558,11 +5585,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -5574,35 +5601,36 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["config"] = {
 			},
-			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["authorOptions"] = {
 			},
-			["regionType"] = "icon",
 			["selfPoint"] = "CENTER",
-			["parent"] = "Horrific Visions",
-			["conditions"] = {
-			},
-			["icon"] = true,
-			["zoom"] = 0.003,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["auto"] = false,
-			["tocversion"] = 80300,
-			["id"] = "[NOT WORKING] MADNESS - Madness Split Personallity",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["semver"] = "1.0.0",
-			["uid"] = "1wcskzoxuGz",
-			["inverse"] = false,
+			["regionType"] = "icon",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["conditions"] = {
+			},
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["parent"] = "Horrific Visions",
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.003,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80300,
+			["id"] = "[NOT WORKING] MADNESS - Madness Split Personallity",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["width"] = 80,
+			["auto"] = false,
+			["uid"] = "1wcskzoxuGz",
+			["inverse"] = false,
+			["icon"] = true,
 			["displayIcon"] = "1387356",
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -5660,7 +5688,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -5756,11 +5784,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -5772,35 +5800,36 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["config"] = {
 			},
-			["cooldownEdge"] = false,
 			["authorOptions"] = {
 			},
-			["regionType"] = "icon",
 			["selfPoint"] = "CENTER",
-			["parent"] = "Horrific Visions",
-			["conditions"] = {
-			},
-			["icon"] = true,
-			["zoom"] = 0.003,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
-			["tocversion"] = 80300,
-			["id"] = "MADNESS - Madness Desynchronized",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["semver"] = "1.0.0",
-			["uid"] = "wi3XUskRx4u",
-			["inverse"] = false,
+			["regionType"] = "icon",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["conditions"] = {
+			},
+			["cooldownEdge"] = false,
+			["parent"] = "Horrific Visions",
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.003,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80300,
+			["id"] = "MADNESS - Madness Desynchronized",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["width"] = 80,
+			["auto"] = true,
+			["uid"] = "wi3XUskRx4u",
+			["inverse"] = false,
+			["icon"] = true,
 			["displayIcon"] = "132323",
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -5856,7 +5885,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -5984,30 +6013,31 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "ogDBYlT)DYS",
-			["authorOptions"] = {
-			},
 			["xOffset"] = 0,
-			["regionType"] = "icon",
 			["selfPoint"] = "CENTER",
-			["icon"] = true,
+			["regionType"] = "icon",
+			["cooldownEdge"] = false,
 			["conditions"] = {
 			},
-			["parent"] = "Horrific Visions",
-			["zoom"] = 0.003,
+			["authorOptions"] = {
+			},
+			["icon"] = true,
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.0",
+			["zoom"] = 0.003,
+			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - CS - Alleria Windrunner - Void Eruption",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["width"] = 80,
-			["auto"] = false,
+			["semver"] = "1.0.0",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["cooldownEdge"] = false,
+			["parent"] = "Horrific Visions",
 			["displayIcon"] = 1386548,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -6054,7 +6084,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -6131,11 +6161,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -6147,7 +6177,14 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "tHnrY83fyA3",
+			["cooldownEdge"] = false,
+			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
+			["conditions"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -6168,17 +6205,25 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldownEdge"] = false,
-			["regionType"] = "icon",
-			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["conditions"] = {
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "MADNESS - Madness Promised Power",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["semver"] = "1.0.0",
+			["config"] = {
 			},
+			["inverse"] = false,
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -6192,20 +6237,6 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["width"] = 80,
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "MADNESS - Madness Promised Power",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Horrific Visions",
 			["displayIcon"] = 615101,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -6245,7 +6276,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -6353,21 +6384,35 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["config"] = {
 			},
-			["cooldownEdge"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
 			["authorOptions"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
 			["conditions"] = {
 			},
+			["cooldownEdge"] = false,
+			["selfPoint"] = "CENTER",
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "S - TRASH - Brutal Smash",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["semver"] = "1.0.0",
+			["uid"] = "YCp7sQKWh5W",
+			["inverse"] = false,
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Dodge.ogg",
@@ -6380,19 +6425,6 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["width"] = 80,
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "S - TRASH - Brutal Smash",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["auto"] = false,
-			["uid"] = "YCp7sQKWh5W",
-			["inverse"] = false,
-			["parent"] = "Horrific Visions",
 			["displayIcon"] = 132318,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -6432,7 +6464,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -6540,16 +6572,10 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "hWYoPic3DnV",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["authorOptions"] = {
 			},
-			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Front.ogg",
@@ -6562,24 +6588,31 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
+			["cooldownEdge"] = false,
 			["conditions"] = {
 			},
-			["parent"] = "Horrific Visions",
-			["cooldownTextDisabled"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["selfPoint"] = "CENTER",
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["auto"] = false,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "S - OT - Armsmaster Terenson - Roaring Blast",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["width"] = 80,
-			["semver"] = "1.0.0",
+			["auto"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["cooldownEdge"] = false,
+			["parent"] = "Horrific Visions",
 			["displayIcon"] = 252172,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -6630,7 +6663,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -6719,20 +6752,35 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "dy8Bf51Kl4W",
+			["cooldownEdge"] = false,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
+			["conditions"] = {
+			},
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["cooldownEdge"] = false,
-			["regionType"] = "icon",
-			["authorOptions"] = {
-			},
 			["icon"] = true,
-			["conditions"] = {
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "S - MQ - Zardeth of the Black Claw - Rain of Fire ",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["semver"] = "1.0.0",
+			["config"] = {
 			},
+			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -6753,20 +6801,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "S - MQ - Zardeth of the Black Claw - Rain of Fire ",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["width"] = 80,
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Horrific Visions",
 			["displayIcon"] = 136186,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -6818,7 +6852,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -6926,34 +6960,35 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "YgRUMhPGw5b",
-			["selfPoint"] = "CENTER",
 			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["icon"] = true,
 			["conditions"] = {
 			},
+			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["zoom"] = 0.003,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80300,
+			["id"] = "O - TRASH - Endless Hunger Totem 2",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = false,
+			["config"] = {
+			},
+			["inverse"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["zoom"] = 0.003,
-			["width"] = 80,
-			["cooldownTextDisabled"] = true,
-			["auto"] = false,
-			["tocversion"] = 80300,
-			["id"] = "O - TRASH - Endless Hunger Totem 2",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "1.0.0",
-			["config"] = {
-			},
-			["inverse"] = false,
-			["icon"] = true,
 			["displayIcon"] = 2101983,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -7004,7 +7039,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -7112,35 +7147,36 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["config"] = {
 			},
-			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["authorOptions"] = {
 			},
-			["regionType"] = "icon",
 			["selfPoint"] = "CENTER",
-			["parent"] = "Horrific Visions",
-			["conditions"] = {
-			},
-			["icon"] = true,
-			["zoom"] = 0.003,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["auto"] = false,
-			["tocversion"] = 80300,
-			["id"] = "O - TRASH - Break Spirit",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["semver"] = "1.0.0",
-			["uid"] = "ubZq6vYdrVD",
-			["inverse"] = false,
+			["regionType"] = "icon",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["conditions"] = {
+			},
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["parent"] = "Horrific Visions",
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.003,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80300,
+			["id"] = "O - TRASH - Break Spirit",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["width"] = 80,
+			["auto"] = false,
+			["uid"] = "ubZq6vYdrVD",
+			["inverse"] = false,
+			["icon"] = true,
 			["displayIcon"] = 132155,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -7186,7 +7222,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -7282,11 +7318,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -7298,16 +7334,10 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["config"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -7321,24 +7351,31 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["selfPoint"] = "CENTER",
-			["conditions"] = {
-			},
-			["cooldownEdge"] = false,
-			["cooldownTextDisabled"] = true,
-			["width"] = 80,
-			["zoom"] = 0.003,
-			["auto"] = false,
-			["tocversion"] = 80300,
-			["id"] = "O - TD - Annihilator Lak'hal - Orb of Annihilation",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "1.0.0",
-			["uid"] = "OwGooknholS",
-			["inverse"] = false,
+			["regionType"] = "icon",
 			["authorOptions"] = {
 			},
+			["conditions"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["selfPoint"] = "CENTER",
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80300,
+			["id"] = "O - TD - Annihilator Lak'hal - Orb of Annihilation",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = false,
+			["uid"] = "OwGooknholS",
+			["inverse"] = false,
+			["cooldownEdge"] = false,
 			["displayIcon"] = 1097742,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -7401,7 +7438,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -7497,11 +7534,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -7513,30 +7550,31 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "iPIsS1pu)Km",
-			["icon"] = true,
 			["xOffset"] = 0,
-			["regionType"] = "icon",
 			["selfPoint"] = "CENTER",
-			["cooldownEdge"] = false,
+			["regionType"] = "icon",
+			["authorOptions"] = {
+			},
 			["conditions"] = {
 			},
-			["parent"] = "Horrific Visions",
-			["zoom"] = 0.003,
+			["icon"] = true,
+			["cooldownEdge"] = false,
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.0",
+			["zoom"] = 0.003,
+			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - VoW - Vez'okk the Lightless - Defiled Ground",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["width"] = 80,
-			["auto"] = false,
+			["semver"] = "1.0.0",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["authorOptions"] = {
-			},
+			["parent"] = "Horrific Visions",
 			["displayIcon"] = 136201,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -7583,7 +7621,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -7660,11 +7698,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -7676,7 +7714,14 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "jT4XQkSwZw1",
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
+			["conditions"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -7697,17 +7742,25 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["regionType"] = "icon",
-			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["conditions"] = {
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "S - CS - Alleria Windrunner - Darkened Sky",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["semver"] = "1.0.0",
+			["config"] = {
 			},
+			["inverse"] = false,
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -7721,20 +7774,6 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["width"] = 80,
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "S - CS - Alleria Windrunner - Darkened Sky",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Horrific Visions",
 			["displayIcon"] = "132323",
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -7787,7 +7826,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -7844,12 +7883,13 @@ WeakAurasSaved = {
 			["fontSize"] = 14,
 			["shadowXOffset"] = 1,
 			["regionType"] = "text",
-			["shadowYOffset"] = -1,
-			["parent"] = "Horrific Visions",
 			["fixedWidth"] = 200,
+			["parent"] = "Horrific Visions",
+			["shadowYOffset"] = -1,
+			["ignoreOptionsEventErrors"] = true,
 			["selfPoint"] = "BOTTOM",
 			["xOffset"] = 0,
-			["justify"] = "LEFT",
+			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "Horrific Vision - AutoMarker",
 			["authorOptions"] = {
@@ -8054,7 +8094,7 @@ WeakAurasSaved = {
 			},
 			["uid"] = "pVLTcVQ)Xt5",
 			["wordWrap"] = "WordWrap",
-			["semver"] = "1.0.0",
+			["justify"] = "LEFT",
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -8101,7 +8141,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -8190,7 +8230,25 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "qjSkdH46WCG",
+			["parent"] = "Horrific Visions",
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["regionType"] = "icon",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Move.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "local locale = GetLocale();\n-- These locales are equivalent\nif (locale ~= \"ruRU\") then\n    locale = \"enGB\"\nend\n\nlocal i18n_strings = {\n    -- English (United Kingdom enGB | United States enUS)\n    [\"enGB\"] = {\n        [\"text\"] = \"Move away\"\n    },\n    -- Russian (Russia)\n    [\"ruRU\"] = {\n        [\"text\"] = \"Отбеги\"\n    }\n}\n\naura_env.i18n_strings = i18n_strings[locale];\n\n\n\n",
+					["do_custom"] = true,
+				},
+			},
+			["conditions"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -8211,43 +8269,26 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
-			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["authorOptions"] = {
 			},
-			["conditions"] = {
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["zoom"] = 0.003,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80300,
+			["id"] = "S - TD - Slavemaster Ul'rok - Chains of Servitude",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = false,
+			["config"] = {
 			},
+			["inverse"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
-			},
-			["zoom"] = 0.003,
-			["width"] = 80,
-			["cooldownTextDisabled"] = true,
-			["auto"] = false,
-			["tocversion"] = 80300,
-			["id"] = "S - TD - Slavemaster Ul'rok - Chains of Servitude",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "1.0.0",
-			["config"] = {
-			},
-			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Move.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "local locale = GetLocale();\n-- These locales are equivalent\nif (locale ~= \"ruRU\") then\n    locale = \"enGB\"\nend\n\nlocal i18n_strings = {\n    -- English (United Kingdom enGB | United States enUS)\n    [\"enGB\"] = {\n        [\"text\"] = \"Move away\"\n    },\n    -- Russian (Russia)\n    [\"ruRU\"] = {\n        [\"text\"] = \"Отбеги\"\n    }\n}\n\naura_env.i18n_strings = i18n_strings[locale];\n\n\n\n",
-					["do_custom"] = true,
-				},
 			},
 			["displayIcon"] = 463560,
 			["cooldown"] = true,
@@ -8294,7 +8335,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -8390,11 +8431,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -8406,16 +8447,10 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["config"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -8429,24 +8464,31 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["selfPoint"] = "CENTER",
-			["conditions"] = {
-			},
-			["cooldownEdge"] = false,
-			["cooldownTextDisabled"] = true,
-			["width"] = 80,
-			["zoom"] = 0.003,
-			["auto"] = false,
-			["tocversion"] = 80300,
-			["id"] = "O - TD - Inquisitor Gnshal - Void Torrent",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "1.0.0",
-			["uid"] = "Qfn967n2oZz",
-			["inverse"] = false,
+			["regionType"] = "icon",
 			["authorOptions"] = {
 			},
+			["conditions"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["selfPoint"] = "CENTER",
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80300,
+			["id"] = "O - TD - Inquisitor Gnshal - Void Torrent",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = false,
+			["uid"] = "Qfn967n2oZz",
+			["inverse"] = false,
+			["cooldownEdge"] = false,
 			["displayIcon"] = 608955,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -8502,7 +8544,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -8642,34 +8684,35 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "M6sLNvDgv)X",
-			["icon"] = true,
 			["cooldownEdge"] = false,
-			["regionType"] = "icon",
 			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["selfPoint"] = "CENTER",
+			["conditions"] = {
+			},
+			["icon"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["conditions"] = {
-			},
-			["parent"] = "Horrific Visions",
-			["zoom"] = 0.003,
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.0",
+			["zoom"] = 0.003,
+			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "COMMON - TRASH - Void Buffet",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["width"] = 80,
-			["auto"] = false,
+			["semver"] = "1.0.0",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["selfPoint"] = "CENTER",
+			["parent"] = "Horrific Visions",
 			["displayIcon"] = 132851,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -8728,7 +8771,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -8824,11 +8867,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -8840,34 +8883,35 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "xgfdYBVjMmY",
-			["selfPoint"] = "CENTER",
 			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["icon"] = true,
 			["conditions"] = {
 			},
+			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["zoom"] = 0.003,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80300,
+			["id"] = "O - VoS - Oblivion Elemental - Hopelessness",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = false,
+			["config"] = {
+			},
+			["inverse"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["zoom"] = 0.003,
-			["width"] = 80,
-			["cooldownTextDisabled"] = true,
-			["auto"] = false,
-			["tocversion"] = 80300,
-			["id"] = "O - VoS - Oblivion Elemental - Hopelessness",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "1.0.0",
-			["config"] = {
-			},
-			["inverse"] = false,
-			["icon"] = true,
 			["displayIcon"] = "237555",
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -8875,9 +8919,9 @@ WeakAurasSaved = {
 		["FrenzyTracker 2"] = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["parent"] = "Hunter - 0.4 (Barbed Shot Bars) BM",
 			["preferToUpdate"] = false,
-			["auto"] = true,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["authorOptions"] = {
@@ -8984,8 +9028,9 @@ WeakAurasSaved = {
 					["width"] = 1,
 				}, -- [9]
 			},
-			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
+			["sparkRotation"] = 0,
+			["sparkRotationMode"] = "AUTO",
 			["url"] = "https://wago.io/QM6DPA9wM/1",
 			["actions"] = {
 				["start"] = {
@@ -9056,8 +9101,8 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 33,
-			["sparkRotationMode"] = "AUTO",
+			["internalVersion"] = 37,
+			["icon"] = false,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -9095,7 +9140,7 @@ WeakAurasSaved = {
 				},
 			},
 			["backdropInFront"] = false,
-			["icon"] = false,
+			["fontFlags"] = "OUTLINE",
 			["barColor"] = {
 				1, -- [1]
 				0.2980392156862745, -- [2]
@@ -9103,8 +9148,13 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["fontFlags"] = "OUTLINE",
 			["selfPoint"] = "CENTER",
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
 			["version"] = 1,
 			["subRegions"] = {
 				{
@@ -9223,11 +9273,11 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 15,
-			["backdropColor"] = {
+			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
-				0.5, -- [4]
+				1, -- [4]
 			},
 			["load"] = {
 				["talent2"] = {
@@ -9256,10 +9306,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_class"] = true,
 				["role"] = {
 					["multi"] = {
 					},
@@ -9274,7 +9321,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["use_class"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -9282,17 +9332,12 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["uid"] = "wXFdNr2N1wr",
 			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 1,
 			["stickyDuration"] = false,
 			["id"] = "FrenzyTracker 2",
+			["semver"] = "1.0.0",
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
 			["borderInFront"] = true,
@@ -9300,10 +9345,10 @@ WeakAurasSaved = {
 			["icon_side"] = "RIGHT",
 			["spark"] = false,
 			["sparkHeight"] = 30,
+			["ignoreOptionsEventErrors"] = true,
 			["texture"] = "Aluminium",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["zoom"] = 0,
-			["semver"] = "1.0.0",
+			["auto"] = true,
 			["tocversion"] = 80205,
 			["sparkHidden"] = "NEVER",
 			["sparkOffsetY"] = 0,
@@ -9419,10 +9464,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_talent"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_class"] = true,
 				["role"] = {
 					["multi"] = {
 					},
@@ -9440,7 +9482,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -9512,7 +9557,19 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(t) return t[1] end",
 				["activeTriggerMode"] = 1,
 			},
-			["internalVersion"] = 33,
+			["actions"] = {
+				["start"] = {
+					["custom"] = "aura_env.UpdateHaste()\naura_env.UpdateCasts()",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "local showPartial = true\n\nlocal bar = WeakAuras.regions[aura_env.id].region.bar\nlocal bar_width = bar:GetWidth()\nlocal gcd_width\nlocal focus_reg\n\n-- segments for MB casts\nbar.chunks = bar.chunks or {}\nlocal chunks = bar.chunks\nfor i=1,8 do\n    chunks[i] = chunks[i] or bar:CreateTexture()\n    local c = chunks[i]\n    c:SetDrawLayer(\"OVERLAY\", 7)\n    c:SetColorTexture(1,1,1,0.6)\n    --c:SetBlendMode(\"MOD\")\n    c:SetSize(10, bar.fg:GetHeight() - 2)\n    c:SetPoint(\"LEFT\", bar, \"LEFT\", 12*(i-1) + 1, 0)\nend\n\nif showPartial then\n    -- partial segment for remaining focus\n    bar.partial = bar.partial or bar:CreateTexture()\n    bar.partial:SetDrawLayer(\"OVERLAY\", 7)\n    bar.partial:SetColorTexture(1,1,1,0.3)\n    bar.partial:SetSize(10, bar.fg:GetHeight() - 2)\n    bar.partial:SetPoint(\"LEFT\", bar, \"LEFT\", 12*8 + 1, 0)\n    bar.partial.i = 9\n    bar.partial.mod = 0.5  \nend\n\nlocal UpdatePartialChunk = function()\n    local mod = bar.partial.mod\n    local i = bar.partial.i\n    if not i or not mod then\n        bar.partial:Hide()\n    else\n        bar.partial:SetWidth((gcd_width - 2) * mod)\n        bar.partial:SetPoint(\"LEFT\", gcd_width*(i-1), 0)\n        bar.partial:Show()\n    end\nend\n\n-- on COMBAT_RATING_UPDATE, updated GCD-segmet size\nlocal haste_old\naura_env.UpdateHaste = function()\n    local haste = UnitSpellHaste(\"player\")\n    if (haste_old == haste) then return end\n    \n    haste_old = haste\n    focus_reg = GetPowerRegen()\n    gcd_width = (bar_width / 14) * (1.5 / (1 + .01 * haste))\n    \n    for i,chunk in ipairs(chunks) do\n        chunk:SetWidth(gcd_width - 2)\n        chunk:SetPoint(\"LEFT\", gcd_width*(i-1) + 1, 0)\n    end\n    \n    aura_env.UpdateCasts()\nend\n\n\nlocal CastsLeft = function() \n    local expire = select(6,WA_GetUnitBuff(\"player\", 259388)) -- Mongoose Fury expiration\n    if not expire then return 0 end\n    local total_focus = UnitPower(\"player\") + focus_reg * (expire - GetTime() - 0.03) -- ignore 30 ms\n    return math.modf(total_focus / 30)\nend\n\n-- on UNIT_POWER_UPDATE, updates number of possible casts\nlocal casts_old\naura_env.UpdateCasts = function()\n    local casts, remain = CastsLeft()\n    \n    if showPartial then\n        bar.partial.i = casts+1\n        bar.partial.mod = remain\n        UpdatePartialChunk()\n    end\n    \n    if (casts_old == casts) then return end\n    \n    casts_old = casts\n    \n    for i, chunk in ipairs(chunks) do\n        if i <= casts then\n            chunk:Show()\n        else\n            chunk:Hide()\n        end\n    end\nend\n\naura_env.UpdateHaste()\naura_env.UpdateCasts()",
+					["do_custom"] = true,
+				},
+			},
+			["internalVersion"] = 37,
 			["authorOptions"] = {
 			},
 			["animation"] = {
@@ -9672,56 +9729,45 @@ WeakAurasSaved = {
 				1, -- [3]
 				0, -- [4]
 			},
-			["spark"] = false,
-			["text2Containment"] = "INSIDE",
 			["width"] = 322,
-			["text1Font"] = "Expressway",
-			["text2"] = "%p",
-			["sparkDesaturate"] = false,
-			["text2Color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["id"] = "Mongoose Bar",
-			["borderInFront"] = true,
-			["zoom"] = 0.27,
-			["icon_side"] = "RIGHT",
-			["sparkRotationMode"] = "AUTO",
-			["useAdjustededMax"] = true,
-			["text1"] = "%p",
-			["actions"] = {
-				["start"] = {
-					["custom"] = "aura_env.UpdateHaste()\naura_env.UpdateCasts()",
-					["do_custom"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "local showPartial = true\n\nlocal bar = WeakAuras.regions[aura_env.id].region.bar\nlocal bar_width = bar:GetWidth()\nlocal gcd_width\nlocal focus_reg\n\n-- segments for MB casts\nbar.chunks = bar.chunks or {}\nlocal chunks = bar.chunks\nfor i=1,8 do\n    chunks[i] = chunks[i] or bar:CreateTexture()\n    local c = chunks[i]\n    c:SetDrawLayer(\"OVERLAY\", 7)\n    c:SetColorTexture(1,1,1,0.6)\n    --c:SetBlendMode(\"MOD\")\n    c:SetSize(10, bar.fg:GetHeight() - 2)\n    c:SetPoint(\"LEFT\", bar, \"LEFT\", 12*(i-1) + 1, 0)\nend\n\nif showPartial then\n    -- partial segment for remaining focus\n    bar.partial = bar.partial or bar:CreateTexture()\n    bar.partial:SetDrawLayer(\"OVERLAY\", 7)\n    bar.partial:SetColorTexture(1,1,1,0.3)\n    bar.partial:SetSize(10, bar.fg:GetHeight() - 2)\n    bar.partial:SetPoint(\"LEFT\", bar, \"LEFT\", 12*8 + 1, 0)\n    bar.partial.i = 9\n    bar.partial.mod = 0.5  \nend\n\nlocal UpdatePartialChunk = function()\n    local mod = bar.partial.mod\n    local i = bar.partial.i\n    if not i or not mod then\n        bar.partial:Hide()\n    else\n        bar.partial:SetWidth((gcd_width - 2) * mod)\n        bar.partial:SetPoint(\"LEFT\", gcd_width*(i-1), 0)\n        bar.partial:Show()\n    end\nend\n\n-- on COMBAT_RATING_UPDATE, updated GCD-segmet size\nlocal haste_old\naura_env.UpdateHaste = function()\n    local haste = UnitSpellHaste(\"player\")\n    if (haste_old == haste) then return end\n    \n    haste_old = haste\n    focus_reg = GetPowerRegen()\n    gcd_width = (bar_width / 14) * (1.5 / (1 + .01 * haste))\n    \n    for i,chunk in ipairs(chunks) do\n        chunk:SetWidth(gcd_width - 2)\n        chunk:SetPoint(\"LEFT\", gcd_width*(i-1) + 1, 0)\n    end\n    \n    aura_env.UpdateCasts()\nend\n\n\nlocal CastsLeft = function() \n    local expire = select(6,WA_GetUnitBuff(\"player\", 259388)) -- Mongoose Fury expiration\n    if not expire then return 0 end\n    local total_focus = UnitPower(\"player\") + focus_reg * (expire - GetTime() - 0.03) -- ignore 30 ms\n    return math.modf(total_focus / 30)\nend\n\n-- on UNIT_POWER_UPDATE, updates number of possible casts\nlocal casts_old\naura_env.UpdateCasts = function()\n    local casts, remain = CastsLeft()\n    \n    if showPartial then\n        bar.partial.i = casts+1\n        bar.partial.mod = remain\n        UpdatePartialChunk()\n    end\n    \n    if (casts_old == casts) then return end\n    \n    casts_old = casts\n    \n    for i, chunk in ipairs(chunks) do\n        if i <= casts then\n            chunk:Show()\n        else\n            chunk:Hide()\n        end\n    end\nend\n\naura_env.UpdateHaste()\naura_env.UpdateCasts()",
-					["do_custom"] = true,
-				},
-			},
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
-			["sparkHeight"] = 20,
-			["semver"] = "1.0.0",
-			["glow"] = false,
-			["sparkHidden"] = "NEVER",
-			["borderBackdrop"] = "Solid",
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
+			["text2Containment"] = "INSIDE",
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["text1Font"] = "Expressway",
+			["text2"] = "%p",
+			["id"] = "Mongoose Bar",
+			["text2Color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["sparkDesaturate"] = false,
+			["borderInFront"] = true,
+			["zoom"] = 0.27,
+			["icon_side"] = "RIGHT",
+			["sparkRotationMode"] = "AUTO",
+			["useAdjustededMax"] = true,
+			["sparkHeight"] = 20,
+			["ignoreOptionsEventErrors"] = true,
+			["text1"] = "%p",
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
+			["semver"] = "1.0.0",
+			["glow"] = false,
+			["sparkHidden"] = "NEVER",
+			["borderBackdrop"] = "Solid",
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["spark"] = false,
 			["text1FontFlags"] = "OUTLINE",
 			["inverse"] = false,
 			["sparkDesature"] = false,
@@ -9773,7 +9819,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -9850,11 +9896,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -9866,7 +9912,14 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "SRlEHHptIIU",
+			["cooldownEdge"] = false,
+			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
+			["conditions"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -9887,17 +9940,25 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldownEdge"] = false,
-			["regionType"] = "icon",
-			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["conditions"] = {
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "O - VoW - Voidcrazed Hulk - Howling in Pain",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["semver"] = "1.0.0",
+			["config"] = {
 			},
+			["inverse"] = false,
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -9911,20 +9972,6 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["width"] = 80,
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "O - VoW - Voidcrazed Hulk - Howling in Pain",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Horrific Visions",
 			["displayIcon"] = 132333,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -9982,7 +10029,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -10078,11 +10125,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -10094,35 +10141,36 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "afcIicq(Wz)",
+			["parent"] = "Horrific Visions",
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["cooldownEdge"] = false,
+			["conditions"] = {
+			},
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
-			["authorOptions"] = {
-			},
 			["icon"] = true,
-			["conditions"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["zoom"] = 0.003,
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["auto"] = false,
+			["zoom"] = 0.003,
+			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "O - GH - Thrall - Surging Darkness",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["width"] = 80,
-			["semver"] = "1.0.0",
+			["auto"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["cooldownEdge"] = false,
+			["selfPoint"] = "CENTER",
 			["displayIcon"] = "1022950",
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -10168,7 +10216,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -10297,34 +10345,16 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "m30)9PJY8EQ",
-			["selfPoint"] = "CENTER",
 			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["conditions"] = {
-			},
-			["cooldownEdge"] = false,
-			["zoom"] = 0.003,
-			["width"] = 80,
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
-			["tocversion"] = 80300,
-			["id"] = "COMMON - Gift of the Titans",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "1.0.0",
-			["config"] = {
-			},
-			["inverse"] = false,
+			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\AddOns\\Prat-3.0\\Sounds\\Chime.ogg",
@@ -10337,6 +10367,25 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
+			["conditions"] = {
+			},
+			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["zoom"] = 0.003,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80300,
+			["id"] = "COMMON - Gift of the Titans",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["cooldownEdge"] = false,
 			["displayIcon"] = 237583,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -10374,7 +10423,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -10441,41 +10490,6 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["cooldownTextDisabled"] = false,
-			["xOffset"] = -295,
-			["url"] = "https://wago.io/BkLKJpTY7/1",
-			["zoom"] = 0,
-			["auto"] = true,
-			["stickyDuration"] = false,
-			["id"] = "Bease Cleave Sound",
-			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["width"] = 36,
-			["uid"] = "xaWW56sezxV",
-			["config"] = {
-			},
-			["inverse"] = false,
-			["alpha"] = 1,
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["op"] = "==",
-						["variable"] = "expirationTime",
-						["value"] = ".5",
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								["sound_type"] = "Play",
-								["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RobotBlip.ogg",
-								["sound_channel"] = "Master",
-							},
-							["property"] = "sound",
-						}, -- [1]
-					},
-				}, -- [1]
-			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -10496,6 +10510,43 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["xOffset"] = -295,
+			["url"] = "https://wago.io/BkLKJpTY7/1",
+			["ignoreOptionsEventErrors"] = true,
+			["cooldownTextDisabled"] = false,
+			["zoom"] = 0,
+			["auto"] = true,
+			["width"] = 36,
+			["id"] = "Bease Cleave Sound",
+			["uid"] = "xaWW56sezxV",
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["stickyDuration"] = false,
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "==",
+						["variable"] = "expirationTime",
+						["value"] = ".5",
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								["sound_type"] = "Play",
+								["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\RobotBlip.ogg",
+								["sound_channel"] = "Master",
+							},
+							["property"] = "sound",
+						}, -- [1]
+					},
+				}, -- [1]
+			},
+			["cooldown"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -10550,7 +10601,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -10646,11 +10697,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -10662,11 +10713,16 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "pQ(Eoa6Cy9T",
-			["xOffset"] = 0,
 			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
 			["cooldownEdge"] = false,
+			["regionType"] = "icon",
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+			},
+			["xOffset"] = 0,
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -10680,24 +10736,20 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["conditions"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["zoom"] = 0.003,
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.0",
+			["zoom"] = 0.003,
+			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - VoW - Voidcrazed Hulk - Explosive Leap",
-			["alpha"] = 1,
 			["frameStrata"] = 1,
+			["alpha"] = 1,
 			["width"] = 80,
-			["auto"] = false,
+			["semver"] = "1.0.0",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["displayIcon"] = 1305155,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -10772,7 +10824,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -10861,19 +10913,34 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "qd1syA7sWfO",
-			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
 			["xOffset"] = 0,
-			["icon"] = true,
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
 			["conditions"] = {
 			},
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["icon"] = true,
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "MADNESS - Scorched Feet DEBUFF",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["semver"] = "1.0.0",
+			["config"] = {
+			},
+			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -10894,20 +10961,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "MADNESS - Scorched Feet DEBUFF",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["width"] = 80,
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Horrific Visions",
 			["displayIcon"] = 237583,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -10964,7 +11017,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -11093,35 +11146,36 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["config"] = {
 			},
-			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["authorOptions"] = {
 			},
-			["regionType"] = "icon",
 			["selfPoint"] = "CENTER",
-			["parent"] = "Horrific Visions",
-			["conditions"] = {
-			},
-			["icon"] = true,
-			["zoom"] = 0.003,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
-			["tocversion"] = 80300,
-			["id"] = "COMMON - N'Zoth's Burning Vision",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["semver"] = "1.0.0",
-			["uid"] = "bcsQSptL86H",
-			["inverse"] = false,
+			["regionType"] = "icon",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["conditions"] = {
+			},
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["parent"] = "Horrific Visions",
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.003,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80300,
+			["id"] = "COMMON - N'Zoth's Burning Vision",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["width"] = 80,
+			["auto"] = true,
+			["uid"] = "bcsQSptL86H",
+			["inverse"] = false,
+			["icon"] = true,
 			["displayIcon"] = 237583,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -11180,7 +11234,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -11276,11 +11330,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -11292,34 +11346,35 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "yZi81I6n2lp",
-			["selfPoint"] = "CENTER",
 			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["icon"] = true,
 			["conditions"] = {
 			},
+			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["zoom"] = 0.003,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80300,
+			["id"] = "O - VoW - Coagulated Horror - Sanguine Residue",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = false,
+			["config"] = {
+			},
+			["inverse"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["zoom"] = 0.003,
-			["width"] = 80,
-			["cooldownTextDisabled"] = true,
-			["auto"] = false,
-			["tocversion"] = 80300,
-			["id"] = "O - VoW - Coagulated Horror - Sanguine Residue",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "1.0.0",
-			["config"] = {
-			},
-			["inverse"] = false,
-			["icon"] = true,
 			["displayIcon"] = 1029738,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -11377,7 +11432,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -11473,11 +11528,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -11489,35 +11544,36 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "18nJK(EUVyh",
-			["icon"] = true,
 			["authorOptions"] = {
 			},
-			["regionType"] = "icon",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
 			["conditions"] = {
 			},
-			["selfPoint"] = "CENTER",
-			["cooldownTextDisabled"] = true,
+			["icon"] = true,
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - GH - Thrall - Cries of the void1",
-			["alpha"] = 1,
 			["frameStrata"] = 1,
+			["alpha"] = 1,
 			["width"] = 80,
-			["auto"] = false,
+			["semver"] = "1.0.0",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["parent"] = "Horrific Visions",
+			["selfPoint"] = "CENTER",
 			["displayIcon"] = 135945,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -11564,7 +11620,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -11660,11 +11716,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -11676,34 +11732,11 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["uid"] = "btWfec3)bxE",
-			["selfPoint"] = "CENTER",
-			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
-			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["authorOptions"] = {
-			},
-			["conditions"] = {
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["zoom"] = 0.003,
-			["width"] = 80,
 			["cooldownTextDisabled"] = true,
-			["auto"] = false,
-			["tocversion"] = 80300,
-			["id"] = "O - VoH - Rexxar - Stampeding Corruption",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "1.0.0",
-			["config"] = {
-			},
-			["inverse"] = false,
+			["uid"] = "btWfec3)bxE",
+			["parent"] = "Horrific Visions",
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -11716,6 +11749,30 @@ WeakAurasSaved = {
 					["custom"] = "local locale = GetLocale();\n-- These locales are equivalent\nif (locale ~= \"ruRU\") then\n    locale = \"enGB\"\nend\n\nlocal i18n_strings = {\n    -- English (United Kingdom enGB | United States enUS)\n    [\"enGB\"] = {\n        [\"text\"] = \"Dodge minions\"\n    },\n    -- Russian (Russia)\n    [\"ruRU\"] = {\n        [\"text\"] = \"Додж аддов\"\n    }\n}\n\naura_env.i18n_strings = i18n_strings[locale];\n\n\n\n",
 					["do_custom"] = true,
 				},
+			},
+			["conditions"] = {
+			},
+			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["zoom"] = 0.003,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80300,
+			["id"] = "O - VoH - Rexxar - Stampeding Corruption",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = false,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["displayIcon"] = 537021,
 			["cooldown"] = true,
@@ -11774,7 +11831,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -11870,11 +11927,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -11886,35 +11943,36 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "orK(XGcDxsF",
-			["icon"] = true,
 			["authorOptions"] = {
 			},
-			["regionType"] = "icon",
 			["parent"] = "Horrific Visions",
-			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["conditions"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["zoom"] = 0.003,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "O - TD - Annihilator Lak'hal - Dark Force",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["width"] = 80,
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
+			["regionType"] = "icon",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["conditions"] = {
+			},
+			["icon"] = true,
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.003,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "O - TD - Annihilator Lak'hal - Dark Force",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["semver"] = "1.0.0",
+			["config"] = {
+			},
+			["inverse"] = false,
+			["selfPoint"] = "CENTER",
 			["displayIcon"] = 136201,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -11954,7 +12012,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -12062,16 +12120,10 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["config"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Front.ogg",
@@ -12084,24 +12136,31 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["selfPoint"] = "CENTER",
-			["conditions"] = {
-			},
-			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["cooldownTextDisabled"] = true,
-			["width"] = 80,
-			["zoom"] = 0.003,
-			["auto"] = false,
-			["tocversion"] = 80300,
-			["id"] = "S - TRASH - Forge Breath",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "1.0.0",
-			["uid"] = "ao0o7bqJ8Mz",
-			["inverse"] = false,
+			["regionType"] = "icon",
 			["authorOptions"] = {
 			},
+			["conditions"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["selfPoint"] = "CENTER",
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80300,
+			["id"] = "S - TRASH - Forge Breath",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = false,
+			["uid"] = "ao0o7bqJ8Mz",
+			["inverse"] = false,
+			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["displayIcon"] = 615339,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -12152,7 +12211,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -12260,35 +12319,36 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["config"] = {
 			},
-			["cooldownEdge"] = false,
 			["authorOptions"] = {
 			},
-			["regionType"] = "icon",
 			["parent"] = "Horrific Visions",
-			["icon"] = true,
-			["conditions"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["cooldownTextDisabled"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "S - MQ - Boundless Corruption - Chaos Breath",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["width"] = 80,
-			["auto"] = false,
-			["uid"] = "vmy13moAAr(",
-			["inverse"] = false,
+			["regionType"] = "icon",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["conditions"] = {
+			},
+			["cooldownEdge"] = false,
+			["icon"] = true,
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "S - MQ - Boundless Corruption - Chaos Breath",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["semver"] = "1.0.0",
+			["uid"] = "vmy13moAAr(",
+			["inverse"] = false,
+			["selfPoint"] = "CENTER",
 			["displayIcon"] = 236302,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -12343,7 +12403,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -12432,20 +12492,35 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "(eJHmE)vZhg",
+			["cooldownEdge"] = false,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
+			["conditions"] = {
+			},
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["cooldownEdge"] = false,
-			["regionType"] = "icon",
-			["authorOptions"] = {
-			},
 			["icon"] = true,
-			["conditions"] = {
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "S - OT - Alx'kov the Infested - Corrupted Blight DEBUFF",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["semver"] = "1.0.0",
+			["config"] = {
 			},
+			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -12466,20 +12541,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "S - OT - Alx'kov the Infested - Corrupted Blight DEBUFF",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["width"] = 80,
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Horrific Visions",
 			["displayIcon"] = 237514,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -12537,7 +12598,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -12671,17 +12732,12 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "9Nz6FPv5Fim",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
 			["selfPoint"] = "CENTER",
-			["cooldownEdge"] = false,
+			["regionType"] = "icon",
+			["icon"] = true,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -12698,22 +12754,28 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["zoom"] = 0.003,
+			["cooldownEdge"] = false,
+			["ignoreOptionsEventErrors"] = true,
 			["width"] = 80,
-			["cooldownTextDisabled"] = true,
-			["auto"] = false,
+			["zoom"] = 0.003,
+			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "MADNESS - Madness Entomophobia",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["semver"] = "1.0.0",
+			["auto"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["icon"] = true,
+			["authorOptions"] = {
+			},
 			["displayIcon"] = "3163622",
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -12754,7 +12816,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -12843,7 +12905,14 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "JUyB7ImhykJ",
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
+			["conditions"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -12864,17 +12933,25 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["regionType"] = "icon",
-			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["conditions"] = {
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "O - VoH - Aqir Mindhunter - Toxic Volley",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["semver"] = "1.0.0",
+			["config"] = {
 			},
+			["inverse"] = false,
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Avoid.ogg",
@@ -12887,20 +12964,6 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["width"] = 80,
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "O - VoH - Aqir Mindhunter - Toxic Volley",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Horrific Visions",
 			["displayIcon"] = 136016,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -12945,7 +13008,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -13053,11 +13116,16 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "J8TuEOLJr38",
-			["xOffset"] = 0,
 			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["regionType"] = "icon",
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+			},
+			["xOffset"] = 0,
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Front.ogg",
@@ -13070,24 +13138,20 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["conditions"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["zoom"] = 0.003,
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.0",
+			["zoom"] = 0.003,
+			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "S - TRASH - Rift Strike",
-			["alpha"] = 1,
 			["frameStrata"] = 1,
+			["alpha"] = 1,
 			["width"] = 80,
-			["auto"] = false,
+			["semver"] = "1.0.0",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["displayIcon"] = 1373912,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -13146,7 +13210,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -13242,11 +13306,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -13258,34 +13322,35 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["config"] = {
 			},
-			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
 			["selfPoint"] = "CENTER",
-			["icon"] = true,
+			["regionType"] = "icon",
+			["xOffset"] = 0,
 			["conditions"] = {
 			},
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["icon"] = true,
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["zoom"] = 0.003,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "O - VoH - Misha - Maddening Roar DEBUFF",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["semver"] = "1.0.0",
+			["uid"] = "A67RCt40cgB",
+			["inverse"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["zoom"] = 0.003,
-			["width"] = 80,
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "O - VoH - Misha - Maddening Roar DEBUFF",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["auto"] = false,
-			["uid"] = "A67RCt40cgB",
-			["inverse"] = false,
-			["xOffset"] = 0,
 			["displayIcon"] = 132117,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -13329,7 +13394,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -13490,16 +13555,10 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "7efO3b3w01E",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["authorOptions"] = {
 			},
-			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Front.ogg",
@@ -13512,7 +13571,8 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
+			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -13546,220 +13606,28 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["parent"] = "Horrific Visions",
-			["cooldownTextDisabled"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["auto"] = true,
-			["tocversion"] = 80300,
-			["id"] = "O - TRASH - Aqiri Mind Toxin",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["semver"] = "1.0.0",
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["displayIcon"] = 136016,
-			["cooldown"] = true,
-			["iconInset"] = 0.3,
-		},
-		["[NOT WORKING] MADNESS -  Madness Bloddthirsty"] = {
-			["authorOptions"] = {
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "function()\n    return aura_env.i18n_strings.text\nend\n\n\n\n\n",
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Spread.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "local locale = GetLocale();\n-- These locales are equivalent\nif (locale ~= \"ruRU\") then\n    locale = \"enGB\"\nend\n\nlocal i18n_strings = {\n    -- English (United Kingdom enGB | United States enUS)\n    [\"enGB\"] = {\n        [\"text\"] = \"Spread\\nTEST\"\n    },\n    -- Russian (Russia)\n    [\"ruRU\"] = {\n        [\"text\"] = \"Спред\\nTEST\"\n    }\n}\n\naura_env.i18n_strings = i18n_strings[locale];\n\n\n\n",
-					["do_custom"] = true,
-				},
-			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["spellId"] = "308288",
-						["auranames"] = {
-							"311344", -- [1]
-						},
-						["duration"] = "3",
-						["unit"] = "player",
-						["debuffType"] = "HARMFUL",
-						["type"] = "aura2",
-						["subeventSuffix"] = "_CAST_START",
-						["event"] = "Combat Log",
-						["use_unit"] = true,
-						["names"] = {
-						},
-						["use_spellId"] = true,
-						["spellIds"] = {
-						},
-						["use_sourceUnit"] = false,
-						["unevent"] = "timed",
-						["useName"] = true,
-						["use_absorbMode"] = true,
-						["subeventPrefix"] = "SPELL",
-					},
-					["untrigger"] = {
-						["unit"] = "player",
-					},
-				}, -- [1]
-				["disjunctive"] = "any",
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 33,
-			["keepAspectRatio"] = false,
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-			},
-			["desaturate"] = false,
-			["version"] = 1,
-			["subRegions"] = {
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text"] = "%c",
-					["text_shadowColor"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["rotateText"] = "NONE",
-					["type"] = "subtext",
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Friz Quadrata TT",
-					["text_shadowYOffset"] = 0,
-					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
-					["text_anchorPoint"] = "OUTER_BOTTOM",
-					["text_fontSize"] = 25,
-					["anchorXOffset"] = 0,
-					["text_visible"] = true,
-				}, -- [1]
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text"] = "%p",
-					["text_shadowColor"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["rotateText"] = "NONE",
-					["type"] = "subtext",
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Friz Quadrata TT",
-					["text_shadowYOffset"] = 0,
-					["text_text_format_p_time_precision"] = 0,
-					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
-					["text_anchorPoint"] = "CENTER",
-					["text_visible"] = true,
-					["text_text_format_p_format"] = "timed",
-					["text_fontSize"] = 25,
-					["anchorXOffset"] = 0,
-					["text_text_format_p_time_dynamic"] = false,
-				}, -- [2]
-			},
-			["height"] = 80,
-			["load"] = {
-				["use_encounterid"] = false,
-				["use_zoneId"] = true,
-				["use_never"] = false,
-				["encounterid"] = "2329",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["zoneId"] = "1469,1470,1570,1571",
-				["size"] = {
-					["single"] = "scenario",
-					["multi"] = {
-					},
-				},
-			},
-			["uid"] = "DqQH81zxdtj",
-			["selfPoint"] = "CENTER",
-			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
-			["cooldownEdge"] = false,
-			["xOffset"] = 0,
-			["conditions"] = {
-			},
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["zoom"] = 0.003,
-			["width"] = 80,
+			["selfPoint"] = "CENTER",
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
-			["auto"] = true,
+			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
-			["id"] = "[NOT WORKING] MADNESS -  Madness Bloddthirsty",
+			["id"] = "O - TRASH - Aqiri Mind Toxin",
 			["alpha"] = 1,
 			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "1.0.0",
+			["width"] = 80,
+			["auto"] = true,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["icon"] = true,
-			["displayIcon"] = "132323",
+			["parent"] = "Horrific Visions",
+			["displayIcon"] = 136016,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
 		},
@@ -13809,7 +13677,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -13904,11 +13772,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -13920,16 +13788,20 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "HKozdrJdVbw",
-			["xOffset"] = 0,
 			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["regionType"] = "icon",
+			["selfPoint"] = "CENTER",
+			["conditions"] = {
+			},
+			["xOffset"] = 0,
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -13943,31 +13815,29 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["conditions"] = {
-			},
-			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["cooldownTextDisabled"] = true,
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["auto"] = false,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "MADNESS - Madness Leaden Foot",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["width"] = 80,
-			["semver"] = "1.0.0",
+			["auto"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["selfPoint"] = "CENTER",
+			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["displayIcon"] = 135834,
 			["cooldown"] = false,
 			["iconInset"] = 0.3,
 		},
-		["O - VoW - Vez'okk the Lightless - Ring of Chaos"] = {
-			["xOffset"] = 0,
+		["[NOT WORKING] MADNESS -  Madness Bloddthirsty"] = {
+			["authorOptions"] = {
+			},
 			["preferToUpdate"] = false,
-			["customText"] = "function()\n    return aura_env.i18n_strings.text\nend\n\n\n",
+			["customText"] = "function()\n    return aura_env.i18n_strings.text\nend\n\n\n\n\n",
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["cooldownSwipe"] = true,
@@ -13975,27 +13845,27 @@ WeakAurasSaved = {
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Avoid.ogg",
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Spread.ogg",
 					["do_sound"] = true,
 				},
 				["finish"] = {
 				},
 				["init"] = {
-					["custom"] = "local locale = GetLocale();\n-- These locales are equivalent\nif (locale ~= \"ruRU\") then\n    locale = \"enGB\"\nend\n\nlocal i18n_strings = {\n    -- English (United Kingdom enGB | United States enUS)\n    [\"enGB\"] = {\n        [\"text\"] = \"Avoid\"\n    },\n    -- Russian (Russia)\n    [\"ruRU\"] = {\n        [\"text\"] = \"Избегай\"\n    }\n}\n\naura_env.i18n_strings = i18n_strings[locale];\n\n\n\n",
+					["custom"] = "local locale = GetLocale();\n-- These locales are equivalent\nif (locale ~= \"ruRU\") then\n    locale = \"enGB\"\nend\n\nlocal i18n_strings = {\n    -- English (United Kingdom enGB | United States enUS)\n    [\"enGB\"] = {\n        [\"text\"] = \"Spread\\nTEST\"\n    },\n    -- Russian (Russia)\n    [\"ruRU\"] = {\n        [\"text\"] = \"Спред\\nTEST\"\n    }\n}\n\naura_env.i18n_strings = i18n_strings[locale];\n\n\n\n",
 					["do_custom"] = true,
 				},
 			},
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["spellId"] = "306617",
+						["spellId"] = "308288",
 						["auranames"] = {
-							"306163", -- [1]
+							"311344", -- [1]
 						},
-						["duration"] = "1.5",
+						["duration"] = "3",
 						["unit"] = "player",
 						["debuffType"] = "HARMFUL",
-						["type"] = "event",
+						["type"] = "aura2",
 						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Combat Log",
 						["use_unit"] = true,
@@ -14017,7 +13887,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -14113,11 +13983,209 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["zoneId"] = "1469,1470,1570,1571",
+				["size"] = {
+					["single"] = "scenario",
+					["multi"] = {
+					},
+				},
+			},
+			["cooldownTextDisabled"] = true,
+			["uid"] = "DqQH81zxdtj",
+			["parent"] = "Horrific Visions",
+			["cooldownEdge"] = false,
+			["regionType"] = "icon",
+			["icon"] = true,
+			["conditions"] = {
+			},
+			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["zoom"] = 0.003,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80300,
+			["id"] = "[NOT WORKING] MADNESS -  Madness Bloddthirsty",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["displayIcon"] = "132323",
+			["cooldown"] = true,
+			["iconInset"] = 0.3,
+		},
+		["O - VoW - Vez'okk the Lightless - Ring of Chaos"] = {
+			["xOffset"] = 0,
+			["preferToUpdate"] = false,
+			["customText"] = "function()\n    return aura_env.i18n_strings.text\nend\n\n\n",
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Avoid.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "local locale = GetLocale();\n-- These locales are equivalent\nif (locale ~= \"ruRU\") then\n    locale = \"enGB\"\nend\n\nlocal i18n_strings = {\n    -- English (United Kingdom enGB | United States enUS)\n    [\"enGB\"] = {\n        [\"text\"] = \"Avoid\"\n    },\n    -- Russian (Russia)\n    [\"ruRU\"] = {\n        [\"text\"] = \"Избегай\"\n    }\n}\n\naura_env.i18n_strings = i18n_strings[locale];\n\n\n\n",
+					["do_custom"] = true,
+				},
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["spellId"] = "306617",
+						["auranames"] = {
+							"306163", -- [1]
+						},
+						["duration"] = "1.5",
+						["unit"] = "player",
+						["debuffType"] = "HARMFUL",
+						["type"] = "event",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Combat Log",
+						["use_unit"] = true,
+						["names"] = {
+						},
+						["use_spellId"] = true,
+						["spellIds"] = {
+						},
+						["use_sourceUnit"] = false,
+						["unevent"] = "timed",
+						["useName"] = true,
+						["use_absorbMode"] = true,
+						["subeventPrefix"] = "SPELL",
+					},
+					["untrigger"] = {
+						["unit"] = "player",
+					},
+				}, -- [1]
+				["disjunctive"] = "any",
+				["activeTriggerMode"] = -10,
+			},
+			["internalVersion"] = 37,
+			["keepAspectRatio"] = false,
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+			},
+			["desaturate"] = false,
+			["version"] = 1,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["text_text"] = "%c",
+					["text_shadowColor"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["rotateText"] = "NONE",
+					["type"] = "subtext",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowYOffset"] = 0,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
+					["text_anchorPoint"] = "OUTER_BOTTOM",
+					["text_fontSize"] = 25,
+					["anchorXOffset"] = 0,
+					["text_visible"] = true,
+				}, -- [1]
+				{
+					["text_shadowXOffset"] = 0,
+					["text_text"] = "%p",
+					["text_shadowColor"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["rotateText"] = "NONE",
+					["type"] = "subtext",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowYOffset"] = 0,
+					["text_text_format_p_time_precision"] = 0,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
+					["text_anchorPoint"] = "CENTER",
+					["text_visible"] = true,
+					["text_text_format_p_format"] = "timed",
+					["text_fontSize"] = 25,
+					["anchorXOffset"] = 0,
+					["text_text_format_p_time_dynamic"] = false,
+				}, -- [2]
+			},
+			["height"] = 80,
+			["load"] = {
+				["use_encounterid"] = false,
+				["use_zoneId"] = true,
+				["use_never"] = false,
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -14129,35 +14197,36 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["config"] = {
 			},
-			["cooldownEdge"] = false,
 			["authorOptions"] = {
 			},
-			["regionType"] = "icon",
 			["selfPoint"] = "CENTER",
-			["parent"] = "Horrific Visions",
-			["conditions"] = {
-			},
-			["icon"] = true,
-			["zoom"] = 0.003,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["auto"] = false,
-			["tocversion"] = 80300,
-			["id"] = "O - VoW - Vez'okk the Lightless - Ring of Chaos",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["semver"] = "1.0.0",
-			["uid"] = "Jb3hcMQBa1u",
-			["inverse"] = false,
+			["regionType"] = "icon",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["conditions"] = {
+			},
+			["cooldownEdge"] = false,
+			["parent"] = "Horrific Visions",
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.003,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80300,
+			["id"] = "O - VoW - Vez'okk the Lightless - Ring of Chaos",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["width"] = 80,
+			["auto"] = false,
+			["uid"] = "Jb3hcMQBa1u",
+			["inverse"] = false,
+			["icon"] = true,
 			["displayIcon"] = 632353,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -14222,7 +14291,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(t)\nreturn t[1]\nend",
 				["activeTriggerMode"] = 1,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -14332,7 +14401,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "jgHHStWcPf5",
+			["cooldownEdge"] = false,
+			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 2,
+						["variable"] = "show",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = true,
+							["property"] = "sub.3.glow",
+						}, -- [1]
+					},
+				}, -- [1]
+			},
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -14353,30 +14442,25 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldownEdge"] = false,
-			["regionType"] = "icon",
-			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 2,
-						["variable"] = "show",
-						["value"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = true,
-							["property"] = "sub.3.glow",
-						}, -- [1]
-					},
-				}, -- [1]
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "COMMON - Orb Operation Manual",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["semver"] = "1.0.0",
+			["config"] = {
 			},
+			["inverse"] = false,
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\AddOns\\Prat-3.0\\Sounds\\Chime.ogg",
@@ -14389,20 +14473,6 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["width"] = 80,
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "COMMON - Orb Operation Manual",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Horrific Visions",
 			["displayIcon"] = 236249,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -14460,7 +14530,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -14556,11 +14626,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -14572,35 +14642,36 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "lK9bt)03HP3",
+			["authorOptions"] = {
+			},
+			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
+			["cooldownEdge"] = false,
+			["conditions"] = {
+			},
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
 			["icon"] = true,
-			["conditions"] = {
-			},
-			["parent"] = "Horrific Visions",
-			["zoom"] = 0.003,
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.0",
+			["zoom"] = 0.003,
+			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "O - VoW - Vez'okk the Lightless - Unleash Corruption",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["width"] = 80,
-			["auto"] = false,
+			["semver"] = "1.0.0",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["cooldownEdge"] = false,
+			["parent"] = "Horrific Visions",
 			["displayIcon"] = 136123,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -14640,7 +14711,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -14748,16 +14819,10 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "851UIXIwouV",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["authorOptions"] = {
 			},
-			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Front.ogg",
@@ -14770,24 +14835,31 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
+			["cooldownEdge"] = false,
 			["conditions"] = {
 			},
-			["parent"] = "Horrific Visions",
-			["cooldownTextDisabled"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["selfPoint"] = "CENTER",
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["auto"] = false,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "O - VoS - Decimator Shiq'voth - Decimator",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["width"] = 80,
-			["semver"] = "1.0.0",
+			["auto"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["cooldownEdge"] = false,
+			["parent"] = "Horrific Visions",
 			["displayIcon"] = 1097742,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -14811,17 +14883,17 @@ WeakAurasSaved = {
 						["type"] = "custom",
 						["custom_type"] = "stateupdate",
 						["debuffType"] = "HELPFUL",
-						["unit"] = "player",
-						["event"] = "Health",
 						["names"] = {
 						},
+						["event"] = "Health",
+						["unit"] = "player",
 						["subeventSuffix"] = "_CAST_START",
 						["spellIds"] = {
 						},
-						["events"] = "PLAYER_ENTERING_WORLD, CLEU:SPELL_AURA_APPLIED",
+						["custom"] = "function(allstates, event, ...)\n    local hasvalue = aura_env.hasvalue\n    \n    if not tIndexOf({\"PLAYER_ENTERING_WORLD\", \"COMBAT_LOG_EVENT_UNFILTERED\"}, event) then return end\n    \n    -- Init\n    if event == \"PLAYER_ENTERING_WORLD\" then\n        allstates.cheatdeath = allstates.cheatdeath or {\n            icon = 236225,\n            autoHide = false,\n            progressType = \"static\",\n            value = 0,\n            total = 0,\n            changed = true,\n            show = true,\n            triggered = false,\n        }\n        return true\n    end\n    \n    -- check cleu\n    local player = WeakAuras.myGUID\n    local subevent, _, sourceGUID, sourceName, _, _, destGUID, destName = select(2, ...)\n    local spellId, spellName = select(12, ...)\n    if sourceGUID == player and destGUID == player then\n        if subevent == \"SPELL_AURA_APPLIED\" then\n            if (spellName == \"Emergency Cranial Defibrillation\"\n                or tIndexOf({\"304815\", \"304816\", \"317864\", \"317865\"}, spellId)) then\n                allstates.cheatdeath.triggered = true\n            end\n        end\n    end\n    \n    return true\nend",
 						["subeventPrefix"] = "SPELL",
 						["check"] = "event",
-						["custom"] = "function(allstates, event, ...)\n    local hasvalue = aura_env.hasvalue\n    \n    if not tIndexOf({\"PLAYER_ENTERING_WORLD\", \"COMBAT_LOG_EVENT_UNFILTERED\"}, event) then return end\n    \n    -- Init\n    if event == \"PLAYER_ENTERING_WORLD\" then\n        allstates.cheatdeath = allstates.cheatdeath or {\n            icon = 236225,\n            autoHide = false,\n            progressType = \"static\",\n            value = 0,\n            total = 0,\n            changed = true,\n            show = true,\n            triggered = false,\n        }\n        return true\n    end\n    \n    -- check cleu\n    local player = WeakAuras.myGUID\n    local subevent, _, sourceGUID, sourceName, _, _, destGUID, destName = select(2, ...)\n    local spellId, spellName = select(12, ...)\n    if sourceGUID == player and destGUID == player then\n        if subevent == \"SPELL_AURA_APPLIED\" then\n            if (spellName == \"Emergency Cranial Defibrillation\"\n                or tIndexOf({\"304815\", \"304816\", \"317864\", \"317865\"}, spellId)) then\n                allstates.cheatdeath.triggered = true\n            end\n        end\n    end\n    \n    return true\nend",
+						["events"] = "PLAYER_ENTERING_WORLD, CLEU:SPELL_AURA_APPLIED",
 						["customVariables"] = "{\n    triggered = \"bool\",\n}",
 						["custom_hide"] = "custom",
 					},
@@ -14830,7 +14902,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -14906,6 +14978,11 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["semver"] = "1.0.5",
+			["cooldownEdge"] = false,
+			["regionType"] = "icon",
+			["xOffset"] = -927.9999580383301,
+			["selfPoint"] = "CENTER",
 			["authorOptions"] = {
 				{
 					["type"] = "toggle",
@@ -14964,21 +15041,17 @@ WeakAurasSaved = {
 					["width"] = 1,
 				}, -- [7]
 			},
-			["regionType"] = "icon",
 			["displayIcon"] = "236225",
-			["selfPoint"] = "CENTER",
-			["cooldownEdge"] = false,
-			["xOffset"] = -927.9999580383301,
-			["auto"] = false,
+			["ignoreOptionsEventErrors"] = true,
 			["uid"] = "A1VzOF1aXSg",
 			["cooldownTextDisabled"] = false,
-			["semver"] = "1.0.5",
+			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "HV ECD",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
 			["width"] = 50,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["config"] = {
 				["option7"] = false,
 				["option4"] = false,
@@ -15079,7 +15152,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -15168,20 +15241,35 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "9Ts41(1tet8",
+			["cooldownEdge"] = false,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
+			["conditions"] = {
+			},
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["cooldownEdge"] = false,
-			["regionType"] = "icon",
-			["authorOptions"] = {
-			},
 			["icon"] = true,
-			["conditions"] = {
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "S - TD - Inquisitor Darkspeak - Agonizing Torment DEBUFF",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["semver"] = "1.0.0",
+			["config"] = {
 			},
+			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -15202,20 +15290,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "S - TD - Inquisitor Darkspeak - Agonizing Torment DEBUFF",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["width"] = 80,
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Horrific Visions",
 			["displayIcon"] = 1386551,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -15261,7 +15335,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -15338,11 +15412,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -15354,7 +15428,15 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "SoanlJdc5dY",
+			["parent"] = "Horrific Visions",
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["cooldownEdge"] = false,
+			["conditions"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -15375,10 +15457,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
-			["authorOptions"] = {
-			},
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -15392,28 +15470,25 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["conditions"] = {
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["auto"] = true,
+			["tocversion"] = 80300,
+			["id"] = "MADNESS - Madness Desynchronized SPEED",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["width"] = 80,
+			["semver"] = "1.0.0",
+			["config"] = {
 			},
+			["inverse"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["cooldownTextDisabled"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "MADNESS - Madness Desynchronized SPEED",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["auto"] = true,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["cooldownEdge"] = false,
 			["displayIcon"] = "132323",
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -15464,7 +15539,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -15572,35 +15647,36 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["config"] = {
 			},
-			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["authorOptions"] = {
 			},
-			["regionType"] = "icon",
 			["selfPoint"] = "CENTER",
-			["parent"] = "Horrific Visions",
-			["conditions"] = {
-			},
-			["icon"] = true,
-			["zoom"] = 0.003,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["auto"] = false,
-			["tocversion"] = 80300,
-			["id"] = "O - TRASH - Horrifying Shout",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["semver"] = "1.0.0",
-			["uid"] = "HJrYC(pPRtd",
-			["inverse"] = false,
+			["regionType"] = "icon",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["conditions"] = {
+			},
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["parent"] = "Horrific Visions",
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.003,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80300,
+			["id"] = "O - TRASH - Horrifying Shout",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["width"] = 80,
+			["auto"] = false,
+			["uid"] = "HJrYC(pPRtd",
+			["inverse"] = false,
+			["icon"] = true,
 			["displayIcon"] = 236295,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -15611,9 +15687,10 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["preferToUpdate"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["semver"] = "1.0.0",
+			["borderBackdrop"] = "Blizzard Tooltip",
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["url"] = "https://wago.io/QM6DPA9wM/1",
@@ -15655,11 +15732,11 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 33,
-			["borderBackdrop"] = "Blizzard Tooltip",
+			["internalVersion"] = 37,
+			["icon"] = false,
 			["selfPoint"] = "CENTER",
 			["backdropInFront"] = false,
-			["icon"] = false,
+			["customTextUpdate"] = "update",
 			["barColor"] = {
 				0.31764705882353, -- [1]
 				0.50980392156863, -- [2]
@@ -15667,9 +15744,14 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["stickyDuration"] = false,
-			["customTextUpdate"] = "update",
+			["xOffset"] = 0,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["sparkOffsetY"] = 0,
-			["version"] = 1,
 			["subRegions"] = {
 				{
 					["type"] = "aurabar_bar",
@@ -15788,11 +15870,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 19.999994277954,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["config"] = {
 			},
 			["load"] = {
 				["use_class"] = true,
@@ -15815,8 +15893,6 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["config"] = {
-			},
 			["uid"] = "oVMqroAlu8A",
 			["desaturate"] = false,
 			["anchorFrameType"] = "SCREEN",
@@ -15827,23 +15903,24 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["useAdjustededMin"] = false,
+			["sparkHidden"] = "NEVER",
+			["anchorFrameFrame"] = "WeakAuras:Mongoose Fury",
 			["regionType"] = "aurabar",
 			["borderInFront"] = true,
-			["sparkHidden"] = "NEVER",
-			["icon_side"] = "RIGHT",
 			["anchorFrameParent"] = false,
+			["icon_side"] = "RIGHT",
+			["semver"] = "1.0.0",
 			["sparkHeight"] = 30,
+			["ignoreOptionsEventErrors"] = true,
 			["texture"] = "Blizzard",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["zoom"] = 0,
-			["spark"] = false,
+			["auto"] = true,
 			["tocversion"] = 80205,
 			["id"] = "AOE",
-			["anchorFrameFrame"] = "WeakAuras:Mongoose Fury",
+			["spark"] = false,
 			["frameStrata"] = 1,
 			["width"] = 180.00004577637,
-			["auto"] = true,
+			["useAdjustededMin"] = false,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -15851,7 +15928,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["inverse"] = false,
-			["xOffset"] = 0,
+			["version"] = 1,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -15935,7 +16012,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -16012,11 +16089,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -16028,15 +16105,30 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "0iwEVOwuMX2",
-			["icon"] = true,
 			["authorOptions"] = {
 			},
-			["regionType"] = "icon",
 			["xOffset"] = 0,
-			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
 			["conditions"] = {
 			},
+			["icon"] = true,
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "[NOT WORKING] MADNESS -  Madness Dark Delusions",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["semver"] = "1.0.0",
+			["config"] = {
+			},
+			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -16057,20 +16149,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "[NOT WORKING] MADNESS -  Madness Dark Delusions",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["width"] = 80,
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Horrific Visions",
 			["displayIcon"] = "3163618",
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -16129,7 +16207,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -16225,11 +16303,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -16241,34 +16319,35 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["cooldownTextDisabled"] = true,
 			["uid"] = "TjfF9YQzLVd",
-			["selfPoint"] = "CENTER",
 			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["icon"] = true,
 			["conditions"] = {
 			},
+			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["zoom"] = 0.003,
+			["semver"] = "1.0.0",
+			["tocversion"] = 80300,
+			["id"] = "O - TD - Inquisitor Gnshal - Cries of the void1",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = false,
+			["config"] = {
+			},
+			["inverse"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["zoom"] = 0.003,
-			["width"] = 80,
-			["cooldownTextDisabled"] = true,
-			["auto"] = false,
-			["tocversion"] = 80300,
-			["id"] = "O - TD - Inquisitor Gnshal - Cries of the void1",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "1.0.0",
-			["config"] = {
-			},
-			["inverse"] = false,
-			["icon"] = true,
 			["displayIcon"] = 135945,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -16308,7 +16387,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -16397,7 +16476,20 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "7dRI9k2UTqE",
+			["parent"] = "Horrific Visions",
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["conditions"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -16418,10 +16510,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
-			["authorOptions"] = {
-			},
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Interrupt.ogg",
@@ -16434,28 +16522,20 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["conditions"] = {
-			},
-			["cooldownEdge"] = false,
-			["cooldownTextDisabled"] = true,
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
 			["tocversion"] = 80300,
 			["id"] = "COMMON - TRASH - Touch of the Abyss",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["width"] = 80,
-			["auto"] = false,
+			["semver"] = "1.0.0",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["cooldownEdge"] = false,
 			["displayIcon"] = 1386547,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -16496,7 +16576,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -16604,16 +16684,20 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "Nh3xDzcGPLP",
-			["xOffset"] = 0,
 			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["regionType"] = "icon",
+			["selfPoint"] = "CENTER",
+			["conditions"] = {
+			},
+			["xOffset"] = 0,
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Interrupt.ogg",
@@ -16626,23 +16710,20 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["conditions"] = {
-			},
-			["cooldownEdge"] = false,
-			["cooldownTextDisabled"] = true,
+			["ignoreOptionsEventErrors"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["auto"] = false,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.0",
 			["tocversion"] = 80300,
 			["id"] = "S - TRASH - Psychic Scream",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["width"] = 80,
-			["semver"] = "1.0.0",
+			["auto"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["selfPoint"] = "CENTER",
+			["cooldownEdge"] = false,
 			["displayIcon"] = 136184,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -16687,7 +16768,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -16776,7 +16857,14 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "fAnRivcp9xN",
+			["parent"] = "Horrific Visions",
+			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["cooldownEdge"] = false,
+			["conditions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Front.ogg",
@@ -16789,13 +16877,21 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["parent"] = "Horrific Visions",
-			["regionType"] = "icon",
-			["xOffset"] = 0,
 			["authorOptions"] = {
 			},
-			["conditions"] = {
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "O - TRASH - Shockwave",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["width"] = 80,
+			["semver"] = "1.0.0",
+			["config"] = {
 			},
+			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -16816,20 +16912,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "O - TRASH - Shockwave",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["cooldownEdge"] = false,
 			["displayIcon"] = 451165,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -16875,7 +16957,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -16971,11 +17053,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
-				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -16987,21 +17069,35 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["config"] = {
 			},
-			["url"] = "https://wago.io/Tw-a05M4j/1",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
 			["authorOptions"] = {
 			},
-			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
 			["conditions"] = {
 			},
+			["url"] = "https://wago.io/Tw-a05M4j/1",
+			["selfPoint"] = "CENTER",
+			["ignoreOptionsEventErrors"] = true,
+			["width"] = 80,
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "O - VoW - Coagulated Horror - Visceral Fluid",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["semver"] = "1.0.0",
+			["uid"] = "ArwauWtfxng",
+			["inverse"] = false,
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -17015,19 +17111,6 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["width"] = 80,
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "O - VoW - Coagulated Horror - Visceral Fluid",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["auto"] = false,
-			["uid"] = "ArwauWtfxng",
-			["inverse"] = false,
-			["parent"] = "Horrific Visions",
 			["displayIcon"] = 136133,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -17067,7 +17150,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -17175,20 +17258,35 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "2KOQ71jUuiS",
+			["authorOptions"] = {
+			},
+			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
+			["conditions"] = {
+			},
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["conditions"] = {
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "S - MQ - Magister Umbric - Entropic Missiles",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["semver"] = "1.0.0",
+			["config"] = {
 			},
+			["inverse"] = false,
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Interrupt.ogg",
@@ -17201,20 +17299,6 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "S - MQ - Magister Umbric - Entropic Missiles",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["width"] = 80,
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Horrific Visions",
 			["displayIcon"] = 1035040,
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -17262,7 +17346,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 33,
+			["internalVersion"] = 37,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -17358,11 +17442,11 @@ WeakAurasSaved = {
 				["use_encounterid"] = false,
 				["use_zoneId"] = true,
 				["use_never"] = false,
+				["encounterid"] = "2329",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2329",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -17374,19 +17458,34 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["zoom"] = 0.003,
 			["uid"] = "F(ezI78YWpm",
-			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
 			["url"] = "https://wago.io/Tw-a05M4j/1",
-			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
+			["parent"] = "Horrific Visions",
 			["conditions"] = {
 			},
+			["xOffset"] = 0,
+			["selfPoint"] = "CENTER",
+			["ignoreOptionsEventErrors"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 80300,
+			["id"] = "O - VoH - Rexxar - Void Quils",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["semver"] = "1.0.0",
+			["config"] = {
+			},
+			["inverse"] = false,
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -17400,20 +17499,6 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.003,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "O - VoH - Rexxar - Void Quils",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["width"] = 80,
-			["auto"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Horrific Visions",
 			["displayIcon"] = "1035040",
 			["cooldown"] = true,
 			["iconInset"] = 0.3,
@@ -17421,6 +17506,7 @@ WeakAurasSaved = {
 		["Aspect of Wild"] = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
+			["zoom"] = 0,
 			["authorOptions"] = {
 				{
 					["type"] = "color",
@@ -17526,14 +17612,19 @@ WeakAurasSaved = {
 				}, -- [9]
 			},
 			["preferToUpdate"] = false,
-			["spark"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["parent"] = "Hunter - 0.4 (Barbed Shot Bars) BM",
+			["icon"] = false,
 			["sparkRotation"] = 0,
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/QM6DPA9wM/1",
-			["icon"] = false,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["fontFlags"] = "OUTLINE",
 			["icon_color"] = {
 				1, -- [1]
@@ -17541,13 +17632,8 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 33,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["internalVersion"] = 37,
+			["sparkRotationMode"] = "AUTO",
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -17585,14 +17671,6 @@ WeakAurasSaved = {
 				},
 			},
 			["backdropInFront"] = false,
-			["sparkRotationMode"] = "AUTO",
-			["barColor"] = {
-				0.4470588235294117, -- [1]
-				1, -- [2]
-				0.3019607843137255, -- [3]
-				1, -- [4]
-			},
-			["stickyDuration"] = false,
 			["actions"] = {
 				["start"] = {
 					["do_custom"] = false,
@@ -17604,6 +17682,13 @@ WeakAurasSaved = {
 					["do_custom"] = false,
 				},
 			},
+			["barColor"] = {
+				0.4470588235294117, -- [1]
+				1, -- [2]
+				0.3019607843137255, -- [3]
+				1, -- [4]
+			},
+			["stickyDuration"] = false,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -17655,6 +17740,46 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["customTriggerLogic"] = "function(t) return t[1] end",
 				["activeTriggerMode"] = -10,
+			},
+			["config"] = {
+				["gcdCol"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					0.23669809103012, -- [4]
+				},
+				["barNo"] = {
+					1, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["tickCol"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					0.40345621109009, -- [4]
+				},
+				["cdHeight"] = 3,
+				["cdCharges"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					0.42978602647781, -- [4]
+				},
+				["barYes"] = {
+					0.67058823529412, -- [1]
+					0.82745098039216, -- [2]
+					0.45098039215686, -- [3]
+					1, -- [4]
+				},
+				["cdPos"] = 1,
+				["cdNoCharges"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
 			},
 			["version"] = 1,
 			["subRegions"] = {
@@ -17775,46 +17900,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 15,
-			["config"] = {
-				["gcdCol"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					0.23669809103012, -- [4]
-				},
-				["barNo"] = {
-					1, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["tickCol"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					0.40345621109009, -- [4]
-				},
-				["cdHeight"] = 3,
-				["cdCharges"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					0.42978602647781, -- [4]
-				},
-				["barYes"] = {
-					0.67058823529412, -- [1]
-					0.82745098039216, -- [2]
-					0.45098039215686, -- [3]
-					1, -- [4]
-				},
-				["cdPos"] = 1,
-				["cdNoCharges"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-			},
+			["uid"] = "S0O)AZIqaX7",
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -17842,7 +17928,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
@@ -17857,10 +17946,7 @@ WeakAurasSaved = {
 				},
 				["use_spec"] = true,
 				["use_combat"] = true,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
+				["use_class"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -17868,7 +17954,6 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["uid"] = "S0O)AZIqaX7",
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -17879,6 +17964,7 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["sparkOffsetY"] = 0,
 			["sparkHidden"] = "NEVER",
+			["semver"] = "1.0.0",
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
 			["borderInFront"] = true,
@@ -17886,10 +17972,10 @@ WeakAurasSaved = {
 			["icon_side"] = "RIGHT",
 			["auto"] = true,
 			["sparkHeight"] = 30,
+			["ignoreOptionsEventErrors"] = true,
 			["texture"] = "Aluminium",
-			["zoom"] = 0,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["semver"] = "1.0.0",
+			["spark"] = false,
 			["tocversion"] = 80205,
 			["id"] = "Aspect of Wild",
 			["selfPoint"] = "CENTER",
@@ -17917,8 +18003,8 @@ WeakAurasSaved = {
 		["minimapPos"] = 175.169607240112,
 		["hide"] = true,
 	},
-	["lastUpgrade"] = 1594523410,
-	["dbVersion"] = 33,
+	["lastUpgrade"] = 1602648002,
+	["dbVersion"] = 37,
 	["clearOldHistory"] = 30,
 	["registered"] = {
 	},

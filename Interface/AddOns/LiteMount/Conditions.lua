@@ -41,21 +41,6 @@ local L = LM.Localize
 
 ]]
 
-local function UnitHasAura(unit, spellID, filter)
-    local i = 1
-    local auraID
-    while true do
-        auraID = select(10, UnitAura(unit, i, filter))
-        if not auraID then
-            break
-        end
-        if auraID == spellID then
-            return true
-        end
-        i = i + 1
-    end
-end
-
 -- If any condition starts with "no" we're screwed
 -- ":args" functions take a fixed set of arguments rather using / for OR
 
@@ -68,14 +53,8 @@ CONDITIONS["achievement"] =
 
 CONDITIONS["aura"] =
     function (cond, unit, v)
-        v = tonumber(v)
-        if not v then
-            return
-        end
-
         unit = unit or "player"
-
-        if UnitHasAura(unit, v) or UnitHasAura(unit, v, "HARMFUL") then
+        if LM.UnitAura(unit, v) or LM.UnitAura(unit, v, "HARMFUL") then
             return true
         end
     end
@@ -92,8 +71,15 @@ CONDITIONS["canexitvehicle"] =
     end
 
 CONDITIONS["channeling"] =
-    function (cond, unit)
-        return UnitChannelInfo(unit or "player") ~= nil
+    function (cond, unit, v)
+        unit = unit or "player"
+        if not v then
+            return UnitChannelInfo(unit) ~= nil
+        elseif tonumber(v) then
+            return select(8, UnitChannelInfo(unit)) == tonumber(v)
+        else
+            return UnitChannelInfo(unit) == v
+        end
     end
 
 CONDITIONS["class"] =
@@ -222,7 +208,7 @@ CONDITIONS["faction"] =
 
 CONDITIONS["falling"] =
     function (cond, unit)
-        return IsFalling() and ( GetTime() - LM.Location.lastJumpTime > 1 )
+        return LM.Environment:IsFalling()
     end
 
 CONDITIONS["false"] =
@@ -232,12 +218,12 @@ CONDITIONS["false"] =
 
 CONDITIONS["floating"] =
     function (cond, unit)
-        return LM.Location:IsFloating()
+        return LM.Environment:IsFloating()
     end
 
 CONDITIONS["flyable"] =
     function (cond, unit)
-        return LM.Location:CanFly()
+        return LM.Environment:CanFly()
     end
 
 CONDITIONS["flying"] =
@@ -298,17 +284,16 @@ CONDITIONS["instance"] =
 
 CONDITIONS["jump"] =
     function (cond, unit)
-        if GetTime() - LM.Location.lastJumpTime < 2 then
-            return true
-        end
+        local jumpTime = LM.Environment:JumpTime()
+        return ( jumpTime and jumpTime < 2 )
     end
 
 CONDITIONS["map"] =
     function (cond, unit, v)
         if v:sub(1,1) == '*' then
-            return LM.Location.uiMapID == tonumber(v:sub(2))
+            return LM.Environment.uiMapID == tonumber(v:sub(2))
         else
-            return LM.Location:MapInPath(tonumber(v))
+            return LM.Environment:MapInPath(tonumber(v))
         end
     end
 
@@ -334,7 +319,7 @@ CONDITIONS["mounted"] =
 
 CONDITIONS["moving"] =
     function (cond, unit)
-        return IsFalling() or GetUnitSpeed("player") > 0
+        return LM.Environment:IsMovingOrFalling()
     end
 
 CONDITIONS["name"] =
@@ -476,6 +461,22 @@ CONDITIONS["spec"] =
         end
     end
 
+CONDITIONS["stationary:args"] =
+    function (cond, unit, minv, maxv)
+        minv = tonumber(minv)
+        maxv = tonumber(maxv)
+        local stationaryTime = LM.Environment:StationaryTime()
+        if stationaryTime then
+            if stationaryTime < ( minv or 0 ) then
+                return false
+            elseif maxv then
+                return ( stationaryTime <= maxv )
+            else
+                return true
+            end
+        end
+    end
+
 CONDITIONS["stealthed"] =
     function (cond, unit)
         return IsStealthed()
@@ -483,7 +484,7 @@ CONDITIONS["stealthed"] =
 
 CONDITIONS["submerged"] =
     function (cond, unit)
-        return (IsSubmerged() and not LM.Location:IsFloating())
+        return (IsSubmerged() and not LM.Environment:IsFloating())
     end
 
 CONDITIONS["talent:args"] =

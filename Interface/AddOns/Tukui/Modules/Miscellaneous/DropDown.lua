@@ -18,28 +18,32 @@ function DropDown:Skin()
 
 		Backdrop = _G["DropDownList"..i.."MenuBackdrop"]
 		if Backdrop and not Backdrop.IsSkinned then
-			Backdrop:SetTemplate("Default")
+			Backdrop:StripTextures()
+			Backdrop:CreateBackdrop("Default")
 			Backdrop:CreateShadow()
 			Backdrop.IsSkinned = true
 		end
 
 		Backdrop = _G["DropDownList"..i.."Backdrop"]
 		if Backdrop and not Backdrop.IsSkinned then
-			Backdrop:SetTemplate("Default")
+			Backdrop:StripTextures()
+			Backdrop:CreateBackdrop("Default")
 			Backdrop:CreateShadow()
 			Backdrop.IsSkinned = true
 		end
 
 		Backdrop = _G["Lib_DropDownList"..i.."MenuBackdrop"]
 		if Backdrop and not Backdrop.IsSkinned then
-			Backdrop:SetTemplate("Default")
+			Backdrop:StripTextures()
+			Backdrop:CreateBackdrop("Default")
 			Backdrop:CreateShadow()
 			Backdrop.IsSkinned = true
 		end
 
 		Backdrop = _G["Lib_DropDownList"..i.."Backdrop"]
 		if Backdrop and not Backdrop.IsSkinned then
-			Backdrop:SetTemplate("Default")
+			Backdrop:StripTextures()
+			Backdrop:CreateBackdrop("Default")
 			Backdrop:CreateShadow()
 			Backdrop.IsSkinned = true
 		end
@@ -51,10 +55,8 @@ function DropDown:Enable()
 
 	for i = 1, getn(self.ChatMenus) do
 		Menu = _G[self.ChatMenus[i]]
-		Menu:SetTemplate()
+		Menu:CreateBackdrop()
 		Menu:CreateShadow()
-		Menu.SetBackdropColor = Noop
-		Menu.SetBackdropBorderColor = Noop
 	end
 
 	hooksecurefunc("UIDropDownMenu_CreateFrames", self.Skin)

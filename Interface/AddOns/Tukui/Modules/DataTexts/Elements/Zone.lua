@@ -33,21 +33,22 @@ local Update = function(self)
 end
 
 local OnEnter = function(self)
-	if InCombatLockdown() then
+	local UnitMap = C_Map.GetBestMapForUnit("player")
+
+	if not UnitMap or InCombatLockdown() then
 		return
 	end
 
 	GameTooltip:SetOwner(self:GetTooltipAnchor())
 	GameTooltip:ClearLines()
 
+	local GetPlayerMapPosition = C_Map.GetPlayerMapPosition(UnitMap, "player")
 	local Text = GetRealZoneText()
 	local PVPType, IsSubZonePvP, FactionName = GetZonePVPInfo()
-	local X, Y = C_Map.GetPlayerMapPosition(C_Map.GetBestMapForUnit("player"), "player"):GetXY()
-	local XText, YText, Label, Location, Color
-
-	if (not X) and (not Y) then
-		X = 0
-		Y = 0
+	local X, Y, XText, YText, Label, Color
+	
+	if GetPlayerMapPosition then
+		X, Y = C_Map.GetPlayerMapPosition(UnitMap, "player"):GetXY()
 	end
 
 	if ZoneColors[PVPType] then
@@ -56,28 +57,12 @@ local OnEnter = function(self)
 		Color = ZoneColors["else"]
 	end
 
-	X = floor(100 * X)
-	Y = floor(100 * Y)
-
-	if (X == 0 and Y == 0) then
-		GameTooltip:AddLine("0, 0")
-	else
-		if (X < 10) then
-			XText = "0"..X
-		else
-			XText = X
-		end
-
-		if (Y < 10) then
-			YText = "0"..Y
-		else
-			YText = Y
-		end
+	if X and Y then
+		X = floor(100 * X)
+		Y = floor(100 * Y)
 	end
 
-	Location = format("%s |cffFFFFFF(%s, %s)|r", Text or Unknown, XText or 0, YText or 0)
-
-	GameTooltip:AddLine(LOCATION_COLON)
+	local Location = format("|cffFFFF00%s|r %s |cffFFFFFF(%s, %s)|r", LOCATION_COLON, Text or Unknown, X or "?", Y or "?")
 
 	if (PVPType == "sanctuary") then
 		Label = SANCTUARY_TERRITORY
@@ -98,27 +83,26 @@ local OnEnter = function(self)
 	GameTooltip:Show()
 end
 
-local OnLeave = function()
-	GameTooltip:Hide()
-end
-
 local Enable = function(self)
 	self:RegisterEvent("ZONE_CHANGED")
 	self:RegisterEvent("ZONE_CHANGED_INDOORS")
 	self:RegisterEvent("ZONE_CHANGED_NEW_AREA")
 	self:RegisterEvent("PLAYER_ENTERING_WORLD")
+	
 	self:SetScript("OnEvent", Update)
 	self:SetScript("OnEnter", OnEnter)
-	self:SetScript("OnLeave", OnLeave)
+	self:SetScript("OnLeave", GameTooltip_Hide)
 	self:Update()
 end
 
 local Disable = function(self)
 	self.Text:SetText("")
+	
 	self:UnregisterAllEvents()
+	
 	self:SetScript("OnUpdate", nil)
 	self:SetScript("OnEnter", nil)
 	self:SetScript("OnLeave", nil)
 end
 
-DataText:Register(L.DataText.Zone, Enable, Disable, Update)
+DataText:Register("Zone", Enable, Disable, Update)

@@ -12,20 +12,9 @@ local Update = function(self, event, unit, powerType)
 	local hp = self.HolyPower
 	local num = UnitPower(unit, Enum.PowerType.HolyPower)
 	local numMax = UnitPowerMax('player', Enum.PowerType.HolyPower)
-	local spec = GetSpecialization()
-	
-	if spec ~= 3 then
-		num = 0
-	end
 	
 	if(hp.PreUpdate) then 
 		hp:PreUpdate()
-	end
-	
-	if num > 0 then
-		hp:Show()
-	else
-		hp:Hide()
 	end
 
 	for i = 1, numMax do
@@ -61,11 +50,7 @@ local function Enable(self)
 			if not hp[i]:GetStatusBarTexture() then
 				hp[i]:SetStatusBarTexture([=[Interface\TargetingFrame\UI-StatusBar]=])
 			end
-
-			hp[i].width = hp[i]:GetWidth()
 		end
-		
-		hp:Hide()
 
 		return true
 	end

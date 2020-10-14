@@ -51,7 +51,7 @@ local OnEnter = function(self)
 		local TotalGold = 0
 		GameTooltip:AddLine(L.DataText.Character)
 
-		for key, value in pairs(TukuiData.Gold[MyRealm]) do
+		for key, value in pairs(TukuiGold[MyRealm]) do
 			GameTooltip:AddDoubleLine(key, FormatTooltipMoney(value), 1, 1, 1, 1, 1, 1)
 			TotalGold = TotalGold + value
 		end
@@ -60,30 +60,8 @@ local OnEnter = function(self)
 		GameTooltip:AddLine(L.DataText.Server)
 		GameTooltip:AddDoubleLine(L.DataText.TotalGold, FormatTooltipMoney(TotalGold), 1, 1, 1, 1, 1, 1)
 
-		for i = 1, GetNumWatchedTokens() do
-			local Name, Count, _, _, ItemID = GetBackpackCurrencyInfo(i)
-			if (Name and i == 1) then
-				GameTooltip:AddLine(" ")
-				GameTooltip:AddLine(CURRENCY)
-			end
-
-			local R, G, B = 1, 1, 1
-
-			if ItemID then
-				R, G, B = GetItemQualityColor(select(3, GetItemInfo(ItemID)))
-			end
-
-			if (Name and Count) then
-				GameTooltip:AddDoubleLine(Name, Count, R, G, B, 1, 1, 1)
-			end
-		end
-
 		GameTooltip:Show()
 	end
-end
-
-local OnLeave = function()
-	GameTooltip:Hide()
 end
 
 local Update = function(self, event)
@@ -93,12 +71,11 @@ local Update = function(self, event)
 
 	local NewMoney = GetMoney()
 
-	TukuiData = TukuiData or {}
-	TukuiData["Gold"] = TukuiData["Gold"] or {}
-	TukuiData["Gold"][MyRealm] = TukuiData["Gold"][MyRealm] or {}
-	TukuiData["Gold"][MyRealm][MyName] = TukuiData["Gold"][MyRealm][MyName] or NewMoney
+	TukuiGold = TukuiGold or {}
+	TukuiGold[MyRealm] = TukuiGold[MyRealm] or {}
+	TukuiGold[MyRealm][MyName] = TukuiGold[MyRealm][MyName] or NewMoney
 
-	local OldMoney = TukuiData["Gold"][MyRealm][MyName] or NewMoney
+	local OldMoney = TukuiGold[MyRealm][MyName] or NewMoney
 
 	local Change = NewMoney - OldMoney
 
@@ -110,7 +87,7 @@ local Update = function(self, event)
 
 	self.Text:SetText(FormatMoney(NewMoney))
 
-	TukuiData["Gold"][MyRealm][MyName] = NewMoney
+	TukuiGold[MyRealm][MyName] = NewMoney
 end
 
 local OnMouseDown = function(self)
@@ -118,6 +95,7 @@ local OnMouseDown = function(self)
 		CloseBankBagFrames()
 		CloseBankFrame()
 		CloseAllBags()
+		CloseBag(-2)
 	else
 		if ContainerFrame1:IsShown() then
 			CloseAllBags()
@@ -136,7 +114,7 @@ local Enable = function(self)
 	self:RegisterEvent("PLAYER_ENTERING_WORLD")
 	self:SetScript("OnMouseDown", OnMouseDown)
 	self:SetScript("OnEnter", OnEnter)
-	self:SetScript("OnLeave", OnLeave)
+	self:SetScript("OnLeave", GameTooltip_Hide)
 	self:SetScript("OnEvent", Update)
 	self:Update()
 end
@@ -150,4 +128,4 @@ local Disable = function(self)
 	self:SetScript("OnLeave", nil)
 end
 
-DataText:Register(L.DataText.Gold, Enable, Disable, Update)
+DataText:Register("Gold", Enable, Disable, Update)

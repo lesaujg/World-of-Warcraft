@@ -1,6 +1,6 @@
 local T, C, L = select(2, ...):unpack()
 
-local TukuiAuras = T["Auras"]
+local Auras = T["Auras"]
 local unpack = unpack
 local GetTime = GetTime
 local DebuffTypeColor = DebuffTypeColor
@@ -8,18 +8,18 @@ local BuffFrame = BuffFrame
 local TemporaryEnchantFrame = TemporaryEnchantFrame
 local InterfaceOptionsFrameCategoriesButton12 = InterfaceOptionsFrameCategoriesButton12
 
-TukuiAuras.Headers = {}
-TukuiAuras.FlashTimer = 30
+Auras.Headers = {}
+Auras.FlashTimer = 30
 
-function TukuiAuras:DisableBlizzardAuras()
+function Auras:DisableBlizzardAuras()
 	BuffFrame:Kill()
 	TemporaryEnchantFrame:Kill()
 	InterfaceOptionsFrameCategoriesButton12:SetScale(0.00001)
 	InterfaceOptionsFrameCategoriesButton12:SetAlpha(0)
 end
 
-function TukuiAuras:StartOrStopFlash(timeleft)
-	if(timeleft < TukuiAuras.FlashTimer) then
+function Auras:StartOrStopFlash(timeleft)
+	if(timeleft < Auras.FlashTimer) then
 		if(not self:IsPlaying()) then
 			self:Play()
 		end
@@ -28,7 +28,7 @@ function TukuiAuras:StartOrStopFlash(timeleft)
 	end
 end
 
-function TukuiAuras:OnUpdate(elapsed)
+function Auras:OnUpdate(elapsed)
 	local TimeLeft
 
 	if(self.Enchant) then
@@ -67,7 +67,7 @@ function TukuiAuras:OnUpdate(elapsed)
 
 		if(TimeLeft < 60.5) then
 			if C.Auras.Flash then
-				TukuiAuras.StartOrStopFlash(self.Animation, TimeLeft)
+				Auras.StartOrStopFlash(self.Animation, TimeLeft)
 			end
 
 			if(TimeLeft < 5) then
@@ -87,7 +87,7 @@ function TukuiAuras:OnUpdate(elapsed)
 	end
 end
 
-function TukuiAuras:UpdateAura(index)
+function Auras:UpdateAura(index)
 	local Name, Texture, Count, DType, Duration, ExpirationTime, Caster, IsStealable, ShouldConsolidate, SpellID, CanApplyAura, IsBossDebuff = UnitAura(self:GetParent():GetAttribute("unit"), index, self.Filter)
 
 	if (Name) then
@@ -99,9 +99,10 @@ function TukuiAuras:UpdateAura(index)
 
 		if (Duration > 0 and ExpirationTime) then
 			local TimeLeft = ExpirationTime - GetTime()
+
 			if (not self.TimeLeft) then
 				self.TimeLeft = TimeLeft
-				self:SetScript("OnUpdate", TukuiAuras.OnUpdate)
+				self:SetScript("OnUpdate", Auras.OnUpdate)
 			else
 				self.TimeLeft = TimeLeft
 			end
@@ -109,13 +110,17 @@ function TukuiAuras:UpdateAura(index)
 			self.Dur = Duration
 
 			if C.Auras.Flash then
-				TukuiAuras.StartOrStopFlash(self.Animation, TimeLeft)
+				Auras.StartOrStopFlash(self.Animation, TimeLeft)
 			end
 
 			self.Bar:SetMinMaxValues(0, Duration)
 
 			if (not C.Auras.ClassicTimer) then
 				self.Holder:Show()
+			end
+
+			if (Duration == ceil(TimeLeft)) and (C.Auras.Animation and self.AuraGrowth) then
+				self.AuraGrowth:Play()
 			end
 		else
 			if C.Auras.Flash then
@@ -145,15 +150,15 @@ function TukuiAuras:UpdateAura(index)
 
 		if (self.Filter == "HARMFUL") then
 			local Color = DebuffTypeColor[DType or "none"]
-			self:SetBackdropBorderColor(Color.r * 3/5, Color.g * 3/5, Color.b * 3/5)
-			self.Holder:SetBackdropBorderColor(Color.r * 3/5, Color.g * 3/5, Color.b * 3/5)
+			self.Backdrop:SetBorderColor(Color.r * 3/5, Color.g * 3/5, Color.b * 3/5)
+			self.Holder.Backdrop:SetBorderColor(Color.r * 3/5, Color.g * 3/5, Color.b * 3/5)
 		end
 
 		self.Icon:SetTexture(Texture)
 	end
 end
 
-function TukuiAuras:UpdateTempEnchant(slot)
+function Auras:UpdateTempEnchant(slot)
 	local Enchant = (slot == 16 and 2) or 6
 	local Expiration = select(Enchant, GetWeaponEnchantInfo())
 	local Icon = GetInventoryItemTexture("player", slot)
@@ -170,7 +175,7 @@ function TukuiAuras:UpdateTempEnchant(slot)
 		end
 
 		self.Enchant = Enchant
-		self:SetScript("OnUpdate", TukuiAuras.OnUpdate)
+		self:SetScript("OnUpdate", Auras.OnUpdate)
 	else
 		self.Dur = nil
 		self.Enchant = nil
@@ -187,15 +192,15 @@ function TukuiAuras:UpdateTempEnchant(slot)
 	end
 end
 
-function TukuiAuras:OnAttributeChanged(attribute, value)
+function Auras:OnAttributeChanged(attribute, value)
 	if (attribute == "index") then
-		return TukuiAuras.UpdateAura(self, value)
+		return Auras.UpdateAura(self, value)
 	elseif(attribute == "target-slot") then
-		return TukuiAuras.UpdateTempEnchant(self, value)
+		return Auras.UpdateTempEnchant(self, value)
 	end
 end
 
-function TukuiAuras:Skin()
+function Auras:Skin()
 	local Font = T.GetFont(C["Auras"].Font)
 
 	self:CreateShadow()
@@ -209,9 +214,9 @@ function TukuiAuras:Skin()
 	Count:SetPoint("TOP", self, 1, -4)
 
 	local Holder = CreateFrame("Frame", nil, self)
-	Holder:Size(self:GetWidth(), 4)
+	Holder:SetSize(self:GetWidth(), 4)
 	Holder:SetPoint("TOP", self, "BOTTOM", 0, -1)
-	Holder:SetTemplate("Transparent")
+	Holder:CreateBackdrop("Transparent")
 	Holder:CreateShadow()
 
 	local Bar = CreateFrame("StatusBar", nil, Holder)
@@ -250,12 +255,6 @@ function TukuiAuras:Skin()
 		Shrink:SetScale(0.75, 0.75)
 
 		self.AuraGrowth = AuraGrowth
-
-		self:SetScript("OnShow", function(self)
-			if self.AuraGrowth then
-				self.AuraGrowth:Play()
-			end
-		end)
 	end
 
 	self.Duration = Duration
@@ -263,19 +262,19 @@ function TukuiAuras:Skin()
 	self.Holder = Holder
 	self.Filter = self:GetParent():GetAttribute("filter")
 
-	self:SetScript("OnAttributeChanged", TukuiAuras.OnAttributeChanged)
+	self:SetScript("OnAttributeChanged", Auras.OnAttributeChanged)
 
 	self.Icon = Icon
 	self.Count = Count
-	self:SetTemplate("Default")
+	self:CreateBackdrop("Default")
 end
 
-function TukuiAuras:OnEnterWorld()
-	for _, Header in pairs(TukuiAuras.Headers) do
+function Auras:OnEnterWorld()
+	for _, Header in pairs(Auras.Headers) do
 		local Child = Header:GetAttribute("child1")
 		local i = 1
 		while(Child) do
-			TukuiAuras.UpdateAura(Child, Child:GetID())
+			Auras.UpdateAura(Child, Child:GetID())
 
 			i = i + 1
 			Child = Header:GetAttribute("child" .. i)
@@ -283,8 +282,8 @@ function TukuiAuras:OnEnterWorld()
 	end
 end
 
-function TukuiAuras:LoadVariables() -- to be completed
-	local Headers = TukuiAuras.Headers
+function Auras:LoadVariables() -- to be completed
+	local Headers = Auras.Headers
 	local Buffs = Headers[1]
 	local Debuffs = Headers[2]
 	local Position = Buffs:GetPoint()
@@ -295,4 +294,19 @@ function TukuiAuras:LoadVariables() -- to be completed
 		Debuffs:SetAttribute("xOffset", 35)
 		Debuffs:SetAttribute("point", Position)
 	end
+end
+
+function Auras:Enable()
+	if not C.Auras.Enable then
+		return
+	end
+
+	self:DisableBlizzardAuras()
+	self:CreateHeaders()
+
+	local EnterWorld = CreateFrame("Frame")
+	EnterWorld:RegisterEvent("PLAYER_ENTERING_WORLD")
+	EnterWorld:SetScript("OnEvent", function(self, event)
+		Auras:OnEnterWorld()
+	end)
 end

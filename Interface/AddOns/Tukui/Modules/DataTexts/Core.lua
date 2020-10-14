@@ -1,26 +1,20 @@
 local T, C, L = select(2, ...):unpack()
-
-local pairs = pairs
-local unpack = unpack
-local CreateFrame = CreateFrame
-local TukuiDT = CreateFrame("Frame")
-
-local DataTextLeft
-local DataTextRight
+local DataTexts = T["DataTexts"]
 local MinimapDataText
 
-TukuiDT.DefaultNumAnchors = 6
-TukuiDT.NumAnchors = TukuiDT.DefaultNumAnchors
-TukuiDT.Texts = {}
-TukuiDT.Anchors = {}
-TukuiDT.Menu = {}
+DataTexts.DefaultNumAnchors = 6
+DataTexts.NumAnchors = DataTexts.DefaultNumAnchors
+DataTexts.DataTexts = {}
+DataTexts.Anchors = {}
+DataTexts.Menu = {}
+DataTexts.Panels = {}
 
-function TukuiDT:AddToMenu(name, data)
-	if self["Texts"][name] then
+function DataTexts:AddToMenu(name, data)
+	if self["DataTexts"][name] then
 		return
 	end
 
-	self["Texts"][name] = data
+	self["DataTexts"][name] = data
 	tinsert(self.Menu, {text = name, notCheckable = true, func = self.Toggle, arg1 = data})
 end
 
@@ -39,32 +33,31 @@ local SetData = function(self, object)
 		RemoveData(self)
 	end
 
-	local Panels = T["Panels"]
+	local Panels = T.DataTexts.Panels
 
 	-- Set the new data text
 	self.Data = object
 	self.Data:Enable()
-	self.Data.Text:Point("RIGHT", self, 0, 0)
-	self.Data.Text:Point("LEFT", self, 0, 0)
-	self.Data.Text:Point("TOP", self, 0, -1)
-	self.Data.Text:Point("BOTTOM", self, 0, -1)
+	self.Data.Text:SetPoint("RIGHT", self, 0, 0)
+	self.Data.Text:SetPoint("LEFT", self, 0, 0)
+	self.Data.Text:SetPoint("TOP", self, 0, -1)
+	self.Data.Text:SetPoint("BOTTOM", self, 0, -1)
 	self.Data.Position = self.Num
 	self.Data:SetAllPoints(self.Data.Text)
 
-	if (Panels.DataTextLeft and self.Data.Position >= 1 and self.Data.Position <= 3) then
-		self.Data:SetParent(Panels.DataTextLeft)
-	elseif (Panels.DataTextRight and self.Data.Position >= 4 and self.Data.Position <= 6) then
-		self.Data:SetParent(Panels.DataTextRight)
-	elseif (Panels.MinimapDataText and self.Data.Position == 7) then
-		self.Data:SetParent(Panels.MinimapDataText)
+	if (Panels.Left and self.Data.Position >= 1 and self.Data.Position <= 3) then
+		self.Data:SetParent(Panels.Left)
+	elseif (Panels.Right and self.Data.Position >= 4 and self.Data.Position <= 6) then
+		self.Data:SetParent(Panels.Right)
+	elseif (Panels.Minimap and self.Data.Position == 7) then
+		self.Data:SetParent(Panels.Minimap)
 	end
 end
 
-function TukuiDT:CreateAnchors()
-	local Panels = T["Panels"]
-	DataTextLeft = Panels.DataTextLeft
-	DataTextRight = Panels.DataTextRight
-	MinimapDataText = Panels.MinimapDataText
+function DataTexts:CreateAnchors()
+	local DataTextLeft = T.DataTexts.Panels.Left
+	local DataTextRight = T.DataTexts.Panels.Right
+	local MinimapDataText = T.DataTexts.Panels.Minimap
 
 	if (MinimapDataText) then
 		self.NumAnchors = self.NumAnchors + 1
@@ -72,7 +65,13 @@ function TukuiDT:CreateAnchors()
 
 	for i = 1, self.NumAnchors do
 		local Frame = CreateFrame("Button", nil, UIParent)
-		Frame:Size((DataTextLeft:GetWidth() / 3) - 1, DataTextLeft:GetHeight() - 2)
+		local DataWidth = (DataTextLeft:GetWidth() / 3) - 1
+
+		if i >= 4 and i <= 6 then
+			DataWidth = (DataTextRight:GetWidth() / 3) - 1
+		end
+
+		Frame:SetSize(DataWidth, DataTextLeft:GetHeight() - 2)
 		Frame:SetFrameLevel(DataTextLeft:GetFrameLevel() + 1)
 		Frame:SetFrameStrata("HIGH")
 		Frame:EnableMouse(false)
@@ -87,44 +86,45 @@ function TukuiDT:CreateAnchors()
 		self.Anchors[i] = Frame
 
 		if (i == 1) then
-			Frame:Point("LEFT", DataTextLeft, 1, 0)
+			Frame:SetPoint("LEFT", DataTextLeft, 1, 0)
 		elseif (i == 4) then
-			Frame:Point("LEFT", DataTextRight, 1, 0)
+			Frame:SetPoint("LEFT", DataTextRight, 1, 0)
 		elseif (i == 7) then
-			Frame:Point("CENTER", MinimapDataText, 0, 0)
-			Frame:Size(MinimapDataText:GetWidth() - 2, MinimapDataText:GetHeight() - 2)
+			Frame:SetPoint("CENTER", MinimapDataText, 0, 0)
+			Frame:SetSize(MinimapDataText:GetWidth() - 2, MinimapDataText:GetHeight() - 2)
 		else
-			Frame:Point("LEFT", self.Anchors[i-1], "RIGHT", 1, 0)
+			Frame:SetPoint("LEFT", self.Anchors[i-1], "RIGHT", 1, 0)
 		end
 	end
 end
 
 local GetTooltipAnchor = function(self)
 	local Position = self.Position
+	local MinimapDataText = T.DataTexts.Panels.Minimap
 	local From
 	local Anchor = "ANCHOR_TOP"
 	local X = 0
-	local Y = T.Scale(16)
+	local Y = 16
 
 	if (Position >= 1 and Position <= 3) then
 		X = -1
 		Anchor = "ANCHOR_TOPLEFT"
-		From = T.Panels.LeftChatBG
+		From = T.Chat.Panels.LeftChat
 	elseif (Position >=4 and Position <= 6) then
 		X = 1
 		Anchor = "ANCHOR_TOPRIGHT"
-		From = T.Panels.RightChatBG
+		From = T.Chat.Panels.RightChat
 	elseif (Position == 7 and MinimapDataText) then
-		Anchor = "ANCHOR_BOTTOMLEFT"
-		Y = T.Scale(-5)
+		Anchor = "ANCHOR_BOTTOM"
+		Y = -5
 		From = MinimapDataText
 	end
 
 	return From, Anchor, X, Y
 end
 
-function TukuiDT:GetDataText(name)
-	return self["Texts"][name]
+function DataTexts:GetDataText(name)
+	return self["DataTexts"][name]
 end
 
 local OnEnable = function(self)
@@ -142,7 +142,7 @@ local OnDisable = function(self)
 	self.Enabled = false
 end
 
-function TukuiDT:Register(name, enable, disable, update)
+function DataTexts:Register(name, enable, disable, update)
 	local Data = CreateFrame("Frame", nil, UIParent)
 	Data:EnableMouse(true)
 	Data:SetFrameStrata("MEDIUM")
@@ -162,59 +162,55 @@ function TukuiDT:Register(name, enable, disable, update)
 	self:AddToMenu(name, Data)
 end
 
-function TukuiDT:ForceUpdate()
-	for _, data in pairs(self.Texts) do
+function DataTexts:ForceUpdate()
+	for _, data in pairs(self.DataTexts) do
 		if data.Enabled then
 			data:Update(1)
 		end
 	end
 end
 
-function TukuiDT:ResetGold()
-	local Realm = GetRealmName()
-	local Name = UnitName("player")
+function DataTexts:ResetGold()
+	local MyRealm = GetRealmName()
+	local MyName = UnitName("player")
 
-	TukuiData.Gold = {}
-	TukuiData.Gold[Realm] = {}
-	TukuiData.Gold[Realm][Name] = GetMoney()
+	TukuiGold = {}
+	TukuiGold[MyRealm] = {}
+	TukuiGold[MyRealm][MyName] = GetMoney()
 end
 
-function TukuiDT:Save()
+function DataTexts:Save()
 	if (not TukuiData[GetRealmName()][UnitName("player")]) then
 		TukuiData[GetRealmName()][UnitName("player")] = {}
 	end
 
 	local Data = TukuiData[GetRealmName()][UnitName("player")]
 
-	if (not Data.Texts) then
-		Data.Texts = {}
-	end
-
-	for Name, DataText in pairs(self.Texts) do
+	for Name, DataText in pairs(self.DataTexts) do
 		if DataText.Position then
-			Data.Texts[Name] = {DataText.Enabled, DataText.Position}
+			Data.DataTexts[Name] = {DataText.Enabled, DataText.Position}
 		end
 	end
 end
 
-function TukuiDT:AddDefaults()
-	TukuiData[GetRealmName()][UnitName("player")].Texts = {}
+function DataTexts:AddDefaults()
+	TukuiData[GetRealmName()][UnitName("player")].DataTexts = {}
 
-	TukuiData[GetRealmName()][UnitName("player")].Texts[L.DataText.Guild] = {true, 1}
-	TukuiData[GetRealmName()][UnitName("player")].Texts[L.DataText.Voice] = {true, 2}
-	TukuiData[GetRealmName()][UnitName("player")].Texts[L.DataText.Friends] = {true, 3}
-	TukuiData[GetRealmName()][UnitName("player")].Texts[L.DataText.FPSAndMS] = {true, 4}
-	TukuiData[GetRealmName()][UnitName("player")].Texts[L.DataText.Memory] = {true, 5}
-	TukuiData[GetRealmName()][UnitName("player")].Texts[L.DataText.Gold] = {true, 6}
-	TukuiData[GetRealmName()][UnitName("player")].Texts[L.DataText.Time] = {true, 7}
+	TukuiData[GetRealmName()][UnitName("player")].DataTexts["Guild"] = {true, 1}
+	TukuiData[GetRealmName()][UnitName("player")].DataTexts["Character"] = {true, 2}
+	TukuiData[GetRealmName()][UnitName("player")].DataTexts["Friends"] = {true, 3}
+	TukuiData[GetRealmName()][UnitName("player")].DataTexts["System"] = {true, 4}
+	TukuiData[GetRealmName()][UnitName("player")].DataTexts["MicroMenu"] = {true, 5}
+	TukuiData[GetRealmName()][UnitName("player")].DataTexts["Gold"] = {true, 6}
+	TukuiData[GetRealmName()][UnitName("player")].DataTexts["Time"] = {true, 7}
 end
 
-function TukuiDT:Reset()
+function DataTexts:Reset()
 	for i = 1, self.NumAnchors do
 		RemoveData(self.Anchors[i])
 	end
 
-	for _, Data in pairs(self.Texts) do
+	for _, Data in pairs(self.DataTexts) do
 		if Data.Enabled then
 			Data:Disable()
 		end
@@ -222,8 +218,8 @@ function TukuiDT:Reset()
 
 	self:AddDefaults()
 
-	if (TukuiData[GetRealmName()][UnitName("player")] and TukuiData[GetRealmName()][UnitName("player")].Texts) then
-		for Name, Info in pairs(TukuiData[GetRealmName()][UnitName("player")].Texts) do
+	if (TukuiData[GetRealmName()][UnitName("player")] and TukuiData[GetRealmName()][UnitName("player")].DataTexts) then
+		for Name, Info in pairs(TukuiData[GetRealmName()][UnitName("player")].DataTexts) do
 			local Enabled, Num = Info[1], Info[2]
 
 			if (Enabled and (Num and Num > 0)) then
@@ -233,27 +229,21 @@ function TukuiDT:Reset()
 					Object:Enable()
 					self.Anchors[Num]:SetData(Object)
 				else
-					T.Print("DataText '" .. Name .. "' not found. Removing from cache.")
-					TukuiData[GetRealmName()][UnitName("player")].Texts[Name] = {false, 0}
+					T.Print("DataText '" .. Name .. "' not found. Removing. Replace with [|cff00ff00/tukui dt|r]")
+					TukuiData[GetRealmName()][UnitName("player")].DataTexts[Name] = {false, 0}
 				end
 			end
 		end
 	end
 end
 
-function TukuiDT:Load()
+function DataTexts:SetTexts()
 	self:CreateAnchors()
 
-	if (not TukuiData[GetRealmName()][UnitName("player")]) then
-		TukuiData[GetRealmName()][UnitName("player")] = {}
-	end
+	T:VerifyDataTable()
 
-	if (not TukuiData[GetRealmName()][UnitName("player")].Texts) then
-		TukuiDT:AddDefaults()
-	end
-
-	if (TukuiData[GetRealmName()][UnitName("player")] and TukuiData[GetRealmName()][UnitName("player")].Texts) then
-		for Name, Info in pairs(TukuiData[GetRealmName()][UnitName("player")].Texts) do
+	if (TukuiData[GetRealmName()][UnitName("player")] and TukuiData[GetRealmName()][UnitName("player")].DataTexts) then
+		for Name, Info in pairs(TukuiData[GetRealmName()][UnitName("player")].DataTexts) do
 			local Enabled, Num = Info[1], Info[2]
 
 			if (Enabled and (Num and Num > 0)) then
@@ -264,8 +254,8 @@ function TukuiDT:Load()
 						Object:Enable()
 						self.Anchors[Num]:SetData(Object)
 					else
-						T.Print("DataText '" .. Name .. "' not found. Removing from cache.")
-						TukuiData[GetRealmName()][UnitName("player")].Texts[Name] = {false, 0}
+						T.Print("DataText '" .. Name .. "' not found. Removing. Replace with [|cff00ff00/tukui dt|r]")
+						TukuiData[GetRealmName()][UnitName("player")].DataTexts[Name] = {false, 0}
 					end
 				end
 			end
@@ -273,18 +263,40 @@ function TukuiDT:Load()
 	end
 end
 
-function TukuiDT:Enable()
+function DataTexts:Enable()
+	local DataTextLeft = CreateFrame("Frame", "TukuiLeftDataTextBox", UIParent)
+	DataTextLeft:SetSize(C.General.Themes.Value == "Tukui" and C.Chat.LeftWidth or 370, 23)
+	DataTextLeft:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 34, 20)
+	DataTextLeft:CreateBackdrop()
+	DataTextLeft:SetFrameStrata("BACKGROUND")
+	DataTextLeft:SetFrameLevel(2)
+
+	local DataTextRight = CreateFrame("Frame", "TukuiRightDataTextBox", UIParent)
+	DataTextRight:SetSize(C.General.Themes.Value == "Tukui" and C.Chat.RightWidth or 370, 23)
+	DataTextRight:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -34, 20)
+	DataTextRight:CreateBackdrop()
+	DataTextRight:SetFrameStrata("BACKGROUND")
+	DataTextRight:SetFrameLevel(2)
+	
+	self.Panels.Left = DataTextLeft
+	self.Panels.Right = DataTextRight
+	
 	self.Font = T.GetFont(C["DataTexts"].Font)
-	self.NameColor = T.RGBToHex(unpack(C["DataTexts"].NameColor))
-	self.ValueColor = T.RGBToHex(unpack(C["DataTexts"].ValueColor))
-	self:Load()
+	self.NameColor = (C.DataTexts.ClassColor == true and T.RGBToHex(unpack(T.Colors.class[T.MyClass]))) or (T.RGBToHex(unpack(C["DataTexts"].NameColor)))
+	self.ValueColor = (C.DataTexts.ClassColor == true and T.RGBToHex(unpack(T.Colors.class[T.MyClass]))) or (T.RGBToHex(unpack(C["DataTexts"].ValueColor)))
+	self.HighlightColor = (T.RGBToHex(unpack(C["DataTexts"].HighlightColor)))
+	self:SetTexts()
 	self:AddRemove()
-	self.BGFrame:Enable()
+
+	if self.BGFrame then
+		self.BGFrame:Enable()
+	end
+	
+	T.Movers:RegisterFrame(DataTextLeft)
+	T.Movers:RegisterFrame(DataTextRight)
 end
 
-TukuiDT:RegisterEvent("PLAYER_LOGOUT")
-TukuiDT:SetScript("OnEvent", function(self, event)
+DataTexts:RegisterEvent("PLAYER_LOGOUT")
+DataTexts:SetScript("OnEvent", function(self, event)
 	self:Save()
 end)
-
-T["DataTexts"] = TukuiDT

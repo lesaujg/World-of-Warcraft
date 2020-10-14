@@ -53,11 +53,6 @@ local OnMouseUp = function(self, btn)
 	end
 end
 
-local OnLeave = function()
-	GameTooltip:Hide()
-end
-
-
 local OnEnter = function(self)
 	GameTooltip:SetOwner(self:GetTooltipAnchor())
 	GameTooltip:ClearLines()
@@ -95,9 +90,9 @@ local OnEnter = function(self)
 end
 
 local Enable = function(self)
-	self.Text:SetText(L.DataText.Voice)
+	self.Text:SetFormattedText("%s", DataText.NameColor .. BINDING_HEADER_VOICE_CHAT .. "|r")
 	self:SetScript("OnMouseUp", OnMouseUp)
-	self:SetScript("OnEnter", OnEnter)
+	self:SetScript("OnEnter", GameTooltip_Hide)
 	self:SetScript("OnLeave", OnLeave)
 end
 
@@ -108,4 +103,4 @@ local Disable = function(self)
 	self:SetScript("OnLeave", nil)
 end
 
-DataText:Register(L.DataText.Voice, Enable, Disable)
+DataText:Register("Voice Chat", Enable, Disable)

@@ -2,17 +2,17 @@ local T, C = select(2, ...):unpack()
 
 -- Local values
 local MenuFrame = CreateFrame("Frame", "TukuiDataTextToggleDropDown", UIParent, "UIDropDownMenuTemplate")
-local TukuiDT = T["DataTexts"]
-local Anchors = TukuiDT.Anchors
-local Menu = TukuiDT.Menu
+local DataTexts = T["DataTexts"]
+local Anchors = DataTexts.Anchors
+local Menu = DataTexts.Menu
 local Active = false
 local CurrentFrame
 
-TukuiDT.Toggle = function(self, object)
+DataTexts.Toggle = function(self, object)
 	CurrentFrame:SetData(object)
 end
 
-TukuiDT.Remove = function()
+DataTexts.Remove = function()
 	CurrentFrame:RemoveData()
 end
 
@@ -22,7 +22,7 @@ local OnMouseDown = function(self)
 	T.Miscellaneous.DropDown.Open(Menu, MenuFrame, "cursor", 0 , 0, "MENU", 2)
 end
 
-function TukuiDT:ToggleDataPositions()
+function DataTexts:ToggleDataPositions()
 	if Active then
 		for i = 1, self.NumAnchors do
 			local Frame = Anchors[i]
@@ -45,8 +45,8 @@ function TukuiDT:ToggleDataPositions()
 	end
 end
 
-function TukuiDT:AddRemove()
+function DataTexts:AddRemove()
 	-- Add a remove button
 	tinsert(Menu, {text = "", notCheckable = true})
-	tinsert(Menu, {text = "|cffFF0000"..REMOVE.."|r", notCheckable = true, func = TukuiDT.Remove})
+	tinsert(Menu, {text = "|cffFF0000"..REMOVE.."|r", notCheckable = true, func = DataTexts.Remove})
 end

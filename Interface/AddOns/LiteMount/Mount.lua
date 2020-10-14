@@ -93,23 +93,32 @@ function LM.Mount:FlagsSet(checkFlags)
     return true
 end
 
-local function PlayerIsMovingOrFalling()
-    return (GetUnitSpeed("player") > 0 or IsFalling())
+function LM.Mount:IsActive(buffTable)
+    return buffTable[self.spellID]
 end
 
 function LM.Mount:IsCastable()
-
-    if PlayerIsMovingOrFalling() then
+    if LM.Environment:IsMovingOrFalling() then
         local castTime = select(4, GetSpellInfo(self.spellID))
         if castTime > 0 then return false end
     end
-
     return true
 end
 
-function LM.Mount:GetSecureAttributes()
+function LM.Mount:IsCancelable()
+    return true
+end
+
+-- These should probably not be making new identical objects all tha time.
+
+function LM.Mount:GetCastAction()
     local spellName = GetSpellInfo(self.spellID)
-    return { ["type"] = "spell", ["spell"] = spellName }
+    return LM.SecureAction:Spell(spellName)
+end
+
+function LM.Mount:GetCancelAction()
+    local spellName = GetSpellInfo(self.spellID)
+    return LM.SecureAction:CancelAura(spellName)
 end
 
 function LM.Mount:Dump(prefix)

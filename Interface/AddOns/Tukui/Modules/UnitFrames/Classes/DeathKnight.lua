@@ -1,30 +1,28 @@
 local T, C, L = select(2, ...):unpack()
 
-local TukuiUnitFrames = T["UnitFrames"]
+local UnitFrames = T["UnitFrames"]
 local Class = select(2, UnitClass("player"))
 
 if (Class ~= "DEATHKNIGHT") then
 	return
 end
 
-TukuiUnitFrames.AddClassFeatures["DEATHKNIGHT"] = function(self)
-	local RunesBar = CreateFrame("Frame", self:GetName().."RuneBar", self)
-	local Shadow = self.Shadow
+UnitFrames.AddClassFeatures["DEATHKNIGHT"] = function(self)
+	local RunesBar = CreateFrame("Frame", self:GetName().."RuneBar", self.Health)
 	local PowerTexture = T.GetTexture(C["Textures"].UFPowerTexture)
 
 	-- Runes
-	RunesBar:SetFrameStrata(self:GetFrameStrata())
-	RunesBar:SetFrameLevel(self:GetFrameLevel())
-	RunesBar:SetHeight(8)
-	RunesBar:SetPoint("BOTTOMLEFT", self, "TOPLEFT", 0, 1)
-	RunesBar:SetPoint("BOTTOMRIGHT", self, "TOPRIGHT", 0, 1)
-	RunesBar:SetBackdrop(TukuiUnitFrames.Backdrop)
-	RunesBar:SetBackdropColor(0, 0, 0)
-	RunesBar:SetBackdropBorderColor(0, 0, 0)
+	RunesBar:SetFrameLevel(self.Health:GetFrameLevel() + 1)
+	RunesBar:SetHeight(6)
+	RunesBar:SetPoint("BOTTOMLEFT", self.Health)
+	RunesBar:SetPoint("BOTTOMRIGHT", self.Health)
+	
+	RunesBar:CreateBackdrop()
+	RunesBar.Backdrop:SetOutside()
 
 	for i = 1, 6 do
 		RunesBar[i] = CreateFrame("StatusBar", self:GetName().."Rune"..i, RunesBar)
-		RunesBar[i]:SetHeight(8)
+		RunesBar[i]:SetHeight(4)
 		RunesBar[i]:SetStatusBarTexture(PowerTexture)
 		RunesBar[i]:SetStatusBarColor(self.Power:GetStatusBarColor())
 
@@ -42,11 +40,8 @@ TukuiUnitFrames.AddClassFeatures["DEATHKNIGHT"] = function(self)
 		end
 	end
 
-	RunesBar.PostUpdate = TukuiUnitFrames.RunesPostUpdate
+	RunesBar.PostUpdate = UnitFrames.RunesPostUpdate
 	RunesBar.colorSpec = true
-
-	-- Shadow Effect Updates
-	Shadow:Point("TOPLEFT", -4, 12)
 
 	-- Register
 	self.Runes = RunesBar

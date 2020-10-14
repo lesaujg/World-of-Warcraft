@@ -1,17 +1,14 @@
 local T, C, L = select(2, ...):unpack()
 
-local _G = _G
-local format = format
-local Noop = function() end
+local Chat = T["Chat"]
 local Toast = BNToastFrame
-local TukuiChat = T["Chat"]
-local UIFrameFadeRemoveFrame = UIFrameFadeRemoveFrame
+local Noop = function() end
 
--- Set default position for Voice Activation Alert
-TukuiChat.VoiceAlertPosition = {"BOTTOMLEFT", T.Panels.LeftChatBG, "TOPLEFT", 0, 14}
+-- Set name for right chat
+Chat.RightChatName = OTHER
 
 -- Update editbox border color
-function TukuiChat:UpdateEditBoxColor()
+function Chat:UpdateEditBoxColor()
 	local EditBox = ChatEdit_ChooseBoxForSend()
 	local ChatType = EditBox:GetAttribute("chatType")
 	local Backdrop = EditBox.Backdrop
@@ -21,25 +18,31 @@ function TukuiChat:UpdateEditBoxColor()
 			local ID = GetChannelName(EditBox:GetAttribute("channelTarget"))
 
 			if (ID == 0) then
-				Backdrop.Anim:SetChange(unpack(C["General"].BorderColor))
+				local R, G, B = unpack(C["General"].BorderColor)
+
+				Backdrop:SetBorderColor(R, G, B, 1)
 			else
-				Backdrop.Anim:SetChange(ChatTypeInfo[ChatType..ID].r, ChatTypeInfo[ChatType..ID].g, ChatTypeInfo[ChatType..ID].b)
+				local R, G, B = ChatTypeInfo[ChatType..ID].r, ChatTypeInfo[ChatType..ID].g, ChatTypeInfo[ChatType..ID].b
+
+				Backdrop:SetBorderColor(R, G, B, 1)
 			end
 		else
-			Backdrop.Anim:SetChange(ChatTypeInfo[ChatType].r, ChatTypeInfo[ChatType].g, ChatTypeInfo[ChatType].b)
-		end
+			local R, G, B = ChatTypeInfo[ChatType].r, ChatTypeInfo[ChatType].g, ChatTypeInfo[ChatType].b
 
-		Backdrop.Anim:Play()
+			Backdrop:SetBorderColor(R, G, B, 1)
+		end
 	end
 end
 
-function TukuiChat:MoveAudioButtons()
-	ChatFrameChannelButton:Kill()
-	ChatFrameToggleVoiceDeafenButton:Kill()
-	ChatFrameToggleVoiceMuteButton:Kill()
+function Chat:LockChat()
+	T.Print(L.Help.ChatMove)
 end
 
-function TukuiChat:NoMouseAlpha()
+function Chat:MoveAudioButtons()
+	ChatFrameChannelButton:Kill()
+end
+
+function Chat:NoMouseAlpha()
 	local Frame = self:GetName()
 	local Tab = _G[Frame .. "Tab"]
 
@@ -49,7 +52,7 @@ function TukuiChat:NoMouseAlpha()
 	end
 end
 
-function TukuiChat:SetChatFont()
+function Chat:SetChatFont()
 	local Font = T.GetFont(C["Chat"].ChatFont)
 	local Path, _, Flag = _G[Font]:GetFont()
 	local CurrentFont, CurrentSize, CurrentFlag = self:GetFont()
@@ -61,7 +64,7 @@ function TukuiChat:SetChatFont()
 	self:SetFont(Path, CurrentSize, Flag)
 end
 
-function TukuiChat:StyleFrame(frame)
+function Chat:StyleFrame(frame)
 	if frame.IsSkinned then
 		return
 	end
@@ -77,7 +80,7 @@ function TukuiChat:StyleFrame(frame)
 	local EditBox = _G[FrameName.."EditBox"]
 	local GetTabFont = T.GetFont(C["Chat"].TabFont)
 	local TabFont, TabFontSize, TabFontFlags = _G[GetTabFont]:GetFont()
-	local DataTextLeft = T.Panels.DataTextLeft
+	local DataTextLeft = T.DataTexts.Panels.Left
 
 	if Tab.conversationIcon then
 		Tab.conversationIcon:Kill()
@@ -104,7 +107,8 @@ function TukuiChat:StyleFrame(frame)
 
 	Frame:SetClampRectInsets(0, 0, 0, 0)
 	Frame:SetClampedToScreen(false)
-	Frame:SetFading(false)
+	Frame:SetFading(C.Chat.TextFading)
+	Frame:SetTimeVisible(C.Chat.TextFadingTimer)
 
 	-- Move the edit box
 	EditBox:ClearAllPoints()
@@ -129,11 +133,6 @@ function TukuiChat:StyleFrame(frame)
 	EditBox.Backdrop:SetFrameLevel(1)
 	EditBox.Backdrop:SetBackdropColor(unpack(C["General"].BackdropColor))
 
-	EditBox.Backdrop.Anim = CreateAnimationGroup(EditBox.Backdrop):CreateAnimation("Color")
-	EditBox.Backdrop.Anim:SetDuration(0.5)
-	EditBox.Backdrop.Anim:SetSmoothing("InOut")
-	EditBox.Backdrop.Anim:SetColorType("Border")
-
 	-- Hide textures
 	for i = 1, #CHAT_FRAME_TEXTURES do
 		_G[FrameName..CHAT_FRAME_TEXTURES[i]]:SetTexture(nil)
@@ -156,33 +155,19 @@ function TukuiChat:StyleFrame(frame)
 	_G[format("ChatFrame%sTabSelectedMiddle", ID)]:Kill()
 	_G[format("ChatFrame%sTabSelectedRight", ID)]:Kill()
 
-	--_G[format("ChatFrame%sButtonFrameUpButton", ID)]:Kill()
-	--_G[format("ChatFrame%sButtonFrameDownButton", ID)]:Kill()
-	--_G[format("ChatFrame%sButtonFrameBottomButton", ID)]:Kill()
 	_G[format("ChatFrame%sButtonFrameMinimizeButton", ID)]:Kill()
 	_G[format("ChatFrame%sButtonFrame", ID)]:Kill()
-
-	_G[format("ChatFrame%sEditBoxFocusLeft", ID)]:Kill()
-	_G[format("ChatFrame%sEditBoxFocusMid", ID)]:Kill()
-	_G[format("ChatFrame%sEditBoxFocusRight", ID)]:Kill()
 
 	_G[format("ChatFrame%sEditBoxLeft", ID)]:Kill()
 	_G[format("ChatFrame%sEditBoxMid", ID)]:Kill()
 	_G[format("ChatFrame%sEditBoxRight", ID)]:Kill()
-
-	-- Kill off editbox artwork
-	local A, B, C = select(6, EditBox:GetRegions())
-	A:Kill()
-	B:Kill()
-	C:Kill()
-
-	-- Justify loot frame text at the right
-	if (not Frame.isDocked and ID == 4 and TabText:GetText() == LOOT) then
-		Frame:SetJustifyH("RIGHT")
-	end
+	
+	_G[format("ChatFrame%sEditBoxFocusLeft", ID)]:Kill()
+	_G[format("ChatFrame%sEditBoxFocusMid", ID)]:Kill()
+	_G[format("ChatFrame%sEditBoxFocusRight", ID)]:Kill()
 
 	-- Mouse Wheel
-	Frame:SetScript("OnMouseWheel", TukuiChat.OnMouseWheel)
+	Frame:SetScript("OnMouseWheel", Chat.OnMouseWheel)
 
 	-- Temp Chats
 	if (ID > 10) then
@@ -190,21 +175,13 @@ function TukuiChat:StyleFrame(frame)
 	end
 
 	-- Security for font, in case if revert back to WoW default we restore instantly the tukui font default.
-	hooksecurefunc(Frame, "SetFont", TukuiChat.SetChatFont)
+	hooksecurefunc(Frame, "SetFont", Chat.SetChatFont)
 
 	Frame.IsSkinned = true
 end
 
-function TukuiChat:KillPetBattleCombatLog(Frame)
-	if (_G[Frame:GetName().."Tab"]:GetText():match(PET_BATTLE_COMBAT_LOG)) then
-		return FCF_Close(Frame)
-	end
-end
-
-function TukuiChat:StyleTempFrame()
+function Chat:StyleTempFrame()
 	local Frame = FCF_GetCurrentChatFrame()
-
-	TukuiChat:KillPetBattleCombatLog(Frame)
 
 	-- Make sure it's not skinned already
 	if Frame.IsSkinned then
@@ -212,189 +189,188 @@ function TukuiChat:StyleTempFrame()
 	end
 
 	-- Pass it on
-	TukuiChat:StyleFrame(Frame)
+	Chat:StyleFrame(Frame)
 end
 
-function TukuiChat:SkinToastFrame()
-	Toast:SetTemplate()
-	Toast:CreateShadow()
-	Toast.CloseButton:SkinCloseButton()
-end
-
-function TukuiChat:SetDefaultChatFramesPositions()
-	if (not TukuiData[GetRealmName()][UnitName("Player")].Chat) then
-		TukuiData[GetRealmName()][UnitName("Player")].Chat = {}
-	end
-
-	local Width = T["Panels"].DataTextLeft:GetWidth()
-
-	for i = 1, NUM_CHAT_WINDOWS do
-		local Frame = _G["ChatFrame"..i]
-		local ID = Frame:GetID()
-
-		-- Set font size and chat frame size
-		Frame:Size(Width, 119)
-
-		-- Set default chat frame position
-		if (ID == 1) then
-			Frame:ClearAllPoints()
-			Frame:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 34, 50)
-		elseif (ID == 4) then
-			if (not Frame.isDocked) then
-				Frame:ClearAllPoints()
-				Frame:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -34, 50)
-			end
-		end
-
-		if (ID == 1) then
-			FCF_SetWindowName(Frame, "G, S & W")
-		end
-
-		if (ID == 2) then
-			FCF_SetWindowName(Frame, "Log")
-		end
-
-		if (not Frame.isLocked) then
-			FCF_SetLocked(Frame, 1)
-		end
-
-		local Anchor1, Parent, Anchor2, X, Y = Frame:GetPoint()
-		TukuiData[GetRealmName()][UnitName("Player")].Chat["Frame" .. i] = {Anchor1, Anchor2, X, Y, Width, 108}
-	end
-end
-
-function TukuiChat:SaveChatFramePositionAndDimensions()
+function Chat:SaveChatFramePositionAndDimensions()
 	local Anchor1, _, Anchor2, X, Y = self:GetPoint()
 	local Width, Height = self:GetSize()
 	local ID = self:GetID()
 
-	if not (TukuiData[GetRealmName()][UnitName("Player")].Chat) then
-		TukuiData[GetRealmName()][UnitName("Player")].Chat = {}
-	end
-
 	TukuiData[GetRealmName()][UnitName("Player")].Chat["Frame" .. ID] = {Anchor1, Anchor2, X, Y, Width, Height}
 end
 
-function TukuiChat:SetChatFramePosition()
-	if (not TukuiData[GetRealmName()][UnitName("Player")].Chat) then
+function Chat:RemoveRightChat()
+	if not UIParent:IsShown() then
 		return
 	end
 
+	T.Chat.Panels.LeftChatTabs:Hide()
+
+	if C.Misc.ExperienceEnable then
+		local XP = T.Miscellaneous.Experience.XPBar2
+		local Rep = T.Miscellaneous.Reputation.RepBar2
+
+		XP:SetParent(T.Hider)
+		Rep:SetParent(T.Hider)
+	end
+
+	T.DataTexts.Panels.Right:Hide()
+end
+
+function Chat:SetChatFramePosition()
 	local Frame = self
-
-	if not Frame:IsMovable() then
-		return
-	end
-
 	local ID = Frame:GetID()
+
 	local Settings = TukuiData[GetRealmName()][UnitName("Player")].Chat["Frame" .. ID]
 
 	if Settings then
-		local Anchor1, Anchor2, X, Y, Width, Height = unpack(Settings)
+		if C.General.Themes.Value == "Tukui" then
+			local Anchor1, Anchor2, X, Y, Width, Height = unpack(Settings)
+			local Movers = T.Movers
 
-		Frame:SetUserPlaced(true)
-		Frame:ClearAllPoints()
-		Frame:SetPoint(Anchor1, UIParent, Anchor2, X, Y)
-		Frame:SetSize(Width, Height)
+			if ID == 1 then
+				Frame:SetParent(T.DataTexts.Panels.Left)
+				Frame:SetUserPlaced(true)
+				Frame:ClearAllPoints()
+				Frame:SetSize(C.Chat.LeftWidth, C.Chat.LeftHeight - 62)
+				Frame:SetPoint("BOTTOMLEFT", T.DataTexts.Panels.Left, "TOPLEFT", 0, 2)
+			elseif (ID == 4) then
+				if Frame:IsShown() and not Frame.isDocked then
+					Frame:SetParent(T.DataTexts.Panels.Right)
+					Frame:SetUserPlaced(true)
+					Frame:ClearAllPoints()
+					Frame:SetSize(C.Chat.RightWidth, C.Chat.RightHeight - 62)
+					Frame:SetPoint("BOTTOMLEFT", T.DataTexts.Panels.Right, "TOPLEFT", 0, 2)
+
+					if C.Chat.RightChatAlignRight then
+						Frame:SetJustifyH("RIGHT")
+					end
+				end
+			end
+		else
+			if not Frame:IsMovable() then
+				return
+			end
+
+			local Anchor1, Anchor2, X, Y, Width, Height = unpack(Settings)
+
+			Frame:SetUserPlaced(true)
+			Frame:ClearAllPoints()
+			Frame:SetPoint(Anchor1, UIParent, Anchor2, X, Y)
+			Frame:SetSize(Width, Height)
+
+			if (ID == 4) and (C.Chat.RightChatAlignRight) then
+				Frame:SetJustifyH("RIGHT")
+			end
+		end
 	end
 end
 
-function TukuiChat:Install()
+function Chat:Reset()
+	local IsPublicChannelFound = EnumerateServerChannels()
+	
+	if not IsPublicChannelFound then
+		-- Restart this function until we are able to query public channels
+		C_Timer.After(1, Chat.Reset)
+		
+		return
+	end
+	
 	-- Create our custom chatframes
 	FCF_ResetChatWindows()
 	FCF_SetLocked(ChatFrame1, 1)
 	FCF_DockFrame(ChatFrame2)
 	FCF_SetLocked(ChatFrame2, 1)
-	FCF_OpenNewWindow(GENERAL)
+	FCF_OpenNewWindow(GLOBAL_CHANNELS)
 	FCF_SetLocked(ChatFrame3, 1)
 	FCF_DockFrame(ChatFrame3)
-	FCF_OpenNewWindow(LOOT)
+	FCF_OpenNewWindow(Chat.RightChatName)
 	FCF_UnDockFrame(ChatFrame4)
-	--ChatFrame4:Show()
-
-	-- Set more chat groups
-	ChatFrame_RemoveAllMessageGroups(ChatFrame1)
-	ChatFrame_RemoveChannel(ChatFrame1, TRADE)
-	ChatFrame_RemoveChannel(ChatFrame1, GENERAL)
-	ChatFrame_RemoveChannel(ChatFrame1, L.ChatFrames.LocalDefense)
-	ChatFrame_AddMessageGroup(ChatFrame1, "SAY")
-	ChatFrame_AddMessageGroup(ChatFrame1, "EMOTE")
-	ChatFrame_AddMessageGroup(ChatFrame1, "YELL")
-	ChatFrame_AddMessageGroup(ChatFrame1, "GUILD")
-	ChatFrame_AddMessageGroup(ChatFrame1, "OFFICER")
-	ChatFrame_AddMessageGroup(ChatFrame1, "GUILD_ACHIEVEMENT")
-	ChatFrame_AddMessageGroup(ChatFrame1, "WHISPER")
-	ChatFrame_AddMessageGroup(ChatFrame1, "MONSTER_SAY")
-	ChatFrame_AddMessageGroup(ChatFrame1, "MONSTER_EMOTE")
-	ChatFrame_AddMessageGroup(ChatFrame1, "MONSTER_YELL")
-	ChatFrame_AddMessageGroup(ChatFrame1, "MONSTER_WHISPER")
-	ChatFrame_AddMessageGroup(ChatFrame1, "MONSTER_BOSS_EMOTE")
-	ChatFrame_AddMessageGroup(ChatFrame1, "MONSTER_BOSS_WHISPER")
-	ChatFrame_AddMessageGroup(ChatFrame1, "PARTY")
-	ChatFrame_AddMessageGroup(ChatFrame1, "PARTY_LEADER")
-	ChatFrame_AddMessageGroup(ChatFrame1, "RAID")
-	ChatFrame_AddMessageGroup(ChatFrame1, "RAID_LEADER")
-	ChatFrame_AddMessageGroup(ChatFrame1, "RAID_WARNING")
-	ChatFrame_AddMessageGroup(ChatFrame1, "INSTANCE_CHAT")
-	ChatFrame_AddMessageGroup(ChatFrame1, "INSTANCE_CHAT_LEADER")
-	ChatFrame_AddMessageGroup(ChatFrame1, "BG_HORDE")
-	ChatFrame_AddMessageGroup(ChatFrame1, "BG_ALLIANCE")
-	ChatFrame_AddMessageGroup(ChatFrame1, "BG_NEUTRAL")
-	ChatFrame_AddMessageGroup(ChatFrame1, "AFK")
-	ChatFrame_AddMessageGroup(ChatFrame1, "DND")
-	ChatFrame_AddMessageGroup(ChatFrame1, "ACHIEVEMENT")
-	ChatFrame_AddMessageGroup(ChatFrame1, "BN_WHISPER")
-	ChatFrame_AddMessageGroup(ChatFrame1, "BN_CONVERSATION")
-
-	-- Move ChatFrame1 Globals Channels to ChatFrame3
-	ChatFrame_RemoveAllMessageGroups(ChatFrame3)
-
-	-- ChatFrame 3
-	ChatFrame_AddChannel(ChatFrame3, "General")
-	ChatFrame_AddChannel(ChatFrame3, "Trade")
-	ChatFrame_AddChannel(ChatFrame3, "LocalDefense")
-
-	-- Setup the right chat
-	ChatFrame_RemoveAllMessageGroups(ChatFrame4)
-	ChatFrame_AddMessageGroup(ChatFrame4, "COMBAT_XP_GAIN")
-	ChatFrame_AddMessageGroup(ChatFrame4, "COMBAT_HONOR_GAIN")
-	ChatFrame_AddMessageGroup(ChatFrame4, "COMBAT_FACTION_CHANGE")
-	ChatFrame_AddMessageGroup(ChatFrame4, "LOOT")
-	ChatFrame_AddMessageGroup(ChatFrame4, "MONEY")
-	ChatFrame_AddMessageGroup(ChatFrame4, "SYSTEM")
-	ChatFrame_AddMessageGroup(ChatFrame4, "ERRORS")
-	ChatFrame_AddMessageGroup(ChatFrame4, "IGNORED")
-
-	-- Enable Classcolor
-	ToggleChatColorNamesByClassGroup(true, "SAY")
-	ToggleChatColorNamesByClassGroup(true, "EMOTE")
-	ToggleChatColorNamesByClassGroup(true, "YELL")
-	ToggleChatColorNamesByClassGroup(true, "GUILD")
-	ToggleChatColorNamesByClassGroup(true, "OFFICER")
-	ToggleChatColorNamesByClassGroup(true, "GUILD_ACHIEVEMENT")
-	ToggleChatColorNamesByClassGroup(true, "ACHIEVEMENT")
-	ToggleChatColorNamesByClassGroup(true, "WHISPER")
-	ToggleChatColorNamesByClassGroup(true, "PARTY")
-	ToggleChatColorNamesByClassGroup(true, "PARTY_LEADER")
-	ToggleChatColorNamesByClassGroup(true, "RAID")
-	ToggleChatColorNamesByClassGroup(true, "RAID_LEADER")
-	ToggleChatColorNamesByClassGroup(true, "RAID_WARNING")
-	ToggleChatColorNamesByClassGroup(true, "BATTLEGROUND")
-	ToggleChatColorNamesByClassGroup(true, "BATTLEGROUND_LEADER")
-	ToggleChatColorNamesByClassGroup(true, "CHANNEL1")
-	ToggleChatColorNamesByClassGroup(true, "CHANNEL2")
-	ToggleChatColorNamesByClassGroup(true, "CHANNEL3")
-	ToggleChatColorNamesByClassGroup(true, "CHANNEL4")
-	ToggleChatColorNamesByClassGroup(true, "CHANNEL5")
-	ToggleChatColorNamesByClassGroup(true, "INSTANCE_CHAT")
-	ToggleChatColorNamesByClassGroup(true, "INSTANCE_CHAT_LEADER")
+	FCF_SetChatWindowFontSize(nil, ChatFrame1, 12)
+	FCF_SetChatWindowFontSize(nil, ChatFrame2, 12)
+	FCF_SetChatWindowFontSize(nil, ChatFrame3, 12)
+	FCF_SetChatWindowFontSize(nil, ChatFrame4, 12)
+	FCF_SetWindowName(ChatFrame1, "G, S & W")
+	FCF_SetWindowName(ChatFrame2, "Log")
 
 	DEFAULT_CHAT_FRAME:SetUserPlaced(true)
 
-	self:SetDefaultChatFramesPositions()
+	local ChatGroup = {}
+	local Channels = {}
+	
+	for i=1, select("#", EnumerateServerChannels()), 1 do
+		Channels[i] = select(i, EnumerateServerChannels())
+	end
+	
+	-- Remove everything in first 4 chat windows
+	for i = 1, 4 do
+		if i ~= 2 then
+			local ChatFrame = _G["ChatFrame"..i]
+
+			ChatFrame_RemoveAllMessageGroups(ChatFrame)
+			ChatFrame_RemoveAllChannels(ChatFrame)
+		end
+	end
+	
+	-- Join public channels
+	for i = 1, #Channels do
+		SlashCmdList["JOIN"](Channels[i])
+	end
+	
+	-- Fix a editbox texture
+	ChatEdit_ActivateChat(ChatFrame1EditBox)
+	ChatEdit_DeactivateChat(ChatFrame1EditBox)
+
+	-----------------------
+	-- ChatFrame 1 Setup --
+	-----------------------
+	
+	ChatGroup = {"SAY", "EMOTE", "YELL", "GUILD","OFFICER", "GUILD_ACHIEVEMENT", "WHISPER", "MONSTER_SAY", "MONSTER_EMOTE", "MONSTER_YELL", "MONSTER_WHISPER", "MONSTER_BOSS_EMOTE", "MONSTER_BOSS_WHISPER", "PARTY", "PARTY_LEADER", "RAID", "RAID_LEADER", "RAID_WARNING", "INSTANCE_CHAT", "INSTANCE_CHAT_LEADER", "BG_HORDE", "BG_ALLIANCE", "BG_NEUTRAL", "AFK", "DND", "ACHIEVEMENT", "BN_WHISPER", "BN_CONVERSATION"}
+	
+	for _, v in ipairs(ChatGroup) do
+		ChatFrame_AddMessageGroup(_G.ChatFrame1, v)
+	end
+
+	-----------------------
+	-- ChatFrame 3 Setup --
+	-----------------------
+
+	for i = 1, #Channels do
+		ChatFrame_RemoveChannel(ChatFrame1, Channels[i])
+		ChatFrame_AddChannel(ChatFrame3, Channels[i])
+	end
+	
+	-- Adjust Chat Colors
+	ChangeChatColor("CHANNEL1", 195/255, 230/255, 232/255)
+	ChangeChatColor("CHANNEL2", 232/255, 158/255, 121/255)
+	ChangeChatColor("CHANNEL3", 232/255, 228/255, 121/255)
+	ChangeChatColor("CHANNEL4", 232/255, 228/255, 121/255)
+	ChangeChatColor("CHANNEL5", 0/255, 228/255, 121/255)
+	ChangeChatColor("CHANNEL6", 0/255, 228/255, 0/255)
+	
+	-----------------------
+	-- ChatFrame 4 Setup --
+	-----------------------
+	
+	local Tab4 = ChatFrame4Tab
+	local Chat4 = ChatFrame4
+
+	ChatGroup = {"COMBAT_XP_GAIN", "COMBAT_HONOR_GAIN", "COMBAT_FACTION_CHANGE", "LOOT","MONEY", "SYSTEM", "ERRORS", "IGNORED", "SKILL", "CURRENCY"}
+	
+	for _, v in ipairs(ChatGroup) do
+		ChatFrame_AddMessageGroup(_G.ChatFrame4, v)
+	end
+	
+	-- Set ChatFrame 4 to right
+	Tab4:ClearAllPoints()
+	
+	FCF_RestorePositionAndDimensions(Chat4)
+	FCF_SetTabPosition(Chat4, 0)
+	FCF_SelectDockFrame(ChatFrame1)
 end
 
-function TukuiChat:OnMouseWheel(delta)
+function Chat:OnMouseWheel(delta)
 	if (delta < 0) then
 		if IsShiftKeyDown() then
 			self:ScrollToBottom()
@@ -414,17 +390,170 @@ function TukuiChat:OnMouseWheel(delta)
 	end
 end
 
-function TukuiChat:PlayWhisperSound()
+function Chat:PlayWhisperSound()
 	PlaySoundFile(C.Medias.Whisper)
 end
 
-function TukuiChat:SwitchSpokenDialect(button)
+function Chat:SwitchSpokenDialect(button)
 	if (IsAltKeyDown() and button == "LeftButton") then
 		ToggleFrame(ChatMenu)
 	end
 end
 
-function TukuiChat:Setup()
+function Chat:AddMessage(text, ...)
+	text = text:gsub("|h%[(%d+)%. .-%]|h", "|h[%1]|h")
+
+	return self.DefaultAddMessage(self, text, ...)
+end
+
+function Chat:HideChatFrame(button, id)
+	local Background = id == 1 and T.Chat.Panels.LeftChat or T.Chat.Panels.RightChat
+	local DataText = id == 1 and T.DataTexts.Panels.Left or T.DataTexts.Panels.Right
+	local BG = T.DataTexts.BGFrame
+
+	Background:Hide()
+
+	if C.Misc.ExperienceEnable then
+		local XP = T.Miscellaneous.Experience["XPBar"..id]
+		local Rep = T.Miscellaneous.Reputation["RepBar"..id]
+
+		if XP then
+			XP:SetParent(T.Hider)
+		end
+		
+		if Rep then
+			Rep:SetParent(T.Hider)
+		end
+	end
+	
+	if BG then
+		BG:SetParent(T.Hider)
+	end
+
+	DataText:Hide()
+
+	for i = 1, 10 do
+		local Chat =  _G["ChatFrame"..i]
+		local Tab = _G["ChatFrame"..i.."Tab"]
+		local Dock = GeneralDockManager
+
+		if id == 1 and Chat.isDocked then
+			Tab:SetParent(T.Hider)
+			Dock:SetParent(T.Hider)
+		elseif id == 2 and not Chat.isDocked then
+			Tab:SetParent(T.Hider)
+		end
+	end
+
+	button.state = "hidden"
+	button.Texture:SetTexture(C.Medias.ArrowUp)
+
+	local Data = TukuiData[T.MyRealm][T.MyName]
+
+	if id == 1 then
+		Data.ChatLeftHidden = true
+	elseif id == 2 then
+		Data.ChatRightHidden = true
+	end
+end
+
+function Chat:ShowChatFrame(button, id)
+	local Background = id == 1 and T.Chat.Panels.LeftChat or T.Chat.Panels.RightChat
+	local DataText = id == 1 and T.DataTexts.Panels.Left or T.DataTexts.Panels.Right
+	local BG = T.DataTexts.BGFrame
+
+	Background:Show()
+
+	if C.Misc.ExperienceEnable then
+		local XP = T.Miscellaneous.Experience["XPBar"..id]
+		local Rep = T.Miscellaneous.Reputation["RepBar"..id]
+		
+		if XP then
+			XP:SetParent(UIParent)
+		end
+		
+		if Rep then
+			Rep:SetParent(UIParent)
+			Rep:SetFrameLevel(XP:GetFrameLevel() + 2)
+		end
+	end
+	
+	if BG then
+		BG:SetParent(UIParent)
+	end
+
+	DataText:Show()
+
+	for i = 1, 10 do
+		local Chat =  _G["ChatFrame"..i]
+		local Tab = _G["ChatFrame"..i.."Tab"]
+		local Dock = GeneralDockManager
+
+		if id == 1 and Chat.isDocked then
+			Tab:SetParent(UIParent)
+			Dock:SetParent(UIParent)
+		elseif id == 2 and not Chat.isDocked then
+			Tab:SetParent(UIParent)
+		end
+	end
+
+	button.state = "show"
+	button.Texture:SetTexture(C.Medias.ArrowDown)
+
+	local Data = TukuiData[T.MyRealm][T.MyName]
+
+	if id == 1 then
+		Data.ChatLeftHidden = false
+	elseif id == 2 then
+		Data.ChatRightHidden = false
+	end
+end
+
+function Chat:ToggleChat()
+	if self.state == "show" then
+		Chat:HideChatFrame(self, self.id)
+	else
+		Chat:ShowChatFrame(self, self.id)
+	end
+end
+
+function Chat:AddToggles()
+	if C.General.Themes.Value ~= "Tukui" then
+		return
+	end
+
+	for i = 1, 2 do
+		local Button = CreateFrame("Button", nil, UIParent)
+
+		if i == 1 then
+			Button:SetSize(19, T.Chat.Panels.LeftChat:GetHeight())
+			Button:SetPoint("TOPRIGHT", T.Chat.Panels.LeftChat, "TOPLEFT", -6, 0)
+
+			T.Chat.Panels.LeftChatToggle = Button
+		else
+			Button:SetSize(19, T.Chat.Panels.RightChat:GetHeight())
+			Button:SetPoint("TOPLEFT", T.Chat.Panels.RightChat, "TOPRIGHT", 6, 0)
+
+			T.Chat.Panels.RightChatToggle = Button
+		end
+
+		Button:CreateBackdrop()
+		Button:CreateShadow()
+		Button:SetAlpha(0)
+		Button.Texture = Button:CreateTexture(nil, "OVERLAY", 8)
+		Button.Texture:SetSize(14, 14)
+		Button.Texture:SetPoint("CENTER")
+		Button.Texture:SetTexture(C.Medias.ArrowDown)
+		Button.id = i
+		Button.state = "show"
+
+		Button:SetScript("OnClick", self.ToggleChat)
+		Button:SetScript("OnEnter", function(self) self:SetAlpha(1) end)
+		Button:SetScript("OnLeave", function(self) self:SetAlpha(0) end)
+	end
+end
+
+function Chat:Setup()
 	for i = 1, NUM_CHAT_WINDOWS do
 		local Frame = _G["ChatFrame"..i]
 		local Tab = _G["ChatFrame"..i.."Tab"]
@@ -439,16 +568,34 @@ function TukuiChat:Setup()
 			CombatLogQuickButtonFrame_Custom:StripTextures()
 		else
 			if C.Chat.ShortChannelName then
-				local am = Frame.AddMessage
-
-				Frame.AddMessage = function(frame, text, ...)
-					return am(frame, text:gsub('|h%[(%d+)%. .-%]|h', '|h%1|h'), ...)
-				end
+				Frame.DefaultAddMessage = Frame.AddMessage
+				Frame.AddMessage = Chat.AddMessage
 			end
 		end
 	end
 
-	local CubeLeft = T["Panels"].CubeLeft
+	local LeftBG = T.Chat.Panels.LeftChat
+	local RightBG = T.Chat.Panels.RightChat
+	local BGR, BGG, BGB = LeftBG.Backdrop:GetBackdropColor()
+
+	LeftBG.Backdrop:SetBackdropColor(BGR, BGG, BGB, C.Chat.BackgroundAlpha / 100)
+	RightBG.Backdrop:SetBackdropColor(BGR, BGG, BGB, C.Chat.BackgroundAlpha / 100)
+
+	ChatConfigFrameDefaultButton:Kill()
+	ChatFrameMenuButton:Kill()
+	
+	QuickJoinToastButton:Kill()
+
+	ChatMenu:ClearAllPoints()
+	ChatMenu:SetPoint("BOTTOMLEFT", RightBG, "TOPLEFT", -1, 16)
+
+	VoiceChatPromptActivateChannel:CreateBackdrop()
+	VoiceChatPromptActivateChannel:CreateShadow()
+	VoiceChatPromptActivateChannel.AcceptButton:SkinButton()
+	VoiceChatPromptActivateChannel.CloseButton:SkinCloseButton()
+	VoiceChatPromptActivateChannel:SetPoint(unpack(Chat.VoiceAlertPosition))
+	VoiceChatPromptActivateChannel.ClearAllPoints = Noop
+	VoiceChatPromptActivateChannel.SetPoint = Noop
 
 	-- Remember last channel
 	ChatTypeInfo.WHISPER.sticky = 1
@@ -457,27 +604,10 @@ function TukuiChat:Setup()
 	ChatTypeInfo.RAID_WARNING.sticky = 1
 	ChatTypeInfo.CHANNEL.sticky = 1
 
-	ChatConfigFrameDefaultButton:Kill()
-	ChatFrameMenuButton:Kill()
+	-- Enable nicknames classcolor
+	SetCVar("chatClassColorOverride", 0)
 
-	QuickJoinToastButton:ClearAllPoints()
-	QuickJoinToastButton:SetPoint("BOTTOMLEFT", T.Panels.LeftChatBG, "TOPLEFT", -1, -18)
-	QuickJoinToastButton:EnableMouse(false)
-	QuickJoinToastButton.ClearAllPoints = Noop
-	QuickJoinToastButton.SetPoint = Noop
-	QuickJoinToastButton:SetAlpha(0)
-
-	ChatMenu:ClearAllPoints()
-	ChatMenu:SetPoint("BOTTOMLEFT", T.Panels.LeftChatBG, "TOPLEFT", 0, 16)
-
-	VoiceChatPromptActivateChannel:SetTemplate()
-	VoiceChatPromptActivateChannel:CreateShadow()
-	VoiceChatPromptActivateChannel.AcceptButton:SkinButton()
-	VoiceChatPromptActivateChannel.CloseButton:SkinCloseButton()
-	VoiceChatPromptActivateChannel:SetPoint(unpack(TukuiChat.VoiceAlertPosition))
-	VoiceChatPromptActivateChannel.ClearAllPoints = Noop
-	VoiceChatPromptActivateChannel.SetPoint = Noop
-
+	-- Short Channel Names
 	if C.Chat.ShortChannelName then
 		--guild
 		CHAT_GUILD_GET = "|Hchannel:GUILD|hG|h %s "
@@ -512,12 +642,130 @@ function TukuiChat:Setup()
 		CHAT_FLAG_DND = "[DND] "
 		CHAT_FLAG_GM = "[GM] "
 	end
+
+	self:AddToggles()
+
+	if C.General.Themes.Value == "Tukui" then
+		local Data = TukuiData[T.MyRealm][T.MyName]
+
+		if Data.ChatLeftHidden then
+			-- Need to delay this one, because of docked tabs
+			C_Timer.After(1, function() Chat.ToggleChat(T.Chat.Panels.LeftChatToggle) end)
+		end
+
+		if Data.ChatRightHidden then
+			C_Timer.After(1, function() Chat.ToggleChat(T.Chat.Panels.RightChatToggle) end)
+		end
+	end
 end
 
-function TukuiChat:AddHooks()
-	hooksecurefunc("ChatEdit_UpdateHeader", TukuiChat.UpdateEditBoxColor)
-	hooksecurefunc("FCF_OpenTemporaryWindow", TukuiChat.StyleTempFrame)
-	hooksecurefunc("FCF_RestorePositionAndDimensions", TukuiChat.SetChatFramePosition)
-	hooksecurefunc("FCF_SavePositionAndDimensions", TukuiChat.SaveChatFramePositionAndDimensions)
-	hooksecurefunc("FCFTab_UpdateAlpha", TukuiChat.NoMouseAlpha)
+function Chat:AddToast()
+	if not self.IsSkinned then
+		local Glow = BNToastFrameGlowFrame
+		
+		self:CreateBackdrop()
+		self:CreateShadow()
+		self:ClearBackdrop()
+		self.CloseButton:SkinCloseButton()
+		
+		Glow:SetParent(T.Hider)
+		
+		self.IsSkinned = true
+	end
+	
+	local Anchor = C.General.Themes.Value == "Tukui" and T.Chat.Panels.LeftChat or T.DataTexts.Panels.Left
+
+	self:ClearAllPoints()
+	self:SetPoint("BOTTOMLEFT", Anchor, "TOPLEFT", 0, 16)
+end
+
+function Chat:AddHooks()
+	hooksecurefunc("ChatEdit_UpdateHeader", Chat.UpdateEditBoxColor)
+	hooksecurefunc("FCF_OpenTemporaryWindow", Chat.StyleTempFrame)
+	hooksecurefunc("FCF_RestorePositionAndDimensions", Chat.SetChatFramePosition)
+	hooksecurefunc("FCF_SavePositionAndDimensions", Chat.SaveChatFramePositionAndDimensions)
+	hooksecurefunc("FCFTab_UpdateAlpha", Chat.NoMouseAlpha)
+	hooksecurefunc(BNToastFrame, "AddToast", Chat.AddToast)
+end
+
+function Chat:AddPanels()
+	local LeftChatBG = CreateFrame("Frame", "ChatLeftBackground", T.DataTexts.Panels.Left)
+	LeftChatBG:SetSize(T.DataTexts.Panels.Left:GetWidth() + 12, C.General.Themes.Value == "Tukui" and C.Chat.LeftHeight or 177)
+	LeftChatBG:SetPoint("BOTTOM", T.DataTexts.Panels.Left, "BOTTOM", 0, -6)
+	LeftChatBG:SetFrameLevel(1)
+	LeftChatBG:SetFrameStrata("BACKGROUND")
+	LeftChatBG:CreateBackdrop("Transparent")
+	LeftChatBG.Backdrop:CreateShadow()
+
+	local RightChatBG = CreateFrame("Frame", "ChatRightBackground", T.DataTexts.Panels.Right)
+	RightChatBG:SetSize(T.DataTexts.Panels.Right:GetWidth() + 12, C.General.Themes.Value == "Tukui" and C.Chat.RightHeight or 177)
+	RightChatBG:SetPoint("BOTTOM", T.DataTexts.Panels.Right, "BOTTOM", 0, -6)
+	RightChatBG:SetFrameLevel(1)
+	RightChatBG:SetFrameStrata("BACKGROUND")
+	RightChatBG:CreateBackdrop("Transparent")
+	RightChatBG.Backdrop:CreateShadow()
+
+	local TabsBGLeft = CreateFrame("Frame", nil, LeftChatBG)
+	TabsBGLeft:CreateBackdrop()
+	TabsBGLeft:SetSize(T.DataTexts.Panels.Left:GetWidth(), 23)
+	TabsBGLeft:SetPoint("TOP", LeftChatBG, "TOP", 0, -6)
+	TabsBGLeft:SetFrameLevel(2)
+
+	local TabsBGRight = CreateFrame("Frame", nil, RightChatBG)
+	TabsBGRight:CreateBackdrop()
+	TabsBGRight:SetSize(T.DataTexts.Panels.Right:GetWidth(), 23)
+	TabsBGRight:SetPoint("TOP", RightChatBG, "TOP", 0, -6)
+	TabsBGRight:SetFrameLevel(2)
+	
+	self.Panels = {}
+	self.Panels.LeftChat = LeftChatBG
+	self.Panels.RightChat = RightChatBG
+	self.Panels.LeftChatTabs = TabsBGLeft
+	self.Panels.RightChatTabs = TabsBGRight
+end
+
+function Chat:Enable()
+	if (not C.Chat.Enable) then
+		self:AddPanels()
+		self:AddToggles()
+		
+		return
+	end
+	
+	-- Set default position for Voice Activation Alert
+	self.VoiceAlertPosition = {"BOTTOMLEFT", T.DataTexts.Panels.Left, "TOPLEFT", 0, 12}
+
+	self:AddPanels()
+	self:Setup()
+	self:MoveAudioButtons()
+	self:AddHooks()
+	
+	self.Copy:Enable()
+	self.Link:Enable()
+	self.Bubbles:Enable()
+
+	for i = 1, 10 do
+		local ChatFrame = _G["ChatFrame"..i]
+
+		self.SetChatFramePosition(ChatFrame)
+		self.SetChatFont(ChatFrame)
+	end
+
+	FCF_UpdateButtonSide = function() end
+
+	if C.General.Themes.Value == "Tukui" then
+		FCF_ToggleLock = self.LockChat
+		FCF_ToggleLockOnDockedFrame = self.LockChat
+	end
+
+	if (not C.Chat.WhisperSound) then
+		return
+	end
+
+	local Whisper = CreateFrame("Frame")
+	Whisper:RegisterEvent("CHAT_MSG_WHISPER")
+	Whisper:RegisterEvent("CHAT_MSG_BN_WHISPER")
+	Whisper:SetScript("OnEvent", function(self, event)
+		Chat:PlayWhisperSound()
+	end)
 end

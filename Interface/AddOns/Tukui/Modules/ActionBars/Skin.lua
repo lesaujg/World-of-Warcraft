@@ -1,15 +1,16 @@
 local T, C, L = select(2, ...):unpack()
 
-local TukuiActionBars = T["ActionBars"]
+local ActionBars = T["ActionBars"]
 local NUM_PET_ACTION_SLOTS = NUM_PET_ACTION_SLOTS
 local Replace = string.gsub
 local FlyoutButtons = 0
 local Noop = function() end
 
-function TukuiActionBars:SkinButton()
-	local Name = self:GetName()
-	local Action = self.action
-	local Button = self
+function ActionBars:SkinButton(button)
+	local Name = button:GetName()
+	local Action = button.action
+	local Button = button
+	local KeybindTex = Button.QuickKeybindHighlightTexture
 	local Icon = _G[Name.."Icon"]
 	local Count = _G[Name.."Count"]
 	local Flash	 = _G[Name.."Flash"]
@@ -25,10 +26,10 @@ function TukuiActionBars:SkinButton()
 		Button:SetNormalTexture("")
 
 		Count:ClearAllPoints()
-		Count:Point("BOTTOMRIGHT", 0, 2)
+		Count:SetPoint("BOTTOMRIGHT", 0, 2)
 
 		HotKey:ClearAllPoints()
-		HotKey:Point("TOPRIGHT", 0, -3)
+		HotKey:SetPoint("TOPRIGHT", 0, -3)
 
 		Count:SetFontObject(Font)
 
@@ -47,11 +48,7 @@ function TukuiActionBars:SkinButton()
 			BtnBG:Kill()
 		end
 
-		if (C.ActionBars.HotKey) then
-			HotKey:SetFontObject(Font)
-			HotKey.ClearAllPoints = Noop
-			HotKey.SetPoint = Noop
-		else
+		if not (C.ActionBars.HotKey) then
 			HotKey:SetText("")
 			HotKey:Kill()
 		end
@@ -60,16 +57,14 @@ function TukuiActionBars:SkinButton()
 			Button.Pushed = true
 		end
 
-		Button:SetTemplate()
-		Button:UnregisterEvent("ACTIONBAR_SHOWGRID")
-		Button:UnregisterEvent("ACTIONBAR_HIDEGRID")
+		Button:CreateBackdrop()
 
 		if C.ActionBars.HideBackdrop then
 			Button:CreateShadow()
 		end
 
 		Icon:SetTexCoord(unpack(T.IconCoord))
-		Icon:SetDrawLayer('BACKGROUND', 7)
+		Icon:SetDrawLayer("BACKGROUND", 7)
 
 		if (Normal) then
 			Normal:ClearAllPoints()
@@ -77,25 +72,30 @@ function TukuiActionBars:SkinButton()
 			Normal:SetPoint("BOTTOMRIGHT")
 
 			if (Button:GetChecked()) then
-				ActionButton_UpdateState(Button)
+				Button:UpdateState(Button)
 			end
 		end
 
 		if (Border) then
 			Border:SetTexture("")
 		end
-
+		
+		if KeybindTex then
+			KeybindTex:SetTexture("")
+		end
+		
 		Button:StyleButton()
 		Button.isSkinned = true
 	end
-
-	TukuiActionBars.UpdateHotKey(Button)
-
+	
+	
+	-- WORKLATER (note: Need to be moved into another hook)
+	--[[
 	if (Border and C.ActionBars.EquipBorder) then
 		if (Border:IsShown()) then
-			Button:SetBackdropBorderColor(.08, .70, 0)
+			Button.Backdrop:SetBorderColor(.08, .70, 0)
 		else
-			Button:SetBackdropBorderColor(unpack(C['General'].BorderColor))
+			Button.Backdrop:SetBorderColor(unpack(C["General"].BorderColor))
 		end
 	end
 
@@ -115,19 +115,23 @@ function TukuiActionBars:SkinButton()
 			Btname:SetText(Text)
 		end
 	end
+	--]]
 end
 
-function TukuiActionBars:SkinPetAndShiftButton(Normal, Button, Icon, Name, Pet)
+function ActionBars:SkinPetAndShiftButton(Normal, Button, Icon, Name, Pet)
 	if Button.isSkinned then return end
 
 	local PetSize = C.ActionBars.PetButtonSize
 	local HotKey = _G[Button:GetName().."HotKey"]
+	local Cooldown = _G[Button:GetName().."Cooldown"]
 	local Flash = _G[Name.."Flash"]
 	local Font = T.GetFont(C["ActionBars"].Font)
+	
+	Cooldown:SetAlpha(0)
 
 	Button:SetWidth(PetSize)
 	Button:SetHeight(PetSize)
-	Button:SetTemplate()
+	Button:CreateBackdrop()
 
 	if C.ActionBars.HideBackdrop then
 		Button:CreateShadow()
@@ -136,14 +140,14 @@ function TukuiActionBars:SkinPetAndShiftButton(Normal, Button, Icon, Name, Pet)
 	if (C.ActionBars.HotKey) then
 		HotKey:SetFontObject(Font)
 		HotKey:ClearAllPoints()
-		HotKey:Point("TOPRIGHT", 0, -3)
+		HotKey:SetPoint("TOPRIGHT", 0, -3)
 	else
 		HotKey:SetText("")
 		HotKey:SetAlpha(0)
 	end
 
 	Icon:SetTexCoord(unpack(T.IconCoord))
-	Icon:SetDrawLayer('BACKGROUND', 7)
+	Icon:SetDrawLayer("BACKGROUND", 7)
 
 	if (Pet) then
 		if (PetSize < 30) then
@@ -152,11 +156,11 @@ function TukuiActionBars:SkinPetAndShiftButton(Normal, Button, Icon, Name, Pet)
 		end
 
 		local Shine = _G[Name.."Shine"]
-		Shine:Size(PetSize)
+		Shine:SetSize(PetSize, PetSize)
 		Shine:ClearAllPoints()
-		Shine:Point("CENTER", Button, 0, 0)
-
-		self.UpdateHotKey(Button)
+		Shine:SetPoint("CENTER", Button, 0, 0)
+		
+		Button.Backdrop:SetParent(Button:GetParent())
 	end
 
 	Flash:SetTexture("")
@@ -166,39 +170,44 @@ function TukuiActionBars:SkinPetAndShiftButton(Normal, Button, Icon, Name, Pet)
 		Normal:SetPoint("TOPLEFT")
 		Normal:SetPoint("BOTTOMRIGHT")
 	end
+	
+	if Button.QuickKeybindHighlightTexture then
+		Button.QuickKeybindHighlightTexture:SetTexture("")
+	end
 
 	Button:StyleButton()
 	Button.isSkinned = true
 end
 
-function TukuiActionBars:SkinPetButtons()
+function ActionBars:SkinPetButtons()
 	for i = 1, NUM_PET_ACTION_SLOTS do
 		local Name = "PetActionButton"..i
 		local Button = _G[Name]
 		local Icon = _G[Name.."Icon"]
 		local Normal = _G[Name.."NormalTexture2"] -- ?? 2
 
-		TukuiActionBars:SkinPetAndShiftButton(Normal, Button, Icon, Name, true)
+		ActionBars:SkinPetAndShiftButton(Normal, Button, Icon, Name, true)
 	end
 end
 
-function TukuiActionBars:SkinStanceButtons()
+function ActionBars:SkinStanceButtons()
 	for i=1, NUM_STANCE_SLOTS do
 		local Name = "StanceButton"..i
 		local Button = _G[Name]
 		local Icon = _G[Name.."Icon"]
 		local Normal = _G[Name.."NormalTexture"]
 
-		TukuiActionBars:SkinPetAndShiftButton(Normal, Button, Icon, Name, false)
+		ActionBars:SkinPetAndShiftButton(Normal, Button, Icon, Name, false)
 	end
 end
 
-function TukuiActionBars:SkinFlyoutButtons()
+function ActionBars:SkinFlyoutButtons()
 	for i = 1, FlyoutButtons do
 		local Button = _G["SpellFlyoutButton"..i]
 
 		if Button and not Button.IsSkinned then
-			TukuiActionBars.SkinButton(Button)
+			ActionBars:SkinButton(Button)
+			
 
 			if Button:GetChecked() then
 				Button:SetChecked(nil)
@@ -209,8 +218,10 @@ function TukuiActionBars:SkinFlyoutButtons()
 	end
 end
 
-function TukuiActionBars:StyleFlyout()
-	if not self.FlyoutArrow then return end
+function ActionBars:StyleFlyout()
+	if (self.FlyoutArrow) and (not self.FlyoutArrow:IsShown()) then
+		return
+	end
 
 	local HB = SpellFlyoutHorizontalBackground
 	local VB = SpellFlyoutVerticalBackground
@@ -228,68 +239,20 @@ function TukuiActionBars:StyleFlyout()
 	for i = 1, GetNumFlyouts() do
 		local ID = GetFlyoutID(i)
 		local _, _, NumSlots, IsKnown = GetFlyoutInfo(ID)
+		
 		if IsKnown then
 			FlyoutButtons = NumSlots
+			
 			break
 		end
 	end
 
-	TukuiActionBars.SkinFlyoutButtons()
+	ActionBars:SkinFlyoutButtons()
 end
 
-function TukuiActionBars:StopButtonHighlight()
+function ActionBars:StopButtonHighlight()
 	if self.Animation and self.Animation:IsPlaying() then
 		self.Animation:Stop()
 		self.NewProc:Hide()
 	end
 end
-
-function TukuiActionBars:UpdateHotKey(btype)
-	local HotKey = _G[self:GetName() .. "HotKey"]
-	local Text = HotKey:GetText()
-	local Indicator = _G["RANGE_INDICATOR"]
-
-	if (not Text) then
-		return
-	end
-
-	Text = Replace(Text, "(s%-)", "S")
-	Text = Replace(Text, "(a%-)", "A")
-	Text = Replace(Text, "(c%-)", "C")
-	Text = Replace(Text, KEY_MOUSEWHEELDOWN , "MDn")
-	Text = Replace(Text, KEY_MOUSEWHEELUP , "MUp")
-	Text = Replace(Text, KEY_BUTTON3, "M3")
-	Text = Replace(Text, KEY_BUTTON4, "M4")
-	Text = Replace(Text, KEY_BUTTON5, "M5")
-	Text = Replace(Text, KEY_MOUSEWHEELUP, "MU")
-	Text = Replace(Text, KEY_MOUSEWHEELDOWN, "MD")
-	Text = Replace(Text, KEY_NUMPAD0, "N0")
-	Text = Replace(Text, KEY_NUMPAD1, "N1")
-	Text = Replace(Text, KEY_NUMPAD2, "N2")
-	Text = Replace(Text, KEY_NUMPAD3, "N3")
-	Text = Replace(Text, KEY_NUMPAD4, "N4")
-	Text = Replace(Text, KEY_NUMPAD5, "N5")
-	Text = Replace(Text, KEY_NUMPAD6, "N6")
-	Text = Replace(Text, KEY_NUMPAD7, "N7")
-	Text = Replace(Text, KEY_NUMPAD8, "N8")
-	Text = Replace(Text, KEY_NUMPAD9, "N9")
-	Text = Replace(Text, KEY_NUMPADDECIMAL, "N.")
-	Text = Replace(Text, KEY_NUMPADDIVIDE, "N/")
-	Text = Replace(Text, KEY_NUMPADMINUS, "N-")
-	Text = Replace(Text, KEY_NUMPADMULTIPLY, "N*")
-	Text = Replace(Text, KEY_NUMPADPLUS, "N+")
-	Text = Replace(Text, KEY_PAGEUP, "PU")
-	Text = Replace(Text, KEY_PAGEDOWN, "PD")
-	Text = Replace(Text, KEY_SPACE, "SpB")
-	Text = Replace(Text, KEY_INSERT, "Ins")
-	Text = Replace(Text, KEY_HOME, "Hm")
-	Text = Replace(Text, KEY_DELETE, "Del")
-	Text = Replace(Text, KEY_INSERT_MAC, "Hlp") -- mac
-
-	if HotKey:GetText() == Indicator then
-		HotKey:SetText("")
-	else
-		HotKey:SetText(Text)
-	end
-end
-

@@ -1,21 +1,26 @@
 local T, C, L = select(2, ...):unpack()
 
-local _G = _G
-local TukuiActionBars = T["ActionBars"]
+local ActionBars = T["ActionBars"]
 
-function TukuiActionBars:CreateStanceBar()
+function ActionBars:CreateStanceBar()
+	local PetSize = C.ActionBars.PetButtonSize
+	local Spacing = C.ActionBars.ButtonSpacing
+	local Movers = T["Movers"]
+	
 	if (not C.ActionBars.ShapeShift) then
 		return
 	end
-
-	local Panels = T["Panels"]
-	local PetSize = C.ActionBars.PetButtonSize
-	local Spacing = C.ActionBars.ButtonSpacing
-	local StanceBar = Panels.StanceBar
-	local Movers = T["Movers"]
-
-	StanceBar:ClearAllPoints()
-	StanceBar:Point("BOTTOMLEFT", UIParent, 28, 204)
+	
+	local StanceBar = CreateFrame("Frame", "TukuiStanceBar", T.PetHider, "SecureHandlerStateTemplate")
+	StanceBar:SetSize((PetSize * 10) + (Spacing * 11), PetSize + (Spacing * 2))
+	StanceBar:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 28, 213)
+	StanceBar:SetFrameStrata("LOW")
+	StanceBar:SetFrameLevel(10)
+	
+	if C.ActionBars.ShowBackdrop then
+		StanceBar:CreateBackdrop()
+		StanceBar:CreateShadow()
+	end
 
 	StanceBarFrame.ignoreFramePositionManager = true
 	StanceBarFrame:StripTextures()
@@ -33,14 +38,12 @@ function TukuiActionBars:CreateStanceBar()
 			local Previous = _G["StanceButton"..i-1]
 
 			Button:ClearAllPoints()
-			Button:Point("LEFT", Previous, "RIGHT", Spacing, 0)
+			Button:SetPoint("LEFT", Previous, "RIGHT", Spacing, 0)
 		else
 			Button:ClearAllPoints()
-			Button:Point("BOTTOMLEFT", StanceBar, "BOTTOMLEFT", Spacing, Spacing)
+			Button:SetPoint("BOTTOMLEFT", StanceBar, "BOTTOMLEFT", Spacing, Spacing)
 		end
 	end
-
-	RegisterStateDriver(StanceBar, "visibility", "[vehicleui][petbattle] hide; show")
 
 	StanceBar:RegisterEvent("PLAYER_ENTERING_WORLD")
 	StanceBar:RegisterEvent("UPDATE_SHAPESHIFT_FORMS")
@@ -48,20 +51,19 @@ function TukuiActionBars:CreateStanceBar()
 	StanceBar:RegisterEvent("UPDATE_SHAPESHIFT_COOLDOWN")
 	StanceBar:RegisterEvent("UPDATE_SHAPESHIFT_FORM")
 	StanceBar:RegisterEvent("ACTIONBAR_PAGE_CHANGED")
-	StanceBar:RegisterEvent("PLAYER_TALENT_UPDATE")
 	StanceBar:RegisterEvent("SPELLS_CHANGED")
 	StanceBar:SetScript("OnEvent", function(self, event, ...)
 		if (event == "UPDATE_SHAPESHIFT_FORMS") then
 
 		elseif (event == "PLAYER_ENTERING_WORLD") then
-			TukuiActionBars.UpdateStanceBar(self)
-			TukuiActionBars.SkinStanceButtons()
+			ActionBars:UpdateStanceBar()
+			ActionBars:SkinStanceButtons()
 		else
-			TukuiActionBars.UpdateStanceBar(self)
+			ActionBars:UpdateStanceBar()
 		end
 	end)
 
 	Movers:RegisterFrame(StanceBar)
-
-	RegisterStateDriver(StanceBar, "visibility", "[vehicleui][petbattle][overridebar] hide; show")
+	
+	self.Bars.Stance = StanceBar
 end

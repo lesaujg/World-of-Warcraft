@@ -1,7 +1,6 @@
 local T, C, L = select(2, ...):unpack()
 
 local PetBattles = PetBattleFrame
-local Panels = T["Panels"]
 local Battle = T["PetBattles"]
 
 function Battle:SkinTooltips()
@@ -31,7 +30,7 @@ function Battle:SkinTooltips()
 		Tooltip.BorderBottom:SetTexture(nil)
 		Tooltip.BorderBottomRight:SetTexture(nil)
 		Tooltip.BorderBottomLeft:SetTexture(nil)
-		Tooltip:SetTemplate()
+		Tooltip:CreateBackdrop()
 
 		if Tooltip.CloseButton then
 			Tooltip.CloseButton:SkinCloseButton()
@@ -42,7 +41,7 @@ end
 function Battle:AddTooltipsHooks()
 	hooksecurefunc("PetBattleAbilityTooltip_Show", function()
 		local Tooltip = PetBattlePrimaryAbilityTooltip
-		local Anchor = Panels.DataTextLeft
+		local Anchor = T.DataTexts.Panels.Left
 
 		if Anchor then
 			Tooltip:ClearAllPoints()
@@ -67,4 +66,17 @@ function Battle:SkinPetSelection()
 		Pet.Level:SetAlpha(0)
 		Pet.HealthText:SetAlpha(0)
 	end
+end
+
+function Battle:Enable()
+	PetBattleFrame:StripTextures()
+
+	self:SkinUnitFrames()
+	self:AddUnitFramesHooks()
+	self:SkinTooltips()
+	self:AddTooltipsHooks()
+	self:SkinPetSelection()
+	self:AddActionBar()
+	self:SkinActionBar()
+	self:AddActionBarHooks()
 end

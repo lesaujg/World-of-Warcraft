@@ -1,10 +1,10 @@
 local T, C, L = select(2, ...):unpack()
 
-local TukuiUnitFrames = T["UnitFrames"]
+local UnitFrames = T["UnitFrames"]
 local Movers = T["Movers"]
 local Class = select(2, UnitClass("player"))
 
-function TukuiUnitFrames:Target()
+function UnitFrames:Target()
 	local HealthTexture = T.GetTexture(C["Textures"].UFHealthTexture)
 	local PowerTexture = T.GetTexture(C["Textures"].UFPowerTexture)
 	local CastTexture = T.GetTexture(C["Textures"].UFCastTexture)
@@ -13,155 +13,80 @@ function TukuiUnitFrames:Target()
 	self:RegisterForClicks("AnyUp")
 	self:SetScript("OnEnter", UnitFrame_OnEnter)
 	self:SetScript("OnLeave", UnitFrame_OnLeave)
-	self:SetBackdrop(TukuiUnitFrames.Backdrop)
-	self:SetBackdropColor(0, 0, 0)
 	self:CreateShadow()
+	
+	self.Backdrop = CreateFrame("Frame", nil, self, "BackdropTemplate")
+	self.Backdrop:SetAllPoints()
+	self.Backdrop:SetFrameLevel(self:GetFrameLevel())
+	self.Backdrop:SetBackdrop(UnitFrames.Backdrop)
+	self.Backdrop:SetBackdropColor(0, 0, 0)
 
 	local Panel = CreateFrame("Frame", nil, self)
 	Panel:SetFrameStrata(self:GetFrameStrata())
-	Panel:SetTemplate()
-	Panel:Size(250, 21)
-	Panel:Point("BOTTOM", self, "BOTTOM", 0, 0)
+	Panel:CreateBackdrop(C.UnitFrames.Portrait and "Transparent")
+	Panel:SetSize(250, 21)
+	Panel:SetPoint("BOTTOM", self, "BOTTOM", 0, 0)
 	Panel:SetFrameLevel(3)
-	Panel:SetBackdropBorderColor(0, 0, 0, 0)
+	Panel.Backdrop:SetBorderColor(0, 0, 0, 0)
 
 	local Health = CreateFrame("StatusBar", nil, self)
 	Health:SetFrameStrata(self:GetFrameStrata())
-	Health:Height(26)
+	Health:SetHeight(28)
 	Health:SetPoint("TOPLEFT")
 	Health:SetPoint("TOPRIGHT")
 	Health:SetStatusBarTexture(HealthTexture)
 
-	Health.Background = Health:CreateTexture(nil, "BORDER")
-	Health.Background:SetAllPoints()
-	Health.Background:SetColorTexture(.1, .1, .1)
+	Health.Background = Health:CreateTexture(nil, "BACKGROUND")
+	Health.Background:SetTexture(HealthTexture)
+    Health.Background:SetAllPoints(Health)
+	Health.Background.multiplier = C.UnitFrames.StatusBarBackgroundMultiplier / 100
 
 	Health.Value = Health:CreateFontString(nil, "OVERLAY")
 	Health.Value:SetFontObject(Font)
-	Health.Value:Point("RIGHT", Panel, "RIGHT", -4, 0)
+	Health.Value:SetPoint("RIGHT", Panel, "RIGHT", -4, 0)
 
-	Health.frequentUpdates = true
 	Health.colorDisconnected = true
 	Health.colorClass = true
 	Health.colorReaction = true
 	Health.colorTapping = true
 
-	Health.PreUpdate = TukuiUnitFrames.PreUpdateHealth
-	Health.PostUpdate = TukuiUnitFrames.PostUpdateHealth
-
-	if (C.UnitFrames.Smooth) then
-		Health.Smooth = true
-	end
+	Health.PreUpdate = UnitFrames.PreUpdateHealth
+	Health.PostUpdate = UnitFrames.PostUpdateHealth
 
 	local Power = CreateFrame("StatusBar", nil, self)
 	Power:SetFrameStrata(self:GetFrameStrata())
-	Power:Height(8)
-	Power:Point("TOPLEFT", Health, "BOTTOMLEFT", 0, -1)
-	Power:Point("TOPRIGHT", Health, "BOTTOMRIGHT", 0, -1)
+	Power:SetHeight(6)
+	Power:SetPoint("TOPLEFT", Health, "BOTTOMLEFT", 0, -1)
+	Power:SetPoint("TOPRIGHT", Health, "BOTTOMRIGHT", 0, -1)
 	Power:SetStatusBarTexture(PowerTexture)
 
 	Power.Background = Power:CreateTexture(nil, "BORDER")
-	Power.Background:SetAllPoints()
-	Power.Background:SetColorTexture(.4, .4, .4)
-	Power.Background.multiplier = 0.3
+	Power.Background:SetTexture(PowerTexture)
+	Power.Background:SetAllPoints(Power)
+	Power.Background.multiplier = C.UnitFrames.StatusBarBackgroundMultiplier / 100
 
-	Power.Value = Power:CreateFontString(nil, "OVERLAY")
-	Power.Value:SetFontObject(Font)
-	Power.Value:Point("LEFT", Panel, "LEFT", 4, 0)
+	if C.UnitFrames.ShowTargetManaText then
+		Power.Value = Power:CreateFontString(nil, "OVERLAY")
+		Power.Value:SetFontObject(Font)
+		Power.Value:SetPoint("RIGHT", -4, 4)
+		Power.PostUpdate = UnitFrames.PostUpdatePower
+	end
 
 	Power.frequentUpdates = true
 	Power.colorPower = true
 
-	if (C.UnitFrames.Smooth) then
-		Power.Smooth = true
-	end
-
-	Power.PostUpdate = TukuiUnitFrames.PostUpdatePower
-
-	local AltPowerBar = CreateFrame("StatusBar", nil, self)
-	AltPowerBar:SetFrameStrata(self:GetFrameStrata())
-	AltPowerBar:Height(8)
-	AltPowerBar:SetStatusBarTexture(PowerTexture)
-	AltPowerBar:GetStatusBarTexture():SetHorizTile(false)
-	AltPowerBar:SetStatusBarColor(0, 0, 0)
-	AltPowerBar:SetPoint("LEFT")
-	AltPowerBar:SetPoint("RIGHT")
-	AltPowerBar:SetPoint("BOTTOM", Health, "BOTTOM", 0, 0)
-	AltPowerBar:SetBackdrop({
-		bgFile = C.Medias.Blank,
-		edgeFile = C.Medias.Blank,
-		tile = false, tileSize = 0, edgeSize = T.Scale(1),
-		insets = { left = 0, right = 0, top = T.Scale(-1), bottom = 0}
-	})
-	AltPowerBar:SetBackdropColor(0, 0, 0)
-	AltPowerBar:SetBackdropBorderColor(0, 0, 0)
-	AltPowerBar:SetFrameLevel(Health:GetFrameLevel() + 1)
-
-	if C.UnitFrames.AltPowerText then
-		AltPowerBar.Value = AltPowerBar:CreateFontString(nil, "OVERLAY")
-		AltPowerBar.Value:SetFontObject(Font)
-		AltPowerBar.Value:Point("CENTER", 0, 0)
-	end
-
-	AltPowerBar.PostUpdate = TukuiUnitFrames.UpdateAltPower
-
-	if C.UnitFrames.Portrait then
-		local Portrait = CreateFrame("PlayerModel", nil, Health)
-		Portrait:SetFrameStrata(self:GetFrameStrata())
-		Portrait:Size(Health:GetHeight() + Power:GetHeight() + 1)
-		Portrait:SetPoint("TOPRIGHT", self, "TOPRIGHT", 0 ,0)
-		Portrait:SetBackdrop(TukuiUnitFrames.Backdrop)
-		Portrait:SetBackdropColor(0, 0, 0)
-		Portrait:CreateBackdrop()
-
-		Portrait.Backdrop:SetOutside(Portrait, -1, 1)
-		Portrait.Backdrop:SetBackdropBorderColor(unpack(C["General"].BorderColor))
-
-		Health:ClearAllPoints()
-		Health:SetPoint("TOPLEFT")
-		Health:SetPoint("TOPRIGHT", -Portrait:GetWidth() - 1, 0)
-
-		self.Portrait = Portrait
-	end
-
 	local Name = Panel:CreateFontString(nil, "OVERLAY")
-	Name:Point("LEFT", Panel, "LEFT", 4, 0)
+	Name:SetPoint("LEFT", Panel, "LEFT", 4, 0)
 	Name:SetJustifyH("LEFT")
 	Name:SetFontObject(Font)
+	
+	if C.UnitFrames.Portrait then
+		local Portrait = CreateFrame("PlayerModel", nil, Panel)
+		
+		Portrait:SetAllPoints()
+		Portrait:SetFrameLevel(Panel:GetFrameLevel() - 1)
 
-	if (C.UnitFrames.HealBar) then
-		local FirstBar = CreateFrame("StatusBar", nil, Health)
-		FirstBar:SetPoint("TOPLEFT", Health:GetStatusBarTexture(), "TOPRIGHT", 0, 0)
-		FirstBar:SetPoint("BOTTOMLEFT", Health:GetStatusBarTexture(), "BOTTOMRIGHT", 0, 0)
-		FirstBar:SetWidth(250)
-		FirstBar:SetStatusBarTexture(HealthTexture)
-		FirstBar:SetStatusBarColor(0, 0.3, 0.15, 1)
-		FirstBar:SetMinMaxValues(0,1)
-
-		local SecondBar = CreateFrame("StatusBar", nil, Health)
-		SecondBar:SetPoint("TOPLEFT", Health:GetStatusBarTexture(), "TOPRIGHT", 0, 0)
-		SecondBar:SetPoint("BOTTOMLEFT", Health:GetStatusBarTexture(), "BOTTOMRIGHT", 0, 0)
-		SecondBar:SetWidth(250)
-		SecondBar:SetStatusBarTexture(HealthTexture)
-		SecondBar:SetStatusBarColor(0, 0.3, 0, 1)
-
-		local ThirdBar = CreateFrame("StatusBar", nil, Health)
-		ThirdBar:SetPoint("TOPLEFT", Health:GetStatusBarTexture(), "TOPRIGHT", 0, 0)
-		ThirdBar:SetPoint("BOTTOMLEFT", Health:GetStatusBarTexture(), "BOTTOMRIGHT", 0, 0)
-		ThirdBar:SetWidth(250)
-		ThirdBar:SetStatusBarTexture(HealthTexture)
-		ThirdBar:SetStatusBarColor(0.3, 0.3, 0, 1)
-
-		ThirdBar:SetFrameLevel(Health:GetFrameLevel())
-		SecondBar:SetFrameLevel(ThirdBar:GetFrameLevel() + 1)
-		FirstBar:SetFrameLevel(ThirdBar:GetFrameLevel() + 2)
-
-		self.HealthPrediction = {
-			myBar = FirstBar,
-			otherBar = SecondBar,
-			absorbBar = ThirdBar,
-			maxOverflow = 1,
-		}
+		self.Portrait = Portrait
 	end
 
 	if (C.UnitFrames.CastBar) then
@@ -178,23 +103,23 @@ function TukuiUnitFrames:Target()
 
 		CastBar.Time = CastBar:CreateFontString(nil, "OVERLAY")
 		CastBar.Time:SetFontObject(Font)
-		CastBar.Time:Point("RIGHT", Panel, "RIGHT", -4, 0)
+		CastBar.Time:SetPoint("RIGHT", Panel, "RIGHT", -4, 0)
 		CastBar.Time:SetTextColor(0.84, 0.75, 0.65)
 		CastBar.Time:SetJustifyH("RIGHT")
 
 		CastBar.Text = CastBar:CreateFontString(nil, "OVERLAY")
 		CastBar.Text:SetFontObject(Font)
-		CastBar.Text:Point("LEFT", Panel, "LEFT", 4, 0)
+		CastBar.Text:SetPoint("LEFT", Panel, "LEFT", 4, 0)
 		CastBar.Text:SetTextColor(0.84, 0.75, 0.65)
 		CastBar.Text:SetWidth(166)
 		CastBar.Text:SetJustifyH("LEFT")
 
 		if (C.UnitFrames.CastBarIcon) then
 			CastBar.Button = CreateFrame("Frame", nil, CastBar)
-			CastBar.Button:Size(26)
-			CastBar.Button:SetTemplate()
+			CastBar.Button:SetSize(26, 26)
+			CastBar.Button:CreateBackdrop()
 			CastBar.Button:CreateShadow()
-			CastBar.Button:Point("RIGHT", 46.5, 26.5)
+			CastBar.Button:SetPoint("RIGHT", 46.5, 26.5)
 
 			CastBar.Icon = CastBar.Button:CreateTexture(nil, "ARTWORK")
 			CastBar.Icon:SetInside()
@@ -207,10 +132,10 @@ function TukuiUnitFrames:Target()
 			CastBar.SafeZone:SetVertexColor(0.69, 0.31, 0.31, 0.75)
 		end
 
-		CastBar.CustomTimeText = TukuiUnitFrames.CustomCastTimeText
-		CastBar.CustomDelayText = TukuiUnitFrames.CustomCastDelayText
-		CastBar.PostCastStart = TukuiUnitFrames.CheckCast
-		CastBar.PostChannelStart = TukuiUnitFrames.CheckChannel
+		CastBar.CustomTimeText = UnitFrames.CustomCastTimeText
+		CastBar.CustomDelayText = UnitFrames.CustomCastDelayText
+		CastBar.PostCastStart = UnitFrames.CheckCast
+		CastBar.PostChannelStart = UnitFrames.CheckChannel
 
 		if (C.UnitFrames.UnlinkCastBar) then
 			CastBar:ClearAllPoints()
@@ -229,10 +154,10 @@ function TukuiUnitFrames:Target()
 			end
 
 			CastBar.Time:ClearAllPoints()
-			CastBar.Time:Point("RIGHT", CastBar, "RIGHT", -4, 0)
+			CastBar.Time:SetPoint("RIGHT", CastBar, "RIGHT", -4, 0)
 
 			CastBar.Text:ClearAllPoints()
-			CastBar.Text:Point("LEFT", CastBar, "LEFT", 4, 0)
+			CastBar.Text:SetPoint("LEFT", CastBar, "LEFT", 4, 0)
 
 			Movers:RegisterFrame(CastBar)
 		end
@@ -241,40 +166,45 @@ function TukuiUnitFrames:Target()
 	end
 
 	if (C.UnitFrames.TargetAuras) then
-		local Buffs = CreateFrame("Frame", self:GetName()..'Buffs', self)
-		local Debuffs = CreateFrame("Frame", self:GetName()..'Debuffs', self)
+		local Buffs = CreateFrame("Frame", self:GetName().."Buffs", self)
+		local Debuffs = CreateFrame("Frame", self:GetName().."Debuffs", self)
 
 		Buffs:SetFrameStrata(self:GetFrameStrata())
-		Buffs:Point("BOTTOMLEFT", self, "TOPLEFT", 0, 4)
+		Buffs:SetPoint("BOTTOMLEFT", self, "TOPLEFT", -1, 4)
 
-		Buffs:SetHeight(26)
+		Buffs:SetHeight(28)
 		Buffs:SetWidth(252)
-		Buffs.size = 26
-		Buffs.num = 36
-		Buffs.numRow = 9
+		Buffs.size = 28
+		Buffs.num = 32
+		Buffs.numRow = 4
 
 		Debuffs:SetFrameStrata(self:GetFrameStrata())
-		Debuffs:SetHeight(26)
+		Debuffs:SetHeight(28)
 		Debuffs:SetWidth(252)
-		Debuffs:SetPoint("BOTTOMLEFT", Buffs, "TOPLEFT", -2, 2)
-		Debuffs.size = 26
-		Debuffs.num = 36
-		Debuffs.numRow = 9
+		Debuffs:SetPoint("BOTTOMLEFT", Buffs, "TOPLEFT", 0, 18)
+		Debuffs.size = 28
+		Debuffs.num = 16
+		Debuffs.numRow = 2
 
-		Buffs.spacing = 2
+		Buffs.spacing = 4
 		Buffs.initialAnchor = "TOPLEFT"
-		Buffs.PostCreateIcon = TukuiUnitFrames.PostCreateAura
-		Buffs.PostUpdateIcon = TukuiUnitFrames.PostUpdateAura
-		Buffs.PostUpdate = TukuiUnitFrames.UpdateDebuffsHeaderPosition
+		Buffs.PostCreateIcon = UnitFrames.PostCreateAura
+		Buffs.PostUpdateIcon = UnitFrames.PostUpdateAura
+		Buffs.PostUpdate = UnitFrames.UpdateDebuffsHeaderPosition
 		Buffs.onlyShowPlayer = C.UnitFrames.OnlySelfBuffs
 
-		Debuffs.spacing = 2
+		Debuffs.spacing = 4
 		Debuffs.initialAnchor = "TOPRIGHT"
 		Debuffs["growth-y"] = "UP"
 		Debuffs["growth-x"] = "LEFT"
-		Debuffs.PostCreateIcon = TukuiUnitFrames.PostCreateAura
-		Debuffs.PostUpdateIcon = TukuiUnitFrames.PostUpdateAura
+		Debuffs.PostCreateIcon = UnitFrames.PostCreateAura
+		Debuffs.PostUpdateIcon = UnitFrames.PostUpdateAura
 		Debuffs.onlyShowPlayer = C.UnitFrames.OnlySelfDebuffs
+
+		if C.UnitFrames.AurasBelow then
+			Buffs:SetPoint("BOTTOMLEFT", self, "BOTTOMLEFT", 0, -32)
+			Debuffs["growth-y"] = "DOWN"
+		end
 
 		self.Buffs = Buffs
 		self.Debuffs = Debuffs
@@ -283,8 +213,8 @@ function TukuiUnitFrames:Target()
 	if (C.UnitFrames.CombatLog) then
 		local CombatFeedbackText = Health:CreateFontString(nil, "OVERLAY")
 		CombatFeedbackText:SetFontObject(Font)
-		CombatFeedbackText:SetFont(CombatFeedbackText:GetFont(), 16, "THINOUTLINE")
-		CombatFeedbackText:SetPoint("CENTER", 0, 0)
+		CombatFeedbackText:SetFont(CombatFeedbackText:GetFont(), 14, "THINOUTLINE")
+		CombatFeedbackText:SetPoint("CENTER", 0, -1)
 		CombatFeedbackText.colors = {
 			DAMAGE = {0.69, 0.31, 0.31},
 			CRUSHING = {0.69, 0.31, 0.31},
@@ -306,12 +236,38 @@ function TukuiUnitFrames:Target()
 	end
 
 	local RaidIcon = Health:CreateTexture(nil, "OVERLAY")
-	RaidIcon:SetSize(16, 16)
-	RaidIcon:SetPoint("TOP", self, 0, 8)
+	RaidIcon:SetSize(C.UnitFrames.RaidIconSize, C.UnitFrames.RaidIconSize)
+	RaidIcon:SetPoint("TOP", self, 0, C.UnitFrames.RaidIconSize / 2)
 	RaidIcon:SetTexture([[Interface\AddOns\Tukui\Medias\Textures\Others\RaidIcons]])
 
-	local Threat = Health:CreateTexture(nil, "OVERLAY")
-	Threat.Override = TukuiUnitFrames.UpdateThreat
+	if C.UnitFrames.HealComm then
+		local myBar = CreateFrame("StatusBar", nil, Health)
+		local otherBar = CreateFrame("StatusBar", nil, Health)
+
+		myBar:SetFrameLevel(Health:GetFrameLevel())
+		myBar:SetStatusBarTexture(HealthTexture)
+		myBar:SetPoint("TOP")
+		myBar:SetPoint("BOTTOM")
+		myBar:SetPoint("LEFT", Health:GetStatusBarTexture(), "RIGHT")
+		myBar:SetWidth(250)
+		myBar:SetStatusBarColor(unpack(C.UnitFrames.HealCommSelfColor))
+
+		otherBar:SetFrameLevel(Health:GetFrameLevel())
+		otherBar:SetPoint("TOP")
+		otherBar:SetPoint("BOTTOM")
+		otherBar:SetPoint("LEFT", myBar:GetStatusBarTexture(), "RIGHT")
+		otherBar:SetWidth(250)
+		otherBar:SetStatusBarTexture(HealthTexture)
+		otherBar:SetStatusBarColor(unpack(C.UnitFrames.HealCommOtherColor))
+
+		local HealthPrediction = {
+			myBar = myBar,
+			otherBar = otherBar,
+			maxOverflow = 1,
+		}
+
+		self.HealthPrediction = HealthPrediction
+	end
 
 	self:Tag(Name, "[Tukui:GetNameColor][Tukui:NameLong] [Tukui:Classification][Tukui:DiffColor][level]")
 	self.Name = Name
@@ -320,7 +276,5 @@ function TukuiUnitFrames:Target()
 	self.Health.bg = Health.Background
 	self.Power = Power
 	self.Power.bg = Power.Background
-	self.AlternativePower = AltPowerBar
 	self.RaidTargetIndicator = RaidIcon
-	self.ThreatIndicator = Threat
 end

@@ -25,7 +25,7 @@ function Battle:SkinUnitFrames()
 		Pet.IconBackdrop = CreateFrame("Frame", nil, Pet)
 		Pet.IconBackdrop:SetFrameLevel(Pet:GetFrameLevel() - 1)
 		Pet.IconBackdrop:SetOutside(Pet.Icon)
-		Pet.IconBackdrop:SetTemplate()
+		Pet.IconBackdrop:CreateBackdrop()
 		Pet.IconBackdrop:CreateShadow()
 
 		Pet.HealthBarBG:Kill()
@@ -33,9 +33,9 @@ function Battle:SkinUnitFrames()
 
 		Pet.HealthBarBackdrop = CreateFrame("Frame", nil, Pet)
 		Pet.HealthBarBackdrop:SetFrameLevel(Pet:GetFrameLevel() - 1)
-		Pet.HealthBarBackdrop:SetTemplate("Transparent")
+		Pet.HealthBarBackdrop:CreateBackdrop("Transparent")
 		Pet.HealthBarBackdrop:CreateShadow()
-		Pet.HealthBarBackdrop:Width(Pet.healthBarWidth + 4)
+		Pet.HealthBarBackdrop:SetWidth(Pet.healthBarWidth + 4)
 
 		Pet.ActualHealthBar:SetTexture(C.Medias.Normal)
 
@@ -43,27 +43,28 @@ function Battle:SkinUnitFrames()
 		Pet.Name:ClearAllPoints()
 
 		Pet.PetTypeFrame = CreateFrame("Frame", nil, Pet)
-		Pet.PetTypeFrame:Size(100, 23)
-		Pet.PetTypeFrame:FontString("Text", C.Medias.Font, 12, "OUTLINE")
+		Pet.PetTypeFrame:SetSize(100, 23)
+		Pet.PetTypeFrame.Text = Pet.PetTypeFrame:CreateFontString(nil, "OVERLAY")
+		Pet.PetTypeFrame.Text:SetFont(C.Medias.Font, 12, "THINOUTLINE") 
 		Pet.PetTypeFrame.Text:SetText("")
 
 		Pet.SpeedIcon:SetAlpha(0)
 		Pet.SpeedUnderlay:SetAlpha(0)
 
 		Pet.FirstAttack = Pet:CreateTexture(nil, "ARTWORK")
-		Pet.FirstAttack:Size(30)
+		Pet.FirstAttack:SetSize(30, 30)
 		Pet.FirstAttack:SetTexture("Interface\\PetBattles\\PetBattle-StatIcons")
 		Pet.FirstAttack:Hide()
 
 		if (i == 1) then
-			Pet.HealthBarBackdrop:Point("TOPLEFT", Pet.ActualHealthBar, "TOPLEFT", -2, 2)
-			Pet.HealthBarBackdrop:Point("BOTTOMLEFT", Pet.ActualHealthBar, "BOTTOMLEFT", -2, -2)
+			Pet.HealthBarBackdrop:SetPoint("TOPLEFT", Pet.ActualHealthBar, "TOPLEFT", -2, 2)
+			Pet.HealthBarBackdrop:SetPoint("BOTTOMLEFT", Pet.ActualHealthBar, "BOTTOMLEFT", -2, -2)
 			Pet.ActualHealthBar:SetVertexColor(171 / 255, 214 / 255, 116 / 255)
 			PetBattles.Ally2.iconPoint = Pet.IconBackdrop
 			PetBattles.Ally3.iconPoint = Pet.IconBackdrop
 
-			Pet.ActualHealthBar:Point("BOTTOMLEFT", Pet.Icon, "BOTTOMRIGHT", 10, 0)
-			Pet.Name:Point("BOTTOMLEFT", Pet.ActualHealthBar, "TOPLEFT", 0, 10)
+			Pet.ActualHealthBar:SetPoint("BOTTOMLEFT", Pet.Icon, "BOTTOMRIGHT", 10, 0)
+			Pet.Name:SetPoint("BOTTOMLEFT", Pet.ActualHealthBar, "TOPLEFT", 0, 10)
 
 			Pet.PetTypeFrame:SetPoint("BOTTOMRIGHT",Pet.HealthBarBackdrop, "TOPRIGHT", -2, 3)
 			Pet.PetTypeFrame.Text:SetPoint("RIGHT")
@@ -72,14 +73,14 @@ function Battle:SkinUnitFrames()
 			Pet.FirstAttack:SetTexCoord(Pet.SpeedIcon:GetTexCoord())
 			Pet.FirstAttack:SetVertexColor(.1,.1,.1,1)
 		else
-			Pet.HealthBarBackdrop:Point("TOPRIGHT", Pet.ActualHealthBar, "TOPRIGHT", 2, 2)
-			Pet.HealthBarBackdrop:Point("BOTTOMRIGHT", Pet.ActualHealthBar, "BOTTOMRIGHT", 2, -2)
+			Pet.HealthBarBackdrop:SetPoint("TOPRIGHT", Pet.ActualHealthBar, "TOPRIGHT", 2, 2)
+			Pet.HealthBarBackdrop:SetPoint("BOTTOMRIGHT", Pet.ActualHealthBar, "BOTTOMRIGHT", 2, -2)
 			Pet.ActualHealthBar:SetVertexColor(196 / 255, 30 / 255, 60 / 255)
 			PetBattles.Enemy2.iconPoint = Pet.IconBackdrop
 			PetBattles.Enemy3.iconPoint = Pet.IconBackdrop
 
-			Pet.ActualHealthBar:Point("BOTTOMRIGHT", Pet.Icon, "BOTTOMLEFT", -10, 0)
-			Pet.Name:Point("BOTTOMRIGHT", Pet.ActualHealthBar, "TOPRIGHT", 0, 10)
+			Pet.ActualHealthBar:SetPoint("BOTTOMRIGHT", Pet.Icon, "BOTTOMLEFT", -10, 0)
+			Pet.Name:SetPoint("BOTTOMRIGHT", Pet.ActualHealthBar, "TOPRIGHT", 0, 10)
 
 			Pet.PetTypeFrame:SetPoint("BOTTOMLEFT",Pet.HealthBarBackdrop, "TOPLEFT", 2, 3)
 			Pet.PetTypeFrame.Text:SetPoint("LEFT")
@@ -100,7 +101,7 @@ function Battle:SkinUnitFrames()
 		Pet.LevelUnderlay:SetAlpha(0)
 		Pet.Level:SetFontObject(NumberFont_Outline_Large)
 		Pet.Level:ClearAllPoints()
-		Pet.Level:Point("BOTTOMLEFT", Pet.Icon, "BOTTOMLEFT", 2, 2)
+		Pet.Level:SetPoint("BOTTOMLEFT", Pet.Icon, "BOTTOMLEFT", 2, 2)
 
 		Pet.BorderFlash:Kill()
 	end
@@ -112,7 +113,7 @@ function Battle:SkinUnitFrames()
 		Pet.BorderAlive:SetAlpha(0)
 		Pet.HealthBarBG:SetAlpha(0)
 		Pet.HealthDivider:SetAlpha(0)
-		Pet:Size(40)
+		Pet:SetSize(40, 40)
 		Pet:CreateBackdrop()
 		Pet:ClearAllPoints()
 
@@ -122,10 +123,10 @@ function Battle:SkinUnitFrames()
 
 		Pet.HealthBarBackdrop = CreateFrame("Frame", nil, Pet)
 		Pet.HealthBarBackdrop:SetFrameLevel(Pet:GetFrameLevel() - 1)
-		Pet.HealthBarBackdrop:SetTemplate()
-		Pet.HealthBarBackdrop:Width(Pet.healthBarWidth + 4)
-		Pet.HealthBarBackdrop:Point("TOPLEFT", Pet.ActualHealthBar, "TOPLEFT", -2, 2)
-		Pet.HealthBarBackdrop:Point("BOTTOMLEFT", Pet.ActualHealthBar, "BOTTOMLEFT", -2, -1)
+		Pet.HealthBarBackdrop:CreateBackdrop()
+		Pet.HealthBarBackdrop:SetWidth(Pet.healthBarWidth + 4)
+		Pet.HealthBarBackdrop:SetPoint("TOPLEFT", Pet.ActualHealthBar, "TOPLEFT", -2, 2)
+		Pet.HealthBarBackdrop:SetPoint("BOTTOMLEFT", Pet.ActualHealthBar, "BOTTOMLEFT", -2, -1)
 	end
 
 	PetBattles.Ally2:SetPoint("TOPRIGHT", PetBattles.Ally2.iconPoint, "TOPLEFT", -6, -2)

@@ -10,18 +10,14 @@ function MirrorTimers:Update()
 			local Status = _G[Bar:GetName().."StatusBar"]
 			local Border = _G[Bar:GetName().."Border"]
 			local Text = _G[Bar:GetName().."Text"]
-			local Backdrop = {
-				bgFile = C.Medias.Blank,
-				insets = {top = -T.Mult, left = -T.Mult, bottom = -T.Mult, right = -T.Mult},
-			}
 
 			Bar:StripTextures()
-			Bar:SetBackdrop(Backdrop)
-			Bar:SetBackdropColor(unpack(C.General.BackdropColor))
-			Bar:CreateShadow()
+			Bar:CreateBackdrop()
+			Bar.Backdrop:SetBackdropColor(unpack(C.General.BackdropColor))
+			Bar.Backdrop:CreateShadow()
 
 			Status:ClearAllPoints()
-			Status:SetAllPoints(Bar)
+			Status:SetInside(Bar, 1, 1)
 			Status:SetStatusBarTexture(C.Medias.Normal)
 
 			Text:ClearAllPoints()

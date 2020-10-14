@@ -1,10 +1,10 @@
 -- Collect garbage while player is AFK. (hooray for free memory!)
 
 local T = select(2, ...):unpack()
-local CollectGarbage = CreateFrame("Frame")
+local GarbageCollection = CreateFrame("Frame")
 local Miscellaneous = T["Miscellaneous"]
 
-function CollectGarbage:OnEvent(event, unit)
+function GarbageCollection:OnEvent(event, unit)
 	if (event == "PLAYER_ENTERING_WORLD") then
 		collectgarbage("collect")
 
@@ -27,11 +27,11 @@ function CollectGarbage:OnEvent(event, unit)
 	end
 end
 
-function CollectGarbage:Enable()
+function GarbageCollection:Enable()
 	self:SetScript("OnEvent", self.OnEvent)
 end
 
-CollectGarbage:RegisterEvent("PLAYER_FLAGS_CHANGED")
-CollectGarbage:RegisterEvent("PLAYER_ENTERING_WORLD")
+GarbageCollection:RegisterEvent("PLAYER_FLAGS_CHANGED")
+GarbageCollection:RegisterEvent("PLAYER_ENTERING_WORLD")
 
-Miscellaneous.CollectGarbage = CollectGarbage
+Miscellaneous.GarbageCollection = GarbageCollection

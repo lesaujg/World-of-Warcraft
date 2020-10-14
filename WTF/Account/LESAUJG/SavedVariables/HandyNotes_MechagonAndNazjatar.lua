@@ -18,11 +18,11 @@ HandyNotes_MechagonAndNazjatarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["pet_mech"] = false,
+			["cats_nazjatar"] = false,
 			["chest_mech"] = true,
 			["hide_minimap"] = true,
 			["treasure_nazjatar"] = false,
-			["cats_nazjatar"] = false,
-			["pet_mech"] = false,
 		},
 	},
 }

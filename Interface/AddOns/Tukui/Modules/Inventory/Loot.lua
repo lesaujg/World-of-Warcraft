@@ -11,7 +11,6 @@ local LootFrame = LootFrame
 local Font
 
 -- Lib Globals
-local _G = _G
 local select = select
 local unpack = unpack
 local pairs = pairs
@@ -48,15 +47,11 @@ function Loot:MoveStandardLoot()
 			Movers:RegisterFrame(LootFrame)
 		end
 
-		if (not TukuiData[GetRealmName()][UnitName("Player")].Move) then
-			TukuiData[GetRealmName()][UnitName("Player")].Move = {}
+		if not (TukuiData[T.MyRealm][T.MyName].Move.LootFrame) then
+			TukuiData[T.MyRealm][T.MyName].Move.LootFrame = {"TOPLEFT", "UIParent", "TOPLEFT", 16, -116}
 		end
 
-		if not (TukuiData[GetRealmName()][UnitName("Player")].Move.LootFrame) then
-			TukuiData[GetRealmName()][UnitName("Player")].Move.LootFrame = {"TOPLEFT", "UIParent", "TOPLEFT", 16, -116}
-		end
-
-		local A1, _, A2, X, Y = unpack(TukuiData[GetRealmName()][UnitName("Player")].Move.LootFrame)
+		local A1, _, A2, X, Y = unpack(TukuiData[T.MyRealm][T.MyName].Move.LootFrame)
 
 		LootFrame:ClearAllPoints()
 		LootFrame:SetPoint(A1, UIParent, A2, X, Y)
@@ -64,6 +59,8 @@ function Loot:MoveStandardLoot()
 end
 
 function Loot:SkinStandardLootFrame()
+	local ItemText = select(19, LootFrame:GetRegions())
+	
 	LootFrame:StripTextures()
 	LootFrameInset:StripTextures()
 	LootFrameInset:CreateBackdrop("Transparent")
@@ -71,41 +68,37 @@ function Loot:SkinStandardLootFrame()
 	LootFramePortraitOverlay:SetAlpha(0)
 
 	LootFrameDownButton:StripTextures()
-	LootFrameDownButton:Size(LootFrame:GetWidth() - 6, 23)
+	LootFrameDownButton:SetSize(LootFrame:GetWidth() - 6, 23)
 	LootFrameDownButton:SkinButton()
-	LootFrameDownButton:FontString("Text", C.Medias.Font, 12)
+	LootFrameDownButton.Text = LootFrameDownButton:CreateFontString(nil, "OVERLAY")
+	LootFrameDownButton.Text:SetFontTemplate(C.Medias.Font, 12)
 	LootFrameDownButton.Text:SetPoint("CENTER")
 	LootFrameDownButton.Text:SetText(NEXT)
 	LootFrameDownButton:ClearAllPoints()
-	LootFrameDownButton:Point("TOP", LootFrame, "BOTTOM", -1, -1)
+	LootFrameDownButton:SetPoint("TOP", LootFrame, "BOTTOM", -1, -1)
 	LootFrameDownButton:CreateShadow()
 	LootFrameNext:SetAlpha(0)
 
 	LootFrameUpButton:StripTextures()
-	LootFrameUpButton:Size(LootFrame:GetWidth() - 6, 23)
+	LootFrameUpButton:SetSize(LootFrame:GetWidth() - 6, 23)
 	LootFrameUpButton:SkinButton()
-	LootFrameUpButton:FontString("Text", C.Medias.Font, 12)
+
+	LootFrameUpButton.Text = LootFrameUpButton:CreateFontString(nil, "OVERLAY")
+	LootFrameUpButton.Text:SetFontTemplate(C.Medias.Font, 12)
 	LootFrameUpButton.Text:SetPoint("CENTER")
 	LootFrameUpButton.Text:SetText(PREV)
 	LootFrameUpButton:ClearAllPoints()
-	LootFrameUpButton:Point("TOP", LootFrameDownButton, "BOTTOM", 0, -2)
+	LootFrameUpButton:SetPoint("TOP", LootFrameDownButton, "BOTTOM", 0, -2)
 	LootFrameUpButton:CreateShadow()
 	LootFramePrev:SetAlpha(0)
 
 	LootFrameCloseButton:EnableMouse(false)
 	LootFrameCloseButton:StripTextures()
 
-	if T.WoWBuild < 28724 then
-		local ItemText = select(19, LootFrame:GetRegions())
-
-		ItemText:SetAlpha(0)
-	else
-		local ItemText = select(7, LootFrame:GetRegions())
-
-		ItemText:SetAlpha(0)
-		LootFrame.NineSlice:StripTextures()
-		LootFrameInset.NineSlice:StripTextures()
-	end
+	LootFrame:StripTexts()
+	LootFrameInset.NineSlice:SetAlpha(0)
+	LootFrame.NineSlice:SetAlpha(0)
+	LootFrame.TitleBg:SetAlpha(0)
 end
 
 function Loot:SkinStandardLootFrameButtons(i)
@@ -117,7 +110,8 @@ function Loot:SkinStandardLootFrameButtons(i)
 			local Icon = _G["LootButton" .. i .. "IconTexture"]
 			local Quest = _G["LootButton" .. i .. "IconQuestTexture"]
 			local IconTexture = Icon:GetTexture()
-			local IsQuestItem, QuestID, IsActive = select(6, GetLootSlotInfo(Slot))
+			local Quality = select(5, GetLootSlotInfo(Slot))
+			local Color = ITEM_QUALITY_COLORS[Quality] or {r = 0, g = 0, b = 0}
 
 			if (not Button.IsSkinned) then
 				Button:StripTextures()
@@ -128,18 +122,16 @@ function Loot:SkinStandardLootFrameButtons(i)
 				Icon:SetTexture(IconTexture)
 				Icon:SetTexCoord(unpack(T.IconCoord))
 				Icon:SetInside()
-
+				
 				Quest:SetAlpha(0)
 
 				Button.IsSkinned = true
 			end
-
-			if (QuestID and not IsActive) then
-				Button.Backdrop:SetBackdropBorderColor(0.97, 0.85, 0.31) -- Quest item
-			elseif (QuestID or IsQuestItem) then
-				Button.Backdrop:SetBackdropBorderColor(0.97, 0.85, 0.31) -- Quest item
+			
+			if Quest:IsShown() then
+				Button.Backdrop:SetBorderColor(1, 1, 0)
 			else
-				Button.Backdrop:SetBackdropBorderColor(unpack(C.General.BorderColor)) -- Recolor if the previous item in the slot was a quest item
+				Button.Backdrop:SetBorderColor(Color.r, Color.g, Color.b)
 			end
 		end
 	end
@@ -170,7 +162,7 @@ function Loot:OnLeave()
 	self.drop:SetStatusBarColor(0, 0, 0, 0)
 	self.drop:Hide()
 
-	GameTooltip:Hide()
+	GameTooltip_Hide()
 	ResetCursor()
 end
 
@@ -204,20 +196,20 @@ function Loot:AnchorSlots()
 		if frame:IsShown() then
 			shownSlots = shownSlots + 1
 
-			frame:Point("TOP", TukuiLootFrame, 4, (-8 + Loot.IconSize) - (shownSlots * (Loot.IconSize+1)))
+			frame:SetPoint("TOP", TukuiLootFrame, 4, (-8 + Loot.IconSize) - (shownSlots * (Loot.IconSize+1)))
 		end
 	end
 
-	self:Height(max(shownSlots * Loot.IconSize + 16, 20))
+	self:SetHeight(max(shownSlots * Loot.IconSize + 16, 20))
 end
 
 function Loot:CreateSlots(id)
 	local IconSize = (Loot.IconSize - 2)
 
 	local frame = CreateFrame("Button", "TukuiLootSlot"..id, TukuiLootFrame)
-	frame:Height(IconSize)
-	frame:Point("LEFT", 8, 0)
-	frame:Point("RIGHT", -8, 0)
+	frame:SetHeight(IconSize)
+	frame:SetPoint("LEFT", 8, 0)
+	frame:SetPoint("RIGHT", -8, 0)
 	frame:CreateBackdrop()
 	frame:CreateShadow()
 	frame:SetID(id)
@@ -230,9 +222,9 @@ function Loot:CreateSlots(id)
 	frame:SetScript("OnShow", Loot.OnShow)
 
 	local iconFrame = CreateFrame("Frame", nil, frame)
-	iconFrame:Size(IconSize, IconSize)
-	iconFrame:Point("RIGHT", frame, "LEFT", -2, 0)
-	iconFrame:SetTemplate()
+	iconFrame:SetSize(IconSize, IconSize)
+	iconFrame:SetPoint("RIGHT", frame, "LEFT", -2, 0)
+	iconFrame:CreateBackdrop()
 	iconFrame:CreateShadow()
 	frame.iconFrame = iconFrame
 
@@ -248,14 +240,14 @@ function Loot:CreateSlots(id)
 
 	local count = iconFrame:CreateFontString(nil, "OVERLAY")
 	count:SetJustifyH("RIGHT")
-	count:Point("BOTTOMRIGHT", iconFrame, -2, 4)
+	count:SetPoint("BOTTOMRIGHT", iconFrame, -2, 4)
 	count:SetFontTemplate(C.Medias.Font, 12)
 	count:SetText(1)
 	frame.count = count
 
 	local name = invsframe:CreateFontString(nil, "OVERLAY")
-	name:Point("RIGHT", invsframe)
-	name:Point("LEFT", icon, "RIGHT", 4, 0)
+	name:SetPoint("RIGHT", invsframe)
+	name:SetPoint("LEFT", icon, "RIGHT", 4, 0)
 	name:SetNonSpaceWrap(true)
 	name:SetFontObject(Font)
 	frame.name = name
@@ -277,7 +269,10 @@ function Loot:LOOT_SLOT_CLEARED(_, slot)
 		return
 	end
 
-	TukuiLootFrame.LootSlots[slot]:Hide()
+    if TukuiLootFrame.LootSlots[slot] then
+    	TukuiLootFrame.LootSlots[slot]:Hide()
+    end
+
 	Loot.AnchorSlots(TukuiLootFrame)
 end
 
@@ -300,7 +295,7 @@ function Loot:LOOT_OPENED(_, autoloot)
 	if IsFishingLoot() then
 		TukuiLootFrame.Title:SetText("Fishy Loot")
 	elseif not UnitIsFriend("player", "target") and UnitIsDead("target") then
-		TukuiLootFrame.Title:SetText(UnitName("target"))
+		TukuiLootFrame.Title:SetText(UnitName("target"):sub(1, 29))
 	else
 		TukuiLootFrame.Title:SetText(LOOT)
 	end
@@ -311,12 +306,12 @@ function Loot:LOOT_OPENED(_, autoloot)
 		y = y / TukuiLootFrame:GetEffectiveScale()
 
 		TukuiLootFrame:ClearAllPoints()
-		TukuiLootFrame:Point("TOPLEFT", UIParent, "BOTTOMLEFT", x - 40, y + 20)
+		TukuiLootFrame:SetPoint("TOPLEFT", UIParent, "BOTTOMLEFT", x - 40, y + 20)
 		TukuiLootFrame:GetCenter()
 		TukuiLootFrame:Raise()
 	else
-		local SavedVar = TukuiData[GetRealmName()][UnitName("Player")].Move
-		local CustomLootPosition = TukuiData[GetRealmName()][UnitName("Player")].Move.TukuiLootFrame
+		local SavedVar = TukuiData[T.MyRealm][T.MyName].Move
+		local CustomLootPosition = TukuiData[T.MyRealm][T.MyName].Move.TukuiLootFrame
 		local A1, P, A2, X, Y
 
 		if CustomLootPosition then
@@ -326,7 +321,7 @@ function Loot:LOOT_OPENED(_, autoloot)
 		end
 
 		TukuiLootFrame:ClearAllPoints()
-		TukuiLootFrame:Point(A1, P, A2, X, Y)
+		TukuiLootFrame:SetPoint(A1, P, A2, X, Y)
 	end
 
 	local Items = GetNumLootItems()
@@ -341,6 +336,7 @@ function Loot:LOOT_OPENED(_, autoloot)
 
 			local LootFrameSlots = TukuiLootFrame.LootSlots[i] or Loot:CreateSlots(i)
 			local Color = ITEM_QUALITY_COLORS[Quality] or {r = 1, g = 1, b = 1}
+			local Multiplier = 0.3
 
 			if (Quantity and Quantity > 1) then
 				LootFrameSlots.count:SetText(Quantity)
@@ -351,13 +347,13 @@ function Loot:LOOT_OPENED(_, autoloot)
 
 			if (QuestID and not isActive) then
 				LootFrameSlots.name:SetTextColor(1, 0.82, 0)
-				LootFrameSlots:SetBackdropColor(Color.r * 0.55, Color.g * 0.55, Color.b * 0.55, 0.25)
+				LootFrameSlots.Backdrop:SetBackdropColor(Color.r * Multiplier, Color.g * Multiplier, Color.b * Multiplier, 1)
 			elseif (QuestID or IsQuestItem) then
 				LootFrameSlots.name:SetTextColor(1, 0.82, 0)
-				LootFrameSlots:SetBackdropColor(Color.r * 0.55, Color.g * 0.55, Color.b * 0.55, 0.25)
+				LootFrameSlots.Backdrop:SetBackdropColor(Color.r * Multiplier, Color.g * Multiplier, Color.b * Multiplier, 1)
 			else
 				LootFrameSlots.name:SetTextColor(Color.r, Color.g, Color.b)
-				LootFrameSlots:SetBackdropColor(Color.r * 0.55, Color.g * 0.55, Color.b * 0.55, 0.25)
+				LootFrameSlots.Backdrop:SetBackdropColor(Color.r * Multiplier, Color.g * Multiplier, Color.b * Multiplier, 1)
 			end
 
 			LootFrameSlots.quality = Quality
@@ -373,7 +369,7 @@ function Loot:LOOT_OPENED(_, autoloot)
 
 		LootFrameSlots.name:SetText("Empty Slot")
 		LootFrameSlots.name:SetTextColor(Color.r, Color.g, Color.b)
-		LootFrameSlots.icon:SetTexture([[Interface\Icons\INV_Misc_Herb_AncientLichen]])
+		LootFrameSlots.icon:SetTexture([[Interface\Icons\Inv_misc_questionmark]])
 
 		LootFrameSlots.count:Hide()
 		LootFrameSlots.drop:Hide()
@@ -384,12 +380,16 @@ function Loot:LOOT_OPENED(_, autoloot)
 	Loot.AnchorSlots(TukuiLootFrame)
 end
 
+function Loot:OPEN_MASTER_LOOT_LIST()
+	ToggleDropDownMenu(1, nil, GroupLootDropDown, TukuiLootFrame.LootSlots[LootFrame.selectedSlot], -33, -6)
+end
+
+function Loot:UPDATE_MASTER_LOOT_LIST()
+	UIDropDownMenu_Refresh(GroupLootDropDown)
+end
+
 function Loot:Enable()
 	if not C.Loot.Enable then
-		return
-	end
-
-	if C.Loot.StandardLoot then
 		self:SkinStandardLootFrame()
 		self:AddStandardLootHooks()
 
@@ -403,9 +403,10 @@ function Loot:Enable()
 	self.DefaultPosition = {"TOPLEFT", UIParent, "TOPLEFT", 50, -50}
 
 	TukuiLootFrame = CreateFrame("Button", "TukuiLootFrame", UIParent)
+	TukuiLootFrame:Hide()
 	TukuiLootFrame:SetClampedToScreen(true)
 	TukuiLootFrame:SetToplevel(true)
-	TukuiLootFrame:Size(198, 58)
+	TukuiLootFrame:SetSize(198, 58)
 	TukuiLootFrame:SetPoint(unpack(self.DefaultPosition))
 	TukuiLootFrame.LootSlots = {}
 	TukuiLootFrame:SetScript("OnHide", function()
@@ -414,24 +415,21 @@ function Loot:Enable()
 	end)
 
 	TukuiLootFrame.Overlay = CreateFrame("Frame", nil, TukuiLootFrame)
-	TukuiLootFrame.Overlay:Size(198+16, 28)
-	TukuiLootFrame.Overlay:Point("TOP", TukuiLootFrame, -16, 22)
+	TukuiLootFrame.Overlay:SetSize(198+16, 19)
+	TukuiLootFrame.Overlay:SetPoint("TOP", TukuiLootFrame, -16, 13)
 	TukuiLootFrame.Overlay:CreateBackdrop()
 	TukuiLootFrame.Overlay:CreateShadow()
 
-	TukuiLootFrame.InvisFrame = CreateFrame("Frame", nil, TukuiLootFrame)
-	TukuiLootFrame.InvisFrame:SetFrameLevel(TukuiLootFrame:GetFrameLevel() + 5)
-	TukuiLootFrame.InvisFrame:SetAllPoints()
-
-	TukuiLootFrame.Title = TukuiLootFrame.InvisFrame:CreateFontString(nil, "OVERLAY", 7)
+	TukuiLootFrame.Title = TukuiLootFrame.Overlay:CreateFontString(nil, "OVERLAY", 7)
 	TukuiLootFrame.Title:SetFontObject(Font)
-	TukuiLootFrame.Title:Point("CENTER", TukuiLootFrame.Overlay, 0, 1)
+	TukuiLootFrame.Title:SetPoint("CENTER", TukuiLootFrame.Overlay, 0, 1)
 	TukuiLootFrame.Title:SetTextColor(1, 0.82, 0)
 
 	self:RegisterEvent("LOOT_OPENED")
 	self:RegisterEvent("LOOT_SLOT_CLEARED")
 	self:RegisterEvent("LOOT_CLOSED")
-
+	self:RegisterEvent("OPEN_MASTER_LOOT_LIST")
+	self:RegisterEvent("UPDATE_MASTER_LOOT_LIST")
 	self:SetScript("OnEvent", function(self, event, ...)
 		self[event](self, event, ...)
 	end)

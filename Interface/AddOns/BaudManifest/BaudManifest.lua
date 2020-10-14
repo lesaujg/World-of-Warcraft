@@ -1499,7 +1499,7 @@ function BaudManifestDisplay_OnLoad(self)
     self.BagsButton = CreateFrame("CheckButton", Name .. "BagsButton", self, "BaudManifestBagsButtonTemplate");
     self.BagsButton:SetPoint("TOPLEFT", 5, -5);
 
-    BagFrame = CreateFrame("Button", Name .. "BagsFrame", self);
+    BagFrame = CreateFrame("Button", Name .. "BagsFrame", self, "BackdropTemplate");
     self.BagsFrame = BagFrame;
     BagFrame:SetPoint("TOPRIGHT", self, "TOPLEFT");
   end
@@ -4298,7 +4298,7 @@ end
 
 function BaudManifestUpdateScales()
   local Display, X, Y, Multiplier;
-  for Index = 1, 4 do
+  for Index = 1, 5 do
     Display = Displays[Index];
     Multiplier = Display:GetScale() / (Config.Scale / 100);
     X, Y = Display:GetCenter();

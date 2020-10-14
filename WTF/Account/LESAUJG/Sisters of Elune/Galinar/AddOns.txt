@@ -210,3 +210,4 @@ DBM-EternalPalace: disabled
 DBM-Uldir: disabled
 SilverDragon: enabled
 HandyNotes_VisionsOfNZoth: enabled
+PetTracker: disabled

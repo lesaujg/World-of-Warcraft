@@ -21,7 +21,7 @@ function TukuiPopups:CreatePopups()
 		Frames[i]:SetSize(400, 60)
 		Frames[i]:SetFrameLevel(3)
 		Frames[i]:CreateShadow()
-		Frames[i]:SetTemplate()
+		Frames[i]:CreateBackdrop()
 		Frames[i]:Hide()
 
 		Frames[i].Text = CreateFrame("MessageFrame", nil, Frames[i])
@@ -35,9 +35,10 @@ function TukuiPopups:CreatePopups()
 		Frames[i].Button1 = CreateFrame("Button", nil, Frames[i])
 		Frames[i].Button1:SetPoint("TOPLEFT", Frames[i], "BOTTOMLEFT", 0, -2)
 		Frames[i].Button1:SetSize(199, 23)
-		Frames[i].Button1:SetTemplate()
+		Frames[i].Button1:CreateBackdrop()
 		Frames[i].Button1:CreateShadow()
-		Frames[i].Button1:FontString("Text", C.Medias.Font, 12)
+		Frames[i].Button1.Text = Frames[i].Button1:CreateFontString(nil, "OVERLAY")
+		Frames[i].Button1.Text:SetFontTemplate(C.Medias.Font, 12)
 		Frames[i].Button1.Text:SetPoint("CENTER")
 		Frames[i].Button1.Text:SetText(ACCEPT)
 		Frames[i].Button1:SetScript("OnClick", TukuiPopups.HidePopup)
@@ -47,9 +48,10 @@ function TukuiPopups:CreatePopups()
 		Frames[i].Button2 = CreateFrame("Button", nil, Frames[i])
 		Frames[i].Button2:SetPoint("TOPRIGHT", Frames[i], "BOTTOMRIGHT", 0, -2)
 		Frames[i].Button2:SetSize(199, 23)
-		Frames[i].Button2:SetTemplate("Default")
-		Frames[i].Button2:CreateShadow("Default")
-		Frames[i].Button2:FontString("Text", C.Medias.Font, 12)
+		Frames[i].Button2:CreateBackdrop("Default")
+		Frames[i].Button2:CreateShadow()
+		Frames[i].Button2.Text = Frames[i].Button2:CreateFontString(nil, "OVERLAY")
+		Frames[i].Button2.Text:SetFontTemplate(C.Medias.Font, 12)
 		Frames[i].Button2.Text:SetPoint("CENTER")
 		Frames[i].Button2.Text:SetText(CANCEL)
 		Frames[i].Button2:SetScript("OnClick", TukuiPopups.HidePopup)
@@ -61,8 +63,8 @@ function TukuiPopups:CreatePopups()
 		Frames[i].EditBox:EnableMouse(true)
 		Frames[i].EditBox:SetAutoFocus(true)
 		Frames[i].EditBox:SetFontObject(ChatFontNormal)
-		Frames[i].EditBox:Width(380)
-		Frames[i].EditBox:Height(16)
+		Frames[i].EditBox:SetWidth(380)
+		Frames[i].EditBox:SetHeight(16)
 		Frames[i].EditBox:SetPoint("BOTTOM", Frames[i], 0, 12)
 		Frames[i].EditBox:SetScript("OnEscapePressed", function() Frames[i]:Hide() end)
 		Frames[i].EditBox:CreateBackdrop()
@@ -74,7 +76,7 @@ function TukuiPopups:CreatePopups()
 			Frames[i].Anchor = CreateFrame("Frame", nil, Frames[i])
 			Frames[i].Anchor:SetSize(360, 30)
 			Frames[i].Anchor:SetPoint("BOTTOM", Frames[i], "TOP", 0, -2)
-			Frames[i].Anchor:SetTemplate("Transparent")
+			Frames[i].Anchor:CreateBackdrop("Transparent")
 			Frames[i].Anchor:SetFrameLevel(Frames[i]:GetFrameLevel() - 2)
 			Frames[i].Anchor:CreateShadow()
 			Frames[i]:SetPoint("TOP", UIParent, "TOP", 0, -10)
@@ -146,7 +148,20 @@ function TukuiPopups:ShowPopup()
 	Button1:HookScript("OnClick", TukuiPopups.HidePopup)
 	Button2:HookScript("OnClick", TukuiPopups.HidePopup)
 
+	Popup.CurrentPopup = self
+
 	Popup:Show()
+end
+
+function TukuiPopups:HidePopupByName()
+	for i = 1, 4 do
+		local Popups = TukuiPopups.Frames
+		local Popup = Popups[i]
+
+		if Popup and Popup.CurrentPopup == self then
+			Popup:Hide()
+		end
+	end
 end
 
 TukuiPopups:RegisterEvent("PLAYER_LOGIN")

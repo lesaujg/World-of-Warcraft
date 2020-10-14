@@ -3,7 +3,6 @@ local T, C, L = select(2, ...):unpack()
 local Miscellaneous = T["Miscellaneous"]
 local Reputation = CreateFrame("Frame", nil, UIParent)
 local HideTooltip = GameTooltip_Hide
-local Panels = T["Panels"]
 local Bars = 20
 local Colors = FACTION_BAR_COLORS
 
@@ -24,7 +23,7 @@ function Reputation:SetTooltip()
 
 	GameTooltip:AddLine(string.format("%s (%s)", Name, _G["FACTION_STANDING_LABEL" .. ID]))
 
-	if (Min ~= Max) and (Min > 0) then
+	if (Min ~= Max) and (Min >= 0) then
 		local Val1 = Value - Min
 		local Val2 = Max - Min
 		local Val3 = (Value - Min) / (Max - Min) * 100
@@ -62,13 +61,14 @@ function Reputation:Create()
 		RepBar:SetStatusBarTexture(C.Medias.Normal)
 		RepBar:EnableMouse()
 		RepBar:SetFrameStrata("BACKGROUND")
-		RepBar:SetFrameLevel(4)
+		RepBar:SetFrameLevel(5)
 		RepBar:CreateBackdrop()
 		RepBar:SetScript("OnEnter", Reputation.SetTooltip)
 		RepBar:SetScript("OnLeave", HideTooltip)
-		RepBar:Size(Panels.LeftChatBG:GetWidth() - 2, 6)
 		RepBar:SetAllPoints(i == 1 and XPBar1 or i == 2 and XPBar2)
 		RepBar:SetReverseFill(i == 2 and true)
+		
+		RepBar.Backdrop:SetOutside()
 
 		self["RepBar"..i] = RepBar
 	end
@@ -81,10 +81,6 @@ end
 
 function Reputation:Enable()
 	if not C.Misc.ExperienceEnable then
-		return -- it need xp bar enabled
-	end
-
-	if not C.Misc.ReputationEnable then
 		return
 	end
 
@@ -94,15 +90,13 @@ function Reputation:Enable()
 		self.IsCreated = true
 	end
 
-	local HasAzeriteItem = C_AzeriteItem.FindActiveAzeriteItem()
-
-	self.RepBar1:Show()
-
-	if HasAzeriteItem then
-		self.RepBar2:Hide()
+	if (UnitLevel("player") == MAX_PLAYER_LEVEL) or (self.RepBar2:GetParent() ~= UIParent) then
+		self.RepBar1:Show()
 	else
-		self.RepBar2:Show()
+		self.RepBar1:Hide()
 	end
+
+	self.RepBar2:Show()
 end
 
 function Reputation:Disable()

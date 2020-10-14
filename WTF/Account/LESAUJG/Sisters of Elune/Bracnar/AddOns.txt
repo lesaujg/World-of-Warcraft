@@ -249,3 +249,4 @@ DBM-EternalPalace: enabled
 HandyNotes_VisionsOfNZoth: enabled
 WeakAurasArchive: enabled
 SilverDragon: enabled
+PetTracker: disabled

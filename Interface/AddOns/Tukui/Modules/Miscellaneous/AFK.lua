@@ -37,7 +37,12 @@ function AFK:OnUpdate(Elapsed)
 		self.Total = (self.Total or 0) + 1
 
 		self.LocalDate:SetFormattedText("%s", date( "%A |cffffffff%B %d|r"))
-		self.LocalTime:SetFormattedText("%s", date( "|cffffffff%I:%M:%S|r %p"))
+
+		if C.DataTexts.Hour24 then
+			self.LocalTime:SetFormattedText("%s", date( "|cffffffff%H:%M:%S|r"))
+		else
+			self.LocalTime:SetFormattedText("%s", date( "|cffffffff%I:%M:%S|r %p"))
+		end
 
 		AFK:UpdateTime(self.Total)
 
@@ -81,9 +86,15 @@ function AFK:OnEvent(event, ...)
 		end
 
 		if (event == "PLAYER_REGEN_DISABLED") then
-			self:RegisterEvent("PLAYER_REGEN_ENABLED", "OnEvent")
+			self:RegisterEvent("PLAYER_REGEN_ENABLED", AFK.OnEvent)
 		end
 
+		return
+	end
+	
+	if (event == "ZONE_CHANGED") then
+		self:SetAFK(false)
+		
 		return
 	end
 
@@ -111,15 +122,15 @@ function AFK:Create()
 
 	local TopPanel = CreateFrame("Frame", nil, Frame)
 	TopPanel:SetFrameLevel(Frame:GetFrameLevel() - 1)
-	TopPanel:Size(UIParent:GetWidth()+8, 42)
-	TopPanel:Point("TOP", Frame, 0, 2)
+	TopPanel:SetSize(UIParent:GetWidth()+8, 42)
+	TopPanel:SetPoint("TOP", Frame, 0, 2)
 	TopPanel:CreateBackdrop()
 	TopPanel:CreateShadow()
 
 	local BottomPanel = CreateFrame("Frame", nil, Frame)
 	BottomPanel:SetFrameLevel(Frame:GetFrameLevel() - 1)
-	BottomPanel:Size(UIParent:GetWidth()+12, 84)
-	BottomPanel:Point("BOTTOM", Frame, 0, -4)
+	BottomPanel:SetSize(UIParent:GetWidth()+12, 84)
+	BottomPanel:SetPoint("BOTTOM", Frame, 0, -4)
 	BottomPanel:CreateBackdrop()
 	BottomPanel:CreateShadow()
 
@@ -127,33 +138,34 @@ function AFK:Create()
 	local CustomClassColor = T.Colors.class[Class]
 
 	local LocalTime = Frame:CreateFontString(nil, "OVERLAY")
-	LocalTime:Point("RIGHT", TopPanel, -28, -2)
+	LocalTime:SetPoint("RIGHT", TopPanel, -28, -2)
 	LocalTime:SetFontTemplate(Font, 14, 3, 3)
 	LocalTime:SetTextColor(unpack(CustomClassColor))
 
 	local LocalDate = Frame:CreateFontString(nil, "OVERLAY")
-	LocalDate:Point("LEFT", TopPanel, 28, -2)
+	LocalDate:SetPoint("LEFT", TopPanel, 28, -2)
 	LocalDate:SetFontTemplate(Font, 14, 3, 3)
 	LocalDate:SetTextColor(unpack(CustomClassColor))
 
 	local Time = Frame:CreateFontString(nil, "OVERLAY")
-	Time:Point("CENTER", TopPanel, 0, -2)
+	Time:SetPoint("CENTER", TopPanel, 0, -2)
 	Time:SetFontTemplate(Font, 16, 3, 3)
 	Time:SetTextColor(unpack(CustomClassColor))
 
 	local Name = Frame:CreateTexture(nil, "OVERLAY")
-	Name:Size(256, 128)
+	Name:SetSize(256, 128)
 	Name:SetTexture(C.Medias.Logo)
-	Name:Point("CENTER", BottomPanel, -8, 48)
+	Name:SetPoint("CENTER", BottomPanel, -8, 48)
 
 	local Version = Frame:CreateFontString(nil, "OVERLAY")
-	Version:Point("CENTER", BottomPanel, 0, -18)
+	Version:SetPoint("CENTER", BottomPanel, 0, -18)
 	Version:SetFontTemplate(Font, 24, 3, 3)
 	Version:SetText("Version " .. T.Version)
 
 	self:RegisterEvent("PLAYER_FLAGS_CHANGED")
 	self:RegisterEvent("PLAYER_REGEN_ENABLED")
 	self:RegisterEvent("PLAYER_REGEN_DISABLED")
+	self:RegisterEvent("ZONE_CHANGED")
 	self:SetScript("OnEvent", self.OnEvent)
 
 	UIParent:HookScript("OnShow", function(self) if UnitIsAFK("player") then SendChatMessage("", "AFK") AFK:SetAFK(false) end end)
@@ -169,7 +181,7 @@ function AFK:Create()
 end
 
 function AFK:Enable()
-	if not C.General.AFKSaver then
+	if not C.Misc.AFKSaver then
 		return
 	end
 

@@ -16,13 +16,16 @@ local officerNoteString = "  o: '%s'"
 
 local guildTable, guildXP, guildMotD = {}, {}, ""
 local totalOnline = 0
+local classc = {}
 
 local function BuildGuildTable()
 	totalOnline = 0
 	wipe(guildTable)
-	local _, name, rank, level, zone, note, officernote, connected, status, class, isMobile
+	local _, name, server, name_server, rank, level, zone, note, officernote, connected, status, class, isMobile
 	for i = 1, GetNumGuildMembers() do
-		name, rank, _, level, _, zone, note, officernote, connected, status, class, _, _, isMobile = GetGuildRosterInfo(i)
+		name_server, rank, _, level, _, zone, note, officernote, connected, status, class, _, _, isMobile = GetGuildRosterInfo(i)
+		server = string.gsub(GetRealmName("player"), "%s+", "")
+		name = string.gsub(name_server, "-"..server, "")
 
 		if status == 1 then
 			status = "|cffff0000["..AFK.."]|r"
@@ -48,9 +51,9 @@ end
 
 local menuFrame = CreateFrame("Frame", "TukuiGuildRightClickMenu", UIParent, "UIDropDownMenuTemplate")
 local menuList = {
-	{ text = OPTIONS_MENU, isTitle = true,notCheckable=true},
-	{ text = INVITE, hasArrow = true,notCheckable=true,},
-	{ text = CHAT_MSG_WHISPER_INFORM, hasArrow = true,notCheckable=true,}
+	{ text = OPTIONS_MENU, isTitle = true, notCheckable=true},
+	{ text = INVITE, hasArrow = true, notCheckable=true, menuList = {}},
+	{ text = CHAT_MSG_WHISPER_INFORM, hasArrow = true, notCheckable=true, menuList = {}}
 }
 
 local function inviteClick(self, arg1, arg2, checked)
@@ -77,19 +80,20 @@ end
 local OnMouseUp = function(self, btn)
 	if btn ~= "RightButton" or not IsInGuild() then return end
 
-	GameTooltip:Hide()
+	GameTooltip_Hide()
 
-	local classc, levelc, grouped
+	wipe(classc)
+	local levelc, grouped
 	local menuCountWhispers = 0
 	local menuCountInvites = 0
 
-
-	menuList[2].menuList = {}
-	menuList[3].menuList = {}
+	wipe(menuList[2].menuList)
+	wipe(menuList[3].menuList)
 
 	for i = 1, #guildTable do
 		if (guildTable[i][7] and (guildTable[i][1] ~= UnitName("player") and guildTable[i][1] ~= UnitName("player").."-"..GetRealmName())) then
-			local classc, levelc = (CUSTOM_CLASS_COLORS or RAID_CLASS_COLORS)[guildTable[i][9]], GetQuestDifficultyColor(guildTable[i][3])
+			levelc = GetQuestDifficultyColor(guildTable[i][3])
+			classc.r, classc.g, classc.b = unpack(T.Colors.class[guildTable[i][9]])
 
 			if UnitInParty(guildTable[i][1]) or UnitInRaid(guildTable[i][1]) then
 				grouped = "|cffaaaaaa*|r"
@@ -111,19 +115,19 @@ end
 local OnEnter = function(self)
 	if InCombatLockdown() or not IsInGuild() then return end
 
-	GuildRoster()
 	UpdateGuildMessage()
 	BuildGuildTable()
 
 	local name, rank, level, zone, note, officernote, connected, status, class, isMobile
-	local zonec, classc, levelc
+	local zonec, levelc
+	wipe(classc)
 	local online = totalOnline
 	local GuildInfo, GuildRank, GuildLevel = GetGuildInfo("player")
 
 	GameTooltip:SetOwner(self:GetTooltipAnchor())
 	GameTooltip:ClearLines()
 	if GuildInfo and GuildLevel then
-		GameTooltip:AddDoubleLine(string.format(guildInfoString, GuildInfo, GuildLevel), string.format(guildInfoString2, L.DataText.Guild, online, #guildTable),tthead.r,tthead.g,tthead.b,tthead.r,tthead.g,tthead.b)
+		GameTooltip:AddDoubleLine(string.format(guildInfoString, GuildInfo, GuildLevel), string.format(guildInfoString2, ACHIEVEMENTS_GUILD_TAB, online, #guildTable),tthead.r,tthead.g,tthead.b,tthead.r,tthead.g,tthead.b)
 	end
 
 	if guildMotD ~= "" then
@@ -131,17 +135,7 @@ local OnEnter = function(self)
 		GameTooltip:AddLine(string.format(guildMotDString, GUILD_MOTD, guildMotD), ttsubh.r, ttsubh.g, ttsubh.b, 1)
 	end
 
-	local col = T.RGBToHex(ttsubh.r, ttsubh.g, ttsubh.b)
-
-	local _, _, standingID, barMin, barMax, barValue = GetGuildFactionInfo()
-
-	if standingID ~= 8 then -- Not Max Rep
-		barMax = barMax - barMin
-		barValue = barValue - barMin
-		barMin = 0
-		GameTooltip:AddLine(" ")
-		GameTooltip:AddLine(string.format("%s:|r |cFFFFFFFF%s/%s (%s%%)",col..COMBAT_FACTION_CHANGE, T.ShortValue(barValue), T.ShortValue(barMax), math.ceil((barValue / barMax) * 100)))
-	end
+	-- local col = T.RGBToHex(ttsubh.r, ttsubh.g, ttsubh.b) -- Unused??
 
 	if online > 1 then
 		local Count = 0
@@ -155,15 +149,9 @@ local OnEnter = function(self)
 			name, rank, level, zone, note, officernote, connected, status, class, isMobile = unpack(guildTable[i])
 
 			if connected and name ~= UnitName("player") then
-				if Count > ((T.ScreenHeight / 10) / 2) then
-					GameTooltip:AddLine(" ")
-					GameTooltip:AddLine(format("+ "..INSPECT_GUILD_NUM_MEMBERS, online - Count),ttsubh.r,ttsubh.g,ttsubh.b)
-
-					break
-				end
-
 				if GetRealZoneText() == zone then zonec = activezone else zonec = inactivezone end
-				classc, levelc = (CUSTOM_CLASS_COLORS or RAID_CLASS_COLORS)[class], GetQuestDifficultyColor(level)
+				levelc = GetQuestDifficultyColor(level)
+				classc.r, classc.g, classc.b = unpack(T.Colors.class[class])
 
 				if isMobile then zone = "" end
 
@@ -177,17 +165,26 @@ local OnEnter = function(self)
 
 				Count = Count + 1
 			end
+
+			local MaxOnlineGuildMembersToDisplay = floor((T.ScreenHeight / 100) * 2)
+
+			if Count > MaxOnlineGuildMembersToDisplay then
+				GameTooltip:AddLine(" ")
+				GameTooltip:AddLine(format("+ "..INSPECT_GUILD_NUM_MEMBERS, online - Count),ttsubh.r,ttsubh.g,ttsubh.b)
+
+				break -- too many members online
+			end
 		end
 	end
 	GameTooltip:Show()
 end
 
-local OnLeave = function() GameTooltip:Hide() end
-
 local OnMouseDown = function(self, btn)
 	if btn ~= "LeftButton" then return end
 
-	ToggleCommunitiesFrame()
+	if IsInGuild() then
+		ToggleGuildFrame()
+	end
 end
 
 
@@ -197,8 +194,6 @@ local Update = function(self)
 
 		return
 	end
-
-	GuildRoster() -- Bux Fix on 5.4.
 
 	totalOnline = select(3, GetNumGuildMembers())
 
@@ -213,7 +208,7 @@ local Enable = function(self)
 
 	self:SetScript("OnMouseDown", OnMouseDown)
 	self:SetScript("OnMouseUp", OnMouseUp)
-	self:SetScript("OnLeave", OnLeave)
+	self:SetScript("OnLeave", GameTooltip_Hide)
 	self:SetScript("OnEnter", OnEnter)
 	self:SetScript("OnEvent", Update)
 	self:Update()
@@ -229,4 +224,4 @@ local Disable = function(self)
 	self:SetScript("OnEvent", nil)
 end
 
-DataText:Register(L.DataText.Guild, Enable, Disable, Update)
+DataText:Register("Guild", Enable, Disable, Update)

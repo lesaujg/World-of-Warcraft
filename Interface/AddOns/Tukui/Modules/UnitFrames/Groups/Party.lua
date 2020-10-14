@@ -1,9 +1,9 @@
 local T, C, L = select(2, ...):unpack()
 
-local TukuiUnitFrames = T["UnitFrames"]
+local UnitFrames = T["UnitFrames"]
 local Class = select(2, UnitClass("player"))
 
-function TukuiUnitFrames:Party()
+function UnitFrames:Party()
 	local HealthTexture = T.GetTexture(C["Textures"].UFPartyHealthTexture)
 	local PowerTexture = T.GetTexture(C["Textures"].UFPartyPowerTexture)
 	local Font = T.GetFont(C["Party"].Font)
@@ -12,63 +12,66 @@ function TukuiUnitFrames:Party()
 	self:RegisterForClicks("AnyUp")
 	self:SetScript("OnEnter", UnitFrame_OnEnter)
 	self:SetScript("OnLeave", UnitFrame_OnLeave)
-	self:SetBackdrop(TukuiUnitFrames.Backdrop)
-	self:SetBackdropColor(0, 0, 0)
 	self:CreateShadow()
+	self.Shadow:SetFrameLevel(2)
+	
+	self.Backdrop = CreateFrame("Frame", nil, self, "BackdropTemplate")
+	self.Backdrop:SetAllPoints()
+	self.Backdrop:SetFrameLevel(self:GetFrameLevel())
+	self.Backdrop:SetBackdrop(UnitFrames.Backdrop)
+	self.Backdrop:SetBackdropColor(0, 0, 0)
 
 	local Health = CreateFrame("StatusBar", nil, self)
 	Health:SetPoint("TOPLEFT")
 	Health:SetPoint("TOPRIGHT")
-	Health:Height(self:GetHeight() - 5)
+	Health:SetHeight(self:GetHeight() - 5)
 	Health:SetStatusBarTexture(HealthTexture)
 
-	Health.Background = Health:CreateTexture(nil, "BORDER")
-	Health.Background:SetAllPoints()
-	Health.Background:SetColorTexture(.1, .1, .1)
-
-	Health.frequentUpdates = true
+	Health.Background = Health:CreateTexture(nil, "BACKGROUND")
+	Health.Background:SetTexture(HealthTexture)
+    Health.Background:SetAllPoints(Health)
+	Health.Background.multiplier = C.UnitFrames.StatusBarBackgroundMultiplier / 100
 
 	if C.Party.ShowHealthText then
 		Health.Value = Health:CreateFontString(nil, "OVERLAY")
-		Health.Value:SetFontObject(HealthFont)
-		Health.Value:Point("TOPRIGHT", -3, 6)
-
-		Health.PostUpdate = TukuiUnitFrames.PostUpdateHealth
+		Health.Value:SetFontObject(Font)
+		Health.Value:SetPoint("TOPRIGHT", -4, 6)
+		Health.PostUpdate = UnitFrames.PostUpdateHealth
 	end
 
 	Health.colorDisconnected = true
 	Health.colorClass = true
 	Health.colorReaction = true
-
-	if (C.UnitFrames.Smooth) then
-		Health.Smooth = true
-	end
+	Health.isParty = true
 
 	-- Power
 	local Power = CreateFrame("StatusBar", nil, self)
-	Power:Height(4)
-	Power:Point("TOPLEFT", Health, "BOTTOMLEFT", 0, -1)
-	Power:Point("TOPRIGHT", Health, "BOTTOMRIGHT", 0, -1)
+	Power:SetHeight(4)
+	Power:SetPoint("TOPLEFT", Health, "BOTTOMLEFT", 0, -1)
+	Power:SetPoint("TOPRIGHT", Health, "BOTTOMRIGHT", 0, -1)
 	Power:SetStatusBarTexture(PowerTexture)
 
 	Power.Background = Power:CreateTexture(nil, "BORDER")
+	Power.Background:SetTexture(PowerTexture)
 	Power.Background:SetAllPoints(Power)
-	Power.Background:SetColorTexture(.4, .4, .4)
-	Power.Background.multiplier = 0.3
+	Power.Background.multiplier = C.UnitFrames.StatusBarBackgroundMultiplier / 100
 
-	Power.frequentUpdates = true
-	Power.colorPower = true
-
-	if (C.UnitFrames.Smooth) then
-		Power.Smooth = true
+	if C.Party.ShowManaText then
+		Power.Value = Power:CreateFontString(nil, "OVERLAY")
+		Power.Value:SetFontObject(Font)
+		Power.Value:SetPoint("BOTTOMRIGHT", -4, 0)
+		Power.PostUpdate = UnitFrames.PostUpdatePower
 	end
 
+	Power.colorPower = true
+	Power.isParty = true
+
 	local Name = Health:CreateFontString(nil, "OVERLAY")
-	Name:SetPoint("TOPLEFT", 4, 6)
+	Name:SetPoint("TOPLEFT", 4, 7)
 	Name:SetFontObject(Font)
 
-	local Buffs = CreateFrame("Frame", self:GetName()..'Buffs', self)
-	Buffs:Point("TOPLEFT", self, "BOTTOMLEFT", 0, -6)
+	local Buffs = CreateFrame("Frame", self:GetName().."Buffs", self)
+	Buffs:SetPoint("TOPLEFT", self, "BOTTOMLEFT", 0, -6)
 	Buffs:SetHeight(24)
 	Buffs:SetWidth(206)
 	Buffs.size = 24
@@ -76,19 +79,19 @@ function TukuiUnitFrames:Party()
 	Buffs.numRow = 1
 	Buffs.spacing = 2
 	Buffs.initialAnchor = "TOPLEFT"
-	Buffs.PostCreateIcon = TukuiUnitFrames.PostCreateAura
-	Buffs.PostUpdateIcon = TukuiUnitFrames.PostUpdateAura
+	Buffs.PostCreateIcon = UnitFrames.PostCreateAura
+	Buffs.PostUpdateIcon = UnitFrames.PostUpdateAura
 
-	local Debuffs = CreateFrame("Frame", self:GetName()..'Debuffs', self)
-	Debuffs:Point("LEFT", self, "RIGHT", 6, 0)
+	local Debuffs = CreateFrame("Frame", self:GetName().."Debuffs", self)
+	Debuffs:SetPoint("LEFT", self, "RIGHT", 6, 0)
 	Debuffs:SetHeight(self:GetHeight())
 	Debuffs:SetWidth(250)
 	Debuffs.size = self:GetHeight()
 	Debuffs.num = 6
 	Debuffs.spacing = 2
 	Debuffs.initialAnchor = "TOPLEFT"
-	Debuffs.PostCreateIcon = TukuiUnitFrames.PostCreateAura
-	Debuffs.PostUpdateIcon = TukuiUnitFrames.PostUpdateAura
+	Debuffs.PostCreateIcon = UnitFrames.PostCreateAura
+	Debuffs.PostUpdateIcon = UnitFrames.PostUpdateAura
 
 	local Leader = self:CreateTexture(nil, "OVERLAY")
 	Leader:SetSize(16, 16)
@@ -103,95 +106,66 @@ function TukuiUnitFrames:Party()
 	ReadyCheck:SetSize(16, 16)
 
 	local RaidIcon = Health:CreateTexture(nil, "OVERLAY")
-	RaidIcon:SetSize(16, 16)
+	RaidIcon:SetSize(C.UnitFrames.RaidIconSize, C.UnitFrames.RaidIconSize)
 	RaidIcon:SetPoint("CENTER", Health, "CENTER")
 	RaidIcon:SetTexture([[Interface\AddOns\Tukui\Medias\Textures\Others\RaidIcons]])
-
-	local PhaseIcon = Health:CreateTexture(nil, 'OVERLAY')
-	PhaseIcon:SetSize(24, 24)
-	PhaseIcon:SetPoint("TOPRIGHT", self, 7, 24)
-
-	if (C.Party.HealBar) then
-		local Width = C["Party"].Portrait and 162 or 206
-
-		local FirstBar = CreateFrame("StatusBar", nil, Health)
-		FirstBar:SetPoint("TOPLEFT", Health:GetStatusBarTexture(), "TOPRIGHT", 0, 0)
-		FirstBar:SetPoint("BOTTOMLEFT", Health:GetStatusBarTexture(), "BOTTOMRIGHT", 0, 0)
-		FirstBar:Width(Width)
-		FirstBar:SetStatusBarTexture(HealthTexture)
-		FirstBar:SetStatusBarColor(0, 0.3, 0.15, 1)
-		FirstBar:SetMinMaxValues(0,1)
-
-		local SecondBar = CreateFrame("StatusBar", nil, Health)
-		SecondBar:SetPoint("TOPLEFT", Health:GetStatusBarTexture(), "TOPRIGHT", 0, 0)
-		SecondBar:SetPoint("BOTTOMLEFT", Health:GetStatusBarTexture(), "BOTTOMRIGHT", 0, 0)
-		SecondBar:Width(Width)
-		SecondBar:SetStatusBarTexture(HealthTexture)
-		SecondBar:SetStatusBarColor(0, 0.3, 0, 1)
-
-		local ThirdBar = CreateFrame("StatusBar", nil, Health)
-		ThirdBar:SetPoint("TOPLEFT", Health:GetStatusBarTexture(), "TOPRIGHT", 0, 0)
-		ThirdBar:SetPoint("BOTTOMLEFT", Health:GetStatusBarTexture(), "BOTTOMRIGHT", 0, 0)
-		ThirdBar:Width(Width)
-		ThirdBar:SetStatusBarTexture(HealthTexture)
-		ThirdBar:SetStatusBarColor(0.3, 0.3, 0, 1)
-
-		ThirdBar:SetFrameLevel(Health:GetFrameLevel())
-		SecondBar:SetFrameLevel(ThirdBar:GetFrameLevel() + 1)
-		FirstBar:SetFrameLevel(ThirdBar:GetFrameLevel() + 2)
-
-		self.HealthPrediction = {
-			myBar = FirstBar,
-			otherBar = SecondBar,
-			absorbBar = ThirdBar,
-			maxOverflow = 1,
-		}
-	end
-
-	local Threat = Health:CreateTexture(nil, "OVERLAY")
-	Threat.Override = TukuiUnitFrames.UpdateThreat
-
-	local Highlight = CreateFrame("Frame", nil, self)
-	Highlight:SetPoint("TOPLEFT", self, "TOPLEFT")
-	Highlight:SetPoint("BOTTOMRIGHT", self, "BOTTOMRIGHT")
-	Highlight:SetBackdrop(TukuiUnitFrames.HighlightBorder)
-	Highlight:SetFrameLevel(0)
-	Highlight:Hide()
-
-	if Class == "PRIEST" then
-		local Atonement = CreateFrame("StatusBar", nil, Power)
-		Atonement:SetAllPoints()
-		Atonement:SetStatusBarTexture(C.Medias.Normal)
-		Atonement:SetFrameStrata(Power:GetFrameStrata())
-		Atonement:SetFrameLevel(Power:GetFrameLevel() + 1)
-
-		self.Atonement = Atonement
-	end
 
 	local Range = {
 		insideAlpha = 1,
 		outsideAlpha = C["Party"].RangeAlpha,
 	}
 
+	if C.UnitFrames.HealComm then
+		local myBar = CreateFrame("StatusBar", nil, Health)
+		local otherBar = CreateFrame("StatusBar", nil, Health)
+
+		myBar:SetFrameLevel(Health:GetFrameLevel())
+		myBar:SetStatusBarTexture(HealthTexture)
+		myBar:SetPoint("TOP")
+		myBar:SetPoint("BOTTOM")
+		myBar:SetPoint("LEFT", Health:GetStatusBarTexture(), "RIGHT")
+		myBar:SetWidth(180)
+		myBar:SetStatusBarColor(unpack(C.UnitFrames.HealCommSelfColor))
+
+		otherBar:SetFrameLevel(Health:GetFrameLevel())
+		otherBar:SetPoint("TOP")
+		otherBar:SetPoint("BOTTOM")
+		otherBar:SetPoint("LEFT", myBar:GetStatusBarTexture(), "RIGHT")
+		otherBar:SetWidth(180)
+		otherBar:SetStatusBarTexture(HealthTexture)
+		otherBar:SetStatusBarColor(unpack(C.UnitFrames.HealCommOtherColor))
+
+		local HealthPrediction = {
+			myBar = myBar,
+			otherBar = otherBar,
+			maxOverflow = 1,
+		}
+
+		self.HealthPrediction = HealthPrediction
+	end
+
+	local Highlight = CreateFrame("Frame", nil, self, "BackdropTemplate")
+	Highlight:SetBackdrop({edgeFile = C.Medias.Glow, edgeSize = C.Party.HighlightSize})
+	Highlight:SetOutside(self, C.Party.HighlightSize, C.Party.HighlightSize)
+	Highlight:SetBackdropBorderColor(unpack(C.Party.HighlightColor))
+	Highlight:SetFrameLevel(0)
+	Highlight:Hide()
+
 	self.Health = Health
 	self.Health.bg = Health.Background
 	self.Power = Power
 	self.Power.bg = Power.Background
 	self.Name = Name
-	--self.Role = Role -- This is a global lookup
 	self.Buffs = Buffs
 	self.Debuffs = Debuffs
 	self.LeaderIndicator = Leader
 	self.MasterLooterIndicator = MasterLooter
 	self.ReadyCheckIndicator = ReadyCheck
 	self.RaidTargetIndicator = RaidIcon
-	self.PhaseIcon = PhaseIcon
-	self.ThreatIndicator = Threat
 	self.Range = Range
+	self:Tag(Name, "[level] [Tukui:NameLong]")
 	self.Highlight = Highlight
-	self:Tag(Name, "[level] [Tukui:NameLong] [Tukui:Role]")
 
-	self:RegisterEvent("PLAYER_TARGET_CHANGED", TukuiUnitFrames.Highlight, true)
-	self:RegisterEvent("RAID_ROSTER_UPDATE", TukuiUnitFrames.Highlight, true)
-	self:RegisterEvent("PLAYER_FOCUS_CHANGED", TukuiUnitFrames.Highlight, true)
+	self:RegisterEvent("PLAYER_TARGET_CHANGED", UnitFrames.Highlight, true)
+	self:RegisterEvent("RAID_ROSTER_UPDATE", UnitFrames.Highlight, true)
 end

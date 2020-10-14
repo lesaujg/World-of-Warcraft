@@ -1,9 +1,8 @@
 local T, C, L = select(2, ...):unpack()
 
-local _G = _G
 local Miscellaneous = T["Miscellaneous"]
 local Maps = T["Maps"]
-local Elapsed = 0
+local Interval = 2
 
 Minimap.ZoneColors = {
 	["friendly"] = {0.1, 1.0, 0.1},
@@ -14,6 +13,7 @@ Minimap.ZoneColors = {
 }
 
 function Minimap:DisableMinimapElements()
+	local Time = _G["TimeManagerClockButton"]
 	local North = _G["MinimapNorthTag"]
 	local HiddenFrames = {
 		"MinimapCluster",
@@ -21,7 +21,6 @@ function Minimap:DisableMinimapElements()
 		"MinimapBorderTop",
 		"MinimapZoomIn",
 		"MinimapZoomOut",
-		--"MiniMapVoiceChatFrame",
 		"MinimapNorthTag",
 		"MinimapZoneTextButton",
 		"GameTimeFrame",
@@ -39,19 +38,15 @@ function Minimap:DisableMinimapElements()
 	end
 
 	North:SetTexture(nil)
-end
 
-function Minimap:OnMove(enabled)
-	if enabled then
-		self:SetBackdropBorderColor(1, 0, 0)
-	else
-		self:SetBackdropBorderColor(unpack(C["General"].BorderColor))
+	if Time then
+		Time:Kill()
 	end
 end
 
 function Minimap:OnMouseClick(button)
 	if (button == "RightButton") or (button == "MiddleButton") then
-		Miscellaneous.DropDown.Open(Miscellaneous.MicroMenu.Buttons, Miscellaneous.MicroMenu, "cursor", T.Scale(-160), 0, "MENU", 2)
+		Miscellaneous.DropDown.Open(Miscellaneous.MicroMenu.Buttons, Miscellaneous.MicroMenu, "cursor", -160, 0, "MENU", 2)
 	else
 		Minimap_OnClick(self)
 	end
@@ -66,39 +61,45 @@ function Minimap:StyleMinimap()
 	local MiniMapInstanceDifficulty = MiniMapInstanceDifficulty
 	local GuildInstanceDifficulty = GuildInstanceDifficulty
 	local HelpOpenTicketButton = HelpOpenTicketButton
+	local Tracking = MiniMapTrackingButton
 
 	self:SetMaskTexture(C.Medias.Blank)
 	self:CreateBackdrop()
 	self:SetScript("OnMouseUp", Minimap.OnMouseClick)
 
+	self.Backdrop:SetOutside(Minimap)
+	self.Backdrop:SetFrameStrata("BACKGROUND")
+	self.Backdrop:SetFrameLevel(2)
 	self.Backdrop:CreateShadow()
 
 	self.Ticket = CreateFrame("Frame", nil, Minimap)
-	self.Ticket:SetTemplate()
-	self.Ticket:Size(Minimap:GetWidth() + 2, 24)
+	self.Ticket:CreateBackdrop()
+	self.Ticket:SetSize(Minimap:GetWidth() + 2, 24)
 	self.Ticket:SetFrameLevel(Minimap:GetFrameLevel() + 4)
 	self.Ticket:SetFrameStrata(Minimap:GetFrameStrata())
-	self.Ticket:Point("BOTTOM", 0, -47)
-	self.Ticket:FontString("Text", C.Medias.Font, 12)
+	self.Ticket:SetPoint("BOTTOM", 0, -47)
+	self.Ticket.Text = self.Ticket:CreateFontString(nil, "OVERLAY")
+	self.Ticket.Text:SetFontTemplate(C.Medias.Font, 12)
 	self.Ticket.Text:SetPoint("CENTER")
 	self.Ticket.Text:SetText(HELP_TICKET_EDIT)
 	self.Ticket:SetAlpha(0)
 	self.Ticket:CreateShadow()
-
-	Mail:ClearAllPoints()
-	Mail:Point("TOPRIGHT", 12, 29)
-	Mail:SetFrameLevel(self:GetFrameLevel() + 2)
-	MailBorder:Hide()
-	MailIcon:SetTexture("Interface\\AddOns\\Tukui\\Medias\\Textures\\Others\\Mail")
-
+	
 	QueueStatusMinimapButton:SetParent(Minimap)
 	QueueStatusMinimapButton:ClearAllPoints()
 	QueueStatusMinimapButton:SetPoint("BOTTOMRIGHT", 0, 0)
 	QueueStatusMinimapButtonBorder:Kill()
+		 
 	QueueStatusFrame:StripTextures()
-	QueueStatusFrame:SetTemplate()
+	QueueStatusFrame:CreateBackdrop()
 	QueueStatusFrame:CreateShadow()
 
+	Mail:ClearAllPoints()
+	Mail:SetPoint("TOPRIGHT", 12, 29)
+	Mail:SetFrameLevel(self:GetFrameLevel() + 2)
+	MailBorder:Hide()
+	MailIcon:SetTexture("Interface\\AddOns\\Tukui\\Medias\\Textures\\Others\\Mail")
+	
 	MiniMapInstanceDifficulty:ClearAllPoints()
 	MiniMapInstanceDifficulty:SetParent(Minimap)
 	MiniMapInstanceDifficulty:SetPoint("TOPLEFT", Minimap, "TOPLEFT", 0, 0)
@@ -106,44 +107,28 @@ function Minimap:StyleMinimap()
 	GuildInstanceDifficulty:ClearAllPoints()
 	GuildInstanceDifficulty:SetParent(Minimap)
 	GuildInstanceDifficulty:SetPoint("TOPLEFT", Minimap, "TOPLEFT", 0, 0)
-
-	HelpOpenTicketButton:SetParent(Minimap.Ticket)
-	HelpOpenTicketButton:SetFrameLevel(Minimap.Ticket:GetFrameLevel() + 1)
-	HelpOpenTicketButton:SetFrameStrata(Minimap.Ticket:GetFrameStrata())
-	HelpOpenTicketButton:ClearAllPoints()
-	HelpOpenTicketButton:SetAllPoints()
-	HelpOpenTicketButton:SetHighlightTexture(nil)
-	HelpOpenTicketButton:SetAlpha(0)
-	HelpOpenTicketButton:HookScript("OnShow", function(self) Minimap.Ticket:SetAlpha(1) end)
-	HelpOpenTicketButton:HookScript("OnHide", function(self) Minimap.Ticket:SetAlpha(0) end)
 end
 
 function Minimap:PositionMinimap()
 	local Movers = T["Movers"]
 
-	self:SetParent(T["Panels"].PetBattleHider)
-	self:Point("TOPRIGHT", UIParent, "TOPRIGHT", -30, -30)
+	self:SetParent(T.PetHider)
+	self:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -28, -28)
 	self:SetMovable(true)
 
 	Movers:RegisterFrame(self)
 end
 
 function Minimap:AddMinimapDataTexts()
-	local Panels = T["Panels"]
 	local Backdrop = self.Backdrop
 
 	local MinimapDataText = CreateFrame("Frame", nil, self)
-	MinimapDataText:Size(self.Backdrop:GetWidth(), 19)
-	MinimapDataText:SetPoint("TOPLEFT", self.Backdrop, "BOTTOMLEFT", 0, 19)
-	MinimapDataText:SetTemplate()
-	MinimapDataText:SetFrameStrata("LOW")
+	MinimapDataText:SetSize(self.Backdrop:GetWidth(), 19)
+	MinimapDataText:SetPoint("TOPLEFT", self.Backdrop, "BOTTOMLEFT", 0, 0)
+	MinimapDataText:CreateBackdrop()
+	MinimapDataText:CreateShadow()
 
-	-- Resize Minimap Backdrop
-	Backdrop:ClearAllPoints()
-	Backdrop:Point("TOPLEFT", self, "TOPLEFT", -1, 1)
-	Backdrop:Point("BOTTOMRIGHT", self, "BOTTOMRIGHT", 1, -19)
-
-	Panels.MinimapDataText = MinimapDataText
+	T.DataTexts.Panels.Minimap = MinimapDataText
 end
 
 function GetMinimapShape()
@@ -154,39 +139,39 @@ function Minimap:AddZoneAndCoords()
 	local MinimapZone = CreateFrame("Button", "TukuiMinimapZone", self)
 	local MinimapCoords = CreateFrame("Frame", "TukuiMinimapCoord", self)
 
-	MinimapZone:SetTemplate()
-	MinimapZone:Size(self:GetWidth() + 2, 19)
-	MinimapZone:Point("TOP", self, 0, 2)
+	MinimapZone:CreateBackdrop()
+	MinimapZone:SetSize(self:GetWidth() + 2, 19)
+	MinimapZone:SetPoint("TOP", self, 0, 2)
 	MinimapZone:SetFrameStrata(self:GetFrameStrata())
 	MinimapZone:SetAlpha(0)
 	MinimapZone:EnableMouse()
 
 	MinimapZone.Text = MinimapZone:CreateFontString("TukuiMinimapZoneText", "OVERLAY")
 	MinimapZone.Text:SetFont(C["Medias"].Font, 10)
-	MinimapZone.Text:Point("TOP", 0, -1)
+	MinimapZone.Text:SetPoint("TOP", 0, -1)
 	MinimapZone.Text:SetPoint("BOTTOM")
-	MinimapZone.Text:Height(12)
-	MinimapZone.Text:Width(MinimapZone:GetWidth() - 6)
+	MinimapZone.Text:SetHeight(12)
+	MinimapZone.Text:SetWidth(MinimapZone:GetWidth() - 6)
 
 	MinimapZone.Anim = CreateAnimationGroup(MinimapZone):CreateAnimation("Fade")
 	MinimapZone.Anim:SetDuration(0.3)
-	MinimapZone.Anim:SetSmoothing("InOut")
+	MinimapZone.Anim:SetEasing("inout")
 	MinimapZone.Anim:SetChange(1)
 
-	MinimapCoords:SetTemplate()
-	MinimapCoords:Size(40, 19)
-	MinimapCoords:Point("BOTTOMLEFT", self, "BOTTOMLEFT", 2, 2)
+	MinimapCoords:CreateBackdrop()
+	MinimapCoords:SetSize(40, 19)
+	MinimapCoords:SetPoint("BOTTOMLEFT", self, "BOTTOMLEFT", 2, 2)
 	MinimapCoords:SetFrameStrata(self:GetFrameStrata())
 	MinimapCoords:SetAlpha(0)
 
 	MinimapCoords.Text = MinimapCoords:CreateFontString("TukuiMinimapCoordText", "OVERLAY")
 	MinimapCoords.Text:SetFont(C["Medias"].Font, 10)
-	MinimapCoords.Text:Point("Center", 0, -1)
+	MinimapCoords.Text:SetPoint("Center", 0, -1)
 	MinimapCoords.Text:SetText("0, 0")
 
 	MinimapCoords.Anim = CreateAnimationGroup(MinimapCoords):CreateAnimation("Fade")
 	MinimapCoords.Anim:SetDuration(0.3)
-	MinimapCoords.Anim:SetSmoothing("InOut")
+	MinimapCoords.Anim:SetEasing("inout")
 	MinimapCoords.Anim:SetChange(1)
 
 	-- Update zone text
@@ -198,10 +183,7 @@ function Minimap:AddZoneAndCoords()
 
 	-- Update coordinates
 	MinimapCoords:SetScript("OnUpdate", Minimap.UpdateCoords)
-
-	Minimap.MinimapZone = MinimapZone
-	Minimap.MinimapCoords = MinimapCoords
-
+	
 	-- Put tracking button over zone
 	MiniMapTracking:Kill()
 	MiniMapTrackingButtonBorder:Kill()
@@ -209,50 +191,60 @@ function Minimap:AddZoneAndCoords()
 	MiniMapTrackingButton:ClearAllPoints()
 	MiniMapTrackingButton:SetAllPoints()
 	MiniMapTrackingButton:StripTextures()
+
+	-- Register
+	Minimap.MinimapZone = MinimapZone
+	Minimap.MinimapCoords = MinimapCoords
 end
 
 function Minimap:UpdateCoords(t)
-	Elapsed = Elapsed - t
+	if (Minimap.MinimapCoords:GetAlpha() == 0) then
+		Interval = 0
 
-	if (Elapsed > 0) then
 		return
 	end
 
-	local UnitMap = C_Map.GetBestMapForUnit("player")
-	local X, Y = 0, 0
+	Interval = Interval - t
 
-	if UnitMap then
-		local GetPlayerMapPosition = C_Map.GetPlayerMapPosition(UnitMap, "player")
+	if (Interval < 0) then
+		local UnitMap = C_Map.GetBestMapForUnit("player")
+		local X, Y = 0, 0
 
-		if GetPlayerMapPosition then
-			X, Y = C_Map.GetPlayerMapPosition(UnitMap, "player"):GetXY()
+		if UnitMap then
+			local GetPlayerMapPosition = C_Map.GetPlayerMapPosition(UnitMap, "player")
+
+			if GetPlayerMapPosition then
+				X, Y = C_Map.GetPlayerMapPosition(UnitMap, "player"):GetXY()
+			end
 		end
-	end
 
-	local XText, YText
+		local XText, YText
 
-	X = math.floor(100 * X)
-	Y = math.floor(100 * Y)
+		X = math.floor(100 * X)
+		Y = math.floor(100 * Y)
 
-	if (X == 0 and Y == 0) then
-		Minimap.MinimapCoords.Text:SetText("?, ?")
-	else
-		if (X < 10) then
-			XText = "0"..X
+		if (X == 0 and Y == 0) then
+			Minimap.MinimapCoords:Hide()
 		else
-			XText = X
+			Minimap.MinimapCoords:Show()
+
+			if (X < 10) then
+				XText = "0"..X
+			else
+				XText = X
+			end
+
+			if (Y < 10) then
+				YText = "0"..Y
+			else
+				YText = Y
+			end
+
+			Minimap.MinimapCoords.Text:SetText(XText .. ", " .. YText)
 		end
 
-		if (Y < 10) then
-			YText = "0"..Y
-		else
-			YText = Y
-		end
-
-		Minimap.MinimapCoords.Text:SetText(XText .. ", " .. YText)
+		Interval = 2
 	end
-
-	Elapsed = 2
 end
 
 function Minimap:UpdateZone()
@@ -271,37 +263,54 @@ end
 
 function Minimap:EnableMouseOver()
 	self:SetScript("OnEnter", function()
-		Minimap.MinimapZone:SetAlpha(1)
-		Minimap.MinimapCoords:SetAlpha(1)
+		Minimap.MinimapZone.Anim:Stop()
+		Minimap.MinimapZone.Anim:SetChange(1)
+		Minimap.MinimapZone.Anim:Play()
+		
+		Minimap.MinimapCoords.Anim:Stop()
+		Minimap.MinimapCoords.Anim:SetChange(1)	
+		Minimap.MinimapCoords.Anim:Play()
 	end)
 
 	self:SetScript("OnLeave", function()
-		Minimap.MinimapZone:SetAlpha(0)
-		Minimap.MinimapCoords:SetAlpha(0)
+		Minimap.MinimapZone.Anim:Stop()
+		Minimap.MinimapZone.Anim:SetChange(0)
+		Minimap.MinimapZone.Anim:Play()
+		
+		Minimap.MinimapCoords.Anim:Stop()
+		Minimap.MinimapCoords.Anim:SetChange(0)
+		Minimap.MinimapCoords.Anim:Play()
 	end)
-
+	
 	MiniMapTrackingButton:SetScript("OnEnter", function()
-		Minimap.MinimapZone:SetAlpha(1)
-		Minimap.MinimapCoords:SetAlpha(1)
+		Minimap.MinimapZone.Anim:Stop()
+		Minimap.MinimapZone.Anim:SetChange(1)
+		Minimap.MinimapZone.Anim:Play()
+		
+		Minimap.MinimapCoords.Anim:Stop()
+		Minimap.MinimapCoords.Anim:SetChange(1)
+		Minimap.MinimapCoords.Anim:Play()
 	end)
 
 	MiniMapTrackingButton:SetScript("OnLeave", function()
-		Minimap.MinimapZone:SetAlpha(0)
-		Minimap.MinimapCoords:SetAlpha(0)
+		Minimap.MinimapZone.Anim:Stop()
+		Minimap.MinimapZone.Anim:SetChange(0)
+		Minimap.MinimapZone.Anim:Play()
+			
+		Minimap.MinimapCoords.Anim:Stop()
+		Minimap.MinimapCoords.Anim:SetChange(0)
+		Minimap.MinimapCoords.Anim:Play()
 	end)
 end
 
-function Minimap:Enable()
-	local Time = _G["TimeManagerClockButton"]
+function Minimap:SizeMinimap()
+	local X, Y = self:GetSize()
+	local Scale = C.General.MinimapScale / 100
 
-	self:DisableMinimapElements()
-	self:StyleMinimap()
-	self:PositionMinimap()
-	self:AddMinimapDataTexts()
-	self:AddZoneAndCoords()
-	self:EnableMouseOver()
+	self:SetSize(X * Scale, Y * Scale)
+end
 
-	-- Fix a Blizzard Bug, which mouse wheel zoom was not working.
+function Minimap:EnableMouseWheelZoom()
 	self:EnableMouseWheel(true)
 	self:SetScript("OnMouseWheel", function(self, delta)
 		if (delta > 0) then
@@ -310,10 +319,77 @@ function Minimap:Enable()
 			MinimapZoomOut:Click()
 		end
 	end)
+end
 
-	if Time then
-		Time:Kill()
+function Minimap:TaxiExitOnEvent(event)
+	if CanExitVehicle() then
+		if (UnitOnTaxi("player")) then
+			self.Text:SetText("|cffFF0000" .. TAXI_CANCEL .. "|r")
+		else
+			self.Text:SetText("|cffFF0000" .. BINDING_NAME_VEHICLEEXIT .. "|r")
+		end
+
+		self:Show()
+	else
+		self:Hide()
 	end
 end
+
+function Minimap:TaxiExitOnClick()
+	if (UnitOnTaxi("player")) then
+		TaxiRequestEarlyLanding()
+	else
+		VehicleExit()
+	end
+	
+	Minimap.EarlyExitButton:Hide()
+end
+
+function Minimap:AddTaxiEarlyExit()
+	Minimap.EarlyExitButton = CreateFrame("Button", nil, self)
+	Minimap.EarlyExitButton:SetAllPoints(T.DataTexts.Panels.Minimap)
+	Minimap.EarlyExitButton:SetSize(T.DataTexts.Panels.Minimap:GetWidth(), T.DataTexts.Panels.Minimap:GetHeight())
+	Minimap.EarlyExitButton:SkinButton()
+	Minimap.EarlyExitButton:ClearAllPoints()
+	Minimap.EarlyExitButton:SetAllPoints(T.DataTexts.Panels.Minimap)
+	Minimap.EarlyExitButton:SetFrameLevel(T.DataTexts.Panels.Minimap:GetFrameLevel() + 2)
+	Minimap.EarlyExitButton:RegisterForClicks("AnyUp")
+	Minimap.EarlyExitButton:SetScript("OnClick", Minimap.TaxiExitOnClick)
+	Minimap.EarlyExitButton:RegisterEvent("PLAYER_MOUNT_DISPLAY_CHANGED")
+	Minimap.EarlyExitButton:RegisterEvent("PLAYER_ENTERING_WORLD")
+	Minimap.EarlyExitButton:RegisterEvent("UPDATE_BONUS_ACTIONBAR")
+	Minimap.EarlyExitButton:RegisterEvent("UPDATE_MULTI_CAST_ACTIONBAR")
+	Minimap.EarlyExitButton:RegisterEvent("UNIT_ENTERED_VEHICLE")
+	Minimap.EarlyExitButton:RegisterEvent("UNIT_EXITED_VEHICLE")
+	Minimap.EarlyExitButton:RegisterEvent("VEHICLE_UPDATE")
+	Minimap.EarlyExitButton:RegisterEvent("PLAYER_ENTERING_WORLD")
+	Minimap.EarlyExitButton:SetScript("OnEvent", Minimap.TaxiExitOnEvent)
+	Minimap.EarlyExitButton:Hide()
+
+	Minimap.EarlyExitButton.Text = Minimap.EarlyExitButton:CreateFontString(nil, "OVERLAY")
+	Minimap.EarlyExitButton.Text:SetFont(C.Medias.Font, 12)
+	Minimap.EarlyExitButton.Text:SetPoint("CENTER", 0, 0)
+	Minimap.EarlyExitButton.Text:SetShadowOffset(1.25, -1.25)
+end
+
+function Minimap:Enable()
+	self:DisableMinimapElements()
+	self:StyleMinimap()
+	self:PositionMinimap()
+	self:AddMinimapDataTexts()
+	self:AddZoneAndCoords()
+	self:EnableMouseOver()
+	self:EnableMouseWheelZoom()
+	self:AddTaxiEarlyExit()
+end
+
+-- Need to be sized as soon as possible, because of LibDBIcon10
+Minimap:RegisterEvent("VARIABLES_LOADED")
+Minimap:SetScript("OnEvent", function(self, event)
+	if event == "VARIABLES_LOADED" then
+		self:SizeMinimap()
+		self:UnregisterEvent("VARIABLES_LOADED")
+	end
+end)
 
 T["Maps"].Minimap = Minimap

@@ -4,6 +4,10 @@
 
   A SecureActionButton to call mount actions based on an action list.
 
+  Fancy SecureActionButton stuff. The default button mechanism is
+  type="macro" macrotext="...". If we're not in combat we
+  use a preclick handler to set it to what we really want to do.
+
   Copyright 2011-2020 Mike Battersby
 
 ----------------------------------------------------------------------------]]--
@@ -18,16 +22,6 @@ local L = LM.Localize
 
 LM.ActionButton = { }
 
--- Fancy SecureActionButton stuff. The default button mechanism is
--- type="macro" macrotext="...". If we're not in combat we
--- use a preclick handler to set it to what we really want to do.
-
-function LM.ActionButton:SetupActionButton(mount)
-    for k,v in pairs(mount:GetSecureAttributes()) do
-        self:SetAttribute(k, v)
-    end
-end
-
 function LM.ActionButton:Dispatch(action, env)
 
     local isTrue
@@ -35,7 +29,7 @@ function LM.ActionButton:Dispatch(action, env)
 
     local handler = LM.Actions:GetFlowControlHandler(action.action)
     if handler then
-        LM.Debug("Dispatching flow control action " .. action.action)
+        LM.Debug("Dispatching flow control action " .. action.line)
         handler(action.args or {}, env, isTrue)
         return
     end
@@ -50,12 +44,11 @@ function LM.ActionButton:Dispatch(action, env)
         return
     end
 
-    LM.Debug("Dispatching action " .. action.action)
+    LM.Debug("Dispatching action " .. action.line)
 
-    local m = handler(action.args or {}, env)
-    if m then
-        LM.Debug("Setting up button as " .. (m.name or action.action) .. ".")
-        self:SetupActionButton(m)
+    local act = handler(action.args or {}, env)
+    if act then
+        act:SetupActionButton(self)
         return true
     end
 end
@@ -93,13 +86,13 @@ function LM.ActionButton:PreClick(mouseButton)
         end
     end
 
-    self:Dispatch({ ['action'] = "CantMount" }, subEnv)
+    self:Dispatch({ action="CantMount", line="" }, subEnv)
 end
 
 function LM.ActionButton:PostClick()
     if InCombatLockdown() then return end
 
-    LM.Debug("PostClick handler called.")
+    LM.Debug("PostClick handler called on " .. self:GetName())
 
     -- We'd like to set the macro to undo whatever we did, but
     -- tests like IsMounted() and CanExitVehicle() will still
@@ -107,7 +100,11 @@ function LM.ActionButton:PostClick()
     -- to just blindly do the opposite of whatever we chose because
     -- it might not have worked.
 
-    self:SetupActionButton(LM.Actions:GetHandler('Combat')())
+    local handler = LM.Actions:GetHandler('Combat')
+    local act = handler()
+    if act then
+        act:SetupActionButton(self)
+    end
 end
 
 function LM.ActionButton:Create(n)
@@ -131,8 +128,6 @@ function LM.ActionButton:Create(n)
     -- SecureActionButton setup
     b:SetScript("PreClick", self.PreClick)
     b:SetScript("PostClick", self.PostClick)
-
-    b:PostClick()
 
     return b
 end

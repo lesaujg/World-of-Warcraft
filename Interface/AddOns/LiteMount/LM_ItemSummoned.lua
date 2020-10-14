@@ -41,10 +41,10 @@ function LM.ItemSummoned:Refresh()
     LM.Mount.Refresh(self)
 end
 
-function LM.ItemSummoned:GetSecureAttributes()
+function LM.ItemSummoned:GetCastAction()
     -- I assume that if you actually have the item, GetItemInfo() works
     local itemName = GetItemInfo(self.itemID)
-    return { ["type"] = "item", ["item"] = itemName }
+    return LM.SecureAction:Item(itemName)
 end
 
 function LM.ItemSummoned:IsCastable()

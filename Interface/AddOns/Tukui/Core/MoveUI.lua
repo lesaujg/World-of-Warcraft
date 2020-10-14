@@ -29,12 +29,16 @@ end
 function Movers:RestoreDefaults(button)
 	local FrameName = self.Parent:GetName()
 	local Data = Movers.Defaults[FrameName]
-	local SavedVariables = TukuiData[GetRealmName()][UnitName("Player")].Move
+	local SavedVariables = TukuiData[T.MyRealm][T.MyName].Move
 
 	if (button == "RightButton") and (Data) then
 		local Anchor1, ParentName, Anchor2, X, Y = unpack(Data)
 		local Frame = _G[FrameName]
 		local Parent = _G[ParentName]
+
+		if not Parent then
+			Parent = UIParent
+		end
 
 		Frame:ClearAllPoints()
 		Frame:SetPoint(Anchor1, Parent, Anchor2, X, Y)
@@ -55,34 +59,65 @@ function Movers:RegisterFrame(frame)
 	self:SaveDefaults(frame, Anchor1, Parent, Anchor2, X, Y)
 end
 
+function Movers:OnDragFollowMe()
+	local Anchor1, Parent, Anchor2, X, Y = self:GetPoint()
+
+	if not Parent then
+		Parent = UIParent
+	end
+	
+	self.Parent:ClearAllPoints()
+	self.Parent:SetPoint(Anchor1, Parent, Anchor2, X, Y)
+end
+
 function Movers:OnDragStart()
+	GameTooltip_Hide()
+
+	self:SetScript("OnUpdate", Movers.OnDragFollowMe)
 	self:StartMoving()
 end
 
 function Movers:OnDragStop()
 	self:StopMovingOrSizing()
+	self:SetScript("OnUpdate", nil)
 
-	local Data = TukuiData[GetRealmName()][UnitName("Player")].Move
+	local Data = TukuiData[T.MyRealm][T.MyName].Move
 	local Anchor1, Parent, Anchor2, X, Y = self:GetPoint()
 	local FrameName = self.Parent:GetName()
 	local Frame = self.Parent
-
-	Frame:ClearAllPoints()
-	Frame:SetPoint(Anchor1, Parent, Anchor2, X, Y)
-
+	
 	if not Parent then
 		Parent = UIParent
 	end
 
+	Frame:ClearAllPoints()
+	Frame:SetPoint(Anchor1, Parent, Anchor2, X, Y)
+
 	Data[FrameName] = {Anchor1, Parent:GetName(), Anchor2, X, Y}
+
+	Movers:OnEnter()
+end
+
+function Movers:OnEnter()
+	GameTooltip:SetOwner(self)
+	GameTooltip:SetAnchorType("ANCHOR_CURSOR")
+	GameTooltip:AddLine("Hold left click to drag") -- LOCALIZE ME PLZ
+	GameTooltip:AddLine("Right click to reset default") -- LOCALIZE ME PLZ
+	GameTooltip:Show()
+end
+
+function Movers:OnLeave()
+	GameTooltip_Hide()
 end
 
 function Movers:CreateDragInfo()
 	self.DragInfo = CreateFrame("Button", nil, self)
 	self.DragInfo:SetAllPoints(self)
-	self.DragInfo:SetTemplate()
-	self.DragInfo:SetBackdropBorderColor(1, 0, 0)
-	self.DragInfo:FontString("Text", C.Medias.UnitFrameFont, 12)
+	self.DragInfo:CreateBackdrop()
+	self.DragInfo.Backdrop:SetBorderColor(0, 1, 0)
+	self.DragInfo.Backdrop:SetBackdropColor(0, 1, 0, .2)
+	self.DragInfo.Text = self.DragInfo:CreateFontString(nil, "OVERLAY")
+	self.DragInfo.Text:SetFontTemplate(C.Medias.UnitFrameFont, 16)
 	self.DragInfo.Text:SetText(self:GetName())
 	self.DragInfo.Text:SetPoint("CENTER")
 	self.DragInfo.Text:SetTextColor(1, 0, 0)
@@ -90,9 +125,11 @@ function Movers:CreateDragInfo()
 	self.DragInfo:SetFrameStrata("HIGH")
 	self.DragInfo:SetMovable(true)
 	self.DragInfo:RegisterForDrag("LeftButton")
-	self.DragInfo:Hide()
 	self.DragInfo:SetClampedToScreen(true)
+	self.DragInfo:Hide()
 	self.DragInfo:SetScript("OnMouseUp", Movers.RestoreDefaults)
+	self.DragInfo:SetScript("OnEnter", Movers.OnEnter)
+	self.DragInfo:SetScript("OnLeave", Movers.OnLeave)
 
 	self.DragInfo.Parent = self.DragInfo:GetParent()
 end
@@ -176,11 +213,9 @@ end
 
 Movers:SetScript("OnEvent", function(self, event)
 	if (event == "PLAYER_ENTERING_WORLD") then
-		if not TukuiData[GetRealmName()][UnitName("Player")].Move then
-			TukuiData[GetRealmName()][UnitName("Player")].Move = {}
-		end
-
-		local Data = TukuiData[GetRealmName()][UnitName("Player")].Move
+		T.VerifyDataTable()
+			
+		local Data = TukuiData[T.MyRealm][T.MyName].Move
 
 		for Frame, Position in pairs(Data) do
 			local Frame = _G[Frame]

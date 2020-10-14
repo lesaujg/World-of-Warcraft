@@ -34,12 +34,12 @@ LM.Journal.__index = LM.Journal
 --  [2] description,
 --  [3] source,
 --  [4] isSelfMount,
---  [5] mounTypeID,
+--  [5] mountTypeID,
 --  [6] uiModelSceneID = C_MountJournal.GetMountInfoExtraByID(mountID)
 
-function LM.Journal:Get(id)
+function LM.Journal:Get(id, isUsable)
     local name, spellID, icon, _, _, sourceType, isFavorite, _, faction, isFiltered, isCollected, mountID = C_MountJournal.GetMountInfoByID(id)
-    local modelID, _, sourceText, isSelfMount, mountType = C_MountJournal.GetMountInfoExtraByID(mountID)
+    local modelID, descriptionText, sourceText, isSelfMount, mountType = C_MountJournal.GetMountInfoExtraByID(mountID)
 
     if not name then
         LM.Debug(format("LM.Mount: Failed GetMountInfo for ID = #%d", id))
@@ -55,11 +55,13 @@ function LM.Journal:Get(id)
     m.icon          = icon
     m.isSelfMount   = isSelfMount
     m.mountType     = mountType
+    m.description   = descriptionText
     m.sourceType    = sourceType
     m.sourceText    = sourceText
     m.isFavorite    = isFavorite
     m.isFiltered    = isFiltered
     m.isCollected   = isCollected
+    m.isUsable      = isFiltered == false and isUsable == true
     m.needsFaction  = PLAYER_FACTION_GROUP[faction]
     m.flags         = { }
 
@@ -91,7 +93,6 @@ function LM.Journal:Get(id)
     return m
 end
 
-
 function LM.Journal:CurrentFlags()
     local flags = LM.Mount.CurrentFlags(self)
 
@@ -117,16 +118,6 @@ function LM.Journal:Refresh()
     LM.Mount.Refresh(self)
 end
 
---
--- In an ideal world this would be a one-liner:
---
---      C_MountJournal.SetIsFavoriteByID(id, setting)
---
--- but you can only set favorites on displayed journal mounts by index. That
--- means we have to clear all the filters, find the index, favorite, and try
--- to set the filters back the way they were. Yuck.
---
-
 function LM.Journal:IsCastable()
     local usable = select(5, C_MountJournal.GetMountInfoByID(self.mountID))
     if not usable then
@@ -141,6 +132,7 @@ end
 function LM.Journal:Dump(prefix)
     prefix = prefix or ""
     LM.Mount.Dump(self, prefix)
+    LM.Print(prefix .. " isUsable: " .. tostring(self.isUsable))
     LM.Print(prefix .. " mountType: " .. tostring(self.mountType))
     LM.Print(prefix .. " sourceType: " .. tostring(self.sourceType))
 end

@@ -1,70 +1,62 @@
 local T, C, L = select(2, ...):unpack()
 
 local Miscellaneous = T["Miscellaneous"]
+local GUI = T["GUI"]
 local GameMenu = CreateFrame("Frame")
 local Menu = GameMenuFrame
-local Header = GameMenuFrameHeader
+local Header = Menu.Header
 local Logout = GameMenuButtonLogout
 local Addons = GameMenuButtonAddons
 
-if T.WoWBuild >= 33051 then
-    Header = GameMenuFrame.Header
-end
-
 function GameMenu:AddHooks()
 	Menu:SetHeight(Menu:GetHeight() + Logout:GetHeight() - 4)
-	local _, relTo, _, _, offY = Logout:GetPoint()
-	if relTo ~= GameMenu.Tukui then
+	
+	local _, RelativeTo, _, _, OffY = Logout:GetPoint()
+	
+	if RelativeTo ~= GameMenu.Tukui then
 		GameMenu.Tukui:ClearAllPoints()
-		GameMenu.Tukui:Point("TOPLEFT", relTo, "BOTTOMLEFT", 0, -1)
+		GameMenu.Tukui:SetPoint("TOPLEFT", RelativeTo, "BOTTOMLEFT", 0, -1)
+		
 		Logout:ClearAllPoints()
-		Logout:Point("TOPLEFT", GameMenu.Tukui, "BOTTOMLEFT", 0, offY)
+		Logout:SetPoint("TOPLEFT", GameMenu.Tukui, "BOTTOMLEFT", 0, OffY)
 	end
 end
 
-function GameMenu:EnableTukuiConfig()
+function GameMenu:CreateTukuiMenuButton()
 	local Tukui = CreateFrame("Button", nil, Menu, "GameMenuButtonTemplate")
-	Tukui:Size(Logout:GetWidth(), Logout:GetHeight())
-	Tukui:Point("TOPLEFT", Addons, "BOTTOMLEFT", 0, -1)
+	Tukui:SetSize(Logout:GetWidth(), Logout:GetHeight())
+	Tukui:SetPoint("TOPLEFT", Addons, "BOTTOMLEFT", 0, -1)
 	Tukui:SetText("Tukui")
+	
 	Tukui:SetScript("OnClick", function(self)
-		if (not TukuiConfigFrame) then
-			TukuiConfig:CreateConfigWindow()
+		if InCombatLockdown() then
+			T.Print(ERR_NOT_IN_COMBAT)
+			
+			return
 		end
 
-		if TukuiConfigFrame:IsVisible() then
-			TukuiConfigFrame:Hide()
-		else
-			TukuiConfigFrame:Show()
-		end
+		GUI:Toggle()
 
 		HideUIPanel(Menu)
 	end)
 
-	hooksecurefunc('GameMenuFrame_UpdateVisibleButtons', self.AddHooks)
+	hooksecurefunc("GameMenuFrame_UpdateVisibleButtons", self.AddHooks)
+	
 	self.Tukui = Tukui
 end
 
 function GameMenu:Enable()
-	if TukuiConfig then
-		self:EnableTukuiConfig()
-	end
+	self:CreateTukuiMenuButton()
 
 	if not AddOnSkins then
-        if T.WoWBuild >= 33051 then
-            Header:StripTextures()
-        else
-            Header:SetTexture("")
-        end
+		Header:StripTextures()
+		
 		Header:ClearAllPoints()
 		Header:SetPoint("TOP", Menu, 0, 7)
 
-		Menu:SetTemplate("Transparent")
+		Menu:CreateBackdrop("Transparent")
 		Menu:CreateShadow()
-		
-		if T.TocVersion >= 80200 then
-			Menu.Border:StripTextures()
-		end
+		Menu.Border:StripTextures()
 
 		for _, Button in pairs({Menu:GetChildren()}) do
 			if Button.IsObjectType and Button:IsObjectType("Button") then

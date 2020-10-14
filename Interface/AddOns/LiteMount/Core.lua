@@ -37,7 +37,7 @@ LiteMount.LM = LM
 function LiteMount:Initialize()
 
     -- Do this first because LM.Debug doesn't work until it's loaded.
-    LM.Options:Load()
+    LM.Options:Initialize()
 
     local version = GetAddOnMetadata("LiteMount", "Version") or "UNKNOWN"
 
@@ -63,7 +63,13 @@ function LiteMount:Initialize()
         self:SetAttribute("*clickbutton"..i, self.actions[i])
     end
 
-    LM.Options:Initialize()
+    -- Setup actions for the initial profile
+    LM.Options:OnProfile()
+
+    -- Set all the buttons to the default combat action
+    for i = 1, 4 do
+        self.actions[i]:PostClick()
+    end
 end
 
 function LiteMount:RecompileActions()

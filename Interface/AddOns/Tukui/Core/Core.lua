@@ -3,6 +3,7 @@ local T, C, L = select(2, ...):unpack()
 -- Hydra note: Since this file is going to be doing a lot of math/formatting, lets use locals for speed/cpu usage
 -- This means no calling functions as methods :P ("string"):format(...) or ("string"):gsub(...) should be format("string", ...) and gsub("string", ...) etc.
 
+local Infinity = math.huge
 local reverse = string.reverse
 local match = string.match
 local modf = math.modf
@@ -53,14 +54,18 @@ end
 
 -- Format seconds to min/hour/day
 T.FormatTime = function(s)
+	if s == Infinity then
+		return
+	end
+
 	local Day, Hour, Minute = 86400, 3600, 60
 
 	if (s >= Day) then
-		return format("%dd", ceil(s / Day))
+		return format("%dd", floor(s / Day))
 	elseif (s >= Hour) then
-		return format("%dh", ceil(s / Hour))
+		return format("%dh", floor(s / Hour))
 	elseif (s >= Minute) then
-		return format("%dm", ceil(s / Minute))
+		return format("%dm", floor(s / Minute))
 	elseif (s >= Minute / 12) then
 		return floor(s)
 	end
@@ -70,6 +75,15 @@ end
 
 -- Icon coordinates template
 T.IconCoord = {0.08, 0.92, 0.08, 0.92}
+
+-- Our hider frame
+T.Hider:Hide()
+
+-- Our pet hider frame
+T.PetHider:SetAllPoints()
+T.PetHider:SetFrameStrata("LOW")
+
+RegisterStateDriver(T.PetHider, "visibility", "[petbattle] hide; show")
 
 -- Color Gradient
 T.ColorGradient = function(a, b, ...)
@@ -116,21 +130,73 @@ T.NewTimer = function()
 	return Timer
 end
 
-T.Delay = function(delay, func, ...)
-	if (type(delay) ~= "number" or type(func) ~= "function") then
-		return
+T.VerifyDataTable = function()
+	if not TukuiData then
+		TukuiData = {}
 	end
-
-	local Timer
-
-	if T.UnusedTimers[1] then
-		Timer = tremove(T.UnusedTimers, 1) -- Recycle a timer
-	else
-		Timer = T.NewTimer() -- Or make a new one if needed
+	
+	if not TukuiData[GetRealmName()] then
+		TukuiData[GetRealmName()] = {}
 	end
-
-	Timer.Args = {...}
-	Timer.Func = func
-	Timer:SetDuration(delay)
-	Timer.Parent:Play()
+	
+	if not TukuiData[T.MyRealm][T.MyName] then
+		TukuiData[T.MyRealm][T.MyName] = {}
+	end
+	
+	if not TukuiData[T.MyRealm][T.MyName].Move then
+		TukuiData[T.MyRealm][T.MyName].Move = {}
+	end
+	
+	if not TukuiData[T.MyRealm][T.MyName].ActionBars then
+		TukuiData[T.MyRealm][T.MyName].ActionBars = {}
+		
+		TukuiData[T.MyRealm][T.MyName].ActionBars.HideBar5 = true
+	end
+	
+	if (not TukuiData[GetRealmName()][UnitName("player")].DataTexts) then
+		local DataTexts = T.DataTexts
+		
+		DataTexts:AddDefaults()
+	end
+	
+	if not TukuiData[T.MyRealm][T.MyName].Chat then
+		TukuiData[T.MyRealm][T.MyName].Chat = {
+			["Frame1"] = {
+				"BOTTOMLEFT",
+				"BOTTOMLEFT",
+				34,
+				50,
+				370,
+				108,
+			},
+			["Frame4"] = {
+				"BOTTOMRIGHT",
+				"BOTTOMRIGHT",
+				-34,
+				50,
+				370,
+				108,
+			},
+			["Frame3"] = {
+				"TOPLEFT",
+				"TOPLEFT",
+				0,
+				0,
+				370,
+				108,
+			},
+			["Frame2"] = {
+				"TOPLEFT",
+				"TOPLEFT",
+				0,
+				0,
+				370,
+				108,
+			},
+		}
+	end
+	
+	if (not TukuiData[GetRealmName()][UnitName("player")].Installation) then
+		TukuiData[GetRealmName()][UnitName("player")].Installation = {}
+	end
 end

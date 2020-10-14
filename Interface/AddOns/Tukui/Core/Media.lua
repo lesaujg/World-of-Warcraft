@@ -7,14 +7,14 @@ local Locale = GetLocale()
 local TukuiFont = CreateFont("TukuiFont")
 TukuiFont:SetFont(C["Medias"].Font, 12)
 TukuiFont:SetShadowColor(0, 0, 0)
-TukuiFont:SetShadowOffset(1.25, -1.25)
+TukuiFont:SetShadowOffset(1, -1)
 
 local TukuiFontOutline = CreateFont("TukuiFontOutline")
 TukuiFontOutline:SetFont(C["Medias"].Font, 12, "THINOUTLINE")
 
 local TukuiUFFont = CreateFont("TukuiUFFont")
 TukuiUFFont:SetShadowColor(0, 0, 0)
-TukuiUFFont:SetShadowOffset(1.25, -1.25)
+TukuiUFFont:SetShadowOffset(1, -1)
 TukuiUFFont:SetFont(C["Medias"].UnitFrameFont, 12)
 
 local TukuiUFFontOutline = CreateFont("TukuiUFFontOutline")
@@ -23,9 +23,12 @@ TukuiUFFontOutline:SetFont(C["Medias"].UnitFrameFont, 12, "THINOUTLINE")
 local PixelFont = CreateFont("TukuiPixelFont")
 PixelFont:SetFont(C["Medias"].PixelFont, 12, "MONOCHROMEOUTLINE")
 
+local TukuiDamageFont = CreateFont("TukuiDamageFont")
+TukuiDamageFont:SetFont(C["Medias"].DamageFont, 12, "OUTLINE")
+
 local TextureTable = {
 	["Blank"] = [[Interface\BUTTONS\WHITE8X8]],
-	["Tukui"] = [[Interface\AddOns\Tukui\Medias\Textures\Status\Tukui1]],
+	["Tukui"] = [[Interface\AddOns\Tukui\Medias\Textures\Status\Tukui]],
 	["ElvUI1"] = [[Interface\AddOns\Tukui\Medias\Textures\Status\ElvUI1]],
 	["ElvUI2"] = [[Interface\AddOns\Tukui\Medias\Textures\Status\ElvUI2]],
 	["sRainbow1"] = [[Interface\AddOns\Tukui\Medias\Textures\Status\Rainbow1]],
@@ -59,6 +62,7 @@ local FontTable = {
 	["Tukui UF Outline"] = "TukuiUFFontOutline",
 	["Pixel"] = "TukuiPixelFont",
 	["Game Font"] = "GameFontWhite",
+	["Tukui Damage"] = "TukuiDamageFont",
 }
 
 T.GetFont = function(font)

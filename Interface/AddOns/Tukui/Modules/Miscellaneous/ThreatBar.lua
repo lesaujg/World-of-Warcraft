@@ -1,11 +1,11 @@
 local T, C, L = select(2, ...):unpack()
 
 local Miscellaneous = T["Miscellaneous"]
-local DataTextRight
+local Movers = T["Movers"]
 local format = string.format
 local floor = math.floor
 local UnitName = UnitName
-local ThreatBar = CreateFrame("StatusBar", nil, UIParent)
+local ThreatBar = CreateFrame("StatusBar", "TukuiThreatBar", UIParent)
 
 function ThreatBar:OnEvent(event)
 	local Party = GetNumGroupMembers()
@@ -18,12 +18,6 @@ function ThreatBar:OnEvent(event)
 		self:Hide()
 	elseif (event == "PLAYER_REGEN_DISABLED") then
 		if (Party > 0 or Raid > 0 or Pet) then
-			self:Show()
-		else
-			self:Hide()
-		end
-	else
-		if (InCombatLockdown()) and (Party > 0 or Raid > 0 or Pet) then
 			self:Show()
 		else
 			self:Hide()
@@ -42,7 +36,9 @@ function ThreatBar:OnUpdate()
 		local Dead = UnitIsDead("player")
 
 		self:SetValue(ThreatValue)
+		
 		Text:SetText(floor(ThreatValue) .. "%")
+		
 		Title:SetText((UnitName("target") and UnitName("target") .. ":") or "")
 
 		local R, G, B = GetColor(ThreatValue, 100, 0,.8,0,.8,.8,0,.8,0,0)
@@ -58,38 +54,36 @@ function ThreatBar:OnUpdate()
 	end
 end
 
-function ThreatBar:Parent()
-	self:SetParent(DataTextRight)
-end
-
 function ThreatBar:Create()
-	DataTextRight = T["Panels"].DataTextRight
-
-	self:Parent()
-
-	self:Point("TOPLEFT", 2, -2)
-	self:Point("BOTTOMRIGHT", -2, 2)
-	self:SetFrameLevel(DataTextRight:GetFrameLevel() + 2)
+	self:SetSize(T.DataTexts.Panels.Right:GetSize())
+	self:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -34, 19)
+	self:SetFrameLevel(T.DataTexts.Panels.Right:GetFrameLevel() + 2)
 	self:SetFrameStrata("HIGH")
 	self:SetStatusBarTexture(C.Medias.Normal)
 	self:SetMinMaxValues(0, 100)
 	self:SetAlpha(0)
+	
+	self.Backdrop = CreateFrame("Frame", nil, self)
+	self.Backdrop:SetFrameLevel(self:GetFrameLevel() - 1)
+	self.Backdrop:SetOutside()
+	self.Backdrop:CreateBackdrop()
+	self.Backdrop:CreateShadow()
 
 	self.Text = self:CreateFontString(nil, "OVERLAY")
 	self.Text:SetFont(C.Medias.Font, 12)
-	self.Text:Point("RIGHT", self, -30, 0)
+	self.Text:SetPoint("RIGHT", self, -30, 0)
 	self.Text:SetShadowColor(0, 0, 0)
 	self.Text:SetShadowOffset(1.25, -1.25)
 
 	self.Title = self:CreateFontString(nil, "OVERLAY")
 	self.Title:SetFont(C.Medias.Font, 12)
-	self.Title:Point("LEFT", self, 30, 0)
+	self.Title:SetPoint("LEFT", self, 30, 0)
 	self.Title:SetShadowColor(0, 0, 0)
 	self.Title:SetShadowOffset(1.25, -1.25)
 
 	self.Background = self:CreateTexture(nil, "BORDER")
-	self.Background:Point("TOPLEFT", self, 0, 0)
-	self.Background:Point("BOTTOMRIGHT", self, 0, 0)
+	self.Background:SetPoint("TOPLEFT", self, 0, 0)
+	self.Background:SetPoint("BOTTOMRIGHT", self, 0, 0)
 	self.Background:SetColorTexture(0.15, 0.15, 0.15)
 
 	self:SetScript("OnShow", function(self)
@@ -105,9 +99,16 @@ function ThreatBar:Create()
 	self:RegisterEvent("PLAYER_REGEN_ENABLED")
 	self:RegisterEvent("PLAYER_REGEN_DISABLED")
 	self:SetScript("OnEvent", self.OnEvent)
+	
+	-- Register for moving
+	Movers:RegisterFrame(self)
 end
 
 function ThreatBar:Enable()
+	if not C.Misc.ThreatBar then
+		return
+	end
+	
 	self:Create()
 end
 

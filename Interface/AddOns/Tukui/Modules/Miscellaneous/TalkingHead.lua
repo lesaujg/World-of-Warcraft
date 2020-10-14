@@ -10,18 +10,37 @@ function TalkingHead:OnEvent(event, addon)
 	end
 
 	local Frame = TalkingHeadFrame
-	local CustomPosition = TukuiData[GetRealmName()][UnitName("Player")].Move["TalkingHeadFrame"]
+	local CustomPosition = TukuiData[T.MyRealm][T.MyName].Move["TalkingHeadFrame"]
 	local A1, Parent, A2, X, Y = "TOP", UIParent, "TOP", 0, -10
-
+	
 	if CustomPosition then
 		A1, Parent, A2, X, Y = unpack(CustomPosition)
 	end
 
 	Frame:ClearAllPoints()
-	Frame:Point(A1, Parent, A2, X, Y)
-
+	Frame:SetPoint(A1, Parent, A2, X, Y)
 	Frame.ignoreFramePositionManager = true
+	
+	if not Frame.IsSkinned then
+		Frame:CreateBackdrop("Transparent")
+		
+		Frame.Backdrop:ClearAllPoints()
+		Frame.Backdrop:SetAllPoints(Frame.BackgroundFrame)
+		Frame.Backdrop:CreateShadow()
+		
+		Frame.BackgroundFrame:SetParent(T.Hider)
 
+		Frame.MainFrame.CloseButton:SkinCloseButton()
+		
+		Frame.PortraitFrame.Portrait:SetParent(T.Hider)
+		
+		Frame.MainFrame.Model:CreateBackdrop()
+		Frame.MainFrame.Model.Backdrop:ClearAllPoints()
+		Frame.MainFrame.Model.Backdrop:SetOutside()
+		
+		Frame.IsSkinned = true
+	end
+	
 	Movers:RegisterFrame(Frame)
 end
 

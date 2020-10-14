@@ -17,8 +17,8 @@ local TABLET_OF_GHOST_WOLF_AURA = GetSpellInfo(168799)
 LM.GhostWolf = setmetatable({ }, LM.Spell)
 LM.GhostWolf.__index = LM.GhostWolf
 
-function LM.GhostWolf:Get()
-    return LM.Spell.Get(self, LM.SPELL.GHOST_WOLF, 'WALK')
+function LM.GhostWolf:IsCancelable()
+    return false
 end
 
 function LM.GhostWolf:CurrentFlags()
