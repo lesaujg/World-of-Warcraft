@@ -141,7 +141,7 @@ BalanceSpellSuggest: disabled
 CrossRealmAssist: enabled
 Decursive: disabled
 Ketho_InstanceTimer: disabled
-SavedInstances: enabled
+SavedInstances: disabled
 TeleportCloak: enabled
 TradeSkillMaster_Vendoring: disabled
 DBM-Nighthold: enabled
@@ -187,7 +187,7 @@ RaidAchievement_LegionHeroics: disabled
 RaidAchievement_LegionRaids: disabled
 WeakAurasTemplates: disabled
 ProjectAzilroka: disabled
-AngryWorldQuests: enabled
+AngryWorldQuests: disabled
 Tukui_17_Layout: enabled
 KSpeedO: enabled
 OPie_Classic: disabled

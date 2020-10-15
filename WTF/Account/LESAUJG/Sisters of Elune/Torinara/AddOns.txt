@@ -8,3 +8,6 @@ HandyNotes_DraenorTreasures: enabled
 Quartz: enabled
 TomTom: disabled
 SilverDragon: enabled
+AngryWorldQuests: disabled
+SavedInstances: disabled
+FactionAddict: disabled

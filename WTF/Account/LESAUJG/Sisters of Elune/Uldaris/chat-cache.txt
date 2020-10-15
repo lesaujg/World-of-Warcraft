@@ -7,7 +7,6 @@ General 0 1 0
 Trade 0 2 0
 LocalDefense 0 3 0
 LookingForGroup 0 4 0
-NewcomerChat 1 7 0
 ShadowlandsBetaDiscussion 1 8 0
 ShadowlandsPTRDiscussion 1 9 0
 ShadowlandsTestDiscussion 1 10 0
@@ -194,7 +193,7 @@ CHANNELS
 LookingForGroup
 END
 
-ZONECHANNELS 32449232897
+ZONECHANNELS 30268194817
 
 END
 

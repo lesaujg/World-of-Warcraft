@@ -31,7 +31,7 @@ RaidAchievement_WoDHeroics: disabled
 RaidAchievement_WoDRaids: disabled
 RaidAchievement_WotlkHeroics: disabled
 RaidAchievement_OldModules: disabled
-SavedInstances: enabled
+SavedInstances: disabled
 Skada: disabled
 TeleportCloak: enabled
 TradeSkillMaster_Vendoring: disabled
@@ -149,7 +149,7 @@ WeakAurasModelPaths: disabled
 WeakAurasOptions: disabled
 WeakAurasTemplates: disabled
 ProjectAzilroka: disabled
-AngryWorldQuests: enabled
+AngryWorldQuests: disabled
 Tukui_17_Layout: enabled
 KSpeedO: enabled
 OPie_Classic: disabled

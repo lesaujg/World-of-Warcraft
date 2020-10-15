@@ -38,7 +38,7 @@ ActionBarSaver: disabled
 AdvancedIconSelector: disabled
 HandyNotes_Argus: enabled
 HandyNotes: enabled
-HandyNotes_DraenorTreasures: enabled
+HandyNotes_DraenorTreasures: disabled
 HandyNotes_LegionRaresTreasures: enabled
 mOnArs_WardrobeHelper: enabled
 MountFarmHelper: enabled
@@ -53,12 +53,12 @@ RaidAchievement_Naxxramas: disabled
 RaidAchievement_Ulduar: disabled
 RaidAchievement_WotlkHeroics: disabled
 RaidAchievement_OldModules: disabled
-SavedInstances: enabled
+SavedInstances: disabled
 WeakAurasModelPaths: disabled
 WeakAurasOptions: disabled
 WeakAurasTemplates: disabled
 ProjectAzilroka: disabled
-AngryWorldQuests: enabled
+AngryWorldQuests: disabled
 TradeSkillMaster_Accounting: disabled
 TradeSkillMaster_Auctioning: disabled
 TradeSkillMaster_Crafting: disabled

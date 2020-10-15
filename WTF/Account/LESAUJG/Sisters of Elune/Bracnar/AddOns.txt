@@ -167,7 +167,7 @@ WeDontWipe: disabled
 WeDontWipe-WindwalkerMonk: disabled
 CrossRealmAssist: enabled
 Ketho_InstanceTimer: disabled
-SavedInstances: enabled
+SavedInstances: disabled
 TeleportCloak: enabled
 TradeSkillMaster_Vendoring: disabled
 DBM-Nighthold: enabled
@@ -180,7 +180,7 @@ Jamba: disabled
 Jamba-AdvancedLoot: enabled
 !KalielsTracker: disabled
 WorldQuestTracker: disabled
-AngryWorldQuests: enabled
+AngryWorldQuests: disabled
 HandyNotes_LegionRaresTreasures: enabled
 NomiCakes: enabled
 DBM-TrialofValor: enabled
@@ -204,7 +204,7 @@ Details_3DModelsPaths: enabled
 Details_RaidInfo-EmeraldNightmare: enabled
 Details_RaidInfo-Nighthold: enabled
 Details_RaidInfo-TrialOfValor: enabled
-FactionAddict: enabled
+FactionAddict: disabled
 NPCScan: disabled
 RaidAchievement_LegionHeroics: enabled
 RaidAchievement_LegionRaids: enabled
@@ -250,3 +250,4 @@ HandyNotes_VisionsOfNZoth: enabled
 WeakAurasArchive: enabled
 SilverDragon: enabled
 PetTracker: disabled
+MapCoords: disabled

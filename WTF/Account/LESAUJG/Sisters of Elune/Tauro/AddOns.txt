@@ -1,5 +1,5 @@
 AchievementsReminder: disabled
-AngryWorldQuests: enabled
+AngryWorldQuests: disabled
 AskMrRobot: enabled
 BaudManifest: enabled
 FactionAddict: disabled
@@ -23,7 +23,7 @@ RaidAchievement_Naxxramas: disabled
 RaidAchievement_Ulduar: disabled
 RaidAchievement_WotlkHeroics: disabled
 RaidAchievement_OldModules: disabled
-SavedInstances: enabled
+SavedInstances: disabled
 Skada: disabled
 TeleportCloak: enabled
 WeakAuras: disabled

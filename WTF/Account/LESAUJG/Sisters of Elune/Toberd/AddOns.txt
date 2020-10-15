@@ -2,7 +2,7 @@ OPie_Classic: disabled
 WeakAurasCompanion: enabled
 AchievementsReminder: disabled
 ActionBarSaver: disabled
-AngryWorldQuests: enabled
+AngryWorldQuests: disabled
 AskMrRobot: enabled
 BaudManifest: enabled
 DarkmoonQuestItems: disabled
@@ -28,7 +28,7 @@ RaidAchievement_Naxxramas: disabled
 RaidAchievement_Ulduar: disabled
 RaidAchievement_WotlkHeroics: disabled
 RaidAchievement_OldModules: disabled
-SavedInstances: enabled
+SavedInstances: disabled
 Skada: disabled
 TeleportCloak: enabled
 TomCats: disabled

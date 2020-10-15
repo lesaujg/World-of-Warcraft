@@ -1,4 +1,11 @@
 Version: 1
+Frame: WorldMapFrame
+FrameLevel: 1
+Anchor: TOP
+X: 0
+Y: 0
+W: 622
+H: 479
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: RIGHT

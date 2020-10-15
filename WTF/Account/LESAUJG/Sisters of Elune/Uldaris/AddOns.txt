@@ -84,7 +84,7 @@ BagBrother: disabled
 BittensSpellFlash_Hunter: disabled
 Basic_Resources: disabled
 Claw: disabled
-HandyNotes_DraenorTreasures: enabled
+HandyNotes_DraenorTreasures: disabled
 LiteMount: enabled
 MasterPlan: enabled
 OPie: enabled
@@ -165,7 +165,7 @@ Grid2AoeHeals: disabled
 Grid2RaidDebuffs: disabled
 Grid2RaidDebuffsOptions: disabled
 Grid2LDB: disabled
-SavedInstances: enabled
+SavedInstances: disabled
 WeDontWipe: disabled
 WeDontWipe-WindwalkerMonk: disabled
 CrossRealmAssist: enabled
@@ -209,7 +209,7 @@ RaidAchievement_LegionHeroics: disabled
 RaidAchievement_LegionRaids: disabled
 WeakAurasTemplates: disabled
 ProjectAzilroka: disabled
-AngryWorldQuests: enabled
+AngryWorldQuests: disabled
 Tukui_17_Layout: enabled
 KSpeedO: enabled
 OPie_Classic: disabled

@@ -1,6 +1,6 @@
-## Interface: 80300
+## Interface: 90001
 ## Title: HandyNotes_WorldMapButton
-## Version: 80300.04-Release
+## Version: 90001.01-Release
 ## Notes: Adds a Button to the Worldmap to toggle HandyNotes
 ## Author: fuba
 ## OptionalDeps: Ace3

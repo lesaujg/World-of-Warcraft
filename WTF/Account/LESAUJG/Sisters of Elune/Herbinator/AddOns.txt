@@ -161,7 +161,7 @@ BalanceSpellSuggest: disabled
 CrossRealmAssist: disabled
 Decursive: disabled
 Ketho_InstanceTimer: disabled
-SavedInstances: enabled
+SavedInstances: disabled
 TeleportCloak: enabled
 TradeSkillMaster_Vendoring: disabled
 DBM-Nighthold: disabled
@@ -178,7 +178,7 @@ DBM-BrokenIsles: disabled
 DBM-Party-Legion: disabled
 !KalielsTracker: disabled
 WorldQuestTracker: disabled
-AngryWorldQuests: enabled
+AngryWorldQuests: disabled
 FactionAddict: disabled
 HandyNotes_LegionRaresTreasures: enabled
 mOnArs_WardrobeHelper: enabled
