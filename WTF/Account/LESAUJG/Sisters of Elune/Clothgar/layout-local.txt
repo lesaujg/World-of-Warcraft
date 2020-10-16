@@ -4,12 +4,12 @@ FrameLevel: 1
 Anchor: TOP
 X: 0
 Y: 0
-W: 860
-H: 638
+W: 728
+H: 551
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: BOTTOMRIGHT
-X: -86
+X: -7
 Y: 0
 W: 246
 H: 656

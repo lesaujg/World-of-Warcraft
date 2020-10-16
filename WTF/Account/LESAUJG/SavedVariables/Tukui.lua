@@ -2650,14 +2650,14 @@ TukuiGold = {
 		["Mandelbrot"] = 3856555,
 		["Torinar"] = 49907516,
 		["Orig"] = 60342097,
-		["Clothgar"] = 7329697916,
+		["Clothgar"] = 7339940242,
 		["Herbinator"] = 4110875,
-		["Torinara"] = 60998208,
-		["Galinar"] = 57644041,
 		["Belrath"] = 53695567,
+		["Galinar"] = 57659417,
+		["Torinara"] = 60998208,
 		["Palani"] = 52796935,
-		["Bracnar"] = 1127843156,
-		["Uldaris"] = 103653596,
+		["Bracnar"] = 1127905108,
+		["Uldaris"] = 103671058,
 	},
 }
 TukuiSettingsPerCharacter = {
@@ -2684,11 +2684,11 @@ TukuiSettingsPerCharacter = {
 		},
 		["Herbinator"] = {
 		},
-		["Torinara"] = {
+		["Belrath"] = {
 		},
 		["Galinar"] = {
 		},
-		["Belrath"] = {
+		["Torinara"] = {
 		},
 		["Palani"] = {
 		},
