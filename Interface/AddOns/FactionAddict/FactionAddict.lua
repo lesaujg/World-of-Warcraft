@@ -69,7 +69,7 @@
 
 
 -- Constants
-local FACTION_ADDICT_VERSION = "1.58"
+local FACTION_ADDICT_VERSION = "1.59"
 local FACTION_ADDICT_LOGGING_VERSION = 1
 local FACTION_ADDICT_LOGGING_DAYS = 20
 local GUILD_FACTION_ID = 1168
@@ -95,7 +95,6 @@ local faSessionRepGain
 local faSessionDate
 local faStartTime = GetTime()
 local faPlayerGuildName
-local lfgBonusFactionID
 local faNameFilter = "" -- search box
 
 -- Phanx vars
@@ -734,7 +733,6 @@ end
 --      column 11 - faction side
 --      column 12 - faction category
 --      column 13 - hasBonusRepGain
---      column 14 - canBeLFGBonus
 --
 --  global tempAllParagonData
 --      column 1 - current paragon value
@@ -767,7 +765,7 @@ local function fa_PopulateAllFactionDataTable()
 	-- This creates a temp table by joining local faction data and server results
 	for maintableRow in ipairs(faFactionData) do
 		-- Get Faction Info
-		local name, description, standingID, barMin, barMax, barValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus = GetFactionInfoByID(faFactionData[maintableRow][1])
+		local name, description, standingID, barMin, barMax, barValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain = GetFactionInfoByID(faFactionData[maintableRow][1])
 
 		if (name ~= nil) then
 		
@@ -881,8 +879,6 @@ local function fa_PopulateAllFactionDataTable()
 			tempAllFactionData[name][12] = faFactionData[maintableRow][5]
 			-- column 13 - hasBonusRepGain
 			tempAllFactionData[name][13] = hasBonusRepGain
-			-- column 14 - canBeLFGBonus
-			tempAllFactionData[name][14] = canBeLFGBonus
 			
 			-- Save players guild name
 			if (tempAllFactionData[name][1] == GUILD_FACTION_ID) then
@@ -1435,20 +1431,6 @@ function FactionAddict_ScrollBar_Update()
 				getglobal("FactionAddictEntry"..line).FAReputationBar.FAParagonIcon:Hide()
 			end
 
-			-- set LFG Bonus Rep button
-			if (fa_IsFactionInReputationDisplay(tempDisplayData[lineplusoffset][1])) then 
-				getglobal("FactionAddictEntry"..line).FALFGBonusRepButton.factionID = tempDisplayData[lineplusoffset][1]
-				getglobal("FactionAddictEntry"..line).FALFGBonusRepButton:SetShown(tempDisplayData[lineplusoffset][14])
-				getglobal("FactionAddictEntry"..line).FALFGBonusRepButton:SetChecked(lfgBonusFactionID == tempDisplayData[lineplusoffset][1])
-				getglobal("FactionAddictEntry"..line).FALFGBonusRepButton:SetEnabled(lfgBonusFactionID ~= tempDisplayData[lineplusoffset][1])
-				getglobal("FactionAddictEntry"..line).FALFGBonusRepButton.Glow:Show()
-				getglobal("FactionAddictEntry"..line).FALFGBonusRepButton.Glow:SetAlpha(0.18)
-				getglobal("FactionAddictEntry"..line).FALFGBonusRepButton.GlowAnim:Stop()
-			else
-				getglobal("FactionAddictEntry"..line).FALFGBonusRepButton:Disable()
-				getglobal("FactionAddictEntry"..line).FALFGBonusRepButton:Hide()
-			end
-
 			-- set expansion icon (ExpansionIcon)
 			if (tempDisplayData[lineplusoffset][10] == 1) then -- BC
 				getglobal("FactionAddictEntry"..line).ExpansionIcon:SetTexCoord(0.0, 0.546875, 0.0, 0.1171875)
@@ -1494,8 +1476,6 @@ function FactionAddict_ScrollBar_Update()
 			getglobal("FactionAddictEntry"..line).FAReputationBar.FAParagonIcon:Hide()
 			getglobal("FactionAddictEntry"..line).SideFactionIcon:Hide()
 			getglobal("FactionAddictEntry"..line).ExpansionIcon:Hide()
-			getglobal("FactionAddictEntry"..line).FALFGBonusRepButton:Disable()
-			getglobal("FactionAddictEntry"..line).FALFGBonusRepButton:Hide()
 			getglobal("FactionAddictEntry"..line).FactionAddictButtonBack:Hide()
 		end
 	end
@@ -2001,19 +1981,6 @@ local function fa_InfoWindow_LoadInfo(self)
 	else
 		self.StatusBar.FABonusIcon:Hide()
 	end
-	-- display/hide of LFG Bonus Star
-	if (fa_IsFactionInReputationDisplay(tempAllFactionData[faClickedFactionName][1])) then 
-		self.FALFGBonusRepButton.factionID = tempAllFactionData[faClickedFactionName][1]
-		self.FALFGBonusRepButton:SetShown(tempAllFactionData[faClickedFactionName][14])
-		self.FALFGBonusRepButton:SetChecked(lfgBonusFactionID == tempAllFactionData[faClickedFactionName][1])
-		self.FALFGBonusRepButton:SetEnabled(lfgBonusFactionID ~= tempAllFactionData[faClickedFactionName][1])
-		self.FALFGBonusRepButton.Glow:Show()
-		self.FALFGBonusRepButton.Glow:SetAlpha(0.18)
-		self.FALFGBonusRepButton.GlowAnim:Stop()
-	else
-		self.FALFGBonusRepButton:Disable()
-		self.FALFGBonusRepButton:Hide()
-	end
 
 	-- Set size of frame based on contents
 	self:SetSize(270, totalHeight+30)
@@ -2105,7 +2072,6 @@ end
 -- handled events:      ADDON_LOADED
 --                      UPDATE_FACTION
 --                      PLAYER_LOGIN
---                      LFG_BONUS_FACTION_ID_UPDATED
 --                      CHAT_MSG_COMBAT_FACTION_CHANGE   
 -----------------------------------------------------------------------------
 function FactionAddict_OnEvent(self, event, ...)
@@ -2212,14 +2178,6 @@ function FactionAddict_OnEvent(self, event, ...)
 	
 	if ( (event == "UPDATE_FACTION") ) then
 
-		-- this is a bit of a workaround since value is not set when ADDON_LOADED is fired
-		lfgBonusFactionID = GetLFGBonusFactionID()
-		if (lfgBonusFactionID ~= nil) then
-			fa_DebugOut("UPDATE_FACTION:lfgBonusFactionID: ".. lfgBonusFactionID)
-		else
-			fa_DebugOut("UPDATE_FACTION:lfgBonusFactionID: nil")
-		end
-
 		-- collapsing and expanding default UI also triggers this event
 		fa_DebugOut("FactionAddict_OnEvent: " .. event)
 		if (arg1 ~= nil) then fa_DebugOut("arg1: " .. arg1) end
@@ -2273,21 +2231,6 @@ function FactionAddict_OnEvent(self, event, ...)
 				fa_InfoWindow_LoadInfo(frameFactionAddictInfoFrame)
 			end
 		end
-	end
-	
-	-- Handle Bonus Faction Update 
-	if (event == "LFG_BONUS_FACTION_ID_UPDATED") then
-		fa_DebugOut("FactionAddict_OnEvent: " .. event)
-		lfgBonusFactionID = GetLFGBonusFactionID()
-		-- display the data
-		if (frameFactionAddict:IsVisible() and FactionAddictTab1:IsShown()) then
-			FactionAddict_ScrollBar_Update()
-		end
-		-- update info window if displayed
-		if (frameFactionAddictInfoFrame:IsVisible()) then
-			fa_InfoWindow_LoadInfo(frameFactionAddictInfoFrame)
-		end
-
 	end
 
 	if (event == "CHAT_MSG_COMBAT_FACTION_CHANGE") then
@@ -2601,7 +2544,6 @@ function FactionAddict_OnLoad(self)
 	-- Register Events
 	self:RegisterEvent("ADDON_LOADED")
 	self:RegisterEvent("UPDATE_FACTION")
-	self:RegisterEvent("LFG_BONUS_FACTION_ID_UPDATED")
 	self:RegisterEvent("CHAT_MSG_COMBAT_FACTION_CHANGE")
 	self:RegisterEvent("PLAYER_LOGIN")
 

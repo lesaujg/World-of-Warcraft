@@ -60,25 +60,23 @@ PawnOptions = {
 			["AlsoFitsIn"] = 11,
 			["Link"] = "|cff0070dd|Hitem:29158::::::::21:260:::::::|h[Truesilver Commander's Ring]|h|r",
 		}, -- [12]
-		nil, -- [13]
-		nil, -- [14]
-		{
-			["ID"] = 33261,
-			["Level"] = 21,
-			["Link"] = "|cff1eff00|Hitem:33261::::::::21:260:::::::|h[Destroyer's Cloak]|h|r",
-		}, -- [15]
-		{
+		[16] = {
 			["ID"] = 15216,
 			["Level"] = 26,
 			["AlsoFitsIn"] = 17,
 			["Link"] = "|cff1eff00|Hitem:15216:1900:::::::21:260:::1:1681::::|h[Rune Sword of the Quickblade]|h|r",
-		}, -- [16]
-		{
+		},
+		[15] = {
+			["ID"] = 33261,
+			["Level"] = 21,
+			["Link"] = "|cff1eff00|Hitem:33261::::::::21:260:::::::|h[Destroyer's Cloak]|h|r",
+		},
+		[17] = {
 			["ID"] = 15215,
 			["Level"] = 24,
 			["AlsoFitsIn"] = 16,
 			["Link"] = "|cff1eff00|Hitem:15215:1900:::::::21:260:::1:1708::::|h[Furious Falchion of the Aurora]|h|r",
-		}, -- [17]
+		},
 	},
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,

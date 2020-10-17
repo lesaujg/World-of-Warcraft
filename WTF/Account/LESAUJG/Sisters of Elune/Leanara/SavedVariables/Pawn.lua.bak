@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0401,
+	["LastPlayerFullName"] = "Leanara-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173842,
@@ -90,9 +93,6 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:166336::::::::50:581::30:2:1474:4786::::|h[7th Legionnaire's Skullcleaver]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Leanara-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

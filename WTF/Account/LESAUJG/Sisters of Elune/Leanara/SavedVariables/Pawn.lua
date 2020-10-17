@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0401,
-	["LastPlayerFullName"] = "Leanara-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173842,
@@ -70,10 +67,10 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:133597::::::::50:581:::1:5817::::|h[Infallible Tracking Charm]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 122361,
-			["Level"] = 58,
+			["ID"] = 133597,
+			["Level"] = 60,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::50:581:::1:5805::::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:133597::::::::50:577:::1:5817::::|h[Infallible Tracking Charm]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 160536,
@@ -87,12 +84,15 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158079::::::::50:581::28:5:4803:6516:6513:1480:4785::::|h[Stagheart Hatchet]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 166336,
-			["Level"] = 60,
+			["ID"] = 158079,
+			["Level"] = 66,
 			["AlsoFitsIn"] = 16,
-			["Link"] = "|cffa335ee|Hitem:166336::::::::50:581::30:2:1474:4786::::|h[7th Legionnaire's Skullcleaver]|h|r",
+			["Link"] = "|cff0070dd|Hitem:158079::::::::50:577::28:5:4803:6516:6513:1480:4785::::|h[Stagheart Hatchet]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Leanara-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

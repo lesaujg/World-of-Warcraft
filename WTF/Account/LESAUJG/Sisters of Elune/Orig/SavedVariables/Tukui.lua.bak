@@ -1,2 +1,2 @@
 
-TukuiDataPerChar = nil
+TukuiSettingsPerChar = nil

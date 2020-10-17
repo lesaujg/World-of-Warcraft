@@ -21,6 +21,13 @@ function LM.GhostWolf:IsCancelable()
     return false
 end
 
+function LM.GhostWolf:IsCastable()
+    if LM.UnitAura('player', self.spellID) then
+        return false
+    end
+    return LM.Spell.IsCastable(self)
+end
+
 function LM.GhostWolf:CurrentFlags()
     local flags = LM.Mount.CurrentFlags(self)
 
@@ -30,7 +37,7 @@ function LM.GhostWolf:CurrentFlags()
 
     if flags.WALK then
         local hasAura
-        hasAura = AuraUtil.FindAuraByName(TABLET_OF_GHOST_WOLF_AURA, "player")
+        hasAura = LM.UnitAura('player', TABLET_OF_GHOST_WOLF_AURA)
         if hasAura then
             flags = CopyTable(flags)
             flags.WALK = nil

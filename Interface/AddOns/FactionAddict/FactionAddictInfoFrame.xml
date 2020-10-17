@@ -1,6 +1,6 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\..\FrameXML\UI.xsd">
 
-	<Frame name="frameFactionAddictInfoFrame" enableMouse="true" hidden="true" parent="frameFactionAddict">
+	<Frame name="frameFactionAddictInfoFrame" enableMouse="true" hidden="true" parent="frameFactionAddict" inherits="BackdropTemplate">
 		<Size>
 			<AbsDimension x="270" y="205"/>
 		</Size>
@@ -294,61 +294,6 @@
 					</Frame>
 				</Frames>
 			</StatusBar>
-
-			<CheckButton parentKey="FALFGBonusRepButton" motionScriptsWhileDisabled="true">
-				<Size x="16" y="16"/>
- 				<Anchors>
- 					<Anchor point="TOPLEFT" relativeTo="$parentFAReputationBarInfoWin" relativePoint="TOPRIGHT" x="3" y="2"/>
- 				</Anchors>
- 				<Layers>
- 					<Layer level="OVERLAY">
- 						<Texture parentKey="Glow" file="Interface\Common\ReputationStar-Glow" alphaMode="ADD">
- 							<Size x="32" y="32"/>
- 							<Anchors>
- 								<Anchor point="CENTER"/>
- 							</Anchors>
- 						</Texture>
- 					</Layer>
- 				</Layers>
- 				<NormalTexture file="Interface\Common\ReputationStar">
- 					<TexCoords left="0.5" right="1" top="0" bottom="0.5"/>
- 				</NormalTexture>
- 				<HighlightTexture file="Interface\Common\ReputationStar">
- 					<TexCoords left="0" right="0.5" top="0.5" bottom="1"/>
- 				</HighlightTexture>
- 				<CheckedTexture file="Interface\Common\ReputationStar">
- 					<TexCoords left="0" right="0.5" top="0" bottom="0.5"/>
- 				</CheckedTexture>
- 				<Animations>
- 					<AnimationGroup parentKey="GlowAnim" looping="BOUNCE">
-						<Alpha childKey="Glow" change="-0.75" duration="1.0" smoothing="IN_OUT" order="1"/>
- 						<Scripts>
- 							<OnPlay>
- 								self.loopsRemaining = 5;
- 							</OnPlay>
- 							<OnLoop>
- 								self.loopsRemaining = self.loopsRemaining - 1;
- 								if ( self.loopsRemaining == 0 ) then
- 									self:Stop();
- 									self:GetParent().Glow:Hide();
- 								end
- 							</OnLoop>
- 						</Scripts>
- 					</AnimationGroup>
- 				</Animations>
- 				<Scripts>
- 					<OnClick>
-						PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON);
-						SetLFGBonusFactionID(self.factionID);
-					</OnClick>
- 					<OnEnter>
- 						GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
- 						GameTooltip:SetText(LFG_BONUS_REPUTATION_TOOLTIP, nil, nil, nil, nil, true);
- 						GameTooltip:Show();
- 					</OnEnter>
- 					<OnLeave function="GameTooltip_Hide"/>
- 				</Scripts>
-			</CheckButton>
 
 			<EditBox name="$parentEditBox" parentKey="EditBox" letters="40" autofocus="false">
 				<Size>

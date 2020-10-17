@@ -4,7 +4,7 @@
 -- Desc: Addon for World of Warcraft
 --
 -- Author: gmz323(Greg)
--- current version: v1.58
+-- current version: v1.59
 -- (c) 2011-2020
 --
 =============================================================================
@@ -68,6 +68,13 @@ My Other Addons:
 
 Changelog:
 ==========
+
+v1.59 (2020-10-16)
+------------------
+* NOTE! - Compatibility release only! ShadowLands options will be added at a later time.
+* Updates for 9.0 client.
+* Removed LFG Bonus Faction support.
+* Fixes due to addon backdrop changes.
 
 v1.58 (2020-01-16)
 ------------------
