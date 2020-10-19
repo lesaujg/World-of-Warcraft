@@ -1,62 +1,13 @@
-tag 6964e81c5d2050dc03ae33d44f5fe76abc206722 9.0.6
+tag 4eb03c25fc1ef96ce243f4367f66d481401155c1 9.0.7
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Sat Oct 17 16:01:49 2020 +1100
+Date:	Sun Oct 18 20:18:52 2020 +1100
 
-LiteMount 9.0.6
-- fix Ghost Wolf
+LiteMount 9.0.7
+- Updated ptBR translations.
 
-commit c956ce44823e0e8e8c8b5eb8efb2312d81a33f37
+commit 32295044699db3964905864d707eb74dff32cc28
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sat Oct 17 16:00:06 2020 +1100
+Date:   Sun Oct 18 20:18:08 2020 +1100
 
-    Fix Ghost Wolf to really not dismount
-
-commit eaabc4b3d6bef5e3dd58b3d51fb6517d476c1582
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Oct 16 15:18:53 2020 +1100
-
-    Fix typo
-
-commit 4ad046d114390f0697c4a337d58eb92dcf6445cd
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Oct 16 15:01:58 2020 +1100
-
-    decodeProfile.lua supports split lines, even if curseforge now hates me
-
-commit 71e973ce3e7f811d9d88501a44cce775d1a7038d
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Oct 16 13:00:48 2020 +1100
-
-    Rewrite the saved profiles using the new dumper
-    Better error output in profile migration tester
-
-commit a1e506a379f6c182aede1495904ad0dcf2986e5c
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Oct 16 12:10:43 2020 +1100
-
-    Replace the table dumper with one based on DevTools_Dump
-
-commit 6e11f87d0f1293145121d56a10e8b99016861339
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Oct 16 11:43:55 2020 +1100
-
-    Fix some bugs in profile mgirate tester
-
-commit c973d96f40ae6e54f19607679a14aa44b6448113
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Oct 16 11:43:05 2020 +1100
-
-    Add UnitFullname to mock
-
-commit d113041334e3f19d4ffc209cac43c70fd7bd17af
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Oct 16 09:42:45 2020 +1100
-
-    Use LM.UnitAura in GhostWolf
-
-commit c1b724f61dbf672e526cb556704d42125e03a6c7
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Oct 16 09:37:26 2020 +1100
-
-    decodeProfile.lua now takes file arg
+    Update ptBR translations.
 

@@ -52,6 +52,12 @@ function ActionBars:DisableBlizzard()
 		ActionButton_UpdateRangeIndicator = Noop
 	end
 	
+	if not C.ActionBars.AutoAddNewSpell then
+		IconIntroTracker:UnregisterAllEvents()
+		
+		RegisterStateDriver(IconIntroTracker, "visibility", "hide")
+	end
+	
 	-- Micro Menu
 	MicroButtonAndBagsBar:ClearAllPoints()
 	MicroButtonAndBagsBar:SetPoint("TOP", UIParent, "TOP", 0, 200)
@@ -99,7 +105,10 @@ function ActionBars:UpdateStanceBar()
 	else
 		self.Bars.Stance:SetAlpha(1)
 		self.Bars.Stance:SetSize((PetSize * NumForms) + (Spacing * (NumForms + 1)), PetSize + (Spacing * 2))
-		self.Bars.Stance.Backdrop:SetPoint("TOPLEFT", 0, 0)
+		
+		if self.Bars.Stance.Backdrop then
+			self.Bars.Stance.Backdrop:SetPoint("TOPLEFT", 0, 0)
+		end
 
 		for i = 1, NUM_STANCE_SLOTS do
 			local ButtonName = "StanceButton"..i
@@ -227,8 +236,11 @@ function ActionBars:AddHooks()
 	hooksecurefunc("ActionButton_UpdateFlyout", self.StyleFlyout)
 	hooksecurefunc("SpellButton_OnClick", self.StyleFlyout)
 	hooksecurefunc("ActionButton_UpdateRangeIndicator", ActionBars.RangeUpdate)
-	hooksecurefunc("ActionButton_ShowOverlayGlow", ActionBars.StartHighlight)
-	hooksecurefunc("ActionButton_HideOverlayGlow", ActionBars.StopHightlight)
+	
+	if C.ActionBars.ProcAnim then
+		hooksecurefunc("ActionButton_ShowOverlayGlow", ActionBars.StartHighlight)
+		hooksecurefunc("ActionButton_HideOverlayGlow", ActionBars.StopHightlight)
+	end
 end
 
 function ActionBars:Enable()

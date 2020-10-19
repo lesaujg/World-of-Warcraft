@@ -245,18 +245,18 @@ end
 
 function UnitFrames:DisplayPlayerAndPetNames(event)
 	if event == "PLAYER_REGEN_DISABLED" then
-		self.Power.Value:SetAlpha(1)
+		self.Power.Value:Show()
 		self.Name:SetAlpha(0)
 
 		if self.unit ~= "player" then
-			self.Health.Value:SetAlpha(1)
+			self.Health.Value:Show()
 		end
 	else
-		self.Power.Value:SetAlpha(0)
+		self.Power.Value:Hide()
 		self.Name:SetAlpha(1)
 
 		if self.unit ~= "player" then
-			self.Health.Value:SetAlpha(0)
+			self.Health.Value:Hide()
 		end
 	end
 end
@@ -421,13 +421,15 @@ function UnitFrames:PostUpdateAura(unit, button, index, offset, filter, isDebuff
 			end
 		else
 			-- These classes can purge, show them
-			if (button.Animation) and (T.MyClass == "PRIEST") or (T.MyClass == "SHAMAN") then
-				if (DType == "Magic") and (not UnitIsFriend("player", unit)) and (not button.Animation.Playing) then
-					button.Animation:Play()
-					button.Animation.Playing = true
+			if button.Animation then
+				if (IsStealable or DType == "Magic") and UnitIsEnemy("player", unit) then
+					if not button.Animation:IsPlaying() then
+						button.Animation:Play()
+					end
 				else
-					button.Animation:Stop()
-					button.Animation.Playing = false
+					if button.Animation:IsPlaying() then
+						button.Animation:Stop()
+					end
 				end
 			end
 		end

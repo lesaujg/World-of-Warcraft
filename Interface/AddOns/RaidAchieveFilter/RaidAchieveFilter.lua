@@ -167,15 +167,15 @@ function RaidAchFilter:Initialize()
 		end)
 	local content = CreateFrame("Frame", "RaidAch_Content", scrFra) 
 	content:SetSize(128, 128) 
-	scrFra.content = content 
+	scrFra.content = content
 	scrFra:SetScrollChild(content)
 	local backdrop = { -- Border
 	  edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
 	  tile = false, tileSize = 8, edgeSize = 8,
 	  insets = { left = 2, right = 2, top = 2, bottom = 2 }
 	}
-	fra:SetBackdrop(backdrop)
-	fra:SetBackdropBorderColor(1, 0.675, 0.125, 1)
+	--fra:SetBackdrop(backdrop)
+	--fra:SetBackdropBorderColor(1, 0.675, 0.125, 1)
 	local ttl = fra:CreateFontString("$parent_HeaderText","OVERLAY","GameFontNormal") -- Header Text
 	ttl:SetPoint("TOPLEFT",fra,"TOPLEFT",9,-6)
 	ttl:SetText("Raid Achievement Filter")
@@ -287,7 +287,7 @@ function RaidAchFilter:Initialize()
 				info.value = "submenub6"
 				UIDropDownMenu_AddButton(info, level)
 			elseif UIDROPDOWNMENU_MENU_VALUE == "topmenu3" then
-				for i = 102, 115 do --Scenarios!
+				for i = 107, 121 do --Scenarios!
 				  info.value = i
 				  info.checked = false
 				  info.hasArrow = false
@@ -352,7 +352,7 @@ function RaidAchFilter:Initialize()
 				  UIDropDownMenu_AddButton(info, level)
 				end
 			elseif UIDROPDOWNMENU_MENU_VALUE == "submenua6" then
-				for i = 31, 31 do
+				for i = 31, 35 do
 				  info.value = i
 				  info.checked = false
 				  info.text = RAFdb.MapName[i]
@@ -363,7 +363,7 @@ function RaidAchFilter:Initialize()
 				end
 			-- Dungeons!
 			elseif UIDROPDOWNMENU_MENU_VALUE == "submenub1" then
-				for i = 32, 47 do
+				for i = 36, 51 do
 					  info.value = i
 					  info.checked = false
 					  info.text = RAFdb.MapName[i]
@@ -373,7 +373,7 @@ function RaidAchFilter:Initialize()
 					  UIDropDownMenu_AddButton(info, level)
 				end
 			elseif UIDROPDOWNMENU_MENU_VALUE == "submenub2" then
-				for i = 48, 61 do
+				for i = 52, 65 do
 					  info.value = i
 					  info.checked = false
 					  info.text = RAFdb.MapName[i]
@@ -383,7 +383,7 @@ function RaidAchFilter:Initialize()
 					  UIDropDownMenu_AddButton(info, level)
 				end
 			elseif UIDROPDOWNMENU_MENU_VALUE == "submenub3" then
-				for i = 62, 70 do
+				for i = 66, 74 do
 					  info.value = i
 					  info.checked = false
 					  info.text = RAFdb.MapName[i]
@@ -393,7 +393,7 @@ function RaidAchFilter:Initialize()
 					  UIDropDownMenu_AddButton(info, level)
 				end
 			elseif UIDROPDOWNMENU_MENU_VALUE == "submenub4" then
-				for i = 71, 78 do
+				for i = 75, 82 do
 					  info.value = i
 					  info.checked = false
 					  info.text = RAFdb.MapName[i]
@@ -403,7 +403,7 @@ function RaidAchFilter:Initialize()
 					  UIDropDownMenu_AddButton(info, level)
 				end
 			elseif UIDROPDOWNMENU_MENU_VALUE == "submenub5" then
-				for i = 79, 91 do
+				for i = 83, 95 do
 					  info.value = i
 					  info.checked = false
 					  info.text = RAFdb.MapName[i]
@@ -413,7 +413,7 @@ function RaidAchFilter:Initialize()
 					  UIDropDownMenu_AddButton(info, level)
 				end
 			elseif UIDROPDOWNMENU_MENU_VALUE == "submenub6" then
-				for i = 92, 101 do
+				for i = 96, 106 do
 					  info.value = i
 					  info.checked = false
 					  info.text = RAFdb.MapName[i]
@@ -440,6 +440,7 @@ function RaidAchFilter:AchAdd(fraID, ach_ID, indent_num)
 	fr_name = "achFra"..fraID
 	if not fra then 
 		fra = CreateFrame("Frame", fr_name, frame)
+		Mixin(fra, BackdropTemplateMixin)
 		fra:SetSize(508,75)
 		if indent_num == 0 then fra:SetPoint("TOPLEFT", frame, "TOPLEFT", 0, 0)
 		else fra:SetPoint("TOPLEFT", prevFra, "BOTTOMLEFT", 0, 0) end
@@ -448,8 +449,8 @@ function RaidAchFilter:AchAdd(fraID, ach_ID, indent_num)
 		  tile = false, tileSize = 16, edgeSize = 16,
 		  insets = { left = 4, right = 4, top = 4, bottom = 4 }
 		}
-		fra:SetBackdrop(backdrop)
-		fra:SetBackdropBorderColor(1, 0.675, 0.125, 1);
+		--fra:SetBackdrop(backdrop)
+		--fra:SetBackdropBorderColor(1, 0.675, 0.125, 1);
 		fra.texture = fra:CreateTexture() --Background
 		fra.texture:SetPoint("TOPLEFT", fra, 4, -4)
 		fra.texture:SetPoint("BOTTOMRIGHT", fra, -4, 4)

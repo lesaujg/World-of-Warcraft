@@ -1,7 +1,7 @@
 # Skada
 
-## [1.8.1](https://github.com/nebularg/Skada/tree/1.8.1) (2020-10-16)
-[Full Changelog](https://github.com/nebularg/Skada/compare/1.8.0...1.8.1) [Previous Releases](https://github.com/nebularg/Skada/releases)
+## [1.8.2](https://github.com/nebularg/Skada/tree/1.8.2) (2020-10-17)
+[Full Changelog](https://github.com/nebularg/Skada/compare/1.8.1...1.8.2) [Previous Releases](https://github.com/nebularg/Skada/releases)
 
-- Handle more pets for other players  
-- Update README  
+- Fix an error when a pet's owner isn't matched  
+    Fixes WH-602  

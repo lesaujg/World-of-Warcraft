@@ -24,7 +24,7 @@ function UnitFrames:Player()
 	local Panel = CreateFrame("Frame", nil, self)
 	Panel:SetFrameStrata(self:GetFrameStrata())
 	Panel:SetFrameLevel(3)
-	Panel:CreateBackdrop(C.UnitFrames.Portrait and "Transparent")
+	Panel:CreateBackdrop()
 	Panel:SetSize(250, 21)
 	Panel:SetPoint("BOTTOM", self, "BOTTOM", 0, 0)
 	Panel.Backdrop:SetBorderColor(0, 0, 0, 0)
@@ -77,7 +77,7 @@ function UnitFrames:Player()
 	Power.Prediction:SetPoint("TOP")
 	Power.Prediction:SetPoint("BOTTOM")
 	Power.Prediction:SetPoint("RIGHT", Power:GetStatusBarTexture(), "RIGHT")
-	Power.Prediction:SetWidth(C.UnitFrames.Portrait and 214 or 250)
+	Power.Prediction:SetWidth(250)
 	Power.Prediction:SetStatusBarTexture(PowerTexture)
 	Power.Prediction:SetStatusBarColor(1, 1, 1, .3)
 
@@ -88,15 +88,6 @@ function UnitFrames:Player()
 	Name:SetJustifyH("LEFT")
 	Name:SetFontObject(Font)
 	Name:SetAlpha(0)
-
-	if C.UnitFrames.Portrait then
-		local Portrait = CreateFrame("PlayerModel", nil, Panel)
-		
-		Portrait:SetAllPoints()
-		Portrait:SetFrameLevel(Panel:GetFrameLevel() - 1)
-
-		self.Portrait = Portrait
-	end
 
 	if C.UnitFrames.PlayerAuras and C.UnitFrames.PlayerAuraBars then
 		local Gap = (T.MyClass == "ROGUE" or T.MyClass == "DRUID") and 8 or 0
@@ -255,6 +246,35 @@ function UnitFrames:Player()
 		end
 
 		self.Castbar = CastBar
+	end
+	
+	if C.UnitFrames.Portrait then
+		local Portrait = CreateFrame("Frame", nil, self)
+		
+		if C.UnitFrames.Portrait2D then
+			Portrait.Texture = Portrait:CreateTexture(nil, "OVERLAY")
+			Portrait.Texture:SetTexCoord(0.1,0.9,0.1,0.9)
+		else
+			Portrait.Texture = CreateFrame("PlayerModel", nil, Portrait)
+		end
+		
+		Portrait:SetSize(57, 57)
+		Portrait:SetPoint("RIGHT", self, "LEFT", -10, 0)
+		Portrait:CreateBackdrop()
+		Portrait:CreateShadow()
+		
+		Portrait.Backdrop:SetOutside()
+		
+		Portrait.Texture:SetAllPoints(Portrait)
+		
+		if (C.UnitFrames.CastBar and C.UnitFrames.CastBarIcon) and not (C.UnitFrames.UnlinkCastBar) then
+			self.Castbar.Icon:ClearAllPoints()
+			self.Castbar.Icon:SetAllPoints(Portrait)
+		end
+
+		self.Portrait = Portrait.Texture
+		self.Portrait.Backdrop = Portrait.Backdrop
+		self.Portrait.Shadow = Portrait.Shadow
 	end
 
 	if (C.UnitFrames.CombatLog) then
