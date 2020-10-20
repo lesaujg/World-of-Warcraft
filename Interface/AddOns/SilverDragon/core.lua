@@ -9,7 +9,7 @@ addon.events = LibStub("CallbackHandler-1.0"):New(addon)
 local Debug
 do
 	local TextDump = LibStub("LibTextDump-1.0")
-	local debuggable = GetAddOnMetadata(myname, "Version") == 'v90001.1'
+	local debuggable = GetAddOnMetadata(myname, "Version") == 'v90001.2'
 	local _window
 	local function GetDebugWindow()
 		if not _window then
@@ -88,6 +88,10 @@ local mobsByZone = {
 	-- [zoneid] = { [mobid] = {coord, ...}
 }
 ns.mobsByZone = mobsByZone
+local mobNamesByZone = {
+	-- [zoneid] = { [mobname] = mobid, ... }
+}
+ns.mobNamesByZone = mobNamesByZone
 local questMobLookup = {
 	-- [questid] = { [mobid] = true, ... }
 }
@@ -293,7 +297,10 @@ do
 		end
 		return self.db.locale.mob_name[id] or (mobdb[id] and mobdb[id].name)
 	end
-	function addon:IdForMob(name)
+	function addon:IdForMob(name, zone)
+		if zone and mobNamesByZone[zone] and mobNamesByZone[zone][name] then
+			return mobNamesByZone[zone][name]
+		end
 		return mobNameToId[name]
 	end
 	function addon:NameForQuest(id)
@@ -384,7 +391,14 @@ function addon:GetMobByCoord(zone, coord, include_ignored)
 end
 
 function addon:GetMobLabel(id)
-	return self:NameForMob(id) or UNKNOWN
+	local name = self:NameForMob(id)
+	if not name then
+		return UNKNOWN
+	end
+	if not mobdb[id] then
+		return name
+	end
+	return name .. (mobdb[id].variant and (" (" .. mobdb[id].variant .. ")") or "")
 end
 
 do

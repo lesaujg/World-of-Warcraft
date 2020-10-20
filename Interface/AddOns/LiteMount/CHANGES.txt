@@ -1,13 +1,14 @@
-tag 4eb03c25fc1ef96ce243f4367f66d481401155c1 9.0.7
+tag de0ff96a2ca24b5c4adcf621fabfcdf71abf762c 9.0.8
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Sun Oct 18 20:18:52 2020 +1100
+Date:	Mon Oct 19 09:17:10 2020 +1100
 
-LiteMount 9.0.7
-- Updated ptBR translations.
+LiteMount 9.0.8
+- Update the Report Bug URL to go to Github
+- Wrap the encoded profile text at 80 columns in Report Bug
 
-commit 32295044699db3964905864d707eb74dff32cc28
+commit eb007c72e24858853c3d43895a9c2619963bb0e3
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sun Oct 18 20:18:08 2020 +1100
+Date:   Mon Oct 19 09:16:18 2020 +1100
 
-    Update ptBR translations.
+    Switch to using the Github issue tracker
 

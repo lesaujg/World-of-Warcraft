@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0401,
-	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
-	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 166566,
@@ -86,7 +83,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:172193:5965:::::::50:253::5:7:4823:6568:6578:6579:1502:4786:6513::::|h[Whispering Eldritch Bow]|h|r",
 		}, -- [16]
 	},
-	["LastKeybindingsSet"] = 1,
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -123,6 +122,7 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",
