@@ -2633,6 +2633,9 @@ TukuiData = {
 	},
 }
 TukuiSettings = {
+	["Misc"] = {
+		["WorldMapEnable"] = false,
+	},
 	["Bags"] = {
 		["Enable"] = false,
 	},
@@ -2651,16 +2654,16 @@ TukuiGold = {
 		["Leanara"] = 57095687,
 		["Ghiaccioli"] = 51023585,
 		["Mandelbrot"] = 7212410,
-		["Torinar"] = 51044373,
-		["Orig"] = 60657046,
-		["Clothgar"] = 7522683238,
+		["Torinar"] = 51050221,
+		["Orig"] = 60708815,
+		["Clothgar"] = 7582280714,
 		["Herbinator"] = 4110605,
-		["Torinara"] = 61015300,
-		["Galinar"] = 61691977,
 		["Belrath"] = 53695567,
-		["Palani"] = 52796935,
+		["Galinar"] = 61713354,
+		["Torinara"] = 61033493,
+		["Palani"] = 53604992,
 		["Bracnar"] = 1127909005,
-		["Uldaris"] = 103669787,
+		["Uldaris"] = 103677302,
 	},
 }
 TukuiSettingsPerCharacter = {
@@ -2683,6 +2686,9 @@ TukuiSettingsPerCharacter = {
 			},
 		},
 		["Orig"] = {
+			["General"] = {
+				["UseGlobal"] = true,
+			},
 		},
 		["Clothgar"] = {
 			["General"] = {
@@ -2696,17 +2702,17 @@ TukuiSettingsPerCharacter = {
 		},
 		["Herbinator"] = {
 		},
-		["Torinara"] = {
-			["General"] = {
-				["UseGlobal"] = true,
-			},
+		["Belrath"] = {
 		},
 		["Galinar"] = {
 			["General"] = {
 				["UseGlobal"] = true,
 			},
 		},
-		["Belrath"] = {
+		["Torinara"] = {
+			["General"] = {
+				["UseGlobal"] = true,
+			},
 		},
 		["Palani"] = {
 			["General"] = {
