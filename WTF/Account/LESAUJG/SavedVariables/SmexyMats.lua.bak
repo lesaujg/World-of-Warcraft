@@ -32,34 +32,20 @@ SmexyMatsDB = {
 				["Skinning"] = {
 				},
 				["Fishing"] = {
-					["Galinar"] = {
-					},
 				},
 				["Mining"] = {
-					["Orig"] = {
-					},
-					["Galinar"] = {
-					},
 				},
 				["Jewelcrafting"] = {
 				},
 				["Cooking"] = {
 					["Mandelbrot"] = {
 					},
-					["Galinar"] = {
-					},
 				},
 				["Herbalism"] = {
-					["Orig"] = {
-					},
 					["Mandelbrot"] = {
-					},
-					["Galinar"] = {
 					},
 				},
 				["Archaeology"] = {
-					["Galinar"] = {
-					},
 				},
 				["Alchemy"] = {
 				},
