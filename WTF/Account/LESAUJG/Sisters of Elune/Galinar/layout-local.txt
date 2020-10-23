@@ -1,11 +1,4 @@
 Version: 1
-Frame: SilverDragonPopupButton
-FrameLevel: 1
-Anchor: BOTTOM
-X: 178
-Y: 71
-W: 302
-H: 119
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: RIGHT
@@ -27,3 +20,10 @@ X: 0
 Y: 15
 W: 384
 H: 260
+Frame: SilverDragonPopupButton
+FrameLevel: 1
+Anchor: BOTTOM
+X: 178
+Y: 71
+W: 302
+H: 119

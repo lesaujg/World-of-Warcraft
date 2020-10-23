@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0401,
+	["LastPlayerFullName"] = "Torinar-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173457,
@@ -55,10 +58,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:174469::::::::50:73::3:8:4822:1808:6578:6579:6550:6513:1487:4786::::|h[Band of Insidious Ruminations]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 158161,
-			["Level"] = 76,
+			["ID"] = 174469,
+			["Level"] = 100,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff0070dd|Hitem:158161::::::::50:73::26:5:4803:6516:6513:1490:4785::::|h[Spearfisher's Band]|h|r",
+			["Link"] = "|cffa335ee|Hitem:174469::::::::50:71::3:8:4822:1808:6578:6579:6550:6513:1487:4786::::|h[Band of Insidious Ruminations]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 133595,
@@ -67,10 +70,10 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:133595::::::::50:73:::1:5817::::|h[Gronntooth War Horn]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 122361,
-			["Level"] = 58,
+			["ID"] = 133595,
+			["Level"] = 60,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::50:73:::1:5805::::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:133595::::::::50:71:::1:5817::::|h[Gronntooth War Horn]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122260,
@@ -89,9 +92,6 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:170364::::::::50:73::13:2:1699:5804::::|h[Uncanny Combatant's Shield of the Feverflare]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Torinar-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
