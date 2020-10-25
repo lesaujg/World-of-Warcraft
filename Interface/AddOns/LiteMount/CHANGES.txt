@@ -1,14 +1,20 @@
-tag de0ff96a2ca24b5c4adcf621fabfcdf71abf762c 9.0.8
+tag de37b5623b37b93840de2c7dc081702760db31b5 9.0.12
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Mon Oct 19 09:17:10 2020 +1100
+Date:	Sat Oct 24 19:51:25 2020 +1100
 
-LiteMount 9.0.8
-- Update the Report Bug URL to go to Github
-- Wrap the encoded profile text at 80 columns in Report Bug
+LiteMount 9.0.12
+- Translate 123 family names into 9 languages.
 
-commit eb007c72e24858853c3d43895a9c2619963bb0e3
+commit 03ccb4b5db30af5a7b7a0af8e73dff4c83decd35
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Mon Oct 19 09:16:18 2020 +1100
+Date:   Sat Oct 24 19:51:00 2020 +1100
 
-    Switch to using the Github issue tracker
+    Update the pkgmeta ignores for the new Tools subdir
+
+commit 718051a2d568b57f98df8ebd77522f9216115490
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Sat Oct 24 19:44:14 2020 +1100
+
+    Translate all the family names.
+    Move some mounts around based on what I discovered doing so.
 

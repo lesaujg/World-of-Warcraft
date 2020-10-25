@@ -334,6 +334,13 @@ CONDITIONS["outdoors"] =
         return IsOutdoors()
     end
 
+CONDITIONS["playermodel"] =
+    function (cond, unit, v)
+        if v then
+            return LM.Environment:GetPlayerModel() == tonumber(v)
+        end
+    end
+
 CONDITIONS["party"] =
     function (cond, unit)
         return UnitPlayerOrPetInParty(unit or "target")
@@ -536,8 +543,11 @@ CONDITIONS["waterwalking"] =
 CONDITIONS["xmog:args"] =
     function (cond, unit, slotID, appearanceID)
         slotID, appearanceID = tonumber(slotID), tonumber(appearanceID)
-        local ok, _, _, _, current = pcall(C_Transmog.GetSlotVisualInfo, slotID, LE_TRANSMOG_TYPE_APPEARANCE)
-        return ok and current == appearanceID
+        local tmSlot = TRANSMOG_SLOTS[(slotID or 0) * 100]
+        if tmSlot then
+            local ok, _, _, _, current = pcall(C_Transmog.GetSlotVisualInfo, tmSlot.location)
+            return ok and current == appearanceID
+        end
     end
 
 local function any(f, cond, unit, ...)
