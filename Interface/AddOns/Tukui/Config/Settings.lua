@@ -69,9 +69,9 @@ C["Bags"] = {
 	["Enable"] = true,
 	["IdentifyQuestItems"] = true,
 	["FlashNewItems"] = true,
-	["ButtonSize"] = 28,
+	["ButtonSize"] = 32,
 	["Spacing"] = 4,
-	["ItemsPerRow"] = 11,
+	["ItemsPerRow"] = 12,
 }
 
 C["Chat"] = {
@@ -87,10 +87,10 @@ C["Chat"] = {
 	},
 	["BubblesTextSize"] = 9,
 	["SkinBubbles"] = true,
-	["LeftWidth"] = 370,
-	["LeftHeight"] = 185,
-	["RightWidth"] = 370,
-	["RightHeight"] = 185,
+	["LeftWidth"] = 450,
+	["LeftHeight"] = 200,
+	["RightWidth"] = 450,
+	["RightHeight"] = 200,
 	["RightChatAlignRight"] = true,
 	["BackgroundAlpha"] = 70,
 	["WhisperSound"] = true,
@@ -144,6 +144,7 @@ C["NamePlates"] = {
 	["NameplateCastBar"] = true,
 	["Font"] = "Tukui Outline",
 	["OnlySelfDebuffs"] = true,
+	["QuestIcon"] = true,
 	["HighlightColor"] = {1, 1, 0},
 	["HighlightSize"] = 10,
 }
@@ -185,6 +186,7 @@ C["Raid"] = {
 	["HeightSize"] = 55,
 	["HighlightColor"] = {0, 1, 0},
 	["HighlightSize"] = 10,
+	["StatusTrack"] = false,
 	["GroupBy"] = {
 		["Options"] = {
 			["Group"] = "GROUP",
@@ -222,7 +224,7 @@ C["Textures"] = {
 
 C["UnitFrames"] = {
 	["Enable"] = true,
-	["TotemBar"] = true,
+	["TotemBar"] = T.MyClass == "SHAMAN" and true or false,
 	["HealComm"] = true,
 	["PlayerAuraBars"] = false,
 	["ScrollingCombatText"] = false,
@@ -230,7 +232,7 @@ C["UnitFrames"] = {
 	["ScrollingCombatTextFont"] = "Tukui Damage",
 	["StatusBarBackgroundMultiplier"] = 25,
 	["Portrait2D"] = true,
-	["OOCNameLevel"] = false,
+	["OOCNameLevel"] = true,
 	["OOCPetNameLevel"] = false,
 	["Portrait"] = false,
 	["CastBar"] = true,
@@ -240,7 +242,6 @@ C["UnitFrames"] = {
 	["CastBarLatency"] = true,
 	["Smooth"] = true,
 	["TargetEnemyHostileColor"] = true,
-	["ShowTargetManaText"] = false,
 	["CombatLog"] = true,
 	["PlayerAuras"] = true,
 	["TargetAuras"] = true,
@@ -254,11 +255,63 @@ C["UnitFrames"] = {
 	["OnlySelfBuffs"] = false,
 	["Font"] = "Tukui Outline",
 	["HealCommSelfColor"] = {0.29, 1, 0.30},
-	["HealCommOtherColor"] = {1, 1, 0.36},
+	["HealCommOtherColor"] = {1, .72, 0.30},
+	["HealCommAbsorbColor"] = {1, 1, 0.36},
 	["RaidIconSize"] = 24,
 	["Boss"] = true,
 	["Arena"] = true,
 	["HighlightSize"] = 10,
 	["HighlightColor"] = {0, 1, 0},
 	["RangeAlpha"] = 0.3,
+	["PlayerHealthTag"] = {
+		["Options"] = {
+			["Current HP"] = "|cff549654[Tukui:CurrentHP]|r",
+			["Percent"] = "|cff549654[perhp]%|r",
+			["HP and Percent"] = "|cff549654[Tukui:CurrentHP] - [perhp]%|r",
+		},
+
+		["Value"] = "|cff549654[Tukui:CurrentHP]|r",
+	},
+	["TargetHealthTag"] = {
+		["Options"] = {
+			["Current HP"] = "|cff549654[Tukui:CurrentHP]|r",
+			["Percent"] = "|cff549654[perhp]%|r",
+			["HP and Percent"] = "|cff549654[Tukui:CurrentHP] - [perhp]%|r",
+		},
+
+		["Value"] = "|cff549654[Tukui:CurrentHP]|r",
+	},
+	["FocusHealthTag"] = {
+		["Options"] = {
+			["None"] = "",
+			["Current HP"] = "|cff549654[Tukui:CurrentHP]|r",
+			["Percent"] = "|cff549654[perhp]%|r",
+			["HP and Percent"] = "|cff549654[Tukui:CurrentHP] - [perhp]%|r",
+			["Missing HP"] = "|cff549654-[missinghp]|r",
+		},
+
+		["Value"] = "|cff549654[perhp]%|r",
+	},
+	["FocusTargetHealthTag"] = {
+		["Options"] = {
+			["None"] = "",
+			["Current HP"] = "|cff549654[Tukui:CurrentHP]|r",
+			["Percent"] = "|cff549654[perhp]%|r",
+			["HP and Percent"] = "|cff549654[Tukui:CurrentHP] - [perhp]%|r",
+			["Missing HP"] = "|cff549654-[missinghp]|r",
+		},
+
+		["Value"] = "|cff549654[perhp]%|r",
+	},
+	["BossHealthTag"] = {
+		["Options"] = {
+			["None"] = "",
+			["Current HP"] = "|cff549654[Tukui:CurrentHP]|r",
+			["Percent"] = "|cff549654[perhp]%|r",
+			["HP and Percent"] = "|cff549654[Tukui:CurrentHP] - [perhp]%|r",
+			["Missing HP"] = "|cff549654-[missinghp]|r",
+		},
+
+		["Value"] = "|cff549654[perhp]%|r",
+	},
 }

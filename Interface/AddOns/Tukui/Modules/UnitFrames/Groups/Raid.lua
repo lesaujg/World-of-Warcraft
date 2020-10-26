@@ -88,8 +88,14 @@ function UnitFrames:Raid()
 		insideAlpha = 1,
 		outsideAlpha = C["Raid"].RangeAlpha,
 	}
+	
+	if C.Raid.StatusTrack then
+		local StatusTrack = CreateFrame("Frame", nil, Health)
+		StatusTrack:SetAllPoints()
+		StatusTrack.Texture = C.Medias.Normal
 
-	if C.Raid.RaidBuffs.Value ~= "Hide" then
+		self.StatusTrack = StatusTrack
+	elseif C.Raid.RaidBuffs.Value ~= "Hide" then
 		local Buffs = CreateFrame("Frame", self:GetName().."Buffs", Health)
 		local onlyShowPlayer = C.Raid.RaidBuffs.Value == "Self"
 		local filter = C.Raid.RaidBuffs.Value == "All" and "HELPFUL" or "HELPFUL|RAID"
@@ -150,39 +156,36 @@ function UnitFrames:Raid()
 	if C.UnitFrames.HealComm then
 		local myBar = CreateFrame("StatusBar", nil, Health)
 		local otherBar = CreateFrame("StatusBar", nil, Health)
+		local absorbBar = CreateFrame("StatusBar", nil, Health)
 
 		myBar:SetFrameLevel(Health:GetFrameLevel())
 		myBar:SetStatusBarTexture(HealthTexture)
 		myBar:SetPoint("TOP")
 		myBar:SetPoint("BOTTOM")
 		myBar:SetPoint("LEFT", Health:GetStatusBarTexture(), "RIGHT")
-		myBar:SetWidth(C.Raid.WidthSize)
+		myBar:SetWidth(129)
 		myBar:SetStatusBarColor(unpack(C.UnitFrames.HealCommSelfColor))
 
 		otherBar:SetFrameLevel(Health:GetFrameLevel())
 		otherBar:SetPoint("TOP")
 		otherBar:SetPoint("BOTTOM")
-		otherBar:SetPoint("LEFT", myBar:GetStatusBarTexture(), "RIGHT")
-		otherBar:SetWidth(C.Raid.WidthSize)
+		otherBar:SetPoint("LEFT", Health:GetStatusBarTexture(), "RIGHT")
+		otherBar:SetWidth(129)
 		otherBar:SetStatusBarTexture(HealthTexture)
 		otherBar:SetStatusBarColor(unpack(C.UnitFrames.HealCommOtherColor))
-
-		if C.Raid.VerticalHealth then
-			myBar:SetOrientation("VERTICAL")
-			otherBar:SetOrientation("VERTICAL")
-
-			myBar:SetPoint("BOTTOM", Health:GetStatusBarTexture(), "TOP")
-			myBar:SetPoint("LEFT")
-			myBar:SetPoint("RIGHT")
-
-			otherBar:SetPoint("BOTTOM", myBar:GetStatusBarTexture(), "TOP")
-			otherBar:SetPoint("LEFT")
-			otherBar:SetPoint("RIGHT")
-		end
+		
+		absorbBar:SetFrameLevel(Health:GetFrameLevel())
+		absorbBar:SetPoint("TOP")
+		absorbBar:SetPoint("BOTTOM")
+		absorbBar:SetPoint("LEFT", Health:GetStatusBarTexture(), "RIGHT")
+		absorbBar:SetWidth(129)
+		absorbBar:SetStatusBarTexture(HealthTexture)
+		absorbBar:SetStatusBarColor(unpack(C.UnitFrames.HealCommAbsorbColor))
 
 		local HealthPrediction = {
 			myBar = myBar,
 			otherBar = otherBar,
+			absorbBar = absorbBar,
 			maxOverflow = 1,
 		}
 

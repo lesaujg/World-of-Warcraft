@@ -37,7 +37,10 @@ function Tukz:MoveXPBars()
 	if Reputation and Reputation.NumBars then
 		for i = 1, Reputation.NumBars do
 			local Bar = Reputation["RepBar"..i]
+			local XPBar = Experience["XPBar"..i]
 
+			Bar:ClearAllPoints()
+			Bar:SetAllPoints(XPBar)
 			Bar:SetOrientation("Vertical")
 			Bar:SetReverseFill(false)
 		end
@@ -131,7 +134,7 @@ function Tukz:MoveTooltip()
 	local DataTextRight = T.DataTexts.Panels.Right
 
 	Anchor:ClearAllPoints()
-	Anchor:SetPoint("BOTTOMRIGHT", DataTextRight, 0, 2)
+	Anchor:SetPoint("BOTTOMRIGHT", UIParent, -34, 20)
 end
 
 function Tukz:GetTooltipAnchor()

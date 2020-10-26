@@ -50,8 +50,6 @@ function UnitFrames:Player()
 	Health.colorClass = true
 	Health.colorReaction = true
 
-	Health.PostUpdate = UnitFrames.PostUpdateHealth
-
 	local Power = CreateFrame("StatusBar", nil, self)
 	Power:SetFrameStrata(self:GetFrameStrata())
 	Power:SetFrameLevel(4)
@@ -82,6 +80,21 @@ function UnitFrames:Player()
 	Power.Prediction:SetStatusBarColor(1, 1, 1, .3)
 
 	Power.PostUpdate = UnitFrames.PostUpdatePower
+	
+	local AdditionalPower = CreateFrame("StatusBar", self:GetName().."AdditionalPower", Health)
+	AdditionalPower:SetHeight(6)
+	AdditionalPower:SetPoint("BOTTOMLEFT", Health, "BOTTOMLEFT")
+	AdditionalPower:SetPoint("BOTTOMRIGHT", Health, "BOTTOMRIGHT")
+	AdditionalPower:SetStatusBarTexture(HealthTexture)
+	AdditionalPower:SetFrameLevel(Health:GetFrameLevel() + 1)
+	AdditionalPower:CreateBackdrop()
+	AdditionalPower:SetStatusBarColor(unpack(T.Colors.power.MANA))
+	AdditionalPower.Backdrop:SetOutside()
+
+	AdditionalPower.Background = AdditionalPower:CreateTexture(nil, "ARTWORK")
+	AdditionalPower.Background:SetAllPoints(AdditionalPower)
+	AdditionalPower.Background:SetTexture(HealthTexture)
+	AdditionalPower.Background:SetColorTexture(T.Colors.power.MANA[1], T.Colors.power.MANA[2], T.Colors.power.MANA[3], C.UnitFrames.StatusBarBackgroundMultiplier / 100)
 
 	local Name = Panel:CreateFontString(nil, "OVERLAY")
 	Name:SetPoint("LEFT", Panel, "LEFT", 4, 0)
@@ -365,26 +378,36 @@ function UnitFrames:Player()
 	if C.UnitFrames.HealComm then
 		local myBar = CreateFrame("StatusBar", nil, Health)
 		local otherBar = CreateFrame("StatusBar", nil, Health)
+		local absorbBar = CreateFrame("StatusBar", nil, Health)
 
 		myBar:SetFrameLevel(Health:GetFrameLevel())
 		myBar:SetStatusBarTexture(HealthTexture)
 		myBar:SetPoint("TOP")
 		myBar:SetPoint("BOTTOM")
 		myBar:SetPoint("LEFT", Health:GetStatusBarTexture(), "RIGHT")
-		myBar:SetWidth(250)
+		myBar:SetWidth(129)
 		myBar:SetStatusBarColor(unpack(C.UnitFrames.HealCommSelfColor))
 
 		otherBar:SetFrameLevel(Health:GetFrameLevel())
 		otherBar:SetPoint("TOP")
 		otherBar:SetPoint("BOTTOM")
-		otherBar:SetPoint("LEFT", myBar:GetStatusBarTexture(), "RIGHT")
-		otherBar:SetWidth(250)
+		otherBar:SetPoint("LEFT", Health:GetStatusBarTexture(), "RIGHT")
+		otherBar:SetWidth(129)
 		otherBar:SetStatusBarTexture(HealthTexture)
 		otherBar:SetStatusBarColor(unpack(C.UnitFrames.HealCommOtherColor))
+		
+		absorbBar:SetFrameLevel(Health:GetFrameLevel())
+		absorbBar:SetPoint("TOP")
+		absorbBar:SetPoint("BOTTOM")
+		absorbBar:SetPoint("LEFT", Health:GetStatusBarTexture(), "RIGHT")
+		absorbBar:SetWidth(129)
+		absorbBar:SetStatusBarTexture(HealthTexture)
+		absorbBar:SetStatusBarColor(unpack(C.UnitFrames.HealCommAbsorbColor))
 
 		local HealthPrediction = {
 			myBar = myBar,
 			otherBar = otherBar,
+			absorbBar = absorbBar,
 			maxOverflow = 1,
 		}
 
@@ -442,11 +465,13 @@ function UnitFrames:Player()
 	self:HookScript("OnLeave", UnitFrames.MouseOnPlayer)
 
 	-- Register with oUF
-	self:Tag(Name, "[Tukui:GetNameColor][Tukui:NameLong] [Tukui:Classification][Tukui:DiffColor][level]")
+	self:Tag(Name, "[Tukui:Classification][Tukui:DiffColor][level] [Tukui:GetNameColor][Tukui:NameLong]")
+	self:Tag(Health.Value, C.UnitFrames.PlayerHealthTag.Value)
 	self.Panel = Panel
 	self.Health = Health
 	self.Health.bg = Health.Background
 	self.Power = Power
+	self.AdditionalPower = AdditionalPower
 	self.Name = Name
 	self.Power.bg = Power.Background
 	self.CombatIndicator = Combat

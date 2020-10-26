@@ -18,7 +18,7 @@ function ActionBars:CreatePetBar()
 	local NumRow = ceil(10 / ButtonsPerRow)
 	
 	local Bar = CreateFrame("Frame", "TukuiPetActionBar", T.PetHider, "SecureHandlerStateTemplate")
-	Bar:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 28, 213)
+	Bar:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 28, 240)
 	Bar:SetFrameStrata("LOW")
 	Bar:SetFrameLevel(10)
 	Bar:SetWidth((PetSize * ButtonsPerRow) + (Spacing * (ButtonsPerRow + 1)))
@@ -56,16 +56,13 @@ function ActionBars:CreatePetBar()
 		else
 			Button:SetPoint("LEFT", PreviousButton, "RIGHT", Spacing, 0)
 		end
-		
-		if Button:IsEventRegistered("UPDATE_BINDINGS") then
-			Button:UnregisterEvent("UPDATE_BINDINGS")
-		end
 
 		Bar:SetAttribute("addchild", Button)
 		Bar["Button"..i] = Button
 	end
 
 	hooksecurefunc("PetActionBar_Update", ActionBars.UpdatePetBar)
+	hooksecurefunc("PetActionBar_UpdateCooldowns", ActionBars.UpdatePetBarCooldownText)
 
 	ActionBars:SkinPetButtons()
 

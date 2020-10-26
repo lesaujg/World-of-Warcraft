@@ -9,18 +9,15 @@ UnitFrames.ShortNameLength = 10
 
 oUF.Tags.Events["Tukui:GetRaidNameColor"] = "RAID_ROSTER_UPDATE GROUP_ROSTER_UPDATE"
 oUF.Tags.Methods["Tukui:GetRaidNameColor"] = function(unit)
-	local IsPlayer = UnitIsPlayer(unit)
-	local Reaction = UnitReaction(unit, "player")
-	local R, G, B = 1, 1, 1
+	local Role = UnitGroupRolesAssigned(unit)
+	local R, G, B
 
-	if IsPlayer then
-		local Class = select(2, UnitClass(unit))
-
-		if Class then
-			R, G, B = unpack(T.Colors.class[Class])
-		end
-	elseif Reaction then
-		R, G, B = unpack(T.Colors.reaction[Reaction])
+	if Role == "TANK" then
+		R, G, B = 0.4, 0.7, 1 -- Blue for tanks
+	elseif Role == "HEALER" then
+		R, G, B = 0, 1, 0 -- Green for healers
+	else
+		R, G, B = 1, 1, 1 -- White for DPS or unknown role
 	end
 
 	return string.format("|cff%02x%02x%02x", R * 255, G * 255, B * 255)
@@ -82,7 +79,7 @@ end
 
 oUF.Tags.Events["Tukui:NameShort"] = "UNIT_NAME_UPDATE PARTY_LEADER_CHANGED GROUP_ROSTER_UPDATE"
 oUF.Tags.Methods["Tukui:NameShort"] = function(unit)
-	local Name = UnitName(unit) or ""
+	local Name = UnitName(unit) or "???"
 	local IsLeader = UnitIsGroupLeader(unit)
 	local IsAssistant = UnitIsGroupAssistant(unit) or UnitIsRaidOfficer(unit)
 	local Assist, Lead = IsAssistant and "[A] " or "", IsLeader and "[L] " or ""
@@ -92,13 +89,13 @@ end
 
 oUF.Tags.Events["Tukui:NameMedium"] = "UNIT_NAME_UPDATE"
 oUF.Tags.Methods["Tukui:NameMedium"] = function(unit)
-	local Name = UnitName(unit) or ""
+	local Name = UnitName(unit) or "???"
 	return UnitFrames.UTF8Sub(Name, 15, true)
 end
 
 oUF.Tags.Events["Tukui:NameLong"] = "UNIT_NAME_UPDATE"
 oUF.Tags.Methods["Tukui:NameLong"] = function(unit)
-	local Name = UnitName(unit) or ""
+	local Name = UnitName(unit) or "???"
 	return UnitFrames.UTF8Sub(Name, 20, true)
 end
 
@@ -107,6 +104,13 @@ oUF.Tags.Methods["Tukui:Dead"] = function(unit)
 	if UnitIsDeadOrGhost(unit) then
 		return DEAD
 	end
+end
+
+oUF.Tags.Events["Tukui:CurrentHP"] = "UNIT_HEALTH"
+oUF.Tags.Methods["Tukui:CurrentHP"] = function(unit)
+	local HP = UnitFrames.ShortValue(UnitHealth(unit))
+	
+	return HP
 end
 
 oUF.Tags.Events["Tukui:AFK"] = "PLAYER_FLAGS_CHANGED"
@@ -131,6 +135,20 @@ oUF.Tags.Methods["Tukui:Classification"] = function(unit)
 	elseif(C == "minus") then
 		return "|cff888888- |r"
 	end
+end
+
+oUF.Tags.Events["Tukui:Role"] = "PLAYER_ROLES_ASSIGNED GROUP_ROSTER_UPDATE"
+oUF.Tags.Methods["Tukui:Role"] = function(unit)
+	local Role = UnitGroupRolesAssigned(unit)
+	local String = ""
+
+	if Role == "TANK" then
+		String = "|cff0099CC(" .. TANK .. ")|r"
+	elseif Role == "HEALER" then
+		String = "|cff00FF00(" .. HEALER .. ")|r"
+	end
+
+	return String
 end
 
 UnitFrames.Tags = oUF.Tags

@@ -200,24 +200,6 @@ function Chat:SaveChatFramePositionAndDimensions()
 	TukuiData[GetRealmName()][UnitName("Player")].Chat["Frame" .. ID] = {Anchor1, Anchor2, X, Y, Width, Height}
 end
 
-function Chat:RemoveRightChat()
-	if not UIParent:IsShown() then
-		return
-	end
-
-	T.Chat.Panels.LeftChatTabs:Hide()
-
-	if C.Misc.ExperienceEnable then
-		local XP = T.Miscellaneous.Experience.XPBar2
-		local Rep = T.Miscellaneous.Reputation.RepBar2
-
-		XP:SetParent(T.Hider)
-		Rep:SetParent(T.Hider)
-	end
-
-	T.DataTexts.Panels.Right:Hide()
-end
-
 function Chat:SetChatFramePosition()
 	local Frame = self
 	local ID = Frame:GetID()
@@ -418,11 +400,11 @@ function Chat:HideChatFrame(button, id)
 		local Rep = T.Miscellaneous.Reputation["RepBar"..id]
 
 		if XP then
-			XP:SetParent(T.Hider)
+			XP:Hide()
 		end
 		
 		if Rep then
-			Rep:SetParent(T.Hider)
+			Rep:Hide()
 		end
 	end
 	
@@ -469,12 +451,11 @@ function Chat:ShowChatFrame(button, id)
 		local Rep = T.Miscellaneous.Reputation["RepBar"..id]
 		
 		if XP then
-			XP:SetParent(UIParent)
+			XP:Show()
 		end
 		
-		if Rep then
-			Rep:SetParent(UIParent)
-			Rep:SetFrameLevel(XP:GetFrameLevel() + 2)
+		if Rep and GetWatchedFactionInfo() then
+			Rep:Show()
 		end
 	end
 	
@@ -663,6 +644,8 @@ function Chat:DisplayChat()
 end
 
 function Chat:AddToast()
+	-- TESTING CMD : /run BNToastFrame:AddToast(BN_TOAST_TYPE_ONLINE, 1)
+	
 	if not self.IsSkinned then
 		local Glow = BNToastFrameGlowFrame
 		
@@ -675,11 +658,9 @@ function Chat:AddToast()
 		
 		self.IsSkinned = true
 	end
-	
-	local Anchor = C.General.Themes.Value == "Tukui" and T.Chat.Panels.LeftChat or T.DataTexts.Panels.Left
 
 	self:ClearAllPoints()
-	self:SetPoint("BOTTOMLEFT", Anchor, "TOPLEFT", 0, 16)
+	self:SetPoint("BOTTOMLEFT", T.Chat.Panels.LeftChat, "TOPLEFT", 0, 26)
 end
 
 function Chat:AddHooks()

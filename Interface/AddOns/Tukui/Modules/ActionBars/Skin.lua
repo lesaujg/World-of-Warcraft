@@ -85,6 +85,14 @@ function ActionBars:SkinButton(button)
 			KeybindTex:SetTexture("")
 		end
 		
+		if C.ActionBars.HotKey then
+			if Button.UpdateHotkeys then
+				hooksecurefunc(Button, "UpdateHotkeys", ActionBars.BetterHotKeyText)
+			end
+
+			ActionBars.BetterHotKeyText(Button)
+		end
+		
 		Button:StyleButton()
 		Button.isSkinned = true
 	end
@@ -127,8 +135,6 @@ function ActionBars:SkinPetAndShiftButton(Normal, Button, Icon, Name, Pet)
 	local Cooldown = _G[Button:GetName().."Cooldown"]
 	local Flash = _G[Name.."Flash"]
 	local Font = T.GetFont(C["ActionBars"].Font)
-	
-	Cooldown:SetAlpha(0)
 
 	Button:SetWidth(PetSize)
 	Button:SetHeight(PetSize)
@@ -174,6 +180,10 @@ function ActionBars:SkinPetAndShiftButton(Normal, Button, Icon, Name, Pet)
 	
 	if Button.QuickKeybindHighlightTexture then
 		Button.QuickKeybindHighlightTexture:SetTexture("")
+	end
+	
+	if C.ActionBars.HotKey then
+		ActionBars.BetterHotKeyText(Button)
 	end
 
 	Button:StyleButton()
