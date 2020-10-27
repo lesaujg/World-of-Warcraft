@@ -1,20 +1,14 @@
-tag de37b5623b37b93840de2c7dc081702760db31b5 9.0.12
+tag 17a09ee33aff50ef0a06f805a7e52ba9ad3c49a3 9.0.13
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Sat Oct 24 19:51:25 2020 +1100
+Date:	Sun Oct 25 08:21:26 2020 +1100
 
-LiteMount 9.0.12
-- Translate 123 family names into 9 languages.
+LiteMount 9.0.13
+- Update koKR translations thanks to zzipsa22
+- Add "Dread Raven" family split out from "Bird"
 
-commit 03ccb4b5db30af5a7b7a0af8e73dff4c83decd35
+commit ed91f08afa57db3787d83a822587f3134b84e6f2
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sat Oct 24 19:51:00 2020 +1100
+Date:   Sat Oct 24 22:33:19 2020 +1100
 
-    Update the pkgmeta ignores for the new Tools subdir
-
-commit 718051a2d568b57f98df8ebd77522f9216115490
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sat Oct 24 19:44:14 2020 +1100
-
-    Translate all the family names.
-    Move some mounts around based on what I discovered doing so.
+    Add "Dread Raven" family. Pull in updated translations.
 

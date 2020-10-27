@@ -34,12 +34,8 @@ SmexyMatsDB = {
 				["Fishing"] = {
 					["Bracnar"] = {
 					},
-					["Uldaris"] = {
-					},
 				},
 				["Mining"] = {
-					["Uldaris"] = {
-					},
 				},
 				["Jewelcrafting"] = {
 				},
@@ -48,13 +44,9 @@ SmexyMatsDB = {
 					},
 					["Mandelbrot"] = {
 					},
-					["Uldaris"] = {
-					},
 				},
 				["Herbalism"] = {
 					["Mandelbrot"] = {
-					},
-					["Uldaris"] = {
 					},
 				},
 				["Archaeology"] = {
