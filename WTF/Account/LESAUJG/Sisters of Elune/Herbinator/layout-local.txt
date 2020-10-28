@@ -1,15 +1,8 @@
 Version: 1
-Frame: WorldMapFrame
-FrameLevel: 1
-Anchor: TOP
-X: 0
-Y: 0
-W: 713
-H: 541
 Frame: SilverDragonPopupButton
 FrameLevel: 1
-Anchor: BOTTOMRIGHT
-X: -260
+Anchor: BOTTOM
+X: 188
 Y: 202
 W: 302
 H: 119
