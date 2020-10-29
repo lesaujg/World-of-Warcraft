@@ -84,7 +84,7 @@ BagBrother: disabled
 BittensSpellFlash_Hunter: disabled
 Basic_Resources: disabled
 Claw: disabled
-HandyNotes_DraenorTreasures: enabled
+HandyNotes_DraenorTreasures: disabled
 LiteMount: enabled
 MasterPlan: enabled
 OPie: enabled

@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0401,
+	["LastPlayerFullName"] = "Orig-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 122248,
@@ -9,8 +12,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 107,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::50:268::11:4:4932:4933:6316:1521::::|h[Heart of Azeroth]|h|r",
+			["Level"] = 108,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::50:268::11:4:4932:4933:6316:1522::::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 170521,
@@ -83,9 +86,7 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158097::::::::50:268::28:5:4803:6516:6515:1480:4785::::|h[Tideguard Pike]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Orig-Sisters of Elune",
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128938] = {
 			["Relics"] = {
@@ -105,7 +106,6 @@ PawnOptions = {
 			["Name"] = "Fu Zan, the Wanderer's Companion",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "MONK",
