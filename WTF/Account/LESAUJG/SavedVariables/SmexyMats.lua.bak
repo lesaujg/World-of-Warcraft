@@ -28,14 +28,10 @@ SmexyMatsDB = {
 			},
 			["Alliance"] = {
 				["Tailoring"] = {
-					["Ghiaccioli"] = {
-					},
 				},
 				["Skinning"] = {
 				},
 				["Fishing"] = {
-					["Ghiaccioli"] = {
-					},
 				},
 				["Mining"] = {
 				},
@@ -43,8 +39,6 @@ SmexyMatsDB = {
 				},
 				["Cooking"] = {
 					["Mandelbrot"] = {
-					},
-					["Ghiaccioli"] = {
 					},
 				},
 				["Herbalism"] = {
@@ -60,8 +54,6 @@ SmexyMatsDB = {
 				["Leatherworking"] = {
 				},
 				["Inscription"] = {
-					["Ghiaccioli"] = {
-					},
 				},
 				["Enchanting"] = {
 					["Mandelbrot"] = {
