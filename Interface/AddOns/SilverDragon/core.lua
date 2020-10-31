@@ -9,7 +9,7 @@ addon.events = LibStub("CallbackHandler-1.0"):New(addon)
 local Debug
 do
 	local TextDump = LibStub("LibTextDump-1.0")
-	local debuggable = GetAddOnMetadata(myname, "Version") == 'v90001.2'
+	local debuggable = GetAddOnMetadata(myname, "Version") == 'v90001.3'
 	local _window
 	local function GetDebugWindow()
 		if not _window then
@@ -439,6 +439,11 @@ do
 		if globaldb.ignore[id] then
 			return true
 		end
+		if globaldb.always[id] then
+			-- If you've manually added a mob we should take that a signal that you always want it announced
+			-- (Unless you've also, weirdly, manually told it to be ignored as well.)
+			return false
+		end
 		if zone and zone_ignores[zone] and zone_ignores[zone][id] then
 			return true
 		end
@@ -495,6 +500,28 @@ do
 	ns.IdFromGuid = npcIdFromGuid
 	function addon:UnitID(unit)
 		return npcIdFromGuid(UnitGUID(unit))
+	end
+	function addon:FindUnitWithID(id)
+		if self:UnitID('target') == id then
+			return 'target'
+		end
+		if self:UnitID('mouseover') == id then
+			return 'mouseover'
+		end
+		for _, nameplate in ipairs(C_NamePlate.GetNamePlates()) do
+			if self:UnitID(nameplate.namePlateUnitToken) == id then
+				return nameplate.namePlateUnitToken
+			end
+		end
+		if IsInGroup() then
+			local prefix = IsInRaid() and 'raid' or 'party'
+			for i=1, GetNumGroupMembers() do
+				local unit = prefix .. i .. 'target'
+				if self:UnitID(unit) == id then
+					return unit
+				end
+			end
+		end
 	end
 end
 

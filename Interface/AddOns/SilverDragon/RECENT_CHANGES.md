@@ -1,13 +1,20 @@
-## Changed in v90001.2
+## Changed in v90001.3
 
-* Special map icons for mobs with toys and pets as well
-* Broker dropdown added to the mount journal, will show all known mobs that drop mounts (and whether you've looted them)
-* Show mob variants in the dropdown, for things like the Mechagon Data Anomalies, Madexx, and the Zandalari Warbringers
-* Chat-scanner: looks for mobs in the current zone with that name before checking globally in case of a name-collision
-* Chat-scanner: only announce coordinates if it's from a chat event which implies the mob is anywhere near you (yells are zone-wide...)
-* Waypoint integration with DeadlyBossMods
-* If data on a toy/mount/pet is still loading, say that in the tooltip rather than not showing anything about it at all
-* Mists: Nalak and Oondasta questids
-* Fixed broken N'zoth and Azerite loot popup target themes
-* Included updated version of LibQTip-1.0 which won't error if you have a broken pre-9.0 addon installed with an older version of LibQTip-1.0
+* Improve shift-clicking the popup to add a chat link:
+    * Don't require you to have an open chatbox before pasting it there; open the default chatbox if you have nothing else open
+    * Include the health for the mob if we can work it out (if it's a target or its nameplate is visible)
+    * For sources that don't include the location (chat yells), link to the player's current location
+* Option to hide the target popup when the mob dies
+* Option to hide the waypoint arrow when you manually close the popup
+* Mobs that you've added to the "custom" section will now bypass most "should I announce this?" checks (e.g. you can ignore the entire Warlords source, and manually-add Rukhmar)
+* Unchecking "Got the loot" in the outputs config will now only affect mobs for which we know any drops
+* Some _very timely_ improvements on Argus
+* Achievement tooltip in the broker tooltip will now show your criteria-completion
+* Rukhmar's questid added
+* The highlight on the "store" popup theme was covering up the loot icon
+* The X on the target popup wasn't appearing when the mob died
+* Fixed `/silverdragon add` with no parameter causing an error
+* Some more Shadowlands questids
+* Some missing pets / toys
+* Sha of Anger has only had one spawn point since 7.2 (thanks frumpymoons)
 

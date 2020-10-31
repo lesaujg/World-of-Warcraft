@@ -153,6 +153,8 @@ local achievements = {
 	},
 	[11786] = {}, -- Terrors of the Shore
 	[11841] = {}, -- Naxt Victim
+	[12026] = {}, -- Invasion Obliteration
+	[12028] = {}, -- Envision Invasion Eradication
 	[12078] = { -- Commander of Argus
 		[127323] = 37629, -- Ataxon
 	},
@@ -507,6 +509,13 @@ function ns:UpdateTooltipWithCompletion(tooltip, id)
 			completed and 0 or 1, completed and 1 or 0, 0
 		)
 	end
+end
+
+function ns:HasLoot(id)
+	if not (id and ns.mobdb[id]) then
+		return false
+	end
+	return ns.mobdb[id].mount or ns.mobdb[id].toy or ns.mobdb[id].pet
 end
 
 function ns:LootStatus(id)

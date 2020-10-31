@@ -1,5 +1,7 @@
 local myname, ns = ...
 
+local HBD = LibStub("HereBeDragons-2.0")
+
 local core = LibStub("AceAddon-3.0"):GetAddon("SilverDragon")
 local module = core:GetModule("ClickTarget")
 local Debug = core.Debug
@@ -150,7 +152,7 @@ function module:CreatePopup()
 	popup.background = background
 	background:SetBlendMode("BLEND")
 
-	local modelbg = popup:CreateTexture(nil, "BORDER")
+	local modelbg = popup:CreateTexture(nil, "BORDER", nil, 2)
 	popup.modelbg = modelbg
 	modelbg:SetTexture([[Interface\FrameGeneral\UI-Background-Marble]])
 	modelbg:SetSize(52, 52)
@@ -324,8 +326,9 @@ function PopupClass:DoIgnore()
 	end
 end
 
-function PopupClass:HideWhenPossible()
+function PopupClass:HideWhenPossible(automatic)
 	-- this is for animations that want to hide the popup itself, since it can't be touched in-combat
+	self.automaticClose = automatic
 	if InCombatLockdown() then
 		self.waitingToHide = true
 	else
@@ -403,7 +406,15 @@ PopupClass.scripts = {
 			module:Point()
 		elseif IsShiftKeyDown() then
 			-- worldmap:uiMapId:x:y
-			ChatEdit_InsertLink(("|cffffff00|Hworldmap:%d:%d:%d|h[%s]|h|r"):format(
+			local data = self.data
+			local unit = core:FindUnitWithID(data.id)
+			local x, y = data.x, data.y
+			if not (x > 0 and y > 0) then
+				x, y = HBD:GetPlayerZonePosition()
+			end
+			local text = ("%s %s|cffffff00|Hworldmap:%d:%d:%d|h[%s]|h|r"):format(
+				core:NameForMob(data.id, unit),
+				(unit and ('(' .. UnitHealth(unit) / UnitHealthMax(unit) * 100 .. '%) ') or ''),
 				self.data.zone,
 				self.data.x * 10000,
 				self.data.y * 10000,
@@ -411,7 +422,10 @@ PopupClass.scripts = {
 				-- core:GetMobLabel(self.data.id) or UNKNOWN
 				-- WoW seems to filter out anything which isn't the standard MAP_PIN_HYPERLINK
 				MAP_PIN_HYPERLINK
-			))
+			)
+			if not ChatEdit_InsertLink(text) then
+				ChatFrame_OpenChat(text)
+			end
 			PlaySound(SOUNDKIT.UI_MAP_WAYPOINT_CHAT_SHARE)
 		end
 	end,
@@ -438,6 +452,8 @@ PopupClass.scripts = {
 		self:RegisterEvent("PLAYER_REGEN_ENABLED")
 
 		self.elapsed = 0
+
+		core.events:Fire("PopupShow", self.data.id, self.data.zone, self.data.x, self.data.y, self)
 	end,
 	OnHide = function(self)
 		self.glow.animIn:Stop()
@@ -454,7 +470,10 @@ PopupClass.scripts = {
 		self:UnregisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 		self:UnregisterEvent("PLAYER_REGEN_ENABLED")
 
+		core.events:Fire("PopupHide", self.data.id, self.data.zone, self.data.x, self.data.y, self.automaticClose)
+
 		self.waitingToHide = false
+		self.automaticClose = nil
 	end,
 	-- Close button
 	CloseOnEnter = function(self)
@@ -487,17 +506,23 @@ PopupClass.scripts = {
 		self:GetParent():HideWhenPossible()
 	end,
 }
--- timeStamp, event, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags
-function PopupClass:COMBAT_LOG_EVENT_UNFILTERED(_, _, combatEvent, _, _, _, _, _, destGUID)
-	if combatEvent ~= "UNIT_DIED" then
+function PopupClass:COMBAT_LOG_EVENT_UNFILTERED()
+	-- timeStamp, event, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags
+	local _, subevent, _, _, _, _, _, destGUID = CombatLogGetCurrentEventInfo()
+	if subevent ~= "UNIT_DIED" then
 		return
 	end
+
 	if destGUID and ns.IdFromGuid(destGUID) == self.data.id then
 		self.data.dead = true
 		self.dead.animIn:Play()
 
 		-- might have changed things like achievement status
 		module:RefreshMobData(self)
+
+		if module.db.profile.closeDead then
+			self:HideWhenPossible()
+		end
 	end
 end
 function PopupClass:PLAYER_REGEN_ENABLED()

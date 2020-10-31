@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0401,
-	["LastPlayerFullName"] = "Ghiaccioli-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173433,
@@ -86,6 +83,9 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:170646::::::::50:63:::::::|h[Mountainsage Staff]|h|r",
 		}, -- [16]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Ghiaccioli-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
