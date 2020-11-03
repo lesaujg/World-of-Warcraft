@@ -165,7 +165,7 @@ Grid2AoeHeals: disabled
 Grid2RaidDebuffs: disabled
 Grid2RaidDebuffsOptions: disabled
 Grid2LDB: disabled
-SavedInstances: disabled
+SavedInstances: enabled
 WeDontWipe: disabled
 WeDontWipe-WindwalkerMonk: disabled
 CrossRealmAssist: enabled

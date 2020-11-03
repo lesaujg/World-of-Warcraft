@@ -15,7 +15,7 @@ BalanceSpellSuggest: disabled
 CrossRealmAssist: enabled
 Decursive: disabled
 Factionizer: disabled
-HandyNotes_DraenorTreasures: enabled
+HandyNotes_DraenorTreasures: disabled
 Ketho_InstanceTimer: disabled
 MacroToolkit: disabled
 MasterPlan: enabled
@@ -31,7 +31,7 @@ RaidAchievement_WoDHeroics: disabled
 RaidAchievement_WoDRaids: disabled
 RaidAchievement_WotlkHeroics: disabled
 RaidAchievement_OldModules: disabled
-SavedInstances: disabled
+SavedInstances: enabled
 Skada: disabled
 TeleportCloak: enabled
 TradeSkillMaster_Vendoring: disabled

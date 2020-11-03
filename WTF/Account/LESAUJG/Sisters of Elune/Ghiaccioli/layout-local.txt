@@ -3,7 +3,7 @@ Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: BOTTOMRIGHT
 X: 0
-Y: -3
+Y: 0
 W: 250
 H: 711
 Frame: BaudManifestDisplay2

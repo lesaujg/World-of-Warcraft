@@ -23,7 +23,7 @@ RaidAchievement_Naxxramas: disabled
 RaidAchievement_Ulduar: disabled
 RaidAchievement_WotlkHeroics: disabled
 RaidAchievement_OldModules: disabled
-SavedInstances: disabled
+SavedInstances: enabled
 Skada: disabled
 TeleportCloak: enabled
 WeakAuras: disabled
@@ -91,6 +91,6 @@ DBM-Nyalotha: disabled
 DBM-EternalPalace: disabled
 SilverDragon: enabled
 HandyNotes_VisionsOfNZoth: enabled
-HandyNotes_DraenorTreasures: enabled
+HandyNotes_DraenorTreasures: disabled
 Quartz: enabled
 TomTom: disabled

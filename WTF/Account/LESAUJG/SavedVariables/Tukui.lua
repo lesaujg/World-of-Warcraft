@@ -2652,17 +2652,17 @@ TukuiSettings = {
 TukuiGold = {
 	["Sisters of Elune"] = {
 		["Leanara"] = 57805926,
-		["Ghiaccioli"] = 51035850,
+		["Ghiaccioli"] = 51035820,
 		["Mandelbrot"] = 7212410,
-		["Torinar"] = 51124229,
-		["Orig"] = 60926478,
-		["Clothgar"] = 8145805583,
-		["Herbinator"] = 4108985,
-		["Torinara"] = 61113385,
-		["Galinar"] = 61889350,
+		["Torinar"] = 51160687,
+		["Orig"] = 60955107,
+		["Clothgar"] = 8739033459,
+		["Herbinator"] = 4107305,
 		["Belrath"] = 53809603,
+		["Galinar"] = 61889350,
+		["Torinara"] = 61113385,
 		["Palani"] = 53603617,
-		["Bracnar"] = 1128089197,
+		["Bracnar"] = 584241052,
 		["Uldaris"] = 103678563,
 	},
 }
@@ -2708,7 +2708,7 @@ TukuiSettingsPerCharacter = {
 				["UseGlobal"] = true,
 			},
 		},
-		["Torinara"] = {
+		["Belrath"] = {
 			["General"] = {
 				["UseGlobal"] = true,
 			},
@@ -2718,7 +2718,7 @@ TukuiSettingsPerCharacter = {
 				["UseGlobal"] = true,
 			},
 		},
-		["Belrath"] = {
+		["Torinara"] = {
 			["General"] = {
 				["UseGlobal"] = true,
 			},

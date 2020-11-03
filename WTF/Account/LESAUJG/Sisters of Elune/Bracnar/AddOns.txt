@@ -84,7 +84,7 @@ BagBrother: disabled
 Basic_Resources: disabled
 Claw: disabled
 BittensSpellFlash_Hunter: disabled
-HandyNotes_DraenorTreasures: enabled
+HandyNotes_DraenorTreasures: disabled
 LiteMount: enabled
 MasterPlan: disabled
 OPie: enabled
@@ -167,7 +167,7 @@ WeDontWipe: disabled
 WeDontWipe-WindwalkerMonk: disabled
 CrossRealmAssist: enabled
 Ketho_InstanceTimer: disabled
-SavedInstances: disabled
+SavedInstances: enabled
 TeleportCloak: enabled
 TradeSkillMaster_Vendoring: disabled
 DBM-Nighthold: enabled

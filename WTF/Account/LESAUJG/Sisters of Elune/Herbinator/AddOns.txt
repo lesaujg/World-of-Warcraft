@@ -84,7 +84,7 @@ BagBrother: disabled
 BittensSpellFlash_Hunter: disabled
 Basic_Resources: disabled
 Claw: disabled
-HandyNotes_DraenorTreasures: enabled
+HandyNotes_DraenorTreasures: disabled
 LiteMount: enabled
 MasterPlan: disabled
 OPie: enabled
@@ -161,7 +161,7 @@ BalanceSpellSuggest: disabled
 CrossRealmAssist: disabled
 Decursive: disabled
 Ketho_InstanceTimer: disabled
-SavedInstances: disabled
+SavedInstances: enabled
 TeleportCloak: enabled
 TradeSkillMaster_Vendoring: disabled
 DBM-Nighthold: disabled

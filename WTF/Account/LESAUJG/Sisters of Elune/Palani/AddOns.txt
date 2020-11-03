@@ -6,7 +6,7 @@ ActionBarSaver: disabled
 AdvancedIconSelector: disabled
 HandyNotes_Argus: enabled
 HandyNotes: enabled
-HandyNotes_DraenorTreasures: enabled
+HandyNotes_DraenorTreasures: disabled
 HandyNotes_LegionRaresTreasures: enabled
 mOnArs_WardrobeHelper: enabled
 MountFarmHelper: enabled

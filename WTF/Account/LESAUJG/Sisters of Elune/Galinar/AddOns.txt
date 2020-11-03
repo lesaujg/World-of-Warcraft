@@ -25,7 +25,7 @@ BeanCounter: disabled
 Claw: disabled
 Enchantrix: disabled
 Enchantrix-Barker: disabled
-HandyNotes_DraenorTreasures: enabled
+HandyNotes_DraenorTreasures: disabled
 Informant: disabled
 LiteMount: enabled
 MasterPlan: enabled
@@ -141,7 +141,7 @@ BalanceSpellSuggest: disabled
 CrossRealmAssist: enabled
 Decursive: disabled
 Ketho_InstanceTimer: disabled
-SavedInstances: disabled
+SavedInstances: enabled
 TeleportCloak: enabled
 TradeSkillMaster_Vendoring: disabled
 DBM-Nighthold: enabled
