@@ -28,43 +28,53 @@ SmexyMatsDB = {
 			},
 			["Alliance"] = {
 				["Tailoring"] = {
+					["Ghiaccioli"] = {
+					},
 				},
 				["Skinning"] = {
 				},
 				["Fishing"] = {
+					["Bracnar"] = {
+					},
+					["Ghiaccioli"] = {
+					},
 				},
 				["Mining"] = {
-					["Orig"] = {
-					},
-					["Palani"] = {
-					},
 				},
 				["Jewelcrafting"] = {
 				},
 				["Cooking"] = {
+					["Bracnar"] = {
+					},
+					["Ghiaccioli"] = {
+					},
 					["Mandelbrot"] = {
 					},
 				},
 				["Herbalism"] = {
-					["Orig"] = {
-					},
 					["Mandelbrot"] = {
-					},
-					["Palani"] = {
 					},
 				},
 				["Archaeology"] = {
+					["Bracnar"] = {
+					},
 				},
 				["Alchemy"] = {
 				},
 				["Engineering"] = {
+					["Bracnar"] = {
+					},
 				},
 				["Leatherworking"] = {
 				},
 				["Inscription"] = {
+					["Ghiaccioli"] = {
+					},
 				},
 				["Enchanting"] = {
 					["Mandelbrot"] = {
+					},
+					["Bracnar"] = {
 					},
 				},
 			},
