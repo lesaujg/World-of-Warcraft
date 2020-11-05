@@ -13,14 +13,14 @@ SmexyMatsDB = {
 		["cbOneB"] = 1,
 		["cbOneG"] = 1,
 		["SMText"] = false,
-		["cbTwoG"] = 1,
+		["SM_EP_One_Text"] = "|cFFFFFF00",
 		["AllRealms"] = true,
 		["IDs"] = {
 		},
 		["Professions"] = false,
 		["cbTwoR"] = 1,
 		["SM_EP_One_Title"] = "|cFF00CCFF",
-		["SM_EP_One_Text"] = "|cFFFFFF00",
+		["cbTwoG"] = 1,
 	},
 	["ProTree"] = {
 		["Sisters of Elune"] = {
@@ -28,35 +28,47 @@ SmexyMatsDB = {
 			},
 			["Alliance"] = {
 				["Tailoring"] = {
-					["Ghiaccioli"] = {
-					},
 				},
 				["Skinning"] = {
+					["Leanara"] = {
+					},
 				},
 				["Fishing"] = {
 					["Bracnar"] = {
 					},
-					["Ghiaccioli"] = {
+					["Galinar"] = {
 					},
 				},
 				["Mining"] = {
+					["Belrath"] = {
+					},
+					["Galinar"] = {
+					},
 				},
 				["Jewelcrafting"] = {
 				},
 				["Cooking"] = {
-					["Bracnar"] = {
+					["Belrath"] = {
 					},
-					["Ghiaccioli"] = {
+					["Bracnar"] = {
 					},
 					["Mandelbrot"] = {
 					},
+					["Galinar"] = {
+					},
 				},
-				["Inscription"] = {
-					["Ghiaccioli"] = {
+				["Herbalism"] = {
+					["Belrath"] = {
+					},
+					["Mandelbrot"] = {
+					},
+					["Galinar"] = {
 					},
 				},
 				["Archaeology"] = {
 					["Bracnar"] = {
+					},
+					["Galinar"] = {
 					},
 				},
 				["Alchemy"] = {
@@ -66,10 +78,10 @@ SmexyMatsDB = {
 					},
 				},
 				["Leatherworking"] = {
-				},
-				["Herbalism"] = {
-					["Mandelbrot"] = {
+					["Leanara"] = {
 					},
+				},
+				["Inscription"] = {
 				},
 				["Enchanting"] = {
 					["Mandelbrot"] = {

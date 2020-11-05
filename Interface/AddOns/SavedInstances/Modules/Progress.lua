@@ -289,22 +289,6 @@ Module.TrackedQuest = {
       58168, -- A Dark, Glaring Reality
     },
   },
-  {
-    name = L["Arachnoid Harvester"],
-    quest = 55512,
-    daily = true,
-    resetFunc = KeepProgress,
-  },
-  {
-    name = L["Soundless"],
-    quest = 56298,
-    daily = true,
-  },
-  {
-    name = L["Mechanized Chest"],
-    quest = 57081,
-    daily = true,
-  }
 }
 
 function Module:OnEnable()
