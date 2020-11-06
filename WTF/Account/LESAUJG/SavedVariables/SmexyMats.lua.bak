@@ -30,49 +30,29 @@ SmexyMatsDB = {
 				["Tailoring"] = {
 				},
 				["Skinning"] = {
-					["Leanara"] = {
-					},
 				},
 				["Fishing"] = {
-					["Galinar"] = {
-					},
 				},
 				["Mining"] = {
-					["Belrath"] = {
-					},
-					["Galinar"] = {
-					},
 				},
 				["Jewelcrafting"] = {
 				},
 				["Cooking"] = {
-					["Belrath"] = {
-					},
 					["Mandelbrot"] = {
-					},
-					["Galinar"] = {
 					},
 				},
 				["Inscription"] = {
 				},
 				["Archaeology"] = {
-					["Galinar"] = {
-					},
 				},
 				["Alchemy"] = {
 				},
 				["Engineering"] = {
 				},
 				["Leatherworking"] = {
-					["Leanara"] = {
-					},
 				},
 				["Herbalism"] = {
-					["Belrath"] = {
-					},
 					["Mandelbrot"] = {
-					},
-					["Galinar"] = {
 					},
 				},
 				["Enchanting"] = {
