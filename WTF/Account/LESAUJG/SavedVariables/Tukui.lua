@@ -2658,12 +2658,12 @@ TukuiGold = {
 		["Orig"] = 60981487,
 		["Uldaris"] = 103722083,
 		["Herbinator"] = 4106705,
-		["Bracnar"] = 532586702,
+		["Bracnar"] = 532586492,
 		["Galinar"] = 61926886,
 		["Torinara"] = 61120011,
 		["Palani"] = 53603617,
 		["Belrath"] = 53825931,
-		["Clothgar"] = 9510035926,
+		["Clothgar"] = 9581832592,
 	},
 }
 TukuiSettingsPerCharacter = {
