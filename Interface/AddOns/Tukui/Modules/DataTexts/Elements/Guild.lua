@@ -58,23 +58,12 @@ local menuList = {
 
 local function inviteClick(self, arg1, arg2, checked)
 	menuFrame:Hide()
-	InviteUnit(arg1)
+	C_PartyInfo.InviteUnit(arg1)
 end
 
 local function whisperClick(self,arg1,arg2,checked)
 	menuFrame:Hide()
 	SetItemRef( "player:"..arg1, ("|Hplayer:%1$s|h[%1$s]|h"):format(arg1), "LeftButton" )
-end
-
-local function ToggleGuildFrame()
-	if IsInGuild() then
-		if not GuildFrame then LoadAddOn("Blizzard_GuildUI") end
-		GuildFrame_Toggle()
-		GuildFrame_TabClicked(GuildFrameTab2)
-	else
-		if not LookingForGuildFrame then LoadAddOn("Blizzard_LookingForGuildUI") end
-		LookingForGuildFrame_Toggle()
-	end
 end
 
 local OnMouseUp = function(self, btn)
@@ -182,9 +171,7 @@ end
 local OnMouseDown = function(self, btn)
 	if btn ~= "LeftButton" then return end
 
-	if IsInGuild() then
-		ToggleCommunitiesFrame()
-	end
+	ToggleGuildFrame()
 end
 
 

@@ -46,7 +46,13 @@ end
 
 function Minimap:OnMouseClick(button)
 	if (button == "RightButton") or (button == "MiddleButton") then
-		Miscellaneous.DropDown.Open(Miscellaneous.MicroMenu.Buttons, Miscellaneous.MicroMenu, "cursor", -160, 0, "MENU", 2)
+		local MicroMenu = T.Miscellaneous.MicroMenu
+		
+		if MicroMenu then
+			MicroMenu:Toggle()
+		else
+			MiniMapTracking_OnMouseDown(MiniMapTracking)
+		end
 	else
 		Minimap_OnClick(self)
 	end
@@ -95,7 +101,7 @@ function Minimap:StyleMinimap()
 	QueueStatusFrame:CreateShadow()
 
 	Mail:ClearAllPoints()
-	Mail:SetPoint("TOPRIGHT", 12, 29)
+	Mail:SetPoint("TOPRIGHT", 4, 4)
 	Mail:SetFrameLevel(self:GetFrameLevel() + 2)
 	MailBorder:Hide()
 	MailIcon:SetTexture("Interface\\AddOns\\Tukui\\Medias\\Textures\\Others\\Mail")
@@ -143,6 +149,7 @@ function Minimap:AddZoneAndCoords()
 	MinimapZone:SetSize(self:GetWidth() + 2, 19)
 	MinimapZone:SetPoint("TOP", self, 0, 2)
 	MinimapZone:SetFrameStrata(self:GetFrameStrata())
+	MinimapZone:SetFrameLevel(self:GetFrameLevel() + 10)
 	MinimapZone:SetAlpha(0)
 	MinimapZone:EnableMouse()
 

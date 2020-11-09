@@ -2651,26 +2651,38 @@ TukuiSettings = {
 }
 TukuiGold = {
 	["Sisters of Elune"] = {
-		["Leanara"] = 57857211,
+		["Leanara"] = 57874643,
 		["Ghiaccioli"] = 51034514,
 		["Mandelbrot"] = 7212410,
 		["Torinar"] = 51190275,
 		["Orig"] = 60981487,
-		["Clothgar"] = 9581859217,
+		["Clothgar"] = 9948945702,
 		["Herbinator"] = 4106705,
 		["Torinara"] = 61120011,
-		["Galinar"] = 61926886,
+		["Galinar"] = 62007082,
 		["Belrath"] = 53825931,
 		["Palani"] = 53603617,
-		["Bracnar"] = 532586492,
+		["Bracnar"] = 523863228,
 		["Uldaris"] = 103722083,
 	},
 }
 TukuiSettingsPerCharacter = {
 	["Sisters of Elune"] = {
 		["Leanara"] = {
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
+			["Bags"] = {
+				["Enable"] = false,
+			},
 			["General"] = {
-				["UseGlobal"] = true,
+				["Themes"] = "Tukz",
+				["UIScale"] = 0.6,
+			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+				["RightBar"] = true,
+				["LeftBar"] = true,
 			},
 		},
 		["Ghiaccioli"] = {
@@ -2694,13 +2706,20 @@ TukuiSettingsPerCharacter = {
 			},
 		},
 		["Clothgar"] = {
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
+			["Bags"] = {
+				["Enable"] = false,
+			},
 			["General"] = {
-				["UseGlobal"] = true,
-				["Themes"] = "Tukui",
+				["Themes"] = "Tukz",
+				["UIScale"] = 0.6,
 			},
 			["ActionBars"] = {
-				["LeftBar"] = true,
+				["HotKey"] = true,
 				["RightBar"] = true,
+				["LeftBar"] = true,
 			},
 		},
 		["Herbinator"] = {
@@ -2714,8 +2733,20 @@ TukuiSettingsPerCharacter = {
 			},
 		},
 		["Galinar"] = {
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
+			["Bags"] = {
+				["Enable"] = false,
+			},
 			["General"] = {
-				["UseGlobal"] = true,
+				["Themes"] = "Tukz",
+				["UIScale"] = 0.6,
+			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+				["RightBar"] = true,
+				["LeftBar"] = true,
 			},
 		},
 		["Belrath"] = {
@@ -2729,19 +2760,37 @@ TukuiSettingsPerCharacter = {
 			},
 		},
 		["Bracnar"] = {
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
+			["Bags"] = {
+				["Enable"] = false,
+			},
 			["General"] = {
-				["UseGlobal"] = true,
+				["Themes"] = "Tukz",
+				["UIScale"] = 0.6,
 			},
 			["ActionBars"] = {
+				["HotKey"] = true,
 				["RightBar"] = true,
 				["LeftBar"] = true,
 			},
 		},
 		["Uldaris"] = {
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
+			["Bags"] = {
+				["Enable"] = false,
+			},
 			["General"] = {
 				["Themes"] = "Tukz",
-				["UseGlobal"] = true,
 				["UIScale"] = 0.6,
+			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+				["RightBar"] = true,
+				["LeftBar"] = true,
 			},
 		},
 	},

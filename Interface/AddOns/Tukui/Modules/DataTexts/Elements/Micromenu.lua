@@ -5,11 +5,14 @@ local Popups = T["Popups"]
 local Miscellaneous = T.Miscellaneous
 
 local OnMouseDown = function()
-	Miscellaneous.MicroMenu.Panel:Show()
+	local MicroMenu = Miscellaneous.MicroMenu
+	
+	MicroMenu:Toggle()
 end
 
 local Enable = function(self)
 	self:SetScript("OnMouseDown", OnMouseDown)
+	
 	self.Text:SetFormattedText("%s", DataText.NameColor .. "Micro Menu|r")
 end
 

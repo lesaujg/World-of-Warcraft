@@ -21,7 +21,7 @@ local StyleFont = function(fs, font, size)
 	fs:SetShadowOffset(1, -1)
 end
 
-local Texture = "Interface\\AddOns\\Tukui\\Medias\\Textures\\Status\\ElvUI2"
+local Texture = C.Medias.Normal
 local Blank = C.Medias.Blank
 
 local ArrowUp = "Interface\\AddOns\\Tukui\\Medias\\Textures\\Others\\ArrowUp"
@@ -60,6 +60,8 @@ local LastActiveWindow
 
 local HexClassColor = T.RGBToHex(unpack(T.Colors.class[T.MyClass]))
 
+local MySelectedProfile = T.MyRealm.."-"..T.MyName
+
 local CreditLines = {"A very special thanks to", "", "Elv", "Hydra", "Haste", "Nightcracker", "Haleth", "Caellian", "Shestak", "Tekkub", "Roth", "Alza", "P3lim", "Tulla", "Hungtar", "Ishtara", "Caith", "Azilroka", "Simpy", "Aftermathh"}
 
 local GUI = CreateFrame("Frame", "TukuiGUI", UIParent)
@@ -67,6 +69,20 @@ GUI.Windows = {}
 GUI.Buttons = {}
 GUI.Queue = {}
 GUI.Widgets = {}
+
+T.Popups.Popup["TUKUI_SWITCH_PROFILE"] = {
+	Question = "Are you sure you want to switch your profile? If you accept, this current profile will be erased and replaced the character you selected!",
+	Answer1 = ACCEPT,
+	Answer2 = CANCEL,
+	Function1 = function(self)
+		local SelectedServer, SelectedNickname = strsplit("-", MySelectedProfile)
+
+		TukuiData[T.MyRealm][T.MyName] = TukuiData[SelectedServer][SelectedNickname]
+		TukuiSettingsPerCharacter[T.MyRealm][T.MyName] = TukuiSettingsPerCharacter[SelectedServer][SelectedNickname]
+		
+		ReloadUI()
+	end,
+}
 
 local SetValue = function(group, option, value)
 	if (type(C[group][option]) == "table") then
@@ -93,11 +109,7 @@ local SetValue = function(group, option, value)
 		TukuiSettingsPerCharacter[T.MyRealm][T.MyName] = {}
 	end
 
-	if TukuiSettingsPerCharacter[T.MyRealm][T.MyName].General and TukuiSettingsPerCharacter[T.MyRealm][T.MyName].General.UseGlobal then
-		Settings = TukuiSettings
-	else
-		Settings = TukuiSettingsPerCharacter[T.MyRealm][T.MyName]
-	end
+	Settings = TukuiSettingsPerCharacter[T.MyRealm][T.MyName]
 
 	if (not Settings[group]) then
 		Settings[group] = {}
@@ -597,7 +609,7 @@ end
 GUI.Widgets.CreateSlider = CreateSlider
 
 -- Dropdown Menu
-local DropdownWidth = 134
+local DropdownWidth = 180
 local SelectedHighlightAlpha = 0.2
 local ListItemsToShow = 8
 local LastActiveDropdown
@@ -1646,62 +1658,15 @@ GUI.Enable = function(self)
 	-- Footer
 	self.Footer = CreateFrame("Frame", nil, self)
 	self.Footer:SetFrameStrata("DIALOG")
-	self.Footer:SetSize(HeaderWidth, HeaderHeight)
+	self.Footer:SetSize(HeaderWidth, 1)
 	self.Footer:SetPoint("BOTTOM", self, 0, Spacing)
-	self.Footer:CreateBackdrop()
-	self.Footer.Backdrop:SetBackdropColor(unpack(LightColor))
 
 	local FooterButtonWidth = ((HeaderWidth / 5) - Spacing) + 1
-
-	-- Global button
-	local GlobalButtonString = "You are currently using per-character gui settings, push me to switch to global"
-
-	if TukuiSettingsPerCharacter[T.MyRealm][T.MyName].General and TukuiSettingsPerCharacter[T.MyRealm][T.MyName].General.UseGlobal then
-		GlobalButtonString = "You are currently using global gui settings, push me to switch to per-character"
-	end
-
-	local Global = CreateFrame("Frame", nil, self.Footer)
-	Global:SetSize(self.Footer:GetWidth(), HeaderHeight)
-	Global:SetPoint("LEFT", self.Footer, 0, 0)
-	Global:CreateBackdrop(nil, Texture)
-	Global:CreateShadow()
-	Global.Backdrop:SetBackdropColor(unpack(BrightColor))
-	Global:SetScript("OnMouseDown", ButtonOnMouseDown)
-	Global:SetScript("OnMouseUp", ButtonOnMouseUp)
-	Global:SetScript("OnEnter", ButtonOnEnter)
-	Global:SetScript("OnLeave", ButtonOnLeave)
-	Global:HookScript("OnMouseUp", function()
-		local Settings = TukuiSettingsPerCharacter[T.MyRealm][T.MyName]
-
-		if Settings.General and Settings.General.UseGlobal then
-			TukuiSettingsPerCharacter[T.MyRealm][T.MyName].General.UseGlobal = false
-		else
-			if not TukuiSettingsPerCharacter[T.MyRealm][T.MyName].General then
-				TukuiSettingsPerCharacter[T.MyRealm][T.MyName].General = {}
-			end
-
-			TukuiSettingsPerCharacter[T.MyRealm][T.MyName].General.UseGlobal = true
-		end
-
-		ReloadUI()
-	end)
-
-	Global.Highlight = Global:CreateTexture(nil, "OVERLAY")
-	Global.Highlight:SetAllPoints()
-	Global.Highlight:SetTexture(Texture)
-	Global.Highlight:SetVertexColor(0.5, 0.5, 0.5)
-	Global.Highlight:SetAlpha(0)
-
-	Global.Middle = Global:CreateFontString(nil, "OVERLAY")
-	Global.Middle:SetAllPoints()
-	StyleFont(Global.Middle, Font, 14)
-	Global.Middle:SetJustifyH("CENTER")
-	Global.Middle:SetText(GlobalButtonString)
 
 	-- Apply button
 	local Apply = CreateFrame("Frame", nil, self.Footer)
 	Apply:SetSize(FooterButtonWidth + 3, HeaderHeight)
-	Apply:SetPoint("LEFT", self.Footer, 0, -25)
+	Apply:SetPoint("LEFT", self.Footer, 0, -10)
 	Apply:CreateBackdrop(nil, Texture)
 	Apply:CreateShadow()
 	Apply.Backdrop:SetBackdropColor(unpack(BrightColor))
@@ -1820,7 +1785,7 @@ GUI.Enable = function(self)
 	local Credits = CreateFrame("Frame", nil, self.Footer)
 	Credits:SetHeight(HeaderHeight)
 	Credits:SetPoint("LEFT", Keybinds, "RIGHT", (Spacing - 1), 0)
-	Credits:SetPoint("RIGHT", Global)
+	Credits:SetPoint("RIGHT")
 	Credits:CreateBackdrop(nil, Texture)
 	Credits:CreateShadow()
 	Credits.Backdrop:SetBackdropColor(unpack(BrightColor))
@@ -1954,6 +1919,20 @@ GUI.PLAYER_REGEN_ENABLED = function(self, event)
 		self:Show()
 		self:SetAlpha(1)
 		self.CombatClosed = false
+	end
+end
+
+GUI.SetProfile = function(self)
+	local Dropdown = self:GetParent()
+	local Profile = Dropdown.Current:GetText()
+	local MyProfileName = T.MyRealm.."-"..T.MyName
+
+	if Profile and Profile ~= T.MyRealm.."-"..T.MyName then
+		MySelectedProfile = Profile
+		
+		GUI:Toggle()
+					
+		T.Popups.ShowPopup("TUKUI_SWITCH_PROFILE")
 	end
 end
 

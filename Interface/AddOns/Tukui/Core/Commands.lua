@@ -37,10 +37,45 @@ T.SlashHandler = function(cmd)
 		print(L.Help.Install)
 		print(L.Help.Keybinds)
 		print(L.Help.Load)
+		print(L.Help.MicroMenu)
 		print(L.Help.Move)
-		print(L.Help.Profile)
+		print(L.Help.ObjectiveTracker)
 		print(L.Help.Status)
 		print(L.Help.Test)
+	elseif (arg1 == "mm") or (arg1 == "micromenu") then
+		local MicroMenu = T.Miscellaneous.MicroMenu
+
+		if MicroMenu:IsShown() then
+			MicroMenu:Hide()
+
+			UpdateMicroButtonsParent(T.Hider)
+
+			for i = 1, #MICRO_BUTTONS do
+				local Button = _G[MICRO_BUTTONS[i]]
+
+				if Button.Backdrop then
+					Button.Backdrop:Hide()
+				end
+			end
+		else
+			MicroMenu:Show()
+
+			for i = 1, #MICRO_BUTTONS do
+				local Button = _G[MICRO_BUTTONS[i]]
+
+				if Button.Backdrop then
+					Button.Backdrop:Show()
+				end
+			end
+
+			UpdateMicroButtonsParent(T.PetHider)
+		end
+	elseif (arg1 == "ot") or (arg1 == "quests") then
+		if (ObjectiveTrackerFrame:IsVisible()) then
+			ObjectiveTrackerFrame:Hide()
+		else
+			ObjectiveTrackerFrame:Show()
+		end
 	elseif (arg1 == "fn") then
 		local Name = GetMouseFocus():GetName()
 		
@@ -202,73 +237,10 @@ T.SlashHandler = function(cmd)
 			Grid.Enable = true
 			Grid.BoxSize = (math.ceil((tonumber(arg) or Grid.BoxSize) / 32) * 32)
 		end
-	elseif (arg1 == "profile" or arg1 == "p") then
-		if not arg2 then
-			print(" ")
-			T.Print("/tukui profile list")
-			print("     List current profiles available")
-			T.Print("/tukui profile #")
-			print("     Apply a profile, replace '#' with a profile number")
-			print(" ")
-		else
-			if arg2 == "list" or arg2 == "l" then
-				Tukui.Profiles = {}
-				Tukui.Profiles.Data = {}
-				Tukui.Profiles.Options = {}
-
-				local EmptyTable = {}
-
-				for Server, Table in pairs(TukuiData) do
-					if not Server then return end
-
-					for Character, Table in pairs(TukuiData[Server]) do
-						-- Data
-						tinsert(Tukui.Profiles.Data, TukuiData[Server][Character])
-
-						-- GUI options, it can be not found if you didn't log at least once since version 1.10 on that toon.
-						if TukuiSettingsPerCharacter and TukuiSettingsPerCharacter[Server] and TukuiSettingsPerCharacter[Server][Character] then
-							tinsert(Tukui.Profiles.Options, TukuiSettingsPerCharacter[Server][Character])
-						else
-							tinsert(Tukui.Profiles.Options, EmptyTable)
-						end
-
-						print("Profile "..#Tukui.Profiles.Data..": ["..Server.."]-["..Character.."]")
-					end
-				end
-			else
-				SelectedProfile = tonumber(arg2)
-
-				if not Tukui.Profiles or not Tukui.Profiles.Data[SelectedProfile] then
-					T.Print(L.Others.ProfileNotFound)
-
-					return
-				end
-
-				T.Popups.ShowPopup("TUKUI_IMPORT_PROFILE")
-			end
-		end
 	elseif AddOnCommands[arg1] then
 		AddOnCommands[arg1](arg2)
 	end
 end
-
--- Create a Tukui popup for profiles
-T.Popups.Popup["TUKUI_IMPORT_PROFILE"] = {
-	Question = "Are you sure you want to import this profile? Continue?",
-	Answer1 = ACCEPT,
-	Answer2 = CANCEL,
-	Function1 = function(self)
-		TukuiData[T.MyRealm][T.MyName] = Tukui.Profiles.Data[SelectedProfile]
-
-		if TukuiSettingsPerCharacter[T.MyRealm][T.MyName].General and TukuiSettingsPerCharacter[T.MyRealm][T.MyName].General.UseGlobal then
-			-- Look like we use globals for gui, don't import gui settings, keep globals
-		else
-			TukuiSettingsPerCharacter[T.MyRealm][T.MyName] = Tukui.Profiles.Options[SelectedProfile]
-		end
-
-		ReloadUI()
-	end,
-}
 
 T.Popups.Popup["RESETUI"] = {
 	Question = "Are you sure you want to reset Tukui to default?",

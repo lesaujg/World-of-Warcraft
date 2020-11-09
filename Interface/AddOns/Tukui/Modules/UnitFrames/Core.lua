@@ -230,16 +230,12 @@ function UnitFrames:CheckChannel(unit, name, rank)
 end
 
 function UnitFrames:PreUpdateHealth(unit)
-	local HostileColor = C["UnitFrames"].TargetEnemyHostileColor
-
-	if (HostileColor ~= true) then
-		return
-	end
-
-	if UnitIsEnemy(unit, "player") then
-		self.colorClass = false
-	else
-		self.colorClass = true
+	if C["UnitFrames"].TargetEnemyHostileColor then
+		if UnitIsEnemy(unit, "player") then
+			self.colorClass = false
+		else
+			self.colorClass = true
+		end
 	end
 end
 
@@ -308,20 +304,6 @@ function UnitFrames:PostUpdatePower(unit, current, min, max)
 	end
 end
 
-function UnitFrames:UpdateAltPower(minimum, current, maximum)
-	if (not current) or (not maximum) then return end
-
-	local r, g, b = T.ColorGradient(current, maximum, 0, .8 , 0, .8 , .8, 0, .8 , 0 , 0)
-
-	self:SetStatusBarColor(r, g, b)
-
-	if self.Value then
-		local Text = self.Value
-
-		Text:SetText(current.." / "..maximum)
-	end
-end
-
 function UnitFrames:SetAuraTimer(elapsed)
 	if (self.TimeLeft) then
 		self.Elapsed = (self.Elapsed or 0) + elapsed
@@ -363,9 +345,9 @@ function UnitFrames:PostCreateAura(button)
 	if isCancellable then
 		-- Add a button.index to allow CancelUnitAura to work with player
 		local Name = button:GetName()
-		local Index = tonumber(Name:gsub("%D",""))
+		local Index = Name:gsub("%D+" , "")
 
-		button.index = Index
+		button.index = tonumber(Index)
 		button:SetScript("OnMouseUp", UnitFrames.CancelPlayerBuff)
 	end
 

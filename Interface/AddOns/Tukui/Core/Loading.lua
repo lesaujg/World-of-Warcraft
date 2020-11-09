@@ -38,23 +38,23 @@ function Loading:LoadCustomSettings()
 	end
 
 	if (not TukuiSettingsPerCharacter[T.MyRealm][T.MyName]) then
-		if TukuiSettingsPerChar ~= nil then
-			-- old table for gui settings, TukuiSettingsPerChar is now deprecated and will be removed in a future build
-			TukuiSettingsPerCharacter[T.MyRealm][T.MyName] = TukuiSettingsPerChar
-		else
-			TukuiSettingsPerCharacter[T.MyRealm][T.MyName] = {}
-		end
+		TukuiSettingsPerCharacter[T.MyRealm][T.MyName] = {}
 	end
-
+	
 	if not TukuiSettings then
 		TukuiSettings = {}
 	end
-
+	
+	-- Globals settings will be removed in the next coming weeks, if currently using globals, move into current character profile
 	if TukuiSettingsPerCharacter[T.MyRealm][T.MyName].General and TukuiSettingsPerCharacter[T.MyRealm][T.MyName].General.UseGlobal == true then
-		Settings = TukuiSettings
-	else
-		Settings = TukuiSettingsPerCharacter[T.MyRealm][T.MyName]
+		TukuiSettingsPerCharacter[T.MyRealm][T.MyName] = TukuiSettings
+		
+		if TukuiSettingsPerCharacter[T.MyRealm][T.MyName].General then
+			TukuiSettingsPerCharacter[T.MyRealm][T.MyName].General.UseGlobal = false
+		end
 	end
+
+	Settings = TukuiSettingsPerCharacter[T.MyRealm][T.MyName]
 
 	for group, options in pairs(Settings) do
 		if C[group] then
@@ -90,10 +90,37 @@ function Loading:LoadCustomSettings()
 	end
 end
 
+function Loading:LoadProfiles()
+	local Profiles = C.General.Profiles
+	local Menu = Profiles.Options
+	local Data = TukuiData
+	local GUISettings = TukuiSettingsPerCharacter
+	local Nickname = T.MyName
+	local Server = T.MyRealm
+	
+	if not GUISettings then
+		return
+	end
+	
+	for Index, Table in pairs(GUISettings) do
+		local Server = Index
+		
+		for Nickname, Settings in pairs(Table) do
+			local ProfileName = Server.."-"..Nickname
+			local MyProfileName = T.MyRealm.."-"..T.MyName
+			
+			if MyProfileName ~= ProfileName then
+				Menu[ProfileName] = ProfileName
+			end
+		end
+	end
+end
+
 function Loading:Enable()
 	local Toolkit = T.Toolkit
 
 	self:StoreDefaults()
+	self:LoadProfiles()
 	self:LoadCustomSettings()
 
 	Toolkit.Settings.BackdropColor = C.General.BackdropColor
@@ -140,6 +167,9 @@ function Loading:OnEvent(event)
 		T["Miscellaneous"]["TimerTracker"]:Enable()
 		T["Miscellaneous"]["AltPowerBar"]:Enable()
 		T["Miscellaneous"]["OrderHall"]:Enable()
+		T["Miscellaneous"]["Tutorials"]:Enable()
+		T["Miscellaneous"]["VehicleIndicator"]:Enable()
+		T["Miscellaneous"]["ItemLevel"]:Enable()
 		T["UnitFrames"]:Enable()
 		T["Tooltips"]:Enable()
 		T["PetBattles"]:Enable()

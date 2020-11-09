@@ -1,194 +1,130 @@
 local T, C, L = select(2, ...):unpack()
 
 local Miscellaneous = T["Miscellaneous"]
-local MicroMenu = CreateFrame("Frame", "TukuiMicroButtonsDropDown", UIParent, "UIDropDownMenuTemplate")
+local MicroMenu = CreateFrame("Frame", "TukuiMicroMenu", UIParent)
+local Noop = function() return end
 
-MicroMenu.Panel = CreateFrame("Frame", "TukuiMicroMenuPanel", UIParent)
+function MicroMenu:HideAlerts()
+	HelpTip:HideAllSystem("MicroButtons")
+end
 
-MicroMenu.Buttons = {
-	{
-		text = CHARACTER_BUTTON,
-		func = function()
-			ToggleCharacter("PaperDollFrame")
-		end,
-		notCheckable = true
-	},
+function MicroMenu:AddHooks()
+	hooksecurefunc("MainMenuMicroButton_ShowAlert", MicroMenu.HideAlerts)
+end
 
-	{
-		text = SPELLBOOK_ABILITIES_BUTTON,
-		func = function()
-			ToggleSpellBook(BOOKTYPE_SPELL)
-		end,
-		notCheckable = true
-	},
+function MicroMenu:OnEsc(key)
+	if self:IsShown() and key == string.upper(KEY_ESCAPE) then
+		self:Toggle()
+	end
+end
 
-	{
-		text = TALENTS_BUTTON,
-		func = function()
-			ToggleTalentFrame()
-		end,
-		notCheckable = true
-	},
-
-	{
-		text = ACHIEVEMENT_BUTTON,
-		func = function()
-			ToggleAchievementFrame()
-		end,
-		notCheckable = true
-	},
-	
-	{
-		text = QUESTLOG_BUTTON,
-		func = function()
-			OpenQuestLog()
-		end,
-		notCheckable = true
-	},
-
-	{
-		text = MOUNTS,
-		func = function()
-			ToggleCollectionsJournal(1)
-		end,
-		notCheckable = true
-	},
-
-	{
-		text = PETS,
-		func = function()
-			ToggleCollectionsJournal(2)
-		end,
-		notCheckable = true
-	},
-
-	{
-		text = TOY_BOX,
-		func = function()
-			ToggleCollectionsJournal(3)
-		end,
-		notCheckable = true
-	},
-	{
-		text = HEIRLOOMS,
-		func = function()
-			ToggleCollectionsJournal(4)
-		end,
-		notCheckable = true
-	},
-	{
-		text = WARDROBE,
-		func = function()
-			ToggleCollectionsJournal(5)
-		end,
-		notCheckable = true
-	},
-
-	{
-		text = SOCIAL_BUTTON,
-		func = function()
-			ToggleFriendsFrame(1)
-		end,
-		notCheckable = true
-	},
-
-	{
-		text = COMPACT_UNIT_FRAME_PROFILE_AUTOACTIVATEPVE.." / "..COMPACT_UNIT_FRAME_PROFILE_AUTOACTIVATEPVP,
-		func = function()
-			PVEFrame_ToggleFrame()
-		end,
-		notCheckable = true
-	},
-
-	{
-		text = GUILD .. " / " .. COMMUNITIES,
-		func = function()
-			ToggleGuildFrame()
-		end,
-		notCheckable = true
-	},
-
-	{
-		text = VOICE,
-		func = function()
-			ToggleChannelFrame()
-		end,
-		notCheckable = true
-	},
-
-	{
-		text = RAID,
-		func = function()
-			ToggleFriendsFrame(3)
-		end,
-		notCheckable = true
-	},
-
-	{
-		text = HELP_BUTTON,
-		func = function()
-			ToggleHelpFrame()
-		end,
-		notCheckable = true
-	},
-
-	{
-		text = EVENTS_LABEL,
-		func = function()
-			SlashCmdList:CALENDAR()
-		end,
-		notCheckable = true
-	},
-
-	{
-		text = ADVENTURE_JOURNAL,
-		func = function()
-			ToggleEncounterJournal()
-		end,
-		notCheckable = true
-	},
-}
-
-function MicroMenu:Enable()
-	local RightChat = T.Chat.Panels.RightChat
-	local Total = #MicroMenu.Buttons
-	local Buttons = MicroMenu.Panel
-	
-	Buttons:SetAllPoints(RightChat)
-	Buttons:CreateBackdrop()
-	Buttons:SetFrameStrata("HIGH")
-	Buttons:SetFrameLevel(50)
-	Buttons:Hide()
-
-	for i, Option in pairs(MicroMenu.Buttons) do
-		local Text = Option.text
-		local Func = Option.func
-		
-		Buttons[i] = CreateFrame("Button", nil, Buttons)
-		Buttons[i]:SetSize((Buttons:GetWidth() / 2) - 1, (((Buttons:GetHeight() / Total) * 2) - 4))
-		Buttons[i]:SkinButton()
-		Buttons[i]:StyleButton()
-		Buttons[i]:CreateShadow()
-		Buttons[i]:SetScript("OnClick", Func)
-		Buttons[i]:HookScript("OnClick", function() Buttons:Hide() end)
-		
-		if i == 1 then
-			Buttons[i]:SetPoint("TOPLEFT", Buttons, "TOPLEFT", 0, 0)
-		elseif i == 10 then
-			Buttons[i]:SetPoint("LEFT", Buttons[1], "RIGHT", 2, 0)
-		else
-			Buttons[i]:SetPoint("TOP", Buttons[i - 1], "BOTTOM", 0, -4)
+function MicroMenu:Update()
+	if self:IsShown() then
+		for i = 1, #MICRO_BUTTONS do
+			local Button = _G[MICRO_BUTTONS[i]]
+			
+			if Button.Backdrop then
+				Button.Backdrop:Show()
+			end
+			
+			if Button.Text then
+				if (not Button:IsEnabled()) or (not Button:IsShown()) then
+					Button.Text:SetAlpha(0.5)
+				else
+					Button.Text:SetAlpha(1)
+				end
+			end
 		end
 		
-		Buttons[i].Text = Buttons[i]:CreateFontString(nil, "OVERLAY")
-		Buttons[i].Text:SetFontTemplate(C.Medias.Font, 12)
-		Buttons[i].Text:SetText(Text)
-		Buttons[i].Text:SetPoint("CENTER")
-		Buttons[i].Text:SetTextColor(1, 1, 1)
+		UpdateMicroButtonsParent(T.PetHider)
+		
+		-- Hide Game Menu if visible
+		if GameMenuFrame:IsShown() then
+			GameMenuFrame:Hide()
+		end
+	else
+		UpdateMicroButtonsParent(T.Hider)
+		
+		for i = 1, #MICRO_BUTTONS do
+			local Button = _G[MICRO_BUTTONS[i]]
+			
+			if Button.Backdrop then
+				Button.Backdrop:Hide()
+			end
+		end
+	end
+end
+
+function MicroMenu:Toggle()
+	if self ~= MicroMenu then
+		self = MicroMenu
 	end
 	
-	-- Allow escape to quit
-	tinsert(UISpecialFrames, "TukuiMicroMenuPanel")
+	if self:IsShown() then
+		self:Hide()
+	else
+		self:Show()
+	end
+end
+
+function MicroMenu:Enable()
+	MicroMenu:AddHooks()
+	
+	MicroMenu:SetSize(250, 374)
+	MicroMenu:SetPoint("CENTER", UIParent, "CENTER", 0, 0)
+	MicroMenu:Hide()
+	MicroMenu:SetScript("OnHide", self.Update)
+	MicroMenu:SetScript("OnShow", self.Update)
+	MicroMenu:CreateBackdrop("Transparent")
+	MicroMenu:CreateShadow()
+	
+	MicroButtonAndBagsBar:StripTextures()
+	MicroButtonAndBagsBar:SetParent(MicroMenu)
+	MicroButtonAndBagsBar:ClearAllPoints()
+	MicroButtonAndBagsBar:SetPoint("CENTER", -1, 23)
+	MainMenuBarBackpackButton:SetParent(T.Hider)
+	
+	for i = 1, #MICRO_BUTTONS do
+		local Button = _G[MICRO_BUTTONS[i]]
+		local PreviousButton = _G[MICRO_BUTTONS[i - 1]]
+		
+		Button:StripTextures()
+		Button:SetAlpha(0)
+		Button:ClearAllPoints()
+		Button:SetSize(230, 29)
+		
+		-- Reposition them
+		if i == 1 then
+			Button:SetPoint("TOP", MicroMenu, "TOP", 0, -14)
+		else
+			Button:SetPoint("TOP", PreviousButton, "BOTTOM", 0, 0)
+		end
+
+		if Button.tooltipText ~= MAINMENU_BUTTON then
+			Button:SetScript("OnEnter", Noop)
+			Button:HookScript("OnClick", MicroMenu.Toggle)
+		end
+		
+		Button:SkinButton()
+		Button.Backdrop:SetParent(MicroMenu)
+		Button.Backdrop:ClearAllPoints()
+		Button.Backdrop:SetInside(Button, 2, 2)
+		Button.Backdrop:SetFrameLevel(Button:GetFrameLevel() + 2)
+		Button.Backdrop:CreateShadow()
+		Button.Backdrop:Hide()
+		
+		Button.Text = Button.Backdrop:CreateFontString(nil, "OVERLAY")
+		Button.Text:SetFontTemplate(C.Medias.Font, 12)
+		Button.Text:SetText(Button.tooltipText)
+		Button.Text:SetPoint("CENTER", 2, 1)
+		Button.Text:SetTextColor(1, 1, 1)
+	end
+	
+	UpdateMicroButtonsParent(T.Hider)
+	
+	T.Movers:RegisterFrame(MicroMenu)
+	
+	tinsert(UISpecialFrames, "TukuiMicroMenu")
 end
 
 Miscellaneous.MicroMenu = MicroMenu

@@ -2651,26 +2651,38 @@ TukuiSettings = {
 }
 TukuiGold = {
 	["Sisters of Elune"] = {
-		["Leanara"] = 57857211,
+		["Leanara"] = 57874643,
 		["Ghiaccioli"] = 51034514,
 		["Mandelbrot"] = 7212410,
-		["Torinar"] = 51190275,
+		["Torinar"] = 51236346,
 		["Orig"] = 60981487,
 		["Uldaris"] = 103722083,
 		["Herbinator"] = 4106705,
-		["Bracnar"] = 532586492,
-		["Galinar"] = 61926886,
+		["Bracnar"] = 523863228,
+		["Galinar"] = 62007082,
 		["Torinara"] = 61120011,
 		["Palani"] = 53603617,
 		["Belrath"] = 53825931,
-		["Clothgar"] = 9581832592,
+		["Clothgar"] = 9948945702,
 	},
 }
 TukuiSettingsPerCharacter = {
 	["Sisters of Elune"] = {
 		["Leanara"] = {
+			["Bags"] = {
+				["Enable"] = false,
+			},
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
 			["General"] = {
-				["UseGlobal"] = true,
+				["UIScale"] = 0.6,
+				["Themes"] = "Tukz",
+			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+				["LeftBar"] = true,
+				["RightBar"] = true,
 			},
 		},
 		["Ghiaccioli"] = {
@@ -2684,8 +2696,20 @@ TukuiSettingsPerCharacter = {
 			},
 		},
 		["Torinar"] = {
+			["Bags"] = {
+				["Enable"] = false,
+			},
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
 			["General"] = {
-				["UseGlobal"] = true,
+				["UIScale"] = 0.6,
+				["Themes"] = "Tukz",
+			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+				["LeftBar"] = true,
+				["RightBar"] = true,
 			},
 		},
 		["Orig"] = {
@@ -2694,10 +2718,20 @@ TukuiSettingsPerCharacter = {
 			},
 		},
 		["Uldaris"] = {
+			["Bags"] = {
+				["Enable"] = false,
+			},
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
 			["General"] = {
 				["UIScale"] = 0.6,
-				["UseGlobal"] = true,
 				["Themes"] = "Tukz",
+			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+				["LeftBar"] = true,
+				["RightBar"] = true,
 			},
 		},
 		["Herbinator"] = {
@@ -2706,17 +2740,37 @@ TukuiSettingsPerCharacter = {
 			},
 		},
 		["Bracnar"] = {
+			["Bags"] = {
+				["Enable"] = false,
+			},
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
 			["General"] = {
-				["UseGlobal"] = true,
+				["UIScale"] = 0.6,
+				["Themes"] = "Tukz",
 			},
 			["ActionBars"] = {
+				["HotKey"] = true,
 				["LeftBar"] = true,
 				["RightBar"] = true,
 			},
 		},
 		["Galinar"] = {
+			["Bags"] = {
+				["Enable"] = false,
+			},
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
 			["General"] = {
-				["UseGlobal"] = true,
+				["UIScale"] = 0.6,
+				["Themes"] = "Tukz",
+			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+				["LeftBar"] = true,
+				["RightBar"] = true,
 			},
 		},
 		["Torinara"] = {
@@ -2735,13 +2789,20 @@ TukuiSettingsPerCharacter = {
 			},
 		},
 		["Clothgar"] = {
+			["Bags"] = {
+				["Enable"] = false,
+			},
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
 			["General"] = {
-				["UseGlobal"] = true,
-				["Themes"] = "Tukui",
+				["UIScale"] = 0.6,
+				["Themes"] = "Tukz",
 			},
 			["ActionBars"] = {
-				["RightBar"] = true,
+				["HotKey"] = true,
 				["LeftBar"] = true,
+				["RightBar"] = true,
 			},
 		},
 	},

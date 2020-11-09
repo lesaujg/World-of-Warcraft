@@ -1,2 +1,0 @@
-
-TukuiSettingsPerChar = nil

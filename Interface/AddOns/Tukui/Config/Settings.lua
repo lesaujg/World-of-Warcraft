@@ -12,6 +12,9 @@ C["General"] = {
 	["UIScale"] = T.PerfectScale,
 	["MinimapScale"] = 100,
 	["WorldMapScale"] = 50,
+	["Profiles"] = {
+		["Options"] = {},
+	},
 
 	["Themes"] = {
 		["Options"] = {
@@ -69,6 +72,7 @@ C["Bags"] = {
 	["Enable"] = true,
 	["IdentifyQuestItems"] = true,
 	["FlashNewItems"] = true,
+	["ItemLevel"] = true,
 	["ButtonSize"] = 32,
 	["Spacing"] = 4,
 	["ItemsPerRow"] = 12,
@@ -102,6 +106,7 @@ C["Chat"] = {
 	["TextFadingTimer"] = 60,
 	["TabFont"] = "Tukui",
 	["ChatFont"] = "Tukui",
+	["BubblesNames"] = true,
 }
 
 C["Cooldowns"] = {
@@ -125,6 +130,7 @@ C["Loot"] = {
 }
 
 C["Misc"] = {
+	["ItemLevel"] = true,
 	["ThreatBar"] = true,
 	["WorldMapEnable"] = true,
 	["ExperienceEnable"] = true,
@@ -134,7 +140,6 @@ C["Misc"] = {
 	["TalkingHeadEnable"] = true,
 	["UIErrorSize"] = 16,
 	["UIErrorFont"] = "Tukui Outline",
-	["ObjectiveTrackerFont"] = "Tukui Outline",
 }
 
 C["NamePlates"] = {
@@ -147,6 +152,17 @@ C["NamePlates"] = {
 	["QuestIcon"] = true,
 	["HighlightColor"] = {1, 1, 0},
 	["HighlightSize"] = 10,
+	["ColorThreat"] = false, 
+	["HealthTag"] = {
+		["Options"] = {
+			["None"] = "",
+			["Current HP"] = "|cff549654[Tukui:CurrentHP]|r",
+			["Percent"] = "|cff549654[perhp]%|r",
+			["HP and Percent"] = "|cff549654[Tukui:CurrentHP] - [perhp]%|r",
+		},
+
+		["Value"] = "",
+	},
 }
 
 C["Party"] = {
@@ -160,6 +176,17 @@ C["Party"] = {
 	["HealthFont"] = "Tukui Outline",
 	["HighlightColor"] = {0, 1, 0},
 	["HighlightSize"] = 10,
+	["HealthTag"] = {
+		["Options"] = {
+			["None"] = "",
+			["Current HP"] = "|cff549654[Tukui:CurrentHP]|r",
+			["Percent"] = "|cff549654[perhp]%|r",
+			["HP and Percent"] = "|cff549654[Tukui:CurrentHP] - [perhp]%|r",
+			["Missing HP"] = "|cffFF0000[missinghp]|r",
+		},
+
+		["Value"] = "|cff549654[perhp]%|r",
+	},
 }
 
 C["Raid"] = {
@@ -186,7 +213,11 @@ C["Raid"] = {
 	["HeightSize"] = 55,
 	["HighlightColor"] = {0, 1, 0},
 	["HighlightSize"] = 10,
-	["StatusTrack"] = false,
+	["AuraTrack"] = true,
+	["AuraTrackIcons"] = true,
+	["AuraTrackThickness"] = 5,
+	["AuraTrackIconSize"] = 12,
+	["AuraTrackSpacing"] = 6,
 	["GroupBy"] = {
 		["Options"] = {
 			["Group"] = "GROUP",
@@ -195,6 +226,17 @@ C["Raid"] = {
 		},
 
 		["Value"] = "GROUP",
+	},
+	["HealthTag"] = {
+		["Options"] = {
+			["None"] = "",
+			["Current HP"] = "|cff549654[Tukui:CurrentHP]|r",
+			["Percent"] = "|cff549654[perhp]%|r",
+			["HP and Percent"] = "|cff549654[Tukui:CurrentHP] - [perhp]%|r",
+			["Missing HP"] = "|cffFF0000[missinghp]|r",
+		},
+
+		["Value"] = "",
 	},
 }
 
@@ -287,7 +329,7 @@ C["UnitFrames"] = {
 			["Current HP"] = "|cff549654[Tukui:CurrentHP]|r",
 			["Percent"] = "|cff549654[perhp]%|r",
 			["HP and Percent"] = "|cff549654[Tukui:CurrentHP] - [perhp]%|r",
-			["Missing HP"] = "|cff549654-[missinghp]|r",
+			["Missing HP"] = "|cffFF0000[missinghp]|r",
 		},
 
 		["Value"] = "|cff549654[perhp]%|r",
@@ -298,7 +340,7 @@ C["UnitFrames"] = {
 			["Current HP"] = "|cff549654[Tukui:CurrentHP]|r",
 			["Percent"] = "|cff549654[perhp]%|r",
 			["HP and Percent"] = "|cff549654[Tukui:CurrentHP] - [perhp]%|r",
-			["Missing HP"] = "|cff549654-[missinghp]|r",
+			["Missing HP"] = "|cffFF0000[missinghp]|r",
 		},
 
 		["Value"] = "|cff549654[perhp]%|r",
@@ -309,7 +351,7 @@ C["UnitFrames"] = {
 			["Current HP"] = "|cff549654[Tukui:CurrentHP]|r",
 			["Percent"] = "|cff549654[perhp]%|r",
 			["HP and Percent"] = "|cff549654[Tukui:CurrentHP] - [perhp]%|r",
-			["Missing HP"] = "|cff549654-[missinghp]|r",
+			["Missing HP"] = "|cffFF0000[missinghp]|r",
 		},
 
 		["Value"] = "|cff549654[perhp]%|r",

@@ -5,6 +5,10 @@ local GUI = T["GUI"]
 local General = function(self)
 	local Window = self:CreateWindow("General", true)
 
+	Window:CreateSection("Profiles")
+	local Profile = Window:CreateDropdown("General", "Profiles", "Import a profile from another character")
+	Profile.Menu:HookScript("OnHide", GUI.SetProfile)
+	
 	Window:CreateSection("Theme")
 	Window:CreateDropdown("General", "Themes", "Set UI theme")
 
@@ -85,6 +89,7 @@ local Bags = function(self)
 
 	Window:CreateSection("Enable")
 	Window:CreateSwitch("Bags", "Enable", "Enable bag module")
+	Window:CreateSwitch("Bags", "ItemLevel", "Display ILevel on bags armors and weapons items")
 	
 	Window:CreateSection("Styling")
 	Window:CreateSwitch("Bags", "IdentifyQuestItems", "Identify quest items in bags with an exclamation mark?")
@@ -105,6 +110,7 @@ local Chat = function(self)
 	Window:CreateSwitch("Chat", "TextFading", "Fade the chat message after inactivity?")
 	Window:CreateDropdown("Chat", "Bubbles", "Chat bubbles")
 	Window:CreateSlider("Chat", "BubblesTextSize", "Set bubbles text size", 6, 16, 1)
+	Window:CreateSwitch("Chat", "BubblesNames", "Display name in bubbles?")
 
 	Window:CreateSection("Size [Tukui theme only]")
 	Window:CreateSlider("Chat", "LeftWidth", "Set left chat width", 300, 600, 1)
@@ -158,6 +164,8 @@ end
 local Misc = function(self)
 	local Window = self:CreateWindow("Misc")
 				
+	Window:CreateSection("Items Level")
+	Window:CreateSwitch("Misc", "ItemLevel", "Display items level on character and inspect frames")
 	Window:CreateSection("Threat")
 	Window:CreateSwitch("Misc", "ThreatBar", "Enable Threat Bar")
 	Window:CreateSection("World Map")
@@ -184,12 +192,13 @@ local NamePlates = function(self)
 	Window:CreateSection("Enable")
 	Window:CreateSwitch("NamePlates", "Enable", "Enable nameplate module")
 	Window:CreateSwitch("NamePlates", "NameplateCastBar", "Enable nameplate cast")
+	Window:CreateSwitch("NamePlates", "ColorThreat", "Enable nameplate coloring by threat")
 	Window:CreateSwitch("NamePlates", "QuestIcon", "Enable nameplate quest icon indicator")
 
 	Window:CreateSection("Styling")
 	Window:CreateSwitch("NamePlates", "OnlySelfDebuffs", "Display only our debuffs")
 	Window:CreateColorSelection("NamePlates", "HighlightColor", "Highlight texture color")
-
+	
 	Window:CreateSection("Sizing")
 	Window:CreateSlider("NamePlates", "Width", "Set nameplate width", 60, 200, 10)
 	Window:CreateSlider("NamePlates", "Height", "Set nameplate height", 12, 24, 1)
@@ -197,6 +206,9 @@ local NamePlates = function(self)
 
 	Window:CreateSection("Font")
 	Window:CreateDropdown("NamePlates", "Font", "Set nameplate font", "Font")
+	
+	Window:CreateSection("Tags")
+	Window:CreateDropdown("NamePlates", "HealthTag", "Health tag on nameplates")
 end
 
 local Party = function(self)
@@ -217,6 +229,9 @@ local Party = function(self)
 	Window:CreateSection("Font")
 	Window:CreateDropdown("Party", "Font", "Set party font", "Font")
 	Window:CreateDropdown("Party", "HealthFont", "Set party health font", "Font")
+	
+	Window:CreateSection("Tags")
+	Window:CreateDropdown("Party", "HealthTag", "Health tag party unit")
 end
 
 local Raid = function(self)
@@ -226,7 +241,6 @@ local Raid = function(self)
 	Window:CreateSwitch("Raid", "Enable", "Enable raid module")
 	Window:CreateSwitch("Raid", "ShowPets", "Enable raid module for pets")
 	Window:CreateSwitch("Raid", "DebuffWatch", "Display dispellable debuffs")
-	Window:CreateSwitch("Raid", "StatusTrack", "[BETA/WIP] Healer buffs status tracking")
 	Window:CreateSwitch("Raid", "VerticalHealth", "Enable vertical health")
 	Window:CreateSwitch("Raid", "DesaturateNonPlayerBuffs", "Displays other players buffs grayscaled")
 	Window:CreateDropdown("Raid", "RaidBuffs", "Show buff on raid frames")
@@ -241,10 +255,20 @@ local Raid = function(self)
 	Window:CreateSlider("Raid", "HeightSize", "Set raid unit height", 45, 150, 1)
 	Window:CreateColorSelection("Raid", "HighlightColor", "Highlight texture color")
 	Window:CreateSlider("Raid", "HighlightSize", "Set nameplate highlight size", 5, 15, 1)
+	
+	Window:CreateSection("Auras Tracking [BETA/WIP]")
+	Window:CreateSwitch("Raid", "AuraTrack", "Enable auras tracking module for healer")
+	Window:CreateSwitch("Raid", "AuraTrackIcons", "Use squared icons instead of status bars")
+	Window:CreateSlider("Raid", "AuraTrackThickness", "Thickness size of status bars in pixel", 2, 10, 1)
+	Window:CreateSlider("Raid", "AuraTrackIconSize", "Size of icons in pixel", 6, 18, 1)
+	Window:CreateSlider("Raid", "AuraTrackSpacing", "Spacing between icons in pixel", 2, 10, 1)
 
 	Window:CreateSection("Font")
 	Window:CreateDropdown("Raid", "Font", "Set raid font", "Font")
 	Window:CreateDropdown("Raid", "HealthFont", "Set raid health font", "Font")
+	
+	Window:CreateSection("Tags")
+	Window:CreateDropdown("Raid", "HealthTag", "Health tag raid unit")
 end
 
 local Tooltips = function(self)
@@ -322,6 +346,7 @@ local UnitFrames = function(self)
 	Window:CreateSwitch("UnitFrames", "AurasBelow", "Move auras below unitframes")
 
 	Window:CreateSection("Styling")
+	Window:CreateSwitch("UnitFrames", "TargetEnemyHostileColor", "Enemy health bar colored by hostile reaction color")
 	Window:CreateSlider("UnitFrames", "StatusBarBackgroundMultiplier", "Health and Power background % opacity", 0, 50, 1)
 	Window:CreateSwitch("UnitFrames", "UnlinkCastBar", "Unlink cast bars from unitframes")
 	Window:CreateSwitch("UnitFrames", "CastBarIcon", "Display castbar spell icon")
@@ -338,21 +363,12 @@ local UnitFrames = function(self)
 	Window:CreateSlider("UnitFrames", "HighlightSize", "Set nameplate highlight size", 5, 15, 1)
 	Window:CreateSlider("UnitFrames", "RangeAlpha", "Set out of range alpha (focus/arena/boss)", 0, 1, 0.1)
 	
-	Window:CreateSection("Player")
-	Window:CreateDropdown("UnitFrames", "PlayerHealthTag", "Health tag on player")
-	
-	Window:CreateSection("Target")
-	Window:CreateDropdown("UnitFrames", "TargetHealthTag", "Health tag on target")
-	Window:CreateSwitch("UnitFrames", "TargetEnemyHostileColor", "Enemy health bar colored by hostile reaction color")
-	
-	Window:CreateSection("Focus")
-	Window:CreateDropdown("UnitFrames", "FocusHealthTag", "Health tag on target")
-	
-	Window:CreateSection("FocusTarget")
-	Window:CreateDropdown("UnitFrames", "FocusTargetHealthTag", "Health tag on target")
-	
-	Window:CreateSection("Boss")
-	Window:CreateDropdown("UnitFrames", "BossHealthTag", "Health tag on target")
+	Window:CreateSection("Tags")
+	Window:CreateDropdown("UnitFrames", "PlayerHealthTag", "Health tag on player frame")
+	Window:CreateDropdown("UnitFrames", "TargetHealthTag", "Health tag on target frame")
+	Window:CreateDropdown("UnitFrames", "FocusHealthTag", "Health tag on focus frame")
+	Window:CreateDropdown("UnitFrames", "FocusTargetHealthTag", "Health tag on focus target frame")
+	Window:CreateDropdown("UnitFrames", "BossHealthTag", "Health tag on boss frames")
 end
 
 GUI:AddWidgets(General)

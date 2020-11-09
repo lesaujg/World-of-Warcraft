@@ -45,8 +45,6 @@ function UnitFrames:Raid()
 	Health.colorReaction = true
 	Health.isRaid = true
 
-	Health.PostUpdate = UnitFrames.PostUpdateHealth
-
 	-- Power
 	local Power = CreateFrame("StatusBar", nil, self)
 	Power:SetHeight(3)
@@ -89,12 +87,16 @@ function UnitFrames:Raid()
 		outsideAlpha = C["Raid"].RangeAlpha,
 	}
 	
-	if C.Raid.StatusTrack then
-		local StatusTrack = CreateFrame("Frame", nil, Health)
-		StatusTrack:SetAllPoints()
-		StatusTrack.Texture = C.Medias.Normal
+	if C.Raid.AuraTrack then
+		local AuraTrack = CreateFrame("Frame", nil, Health)
+		AuraTrack:SetAllPoints()
+		AuraTrack.Texture = C.Medias.Normal
+		AuraTrack.Icons = C.Raid.AuraTrackIcons
+		AuraTrack.Thickness = C.Raid.AuraTrackThickness
+		AuraTrack.IconSize = C.Raid.AuraTrackIconSize
+		AuraTrack.Spacing = C.Raid.AuraTrackSpacing
 
-		self.StatusTrack = StatusTrack
+		self.AuraTrack = AuraTrack
 	elseif C.Raid.RaidBuffs.Value ~= "Hide" then
 		local Buffs = CreateFrame("Frame", self:GetName().."Buffs", Health)
 		local onlyShowPlayer = C.Raid.RaidBuffs.Value == "Self"
@@ -204,6 +206,7 @@ function UnitFrames:Raid()
 	Highlight:Hide()
 
 	self:Tag(Name, "[Tukui:GetRaidNameColor][Tukui:NameShort]")
+	self:Tag(Health.Value, C.Raid.HealthTag.Value)
 	self.Health = Health
 	self.Health.bg = Health.Background
 	self.Power = Power

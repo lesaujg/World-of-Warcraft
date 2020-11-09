@@ -23,7 +23,7 @@ function Auras:CreateHeaders()
 		Header:SetMovable(true)
 		Header:SetAttribute("minHeight", 30)
 		Header:SetAttribute("wrapAfter", C["Auras"].BuffsPerRow)
-		Header:SetAttribute("wrapYOffset", -73.5)
+		Header:SetAttribute("wrapYOffset", C.Auras.ClassicTimer and -51 or -40)
 		Header:SetAttribute("xOffset", -35)
 		Header:CreateBackdrop()
 		Header.Backdrop:SetBorderColor(1, 0, 0)
@@ -64,7 +64,7 @@ function Auras:CreateHeaders()
 
 	if (not C.Auras.HideDebuffs) then
 		if (C.Auras.HideBuffs) then
-			Buffs:SetPoint("TOPRIGHT", Minimap, "TOPLEFT", -30, 2)
+			Debuffs:SetPoint("TOPRIGHT", Minimap, "TOPLEFT", -30, 2)
 		else
 			Debuffs:SetPoint("TOP", Buffs, "BOTTOM", 0, -95)
 		end
