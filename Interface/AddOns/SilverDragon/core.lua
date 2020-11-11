@@ -4,12 +4,13 @@ local HBD = LibStub("HereBeDragons-2.0")
 
 local addon = LibStub("AceAddon-3.0"):NewAddon("SilverDragon", "AceEvent-3.0", "AceTimer-3.0", "AceConsole-3.0")
 SilverDragon = addon
+SilverDragon.NAMESPACE = ns -- for separate addons
 addon.events = LibStub("CallbackHandler-1.0"):New(addon)
 
 local Debug
 do
 	local TextDump = LibStub("LibTextDump-1.0")
-	local debuggable = GetAddOnMetadata(myname, "Version") == 'v90001.3'
+	local debuggable = GetAddOnMetadata(myname, "Version") == 'v90001.5'
 	local _window
 	local function GetDebugWindow()
 		if not _window then
@@ -50,6 +51,19 @@ local wowVersion, buildRevision, _, buildTOC = GetBuildInfo()
 BINDING_HEADER_SILVERDRAGON = "SilverDragon"
 _G["BINDING_NAME_CLICK SilverDragonPopupButton:LeftButton"] = "Target last found mob"
 _G["BINDING_NAME_CLICK SilverDragonMacroButton:LeftButton"] = "Scan for nearby mobs"
+
+addon.escapes = {
+	-- |TTexturePath:size1:size2:xoffset:yoffset:dimx:dimy:coordx1:coordx2:coordy1:coordy2|t
+	-- |A:atlas:height:width[:offsetX:offsetY]|a
+	-- leftClick = [[|A:NPE_LeftClick:19:18:1:|a]],
+	-- rightClick = [[|A:NPE_RightClick:20:20:1:|a]],
+	leftClick = [[|TInterface\TUTORIALFRAME\UI-TUTORIAL-FRAME:19:11:-1:0:512:512:9:67:227:306|t]],
+	rightClick = [[|TInterface\TUTORIALFRAME\UI-TUTORIAL-FRAME:20:12:0:-1:512:512:9:66:332:411|t]],
+	keyDown = [[|TInterface\TUTORIALFRAME\UI-TUTORIAL-FRAME:0:0:0:-1:512:512:9:66:437:490|t]],
+	green = _G.GREEN_FONT_COLOR_CODE,
+	red = _G.RED_FONT_COLOR_CODE,
+}
+
 
 addon.datasources = {
 	--[[
@@ -395,10 +409,10 @@ function addon:GetMobLabel(id)
 	if not name then
 		return UNKNOWN
 	end
-	if not mobdb[id] then
+	if not (mobdb[id] and mobdb[id].variant) then
 		return name
 	end
-	return name .. (mobdb[id].variant and (" (" .. mobdb[id].variant .. ")") or "")
+	return name .. (" (" .. mobdb[id].variant .. ")")
 end
 
 do

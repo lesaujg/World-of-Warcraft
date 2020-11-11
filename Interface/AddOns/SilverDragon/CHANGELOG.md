@@ -1,5 +1,32 @@
 # Changelog
 
+## Changed in v90001.5
+
+* Refined waypoint options:
+    * Blizzard waypoints are now equivalent to TomTom/DBM, not just a fallback, and you can choose all/none of them independently
+    * Blizzard waypoints weren't being auto-removed on timeout correctly
+    * An error could happen on auto-removal if you had TomTom *and* DBM enabled simultaneously
+* Map overlay improvements:
+    * Hover over a mob to show a highlight over all locations for that mob on the map
+    * Click a pin (or the mob's name in the broker dropdown) to focus it so it always shows a highlight... now you can easily find a mob after seeing its name in the broker dropdown!
+    * Shift-click a pin to link to it in chat (using your target popup settings)
+    * Alt-click a pin to set a waypoint for it
+* Add notes on Death Rising rares about their spawn order
+* Fix a spawn location for Prince Keleseth
+
+## Changed in v90001.4
+
+* The Death Rising pre-launch rares in Icecrown are added temporarily; they won't actually spawn before the appropriate point in the event is reached
+* Improve shift-clicking the popup to add a chat link:
+    * New default: immediately send the link to the /general channel
+    * Which channel to send to can be configured
+    * Old behavior of just opening the default chatbox is available in options
+* Map icons no longer require HandyNotes
+* Right-clicking the LDB icon on the world map will immediately show the options for the map icons
+* Right-clicking the target popup to close it will now happen immediately in combat
+* Performance improvements when editing the mob ignore list
+* Galleon's chat announcement wasn't being noticed, because Chief Salyis isn't Galleon
+
 ## Changed in v90001.3
 
 * Improve shift-clicking the popup to add a chat link:

@@ -171,6 +171,9 @@ function module:SetupDataObject()
 			local config = core:GetModule("Config", true)
 			if config then
 				config:ShowConfig()
+				if tooltip and tooltip.SDOptions.config_path then
+					LibStub("AceConfigDialog-3.0"):SelectGroup("SilverDragon", unpack(tooltip.SDOptions.config_path))
+				end
 			end
 		end
 	end
@@ -201,6 +204,7 @@ end
 function module:SetupWorldMap()
 	local button_options = {
 		help = true,
+		config_path = {'overlay'},
 	}
 	local button = CreateFrame("Button", nil, WorldMapFrame.NavBar)
 	button:SetSize(20, 20)
@@ -321,6 +325,10 @@ do
 		return CompletableCellPrototype.SetupCompletion(self, isCollected)
 	end
 
+	local function mob_click(cell, mobid)
+		core.events:Fire("BrokerMobClick", mobid)
+	end
+
 	local function show_loot_tooltip(cell, mobid, only)
 		tooltip:SetFrameStrata("DIALOG")
 		GameTooltip_SetDefaultAnchor(GameTooltip, cell)
@@ -376,6 +384,8 @@ do
 		tooltip:Clear()
 		wipe(sorted_mobs)
 
+		tooltip.SDOptions = options
+
 		local zone = options.nearby
 		if zone and ns.mobsByZone[zone] then
 			for id in pairs(ns.mobsByZone[zone]) do
@@ -410,6 +420,7 @@ do
 					core:FormatLastSeen(last_seen),
 					(tameable and 'Tameable' or '')
 				)
+				tooltip:SetCellScript(index, 1, "OnMouseUp", mob_click, id)
 				if ns.mobdb[id] and ns.mobdb[id].notes then
 					tooltip:SetCellScript(index, 1, "OnEnter", show_notes_tooltip, id)
 					tooltip:SetCellScript(index, 1, "OnLeave", hide_subtooltip)
