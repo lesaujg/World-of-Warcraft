@@ -5,77 +5,6 @@ TukuiData = {
 			["Installation"] = {
 				["Done"] = true,
 			},
-			["Texts"] = {
-				["Durability"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Memory"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Power"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					8, -- [2]
-				},
-			},
-			["Move"] = {
-			},
-			["DataTexts"] = {
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Character"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["MicroMenu"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["System"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-			},
-			["ActionBars"] = {
-				["HideBar5"] = true,
-			},
-			["InstallDone"] = true,
-			["HideBar3"] = false,
 			["Chat"] = {
 				["Frame1"] = {
 					"BOTTOMLEFT", -- [1]
@@ -109,11 +38,11 @@ TukuiData = {
 					370, -- [5]
 					111, -- [6]
 				},
-				["Frame4"] = {
-					"BOTTOMRIGHT", -- [1]
-					"BOTTOMRIGHT", -- [2]
-					-47, -- [3]
-					45, -- [4]
+				["Frame10"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					100, -- [3]
+					100, -- [4]
 					370, -- [5]
 					111, -- [6]
 				},
@@ -149,18 +78,162 @@ TukuiData = {
 					370, -- [5]
 					111, -- [6]
 				},
-				["Frame10"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					100, -- [3]
-					100, -- [4]
+				["Frame4"] = {
+					"BOTTOMRIGHT", -- [1]
+					"BOTTOMRIGHT", -- [2]
+					-47, -- [3]
+					45, -- [4]
 					370, -- [5]
 					111, -- [6]
+				},
+			},
+			["Move"] = {
+			},
+			["DataTexts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Character"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["System"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["MicroMenu"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+			},
+			["ActionBars"] = {
+				["HideBar5"] = true,
+			},
+			["InstallDone"] = true,
+			["HideBar3"] = false,
+			["Texts"] = {
+				["Durability"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Memory"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					8, -- [2]
+				},
+				["Power"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["FPS & MS"] = {
+					true, -- [1]
+					4, -- [2]
 				},
 			},
 		},
 		["Torinar"] = {
 			["HideBar4"] = false,
+			["Texts"] = {
+				["Durability"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Memory"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["FPS & MS"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Power"] = {
+					false, -- [1]
+					0, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+			},
+			["Move"] = {
+			},
+			["InstallDone"] = true,
+			["DataTexts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Character"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["MicroMenu"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["System"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+			},
+			["ActionBars"] = {
+				["HideBar5"] = true,
+			},
+			["Installation"] = {
+				["Done"] = true,
+			},
 			["Chat"] = {
 				["Frame1"] = {
 					"BOTTOMLEFT", -- [1]
@@ -194,11 +267,11 @@ TukuiData = {
 					370, -- [5]
 					108, -- [6]
 				},
-				["Frame10"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
+				["Frame4"] = {
+					"BOTTOMRIGHT", -- [1]
+					"BOTTOMRIGHT", -- [2]
+					-34, -- [3]
+					49.9999961853027, -- [4]
 					370, -- [5]
 					108, -- [6]
 				},
@@ -234,86 +307,13 @@ TukuiData = {
 					370, -- [5]
 					108, -- [6]
 				},
-				["Frame4"] = {
-					"BOTTOMRIGHT", -- [1]
-					"BOTTOMRIGHT", -- [2]
-					-34, -- [3]
-					49.9999961853027, -- [4]
+				["Frame10"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
 					370, -- [5]
 					108, -- [6]
-				},
-			},
-			["Move"] = {
-			},
-			["InstallDone"] = true,
-			["Installation"] = {
-				["Done"] = true,
-			},
-			["ActionBars"] = {
-				["HideBar5"] = true,
-			},
-			["DataTexts"] = {
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Character"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["System"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["MicroMenu"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-			},
-			["Texts"] = {
-				["Durability"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Memory"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["Power"] = {
-					false, -- [1]
-					0, -- [2]
-				},
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
 				},
 			},
 		},
@@ -324,73 +324,6 @@ TukuiData = {
 			["Move"] = {
 			},
 			["InstallDone"] = true,
-			["Texts"] = {
-				["Durability"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Memory"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Power"] = {
-					false, -- [1]
-					0, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-			},
-			["DataTexts"] = {
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Character"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["System"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["MicroMenu"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-			},
-			["ActionBars"] = {
-				["HideBar5"] = true,
-			},
 			["Chat"] = {
 				["Frame1"] = {
 					"BOTTOMLEFT", -- [1]
@@ -424,11 +357,11 @@ TukuiData = {
 					370, -- [5]
 					108, -- [6]
 				},
-				["Frame4"] = {
-					"BOTTOMRIGHT", -- [1]
-					"BOTTOMRIGHT", -- [2]
-					-34, -- [3]
-					49.9999961853027, -- [4]
+				["Frame10"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
 					370, -- [5]
 					108, -- [6]
 				},
@@ -464,91 +397,85 @@ TukuiData = {
 					370, -- [5]
 					108, -- [6]
 				},
-				["Frame10"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
+				["Frame4"] = {
+					"BOTTOMRIGHT", -- [1]
+					"BOTTOMRIGHT", -- [2]
+					-34, -- [3]
+					49.9999961853027, -- [4]
 					370, -- [5]
 					108, -- [6]
+				},
+			},
+			["ActionBars"] = {
+				["HideBar5"] = true,
+			},
+			["DataTexts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Character"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["MicroMenu"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["System"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+			},
+			["Texts"] = {
+				["Durability"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Memory"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["Power"] = {
+					false, -- [1]
+					0, -- [2]
+				},
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["FPS & MS"] = {
+					true, -- [1]
+					4, -- [2]
 				},
 			},
 		},
 		["Galinar"] = {
 			["HideBar4"] = false,
-			["Texts"] = {
-				["Durability"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Memory"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Power"] = {
-					false, -- [1]
-					0, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-			},
-			["Move"] = {
-			},
-			["InstallDone"] = true,
-			["Installation"] = {
-				["Done"] = true,
-			},
-			["ActionBars"] = {
-				["HideBar5"] = true,
-			},
-			["DataTexts"] = {
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Character"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["System"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["MicroMenu"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-			},
 			["Chat"] = {
 				["Frame1"] = {
 					"BOTTOMLEFT", -- [1]
@@ -582,11 +509,11 @@ TukuiData = {
 					370, -- [5]
 					108, -- [6]
 				},
-				["Frame4"] = {
-					"BOTTOMRIGHT", -- [1]
-					"BOTTOMRIGHT", -- [2]
-					-34, -- [3]
-					49.9999961853027, -- [4]
+				["Frame10"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
 					370, -- [5]
 					108, -- [6]
 				},
@@ -622,21 +549,58 @@ TukuiData = {
 					370, -- [5]
 					108, -- [6]
 				},
-				["Frame10"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
+				["Frame4"] = {
+					"BOTTOMRIGHT", -- [1]
+					"BOTTOMRIGHT", -- [2]
+					-34, -- [3]
+					49.9999961853027, -- [4]
 					370, -- [5]
 					108, -- [6]
 				},
 			},
-		},
-		["Edaka"] = {
-			["Texts"] = {
+			["Move"] = {
+			},
+			["InstallDone"] = true,
+			["DataTexts"] = {
 				["Friends"] = {
 					true, -- [1]
 					3, -- [2]
+				},
+				["Character"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["MicroMenu"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["System"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+			},
+			["ActionBars"] = {
+				["HideBar5"] = true,
+			},
+			["Installation"] = {
+				["Done"] = true,
+			},
+			["Texts"] = {
+				["Durability"] = {
+					true, -- [1]
+					2, -- [2]
 				},
 				["Memory"] = {
 					true, -- [1]
@@ -650,23 +614,26 @@ TukuiData = {
 					true, -- [1]
 					6, -- [2]
 				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["Power"] = {
+					false, -- [1]
+					0, -- [2]
+				},
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
 				["FPS & MS"] = {
 					true, -- [1]
 					4, -- [2]
 				},
-				["Durability"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Power"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					8, -- [2]
-				},
 			},
+		},
+		["Edaka"] = {
+			["InstallDone"] = true,
 			["Chat"] = {
 				["Frame1"] = {
 					"BOTTOMLEFT", -- [1]
@@ -700,11 +667,11 @@ TukuiData = {
 					370, -- [5]
 					108, -- [6]
 				},
-				["Frame4"] = {
-					"BOTTOMRIGHT", -- [1]
-					"BOTTOMRIGHT", -- [2]
-					-43.9999961853027, -- [3]
-					49.9999961853027, -- [4]
+				["Frame10"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
 					370, -- [5]
 					108, -- [6]
 				},
@@ -740,18 +707,51 @@ TukuiData = {
 					370, -- [5]
 					108, -- [6]
 				},
-				["Frame10"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
+				["Frame4"] = {
+					"BOTTOMRIGHT", -- [1]
+					"BOTTOMRIGHT", -- [2]
+					-43.9999961853027, -- [3]
+					49.9999961853027, -- [4]
 					370, -- [5]
 					108, -- [6]
 				},
 			},
 			["Move"] = {
 			},
-			["InstallDone"] = true,
+			["Texts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Memory"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					8, -- [2]
+				},
+				["Power"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["Durability"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["FPS & MS"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+			},
 		},
 		["Tauro"] = {
 			["Move"] = {
@@ -777,47 +777,18 @@ TukuiData = {
 					true, -- [1]
 					2, -- [2]
 				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
-				},
 				["Time"] = {
 					true, -- [1]
 					7, -- [2]
+				},
+				["FPS & MS"] = {
+					true, -- [1]
+					4, -- [2]
 				},
 			},
 		},
 		["Toberd"] = {
-			["Texts"] = {
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Memory"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["Voice Chat"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-			},
+			["InstallDone"] = true,
 			["Chat"] = {
 				["Frame1"] = {
 					"BOTTOMLEFT", -- [1]
@@ -851,11 +822,11 @@ TukuiData = {
 					370.0000305175781, -- [5]
 					108, -- [6]
 				},
-				["Frame4"] = {
-					"BOTTOMRIGHT", -- [1]
-					"BOTTOMRIGHT", -- [2]
-					-34, -- [3]
-					50, -- [4]
+				["Frame10"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					100, -- [3]
+					100, -- [4]
 					370.0000305175781, -- [5]
 					108, -- [6]
 				},
@@ -891,18 +862,47 @@ TukuiData = {
 					370.0000305175781, -- [5]
 					108, -- [6]
 				},
-				["Frame10"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					100, -- [3]
-					100, -- [4]
+				["Frame4"] = {
+					"BOTTOMRIGHT", -- [1]
+					"BOTTOMRIGHT", -- [2]
+					-34, -- [3]
+					50, -- [4]
 					370.0000305175781, -- [5]
 					108, -- [6]
 				},
 			},
 			["Move"] = {
 			},
-			["InstallDone"] = true,
+			["Texts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Memory"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["Voice Chat"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["FPS & MS"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+			},
 		},
 		["Mandelbrot"] = {
 			["Installation"] = {
@@ -911,6 +911,73 @@ TukuiData = {
 			["Move"] = {
 			},
 			["InstallDone"] = true,
+			["Texts"] = {
+				["Durability"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Memory"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["FPS & MS"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Power"] = {
+					false, -- [1]
+					0, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+			},
+			["ActionBars"] = {
+				["HideBar5"] = true,
+			},
+			["DataTexts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Character"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["MicroMenu"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["System"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+			},
 			["Chat"] = {
 				["Frame1"] = {
 					"BOTTOMLEFT", -- [1]
@@ -944,11 +1011,11 @@ TukuiData = {
 					370, -- [5]
 					108, -- [6]
 				},
-				["Frame10"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
+				["Frame4"] = {
+					"BOTTOMRIGHT", -- [1]
+					"BOTTOMRIGHT", -- [2]
+					-34, -- [3]
+					49.9999961853027, -- [4]
 					370, -- [5]
 					108, -- [6]
 				},
@@ -984,80 +1051,13 @@ TukuiData = {
 					370, -- [5]
 					108, -- [6]
 				},
-				["Frame4"] = {
-					"BOTTOMRIGHT", -- [1]
-					"BOTTOMRIGHT", -- [2]
-					-34, -- [3]
-					49.9999961853027, -- [4]
+				["Frame10"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
 					370, -- [5]
 					108, -- [6]
-				},
-			},
-			["DataTexts"] = {
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Character"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["System"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["MicroMenu"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-			},
-			["ActionBars"] = {
-				["HideBar5"] = true,
-			},
-			["Texts"] = {
-				["Durability"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Memory"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["Power"] = {
-					false, -- [1]
-					0, -- [2]
-				},
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
 				},
 			},
 		},
@@ -1068,73 +1068,6 @@ TukuiData = {
 			["Move"] = {
 			},
 			["InstallDone"] = true,
-			["Texts"] = {
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Memory"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-				["Durability"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Power"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					8, -- [2]
-				},
-			},
-			["ActionBars"] = {
-				["HideBar5"] = true,
-			},
-			["DataTexts"] = {
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Character"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["MicroMenu"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["System"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-			},
 			["Chat"] = {
 				["Frame1"] = {
 					"BOTTOMLEFT", -- [1]
@@ -1168,10 +1101,235 @@ TukuiData = {
 					370, -- [5]
 					108, -- [6]
 				},
+				["Frame10"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame9"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame7"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame3"] = {
+					"TOPLEFT", -- [1]
+					"TOPLEFT", -- [2]
+					0, -- [3]
+					0, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame2"] = {
+					"TOPLEFT", -- [1]
+					"TOPLEFT", -- [2]
+					0, -- [3]
+					-24.0000171661377, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
 				["Frame4"] = {
 					"BOTTOMRIGHT", -- [1]
 					"BOTTOMRIGHT", -- [2]
 					-43.9999961853027, -- [3]
+					49.9999961853027, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+			},
+			["DataTexts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Character"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["System"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["MicroMenu"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+			},
+			["ActionBars"] = {
+				["HideBar5"] = true,
+			},
+			["Texts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Memory"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					8, -- [2]
+				},
+				["Power"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["Durability"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["FPS & MS"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+			},
+		},
+		["Uldaris"] = {
+			["Installation"] = {
+				["Done"] = true,
+			},
+			["Texts"] = {
+				["Durability"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Memory"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["FPS & MS"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Power"] = {
+					false, -- [1]
+					0, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+			},
+			["Move"] = {
+			},
+			["DataTexts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Character"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["MicroMenu"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["System"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+			},
+			["ActionBars"] = {
+				["HideBar5"] = true,
+			},
+			["InstallDone"] = true,
+			["HideBar3"] = false,
+			["Chat"] = {
+				["Frame1"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					34, -- [3]
+					49.9999961853027, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame5"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame6"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame8"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame4"] = {
+					"BOTTOMRIGHT", -- [1]
+					"BOTTOMRIGHT", -- [2]
+					-34, -- [3]
 					49.9999961853027, -- [4]
 					370, -- [5]
 					108, -- [6]
@@ -1218,10 +1376,13 @@ TukuiData = {
 				},
 			},
 		},
-		["Clothgar"] = {
+		["Herbinator"] = {
 			["Installation"] = {
 				["Done"] = true,
 			},
+			["Move"] = {
+			},
+			["InstallDone"] = true,
 			["Chat"] = {
 				["Frame1"] = {
 					"BOTTOMLEFT", -- [1]
@@ -1304,7 +1465,8 @@ TukuiData = {
 					108, -- [6]
 				},
 			},
-			["Move"] = {
+			["ActionBars"] = {
+				["HideBar5"] = true,
 			},
 			["DataTexts"] = {
 				["Friends"] = {
@@ -1323,24 +1485,19 @@ TukuiData = {
 					true, -- [1]
 					6, -- [2]
 				},
-				["System"] = {
+				["MicroMenu"] = {
 					true, -- [1]
-					4, -- [2]
+					5, -- [2]
 				},
 				["Time"] = {
 					true, -- [1]
 					7, -- [2]
 				},
-				["MicroMenu"] = {
+				["System"] = {
 					true, -- [1]
-					5, -- [2]
+					4, -- [2]
 				},
 			},
-			["ActionBars"] = {
-				["HideBar5"] = true,
-			},
-			["InstallDone"] = true,
-			["HideBar3"] = false,
 			["Texts"] = {
 				["Durability"] = {
 					true, -- [1]
@@ -1362,6 +1519,10 @@ TukuiData = {
 					true, -- [1]
 					7, -- [2]
 				},
+				["Power"] = {
+					false, -- [1]
+					0, -- [2]
+				},
 				["Friends"] = {
 					true, -- [1]
 					3, -- [2]
@@ -1372,7 +1533,7 @@ TukuiData = {
 				},
 			},
 		},
-		["Herbinator"] = {
+		["Belrath"] = {
 			["Installation"] = {
 				["Done"] = true,
 			},
@@ -1529,196 +1690,8 @@ TukuiData = {
 				},
 			},
 		},
-		["Bracnar"] = {
-			["Installation"] = {
-				["Done"] = true,
-			},
-			["Move"] = {
-			},
-			["ActionBars"] = {
-				["HideBar5"] = true,
-			},
-			["Chat"] = {
-				["Frame1"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					34, -- [3]
-					49.9999961853027, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame5"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame6"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame8"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame4"] = {
-					"BOTTOMRIGHT", -- [1]
-					"BOTTOMRIGHT", -- [2]
-					-34, -- [3]
-					49.9999961853027, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame9"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame7"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame3"] = {
-					"TOPLEFT", -- [1]
-					"TOPLEFT", -- [2]
-					0, -- [3]
-					0, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame2"] = {
-					"TOPLEFT", -- [1]
-					"TOPLEFT", -- [2]
-					0, -- [3]
-					-24.0000171661377, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame10"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-			},
-			["HideBar4"] = false,
-			["DataTexts"] = {
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Character"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["MicroMenu"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["System"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-			},
-			["InstallDone"] = true,
-			["HideBar3"] = false,
-			["Texts"] = {
-				["Durability"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Memory"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-			},
-		},
 		["Sanjuri"] = {
-			["Texts"] = {
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Memory"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					8, -- [2]
-				},
-				["Power"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["Durability"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-			},
+			["InstallDone"] = true,
 			["Chat"] = {
 				["Frame1"] = {
 					"BOTTOMLEFT", -- [1]
@@ -1752,11 +1725,11 @@ TukuiData = {
 					370, -- [5]
 					111, -- [6]
 				},
-				["Frame4"] = {
-					"BOTTOMRIGHT", -- [1]
-					"BOTTOMRIGHT", -- [2]
-					-46.9999961853027, -- [3]
-					45, -- [4]
+				["Frame10"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
 					370, -- [5]
 					111, -- [6]
 				},
@@ -1792,23 +1765,123 @@ TukuiData = {
 					370, -- [5]
 					111, -- [6]
 				},
-				["Frame10"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
+				["Frame4"] = {
+					"BOTTOMRIGHT", -- [1]
+					"BOTTOMRIGHT", -- [2]
+					-46.9999961853027, -- [3]
+					45, -- [4]
 					370, -- [5]
 					111, -- [6]
 				},
 			},
 			["Move"] = {
 			},
-			["InstallDone"] = true,
+			["Texts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Memory"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["FPS & MS"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+				["Durability"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Power"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					8, -- [2]
+				},
+			},
 		},
 		["Torinara"] = {
 			["Installation"] = {
 				["Done"] = true,
 			},
+			["Texts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Memory"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["Voice Chat"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["FPS & MS"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+			},
+			["Move"] = {
+			},
+			["DataTexts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Character"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["MicroMenu"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["System"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+			},
+			["ActionBars"] = {
+				["HideBar5"] = true,
+			},
+			["InstallDone"] = true,
+			["HideBar3"] = false,
 			["Chat"] = {
 				["Frame1"] = {
 					"BOTTOMLEFT", -- [1]
@@ -1842,11 +1915,11 @@ TukuiData = {
 					370, -- [5]
 					108, -- [6]
 				},
-				["Frame10"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					100, -- [3]
-					100, -- [4]
+				["Frame4"] = {
+					"BOTTOMRIGHT", -- [1]
+					"BOTTOMRIGHT", -- [2]
+					-34, -- [3]
+					50, -- [4]
 					370, -- [5]
 					108, -- [6]
 				},
@@ -1882,80 +1955,13 @@ TukuiData = {
 					370, -- [5]
 					108, -- [6]
 				},
-				["Frame4"] = {
-					"BOTTOMRIGHT", -- [1]
-					"BOTTOMRIGHT", -- [2]
-					-34, -- [3]
-					50, -- [4]
+				["Frame10"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					100, -- [3]
+					100, -- [4]
 					370, -- [5]
 					108, -- [6]
-				},
-			},
-			["Move"] = {
-			},
-			["DataTexts"] = {
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Character"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["System"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["MicroMenu"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-			},
-			["ActionBars"] = {
-				["HideBar5"] = true,
-			},
-			["InstallDone"] = true,
-			["HideBar3"] = false,
-			["Texts"] = {
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Memory"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["Voice Chat"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
 				},
 			},
 		},
@@ -1966,121 +1972,6 @@ TukuiData = {
 			["Move"] = {
 			},
 			["InstallDone"] = true,
-			["Chat"] = {
-				["Frame1"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					34, -- [3]
-					49.9999961853027, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame5"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame6"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame8"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame10"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame9"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame7"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame3"] = {
-					"TOPLEFT", -- [1]
-					"TOPLEFT", -- [2]
-					0, -- [3]
-					0, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame2"] = {
-					"TOPLEFT", -- [1]
-					"TOPLEFT", -- [2]
-					0, -- [3]
-					-24.0000171661377, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame4"] = {
-					"BOTTOMRIGHT", -- [1]
-					"BOTTOMRIGHT", -- [2]
-					-34, -- [3]
-					49.9999961853027, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-			},
-			["DataTexts"] = {
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Character"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["System"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["MicroMenu"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-			},
-			["ActionBars"] = {
-				["HideBar5"] = true,
-			},
 			["Texts"] = {
 				["Durability"] = {
 					true, -- [1]
@@ -2098,31 +1989,148 @@ TukuiData = {
 					true, -- [1]
 					6, -- [2]
 				},
-				["Time"] = {
+				["FPS & MS"] = {
 					true, -- [1]
-					7, -- [2]
-				},
-				["Power"] = {
-					false, -- [1]
-					0, -- [2]
+					4, -- [2]
 				},
 				["Friends"] = {
 					true, -- [1]
 					3, -- [2]
 				},
-				["FPS & MS"] = {
+				["Power"] = {
+					false, -- [1]
+					0, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+			},
+			["ActionBars"] = {
+				["HideBar5"] = true,
+			},
+			["DataTexts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Character"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["MicroMenu"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["System"] = {
 					true, -- [1]
 					4, -- [2]
 				},
 			},
+			["Chat"] = {
+				["Frame1"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					34, -- [3]
+					49.9999961853027, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame5"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame6"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame8"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame4"] = {
+					"BOTTOMRIGHT", -- [1]
+					"BOTTOMRIGHT", -- [2]
+					-34, -- [3]
+					49.9999961853027, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame9"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame7"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame3"] = {
+					"TOPLEFT", -- [1]
+					"TOPLEFT", -- [2]
+					0, -- [3]
+					0, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame2"] = {
+					"TOPLEFT", -- [1]
+					"TOPLEFT", -- [2]
+					0, -- [3]
+					-24.0000171661377, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame10"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+			},
 		},
-		["Belrath"] = {
+		["Bracnar"] = {
 			["Installation"] = {
 				["Done"] = true,
 			},
 			["Move"] = {
 			},
-			["InstallDone"] = true,
+			["ActionBars"] = {
+				["HideBar5"] = true,
+			},
 			["Chat"] = {
 				["Frame1"] = {
 					"BOTTOMLEFT", -- [1]
@@ -2205,162 +2213,7 @@ TukuiData = {
 					108, -- [6]
 				},
 			},
-			["ActionBars"] = {
-				["HideBar5"] = true,
-			},
-			["DataTexts"] = {
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Character"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["MicroMenu"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["System"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-			},
-			["Texts"] = {
-				["Durability"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["Memory"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["Power"] = {
-					false, -- [1]
-					0, -- [2]
-				},
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-			},
-		},
-		["Uldaris"] = {
-			["Installation"] = {
-				["Done"] = true,
-			},
-			["Chat"] = {
-				["Frame1"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					34, -- [3]
-					49.9999961853027, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame5"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame6"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame8"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame10"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame9"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame7"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame3"] = {
-					"TOPLEFT", -- [1]
-					"TOPLEFT", -- [2]
-					0, -- [3]
-					0, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame2"] = {
-					"TOPLEFT", -- [1]
-					"TOPLEFT", -- [2]
-					0, -- [3]
-					-24.0000171661377, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-				["Frame4"] = {
-					"BOTTOMRIGHT", -- [1]
-					"BOTTOMRIGHT", -- [2]
-					-34, -- [3]
-					49.9999961853027, -- [4]
-					370, -- [5]
-					108, -- [6]
-				},
-			},
-			["Move"] = {
-			},
+			["HideBar4"] = false,
 			["DataTexts"] = {
 				["Friends"] = {
 					true, -- [1]
@@ -2390,9 +2243,6 @@ TukuiData = {
 					true, -- [1]
 					5, -- [2]
 				},
-			},
-			["ActionBars"] = {
-				["HideBar5"] = true,
 			},
 			["InstallDone"] = true,
 			["HideBar3"] = false,
@@ -2417,10 +2267,6 @@ TukuiData = {
 					true, -- [1]
 					7, -- [2]
 				},
-				["Power"] = {
-					false, -- [1]
-					0, -- [2]
-				},
 				["Friends"] = {
 					true, -- [1]
 					3, -- [2]
@@ -2428,6 +2274,160 @@ TukuiData = {
 				["FPS & MS"] = {
 					true, -- [1]
 					4, -- [2]
+				},
+			},
+		},
+		["Clothgar"] = {
+			["Installation"] = {
+				["Done"] = true,
+			},
+			["Texts"] = {
+				["Durability"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Memory"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["FPS & MS"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+			},
+			["Move"] = {
+			},
+			["DataTexts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Character"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["MicroMenu"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["System"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+			},
+			["ActionBars"] = {
+				["HideBar5"] = true,
+			},
+			["InstallDone"] = true,
+			["HideBar3"] = false,
+			["Chat"] = {
+				["Frame1"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					34, -- [3]
+					49.9999961853027, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame5"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame6"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame8"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame4"] = {
+					"BOTTOMRIGHT", -- [1]
+					"BOTTOMRIGHT", -- [2]
+					-34, -- [3]
+					49.9999961853027, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame9"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame7"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame3"] = {
+					"TOPLEFT", -- [1]
+					"TOPLEFT", -- [2]
+					0, -- [3]
+					0, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame2"] = {
+					"TOPLEFT", -- [1]
+					"TOPLEFT", -- [2]
+					0, -- [3]
+					-24.0000171661377, -- [4]
+					370, -- [5]
+					108, -- [6]
+				},
+				["Frame10"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
+					370, -- [5]
+					108, -- [6]
 				},
 			},
 		},
@@ -2449,14 +2449,14 @@ TukuiData = {
 			["Toberd"] = 36006,
 			["Mandelbrot"] = 3856555,
 			["Palani"] = 52352516,
-			["Uldaris"] = 102953930,
+			["Clothgar"] = 7081944625,
 			["Herbinator"] = 4111625,
-			["Bracnar"] = 1126634263,
+			["Belrath"] = 53695567,
 			["Sanjuri"] = 11460,
 			["Torinara"] = 60998208,
 			["Ghiaccioli"] = 51023585,
-			["Belrath"] = 53695567,
-			["Clothgar"] = 7081944625,
+			["Bracnar"] = 1126634263,
+			["Uldaris"] = 102953930,
 		},
 	},
 	["Ravenholdt"] = {
@@ -2484,20 +2484,53 @@ TukuiData = {
 					true, -- [1]
 					2, -- [2]
 				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
-				},
 				["Time"] = {
 					true, -- [1]
 					7, -- [2]
+				},
+				["FPS & MS"] = {
+					true, -- [1]
+					4, -- [2]
 				},
 			},
 		},
 	},
 	["Turalyon"] = {
 		["Guldahka"] = {
-			["InstallDone"] = true,
+			["Texts"] = {
+				["Friends"] = {
+					true, -- [1]
+					3, -- [2]
+				},
+				["Memory"] = {
+					true, -- [1]
+					5, -- [2]
+				},
+				["Guild"] = {
+					true, -- [1]
+					1, -- [2]
+				},
+				["Gold"] = {
+					true, -- [1]
+					6, -- [2]
+				},
+				["FPS & MS"] = {
+					true, -- [1]
+					4, -- [2]
+				},
+				["Durability"] = {
+					true, -- [1]
+					2, -- [2]
+				},
+				["Power"] = {
+					true, -- [1]
+					7, -- [2]
+				},
+				["Time"] = {
+					true, -- [1]
+					8, -- [2]
+				},
+			},
 			["Chat"] = {
 				["Frame1"] = {
 					"BOTTOMLEFT", -- [1]
@@ -2531,11 +2564,11 @@ TukuiData = {
 					370, -- [5]
 					111, -- [6]
 				},
-				["Frame10"] = {
-					"BOTTOMLEFT", -- [1]
-					"BOTTOMLEFT", -- [2]
-					99.9999923706055, -- [3]
-					99.9999923706055, -- [4]
+				["Frame4"] = {
+					"BOTTOMRIGHT", -- [1]
+					"BOTTOMRIGHT", -- [2]
+					-46.9999961853027, -- [3]
+					45, -- [4]
 					370, -- [5]
 					111, -- [6]
 				},
@@ -2571,135 +2604,102 @@ TukuiData = {
 					370, -- [5]
 					111, -- [6]
 				},
-				["Frame4"] = {
-					"BOTTOMRIGHT", -- [1]
-					"BOTTOMRIGHT", -- [2]
-					-46.9999961853027, -- [3]
-					45, -- [4]
+				["Frame10"] = {
+					"BOTTOMLEFT", -- [1]
+					"BOTTOMLEFT", -- [2]
+					99.9999923706055, -- [3]
+					99.9999923706055, -- [4]
 					370, -- [5]
 					111, -- [6]
 				},
 			},
 			["Move"] = {
 			},
-			["Texts"] = {
-				["Friends"] = {
-					true, -- [1]
-					3, -- [2]
-				},
-				["Memory"] = {
-					true, -- [1]
-					5, -- [2]
-				},
-				["Guild"] = {
-					true, -- [1]
-					1, -- [2]
-				},
-				["Gold"] = {
-					true, -- [1]
-					6, -- [2]
-				},
-				["Time"] = {
-					true, -- [1]
-					8, -- [2]
-				},
-				["Power"] = {
-					true, -- [1]
-					7, -- [2]
-				},
-				["Durability"] = {
-					true, -- [1]
-					2, -- [2]
-				},
-				["FPS & MS"] = {
-					true, -- [1]
-					4, -- [2]
-				},
-			},
+			["InstallDone"] = true,
 		},
 	},
 	["gold"] = {
 		["Sisters of Elune"] = {
 			["Bracnar"] = 9086809653,
 			["Ghiaccioli"] = 1090364671,
-			["Uldaris"] = 464477,
-			["Herbinator"] = 677511,
 			["Clothgar"] = 123926398,
+			["Herbinator"] = 677511,
+			["Uldaris"] = 464477,
 		},
 		["Andorhal"] = {
-			["Herbinator"] = 0,
 			["Clothgar"] = 45,
+			["Herbinator"] = 0,
 		},
 	},
 }
 TukuiSettings = {
-	["Misc"] = {
-		["WorldMapEnable"] = false,
-	},
 	["Bags"] = {
 		["Enable"] = false,
 	},
+	["Misc"] = {
+		["WorldMapEnable"] = false,
+	},
 	["General"] = {
-		["Themes"] = "Tukz",
 		["UIScale"] = 0.6,
+		["Themes"] = "Tukz",
 	},
 	["ActionBars"] = {
 		["HotKey"] = true,
-		["RightBar"] = true,
 		["LeftBar"] = true,
+		["RightBar"] = true,
 	},
 }
 TukuiGold = {
 	["Sisters of Elune"] = {
-		["Leanara"] = 57903511,
+		["Leanara"] = 57929829,
 		["Ghiaccioli"] = 51034514,
 		["Mandelbrot"] = 7212410,
 		["Torinar"] = 51243073,
-		["Orig"] = 61013983,
-		["Clothgar"] = 10196665498,
-		["Herbinator"] = 4106465,
-		["Torinara"] = 61166118,
-		["Galinar"] = 62036110,
-		["Belrath"] = 53850033,
-		["Palani"] = 53603617,
-		["Bracnar"] = 508169577,
+		["Orig"] = 61069847,
 		["Uldaris"] = 103727790,
+		["Herbinator"] = 4105535,
+		["Bracnar"] = 507987553,
+		["Galinar"] = 64189128,
+		["Torinara"] = 61202350,
+		["Palani"] = 53603617,
+		["Belrath"] = 53850033,
+		["Clothgar"] = 10546822564,
 	},
 }
 TukuiSettingsPerCharacter = {
 	["Sisters of Elune"] = {
 		["Leanara"] = {
-			["Misc"] = {
-				["WorldMapEnable"] = false,
-			},
 			["Bags"] = {
 				["Enable"] = false,
 			},
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
 			["General"] = {
-				["Themes"] = "Tukz",
 				["UIScale"] = 0.6,
+				["Themes"] = "Tukz",
 			},
 			["ActionBars"] = {
 				["HotKey"] = true,
-				["RightBar"] = true,
 				["LeftBar"] = true,
+				["RightBar"] = true,
 			},
 		},
 		["Ghiaccioli"] = {
-			["Misc"] = {
-				["WorldMapEnable"] = false,
-			},
 			["Bags"] = {
 				["Enable"] = false,
 			},
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
 			["General"] = {
-				["Themes"] = "Tukz",
 				["UIScale"] = 0.6,
+				["Themes"] = "Tukz",
 			},
 			["ActionBars"] = {
 				["HotKey"] = true,
-				["RightBar"] = true,
 				["LeftBar"] = true,
+				["RightBar"] = true,
 			},
 		},
 		["Mandelbrot"] = {
@@ -2708,173 +2708,173 @@ TukuiSettingsPerCharacter = {
 			},
 		},
 		["Torinar"] = {
-			["Misc"] = {
-				["WorldMapEnable"] = false,
-			},
 			["Bags"] = {
 				["Enable"] = false,
 			},
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
 			["General"] = {
-				["Themes"] = "Tukz",
 				["UIScale"] = 0.6,
+				["Themes"] = "Tukz",
 			},
 			["ActionBars"] = {
 				["HotKey"] = true,
-				["RightBar"] = true,
 				["LeftBar"] = true,
+				["RightBar"] = true,
 			},
 		},
 		["Orig"] = {
-			["Misc"] = {
-				["WorldMapEnable"] = false,
-			},
 			["Bags"] = {
 				["Enable"] = false,
 			},
-			["General"] = {
-				["Themes"] = "Tukz",
-				["UIScale"] = 0.6,
-			},
-			["ActionBars"] = {
-				["HotKey"] = true,
-				["RightBar"] = true,
-				["LeftBar"] = true,
-			},
-		},
-		["Clothgar"] = {
 			["Misc"] = {
 				["WorldMapEnable"] = false,
 			},
-			["Bags"] = {
-				["Enable"] = false,
-			},
 			["General"] = {
-				["Themes"] = "Tukz",
 				["UIScale"] = 0.6,
+				["Themes"] = "Tukz",
 			},
 			["ActionBars"] = {
 				["HotKey"] = true,
-				["RightBar"] = true,
 				["LeftBar"] = true,
-			},
-		},
-		["Herbinator"] = {
-			["Misc"] = {
-				["WorldMapEnable"] = false,
-			},
-			["Bags"] = {
-				["Enable"] = false,
-			},
-			["General"] = {
-				["Themes"] = "Tukz",
-				["UIScale"] = 0.6,
-			},
-			["ActionBars"] = {
-				["HotKey"] = true,
 				["RightBar"] = true,
-				["LeftBar"] = true,
-			},
-		},
-		["Torinara"] = {
-			["Misc"] = {
-				["WorldMapEnable"] = false,
-			},
-			["Bags"] = {
-				["Enable"] = false,
-			},
-			["General"] = {
-				["Themes"] = "Tukz",
-				["UIScale"] = 0.6,
-			},
-			["ActionBars"] = {
-				["HotKey"] = true,
-				["RightBar"] = true,
-				["LeftBar"] = true,
-			},
-		},
-		["Galinar"] = {
-			["Misc"] = {
-				["WorldMapEnable"] = false,
-			},
-			["Bags"] = {
-				["Enable"] = false,
-			},
-			["General"] = {
-				["Themes"] = "Tukz",
-				["UIScale"] = 0.6,
-			},
-			["ActionBars"] = {
-				["HotKey"] = true,
-				["RightBar"] = true,
-				["LeftBar"] = true,
-			},
-		},
-		["Belrath"] = {
-			["Misc"] = {
-				["WorldMapEnable"] = false,
-			},
-			["Bags"] = {
-				["Enable"] = false,
-			},
-			["General"] = {
-				["Themes"] = "Tukz",
-				["UIScale"] = 0.6,
-			},
-			["ActionBars"] = {
-				["HotKey"] = true,
-				["RightBar"] = true,
-				["LeftBar"] = true,
-			},
-		},
-		["Palani"] = {
-			["Misc"] = {
-				["WorldMapEnable"] = false,
-			},
-			["Bags"] = {
-				["Enable"] = false,
-			},
-			["General"] = {
-				["Themes"] = "Tukz",
-				["UIScale"] = 0.6,
-			},
-			["ActionBars"] = {
-				["HotKey"] = true,
-				["RightBar"] = true,
-				["LeftBar"] = true,
-			},
-		},
-		["Bracnar"] = {
-			["Misc"] = {
-				["WorldMapEnable"] = false,
-			},
-			["Bags"] = {
-				["Enable"] = false,
-			},
-			["General"] = {
-				["Themes"] = "Tukz",
-				["UIScale"] = 0.6,
-			},
-			["ActionBars"] = {
-				["HotKey"] = true,
-				["RightBar"] = true,
-				["LeftBar"] = true,
 			},
 		},
 		["Uldaris"] = {
-			["Misc"] = {
-				["WorldMapEnable"] = false,
-			},
 			["Bags"] = {
 				["Enable"] = false,
 			},
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
 			["General"] = {
-				["Themes"] = "Tukz",
 				["UIScale"] = 0.6,
+				["Themes"] = "Tukz",
 			},
 			["ActionBars"] = {
 				["HotKey"] = true,
-				["RightBar"] = true,
 				["LeftBar"] = true,
+				["RightBar"] = true,
+			},
+		},
+		["Herbinator"] = {
+			["Bags"] = {
+				["Enable"] = false,
+			},
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
+			["General"] = {
+				["UIScale"] = 0.6,
+				["Themes"] = "Tukz",
+			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+				["LeftBar"] = true,
+				["RightBar"] = true,
+			},
+		},
+		["Bracnar"] = {
+			["Bags"] = {
+				["Enable"] = false,
+			},
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
+			["General"] = {
+				["UIScale"] = 0.6,
+				["Themes"] = "Tukz",
+			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+				["LeftBar"] = true,
+				["RightBar"] = true,
+			},
+		},
+		["Galinar"] = {
+			["Bags"] = {
+				["Enable"] = false,
+			},
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
+			["General"] = {
+				["UIScale"] = 0.6,
+				["Themes"] = "Tukz",
+			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+				["LeftBar"] = true,
+				["RightBar"] = true,
+			},
+		},
+		["Torinara"] = {
+			["Bags"] = {
+				["Enable"] = false,
+			},
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
+			["General"] = {
+				["UIScale"] = 0.6,
+				["Themes"] = "Tukz",
+			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+				["LeftBar"] = true,
+				["RightBar"] = true,
+			},
+		},
+		["Palani"] = {
+			["Bags"] = {
+				["Enable"] = false,
+			},
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
+			["General"] = {
+				["UIScale"] = 0.6,
+				["Themes"] = "Tukz",
+			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+				["LeftBar"] = true,
+				["RightBar"] = true,
+			},
+		},
+		["Belrath"] = {
+			["Bags"] = {
+				["Enable"] = false,
+			},
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
+			["General"] = {
+				["UIScale"] = 0.6,
+				["Themes"] = "Tukz",
+			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+				["LeftBar"] = true,
+				["RightBar"] = true,
+			},
+		},
+		["Clothgar"] = {
+			["Bags"] = {
+				["Enable"] = false,
+			},
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
+			["General"] = {
+				["UIScale"] = 0.6,
+				["Themes"] = "Tukz",
+			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+				["LeftBar"] = true,
+				["RightBar"] = true,
 			},
 		},
 	},
