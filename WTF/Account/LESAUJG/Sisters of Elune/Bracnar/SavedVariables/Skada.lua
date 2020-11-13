@@ -801,6 +801,22 @@ SkadaPerCharDB = {
 							["max"] = 557,
 							["damage"] = 4066,
 						},
+						["Thrash"] = {
+							["hitmin"] = 28,
+							["criticalamount"] = 3193,
+							["id"] = 192090,
+							["hitamount"] = 1337,
+							["criticalmin"] = 123,
+							["hitmax"] = 422,
+							["min"] = 28,
+							["criticalmax"] = 936,
+							["critical"] = 6,
+							["hit"] = 13,
+							["totalhits"] = 19,
+							["school"] = 1,
+							["max"] = 936,
+							["damage"] = 4530,
+						},
 						["Mangle"] = {
 							["hitmin"] = 459,
 							["id"] = 33917,
@@ -812,18 +828,6 @@ SkadaPerCharDB = {
 							["max"] = 469,
 							["totalhits"] = 3,
 							["damage"] = 1397,
-						},
-						["Maul"] = {
-							["hitmin"] = 662,
-							["id"] = 6807,
-							["min"] = 662,
-							["hitamount"] = 662,
-							["hitmax"] = 662,
-							["hit"] = 1,
-							["school"] = 1,
-							["max"] = 662,
-							["totalhits"] = 1,
-							["damage"] = 662,
 						},
 						["Azerite Globules"] = {
 							["hitmin"] = 192,
@@ -841,21 +845,17 @@ SkadaPerCharDB = {
 							["max"] = 384,
 							["damage"] = 576,
 						},
-						["Thrash"] = {
-							["hitmin"] = 28,
-							["criticalamount"] = 3193,
-							["id"] = 192090,
-							["hitamount"] = 1337,
-							["criticalmin"] = 123,
-							["hitmax"] = 422,
-							["min"] = 28,
-							["criticalmax"] = 936,
-							["critical"] = 6,
-							["hit"] = 13,
-							["totalhits"] = 19,
+						["Maul"] = {
+							["hitmin"] = 662,
+							["id"] = 6807,
+							["min"] = 662,
+							["hitamount"] = 662,
+							["hitmax"] = 662,
+							["hit"] = 1,
 							["school"] = 1,
-							["max"] = 936,
-							["damage"] = 4530,
+							["max"] = 662,
+							["totalhits"] = 1,
+							["damage"] = 662,
 						},
 						["Swipe"] = {
 							["hitmin"] = 250,
@@ -2403,17 +2403,21 @@ SkadaPerCharDB = {
 							["max"] = 2116,
 							["damage"] = 9284,
 						},
-						["Dispatch"] = {
-							["criticalamount"] = 7151,
-							["id"] = 2098,
-							["min"] = 1652,
-							["criticalmax"] = 2048,
+						["Ancient Flame"] = {
+							["hitmin"] = 331,
+							["criticalamount"] = 2714,
+							["id"] = 295367,
+							["hitamount"] = 3342,
+							["criticalmin"] = 663,
+							["hitmax"] = 347,
+							["min"] = 331,
+							["criticalmax"] = 694,
 							["critical"] = 4,
-							["criticalmin"] = 1652,
-							["school"] = 1,
-							["max"] = 2048,
-							["totalhits"] = 4,
-							["damage"] = 7151,
+							["hit"] = 10,
+							["totalhits"] = 14,
+							["school"] = 4,
+							["max"] = 694,
+							["damage"] = 6056,
 						},
 						["Sinister Strike"] = {
 							["hitmin"] = 208,
@@ -2443,21 +2447,21 @@ SkadaPerCharDB = {
 							["totalhits"] = 1,
 							["damage"] = 96,
 						},
-						["Ancient Flame"] = {
-							["hitmin"] = 331,
-							["criticalamount"] = 2714,
-							["id"] = 295367,
-							["hitamount"] = 3342,
-							["criticalmin"] = 663,
-							["hitmax"] = 347,
-							["min"] = 331,
-							["criticalmax"] = 694,
-							["critical"] = 4,
-							["hit"] = 10,
-							["totalhits"] = 14,
-							["school"] = 4,
-							["max"] = 694,
-							["damage"] = 6056,
+						["Tidal Surge"] = {
+							["hitmin"] = 336,
+							["criticalamount"] = 674,
+							["id"] = 280404,
+							["hitamount"] = 336,
+							["criticalmin"] = 674,
+							["hitmax"] = 336,
+							["min"] = 336,
+							["criticalmax"] = 674,
+							["critical"] = 1,
+							["hit"] = 1,
+							["totalhits"] = 2,
+							["school"] = 16,
+							["max"] = 674,
+							["damage"] = 1010,
 						},
 						["Gutripper"] = {
 							["hitmin"] = 126,
@@ -2547,21 +2551,17 @@ SkadaPerCharDB = {
 							["totalhits"] = 1,
 							["damage"] = 3491,
 						},
-						["Tidal Surge"] = {
-							["hitmin"] = 336,
-							["criticalamount"] = 674,
-							["id"] = 280404,
-							["hitamount"] = 336,
-							["criticalmin"] = 674,
-							["hitmax"] = 336,
-							["min"] = 336,
-							["criticalmax"] = 674,
-							["critical"] = 1,
-							["hit"] = 1,
-							["totalhits"] = 2,
-							["school"] = 16,
-							["max"] = 674,
-							["damage"] = 1010,
+						["Dispatch"] = {
+							["criticalamount"] = 7151,
+							["id"] = 2098,
+							["min"] = 1652,
+							["criticalmax"] = 2048,
+							["critical"] = 4,
+							["criticalmin"] = 1652,
+							["school"] = 1,
+							["max"] = 2048,
+							["totalhits"] = 4,
+							["damage"] = 7151,
 						},
 						["Heed My Call"] = {
 							["hitmin"] = 168,
@@ -3443,23 +3443,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1604076478.29501,
 									["amount"] = -402,
+									["spellid"] = 309456,
 									["srcname"] = "Rei Lun",
 									["hp"] = 6289,
-									["spellid"] = 309456,
 								}, -- [1]
 								{
 									["ts"] = 1604076479.29702,
 									["amount"] = -402,
+									["spellid"] = 309456,
 									["srcname"] = "Rei Lun",
 									["hp"] = 5887,
-									["spellid"] = 309456,
 								}, -- [2]
 								{
 									["ts"] = 1604076484.32803,
 									["amount"] = -3519,
+									["spellid"] = 309420,
 									["srcname"] = "Rei Lun",
 									["hp"] = 2368,
-									["spellid"] = 309420,
 								}, -- [3]
 								{
 									["absorb"] = 0,
@@ -5253,8 +5253,8 @@ SkadaPerCharDB = {
 					["damaged"] = {
 					},
 					["dispells"] = 0,
+					["ffdamagedone"] = 0,
 					["ccbreaks"] = 0,
-					["role"] = "NONE",
 					["time"] = 0,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -5292,7 +5292,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["ffdamagedone"] = 0,
+					["role"] = "NONE",
 				}, -- [12]
 				{
 					["last"] = 1604076473,
@@ -5302,8 +5302,8 @@ SkadaPerCharDB = {
 					["damaged"] = {
 					},
 					["dispells"] = 0,
+					["ffdamagedone"] = 0,
 					["ccbreaks"] = 0,
-					["role"] = "NONE",
 					["time"] = 0,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -5341,7 +5341,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["ffdamagedone"] = 0,
+					["role"] = "NONE",
 				}, -- [13]
 				{
 					["last"] = 1604076509,
@@ -7750,8 +7750,8 @@ SkadaPerCharDB = {
 					["damaged"] = {
 					},
 					["dispells"] = 0,
+					["ffdamagedone"] = 0,
 					["ccbreaks"] = 0,
-					["role"] = "NONE",
 					["time"] = 0,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -7789,7 +7789,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["ffdamagedone"] = 0,
+					["role"] = "NONE",
 				}, -- [19]
 				{
 					["last"] = 1604076488,
@@ -7799,8 +7799,8 @@ SkadaPerCharDB = {
 					["damaged"] = {
 					},
 					["dispells"] = 0,
+					["ffdamagedone"] = 0,
 					["ccbreaks"] = 0,
-					["role"] = "NONE",
 					["time"] = 0,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -7838,7 +7838,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["ffdamagedone"] = 0,
+					["role"] = "NONE",
 				}, -- [20]
 				{
 					["last"] = 1604076510,
@@ -8819,8 +8819,8 @@ SkadaPerCharDB = {
 					["damaged"] = {
 					},
 					["dispells"] = 0,
+					["ffdamagedone"] = 0,
 					["ccbreaks"] = 0,
-					["role"] = "NONE",
 					["time"] = 0,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -8858,7 +8858,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["ffdamagedone"] = 0,
+					["role"] = "NONE",
 				}, -- [23]
 				{
 					["last"] = 1604076505,
@@ -8868,8 +8868,8 @@ SkadaPerCharDB = {
 					["damaged"] = {
 					},
 					["dispells"] = 0,
+					["ffdamagedone"] = 0,
 					["ccbreaks"] = 0,
-					["role"] = "NONE",
 					["time"] = 0,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -8907,7 +8907,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["ffdamagedone"] = 0,
+					["role"] = "NONE",
 				}, -- [24]
 				{
 					["last"] = 1604076506,
@@ -8917,8 +8917,8 @@ SkadaPerCharDB = {
 					["damaged"] = {
 					},
 					["dispells"] = 0,
+					["ffdamagedone"] = 0,
 					["ccbreaks"] = 0,
-					["role"] = "NONE",
 					["time"] = 0,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -8956,7 +8956,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["ffdamagedone"] = 0,
+					["role"] = "NONE",
 				}, -- [25]
 				{
 					["last"] = 1604076506,
@@ -8966,8 +8966,8 @@ SkadaPerCharDB = {
 					["damaged"] = {
 					},
 					["dispells"] = 0,
+					["ffdamagedone"] = 0,
 					["ccbreaks"] = 0,
-					["role"] = "NONE",
 					["time"] = 0,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -9005,7 +9005,7 @@ SkadaPerCharDB = {
 					},
 					["alert"] = {
 					},
-					["ffdamagedone"] = 0,
+					["role"] = "NONE",
 				}, -- [26]
 				{
 					["last"] = 1604076508,
@@ -9987,9 +9987,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1604076482.085,
 						["amount"] = -414,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 8300,
-						["spellid"] = 309456,
 					}, -- [15]
 					["pos"] = 12,
 				},
@@ -10294,6 +10294,22 @@ SkadaPerCharDB = {
 						["max"] = 557,
 						["damage"] = 4066,
 					},
+					["Thrash"] = {
+						["hitmin"] = 28,
+						["criticalamount"] = 3193,
+						["id"] = 192090,
+						["hitamount"] = 1337,
+						["criticalmin"] = 123,
+						["hitmax"] = 422,
+						["min"] = 28,
+						["criticalmax"] = 936,
+						["critical"] = 6,
+						["hit"] = 13,
+						["totalhits"] = 19,
+						["school"] = 1,
+						["max"] = 936,
+						["damage"] = 4530,
+					},
 					["Mangle"] = {
 						["hitmin"] = 459,
 						["id"] = 33917,
@@ -10305,18 +10321,6 @@ SkadaPerCharDB = {
 						["max"] = 469,
 						["totalhits"] = 3,
 						["damage"] = 1397,
-					},
-					["Maul"] = {
-						["hitmin"] = 662,
-						["id"] = 6807,
-						["min"] = 662,
-						["hitamount"] = 662,
-						["hitmax"] = 662,
-						["hit"] = 1,
-						["school"] = 1,
-						["max"] = 662,
-						["totalhits"] = 1,
-						["damage"] = 662,
 					},
 					["Azerite Globules"] = {
 						["hitmin"] = 192,
@@ -10334,21 +10338,17 @@ SkadaPerCharDB = {
 						["max"] = 384,
 						["damage"] = 576,
 					},
-					["Thrash"] = {
-						["hitmin"] = 28,
-						["criticalamount"] = 3193,
-						["id"] = 192090,
-						["hitamount"] = 1337,
-						["criticalmin"] = 123,
-						["hitmax"] = 422,
-						["min"] = 28,
-						["criticalmax"] = 936,
-						["critical"] = 6,
-						["hit"] = 13,
-						["totalhits"] = 19,
+					["Maul"] = {
+						["hitmin"] = 662,
+						["id"] = 6807,
+						["min"] = 662,
+						["hitamount"] = 662,
+						["hitmax"] = 662,
+						["hit"] = 1,
 						["school"] = 1,
-						["max"] = 936,
-						["damage"] = 4530,
+						["max"] = 662,
+						["totalhits"] = 1,
+						["damage"] = 662,
 					},
 					["Swipe"] = {
 						["hitmin"] = 250,
@@ -10882,16 +10882,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1604076478.9,
 						["amount"] = -409,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 7244,
-						["spellid"] = 309456,
 					}, -- [2]
 					{
 						["ts"] = 1604076479.936,
 						["amount"] = -409,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 6835,
-						["spellid"] = 309456,
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -10904,9 +10904,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1604076480.868,
 						["amount"] = -409,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 7825,
-						["spellid"] = 309456,
 					}, -- [5]
 					{
 						["absorb"] = 0,
@@ -10919,30 +10919,30 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1604076481.903,
 						["amount"] = -409,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 8861,
-						["spellid"] = 309456,
 					}, -- [7]
 					{
 						["ts"] = 1604076482.901,
 						["amount"] = -409,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 8452,
-						["spellid"] = 309456,
 					}, -- [8]
 					{
 						["ts"] = 1604076483.939,
 						["amount"] = -409,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 8043,
-						["spellid"] = 309456,
 					}, -- [9]
 					{
 						["ts"] = 1604076484.835,
 						["amount"] = -409,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 7634,
-						["spellid"] = 309456,
 					}, -- [10]
 					{
 						["absorb"] = 0,
@@ -10971,9 +10971,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1604076507.327,
 						["amount"] = -5968,
+						["spellid"] = 309418,
 						["srcname"] = "Rei Lun",
 						["hp"] = 4852,
-						["spellid"] = 309418,
 					}, -- [14]
 					{
 						["absorb"] = 0,
@@ -12065,30 +12065,30 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1604076504.071,
 						["amount"] = -400,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 12983,
-						["spellid"] = 309456,
 					}, -- [3]
 					{
 						["ts"] = 1604076505.074,
 						["amount"] = -400,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 12583,
-						["spellid"] = 309456,
 					}, -- [4]
 					{
 						["ts"] = 1604076506.019,
 						["amount"] = -401,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 12182,
-						["spellid"] = 309456,
 					}, -- [5]
 					{
 						["ts"] = 1604076507.022,
 						["amount"] = -400,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 11782,
-						["spellid"] = 309456,
 					}, -- [6]
 					{
 						["ts"] = 1604076499.188,
@@ -12125,9 +12125,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1604076501.013,
 						["amount"] = -400,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 12686,
-						["spellid"] = 309456,
 					}, -- [11]
 					{
 						["ts"] = 1604076501.641,
@@ -12140,9 +12140,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1604076502.05,
 						["amount"] = -400,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 12662,
-						["spellid"] = 309456,
 					}, -- [13]
 					{
 						["ts"] = 1604076502.439,
@@ -12155,9 +12155,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1604076503.045,
 						["amount"] = -400,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 12639,
-						["spellid"] = 309456,
 					}, -- [15]
 					["pos"] = 7,
 				},
@@ -12398,17 +12398,21 @@ SkadaPerCharDB = {
 						["max"] = 2116,
 						["damage"] = 9284,
 					},
-					["Dispatch"] = {
-						["criticalamount"] = 7151,
-						["id"] = 2098,
-						["min"] = 1652,
-						["criticalmax"] = 2048,
+					["Ancient Flame"] = {
+						["hitmin"] = 331,
+						["criticalamount"] = 2714,
+						["id"] = 295367,
+						["hitamount"] = 3342,
+						["criticalmin"] = 663,
+						["hitmax"] = 347,
+						["min"] = 331,
+						["criticalmax"] = 694,
 						["critical"] = 4,
-						["criticalmin"] = 1652,
-						["school"] = 1,
-						["max"] = 2048,
-						["totalhits"] = 4,
-						["damage"] = 7151,
+						["hit"] = 10,
+						["totalhits"] = 14,
+						["school"] = 4,
+						["max"] = 694,
+						["damage"] = 6056,
 					},
 					["Sinister Strike"] = {
 						["hitmin"] = 208,
@@ -12438,21 +12442,21 @@ SkadaPerCharDB = {
 						["totalhits"] = 1,
 						["damage"] = 96,
 					},
-					["Ancient Flame"] = {
-						["hitmin"] = 331,
-						["criticalamount"] = 2714,
-						["id"] = 295367,
-						["hitamount"] = 3342,
-						["criticalmin"] = 663,
-						["hitmax"] = 347,
-						["min"] = 331,
-						["criticalmax"] = 694,
-						["critical"] = 4,
-						["hit"] = 10,
-						["totalhits"] = 14,
-						["school"] = 4,
-						["max"] = 694,
-						["damage"] = 6056,
+					["Tidal Surge"] = {
+						["hitmin"] = 336,
+						["criticalamount"] = 674,
+						["id"] = 280404,
+						["hitamount"] = 336,
+						["criticalmin"] = 674,
+						["hitmax"] = 336,
+						["min"] = 336,
+						["criticalmax"] = 674,
+						["critical"] = 1,
+						["hit"] = 1,
+						["totalhits"] = 2,
+						["school"] = 16,
+						["max"] = 674,
+						["damage"] = 1010,
 					},
 					["Gutripper"] = {
 						["hitmin"] = 126,
@@ -12542,21 +12546,17 @@ SkadaPerCharDB = {
 						["totalhits"] = 1,
 						["damage"] = 3491,
 					},
-					["Tidal Surge"] = {
-						["hitmin"] = 336,
-						["criticalamount"] = 674,
-						["id"] = 280404,
-						["hitamount"] = 336,
-						["criticalmin"] = 674,
-						["hitmax"] = 336,
-						["min"] = 336,
-						["criticalmax"] = 674,
-						["critical"] = 1,
-						["hit"] = 1,
-						["totalhits"] = 2,
-						["school"] = 16,
-						["max"] = 674,
-						["damage"] = 1010,
+					["Dispatch"] = {
+						["criticalamount"] = 7151,
+						["id"] = 2098,
+						["min"] = 1652,
+						["criticalmax"] = 2048,
+						["critical"] = 4,
+						["criticalmin"] = 1652,
+						["school"] = 1,
+						["max"] = 2048,
+						["totalhits"] = 4,
+						["damage"] = 7151,
 					},
 					["Heed My Call"] = {
 						["hitmin"] = 168,
@@ -12618,16 +12618,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1604076495.118,
 						["amount"] = -4898,
+						["spellid"] = 309427,
 						["srcname"] = "Unstable Lazuli",
 						["hp"] = 8504,
-						["spellid"] = 309427,
 					}, -- [1]
 					{
 						["ts"] = 1604076495.118,
 						["amount"] = -4898,
+						["spellid"] = 309427,
 						["srcname"] = "Unstable Lazuli",
 						["hp"] = 3606,
-						["spellid"] = 309427,
 					}, -- [2]
 					{
 						["absorb"] = 0,
@@ -13682,23 +13682,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1604076478.29501,
 								["amount"] = -402,
+								["spellid"] = 309456,
 								["srcname"] = "Rei Lun",
 								["hp"] = 6289,
-								["spellid"] = 309456,
 							}, -- [1]
 							{
 								["ts"] = 1604076479.29702,
 								["amount"] = -402,
+								["spellid"] = 309456,
 								["srcname"] = "Rei Lun",
 								["hp"] = 5887,
-								["spellid"] = 309456,
 							}, -- [2]
 							{
 								["ts"] = 1604076484.32803,
 								["amount"] = -3519,
+								["spellid"] = 309420,
 								["srcname"] = "Rei Lun",
 								["hp"] = 2368,
-								["spellid"] = 309420,
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -14439,9 +14439,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1604076507.327,
 						["amount"] = -5394,
+						["spellid"] = 309418,
 						["srcname"] = "Rei Lun",
 						["hp"] = 12986,
-						["spellid"] = 309418,
 					}, -- [13]
 					{
 						["absorb"] = 0,
@@ -15167,7 +15167,7 @@ SkadaPerCharDB = {
 						["damage"] = 11700,
 					},
 				},
-				["healing"] = 7878,
+				["maxhp"] = 18960,
 				["healed"] = {
 					["Player-125-09AC62FC"] = {
 						["role"] = "DAMAGER",
@@ -15179,7 +15179,7 @@ SkadaPerCharDB = {
 				},
 				["shielding"] = 2550,
 				["id"] = "Player-125-09AC62FC",
-				["first"] = 1604630106,
+				["healing"] = 7878,
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
@@ -15216,9 +15216,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1604076507.327,
 						["amount"] = -5886,
+						["spellid"] = 309418,
 						["srcname"] = "Rei Lun",
 						["hp"] = 5540,
-						["spellid"] = 309418,
 					}, -- [5]
 					{
 						["ts"] = 1604076508.482,
@@ -15375,7 +15375,7 @@ SkadaPerCharDB = {
 						},
 					},
 				},
-				["maxhp"] = 18960,
+				["first"] = 1604630106,
 				["name"] = "Bracnar",
 				["alertCount"] = 17,
 				["alertDamage"] = 22785,
@@ -15677,37 +15677,37 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1604076484.134,
 						["amount"] = -384,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 14383,
-						["spellid"] = 309456,
 					}, -- [2]
 					{
 						["ts"] = 1604076484.327,
 						["amount"] = -3359,
+						["spellid"] = 309420,
 						["srcname"] = "Rei Lun",
 						["hp"] = 11024,
-						["spellid"] = 309420,
 					}, -- [3]
 					{
 						["ts"] = 1604076485.052,
 						["amount"] = -384,
+						["spellid"] = 309456,
 						["srcname"] = "Rei Lun",
 						["hp"] = 10640,
-						["spellid"] = 309456,
 					}, -- [4]
 					{
 						["ts"] = 1604076485.381,
 						["amount"] = -477,
+						["spellid"] = 202669,
 						["srcname"] = "Moriie-Azgalor",
 						["hp"] = 10163,
-						["spellid"] = 202669,
 					}, -- [5]
 					{
 						["ts"] = 1604076488.05,
 						["amount"] = -456,
+						["spellid"] = 202669,
 						["srcname"] = "Moriie-Azgalor",
 						["hp"] = 9707,
-						["spellid"] = 202669,
 					}, -- [6]
 					{
 						["absorb"] = 0,
@@ -16025,8 +16025,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ccbreaks"] = 0,
-				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["overhealing"] = 0,
@@ -16065,7 +16065,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 			}, -- [12]
 			{
 				["healingabsorbed"] = 0,
@@ -16074,8 +16074,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ccbreaks"] = 0,
-				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["overhealing"] = 0,
@@ -16114,7 +16114,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 			}, -- [13]
 			{
 				["healingabsorbed"] = 0,
@@ -18212,9 +18212,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1604076495.118,
 						["amount"] = -5101,
+						["spellid"] = 309427,
 						["srcname"] = "Unstable Lazuli",
 						["hp"] = 9551,
-						["spellid"] = 309427,
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -18921,8 +18921,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ccbreaks"] = 0,
-				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["overhealing"] = 0,
@@ -18961,7 +18961,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 			}, -- [19]
 			{
 				["healingabsorbed"] = 0,
@@ -18970,8 +18970,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ccbreaks"] = 0,
-				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["overhealing"] = 0,
@@ -19010,7 +19010,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 			}, -- [20]
 			{
 				["healingabsorbed"] = 0,
@@ -19333,9 +19333,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1604076507.327,
 						["amount"] = -6441,
+						["spellid"] = 309418,
 						["srcname"] = "Rei Lun",
 						["hp"] = 9959,
-						["spellid"] = 309418,
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -20149,8 +20149,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ccbreaks"] = 0,
-				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["overhealing"] = 0,
@@ -20189,7 +20189,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 			}, -- [23]
 			{
 				["healingabsorbed"] = 0,
@@ -20198,8 +20198,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ccbreaks"] = 0,
-				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["overhealing"] = 0,
@@ -20238,7 +20238,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 			}, -- [24]
 			{
 				["healingabsorbed"] = 0,
@@ -20247,8 +20247,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ccbreaks"] = 0,
-				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["overhealing"] = 0,
@@ -20287,7 +20287,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 			}, -- [25]
 			{
 				["healingabsorbed"] = 0,
@@ -20296,8 +20296,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ccbreaks"] = 0,
-				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["overhealing"] = 0,
@@ -20336,7 +20336,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 			}, -- [26]
 			{
 				["healingabsorbed"] = 0,

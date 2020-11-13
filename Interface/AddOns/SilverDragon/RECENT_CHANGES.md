@@ -1,14 +1,10 @@
-## Changed in v90001.5
+## Changed in v90001.6
 
-* Refined waypoint options:
-    * Blizzard waypoints are now equivalent to TomTom/DBM, not just a fallback, and you can choose all/none of them independently
-    * Blizzard waypoints weren't being auto-removed on timeout correctly
-    * An error could happen on auto-removal if you had TomTom *and* DBM enabled simultaneously
-* Map overlay improvements:
-    * Hover over a mob to show a highlight over all locations for that mob on the map
-    * Click a pin (or the mob's name in the broker dropdown) to focus it so it always shows a highlight... now you can easily find a mob after seeing its name in the broker dropdown!
-    * Shift-click a pin to link to it in chat (using your target popup settings)
-    * Alt-click a pin to set a waypoint for it
-* Add notes on Death Rising rares about their spawn order
-* Fix a spawn location for Prince Keleseth
+* Mobs in the broker tooltip now get click actions and informational tooltips
+    * Click a line to open the map with that mob focused
+    * Control-click a line to set a waypoint for the closest location for that mob
+    * Shift-click a line to link the closest location for that mob in chat
+    * Mousing over them triggers the highlights on the map, if it's open
+* Minimap pins update their focus state immediately
+* Fix a spawn location for Krik'thir the Gatewatcher
 

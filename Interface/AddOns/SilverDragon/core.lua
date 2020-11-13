@@ -10,7 +10,7 @@ addon.events = LibStub("CallbackHandler-1.0"):New(addon)
 local Debug
 do
 	local TextDump = LibStub("LibTextDump-1.0")
-	local debuggable = GetAddOnMetadata(myname, "Version") == 'v90001.5'
+	local debuggable = GetAddOnMetadata(myname, "Version") == 'v90001.6'
 	local _window
 	local function GetDebugWindow()
 		if not _window then
@@ -579,4 +579,24 @@ end
 
 function addon:GetXY(coord)
 	return floor(coord / 10000) / 10000, (coord % 10000) / 10000
+end
+
+function addon:GetClosestLocationForMob(id)
+	if not (ns.mobdb[id] and ns.mobdb[id].locations) then return end
+	local x, y, zone = HBD:GetPlayerZonePosition()
+	if not (x and y and zone) then return end
+	local closest = {distance = 999999999}
+	for zone2, coords in pairs(ns.mobdb[id].locations) do
+		for i, coord in ipairs(coords) do
+			local x2, y2 = self:GetXY(coord)
+			local distance = HBD:GetZoneDistance(zone, x, y, zone2, x2, y2)
+			if distance < closest.distance then
+				closest.distance = distance
+				closest.zone = zone2
+				closest.x = x2
+				closest.y = y2
+			end
+		end
+	end
+	return closest.zone, closest.x, closest.y, closest.distance
 end
