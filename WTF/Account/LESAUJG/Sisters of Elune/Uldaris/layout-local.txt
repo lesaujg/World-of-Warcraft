@@ -1,4 +1,11 @@
 Version: 1
+Frame: BaudManifestDisplay1
+FrameLevel: 1
+Anchor: CENTER
+X: 232
+Y: -24
+W: 250
+H: 417
 Frame: SilverDragonPopupButton
 FrameLevel: 1
 Anchor: BOTTOMRIGHT
@@ -6,10 +13,3 @@ X: -260
 Y: 270
 W: 302
 H: 119
-Frame: BaudManifestDisplay1
-FrameLevel: 1
-Anchor: RIGHT
-X: -255
-Y: -24
-W: 250
-H: 417

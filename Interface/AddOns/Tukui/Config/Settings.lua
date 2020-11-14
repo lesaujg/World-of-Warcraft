@@ -140,6 +140,18 @@ C["Misc"] = {
 	["TalkingHeadEnable"] = true,
 	["UIErrorSize"] = 16,
 	["UIErrorFont"] = "Tukui Outline",
+	["MicroToggle"] = {
+		["Options"] = {
+			["None"] = "",
+			["ESCAPE"] = "ESCAPE",
+			["M"] = "M",
+			["SHIFT-M"] = "SHIFT-M",
+			["CTRL-M"] = "CTRL-M",
+			["ALT-M"] = "ALT-M",
+		},
+
+		["Value"] = "ALT-M",
+	},
 }
 
 C["NamePlates"] = {
