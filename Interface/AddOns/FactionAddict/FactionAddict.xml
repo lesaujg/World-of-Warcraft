@@ -992,16 +992,16 @@
 <!-- END Third Tab - Config -->
 <!-- Config Checkboxes -->
 			<CheckButton name="CheckButton_CF" inherits="InterfaceOptionsCheckButtonTemplate" parent="FactionAddictTab3">
-				<Size x="24" y="24"/>
+				<Size x="20" y="20"/>
 				<Anchors> 
-					<Anchor point="TOPLEFT" relativeTo="$parentCfgHeader1" relativePoint="TOPLEFT" x="17" y="-18" />
+					<Anchor point="TOPLEFT" relativeTo="$parentCfgHeader1" relativePoint="TOPLEFT" x="17" y="-21" />
 				</Anchors>  
 				<Layers>
 					<Layer level="ARTWORK">
 						<FontString parentKey="fs" inherits="SystemFont_Shadow_Small" justifyH="LEFT">
-							<Size x="0" y="12"/>
+							<Size x="0" y="10"/>
 							<Anchors>
-								<Anchor point="TOPLEFT" relativeTo="CheckButton_CF" relativePoint="TOPRIGHT" x="0" y="-6"/>
+								<Anchor point="TOPLEFT" relativeTo="CheckButton_CF" relativePoint="TOPRIGHT" x="0" y="-4"/>
 							</Anchors>
 						</FontString>
 					</Layer>
@@ -1017,16 +1017,16 @@
 				</Scripts>
 			</CheckButton>
 			<CheckButton name="CheckButton_BC" inherits="InterfaceOptionsCheckButtonTemplate" parent="FactionAddictTab3">
-				<Size x="24" y="24"/>
+				<Size x="20" y="20"/>
 				<Anchors> 
-					<Anchor point="TOPLEFT" relativeTo="CheckButton_CF" relativePoint="TOPLEFT" x="0" y="-17" />
+					<Anchor point="TOPLEFT" relativeTo="CheckButton_CF" relativePoint="TOPLEFT" x="0" y="-15" />
 				</Anchors>  
 				<Layers>
 					<Layer level="ARTWORK">
 						<FontString parentKey="fs" inherits="SystemFont_Shadow_Small" justifyH="LEFT">
-							<Size x="0" y="12"/>
+							<Size x="0" y="10"/>
 							<Anchors>
-								<Anchor point="TOPLEFT" relativeTo="CheckButton_BC" relativePoint="TOPRIGHT" x="0" y="-6"/>
+								<Anchor point="TOPLEFT" relativeTo="CheckButton_BC" relativePoint="TOPRIGHT" x="0" y="-4"/>
 							</Anchors>
 						</FontString>
 					</Layer>
@@ -1042,16 +1042,16 @@
 				</Scripts>
 			</CheckButton>
 			<CheckButton name="CheckButton_WOTLK" inherits="InterfaceOptionsCheckButtonTemplate" parent="FactionAddictTab3">
-				<Size x="24" y="24"/>
+				<Size x="20" y="20"/>
 				<Anchors> 
-					<Anchor point="TOPLEFT" relativeTo="CheckButton_BC" relativePoint="TOPLEFT" x="0" y="-17" />
+					<Anchor point="TOPLEFT" relativeTo="CheckButton_BC" relativePoint="TOPLEFT" x="0" y="-15" />
 				</Anchors>  
 				<Layers>
 					<Layer level="ARTWORK">
 						<FontString parentKey="fs" inherits="SystemFont_Shadow_Small" justifyH="LEFT">
-							<Size x="0" y="12"/>
+							<Size x="0" y="10"/>
 							<Anchors>
-								<Anchor point="TOPLEFT" relativeTo="CheckButton_WOTLK" relativePoint="TOPRIGHT" x="0" y="-6"/>
+								<Anchor point="TOPLEFT" relativeTo="CheckButton_WOTLK" relativePoint="TOPRIGHT" x="0" y="-4"/>
 							</Anchors>
 						</FontString>
 					</Layer>
@@ -1067,16 +1067,16 @@
 				</Scripts>
 			</CheckButton>
 			<CheckButton name="CheckButton_CATA" inherits="InterfaceOptionsCheckButtonTemplate" parent="FactionAddictTab3">
-				<Size x="24" y="24"/>
+				<Size x="20" y="20"/>
 				<Anchors> 
-					<Anchor point="TOPLEFT" relativeTo="CheckButton_WOTLK" relativePoint="TOPLEFT" x="0" y="-17" />
+					<Anchor point="TOPLEFT" relativeTo="CheckButton_WOTLK" relativePoint="TOPLEFT" x="0" y="-15" />
 				</Anchors>  
 				<Layers>
 					<Layer level="ARTWORK">
 						<FontString parentKey="fs" inherits="SystemFont_Shadow_Small" justifyH="LEFT">
-							<Size x="0" y="12"/>
+							<Size x="0" y="10"/>
 							<Anchors>
-								<Anchor point="TOPLEFT" relativeTo="CheckButton_CATA" relativePoint="TOPRIGHT" x="0" y="-6"/>
+								<Anchor point="TOPLEFT" relativeTo="CheckButton_CATA" relativePoint="TOPRIGHT" x="0" y="-4"/>
 							</Anchors>
 						</FontString>
 					</Layer>
@@ -1092,16 +1092,16 @@
 				</Scripts>
 			</CheckButton>
 			<CheckButton name="CheckButton_MOP" inherits="InterfaceOptionsCheckButtonTemplate" parent="FactionAddictTab3">
-				<Size x="24" y="24"/>
+				<Size x="20" y="20"/>
 				<Anchors> 
-					<Anchor point="TOPLEFT" relativeTo="CheckButton_CATA" relativePoint="TOPLEFT" x="0" y="-17" />
+					<Anchor point="TOPLEFT" relativeTo="CheckButton_CATA" relativePoint="TOPLEFT" x="0" y="-15" />
 				</Anchors>  
 				<Layers>
 					<Layer level="ARTWORK">
 						<FontString parentKey="fs" inherits="SystemFont_Shadow_Small" justifyH="LEFT">
-							<Size x="0" y="12"/>
+							<Size x="0" y="10"/>
 							<Anchors>
-								<Anchor point="TOPLEFT" relativeTo="CheckButton_MOP" relativePoint="TOPRIGHT" x="0" y="-6"/>
+								<Anchor point="TOPLEFT" relativeTo="CheckButton_MOP" relativePoint="TOPRIGHT" x="0" y="-4"/>
 							</Anchors>
 						</FontString>
 					</Layer>
@@ -1117,16 +1117,16 @@
 				</Scripts>
 			</CheckButton>
 			<CheckButton name="CheckButton_WOD" inherits="InterfaceOptionsCheckButtonTemplate" parent="FactionAddictTab3">
-				<Size x="24" y="24"/>
+				<Size x="20" y="20"/>
 				<Anchors> 
-					<Anchor point="TOPLEFT" relativeTo="CheckButton_MOP" relativePoint="TOPLEFT" x="0" y="-17" />
+					<Anchor point="TOPLEFT" relativeTo="CheckButton_MOP" relativePoint="TOPLEFT" x="0" y="-15" />
 				</Anchors>  
 				<Layers>
 					<Layer level="ARTWORK">
 						<FontString parentKey="fs" inherits="SystemFont_Shadow_Small" justifyH="LEFT">
-							<Size x="0" y="12"/>
+							<Size x="0" y="10"/>
 							<Anchors>
-								<Anchor point="TOPLEFT" relativeTo="CheckButton_WOD" relativePoint="TOPRIGHT" x="0" y="-6"/>
+								<Anchor point="TOPLEFT" relativeTo="CheckButton_WOD" relativePoint="TOPRIGHT" x="0" y="-4"/>
 							</Anchors>
 						</FontString>
 					</Layer>
@@ -1142,16 +1142,16 @@
 				</Scripts>
 			</CheckButton>
 			<CheckButton name="CheckButton_LG" inherits="InterfaceOptionsCheckButtonTemplate" parent="FactionAddictTab3">
-				<Size x="24" y="24"/>
+				<Size x="20" y="20"/>
 				<Anchors> 
-					<Anchor point="TOPLEFT" relativeTo="CheckButton_WOD" relativePoint="TOPLEFT" x="0" y="-17" />
+					<Anchor point="TOPLEFT" relativeTo="CheckButton_WOD" relativePoint="TOPLEFT" x="0" y="-15" />
 				</Anchors>  
 				<Layers>
 					<Layer level="ARTWORK">
 						<FontString parentKey="fs" inherits="SystemFont_Shadow_Small" justifyH="LEFT">
-							<Size x="0" y="12"/>
+							<Size x="0" y="10"/>
 							<Anchors>
-								<Anchor point="TOPLEFT" relativeTo="CheckButton_LG" relativePoint="TOPRIGHT" x="0" y="-6"/>
+								<Anchor point="TOPLEFT" relativeTo="CheckButton_LG" relativePoint="TOPRIGHT" x="0" y="-4"/>
 							</Anchors>
 						</FontString>
 					</Layer>
@@ -1168,16 +1168,42 @@
 			</CheckButton>
 
 			<CheckButton name="CheckButton_BFA" inherits="InterfaceOptionsCheckButtonTemplate" parent="FactionAddictTab3">
-				<Size x="24" y="24"/>
+				<Size x="20" y="20"/>
 				<Anchors> 
-					<Anchor point="TOPLEFT" relativeTo="CheckButton_LG" relativePoint="TOPLEFT" x="0" y="-17" />
+					<Anchor point="TOPLEFT" relativeTo="CheckButton_LG" relativePoint="TOPLEFT" x="0" y="-15" />
 				</Anchors>  
 				<Layers>
 					<Layer level="ARTWORK">
 						<FontString parentKey="fs" inherits="SystemFont_Shadow_Small" justifyH="LEFT">
-							<Size x="0" y="12"/>
+							<Size x="0" y="10"/>
 							<Anchors>
-								<Anchor point="TOPLEFT" relativeTo="CheckButton_BFA" relativePoint="TOPRIGHT" x="0" y="-6"/>
+								<Anchor point="TOPLEFT" relativeTo="CheckButton_BFA" relativePoint="TOPRIGHT" x="0" y="-4"/>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Scripts>
+					<OnClick>
+						FactionAddict_SetConfigVariables(self);
+					</OnClick>
+					<OnEnter>
+						FactionAddict_DisplayTooltip(self);
+					</OnEnter>
+					<OnLeave function="GameTooltip_Hide"/>
+				</Scripts>
+			</CheckButton>
+
+			<CheckButton name="CheckButton_SLANDS" inherits="InterfaceOptionsCheckButtonTemplate" parent="FactionAddictTab3">
+				<Size x="20" y="20"/>
+				<Anchors> 
+					<Anchor point="TOPLEFT" relativeTo="CheckButton_BFA" relativePoint="TOPLEFT" x="0" y="-15" />
+				</Anchors>  
+				<Layers>
+					<Layer level="ARTWORK">
+						<FontString parentKey="fs" inherits="SystemFont_Shadow_Small" justifyH="LEFT">
+							<Size x="0" y="10"/>
+							<Anchors>
+								<Anchor point="TOPLEFT" relativeTo="CheckButton_SLANDS" relativePoint="TOPRIGHT" x="0" y="-4"/>
 							</Anchors>
 						</FontString>
 					</Layer>
@@ -1268,16 +1294,16 @@
                 </CheckedTexture>
 			</CheckButton>
 			<CheckButton name="CheckButton_AO" inherits="InterfaceOptionsCheckButtonTemplate" parent="FactionAddictTab3">
-				<Size x="24" y="24"/>
+				<Size x="20" y="20"/>
 				<Anchors> 
-					<Anchor point="TOPLEFT" relativeTo="$parentCfgHeader3" relativePoint="TOPLEFT" x="17" y="-18" />
+					<Anchor point="TOPLEFT" relativeTo="$parentCfgHeader3" relativePoint="TOPLEFT" x="17" y="-21" />
 				</Anchors>  
 				<Layers>
 					<Layer level="ARTWORK">
 						<FontString parentKey="fs" inherits="SystemFont_Shadow_Small" justifyH="LEFT">
-							<Size x="0" y="12"/>
+							<Size x="0" y="10"/>
 							<Anchors>
-								<Anchor point="TOPLEFT" relativeTo="CheckButton_AO" relativePoint="TOPRIGHT" x="0" y="-6"/>
+								<Anchor point="TOPLEFT" relativeTo="CheckButton_AO" relativePoint="TOPRIGHT" x="0" y="-4"/>
 							</Anchors>
 						</FontString>
 					</Layer>
@@ -1293,16 +1319,16 @@
 				</Scripts>
 			</CheckButton>
 			<CheckButton name="CheckButton_HO" inherits="InterfaceOptionsCheckButtonTemplate" parent="FactionAddictTab3">
-				<Size x="24" y="24"/>
+				<Size x="20" y="20"/>
 				<Anchors> 
-					<Anchor point="TOPLEFT" relativeTo="CheckButton_AO" relativePoint="TOPLEFT" x="0" y="-17" />
+					<Anchor point="TOPLEFT" relativeTo="CheckButton_AO" relativePoint="TOPLEFT" x="0" y="-15" />
 				</Anchors>  
 				<Layers>
 					<Layer level="ARTWORK">
 						<FontString parentKey="fs" inherits="SystemFont_Shadow_Small" justifyH="LEFT">
-							<Size x="0" y="12"/>
+							<Size x="0" y="10"/>
 							<Anchors>
-								<Anchor point="TOPLEFT" relativeTo="CheckButton_HO" relativePoint="TOPRIGHT" x="0" y="-6"/>
+								<Anchor point="TOPLEFT" relativeTo="CheckButton_HO" relativePoint="TOPRIGHT" x="0" y="-4"/>
 							</Anchors>
 						</FontString>
 					</Layer>
@@ -1318,16 +1344,16 @@
 				</Scripts>
 			</CheckButton>
 			<CheckButton name="CheckButton_AUTOBAR" inherits="InterfaceOptionsCheckButtonTemplate" parent="FactionAddictTab3">
-				<Size x="24" y="24"/>
+				<Size x="20" y="20"/>
 				<Anchors> 
-					<Anchor point="TOPLEFT" relativeTo="$parentCfgHeader4" relativePoint="TOPLEFT" x="17" y="-18" />
+					<Anchor point="TOPLEFT" relativeTo="$parentCfgHeader4" relativePoint="TOPLEFT" x="17" y="-21" />
 				</Anchors>  
 				<Layers>
 					<Layer level="ARTWORK">
 						<FontString parentKey="fs" inherits="SystemFont_Shadow_Small" justifyH="LEFT">
-							<Size x="0" y="12"/>
+							<Size x="0" y="10"/>
 							<Anchors>
-								<Anchor point="TOPLEFT" relativeTo="CheckButton_AUTOBAR" relativePoint="TOPRIGHT" x="0" y="-6"/>
+								<Anchor point="TOPLEFT" relativeTo="CheckButton_AUTOBAR" relativePoint="TOPRIGHT" x="0" y="-4"/>
 							</Anchors>
 						</FontString>
 					</Layer>
@@ -1343,16 +1369,16 @@
 				</Scripts>
 			</CheckButton>
 			<CheckButton name="CheckButton_HIDEINACTIVE" inherits="InterfaceOptionsCheckButtonTemplate" parent="FactionAddictTab3">
-				<Size x="24" y="24"/>
+				<Size x="20" y="20"/>
 				<Anchors> 
-					<Anchor point="TOPLEFT" relativeTo="CheckButton_AUTOBAR" relativePoint="TOPLEFT" x="0" y="-17" />
+					<Anchor point="TOPLEFT" relativeTo="CheckButton_AUTOBAR" relativePoint="TOPLEFT" x="0" y="-15" />
 				</Anchors>  
 				<Layers>
 					<Layer level="ARTWORK">
 						<FontString parentKey="fs" inherits="SystemFont_Shadow_Small" justifyH="LEFT">
-							<Size x="0" y="12"/>
+							<Size x="0" y="10"/>
 							<Anchors>
-								<Anchor point="TOPLEFT" relativeTo="CheckButton_HIDEINACTIVE" relativePoint="TOPRIGHT" x="0" y="-6"/>
+								<Anchor point="TOPLEFT" relativeTo="CheckButton_HIDEINACTIVE" relativePoint="TOPRIGHT" x="0" y="-4"/>
 							</Anchors>
 						</FontString>
 					</Layer>

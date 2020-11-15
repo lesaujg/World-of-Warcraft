@@ -69,7 +69,7 @@
 
 
 -- Constants
-local FACTION_ADDICT_VERSION = "1.59"
+local FACTION_ADDICT_VERSION = "1.60"
 local FACTION_ADDICT_LOGGING_VERSION = 1
 local FACTION_ADDICT_LOGGING_DAYS = 20
 local GUILD_FACTION_ID = 1168
@@ -129,6 +129,7 @@ local FactionAddictConfigDefaults =
 		CB_CATEGORY_WOD = true,
 		CB_CATEGORY_LG = true,
 		CB_CATEGORY_BFA = true,
+		CB_CATEGORY_SLANDS = true,
 		RB_ORDERBY = 1,
 		CB_FILTER_SHOW_AO = true,
 		CB_FILTER_SHOW_HO = true,
@@ -212,6 +213,19 @@ local function sortedpairs(t)
   end
 end
 
+-- For Testing
+local function fadump(o)
+	if type(o) == 'table' then
+		local s = '{ '
+		for k,v in pairs(o) do
+				if type(k) ~= 'number' then k = '"'..k..'"' end
+				s = s .. '['..k..'] = ' .. fadump(v) .. ','
+		end
+		return s .. '} '
+	else
+		return tostring(o)
+	end
+end
 
 -----------------------------------------------------------------------------
 -- Looks through all the chat windows for one named 'windowname'.
@@ -1003,6 +1017,8 @@ local function fa_PopulateDisplayTable()
 				displayThisRow = true
 			elseif (expansion == 7 and FactionAddictConfig.CB_CATEGORY_BFA == true) then
 				displayThisRow = true
+			elseif (expansion == 8 and FactionAddictConfig.CB_CATEGORY_SLANDS == true) then
+				displayThisRow = true
 			else
 				displayThisRow = false
 			end
@@ -1451,7 +1467,10 @@ function FactionAddict_ScrollBar_Update()
 				getglobal("FactionAddictEntry"..line).ExpansionIcon:SetTexCoord(0.0, 0.546875, 0.59375, 0.703125)
 				getglobal("FactionAddictEntry"..line).ExpansionIcon:Show()
 			elseif (tempDisplayData[lineplusoffset][10] == 7) then -- BfA
-				getglobal("FactionAddictEntry"..line).ExpansionIcon:SetTexCoord(0.0, 0.546875, 0.703125, 0.828125)
+				getglobal("FactionAddictEntry"..line).ExpansionIcon:SetTexCoord(0.0, 0.546875, 0.703125, 0.8203125)
+				getglobal("FactionAddictEntry"..line).ExpansionIcon:Show()
+			elseif (tempDisplayData[lineplusoffset][10] == 8) then -- SLANDS
+				getglobal("FactionAddictEntry"..line).ExpansionIcon:SetTexCoord(0.0, 0.546875, 0.8203125, 0.9375)
 				getglobal("FactionAddictEntry"..line).ExpansionIcon:Show()
 			else -- classic
 				getglobal("FactionAddictEntry"..line).ExpansionIcon:Hide()
@@ -1640,6 +1659,13 @@ function FactionAddict_SetConfigVariables(self)
 		else
 			FactionAddictConfig.CB_CATEGORY_BFA = false
 		end
+	elseif (configName == "CheckButton_SLANDS") then
+		faUpdateDisplayTable = true
+		if (self:GetChecked() == true) then
+			FactionAddictConfig.CB_CATEGORY_SLANDS = true
+		else
+			FactionAddictConfig.CB_CATEGORY_SLANDS = false
+		end
 
 	elseif (configName == "CheckButton_OrderPct") then
 		self:SetChecked(true)
@@ -1803,6 +1829,7 @@ function FactionAddict_Tab_OnClick(self)
 		CheckButton_WOD:SetChecked(FactionAddictConfig.CB_CATEGORY_WOD)
 		CheckButton_LG:SetChecked(FactionAddictConfig.CB_CATEGORY_LG)
 		CheckButton_BFA:SetChecked(FactionAddictConfig.CB_CATEGORY_BFA)
+		CheckButton_SLANDS:SetChecked(FactionAddictConfig.CB_CATEGORY_SLANDS)
 		CheckButton_AO:SetChecked(FactionAddictConfig.CB_FILTER_SHOW_AO)
 		CheckButton_HO:SetChecked(FactionAddictConfig.CB_FILTER_SHOW_HO)
 		CheckButton_AUTOBAR:SetChecked(FactionAddictConfig.CB_OPTION_AUTOBAR)
@@ -1842,7 +1869,6 @@ function FactionAddict_StatusBar_OnLeave(self)
 	self.text:Show()
 	self.text2:Hide()
 end
-
 
 -----------------------------------------------------------------------------
 -- Handles OnClick event of the addon launcher button.
@@ -1917,49 +1943,19 @@ local function fa_InfoWindow_LoadInfo(self)
 		self:SetBackdropColor(InfoWindow_Inactive_RGBA[1], InfoWindow_Inactive_RGBA[2], InfoWindow_Inactive_RGBA[3], InfoWindow_Inactive_RGBA[4])
 	end
 
-	-- PARAGON REP - Display Reward Info
+	-- Set Paragon Icon
 	if (tempAllFactionData[faClickedFactionName][4] == 9) then
-
-		local itemName, itemTexture, quantity, quality, isUsable, itemID = GetQuestLogRewardInfo(1, tempAllParagonData[tempAllFactionData[faClickedFactionName][1]][3])
 		-- show status bar bag
 		self.StatusBar.FAParagonIcon:Show()
 		self.StatusBar.FAParagonIcon.Glow:SetShown(tempAllParagonData[tempAllFactionData[faClickedFactionName][1]][4])
 		self.StatusBar.FAParagonIcon.Check:SetShown(tempAllParagonData[tempAllFactionData[faClickedFactionName][1]][4])
-		-- Reward Text
-		self.RewardTxt:SetText(QUEST_REWARDS)
-		self.RewardTxt:SetTextColor(NORMAL_FONT_COLOR.r, NORMAL_FONT_COLOR.g, NORMAL_FONT_COLOR.b)
-		totalHeight = totalHeight + self.RewardTxt:GetHeight()
-		-- Reward Icon and Border
-		self.RewardIcon:SetTexture(itemTexture)
-		self.RewardIconBorder:SetVertexColor(BAG_ITEM_QUALITY_COLORS[quality].r, BAG_ITEM_QUALITY_COLORS[quality].g, BAG_ITEM_QUALITY_COLORS[quality].b)
-		-- Reward Name
-		self.RewardName:SetText(itemName)
-		self.RewardName:SetTextColor(BAG_ITEM_QUALITY_COLORS[quality].r, BAG_ITEM_QUALITY_COLORS[quality].g, BAG_ITEM_QUALITY_COLORS[quality].b)
-		-- Show Elements
-		self.RewardTxt:Show()
-		self.RewardIcon:Show()
-		self.RewardIconBorder:Show()
-		self.RewardName:Show()
-		-- inc height
-		totalHeight = totalHeight + self.RewardIcon:GetHeight()
 	else
-		-- Hide Elements
 		self.StatusBar.FAParagonIcon:Hide()
-		self.RewardTxt:Hide()
-		self.RewardIcon:Hide()
-		self.RewardIconBorder:Hide()
-		self.RewardName:Hide()
 	end
-	-- END PARAGON REP
 
 	-- Set Desc text 
-	if (tempAllFactionData[faClickedFactionName][4] == 9) then
-	   self.DescTxt:SetPoint("TOPLEFT",self.RewardIcon,"BOTTOMLEFT",0,-8)
-	   totalHeight = totalHeight+10
-	else
-		self.DescTxt:SetPoint("TOPLEFT",self.CBMoveInactive,"BOTTOMLEFT",0,-2)
-		totalHeight = totalHeight+0
-	end
+	self.DescTxt:SetPoint("TOPLEFT",self.CBMoveInactive,"BOTTOMLEFT",0,-2)
+	totalHeight = totalHeight+0
 	self.DescTxt:SetText(tempAllFactionData[faClickedFactionName][9])
 	totalHeight = totalHeight + self.DescTxt:GetHeight()
 
@@ -2153,6 +2149,9 @@ function FactionAddict_OnEvent(self, event, ...)
 			end
 			if (FactionAddictConfig.CB_CATEGORY_BFA == nil) then
 				FactionAddictConfig.CB_CATEGORY_BFA = FactionAddictConfigDefaults.CB_CATEGORY_BFA
+			end
+			if (FactionAddictConfig.CB_CATEGORY_SLANDS == nil) then
+				FactionAddictConfig.CB_CATEGORY_SLANDS = FactionAddictConfigDefaults.CB_CATEGORY_SLANDS
 			end
 			if (FactionAddictConfig.RB_ORDERBY == nil) then
 				FactionAddictConfig.RB_ORDERBY = FactionAddictConfigDefaults.RB_ORDERBY
@@ -2584,6 +2583,7 @@ function FactionAddict_OnLoad(self)
 	CheckButton_WOD.fs:SetText(L.TAB3_CONFIG_WOD)
 	CheckButton_LG.fs:SetText(L.TAB3_CONFIG_LG)
 	CheckButton_BFA.fs:SetText(L.TAB3_CONFIG_BFA)
+	CheckButton_SLANDS.fs:SetText(L.TAB3_CONFIG_SLANDS)
 	CheckButton_OrderPct.fs:SetText(L.TAB3_CONFIG_ORDER_PCT)
 	CheckButton_OrderName.fs:SetText(L.TAB3_CONFIG_ORDER_NAME)
 	CheckButton_AO.fs:SetText(L.TAB3_CONFIG_ALLIANCE_ONLY)
@@ -2619,4 +2619,6 @@ function FactionAddict_OnLoad(self)
 
 	faNameFilter = ""
 	FactionAddictTab1.SearchBox.label:SetText(SEARCH)
+
 end
+

@@ -32,31 +32,45 @@ SmexyMatsDB = {
 				["Skinning"] = {
 				},
 				["Fishing"] = {
+					["Bracnar"] = {
+					},
 				},
 				["Mining"] = {
+					["Torinar"] = {
+					},
 				},
 				["Jewelcrafting"] = {
 				},
 				["Cooking"] = {
 					["Mandelbrot"] = {
 					},
+					["Bracnar"] = {
+					},
 				},
 				["Inscription"] = {
 				},
 				["Archaeology"] = {
+					["Bracnar"] = {
+					},
 				},
 				["Alchemy"] = {
 				},
 				["Engineering"] = {
+					["Bracnar"] = {
+					},
 				},
 				["Leatherworking"] = {
 				},
 				["Herbalism"] = {
 					["Mandelbrot"] = {
 					},
+					["Torinar"] = {
+					},
 				},
 				["Enchanting"] = {
 					["Mandelbrot"] = {
+					},
+					["Bracnar"] = {
 					},
 				},
 			},

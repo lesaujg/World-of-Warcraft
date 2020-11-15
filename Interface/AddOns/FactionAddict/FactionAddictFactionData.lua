@@ -214,6 +214,13 @@ faFactionDataRow[2400]  = 190;
 faFactionDataRow[2415]  = 191;
 faFactionDataRow[2417]  = 192;
 
+faFactionDataRow[2407]  = 193;
+faFactionDataRow[2410]  = 194;
+faFactionDataRow[2413]  = 195;
+faFactionDataRow[2422]  = 196;
+faFactionDataRow[2439]  = 197;
+faFactionDataRow[2445]  = 198;
+
 
 faFactionData = {
 	{1037, "Interface\\ICONS\\spell_misc_hellifrepvphonorholdfavor",
@@ -617,6 +624,19 @@ faFactionData = {
 			7,0,20},
 	{2417, "Interface\\ICONS\\inv_inscription_83_contract_uldumaccord",
 			7,0,20},
+	-- 9.0.1 - Shadowlands
+	{2407, "Interface\\ICONS\\inv_inscription_contract_bastion01",
+			8,0,21},
+	{2410, "Interface\\ICONS\\inv_inscription_contract_maldraxxus01",
+			8,0,21},
+	{2413, "Interface\\ICONS\\inv_inscription_contract_revendreth01",
+			8,0,21},
+	{2422, "Interface\\ICONS\\inv_inscription_contract_ardenweald01",
+			8,0,21},
+	{2439, "Interface\\ICONS\\ability_warlock_ancientgrimoire",
+			8,0,21},
+	{2445, "Interface\\ICONS\\inv_7_0raid_necklace_17d",
+			8,0,21},
 };
 
 local faFactionDataDesc = { -- column descriptions - info only, no need to localize
@@ -634,7 +654,8 @@ local faFactionDataExpansionValues = { -- column value descriptions - info only,
 	[4] = "Mists of Pandaria",
 	[5] = "Warlords of Draenor",
 	[6] = "Legion",
-	[7] = "Battle for Azeroth"
+	[7] = "Battle for Azeroth",
+	[8] = "Shadowlands"
 };
 local faFactionDataSideValues = { -- column value descriptions - info only, no need to localize
 	[0] = "Both Sides",
@@ -663,7 +684,8 @@ faFactionDataCategoryValues = { -- displayed in info window - LOCALIZED
 	[17] = L.CATEGORY_WOD_TXT,
 	[18] = L.CATEGORY_BARRACKSBODYGUARDS_TXT,
 	[19] = L.CATEGORY_LEGION_TXT,
-	[20] = L.CATEGORY_BFA_TXT
+	[20] = L.CATEGORY_BFA_TXT,
+	[21] = L.CATEGORY_SLANDS_TXT
 };
 
 faStandingCapsTxt = {
@@ -686,6 +708,7 @@ faFactionAddictTooltips = {
 	CheckButton_WOD = L.CONFIG_TT_WOD,
 	CheckButton_LG = L.CONFIG_TT_LG,
 	CheckButton_BFA = L.CONFIG_TT_BFA,
+	CheckButton_SLANDS = L.CONFIG_TT_SLANDS,
 	CheckButton_OrderPct = L.CONFIG_TT_OrderPct,
 	CheckButton_OrderName = L.CONFIG_TT_OrderName,
 	CheckButton_AO = L.CONFIG_TT_AO,

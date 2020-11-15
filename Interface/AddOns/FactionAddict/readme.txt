@@ -4,7 +4,7 @@
 -- Desc: Addon for World of Warcraft
 --
 -- Author: gmz323(Greg)
--- current version: v1.59
+-- current version: v1.60
 -- (c) 2011-2020
 --
 =============================================================================
@@ -68,6 +68,11 @@ My Other Addons:
 
 Changelog:
 ==========
+
+v1.60 (2020-11-14)
+------------------
+* Added factions for ShadowLands. 
+* Please report any bugs or missings factions you encounter. Thanks!
 
 v1.59 (2020-10-16)
 ------------------

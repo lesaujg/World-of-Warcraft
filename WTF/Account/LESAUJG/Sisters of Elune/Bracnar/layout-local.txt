@@ -3,14 +3,14 @@ Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: TOPRIGHT
 X: 0
-Y: -121
+Y: -58
 W: 250
 H: 417
 Frame: BaudManifestDisplay2
 FrameLevel: 1
 Anchor: RIGHT
-X: -164
-Y: -33
+X: -226
+Y: -18
 W: 249
 H: 417
 Frame: BaudManifestDisplay3
