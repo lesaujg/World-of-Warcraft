@@ -13,14 +13,14 @@ SmexyMatsDB = {
 		["cbOneB"] = 1,
 		["cbOneG"] = 1,
 		["SMText"] = false,
-		["SM_EP_One_Text"] = "|cFFFFFF00",
+		["cbTwoG"] = 1,
 		["AllRealms"] = true,
 		["IDs"] = {
 		},
 		["Professions"] = false,
 		["cbTwoR"] = 1,
 		["SM_EP_One_Title"] = "|cFF00CCFF",
-		["cbTwoG"] = 1,
+		["SM_EP_One_Text"] = "|cFFFFFF00",
 	},
 	["ProTree"] = {
 		["Sisters of Elune"] = {
@@ -34,7 +34,9 @@ SmexyMatsDB = {
 				["Fishing"] = {
 				},
 				["Mining"] = {
-					["Torinar"] = {
+					["Belrath"] = {
+					},
+					["Palani"] = {
 					},
 				},
 				["Jewelcrafting"] = {
@@ -42,12 +44,10 @@ SmexyMatsDB = {
 				["Cooking"] = {
 					["Mandelbrot"] = {
 					},
+					["Belrath"] = {
+					},
 				},
-				["Herbalism"] = {
-					["Mandelbrot"] = {
-					},
-					["Torinar"] = {
-					},
+				["Inscription"] = {
 				},
 				["Archaeology"] = {
 				},
@@ -57,7 +57,13 @@ SmexyMatsDB = {
 				},
 				["Leatherworking"] = {
 				},
-				["Inscription"] = {
+				["Herbalism"] = {
+					["Belrath"] = {
+					},
+					["Mandelbrot"] = {
+					},
+					["Palani"] = {
+					},
 				},
 				["Enchanting"] = {
 					["Mandelbrot"] = {
