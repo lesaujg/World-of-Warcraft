@@ -11,12 +11,18 @@ local HBDPins = LibStub("HereBeDragons-Pins-2.0")
 local db
 local escapes = core.escapes
 
+module.const = {
+    EDGE_NEVER = 0,
+    EDGE_FOCUS = 1,
+    EDGE_ALWAYS = 2,
+}
+
 function module:OnInitialize()
     self.db = core.db:RegisterNamespace("Overlay", {
         profile = {
             worldmap = true,
             minimap = true,
-            minimap_edge = false,
+            minimap_edge = module.const.EDGE_FOCUS,
             icon_theme = 'skulls', -- circles / skulls
             icon_color = 'distinct', -- completion / distinct
             icon_scale = 1,
@@ -46,6 +52,8 @@ function module:OnEnable()
     core.RegisterCallback(self, "BrokerMobClick")
     core.RegisterCallback(self, "BrokerMobEnter")
     core.RegisterCallback(self, "BrokerMobLeave")
+    core.RegisterCallback(self, "Seen")
+
     self:RegisterEvent("LOOT_CLOSED", "Update")
     self:BuildNodeList()
 end
@@ -58,6 +66,7 @@ function module:OnDisable()
     core.UnregisterCallback(self, "BrokerMobClick")
     core.UnregisterCallback(self, "BrokerMobEnter")
     core.UnregisterCallback(self, "BrokerMobLeave")
+    core.UnregisterCallback(self, "Seen")
 end
 
 module.nodes = {}
@@ -86,6 +95,14 @@ function module:BrokerMobLeave(_, mobid)
     self:UnhighlightMob(mobid)
 end
 
+function module:Seen(_, id, zone, x, y, dead, source, unit)
+    self.last_mob = id
+    self.last_mob_time = time()
+    if WorldMapFrame:IsShown() then
+        self.WorldMapDataProvider:Ping(id)
+    end
+end
+
 function module:HighlightMob(mobid)
     if mobid == self.focus_mob then return end
     if not WorldMapFrame:IsShown() then return end
@@ -110,23 +127,33 @@ end
 function module:FocusMob(mobid)
     if self.focus_mob == mobid then
         self.focus_mob = nil
+        self.focus_mob_ping = nil
     else
         self.focus_mob = mobid
     end
     if WorldMapFrame:IsShown() then
         for pin in self.WorldMapDataProvider:GetMap():EnumeratePinsByTemplate("SilverDragonOverlayWorldMapPinTemplate") do
             pin:ApplyFocusState()
+            if pin.mobid == self.focus_mob then
+                pin:Ping()
+            end
         end
-        for pin in pairs(self.minimapPins) do
-            pin:ApplyFocusState()
-        end
+    else
+        self.focus_mob_ping = true
     end
+    self:UpdateMinimapIcons()
 end
 
 function module:Update()
     self:UpdateMinimapIcons()
     self:UpdateWorldMapIcons()
 end
+
+C_Timer.NewTicker(0.5, function(...)
+    for pin in pairs(module.minimapPins) do
+        pin:UpdateEdge()
+    end
+end)
 
 -- Pin mixin
 
@@ -192,6 +219,7 @@ function SilverDragonOverlayPinMixinBase:OnMouseEnter()
         if C_Map.CanSetUserWaypointOnMap(self.uiMapID) then
             GameTooltip:AddLine(escapes.keyDown .. SHIFT_KEY_TEXT .. " + " .. escapes.leftClick .. "  " .. TRADESKILL_POST )
         end
+        GameTooltip:AddLine(escapes.keyDown .. SHIFT_KEY_TEXT .. " + " .. escapes.rightClick .. "  " .. HIDE )
     end
 
     tooltip:Show()
@@ -215,7 +243,13 @@ end
 function SilverDragonOverlayPinMixinBase:OnMouseUp(button)
     local targets = core:GetModule("ClickTarget", true)
     if button == "RightButton" then
-        module:ShowPinDropdown(self, self.uiMapID, self.coord)
+        if IsShiftKeyDown() then
+            db.hidden[self.mobid] = true
+            module:Update()
+        else
+            module:ShowPinDropdown(self, self.uiMapID, self.coord)
+        end
+        return
     end
     if button == "LeftButton" then
         if IsAltKeyDown() then
@@ -235,6 +269,11 @@ function SilverDragonOverlayPinMixinBase:OnMouseUp(button)
             module:FocusMob(self.mobid)
         end
     end
+end
+
+function SilverDragonOverlayPinMixinBase:Ping()
+    self.DriverAnimation:Play()
+    self.ScaleAnimation:Play()
 end
 
 function SilverDragonOverlayPinMixinBase:ApplyFocusState()
@@ -273,6 +312,23 @@ function module.WorldMapDataProvider:RefreshAllData(fromOnShow)
             self:GetMap():AcquirePin("SilverDragonOverlayWorldMapPinTemplate", mobid, x, y, textureData, scale or 1.0, alpha or 1.0, coord, uiMapID, false)
         end
     end
+
+    if module.last_mob and time() < (module.last_mob_time + 30) then
+        self:Ping(module.last_mob)
+    end
+    if module.focus_mob_ping then
+        self:Ping(module.focus_mob)
+        module.focus_mob_ping = nil
+    end
+end
+
+-- /script SilverDragon:GetModule("Overlay").WorldMapDataProvider:Ping(32487)
+function module.WorldMapDataProvider:Ping(mobid)
+    for pin in self:GetMap():EnumeratePinsByTemplate("SilverDragonOverlayWorldMapPinTemplate") do
+        if pin.mobid == mobid then
+            pin:Ping()
+        end
+    end
 end
 
 SilverDragonOverlayWorldMapPinMixin = CreateFromMixins(MapCanvasPinMixin, SilverDragonOverlayPinMixinBase)
@@ -285,6 +341,26 @@ end
 
 function SilverDragonOverlayWorldMapPinMixin:OnReleased()
     self:Hide()
+end
+
+SilverDragonOverlayMapPinPingDriverAnimationMixin = {}
+
+function SilverDragonOverlayMapPinPingDriverAnimationMixin:OnPlay()
+    self.loops = 0
+    self:GetParent().Expand:Show()
+end
+
+function SilverDragonOverlayMapPinPingDriverAnimationMixin:OnLoop()
+    self.loops = self.loops + 1
+    if self.loops >= 2 then
+        self:Finish()
+    end
+end
+
+function SilverDragonOverlayMapPinPingDriverAnimationMixin:OnFinished()
+    local pin = self:GetParent()
+    pin.ScaleAnimation:Stop()
+    pin.Expand:Hide()
 end
 
 function module:UpdateWorldMapIcons()
@@ -321,8 +397,15 @@ function module:UpdateMinimapIcons()
         pin:SetWidth(scale)
         pin:SetAlpha(ourAlpha * (alpha or 1.0))
 
+        local edge = db.minimap_edge == module.const.EDGE_ALWAYS
+        if db.minimap_edge == module.const.EDGE_FOCUS then
+            edge = mobid == module.focus_mob
+        end
+
         minimapPins[pin] = pin
-        HBDPins:AddMinimapIconMap(self, pin, uiMapID, x, y, false, db.minimap_edge)
+        HBDPins:AddMinimapIconMap(self, pin, uiMapID, x, y, false, edge)
+
+        pin:UpdateEdge()
     end
 end
 
@@ -342,15 +425,18 @@ function SilverDragonOverlayMinimapPinMixin:OnLoad()
     self:SetMouseMotionEnabled(true)
 end
 
+function SilverDragonOverlayMinimapPinMixin:UpdateEdge()
+    self:SetAlpha(HBDPins:IsMinimapIconOnEdge(self) and 0.6 or 1)
+end
+
 -- Dropdown setup
 
 do
     local clicked_zone, clicked_coord
 
-    local function hideMob(button, uiMapID, coord)
-        local id = core:GetMobByCoord(uiMapID, coord)
-        if id then
-            db.hidden[id] = true
+    local function hideMob(button, mobid)
+        if mobid then
+            db.hidden[mobid] = true
             module:Update()
         end
     end
@@ -362,14 +448,13 @@ do
         core:GetModule("TomTom"):PointTo(id, uiMapID, x, y, 0, true)
     end
 
-    local function createWaypointForAll(button, uiMapID, coord)
+    local function createWaypointForAll(button, uiMapID, mobid)
         if not TomTom then return end
-        local id, name = core:GetMobByCoord(uiMapID, coord)
-        if not (id and ns.mobsByZone[uiMapID] and ns.mobsByZone[uiMapID][id]) then return end
-        for _, mob_coord in ipairs(ns.mobsByZone[uiMapID][id]) do
+        if not (ns.mobsByZone[uiMapID] and ns.mobsByZone[uiMapID][mobid]) then return end
+        for _, mob_coord in ipairs(ns.mobsByZone[uiMapID][mobid]) do
             local x, y = core:GetXY(mob_coord)
             TomTom:AddWaypoint(uiMapID, x, y, {
-                title = name,
+                title = core:GetMobLabel(mobid),
                 persistent = nil,
                 minimap = true,
                 world = true
@@ -377,68 +462,64 @@ do
         end
     end
 
-    local dropdown = CreateFrame("Frame")
+    local dropdown = CreateFrame("Frame", nil, UIParent, "UIDropDownMenuTemplate")
     dropdown.displayMode = "MENU"
 
-    do
-        local info = {}
-        local function generateMenu(button, level)
-            if (not level) then return end
-            table.wipe(info)
-            if (level == 1) then
-                -- Create the title of the menu
-                info.isTitle      = 1
-                info.text         = "SilverDragon Overlay"
-                info.notCheckable = 1
-                UIDropDownMenu_AddButton(info, level)
+    dropdown.initialize = function(button, level)
+        if (not level) then return end
+        local info = UIDropDownMenu_CreateInfo()
+        if (level == 1) then
+            -- Create the title of the menu
+            info.isTitle      = 1
+            info.text         = "SilverDragon Overlay"
+            info.notCheckable = 1
+            UIDropDownMenu_AddButton(info, level)
 
-                -- Waypoint menu item
-                info.disabled     = nil
-                info.isTitle      = nil
-                info.notCheckable = nil
-                info.text = "Create waypoint"
-                info.icon = nil
-                info.func = module.CreateWaypoint
-                info.arg1 = clicked_zone
-                info.arg2 = clicked_coord
-                UIDropDownMenu_AddButton(info, level)
+            -- Waypoint menu item
+            info.disabled     = nil
+            info.isTitle      = nil
+            info.notCheckable = nil
+            info.text = "Create waypoint"
+            info.icon = nil
+            info.func = module.CreateWaypoint
+            info.arg1 = button.uiMapID
+            info.arg2 = button.coord
+            UIDropDownMenu_AddButton(info, level)
 
-                info.disabled = not TomTom
-                info.isTitle = nil
-                info.notCheckable = nil
-                info.text = "Create waypoint for all locations"
-                info.icon = nil
-                info.func = createWaypointForAll
-                info.arg1 = clicked_zone
-                info.arg2 = clicked_coord
-                UIDropDownMenu_AddButton(info, level)
+            info.disabled = not TomTom
+            info.isTitle = nil
+            info.notCheckable = nil
+            info.text = "Create waypoint for all locations"
+            info.icon = nil
+            info.func = createWaypointForAll
+            info.arg1 = button.uiMapID
+            info.arg2 = button.mobid
+            UIDropDownMenu_AddButton(info, level)
 
-                -- Hide menu item
-                info.disabled     = nil
-                info.isTitle      = nil
-                info.notCheckable = nil
-                info.text = "Hide mob"
-                info.icon = "Interface\\Icons\\INV_Misc_Head_Dragon_01"
-                info.func = hideMob
-                info.arg1 = clicked_zone
-                info.arg2 = clicked_coord
-                UIDropDownMenu_AddButton(info, level)
+            -- Hide menu item
+            info.disabled     = nil
+            info.isTitle      = nil
+            info.notCheckable = nil
+            info.text = "Hide mob"
+            info.icon = "Interface\\Icons\\INV_Misc_Head_Dragon_01"
+            info.func = hideMob
+            info.arg1 = button.mobid
+            UIDropDownMenu_AddButton(info, level)
 
-                -- Close menu item
-                info.text         = "Close"
-                info.icon         = nil
-                info.func         = function() CloseDropDownMenus() end
-                info.arg1         = nil
-                info.notCheckable = 1
-                UIDropDownMenu_AddButton(info, level)
-            end
+            -- Close menu item
+            info.text         = "Close"
+            info.icon         = nil
+            info.func         = function() CloseDropDownMenus() end
+            info.arg1         = nil
+            info.notCheckable = 1
+            UIDropDownMenu_AddButton(info, level)
         end
-        dropdown.initialize = generateMenu
     end
 
     function module:ShowPinDropdown(pin, uiMapID, coord)
-        clicked_zone = uiMapID
-        clicked_coord = coord
+        dropdown.uiMapID = uiMapID
+        dropdown.coord = coord
+        dropdown.mobid = pin.mobid
         ToggleDropDownMenu(1, nil, dropdown, pin, 0, 0)
     end
 end
@@ -467,24 +548,24 @@ do
         circles = {
             default = tex("PlayerPartyBlip", 1, 0.33, 0.33, 1.3),
             partial = tex("PlayerPartyBlip", 1, 1, 0.33, 1.3),
-            done = tex("PlayerDeadBlip", 0.33, 1, 0.33, 1.3),
+            done = tex("PlayerDeadBlip", 0.33, 1, 0.33, 1),
             loot = tex("Warfront-NeutralHero-Silver", 1, 0.33, 0.33, 1.3),
             loot_partial = tex("Warfront-NeutralHero-Silver", 1, 1, 0.33, 1.3),
-            loot_done = tex("Warfront-NeutralHero-Silver", 0.33, 1, 0.33, 1.3),
+            loot_done = tex("Warfront-NeutralHero-Silver", 0.33, 1, 0.33, 1),
             mount = tex("PlayerRaidBlip", 1, 0.33, 0.33, 1.3),
             mount_partial = tex("PlayerRaidBlip", 1, 1, 0.33, 1.3),
-            mount_done = tex("PlayerDeadBlip", 0.33, 1, 0.33, 1.3),
+            mount_done = tex("PlayerDeadBlip", 0.33, 1, 0.33, 1),
         },
         skulls = {
             default = tex("Islands-AzeriteBoss", 1, 0.33, 0.33, 1.8), -- red skull
             partial = tex("Islands-AzeriteBoss", 1, 1, 0.33, 1.8), -- yellow skull
-            done = tex("Islands-AzeriteBoss", 0.33, 1, 0.33, 1.8), -- green skull
+            done = tex("Islands-AzeriteBoss", 0.33, 1, 0.33, 1.5), -- green skull
             loot = tex("nazjatar-nagaevent", 1, 0.33, 0.33, 1.8), -- red glowing skull
             loot_partial = tex("nazjatar-nagaevent", 1, 1, 0.33, 1.8), -- yellow glowing skull
-            loot_done = tex("nazjatar-nagaevent", 0.33, 1, 0.33, 1.8), -- green glowing skull
+            loot_done = tex("nazjatar-nagaevent", 0.33, 1, 0.33, 1.5), -- green glowing skull
             mount = tex("VignetteKillElite", 1, 0.33, 0.33, 1.3), -- red shiny skull
             mount_partial = tex("VignetteKillElite", 1, 1, 0.33, 1.3), -- yellow shiny skull
-            mount_done = tex("VignetteKillElite", 0.33, 1, 0.33, 1.3), -- green shiny skull
+            mount_done = tex("VignetteKillElite", 0.33, 1, 0.33, 1), -- green shiny skull
         },
         stars = {
             default = tex("VignetteKill", 1, 0.33, 1, 1.3), -- red star
@@ -492,10 +573,10 @@ do
             done = tex("VignetteKill", 0, 1, 1), -- green star
             loot = tex("VignetteLootElite", 1, 0.33, 1, 1.3), -- red shiny skull
             loot_partial = tex("VignetteLootElite", 0, 1, 1, 1.3), -- yellow shiny skull
-            loot_done = tex("VignetteLootElite", 0, 1, 0, 1.3), -- green shiny skull
+            loot_done = tex("VignetteLootElite", 0, 1, 0, 1), -- green shiny skull
             mount = tex("VignetteKillElite", 1, 0.33, 1, 1.3), -- red shiny skull
             mount_partial = tex("VignetteKillElite", 0, 1, 1, 1.3), -- yellow shiny skull
-            mount_done = tex("VignetteKillElite", 0, 1, 0, 1.3), -- green shiny skull
+            mount_done = tex("VignetteKillElite", 0, 1, 0, 1), -- green shiny skull
         }
     }
     local function should_show_mob(id)

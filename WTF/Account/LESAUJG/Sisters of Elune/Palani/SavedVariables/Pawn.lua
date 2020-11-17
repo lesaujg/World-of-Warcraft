@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0405,
-	["LastPlayerFullName"] = "Palani-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173433,
@@ -12,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 109,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::50:256::11:4:4932:4933:6316:1523::::|h[Heart of Azeroth]|h|r",
+			["Level"] = 110,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::50:256::11:4:4932:4933:6316:1524::::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173844,
@@ -86,6 +83,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163886::::::::50:256::30:2:1474:4786::::|h[7th Legionnaire's Stave]|h|r",
 		}, -- [16]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Palani-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
