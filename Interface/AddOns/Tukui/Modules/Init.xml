@@ -15,7 +15,7 @@
 	<Script file="DataTexts\Elements\Gold.lua"/>
 	<Script file="DataTexts\Elements\Guild.lua"/>
 	<Script file="DataTexts\Elements\HPS.lua"/>
-	<Script file="DataTexts\Elements\Micromenu.lua"/>
+	<Script file="DataTexts\Elements\MicroMenu.lua"/>
 	<Script file="DataTexts\Elements\Power.lua"/>
 	<Script file="DataTexts\Elements\Regen.lua"/>
 	<Script file="DataTexts\Elements\System.lua"/>
@@ -30,6 +30,7 @@
 	<Script file="ChatFrames\CopyURL.lua"/>
 	<Script file="ChatFrames\CopyText.lua"/>
 	<Script file="ChatFrames\Bubbles.lua"/>
+	<Script file="ChatFrames\ChatHistory.lua"/>
 
 	<!-- Inventory -->
 	<Script file="Inventory\Bags.lua"/>
@@ -53,6 +54,7 @@
 	<Script file="Cooldowns\Cooldowns.lua"/>
 
 	<!-- Misc. -->
+	<Script file="Miscellaneous\Alerts.lua"/>
 	<Script file="Miscellaneous\AFK.lua"/>
 	<Script file="Miscellaneous\AltPowerBar.lua"/>
 	<Script file="Miscellaneous\DeathRecap.lua"/>
@@ -71,8 +73,9 @@
 	<Script file="Miscellaneous\MirrorTimers.lua"/>
 	<Script file="Miscellaneous\ObjectiveTracker.lua"/>
 	<Script file="Miscellaneous\OrderHall.lua"/>
-	<Script file="Miscellaneous\ReputationBar.lua"/>
+	<Script file="Miscellaneous\RaidUtilities.lua"/>
 	<Script file="Miscellaneous\StaticPopups.lua"/>
+	<Script file="Miscellaneous\TimeManager.lua"/>
 	<Script file="Miscellaneous\TalkingHead.lua"/>
 	<Script file="Miscellaneous\ThreatBar.lua"/>
 	<Script file="Miscellaneous\TimerTracker.lua"/>

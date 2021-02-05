@@ -1,19 +1,29 @@
 # Deadly Boss Mods Core
 
-## [9.0.3](https://github.com/DeadlyBossMods/DeadlyBossMods/tree/9.0.3) (2020-11-01)
-[Full Changelog](https://github.com/DeadlyBossMods/DeadlyBossMods/compare/9.0.2...9.0.3) [Previous Releases](https://github.com/DeadlyBossMods/DeadlyBossMods/releases)
+## [9.0.19](https://github.com/DeadlyBossMods/DeadlyBossMods/tree/9.0.19) (2021-01-27)
+[Full Changelog](https://github.com/DeadlyBossMods/DeadlyBossMods/compare/9.0.18...9.0.19) [Previous Releases](https://github.com/DeadlyBossMods/DeadlyBossMods/releases)
 
-- Fixes  
-- reintroduce 8.x compat code, this is to make sure DBM-Core doesn't error to death on classic before getting a chance to tell classic users that they installed wrong version of DBM.  
-- Added blizzards tutorial spec IDs used by all new characters going through exiles reach. Fixes issues with mod loading and throwing lua errors if a character manages to queue a dungeon (such as headless horseman) before actually completing tutorial  
-- Updates for 16th aniversery events:  
-     - Merged DBM-Azeroth into Event mods and blocked the old module from loading going forward as it's been deprecated. These bosses on retail were always event only bosses and always did belong in event mods, yet were written as stand alones to ease the porting to classic one day. Future planning which paid off quite well, but that time has passed and now on retail the mods moved to where they belong.  
-     - Added a Doomwalker module which will sitll need updates once the boss is pulled in EU. This gets ball rolling though  
-- Updated council of blood mechanics..................again  
-- Forgot to unregister the now unused event.  
-- Completely remove support for timertracker object from DBM. When it's no longer a DBM feature, DBM might eventually stop getting blamed when it breaks from uses not caused by DBM.  
-- Fix a missed replacement  
-- Full drycode of Valinor, the most dangerous of the 4 shadowlands world bosses. Although despite my best effort, I know in my gut this boss is going to be a nightmare for griefing and high pop servers that'll result in nerfs the first time it's up. Blizzard didn't learn from oondasta apparently.  
-- Just another weekly update to Council, since blizzard is still in alpha stages of this fight apparently.  
-- Prep Shadowlands world boss module  
-- two initial timer adjustments on jaina with new min times  
+- final mythic review of generals complete, it looks solid now. Prepping new release  
+- removed infoframe from non mythic hundering destroyer  
+    Removed invalid timer on Doctor Ickus  
+    Possiby fixed timer on stradama? if not, at least made it more likely to kick out debug  
+- Fixed some minoir timer bugs on altimor and fixed some major timer bugs on lady inerva (at some point blizz removed generic container events and added new specific ones, and of course didn't communicate it so mod could be updated when this happened. No idea how long this mod was broken)  
+- Preliminary generals fixes  
+- stupid shift key  
+- Generals mod now stops all timers on phase change. Doesn't start new ones either since those aren't known yet. Some templating done to try and get fixes out quicker tomorrow.  
+- Fix last  
+- Fixed a regression where ResetAnimations would apply bars to the huge anchor even if it was disabled  
+- Several miner timer adjustments in dungeons  
+- VERY aggressive retesting was done on bar updating under all animation conditions and this seemed to cure problem. Previoux fix was right, it needs to run as it was before todays earlier modification. that modification made it worse. What was missing is bar sorting itself running during "move" event, when the move event was aborted by a timer update/restart  
+- Add another test condition  
+- only run the hacky fix I added to DBT on :Update calls. in start calls it might cause problems since Start already calls ApplyStyle and append, which can cause bar to be double appended (thus resulting in an error that it's trying to append bar to itself)  
+-  - Cleaned up unused stuff on shriekwing  
+     - Fixed chain link starting on LFR difficulty sludgefist  
+     - Updated some LFR difficulty sludgefist timers. he gains energy a little slower there  
+     - Fixed LFR timer update functions on generals to not keep starting an invalid eruption timer. LFR doesn't have eruption  
+     - Added the correct LEAP timer to LFR instead and appropriate update functions now tied to it as well, improving the updating of other spells  
+     - Also added warnings/SAY bubbles for LFR version of leap as well.  
+     - Again fixed countdown defaults on crystalize and eruption. This was meant to be off by default, and I thought i fixed that then reset defaults, instead I reset defaults and ended up re-enabling them for everyone in last fix attempt. Sorry about that. THIS attempt should make countdowns OFF by default. Countdowns on this figh are counter intuitive.  
+     - While at it, fixed a bug where the brief period of time one boss is dead and other isn't at end of fight, the timer update functions could still respawn timers for dead boss. This will no longer happen  
+- Updatet the automatic special warning downgrading to also remove screen flash on downgraded special warnings  
+- Bump alpha  

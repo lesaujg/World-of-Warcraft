@@ -44,7 +44,7 @@ function Loot:MoveStandardLoot()
 
 	if (IsUnderMouse ~= "1") then
 		if not LootFrame.DragInfo then
-			Movers:RegisterFrame(LootFrame)
+			Movers:RegisterFrame(LootFrame, "Loot Frame")
 		end
 
 		if not (TukuiData[T.MyRealm][T.MyName].Move.LootFrame) then
@@ -419,6 +419,7 @@ function Loot:Enable()
 	TukuiLootFrame.Overlay:SetPoint("TOP", TukuiLootFrame, -16, 13)
 	TukuiLootFrame.Overlay:CreateBackdrop()
 	TukuiLootFrame.Overlay:CreateShadow()
+	TukuiLootFrame.Overlay:EnableMouse()
 
 	TukuiLootFrame.Title = TukuiLootFrame.Overlay:CreateFontString(nil, "OVERLAY", 7)
 	TukuiLootFrame.Title:SetFontObject(Font)
@@ -436,7 +437,7 @@ function Loot:Enable()
 
 	LootFrame:UnregisterAllEvents()
 
-	Movers:RegisterFrame(TukuiLootFrame)
+	Movers:RegisterFrame(TukuiLootFrame, "Loot Frame")
 
 	tinsert(UISpecialFrames, "TukuiLootFrame")
 end

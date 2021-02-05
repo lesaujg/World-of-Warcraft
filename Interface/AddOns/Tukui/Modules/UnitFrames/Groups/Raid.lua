@@ -72,7 +72,7 @@ function UnitFrames:Raid()
 	Name:SetPoint("CENTER")
 	Name:SetFontObject(Font)
 
-	local ReadyCheck = Power:CreateTexture(nil, "OVERLAY", 2)
+	local ReadyCheck = Power:CreateTexture(nil, "OVERLAY", nil, 2)
 	ReadyCheck:SetHeight(12)
 	ReadyCheck:SetWidth(12)
 	ReadyCheck:SetPoint("CENTER")
@@ -92,9 +92,8 @@ function UnitFrames:Raid()
 		AuraTrack:SetAllPoints()
 		AuraTrack.Texture = C.Medias.Normal
 		AuraTrack.Icons = C.Raid.AuraTrackIcons
+		AuraTrack.SpellTextures = C.Raid.AuraTrackSpellTextures
 		AuraTrack.Thickness = C.Raid.AuraTrackThickness
-		AuraTrack.IconSize = C.Raid.AuraTrackIconSize
-		AuraTrack.Spacing = C.Raid.AuraTrackSpacing
 
 		self.AuraTrack = AuraTrack
 	elseif C.Raid.RaidBuffs.Value ~= "Hide" then
@@ -123,8 +122,9 @@ function UnitFrames:Raid()
 
 	if C.Raid.DebuffWatch then
 		local RaidDebuffs = CreateFrame("Frame", nil, Health)
-		RaidDebuffs:SetHeight(20)
-		RaidDebuffs:SetWidth(20)
+		
+		RaidDebuffs:SetHeight(Health:GetHeight() - 16)
+		RaidDebuffs:SetWidth(Health:GetHeight() - 16)
 		RaidDebuffs:SetPoint("CENTER", Health)
 		RaidDebuffs:SetFrameLevel(Health:GetFrameLevel() + 10)
 		RaidDebuffs:CreateBackdrop()
@@ -140,9 +140,8 @@ function UnitFrames:Raid()
 		RaidDebuffs.cd.noCooldownCount = true
 		RaidDebuffs.cd:SetHideCountdownNumbers(true)
 		RaidDebuffs.cd:SetAlpha(.7)
-		RaidDebuffs.showDispellableDebuff = true
 		RaidDebuffs.onlyMatchSpellID = true
-		RaidDebuffs.FilterDispellableDebuff = true
+		RaidDebuffs.showDispellableDebuff = false
 		RaidDebuffs.time = RaidDebuffs:CreateFontString(nil, "OVERLAY")
 		RaidDebuffs.time:SetFont(C.Medias.Font, 12, "OUTLINE")
 		RaidDebuffs.time:SetPoint("CENTER", RaidDebuffs, 1, 0)
@@ -204,6 +203,12 @@ function UnitFrames:Raid()
 	Highlight:SetBackdropBorderColor(unpack(C.Raid.HighlightColor))
 	Highlight:SetFrameLevel(0)
 	Highlight:Hide()
+	
+	-- Enable smoothing bars animation?
+	if C.UnitFrames.Smoothing then
+		Health.smoothing = true
+		Power.smoothing = true
+	end
 
 	self:Tag(Name, "[Tukui:GetRaidNameColor][Tukui:NameShort]")
 	self:Tag(Health.Value, C.Raid.HealthTag.Value)

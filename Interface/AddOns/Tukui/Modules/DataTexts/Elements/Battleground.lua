@@ -8,19 +8,14 @@ local BGFrame = CreateFrame("Frame", nil, UIParent)
 local Color = {}
 
 function BGFrame:OnEnter()
-	local NumScores = GetNumBattlefieldScores()
-	local NumExtraStats = GetNumBattlefieldStats()
+	local ClassColor = format("|cff%.2x%.2x%.2x", Color.r * 255, Color.g * 255, Color.b * 255)
 
-	for i = 1, NumScores do
+	for i = 1, GetNumBattlefieldScores() do
 		local Name, KillingBlows, HonorableKills, Deaths, HonorGained = GetBattlefieldScore(i)
-
-		if (Name and Name == MyName) then
-			local CurrentMapID = C_Map.GetBestMapForUnit("player")
-			local ClassColor = format("|cff%.2x%.2x%.2x", Color.r * 255, Color.g * 255, Color.b * 255)
-
-			GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT", 0, 4)
-			GameTooltip:ClearLines()
-			GameTooltip:SetPoint("BOTTOM", self, "TOP", 0, 1)
+		local Columns = C_PvP.GetMatchPVPStatColumns()
+		
+		if Name and Name == T.MyName then
+			GameTooltip:SetOwner(T.Chat.Panels.LeftChat, "ANCHOR_TOPLEFT", 0, 16)
 			GameTooltip:ClearLines()
 			GameTooltip:AddDoubleLine(L.DataText.StatsFor, ClassColor..Name.."|r")
 			GameTooltip:AddLine(" ")
@@ -28,15 +23,19 @@ function BGFrame:OnEnter()
 			GameTooltip:AddDoubleLine(HONORABLE_KILLS, HonorableKills, 1, 1, 1)
 			GameTooltip:AddDoubleLine(DEATHS, Deaths, 1, 1, 1)
 			GameTooltip:AddDoubleLine(HONOR, format("%d", HonorGained), 1, 1, 1)
-
-			for j = 1, NumExtraStats do
-				GameTooltip:AddDoubleLine(GetBattlefieldStatInfo(j), GetBattlefieldStatData(i, j), 1,1,1)
+			
+			if Columns then
+				for index, stat in ipairs(Columns) do
+					local Name = stat.name
+					
+					if Name and strlen(Name) > 0 then
+						GameTooltip:AddDoubleLine(Name, GetBattlefieldStatData(i, index), 1, 1, 1)
+					end
+				end
 			end
-
-			break
 		end
 	end
-
+	
 	GameTooltip:Show()
 end
 
@@ -91,19 +90,19 @@ function BGFrame:Enable()
 
 	local Text1 = BGFrame:CreateFontString(nil, "OVERLAY")
 	Text1:SetFontObject(DataText.Font)
-	Text1:SetPoint("LEFT", 30, -1)
+	Text1:SetPoint("LEFT", 30, 0)
 	Text1:SetHeight(BGFrame:GetHeight())
 	BGFrame.Text1 = Text1
 
 	local Text2 = BGFrame:CreateFontString(nil, "OVERLAY")
 	Text2:SetFontObject(DataText.Font)
-	Text2:SetPoint("CENTER", 0, -1)
+	Text2:SetPoint("CENTER", 0, 0)
 	Text2:SetHeight(BGFrame:GetHeight())
 	BGFrame.Text2 = Text2
 
 	local Text3 = BGFrame:CreateFontString(nil, "OVERLAY")
 	Text3:SetFontObject(DataText.Font)
-	Text3:SetPoint("RIGHT", -30, -1)
+	Text3:SetPoint("RIGHT", -30, 0)
 	Text3:SetHeight(BGFrame:GetHeight())
 	BGFrame.Text3 = Text3
 

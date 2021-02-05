@@ -31,27 +31,27 @@ SkadaDB = {
 			},
 			["windows"] = {
 				{
-					["y"] = -56.10000610351563,
-					["point"] = "LEFT",
+					["y"] = 241.4620056152344,
+					["point"] = "BOTTOMLEFT",
 					["mode"] = "Damage",
 					["barwidth"] = 251.880035400391,
 					["background"] = {
 						["height"] = 162.857345581055,
 					},
-					["x"] = 2.000012397766113,
+					["x"] = 80.49159240722656,
 				}, -- [1]
 			},
 			["icon"] = {
 				["minimapPos"] = 345.608717238086,
 				["hide"] = true,
 			},
-			["hidesolo"] = true,
 			["versions"] = {
 				["1.6.3"] = true,
 				["1.8.0"] = true,
 				["1.6.4"] = true,
 				["1.6.7"] = true,
 			},
+			["hidedisables"] = false,
 			["reset"] = {
 				["join"] = 2,
 			},

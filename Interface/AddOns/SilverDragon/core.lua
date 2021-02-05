@@ -10,7 +10,7 @@ addon.events = LibStub("CallbackHandler-1.0"):New(addon)
 local Debug
 do
 	local TextDump = LibStub("LibTextDump-1.0")
-	local debuggable = GetAddOnMetadata(myname, "Version") == 'v90001.7'
+	local debuggable = GetAddOnMetadata(myname, "Version") == 'v90002.15.1'
 	local _window
 	local function GetDebugWindow()
 		if not _window then
@@ -187,20 +187,7 @@ function addon:OnInitialize()
 			always = {
 			},
 			ignore = {
-				[32435] = true, -- Vern
 				[64403] = true, -- Alani
-				[62346] = true, -- Galleon (spawns every 2 hourish)
---				[62346] = true, -- Oondasta (spawns every 2 hoursish now)
-				[123087] = true, -- Al'Abas in rogue class hall
-				--Throne of Thunder Weekly bosses
-				[70243] = true,--Agony and Anima (Archritualist Kelada)
-				[70238] = true,--Eyes of the Thunder King
-				[70249] = true,--Eyes of the Thunder King
-				[70440] = true,--Requiem for a Queen (Monara)
-				[70430] = true,--Rocks Fall, People Die (Rocky Horror)
-				[70429] = true,--Something Foul is Afoot (Flesh'rok the Diseased)
-				[70276] = true,--Taming the Tempest (No'ku Stormsayer)
-				[69843] = true,--Zao'cho the Wicked (Zao'cho)
 			},
 			ignore_datasource = {
 				-- "BurningCrusade" = true,
@@ -440,6 +427,7 @@ do
 		globaldb.mob_seen[id] = time()
 		lastseen[id..zone] = time()
 		self.events:Fire("Seen", id, zone, x or 0, y or 0, is_dead, source, unit)
+		return true
 	end
 end
 do
@@ -590,6 +578,14 @@ function addon:GetClosestLocationForMob(id)
 		for i, coord in ipairs(coords) do
 			local x2, y2 = self:GetXY(coord)
 			local distance = HBD:GetZoneDistance(zone, x, y, zone2, x2, y2)
+			if not distance then
+				if not closest.zone then
+					-- make sure we get one
+					closest.zone = zone2
+					closest.x = x2
+					closest.y = y2
+				end
+			end
 			if distance < closest.distance then
 				closest.distance = distance
 				closest.zone = zone2
@@ -600,3 +596,28 @@ function addon:GetClosestLocationForMob(id)
 	end
 	return closest.zone, closest.x, closest.y, closest.distance
 end
+
+-- utility tooltip stuff
+
+ns.Tooltip = {
+	Get = function(name)
+		name = "SilverDragon" .. name .. "Tooltip"
+		if _G[name] then
+			return _G[name]
+		end
+		local tooltip = CreateFrame("GameTooltip", name, UIParent, "GameTooltipTemplate")
+		tooltip:SetScript("OnTooltipSetUnit", GameTooltip_OnTooltipSetUnit)
+		tooltip:SetScript("OnTooltipSetItem", GameTooltip_OnTooltipSetItem)
+		tooltip:SetScript("OnTooltipSetSpell", GameTooltip_OnTooltipSetSpell)
+		tooltip:SetScript("OnUpdate", GameTooltip_OnUpdate)
+		tooltip.shoppingTooltips = {
+			CreateFrame("GameTooltip", name.."Shopping1", tooltip, "GameTooltipTemplate"),
+			CreateFrame("GameTooltip", name.."Shopping2", tooltip, "GameTooltipTemplate"),
+		}
+		tooltip.shoppingTooltips[1]:SetScript("OnTooltipSetItem", GameTooltip_OnTooltipSetShoppingItem)
+		tooltip.shoppingTooltips[1]:SetScale(0.8)
+		tooltip.shoppingTooltips[2]:SetScript("OnTooltipSetItem", GameTooltip_OnTooltipSetShoppingItem)
+		tooltip.shoppingTooltips[2]:SetScale(0.8)
+		return tooltip
+	end,
+}

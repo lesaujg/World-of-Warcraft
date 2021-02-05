@@ -1,0 +1,32 @@
+
+MacroToolkitDB = {
+	["char"] = {
+		["Bracnar - Sisters of Elune"] = {
+			["backups"] = {
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Bracnar - Sisters of Elune"] = "profile",
+	},
+	["global"] = {
+		["backups"] = {
+		},
+		["extra"] = {
+			["1001"] = {
+				["texture"] = "INV_Misc_QuestionMark",
+				["name"] = "__Volley",
+				["body"] = "",
+			},
+		},
+		["ebackups"] = {
+		},
+	},
+	["profiles"] = {
+		["profile"] = {
+			["y"] = 333.7781677246094,
+			["x"] = 372.5567321777344,
+			["height"] = 736.888671875,
+		},
+	},
+}

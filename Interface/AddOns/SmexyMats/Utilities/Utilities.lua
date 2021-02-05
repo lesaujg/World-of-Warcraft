@@ -99,6 +99,10 @@ SmexyMats.ExPacks = {
 		name = L["Battle for Azeroth"],
 		color = SmexyMats.Colors.BFA,
 		},
+	[8]  = {
+		name = L["ShadowLands"],
+		color = SmexyMats.Colors.artifact,
+		},
 };
 
 SmexyMats.Profs = {

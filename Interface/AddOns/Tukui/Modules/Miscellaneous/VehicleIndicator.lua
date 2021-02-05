@@ -9,12 +9,13 @@ function VehicleIndicator:Enable()
 
 	Indicator:ClearAllPoints()
 	Indicator:SetParent(UIParent)
+	Indicator:SetFrameStrata("BACKGROUND")
 	Indicator:SetPoint("BOTTOM", 0, T.ScreenHeight / 4)
 
 	-- This will block UIParent_ManageFramePositions() to be executed
 	Indicator.IsShown = function() return false end
 
-	Movers:RegisterFrame(Indicator)
+	Movers:RegisterFrame(Indicator, "Vehicle Indicator")
 end
 
 Miscellaneous.VehicleIndicator = VehicleIndicator

@@ -1,11 +1,4 @@
 Version: 1
-Frame: SilverDragonPopupButton
-FrameLevel: 1
-Anchor: BOTTOMRIGHT
-X: -260
-Y: 202
-W: 302
-H: 119
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: TOP
@@ -13,10 +6,3 @@ X: 44
 Y: -51
 W: 250
 H: 798
-Frame: WorldMapFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 30
-W: 860
-H: 638

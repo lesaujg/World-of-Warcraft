@@ -20,7 +20,7 @@ DBMPandaria_SavedStats = {
 		["challengePulls"] = 0,
 	},
 	["814"] = {
-		["normalPulls"] = 19,
+		["normalPulls"] = 23,
 		["challengeKills"] = 0,
 		["challengeBestRank"] = 0,
 		["mythicKills"] = 0,
@@ -29,7 +29,7 @@ DBMPandaria_SavedStats = {
 		["lfr25Pulls"] = 0,
 		["normal25Pulls"] = 0,
 		["normalLastTime"] = 12.56100000010338,
-		["normalKills"] = 19,
+		["normalKills"] = 23,
 		["normalBestTime"] = 7.09599999996135,
 		["heroic25Kills"] = 0,
 		["timewalkerPulls"] = 0,

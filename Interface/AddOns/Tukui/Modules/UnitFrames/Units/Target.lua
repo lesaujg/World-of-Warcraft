@@ -112,6 +112,11 @@ function UnitFrames:Target()
 		CastBar.Text:SetTextColor(0.84, 0.75, 0.65)
 		CastBar.Text:SetWidth(166)
 		CastBar.Text:SetJustifyH("LEFT")
+		
+		CastBar.Spark = CastBar:CreateTexture(nil, "OVERLAY")
+		CastBar.Spark:SetSize(8, CastBar:GetHeight())
+		CastBar.Spark:SetBlendMode("ADD")
+		CastBar.Spark:SetPoint("CENTER", CastBar:GetStatusBarTexture(), "RIGHT", 0, 0)
 
 		if (C.UnitFrames.CastBarIcon) then
 			CastBar.Button = CreateFrame("Frame", nil, CastBar)
@@ -158,7 +163,7 @@ function UnitFrames:Target()
 			CastBar.Text:ClearAllPoints()
 			CastBar.Text:SetPoint("LEFT", CastBar, "LEFT", 4, 0)
 
-			Movers:RegisterFrame(CastBar)
+			Movers:RegisterFrame(CastBar, "Target Cast Bar")
 		end
 
 		self.Castbar = CastBar
@@ -193,9 +198,8 @@ function UnitFrames:Target()
 		self.Portrait.Shadow = Portrait.Shadow
 	end
 
-	if (C.UnitFrames.TargetAuras) then
+	if (C.UnitFrames.TargetBuffs) then
 		local Buffs = CreateFrame("Frame", self:GetName().."Buffs", self)
-		local Debuffs = CreateFrame("Frame", self:GetName().."Debuffs", self)
 
 		Buffs:SetFrameStrata(self:GetFrameStrata())
 		Buffs:SetPoint("BOTTOMLEFT", self, "TOPLEFT", -1, 4)
@@ -205,21 +209,37 @@ function UnitFrames:Target()
 		Buffs.size = 28
 		Buffs.num = 32
 		Buffs.numRow = 4
-
-		Debuffs:SetFrameStrata(self:GetFrameStrata())
-		Debuffs:SetHeight(28)
-		Debuffs:SetWidth(252)
-		Debuffs:SetPoint("BOTTOMLEFT", Buffs, "TOPLEFT", 0, 18)
-		Debuffs.size = 28
-		Debuffs.num = 16
-		Debuffs.numRow = 2
-
+		Buffs.isAnimated = true
 		Buffs.spacing = 4
 		Buffs.initialAnchor = "TOPLEFT"
 		Buffs.PostCreateIcon = UnitFrames.PostCreateAura
 		Buffs.PostUpdateIcon = UnitFrames.PostUpdateAura
-		Buffs.PostUpdate = UnitFrames.UpdateDebuffsHeaderPosition
+		Buffs.PostUpdate = C.UnitFrames.TargetDebuffs and UnitFrames.UpdateDebuffsHeaderPosition
 		Buffs.onlyShowPlayer = C.UnitFrames.OnlySelfBuffs
+
+		if C.UnitFrames.AurasBelow then
+			Buffs:SetPoint("BOTTOMLEFT", self, "BOTTOMLEFT", 0, -32)
+		end
+
+		self.Buffs = Buffs
+	end
+
+	if (C.UnitFrames.TargetDebuffs) then
+		local Debuffs = CreateFrame("Frame", self:GetName().."Debuffs", self)
+
+		Debuffs:SetFrameStrata(self:GetFrameStrata())
+		Debuffs:SetHeight(28)
+		Debuffs:SetWidth(252)
+
+		if self.Buffs then
+			Debuffs:SetPoint("BOTTOMLEFT", Buffs, "TOPLEFT", 0, 18)
+		else
+			Debuffs:SetPoint("BOTTOMRIGHT", self, "TOPRIGHT", 1, 4)
+		end
+
+		Debuffs.size = 28
+		Debuffs.num = 16
+		Debuffs.numRow = 2
 
 		Debuffs.spacing = 4
 		Debuffs.initialAnchor = "TOPRIGHT"
@@ -230,11 +250,13 @@ function UnitFrames:Target()
 		Debuffs.onlyShowPlayer = C.UnitFrames.OnlySelfDebuffs
 
 		if C.UnitFrames.AurasBelow then
-			Buffs:SetPoint("BOTTOMLEFT", self, "BOTTOMLEFT", 0, -32)
+			if not C.UnitFrames.TargetBuffs then
+				Debuffs:SetPoint("BOTTOMLEFT", self, "BOTTOMLEFT", 0, -32)
+			end
+
 			Debuffs["growth-y"] = "DOWN"
 		end
 
-		self.Buffs = Buffs
 		self.Debuffs = Debuffs
 	end
 
@@ -305,6 +327,12 @@ function UnitFrames:Target()
 		}
 
 		self.HealthPrediction = HealthPrediction
+	end
+	
+	-- Enable smoothing bars animation?
+	if C.UnitFrames.Smoothing then
+		Health.smoothing = true
+		Power.smoothing = true
 	end
 
 	self:Tag(Name, "[Tukui:Classification][Tukui:DiffColor][level] [Tukui:GetNameColor][Tukui:NameLong]")

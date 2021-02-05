@@ -1,5 +1,5 @@
 AchievementsReminder: disabled
-AngryWorldQuests: disabled
+AngryWorldQuests: enabled
 AskMrRobot: enabled
 BaudManifest: enabled
 FactionAddict: disabled

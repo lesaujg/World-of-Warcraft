@@ -10,7 +10,7 @@ if SmexyMatsAuto == nil then SmexyMatsAuto = {}; end;
 local L = LibStub("AceLocale-3.0"):GetLocale("SmexyMats");
 local AceConfig = LibStub("AceConfigDialog-3.0");
 local name = "SmexyMats(Retail)";
-local version = "v8.3.0";
+local version = "v9.0.2";
 local isTooltipDone = nil;
 local storedLink = nil;
 local LID = nil;
@@ -30,7 +30,8 @@ function SmexyMats:OnInitialize()
 		InstallHook(GameTooltip, m, hooks[1], hooks[2]);
 	end;
 	if (SmexyMats:CheckDB() == true) then
-		SmexyMats:HookTooltips(); print(SmexyMats.Colors.wowtoken .. name,SmexyMats.Colors.legendary .. version,L["|rLoad Complete!"]);
+		SmexyMats:HookTooltips(); 
+		print(SmexyMats.Colors.wowtoken .. name,SmexyMats.Colors.legendary .. version,L["|rLoad Complete!"]);
 	else
 		print(SmexyMats.Colors.wowtoken .. name,SmexyMats.Colors.legendary .. version,SmexyMats.Colors.DeathKnight .. L["Failed! |rMissing Data-Tables. Reinstall SemxyMats(SM) to correct this issue or report the error to https://mods.curse.com/addons/wow/270824-smexymats"]);
 	end;
@@ -74,7 +75,8 @@ function SmexyMats:ChatCommand()
 end;
 
 function JustTheTip(tooltip, ...)
-	tooltip:SetBackdropColor(0,0,0); tooltip:Show();
+	tooltip:SetBackdropColor(0,0,0);
+	tooltip:Show();
 end;
 
 function GetIDFromLink(link)
@@ -257,7 +259,7 @@ function ProcessTooltip(tt, obj)
 	
 	local EPC = nil;
 	
-	tt:AddLine(" ",0,0,0);
+	--tt:AddLine(" ",0,0,0);
 	if (SmexyMatsDB.profile.Contents == true) then 
 		if EP ~= nil then
 			if (SmexyMatsDB.profile.IsColorBlind == true) then
@@ -361,7 +363,7 @@ function SmexyMats.ModifyItemTooltip(tt, ...)
 	if (SmexyMatsDB.profile.Enabled == false) then  return; end;
 	local obj, name, link, itemAquired = nil, nil, nil, false;
 	local objTXT = _G["GameTooltipTextLeft1"]:GetText();
-	if (not isTooltipDone) and tt then
+	if (isTooltipDone == nil) and tt then
 		isTooltipDone = true;
 		name, link = tt:GetItem();
 		obj = GetItemProperties(link)
@@ -424,7 +426,7 @@ function SmexyMats:SearchDatabase(iID)
 	--Loops through Professions
 	for x = 1, 14 do
 		--Loops through Expansions
-		for y = 0, 7 do
+		for y = 0, 8 do
 			--Loops through Sources
 			for k, v in pairs( SmexyMats.Sources[x][y] ) do 
 				if (tonumber(iID) == v) then

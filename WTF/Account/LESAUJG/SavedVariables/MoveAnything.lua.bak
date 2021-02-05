@@ -1,0 +1,32 @@
+
+MADB = {
+	["characters"] = {
+	},
+	["tooltips"] = true,
+	["frameListRows"] = 18,
+	["profiles"] = {
+		["default"] = {
+			["name"] = "default",
+			["frames"] = {
+				["UIWidgetBelowMinimapContainerFrame"] = {
+					["orgPos"] = {
+						"CENTER", -- [1]
+						"TukuiWidget", -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+					["name"] = "UIWidgetBelowMinimapContainerFrame",
+					["hidden"] = true,
+					["pos"] = {
+						"CENTER", -- [1]
+						"TukuiWidget", -- [2]
+						"CENTER", -- [3]
+						0.00018310546875, -- [4]
+						0, -- [5]
+					},
+				},
+			},
+		},
+	},
+}

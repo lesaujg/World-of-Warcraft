@@ -50,9 +50,11 @@ function UnitFrames:DisableBlizzard()
 
 	if C["Raid"].Enable and CompactRaidFrameManager then
 		-- Disable Blizzard Raid Frames.
+		CompactRaidFrameManager:SetParent(T.Hider)
 		CompactRaidFrameManager:UnregisterAllEvents()
 		CompactRaidFrameManager:Hide()
-
+		
+		CompactRaidFrameContainer:SetParent(T.Hider)
 		CompactRaidFrameContainer:UnregisterAllEvents()
 		CompactRaidFrameContainer:Hide()
 
@@ -147,6 +149,27 @@ function UnitFrames:Highlight()
 	end
 end
 
+function UnitFrames:UpdateNameplateClassIcon()
+	if UnitIsPlayer(self.unit) then
+		local Class = select(2, UnitClass(self.unit))
+		
+		if Class then
+			local Left, Right, Top, Bottom = unpack(CLASS_ICON_TCOORDS[Class])
+
+			-- Remove borders on icon
+			Left = Left + (Right - Left) * 0.075
+			Right = Right - (Right - Left) * 0.075
+			Top = Top + (Bottom - Top) * 0.075
+			Bottom = Bottom - (Bottom - Top) * 0.075
+
+			self.ClassIcon.Texture:SetTexCoord(Left, Right, Top, Bottom)
+			self.ClassIcon:SetAlpha(1)
+		end
+	else
+		self.ClassIcon:SetAlpha(0)
+	end
+end
+
 function UnitFrames:PostCreateAuraBar(bar)
 	if not bar.Backdrop then
 		bar:CreateBackdrop("Transparent")
@@ -206,27 +229,35 @@ function UnitFrames:CustomCastDelayText(duration)
 	self.Time:SetText(Value)
 end
 
-function UnitFrames:CheckInterrupt(unit)
+function UnitFrames:SetStatusCastBarColor(unit)
 	if (unit == "vehicle") then
 		unit = "player"
 	end
 
-	local Frame = self:GetParent()
-	local Power = Frame.Power
-
-	if (self.notInterruptible and UnitCanAttack("player", unit)) then
-		self:SetStatusBarColor(0.87, 0.37, 0.37, 0.7)
+	if (self.notInterruptible) then
+		self:SetStatusBarColor(unpack(C.UnitFrames.NotInterruptibleColor))
+	elseif (self.casting) then
+		self:SetStatusBarColor(unpack(C.UnitFrames.CastingColor))
+	elseif (self.channeling) then
+		self:SetStatusBarColor(unpack(C.UnitFrames.ChannelingColor))
 	else
-		self:SetStatusBarColor(0.29, 0.67, 0.30, 0.7)
+		self:SetStatusBarColor(1, 1, 1)
+	end
+	
+	if C.NamePlates.ClassIcon and unit:find("nameplate") and self.Button and self.Button.Shadow then
+		self.Button.Shadow:SetBackdropBorderColor(self:GetStatusBarColor())
 	end
 end
 
+-- Deprecated, CheckInterrupt was renamed to SetStatusCastBarColor and will be removed soon
+UnitFrames.CheckInterrupt = UnitFrames.SetStatusCastBarColor
+
 function UnitFrames:CheckCast(unit, name, rank, castid)
-	UnitFrames.CheckInterrupt(self, unit)
+	UnitFrames.SetStatusCastBarColor(self, unit)
 end
 
 function UnitFrames:CheckChannel(unit, name, rank)
-	UnitFrames.CheckInterrupt(self, unit)
+	UnitFrames.SetStatusCastBarColor(self, unit)
 end
 
 function UnitFrames:PreUpdateHealth(unit)
@@ -244,14 +275,14 @@ function UnitFrames:DisplayPlayerAndPetNames(event)
 		self.Power.Value:Show()
 		self.Name:SetAlpha(0)
 
-		if self.unit ~= "player" then
+		if self.unit == "pet" then
 			self.Health.Value:Show()
 		end
 	else
 		self.Power.Value:Hide()
 		self.Name:SetAlpha(1)
 
-		if self.unit ~= "player" then
+		if self.unit == "pet" then
 			self.Health.Value:Hide()
 		end
 	end
@@ -337,9 +368,10 @@ function UnitFrames:CancelPlayerBuff(index)
 	CancelUnitBuff("player", self.index)
 end
 
-function UnitFrames:PostCreateAura(button)
+function UnitFrames:PostCreateAura(button, unit)
 	-- Set "self.Buffs.isCancellable" to true to a buffs frame to be able to cancel click
 	local isCancellable = button:GetParent().isCancellable
+	local isAnimated = button:GetParent().isAnimated
 
 	-- Right-click-cancel script
 	if isCancellable then
@@ -378,14 +410,16 @@ function UnitFrames:PostCreateAura(button)
 	button.count:SetFont(C.Medias.Font, 9, "THICKOUTLINE")
 	button.count:SetTextColor(0.84, 0.75, 0.65)
 
-	button.Animation = button:CreateAnimationGroup()
-	button.Animation:SetLooping("BOUNCE")
+	if isAnimated then
+		button.Animation = button:CreateAnimationGroup()
+		button.Animation:SetLooping("BOUNCE")
 
-	button.Animation.FadeOut = button.Animation:CreateAnimation("Alpha")
-	button.Animation.FadeOut:SetFromAlpha(1)
-	button.Animation.FadeOut:SetToAlpha(.3)
-	button.Animation.FadeOut:SetDuration(.3)
-	button.Animation.FadeOut:SetSmoothing("IN_OUT")
+		button.Animation.FadeOut = button.Animation:CreateAnimation("Alpha")
+		button.Animation.FadeOut:SetFromAlpha(1)
+		button.Animation.FadeOut:SetToAlpha(.3)
+		button.Animation.FadeOut:SetDuration(.3)
+		button.Animation.FadeOut:SetSmoothing("IN_OUT")
+	end
 end
 
 function UnitFrames:PostUpdateAura(unit, button, index, offset, filter, isDebuff, duration, timeLeft)
@@ -428,8 +462,6 @@ function UnitFrames:PostUpdateAura(unit, button, index, offset, filter, isDebuff
 				
 				button:SetScript("OnUpdate", nil)
 			end
-
-			
 		end
 
 		if (button.cd) then
@@ -450,6 +482,16 @@ end
 function UnitFrames:Update()
 	for _, element in ipairs(self.__elements) do
 		element(self, "UpdateElement", self.unit)
+	end
+end
+
+function UnitFrames:BuffIsStealable(unit, button, name, texture, count, debuffType)
+	-- We want to use this custom filter for mythic+, bg, arena
+	local IsPlayer = UnitIsPlayer(unit) or false
+	local InInstance, InstanceType = IsInInstance()
+
+	if ((InstanceType == "pvp" or InstanceType == "arena") and debuffType == "Magic") or (not IsPlayer and debuffType == "Magic") then
+		return true
 	end
 end
 
@@ -602,7 +644,7 @@ function UnitFrames:GetPartyFramesAttributes()
 	return
 		"TukuiParty",
 		nil,
-		"custom [@raid6,exists] hide;show",
+		"custom [@raid6,exists] hide; [@raid1,exists] show; [@party1,exists] show; hide",
 		"oUF-initialConfigFunction", [[
 			local header = self:GetParent()
 			self:SetWidth(header:GetAttribute("initial-width"))
@@ -624,7 +666,7 @@ function UnitFrames:GetPetPartyFramesAttributes()
 	return
 		"TukuiPartyPet",
 		"SecureGroupPetHeaderTemplate",
-		"custom [@raid6,exists] hide;show",
+		"custom [@raid6,exists] hide; [@raid1,exists] show; [@party1,exists] show; hide",
 		"oUF-initialConfigFunction", [[
 			local header = self:GetParent()
 			self:SetWidth(header:GetAttribute("initial-width"))
@@ -643,7 +685,7 @@ function UnitFrames:GetPetPartyFramesAttributes()
 end
 
 function UnitFrames:GetRaidFramesAttributes()
-	local Properties = C.Party.Enable and "custom [@raid6,exists] show;hide" or "solo,party,raid"
+	local Properties = C.Party.Enable and "custom [@raid21,exists] hide; [@raid6,exists] show; hide" or "custom [@raid21,exists] hide; [@raid6,exists] show; [@party1,exists] show; hide"
 
 	return
 		"TukuiRaid",
@@ -659,21 +701,51 @@ function UnitFrames:GetRaidFramesAttributes()
 		"showParty", true,
 		"showRaid", true,
 		"showPlayer", true,
-		"showSolo", false,
-		"xoffset", 4,
-		"yOffset", -4,
+		"showSolo", true,
+		"xoffset", C.Raid.Padding,
+		"yOffset", -C.Raid.Padding,
 		"point", "TOP",
 		"groupFilter", "1,2,3,4,5,6,7,8",
 		"groupingOrder", "1,2,3,4,5,6,7,8",
 		"groupBy", C["Raid"].GroupBy.Value,
 		"maxColumns", math.ceil(40 / 5),
 		"unitsPerColumn", C["Raid"].MaxUnitPerColumn,
-		"columnSpacing", 4,
+		"columnSpacing", C.Raid.Padding,
+		"columnAnchorPoint", "LEFT"
+end
+
+function UnitFrames:GetBigRaidFramesAttributes()
+	local Properties = "custom [@raid21,exists] show; hide"
+
+	return
+		"TukuiRaid40",
+		nil,
+		Properties,
+		"oUF-initialConfigFunction", [[
+			local header = self:GetParent()
+			self:SetWidth(header:GetAttribute("initial-width"))
+			self:SetHeight(header:GetAttribute("initial-height"))
+		]],
+		"initial-width", C.Raid.Raid40WidthSize,
+		"initial-height", C.Raid.Raid40HeightSize,
+		"showParty", true,
+		"showRaid", true,
+		"showPlayer", true,
+		"showSolo", true,
+		"xoffset", C.Raid.Padding40,
+		"yOffset", -C.Raid.Padding40,
+		"point", "TOP",
+		"groupFilter", "1,2,3,4,5,6,7,8",
+		"groupingOrder", "1,2,3,4,5,6,7,8",
+		"groupBy", C["Raid"].GroupBy.Value,
+		"maxColumns", math.ceil(40 / 5),
+		"unitsPerColumn", C["Raid"].Raid40MaxUnitPerColumn,
+		"columnSpacing", C.Raid.Padding40,
 		"columnAnchorPoint", "LEFT"
 end
 
 function UnitFrames:GetPetRaidFramesAttributes()
-	local Properties = C.Party.Enable and "custom [@raid6,exists] show;hide" or "solo,party,raid"
+	local Properties = C.Party.Enable and "custom [@raid21,exists] hide; [@raid6,exists] show; hide" or "custom [@raid21,exists] hide; [@raid6,exists] show; [@party1,exists] show; hide"
 
 	return
 		"TukuiRaidPet",
@@ -682,16 +754,43 @@ function UnitFrames:GetPetRaidFramesAttributes()
 		"showParty", C["Raid"].ShowPets,
 		"showRaid", C["Raid"].ShowPets,
 		"showPlayer", true,
-		"showSolo", false,
+		"showSolo", true,
 		"maxColumns", math.ceil(40 / 5),
 		"point", "TOP",
 		"unitsPerColumn", C["Raid"].MaxUnitPerColumn,
-		"columnSpacing", 4,
+		"columnSpacing", C.Raid.Padding,
 		"columnAnchorPoint", "LEFT",
-		"yOffset", -4,
-		"xOffset", 4,
+		"yOffset", -C.Raid.Padding,
+		"xOffset", C.Raid.Padding,
 		"initial-width", C.Raid.WidthSize,
 		"initial-height", C.Raid.HeightSize,
+		"oUF-initialConfigFunction", [[
+			local header = self:GetParent()
+			self:SetWidth(header:GetAttribute("initial-width"))
+			self:SetHeight(header:GetAttribute("initial-height"))
+		]]
+end
+
+function UnitFrames:GetBigPetRaidFramesAttributes()
+	local Properties = "custom [@raid21,exists] show; hide"
+
+	return
+		"TukuiRaid40Pet",
+		"SecureGroupPetHeaderTemplate",
+		Properties,
+		"showParty", C["Raid"].ShowPets,
+		"showRaid", C["Raid"].ShowPets,
+		"showPlayer", true,
+		"showSolo", true,
+		"maxColumns", math.ceil(40 / 5),
+		"point", "TOP",
+		"unitsPerColumn", C["Raid"].Raid40MaxUnitPerColumn,
+		"columnSpacing", C.Raid.Padding40,
+		"columnAnchorPoint", "LEFT",
+		"yOffset", -C.Raid.Padding40,
+		"xOffset", C.Raid.Padding40,
+		"initial-width", C.Raid.Raid40WidthSize,
+		"initial-height", C.Raid.Raid40HeightSize,
 		"oUF-initialConfigFunction", [[
 			local header = self:GetParent()
 			self:SetWidth(header:GetAttribute("initial-width"))
@@ -780,7 +879,7 @@ function UnitFrames:CreateUnits()
 			local Party = oUF:SpawnHeader(UnitFrames:GetPartyFramesAttributes())
 		
 			Party:SetParent(T.PetHider)
-			Party:SetPoint("TOPLEFT", T.PetHider, "TOPLEFT", 28, -(T.PetHider:GetHeight() / 2) + 200)
+			Party:SetPoint("LEFT", T.PetHider, "LEFT", 28, 0)
 
 			if C.Party.ShowPets then
 				local Pet = oUF:SpawnHeader(UnitFrames:GetPetPartyFramesAttributes())
@@ -789,32 +888,48 @@ function UnitFrames:CreateUnits()
 
 				UnitFrames.Headers.RaidPet = Pet
 
-				Movers:RegisterFrame(Pet)
+				Movers:RegisterFrame(Pet, "Pet")
 			end
 
 			UnitFrames.Headers.Party = Party
 
-			Movers:RegisterFrame(Party)
+			Movers:RegisterFrame(Party, "Party")
 		end
 
 		if C.Raid.Enable then
 			local Raid = oUF:SpawnHeader(UnitFrames:GetRaidFramesAttributes())
 			Raid:SetParent(T.PetHider)
-			Raid:SetPoint("TOPLEFT", T.PetHider, "TOPLEFT", 30, -30)
+			Raid:SetPoint("LEFT", T.PetHider, "LEFT", 28, 100)
 
 			if C.Raid.ShowPets then
 				local Pet = oUF:SpawnHeader(UnitFrames:GetPetRaidFramesAttributes())
 				Pet:SetParent(T.PetHider)
-				Pet:SetPoint("TOPLEFT", Raid, "TOPRIGHT", 4, 0)
+				Pet:SetPoint("TOPLEFT", Raid, "TOPRIGHT", C.Raid.Padding, 0)
 
 				UnitFrames.Headers.RaidPet = Pet
 
-				Movers:RegisterFrame(Pet)
+				Movers:RegisterFrame(Pet, "Raid Pets")
+			end
+			
+			local Raid40 = oUF:SpawnHeader(UnitFrames:GetBigRaidFramesAttributes())
+			Raid40:SetParent(T.PetHider)
+			Raid40:SetPoint("TOPLEFT", T.PetHider, "TOPLEFT", 30, -30)
+
+			if C.Raid.ShowPets then
+				local Pet40 = oUF:SpawnHeader(UnitFrames:GetBigPetRaidFramesAttributes())
+				Pet40:SetParent(T.PetHider)
+				Pet40:SetPoint("TOPLEFT", Raid40, "TOPRIGHT", C.Raid.Padding40, 0)
+
+				UnitFrames.Headers.Raid40Pet = Pet40
+
+				Movers:RegisterFrame(Pet40, "Raid 26/40 Pets")
 			end
 
 			UnitFrames.Headers.Raid = Raid
+			UnitFrames.Headers.Raid40 = Raid40
 
-			Movers:RegisterFrame(Raid)
+			Movers:RegisterFrame(Raid, "Raid")
+			Movers:RegisterFrame(Raid40, "Raid 26/40")
 		end
 		
 		if (C.UnitFrames.Arena) then
@@ -830,10 +945,12 @@ function UnitFrames:CreateUnits()
 				end
 				Arena[i]:SetSize(164, 20)
 
-				Movers:RegisterFrame(Arena[i])
+				Movers:RegisterFrame(Arena[i], "Arena #"..i)
 			end
 
 			self.Units.Arena = Arena
+			
+			SetCVar("showArenaEnemyFrames", 0)
 		end
 
 		
@@ -850,18 +967,18 @@ function UnitFrames:CreateUnits()
 				end
 				Boss[i]:SetSize(164, 20)
 
-				Movers:RegisterFrame(Boss[i])
+				Movers:RegisterFrame(Boss[i], "Boss #"..i)
 			end
 
 			self.Units.Boss = Boss
 		end
 
-		Movers:RegisterFrame(Player)
-		Movers:RegisterFrame(Target)
-		Movers:RegisterFrame(TargetOfTarget)
-		Movers:RegisterFrame(Pet)
-		Movers:RegisterFrame(Focus)
-		Movers:RegisterFrame(FocusTarget)
+		Movers:RegisterFrame(Player, "Player")
+		Movers:RegisterFrame(Target, "Target")
+		Movers:RegisterFrame(TargetOfTarget, "Target of Target")
+		Movers:RegisterFrame(Pet, "Pet")
+		Movers:RegisterFrame(Focus, "Focus")
+		Movers:RegisterFrame(FocusTarget, "Focus Target")
 	end
 
 	if C.NamePlates.Enable then
@@ -879,17 +996,18 @@ function UnitFrames:UpdateRaidDebuffIndicator()
 
 	if (ORD) then
 		local _, InstanceType = IsInInstance()
+		ORD:ResetDebuffData()
 
-		if (ORD.RegisteredList ~= "RD") and (InstanceType == "party" or InstanceType == "raid") then
-			ORD:ResetDebuffData()
-			ORD:RegisterDebuffs(UnitFrames.DebuffsTracking.RaidDebuffs.spells)
-			ORD.RegisteredList = "RD"
-		else
-			if ORD.RegisteredList ~= "CC" then
-				ORD:ResetDebuffData()
-				ORD:RegisterDebuffs(UnitFrames.DebuffsTracking.CCDebuffs.spells)
-				ORD.RegisteredList = "CC"
+		if (InstanceType == "party" or InstanceType == "raid") then
+			ORD:RegisterDebuffs(UnitFrames.DebuffsTracking.PvE.spells)
+		elseif (InstanceType == "pvp") then
+			if (T.MyClass == "PRIEST") or (T.MyClass == "PALADIN" and GetActiveSpecGroup() == 1) or (T.MyClass == "SHAMAN" and GetActiveSpecGroup() == 3) or (T.MyClass == "DRUID" and GetActiveSpecGroup() == 4) or (T.MyClass == "MONK" and GetActiveSpecGroup() == 2) then
+				ORD:RegisterDebuffs(UnitFrames.DebuffsTracking.PvP.spells)
+			else
+				ORD:RegisterDebuffs(UnitFrames.DebuffsTracking.CrowdControl.spells)
 			end
+		else
+			ORD:RegisterDebuffs(UnitFrames.DebuffsTracking.PvP.spells) -- replace this one later with a new list
 		end
 	end
 end

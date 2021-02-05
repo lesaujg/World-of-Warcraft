@@ -18,7 +18,7 @@ function ActionBars:CreatePetBar()
 	local NumRow = ceil(10 / ButtonsPerRow)
 	
 	local Bar = CreateFrame("Frame", "TukuiPetActionBar", T.PetHider, "SecureHandlerStateTemplate")
-	Bar:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 28, 240)
+	Bar:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 28, 229)
 	Bar:SetFrameStrata("LOW")
 	Bar:SetFrameLevel(10)
 	Bar:SetWidth((PetSize * ButtonsPerRow) + (Spacing * (ButtonsPerRow + 1)))
@@ -32,6 +32,9 @@ function ActionBars:CreatePetBar()
 	PetActionBarFrame:EnableMouse(0)
 	PetActionBarFrame:ClearAllPoints()
 	PetActionBarFrame:SetParent(T.Hider)
+	
+	-- overwrite PetActionBar_Update, causing a lot of taint with original
+	PetActionBar_Update = ActionBars.UpdatePetBar
 	
 	local NumPerRows = ButtonsPerRow
 	local NextRowButtonAnchor = _G["PetActionButton1"]
@@ -61,14 +64,13 @@ function ActionBars:CreatePetBar()
 		Bar["Button"..i] = Button
 	end
 
-	hooksecurefunc("PetActionBar_Update", ActionBars.UpdatePetBar)
 	hooksecurefunc("PetActionBar_UpdateCooldowns", ActionBars.UpdatePetBarCooldownText)
 
 	ActionBars:SkinPetButtons()
 
 	RegisterStateDriver(Bar, "visibility", "[@pet,exists,nopossessbar] show; hide")
 
-	Movers:RegisterFrame(Bar)
+	Movers:RegisterFrame(Bar, "Pet Action Bar")
 	
 	self.Bars.Pet = Bar
 end

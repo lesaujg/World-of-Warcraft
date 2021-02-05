@@ -2,7 +2,7 @@ OPie_Classic: disabled
 WeakAurasCompanion: enabled
 AchievementsReminder: disabled
 ActionBarSaver: disabled
-AngryWorldQuests: disabled
+AngryWorldQuests: enabled
 AskMrRobot: enabled
 BaudManifest: enabled
 DarkmoonQuestItems: disabled

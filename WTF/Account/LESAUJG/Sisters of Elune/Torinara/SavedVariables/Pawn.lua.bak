@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0405,
+	["LastVersion"] = 2.041,
 	["LastPlayerFullName"] = "Torinara-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
@@ -11,8 +11,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 107,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::50:263::11:4:4932:4933:6316:1521::::|h[Heart of Azeroth]|h|r",
+			["Level"] = 108,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::50:263::11:4:4932:4933:6316:1522::::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 173838,

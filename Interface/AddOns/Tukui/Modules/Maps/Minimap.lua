@@ -25,7 +25,6 @@ function Minimap:DisableMinimapElements()
 		"MinimapZoneTextButton",
 		"GameTimeFrame",
 		"MiniMapWorldMapButton",
-		"GarrisonLandingPageMinimapButton",
 	}
 
 	for i, FrameName in pairs(HiddenFrames) do
@@ -45,13 +44,21 @@ function Minimap:DisableMinimapElements()
 end
 
 function Minimap:OnMouseClick(button)
-	if (button == "RightButton") or (button == "MiddleButton") then
+	if (button == "RightButton") then
 		local MicroMenu = T.Miscellaneous.MicroMenu
 		
 		if MicroMenu then
 			MicroMenu:Toggle()
 		else
 			MiniMapTracking_OnMouseDown(MiniMapTracking)
+		end
+	elseif (button == "MiddleButton") then
+		if GarrisonLandingPageMinimapButton:IsShown() then
+			if InCombatLockdown() then
+				T.Print("["..GARRISON_MISSIONS_TITLE.."] "..ERR_NOT_IN_COMBAT)
+			else
+				GarrisonLandingPage_Toggle()
+			end
 		end
 	else
 		Minimap_OnClick(self)
@@ -69,6 +76,8 @@ function Minimap:StyleMinimap()
 	local HelpOpenTicketButton = HelpOpenTicketButton
 	local Tracking = MiniMapTrackingButton
 
+	self:SetArchBlobRingScalar(0)
+	self:SetQuestBlobRingScalar(0)
 	self:SetMaskTexture(C.Medias.Blank)
 	self:CreateBackdrop()
 	self:SetScript("OnMouseUp", Minimap.OnMouseClick)
@@ -77,6 +86,12 @@ function Minimap:StyleMinimap()
 	self.Backdrop:SetFrameStrata("BACKGROUND")
 	self.Backdrop:SetFrameLevel(2)
 	self.Backdrop:CreateShadow()
+	
+	self.Backdrop.Shadow:ClearAllPoints()
+	self.Backdrop.Shadow:SetPoint("TOP", 0, 4)
+	self.Backdrop.Shadow:SetPoint("BOTTOM", 0, -23)
+	self.Backdrop.Shadow:SetPoint("LEFT", -4, 0)
+	self.Backdrop.Shadow:SetPoint("RIGHT", 4, 0)
 
 	self.Ticket = CreateFrame("Frame", nil, Minimap)
 	self.Ticket:CreateBackdrop()
@@ -93,7 +108,8 @@ function Minimap:StyleMinimap()
 	
 	QueueStatusMinimapButton:SetParent(Minimap)
 	QueueStatusMinimapButton:ClearAllPoints()
-	QueueStatusMinimapButton:SetPoint("BOTTOMRIGHT", 0, 0)
+	QueueStatusMinimapButton:SetPoint("BOTTOMRIGHT", 2, -2)
+	QueueStatusMinimapButton:SetFrameLevel(QueueStatusMinimapButton:GetFrameLevel() + 2)
 	QueueStatusMinimapButtonBorder:Kill()
 		 
 	QueueStatusFrame:StripTextures()
@@ -101,8 +117,8 @@ function Minimap:StyleMinimap()
 	QueueStatusFrame:CreateShadow()
 
 	Mail:ClearAllPoints()
-	Mail:SetPoint("TOPRIGHT", 4, 4)
-	Mail:SetFrameLevel(self:GetFrameLevel() + 2)
+	Mail:SetPoint("BOTTOMRIGHT", 3, -4)
+	Mail:SetFrameLevel(QueueStatusMinimapButton:GetFrameLevel() - 2)
 	MailBorder:Hide()
 	MailIcon:SetTexture("Interface\\AddOns\\Tukui\\Medias\\Textures\\Others\\Mail")
 	
@@ -122,17 +138,19 @@ function Minimap:PositionMinimap()
 	self:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -28, -28)
 	self:SetMovable(true)
 
-	Movers:RegisterFrame(self)
+	Movers:RegisterFrame(self, "Minimap")
 end
 
 function Minimap:AddMinimapDataTexts()
 	local Backdrop = self.Backdrop
 
 	local MinimapDataText = CreateFrame("Frame", nil, self)
-	MinimapDataText:SetSize(self.Backdrop:GetWidth(), 19)
-	MinimapDataText:SetPoint("TOPLEFT", self.Backdrop, "BOTTOMLEFT", 0, 0)
+	MinimapDataText:SetSize(Backdrop:GetWidth(), 19)
+	MinimapDataText:SetPoint("TOPLEFT", Backdrop, "BOTTOMLEFT", 0, 0)
 	MinimapDataText:CreateBackdrop()
-	MinimapDataText:CreateShadow()
+	
+	MinimapDataText.Backdrop:SetFrameStrata(Minimap.Backdrop:GetFrameStrata())
+	MinimapDataText.Backdrop:SetFrameLevel(Minimap.Backdrop:GetFrameLevel())
 
 	T.DataTexts.Panels.Minimap = MinimapDataText
 end
@@ -270,6 +288,10 @@ end
 
 function Minimap:EnableMouseOver()
 	self:SetScript("OnEnter", function()
+		if Minimap.Highlight and Minimap.Highlight.Animation:IsPlaying() then
+			return
+		end
+		
 		Minimap.MinimapZone.Anim:Stop()
 		Minimap.MinimapZone.Anim:SetChange(1)
 		Minimap.MinimapZone.Anim:Play()
@@ -280,6 +302,10 @@ function Minimap:EnableMouseOver()
 	end)
 
 	self:SetScript("OnLeave", function()
+		if Minimap.Highlight and Minimap.Highlight.Animation:IsPlaying() then
+			return
+		end
+		
 		Minimap.MinimapZone.Anim:Stop()
 		Minimap.MinimapZone.Anim:SetChange(0)
 		Minimap.MinimapZone.Anim:Play()
@@ -290,6 +316,10 @@ function Minimap:EnableMouseOver()
 	end)
 	
 	MiniMapTrackingButton:SetScript("OnEnter", function()
+		if Minimap.Highlight and Minimap.Highlight.Animation:IsPlaying() then
+			return
+		end
+		
 		Minimap.MinimapZone.Anim:Stop()
 		Minimap.MinimapZone.Anim:SetChange(1)
 		Minimap.MinimapZone.Anim:Play()
@@ -300,6 +330,10 @@ function Minimap:EnableMouseOver()
 	end)
 
 	MiniMapTrackingButton:SetScript("OnLeave", function()
+		if Minimap.Highlight and Minimap.Highlight.Animation:IsPlaying() then
+			return
+		end
+		
 		Minimap.MinimapZone.Anim:Stop()
 		Minimap.MinimapZone.Anim:SetChange(0)
 		Minimap.MinimapZone.Anim:Play()
@@ -379,6 +413,56 @@ function Minimap:AddTaxiEarlyExit()
 	Minimap.EarlyExitButton.Text:SetShadowOffset(1.25, -1.25)
 end
 
+function Minimap:StopHighlight()
+	if Minimap.Highlight and Minimap.Highlight.Animation:IsPlaying() then
+		Minimap.Highlight.Animation:Stop()
+		Minimap.Highlight:Hide()
+	end
+end
+
+function Minimap:StartHighlight()
+	if not Minimap.Highlight then
+		Minimap.Highlight = CreateFrame("Frame", nil, Minimap, "BackdropTemplate")
+		Minimap.Highlight:SetBackdrop({edgeFile = C.Medias.Glow, edgeSize = 10})
+		Minimap.Highlight:SetPoint("TOP", 0, 10)
+		Minimap.Highlight:SetPoint("BOTTOM", 0, -30)
+		Minimap.Highlight:SetPoint("LEFT", -10, 0)
+		Minimap.Highlight:SetPoint("RIGHT", 10, 0)
+		Minimap.Highlight:SetBackdropBorderColor(1, 1, 0)
+		
+		Minimap.Highlight.Animation = Minimap.Highlight:CreateAnimationGroup()
+		Minimap.Highlight.Animation:SetLooping("BOUNCE")
+		
+		Minimap.Highlight.Animation.Bounce = Minimap.Highlight.Animation:CreateAnimation("Alpha")
+		Minimap.Highlight.Animation.Bounce:SetFromAlpha(1)
+		Minimap.Highlight.Animation.Bounce:SetToAlpha(.6)
+		Minimap.Highlight.Animation.Bounce:SetDuration(.3)
+		Minimap.Highlight.Animation.Bounce:SetSmoothing("IN_OUT")
+	end
+	
+	if not Minimap.Highlight.Animation:IsPlaying() then
+		Minimap.Highlight:Show()
+		Minimap.Highlight.Animation:Play()
+		
+		T.Print("[|cffffff00"..MINIMAP_LABEL.."|r] "..MINIMAP_GARRISON_LANDING_PAGE_TOOLTIP.." (|cffff0000"..KEY_BUTTON3.."|r)")
+	end
+end
+
+function Minimap:MoveGarrisonButton()
+	GarrisonLandingPageMinimapButton:ClearAllPoints()
+	GarrisonLandingPageMinimapButton:SetPoint("TOP", UIParent, "TOP", 0, 200)
+end
+
+function Minimap:AddHooks()
+	hooksecurefunc("GarrisonLandingPageMinimapButton_UpdateIcon", self.MoveGarrisonButton)
+	hooksecurefunc(GarrisonLandingPageMinimapButton.MinimapLoopPulseAnim, "Play", self.StartHighlight)
+	hooksecurefunc(GarrisonLandingPageMinimapButton.MinimapLoopPulseAnim, "Stop", self.StopHighlight)
+	hooksecurefunc(GarrisonLandingPageMinimapButton.MinimapPulseAnim, "Play", self.StartHighlight)
+	hooksecurefunc(GarrisonLandingPageMinimapButton.MinimapPulseAnim, "Stop", self.StopHighlight)
+	hooksecurefunc(GarrisonLandingPageMinimapButton.MinimapAlertAnim, "Play", self.StartHighlight)
+	hooksecurefunc(GarrisonLandingPageMinimapButton.MinimapAlertAnim, "Stop", self.StopHighlight)
+end
+
 function Minimap:Enable()
 	self:DisableMinimapElements()
 	self:StyleMinimap()
@@ -388,6 +472,7 @@ function Minimap:Enable()
 	self:EnableMouseOver()
 	self:EnableMouseWheelZoom()
 	self:AddTaxiEarlyExit()
+	self:AddHooks()
 end
 
 -- Need to be sized as soon as possible, because of LibDBIcon10

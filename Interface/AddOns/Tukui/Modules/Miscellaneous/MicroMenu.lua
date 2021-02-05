@@ -52,8 +52,6 @@ function MicroMenu:Toggle()
 	-- Hide Game Menu if visible
 	if GameMenuFrame:IsShown() then
 		HideUIPanel(GameMenuFrame)
-		
-		return
 	end
 	
 	if self:IsShown() then
@@ -64,6 +62,10 @@ function MicroMenu:Toggle()
 end
 
 function MicroMenu:Enable()
+	if not C.Misc.MicroMenu then
+		return
+	end
+	
 	MicroMenu:AddHooks()
 	
 	MicroMenu:SetSize(250, 374)
@@ -119,7 +121,7 @@ function MicroMenu:Enable()
 	
 	UpdateMicroButtonsParent(T.Hider)
 	
-	T.Movers:RegisterFrame(MicroMenu)
+	T.Movers:RegisterFrame(MicroMenu, "Micro Menu")
 	
 	tinsert(UISpecialFrames, "TukuiMicroMenu")
 	

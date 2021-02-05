@@ -83,6 +83,11 @@ function UnitFrames:Focus()
 		CastBar.Text:SetTextColor(0.84, 0.75, 0.65)
 		CastBar.Text:SetWidth(CastBar:GetWidth())
 		CastBar.Text:SetJustifyH("CENTER")
+		
+		CastBar.Spark = CastBar:CreateTexture(nil, "OVERLAY")
+		CastBar.Spark:SetSize(8, CastBar:GetHeight())
+		CastBar.Spark:SetBlendMode("ADD")
+		CastBar.Spark:SetPoint("CENTER", CastBar:GetStatusBarTexture(), "RIGHT", 0, 0)
 
 		CastBar.Button = CreateFrame("Frame", nil, CastBar)
 		CastBar.Button:SetSize(16, 16)
@@ -183,12 +188,23 @@ function UnitFrames:Focus()
 		self.HealthPrediction = HealthPrediction
 	end
 	
+	local Range = {
+		insideAlpha = 1,
+		outsideAlpha = C["Party"].RangeAlpha,
+	}
+	
 	local Highlight = CreateFrame("Frame", nil, self, "BackdropTemplate")
 	Highlight:SetBackdrop({edgeFile = C.Medias.Glow, edgeSize = C.UnitFrames.HighlightSize})
 	Highlight:SetOutside(self, C.UnitFrames.HighlightSize, C.UnitFrames.HighlightSize)
 	Highlight:SetBackdropBorderColor(unpack(C.UnitFrames.HighlightColor))
 	Highlight:SetFrameLevel(0)
 	Highlight:Hide()
+	
+	-- Enable smoothing bars animation?
+	if C.UnitFrames.Smoothing then
+		Health.smoothing = true
+		Power.smoothing = true
+	end
 
 	self:Tag(Name, "[Tukui:Classification][Tukui:DiffColor][level] [Tukui:GetNameColor][Tukui:NameMedium]")
 	self:Tag(Health.Value, C.UnitFrames.FocusHealthTag.Value)
@@ -199,6 +215,7 @@ function UnitFrames:Focus()
 	self.Name = Name
 	self.RaidTargetIndicator = RaidIcon
 	self.Highlight = Highlight
+	self.Range = Range
 	
 	self:RegisterEvent("PLAYER_TARGET_CHANGED", UnitFrames.Highlight, true)
 end

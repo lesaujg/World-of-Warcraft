@@ -1,126 +1,101 @@
-VER 3 010000000000006E "__Barbed Shots" "INV_MISC_QUESTIONMARK"
-#showtooltip
-#/click PetActionButton9
-/petattack
-/target [noexists] pettarget
-/cast Barbed Shot
-END
-VER 3 010000000000006F "__Chimera Shot" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/click PetActionButton9
-#/petattack
-/target [noexists] pettarget
-/cast Chimaera Shot
-END
-VER 3 010000000000005E "__Cobra Shot" "INV_MISC_QUESTIONMARK"
-#showtooltip
-#/click PetActionButton9
-/target [noexists] pettarget
-/cast Cobra Shot
-END
-VER 3 010000000000006D "__Concen Flame" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@player, button:2]Heart Essence
-/cast [button:1, nomod] Heart Essence
-/cast [@pet, button:1, mode:ctrl] Heart Essence
-END
-VER 3 010000000000005C "__Kill Command" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/dismount
-#/click PetActionButton9
-/petassist
-/petattack
-#/petautocastoff [group] Growl
-#/petautocaston [nogroup] Growl
-/target [noexists] pettarget
-/cast Kill Command
-END
 VER 3 0100000000000069 "_AspectTurtle" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cancelaura Aspect of the Turtle
 /cast Aspect of the Turtle
 END
-VER 3 010000000000005B "_Bestial Wrath" "INV_MISC_QUESTIONMARK"
+VER 3 0100000000000072 "_Barrage" "INV_Misc_QuestionMark"
+#showtooltip [talent:6/2] Barrage; [] Wild Spirits
+/cast [@focus,help,nodead][@pet,nodead,exists] Misdirection
+/cast  [talent:6/2] Barrage; [@player] Wild Spirits
+END
+VER 3 0100000000000059 "_Counter Shot" "INV_Misc_QuestionMark"
 #showtooltip
-#/cast [btn:2] Primal Rage
-/castsequence reset=combat/15 Bestial Wrath,Aspect of the Wild
-#/use Tabard of the Protector
-#/use 13
-#/use 14
+/use [@focus,harm,nodead][] Counter Shot
+/cast Auto Shot
 END
 VER 3 010000000000006A "_FeignDeath" "INV_MISC_QUESTIONMARK"
 /cast [nobtn:2]Feign Death
 /cast [btn:2][mod] Play Dead
 END
-VER 3 0100000000000060 "_Kite" "132128"
-#showtooltip 15
-/equip "Azsh'ari Stormsurger Cape"
-/use 15
-/equip "Ashjra'kamas, Shroud of Resolve"
-END
-VER 3 0100000000000068 "_MangooseBite" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/petattack
-/petassist
-/petautocastoff [group] Growl
-/petautocaston [nogroup] Growl
-/petautocastoff [group] Thunderstomp
-/petautocaston [nogroup] Thunderstomp
-/target [noexists] pettarget
-/cast Mongoose Bite
-END
-VER 3 010000000000005D "_Multi-Shot" "INV_MISC_QUESTIONMARK"
-#/target [noexists] pettarget
-/cast Multi-Shot
-END
-VER 3 010000000000000E "_Pet Attack/Foll" "Ability_Druid_ChallangingRoar"
-/petfollow [button:2]
-/dismount
-/petassist
-/petattack
-/cast Warp
-/cast Dash
-END
-VER 3 010000000000006C "_TrueShot" "132329"
-#showtooltip
-/cast Trueshot
-/use Tabard of the Protector
-/use 13
-/use 14
-END
-VER 3 0100000000000059 "Counter Shot" "INV_Misc_QuestionMark"
-/stopcasting
-/stopcasting
-/cast Counter Shot
-/cast Auto Shot
-END
-VER 3 010000000000005A "Disengage" "INV_MISC_QUESTIONMARK"
-/stopcasting
-/stopcasting
-/cast Disengage
-/cast Auto Shot
-/petpassive
-END
-VER 3 0100000000000067 "Eagle/Cobra" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast Aspect of the Eagle
-/cast Spitting Cobra
-/use Tabard of the Protector
-/use 13
-/use 14
-END
-VER 3 010000000000004D "MD+" "INV_Misc_QuestionMark"
-#show Misdirection
+VER 3 010000000000004D "_Misdirection" "INV_Misc_QuestionMark"
+#showtooltip Misdirection
 /dismount
 /focus [button:2] target
 /clearfocus [button:2,mod:ctrl]
 /stopmacro [button:2][mod:ctrl]
 /cast [@focus,help,nodead][@pet,nodead,exists] Misdirection
 END
-VER 3 0100000000000061 "Pet" "INV_MISC_QUESTIONMARK"
+VER 3 010000000000005D "_Multi-Shot" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [button:1, nopet] Call Pet 4
+/target [noexists] pettarget
+/cast Multi-Shot
+END
+VER 3 0100000000000061 "_Pet" "INV_Misc_QuestionMark"
+#showtooltip [nopet] Call Pet 5; Mend Pet
 /cast [button:2, nopet] Call Pet 5
-/cast [@pet,button:2,exists,nodead] Dismiss Pet
-/cast [@pet,exists,nodead] Mend Pet; Revive Pet
+/cast [@pet,btn:2,exists,nodead] Dismiss Pet
+/cast [nopet][target=pet, dead] Revive Pet; Mend Pet
+END
+VER 3 010000000000000E "_Pet Attack/Foll" "Ability_Druid_ChallangingRoar"
+/petfollow [btn:2]
+/dismount
+/click PetActionButton9
+/petattack
+/use Warp
+/use Dash
+END
+VER 3 010000000000006E "bm_Barbed Shots" "INV_Misc_QuestionMark"
+#showtooltip
+/click PetActionButton9
+/petattack
+/target [noexists] pettarget
+/cast Barbed Shot
+END
+VER 3 010000000000005B "bm_Bestial Wrath" "INV_Misc_QuestionMark"
+#showtooltip
+/cast Bestial Wrath
+/cast Aspect of the Wild
+/use Tabard of the Protector
+/use 13
+END
+VER 3 010000000000005E "bm_Cobra Shot" "INV_Misc_QuestionMark"
+#showtooltip
+/click PetActionButton9
+/target [noexists] pettarget
+/cast Cobra Shot
+END
+VER 3 010000000000005C "bm_Kill Command" "INV_Misc_QuestionMark"
+#showtooltip
+/dismount
+/click PetActionButton9
+/petattack
+#/petautocastoff [group] Growl
+#/petautocaston [nogroup] Growl
+/target [noexists] pettarget
+/cast Kill Command
+END
+VER 3 0100000000000074 "mm_Double Tap" "INV_Misc_QuestionMark"
+#showtooltip Double Tap
+/use [btn:1]14
+/cast Double Tap
+END
+VER 3 0100000000000071 "mm_Trueshot" "INV_Misc_QuestionMark"
+#showtooltip Trueshot
+/cast Trueshot
+/use Tabard of the Protector
+/use 13
+/cast Double Tap
+END
+VER 3 0100000000000073 "mm_Volley" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [btn:1, @cursor][btn:2] Volley
+END
+VER 3 0100000000000070 "Soulforge" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence [@cursor][]reset=24 Tar Trap, Flare
+END
+VER 3 0100000000000075 "xx_Pet2" "INV_MISC_QUESTIONMARK"
+/cast [button:2, nopet] Call Pet 5
+/cast [@pet,btn:2,exists,nodead] Dismiss Pet
+/cast [nopet][target=pet, dead] Revive Pet; Mend Pet
 END

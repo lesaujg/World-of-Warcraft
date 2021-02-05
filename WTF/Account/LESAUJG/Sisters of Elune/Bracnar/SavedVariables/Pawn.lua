@@ -1,91 +1,92 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0405,
+	["LastVersion"] = 2.0411,
 	["ItemLevels"] = {
 		{
-			["ID"] = 166566,
-			["Level"] = 120,
-			["Link"] = "|cffa335ee|Hitem:166566::::::::50:253::23:5:5845:1527:4786:6508:4775::::|h[Kaldorei Archer's Coif]|h|r",
+			["ID"] = 183001,
+			["Level"] = 213,
+			["Link"] = "|cffa335ee|Hitem:183001::::::::60:254::5:5:7188:6652:7194:1485:6646:1:28:752:::|h[Helm of Insatiable Appetite]|h|r",
 		}, -- [1]
 		{
-			["ID"] = 158075,
-			["Level"] = 146,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::50:253::11:4:6316:4932:4933:1560::::|h[Heart of Azeroth]|h|r",
+			["ID"] = 183040,
+			["Level"] = 213,
+			["Link"] = "|cffa335ee|Hitem:183040::::::::60:254::5:5:7188:6652:7194:1485:6646::::|h[Charm of Eternal Winter]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 174149,
-			["Level"] = 120,
-			["Link"] = "|cffa335ee|Hitem:174149:5883:::::::50:253::5:5:4823:1502:4786:6509:4775::::|h[Dreamer's Unblinking Pauldrons]|h|r",
+			["ID"] = 181914,
+			["Level"] = 197,
+			["Link"] = "|cffa335ee|Hitem:181914::::::::60:253::14:4:7248:7201:1514:6646:1:28:807:::|h[Runewarden's Spaulders]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 174147,
-			["Level"] = 130,
-			["Link"] = "|cffa335ee|Hitem:174147::::::::50:253::5:5:4823:1502:4786:6507:4775::::|h[Last Vestige of Neltharion]|h|r",
+			["ID"] = 182988,
+			["Level"] = 213,
+			["Link"] = "|cffa335ee|Hitem:182988::::::::60:253::5:4:7188:6652:1485:6646:1:28:2060:::|h[Master Huntsman's Bandolier]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 173452,
-			["Level"] = 125,
-			["Link"] = "|cffa335ee|Hitem:173452::::::::50:253::55:7:6412:6513:6578:1519:4786:6482:6470::::|h[Nefarious Tormentor's Belt]|h|r",
+			["ID"] = 184125,
+			["Level"] = 207,
+			["Link"] = "|cffa335ee|Hitem:184125::::::::60:253::81:4:6652:7194:1492:6646:1:28:2060:::|h[Servo-Chain Waistguard]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 173817,
-			["Level"] = 125,
-			["Link"] = "|cffa335ee|Hitem:173817::::::::50:253::55:6:6412:6515:6578:1519:4786:6562::::|h[Nefarious Tormentor's Trousers]|h|r",
+			["ID"] = 184752,
+			["Level"] = 200,
+			["Link"] = "|cff0070dd|Hitem:184752::::::::60:253::14:1:7240:2:28:837:9:60:::|h[Gormscale Leggings]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 173497,
-			["Level"] = 125,
-			["Link"] = "|cffa335ee|Hitem:173497::::::::50:253::55:7:6412:6513:6578:1519:4786:6482:6470::::|h[Nefarious Tormentor's Treads]|h|r",
+			["ID"] = 178796,
+			["Level"] = 220,
+			["Link"] = "|cffa335ee|Hitem:178796::::::::60:254::35:5:7209:6652:1501:5878:6646::::|h[Boots of Shuddering Matter]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 173481,
-			["Level"] = 120,
-			["Link"] = "|cffa335ee|Hitem:173481:5971:168639::::::50:253::54:8:6412:4802:6515:6578:1514:4786:6482:6470::::|h[Nefarious Tormentor's Bindings]|h|r",
+			["ID"] = 182982,
+			["Level"] = 213,
+			["Link"] = "|cffa335ee|Hitem:182982::::::::60:254::5:5:7188:6652:7194:1485:6646:1:28:752:::|h[Watchful Arbelist's Bracers]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 173493,
-			["Level"] = 125,
-			["Link"] = "|cffa335ee|Hitem:173493::::::::50:255::55:7:6412:6515:6578:6579:6538:1519:4786::::|h[Nefarious Tormentor's Handwraps]|h|r",
+			["ID"] = 184173,
+			["Level"] = 207,
+			["Link"] = "|cffa335ee|Hitem:184173::::::::60:253::81:3:6652:1492:6646:1:28:2060:::|h[Bone Crushing Vicegrips]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 174530,
-			["Level"] = 115,
+			["ID"] = 178926,
+			["Level"] = 235,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cffa335ee|Hitem:174530:6108:168639::::::50:253::5:7:4823:1808:6515:1502:4786:6482:6470::::|h[Ring of Collective Consciousness]|h|r",
+			["Link"] = "|cffff8000|Hitem:178926:6164:::::::60:254::64:6:7013:7193:6647:6648:6758:1532::::|h[Serpentstalker's Band of Trickery]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 174530,
-			["Level"] = 115,
+			["ID"] = 178926,
+			["Level"] = 235,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cffa335ee|Hitem:174530:6108:168639::::::50:255::5:7:4823:1808:6515:1502:4786:6482:6470::::|h[Ring of Collective Consciousness]|h|r",
+			["Link"] = "|cffff8000|Hitem:178926:6164:::::::60:255::64:6:7013:7193:6647:6648:6758:1532::::|h[Serpentstalker's Band of Trickery]|h|r",
 		}, -- [12]
 		{
-			["ID"] = 169307,
-			["Level"] = 110,
+			["ID"] = 180116,
+			["Level"] = 213,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cffa335ee|Hitem:169307::168639::::::50:255::3:6:4798:1808:40:1478:5877:4784::::|h[Vision of Demise]|h|r",
+			["Link"] = "|cffa335ee|Hitem:180116::::::::60:253::35:5:7206:6652:1501:5871:6646::::|h[Overcharged Anima Battery]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 169307,
-			["Level"] = 110,
+			["ID"] = 180116,
+			["Level"] = 213,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cffa335ee|Hitem:169307::168639::::::50:254::3:6:4798:1808:40:1478:5877:4784::::|h[Vision of Demise]|h|r",
+			["Link"] = "|cffa335ee|Hitem:180116::::::::60:254::35:5:7206:6652:1501:5871:6646::::|h[Overcharged Anima Battery]|h|r",
 		}, -- [14]
 		{
-			["ID"] = 169223,
-			["Level"] = 155,
-			["Link"] = "|cffff8000|Hitem:169223::::::::50:253::11:2:6596:1472::::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
+			["ID"] = 183034,
+			["Level"] = 213,
+			["Link"] = "|cffa335ee|Hitem:183034::::::::60:254::5:4:7188:6652:1485:6646:1:28:752:::|h[Cowled Batwing Cloak]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 172193,
-			["Level"] = 115,
-			["Link"] = "|cffa335ee|Hitem:172193:5965:::::::50:253::5:7:4823:6568:6578:6579:1502:4786:6513::::|h[Whispering Eldritch Bow]|h|r",
+			["ID"] = 180071,
+			["Level"] = 207,
+			["Link"] = "|cffa335ee|Hitem:180071::::::::60:254::82:4:7189:6652:1505:6646:1:28:807:::|h[Shrieking Sinseeker]|h|r",
 		}, -- [16]
 	},
 	["AutoSelectScales"] = false,
 	["UpgradeTracking"] = false,
 	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -122,7 +123,6 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",

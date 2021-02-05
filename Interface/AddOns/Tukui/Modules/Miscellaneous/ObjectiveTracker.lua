@@ -23,10 +23,6 @@ local SCENARIO_TRACKER_MODULE = SCENARIO_TRACKER_MODULE
 local Class = select(2, UnitClass("player"))
 local ClassColor = T.Colors.class[Class]
 
-function ObjectiveTracker:Disable()
-	ObjectiveTrackerFrameHeaderMenuMinimizeButton:Hide()
-end
-
 function ObjectiveTracker:OnEnter()
 	self:SetFadeInTemplate(1, 1)
 end
@@ -43,31 +39,8 @@ function ObjectiveTracker:OnClick()
 	end
 end
 
-function ObjectiveTracker:CreateToggleButtons()
-	local Button = CreateFrame("Button", nil, UIParent)
-	
-	Button:SetSize(216, 32)
-	Button:SetAlpha(0)
-	Button:CreateBackdrop()
-	Button:SetPoint("TOPLEFT", ObjectiveTrackerFrame, -25, 24)
-	Button:RegisterForClicks("AnyUp")
-	Button:SetScript("OnClick", self.OnClick)
-	Button:SetScript("OnEnter", self.OnEnter)
-	Button:SetScript("OnLeave", self.OnLeave)
-	
-	Button.Backdrop:SetInside(Button, 0, 19)
-	Button.Backdrop:SetBackdropColor(unpack(T.Colors.class[T.MyClass]))
-	Button.Backdrop:CreateShadow()
-
-	Button.Toggle = Button:CreateFontString(nil, "OVERLAY")
-	Button.Toggle:SetFont(C.Medias.Font, 12, "OUTLINE")
-	Button.Toggle:SetSize(214, 32)
-	Button.Toggle:SetPoint("RIGHT")
-	Button.Toggle:SetText(BINDING_NAME_TOGGLEQUESTLOG)
-end
-
 function ObjectiveTracker:SetDefaultPosition()
-	local Anchor1, Parent, Anchor2, X, Y = "TOPRIGHT", UIParent, "TOPRIGHT", -228, -325
+	local Anchor1, Parent, Anchor2, X, Y = "TOPRIGHT", UIParent, "TOPRIGHT", -68, -240
 	local Data = TukuiData[T.MyRealm][T.MyName]
 
 	local ObjectiveFrameHolder = CreateFrame("Frame", "TukuiObjectiveTracker", UIParent)
@@ -76,10 +49,10 @@ function ObjectiveTracker:SetDefaultPosition()
 
 	ObjectiveTrackerFrame:ClearAllPoints()
 	ObjectiveTrackerFrame:SetPoint("TOP", ObjectiveFrameHolder)
-	ObjectiveTrackerFrame:SetHeight(396)
+    ObjectiveTrackerFrame:SetHeight(T.ScreenHeight - 520)
 	ObjectiveTrackerFrame.IsUserPlaced = function() return true end
 
-	Movers:RegisterFrame(ObjectiveFrameHolder)
+	Movers:RegisterFrame(ObjectiveFrameHolder, "Objectives Tracker")
 
 	if Data and Data.Move and Data.Move.TukuiObjectiveTracker then
 		ObjectiveFrameHolder:ClearAllPoints()
@@ -131,15 +104,6 @@ function ObjectiveTracker:Skin()
 			end
 		end
 	end
-end
-
-function ObjectiveTracker:SkinScenario()
-	local StageBlock = _G["ScenarioStageBlock"]
-
-	StageBlock.NormalBG:SetTexture("")
-	StageBlock.FinalBG:SetTexture("")
-	StageBlock.Stage:SetFont(C.Medias.Font, 17)
-	StageBlock.GlowTexture:SetTexture("")
 end
 
 function ObjectiveTracker:UpdateQuestItem(block)
@@ -196,6 +160,7 @@ function ObjectiveTracker:UpdateProgressBar(_, line)
 		local BorderRight = Bar.BorderRight
 		local BorderMid = Bar.BorderMid
 		local Texture = T.GetTexture(C["Textures"].QuestProgressTexture)
+		local R, G, B = unpack(T.Colors.class[T.MyClass])
 
 		if not (Bar.IsSkinned) then
 			if (Backdrop) then Backdrop:Hide() Backdrop:SetAlpha(0) end
@@ -209,12 +174,15 @@ function ObjectiveTracker:UpdateProgressBar(_, line)
 			if (BorderRight) then BorderRight:SetAlpha(0) end
 			if (BorderMid) then BorderMid:SetAlpha(0) end
 
+			Bar:StripTextures()
 			Bar:SetHeight(20)
 			Bar:SetStatusBarTexture(Texture)
+			Bar:SetStatusBarColor(R, G, B)
 			Bar:CreateBackdrop()
+			
+			Bar.Backdrop:SetBackdropColor(R * .15, G * .15, B * .15)
 			Bar.Backdrop:CreateShadow()
-			Bar.Backdrop:SetFrameStrata("BACKGROUND")
-			Bar.Backdrop:SetFrameLevel(1)
+			Bar.Backdrop:SetFrameLevel(Bar:GetFrameLevel() - 1)
 			Bar.Backdrop:SetOutside(Bar)
 
 			if (Label) then
@@ -249,9 +217,13 @@ end
 
 function ObjectiveTracker:UpdateProgressBarColors(Min)
 	if (self.Bar and Min) then
-		local R, G, B = T.ColorGradient(Min, 100, 0.8, 0, 0, 0.8, 0.8, 0, 0, 0.8, 0)
+		local R, G, B = T.ColorGradient(Min, 100, .8, 0, 0, .8, .8, 0, 0, .8, 0)
 		
 		self.Bar:SetStatusBarColor(R, G, B)
+		
+		if self.Bar.Backdrop then
+			self.Bar.Backdrop:SetBackdropColor(R * .2, G * .2, B * .2)
+		end
 	end
 end
 
@@ -343,47 +315,6 @@ local function UpdatePositions(block)
 	end
 end
 
-function ObjectiveTracker:UpdatePOI()
-	if self:GetParent() ~= ObjectiveTrackerBlocksFrame then
-		return
-	end
-	
-	if not self.IsSkinned then
-		self.NormalTexture:SetTexture("")
-		self.PushedTexture:SetTexture("")
-		self.HighlightTexture:SetTexture("")
-		self:CreateBackdrop()
-		self.Backdrop:SetFrameLevel(0)
-		self.Backdrop:SetOutside()
-		self:StyleButton()
-		self.Backdrop:CreateShadow()
-
-		self.IsSkinned = true	
-	end
-	
-	if self.Glow then
-		self.Glow:SetAlpha(0)
-	end
-	
-	if self.NormalTexture then
-		self.NormalTexture:SetAlpha(0)
-	end
-	
-	if self.selected then
-		local R, G, B = unpack(T.Colors.class[T.MyClass])
-		
-		self.Backdrop.Shadow:SetBackdropBorderColor(R, G, B)
-		self.Backdrop:SetBackdropColor(0/255, 152/255, 34/255, 1)
-	else
-		self.Backdrop.Shadow:SetBackdropBorderColor(unpack(C.Medias.BorderColor))
-		self.Backdrop:SetBackdropColor(unpack(C.Medias.BackdropColor))
-	end
-	
-	if self.style == "numeric" then
-		self.Display:SetNumber(self.index)
-	end
-end
-
 function ObjectiveTracker:SkinRewards()
 	local rewardsFrame = self.module.rewardsFrame
 
@@ -412,19 +343,107 @@ function ObjectiveTracker:SkinRewards()
 	end
 end
 
+function ObjectiveTracker:SkinAnimaButtons()
+	if not self.buffPool then
+		return
+	end
+	
+	for mawBuff in self.buffPool:EnumerateActive() do
+		if mawBuff:IsShown() and not mawBuff.IsSkinned then
+			mawBuff.Border:SetAlpha(0)
+			mawBuff.CircleMask:Hide()
+			mawBuff.CountRing:SetAlpha(0)
+			mawBuff.HighlightBorder:SetColorTexture(1, 1, 1, .25)
+			mawBuff.Icon:SetTexCoord(.1, .9, .1, .9)
+			mawBuff:CreateBackdrop()
+			mawBuff.Backdrop:CreateShadow()
+			mawBuff.Backdrop:SetOutside(mawBuff.Icon)
+
+			mawBuff.IsSkinned = true
+		end
+	end
+end
+
+function ObjectiveTracker:SkinScenario()
+	local StageBlock = _G["ScenarioStageBlock"]
+	local Widgets = ScenarioStageBlock.WidgetContainer
+	local WidgetFrames = Widgets and Widgets.widgetFrames
+	
+	StageBlock.NormalBG:SetTexture("")
+	StageBlock.NormalBG:SetAlpha(0)
+	StageBlock.FinalBG:SetTexture("")
+	StageBlock.FinalBG:SetAlpha(0)
+	StageBlock.Stage:SetFont(C.Medias.Font, 17)
+	StageBlock.GlowTexture:SetTexture("")
+	
+	if WidgetFrames then
+		for _, Frame in pairs(WidgetFrames) do
+			if not Frame.IsSkinned then
+				for i = 1, Frame:GetNumRegions() do
+					local Region = select(i, Frame:GetRegions())
+
+					if (Region and Region:GetObjectType() == "Texture") then
+						if Region:GetAtlas() then
+							local Atlas = Region:GetAtlas()
+							
+							if Atlas and string.find(Atlas, "frame") then
+								Region:SetParent(T.Hider)
+								
+								Frame:CreateBackdrop("Transparent")
+
+								Frame.Backdrop:ClearAllPoints()
+								Frame.Backdrop:SetPoint("TOP", 0, -10)
+								Frame.Backdrop:SetPoint("LEFT", 4, 0)
+								Frame.Backdrop:SetPoint("RIGHT", -33, 0)
+								Frame.Backdrop:SetPoint("BOTTOM", 0, 4)
+								Frame.Backdrop:SetSize(214, 60)
+								Frame.Backdrop:SetFrameLevel(1)
+								Frame.Backdrop:CreateShadow()
+							end
+						end
+					end
+				end
+
+				Frame.IsSkinned = true
+			end
+		end
+	end
+	
+	if IsInJailersTower() then
+		local Container = _G.ScenarioBlocksFrame.MawBuffsBlock.Container
+		
+		Container:StripTextures()
+		
+		Container:CreateBackdrop("Transparent")
+		Container.Backdrop:ClearAllPoints()
+		Container.Backdrop:SetPoint("TOPLEFT", 15, -10)
+		Container.Backdrop:SetPoint("BOTTOMRIGHT", -33, 10)
+		Container.Backdrop:CreateShadow()
+		Container.SetAtlas = Noop
+		Container.SetPushedAtlas = Noop
+		Container.SetHighlightAtlas = Noop
+		
+		Container.List:StripTextures()
+		Container.List:CreateBackdrop("Transparent")
+		Container.List.Backdrop:CreateShadow()
+		Container.List:HookScript("OnShow", ObjectiveTracker.SkinAnimaButtons)
+	end
+end
+
 function ObjectiveTracker:AddHooks()
 	hooksecurefunc("ObjectiveTracker_Update", self.Skin)
-	hooksecurefunc("ScenarioBlocksFrame_OnLoad", self.SkinScenario)
-	hooksecurefunc(SCENARIO_CONTENT_TRACKER_MODULE, "Update", self.SkinScenario)
+	hooksecurefunc("ScenarioStage_CustomizeBlock", self.SkinScenario)
 	hooksecurefunc(QUEST_TRACKER_MODULE, "SetBlockHeader", self.UpdateQuestItem)
 	hooksecurefunc(WORLD_QUEST_TRACKER_MODULE, "AddObjective", self.UpdateQuestItem)
 	hooksecurefunc(CAMPAIGN_QUEST_TRACKER_MODULE, "AddObjective", self.UpdateQuestItem)
-	hooksecurefunc(CAMPAIGN_QUEST_TRACKER_MODULE, "AddProgressBar", self.UpdateProgressBar)
 	hooksecurefunc(QUEST_TRACKER_MODULE, "AddProgressBar", self.UpdateProgressBar)
-	hooksecurefunc(DEFAULT_OBJECTIVE_TRACKER_MODULE, "AddProgressBar", self.UpdateProgressBar)
+	hooksecurefunc(CAMPAIGN_QUEST_TRACKER_MODULE, "AddProgressBar", self.UpdateProgressBar)
+	hooksecurefunc(ACHIEVEMENT_TRACKER_MODULE, "AddProgressBar", self.UpdateProgressBar)
 	hooksecurefunc(BONUS_OBJECTIVE_TRACKER_MODULE, "AddProgressBar", self.UpdateProgressBar)
 	hooksecurefunc(WORLD_QUEST_TRACKER_MODULE, "AddProgressBar", self.UpdateProgressBar)
+	hooksecurefunc(SCENARIO_CONTENT_TRACKER_MODULE, "AddProgressBar", self.UpdateProgressBar)
 	hooksecurefunc(SCENARIO_TRACKER_MODULE, "AddProgressBar", self.UpdateProgressBar)
+	hooksecurefunc(UI_WIDGET_TRACKER_MODULE, "AddProgressBar", self.UpdateProgressBar)
 	hooksecurefunc("BonusObjectiveTrackerProgressBar_SetValue", self.UpdateProgressBarColors)
 	hooksecurefunc("ObjectiveTrackerProgressBar_SetValue", self.UpdateProgressBarColors)
 	hooksecurefunc("ScenarioTrackerProgressBar_SetValue", self.UpdateProgressBarColors)
@@ -432,38 +451,35 @@ function ObjectiveTracker:AddHooks()
 	hooksecurefunc("QuestObjectiveSetupBlockButton_AddRightButton", UpdatePositions)
 	hooksecurefunc("AutoQuestPopupTracker_Update", self.UpdatePopup)
 	hooksecurefunc("BonusObjectiveTracker_AnimateReward", self.SkinRewards)
-	hooksecurefunc("QuestPOI_UpdateButtonStyle", self.UpdatePOI)
+end
+
+function ObjectiveTracker:Toggle()
+	if (ObjectiveTrackerFrame:IsVisible()) then
+		ObjectiveTrackerFrame:Hide()
+	else
+		ObjectiveTrackerFrame:Show()
+	end
 end
 
 function ObjectiveTracker:Enable()
-	OBJECTIVE_TRACKER_COLOR["Header"] = {
-		r = ClassColor[1], 
-		g = ClassColor[2], 
-		b = ClassColor[3],
-	}
-	
-	OBJECTIVE_TRACKER_COLOR["HeaderHighlight"] = {
-		r = ClassColor[1]*1.2, 
-		g = ClassColor[2]*1.2, 
-		b = ClassColor[3]*1.2,
-	}
-	
-	OBJECTIVE_TRACKER_COLOR["Complete"] = { 
-		r = 0, 
-		g = 1, 
-		b = 0,
-	}
-	
-	OBJECTIVE_TRACKER_COLOR["Normal"] = { 
-		r = 1, 
-		g = 1, 
-		b = 1,
-	}
-
 	self:AddHooks()
-	self:Disable()
 	self:SetDefaultPosition()
 	self:SkinScenario()
+	
+	-- Skin Minimize Button
+	ObjectiveTrackerFrameHeaderMenuMinimizeButton:CreateBackdrop()
+	ObjectiveTrackerFrameHeaderMenuMinimizeButton.Backdrop:CreateShadow()
+	ObjectiveTrackerFrameHeaderMenuMinimizeButton.Backdrop:SetFrameLevel(ObjectiveTrackerFrameHeaderMenuMinimizeButton:GetFrameLevel() + 1)
+	ObjectiveTrackerFrameHeaderMenuMinimizeButton.Backdrop.Texture = ObjectiveTrackerFrameHeaderMenuMinimizeButton.Backdrop:CreateTexture(nil, "OVERLAY")
+	ObjectiveTrackerFrameHeaderMenuMinimizeButton.Backdrop.Texture:SetSize(10, 10)
+	ObjectiveTrackerFrameHeaderMenuMinimizeButton.Backdrop.Texture:SetPoint("CENTER")
+	ObjectiveTrackerFrameHeaderMenuMinimizeButton.Backdrop.Texture:SetTexture(C.Medias.ArrowUp)
+	
+	-- Add a keybind for toggling (SHIFT-O)
+	self.ToggleButton = CreateFrame("Button", "TukuiObjectiveTrackerToggleButton", UIParent, "SecureActionButtonTemplate")
+	self.ToggleButton:SetScript("OnClick", self.Toggle)
+
+	SetOverrideBindingClick(self.ToggleButton, true, "SHIFT-O", "TukuiObjectiveTrackerToggleButton")
 end
 
 Misc.ObjectiveTracker = ObjectiveTracker

@@ -1,9 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0405,
-	["LastPlayerFullName"] = "Leanara-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
+	["LastVersion"] = 2.0411,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173842,
@@ -12,8 +9,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 158075,
-			["Level"] = 134,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::50:581::11:4:4932:4933:6316:1548::::|h[Heart of Azeroth]|h|r",
+			["Level"] = 135,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::50:581::11:4:4932:4933:6316:1549::::|h[Heart of Azeroth]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 170521,
@@ -81,10 +78,10 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:160536::::::::50:581::14:::::|h[7th Legionnaire's Cloak]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 158079,
-			["Level"] = 66,
+			["ID"] = 165635,
+			["Level"] = 115,
 			["AlsoFitsIn"] = 17,
-			["Link"] = "|cff0070dd|Hitem:158079::::::::50:581::28:5:4803:6516:6513:1480:4785::::|h[Stagheart Hatchet]|h|r",
+			["Link"] = "|cffa335ee|Hitem:165635::::::::50:581::81:3:5844:1527:4786:1:28:1401:::|h[Sentinel's Moonglaive]|h|r",
 		}, -- [16]
 		{
 			["ID"] = 158079,
@@ -93,6 +90,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158079::::::::50:577::28:5:4803:6516:6513:1480:4785::::|h[Stagheart Hatchet]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Leanara-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

@@ -178,7 +178,7 @@ DBM-BrokenIsles: disabled
 DBM-Party-Legion: disabled
 !KalielsTracker: disabled
 WorldQuestTracker: disabled
-AngryWorldQuests: disabled
+AngryWorldQuests: enabled
 FactionAddict: disabled
 HandyNotes_LegionRaresTreasures: enabled
 mOnArs_WardrobeHelper: enabled

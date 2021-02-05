@@ -10,13 +10,17 @@ local Classification = {
 	rare = "|cffAF5050R |r",
 }
 
+Tooltip.BackdropStyle = {
+	bgFile = C.Medias.Blank,
+}
+
 function Tooltip:CreateAnchor()
 	self.Anchor = CreateFrame("Frame", "TukuiTooltipAnchor", UIParent)
 	self.Anchor:SetSize(200, 21)
 	self.Anchor:SetFrameStrata("TOOLTIP")
 	self.Anchor:SetFrameLevel(20)
 	self.Anchor:SetClampedToScreen(true)
-	self.Anchor:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -28, 211)
+	self.Anchor:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -28, 201)
 	self.Anchor:SetMovable(true)
 end
 
@@ -86,7 +90,6 @@ function Tooltip:OnTooltipSetUnit()
 	end
 	
 	local Line1 = GameTooltipTextLeft1
-	local Line2 = GameTooltipTextLeft2
 	local Race = UnitRace(Unit)
 	local Class = UnitClass(Unit)
 	local Level = UnitLevel(Unit)
@@ -96,23 +99,19 @@ function Tooltip:OnTooltipSetUnit()
 	local CreatureClassification = UnitClassification(Unit)
 	local Relationship = UnitRealmRelationship(Unit);
 	local Title = UnitPVPName(Unit)
+	local IsEnemy = UnitIsEnemy("player", Unit)
 	local Color = Tooltip:GetTextColor(Unit) or "|CFFFFFFFF"
 	local R, G, B = GetQuestDifficultyColor(Level).r, GetQuestDifficultyColor(Level).g, GetQuestDifficultyColor(Level).b
-
-	if (UnitIsPlayer(Unit)) then
-		if Title then
-			Name = Title
-		end
-	end
-
+	
 	if Name then
+		local Extra = ""
+		local GuildColor = IsEnemy and "|cffff0000" or "|cff00ff00"
+		
 		if (UnitIsPlayer(Unit) and Guild) then
-			Guild = " |cff00ff00["..Guild.."]|r"
-		else
-			Guild = ""
+			Extra = GuildColor.."["..Guild.."]|r"
 		end
 
-		Line1:SetFormattedText("%s%s%s", Color, Name, "|r")
+		Line1:SetFormattedText("%s%s%s %s", Color, Name, "|r", Extra)
 	end
 
 	if (UnitIsPlayer(Unit) and UnitIsFriend("player", Unit)) then
@@ -127,6 +126,12 @@ function Tooltip:OnTooltipSetUnit()
 
 	for i = Offset, NumLines do
 		local Line = _G["GameTooltipTextLeft"..i]
+		
+		if (UnitIsPlayer(Unit) and Guild) then
+			if Line:GetText():find(Guild) then
+				Line:SetText(Realm)
+			end
+		end
 		
 		if (Line and Line:GetText() and Line:GetText():find("^" .. LEVEL)) then
 			if (UnitIsPlayer(Unit) and Race) then
@@ -194,15 +199,17 @@ function Tooltip:SetUnitBorderColor()
 end
 
 function Tooltip:Skin(style)
+	if self:IsForbidden() or self == GameTooltipTooltip then
+		return
+	end
+	
 	if (not self.IsSkinned) then
-		if self ~= GameTooltipTooltip then
-			self:CreateBackdrop()
-			self:CreateShadow()
-		end
+		self:CreateBackdrop()
+		self:CreateShadow()
 		
 		self.IsSkinned = true
 	end
-	
+
 	local Link = select(2, self:GetItem())
 	local R, G, B
 	local Backdrop = self.Backdrop
@@ -216,14 +223,15 @@ function Tooltip:Skin(style)
 			else
 				R, G, B = unpack(C["General"].BorderColor)
 			end
-
+			
 			Backdrop:SetBorderColor(R, G, B)
 		else
 			Backdrop:SetBorderColor(unpack(C["General"].BorderColor))
 		end
 	end
 	
-	self:ClearBackdrop()
+	self:SetBackdrop(Tooltip.BackdropStyle)
+	self:SetBackdropColor(unpack(C.General.BackdropColor))
 end
 
 function Tooltip:SkinHealthBar()
@@ -248,10 +256,11 @@ function Tooltip:OnTooltipSetItem()
 		
 		if Link then
 			local ID = "|cFFCA3C3CID|r "..Link:match(":(%w+)")
-			local Level = "|cFFCA3C3C"..ITEM_LEVEL_ABBR.."|r "..GetDetailedItemLevelInfo(Link)
+			local Level = GetDetailedItemLevelInfo(Link) or 1
+			local Text = "|cFFCA3C3C"..ITEM_LEVEL_ABBR.."|r "..Level
 
 			self:AddLine(" ")
-			self:AddDoubleLine(ID, Level)
+			self:AddDoubleLine(ID, Text)
 		end
 	end
 end
@@ -263,6 +272,10 @@ function Tooltip:SetHealthValue(unit)
 		local Health, MaxHealth = UnitHealth(unit), UnitHealthMax(unit)
 		local String = (Health and MaxHealth and T.ShortValue(Health).." / "..T.ShortValue(MaxHealth)) or "???"
 
+		if not self.Text:IsShown() then
+			self.Text:Show()
+		end
+		
 		self.Text:SetText(String)
 	end
 end
@@ -322,11 +335,29 @@ function Tooltip:SetCompareItemBorderColor(anchorFrame)
 	end
 end
 
+function Tooltip:ResetBorderColor()
+	if self ~= GameTooltip then
+		return
+	end
+	
+	if self.Backdrop then
+		self.Backdrop:SetBorderColor(unpack(C["General"].BorderColor))
+	end
+	
+	if HealthBar then
+		HealthBar.Backdrop:SetBorderColor(0, 1, 0)
+		HealthBar.Text:Hide()
+		
+		HealthBar:SetStatusBarColor(0, 1, 0)
+	end
+end
+
 function Tooltip:AddHooks()
 	hooksecurefunc("SharedTooltip_SetBackdropStyle", self.Skin)
 	hooksecurefunc("GameTooltip_SetDefaultAnchor", self.SetTooltipDefaultAnchor)
 	hooksecurefunc("GameTooltip_ShowCompareItem", self.SetCompareItemBorderColor)
 	hooksecurefunc("GameTooltip_UnitColor", self.SetUnitBorderColor)
+	hooksecurefunc("GameTooltip_ClearMoney", self.ResetBorderColor)
 
 	GameTooltip:HookScript("OnTooltipSetUnit", self.OnTooltipSetUnit)
 	GameTooltip:HookScript("OnTooltipSetItem", self.OnTooltipSetItem)
@@ -340,8 +371,6 @@ function Tooltip:Enable()
 	self:CreateAnchor()
 	self:AddHooks()
 	self:SkinHealthBar()
-
-	--ItemRefCloseButton:SkinCloseButton()
 
 	if C.Tooltips.HideInCombat then
 		self:RegisterEvent("PLAYER_REGEN_DISABLED")
@@ -358,6 +387,12 @@ function Tooltip:Enable()
 	end
 	
 	Tooltip.Skin(GameTooltip)
+	Tooltip.Skin(ItemRefTooltip)
+	Tooltip.Skin(EmbeddedItemTooltip)
 	
-	T.Movers:RegisterFrame(self.Anchor)
+	HealthBar:Hide()
+	
+	ItemRefTooltip.CloseButton:SkinCloseButton()
+	
+	T.Movers:RegisterFrame(self.Anchor, "Tooltip")
 end

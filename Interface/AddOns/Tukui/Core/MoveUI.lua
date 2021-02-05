@@ -51,10 +51,14 @@ function Movers:RestoreDefaults(button)
 	end
 end
 
-function Movers:RegisterFrame(frame)
+function Movers:RegisterFrame(frame, name)
 	local Anchor1, Parent, Anchor2, X, Y = frame:GetPoint()
 
 	tinsert(self.Frames, frame)
+	
+	if name then
+		frame.MoverName = name
+	end
 
 	self:SaveDefaults(frame, Anchor1, Parent, Anchor2, X, Y)
 end
@@ -118,7 +122,7 @@ function Movers:CreateDragInfo()
 	self.DragInfo.Backdrop:SetBackdropColor(0, 1, 0, .2)
 	self.DragInfo.Text = self.DragInfo:CreateFontString(nil, "OVERLAY")
 	self.DragInfo.Text:SetFontTemplate(C.Medias.UnitFrameFont, 16)
-	self.DragInfo.Text:SetText(self:GetName())
+	self.DragInfo.Text:SetText(self.MoverName or self:GetName() or UNKNOWN)
 	self.DragInfo.Text:SetPoint("CENTER")
 	self.DragInfo.Text:SetTextColor(1, 0, 0)
 	self.DragInfo:SetFrameLevel(100)
@@ -171,13 +175,6 @@ function Movers:StartOrStopMoving()
 			if Frame.DragInfo:GetFrameStrata() ~= "HIGH" then
 				Frame.DragInfo:SetFrameStrata("HIGH")
 			end
-
-			if Frame.DragInfo:GetHeight() < 15 then
-				Frame.DragInfo:ClearAllPoints()
-				Frame.DragInfo:SetWidth(Frame:GetWidth())
-				Frame.DragInfo:SetHeight(23)
-				Frame.DragInfo:SetPoint("TOP", Frame)
-			end
 		else
 			if Frame.unit then
 				Frame.unit = Frame.oldunit
@@ -189,11 +186,6 @@ function Movers:StartOrStopMoving()
 				Frame.DragInfo:Hide()
 				Frame.DragInfo:SetScript("OnDragStart", nil)
 				Frame.DragInfo:SetScript("OnDragStop", nil)
-
-				if Frame.DragInfo.CurrentHeight then
-					Frame.DragInfo:ClearAllPoints()
-					Frame.DragInfo:SetAllPoints(Frame)
-				end
 			end
 		end
 	end

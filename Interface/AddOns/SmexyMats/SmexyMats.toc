@@ -1,9 +1,9 @@
-## Interface: 80300
-## Title: |cFF00CCFFSmexyMats(SM)|r by: |cFFFF8000LunixiaLIVE|r v8.3.0 Retail
+## Interface: 90002
+## Title: |cFF00CCFFSmexyMats(SM)|r by: |cFFFF8000LunixiaLIVE|r v9.0.2 Retail
 ## Notes: Tooltip Mod - Notates which Expansion the item is from. Originally made for crafting Reagents only, but decided to use for other items of similarity.
-## Version: 8.3.0 Retail
+## Version: 9.0.2 Retail
 ## SavedVariables: SmexyMatsDB, SmexyMatsAuto
-## Author: Battle.net & Discord: Lunixia#1530
+## Author: Battle.net & Discord: Lunixia#1737
 
 SmexyLocales.xml
 SmexyEmbeds.xml

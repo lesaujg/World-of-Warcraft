@@ -1,6 +1,9 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0405,
+	["LastVersion"] = 2.0411,
+	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 158041,
@@ -78,14 +81,11 @@ PawnOptions = {
 			["Link"] = "|cffff8000|Hitem:169223::::::::50:104::11:1:6272::::|h[Ashjra'kamas, Shroud of Resolve]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 158094,
-			["Level"] = 100,
-			["Link"] = "|cffa335ee|Hitem:158094::::::::50:104::28:6:4803:40:6516:6515:1514:4786::::|h[Shipwrecker Maul]|h|r",
+			["ID"] = 165627,
+			["Level"] = 115,
+			["Link"] = "|cffa335ee|Hitem:165627::::::::50:104::81:3:5844:1527:4786:1:28:1401:::|h[Sentinel's Halberd]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

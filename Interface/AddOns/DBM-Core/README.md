@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/DeadlyBossMods/DeadlyBossMods.svg?branch=master)](https://travis-ci.org/DeadlyBossMods/DeadlyBossMods)
+[![Build Status](https://github.com/DeadlyBossMods/DeadlyBossMods/workflows/CI/badge.svg)](https://github.com/DeadlyBossMods/DeadlyBossMods/actions?workflow=CI)
 [![DeadlyBossMods on Discord](https://img.shields.io/badge/discord-DeadlyBossMods-738bd7.svg?style=flat)](https://discord.gg/DeadlyBossMods) 
 
 [![Patreon](https://media.forgecdn.net/attachments/76/25/patreon-medium-button.png)](https://www.patreon.com/deadlybossmods)
@@ -9,6 +9,7 @@
 
 ## Old Content mods are split into multiple packages
 Older content is split into multiple addons to reduce mod update size. These are often far less updated as DBM Core packages and are better as optional extra packages. You can get them here:
+* [Battle for Azeroth Mods](https://www.curseforge.com/wow/addons/deadly-boss-mods-dbm-bfa)
 * [Legion Raid Mods](https://curseforge.com/wow/addons/deadly-boss-mods-dbm-legion)
 * [Warlords of Draenor Raid Mods](https://curseforge.com/wow/addons/deadly-boss-mods-wod)
 * [Mists of Pandaria Raid Mods](https://curseforge.com/wow/addons/deadly-boss-mods-mop)

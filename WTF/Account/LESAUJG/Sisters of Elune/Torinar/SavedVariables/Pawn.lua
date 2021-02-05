@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0405,
+	["LastVersion"] = 2.0411,
 	["LastPlayerFullName"] = "Torinar-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
@@ -42,9 +42,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:173475::::::::50:73::14:4:6412:6513:1470:4785::::|h[Malignant Leviathan's Warboots]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 173462,
-			["Level"] = 76,
-			["Link"] = "|cff0070dd|Hitem:173462::::::::50:73::14:4:6412:6515:1470:4785::::|h[Malignant Leviathan's Armguards]|h|r",
+			["ID"] = 174956,
+			["Level"] = 95,
+			["Link"] = "|cffa335ee|Hitem:174956::::::::50:71::28:5:6578:6579:4803:6515:6540::::|h[Malignant Leviathan's Armguards]|h|r",
 		}, -- [9]
 		{
 			["ID"] = 173494,
@@ -81,15 +81,16 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:122260::::::::50:73:::1:5805::::|h[Worn Stoneskin Gargoyle Cape]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 170313,
-			["Level"] = 72,
+			["ID"] = 166898,
+			["Level"] = 115,
 			["AlsoFitsIn"] = 17,
-			["Link"] = "|cffa335ee|Hitem:170313::::::::50:73::13:1:1690::::|h[Uncanny Combatant's Discombobulator of the Fireflash]|h|r",
+			["Link"] = "|cffa335ee|Hitem:166898::::::::50:73::81:3:5844:1527:4786:1:28:1401:::|h[Sentinel's Blade]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 170364,
-			["Level"] = 72,
-			["Link"] = "|cffa335ee|Hitem:170364::::::::50:73::13:2:1699:5804::::|h[Uncanny Combatant's Shield of the Feverflare]|h|r",
+			["ID"] = 166898,
+			["Level"] = 115,
+			["AlsoFitsIn"] = 16,
+			["Link"] = "|cffa335ee|Hitem:166898::::::::50:71::81:3:5844:1527:4786:1:28:1401:::|h[Sentinel's Blade]|h|r",
 		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,

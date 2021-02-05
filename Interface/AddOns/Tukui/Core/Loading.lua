@@ -124,7 +124,7 @@ function Loading:Enable()
 	self:LoadCustomSettings()
 
 	Toolkit.Settings.BackdropColor = C.General.BackdropColor
-	Toolkit.Settings.BorderColor = C.General.BorderColor
+	Toolkit.Settings.BorderColor = C.General.ClassColorBorder and T.Colors.class[T.MyClass] or C.General.BorderColor
 	Toolkit.Settings.UIScale = C.General.UIScale
 
 	if C.General.HideShadows then
@@ -147,7 +147,6 @@ function Loading:OnEvent(event)
 		T["ActionBars"]:Enable()
 		T["Cooldowns"]:Enable()
 		T["Miscellaneous"]["Experience"]:Enable()
-		T["Miscellaneous"]["Reputation"]:Enable()
 		T["Miscellaneous"]["Errors"]:Enable()
 		T["Miscellaneous"]["MirrorTimers"]:Enable()
 		T["Miscellaneous"]["DropDown"]:Enable()
@@ -159,6 +158,7 @@ function Loading:OnEvent(event)
 		T["Miscellaneous"]["AFK"]:Enable()
 		T["Miscellaneous"]["MicroMenu"]:Enable()
 		T["Miscellaneous"]["Keybinds"]:Enable()
+		T["Miscellaneous"]["TimeManager"]:Enable()
 		T["Miscellaneous"]["ThreatBar"]:Enable()
 		T["Miscellaneous"]["TalkingHead"]:Enable()
 		T["Miscellaneous"]["LossControl"]:Enable()
@@ -170,17 +170,14 @@ function Loading:OnEvent(event)
 		T["Miscellaneous"]["Tutorials"]:Enable()
 		T["Miscellaneous"]["VehicleIndicator"]:Enable()
 		T["Miscellaneous"]["ItemLevel"]:Enable()
+		T["Miscellaneous"]["RaidUtilities"]:Enable()
+		T["Miscellaneous"]["Alerts"]:Enable()
 		T["UnitFrames"]:Enable()
 		T["Tooltips"]:Enable()
 		T["PetBattles"]:Enable()
 
 		-- restore original stopwatch commands
 		SlashCmdList["STOPWATCH"] = Stopwatch_Toggle
-
-		-- welcome message
-		local HexClassColor = T.RGBToHex(unpack(T.Colors.class[T.MyClass]))
-
-		T.Print("Welcome "..HexClassColor..T.MyName.."|r! For a commands list, type /tukui")
 	elseif (event == "PLAYER_ENTERING_WORLD") then
 		T["Miscellaneous"]["ObjectiveTracker"]:Enable()
 		
@@ -194,6 +191,11 @@ function Loading:OnEvent(event)
 	elseif (event == "VARIABLES_LOADED") then
 		T["Loading"]:Enable()
 		T["GUI"]:Enable()
+		
+		-- welcome message
+		local HexClassColor = T.RGBToHex(unpack(T.Colors.class[T.MyClass]))
+
+		T.Print("Welcome "..HexClassColor..T.MyName.."|r! For a commands list, type /tukui")
 	end
 end
 

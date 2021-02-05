@@ -29,6 +29,8 @@ SmexyMatsDB = {
 			["Alliance"] = {
 				["Tailoring"] = {
 				},
+				["Blacksmithing"] = {
+				},
 				["Skinning"] = {
 				},
 				["Fishing"] = {
@@ -40,14 +42,10 @@ SmexyMatsDB = {
 				["Jewelcrafting"] = {
 				},
 				["Cooking"] = {
-					["Mandelbrot"] = {
-					},
 					["Bracnar"] = {
 					},
 				},
 				["Herbalism"] = {
-					["Mandelbrot"] = {
-					},
 				},
 				["Archaeology"] = {
 					["Bracnar"] = {
@@ -64,8 +62,6 @@ SmexyMatsDB = {
 				["Inscription"] = {
 				},
 				["Enchanting"] = {
-					["Mandelbrot"] = {
-					},
 					["Bracnar"] = {
 					},
 				},

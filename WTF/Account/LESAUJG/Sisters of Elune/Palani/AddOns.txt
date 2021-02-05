@@ -28,7 +28,7 @@ WeakAurasOptions: disabled
 WeakAurasTemplates: disabled
 ProjectAzilroka: disabled
 AddOnSkins: disabled
-AngryWorldQuests: disabled
+AngryWorldQuests: enabled
 TradeSkillMaster_Accounting: disabled
 TradeSkillMaster_AuctionDB: disabled
 TradeSkillMaster_Auctioning: disabled

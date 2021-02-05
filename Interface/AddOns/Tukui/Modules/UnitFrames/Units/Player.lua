@@ -102,7 +102,7 @@ function UnitFrames:Player()
 	Name:SetFontObject(Font)
 	Name:SetAlpha(0)
 
-	if C.UnitFrames.PlayerAuras and C.UnitFrames.PlayerAuraBars then
+	if C.UnitFrames.PlayerAuraBars then
 		local Gap = (T.MyClass == "ROGUE" or T.MyClass == "DRUID") and 8 or 0
 		local AuraBars = CreateFrame("Frame", self:GetName().."AuraBars", self)
 
@@ -118,70 +118,89 @@ function UnitFrames:Player()
 		AuraBars.spellNameObject = Font
 		AuraBars.spellTimeObject = Font
 
-		T.Movers:RegisterFrame(AuraBars)
+		T.Movers:RegisterFrame(AuraBars, "Player Aura Bars")
 
 		self.AuraBars = AuraBars
-	elseif (C.UnitFrames.PlayerAuras) then
-		local Buffs = CreateFrame("Frame", self:GetName().."Buffs", self)
-		local Debuffs = CreateFrame("Frame", self:GetName().."Debuffs", self)
+	else
+		if (C.UnitFrames.PlayerBuffs) then
+			local Buffs = CreateFrame("Frame", self:GetName().."Buffs", self)
 
-		Buffs:SetFrameStrata(self:GetFrameStrata())
-		Buffs:SetPoint("BOTTOMLEFT", self, "TOPLEFT", -1, 4)
+			Buffs:SetFrameStrata(self:GetFrameStrata())
+			Buffs:SetPoint("BOTTOMLEFT", self, "TOPLEFT", -1, 4)
 
-		Buffs:SetHeight(28)
-		Buffs:SetWidth(252)
-		Buffs.size = 28
-		Buffs.num = 32
-		Buffs.numRow = 4
+			Buffs:SetHeight(28)
+			Buffs:SetWidth(252)
+			Buffs.size = 28
+			Buffs.num = 32
+			Buffs.numRow = 4
 
-		Debuffs:SetFrameStrata(self:GetFrameStrata())
-		Debuffs:SetHeight(28)
-		Debuffs:SetWidth(252)
-		Debuffs:SetPoint("BOTTOMLEFT", Buffs, "TOPLEFT", 0, 18)
-		Debuffs.size = 28
-		Debuffs.num = 16
-		Debuffs.numRow = 2
+			Buffs.spacing = 4
+			Buffs.initialAnchor = "TOPLEFT"
+			Buffs.PostCreateIcon = UnitFrames.PostCreateAura
+			Buffs.PostUpdateIcon = UnitFrames.PostUpdateAura
+			Buffs.PostUpdate = C.UnitFrames.PlayerDebuffs and UnitFrames.UpdateDebuffsHeaderPosition
+			Buffs.onlyShowPlayer = C.UnitFrames.OnlySelfBuffs
+			Buffs.isCancellable = true
 
-		Buffs.spacing = 4
-		Buffs.initialAnchor = "TOPLEFT"
-		Buffs.PostCreateIcon = UnitFrames.PostCreateAura
-		Buffs.PostUpdateIcon = UnitFrames.PostUpdateAura
-		Buffs.PostUpdate = UnitFrames.UpdateDebuffsHeaderPosition
-		Buffs.onlyShowPlayer = C.UnitFrames.OnlySelfBuffs
-		Buffs.isCancellable = true
+			if C.UnitFrames.AurasBelow then
+				Buffs:SetPoint("BOTTOMLEFT", self, "BOTTOMLEFT", 0, -32)
+			end
 
-		Debuffs.spacing = 4
-		Debuffs.initialAnchor = "TOPRIGHT"
-		Debuffs["growth-y"] = "UP"
-		Debuffs["growth-x"] = "LEFT"
-		Debuffs.PostCreateIcon = UnitFrames.PostCreateAura
-		Debuffs.PostUpdateIcon = UnitFrames.PostUpdateAura
-
-		if C.UnitFrames.AurasBelow then
-			Buffs:SetPoint("BOTTOMLEFT", self, "BOTTOMLEFT", 0, -32)
-			Debuffs["growth-y"] = "DOWN"
+			self.Buffs = Buffs
 		end
 
-		self.Buffs = Buffs
-		self.Debuffs = Debuffs
+		if (C.UnitFrames.PlayerDebuffs) then
+			local Debuffs = CreateFrame("Frame", self:GetName().."Debuffs", self)
+
+			Debuffs:SetFrameStrata(self:GetFrameStrata())
+			Debuffs:SetHeight(28)
+			Debuffs:SetWidth(252)
+			
+			if self.Buffs then
+				Debuffs:SetPoint("BOTTOMLEFT", Buffs, "TOPLEFT", 0, 18)
+			else
+				Debuffs:SetPoint("BOTTOMRIGHT", self, "TOPRIGHT", 1, 4)
+			end
+				
+			Debuffs.size = 28
+			Debuffs.num = 16
+			Debuffs.numRow = 2
+
+			Debuffs.spacing = 4
+			Debuffs.initialAnchor = "TOPRIGHT"
+			Debuffs["growth-y"] = "UP"
+			Debuffs["growth-x"] = "LEFT"
+			Debuffs.PostCreateIcon = UnitFrames.PostCreateAura
+			Debuffs.PostUpdateIcon = UnitFrames.PostUpdateAura
+
+			if C.UnitFrames.AurasBelow then
+				if not C.UnitFrames.PlayerBuffs then
+					Debuffs:SetPoint("BOTTOMLEFT", self, "BOTTOMLEFT", 0, -32)
+				end
+				
+				Debuffs["growth-y"] = "DOWN"
+			end
+
+			self.Debuffs = Debuffs
+		end
 	end
 
-	local Combat = Health:CreateTexture(nil, "OVERLAY", 1)
+	local Combat = Health:CreateTexture(nil, "OVERLAY", nil, 1)
 	Combat:SetSize(19, 19)
 	Combat:SetPoint("LEFT", 0, 1)
 	Combat:SetVertexColor(0.69, 0.31, 0.31)
 
-	local Status = Panel:CreateFontString(nil, "OVERLAY", 1)
+	local Status = Panel:CreateFontString(nil, "OVERLAY", nil, 1)
 	Status:SetFontObject(Font)
 	Status:SetPoint("CENTER", Panel, "CENTER", 0, 0)
 	Status:SetTextColor(0.69, 0.31, 0.31)
 	Status:Hide()
 
-	local Leader = Health:CreateTexture(nil, "OVERLAY", 2)
+	local Leader = Health:CreateTexture(nil, "OVERLAY", nil, 2)
 	Leader:SetSize(14, 14)
 	Leader:SetPoint("TOPLEFT", 2, 8)
 
-	local MasterLooter = Health:CreateTexture(nil, "OVERLAY", 2)
+	local MasterLooter = Health:CreateTexture(nil, "OVERLAY", nil, 2)
 	MasterLooter:SetSize(14, 14)
 	MasterLooter:SetPoint("TOPRIGHT", -2, 8)
 
@@ -209,6 +228,11 @@ function UnitFrames:Player()
 		CastBar.Text:SetTextColor(0.84, 0.75, 0.65)
 		CastBar.Text:SetWidth(166)
 		CastBar.Text:SetJustifyH("LEFT")
+		
+		CastBar.Spark = CastBar:CreateTexture(nil, "OVERLAY")
+		CastBar.Spark:SetSize(8, CastBar:GetHeight())
+		CastBar.Spark:SetBlendMode("ADD")
+		CastBar.Spark:SetPoint("CENTER", CastBar:GetStatusBarTexture(), "RIGHT", 0, 0)
 
 		if (C.UnitFrames.CastBarIcon) then
 			CastBar.Button = CreateFrame("Frame", nil, CastBar)
@@ -223,7 +247,7 @@ function UnitFrames:Player()
 		end
 
 		if (C.UnitFrames.CastBarLatency) then
-			CastBar.SafeZone = CastBar:CreateTexture(nil, "ARTWORK")
+			CastBar.SafeZone = CastBar:CreateTexture(nil, "OVERLAY")
 			CastBar.SafeZone:SetTexture(CastTexture)
 			CastBar.SafeZone:SetVertexColor(0.69, 0.31, 0.31, 0.75)
 		end
@@ -255,7 +279,7 @@ function UnitFrames:Player()
 			CastBar.Text:ClearAllPoints()
 			CastBar.Text:SetPoint("LEFT", CastBar, "LEFT", 4, 0)
 
-			Movers:RegisterFrame(CastBar)
+			Movers:RegisterFrame(CastBar, "Player Cast Bar")
 		end
 
 		self.Castbar = CastBar
@@ -351,12 +375,12 @@ function UnitFrames:Player()
 		self.ComboPointsBar = ComboPoints
 	end
 
-	local RaidIcon = Health:CreateTexture(nil, "OVERLAY", 7)
+	local RaidIcon = Health:CreateTexture(nil, "OVERLAY", nil, 7)
 	RaidIcon:SetSize(C.UnitFrames.RaidIconSize, C.UnitFrames.RaidIconSize)
 	RaidIcon:SetPoint("TOP", self, 0, C.UnitFrames.RaidIconSize / 2)
 	RaidIcon:SetTexture([[Interface\AddOns\Tukui\Medias\Textures\Others\RaidIcons]])
 
-	local RestingIndicator = Panel:CreateTexture(nil, "OVERLAY", 7)
+	local RestingIndicator = Panel:CreateTexture(nil, "OVERLAY", nil, 7)
 	RestingIndicator:SetTexture([[Interface\AddOns\Tukui\Medias\Textures\Others\Resting]])
 	RestingIndicator:SetSize(20, 20)
 	RestingIndicator:SetPoint("CENTER", Panel, "CENTER", 0, 0)
@@ -380,7 +404,7 @@ function UnitFrames:Player()
 
 		self.FloatingCombatFeedback = ScrollingCombatText
 
-		T.Movers:RegisterFrame(ScrollingCombatText)
+		T.Movers:RegisterFrame(ScrollingCombatText, "Player SCT")
 	end
 
 	if C.UnitFrames.HealComm then
@@ -460,7 +484,7 @@ function UnitFrames:Player()
 			Bar[i].Cooldown:SetFrameLevel(Bar[i]:GetFrameLevel())
 		end
 
-		Movers:RegisterFrame(Bar)
+		Movers:RegisterFrame(Bar, "Totem Bar")
 
 		-- To allow right-click destroy totem.
 		TotemFrame:SetParent(UIParent)
@@ -490,7 +514,13 @@ function UnitFrames:Player()
 	self.PowerPrediction = {}
 	self.PowerPrediction.mainBar = Power.Prediction
 	self.RestingIndicator = RestingIndicator
-
+	
+	-- Enable smoothing bars animation?
+	if C.UnitFrames.Smoothing then
+		Health.smoothing = true
+		Power.smoothing = true
+	end
+	
 	-- Classes
 	UnitFrames.AddClassFeatures[Class](self)
 

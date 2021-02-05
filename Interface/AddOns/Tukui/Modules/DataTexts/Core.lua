@@ -8,6 +8,12 @@ DataTexts.DataTexts = {}
 DataTexts.Anchors = {}
 DataTexts.Menu = {}
 DataTexts.Panels = {}
+DataTexts.StatusColors = {
+	"|cff0CD809",
+	"|cffE8DA0F",
+	"|cffFF9000",
+	"|cffD80909"
+}
 
 function DataTexts:AddToMenu(name, data)
 	if self["DataTexts"][name] then
@@ -40,8 +46,8 @@ local SetData = function(self, object)
 	self.Data:Enable()
 	self.Data.Text:SetPoint("RIGHT", self, 0, 0)
 	self.Data.Text:SetPoint("LEFT", self, 0, 0)
-	self.Data.Text:SetPoint("TOP", self, 0, -1)
-	self.Data.Text:SetPoint("BOTTOM", self, 0, -1)
+	self.Data.Text:SetPoint("TOP", self, 0, 0)
+	self.Data.Text:SetPoint("BOTTOM", self, 0, 0)
 	self.Data.Position = self.Num
 	self.Data:SetAllPoints(self.Data.Text)
 
@@ -292,8 +298,8 @@ function DataTexts:Enable()
 		self.BGFrame:Enable()
 	end
 	
-	T.Movers:RegisterFrame(DataTextLeft)
-	T.Movers:RegisterFrame(DataTextRight)
+	T.Movers:RegisterFrame(DataTextLeft, "Left Data Text & Chat")
+	T.Movers:RegisterFrame(DataTextRight, "Right Data Text & Chat")
 end
 
 DataTexts:RegisterEvent("PLAYER_LOGOUT")

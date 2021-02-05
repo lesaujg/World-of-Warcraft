@@ -65,6 +65,22 @@ function UnitFrames:Nameplates()
 	Power.IsHidden = false
 	Power.colorPower = true
 	Power.PostUpdate = UnitFrames.DisplayNameplatePowerAndCastBar
+	
+	local Buffs = CreateFrame("Frame", self:GetName().."Buffs", self)
+	Buffs:SetHeight(self:GetHeight(), self:GetHeight())
+	Buffs:SetWidth((self:GetHeight() * 3) + 4)
+	Buffs:SetPoint("LEFT", self, "RIGHT", 6, 0)
+	Buffs.size = self:GetHeight()
+	Buffs.num = 3
+	Buffs.numRow = 1
+	Buffs.disableMouse = true
+	Buffs.spacing = 2
+	Buffs.initialAnchor = "BOTTOMLEFT"
+	Buffs["growth-y"] = "DOWN"
+	Buffs["growth-x"] = "RIGHT"
+	Buffs.PostCreateIcon = UnitFrames.PostCreateAura
+	Buffs.PostUpdateIcon = UnitFrames.PostUpdateAura
+	Buffs.CustomFilter = UnitFrames.BuffIsStealable
 
 	local Debuffs = CreateFrame("Frame", self:GetName().."Debuffs", self)
 	Debuffs:SetHeight(24)
@@ -83,7 +99,7 @@ function UnitFrames:Nameplates()
 	Debuffs.onlyShowPlayer = C.NamePlates.OnlySelfDebuffs
 
 	if C.NamePlates.NameplateCastBar then
-		local CastBar = CreateFrame("StatusBar", "TukuiTargetCastBar", self)
+		local CastBar = CreateFrame("StatusBar", self:GetName().."CastBar", self)
 		CastBar:SetFrameStrata(self:GetFrameStrata())
 		CastBar:SetStatusBarTexture(CastTexture)
 		CastBar:SetFrameLevel(6)
@@ -114,11 +130,14 @@ function UnitFrames:Nameplates()
 		CastBar.Text:SetTextColor(0.84, 0.75, 0.65)
 		CastBar.Text:SetWidth(C.NamePlates.Width)
 		CastBar.Text:SetJustifyH("CENTER")
+		
+		CastBar.Spark = CastBar:CreateTexture(nil, "OVERLAY")
+		CastBar.Spark:SetSize(8, CastBar:GetHeight())
+		CastBar.Spark:SetBlendMode("ADD")
+		CastBar.Spark:SetPoint("CENTER", CastBar:GetStatusBarTexture(), "RIGHT", 0, 0)
 
-		CastBar.PostCastStart = UnitFrames.CheckInterrupt
-		CastBar.PostCastInterruptible = UnitFrames.CheckInterrupt
-		CastBar.PostCastNotInterruptible = UnitFrames.CheckInterrupt
-		CastBar.PostChannelStart = UnitFrames.CheckInterrupt
+		CastBar.PostCastStart = UnitFrames.CheckCast
+		CastBar.PostChannelStart = UnitFrames.CheckChannel
 
 		self.Castbar = CastBar
 	end
@@ -128,7 +147,7 @@ function UnitFrames:Nameplates()
 	RaidIcon:SetPoint("LEFT", self, "RIGHT", 4, 0)
 	RaidIcon:SetTexture([[Interface\AddOns\Tukui\Medias\Textures\Others\RaidIcons]])
 
-	local Highlight = CreateFrame("Frame", nil, self, "BackdropTemplate")
+	local Highlight = CreateFrame("Frame", self:GetName().."Highlight", self, "BackdropTemplate")
 	Highlight:SetBackdrop({edgeFile = C.Medias.Glow, edgeSize = C.NamePlates.HighlightSize})
 	Highlight:SetOutside(self, C.NamePlates.HighlightSize, C.NamePlates.HighlightSize)
 	Highlight:SetBackdropBorderColor(unpack(C.NamePlates.HighlightColor))
@@ -142,11 +161,44 @@ function UnitFrames:Nameplates()
 		
 		self.QuestIcon = QuestIcon
 	end
+	
+	if C.NamePlates.ClassIcon then
+		local ClassIcon = CreateFrame("Frame", self:GetName().."Class", self)
+		ClassIcon:SetSize(self:GetHeight() + 14, self:GetHeight() + 14)
+		ClassIcon:SetPoint("BOTTOMRIGHT", self, "BOTTOMLEFT", -6, 0)
+		ClassIcon:CreateBackdrop()
+		ClassIcon:SetAlpha(0)
+		ClassIcon.Backdrop:CreateShadow()
+		
+		ClassIcon.Texture = ClassIcon:CreateTexture(nil, "OVERLAY")
+		ClassIcon.Texture:SetAllPoints(ClassIcon)
+		ClassIcon.Texture:SetTexture("Interface\\Glues\\CharacterCreate\\UI-CharacterCreate-Classes")
+		
+		-- Reposition castbar icon to cover class icon
+		self.Castbar.Button:ClearAllPoints()
+		self.Castbar.Button:SetAllPoints(ClassIcon)
+		
+		self.Castbar.Button.Shadow:ClearAllPoints()
+		self.Castbar.Button.Shadow:SetOutside(self.Castbar.Button, 4, 4)
+		self.Castbar.Button.Shadow:SetFrameLevel(ClassIcon:GetFrameLevel() + 1)
+		self.Castbar.Button.Shadow:SetFrameStrata(ClassIcon:GetFrameStrata())
+		
+		self.ClassIcon = ClassIcon
+		
+		self:RegisterEvent("NAME_PLATE_UNIT_ADDED", UnitFrames.UpdateNameplateClassIcon, true)
+	end
+	
+	-- Enable smoothing bars animation?
+	if C.UnitFrames.Smoothing then
+		Health.smoothing = true
+		Power.smoothing = true
+	end
 
 	self:Tag(Name, "[Tukui:Classification][Tukui:DiffColor][level] [Tukui:GetNameHostilityColor]"..NameLength)
 	self:Tag(Health.Value, C.NamePlates.HealthTag.Value)
 	self.Health = Health
 	self.Health.bg = Health.Background
+	self.Buffs = Buffs
 	self.Debuffs = Debuffs
 	self.Name = Name
 	self.Power = Power

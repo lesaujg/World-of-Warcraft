@@ -1,6 +1,7 @@
 local myname, ns = ...
 
 local HBD = LibStub("HereBeDragons-2.0")
+local LibWindow = LibStub("LibWindow-1.1")
 
 local core = LibStub("AceAddon-3.0"):GetAddon("SilverDragon")
 local module = core:GetModule("ClickTarget")
@@ -11,34 +12,45 @@ local escapes = core.escapes
 
 function module:ApplyLook(popup, look)
 	-- Many values cribbed from AlertFrameSystem.xml
-	(self.Looks[look] or self.Looks.SilverDragon)(self, popup)
+	(self.Looks[look] or self.Looks.SilverDragon)(self, popup, self.db.profile.style_options[look])
 end
-module.Looks = {}
 
 function module:ShowFrame(data)
-	if not self.db.profile.show then return end
 	if not (data and data.id) then return end
+	if not self.popup then
+		self.popup = self:CreatePopup()
+	end
 	local popup = self.popup
 	popup.data = data
 
-	local name = core:NameForMob(data.id, data.unit)
-	if name then
-		local macrotext = "/cleartarget \n/targetexact "..name
-		popup:SetAttribute("macrotext1", macrotext)
+	if data.type == "mob" then
+		local name = core:NameForMob(data.id, data.unit)
+		if name then
+			local macrotext = "/cleartarget \n/targetexact "..name
+			popup:SetAttribute("macrotext1", macrotext)
+		end
+		if data.unit and GetRaidTargetIndex(data.unit) then
+			popup:SetRaidIcon(GetRaidTargetIndex(data.unit))
+		end
+	else
+		popup:SetAttribute("macrotext1", "")
 	end
 
 	if popup:IsVisible() then
 		popup:Hide()
 	end
 
+	self:RefreshData(popup)
 	popup:Show()
 
-	self:RefreshMobData(popup)
+	self:SetModel(popup)
+end
 
-	self:ShowModel(popup)
-
-	if data.unit and GetRaidTargetIndex(data.unit) then
-		popup:SetRaidIcon(GetRaidTargetIndex(data.unit))
+function module:RefreshData(popup)
+	if popup.data.type == "mob" then
+		return self:RefreshMobData(popup)
+	else
+		return self:RefreshLootData(popup)
 	end
 end
 
@@ -54,28 +66,67 @@ function module:RefreshMobData(popup)
 		popup.status:SetText("")
 	end
 
-	if ns.mobdb[data.id] and (ns.mobdb[data.id].mount or ns.mobdb[data.id].pet or ns.mobdb[data.id].toy) then
+	if ns.Loot.HasLoot(data.id) then
 		popup.lootIcon:Show()
-		local toy, mount, pet = ns:LootStatus(data.id)
-		if (toy or toy == nil) and (mount or mount == nil) and (pet or pet == nil) then
-			popup.lootIcon.complete:Show()
-		else
-			popup.lootIcon.complete:Hide()
-		end
+		ns.Loot.Cache(data.id)
 	else
 		popup.lootIcon:Hide()
 	end
+	if ns.Loot.Status(data.id, true) then
+		-- all loot is collected
+		popup.lootIcon.complete:Show()
+	else
+		popup.lootIcon.complete:Hide()
+	end
+end
+function module:RefreshLootData(popup)
+	local data = popup.data
+	popup.title:SetText(data.name or UNKNOWN)
+	popup.source:SetText("vignette")
+	-- TODO: work out the Treasure of X achievements?
+	popup.status:SetText("")
+	-- TODO: know about loot?
+	popup.lootIcon:Hide()
+	popup.raidIcon:Hide()
 end
 
-function module:ShowModel(popup)
+local models = {
+	question = {
+		model = [[Interface\Buttons\talktomequestionmark.mdx]],
+		position = {4, 0, 1.5},
+		scale = 4.25,
+	},
+	loot = {
+		-- https://wow.tools/files/#search=type%3Am2%2Ctreasure&page=1&sort=0&desc=asc
+		{
+			model = 1100065, -- world/skillactivated/containers/treasurechest01hd.m2
+			position = nil,
+			scale = nil,
+		},
+		{
+			model = 3189119, -- world/expansion08/doodads/valkyr/9vl_aspirants_treasurechest_large01.m2
+			position = {-8, 0, 0.5},
+			scale = nil,
+		}
+	}
+}
+local function applyModelSettings(model, settings)
+	model:SetModel(settings.model)
+	if settings.scale then model:SetModelScale(settings.scale) end
+	if settings.position then model:SetPosition(unpack(settings.position)) end
+	if settings.facing then model:SetFacing(settings.facing) end
+end
+
+function module:SetModel(popup)
 	-- reset the model
 	popup.model:ClearModel()
 	popup.model:SetModelScale(1)
 	popup.model:SetPosition(0, 0, 0)
 	popup.model:SetFacing(0)
+	popup.model.fallback:Hide()
 
 	local data = popup.data
-	if (data.id or data.unit) and not self:IsModelBlacklisted(data.id, data.unit) then
+	if (data.type == "mob" and data.id or data.unit) and not self:IsModelBlacklisted(data.id, data.unit) then
 		if data.unit then
 			popup.model:SetUnit(data.unit)
 		else
@@ -83,10 +134,13 @@ function module:ShowModel(popup)
 		end
 
 		popup.model:SetPortraitZoom(1)
+	elseif data.type == "loot" then
+		popup.model.fallback:SetAtlas("BonusLoot-Chest")
+		popup.model.fallback:Show()
+		-- I could do a 3d model, but since I can't get the right model for the treasure, it's arguably confusing
+		-- applyModelSettings(popup.model, models.loot[1])
 	else
-		popup.model:SetModelScale(4.25)
-		popup.model:SetPosition(4, 0, 1.5)
-		popup.model:SetModel([[Interface\Buttons\talktomequestionmark.mdx]])
+		applyModelSettings(popup.model, models.question)
 	end
 end
 
@@ -119,24 +173,33 @@ local PopupClassMetatable = {__index = PopupClass}
 
 function module:CreatePopup()
 	-- Set up the frame
-	local popup = CreateFrame("Button", "SilverDragonPopupButton", UIParent, "SecureActionButtonTemplate, SecureHandlerShowHideTemplate, BackdropTemplate")
+	local name = "SilverDragonPopupButton"
+	do
+		local i = 1
+		while _G[name] do
+			name = name .. i
+			i = i + 1
+		end
+	end
+	local popup = CreateFrame("Button", name, UIParent, "SecureActionButtonTemplate, SecureHandlerShowHideTemplate, BackdropTemplate")
 	module.popup = popup
 	setmetatable(popup, PopupClassMetatable)
 
 	popup:SetSize(276, 96)
-	popup:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -260, 270)
+	-- TODO: a stack
+	popup:SetPoint("CENTER", self.anchor, "CENTER")
+	popup:SetScale(self.db.profile.anchor.scale)
 	popup:SetMovable(true)
-	popup:SetUserPlaced(true)
 	popup:SetClampedToScreen(true)
 	popup:SetFrameStrata("DIALOG")
-	popup:RegisterForDrag("LeftButton")
+	popup:SetFrameLevel(self.anchor:GetFrameLevel() + 5)
 	popup:RegisterForClicks("AnyUp")
 
 	popup:SetAttribute("type", "macro")
 	popup:SetAttribute("_onshow", "self:Enable()")
 	popup:SetAttribute("_onhide", "self:Disable()")
 	-- Can't do type=click + clickbutton=close because then it'd be right-clicking the close button which also ignores the mob
-	popup:SetAttribute("macrotext2", "/click SilverDragonPopupButtonCloseButton")
+	popup:SetAttribute("macrotext2", "/click " .. popup:GetName() .. "CloseButton")
 
 	popup:Hide()
 
@@ -152,6 +215,10 @@ function module:CreatePopup()
 
 	local model = CreateFrame("PlayerModel", nil, popup)
 	popup.model = model
+	local modelfallback = model:CreateTexture(nil, "OVERLAY")
+	modelfallback:SetAllPoints(model)
+	modelfallback:Hide()
+	model.fallback = modelfallback
 
 	local raidIcon = model:CreateTexture(nil, "OVERLAY")
 	popup.raidIcon = raidIcon
@@ -159,7 +226,7 @@ function module:CreatePopup()
 	raidIcon:SetTexture([[Interface\TargetingFrame\UI-RaidTargetingIcons]])
 	raidIcon:Hide()
 
-	local lootIcon = CreateFrame("Frame", nil, popup)
+	local lootIcon = CreateFrame("Button", nil, popup)
 	popup.lootIcon = lootIcon
 	lootIcon:SetSize(40, 40)
 	lootIcon.texture = lootIcon:CreateTexture(nil, "OVERLAY", nil, 0)
@@ -194,7 +261,7 @@ function module:CreatePopup()
 	status:SetJustifyV("MIDDLE")
 
 	-- Close button
-	local close = CreateFrame("Button", "SilverDragonPopupButtonCloseButton", popup, "UIPanelCloseButton,SecureHandlerClickTemplate")
+	local close = CreateFrame("Button", popup:GetName() .. "CloseButton", popup, "UIPanelCloseButtonNoScripts,SecureHandlerClickTemplate")
 	popup.close = close
 	close:SetSize(16, 16)
 	close:GetDisabledTexture():SetTexture("")
@@ -215,7 +282,7 @@ function module:CreatePopup()
 	local glow = popup:CreateTexture(nil, "OVERLAY")
 	popup.glow = glow
 	glow:SetBlendMode("ADD")
-	glow:SetAtlas("loottoast-glow")
+	glow:SetAtlas("loottoast-glow") -- Garr_NotificationGlow?
 
 	local shine = popup:CreateTexture(nil, "OVERLAY")
 	popup.shine = shine
@@ -226,10 +293,11 @@ function module:CreatePopup()
 	-- CreateAnimationAlpha(from, to, duration, delay, order)
 	popup.animIn = popup:CreateAnimationGroup()
 	popup.animIn:SetToFinalAlpha(true)
-	for i, child in ipairs({'background', 'model', 'modelbg', 'close'}) do
+	for _, child in ipairs({'background', 'model', 'modelbg', 'close'}) do
 		local animIn = CreateAnimationAlpha(popup.animIn, 0, 1, 0.4, nil, 1)
 		animIn:SetTarget(popup)
 		animIn:SetChildKey(child)
+		popup[child].animIn = animIn
 		popup[child]:SetAlpha(0)
 	end
 
@@ -272,15 +340,16 @@ function module:CreatePopup()
 	popup:SetScript("OnEnter", popup.scripts.OnEnter)
 	popup:SetScript("OnLeave", popup.scripts.OnLeave)
 	popup:SetScript("OnUpdate", popup.scripts.OnUpdate)
-	popup:SetScript("OnDragStart", popup.scripts.OnDragStart)
-	popup:SetScript("OnDragStop", popup.scripts.OnDragStop)
 	popup:SetScript("OnMouseDown", popup.scripts.OnMouseDown)
+	popup:SetScript("OnMouseUp", popup.scripts.OnMouseUp)
 
 	popup.close:SetScript("OnEnter", popup.scripts.CloseOnEnter)
 	popup.close:SetScript("OnLeave", popup.scripts.CloseOnLeave)
 
 	popup.lootIcon:SetScript("OnEnter", popup.scripts.LootOnEnter)
 	popup.lootIcon:SetScript("OnLeave", popup.scripts.LootOnLeave)
+	popup.lootIcon:SetScript("OnClick", popup.scripts.LootOnClick)
+	popup.lootIcon:SetScript("OnHide", popup.scripts.LootOnHide)
 
 	self:ApplyLook(popup, self.db.profile.style)
 
@@ -308,12 +377,14 @@ function PopupClass:SetRaidIcon(icon)
 	self.raidIcon:Show()
 end
 
-function PopupClass:ShouldBeDraggable()
-	return (not module.db.profile.locked) or IsAltKeyDown()
-end
-
 function PopupClass:DoIgnore()
-	if self.data and self.data.id then
+	if not (self.data and self.data.id) then return end
+	if self.data.type == "loot" then
+		local vignette = core:GetModule("Scan_Vignettes", true)
+		if vignette then
+			vignette.db.profile.ignore[self.data.id] = self.data.name
+		end
+	else
 		core:SetIgnore(self.data.id, true)
 	end
 end
@@ -341,11 +412,7 @@ PopupClass.scripts = {
 		local anchor = (self:GetCenter() < (UIParent:GetWidth() / 2)) and "ANCHOR_RIGHT" or "ANCHOR_LEFT"
 		GameTooltip:SetOwner(self, anchor, 0, -60)
 		GameTooltip:AddLine(escapes.leftClick .. " " .. TARGET)
-		if module.db.profile.locked then
-			GameTooltip:AddLine(escapes.keyDown .. ALT_KEY_TEXT .. " + " .. escapes.leftClick .. " + " .. DRAG_MODEL .. "  " .. MOVE_FRAME)
-		else
-			GameTooltip:AddLine(escapes.leftClick .. " + " .. DRAG_MODEL .. "  " .. MOVE_FRAME)
-		end
+		GameTooltip:AddLine(escapes.keyDown .. ALT_KEY_TEXT .. " + " .. escapes.leftClick .. " + " .. DRAG_MODEL .. "  " .. MOVE_FRAME)
 		GameTooltip:AddLine(escapes.keyDown .. CTRL_KEY_TEXT .. " + " .. escapes.leftClick .. "  " .. MAP_PIN )
 		if C_Map.CanSetUserWaypointOnMap(self.data.zone) and self.data.x > 0 and self.data.y > 0 then
 			GameTooltip:AddLine(escapes.keyDown .. SHIFT_KEY_TEXT .. " + " .. escapes.leftClick .. "  " .. TRADESKILL_POST )
@@ -373,23 +440,15 @@ PopupClass.scripts = {
 	OnUpdate = function(self, elapsed)
 		self.elapsed = self.elapsed + elapsed
 		if self.elapsed > 0.5 then
-			if not self.model:GetModelFileID() then
+			if not self.model:GetModelFileID() and not self.model.fallback:IsShown() then
 				-- Sometimes models don't load the first time you request them for some reason. In this case,
 				-- re-requesting it seems to be needed. This might be a client bug, so testing whether it's still
 				-- necessary would be wise. (Added in 70100, reproducing by flying around Pandaria works pretty well.)
 				Debug("Poll for model reload")
-				module:ShowModel(self)
+				module:SetModel(self)
 			end
 			self.elapsed = 0
 		end
-	end,
-	OnDragStart = function(self)
-		if self:ShouldBeDraggable() then
-			self:StartMoving()
-		end
-	end,
-	OnDragStop = function(self)
-		self:StopMovingOrSizing()
 	end,
 	OnMouseDown = function(self, button)
 		if button == "RightButton" then
@@ -404,7 +463,15 @@ PopupClass.scripts = {
 			if not (x > 0 and y > 0) then
 				x, y = HBD:GetPlayerZonePosition()
 			end
-			module:SendLinkToMob(data.id, data.zone, x, y)
+			module:SendLinkFromData(data, data.zone, x, y)
+		elseif IsAltKeyDown() then
+			module.anchor:StartMoving()
+		end
+	end,
+	OnMouseUp = function(self, button)
+		module.anchor:StopMovingOrSizing()
+		if not InCombatLockdown() then
+			LibWindow.SavePosition(module.anchor)
 		end
 	end,
 	-- hooked:
@@ -450,12 +517,17 @@ PopupClass.scripts = {
 
 		core.events:Fire("PopupHide", self.data.id, self.data.zone, self.data.x, self.data.y, self.automaticClose)
 
+		if not InCombatLockdown() then
+			LibWindow.SavePosition(module.anchor)
+		end
+
 		self.waitingToHide = false
 		self.automaticClose = nil
 	end,
 	-- Close button
 	CloseOnEnter = function(self)
-		GameTooltip:SetOwner(self, "ANCHOR_CURSOR", 0, 0)
+		local anchor = (self:GetCenter() < (UIParent:GetWidth() / 2)) and "ANCHOR_RIGHT" or "ANCHOR_LEFT"
+		GameTooltip:SetOwner(self, anchor, 0, 0)
 		GameTooltip:AddLine(escapes.leftClick .. " " .. CLOSE)
 		GameTooltip:AddLine(escapes.rightClick .. " " .. IGNORE)
 		GameTooltip:Show()
@@ -469,12 +541,41 @@ PopupClass.scripts = {
 		if not ns.mobdb[id] then
 			return
 		end
-		GameTooltip:SetOwner(self, "ANCHOR_CURSOR", 0, 0)
-		ns:UpdateTooltipWithLootDetails(GameTooltip, id)
+		local anchor = (self:GetCenter() < (UIParent:GetWidth() / 2)) and "ANCHOR_RIGHT" or "ANCHOR_LEFT"
+		GameTooltip:SetOwner(self, anchor, 0, 0)
+		GameTooltip:SetFrameStrata("TOOLTIP")
+		ns.Loot.Details.UpdateTooltip(GameTooltip, id)
+		if ns.mobdb[id].loot and #ns.mobdb[id].loot > 1 then
+			GameTooltip:AddLine(CLICK_FOR_DETAILS, 0, 1, 1)
+		end
 		GameTooltip:Show()
 	end,
 	LootOnLeave = function(self)
 		GameTooltip:Hide()
+	end,
+	LootOnClick = function(self, button)
+		if not self.window then
+			self.window = ns.Loot.Window.ShowForMob(self:GetParent().data.id)
+			self.window:SetParent(self)
+			self.window:Hide()
+		end
+		if not self.window:IsShown() then
+			self.window:ClearAllPoints()
+			if self:GetParent():GetCenter() > UIParent:GetCenter() then
+				self.window:SetPoint("RIGHT", self:GetParent(), "LEFT")
+			else
+				self.window:SetPoint("LEFT", self:GetParent(), "RIGHT")
+			end
+			self.window:Show()
+		else
+			self.window:Hide()
+		end
+	end,
+	LootOnHide = function(self)
+		if self.window then
+			ns.Loot.Window.Release(self.window)
+		end
+		self.window = nil
 	end,
 	-- Common animations
 	AnimationHideParent = function(self)

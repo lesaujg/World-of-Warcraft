@@ -2,3 +2,10 @@ VER 3 0100000000000001 "Follow" "INV_Misc_QuestionMark"
 /target Torinara
 /Follow
 END
+VER 3 0100000000000002 "Fri" "INV_MISC_QUESTIONMARK"
+/cleartarget
+/tar Frightened Kodo
+/stopmacro [noexists]
+/script PlaySound(8959)
+/run RaidNotice_AddMessage(RaidBossEmoteFrame,"Frightened Kodo!", ChatTypeInfo["RAID_WARNING"])
+END

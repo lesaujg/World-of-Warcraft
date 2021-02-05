@@ -182,7 +182,7 @@ DBM-Nighthold: disabled
 Grid2AoeHeals: disabled
 !KalielsTracker: disabled
 WorldQuestTracker: disabled
-AngryWorldQuests: disabled
+AngryWorldQuests: enabled
 HandyNotes_LegionRaresTreasures: disabled
 NomiCakes: disabled
 RaidAchievement_LegionHeroics: disabled

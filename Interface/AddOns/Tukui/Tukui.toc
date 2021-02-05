@@ -1,10 +1,10 @@
-## Interface: 90001
+## Interface: 90002
 ## Author: Tukz
 ## X-Maintainer: Tukz & Azilroka & Hydra
-## Version: 20.07
+## Version: 20.16
 ## Title: |cffff8000Tukui|r
 ## Notes: UI of awesomeness!
-## SavedVariables: TukuiData, TukuiSettings, TukuiGold, TukuiSettingsPerCharacter
+## SavedVariables: TukuiData, TukuiSettings, TukuiGold, TukuiSettingsPerCharacter, TukuiChatHistory
 ## OptionalDeps: Clique
 ## X-Website: http://www.tukui.org
 ## X-Tukui-ProjectID: -1

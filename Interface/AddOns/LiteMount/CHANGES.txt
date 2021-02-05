@@ -1,14 +1,44 @@
-tag 17a09ee33aff50ef0a06f805a7e52ba9ad3c49a3 9.0.13
+tag b1b71b8c80167316079830b5279d5ba9a9c76181 9.0.30
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Sun Oct 25 08:21:26 2020 +1100
+Date:	Fri Feb 5 09:57:49 2021 +1100
 
-LiteMount 9.0.13
-- Update koKR translations thanks to zzipsa22
-- Add "Dread Raven" family split out from "Bird"
+LiteMount 9.0.30
 
-commit ed91f08afa57db3787d83a822587f3134b84e6f2
+ - fix error with [aura] condiiton when @unit is specified
+ - add magic NONE flag that matches nothing
+ - enhance Limit action to support these prefixes
+    + : add mounts to considered selection
+    - : remove mounts from considered selection
+    = : replace selction completely with matching mounts
+ - no prefix remains "filter" list to subset matching
+
+commit adfaf5714c296ce2a40436fa55e5e1bf482791d3
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Sat Oct 24 22:33:19 2020 +1100
+Date:   Fri Feb 5 09:56:33 2021 +1100
 
-    Add "Dread Raven" family. Pull in updated translations.
+    Note about metatable special keys
+
+commit 3bce20ff8a8ba2d922d909f39be1dca67ccb7484
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Thu Feb 4 12:50:49 2021 +1100
+
+    Move Limit into MountList for a bit of efficiency
+
+commit c3553197aad929ba81779e18eeef812228c268a0
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Wed Feb 3 19:37:20 2021 +1100
+
+    Handle CASTABLE properly with the new limit
+
+commit 53e40ad6679125674a8082af9fbb2eada0ed4d71
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Wed Feb 3 16:14:00 2021 +1100
+
+    Fix aura condition when @unit is specified
+
+commit 0e2dcf0d5980ee724186b34b474a938ddf29e1af
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Wed Feb 3 15:05:34 2021 +1100
+
+    More futzing with Limit
 

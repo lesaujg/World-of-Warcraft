@@ -58,7 +58,7 @@ WeakAurasModelPaths: disabled
 WeakAurasOptions: disabled
 WeakAurasTemplates: disabled
 ProjectAzilroka: disabled
-AngryWorldQuests: disabled
+AngryWorldQuests: enabled
 TradeSkillMaster_Accounting: disabled
 TradeSkillMaster_Auctioning: disabled
 TradeSkillMaster_Crafting: disabled

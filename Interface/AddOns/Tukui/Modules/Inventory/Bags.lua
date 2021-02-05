@@ -94,6 +94,8 @@ function Bags:SkinBagButton()
 	local JunkIcon = self.JunkIcon
 	local Border = self.IconBorder
 	local BattlePay = self.BattlepayItemTexture
+	
+	self:SetFrameLevel(0)
 
 	Border:SetAlpha(0)
 
@@ -305,7 +307,7 @@ function Bags:CreateContainer(storagetype, ...)
 	Container:SetWidth(((ButtonSize + ButtonSpacing) * ItemsPerRow) + 22 - ButtonSpacing)
 	Container:SetPoint(...)
 	Container:SetFrameStrata("MEDIUM")
-	Container:SetFrameLevel(0)
+	Container:SetFrameLevel(1)
 	Container:Hide()
 	Container:CreateBackdrop()
 	Container:CreateShadow()
@@ -562,11 +564,10 @@ function Bags:SlotUpdate(id, button)
 		return
 	end
 
-	local _, _, _, Rarity, _, _, _, _, _, ItemID = GetContainerItemInfo(id, button:GetID())
-	local ItemLink = GetContainerItemLink(id, button:GetID())
+	local _, _, _, Rarity, _, _, ItemLink, _, _, ItemID, IsBound = GetContainerItemInfo(id, button:GetID())
 	local QuestItem = false
 	local IsNewItem = C_NewItems.IsNewItem(id, button:GetID())
-	
+
 	if (button.ItemID == ItemID) then
 		return
 	end
@@ -585,16 +586,32 @@ function Bags:SlotUpdate(id, button)
 				QuestItem = true
 			end
 		end
+		
+		if IsCosmeticItem(ItemLink) and not IsBound then
+			button.IconOverlay:SetAlpha(1)
+		else
+			button.IconOverlay:SetAlpha(0)
+		end
 	end
 
 	if C.Bags.IdentifyQuestItems and QuestItem then
 		if not button.QuestTex then
 			button.Quest = CreateFrame("Frame", nil, button)
-			button.Quest:SetSize(8, button:GetHeight())
-			button.Quest:CreateBackdrop()
-			button.Quest:SetPoint("TOPLEFT")
-			button.Quest.Backdrop:SetBorderColor(1, 1, 0)
-			button.Quest.Texture = button.Quest:CreateTexture(nil, "OVERLAY")
+			button.Quest:SetFrameLevel(button:GetFrameLevel())
+			button.Quest:SetSize(8, button:GetHeight() - 2)
+			button.Quest:SetPoint("TOPLEFT", 1, -1)
+			
+			button.Quest.Backdrop = button.Quest:CreateTexture(nil, "ARTWORK", 0)
+			button.Quest.Backdrop:SetAllPoints()
+			button.Quest.Backdrop:SetColorTexture(unpack(C.General.BackdropColor))
+			
+			button.Quest.BorderRight = button.Quest:CreateTexture(nil, "ARTWORK", nil, 1)
+			button.Quest.BorderRight:SetSize(1, 1)
+			button.Quest.BorderRight:SetPoint("TOPRIGHT", button.Quest, "TOPRIGHT", 1, 0)
+			button.Quest.BorderRight:SetPoint("BOTTOMRIGHT", button.Quest, "BOTTOMRIGHT", 1, 0)
+			button.Quest.BorderRight:SetColorTexture(1, 1, 0)
+			
+			button.Quest.Texture = button.Quest:CreateTexture(nil, "OVERLAY", -1)
 			button.Quest.Texture:SetTexture("Interface\\QuestFrame\\AutoQuest-Parts")
 			button.Quest.Texture:SetTexCoord(0.13476563, 0.17187500, 0.01562500, 0.53125000)
 			button.Quest.Texture:SetSize(8, 16)
@@ -647,7 +664,7 @@ function Bags:SlotUpdate(id, button)
 
 			if (ClassID == LE_ITEM_CLASS_ARMOR or ClassID == LE_ITEM_CLASS_WEAPON) and Level > 1 then
 				if not button.ItemLevel then
-					button.ItemLevel = button:CreateFontString(nil, "OVERLAY")
+					button.ItemLevel = button:CreateFontString(nil, "ARTWORK")
 					button.ItemLevel:SetPoint("TOPRIGHT", 1, -1)
 					button.ItemLevel:SetFont(C.Medias.Font, 12, "OUTLINE")
 					button.ItemLevel:SetJustifyH("RIGHT")
@@ -995,7 +1012,7 @@ function Bags:OpenAllBags()
 		if not self.Bag.MoverAdded then
 			local Movers = T["Movers"]
 
-			Movers:RegisterFrame(self.Bag)
+			Movers:RegisterFrame(self.Bag, "Bags")
 
 			self.Bag.MoverAdded = true
 		end
@@ -1012,7 +1029,7 @@ function Bags:OpenAllBankBags()
 		if not self.Bank.MoverAdded then
 			local Movers = T["Movers"]
 
-			Movers:RegisterFrame(self.Bank)
+			Movers:RegisterFrame(self.Bank, "Bank")
 
 			self.Bank.MoverAdded = true
 		end
@@ -1052,14 +1069,14 @@ function Bags:CloseAllBankBags()
 	end
 end
 
-function Bags:ToggleBags()
+function Bags:ToggleBags(openonly)
 	if (self.Bag:IsShown() and BankFrame:IsShown()) and (not self.Bank:IsShown()) and (not ReagentBankFrame:IsShown()) then
 		self:OpenAllBankBags()
 
 		return
 	end
 
-	if (self.Bag:IsShown() or self.Bank:IsShown()) then
+	if (not openonly) and (self.Bag:IsShown() or self.Bank:IsShown()) then
 		if MerchantFrame:IsVisible() or InboxFrame:IsVisible() then
 			return
 		end
@@ -1139,6 +1156,10 @@ function Bags:OnEvent(event, ...)
 
 		Bank:Show()
 		self:UpdateAllBankBags()
+	elseif (event == "SOULBIND_FORGE_INTERACTION_STARTED") then
+		self:OpenAllBags()
+	elseif (event == "SOULBIND_FORGE_INTERACTION_ENDED") then
+		self:CloseAllBags()
 	end
 end
 
@@ -1191,9 +1212,9 @@ function Bags:Enable()
 	function UpdateContainerFrameAnchors() end
 	function ToggleBag() ToggleAllBags() end
 	function ToggleBackpack() ToggleAllBags() end
-	function OpenAllBags() ToggleAllBags() end
-	function OpenBackpack() ToggleAllBags() end
-	function ToggleAllBags() self:ToggleBags() end
+	function OpenAllBags() ToggleAllBags(true) end
+	function OpenBackpack() ToggleAllBags(true) end
+	function ToggleAllBags(openonly) self:ToggleBags(openonly) end
 
 	-- Destroy bubbles help boxes
 	for i = 1, 13 do
@@ -1203,6 +1224,8 @@ function Bags:Enable()
 			HelpBox:Kill()
 		end
 	end
+	
+	OpenAllBagsMatchingContext = Noop
 	
 	-- Add Text Cooldowns Timer
 	--hooksecurefunc("ContainerFrame_UpdateCooldown", Bags.UpdateCooldown)
@@ -1218,6 +1241,8 @@ function Bags:Enable()
 	self:RegisterEvent("MAIL_CLOSED")
 	self:RegisterEvent("PLAYERREAGENTBANKSLOTS_CHANGED")
 	self:RegisterEvent("CURRENCY_DISPLAY_UPDATE")
+	self:RegisterEvent("SOULBIND_FORGE_INTERACTION_STARTED")
+	self:RegisterEvent("SOULBIND_FORGE_INTERACTION_ENDED")
 	self:SetScript("OnEvent", self.OnEvent)
 
 	for i = 1, 13 do
