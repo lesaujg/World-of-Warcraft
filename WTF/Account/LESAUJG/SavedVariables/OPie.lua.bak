@@ -11,13 +11,13 @@ OneRing_Config = {
 			["ClickActivation"] = true,
 			["Bindings"] = {
 				["RaidSymbols"] = false,
-				["Mounts"] = "ALT-M",
-				["Teleport"] = "ALT-Y",
-				["sefulItems"] = "ALT-E",
-				["Food"] = "ALT-F",
-				["WorldMarkers"] = "ALT-R",
-				["Vendor"] = "ALT-V",
 				["Pets"] = "ALT-W",
+				["sefulItems"] = "ALT-E",
+				["Teleport"] = "ALT-Y",
+				["WorldMarkers"] = "ALT-R",
+				["Food"] = "ALT-F",
+				["Vendor"] = "ALT-V",
+				["Mounts"] = "ALT-M",
 			},
 		},
 	},
@@ -44,10 +44,10 @@ OneRing_Config = {
 					["id"] = 83245,
 					["sliceToken"] = "ABueyhiySOp",
 				}, -- [5]
-				["limit"] = "Bracnar-SistersofElune",
+				["name"] = "Pets",
 				["save"] = true,
 				["hotkey"] = "ALT-W",
-				["name"] = "Pets",
+				["limit"] = "Bracnar-SistersofElune",
 			},
 			["Teleport"] = {
 				{
@@ -118,6 +118,71 @@ OneRing_Config = {
 				["name"] = "Teleport",
 				["save"] = true,
 			},
+			["sefulItems"] = {
+				{
+					"toy", -- [1]
+					40768, -- [2]
+					["sliceToken"] = "ABue2czclk1",
+				}, -- [1]
+				{
+					"toy", -- [1]
+					131900, -- [2]
+					["sliceToken"] = "ABue2czclkr",
+				}, -- [2]
+				{
+					"item", -- [1]
+					114943, -- [2]
+					["sliceToken"] = "ABue2mKEUVe",
+				}, -- [3]
+				{
+					"item", -- [1]
+					144341, -- [2]
+					["sliceToken"] = "ABueodD4zme",
+				}, -- [4]
+				{
+					"item", -- [1]
+					49040, -- [2]
+					["sliceToken"] = "ABuepmAOjSe",
+				}, -- [5]
+				{
+					"toy", -- [1]
+					156833, -- [2]
+					["sliceToken"] = "ABuekW6rpCe",
+				}, -- [6]
+				["limit"] = "Bracnar-SistersofElune",
+				["save"] = true,
+				["hotkey"] = "ALT-E",
+				["name"] = "Useful Items",
+			},
+			["Mounts"] = {
+				{
+					"mount", -- [1]
+					280, -- [2]
+					["sliceToken"] = "ABuejrS58lk",
+				}, -- [1]
+				{
+					"mount", -- [1]
+					460, -- [2]
+					["sliceToken"] = "ABuejrS58l4",
+				}, -- [2]
+				{
+					"mount", -- [1]
+					522, -- [2]
+					["sliceToken"] = "ABuejrS58lj",
+				}, -- [3]
+				{
+					"mount", -- [1]
+					382, -- [2]
+					["sliceToken"] = "ABuejrS58lh",
+				}, -- [4]
+				{
+					"mount", -- [1]
+					1039, -- [2]
+					["sliceToken"] = "ABuejgiJURt",
+				}, -- [5]
+				["name"] = "Mounts",
+				["save"] = true,
+			},
 			["Food"] = {
 				{
 					"item", -- [1]
@@ -152,73 +217,8 @@ OneRing_Config = {
 					["sliceToken"] = "ABuekN1Wpxl",
 				}, -- [6]
 				["save"] = true,
+				["limit"] = "Bracnar-SistersofElune",
 				["name"] = "Food",
-				["limit"] = "Bracnar-SistersofElune",
-			},
-			["Mounts"] = {
-				{
-					"mount", -- [1]
-					280, -- [2]
-					["sliceToken"] = "ABuejrS58lk",
-				}, -- [1]
-				{
-					"mount", -- [1]
-					460, -- [2]
-					["sliceToken"] = "ABuejrS58l4",
-				}, -- [2]
-				{
-					"mount", -- [1]
-					522, -- [2]
-					["sliceToken"] = "ABuejrS58lj",
-				}, -- [3]
-				{
-					"mount", -- [1]
-					382, -- [2]
-					["sliceToken"] = "ABuejrS58lh",
-				}, -- [4]
-				{
-					"mount", -- [1]
-					1039, -- [2]
-					["sliceToken"] = "ABuejgiJURt",
-				}, -- [5]
-				["name"] = "Mounts",
-				["save"] = true,
-			},
-			["sefulItems"] = {
-				{
-					"toy", -- [1]
-					40768, -- [2]
-					["sliceToken"] = "ABue2czclk1",
-				}, -- [1]
-				{
-					"toy", -- [1]
-					131900, -- [2]
-					["sliceToken"] = "ABue2czclkr",
-				}, -- [2]
-				{
-					"item", -- [1]
-					114943, -- [2]
-					["sliceToken"] = "ABue2mKEUVe",
-				}, -- [3]
-				{
-					"item", -- [1]
-					144341, -- [2]
-					["sliceToken"] = "ABueodD4zme",
-				}, -- [4]
-				{
-					"item", -- [1]
-					49040, -- [2]
-					["sliceToken"] = "ABuepmAOjSe",
-				}, -- [5]
-				{
-					"toy", -- [1]
-					156833, -- [2]
-					["sliceToken"] = "ABuekW6rpCe",
-				}, -- [6]
-				["name"] = "Useful Items",
-				["save"] = true,
-				["hotkey"] = "ALT-E",
-				["limit"] = "Bracnar-SistersofElune",
 			},
 			["Vendor"] = {
 				{
