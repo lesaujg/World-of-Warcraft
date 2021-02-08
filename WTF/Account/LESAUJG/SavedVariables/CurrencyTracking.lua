@@ -48,6 +48,8 @@ CurrencyTrackingDB = {
 		["Belrath - Sisters of Elune"] = {
 		},
 		["Bracnar - Sisters of Elune"] = {
+			["always_lock"] = true,
+			["show_money"] = false,
 			["point"] = {
 				"TOPRIGHT", -- [1]
 				nil, -- [2]
@@ -55,8 +57,6 @@ CurrencyTrackingDB = {
 				-46.94572830200195, -- [4]
 				-0.8889732956886292, -- [5]
 			},
-			["show_money"] = false,
-			["always_lock"] = true,
 			["currencies"] = {
 				[1155] = true,
 				[1813] = true,
