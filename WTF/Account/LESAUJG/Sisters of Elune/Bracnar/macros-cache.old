@@ -94,8 +94,3 @@ VER 3 0100000000000070 "Soulforge" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /castsequence [@cursor][]reset=24 Tar Trap, Flare
 END
-VER 3 0100000000000075 "xx_Pet2" "INV_MISC_QUESTIONMARK"
-/cast [button:2, nopet] Call Pet 5
-/cast [@pet,btn:2,exists,nodead] Dismiss Pet
-/cast [nopet][target=pet, dead] Revive Pet; Mend Pet
-END

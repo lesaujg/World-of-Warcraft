@@ -25,24 +25,24 @@ OneRing_Config = {
 		["RingKeeper"] = {
 			["Pets"] = {
 				{
-					["id"] = 883,
 					["sliceToken"] = "ABueyhiySOd",
+					["id"] = 883,
 				}, -- [1]
 				{
-					["id"] = 83242,
 					["sliceToken"] = "ABueyhiySO3",
+					["id"] = 83242,
 				}, -- [2]
 				{
-					["id"] = 83243,
 					["sliceToken"] = "ABueyhiySOs",
+					["id"] = 83243,
 				}, -- [3]
 				{
-					["id"] = 83244,
 					["sliceToken"] = "ABueyhiySOa",
+					["id"] = 83244,
 				}, -- [4]
 				{
-					["id"] = 83245,
 					["sliceToken"] = "ABueyhiySOp",
+					["id"] = 83245,
 				}, -- [5]
 				["limit"] = "Bracnar-SistersofElune",
 				["save"] = true,
@@ -137,22 +137,22 @@ OneRing_Config = {
 				{
 					"item", -- [1]
 					172049, -- [2]
-					["show"] = "[spec:255/253] hide;",
 					["sliceToken"] = "ABuekN1Wpxj",
+					["show"] = "[spec:255/253] hide;",
 				}, -- [4]
 				{
 					"item", -- [1]
 					172051, -- [2]
-					["show"] = "[spec:255/254] hide;",
 					["sliceToken"] = "ABuekN1Wpxh",
+					["show"] = "[spec:255/254] hide;",
 				}, -- [5]
 				{
 					"item", -- [1]
 					171270, -- [2]
 					["sliceToken"] = "ABuekN1Wpxl",
 				}, -- [6]
-				["save"] = true,
 				["name"] = "Food",
+				["save"] = true,
 				["limit"] = "Bracnar-SistersofElune",
 			},
 			["Mounts"] = {
@@ -215,10 +215,10 @@ OneRing_Config = {
 					156833, -- [2]
 					["sliceToken"] = "ABuekW6rpCe",
 				}, -- [6]
-				["limit"] = "Bracnar-SistersofElune",
+				["name"] = "Useful Items",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Useful Items",
+				["limit"] = "Bracnar-SistersofElune",
 			},
 			["Vendor"] = {
 				{
@@ -241,8 +241,8 @@ OneRing_Config = {
 					49040, -- [2]
 					["sliceToken"] = "ABue3IpvlVi",
 				}, -- [4]
-				["save"] = true,
 				["name"] = "Vendor",
+				["save"] = true,
 				["limit"] = "Bracnar-SistersofElune",
 			},
 			["OPieFlagStore"] = {
