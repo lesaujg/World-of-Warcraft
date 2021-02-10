@@ -16,12 +16,12 @@ HandyNotes_BattleForAzerothDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["icon_display_misc_nazj"] = false,
-			["icon_display_pet_battles"] = false,
 			["icon_display_cats_nazj"] = false,
+			["icon_display_misc_nazj"] = false,
 			["icon_display_slimes_nazj"] = false,
 			["icon_display_rares"] = false,
 			["icon_display_treasures"] = false,
+			["icon_display_pet_battles"] = false,
 		},
 	},
 }

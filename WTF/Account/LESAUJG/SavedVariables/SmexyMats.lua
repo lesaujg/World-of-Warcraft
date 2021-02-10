@@ -32,8 +32,6 @@ SmexyMatsDB = {
 				["Blacksmithing"] = {
 				},
 				["Skinning"] = {
-					["Leanara"] = {
-					},
 				},
 				["Fishing"] = {
 				},
@@ -52,8 +50,6 @@ SmexyMatsDB = {
 				["Engineering"] = {
 				},
 				["Leatherworking"] = {
-					["Leanara"] = {
-					},
 				},
 				["Herbalism"] = {
 				},

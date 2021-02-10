@@ -1,11 +1,14 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0413,
+	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
-			["ID"] = 183001,
-			["Level"] = 213,
-			["Link"] = "|cffa335ee|Hitem:183001::::::::60:254::5:5:7188:6652:7194:1485:6646:1:28:752:::|h[Helm of Insatiable Appetite]|h|r",
+			["ID"] = 178738,
+			["Level"] = 220,
+			["Link"] = "|cffa335ee|Hitem:178738::::::::60:254::35:6:7209:42:7193:1501:5878:6646::::|h[Rattling Deadeye Hood]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 183040,
@@ -83,10 +86,6 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:180071::::::::60:254::82:4:7189:6652:1505:6646:1:28:807:::|h[Shrieking Sinseeker]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
-	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -123,6 +122,7 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",

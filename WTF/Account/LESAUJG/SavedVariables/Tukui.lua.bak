@@ -2721,19 +2721,19 @@ TukuiSettings = {
 }
 TukuiGold = {
 	["Sisters of Elune"] = {
-		["Leanara"] = 58739860,
-		["Ghiaccioli"] = 52124370,
+		["Leanara"] = 59582664,
+		["Ghiaccioli"] = 53068234,
 		["Mandelbrot"] = 7212410,
-		["Torinar"] = 63792810,
-		["Orig"] = 64131901,
-		["Uldaris"] = 106730849,
-		["Herbinator"] = 4272865,
-		["Bracnar"] = 451675028,
-		["Galinar"] = 69825947,
-		["Torinara"] = 63681243,
-		["Palani"] = 56611442,
-		["Belrath"] = 55192801,
-		["Clothgar"] = 19541626767,
+		["Torinar"] = 64647550,
+		["Orig"] = 65010647,
+		["Uldaris"] = 107646030,
+		["Herbinator"] = 4272535,
+		["Bracnar"] = 402409907,
+		["Galinar"] = 70313987,
+		["Belrath"] = 56071399,
+		["Palani"] = 57821205,
+		["Torinara"] = 65469811,
+		["Clothgar"] = 21099776430,
 	},
 }
 TukuiSettingsPerCharacter = {
@@ -2879,11 +2879,11 @@ TukuiSettingsPerCharacter = {
 				["BarPetButtonsPerRow"] = 1,
 				["RightBar"] = true,
 			},
-			["Raid"] = {
-				["WidthSize"] = 80,
-			},
 			["Bags"] = {
 				["Enable"] = false,
+			},
+			["Raid"] = {
+				["WidthSize"] = 80,
 			},
 			["Party"] = {
 				["Enable"] = true,
@@ -2895,40 +2895,6 @@ TukuiSettingsPerCharacter = {
 			},
 		},
 		["Galinar"] = {
-			["Bags"] = {
-				["Enable"] = false,
-			},
-			["Misc"] = {
-				["WorldMapEnable"] = false,
-			},
-			["General"] = {
-				["UIScale"] = 0.6,
-				["Themes"] = "Tukz",
-			},
-			["ActionBars"] = {
-				["HotKey"] = true,
-				["LeftBar"] = true,
-				["RightBar"] = true,
-			},
-		},
-		["Torinara"] = {
-			["Bags"] = {
-				["Enable"] = false,
-			},
-			["Misc"] = {
-				["WorldMapEnable"] = false,
-			},
-			["General"] = {
-				["UIScale"] = 0.6,
-				["Themes"] = "Tukz",
-			},
-			["ActionBars"] = {
-				["HotKey"] = true,
-				["LeftBar"] = true,
-				["RightBar"] = true,
-			},
-		},
-		["Palani"] = {
 			["Bags"] = {
 				["Enable"] = false,
 			},
@@ -2965,6 +2931,40 @@ TukuiSettingsPerCharacter = {
 				["Bubbles"] = "None",
 			},
 		},
+		["Palani"] = {
+			["Bags"] = {
+				["Enable"] = false,
+			},
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
+			["General"] = {
+				["UIScale"] = 0.6,
+				["Themes"] = "Tukz",
+			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+				["LeftBar"] = true,
+				["RightBar"] = true,
+			},
+		},
+		["Torinara"] = {
+			["Bags"] = {
+				["Enable"] = false,
+			},
+			["Misc"] = {
+				["WorldMapEnable"] = false,
+			},
+			["General"] = {
+				["UIScale"] = 0.6,
+				["Themes"] = "Tukz",
+			},
+			["ActionBars"] = {
+				["HotKey"] = true,
+				["LeftBar"] = true,
+				["RightBar"] = true,
+			},
+		},
 		["Clothgar"] = {
 			["Bags"] = {
 				["Enable"] = false,
@@ -2986,6 +2986,2085 @@ TukuiSettingsPerCharacter = {
 }
 TukuiChatHistory = {
 	{
+		"ty for group", -- [1]
+		"Orelthel-MoonGuard", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Orelthel-MoonGuard", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		47, -- [11]
+		"Player-3675-089B9034", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1612964338,
+	}, -- [1]
+	{
+		"Thanks again!", -- [1]
+		"Everiana-Darkspear", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Everiana-Darkspear", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		45, -- [11]
+		"Player-120-07FA1D5C", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1612964337,
+	}, -- [2]
+	{
+		"ty!", -- [1]
+		"Niradrieth-Quel'Thalas", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Niradrieth-Quel'Thalas", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		44, -- [11]
+		"Player-1428-0A3B94E0", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1612964331,
+	}, -- [3]
+	{
+		"Lust Detector: Niradrieth's Hunter's Pet Used |cff71d5ff|Hspell:264667:0|h[Rabia primigenia]|h|rIncreased +30% Haste!", -- [1]
+		"Niradrieth-Quel'Thalas", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Niradrieth-Quel'Thalas", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		24, -- [11]
+		"Player-1428-0A3B94E0", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1612964294,
+	}, -- [4]
+	{
+		"All here, good luck, lets kill it", -- [1]
+		"Galinar-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Galinar-SistersofElune", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		23, -- [11]
+		"Player-125-09A1A09F", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_PARTY_LEADER",
+		[31] = 1612964277,
+	}, -- [5]
+	{
+		"was in loading screen for liek 5 mins", -- [1]
+		"Muffinmcgee-Frostmourne", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Muffinmcgee-Frostmourne", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		22, -- [11]
+		"Player-3725-0B3801A3", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_PARTY",
+		[31] = 1612964252,
+	}, -- [6]
+	{
+		"my client decides to fuck up when soundless is up", -- [1]
+		"Muffinmcgee-Frostmourne", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Muffinmcgee-Frostmourne", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		21, -- [11]
+		"Player-3725-0B3801A3", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_PARTY",
+		[31] = 1612964239,
+	}, -- [7]
+	{
+		"for some fucking reason", -- [1]
+		"Muffinmcgee-Frostmourne", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Muffinmcgee-Frostmourne", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		20, -- [11]
+		"Player-3725-0B3801A3", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_PARTY",
+		[31] = 1612964230,
+	}, -- [8]
+	{
+		"Cool, we'll wait", -- [1]
+		"Galinar-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Galinar-SistersofElune", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		19, -- [11]
+		"Player-125-09A1A09F", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_PARTY_LEADER",
+		[31] = 1612964215,
+	}, -- [9]
+	{
+		"omw", -- [1]
+		"Muffinmcgee-Frostmourne", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Muffinmcgee-Frostmourne", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		18, -- [11]
+		"Player-3725-0B3801A3", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_PARTY",
+		[31] = 1612964206,
+	}, -- [10]
+	{
+		"Muffin, did you already tag or are you on your way?", -- [1]
+		"Galinar-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Galinar-SistersofElune", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		17, -- [11]
+		"Player-125-09A1A09F", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_PARTY_LEADER",
+		[31] = 1612964194,
+	}, -- [11]
+	{
+		"omw, was in oribos", -- [1]
+		"Orelthel-MoonGuard", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Orelthel-MoonGuard", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		16, -- [11]
+		"Player-3675-089B9034", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1612964046,
+	}, -- [12]
+	{
+		"Joins are slow today lets give 3 more minutes", -- [1]
+		"Galinar-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Galinar-SistersofElune", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		15, -- [11]
+		"Player-125-09A1A09F", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_PARTY_LEADER",
+		[31] = 1612964043,
+	}, -- [13]
+	{
+		"Thanks for listing", -- [1]
+		"Everiana-Darkspear", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Everiana-Darkspear", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		14, -- [11]
+		"Player-120-07FA1D5C", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1612964034,
+	}, -- [14]
+	{
+		"Heya", -- [1]
+		"Everiana-Darkspear", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Everiana-Darkspear", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		13, -- [11]
+		"Player-120-07FA1D5C", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1612964025,
+	}, -- [15]
+	{
+		"You welcome", -- [1]
+		"Galinar-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Galinar-SistersofElune", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		7, -- [11]
+		"Player-125-09A1A09F", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_PARTY_LEADER",
+		[31] = 1612963983,
+	}, -- [16]
+	{
+		"Hey :) ty for posting!", -- [1]
+		"Niradrieth-Quel'Thalas", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Niradrieth-Quel'Thalas", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		6, -- [11]
+		"Player-1428-0A3B94E0", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_PARTY",
+		[31] = 1612963974,
+	}, -- [17]
+	{
+		"gotta turn wm on quick", -- [1]
+		"Notkrixen-Drak'Tharon", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Notkrixen-Drak'Tharon", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		3, -- [11]
+		"Player-127-08C70963", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_PARTY",
+		[31] = 1612963893,
+	}, -- [18]
+	{
+		"destro", -- [1]
+		"Jaxxon-BlackwaterRaiders", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		204, -- [11]
+		"Player-125-0803AA4E", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612918164,
+	}, -- [19]
+	{
+		"what spec are you ill look it up on icey veins", -- [1]
+		"Volan-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		191, -- [11]
+		"Player-125-09AC8239", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612918151,
+	}, -- [20]
+	{
+		"ive been running combustion engine and then switched it up for the wb and it seemed like not a good idea", -- [1]
+		"Jaxxon-BlackwaterRaiders", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		168, -- [11]
+		"Player-125-0803AA4E", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612918129,
+	}, -- [21]
+	{
+		"im tryong to decide between |cff71d5ff|Hconduit:212:4|h[Combusting Engine]|h|r and |cff71d5ff|Hconduit:211:4|h[Ashen Remains]|h|r", -- [1]
+		"Jaxxon-BlackwaterRaiders", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		141, -- [11]
+		"Player-125-0803AA4E", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612918095,
+	}, -- [22]
+	{
+		"cool.", -- [1]
+		"Sprockette-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		191, -- [11]
+		"Player-125-09AC7C3C", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612910616,
+	}, -- [23]
+	{
+		"i got this |cffa335ee|Hitem:178806::::::::60:267::35:6:7204:41:7193:1501:5868:6646::::|h[Contaminated Gauze Wristwraps]|h|r|cffa335ee|Hkeystone:180653:375:5:9:11:0:0|h[Keystone: Mists of Tirna Scithe (5)]|h|r", -- [1]
+		"Jaxxon-BlackwaterRaiders", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		190, -- [11]
+		"Player-125-0803AA4E", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612910593,
+	}, -- [24]
+	{
+		"ok be back later for raid ", -- [1]
+		"Deathhunter-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		188, -- [11]
+		"Player-125-09AA9E42", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612910566,
+	}, -- [25]
+	{
+		"I like it.", -- [1]
+		"Sprockette-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		175, -- [11]
+		"Player-125-09AC7C3C", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612910535,
+	}, -- [26]
+	{
+		"*screams*  *runs away*", -- [1]
+		"Sprockette-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		174, -- [11]
+		"Player-125-09AC7C3C", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612910522,
+	}, -- [27]
+	{
+		"cool name though!", -- [1]
+		"Jaxxon-BlackwaterRaiders", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		172, -- [11]
+		"Player-125-0803AA4E", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612910516,
+	}, -- [28]
+	{
+		"booooo", -- [1]
+		"Jaxxon-BlackwaterRaiders", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		167, -- [11]
+		"Player-125-0803AA4E", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612910508,
+	}, -- [29]
+	{
+		"Junk.  :-/", -- [1]
+		"Sprockette-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		164, -- [11]
+		"Player-125-09AC7C3C", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612910499,
+	}, -- [30]
+	{
+		"yep", -- [1]
+		"Deathhunter-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		159, -- [11]
+		"Player-125-09AA9E42", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612910472,
+	}, -- [31]
+	{
+		"vaults", -- [1]
+		"Jaxxon-BlackwaterRaiders", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		158, -- [11]
+		"Player-125-0803AA4E", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612910458,
+	}, -- [32]
+	{
+		"everyone get goostuff out of thier chests?", -- [1]
+		"Jaxxon-BlackwaterRaiders", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		157, -- [11]
+		"Player-125-0803AA4E", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612910452,
+	}, -- [33]
+	{
+		"howdy", -- [1]
+		"Deathhunter-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		156, -- [11]
+		"Player-125-09AA9E42", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612910436,
+	}, -- [34]
+	{
+		"greetings", -- [1]
+		"Joeknuckles-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		153, -- [11]
+		"Player-125-09AC8E24", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612910424,
+	}, -- [35]
+	{
+		"Hello", -- [1]
+		"Syiana-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		151, -- [11]
+		"Player-125-09A1610D", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612910414,
+	}, -- [36]
+	{
+		"hola amigos!", -- [1]
+		"Jaxxon-BlackwaterRaiders", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		150, -- [11]
+		"Player-125-0803AA4E", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612910402,
+	}, -- [37]
+	{
+		"Anyone for Maw weeklys?", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1355, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612896084,
+	}, -- [38]
+	{
+		"%s has earned the achievement |cffffff00|Hachievement:14895:Player-125-09AC21B9:1:2:9:21:4294967295:4294967295:4294967295:4294967295|h['Ghast Five]|h|r!", -- [1]
+		"Bronnan-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Bronnan-SistersofElune", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1353, -- [11]
+		"Player-125-09AC21B9", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		[31] = 1612896058,
+	}, -- [39]
+	{
+		"i got |cffa335ee|Hkeystone:180653:378:2:9:0:0:0|h[Keystone: Halls of Atonement (2)]|h|r", -- [1]
+		"Phrigias-BlackwaterRaiders", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1329, -- [11]
+		"Player-125-06B037D7", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612896006,
+	}, -- [40]
+	{
+		"ok ty", -- [1]
+		"Niallan-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1253, -- [11]
+		"Player-125-09A1C529", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612895711,
+	}, -- [41]
+	{
+		"Yes each week is a different one, randomly assigned", -- [1]
+		"Akibafaris-CenarionCircle", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1252, -- [11]
+		"Player-125-09A3FBB7", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612895705,
+	}, -- [42]
+	{
+		"1st time", -- [1]
+		"Niallan-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1251, -- [11]
+		"Player-125-09A1C529", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612895704,
+	}, -- [43]
+	{
+		"oh so i got a necrotic wake +3 key for the week. does it always change to a different dungeon?", -- [1]
+		"Niallan-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1250, -- [11]
+		"Player-125-09A1C529", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612895688,
+	}, -- [44]
+	{
+		"%s has earned the achievement |cffffff00|Hachievement:14677:Player-125-09ACC89B:1:2:9:21:4294967295:4294967295:4294967295:4294967295|h[Spiritual Observations]|h|r!", -- [1]
+		"Nieyanna-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Nieyanna-SistersofElune", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1249, -- [11]
+		"Player-125-09ACC89B", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		[31] = 1612895530,
+	}, -- [45]
+	{
+		"Well, that was over ten years ago.. lazy has kept me away from working out again", -- [1]
+		"Bronnan-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1247, -- [11]
+		"Player-125-09AC21B9", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612895101,
+	}, -- [46]
+	{
+		"My abs are a genetic issue :(", -- [1]
+		"Akibafaris-CenarionCircle", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1246, -- [11]
+		"Player-125-09A3FBB7", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612895095,
+	}, -- [47]
+	{
+		"Last call anyone for |cffffff00|Hquest:60437:2060|h[Challenges in Bastion]|h|r", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1232, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612895063,
+	}, -- [48]
+	{
+		"I did different work out for the different muscles. Sorry to hear Bronnan. At least you had a reason, i just got lazy", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1220, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612895041,
+	}, -- [49]
+	{
+		"I used to be quite fit... then I got in an accident at work and that went away", -- [1]
+		"Bronnan-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1198, -- [11]
+		"Player-125-09AC21B9", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894993,
+	}, -- [50]
+	{
+		"I did! over 30 minutes of ab workouts 6/7 days a week", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1186, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894968,
+	}, -- [51]
+	{
+		"Round is a shape", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1171, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894938,
+	}, -- [52]
+	{
+		"I've never had abs", -- [1]
+		"Akibafaris-CenarionCircle", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1168, -- [11]
+		"Player-125-09A3FBB7", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894935,
+	}, -- [53]
+	{
+		"I miss being in a shape other than oval.. <.<", -- [1]
+		"Bronnan-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1163, -- [11]
+		"Player-125-09AC21B9", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894925,
+	}, -- [54]
+	{
+		"Now i have a keg vs a 6 pack", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1161, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894923,
+	}, -- [55]
+	{
+		"hahahaha", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1152, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894905,
+	}, -- [56]
+	{
+		"I need to get back into working out. I miss my abs and \"guns\" lol", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1150, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894903,
+	}, -- [57]
+	{
+		"I didnt go out drinking last night LOL", -- [1]
+		"Akibafaris-CenarionCircle", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1145, -- [11]
+		"Player-125-09A3FBB7", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894893,
+	}, -- [58]
+	{
+		"Hows the leg? Didnt over do it at the gym today?", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1121, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894841,
+	}, -- [59]
+	{
+		"Congrats", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1106, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894812,
+	}, -- [60]
+	{
+		"i did hit 190 gs today", -- [1]
+		"Phrigias-BlackwaterRaiders", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1102, -- [11]
+		"Player-125-06B037D7", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894805,
+	}, -- [61]
+	{
+		"I have a friend of 22 years", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1097, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894798,
+	}, -- [62]
+	{
+		"Thats a long time", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1096, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894783,
+	}, -- [63]
+	{
+		"ive known him for...11 years", -- [1]
+		"Akibafaris-CenarionCircle", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1094, -- [11]
+		"Player-125-09A3FBB7", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894765,
+	}, -- [64]
+	{
+		"I guess i am not a friend then :( (LOL)", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1093, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894745,
+	}, -- [65]
+	{
+		"Eh, he's my only friend I let do that without smacking their ego down", -- [1]
+		"Akibafaris-CenarionCircle", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1090, -- [11]
+		"Player-125-09A3FBB7", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894707,
+	}, -- [66]
+	{
+		"anyone for |cffffff00|Hquest:60437:2060|h[Challenges in Bastion]|h|r", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1089, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894694,
+	}, -- [67]
+	{
+		"he only gives you sh**", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1087, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894658,
+	}, -- [68]
+	{
+		"I guess XD", -- [1]
+		"Akibafaris-CenarionCircle", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1086, -- [11]
+		"Player-125-09A3FBB7", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894645,
+	}, -- [69]
+	{
+		"nice*", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1084, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894636,
+	}, -- [70]
+	{
+		"Because he's nic to me?", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1083, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894632,
+	}, -- [71]
+	{
+		"why?", -- [1]
+		"Akibafaris-CenarionCircle", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1082, -- [11]
+		"Player-125-09A3FBB7", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894619,
+	}, -- [72]
+	{
+		"I'll ask nicely", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1081, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894612,
+	}, -- [73]
+	{
+		"no he looked it up for me XD", -- [1]
+		"Akibafaris-CenarionCircle", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1080, -- [11]
+		"Player-125-09A3FBB7", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894598,
+	}, -- [74]
+	{
+		"ok i'll pick is brain later", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1079, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894598,
+	}, -- [75]
+	{
+		"hahah", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1078, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894589,
+	}, -- [76]
+	{
+		"duggan", -- [1]
+		"Akibafaris-CenarionCircle", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1077, -- [11]
+		"Player-125-09A3FBB7", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894583,
+	}, -- [77]
+	{
+		"Where do you look that up?", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1076, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894578,
+	}, -- [78]
+	{
+		"I am almost haste capped because of vault today woo", -- [1]
+		"Akibafaris-CenarionCircle", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1074, -- [11]
+		"Player-125-09A3FBB7", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894555,
+	}, -- [79]
+	{
+		"finally got something good, my 213 from mythics was garbage", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1072, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894539,
+	}, -- [80]
+	{
+		"|cffa335ee|Hitem:178707::173128::::::60:253::23:5:6807:6652:6935:1498:6646:1:28:749:::|h[Trailspinner Pendant]|h|r to |cffa335ee|Hitem:178827::::::::60:253::35:6:7204:6652:1501:5868:6646:6935::::|h[Sin Stained Pendant]|h|r so boosted my ilvl by 2", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1071, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894521,
+	}, -- [81]
+	{
+		"nothing good", -- [1]
+		"Phrigias-BlackwaterRaiders", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1070, -- [11]
+		"Player-125-06B037D7", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894474,
+	}, -- [82]
+	{
+		"|cffa335ee|Hitem:178827::::::::60:253::35:6:7204:6652:1501:5868:6646:6935::::|h[Sin Stained Pendant]|h|r (i put the socket)", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1069, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894471,
+	}, -- [83]
+	{
+		"side grades!", -- [1]
+		"Akibafaris-CenarionCircle", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1068, -- [11]
+		"Player-125-09A3FBB7", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894454,
+	}, -- [84]
+	{
+		"Hello, anyone get anything good from their vault?", -- [1]
+		"Tyraria-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		1067, -- [11]
+		"Player-125-09A16037", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1612894432,
+	}, -- [85]
+	{
+		"%s has earned the achievement |cffffff00|Hachievement:14715:Player-125-06B037D7:1:2:9:21:4294967295:4294967295:4294967295:4294967295|h[Castle Nathria]|h|r!", -- [1]
+		"Phrigias-BlackwaterRaiders", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Phrigias-BlackwaterRaiders", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		877, -- [11]
+		"Player-125-06B037D7", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		[31] = 1612893143,
+	}, -- [86]
+	{
+		"good luck all", -- [1]
+		"Pangari-ShadowCouncil", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Pangari-ShadowCouncil", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		790, -- [11]
+		"Player-125-080402B8", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_INSTANCE_CHAT",
+		[31] = 1612890712,
+	}, -- [87]
+	{
+		"good luck all", -- [1]
+		"Kiyiya-ShadowCouncil", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Kiyiya-ShadowCouncil", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		530, -- [11]
+		"Player-125-07710805", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_INSTANCE_CHAT",
+		[31] = 1612889378,
+	}, -- [88]
+	{
+		"tyvm", -- [1]
+		"Demegorgon-BlackwaterRaiders", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Demegorgon-BlackwaterRaiders", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		286, -- [11]
+		"Player-125-08B9D2A1", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_INSTANCE_CHAT",
+		[31] = 1612887245,
+	}, -- [89]
+	{
+		"KIL", -- [1]
+		"Rhonas-WyrmrestAccord", -- [2]
+		"Orcish", -- [3]
+		"", -- [4]
+		"Rhonas-WyrmrestAccord", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		218, -- [11]
+		"Player-1171-08D2C344", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_YELL",
+		[31] = 1612886466,
+	}, -- [90]
+	{
+		"Makogg ", -- [1]
+		"Tree-WyrmrestAccord", -- [2]
+		"Orcish", -- [3]
+		"", -- [4]
+		"Tree-WyrmrestAccord", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		212, -- [11]
+		"Player-1171-069A422B", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_YELL",
+		[31] = 1612886456,
+	}, -- [91]
+	{
+		"here", -- [1]
+		"Everyone-Shadowmoon", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Everyone-Shadowmoon", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		178, -- [11]
+		"Player-154-0B479159", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1612886394,
+	}, -- [92]
+	{
+		"i want my key", -- [1]
+		"Tinymech-MoonGuard", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Tinymech-MoonGuard", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		13, -- [11]
+		"Player-3675-08BF5B51", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1612885090,
+	}, -- [93]
+	{
+		"maza gi kazreth ", -- [1]
+		"Kaltrunk-WyrmrestAccord", -- [2]
+		"Orcish", -- [3]
+		"", -- [4]
+		"Kaltrunk-WyrmrestAccord", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		10, -- [11]
+		"Player-1171-0A4DB122", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1612885080,
+	}, -- [94]
+	{
+		"well that is suspicious ", -- [1]
+		"Tinymech-MoonGuard", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Tinymech-MoonGuard", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		9, -- [11]
+		"Player-3675-08BF5B51", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1612885074,
+	}, -- [95]
+	{
+		"Slippy loves you all, good luck cuties.", -- [1]
+		"Slìppy-MoonGuard", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Slìppy-MoonGuard", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		8, -- [11]
+		"Player-3675-0869524A", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1612885036,
+	}, -- [96]
+	{
+		"AH PLS", -- [1]
+		"Dunnmor-MoonGuard", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Dunnmor-MoonGuard", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		6, -- [11]
+		"Player-3675-081A135E", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_YELL",
+		[31] = 1612884997,
+	}, -- [97]
+	{
+		"I got a fucking cloak, the one thing I needed most", -- [1]
+		"Slìppy-MoonGuard", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Slìppy-MoonGuard", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		5, -- [11]
+		"Player-3675-0869524A", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1612884986,
+	}, -- [98]
+	{
+		"YESS", -- [1]
+		"Slìppy-MoonGuard", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Slìppy-MoonGuard", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		4, -- [11]
+		"Player-3675-0869524A", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1612884979,
+	}, -- [99]
+	{
 		"%s has earned the achievement |cffffff00|Hachievement:14335:Player-125-09AC62FC:1:2:9:21:4294967295:4294967295:4294967295:4294967295|h[The Ascended]|h|r!", -- [1]
 		"Bracnar-SistersofElune", -- [2]
 		"", -- [3]
@@ -3005,7 +5084,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1612880869,
-	}, -- [1]
+	}, -- [100]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:14715:Player-125-09ACB577:1:2:9:21:4294967295:4294967295:4294967295:4294967295|h[Castle Nathria]|h|r!", -- [1]
 		"Pennie-SistersofElune", -- [2]
@@ -3026,7 +5105,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1612879552,
-	}, -- [2]
+	}, -- [101]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:545:Player-125-09AC35A8:1:2:9:21:4294967295:4294967295:4294967295:4294967295|h[Shave and a Haircut]|h|r!", -- [1]
 		"Delvalin-SistersofElune", -- [2]
@@ -3047,7 +5126,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1612878744,
-	}, -- [3]
+	}, -- [102]
 	{
 		"Locked to Darkvein, thnaks for group", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -3068,7 +5147,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1612843641,
-	}, -- [4]
+	}, -- [103]
 	{
 		"then move in the directions said in chat or in game", -- [1]
 		"Umbelia-Dalaran", -- [2]
@@ -3089,7 +5168,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1612843609,
-	}, -- [5]
+	}, -- [104]
 	{
 		"for you", -- [1]
 		"Umbelia-Dalaran", -- [2]
@@ -3110,7 +5189,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1612843599,
-	}, -- [6]
+	}, -- [105]
 	{
 		"there's a glowingt tile", -- [1]
 		"Umbelia-Dalaran", -- [2]
@@ -3131,7 +5210,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1612843597,
-	}, -- [7]
+	}, -- [106]
 	{
 		"i dont understand i need to write dance? lol", -- [1]
 		"Piscacha-Ragnaros", -- [2]
@@ -3152,7 +5231,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1612843584,
-	}, -- [8]
+	}, -- [107]
 	{
 		"Interrupted Baroness Frieda's |cff71d5ff|Hspell:337110:0|h[Dreadbolt Volley]|h|r!", -- [1]
 		"Boarbaris-Dalaran", -- [2]
@@ -3173,7 +5252,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_PARTY",
 		[31] = 1612843473,
-	}, -- [9]
+	}, -- [108]
 	{
 		"Interrupted Baroness Frieda's |cff71d5ff|Hspell:337110:0|h[Dreadbolt Volley]|h|r!", -- [1]
 		"Boarbaris-Dalaran", -- [2]
@@ -3194,7 +5273,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_PARTY",
 		[31] = 1612843380,
-	}, -- [10]
+	}, -- [109]
 	{
 		"{rt1}", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -3215,7 +5294,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843373,
-	}, -- [11]
+	}, -- [110]
 	{
 		"{rt2}", -- [1]
 		"Blunderbass-Dalaran", -- [2]
@@ -3236,7 +5315,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843373,
-	}, -- [12]
+	}, -- [111]
 	{
 		"{rt2}", -- [1]
 		"Argyiraabby-Dalaran", -- [2]
@@ -3257,7 +5336,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843373,
-	}, -- [13]
+	}, -- [112]
 	{
 		"{rt1}", -- [1]
 		"Imforty-Stormrage", -- [2]
@@ -3278,7 +5357,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843373,
-	}, -- [14]
+	}, -- [113]
 	{
 		"{rt1}", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -3299,7 +5378,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843371,
-	}, -- [15]
+	}, -- [114]
 	{
 		"{rt2}", -- [1]
 		"Blunderbass-Dalaran", -- [2]
@@ -3320,7 +5399,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843371,
-	}, -- [16]
+	}, -- [115]
 	{
 		"{rt2}", -- [1]
 		"Argyiraabby-Dalaran", -- [2]
@@ -3341,7 +5420,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843371,
-	}, -- [17]
+	}, -- [116]
 	{
 		"{rt1}", -- [1]
 		"Imforty-Stormrage", -- [2]
@@ -3362,7 +5441,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843371,
-	}, -- [18]
+	}, -- [117]
 	{
 		"{rt1}", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -3383,7 +5462,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843369,
-	}, -- [19]
+	}, -- [118]
 	{
 		"{rt2}", -- [1]
 		"Blunderbass-Dalaran", -- [2]
@@ -3404,7 +5483,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843369,
-	}, -- [20]
+	}, -- [119]
 	{
 		"{rt2}", -- [1]
 		"Argyiraabby-Dalaran", -- [2]
@@ -3425,7 +5504,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843369,
-	}, -- [21]
+	}, -- [120]
 	{
 		"{rt1}", -- [1]
 		"Imforty-Stormrage", -- [2]
@@ -3446,7 +5525,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843369,
-	}, -- [22]
+	}, -- [121]
 	{
 		"lol", -- [1]
 		"Piscacha-Ragnaros", -- [2]
@@ -3467,7 +5546,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1612843354,
-	}, -- [23]
+	}, -- [122]
 	{
 		"Interrupted Baroness Frieda's |cff71d5ff|Hspell:337110:0|h[Dreadbolt Volley]|h|r!", -- [1]
 		"Boarbaris-Dalaran", -- [2]
@@ -3488,7 +5567,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_PARTY",
 		[31] = 1612843309,
-	}, -- [24]
+	}, -- [123]
 	{
 		"{rt2}", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -3509,7 +5588,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843267,
-	}, -- [25]
+	}, -- [124]
 	{
 		"{rt1}", -- [1]
 		"Danby-Dalaran", -- [2]
@@ -3530,7 +5609,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843267,
-	}, -- [26]
+	}, -- [125]
 	{
 		"{rt1}", -- [1]
 		"Argyiraabby-Dalaran", -- [2]
@@ -3551,7 +5630,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843267,
-	}, -- [27]
+	}, -- [126]
 	{
 		"{rt2}", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -3572,7 +5651,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843265,
-	}, -- [28]
+	}, -- [127]
 	{
 		"{rt1}", -- [1]
 		"Danby-Dalaran", -- [2]
@@ -3593,7 +5672,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843265,
-	}, -- [29]
+	}, -- [128]
 	{
 		"{rt1}", -- [1]
 		"Argyiraabby-Dalaran", -- [2]
@@ -3614,7 +5693,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843265,
-	}, -- [30]
+	}, -- [129]
 	{
 		"{rt2}", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -3635,7 +5714,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843263,
-	}, -- [31]
+	}, -- [130]
 	{
 		"{rt1}", -- [1]
 		"Argyiraabby-Dalaran", -- [2]
@@ -3656,7 +5735,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843263,
-	}, -- [32]
+	}, -- [131]
 	{
 		"{rt1}", -- [1]
 		"Danby-Dalaran", -- [2]
@@ -3677,7 +5756,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843263,
-	}, -- [33]
+	}, -- [132]
 	{
 		"{rt3}", -- [1]
 		"Boarbaris-Dalaran", -- [2]
@@ -3698,7 +5777,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843247,
-	}, -- [34]
+	}, -- [133]
 	{
 		"{rt3}", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -3719,7 +5798,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843247,
-	}, -- [35]
+	}, -- [134]
 	{
 		"{rt1}", -- [1]
 		"Blunderbass-Dalaran", -- [2]
@@ -3740,7 +5819,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843247,
-	}, -- [36]
+	}, -- [135]
 	{
 		"{rt2}", -- [1]
 		"Danby-Dalaran", -- [2]
@@ -3761,7 +5840,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843247,
-	}, -- [37]
+	}, -- [136]
 	{
 		"{rt2}", -- [1]
 		"Totemsahoy-Dalaran", -- [2]
@@ -3782,7 +5861,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843247,
-	}, -- [38]
+	}, -- [137]
 	{
 		"{rt3}", -- [1]
 		"Boarbaris-Dalaran", -- [2]
@@ -3803,7 +5882,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843245,
-	}, -- [39]
+	}, -- [138]
 	{
 		"{rt3}", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -3824,7 +5903,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843245,
-	}, -- [40]
+	}, -- [139]
 	{
 		"{rt2}", -- [1]
 		"Danby-Dalaran", -- [2]
@@ -3845,7 +5924,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843245,
-	}, -- [41]
+	}, -- [140]
 	{
 		"{rt1}", -- [1]
 		"Blunderbass-Dalaran", -- [2]
@@ -3866,7 +5945,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843245,
-	}, -- [42]
+	}, -- [141]
 	{
 		"{rt2}", -- [1]
 		"Totemsahoy-Dalaran", -- [2]
@@ -3887,7 +5966,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843245,
-	}, -- [43]
+	}, -- [142]
 	{
 		"{rt3}", -- [1]
 		"Boarbaris-Dalaran", -- [2]
@@ -3908,7 +5987,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843243,
-	}, -- [44]
+	}, -- [143]
 	{
 		"{rt3}", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -3929,7 +6008,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843243,
-	}, -- [45]
+	}, -- [144]
 	{
 		"{rt1}", -- [1]
 		"Blunderbass-Dalaran", -- [2]
@@ -3950,7 +6029,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843243,
-	}, -- [46]
+	}, -- [145]
 	{
 		"{rt2}", -- [1]
 		"Danby-Dalaran", -- [2]
@@ -3971,7 +6050,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843243,
-	}, -- [47]
+	}, -- [146]
 	{
 		"{rt2}", -- [1]
 		"Totemsahoy-Dalaran", -- [2]
@@ -3992,7 +6071,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843243,
-	}, -- [48]
+	}, -- [147]
 	{
 		"{rt2}", -- [1]
 		"Boarbaris-Dalaran", -- [2]
@@ -4013,7 +6092,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843195,
-	}, -- [49]
+	}, -- [148]
 	{
 		"{rt1}", -- [1]
 		"Blunderbass-Dalaran", -- [2]
@@ -4034,7 +6113,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843195,
-	}, -- [50]
+	}, -- [149]
 	{
 		"{rt1}", -- [1]
 		"Solmori-Dalaran", -- [2]
@@ -4055,7 +6134,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843195,
-	}, -- [51]
+	}, -- [150]
 	{
 		"{rt2}", -- [1]
 		"Imforty-Stormrage", -- [2]
@@ -4076,7 +6155,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843195,
-	}, -- [52]
+	}, -- [151]
 	{
 		"{rt2}", -- [1]
 		"Boarbaris-Dalaran", -- [2]
@@ -4097,7 +6176,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843193,
-	}, -- [53]
+	}, -- [152]
 	{
 		"{rt1}", -- [1]
 		"Blunderbass-Dalaran", -- [2]
@@ -4118,7 +6197,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843193,
-	}, -- [54]
+	}, -- [153]
 	{
 		"{rt1}", -- [1]
 		"Solmori-Dalaran", -- [2]
@@ -4139,7 +6218,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843193,
-	}, -- [55]
+	}, -- [154]
 	{
 		"{rt2}", -- [1]
 		"Imforty-Stormrage", -- [2]
@@ -4160,7 +6239,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843193,
-	}, -- [56]
+	}, -- [155]
 	{
 		"{rt2}", -- [1]
 		"Boarbaris-Dalaran", -- [2]
@@ -4181,7 +6260,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843191,
-	}, -- [57]
+	}, -- [156]
 	{
 		"{rt1}", -- [1]
 		"Blunderbass-Dalaran", -- [2]
@@ -4202,7 +6281,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843191,
-	}, -- [58]
+	}, -- [157]
 	{
 		"{rt1}", -- [1]
 		"Solmori-Dalaran", -- [2]
@@ -4223,7 +6302,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843191,
-	}, -- [59]
+	}, -- [158]
 	{
 		"{rt2}", -- [1]
 		"Imforty-Stormrage", -- [2]
@@ -4244,7 +6323,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843191,
-	}, -- [60]
+	}, -- [159]
 	{
 		"Interrupted Baroness Frieda's |cff71d5ff|Hspell:337110:0|h[Dreadbolt Volley]|h|r!", -- [1]
 		"Boarbaris-Dalaran", -- [2]
@@ -4265,7 +6344,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_PARTY",
 		[31] = 1612843132,
-	}, -- [61]
+	}, -- [160]
 	{
 		"{rt1}", -- [1]
 		"Lunastricker-Dalaran", -- [2]
@@ -4286,7 +6365,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_YELL",
 		[31] = 1612843107,
-	}, -- [62]
+	}, -- [161]
 	{
 		"{rt2}", -- [1]
 		"Boarbaris-Dalaran", -- [2]
@@ -4307,7 +6386,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843106,
-	}, -- [63]
+	}, -- [162]
 	{
 		"{rt1}", -- [1]
 		"Lunastricker-Dalaran", -- [2]
@@ -4328,7 +6407,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843106,
-	}, -- [64]
+	}, -- [163]
 	{
 		"{rt2}", -- [1]
 		"Solmori-Dalaran", -- [2]
@@ -4349,7 +6428,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843106,
-	}, -- [65]
+	}, -- [164]
 	{
 		"{rt1}", -- [1]
 		"Lunastricker-Dalaran", -- [2]
@@ -4370,7 +6449,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_YELL",
 		[31] = 1612843105,
-	}, -- [66]
+	}, -- [165]
 	{
 		"{rt2}", -- [1]
 		"Boarbaris-Dalaran", -- [2]
@@ -4391,7 +6470,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843104,
-	}, -- [67]
+	}, -- [166]
 	{
 		"{rt1}", -- [1]
 		"Lunastricker-Dalaran", -- [2]
@@ -4412,7 +6491,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843104,
-	}, -- [68]
+	}, -- [167]
 	{
 		"{rt2}", -- [1]
 		"Solmori-Dalaran", -- [2]
@@ -4433,7 +6512,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843104,
-	}, -- [69]
+	}, -- [168]
 	{
 		"{rt1}", -- [1]
 		"Lunastricker-Dalaran", -- [2]
@@ -4454,7 +6533,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_YELL",
 		[31] = 1612843104,
-	}, -- [70]
+	}, -- [169]
 	{
 		"{rt2}", -- [1]
 		"Boarbaris-Dalaran", -- [2]
@@ -4475,7 +6554,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843102,
-	}, -- [71]
+	}, -- [170]
 	{
 		"{rt1}", -- [1]
 		"Lunastricker-Dalaran", -- [2]
@@ -4496,7 +6575,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_YELL",
 		[31] = 1612843102,
-	}, -- [72]
+	}, -- [171]
 	{
 		"{rt1}", -- [1]
 		"Lunastricker-Dalaran", -- [2]
@@ -4517,7 +6596,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843102,
-	}, -- [73]
+	}, -- [172]
 	{
 		"{rt2}", -- [1]
 		"Solmori-Dalaran", -- [2]
@@ -4538,7 +6617,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612843102,
-	}, -- [74]
+	}, -- [173]
 	{
 		"more dancing ", -- [1]
 		"Qboon-Frostmourne", -- [2]
@@ -4559,7 +6638,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1612842995,
-	}, -- [75]
+	}, -- [174]
 	{
 		"1", -- [1]
 		"Blunderbass-Dalaran", -- [2]
@@ -4580,7 +6659,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1612842942,
-	}, -- [76]
+	}, -- [175]
 	{
 		"sing", -- [1]
 		"Lunastricker-Dalaran", -- [2]
@@ -4601,7 +6680,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1612842916,
-	}, -- [77]
+	}, -- [176]
 	{
 		"summon while jumping on disc", -- [1]
 		"Qboon-Frostmourne", -- [2]
@@ -4622,1706 +6701,5 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1612842886,
-	}, -- [78]
-	{
-		"Kill order will be NSF", -- [1]
-		"Umbelia-Dalaran", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Umbelia", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		100, -- [11]
-		"Player-3683-0AB0B33A", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID_WARNING",
-		[31] = 1612842877,
-	}, -- [79]
-	{
-		"i think we need 1 more hunter", -- [1]
-		"Qboon-Frostmourne", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Qboon-Frostmourne", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		99, -- [11]
-		"Player-3725-09E1ADB1", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID",
-		[31] = 1612842858,
-	}, -- [80]
-	{
-		"https://discord.gg/c3kR6DS", -- [1]
-		"Umbelia-Dalaran", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Umbelia", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		98, -- [11]
-		"Player-3683-0AB0B33A", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID_WARNING",
-		[31] = 1612842856,
-	}, -- [81]
-	{
-		"hey", -- [1]
-		"Umbelia-Dalaran", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Umbelia-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		97, -- [11]
-		"Player-3683-0AB0B33A", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID_LEADER",
-		[31] = 1612842855,
-	}, -- [82]
-	{
-		"Hi", -- [1]
-		"Bracnar-SistersofElune", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Bracnar-SistersofElune", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		96, -- [11]
-		"Player-125-09AC62FC", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID",
-		[31] = 1612842852,
-	}, -- [83]
-	{
-		"’s Hound Faefyre swivels his ears, trying to pinpoint an unusual sound.", -- [1]
-		"Kythaela-SistersofElune", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Kythaela-SistersofElune", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		91, -- [11]
-		"Player-125-09AB9B5B", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_EMOTE",
-		[31] = 1612842821,
-	}, -- [84]
-	{
-		"Thnaks for tries, gtg", -- [1]
-		"Bracnar-SistersofElune", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Bracnar-SistersofElune", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		958, -- [11]
-		"Player-125-09AC62FC", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID",
-		[31] = 1612838245,
-	}, -- [85]
-	{
-		"thank you", -- [1]
-		"Basar-Garithos", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Basar-Garithos", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		956, -- [11]
-		"Player-1138-05E74727", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID",
-		[31] = 1612838233,
-	}, -- [86]
-	{
-		"i g2g ", -- [1]
-		"Basar-Garithos", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Basar-Garithos", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		955, -- [11]
-		"Player-1138-05E74727", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID",
-		[31] = 1612838231,
-	}, -- [87]
-	{
-		"{rt2}", -- [1]
-		"Starrytime-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Starrytime-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		950, -- [11]
-		"Player-76-0B2B1E9D", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838204,
-	}, -- [88]
-	{
-		"{rt1}", -- [1]
-		"Biggä-Dalaran", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Biggä-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		949, -- [11]
-		"Player-3683-0ACAD506", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838204,
-	}, -- [89]
-	{
-		"{rt2}", -- [1]
-		"Iliddan-Proudmoore", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Iliddan-Proudmoore", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		948, -- [11]
-		"Player-5-0AAA8E8F", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838204,
-	}, -- [90]
-	{
-		"{rt2}", -- [1]
-		"Starrytime-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Starrytime-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		947, -- [11]
-		"Player-76-0B2B1E9D", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838202,
-	}, -- [91]
-	{
-		" zuQ ", -- [1]
-		"Noutha-Trollbane", -- [2]
-		"Shath'Yar", -- [3]
-		"", -- [4]
-		"Noutha-Trollbane", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		946, -- [11]
-		"Player-1175-0E2EDE51", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838202,
-	}, -- [92]
-	{
-		"{rt1}", -- [1]
-		"Biggä-Dalaran", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Biggä-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		945, -- [11]
-		"Player-3683-0ACAD506", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838202,
-	}, -- [93]
-	{
-		"{rt2}", -- [1]
-		"Iliddan-Proudmoore", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Iliddan-Proudmoore", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		944, -- [11]
-		"Player-5-0AAA8E8F", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838202,
-	}, -- [94]
-	{
-		" zuQ ", -- [1]
-		"Noutha-Trollbane", -- [2]
-		"Shath'Yar", -- [3]
-		"", -- [4]
-		"Noutha-Trollbane", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		943, -- [11]
-		"Player-1175-0E2EDE51", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838200,
-	}, -- [95]
-	{
-		"Details! Bracnar's Death: |cff71d5ff|Hspell:334909:0|h[Oppressive Atmosphere]|h|r: 2.2K |cff71d5ff|Hspell:334909:0|h[Oppressive Atmosphere]|h|r: 1.5K ", -- [1]
-		"Ruinley-Stormrage", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Ruinley-Stormrage", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		940, -- [11]
-		"Player-60-0C91481B", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID_LEADER",
-		[31] = 1612838171,
-	}, -- [96]
-	{
-		"anak!", -- [1]
-		"Ruinley-Stormrage", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Ruinley", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		935, -- [11]
-		"Player-60-0C91481B", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID_WARNING",
-		[31] = 1612838150,
-	}, -- [97]
-	{
-		"|cff71d5ff|Hspell:740:0|h[Tranquility]|h|r faded!", -- [1]
-		"Biggä-Dalaran", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Biggä-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		934, -- [11]
-		"Player-3683-0ACAD506", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1612838148,
-	}, -- [98]
-	{
-		"get on moon dps", -- [1]
-		"Ruinley-Stormrage", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Ruinley", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		932, -- [11]
-		"Player-60-0C91481B", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID_WARNING",
-		[31] = 1612838143,
-	}, -- [99]
-	{
-		"|cff71d5ff|Hspell:740:0|h[Tranquility]|h|r activated!", -- [1]
-		"Biggä-Dalaran", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Biggä-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		931, -- [11]
-		"Player-3683-0ACAD506", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1612838141,
-	}, -- [100]
-	{
-		"{rt1}", -- [1]
-		"Timbo-Zangarmarsh", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Timbo-Zangarmarsh", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		930, -- [11]
-		"Player-53-0CEA45EF", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1612838138,
-	}, -- [101]
-	{
-		"{rt1}", -- [1]
-		"Timbo-Zangarmarsh", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Timbo-Zangarmarsh", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		929, -- [11]
-		"Player-53-0CEA45EF", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1612838136,
-	}, -- [102]
-	{
-		"{rt2}", -- [1]
-		"Iliddan-Proudmoore", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Iliddan-Proudmoore", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		928, -- [11]
-		"Player-5-0AAA8E8F", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838136,
-	}, -- [103]
-	{
-		"{rt1}", -- [1]
-		"Timbo-Zangarmarsh", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Timbo-Zangarmarsh", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		927, -- [11]
-		"Player-53-0CEA45EF", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1612838135,
-	}, -- [104]
-	{
-		"Details! Sef's Death: |cff71d5ff|Hspell:334743:0|h[Dark Recital]|h|r: 10.2K |cff71d5ff|Hspell:334743:0|h[Dark Recital]|h|r: 9.9K ", -- [1]
-		"Ruinley-Stormrage", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Ruinley-Stormrage", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		926, -- [11]
-		"Player-60-0C91481B", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID_LEADER",
-		[31] = 1612838134,
-	}, -- [105]
-	{
-		"{rt3}", -- [1]
-		"Noutha-Trollbane", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Noutha-Trollbane", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		924, -- [11]
-		"Player-1175-0E2EDE51", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838134,
-	}, -- [106]
-	{
-		"{rt1}", -- [1]
-		"Nuckïnfuts-EchoIsles", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Nuckïnfuts-EchoIsles", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		923, -- [11]
-		"Player-115-0A5820B2", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838134,
-	}, -- [107]
-	{
-		"{rt2}", -- [1]
-		"Iliddan-Proudmoore", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Iliddan-Proudmoore", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		922, -- [11]
-		"Player-5-0AAA8E8F", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838134,
-	}, -- [108]
-	{
-		"{rt1}", -- [1]
-		"Timbo-Zangarmarsh", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Timbo-Zangarmarsh", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		921, -- [11]
-		"Player-53-0CEA45EF", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1612838133,
-	}, -- [109]
-	{
-		"{rt3}", -- [1]
-		"Noutha-Trollbane", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Noutha-Trollbane", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		920, -- [11]
-		"Player-1175-0E2EDE51", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838132,
-	}, -- [110]
-	{
-		"{rt1}", -- [1]
-		"Nuckïnfuts-EchoIsles", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Nuckïnfuts-EchoIsles", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		919, -- [11]
-		"Player-115-0A5820B2", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838132,
-	}, -- [111]
-	{
-		"{rt2}", -- [1]
-		"Iliddan-Proudmoore", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Iliddan-Proudmoore", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		918, -- [11]
-		"Player-5-0AAA8E8F", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838132,
-	}, -- [112]
-	{
-		"{rt1}", -- [1]
-		"Timbo-Zangarmarsh", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Timbo-Zangarmarsh", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		917, -- [11]
-		"Player-53-0CEA45EF", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1612838132,
-	}, -- [113]
-	{
-		"|cff71d5ff|Hspell:102342:0|h[Ironbark]|h|r on Ruinley ended!", -- [1]
-		"Biggä-Dalaran", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Biggä-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		915, -- [11]
-		"Player-3683-0ACAD506", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID",
-		[31] = 1612838118,
-	}, -- [114]
-	{
-		"WHERE are you going?", -- [1]
-		"Thebadm-Skywall", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Thebadm-Skywall", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		913, -- [11]
-		"Player-86-08F65DCB", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID",
-		[31] = 1612838106,
-	}, -- [115]
-	{
-		"|cff71d5ff|Hspell:102342:0|h[Ironbark]|h|r cast on Ruinley!", -- [1]
-		"Biggä-Dalaran", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Biggä-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		912, -- [11]
-		"Player-3683-0ACAD506", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID",
-		[31] = 1612838106,
-	}, -- [116]
-	{
-		"Successfully resurrected Skeexe!", -- [1]
-		"Biggä-Dalaran", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Biggä-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		911, -- [11]
-		"Player-3683-0ACAD506", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID",
-		[31] = 1612838104,
-	}, -- [117]
-	{
-		"Bruh", -- [1]
-		"Thebadm-Skywall", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Thebadm-Skywall", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		910, -- [11]
-		"Player-86-08F65DCB", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID",
-		[31] = 1612838103,
-	}, -- [118]
-	{
-		"Casting |cff71d5ff|Hspell:20484:0|h[Rebirth]|h|r on Skeexe!", -- [1]
-		"Biggä-Dalaran", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Biggä-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		909, -- [11]
-		"Player-3683-0ACAD506", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID",
-		[31] = 1612838103,
-	}, -- [119]
-	{
-		"|cff71d5ff|Hspell:337110:0|h[Salva de Setas Medonhas]|h|r interrompido!", -- [1]
-		"Ssimoes-Gallywix", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Ssimoes-Gallywix", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		908, -- [11]
-		"Player-3234-0E226A27", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838103,
-	}, -- [120]
-	{
-		"{rt3}", -- [1]
-		"Timbo-Zangarmarsh", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Timbo-Zangarmarsh", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		907, -- [11]
-		"Player-53-0CEA45EF", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1612838101,
-	}, -- [121]
-	{
-		"|cff71d5ff|Hspell:33891:0|h[Incarnation: Tree of Life]|h|r faded!", -- [1]
-		"Biggä-Dalaran", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Biggä-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		906, -- [11]
-		"Player-3683-0ACAD506", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID",
-		[31] = 1612838101,
-	}, -- [122]
-	{
-		"Details! Skeexe's Death: [Melee]: 6.8K [Melee]: 11.2K ", -- [1]
-		"Ruinley-Stormrage", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Ruinley-Stormrage", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		905, -- [11]
-		"Player-60-0C91481B", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID_LEADER",
-		[31] = 1612838101,
-	}, -- [123]
-	{
-		"Details! Tanksalad's Death: |cff71d5ff|Hspell:347425:0|h[Dark Recital]|h|r: 719 |cff71d5ff|Hspell:334909:0|h[Oppressive Atmosphere]|h|r: 2.4K ", -- [1]
-		"Ruinley-Stormrage", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Ruinley-Stormrage", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		903, -- [11]
-		"Player-60-0C91481B", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID_LEADER",
-		[31] = 1612838100,
-	}, -- [124]
-	{
-		"Details! Thebadm's Death: |cff71d5ff|Hspell:347425:0|h[Dark Recital]|h|r: 755 |cff71d5ff|Hspell:334743:0|h[Dark Recital]|h|r: 12.1K ", -- [1]
-		"Ruinley-Stormrage", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Ruinley-Stormrage", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		902, -- [11]
-		"Player-60-0C91481B", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID_LEADER",
-		[31] = 1612838099,
-	}, -- [125]
-	{
-		"{rt3}", -- [1]
-		"Timbo-Zangarmarsh", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Timbo-Zangarmarsh", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		901, -- [11]
-		"Player-53-0CEA45EF", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1612838099,
-	}, -- [126]
-	{
-		"{rt2}", -- [1]
-		"Bracnar-SistersofElune", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Bracnar-SistersofElune", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		900, -- [11]
-		"Player-125-09AC62FC", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838099,
-	}, -- [127]
-	{
-		"{rt3}", -- [1]
-		"Sef-Korialstrasz", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Sef-Korialstrasz", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		899, -- [11]
-		"Player-84-096456E4", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838099,
-	}, -- [128]
-	{
-		"{rt1}", -- [1]
-		"Tanksalad-Kil'jaeden", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Tanksalad-Kil'jaeden", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		898, -- [11]
-		"Player-9-0DDF2EDB", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838099,
-	}, -- [129]
-	{
-		"{rt1}", -- [1]
-		"Noutha-Trollbane", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Noutha-Trollbane", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		897, -- [11]
-		"Player-1175-0E2EDE51", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838099,
-	}, -- [130]
-	{
-		"{rt2}", -- [1]
-		"Thebadm-Skywall", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Thebadm-Skywall", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		896, -- [11]
-		"Player-86-08F65DCB", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838099,
-	}, -- [131]
-	{
-		"{rt3}", -- [1]
-		"Timbo-Zangarmarsh", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Timbo-Zangarmarsh", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		895, -- [11]
-		"Player-53-0CEA45EF", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1612838098,
-	}, -- [132]
-	{
-		"{rt2}", -- [1]
-		"Bracnar-SistersofElune", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Bracnar-SistersofElune", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		894, -- [11]
-		"Player-125-09AC62FC", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838097,
-	}, -- [133]
-	{
-		"{rt3}", -- [1]
-		"Sef-Korialstrasz", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Sef-Korialstrasz", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		893, -- [11]
-		"Player-84-096456E4", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838097,
-	}, -- [134]
-	{
-		"{rt1}", -- [1]
-		"Noutha-Trollbane", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Noutha-Trollbane", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		892, -- [11]
-		"Player-1175-0E2EDE51", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838097,
-	}, -- [135]
-	{
-		"{rt1}", -- [1]
-		"Tanksalad-Kil'jaeden", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Tanksalad-Kil'jaeden", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		891, -- [11]
-		"Player-9-0DDF2EDB", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838097,
-	}, -- [136]
-	{
-		"{rt2}", -- [1]
-		"Thebadm-Skywall", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Thebadm-Skywall", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		890, -- [11]
-		"Player-86-08F65DCB", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838097,
-	}, -- [137]
-	{
-		"{rt3}", -- [1]
-		"Timbo-Zangarmarsh", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Timbo-Zangarmarsh", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		889, -- [11]
-		"Player-53-0CEA45EF", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1612838096,
-	}, -- [138]
-	{
-		"{rt3}", -- [1]
-		"Sef-Korialstrasz", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Sef-Korialstrasz", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		888, -- [11]
-		"Player-84-096456E4", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838095,
-	}, -- [139]
-	{
-		"{rt2}", -- [1]
-		"Bracnar-SistersofElune", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Bracnar-SistersofElune", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		887, -- [11]
-		"Player-125-09AC62FC", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838095,
-	}, -- [140]
-	{
-		"{rt1}", -- [1]
-		"Noutha-Trollbane", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Noutha-Trollbane", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		886, -- [11]
-		"Player-1175-0E2EDE51", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838095,
-	}, -- [141]
-	{
-		"{rt2}", -- [1]
-		"Thebadm-Skywall", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Thebadm-Skywall", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		885, -- [11]
-		"Player-86-08F65DCB", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838095,
-	}, -- [142]
-	{
-		"{rt3}", -- [1]
-		"Timbo-Zangarmarsh", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Timbo-Zangarmarsh", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		884, -- [11]
-		"Player-53-0CEA45EF", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1612838095,
-	}, -- [143]
-	{
-		"|cff71d5ff|Hspell:33891:0|h[Incarnation: Tree of Life]|h|r activated!", -- [1]
-		"Biggä-Dalaran", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Biggä-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		880, -- [11]
-		"Player-3683-0ACAD506", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID",
-		[31] = 1612838071,
-	}, -- [144]
-	{
-		"{rt1}", -- [1]
-		"Bracnar-SistersofElune", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Bracnar-SistersofElune", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		879, -- [11]
-		"Player-125-09AC62FC", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838047,
-	}, -- [145]
-	{
-		"{rt3}", -- [1]
-		"Basar-Garithos", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Basar-Garithos", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		878, -- [11]
-		"Player-1138-05E74727", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838047,
-	}, -- [146]
-	{
-		"{rt2}", -- [1]
-		"Tanksalad-Kil'jaeden", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Tanksalad-Kil'jaeden", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		877, -- [11]
-		"Player-9-0DDF2EDB", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838047,
-	}, -- [147]
-	{
-		"{rt2}", -- [1]
-		"Nuckïnfuts-EchoIsles", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Nuckïnfuts-EchoIsles", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		876, -- [11]
-		"Player-115-0A5820B2", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838047,
-	}, -- [148]
-	{
-		"{rt3}", -- [1]
-		"Sef-Korialstrasz", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Sef-Korialstrasz", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		875, -- [11]
-		"Player-84-096456E4", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838047,
-	}, -- [149]
-	{
-		"{rt1}", -- [1]
-		"Anaks-Proudmoore", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Anaks-Proudmoore", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		874, -- [11]
-		"Player-5-0B12F17D", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838047,
-	}, -- [150]
-	{
-		"{rt1}", -- [1]
-		"Bracnar-SistersofElune", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Bracnar-SistersofElune", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		873, -- [11]
-		"Player-125-09AC62FC", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838045,
-	}, -- [151]
-	{
-		"{rt2}", -- [1]
-		"Tanksalad-Kil'jaeden", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Tanksalad-Kil'jaeden", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		872, -- [11]
-		"Player-9-0DDF2EDB", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838045,
-	}, -- [152]
-	{
-		"{rt3}", -- [1]
-		"Basar-Garithos", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Basar-Garithos", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		871, -- [11]
-		"Player-1138-05E74727", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838045,
-	}, -- [153]
-	{
-		"{rt2}", -- [1]
-		"Nuckïnfuts-EchoIsles", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Nuckïnfuts-EchoIsles", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		870, -- [11]
-		"Player-115-0A5820B2", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838045,
-	}, -- [154]
-	{
-		"{rt1}", -- [1]
-		"Anaks-Proudmoore", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Anaks-Proudmoore", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		869, -- [11]
-		"Player-5-0B12F17D", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838045,
-	}, -- [155]
-	{
-		"{rt3}", -- [1]
-		"Sef-Korialstrasz", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Sef-Korialstrasz", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		868, -- [11]
-		"Player-84-096456E4", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838045,
-	}, -- [156]
-	{
-		"{rt1}", -- [1]
-		"Bracnar-SistersofElune", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Bracnar-SistersofElune", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		867, -- [11]
-		"Player-125-09AC62FC", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838043,
-	}, -- [157]
-	{
-		"{rt3}", -- [1]
-		"Basar-Garithos", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Basar-Garithos", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		866, -- [11]
-		"Player-1138-05E74727", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838043,
-	}, -- [158]
-	{
-		"{rt2}", -- [1]
-		"Tanksalad-Kil'jaeden", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Tanksalad-Kil'jaeden", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		865, -- [11]
-		"Player-9-0DDF2EDB", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1612838043,
-	}, -- [159]
+	}, -- [177]
 }
