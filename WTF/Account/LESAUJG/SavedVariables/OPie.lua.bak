@@ -111,10 +111,15 @@ OneRing_Config = {
 					["sliceToken"] = "ABue4=RVkRe",
 				}, -- [12]
 				{
+					"toy", -- [1]
+					172924, -- [2]
+					["sliceToken"] = "ABuel3pDGme",
+				}, -- [13]
+				{
 					"item", -- [1]
 					141605, -- [2]
 					["sliceToken"] = "ABue4/ZDQye",
-				}, -- [13]
+				}, -- [14]
 				["name"] = "Teleport",
 				["save"] = true,
 			},

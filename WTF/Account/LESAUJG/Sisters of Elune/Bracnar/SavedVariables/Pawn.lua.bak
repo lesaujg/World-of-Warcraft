@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0413,
+	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 178738,
@@ -29,14 +32,14 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:184125::::::::60:253::81:4:6652:7194:1492:6646:1:28:2060:::|h[Servo-Chain Waistguard]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 184752,
-			["Level"] = 200,
-			["Link"] = "|cff0070dd|Hitem:184752::::::::60:253::14:1:7240:2:28:837:9:60:::|h[Gormscale Leggings]|h|r",
+			["ID"] = 182985,
+			["Level"] = 213,
+			["Link"] = "|cffa335ee|Hitem:182985::::::::60:253::5:4:7188:6652:1485:6646:1:28:752:::|h[Memento-Laden Cuisses]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 178796,
-			["Level"] = 220,
-			["Link"] = "|cffa335ee|Hitem:178796::::::::60:254::35:5:7209:6652:1501:5878:6646::::|h[Boots of Shuddering Matter]|h|r",
+			["ID"] = 172323,
+			["Level"] = 235,
+			["Link"] = "|cffff8000|Hitem:172323:6211:::::::60:253::63:5:7010:6647:6649:6758:1532::::|h[Rylakstalker's Treads]|h|r",
 		}, -- [8]
 		{
 			["ID"] = 182982,
@@ -83,10 +86,6 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:180071::::::::60:254::82:4:7189:6652:1505:6646:1:28:807:::|h[Shrieking Sinseeker]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
-	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -123,6 +122,7 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",

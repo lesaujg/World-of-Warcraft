@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.041,
+	["LastVersion"] = 2.0413,
 	["LastPlayerFullName"] = "Torinara-Sisters of Elune",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
@@ -57,10 +57,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:153685::168641::::::50:263::13:2:4928:3378::::|h[Owlseye Loop of the Aurora]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 128173,
-			["Level"] = 58,
+			["ID"] = 153685,
+			["Level"] = 69,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:128173::::::::50:263:::1:5805::::|h[Admiral Taylor's Loyalty Ring]|h|r",
+			["Link"] = "|cffa335ee|Hitem:153685::168641::::::50:264::13:2:4928:3378::::|h[Owlseye Loop of the Aurora]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 133597,
@@ -69,10 +69,10 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:133597::::::::50:263:::1:5817::::|h[Infallible Tracking Charm]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 158219,
-			["Level"] = 58,
+			["ID"] = 133597,
+			["Level"] = 60,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff1eff00|Hitem:158219::::::::50:263::11:1:4787:1:9:50:::|h[Petula's Locket]|h|r",
+			["Link"] = "|cff00ccff|Hitem:133597::::::::50:264:::1:5817::::|h[Infallible Tracking Charm]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122261,

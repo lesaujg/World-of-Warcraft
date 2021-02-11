@@ -25,24 +25,24 @@ OneRing_Config = {
 		["RingKeeper"] = {
 			["Pets"] = {
 				{
-					["sliceToken"] = "ABueyhiySOd",
 					["id"] = 883,
+					["sliceToken"] = "ABueyhiySOd",
 				}, -- [1]
 				{
-					["sliceToken"] = "ABueyhiySO3",
 					["id"] = 83242,
+					["sliceToken"] = "ABueyhiySO3",
 				}, -- [2]
 				{
-					["sliceToken"] = "ABueyhiySOs",
 					["id"] = 83243,
+					["sliceToken"] = "ABueyhiySOs",
 				}, -- [3]
 				{
-					["sliceToken"] = "ABueyhiySOa",
 					["id"] = 83244,
+					["sliceToken"] = "ABueyhiySOa",
 				}, -- [4]
 				{
-					["sliceToken"] = "ABueyhiySOp",
 					["id"] = 83245,
+					["sliceToken"] = "ABueyhiySOp",
 				}, -- [5]
 				["limit"] = "Bracnar-SistersofElune",
 				["save"] = true,
@@ -111,10 +111,15 @@ OneRing_Config = {
 					["sliceToken"] = "ABue4=RVkRe",
 				}, -- [12]
 				{
+					"toy", -- [1]
+					172924, -- [2]
+					["sliceToken"] = "ABuel3pDGme",
+				}, -- [13]
+				{
 					"item", -- [1]
 					141605, -- [2]
 					["sliceToken"] = "ABue4/ZDQye",
-				}, -- [13]
+				}, -- [14]
 				["name"] = "Teleport",
 				["save"] = true,
 			},
@@ -137,22 +142,22 @@ OneRing_Config = {
 				{
 					"item", -- [1]
 					172049, -- [2]
-					["sliceToken"] = "ABuekN1Wpxj",
 					["show"] = "[spec:255/253] hide;",
+					["sliceToken"] = "ABuekN1Wpxj",
 				}, -- [4]
 				{
 					"item", -- [1]
 					172051, -- [2]
-					["sliceToken"] = "ABuekN1Wpxh",
 					["show"] = "[spec:255/254] hide;",
+					["sliceToken"] = "ABuekN1Wpxh",
 				}, -- [5]
 				{
 					"item", -- [1]
 					171270, -- [2]
 					["sliceToken"] = "ABuekN1Wpxl",
 				}, -- [6]
-				["name"] = "Food",
 				["save"] = true,
+				["name"] = "Food",
 				["limit"] = "Bracnar-SistersofElune",
 			},
 			["Mounts"] = {
@@ -241,9 +246,9 @@ OneRing_Config = {
 					49040, -- [2]
 					["sliceToken"] = "ABue3IpvlVi",
 				}, -- [4]
-				["limit"] = "Bracnar-SistersofElune",
 				["save"] = true,
 				["name"] = "Vendor",
+				["limit"] = "Bracnar-SistersofElune",
 			},
 			["OPieFlagStore"] = {
 				["StoreVersion"] = 2,

@@ -1,9 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0411,
-	["LastPlayerFullName"] = "Palani-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
+	["LastVersion"] = 2.0413,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173433,
@@ -58,10 +55,10 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158161::::::::50:256::26:8:4803:6578:6579:6484:6457:6515:1492:4785::::|h[Spearfisher's Band]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 128169,
-			["Level"] = 58,
+			["ID"] = 158161,
+			["Level"] = 78,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:128169::::::::50:256:::1:5805::::|h[Signet of the Third Fleet]|h|r",
+			["Link"] = "|cff0070dd|Hitem:158161::::::::50:257::26:8:4803:6578:6579:6484:6457:6515:1492:4785::::|h[Spearfisher's Band]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 160263,
@@ -70,10 +67,10 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:160263::::::::50:256::27:3:4803:1490:4785::::|h[Snowpelt Mangler]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 122362,
-			["Level"] = 58,
+			["ID"] = 160263,
+			["Level"] = 76,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122362::::::::50:256:::1:5805::::|h[Discerning Eye of the Beast]|h|r",
+			["Link"] = "|cff0070dd|Hitem:160263::::::::50:257::27:3:4803:1490:4785::::|h[Snowpelt Mangler]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 160536,
@@ -86,6 +83,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163886::::::::50:256::30:2:1474:4786::::|h[7th Legionnaire's Stave]|h|r",
 		}, -- [16]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Palani-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
