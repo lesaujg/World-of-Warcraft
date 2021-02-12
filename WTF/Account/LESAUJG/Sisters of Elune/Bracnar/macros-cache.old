@@ -5,6 +5,7 @@ VER 3 0100000000000069 "_AspectTurtle" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0100000000000072 "_Barrage" "INV_Misc_QuestionMark"
 #showtooltip [talent:6/2] Barrage; [] Wild Spirits
+/click PetActionButton9
 /cast [@focus,help,nodead][@pet,nodead,exists] Misdirection
 /cast  [talent:6/2] Barrage; [@player] Wild Spirits
 END
@@ -67,6 +68,7 @@ END
 VER 3 010000000000005C "bm_Kill Command" "INV_Misc_QuestionMark"
 #showtooltip
 /dismount
+/cast [nopet] Call Pet 4
 /click PetActionButton9
 /petattack
 #/petautocastoff [group] Growl

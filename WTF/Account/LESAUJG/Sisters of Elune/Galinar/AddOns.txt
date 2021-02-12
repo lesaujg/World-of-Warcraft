@@ -6,7 +6,7 @@ BittensSpellFlash_Hunter: disabled
 _NPCScan: enabled
 _NPCScan.Overlay: disabled
 AchievementsReminder: disabled
-ActionBarSaver: enabled
+ActionBarSaver: disabled
 ArkInventory: disabled
 ArkInventoryConfig: disabled
 ArkInventoryRules: disabled
@@ -142,10 +142,10 @@ CrossRealmAssist: enabled
 Decursive: disabled
 Ketho_InstanceTimer: disabled
 SavedInstances: enabled
-TeleportCloak: enabled
+TeleportCloak: disabled
 TradeSkillMaster_Vendoring: disabled
-DBM-Nighthold: enabled
-DBM-EmeraldNightmare: enabled
+DBM-Nighthold: disabled
+DBM-EmeraldNightmare: disabled
 Grid2: disabled
 Grid2Options: disabled
 Grid2RaidDebuffs: disabled
@@ -154,7 +154,7 @@ Grid2RaidDebuffsOptions: disabled
 Grid2LDB: disabled
 AdvancedIconSelector: disabled
 IskarAssist: disabled
-DBM-BrokenIsles: enabled
+DBM-BrokenIsles: disabled
 DBM-Party-Legion: enabled
 !KalielsTracker: disabled
 WorldQuestTracker: disabled
@@ -211,3 +211,15 @@ DBM-Uldir: disabled
 SilverDragon: enabled
 HandyNotes_VisionsOfNZoth: enabled
 PetTracker: disabled
+CurrencyTracking: disabled
+WeakAurasArchive: disabled
+WeakAurasCompanion: disabled
+DBM-AntorusBurningThrone: disabled
+DBM-CastleNathria: disabled
+DBM-Party-Shadowlands: disabled
+DBM-TombofSargeras: disabled
+DBM-TrialofValor: disabled
+DBM-Shadowlands: disabled
+SharedMedia_Causese: disabled
+TellMeWhen: disabled
+TellMeWhen_Options: disabled

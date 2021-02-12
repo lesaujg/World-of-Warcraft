@@ -34,34 +34,40 @@ SmexyMatsDB = {
 				["Skinning"] = {
 				},
 				["Fishing"] = {
-					["Uldaris"] = {
+					["Bracnar"] = {
 					},
 				},
 				["Mining"] = {
-					["Uldaris"] = {
+					["Orig"] = {
 					},
 				},
 				["Jewelcrafting"] = {
 				},
 				["Cooking"] = {
-					["Uldaris"] = {
+					["Bracnar"] = {
 					},
 				},
 				["Herbalism"] = {
-					["Uldaris"] = {
+					["Orig"] = {
 					},
 				},
 				["Archaeology"] = {
+					["Bracnar"] = {
+					},
 				},
 				["Alchemy"] = {
 				},
 				["Engineering"] = {
+					["Bracnar"] = {
+					},
 				},
 				["Leatherworking"] = {
 				},
 				["Inscription"] = {
 				},
 				["Enchanting"] = {
+					["Bracnar"] = {
+					},
 				},
 			},
 			["Neutral"] = {

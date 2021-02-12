@@ -249,3 +249,4 @@ DBM-BfA: disabled
 DBM-Shadowlands: disabled
 SharedMedia_Causese: disabled
 DBM-CastleNathria: disabled
+CurrencyTracking: disabled

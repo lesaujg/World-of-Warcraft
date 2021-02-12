@@ -270,3 +270,8 @@ DBM-Party-Shadowlands: enabled
 DBM-Shadowlands: enabled
 SharedMedia_Causese: enabled
 HandyNotes_Shadowlands: enabled
+CovenantMissionHelper: enabled
+TellMeWhen: disabled
+TellMeWhen_Options: enabled
+WorldQuestTab: enabled
+DBM-BfA: enabled

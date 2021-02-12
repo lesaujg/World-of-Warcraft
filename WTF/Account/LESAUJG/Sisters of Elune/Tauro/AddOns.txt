@@ -25,7 +25,7 @@ RaidAchievement_WotlkHeroics: disabled
 RaidAchievement_OldModules: disabled
 SavedInstances: enabled
 Skada: disabled
-TeleportCloak: enabled
+TeleportCloak: disabled
 WeakAuras: disabled
 WeakAurasModelPaths: disabled
 WeakAurasOptions: disabled
@@ -94,3 +94,18 @@ HandyNotes_VisionsOfNZoth: enabled
 HandyNotes_DraenorTreasures: disabled
 Quartz: enabled
 TomTom: disabled
+CurrencyTracking: disabled
+WeakAurasArchive: disabled
+WeakAurasCompanion: disabled
+DBM-AntorusBurningThrone: disabled
+DBM-CastleNathria: disabled
+DBM-Party-Shadowlands: disabled
+DBM-EmeraldNightmare: disabled
+DBM-Nighthold: disabled
+DBM-TombofSargeras: disabled
+DBM-TrialofValor: disabled
+DBM-BrokenIsles: disabled
+DBM-Shadowlands: disabled
+SharedMedia_Causese: disabled
+TellMeWhen: disabled
+TellMeWhen_Options: disabled

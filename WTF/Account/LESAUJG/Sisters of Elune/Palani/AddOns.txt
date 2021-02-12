@@ -56,7 +56,7 @@ NPCScan: disabled
 OPie: enabled
 Pawn: enabled
 Skada: disabled
-TeleportCloak: enabled
+TeleportCloak: disabled
 SmexyMats: enabled
 DBM-Core: disabled
 DBM-DefaultSkin: disabled
@@ -109,3 +109,18 @@ SilverDragon: enabled
 HandyNotes_VisionsOfNZoth: enabled
 Quartz: enabled
 TomTom: disabled
+CurrencyTracking: disabled
+WeakAurasArchive: disabled
+WeakAurasCompanion: disabled
+DBM-AntorusBurningThrone: disabled
+DBM-CastleNathria: disabled
+DBM-Party-Shadowlands: disabled
+DBM-EmeraldNightmare: disabled
+DBM-Nighthold: disabled
+DBM-TombofSargeras: disabled
+DBM-TrialofValor: disabled
+DBM-BrokenIsles: disabled
+DBM-Shadowlands: disabled
+SharedMedia_Causese: disabled
+TellMeWhen: disabled
+TellMeWhen_Options: disabled

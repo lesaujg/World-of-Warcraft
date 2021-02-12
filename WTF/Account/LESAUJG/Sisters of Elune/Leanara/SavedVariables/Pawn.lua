@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0413,
+	["LastPlayerFullName"] = "Leanara-Sisters of Elune",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173842,
@@ -90,9 +93,6 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:158079::::::::50:577::28:5:4803:6516:6513:1480:4785::::|h[Stagheart Hatchet]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Leanara-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

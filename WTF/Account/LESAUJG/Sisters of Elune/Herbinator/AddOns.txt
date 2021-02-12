@@ -162,7 +162,7 @@ CrossRealmAssist: disabled
 Decursive: disabled
 Ketho_InstanceTimer: disabled
 SavedInstances: enabled
-TeleportCloak: enabled
+TeleportCloak: disabled
 TradeSkillMaster_Vendoring: disabled
 DBM-Nighthold: disabled
 DBM-EmeraldNightmare: disabled
@@ -237,3 +237,13 @@ DBM-EternalPalace: disabled
 DBM-Uldir: disabled
 SilverDragon: enabled
 HandyNotes_VisionsOfNZoth: enabled
+CurrencyTracking: disabled
+WeakAurasArchive: disabled
+WeakAurasCompanion: disabled
+DBM-AntorusBurningThrone: disabled
+DBM-CastleNathria: disabled
+DBM-Party-Shadowlands: disabled
+DBM-Shadowlands: disabled
+SharedMedia_Causese: disabled
+TellMeWhen: disabled
+TellMeWhen_Options: disabled
