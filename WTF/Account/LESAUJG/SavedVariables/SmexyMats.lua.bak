@@ -38,8 +38,6 @@ SmexyMatsDB = {
 					},
 				},
 				["Mining"] = {
-					["Orig"] = {
-					},
 				},
 				["Jewelcrafting"] = {
 				},
@@ -62,8 +60,6 @@ SmexyMatsDB = {
 				["Leatherworking"] = {
 				},
 				["Herbalism"] = {
-					["Orig"] = {
-					},
 				},
 				["Enchanting"] = {
 					["Bracnar"] = {

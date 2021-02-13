@@ -1,4 +1,11 @@
 Version: 1
+Frame: ScriptErrorsFrame
+FrameLevel: 0
+Anchor: CENTER
+X: 182
+Y: 9
+W: 384
+H: 260
 Frame: BaudManifestDisplay2
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -13,6 +20,13 @@ X: -9
 Y: 16
 W: 250
 H: 721
+Frame: AmrUiFrame1
+FrameLevel: 1
+Anchor: CENTER
+X: -42
+Y: -89
+W: 1000
+H: 700
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: RIGHT
