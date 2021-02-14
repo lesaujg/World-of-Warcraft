@@ -42,12 +42,16 @@ SmexyMatsDB = {
 				["Cooking"] = {
 				},
 				["Herbalism"] = {
+					["Clothgar"] = {
+					},
 				},
 				["Archaeology"] = {
 				},
 				["Alchemy"] = {
 				},
 				["Engineering"] = {
+					["Clothgar"] = {
+					},
 				},
 				["Leatherworking"] = {
 				},

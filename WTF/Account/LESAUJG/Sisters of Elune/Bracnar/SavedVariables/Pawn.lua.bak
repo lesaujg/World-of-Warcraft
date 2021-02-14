@@ -1,6 +1,9 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0413,
+	["LastVersion"] = 2.0414,
+	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 178738,
@@ -24,9 +27,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:182988::::::::60:253::5:4:7188:6652:1485:6646:1:28:2060:::|h[Master Huntsman's Bandolier]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 184125,
-			["Level"] = 207,
-			["Link"] = "|cffa335ee|Hitem:184125::::::::60:253::81:4:6652:7194:1492:6646:1:28:2060:::|h[Servo-Chain Waistguard]|h|r",
+			["ID"] = 182976,
+			["Level"] = 213,
+			["Link"] = "|cffa335ee|Hitem:182976::::::::60:254::5:5:7188:6652:7194:1485:6646:1:28:752:::|h[Double-Chained Utility Belt]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 182985,
@@ -83,10 +86,6 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:180071::::::::60:254::82:4:7189:6652:1505:6646:1:28:807:::|h[Shrieking Sinseeker]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
-	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -123,6 +122,7 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",
