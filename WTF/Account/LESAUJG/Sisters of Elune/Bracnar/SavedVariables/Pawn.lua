@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0414,
+	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 178738,
@@ -13,9 +16,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:183040::::::::60:254::5:5:7188:6652:7194:1485:6646::::|h[Charm of Eternal Winter]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 181914,
-			["Level"] = 197,
-			["Link"] = "|cffa335ee|Hitem:181914::::::::60:253::14:4:7248:7201:1514:6646:1:28:807:::|h[Runewarden's Spaulders]|h|r",
+			["ID"] = 183003,
+			["Level"] = 207,
+			["Link"] = "|cffa335ee|Hitem:183003::::::::60:254::82:4:7189:6652:1472:6646:1:28:751:::|h[Pauldrons of Fatal Finality]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
@@ -83,10 +86,6 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:180071::::::::60:254::82:4:7189:6652:1505:6646:1:28:807:::|h[Shrieking Sinseeker]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = false,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Bracnar-Sisters of Elune",
-	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -123,6 +122,7 @@ PawnOptions = {
 			["Name"] = "Titanstrike",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",
