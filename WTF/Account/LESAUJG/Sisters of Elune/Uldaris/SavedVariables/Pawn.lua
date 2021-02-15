@@ -70,10 +70,10 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:165660::::::::50:103::27:5:4803:4802:6513:1494:4785::::|h[Chargestone of the Thunder King's Court]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 169317,
-			["Level"] = 78,
+			["ID"] = 165660,
+			["Level"] = 80,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cffa335ee|Hitem:169317::::::::50:105::3:3:4798:1478:4786::::|h[Enthraller's Bindstone]|h|r",
+			["Link"] = "|cff0070dd|Hitem:165660::::::::50:104::27:5:4803:4802:6513:1494:4785::::|h[Chargestone of the Thunder King's Court]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 169223,
