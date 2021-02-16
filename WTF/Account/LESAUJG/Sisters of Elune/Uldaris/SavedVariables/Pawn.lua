@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0414,
-	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 158041,
@@ -86,6 +83,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:165627::::::::50:104::81:3:5844:1527:4786:1:28:1401:::|h[Sentinel's Halberd]|h|r",
 		}, -- [16]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Uldaris-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

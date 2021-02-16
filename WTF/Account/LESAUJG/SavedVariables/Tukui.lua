@@ -2726,13 +2726,13 @@ TukuiGold = {
 		["Mandelbrot"] = 7212410,
 		["Torinar"] = 66958810,
 		["Orig"] = 66930645,
-		["Clothgar"] = 20288424725,
+		["Clothgar"] = 20301902535,
 		["Herbinator"] = 4271485,
-		["Belrath"] = 57351470,
-		["Galinar"] = 72855272,
 		["Torinara"] = 66727391,
+		["Galinar"] = 72855272,
+		["Belrath"] = 57351470,
 		["Palani"] = 60363345,
-		["Bracnar"] = 304369148,
+		["Bracnar"] = 304513706,
 		["Uldaris"] = 110391403,
 	},
 }
@@ -2857,25 +2857,21 @@ TukuiSettingsPerCharacter = {
 				["LeftBar"] = true,
 			},
 		},
-		["Belrath"] = {
+		["Torinara"] = {
 			["Misc"] = {
 				["WorldMapEnable"] = false,
 			},
+			["Bags"] = {
+				["Enable"] = false,
+			},
 			["General"] = {
 				["Themes"] = "Tukz",
-				["UIScale"] = 0.5,
+				["UIScale"] = 0.6,
 			},
 			["ActionBars"] = {
 				["HotKey"] = true,
 				["RightBar"] = true,
 				["LeftBar"] = true,
-			},
-			["Bags"] = {
-				["Enable"] = false,
-			},
-			["Chat"] = {
-				["Bubbles"] = "None",
-				["LogMax"] = 10,
 			},
 		},
 		["Galinar"] = {
@@ -2895,21 +2891,25 @@ TukuiSettingsPerCharacter = {
 				["LeftBar"] = true,
 			},
 		},
-		["Torinara"] = {
+		["Belrath"] = {
 			["Misc"] = {
 				["WorldMapEnable"] = false,
 			},
-			["Bags"] = {
-				["Enable"] = false,
-			},
 			["General"] = {
 				["Themes"] = "Tukz",
-				["UIScale"] = 0.6,
+				["UIScale"] = 0.5,
 			},
 			["ActionBars"] = {
 				["HotKey"] = true,
 				["RightBar"] = true,
 				["LeftBar"] = true,
+			},
+			["Bags"] = {
+				["Enable"] = false,
+			},
+			["Chat"] = {
+				["Bubbles"] = "None",
+				["LogMax"] = 10,
 			},
 		},
 		["Palani"] = {
@@ -2953,11 +2953,11 @@ TukuiSettingsPerCharacter = {
 			["Party"] = {
 				["Enable"] = true,
 			},
-			["Raid"] = {
-				["WidthSize"] = 80,
-			},
 			["Bags"] = {
 				["Enable"] = false,
+			},
+			["Raid"] = {
+				["WidthSize"] = 80,
 			},
 			["Chat"] = {
 				["LogMax"] = 160,
@@ -2988,6 +2988,804 @@ TukuiSettingsPerCharacter = {
 }
 TukuiChatHistory = {
 	{
+		"thanks :)", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		203, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_INSTANCE_CHAT",
+		[31] = 1613431476,
+	}, -- [1]
+	{
+		"Wicked Rush on Dazzan", -- [1]
+		"Dazzan-Gorgonnash", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Dazzan-Gorgonnash", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		186, -- [11]
+		"Player-71-075A67E8", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613431436,
+	}, -- [2]
+	{
+		"Ssaggh Kyth za Ka'kar", -- [1]
+		"Bigfry-Alleria", -- [2]
+		"Shath'Yar", -- [3]
+		"", -- [4]
+		"Bigfry-Alleria", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		185, -- [11]
+		"Player-52-01487B32", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613431436,
+	}, -- [3]
+	{
+		"Wicked Rush on Azza", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		183, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613431420,
+	}, -- [4]
+	{
+		"Wicked Rush on Bracnar", -- [1]
+		"Bracnar-SistersofElune", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Bracnar-SistersofElune", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		182, -- [11]
+		"Player-125-09AC62FC", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613431420,
+	}, -- [5]
+	{
+		"Shining Radiance on Yangg", -- [1]
+		"Yangg-Azuremyst", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Yangg-Azuremyst", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		168, -- [11]
+		"Player-160-0723934B", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_YELL",
+		[31] = 1613431360,
+	}, -- [6]
+	{
+		"|cff71d5ff|Hspell:20484:0|h[Rebirth]|h|r -> Dazzan-Gorgonnash", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		166, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_INSTANCE_CHAT",
+		[31] = 1613431348,
+	}, -- [7]
+	{
+		"These halls will be your tomb!", -- [1]
+		"", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"General Kaal", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		164, -- [11]
+		nil, -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_YELL",
+		[31] = 1613431322,
+	}, -- [8]
+	{
+		"These halls will be your tomb!", -- [1]
+		"", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"General Kaal", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		163, -- [11]
+		nil, -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_YELL",
+		[31] = 1613431322,
+	}, -- [9]
+	{
+		"That prisoner belongs to the Master. You will not take it!", -- [1]
+		"", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"General Kaal", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		156, -- [11]
+		nil, -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_YELL",
+		[31] = 1613431283,
+	}, -- [10]
+	{
+		"That prisoner belongs to the Master. You will not take it!", -- [1]
+		"", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"General Kaal", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		155, -- [11]
+		nil, -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_YELL",
+		[31] = 1613431283,
+	}, -- [11]
+	{
+		"Guards! Slay them all!", -- [1]
+		"", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"General Kaal", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		150, -- [11]
+		nil, -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_YELL",
+		[31] = 1613431238,
+	}, -- [12]
+	{
+		"Guards! Slay them all!", -- [1]
+		"", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"General Kaal", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		149, -- [11]
+		nil, -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_YELL",
+		[31] = 1613431238,
+	}, -- [13]
+	{
+		"Casting |cff71d5ff|Hspell:77764:0|h[Stampeding Roar]|h|r !", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		148, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_INSTANCE_CHAT",
+		[31] = 1613431231,
+	}, -- [14]
+	{
+		"Interrupted |cff71d5ff|Hspell:321038:0|h[Wrack Soul]|h|r on Wicked Oppressor", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		136, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613431084,
+	}, -- [15]
+	{
+		"|cff71d5ff|Hspell:93985:0|h[Skull Bash]|h|r -> Wicked Oppressor |cff71d5ff|Hspell:321038:0|h[Wrack Soul]|h|r", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		135, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_INSTANCE_CHAT",
+		[31] = 1613431084,
+	}, -- [16]
+	{
+		"Casting |cff71d5ff|Hspell:77764:0|h[Stampeding Roar]|h|r !", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		134, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_INSTANCE_CHAT",
+		[31] = 1613431071,
+	}, -- [17]
+	{
+		"|cff0070dd|Hitem:178837::::::::60:104::2:4:6806:43:1485:4785:1:28:748:::|h[Sinsoaked Waders]|h|r?", -- [1]
+		"Yangg-Azuremyst", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Yangg-Azuremyst", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		133, -- [11]
+		"Player-160-0723934B", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		[31] = 1613431057,
+	}, -- [18]
+	{
+		"Castigate on Bracnar", -- [1]
+		"Bracnar-SistersofElune", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Bracnar-SistersofElune", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		128, -- [11]
+		"Player-125-09AC62FC", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613431028,
+	}, -- [19]
+	{
+		"Ga'halahs za Ka'kar", -- [1]
+		"Bigfry-Alleria", -- [2]
+		"Shath'Yar", -- [3]
+		"", -- [4]
+		"Bigfry-Alleria", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		126, -- [11]
+		"Player-52-01487B32", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613431007,
+	}, -- [20]
+	{
+		"|cff71d5ff|Hspell:93985:0|h[Skull Bash]|h|r -> Depths Warden |cff71d5ff|Hspell:335305:0|h[Barbed Shackles]|h|r", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		122, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_INSTANCE_CHAT",
+		[31] = 1613430988,
+	}, -- [21]
+	{
+		"Interrupted |cff71d5ff|Hspell:335305:0|h[Barbed Shackles]|h|r on Depths Warden", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		121, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613430988,
+	}, -- [22]
+	{
+		"Interrupted |cff71d5ff|Hspell:335305:0|h[Barbed Shackles]|h|r on Depths Warden", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		119, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613430889,
+	}, -- [23]
+	{
+		"|cff71d5ff|Hspell:93985:0|h[Skull Bash]|h|r -> Depths Warden |cff71d5ff|Hspell:335305:0|h[Barbed Shackles]|h|r", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		118, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_INSTANCE_CHAT",
+		[31] = 1613430889,
+	}, -- [24]
+	{
+		"Casting |cff71d5ff|Hspell:77764:0|h[Stampeding Roar]|h|r !", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		106, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_INSTANCE_CHAT",
+		[31] = 1613430820,
+	}, -- [25]
+	{
+		"|cff71d5ff|Hspell:93985:0|h[Skull Bash]|h|r -> Chamber Sentinel |cff71d5ff|Hspell:322433:0|h[Stoneskin]|h|r", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		99, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_INSTANCE_CHAT",
+		[31] = 1613430773,
+	}, -- [26]
+	{
+		"Interrupted |cff71d5ff|Hspell:322433:0|h[Stoneskin]|h|r on Chamber Sentinel", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		98, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613430773,
+	}, -- [27]
+	{
+		"1", -- [1]
+		"Dazzan-Gorgonnash", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Dazzan-Gorgonnash", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		94, -- [11]
+		"Player-71-075A67E8", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613430726,
+	}, -- [28]
+	{
+		"2", -- [1]
+		"Dazzan-Gorgonnash", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Dazzan-Gorgonnash", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		93, -- [11]
+		"Player-71-075A67E8", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613430725,
+	}, -- [29]
+	{
+		"3", -- [1]
+		"Dazzan-Gorgonnash", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Dazzan-Gorgonnash", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		92, -- [11]
+		"Player-71-075A67E8", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613430724,
+	}, -- [30]
+	{
+		"Juggernaut Rush on Dazzan", -- [1]
+		"Dazzan-Gorgonnash", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Dazzan-Gorgonnash", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		91, -- [11]
+		"Player-71-075A67E8", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613430723,
+	}, -- [31]
+	{
+		"|cff71d5ff|Hspell:93985:0|h[Skull Bash]|h|r -> Kryxis the Voracious |cff71d5ff|Hspell:319654:0|h[Hungering Drain]|h|r", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		88, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_INSTANCE_CHAT",
+		[31] = 1613430719,
+	}, -- [32]
+	{
+		"Interrupted |cff71d5ff|Hspell:319654:0|h[Hungering Drain]|h|r on Kryxis the Voracious", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		87, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613430719,
+	}, -- [33]
+	{
+		"|cff71d5ff|Hspell:93985:0|h[Skull Bash]|h|r -> Gluttonous Tick |cff71d5ff|Hspell:334653:0|h[Engorge]|h|r", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		76, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_INSTANCE_CHAT",
+		[31] = 1613430681,
+	}, -- [34]
+	{
+		"Interrupted |cff71d5ff|Hspell:334653:0|h[Engorge]|h|r on Gluttonous Tick", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		75, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613430681,
+	}, -- [35]
+	{
+		"|cff71d5ff|Hspell:93985:0|h[Skull Bash]|h|r -> Gluttonous Tick |cff71d5ff|Hspell:334653:0|h[Engorge]|h|r", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		73, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_INSTANCE_CHAT",
+		[31] = 1613430658,
+	}, -- [36]
+	{
+		"|cff71d5ff|Hspell:93985:0|h[Skull Bash]|h|r -> Gluttonous Tick |cff71d5ff|Hspell:334653:0|h[Engorge]|h|r", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		72, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_INSTANCE_CHAT",
+		[31] = 1613430637,
+	}, -- [37]
+	{
+		"Interrupted |cff71d5ff|Hspell:334653:0|h[Engorge]|h|r on Gluttonous Tick", -- [1]
+		"Azza-Caelestrasz", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Azza-Caelestrasz", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		71, -- [11]
+		"Player-3721-09F53A04", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613430637,
+	}, -- [38]
+	{
 		"TY FOR LISTING!", -- [1]
 		"Niradrieth-Quel'Thalas", -- [2]
 		"", -- [3]
@@ -3007,7 +3805,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420870,
-	}, -- [1]
+	}, -- [39]
 	{
 		"show! show! grats!", -- [1]
 		"Razorbloom-ArgentDawn", -- [2]
@@ -3028,7 +3826,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613420864,
-	}, -- [2]
+	}, -- [40]
 	{
 		"Grats!!", -- [1]
 		"Uldaris-SistersofElune", -- [2]
@@ -3049,7 +3847,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420859,
-	}, -- [3]
+	}, -- [41]
 	{
 		"!!!!!!!!!!!!!!!", -- [1]
 		"Razorbloom-ArgentDawn", -- [2]
@@ -3070,7 +3868,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613420855,
-	}, -- [4]
+	}, -- [42]
 	{
 		"omg grats", -- [1]
 		"Satanastar-Sargeras", -- [2]
@@ -3091,7 +3889,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420854,
-	}, -- [5]
+	}, -- [43]
 	{
 		"GRATZ", -- [1]
 		"Panthior-Ghostlands", -- [2]
@@ -3112,7 +3910,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420853,
-	}, -- [6]
+	}, -- [44]
 	{
 		"TY!!!", -- [1]
 		"Niradrieth-Quel'Thalas", -- [2]
@@ -3133,7 +3931,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420852,
-	}, -- [7]
+	}, -- [45]
 	{
 		"OMGG", -- [1]
 		"Niradrieth-Quel'Thalas", -- [2]
@@ -3154,7 +3952,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420850,
-	}, -- [8]
+	}, -- [46]
 	{
 		"omg", -- [1]
 		"Niradrieth-Quel'Thalas", -- [2]
@@ -3175,7 +3973,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420849,
-	}, -- [9]
+	}, -- [47]
 	{
 		"gz", -- [1]
 		"Papajohn-Dath'Remar", -- [2]
@@ -3196,7 +3994,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420848,
-	}, -- [10]
+	}, -- [48]
 	{
 		"grats", -- [1]
 		"Boudicea-Silvermoon", -- [2]
@@ -3217,7 +4015,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420847,
-	}, -- [11]
+	}, -- [49]
 	{
 		"GRATZ!!!", -- [1]
 		"Kirojima-Korgath", -- [2]
@@ -3238,7 +4036,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420847,
-	}, -- [12]
+	}, -- [50]
 	{
 		"Here, thank you!", -- [1]
 		"Kirojima-Korgath", -- [2]
@@ -3259,7 +4057,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420793,
-	}, -- [13]
+	}, -- [51]
 	{
 		"60%", -- [1]
 		"Satanastar-Sargeras", -- [2]
@@ -3280,7 +4078,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420784,
-	}, -- [14]
+	}, -- [52]
 	{
 		"Awesome <3", -- [1]
 		"Kirojima-Korgath", -- [2]
@@ -3301,7 +4099,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420782,
-	}, -- [15]
+	}, -- [53]
 	{
 		"you are fine ", -- [1]
 		"Balanbrew-Stormrage", -- [2]
@@ -3322,7 +4120,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420779,
-	}, -- [16]
+	}, -- [54]
 	{
 		"Not even", -- [1]
 		"Kirojima-Korgath", -- [2]
@@ -3343,7 +4141,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420773,
-	}, -- [17]
+	}, -- [55]
 	{
 		"I'm like 30 seconds out", -- [1]
 		"Kirojima-Korgath", -- [2]
@@ -3364,7 +4162,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420769,
-	}, -- [18]
+	}, -- [56]
 	{
 		"eh once you kill this guy 1,502 times, it gets tiresome lol ", -- [1]
 		"Balanbrew-Stormrage", -- [2]
@@ -3385,7 +4183,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420766,
-	}, -- [19]
+	}, -- [57]
 	{
 		"delisted. gl all!", -- [1]
 		"Razorbloom-ArgentDawn", -- [2]
@@ -3406,7 +4204,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613420757,
-	}, -- [20]
+	}, -- [58]
 	{
 		"hope so", -- [1]
 		"Satanastar-Sargeras", -- [2]
@@ -3427,7 +4225,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420757,
-	}, -- [21]
+	}, -- [59]
 	{
 		"ty for holding. hopefully we get lucky today", -- [1]
 		"Panthior-Ghostlands", -- [2]
@@ -3448,7 +4246,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420747,
-	}, -- [22]
+	}, -- [60]
 	{
 		"Gl everyone! ", -- [1]
 		"Balanbrew-Stormrage", -- [2]
@@ -3469,7 +4267,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420736,
-	}, -- [23]
+	}, -- [61]
 	{
 		"gl all ofc", -- [1]
 		"Satanastar-Sargeras", -- [2]
@@ -3490,7 +4288,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420729,
-	}, -- [24]
+	}, -- [62]
 	{
 		"on my way!", -- [1]
 		"Kirojima-Korgath", -- [2]
@@ -3511,7 +4309,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420708,
-	}, -- [25]
+	}, -- [63]
 	{
 		"delisting in 60 seconds", -- [1]
 		"Razorbloom-ArgentDawn", -- [2]
@@ -3532,7 +4330,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613420692,
-	}, -- [26]
+	}, -- [64]
 	{
 		"delisting in 2 minutes", -- [1]
 		"Razorbloom-ArgentDawn", -- [2]
@@ -3553,7 +4351,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613420618,
-	}, -- [27]
+	}, -- [65]
 	{
 		"ty alt omw ", -- [1]
 		"Satanastar-Sargeras", -- [2]
@@ -3574,7 +4372,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420594,
-	}, -- [28]
+	}, -- [66]
 	{
 		"today's the day!", -- [1]
 		"Razorbloom-ArgentDawn", -- [2]
@@ -3595,7 +4393,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613420562,
-	}, -- [29]
+	}, -- [67]
 	{
 		"ty for listing and for the ping", -- [1]
 		"Boudicea-Silvermoon", -- [2]
@@ -3616,7 +4414,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420543,
-	}, -- [30]
+	}, -- [68]
 	{
 		"ok switching ty", -- [1]
 		"Shivastar-Sargeras", -- [2]
@@ -3637,7 +4435,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420505,
-	}, -- [31]
+	}, -- [69]
 	{
 		"gotta tag first ofc", -- [1]
 		"Shivastar-Sargeras", -- [2]
@@ -3658,7 +4456,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420472,
-	}, -- [32]
+	}, -- [70]
 	{
 		"if anybody wants to multitag", -- [1]
 		"Razorbloom-ArgentDawn", -- [2]
@@ -3679,7 +4477,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613420465,
-	}, -- [33]
+	}, -- [71]
 	{
 		"delisting in 5 minutes", -- [1]
 		"Razorbloom-ArgentDawn", -- [2]
@@ -3700,7 +4498,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613420453,
-	}, -- [34]
+	}, -- [72]
 	{
 		"aww", -- [1]
 		"Shivastar-Sargeras", -- [2]
@@ -3721,7 +4519,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420426,
-	}, -- [35]
+	}, -- [73]
 	{
 		"my only alliance toon T_T", -- [1]
 		"Razorbloom-ArgentDawn", -- [2]
@@ -3742,7 +4540,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613420394,
-	}, -- [36]
+	}, -- [74]
 	{
 		"lol", -- [1]
 		"Shivastar-Sargeras", -- [2]
@@ -3763,7 +4561,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420391,
-	}, -- [37]
+	}, -- [75]
 	{
 		"haha", -- [1]
 		"Razorbloom-ArgentDawn", -- [2]
@@ -3784,7 +4582,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613420387,
-	}, -- [38]
+	}, -- [76]
 	{
 		"ya always horde posts qq", -- [1]
 		"Shivastar-Sargeras", -- [2]
@@ -3805,7 +4603,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420383,
-	}, -- [39]
+	}, -- [77]
 	{
 		"usually horde, but it worked out blue today. lol", -- [1]
 		"Razorbloom-ArgentDawn", -- [2]
@@ -3826,7 +4624,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613420374,
-	}, -- [40]
+	}, -- [78]
 	{
 		"np np", -- [1]
 		"Razorbloom-ArgentDawn", -- [2]
@@ -3847,7 +4645,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613420354,
-	}, -- [41]
+	}, -- [79]
 	{
 		"ty for posting in Reins discord omw", -- [1]
 		"Shivastar-Sargeras", -- [2]
@@ -3868,7 +4666,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613420346,
-	}, -- [42]
+	}, -- [80]
 	{
 		"Thanks for posting", -- [1]
 		"Uldaris-SistersofElune", -- [2]
@@ -3889,7 +4687,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_PARTY",
 		[31] = 1613420323,
-	}, -- [43]
+	}, -- [81]
 	{
 		"bbl", -- [1]
 		"Jaxxon-BlackwaterRaiders", -- [2]
@@ -3910,7 +4708,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD",
 		[31] = 1613419491,
-	}, -- [44]
+	}, -- [82]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:14335:Player-125-0803AA4E:1:2:15:21:4294967295:4294967295:4294967295:4294967295|h[The Ascended]|h|r!", -- [1]
 		"Jaxxon-BlackwaterRaiders", -- [2]
@@ -3931,7 +4729,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613418426,
-	}, -- [45]
+	}, -- [83]
 	{
 		"nice, that is a tough mount to get", -- [1]
 		"Seijun-SistersofElune", -- [2]
@@ -3952,7 +4750,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD",
 		[31] = 1613412696,
-	}, -- [46]
+	}, -- [84]
 	{
 		"After 11 years finally got |cffffff00|Hachievement:4627:Player-125-09AC62FC:1:2:15:21:0:0:0:0|h[Big Love Rocket]|h|r", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -3973,7 +4771,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD",
 		[31] = 1613412656,
-	}, -- [47]
+	}, -- [85]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:4627:Player-125-099C6308:1:2:15:21:4294967295:4294967295:4294967295:4294967295|h[Big Love Rocket]|h|r!", -- [1]
 		"Uldaris-SistersofElune", -- [2]
@@ -3994,7 +4792,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613412511,
-	}, -- [48]
+	}, -- [86]
 	{
 		"ty", -- [1]
 		"Teitas-Crushridge", -- [2]
@@ -4015,7 +4813,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613412484,
-	}, -- [49]
+	}, -- [87]
 	{
 		"deepscar is up if anyone wants it", -- [1]
 		"Sebheals-Stormreaver", -- [2]
@@ -4036,7 +4834,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_PARTY_LEADER",
 		[31] = 1613409589,
-	}, -- [50]
+	}, -- [88]
 	{
 		"thakns again <3", -- [1]
 		"Rileyruin-EmeraldDream", -- [2]
@@ -4057,7 +4855,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408768,
-	}, -- [51]
+	}, -- [89]
 	{
 		"i mean weve been here for what, 10 mins? i waited quite a while for the spawn and you didnt ;)", -- [1]
 		"Ashwood-Zuluhed", -- [2]
@@ -4078,7 +4876,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613408766,
-	}, -- [52]
+	}, -- [90]
 	{
 		"gl to all", -- [1]
 		"Rileyruin-EmeraldDream", -- [2]
@@ -4099,7 +4897,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408765,
-	}, -- [53]
+	}, -- [91]
 	{
 		"thank u for listing <3", -- [1]
 		"Alsenagig-Azralon", -- [2]
@@ -4120,7 +4918,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408763,
-	}, -- [54]
+	}, -- [92]
 	{
 		"ty", -- [1]
 		"Fallathor-WyrmrestAccord", -- [2]
@@ -4141,7 +4939,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408760,
-	}, -- [55]
+	}, -- [93]
 	{
 		"It's neither of this things", -- [1]
 		"Aelira-Sargeras", -- [2]
@@ -4162,7 +4960,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408759,
-	}, -- [56]
+	}, -- [94]
 	{
 		"tyvm for listing", -- [1]
 		"Fishbattery-Sargeras", -- [2]
@@ -4183,7 +4981,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408756,
-	}, -- [57]
+	}, -- [95]
 	{
 		"if everyone does this we'll never leave :) I think it's selfish not disrespectful but I dont care too", -- [1]
 		"Alsenagig-Azralon", -- [2]
@@ -4204,7 +5002,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408741,
-	}, -- [58]
+	}, -- [96]
 	{
 		"eventually its gonna die and if people get some swaps good for them", -- [1]
 		"Ashwood-Zuluhed", -- [2]
@@ -4225,7 +5023,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613408702,
-	}, -- [59]
+	}, -- [97]
 	{
 		"We killing?", -- [1]
 		"Athorn-Sargeras", -- [2]
@@ -4246,7 +5044,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408694,
-	}, -- [60]
+	}, -- [98]
 	{
 		"\"Time is money, friend\"", -- [1]
 		"Rileyruin-EmeraldDream", -- [2]
@@ -4267,7 +5065,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408681,
-	}, -- [61]
+	}, -- [99]
 	{
 		"and considering this thing is rarer than winning the lottery, cant blame them for alt swapping hah", -- [1]
 		"Vyronik-Frostmourne", -- [2]
@@ -4288,7 +5086,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408676,
-	}, -- [62]
+	}, -- [100]
 	{
 		"i would do it too but i never leave my alts close enough", -- [1]
 		"Ashwood-Zuluhed", -- [2]
@@ -4309,7 +5107,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613408676,
-	}, -- [63]
+	}, -- [101]
 	{
 		"How is it disrespectful", -- [1]
 		"Aladradre-Sargeras", -- [2]
@@ -4330,7 +5128,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408665,
-	}, -- [64]
+	}, -- [102]
 	{
 		"Its efficiency which some people like", -- [1]
 		"Vyronik-Frostmourne", -- [2]
@@ -4351,7 +5149,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408657,
-	}, -- [65]
+	}, -- [103]
 	{
 		"not really haha", -- [1]
 		"Vyronik-Frostmourne", -- [2]
@@ -4372,7 +5170,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408646,
-	}, -- [66]
+	}, -- [104]
 	{
 		"idk i couldnt care less tbh ", -- [1]
 		"Ashwood-Zuluhed", -- [2]
@@ -4393,7 +5191,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613408644,
-	}, -- [67]
+	}, -- [105]
 	{
 		"can we kill?", -- [1]
 		"Neteros-Stormrage", -- [2]
@@ -4414,7 +5212,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408644,
-	}, -- [68]
+	}, -- [106]
 	{
 		"facts", -- [1]
 		"Yamatho-Stormrage", -- [2]
@@ -4435,7 +5233,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408635,
-	}, -- [69]
+	}, -- [107]
 	{
 		"It's disrespectful to swap alts on a mount farm...", -- [1]
 		"Rileyruin-EmeraldDream", -- [2]
@@ -4456,7 +5254,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408626,
-	}, -- [70]
+	}, -- [108]
 	{
 		"^", -- [1]
 		"Rileyruin-EmeraldDream", -- [2]
@@ -4477,7 +5275,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408614,
-	}, -- [71]
+	}, -- [109]
 	{
 		"yeah if youre quick, i cant wait around all day :p", -- [1]
 		"Ashwood-Zuluhed", -- [2]
@@ -4498,7 +5296,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613408609,
-	}, -- [72]
+	}, -- [110]
 	{
 		"my bad", -- [1]
 		"Maley-Shu'halo", -- [2]
@@ -4519,7 +5317,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408608,
-	}, -- [73]
+	}, -- [111]
 	{
 		"Lust Detector: Maley-Shu'halo Casted a haste spell on party |cff71d5ff|Hspell:272678:0|h[Rabia primigenia]|h|r!", -- [1]
 		"Mäian-Quel'Thalas", -- [2]
@@ -4540,7 +5338,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408597,
-	}, -- [74]
+	}, -- [112]
 	{
 		"well kill once theyre here", -- [1]
 		"Ashwood-Zuluhed", -- [2]
@@ -4561,7 +5359,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613408597,
-	}, -- [75]
+	}, -- [113]
 	{
 		"nice alt swapping allowed?", -- [1]
 		"Beertemple-Sargeras", -- [2]
@@ -4582,7 +5380,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408593,
-	}, -- [76]
+	}, -- [114]
 	{
 		"np its pulled but not dying and we have mages", -- [1]
 		"Ashwood-Zuluhed", -- [2]
@@ -4603,7 +5401,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613408575,
-	}, -- [77]
+	}, -- [115]
 	{
 		"D:", -- [1]
 		"Rileyruin-EmeraldDream", -- [2]
@@ -4624,7 +5422,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408573,
-	}, -- [78]
+	}, -- [116]
 	{
 		"im comin my horse wont go faster", -- [1]
 		"Beertemple-Sargeras", -- [2]
@@ -4645,7 +5443,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408563,
-	}, -- [79]
+	}, -- [117]
 	{
 		"be rigth there", -- [1]
 		"Fallathor-WyrmrestAccord", -- [2]
@@ -4666,7 +5464,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408532,
-	}, -- [80]
+	}, -- [118]
 	{
 		"am here", -- [1]
 		"Sarrath-Ghostlands", -- [2]
@@ -4687,7 +5485,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408515,
-	}, -- [81]
+	}, -- [119]
 	{
 		"stop attacking", -- [1]
 		"Jhhast-Sargeras", -- [2]
@@ -4708,7 +5506,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408489,
-	}, -- [82]
+	}, -- [120]
 	{
 		"no kill just tagging so horde can'T tag first", -- [1]
 		"Galinar-SistersofElune", -- [2]
@@ -4729,7 +5527,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408477,
-	}, -- [83]
+	}, -- [121]
 	{
 		"it's okay", -- [1]
 		"Rileyruin-EmeraldDream", -- [2]
@@ -4750,7 +5548,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408476,
-	}, -- [84]
+	}, -- [122]
 	{
 		"sorry can i get resummon?", -- [1]
 		"Fallathor-WyrmrestAccord", -- [2]
@@ -4771,7 +5569,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408475,
-	}, -- [85]
+	}, -- [123]
 	{
 		"it's a Monday :P", -- [1]
 		"Rileyruin-EmeraldDream", -- [2]
@@ -4792,7 +5590,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408474,
-	}, -- [86]
+	}, -- [124]
 	{
 		"I'm dumb", -- [1]
 		"Athorn-Sargeras", -- [2]
@@ -4813,7 +5611,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408461,
-	}, -- [87]
+	}, -- [125]
 	{
 		"are we killing?", -- [1]
 		"Jhhast-Sargeras", -- [2]
@@ -4834,7 +5632,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408461,
-	}, -- [88]
+	}, -- [126]
 	{
 		"wait wm", -- [1]
 		"Athorn-Sargeras", -- [2]
@@ -4855,7 +5653,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408458,
-	}, -- [89]
+	}, -- [127]
 	{
 		"I should be shared", -- [1]
 		"Athorn-Sargeras", -- [2]
@@ -4876,7 +5674,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408445,
-	}, -- [90]
+	}, -- [128]
 	{
 		"Lets tag so horde can't steal", -- [1]
 		"Galinar-SistersofElune", -- [2]
@@ -4897,7 +5695,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408433,
-	}, -- [91]
+	}, -- [129]
 	{
 		"you have to tag first", -- [1]
 		"Jhhast-Sargeras", -- [2]
@@ -4918,7 +5716,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408413,
-	}, -- [92]
+	}, -- [130]
 	{
 		"yeah sure", -- [1]
 		"Alsenagig-Azralon", -- [2]
@@ -4939,7 +5737,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408410,
-	}, -- [93]
+	}, -- [131]
 	{
 		"oh okay imma be right back can ou summon me again in a min", -- [1]
 		"Maley-Shu'halo", -- [2]
@@ -4960,7 +5758,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408402,
-	}, -- [94]
+	}, -- [132]
 	{
 		"anyone else need summ?", -- [1]
 		"Alsenagig-Azralon", -- [2]
@@ -4981,7 +5779,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408397,
-	}, -- [95]
+	}, -- [133]
 	{
 		"should be", -- [1]
 		"Rileyruin-EmeraldDream", -- [2]
@@ -5002,7 +5800,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408374,
-	}, -- [96]
+	}, -- [134]
 	{
 		"is wm on?", -- [1]
 		"Maley-Shu'halo", -- [2]
@@ -5023,7 +5821,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408370,
-	}, -- [97]
+	}, -- [135]
 	{
 		"tysm for the summons <3", -- [1]
 		"Vyronik-Frostmourne", -- [2]
@@ -5044,7 +5842,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408349,
-	}, -- [98]
+	}, -- [136]
 	{
 		"Ty for posting", -- [1]
 		"Galinar-SistersofElune", -- [2]
@@ -5065,7 +5863,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408348,
-	}, -- [99]
+	}, -- [137]
 	{
 		"but make sure you pray", -- [1]
 		"Ashwood-Zuluhed", -- [2]
@@ -5086,7 +5884,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613408347,
-	}, -- [100]
+	}, -- [138]
 	{
 		"and it dies", -- [1]
 		"Yamatho-Stormrage", -- [2]
@@ -5107,7 +5905,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408345,
-	}, -- [101]
+	}, -- [139]
 	{
 		"All I know is mount drop is low %", -- [1]
 		"Rileyruin-EmeraldDream", -- [2]
@@ -5128,7 +5926,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408343,
-	}, -- [102]
+	}, -- [140]
 	{
 		"nothing special", -- [1]
 		"Ashwood-Zuluhed", -- [2]
@@ -5149,7 +5947,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613408343,
-	}, -- [103]
+	}, -- [141]
 	{
 		"you hit ", -- [1]
 		"Yamatho-Stormrage", -- [2]
@@ -5170,7 +5968,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408340,
-	}, -- [104]
+	}, -- [142]
 	{
 		"yeah how does this one work", -- [1]
 		"Maley-Shu'halo", -- [2]
@@ -5191,7 +5989,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408330,
-	}, -- [105]
+	}, -- [143]
 	{
 		"do we need to do anything before attacking?", -- [1]
 		"Rileyruin-EmeraldDream", -- [2]
@@ -5212,7 +6010,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408318,
-	}, -- [106]
+	}, -- [144]
 	{
 		"yw", -- [1]
 		"Ashwood-Zuluhed", -- [2]
@@ -5233,7 +6031,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613408318,
-	}, -- [107]
+	}, -- [145]
 	{
 		"ty for the invite and the callout <3", -- [1]
 		"Toepoke-Spinebreaker", -- [2]
@@ -5254,7 +6052,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613408306,
-	}, -- [108]
+	}, -- [146]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:14835:Player-125-099FB76F:1:2:15:21:4294967295:4294967295:4294967295:4294967295|h[A Resolute Bond]|h|r!", -- [1]
 		"Seijun-SistersofElune", -- [2]
@@ -5275,7 +6073,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613408213,
-	}, -- [109]
+	}, -- [147]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:14483:Player-125-0A21A822:1:2:15:21:4294967295:4294967295:4294967295:4294967295|h[Coldheart Interstitia]|h|r!", -- [1]
 		"Coldcut-SistersofElune", -- [2]
@@ -5296,7 +6094,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613407270,
-	}, -- [110]
+	}, -- [148]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:14366:Player-125-09982991:1:2:15:21:4294967295:4294967295:4294967295:4294967295|h[The Necrotic Wake]|h|r!", -- [1]
 		"Liseirl-SistersofElune", -- [2]
@@ -5317,7 +6115,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613407207,
-	}, -- [111]
+	}, -- [149]
 	{
 		"Thanks", -- [1]
 		"Hanimal-SistersofElune", -- [2]
@@ -5338,7 +6136,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD",
 		[31] = 1613404394,
-	}, -- [112]
+	}, -- [150]
 	{
 		"Congrats Hanimal", -- [1]
 		"Skylark-SistersofElune", -- [2]
@@ -5359,7 +6157,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD",
 		[31] = 1613404385,
-	}, -- [113]
+	}, -- [151]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:14639:Player-125-09A7F6D4:1:2:15:21:4294967295:4294967295:4294967295:4294967295|h[Dedication to the Restoration]|h|r!", -- [1]
 		"Hanimal-SistersofElune", -- [2]
@@ -5380,7 +6178,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613404290,
-	}, -- [114]
+	}, -- [152]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:14773:Player-125-09A131EC:1:2:15:21:4294967295:4294967295:4294967295:4294967295|h[Explosive Extermination]|h|r!", -- [1]
 		"Ardara-SistersofElune", -- [2]
@@ -5401,7 +6199,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613398780,
-	}, -- [115]
+	}, -- [153]
 	{
 		"thanks all", -- [1]
 		"Krymur-Lothar", -- [2]
@@ -5422,7 +6220,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_PARTY_LEADER",
 		[31] = 1613395895,
-	}, -- [116]
+	}, -- [154]
 	{
 		"ty", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -5443,7 +6241,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613395893,
-	}, -- [117]
+	}, -- [155]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:506:Player-125-0A21A822:1:2:15:21:4294967295:4294967295:4294967295:4294967295|h[500 Quests Completed]|h|r!", -- [1]
 		"Coldcut-SistersofElune", -- [2]
@@ -5464,7 +6262,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613395540,
-	}, -- [118]
+	}, -- [156]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:14894:Player-125-09A1588F:1:2:14:21:4294967295:4294967295:4294967295:4294967295|h[To 'Ghast, Two Curios]|h|r!", -- [1]
 		"Daerlith-SistersofElune", -- [2]
@@ -5485,7 +6283,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613358809,
-	}, -- [119]
+	}, -- [157]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:14797:Player-125-0A12A031:1:2:14:21:4294967295:4294967295:4294967295:4294967295|h[Epic]|h|r!", -- [1]
 		"Lilsqyd-SistersofElune", -- [2]
@@ -5506,7 +6304,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613358602,
-	}, -- [120]
+	}, -- [158]
 	{
 		"Thnaks for the attempts too tired, messing up", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -5527,1706 +6325,5 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613358240,
-	}, -- [121]
-	{
-		"ggs", -- [1]
-		"Quangnguyen-Sargeras", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Quangnguyen-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		999, -- [11]
-		"Player-76-0B1FBE8A", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID",
-		[31] = 1613358224,
-	}, -- [122]
-	{
-		"GL guys", -- [1]
-		"Magiematheu-Dalaran", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Magiematheu-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		998, -- [11]
-		"Player-3683-0CD584FE", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID",
-		[31] = 1613358217,
-	}, -- [123]
-	{
-		"well I'm gonna have to go", -- [1]
-		"Magiematheu-Dalaran", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Magiematheu-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		996, -- [11]
-		"Player-3683-0CD584FE", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID",
-		[31] = 1613358213,
-	}, -- [124]
-	{
-		"Wicked Blade 2 on {rt2}Popefrances{rt2}", -- [1]
-		"Popefrances-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Popefrances-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		994, -- [11]
-		"Player-76-0B33BF45", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358207,
-	}, -- [125]
-	{
-		"|cff71d5ff|Hspell:633:0|h[Lay on Hands]|h|r on Jjettas for 37380!", -- [1]
-		"Popefrances-Sargeras", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Popefrances-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		990, -- [11]
-		"Player-76-0B33BF45", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID",
-		[31] = 1613358204,
-	}, -- [126]
-	{
-		"Crystalize fading in 1", -- [1]
-		"Koalapepe-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Koalapepe-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		989, -- [11]
-		"Player-76-0B3749A8", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358203,
-	}, -- [127]
-	{
-		"Crystalize fading in 2", -- [1]
-		"Koalapepe-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Koalapepe-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		988, -- [11]
-		"Player-76-0B3749A8", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358202,
-	}, -- [128]
-	{
-		"Crystalize fading in 3", -- [1]
-		"Koalapepe-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Koalapepe-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		987, -- [11]
-		"Player-76-0B3749A8", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358201,
-	}, -- [129]
-	{
-		"Crystalize on Koalapepe", -- [1]
-		"Koalapepe-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Koalapepe-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		986, -- [11]
-		"Player-76-0B3749A8", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358199,
-	}, -- [130]
-	{
-		"Erupção fading in 1", -- [1]
-		"Oddishy-MoonGuard", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Oddishy-MoonGuard", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		981, -- [11]
-		"Player-3675-07DF10ED", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358186,
-	}, -- [131]
-	{
-		"Erupção fading in 2", -- [1]
-		"Oddishy-MoonGuard", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Oddishy-MoonGuard", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		980, -- [11]
-		"Player-3675-07DF10ED", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358185,
-	}, -- [132]
-	{
-		"Erupção em Oddishy!", -- [1]
-		"Oddishy-MoonGuard", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Oddishy-MoonGuard", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		979, -- [11]
-		"Player-3675-07DF10ED", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358183,
-	}, -- [133]
-	{
-		"{rt1}3", -- [1]
-		"Vvoltar-MoonGuard", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Vvoltar-MoonGuard", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		978, -- [11]
-		"Player-3675-08C195A1", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358172,
-	}, -- [134]
-	{
-		"Wicked Blade 1 on {rt1}Vvoltar{rt1}", -- [1]
-		"Vvoltar-MoonGuard", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Vvoltar-MoonGuard", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		977, -- [11]
-		"Player-3675-08C195A1", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358171,
-	}, -- [135]
-	{
-		"Eruption fading in 1", -- [1]
-		"Smellybeaver-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Smellybeaver-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		975, -- [11]
-		"Player-76-0B375D13", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358155,
-	}, -- [136]
-	{
-		"Eruption fading in 2", -- [1]
-		"Smellybeaver-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Smellybeaver-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		974, -- [11]
-		"Player-76-0B375D13", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358154,
-	}, -- [137]
-	{
-		"Eruption on Smellybeaver", -- [1]
-		"Smellybeaver-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Smellybeaver-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		973, -- [11]
-		"Player-76-0B375D13", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358152,
-	}, -- [138]
-	{
-		"Meteoro Pulverizante em Oddishy!", -- [1]
-		"Oddishy-MoonGuard", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Oddishy-MoonGuard", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		972, -- [11]
-		"Player-3675-07DF10ED", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358149,
-	}, -- [139]
-	{
-		"Cristalizar fading in 1", -- [1]
-		"Oddishy-MoonGuard", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Oddishy-MoonGuard", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		971, -- [11]
-		"Player-3675-07DF10ED", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358148,
-	}, -- [140]
-	{
-		"Cristalizar fading in 2", -- [1]
-		"Oddishy-MoonGuard", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Oddishy-MoonGuard", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		970, -- [11]
-		"Player-3675-07DF10ED", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358147,
-	}, -- [141]
-	{
-		"Cristalizar fading in 3", -- [1]
-		"Oddishy-MoonGuard", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Oddishy-MoonGuard", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		969, -- [11]
-		"Player-3675-07DF10ED", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358146,
-	}, -- [142]
-	{
-		"Cristalizar em Oddishy!", -- [1]
-		"Oddishy-MoonGuard", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Oddishy-MoonGuard", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		968, -- [11]
-		"Player-3675-07DF10ED", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358144,
-	}, -- [143]
-	{
-		"{rt2}3", -- [1]
-		"Vvoltar-MoonGuard", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Vvoltar-MoonGuard", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		965, -- [11]
-		"Player-3675-08C195A1", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358136,
-	}, -- [144]
-	{
-		"Wicked Blade 2 on {rt2}Vvoltar{rt2}", -- [1]
-		"Vvoltar-MoonGuard", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Vvoltar-MoonGuard", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		964, -- [11]
-		"Player-3675-08C195A1", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358135,
-	}, -- [145]
-	{
-		"Eruption fading in 1", -- [1]
-		"Magiematheu-Dalaran", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Magiematheu-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		962, -- [11]
-		"Player-3683-0CD584FE", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358114,
-	}, -- [146]
-	{
-		"Eruption fading in 2", -- [1]
-		"Magiematheu-Dalaran", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Magiematheu-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		961, -- [11]
-		"Player-3683-0CD584FE", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358113,
-	}, -- [147]
-	{
-		"Eruption on Magiematheu", -- [1]
-		"Magiematheu-Dalaran", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Magiematheu-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		960, -- [11]
-		"Player-3683-0CD584FE", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358111,
-	}, -- [148]
-	{
-		"{rt2}1", -- [1]
-		"Popefrances-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Popefrances-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		958, -- [11]
-		"Player-76-0B33BF45", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358106,
-	}, -- [149]
-	{
-		"{rt1}1", -- [1]
-		"Alieriaris-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Alieriaris-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		957, -- [11]
-		"Player-76-0B37CB2F", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358106,
-	}, -- [150]
-	{
-		"{rt2}2", -- [1]
-		"Popefrances-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Popefrances-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		956, -- [11]
-		"Player-76-0B33BF45", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358105,
-	}, -- [151]
-	{
-		"{rt1}2", -- [1]
-		"Alieriaris-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Alieriaris-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		955, -- [11]
-		"Player-76-0B37CB2F", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358105,
-	}, -- [152]
-	{
-		"{rt2}3", -- [1]
-		"Popefrances-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Popefrances-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		954, -- [11]
-		"Player-76-0B33BF45", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358104,
-	}, -- [153]
-	{
-		"{rt1}3", -- [1]
-		"Alieriaris-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Alieriaris-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		953, -- [11]
-		"Player-76-0B37CB2F", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358104,
-	}, -- [154]
-	{
-		"Wicked Blade 2 on {rt2}Popefrances{rt2}", -- [1]
-		"Popefrances-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Popefrances-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		952, -- [11]
-		"Player-76-0B33BF45", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358103,
-	}, -- [155]
-	{
-		"Wicked Blade 1 on {rt1}Alieriaris{rt1}", -- [1]
-		"Alieriaris-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Alieriaris-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		951, -- [11]
-		"Player-76-0B37CB2F", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358103,
-	}, -- [156]
-	{
-		"Pulverizing Meteor on Magiematheu", -- [1]
-		"Magiematheu-Dalaran", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Magiematheu-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		949, -- [11]
-		"Player-3683-0CD584FE", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358097,
-	}, -- [157]
-	{
-		"Crystalize fading in 1", -- [1]
-		"Magiematheu-Dalaran", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Magiematheu-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		948, -- [11]
-		"Player-3683-0CD584FE", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358096,
-	}, -- [158]
-	{
-		"Crystalize fading in 2", -- [1]
-		"Magiematheu-Dalaran", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Magiematheu-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		947, -- [11]
-		"Player-3683-0CD584FE", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358095,
 	}, -- [159]
-	{
-		"Crystalize fading in 3", -- [1]
-		"Magiematheu-Dalaran", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Magiematheu-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		946, -- [11]
-		"Player-3683-0CD584FE", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358094,
-	}, -- [160]
-	{
-		"Crystalize on Magiematheu", -- [1]
-		"Magiematheu-Dalaran", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Magiematheu-Dalaran", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		945, -- [11]
-		"Player-3683-0CD584FE", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358092,
-	}, -- [161]
-	{
-		"Crystalize on Bracnar", -- [1]
-		"Bracnar-SistersofElune", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Bracnar-SistersofElune", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		934, -- [11]
-		"Player-125-09AC62FC", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358072,
-	}, -- [162]
-	{
-		"{rt2}2", -- [1]
-		"Smellybeaver-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Smellybeaver-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		931, -- [11]
-		"Player-76-0B375D13", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358068,
-	}, -- [163]
-	{
-		"{rt1}3", -- [1]
-		"Hotomato-Frostmourne", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Hotomato-Frostmourne", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		930, -- [11]
-		"Player-3725-0810F14D", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358067,
-	}, -- [164]
-	{
-		"{rt2}3", -- [1]
-		"Smellybeaver-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Smellybeaver-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		929, -- [11]
-		"Player-76-0B375D13", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358067,
-	}, -- [165]
-	{
-		"Wicked Blade 1 on {rt1}Hotomato{rt1}", -- [1]
-		"Hotomato-Frostmourne", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Hotomato-Frostmourne", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		928, -- [11]
-		"Player-3725-0810F14D", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358066,
-	}, -- [166]
-	{
-		"Wicked Blade 2 on {rt2}Smellybeaver{rt2}", -- [1]
-		"Smellybeaver-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Smellybeaver-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		927, -- [11]
-		"Player-76-0B375D13", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358066,
-	}, -- [167]
-	{
-		"{rt2}1", -- [1]
-		"Popefrances-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Popefrances-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		922, -- [11]
-		"Player-76-0B33BF45", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358038,
-	}, -- [168]
-	{
-		"{rt1}2", -- [1]
-		"Oddishy-MoonGuard", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Oddishy-MoonGuard", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		921, -- [11]
-		"Player-3675-07DF10ED", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358038,
-	}, -- [169]
-	{
-		"{rt2}2", -- [1]
-		"Popefrances-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Popefrances-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		920, -- [11]
-		"Player-76-0B33BF45", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358037,
-	}, -- [170]
-	{
-		"{rt1}3", -- [1]
-		"Oddishy-MoonGuard", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Oddishy-MoonGuard", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		919, -- [11]
-		"Player-3675-07DF10ED", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358037,
-	}, -- [171]
-	{
-		"{rt2}3", -- [1]
-		"Popefrances-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Popefrances-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		918, -- [11]
-		"Player-76-0B33BF45", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358036,
-	}, -- [172]
-	{
-		"Lâmina Maléfica 1 on {rt1}Oddishy{rt1}", -- [1]
-		"Oddishy-MoonGuard", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Oddishy-MoonGuard", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		917, -- [11]
-		"Player-3675-07DF10ED", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358035,
-	}, -- [173]
-	{
-		"Wicked Blade 2 on {rt2}Popefrances{rt2}", -- [1]
-		"Popefrances-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Popefrances-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		916, -- [11]
-		"Player-76-0B33BF45", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358035,
-	}, -- [174]
-	{
-		"Meteor on Mcallister", -- [1]
-		"Mcallister-Frostmourne", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Mcallister-Frostmourne", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		914, -- [11]
-		"Player-3725-0BE93E0E", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358021,
-	}, -- [175]
-	{
-		"Crystalize fading in 1", -- [1]
-		"Mcallister-Frostmourne", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Mcallister-Frostmourne", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		913, -- [11]
-		"Player-3725-0BE93E0E", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358021,
-	}, -- [176]
-	{
-		"1", -- [1]
-		"Mcallister-Frostmourne", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Mcallister-Frostmourne", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		912, -- [11]
-		"Player-3725-0BE93E0E", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358020,
-	}, -- [177]
-	{
-		"Crystalize fading in 2", -- [1]
-		"Mcallister-Frostmourne", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Mcallister-Frostmourne", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		911, -- [11]
-		"Player-3725-0BE93E0E", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358020,
-	}, -- [178]
-	{
-		"2", -- [1]
-		"Mcallister-Frostmourne", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Mcallister-Frostmourne", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		910, -- [11]
-		"Player-3725-0BE93E0E", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358019,
-	}, -- [179]
-	{
-		"Crystalize fading in 3", -- [1]
-		"Mcallister-Frostmourne", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Mcallister-Frostmourne", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		909, -- [11]
-		"Player-3725-0BE93E0E", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358019,
-	}, -- [180]
-	{
-		"3", -- [1]
-		"Mcallister-Frostmourne", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Mcallister-Frostmourne", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		908, -- [11]
-		"Player-3725-0BE93E0E", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358018,
-	}, -- [181]
-	{
-		"Crystalize on Mcallister", -- [1]
-		"Mcallister-Frostmourne", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Mcallister-Frostmourne", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		907, -- [11]
-		"Player-3725-0BE93E0E", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358017,
-	}, -- [182]
-	{
-		"Crystalize on Mcallister", -- [1]
-		"Mcallister-Frostmourne", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Mcallister-Frostmourne", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		906, -- [11]
-		"Player-3725-0BE93E0E", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613358017,
-	}, -- [183]
-	{
-		"{rt1}1", -- [1]
-		"Maeren-Quel'dorei", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Maeren-Quel'dorei", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		901, -- [11]
-		"Player-1185-0DC47443", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358007,
-	}, -- [184]
-	{
-		"{rt2}1", -- [1]
-		"Axuyro-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Axuyro-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		900, -- [11]
-		"Player-76-0B3D85B6", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358007,
-	}, -- [185]
-	{
-		"{rt1}2", -- [1]
-		"Maeren-Quel'dorei", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Maeren-Quel'dorei", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		899, -- [11]
-		"Player-1185-0DC47443", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358006,
-	}, -- [186]
-	{
-		"{rt2}2", -- [1]
-		"Axuyro-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Axuyro-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		898, -- [11]
-		"Player-76-0B3D85B6", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358006,
-	}, -- [187]
-	{
-		"{rt1}3", -- [1]
-		"Maeren-Quel'dorei", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Maeren-Quel'dorei", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		896, -- [11]
-		"Player-1185-0DC47443", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358005,
-	}, -- [188]
-	{
-		"{rt2}3", -- [1]
-		"Axuyro-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Axuyro-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		895, -- [11]
-		"Player-76-0B3D85B6", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358005,
-	}, -- [189]
-	{
-		"Wicked Blade 1 on {rt1}Maeren{rt1}", -- [1]
-		"Maeren-Quel'dorei", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Maeren-Quel'dorei", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		894, -- [11]
-		"Player-1185-0DC47443", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358004,
-	}, -- [190]
-	{
-		"Wicked Blade 2 on {rt2}Axuyro{rt2}", -- [1]
-		"Axuyro-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Axuyro-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		893, -- [11]
-		"Player-76-0B3D85B6", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613358004,
-	}, -- [191]
-	{
-		"{rt1}1", -- [1]
-		"Jjettas-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Jjettas-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		887, -- [11]
-		"Player-76-0B3511EF", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613357977,
-	}, -- [192]
-	{
-		"{rt1}2", -- [1]
-		"Jjettas-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Jjettas-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		886, -- [11]
-		"Player-76-0B3511EF", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613357975,
-	}, -- [193]
-	{
-		"{rt2}2", -- [1]
-		"Vohm-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Vohm-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		885, -- [11]
-		"Player-76-0A6C6940", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613357975,
-	}, -- [194]
-	{
-		"{rt1}3", -- [1]
-		"Jjettas-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Jjettas-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		884, -- [11]
-		"Player-76-0B3511EF", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613357974,
-	}, -- [195]
-	{
-		"{rt2}3", -- [1]
-		"Vohm-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Vohm-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		883, -- [11]
-		"Player-76-0A6C6940", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613357974,
-	}, -- [196]
-	{
-		"Wicked Blade 1 on {rt1}Jjettas{rt1}", -- [1]
-		"Jjettas-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Jjettas-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		882, -- [11]
-		"Player-76-0B3511EF", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613357973,
-	}, -- [197]
-	{
-		"Wicked Blade 2 on {rt2}Vohm{rt2}", -- [1]
-		"Vohm-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Vohm-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		881, -- [11]
-		"Player-76-0A6C6940", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613357973,
-	}, -- [198]
-	{
-		"Crystalize fading in 1", -- [1]
-		"Popefrances-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Popefrances-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		879, -- [11]
-		"Player-76-0B33BF45", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613357969,
-	}, -- [199]
-	{
-		"Crystalize fading in 2", -- [1]
-		"Popefrances-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Popefrances-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		878, -- [11]
-		"Player-76-0B33BF45", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613357968,
-	}, -- [200]
-	{
-		"Crystalize fading in 3", -- [1]
-		"Popefrances-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Popefrances-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		877, -- [11]
-		"Player-76-0B33BF45", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613357967,
-	}, -- [201]
-	{
-		"Crystalize on Popefrances", -- [1]
-		"Popefrances-Sargeras", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Popefrances-Sargeras", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		876, -- [11]
-		"Player-76-0B33BF45", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_YELL",
-		[31] = 1613357965,
-	}, -- [202]
 }
