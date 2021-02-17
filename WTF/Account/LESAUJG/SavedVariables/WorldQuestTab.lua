@@ -51,14 +51,20 @@ BWQDB = {
 					["sl_genericAnimaIcons"] = true,
 					["sortBy"] = 6,
 				},
+				["external"] = {
+				},
 				["pin"] = {
 					["continentVisible"] = 3,
 					["typeIcon"] = false,
 					["ringType"] = 2,
 				},
-				["external"] = {
-				},
 				["filters"] = {
+					nil, -- [1]
+					{
+						["flags"] = {
+							["Petbattle"] = false,
+						},
+					}, -- [2]
 				},
 			},
 		},

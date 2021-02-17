@@ -47,18 +47,24 @@ BWQDB = {
 				},
 				["list"] = {
 				},
+				["external"] = {
+				},
 				["pin"] = {
 					["continentVisible"] = 3,
 					["typeIcon"] = false,
 					["ringType"] = 2,
-				},
-				["external"] = {
 				},
 				["general"] = {
 					["sl_genericAnimaIcons"] = true,
 					["sortBy"] = 6,
 				},
 				["filters"] = {
+					nil, -- [1]
+					{
+						["flags"] = {
+							["Petbattle"] = false,
+						},
+					}, -- [2]
 				},
 			},
 		},
