@@ -2722,17 +2722,17 @@ TukuiSettings = {
 TukuiGold = {
 	["Sisters of Elune"] = {
 		["Leanara"] = 61795815,
-		["Ghiaccioli"] = 54646413,
+		["Ghiaccioli"] = 55552172,
 		["Mandelbrot"] = 7212410,
-		["Torinar"] = 66958810,
-		["Orig"] = 66930645,
-		["Clothgar"] = 20297324441,
+		["Torinar"] = 67886933,
+		["Orig"] = 69008181,
+		["Clothgar"] = 20219317946,
 		["Herbinator"] = 4271005,
-		["Belrath"] = 57351470,
+		["Torinara"] = 67589499,
 		["Galinar"] = 72855272,
-		["Torinara"] = 66727391,
+		["Belrath"] = 58217525,
 		["Palani"] = 60363345,
-		["Bracnar"] = 305844848,
+		["Bracnar"] = 268923826,
 		["Uldaris"] = 110391403,
 	},
 }
@@ -2857,25 +2857,21 @@ TukuiSettingsPerCharacter = {
 				["LeftBar"] = true,
 			},
 		},
-		["Belrath"] = {
+		["Torinara"] = {
 			["Misc"] = {
 				["WorldMapEnable"] = false,
 			},
+			["Bags"] = {
+				["Enable"] = false,
+			},
 			["General"] = {
 				["Themes"] = "Tukz",
-				["UIScale"] = 0.5,
+				["UIScale"] = 0.6,
 			},
 			["ActionBars"] = {
 				["HotKey"] = true,
 				["RightBar"] = true,
 				["LeftBar"] = true,
-			},
-			["Bags"] = {
-				["Enable"] = false,
-			},
-			["Chat"] = {
-				["Bubbles"] = "None",
-				["LogMax"] = 10,
 			},
 		},
 		["Galinar"] = {
@@ -2895,21 +2891,25 @@ TukuiSettingsPerCharacter = {
 				["LeftBar"] = true,
 			},
 		},
-		["Torinara"] = {
+		["Belrath"] = {
 			["Misc"] = {
 				["WorldMapEnable"] = false,
 			},
-			["Bags"] = {
-				["Enable"] = false,
-			},
 			["General"] = {
 				["Themes"] = "Tukz",
-				["UIScale"] = 0.6,
+				["UIScale"] = 0.5,
 			},
 			["ActionBars"] = {
 				["HotKey"] = true,
 				["RightBar"] = true,
 				["LeftBar"] = true,
+			},
+			["Bags"] = {
+				["Enable"] = false,
+			},
+			["Chat"] = {
+				["Bubbles"] = "None",
+				["LogMax"] = 10,
 			},
 		},
 		["Palani"] = {
@@ -2953,11 +2953,11 @@ TukuiSettingsPerCharacter = {
 			["Party"] = {
 				["Enable"] = true,
 			},
-			["Raid"] = {
-				["WidthSize"] = 80,
-			},
 			["Bags"] = {
 				["Enable"] = false,
+			},
+			["Raid"] = {
+				["WidthSize"] = 80,
 			},
 			["Chat"] = {
 				["LogMax"] = 160,
@@ -2988,6 +2988,489 @@ TukuiSettingsPerCharacter = {
 }
 TukuiChatHistory = {
 	{
+		"anyone not here?", -- [1]
+		"Watcho-Lightbringer", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Watcho-Lightbringer", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		577, -- [11]
+		"Player-3694-06B2EBF0", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID_LEADER",
+		[31] = 1613594396,
+	}, -- [1]
+	{
+		"anyone else need a summons?", -- [1]
+		"Yeine-Ravencrest", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Yeine-Ravencrest", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		576, -- [11]
+		"Player-1072-0557BA65", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1613594387,
+	}, -- [2]
+	{
+		"wont let me click portal", -- [1]
+		"Dollheart-Sargeras", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Dollheart-Sargeras", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		575, -- [11]
+		"Player-76-0A24EE09", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613594386,
+	}, -- [3]
+	{
+		"sadly dont see ally calls up as much as horde, ty for posting in Reins discord", -- [1]
+		"Shivastar-Sargeras", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Shivastar-Sargeras", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		574, -- [11]
+		"Player-76-0B19A841", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1613594383,
+	}, -- [4]
+	{
+		"gul gi nogu il ogar gul'rok ", -- [1]
+		"Reynkavii-Draenor", -- [2]
+		"Orcish", -- [3]
+		"", -- [4]
+		"Reynkavii-Draenor", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		573, -- [11]
+		"Player-115-03844716", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613594381,
+	}, -- [5]
+	{
+		"ty for summon, but already here :-)", -- [1]
+		"Hertius-MoonGuard", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Hertius-MoonGuard", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		572, -- [11]
+		"Player-3675-08C3B08B", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1613594371,
+	}, -- [6]
+	{
+		"hmm might wait then", -- [1]
+		"Shivastar-Sargeras", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Shivastar-Sargeras", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		571, -- [11]
+		"Player-76-0B19A841", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1613594349,
+	}, -- [7]
+	{
+		"i dont care . if you can get here in like 2 min", -- [1]
+		"Watcho-Lightbringer", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Watcho-Lightbringer", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		567, -- [11]
+		"Player-3694-06B2EBF0", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID_LEADER",
+		[31] = 1613594343,
+	}, -- [8]
+	{
+		"ty", -- [1]
+		"Dollheart-Sargeras", -- [2]
+		"Common", -- [3]
+		"", -- [4]
+		"Dollheart-Sargeras", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		566, -- [11]
+		"Player-76-0A24EE09", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613594335,
+	}, -- [9]
+	{
+		"good to alt hop then?", -- [1]
+		"Shivastar-Sargeras", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Shivastar-Sargeras", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		564, -- [11]
+		"Player-76-0B19A841", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1613594323,
+	}, -- [10]
+	{
+		"moth'aga kazreth gul golar makogg", -- [1]
+		"Sabbo-Area52", -- [2]
+		"Orcish", -- [3]
+		"", -- [4]
+		"Sabbo-Area52", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		563, -- [11]
+		"Player-3676-06EDA157", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613594322,
+	}, -- [11]
+	{
+		"maza thok thrAkk ha makogg", -- [1]
+		"Izumi-EchoIsles", -- [2]
+		"Orcish", -- [3]
+		"", -- [4]
+		"Izumi-EchoIsles", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		562, -- [11]
+		"Player-115-0899D42E", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613594314,
+	}, -- [12]
+	{
+		"kaz maka ha ag il no'ku g lok'mogul gezzno ", -- [1]
+		"Sabbo-Area52", -- [2]
+		"Orcish", -- [3]
+		"", -- [4]
+		"Sabbo-Area52", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		560, -- [11]
+		"Player-3676-06EDA157", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_SAY",
+		[31] = 1613594298,
+	}, -- [13]
+	{
+		"ty for listing", -- [1]
+		"Boudicea-Silvermoon", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Boudicea-Silvermoon", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		557, -- [11]
+		"Player-86-07172D95", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1613594264,
+	}, -- [14]
+	{
+		"ty omw", -- [1]
+		"Shivastar-Sargeras", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Shivastar-Sargeras", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		555, -- [11]
+		"Player-76-0B19A841", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1613594257,
+	}, -- [15]
+	{
+		"ok", -- [1]
+		"Watcho-Lightbringer", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Watcho-Lightbringer", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		548, -- [11]
+		"Player-3694-06B2EBF0", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID_LEADER",
+		[31] = 1613594236,
+	}, -- [16]
+	{
+		"if you leave we will all phase out ;o", -- [1]
+		"Emerno-Stormrage", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Emerno-Stormrage", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		547, -- [11]
+		"Player-60-0BE14ADD", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1613594229,
+	}, -- [17]
+	{
+		"NP who wants lad so i can get my warrior in hewre as well", -- [1]
+		"Watcho-Lightbringer", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Watcho-Lightbringer", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		543, -- [11]
+		"Player-3694-06B2EBF0", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID_LEADER",
+		[31] = 1613594219,
+	}, -- [18]
+	{
+		"Thank you for listing/posting!", -- [1]
+		"Kirojima-Korgath", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Kirojima-Korgath", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		541, -- [11]
+		"Player-1168-09A83344", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1613594191,
+	}, -- [19]
+	{
+		"Thansk for posting", -- [1]
+		"Leanara-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Leanara-SistersofElune", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		540, -- [11]
+		"Player-125-09A369A5", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1613594187,
+	}, -- [20]
+	{
+		"%s has earned the achievement |cffffff00|Hachievement:14630:Player-125-099F722D:1:2:17:21:4294967295:4294967295:4294967295:4294967295|h[Becoming a Hero]|h|r!", -- [1]
+		"Aulwyn-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Aulwyn-SistersofElune", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		528, -- [11]
+		"Player-125-099F722D", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		[31] = 1613594081,
+	}, -- [21]
+	{
+		"oops caps", -- [1]
+		"Phrigias-BlackwaterRaiders", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		489, -- [11]
+		"Player-125-06B037D7", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1613593642,
+	}, -- [22]
+	{
+		"1 MORE TIMEWALKING FOR THIS GUY", -- [1]
+		"Phrigias-BlackwaterRaiders", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		488, -- [11]
+		"Player-125-06B037D7", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD",
+		[31] = 1613593638,
+	}, -- [23]
+	{
 		"%s has earned the achievement |cffffff00|Hachievement:12989:Player-125-099AE678:1:2:17:21:4294967295:4294967295:4294967295:4294967295|h[Battle for Azeroth Pathfinder, Part One]|h|r!", -- [1]
 		"Yrenni-SistersofElune", -- [2]
 		"", -- [3]
@@ -3007,7 +3490,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613569529,
-	}, -- [1]
+	}, -- [24]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:12947:Player-125-099AE678:1:2:17:21:4294967295:4294967295:4294967295:4294967295|h[Azerothian Diplomat]|h|r!", -- [1]
 		"Yrenni-SistersofElune", -- [2]
@@ -3028,7 +3511,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613569529,
-	}, -- [2]
+	}, -- [25]
 	{
 		"well///cya soon!", -- [1]
 		"Jaxxon-BlackwaterRaiders", -- [2]
@@ -3049,7 +3532,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD",
 		[31] = 1613537539,
-	}, -- [3]
+	}, -- [26]
 	{
 		"maybe...looks like servers are about to shut down ", -- [1]
 		"Jaxxon-BlackwaterRaiders", -- [2]
@@ -3070,7 +3553,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD",
 		[31] = 1613537529,
-	}, -- [4]
+	}, -- [27]
 	{
 		"ok guys...i'll be back in a liuttle while", -- [1]
 		"Jaxxon-BlackwaterRaiders", -- [2]
@@ -3091,7 +3574,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD",
 		[31] = 1613537497,
-	}, -- [5]
+	}, -- [28]
 	{
 		"yeah im stoked!!!", -- [1]
 		"Jaxxon-BlackwaterRaiders", -- [2]
@@ -3112,7 +3595,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD",
 		[31] = 1613537482,
-	}, -- [6]
+	}, -- [29]
 	{
 		"gg", -- [1]
 		"Korual-WyrmrestAccord", -- [2]
@@ -3133,7 +3616,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537407,
-	}, -- [7]
+	}, -- [30]
 	{
 		"gg", -- [1]
 		"Popejonny-Mug'thol", -- [2]
@@ -3154,7 +3637,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537406,
-	}, -- [8]
+	}, -- [31]
 	{
 		"gj", -- [1]
 		"Khatria-Proudmoore", -- [2]
@@ -3175,7 +3658,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537406,
-	}, -- [9]
+	}, -- [32]
 	{
 		"GG", -- [1]
 		"Sachí-Frostmourne", -- [2]
@@ -3196,7 +3679,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537399,
-	}, -- [10]
+	}, -- [33]
 	{
 		"all in", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -3217,7 +3700,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537355,
-	}, -- [11]
+	}, -- [34]
 	{
 		"capping base", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -3238,7 +3721,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537345,
-	}, -- [12]
+	}, -- [35]
 	{
 		"PUSH", -- [1]
 		"Sachí-Frostmourne", -- [2]
@@ -3259,7 +3742,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537343,
-	}, -- [13]
+	}, -- [36]
 	{
 		"ALLLL IN", -- [1]
 		"Khatria-Proudmoore", -- [2]
@@ -3280,7 +3763,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537343,
-	}, -- [14]
+	}, -- [37]
 	{
 		"Go go go", -- [1]
 		"Lidrelle-Norgannon", -- [2]
@@ -3301,7 +3784,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537340,
-	}, -- [15]
+	}, -- [38]
 	{
 		"dicks out boys", -- [1]
 		"Hairysloth-Misha", -- [2]
@@ -3322,7 +3805,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		[31] = 1613537339,
-	}, -- [16]
+	}, -- [39]
 	{
 		"our gates down", -- [1]
 		"Age-BoreanTundra", -- [2]
@@ -3343,7 +3826,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537338,
-	}, -- [17]
+	}, -- [40]
 	{
 		"full send", -- [1]
 		"Hairysloth-Misha", -- [2]
@@ -3364,7 +3847,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		[31] = 1613537333,
-	}, -- [18]
+	}, -- [41]
 	{
 		"push gates broken", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -3385,7 +3868,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537332,
-	}, -- [19]
+	}, -- [42]
 	{
 		"GET READY TO PUSH IN", -- [1]
 		"Khatria-Proudmoore", -- [2]
@@ -3406,7 +3889,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537332,
-	}, -- [20]
+	}, -- [43]
 	{
 		"5", -- [1]
 		"Lidrelle-Norgannon", -- [2]
@@ -3427,7 +3910,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537331,
-	}, -- [21]
+	}, -- [44]
 	{
 		"10", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -3448,7 +3931,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537319,
-	}, -- [22]
+	}, -- [45]
 	{
 		"gate 19", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -3469,7 +3952,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537317,
-	}, -- [23]
+	}, -- [46]
 	{
 		"gate 20 get ready for push", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -3490,7 +3973,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537286,
-	}, -- [24]
+	}, -- [47]
 	{
 		"gate 30", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -3511,7 +3994,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537265,
-	}, -- [25]
+	}, -- [48]
 	{
 		"it seems we have 12 mins to finish this one way or the other", -- [1]
 		"Botanybay-Cho'gall", -- [2]
@@ -3532,7 +4015,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537242,
-	}, -- [26]
+	}, -- [49]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:6470:Player-125-099F722D:1:2:16:21:4294967295:4294967295:4294967295:4294967295|h[Heroic: Shado-Pan Monastery]|h|r!", -- [1]
 		"Aulwyn-SistersofElune", -- [2]
@@ -3553,7 +4036,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613537242,
-	}, -- [27]
+	}, -- [50]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:6469:Player-125-099F722D:1:2:16:21:4294967295:4294967295:4294967295:4294967295|h[Shado-Pan Monastery]|h|r!", -- [1]
 		"Aulwyn-SistersofElune", -- [2]
@@ -3574,7 +4057,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613537242,
-	}, -- [28]
+	}, -- [51]
 	{
 		"gate 40", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -3595,7 +4078,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537238,
-	}, -- [29]
+	}, -- [52]
 	{
 		"Glaives are hitting", -- [1]
 		"Lidrelle-Norgannon", -- [2]
@@ -3616,7 +4099,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537214,
-	}, -- [30]
+	}, -- [53]
 	{
 		"gate 60", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -3637,7 +4120,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537212,
-	}, -- [31]
+	}, -- [54]
 	{
 		"where are glaives?", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -3658,7 +4141,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537196,
-	}, -- [32]
+	}, -- [55]
 	{
 		"anyone got the addon?", -- [1]
 		"Khatria-Proudmoore", -- [2]
@@ -3679,7 +4162,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537192,
-	}, -- [33]
+	}, -- [56]
 	{
 		"gate less than 80", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -3700,7 +4183,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537182,
-	}, -- [34]
+	}, -- [57]
 	{
 		"good news is a shitton are in the base", -- [1]
 		"Botanybay-Cho'gall", -- [2]
@@ -3721,7 +4204,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537168,
-	}, -- [35]
+	}, -- [58]
 	{
 		"we have enough inside", -- [1]
 		"Popejonny-Mug'thol", -- [2]
@@ -3742,7 +4225,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537166,
-	}, -- [36]
+	}, -- [59]
 	{
 		"Aim up, 1 is still falling short", -- [1]
 		"Lidrelle-Norgannon", -- [2]
@@ -3763,7 +4246,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537150,
-	}, -- [37]
+	}, -- [60]
 	{
 		"Glaives are low", -- [1]
 		"Lidrelle-Norgannon", -- [2]
@@ -3784,7 +4267,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537135,
-	}, -- [38]
+	}, -- [61]
 	{
 		"need help at docks", -- [1]
 		"Tian-Blade'sEdge", -- [2]
@@ -3805,7 +4288,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537128,
-	}, -- [39]
+	}, -- [62]
 	{
 		"guess we gotta win fast", -- [1]
 		"Blindillidan-Stonemaul", -- [2]
@@ -3826,7 +4309,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537062,
-	}, -- [40]
+	}, -- [63]
 	{
 		"inc 3 docks back side", -- [1]
 		"Daisyduke-Bonechewer", -- [2]
@@ -3847,7 +4330,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613537048,
-	}, -- [41]
+	}, -- [64]
 	{
 		"REMEMBER PROTECT GLAIVES AND CATA INSIDE FOR BOMBS", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -3868,7 +4351,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536991,
-	}, -- [42]
+	}, -- [65]
 	{
 		"damnit, kevin >:(", -- [1]
 		"Iloveprotips-Sargeras", -- [2]
@@ -3889,7 +4372,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536979,
-	}, -- [43]
+	}, -- [66]
 	{
 		"sir you do realize this is a wendy's?", -- [1]
 		"Botanybay-Cho'gall", -- [2]
@@ -3910,7 +4393,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536964,
-	}, -- [44]
+	}, -- [67]
 	{
 		"|cff0070dd|Hitem:179946::::::::60:254:::1:3524::::|h[Selfless Forgelite's Belt]|h|r|cff0070dd|Hitem:179944::::::::60:254:::1:3524::::|h[Selfless Forgelite's Breeches]|h|r|cffa335ee|Hitem:179941::::::::60:254:::1:3524::::|h[Selfless Forgelite's Boots]|h|r", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -3931,7 +4414,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536941,
-	}, -- [45]
+	}, -- [68]
 	{
 		"|cffa335ee|Hitem:179940::::::::60:254:::1:3524::::|h[Selfless Forgelite's Vest]|h|r|cff0070dd|Hitem:179947::::::::60:254:::1:3524::::|h[Selfless Forgelite's Wristwraps]|h|r|cff0070dd|Hitem:179942::::::::60:254:::1:3524::::|h[Selfless Forgelite's Gloves]|h|r", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -3952,7 +4435,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536938,
-	}, -- [46]
+	}, -- [69]
 	{
 		"|cff0070dd|Hitem:179943::::::::60:254:::1:3524::::|h[Selfless Forgelite's Helm]|h|r|cff0070dd|Hitem:179945::::::::60:254:::1:3524::::|h[Selfless Forgelite's Spaulders]|h|r|cff0070dd|Hitem:179948::::::::60:254:::1:3524::::|h[Selfless Forgelite's Drape]|h|r", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -3973,7 +4456,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536934,
-	}, -- [47]
+	}, -- [70]
 	{
 		"need 3 more for cannons here", -- [1]
 		"Age-BoreanTundra", -- [2]
@@ -3994,7 +4477,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536894,
-	}, -- [48]
+	}, -- [71]
 	{
 		"plus GLAIVES GLAIVES", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -4015,7 +4498,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536891,
-	}, -- [49]
+	}, -- [72]
 	{
 		"to the focks", -- [1]
 		"Blindillidan-Stonemaul", -- [2]
@@ -4036,7 +4519,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536890,
-	}, -- [50]
+	}, -- [73]
 	{
 		"CATA CATA CATA BOMBS BOMBS BOMBS", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -4057,7 +4540,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536881,
-	}, -- [51]
+	}, -- [74]
 	{
 		"GLAIVES GLAIVES GLAIVES GLAIVES", -- [1]
 		"Summoneer-Sargeras", -- [2]
@@ -4078,7 +4561,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536870,
-	}, -- [52]
+	}, -- [75]
 	{
 		"again just won this everybody run and protect glaives then cata inside with bombs", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -4099,7 +4582,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536868,
-	}, -- [53]
+	}, -- [76]
 	{
 		"they have glaives now lol", -- [1]
 		"Unrue-Proudmoore", -- [2]
@@ -4120,7 +4603,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536603,
-	}, -- [54]
+	}, -- [77]
 	{
 		"Capping: Alliance Gate (East) - 68.7%", -- [1]
 		"Stigro-Ner'zhul", -- [2]
@@ -4141,7 +4624,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536513,
-	}, -- [55]
+	}, -- [78]
 	{
 		"full fucking send", -- [1]
 		"Hairysloth-Misha", -- [2]
@@ -4162,7 +4645,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536503,
-	}, -- [56]
+	}, -- [79]
 	{
 		"lets go capping gy", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -4183,7 +4666,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536502,
-	}, -- [57]
+	}, -- [80]
 	{
 		"go", -- [1]
 		"Fearforyou-EmeraldDream", -- [2]
@@ -4204,7 +4687,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536493,
-	}, -- [58]
+	}, -- [81]
 	{
 		"gate is down push", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -4225,7 +4708,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536482,
-	}, -- [59]
+	}, -- [82]
 	{
 		"going...", -- [1]
 		"Fearforyou-EmeraldDream", -- [2]
@@ -4246,7 +4729,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536481,
-	}, -- [60]
+	}, -- [83]
 	{
 		"10% their wal;ls!", -- [1]
 		"Summoneer-Sargeras", -- [2]
@@ -4267,7 +4750,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536469,
-	}, -- [61]
+	}, -- [84]
 	{
 		"Capping: Horde Gate (West) - 8.9%", -- [1]
 		"Aristemy-Nemesis", -- [2]
@@ -4288,7 +4771,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613536467,
-	}, -- [62]
+	}, -- [85]
 	{
 		"Capping: Horde Gate (West) - 9.8%", -- [1]
 		"Aristemy-Nemesis", -- [2]
@@ -4309,7 +4792,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613536465,
-	}, -- [63]
+	}, -- [86]
 	{
 		"g", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -4330,7 +4813,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536452,
-	}, -- [64]
+	}, -- [87]
 	{
 		"i see 1 dem only", -- [1]
 		"Unrue-Proudmoore", -- [2]
@@ -4351,7 +4834,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536451,
-	}, -- [65]
+	}, -- [88]
 	{
 		"protect gaives", -- [1]
 		"Aristemy-Nemesis", -- [2]
@@ -4372,7 +4855,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536450,
-	}, -- [66]
+	}, -- [89]
 	{
 		"Capping: Horde Gate (West) - 19.5%", -- [1]
 		"Stigro-Ner'zhul", -- [2]
@@ -4393,7 +4876,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536449,
-	}, -- [67]
+	}, -- [90]
 	{
 		"Capping: Alliance Gate (East) - 71.9%", -- [1]
 		"Stigro-Ner'zhul", -- [2]
@@ -4414,7 +4897,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536448,
-	}, -- [68]
+	}, -- [91]
 	{
 		"second wave inc", -- [1]
 		"Unrue-Proudmoore", -- [2]
@@ -4435,7 +4918,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536443,
-	}, -- [69]
+	}, -- [92]
 	{
 		"gate at 32", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -4456,7 +4939,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536426,
-	}, -- [70]
+	}, -- [93]
 	{
 		"Nice!", -- [1]
 		"Nieyanna-SistersofElune", -- [2]
@@ -4477,7 +4960,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD",
 		[31] = 1613536405,
-	}, -- [71]
+	}, -- [94]
 	{
 		"were going to break this shit soon", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -4498,7 +4981,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536401,
-	}, -- [72]
+	}, -- [95]
 	{
 		"get er dun", -- [1]
 		"Shadowpeachy-Lightbringer", -- [2]
@@ -4519,7 +5002,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536393,
-	}, -- [73]
+	}, -- [96]
 	{
 		"fucking stay and protect", -- [1]
 		"Fearforyou-EmeraldDream", -- [2]
@@ -4540,7 +5023,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536386,
-	}, -- [74]
+	}, -- [97]
 	{
 		"our D is good", -- [1]
 		"Shadowpeachy-Lightbringer", -- [2]
@@ -4561,7 +5044,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536381,
-	}, -- [75]
+	}, -- [98]
 	{
 		"all sioege down -- wave 1 is dead horde", -- [1]
 		"Unrue-Proudmoore", -- [2]
@@ -4582,7 +5065,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536369,
-	}, -- [76]
+	}, -- [99]
 	{
 		"docks", -- [1]
 		"Stigro-Ner'zhul", -- [2]
@@ -4603,7 +5086,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536353,
-	}, -- [77]
+	}, -- [100]
 	{
 		"Capping: Alliance Gate (East) - 76.2%", -- [1]
 		"Stigro-Ner'zhul", -- [2]
@@ -4624,7 +5107,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536341,
-	}, -- [78]
+	}, -- [101]
 	{
 		"Capping: Horde Gate (West) - 75.9%", -- [1]
 		"Stigro-Ner'zhul", -- [2]
@@ -4645,7 +5128,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536340,
-	}, -- [79]
+	}, -- [102]
 	{
 		"docks", -- [1]
 		"Drafted-Darkspear", -- [2]
@@ -4666,7 +5149,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536321,
-	}, -- [80]
+	}, -- [103]
 	{
 		"stay and help", -- [1]
 		"Fearforyou-EmeraldDream", -- [2]
@@ -4687,7 +5170,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536307,
-	}, -- [81]
+	}, -- [104]
 	{
 		"protect", -- [1]
 		"Fearforyou-EmeraldDream", -- [2]
@@ -4708,7 +5191,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536302,
-	}, -- [82]
+	}, -- [105]
 	{
 		"protect gaives", -- [1]
 		"Aristemy-Nemesis", -- [2]
@@ -4729,7 +5212,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536298,
-	}, -- [83]
+	}, -- [106]
 	{
 		"ive been waiting to get this mog since the expac started!!!! |cffa335ee|Hitem:181805::::::::60:267::14::1:28:837:::|h[Osteowings of the Necrolords]|h|r", -- [1]
 		"Jaxxon-BlackwaterRaiders", -- [2]
@@ -4750,7 +5233,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD",
 		[31] = 1613536293,
-	}, -- [84]
+	}, -- [107]
 	{
 		"inc 4 siege -- focus", -- [1]
 		"Unrue-Proudmoore", -- [2]
@@ -4771,7 +5254,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536275,
-	}, -- [85]
+	}, -- [108]
 	{
 		"using catas and running bombs please", -- [1]
 		"Lorgaire-Zuluhed", -- [2]
@@ -4792,7 +5275,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536252,
-	}, -- [86]
+	}, -- [109]
 	{
 		"Capping: Docks - 9.0 (Alliance)", -- [1]
 		"Convergense-Tichondrius", -- [2]
@@ -4813,7 +5296,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536228,
-	}, -- [87]
+	}, -- [110]
 	{
 		"waaa hooo!!!", -- [1]
 		"Jaxxon-BlackwaterRaiders", -- [2]
@@ -4834,7 +5317,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD",
 		[31] = 1613536226,
-	}, -- [88]
+	}, -- [111]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:12866:Player-125-09A16788:1:2:16:21:4294967295:4294967295:4294967295:4294967295|h[100 Exalted Reputations]|h|r!", -- [1]
 		"Ozmoseus-SistersofElune", -- [2]
@@ -4855,7 +5338,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613536207,
-	}, -- [89]
+	}, -- [112]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:14837:Player-125-0803AA4E:1:2:16:21:4294967295:4294967295:4294967295:4294967295|h[Nexus of Bonds]|h|r!", -- [1]
 		"Jaxxon-BlackwaterRaiders", -- [2]
@@ -4876,7 +5359,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613536200,
-	}, -- [90]
+	}, -- [113]
 	{
 		"it always boils down to how many horde siege engines we kill", -- [1]
 		"Unrue-Proudmoore", -- [2]
@@ -4897,7 +5380,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536184,
-	}, -- [91]
+	}, -- [114]
 	{
 		"lol", -- [1]
 		"Fearforyou-EmeraldDream", -- [2]
@@ -4918,7 +5401,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536159,
-	}, -- [92]
+	}, -- [115]
 	{
 		"or not", -- [1]
 		"Zylaw-Thrall", -- [2]
@@ -4939,7 +5422,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536158,
-	}, -- [93]
+	}, -- [116]
 	{
 		"Quary", -- [1]
 		"Zylaw-Thrall", -- [2]
@@ -4960,7 +5443,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536151,
-	}, -- [94]
+	}, -- [117]
 	{
 		"count mid now", -- [1]
 		"Fearforyou-EmeraldDream", -- [2]
@@ -4981,7 +5464,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536146,
-	}, -- [95]
+	}, -- [118]
 	{
 		"someone go uarry", -- [1]
 		"Zylaw-Thrall", -- [2]
@@ -5002,7 +5485,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536144,
-	}, -- [96]
+	}, -- [119]
 	{
 		"not last game", -- [1]
 		"Stigro-Ner'zhul", -- [2]
@@ -5023,7 +5506,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536141,
-	}, -- [97]
+	}, -- [120]
 	{
 		"mines?", -- [1]
 		"Merza-Khaz'goroth", -- [2]
@@ -5044,7 +5527,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536124,
-	}, -- [98]
+	}, -- [121]
 	{
 		"if you give them mid and hanger we losae lol", -- [1]
 		"Zylaw-Thrall", -- [2]
@@ -5065,7 +5548,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536124,
-	}, -- [99]
+	}, -- [122]
 	{
 		"no it doesn't", -- [1]
 		"Fearforyou-EmeraldDream", -- [2]
@@ -5086,7 +5569,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536114,
-	}, -- [100]
+	}, -- [123]
 	{
 		"FROG UP COCKS FOR DOCKS", -- [1]
 		"Klawzz-Dalaran", -- [2]
@@ -5107,7 +5590,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536109,
-	}, -- [101]
+	}, -- [124]
 	{
 		"slows them down if you do it right", -- [1]
 		"Ragnahavok-Alexstrasza", -- [2]
@@ -5128,7 +5611,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536103,
-	}, -- [102]
+	}, -- [125]
 	{
 		"mid is like suicide -- horde and mid are married", -- [1]
 		"Unrue-Proudmoore", -- [2]
@@ -5149,7 +5632,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536102,
-	}, -- [103]
+	}, -- [126]
 	{
 		"you know like 9 of these ppl at min.. gonna rush mid and wipe", -- [1]
 		"Fearforyou-EmeraldDream", -- [2]
@@ -5170,7 +5653,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536091,
-	}, -- [104]
+	}, -- [127]
 	{
 		"stop moving", -- [1]
 		"Rosc-Stormrage", -- [2]
@@ -5191,7 +5674,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536084,
-	}, -- [105]
+	}, -- [128]
 	{
 		"i can stay and defend", -- [1]
 		"Iloveprotips-Sargeras", -- [2]
@@ -5212,7 +5695,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536083,
-	}, -- [106]
+	}, -- [129]
 	{
 		"rest go mid", -- [1]
 		"Zylaw-Thrall", -- [2]
@@ -5233,7 +5716,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536082,
-	}, -- [107]
+	}, -- [130]
 	{
 		"send 5 glavies", -- [1]
 		"Zylaw-Thrall", -- [2]
@@ -5254,7 +5737,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536080,
-	}, -- [108]
+	}, -- [131]
 	{
 		"i need trasnmog or i wont dps", -- [1]
 		"Rosc-Stormrage", -- [2]
@@ -5275,7 +5758,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536073,
-	}, -- [109]
+	}, -- [132]
 	{
 		"ill go in the horde keep and heal the bomb varries", -- [1]
 		"Convergense-Tichondrius", -- [2]
@@ -5296,7 +5779,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536072,
-	}, -- [110]
+	}, -- [133]
 	{
 		"if you want to win", -- [1]
 		"Zylaw-Thrall", -- [2]
@@ -5317,7 +5800,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536072,
-	}, -- [111]
+	}, -- [134]
 	{
 		"can I get just four volunteers -- we man the keep cannons", -- [1]
 		"Unrue-Proudmoore", -- [2]
@@ -5338,7 +5821,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536069,
-	}, -- [112]
+	}, -- [135]
 	{
 		"and run bombs", -- [1]
 		"Tylerboy-Sargeras", -- [2]
@@ -5359,7 +5842,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536069,
-	}, -- [113]
+	}, -- [136]
 	{
 		"protect the glaives", -- [1]
 		"Convergense-Tichondrius", -- [2]
@@ -5380,7 +5863,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536069,
-	}, -- [114]
+	}, -- [137]
 	{
 		"protect the glaives", -- [1]
 		"Convergense-Tichondrius", -- [2]
@@ -5401,7 +5884,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536069,
-	}, -- [115]
+	}, -- [138]
 	{
 		"god, my fifth time tognith -- anyone want to defend with me? need 4 to defend with keep cannons.  Rest go docks and glaives and defend glaives etc etc", -- [1]
 		"Unrue-Proudmoore", -- [2]
@@ -5422,7 +5905,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536044,
-	}, -- [116]
+	}, -- [139]
 	{
 		"COCKS FOR DOCKS FROG UP", -- [1]
 		"Klawzz-Dalaran", -- [2]
@@ -5443,7 +5926,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613536034,
-	}, -- [117]
+	}, -- [140]
 	{
 		"tyyy", -- [1]
 		"Katrinah-Drakkari", -- [2]
@@ -5464,7 +5947,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535806,
-	}, -- [118]
+	}, -- [141]
 	{
 		"ggs", -- [1]
 		"Unrue-Proudmoore", -- [2]
@@ -5485,7 +5968,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535796,
-	}, -- [119]
+	}, -- [142]
 	{
 		"gg", -- [1]
 		"Stigro-Ner'zhul", -- [2]
@@ -5506,7 +5989,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535791,
-	}, -- [120]
+	}, -- [143]
 	{
 		"niceee", -- [1]
 		"Boophme-Stormrage", -- [2]
@@ -5527,7 +6010,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535789,
-	}, -- [121]
+	}, -- [144]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:3846:Player-125-09AC62FC:1:2:16:21:4294967295:4294967295:4294967295:4294967295|h[Resource Glut]|h|r!", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -5548,7 +6031,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613535787,
-	}, -- [122]
+	}, -- [145]
 	{
 		"we got this", -- [1]
 		"Claudester-Windrunner", -- [2]
@@ -5569,7 +6052,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535786,
-	}, -- [123]
+	}, -- [146]
 	{
 		"boss at 35", -- [1]
 		"Zerkus-Lightning'sBlade", -- [2]
@@ -5590,7 +6073,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535774,
-	}, -- [124]
+	}, -- [147]
 	{
 		"our gate is down", -- [1]
 		"Unrue-Proudmoore", -- [2]
@@ -5611,7 +6094,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535759,
-	}, -- [125]
+	}, -- [148]
 	{
 		"they're in", -- [1]
 		"Busta-Haomarush", -- [2]
@@ -5632,7 +6115,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535758,
-	}, -- [126]
+	}, -- [149]
 	{
 		"Capping: Alliance Gate (East) - 2.2%", -- [1]
 		"Stigro-Ner'zhul", -- [2]
@@ -5653,7 +6136,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535745,
-	}, -- [127]
+	}, -- [150]
 	{
 		"Capping: Alliance Gate (East) - 2.2%", -- [1]
 		"Stigro-Ner'zhul", -- [2]
@@ -5674,7 +6157,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535744,
-	}, -- [128]
+	}, -- [151]
 	{
 		"Capping: Alliance Gate (East) - 6.0%", -- [1]
 		"Stigro-Ner'zhul", -- [2]
@@ -5695,7 +6178,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535729,
-	}, -- [129]
+	}, -- [152]
 	{
 		"Capping: Alliance Gate (East) - 6.2%", -- [1]
 		"Stigro-Ner'zhul", -- [2]
@@ -5716,7 +6199,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535728,
-	}, -- [130]
+	}, -- [153]
 	{
 		"Capping: Alliance Gate (East) - 6.2%", -- [1]
 		"Stigro-Ner'zhul", -- [2]
@@ -5737,7 +6220,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535728,
-	}, -- [131]
+	}, -- [154]
 	{
 		"gogogo", -- [1]
 		"Claudester-Windrunner", -- [2]
@@ -5758,7 +6241,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535727,
-	}, -- [132]
+	}, -- [155]
 	{
 		"go go", -- [1]
 		"Shádøws-Illidan", -- [2]
@@ -5779,7 +6262,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535726,
-	}, -- [133]
+	}, -- [156]
 	{
 		"Capping: Alliance Gate (East) - 7.3%", -- [1]
 		"Stigro-Ner'zhul", -- [2]
@@ -5800,7 +6283,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535725,
-	}, -- [134]
+	}, -- [157]
 	{
 		"on my way, doing my makeup", -- [1]
 		"Gandonk-Zul'jin", -- [2]
@@ -5821,7 +6304,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		[31] = 1613535723,
-	}, -- [135]
+	}, -- [158]
 	{
 		"hurry", -- [1]
 		"Vlademar-Icecrown", -- [2]
@@ -5842,7 +6325,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535720,
-	}, -- [136]
+	}, -- [159]
 	{
 		"t hey almost done", -- [1]
 		"Vlademar-Icecrown", -- [2]
@@ -5863,7 +6346,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535719,
-	}, -- [137]
+	}, -- [160]
 	{
 		"quick", -- [1]
 		"Stigro-Ner'zhul", -- [2]
@@ -5884,7 +6367,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535718,
-	}, -- [138]
+	}, -- [161]
 	{
 		"in in in", -- [1]
 		"Stigro-Ner'zhul", -- [2]
@@ -5905,7 +6388,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535717,
-	}, -- [139]
+	}, -- [162]
 	{
 		"WEST GATE OPEN", -- [1]
 		"Boophme-Stormrage", -- [2]
@@ -5926,7 +6409,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535710,
-	}, -- [140]
+	}, -- [163]
 	{
 		"west gate going down", -- [1]
 		"Zerkus-Lightning'sBlade", -- [2]
@@ -5947,7 +6430,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535705,
-	}, -- [141]
+	}, -- [164]
 	{
 		"and they running bombs -- hope you are guys are doing well", -- [1]
 		"Unrue-Proudmoore", -- [2]
@@ -5968,7 +6451,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535704,
-	}, -- [142]
+	}, -- [165]
 	{
 		"got 3 of the sieges down -- there is one left", -- [1]
 		"Unrue-Proudmoore", -- [2]
@@ -5989,7 +6472,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535694,
-	}, -- [143]
+	}, -- [166]
 	{
 		"get ready west gate", -- [1]
 		"Shádøws-Illidan", -- [2]
@@ -6010,7 +6493,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535677,
-	}, -- [144]
+	}, -- [167]
 	{
 		"call out cappers at Docks", -- [1]
 		"Zerkus-Lightning'sBlade", -- [2]
@@ -6031,7 +6514,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535628,
-	}, -- [145]
+	}, -- [168]
 	{
 		"Zug-zug'ama Makogg Kaz'goth'No Aaz'no Nogu ", -- [1]
 		"Pessimism-Zul'jin", -- [2]
@@ -6052,7 +6535,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613535594,
-	}, -- [146]
+	}, -- [169]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:14837:Player-125-09ACC89B:1:2:16:21:4294967295:4294967295:4294967295:4294967295|h[Nexus of Bonds]|h|r!", -- [1]
 		"Nieyanna-SistersofElune", -- [2]
@@ -6073,7 +6556,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613535574,
-	}, -- [147]
+	}, -- [170]
 	{
 		"Capping: Alliance Gate (East) - 65.2%", -- [1]
 		"Stigro-Ner'zhul", -- [2]
@@ -6094,7 +6577,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535558,
-	}, -- [148]
+	}, -- [171]
 	{
 		"Capping: Horde Gate (West) - 63.5%", -- [1]
 		"Stigro-Ner'zhul", -- [2]
@@ -6115,7 +6598,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535557,
-	}, -- [149]
+	}, -- [172]
 	{
 		"makes some strange gestures.", -- [1]
 		"Taraka-Ysera", -- [2]
@@ -6136,7 +6619,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_EMOTE",
 		[31] = 1613535536,
-	}, -- [150]
+	}, -- [173]
 	{
 		"they taking docks", -- [1]
 		"Agishako-Area52", -- [2]
@@ -6157,7 +6640,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535504,
-	}, -- [151]
+	}, -- [174]
 	{
 		"anyone want to run torghast?", -- [1]
 		"Eiress-SistersofElune", -- [2]
@@ -6178,7 +6661,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD",
 		[31] = 1613535496,
-	}, -- [152]
+	}, -- [175]
 	{
 		"rotec glaviesss", -- [1]
 		"Boophme-Stormrage", -- [2]
@@ -6199,7 +6682,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535443,
-	}, -- [153]
+	}, -- [176]
 	{
 		"inc siege 2", -- [1]
 		"Unrue-Proudmoore", -- [2]
@@ -6220,7 +6703,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535425,
-	}, -- [154]
+	}, -- [177]
 	{
 		"once sieges are here, we will rotate to side cannons for defense too", -- [1]
 		"Unrue-Proudmoore", -- [2]
@@ -6241,7 +6724,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535420,
-	}, -- [155]
+	}, -- [178]
 	{
 		"meow", -- [1]
 		"Stigro-Ner'zhul", -- [2]
@@ -6262,68 +6745,5 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_INSTANCE_CHAT",
 		[31] = 1613535409,
-	}, -- [156]
-	{
-		"focus west gate", -- [1]
-		"Shádøws-Illidan", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Shádøws-Illidan", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		136, -- [11]
-		"Player-57-0CF23057", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_INSTANCE_CHAT",
-		[31] = 1613535403,
-	}, -- [157]
-	{
-		"if u dont know how  to use glaives or cats DON'T fuckin get in em", -- [1]
-		"Boophme-Stormrage", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Boophme-Stormrage", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		132, -- [11]
-		"Player-60-0E2C3DBE", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_INSTANCE_CHAT",
-		[31] = 1613535377,
-	}, -- [158]
-	{
-		"but I do need a couple manmning the side cannons at our base", -- [1]
-		"Unrue-Proudmoore", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Unrue-Proudmoore", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		125, -- [11]
-		"Player-5-0B311EE9", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_INSTANCE_CHAT",
-		[31] = 1613535361,
-	}, -- [159]
+	}, -- [179]
 }

@@ -26,24 +26,24 @@ OneRing_Config = {
 		["RingKeeper"] = {
 			["Pets"] = {
 				{
-					["id"] = 883,
 					["sliceToken"] = "ABueyhiySOd",
+					["id"] = 883,
 				}, -- [1]
 				{
-					["id"] = 83242,
 					["sliceToken"] = "ABueyhiySO3",
+					["id"] = 83242,
 				}, -- [2]
 				{
-					["id"] = 83243,
 					["sliceToken"] = "ABueyhiySOs",
+					["id"] = 83243,
 				}, -- [3]
 				{
-					["id"] = 83244,
 					["sliceToken"] = "ABueyhiySOa",
+					["id"] = 83244,
 				}, -- [4]
 				{
-					["id"] = 83245,
 					["sliceToken"] = "ABueyhiySOp",
+					["id"] = 83245,
 				}, -- [5]
 				["limit"] = "Bracnar-SistersofElune",
 				["save"] = true,
@@ -93,8 +93,8 @@ OneRing_Config = {
 					["sliceToken"] = "OPCCTb",
 				}, -- [3]
 				{
-					["id"] = "/cast [mod] {{spell:13262}}; {{spell:7411/51313}}",
 					["sliceToken"] = "OPCCTe",
+					["id"] = "/cast [mod] {{spell:13262}}; {{spell:7411/51313}}",
 				}, -- [4]
 				{
 					["id"] = "/cast {{spell:2259/51304}}",
@@ -109,8 +109,8 @@ OneRing_Config = {
 					["id"] = "/cast [mod] Thermal Anvil; {{spell:4036/51306}}",
 				}, -- [7]
 				{
-					["sliceToken"] = "OPCCTm",
 					["id"] = 2656,
+					["sliceToken"] = "OPCCTm",
 				}, -- [8]
 				{
 					["id"] = "/cast [mod] {{spell:31252}}; {{spell:25229/51311}};",
@@ -243,14 +243,14 @@ OneRing_Config = {
 				{
 					"item", -- [1]
 					172049, -- [2]
-					["show"] = "[spec:255/253] hide;",
 					["sliceToken"] = "ABuekN1Wpxj",
+					["show"] = "[spec:255/253] hide;",
 				}, -- [4]
 				{
 					"item", -- [1]
 					172051, -- [2]
-					["show"] = "[spec:255/254] hide;",
 					["sliceToken"] = "ABuekN1Wpxh",
+					["show"] = "[spec:255/254] hide;",
 				}, -- [5]
 				{
 					"item", -- [1]
@@ -267,8 +267,8 @@ OneRing_Config = {
 					181468, -- [2]
 					["sliceToken"] = "ABueldpZIqr",
 				}, -- [8]
-				["save"] = true,
 				["name"] = "Food",
+				["save"] = true,
 				["limit"] = "Bracnar-SistersofElune",
 			},
 			["Teleport"] = {

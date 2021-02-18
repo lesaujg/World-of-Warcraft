@@ -13,6 +13,11 @@ PawnCommon = {
 	["ShowTooltipIcons"] = true,
 	["LastVersion"] = 2.0414,
 	["ShowSocketingAdvisor"] = true,
+	["ShowSpecIcons"] = true,
+	["ShowLootUpgradeAdvisor"] = true,
+	["ButtonPosition"] = 2,
+	["IgnoreGemsWhileLeveling"] = true,
+	["ShowQuestUpgradeAdvisor"] = true,
 	["Scales"] = {
 		["\"MrRobot\":HUNTER3"] = {
 			["IconTexturePath"] = 461113,
@@ -70,10 +75,10 @@ PawnCommon = {
 				["IsAxe"] = -1000000,
 				["MasteryRating"] = 1.06,
 				["IsSword"] = -1000000,
-				["Is2HSword"] = -1000000,
+				["Avoidance"] = 0.03,
 				["IsMace"] = -1000000,
 				["IsShield"] = -1000000,
-				["Avoidance"] = 0.03,
+				["Is2HSword"] = -1000000,
 			},
 			["Color"] = "aad372",
 			["ClassID"] = 3,
@@ -108,6 +113,9 @@ PawnCommon = {
 			["IconTexturePath"] = 135940,
 			["PerCharacterOptions"] = {
 				["Edaka-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
+				["Palani-Sisters of Elune"] = {
 					["Visible"] = true,
 				},
 			},
@@ -269,9 +277,6 @@ PawnCommon = {
 		["\"MrRobot\":MONK1"] = {
 			["IconTexturePath"] = 608951,
 			["PerCharacterOptions"] = {
-				["Orig-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "00ff96",
 			["LocalizedName"] = "Monk: Brewmaster",
@@ -302,9 +307,6 @@ PawnCommon = {
 		["\"MrRobot\":PRIEST2"] = {
 			["IconTexturePath"] = 237542,
 			["PerCharacterOptions"] = {
-				["Palani-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "ffffff",
 			["LocalizedName"] = "Priest: Holy",
@@ -416,20 +418,23 @@ PawnCommon = {
 			["UnenchantedColor"] = "bf5d07",
 			["SpecID"] = 2,
 		},
-		["\"MrRobot\":MAGE1"] = {
-			["IconTexturePath"] = 135932,
+		["\"MrRobot\":DEMONHUNTER2"] = {
+			["IconTexturePath"] = 1247265,
 			["PerCharacterOptions"] = {
+				["Leanara-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
-			["Color"] = "3fc7eb",
-			["LocalizedName"] = "Mage: Arcane",
-			["ClassID"] = 8,
+			["Color"] = "a330c9",
+			["LocalizedName"] = "Demon Hunter: Vengeance",
+			["ClassID"] = 12,
 			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "DAMAGER",
-			["DoNotShow2HUpgrades"] = false,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = true,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["UnenchantedColor"] = "2f95b0",
-			["SpecID"] = 1,
+			["UnenchantedColor"] = "7a2496",
+			["SpecID"] = 2,
 		},
 		["\"MrRobot\":PALADIN2"] = {
 			["IconTexturePath"] = 236264,
@@ -472,7 +477,7 @@ PawnCommon = {
 			["Values"] = {
 				["IsWand"] = -1000000,
 				["Indestructible"] = 0.01,
-				["IsMace"] = -1000000,
+				["MinDamage"] = 0.99,
 				["CritRating"] = 1.06,
 				["Agility"] = 1.65,
 				["HasteRating"] = 1.24,
@@ -481,13 +486,13 @@ PawnCommon = {
 				["IsFrill"] = -1000000,
 				["MaxDamage"] = 0.99,
 				["IsPlate"] = -1000000,
-				["Leech"] = 0.01,
-				["Is2HMace"] = -1000000,
 				["IsWarglaive"] = -1000000,
+				["Is2HMace"] = -1000000,
+				["Leech"] = 0.01,
 				["Avoidance"] = 0.02,
 				["MovementSpeed"] = 0.03,
 				["IsShield"] = -1000000,
-				["MinDamage"] = 0.99,
+				["IsMace"] = -1000000,
 			},
 			["Color"] = "aad372",
 			["ClassID"] = 3,
@@ -604,10 +609,10 @@ PawnCommon = {
 				["IsAxe"] = -1000000,
 				["MasteryRating"] = 1.33,
 				["IsSword"] = -1000000,
-				["Is2HSword"] = -1000000,
+				["Avoidance"] = 0.03,
 				["IsMace"] = -1000000,
 				["IsShield"] = -1000000,
-				["Avoidance"] = 0.03,
+				["Is2HSword"] = -1000000,
 			},
 			["Color"] = "aad372",
 			["ClassID"] = 3,
@@ -620,12 +625,24 @@ PawnCommon = {
 				},
 			},
 		},
+		["\"MrRobot\":MAGE1"] = {
+			["IconTexturePath"] = 135932,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "3fc7eb",
+			["LocalizedName"] = "Mage: Arcane",
+			["ClassID"] = 8,
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["UnenchantedColor"] = "2f95b0",
+			["SpecID"] = 1,
+		},
 		["\"MrRobot\":SHAMAN3"] = {
 			["IconTexturePath"] = 136052,
 			["PerCharacterOptions"] = {
-				["Torinara-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "0070de",
 			["LocalizedName"] = "Shaman: Restoration",
@@ -637,24 +654,6 @@ PawnCommon = {
 			["Provider"] = "MrRobot",
 			["UnenchantedColor"] = "0054a6",
 			["SpecID"] = 3,
-		},
-		["\"MrRobot\":DEMONHUNTER2"] = {
-			["IconTexturePath"] = 1247265,
-			["PerCharacterOptions"] = {
-				["Leanara-Sisters of Elune"] = {
-					["Visible"] = true,
-				},
-			},
-			["Color"] = "a330c9",
-			["LocalizedName"] = "Demon Hunter: Vengeance",
-			["ClassID"] = 12,
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "TANK",
-			["DoNotShow2HUpgrades"] = true,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["UnenchantedColor"] = "7a2496",
-			["SpecID"] = 2,
 		},
 		["\"MrRobot\":DRUID3"] = {
 			["IconTexturePath"] = 132276,
@@ -692,6 +691,9 @@ PawnCommon = {
 		["\"MrRobot\":SHAMAN2"] = {
 			["IconTexturePath"] = 237581,
 			["PerCharacterOptions"] = {
+				["Torinara-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "0070de",
 			["LocalizedName"] = "Shaman: Enhancement",
@@ -707,6 +709,9 @@ PawnCommon = {
 		["\"MrRobot\":MONK3"] = {
 			["IconTexturePath"] = 608953,
 			["PerCharacterOptions"] = {
+				["Orig-Sisters of Elune"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "00ff96",
 			["LocalizedName"] = "Monk: Windwalker",
@@ -720,10 +725,5 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 	},
-	["ShowLootUpgradeAdvisor"] = true,
-	["ButtonPosition"] = 2,
-	["IgnoreGemsWhileLeveling"] = true,
-	["ShowQuestUpgradeAdvisor"] = true,
-	["ShowSpecIcons"] = true,
 	["ShowUpgradesOnTooltips"] = true,
 }
