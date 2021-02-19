@@ -1,44 +1,31 @@
-tag b1b71b8c80167316079830b5279d5ba9a9c76181 9.0.30
+tag db650153974dd7a3112007358251b18ef7a509e5 9.0.31
 Author:	Mike "Xodiv" Battersby <mib@post.com>
-Date:	Fri Feb 5 09:57:49 2021 +1100
+Date:	Thu Feb 18 08:39:33 2021 +1100
 
-LiteMount 9.0.30
+LiteMount 9.0.31
+- Mark Castle Nathria instance as non-flyable
 
- - fix error with [aura] condiiton when @unit is specified
- - add magic NONE flag that matches nothing
- - enhance Limit action to support these prefixes
-    + : add mounts to considered selection
-    - : remove mounts from considered selection
-    = : replace selction completely with matching mounts
- - no prefix remains "filter" list to subset matching
-
-commit adfaf5714c296ce2a40436fa55e5e1bf482791d3
+commit 9281c9a2d2535173456bdf6074fdc4aff48e460b
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Fri Feb 5 09:56:33 2021 +1100
+Date:   Thu Feb 18 08:37:10 2021 +1100
 
-    Note about metatable special keys
+    Mark Castle Nathria as non-flyable
 
-commit 3bce20ff8a8ba2d922d909f39be1dca67ccb7484
+commit 39ee28a31add00cc3e4d548d8b1ea5c4d3efaf36
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Thu Feb 4 12:50:49 2021 +1100
+Date:   Fri Feb 12 16:56:23 2021 +1100
 
-    Move Limit into MountList for a bit of efficiency
+    Rename Action to Rules in UI
 
-commit c3553197aad929ba81779e18eeef812228c268a0
+commit 6dba29df777ca4bf102613671489b75020e2b711
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Wed Feb 3 19:37:20 2021 +1100
+Date:   Wed Feb 10 13:04:13 2021 +1100
 
-    Handle CASTABLE properly with the new limit
+    Guess families for 9.0.5 datamined mounts
 
-commit 53e40ad6679125674a8082af9fbb2eada0ed4d71
+commit a41fc6be1278e641d9df0090dbe5e87c880d239f
 Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Wed Feb 3 16:14:00 2021 +1100
+Date:   Fri Feb 5 12:34:19 2021 +1100
 
-    Fix aura condition when @unit is specified
-
-commit 0e2dcf0d5980ee724186b34b474a938ddf29e1af
-Author: Mike "Xodiv" Battersby <mib@post.com>
-Date:   Wed Feb 3 15:05:34 2021 +1100
-
-    More futzing with Limit
+    Put the delete flag back on the groups list
 
