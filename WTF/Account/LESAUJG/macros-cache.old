@@ -1,12 +1,25 @@
-VER 3 00000000000000B8 "asedf" "INV_MISC_QUESTIONMARK"
-/script C_GossipInfo.SelectAvailableQuest(2)
-/script CompleteQuest()
-/script GetQuestReward()
+VER 3 000000000000001E "_Clear Target" "3586269"
+/stopcasting
+/cleartarget
+/petfollow
+/petpassive
 END
-VER 3 00000000000000B7 "Buy" "INV_MISC_QUESTIONMARK"
-/use Benthic Chestguard
-/cast disenchant
-/use item:167767
+VER 3 0000000000000099 "_Fish" "INV_MISC_QUESTIONMARK"
+/equipset Fishing
+/use Fishing
+END
+VER 3 00000000000000BD "_Kite" "132128"
+#showtooltip 15
+/use 15
+/use Goblin Glider Kit
+END
+VER 3 000000000000009D "_Reload" "132096"
+/console worldPreloadNonCritical 0
+/reload
+END
+VER 3 00000000000000BA "_Wild Spirits" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [btn:1, @cursor][btn:2] Wild Spirits
 END
 VER 3 00000000000000B1 "Elder Charm" "INV_MISC_QUESTIONMARK"
 #showtooltip Elder Charm of Good Fortune
@@ -17,24 +30,6 @@ VER 3 00000000000000B2 "Essence" "INV_MISC_QUESTIONMARK"
 /cast [@player, button:2]Heart Essence
 /cast [button:1, nomod] Heart Essence
 /cast [@pet, button:1, mode:ctrl] Heart Essence
-END
-VER 3 0000000000000099 "Fish" "INV_MISC_QUESTIONMARK"
-/equipset Fishing
-/use Fishing
-END
-VER 3 000000000000001E "g_Clear Target" "INV_MISC_QUESTIONMARK"
-/stopcasting
-/cleartarget
-/petfollow
-/petpassive
-END
-VER 3 00000000000000BD "g_Kite" "INV_MISC_QUESTIONMARK"
-#showtooltip 15
-/use 15
-/use Goblin Glider Kit
-END
-VER 3 00000000000000BC "Great Vault" "134563"
-/run LoadAddOn("Blizzard_WeeklyRewards"); WeeklyRewardsFrame:Show()
 END
 VER 3 00000000000000AC "Heal Battle Pets" "INV_MISC_QUESTIONMARK"
 /cast [btn:2] Battle Pet Bandage; Revive Battle Pets
@@ -61,18 +56,10 @@ VER 3 0000000000000087 "RandomMount" "INV_MISC_QUESTIONMARK"
 /click [nobtn:2]LiteMount
 /click [btn:2]LiteMount RightButton
 END
-VER 3 000000000000009D "Reload" "132096"
-/console worldPreloadNonCritical 0
-/reload
-END
 VER 3 00000000000000B0 "Rune of Fate" "INV_MISC_QUESTIONMARK"
 /run for i=1,GetMerchantNumItems() do if GetMerchantItemInfo(i)=="Mogu Rune of Fate" then BuyMerchantItem(i,1) break end end
 END
 VER 3 00000000000000B5 "TSMMacro" "Achievement_Faction_GoldenLotus"
 /click TSMCancelAuctionBtn
 /click TSMAuctioningBtn
-END
-VER 3 00000000000000BA "Wild Spirits" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [btn:1, @cursor][btn:2] Wild Spirits
 END

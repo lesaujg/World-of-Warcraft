@@ -21,6 +21,9 @@ VER 3 00000000000000BA "_Wild Spirits" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [btn:1, @cursor][btn:2] Wild Spirits
 END
+VER 3 00000000000000BE "asdf" "INV_MISC_QUESTIONMARK"
+/script print(C_CurrencyInfo.GetCurrencyInfo(1889).quantity)
+END
 VER 3 00000000000000B1 "Elder Charm" "INV_MISC_QUESTIONMARK"
 #showtooltip Elder Charm of Good Fortune
 /run BuyMerchantItem(1,1)
