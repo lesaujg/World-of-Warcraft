@@ -2726,13 +2726,13 @@ TukuiGold = {
 		["Mandelbrot"] = 7212410,
 		["Torinar"] = 67886933,
 		["Orig"] = 69008181,
-		["Clothgar"] = 21834097533,
-		["Herbinator"] = 4270285,
+		["Clothgar"] = 21030345703,
+		["Herbinator"] = 4269835,
 		["Torinara"] = 67589499,
 		["Galinar"] = 72855272,
 		["Belrath"] = 58217525,
 		["Palani"] = 60363345,
-		["Bracnar"] = 414472566,
+		["Bracnar"] = 414199726,
 		["Uldaris"] = 110391403,
 	},
 }
@@ -2988,6 +2988,384 @@ TukuiSettingsPerCharacter = {
 }
 TukuiChatHistory = {
 	{
+		"ty", -- [1]
+		"Muffinmctank-Frostmourne", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Muffinmctank-Frostmourne", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		22, -- [11]
+		"Player-3725-0A78AFEA", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID_LEADER",
+		[31] = 1614091045,
+	}, -- [1]
+	{
+		"again", -- [1]
+		"Izzora-Illidan", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Izzora-Illidan", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		21, -- [11]
+		"Player-57-0B2FB416", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1614091033,
+	}, -- [2]
+	{
+		"thx agaub", -- [1]
+		"Izzora-Illidan", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Izzora-Illidan", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		20, -- [11]
+		"Player-57-0B2FB416", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1614091029,
+	}, -- [3]
+	{
+		"ty", -- [1]
+		"Ratberry-Zul'jin", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Ratberry-Zul'jin", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		19, -- [11]
+		"Player-61-0D6840C3", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1614091022,
+	}, -- [4]
+	{
+		"can kill", -- [1]
+		"Muffinmctank-Frostmourne", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Muffinmctank-Frostmourne", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		18, -- [11]
+		"Player-3725-0A78AFEA", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID_LEADER",
+		[31] = 1614090939,
+	}, -- [5]
+	{
+		"ok delisting", -- [1]
+		"Muffinmctank-Frostmourne", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Muffinmctank-Frostmourne", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		17, -- [11]
+		"Player-3725-0A78AFEA", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID_LEADER",
+		[31] = 1614090937,
+	}, -- [6]
+	{
+		"we give it a few mins or so", -- [1]
+		"Muffinmctank-Frostmourne", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Muffinmctank-Frostmourne", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		16, -- [11]
+		"Player-3725-0A78AFEA", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID_LEADER",
+		[31] = 1614090867,
+	}, -- [7]
+	{
+		"thx again", -- [1]
+		"Ratberry-Zul'jin", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Ratberry-Zul'jin", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		15, -- [11]
+		"Player-61-0D6840C3", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1614090846,
+	}, -- [8]
+	{
+		"feel free to tag", -- [1]
+		"Muffinmctank-Frostmourne", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Muffinmctank-Frostmourne", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		10, -- [11]
+		"Player-3725-0A78AFEA", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_PARTY_LEADER",
+		[31] = 1614090794,
+	}, -- [9]
+	{
+		"ty for listing too", -- [1]
+		"Broomsticks-Zul'jin", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Broomsticks-Zul'jin", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		9, -- [11]
+		"Player-61-0E120623", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_PARTY",
+		[31] = 1614090794,
+	}, -- [10]
+	{
+		"yay", -- [1]
+		"Broomsticks-Zul'jin", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Broomsticks-Zul'jin", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		8, -- [11]
+		"Player-61-0E120623", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_PARTY",
+		[31] = 1614090778,
+	}, -- [11]
+	{
+		"yers", -- [1]
+		"Muffinmctank-Frostmourne", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Muffinmctank-Frostmourne", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		7, -- [11]
+		"Player-3725-0A78AFEA", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_PARTY_LEADER",
+		[31] = 1614090775,
+	}, -- [12]
+	{
+		"could i bring my alt, shes here pls", -- [1]
+		"Broomsticks-Zul'jin", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Broomsticks-Zul'jin", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		6, -- [11]
+		"Player-61-0E120623", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_PARTY",
+		[31] = 1614090770,
+	}, -- [13]
+	{
+		"ditto thanks for posting in disc", -- [1]
+		"Izzora-Illidan", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Izzora-Illidan", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		5, -- [11]
+		"Player-57-0B2FB416", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_PARTY",
+		[31] = 1614090765,
+	}, -- [14]
+	{
+		"thnak for posting", -- [1]
+		"Uldaris-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Uldaris-SistersofElune", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		3, -- [11]
+		"Player-125-099C6308", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_PARTY",
+		[31] = 1614090742,
+	}, -- [15]
+	{
+		"%s has earned the achievement |cffffff00|Hachievement:14746:Player-125-09A1588F:1:2:23:21:4294967295:4294967295:4294967295:4294967295|h[Prepare for Trouble!]|h|r!", -- [1]
+		"Daerlith-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Daerlith-SistersofElune", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		627, -- [11]
+		"Player-125-09A1588F", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		[31] = 1614090344,
+	}, -- [16]
+	{
+		"%s has earned the achievement |cffffff00|Hachievement:14628:Player-125-09AAB186:1:2:23:21:4294967295:4294967295:4294967295:4294967295|h[The Road to Renown]|h|r!", -- [1]
+		"Deathsflame-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Deathsflame-SistersofElune", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		321, -- [11]
+		"Player-125-09AAB186", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		[31] = 1614087296,
+	}, -- [17]
+	{
+		"%s has earned the achievement |cffffff00|Hachievement:14840:Player-125-099ABEA5:1:2:22:21:4294967295:4294967295:4294967295:4294967295|h[Adventures: Learning the Ropes]|h|r!", -- [1]
+		"Senatus-SistersofElune", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Senatus-SistersofElune", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		209, -- [11]
+		"Player-125-099ABEA5", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		[31] = 1614052991,
+	}, -- [18]
+	{
 		"Thanks!", -- [1]
 		"Vygo-Sargeras", -- [2]
 		"", -- [3]
@@ -3007,7 +3385,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_PARTY_LEADER",
 		[31] = 1614028290,
-	}, -- [1]
+	}, -- [19]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:14845:Player-125-09AAB186:1:2:22:21:4294967295:4294967295:4294967295:4294967295|h[Adventures: A Step in the Right Direction]|h|r!", -- [1]
 		"Deathsflame-SistersofElune", -- [2]
@@ -3028,7 +3406,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1614027692,
-	}, -- [2]
+	}, -- [20]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:14628:Player-125-099BA24D:1:2:22:21:4294967295:4294967295:4294967295:4294967295|h[The Road to Renown]|h|r!", -- [1]
 		"Sabea-SistersofElune", -- [2]
@@ -3049,7 +3427,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613998832,
-	}, -- [3]
+	}, -- [21]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:14372:Player-125-099BA24D:1:2:22:21:4294967295:4294967295:4294967295:4294967295|h[Theater of Pain]|h|r!", -- [1]
 		"Sabea-SistersofElune", -- [2]
@@ -3070,7 +3448,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613998751,
-	}, -- [4]
+	}, -- [22]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:14798:Player-125-09AC8239:1:2:21:21:4294967295:4294967295:4294967295:4294967295|h[Sojourner of Revendreth]|h|r!", -- [1]
 		"Volan-SistersofElune", -- [2]
@@ -3091,7 +3469,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613956242,
-	}, -- [5]
+	}, -- [23]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:13701:Player-125-0A229C71:1:2:21:21:4294967295:4294967295:4294967295:4294967295|h[Battlefield Brawler]|h|r!", -- [1]
 		"Fizzlebane-ShadowCouncil", -- [2]
@@ -3112,7 +3490,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613943566,
-	}, -- [6]
+	}, -- [24]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:14328:Player-125-09A6672A:1:2:21:21:4294967295:4294967295:4294967295:4294967295|h[Professional Shadowlands Master]|h|r!", -- [1]
 		"Lyssay-CenarionCircle", -- [2]
@@ -3133,7 +3511,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613943107,
-	}, -- [7]
+	}, -- [25]
 	{
 		"Pharonos is handing out cookies, go and get one!", -- [1]
 		"Airore-Silvermoon", -- [2]
@@ -3154,7 +3532,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936425,
-	}, -- [8]
+	}, -- [26]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:9038:Player-125-0A1330EB:1:2:21:21:4294967295:4294967295:4294967295:4294967295|h[Iron Docks]|h|r!", -- [1]
 		"Sydaray-CenarionCircle", -- [2]
@@ -3175,7 +3553,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613936412,
-	}, -- [9]
+	}, -- [27]
 	{
 		"lol ", -- [1]
 		"Kitawnä-Proudmoore", -- [2]
@@ -3196,7 +3574,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936409,
-	}, -- [10]
+	}, -- [28]
 	{
 		"yeahhhh def need moar heals :D", -- [1]
 		"Çrockpot-EmeraldDream", -- [2]
@@ -3217,7 +3595,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936400,
-	}, -- [11]
+	}, -- [29]
 	{
 		"shhhhhhhhhhh", -- [1]
 		"Azkial-Sargeras", -- [2]
@@ -3238,7 +3616,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613936371,
-	}, -- [12]
+	}, -- [30]
 	{
 		"dude shhhhhhhhhhhh", -- [1]
 		"Azkial-Sargeras", -- [2]
@@ -3259,7 +3637,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613936368,
-	}, -- [13]
+	}, -- [31]
 	{
 		"But someone has to fill in for me", -- [1]
 		"Regnorts-Sargeras", -- [2]
@@ -3280,7 +3658,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936365,
-	}, -- [14]
+	}, -- [32]
 	{
 		"brb bio", -- [1]
 		"Kaos-KulTiras", -- [2]
@@ -3301,7 +3679,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936361,
-	}, -- [15]
+	}, -- [33]
 	{
 		"I can heal too just to hurry this up", -- [1]
 		"Regnorts-Sargeras", -- [2]
@@ -3322,7 +3700,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936359,
-	}, -- [16]
+	}, -- [34]
 	{
 		"if you need", -- [1]
 		"Sakkarä-Proudmoore", -- [2]
@@ -3343,7 +3721,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936345,
-	}, -- [17]
+	}, -- [35]
 	{
 		"I can heal", -- [1]
 		"Sakkarä-Proudmoore", -- [2]
@@ -3364,7 +3742,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936343,
-	}, -- [18]
+	}, -- [36]
 	{
 		":D", -- [1]
 		"Totee-Stormrage", -- [2]
@@ -3385,7 +3763,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936316,
-	}, -- [19]
+	}, -- [37]
 	{
 		"free food yes plz?", -- [1]
 		"Totee-Stormrage", -- [2]
@@ -3406,7 +3784,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936312,
-	}, -- [20]
+	}, -- [38]
 	{
 		"Kitawnä is handing out cookies, go and get one!", -- [1]
 		"Airore-Silvermoon", -- [2]
@@ -3427,7 +3805,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936289,
-	}, -- [21]
+	}, -- [39]
 	{
 		"turns his |Hitem:118427|h|cFFFFFFFF[Autographed Hearthstone Card]|r|h card over, revealing a |cFFFFFFFF[Common Hearthstone Card]|r!", -- [1]
 		"Talsar-Whisperwind", -- [2]
@@ -3448,7 +3826,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_EMOTE",
 		[31] = 1613936271,
-	}, -- [22]
+	}, -- [40]
 	{
 		"jesus you're makin me sick", -- [1]
 		"Pharonos-Lightbringer", -- [2]
@@ -3469,7 +3847,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613936238,
-	}, -- [23]
+	}, -- [41]
 	{
 		"|cff0070dd|Hitem:184418::::::::60:72:::::::|h[Acrobatic Steward]|h|r|cff0070dd|Hitem:184418::::::::60:72:::::::|h[Acrobatic Steward]|h|r!", -- [1]
 		"Yelldrassil-EmeraldDream", -- [2]
@@ -3490,7 +3868,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936204,
-	}, -- [24]
+	}, -- [42]
 	{
 		"Ppl just have to do mechanics", -- [1]
 		"Regnorts-Sargeras", -- [2]
@@ -3511,7 +3889,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936201,
-	}, -- [25]
+	}, -- [43]
 	{
 		"Even w this many DPS", -- [1]
 		"Regnorts-Sargeras", -- [2]
@@ -3532,7 +3910,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936184,
-	}, -- [26]
+	}, -- [44]
 	{
 		"Yeah you can do this w 4", -- [1]
 		"Regnorts-Sargeras", -- [2]
@@ -3553,7 +3931,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936180,
-	}, -- [27]
+	}, -- [45]
 	{
 		"|cff0070dd|Hitem:184418::::::::60:72:::::::|h[Acrobatic Steward]|h|r", -- [1]
 		"Yelldrassil-EmeraldDream", -- [2]
@@ -3574,7 +3952,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936174,
-	}, -- [28]
+	}, -- [46]
 	{
 		"They should just show up on your boss bars", -- [1]
 		"Regnorts-Sargeras", -- [2]
@@ -3595,7 +3973,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936152,
-	}, -- [29]
+	}, -- [47]
 	{
 		"need to go get some things done. ty for inv and gl!", -- [1]
 		"Narosar-Lethon", -- [2]
@@ -3616,7 +3994,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936135,
-	}, -- [30]
+	}, -- [48]
 	{
 		"I want that fucking tank trinket", -- [1]
 		"Regnorts-Sargeras", -- [2]
@@ -3637,7 +4015,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936130,
-	}, -- [31]
+	}, -- [49]
 	{
 		"brb bio", -- [1]
 		"Airore-Silvermoon", -- [2]
@@ -3658,7 +4036,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936120,
-	}, -- [32]
+	}, -- [50]
 	{
 		"Amynrelana puts |cff71d5ff|Hspell:54710:0|h[MOLL-E]|h|r", -- [1]
 		"Airore-Silvermoon", -- [2]
@@ -3679,7 +4057,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936119,
-	}, -- [33]
+	}, -- [51]
 	{
 		"summon pls", -- [1]
 		"Xghmalgus-Quel'Thalas", -- [2]
@@ -3700,7 +4078,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936074,
-	}, -- [34]
+	}, -- [52]
 	{
 		"Kaos cast |cff71d5ff|Hspell:190336:0|h[Conjure Refreshment]|h|r, today's special is Anchovy Pie!", -- [1]
 		"Airore-Silvermoon", -- [2]
@@ -3721,7 +4099,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936018,
-	}, -- [35]
+	}, -- [53]
 	{
 		"Çrockpot cast |cff71d5ff|Hspell:190336:0|h[Conjure Refreshment]|h|r, today's special is Anchovy Pie!", -- [1]
 		"Airore-Silvermoon", -- [2]
@@ -3742,7 +4120,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936006,
-	}, -- [36]
+	}, -- [54]
 	{
 		"Pharonos is handing out cookies, go and get one!", -- [1]
 		"Airore-Silvermoon", -- [2]
@@ -3763,7 +4141,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613936004,
-	}, -- [37]
+	}, -- [55]
 	{
 		"ohhh tyty <3", -- [1]
 		"Çrockpot-EmeraldDream", -- [2]
@@ -3784,7 +4162,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935999,
-	}, -- [38]
+	}, -- [56]
 	{
 		"can I get a fort buff pls?", -- [1]
 		"Çrockpot-EmeraldDream", -- [2]
@@ -3805,7 +4183,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935996,
-	}, -- [39]
+	}, -- [57]
 	{
 		"ya makes you lose some weight", -- [1]
 		"Reaperhands-Stormrage", -- [2]
@@ -3826,7 +4204,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935993,
-	}, -- [40]
+	}, -- [58]
 	{
 		"Yeah, ill gotta go as well. Thanks for having me, gluck yall", -- [1]
 		"Tiguito-Nemesis", -- [2]
@@ -3847,7 +4225,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935987,
-	}, -- [41]
+	}, -- [59]
 	{
 		"walking is healthy :D", -- [1]
 		"Totee-Stormrage", -- [2]
@@ -3868,7 +4246,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935969,
-	}, -- [42]
+	}, -- [60]
 	{
 		"1", -- [1]
 		"Yelldrassil-EmeraldDream", -- [2]
@@ -3889,7 +4267,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935960,
-	}, -- [43]
+	}, -- [61]
 	{
 		"https://discord.gg/5hHUANhp", -- [1]
 		"Azkial-Sargeras", -- [2]
@@ -3910,7 +4288,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_WARNING",
 		[31] = 1613935959,
-	}, -- [44]
+	}, -- [62]
 	{
 		"Ty", -- [1]
 		"Regnorts-Sargeras", -- [2]
@@ -3931,7 +4309,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935955,
-	}, -- [45]
+	}, -- [63]
 	{
 		"Summs? Or I need to get to walking", -- [1]
 		"Regnorts-Sargeras", -- [2]
@@ -3952,7 +4330,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935951,
-	}, -- [46]
+	}, -- [64]
 	{
 		"grabbing 1 more healer", -- [1]
 		"Azkial-Sargeras", -- [2]
@@ -3973,7 +4351,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613935947,
-	}, -- [47]
+	}, -- [65]
 	{
 		"Sick", -- [1]
 		"Regnorts-Sargeras", -- [2]
@@ -3994,7 +4372,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935935,
-	}, -- [48]
+	}, -- [66]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:1176:Player-125-0A1330EB:1:2:21:21:4294967295:4294967295:4294967295:4294967295|h[Got My Mind On My Money]|h|r!", -- [1]
 		"Sydaray-CenarionCircle", -- [2]
@@ -4015,7 +4393,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613935934,
-	}, -- [49]
+	}, -- [67]
 	{
 		"Cool", -- [1]
 		"Yelldrassil-EmeraldDream", -- [2]
@@ -4036,7 +4414,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935925,
-	}, -- [50]
+	}, -- [68]
 	{
 		"Im gonna bounce guys, its 6am haha good luck!", -- [1]
 		"Fermina-Frostmourne", -- [2]
@@ -4057,7 +4435,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935924,
-	}, -- [51]
+	}, -- [69]
 	{
 		"yes", -- [1]
 		"Azkial-Sargeras", -- [2]
@@ -4078,7 +4456,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613935924,
-	}, -- [52]
+	}, -- [70]
 	{
 		"Pushing past Sun King?", -- [1]
 		"Regnorts-Sargeras", -- [2]
@@ -4099,7 +4477,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935920,
-	}, -- [53]
+	}, -- [71]
 	{
 		"Ayy", -- [1]
 		"Regnorts-Sargeras", -- [2]
@@ -4120,7 +4498,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935914,
-	}, -- [54]
+	}, -- [72]
 	{
 		"yell go dps", -- [1]
 		"Azkial-Sargeras", -- [2]
@@ -4141,7 +4519,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613935908,
-	}, -- [55]
+	}, -- [73]
 	{
 		"Pharonos is casting |cff71d5ff|Hspell:698:0|h[Ritual of Summoning]|h|r, please assist!", -- [1]
 		"Airore-Silvermoon", -- [2]
@@ -4162,7 +4540,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935900,
-	}, -- [56]
+	}, -- [74]
 	{
 		"Kitawnä is casting |cff71d5ff|Hspell:698:0|h[Ritual of Summoning]|h|r, please assist!", -- [1]
 		"Airore-Silvermoon", -- [2]
@@ -4183,7 +4561,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935900,
-	}, -- [57]
+	}, -- [75]
 	{
 		"ty", -- [1]
 		"Totee-Stormrage", -- [2]
@@ -4204,7 +4582,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935899,
-	}, -- [58]
+	}, -- [76]
 	{
 		"Amynrelana puts |cff71d5ff|Hspell:67826:0|h[Jeeves]|h|r", -- [1]
 		"Airore-Silvermoon", -- [2]
@@ -4225,7 +4603,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935896,
-	}, -- [59]
+	}, -- [77]
 	{
 		"summon possible or fly?", -- [1]
 		"Totee-Stormrage", -- [2]
@@ -4246,7 +4624,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935893,
-	}, -- [60]
+	}, -- [78]
 	{
 		":D", -- [1]
 		"Reaperhands-Stormrage", -- [2]
@@ -4267,7 +4645,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935892,
-	}, -- [61]
+	}, -- [79]
 	{
 		"im good now thanks", -- [1]
 		"Reaperhands-Stormrage", -- [2]
@@ -4288,7 +4666,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935891,
-	}, -- [62]
+	}, -- [80]
 	{
 		"repairs", -- [1]
 		"Reaperhands-Stormrage", -- [2]
@@ -4309,7 +4687,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935862,
-	}, -- [63]
+	}, -- [81]
 	{
 		"zero taunts", -- [1]
 		"Sakkarä-Proudmoore", -- [2]
@@ -4330,7 +4708,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935859,
-	}, -- [64]
+	}, -- [82]
 	{
 		"i had to release", -- [1]
 		"Reaperhands-Stormrage", -- [2]
@@ -4351,7 +4729,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935855,
-	}, -- [65]
+	}, -- [83]
 	{
 		"idfk why yall release", -- [1]
 		"Pharonos-Lightbringer", -- [2]
@@ -4372,7 +4750,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935853,
-	}, -- [66]
+	}, -- [84]
 	{
 		"i had aggro on multiple mobs throughout the fight", -- [1]
 		"Sakkarä-Proudmoore", -- [2]
@@ -4393,7 +4771,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935841,
-	}, -- [67]
+	}, -- [85]
 	{
 		"yup", -- [1]
 		"Tiguito-Nemesis", -- [2]
@@ -4414,7 +4792,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935829,
-	}, -- [68]
+	}, -- [86]
 	{
 		"https://discord.gg/5hHUANhp", -- [1]
 		"Azkial-Sargeras", -- [2]
@@ -4435,7 +4813,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_WARNING",
 		[31] = 1613935828,
-	}, -- [69]
+	}, -- [87]
 	{
 		"tig you have a ss?", -- [1]
 		"Kitawnä-Proudmoore", -- [2]
@@ -4456,7 +4834,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935826,
-	}, -- [70]
+	}, -- [88]
 	{
 		"maybe?", -- [1]
 		"Kitawnä-Proudmoore", -- [2]
@@ -4477,7 +4855,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935823,
-	}, -- [71]
+	}, -- [89]
 	{
 		"discord?", -- [1]
 		"Totee-Stormrage", -- [2]
@@ -4498,7 +4876,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935822,
-	}, -- [72]
+	}, -- [90]
 	{
 		"Tig has a SS", -- [1]
 		"Kitawnä-Proudmoore", -- [2]
@@ -4519,7 +4897,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935819,
-	}, -- [73]
+	}, -- [91]
 	{
 		"Crimson Flurry on Bracnar", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -4540,7 +4918,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935816,
-	}, -- [74]
+	}, -- [92]
 	{
 		"hi all", -- [1]
 		"Totee-Stormrage", -- [2]
@@ -4561,7 +4939,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935815,
-	}, -- [75]
+	}, -- [93]
 	{
 		"Interrupted Pestering Fiend's |cff71d5ff|Hspell:328254:0|h[Shattering Ruby]|h|r!", -- [1]
 		"Amynrelana-Frostmourne", -- [2]
@@ -4582,7 +4960,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_EMOTE",
 		[31] = 1613935808,
-	}, -- [76]
+	}, -- [94]
 	{
 		"Interrupted |cff71d5ff|Hspell:328254:0|h[Shattering Ruby]|h|r on Pestering Fiend", -- [1]
 		"Amynrelana-Frostmourne", -- [2]
@@ -4603,7 +4981,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935808,
-	}, -- [77]
+	}, -- [95]
 	{
 		"Crimson Flurry on Amynrelana", -- [1]
 		"Amynrelana-Frostmourne", -- [2]
@@ -4624,7 +5002,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935807,
-	}, -- [78]
+	}, -- [96]
 	{
 		"Crimson Flurry on Fermina", -- [1]
 		"Fermina-Frostmourne", -- [2]
@@ -4645,7 +5023,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935805,
-	}, -- [79]
+	}, -- [97]
 	{
 		"Crimson Flurry on Narosar", -- [1]
 		"Narosar-Lethon", -- [2]
@@ -4666,7 +5044,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935805,
-	}, -- [80]
+	}, -- [98]
 	{
 		"Crimson Flurry on Fermina", -- [1]
 		"Fermina-Frostmourne", -- [2]
@@ -4687,7 +5065,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935797,
-	}, -- [81]
+	}, -- [99]
 	{
 		"Crimson Flurry on Vorrador", -- [1]
 		"Vorrador-Stormrage", -- [2]
@@ -4708,7 +5086,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935794,
-	}, -- [82]
+	}, -- [100]
 	{
 		"Crimson Flurry on Cubandaddy", -- [1]
 		"Cubandaddy-Aggramar", -- [2]
@@ -4729,7 +5107,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935793,
-	}, -- [83]
+	}, -- [101]
 	{
 		"|cff71d5ff|Hspell:2139:0|h[Counterspell]|h|r interrupted Vile Occultist's |cff71d5ff|Hspell:325590:0|h[Scornful Blast]|h|r!", -- [1]
 		"Azkial-Sargeras", -- [2]
@@ -4750,7 +5128,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613935781,
-	}, -- [84]
+	}, -- [102]
 	{
 		"Crimson Flurry on Kaos", -- [1]
 		"Kaos-KulTiras", -- [2]
@@ -4771,7 +5149,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935780,
-	}, -- [85]
+	}, -- [103]
 	{
 		"Crimson Flurry on Cubandaddy", -- [1]
 		"Cubandaddy-Aggramar", -- [2]
@@ -4792,7 +5170,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935768,
-	}, -- [86]
+	}, -- [104]
 	{
 		"Ímpeto Carmesim em Tiguito!", -- [1]
 		"Tiguito-Nemesis", -- [2]
@@ -4813,7 +5191,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935766,
-	}, -- [87]
+	}, -- [105]
 	{
 		"Crimson Flurry on Narosar", -- [1]
 		"Narosar-Lethon", -- [2]
@@ -4834,7 +5212,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935766,
-	}, -- [88]
+	}, -- [106]
 	{
 		"Ímpeto Carmesim em Tiguito!", -- [1]
 		"Tiguito-Nemesis", -- [2]
@@ -4855,7 +5233,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935756,
-	}, -- [89]
+	}, -- [107]
 	{
 		"Crimson Flurry on Drascus", -- [1]
 		"Drascus-Proudmoore", -- [2]
@@ -4876,7 +5254,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935756,
-	}, -- [90]
+	}, -- [108]
 	{
 		"Crimson Flurry on Kaos", -- [1]
 		"Kaos-KulTiras", -- [2]
@@ -4897,7 +5275,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935748,
-	}, -- [91]
+	}, -- [109]
 	{
 		"Crimson Flurry on Bracnar", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -4918,7 +5296,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935746,
-	}, -- [92]
+	}, -- [110]
 	{
 		"you these tanks need to be taunt on their hotbar", -- [1]
 		"Sakkarä-Proudmoore", -- [2]
@@ -4939,7 +5317,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935739,
-	}, -- [93]
+	}, -- [111]
 	{
 		"Crimson Flurry on Bracnar", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -4960,7 +5338,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935737,
-	}, -- [94]
+	}, -- [112]
 	{
 		"Crimson Flurry on ßrigante", -- [1]
 		"ßrigante-MoonGuard", -- [2]
@@ -4981,7 +5359,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935737,
-	}, -- [95]
+	}, -- [113]
 	{
 		"Crimson Flurry on Cubandaddy", -- [1]
 		"Cubandaddy-Aggramar", -- [2]
@@ -5002,7 +5380,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935737,
-	}, -- [96]
+	}, -- [114]
 	{
 		"Crimson Flurry on Supersquish", -- [1]
 		"Supersquish-Stormrage", -- [2]
@@ -5023,7 +5401,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935735,
-	}, -- [97]
+	}, -- [115]
 	{
 		"Crimson Flurry on Drascus", -- [1]
 		"Drascus-Proudmoore", -- [2]
@@ -5044,7 +5422,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935734,
-	}, -- [98]
+	}, -- [116]
 	{
 		"Crimson Flurry on Priestseccks", -- [1]
 		"Priestseccks-Proudmoore", -- [2]
@@ -5065,7 +5443,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935731,
-	}, -- [99]
+	}, -- [117]
 	{
 		"Ímpeto Carmesim em Tiguito!", -- [1]
 		"Tiguito-Nemesis", -- [2]
@@ -5086,7 +5464,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935725,
-	}, -- [100]
+	}, -- [118]
 	{
 		"Crimson Flurry on Bracnar", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -5107,7 +5485,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935725,
-	}, -- [101]
+	}, -- [119]
 	{
 		"Crimson Flurry on Drascus", -- [1]
 		"Drascus-Proudmoore", -- [2]
@@ -5128,7 +5506,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935725,
-	}, -- [102]
+	}, -- [120]
 	{
 		"Crimson Flurry on Supersquish", -- [1]
 		"Supersquish-Stormrage", -- [2]
@@ -5149,7 +5527,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935725,
-	}, -- [103]
+	}, -- [121]
 	{
 		"Crimson Flurry on Cubandaddy", -- [1]
 		"Cubandaddy-Aggramar", -- [2]
@@ -5170,7 +5548,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935724,
-	}, -- [104]
+	}, -- [122]
 	{
 		"Crimson Flurry on Sakkarä", -- [1]
 		"Sakkarä-Proudmoore", -- [2]
@@ -5191,7 +5569,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935720,
-	}, -- [105]
+	}, -- [123]
 	{
 		"Crimson Flurry on Fermina", -- [1]
 		"Fermina-Frostmourne", -- [2]
@@ -5212,7 +5590,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935700,
-	}, -- [106]
+	}, -- [124]
 	{
 		"Crimson Flurry on Cubandaddy", -- [1]
 		"Cubandaddy-Aggramar", -- [2]
@@ -5233,7 +5611,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935700,
-	}, -- [107]
+	}, -- [125]
 	{
 		"Interrupted Pestering Fiend's |cff71d5ff|Hspell:328254:0|h[Shattering Ruby]|h|r!", -- [1]
 		"Amynrelana-Frostmourne", -- [2]
@@ -5254,7 +5632,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_EMOTE",
 		[31] = 1613935697,
-	}, -- [108]
+	}, -- [126]
 	{
 		"Interrupted |cff71d5ff|Hspell:328254:0|h[Shattering Ruby]|h|r on Pestering Fiend", -- [1]
 		"Amynrelana-Frostmourne", -- [2]
@@ -5275,7 +5653,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935696,
-	}, -- [109]
+	}, -- [127]
 	{
 		"Crimson Flurry on Drascus", -- [1]
 		"Drascus-Proudmoore", -- [2]
@@ -5296,7 +5674,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935688,
-	}, -- [110]
+	}, -- [128]
 	{
 		"Crimson Flurry on Narosar", -- [1]
 		"Narosar-Lethon", -- [2]
@@ -5317,7 +5695,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935677,
-	}, -- [111]
+	}, -- [129]
 	{
 		"Crimson Flurry on Kaos", -- [1]
 		"Kaos-KulTiras", -- [2]
@@ -5338,7 +5716,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935664,
-	}, -- [112]
+	}, -- [130]
 	{
 		"Crimson Flurry on Narosar", -- [1]
 		"Narosar-Lethon", -- [2]
@@ -5359,7 +5737,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935664,
-	}, -- [113]
+	}, -- [131]
 	{
 		"Crimson Flurry on Reaperhands", -- [1]
 		"Reaperhands-Stormrage", -- [2]
@@ -5380,7 +5758,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935664,
-	}, -- [114]
+	}, -- [132]
 	{
 		"Ember Blast fading in 1", -- [1]
 		"Priestseccks-Proudmoore", -- [2]
@@ -5401,7 +5779,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_YELL",
 		[31] = 1613935620,
-	}, -- [115]
+	}, -- [133]
 	{
 		"Ember Blast on Priestseccks", -- [1]
 		"Priestseccks-Proudmoore", -- [2]
@@ -5422,7 +5800,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_YELL",
 		[31] = 1613935618,
-	}, -- [116]
+	}, -- [134]
 	{
 		"bugged interface", -- [1]
 		"Chotta-Stormrage", -- [2]
@@ -5443,7 +5821,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935602,
-	}, -- [117]
+	}, -- [135]
 	{
 		"Ember Blast fading in 1", -- [1]
 		"Cubandaddy-Aggramar", -- [2]
@@ -5464,7 +5842,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_YELL",
 		[31] = 1613935599,
-	}, -- [118]
+	}, -- [136]
 	{
 		"Ember Blast on Cubandaddy", -- [1]
 		"Cubandaddy-Aggramar", -- [2]
@@ -5485,7 +5863,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_YELL",
 		[31] = 1613935598,
-	}, -- [119]
+	}, -- [137]
 	{
 		"need reload", -- [1]
 		"Chotta-Stormrage", -- [2]
@@ -5506,7 +5884,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935589,
-	}, -- [120]
+	}, -- [138]
 	{
 		"Ember Blast fading in 1", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -5527,7 +5905,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_YELL",
 		[31] = 1613935579,
-	}, -- [121]
+	}, -- [139]
 	{
 		"Ember Blast on Bracnar", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -5548,7 +5926,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_YELL",
 		[31] = 1613935577,
-	}, -- [122]
+	}, -- [140]
 	{
 		"dced(", -- [1]
 		"Chotta-Stormrage", -- [2]
@@ -5569,7 +5947,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935573,
-	}, -- [123]
+	}, -- [141]
 	{
 		"|cff71d5ff|Hspell:2139:0|h[Counterspell]|h|r interrupted Pestering Fiend's |cff71d5ff|Hspell:328254:0|h[Shattering Ruby]|h|r!", -- [1]
 		"Azkial-Sargeras", -- [2]
@@ -5590,7 +5968,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613935564,
-	}, -- [124]
+	}, -- [142]
 	{
 		"Interrupted Pestering Fiend's |cff71d5ff|Hspell:328254:0|h[Shattering Ruby]|h|r!", -- [1]
 		"Amynrelana-Frostmourne", -- [2]
@@ -5611,7 +5989,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_EMOTE",
 		[31] = 1613935560,
-	}, -- [125]
+	}, -- [143]
 	{
 		"Interrupted |cff71d5ff|Hspell:328254:0|h[Shattering Ruby]|h|r on Pestering Fiend", -- [1]
 		"Amynrelana-Frostmourne", -- [2]
@@ -5632,7 +6010,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935560,
-	}, -- [126]
+	}, -- [144]
 	{
 		"Crimson Flurry on Spunge", -- [1]
 		"Spunge-Proudmoore", -- [2]
@@ -5653,7 +6031,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935551,
-	}, -- [127]
+	}, -- [145]
 	{
 		"Crimson Flurry on Priestseccks", -- [1]
 		"Priestseccks-Proudmoore", -- [2]
@@ -5674,7 +6052,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935541,
-	}, -- [128]
+	}, -- [146]
 	{
 		"Crimson Flurry on ßrigante", -- [1]
 		"ßrigante-MoonGuard", -- [2]
@@ -5695,7 +6073,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935541,
-	}, -- [129]
+	}, -- [147]
 	{
 		"Crimson Flurry on Kaos", -- [1]
 		"Kaos-KulTiras", -- [2]
@@ -5716,7 +6094,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935541,
-	}, -- [130]
+	}, -- [148]
 	{
 		"Crimson Flurry on Drascus", -- [1]
 		"Drascus-Proudmoore", -- [2]
@@ -5737,7 +6115,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935530,
-	}, -- [131]
+	}, -- [149]
 	{
 		"Crimson Flurry on Amynrelana", -- [1]
 		"Amynrelana-Frostmourne", -- [2]
@@ -5758,7 +6136,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935530,
-	}, -- [132]
+	}, -- [150]
 	{
 		"Crimson Flurry on Kaos", -- [1]
 		"Kaos-KulTiras", -- [2]
@@ -5779,7 +6157,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935459,
-	}, -- [133]
+	}, -- [151]
 	{
 		"Crimson Flurry on Kitawnä", -- [1]
 		"Kitawnä-Proudmoore", -- [2]
@@ -5800,7 +6178,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935458,
-	}, -- [134]
+	}, -- [152]
 	{
 		"Crimson Flurry on Amynrelana", -- [1]
 		"Amynrelana-Frostmourne", -- [2]
@@ -5821,7 +6199,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935447,
-	}, -- [135]
+	}, -- [153]
 	{
 		"Ímpeto Carmesim em Tiguito!", -- [1]
 		"Tiguito-Nemesis", -- [2]
@@ -5842,7 +6220,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613935447,
-	}, -- [136]
+	}, -- [154]
 	{
 		"ok i will be back later", -- [1]
 		"Deathsflame-SistersofElune", -- [2]
@@ -5863,7 +6241,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD",
 		[31] = 1613935412,
-	}, -- [137]
+	}, -- [155]
 	{
 		"thanks for food", -- [1]
 		"Reaperhands-Stormrage", -- [2]
@@ -5884,7 +6262,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935345,
-	}, -- [138]
+	}, -- [156]
 	{
 		"sorry had to go afk after we died ", -- [1]
 		"Reaperhands-Stormrage", -- [2]
@@ -5905,7 +6283,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935316,
-	}, -- [139]
+	}, -- [157]
 	{
 		"^", -- [1]
 		"Azkial-Sargeras", -- [2]
@@ -5926,7 +6304,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID_LEADER",
 		[31] = 1613935315,
-	}, -- [140]
+	}, -- [158]
 	{
 		"and kick them off", -- [1]
 		"Kitawnä-Proudmoore", -- [2]
@@ -5947,7 +6325,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935315,
-	}, -- [141]
+	}, -- [159]
 	{
 		"do not click on that pillar", -- [1]
 		"Kitawnä-Proudmoore", -- [2]
@@ -5968,7 +6346,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935313,
-	}, -- [142]
+	}, -- [160]
 	{
 		"if you see someone on a pillar", -- [1]
 		"Kitawnä-Proudmoore", -- [2]
@@ -5989,7 +6367,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935308,
-	}, -- [143]
+	}, -- [161]
 	{
 		"Hi, omw", -- [1]
 		"Bracnar-SistersofElune", -- [2]
@@ -6010,7 +6388,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935300,
-	}, -- [144]
+	}, -- [162]
 	{
 		"pleeease", -- [1]
 		"Kitawnä-Proudmoore", -- [2]
@@ -6031,7 +6409,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613935298,
-	}, -- [145]
+	}, -- [163]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:14754:Player-125-09A209D1:1:2:21:21:4294967295:4294967295:4294967295:4294967295|h[The Forgotten One]|h|r!", -- [1]
 		"Fudoshin-SistersofElune", -- [2]
@@ -6052,7 +6430,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613933095,
-	}, -- [146]
+	}, -- [164]
 	{
 		"Bloat on Rakdos", -- [1]
 		"Rakdos-Dalvengyr", -- [2]
@@ -6073,7 +6451,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613923064,
-	}, -- [147]
+	}, -- [165]
 	{
 		"Bloat on Rakdos", -- [1]
 		"Rakdos-Dalvengyr", -- [2]
@@ -6094,7 +6472,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613923005,
-	}, -- [148]
+	}, -- [166]
 	{
 		"Furlwind on Kwetiau", -- [1]
 		"Kwetiau-Frostmourne", -- [2]
@@ -6115,7 +6493,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_SAY",
 		[31] = 1613922647,
-	}, -- [149]
+	}, -- [167]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:13765:Player-125-099AE678:1:2:21:21:4294967295:4294967295:4294967295:4294967295|h[Subaquatic Support]|h|r!", -- [1]
 		"Yrenni-SistersofElune", -- [2]
@@ -6136,7 +6514,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613922245,
-	}, -- [150]
+	}, -- [168]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:13250:Player-125-099AE678:1:2:21:21:4294967295:4294967295:4294967295:4294967295|h[Battle for Azeroth Pathfinder, Part Two]|h|r!", -- [1]
 		"Yrenni-SistersofElune", -- [2]
@@ -6157,7 +6535,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613922218,
-	}, -- [151]
+	}, -- [169]
 	{
 		"%s has earned the achievement |cffffff00|Hachievement:14846:Player-125-09AB32CE:1:2:20:21:4294967295:4294967295:4294967295:4294967295|h[Adventures: Leaves in the Forest]|h|r!", -- [1]
 		"Valos-CenarionCircle", -- [2]
@@ -6178,7 +6556,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		[31] = 1613846484,
-	}, -- [152]
+	}, -- [170]
 	{
 		"Leaders instill in their people a hope for success and a belief in themselves. Positive leaders empower people to accomplish their goals. -Anon.", -- [1]
 		"Bruxit-Kil'jaeden", -- [2]
@@ -6199,7 +6577,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613846457,
-	}, -- [153]
+	}, -- [171]
 	{
 		"why can't people get it together", -- [1]
 		"Inaara-Cenarius", -- [2]
@@ -6220,7 +6598,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613846457,
-	}, -- [154]
+	}, -- [172]
 	{
 		":\\", -- [1]
 		"Loceans-Frostmourne", -- [2]
@@ -6241,7 +6619,7 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613846452,
-	}, -- [155]
+	}, -- [173]
 	{
 		"smh", -- [1]
 		"Bruxit-Kil'jaeden", -- [2]
@@ -6262,68 +6640,5 @@ TukuiChatHistory = {
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
 		[31] = 1613846445,
-	}, -- [156]
-	{
-		"mh", -- [1]
-		"Bruxit-Kil'jaeden", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"Bruxit-Kil'jaeden", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		382, -- [11]
-		"Player-9-0B6CC900", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_RAID",
-		[31] = 1613846444,
-	}, -- [157]
-	{
-		"1", -- [1]
-		"Therai-Stormrage", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Therai-Stormrage", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		376, -- [11]
-		"Player-60-096004C3", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613846437,
-	}, -- [158]
-	{
-		"2", -- [1]
-		"Therai-Stormrage", -- [2]
-		"Common", -- [3]
-		"", -- [4]
-		"Therai-Stormrage", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		375, -- [11]
-		"Player-60-096004C3", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1613846436,
-	}, -- [159]
+	}, -- [174]
 }
