@@ -15,11 +15,11 @@ W: 250
 H: 417
 Frame: BaudManifestDisplay3
 FrameLevel: 1
-Anchor: CENTER
+Anchor: TOP
 X: 60
-Y: 4
+Y: -44
 W: 250
-H: 417
+H: 666
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: BOTTOM

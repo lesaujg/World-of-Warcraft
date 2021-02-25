@@ -244,7 +244,28 @@ DBM_AllSavedOptions = {
 			0, -- [3]
 		},
 		["FilterSelfHud"] = true,
-		["InfoFrameFontSize"] = 12,
+		["WarningColors"] = {
+			{
+				["b"] = 0.9411764705882353,
+				["g"] = 0.8,
+				["r"] = 0.4117647058823529,
+			}, -- [1]
+			{
+				["b"] = 0,
+				["g"] = 0.9490196078431372,
+				["r"] = 0.9490196078431372,
+			}, -- [2]
+			{
+				["b"] = 0,
+				["g"] = 0.5019607843137255,
+				["r"] = 1,
+			}, -- [3]
+			{
+				["b"] = 0.1019607843137255,
+				["g"] = 0.1019607843137255,
+				["r"] = 1,
+			}, -- [4]
+		},
 		["HUDSize3"] = 5,
 		["SWarningAlphabetical"] = true,
 		["ShortTimerText"] = true,
@@ -261,7 +282,7 @@ DBM_AllSavedOptions = {
 		["WarningX"] = 0,
 		["EventSoundEngage"] = "",
 		["DebugLevel"] = 1,
-		["MovieFilter2"] = "OnlyFight",
+		["CountdownVoice3v2"] = "Pewsey",
 		["SpecialWarningFont"] = "Interface\\Addons\\Tukui\\medias\\fonts\\normal_font.ttf",
 		["HUDSize4"] = 5,
 		["DontRestoreRange"] = false,
@@ -275,9 +296,9 @@ DBM_AllSavedOptions = {
 		["SpecialWarningFlashAlph5"] = 0.5,
 		["SpecialWarningDuration2"] = 1.5,
 		["HealthFrameWidth"] = 200,
-		["RangeFrameSound1"] = "none",
-		["ShowEngageMessage"] = true,
 		["ShowAdvSWSound"] = true,
+		["ShowEngageMessage"] = true,
+		["RangeFrameSound1"] = "none",
 		["HPFrameY"] = 55.3814926147461,
 		["WarningFontSize"] = 20,
 		["EventSoundVictory2"] = "None",
@@ -314,7 +335,7 @@ DBM_AllSavedOptions = {
 		["WarningDuration"] = 4,
 		["SpecialWarningFontStyle"] = "THICKOUTLINE",
 		["WarningFont"] = "Interface\\Addons\\Tukui\\Medias\\Fonts\\normal_font.ttf",
-		["CountdownVoice3v2"] = "Pewsey",
+		["MovieFilter2"] = "OnlyFight",
 		["ShowGuildMessagesPlus"] = false,
 		["HUDTexture4"] = "highlight",
 		["DontShowSpecialWarningFlash"] = false,
@@ -325,28 +346,7 @@ DBM_AllSavedOptions = {
 		["SpecialWarningFlashDura5"] = 1,
 		["ShowFlashFrame"] = true,
 		["AutoAcceptFriendInvite"] = false,
-		["WarningColors"] = {
-			{
-				["b"] = 0.9411764705882353,
-				["g"] = 0.8,
-				["r"] = 0.4117647058823529,
-			}, -- [1]
-			{
-				["b"] = 0,
-				["g"] = 0.9490196078431372,
-				["r"] = 0.9490196078431372,
-			}, -- [2]
-			{
-				["b"] = 0,
-				["g"] = 0.5019607843137255,
-				["r"] = 1,
-			}, -- [3]
-			{
-				["b"] = 0.1019607843137255,
-				["g"] = 0.1019607843137255,
-				["r"] = 1,
-			}, -- [4]
-		},
+		["InfoFrameFontSize"] = 12,
 		["SpecialWarningFlashCount1"] = 1,
 		["DontShowPT"] = true,
 		["SpecialWarningSound5"] = 128466,
