@@ -6,6 +6,13 @@ X: -138
 Y: 9
 W: 384
 H: 260
+Frame: BaudManifestDisplay1
+FrameLevel: 1
+Anchor: BOTTOMRIGHT
+X: -195
+Y: 68
+W: 251
+H: 604
 Frame: BaudManifestDisplay2
 FrameLevel: 1
 Anchor: CENTER
@@ -20,10 +27,3 @@ X: 60
 Y: -44
 W: 250
 H: 666
-Frame: BaudManifestDisplay1
-FrameLevel: 1
-Anchor: BOTTOM
-X: 333
-Y: 68
-W: 251
-H: 604

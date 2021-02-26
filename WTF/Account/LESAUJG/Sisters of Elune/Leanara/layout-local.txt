@@ -6,6 +6,13 @@ X: 0
 Y: -86
 W: 384
 H: 260
+Frame: WorldMapFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 30
+W: 760
+H: 571
 Frame: BaudManifestDisplay1
 FrameLevel: 1
 Anchor: RIGHT

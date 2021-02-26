@@ -13,42 +13,45 @@ OneRing_Config = {
 				["Food"] = "ALT-F",
 				["Vendor"] = "ALT-V",
 				["Mounts"] = "ALT-M",
-				["Teleport"] = "ALT-Y",
-				["WorldMarkers"] = "ALT-R",
-				["sefulItems"] = "ALT-E",
-				["Pets"] = "ALT-W",
-				["RaidSymbols"] = false,
 				["Addons"] = "ALT-G",
+				["WorldMarkers"] = "ALT-R",
+				["RaidSymbols"] = false,
+				["Pets"] = "ALT-W",
+				["sefulItems"] = "ALT-E",
+				["Teleport"] = "ALT-Y",
 			},
 		},
 	},
 	["PersistentStorage"] = {
 		["RingKeeper"] = {
-			["Pets"] = {
+			["Mounts"] = {
 				{
-					["id"] = 883,
-					["sliceToken"] = "ABueyhiySOd",
+					"mount", -- [1]
+					280, -- [2]
+					["sliceToken"] = "ABuejrS58lk",
 				}, -- [1]
 				{
-					["id"] = 83242,
-					["sliceToken"] = "ABueyhiySO3",
+					"mount", -- [1]
+					460, -- [2]
+					["sliceToken"] = "ABuejrS58l4",
 				}, -- [2]
 				{
-					["id"] = 83243,
-					["sliceToken"] = "ABueyhiySOs",
+					"mount", -- [1]
+					522, -- [2]
+					["sliceToken"] = "ABuejrS58lj",
 				}, -- [3]
 				{
-					["id"] = 83244,
-					["sliceToken"] = "ABueyhiySOa",
+					"mount", -- [1]
+					382, -- [2]
+					["sliceToken"] = "ABuejrS58lh",
 				}, -- [4]
 				{
-					["id"] = 83245,
-					["sliceToken"] = "ABueyhiySOp",
+					"mount", -- [1]
+					1039, -- [2]
+					["sliceToken"] = "ABuejgiJURt",
 				}, -- [5]
-				["limit"] = "Bracnar-SistersofElune",
+				["name"] = "Mounts",
 				["save"] = true,
-				["hotkey"] = "ALT-W",
-				["name"] = "Pets",
 			},
 			["Addons"] = {
 				{
@@ -159,34 +162,31 @@ OneRing_Config = {
 			["OPieFlagStore"] = {
 				["StoreVersion"] = 2,
 			},
-			["Mounts"] = {
+			["Pets"] = {
 				{
-					"mount", -- [1]
-					280, -- [2]
-					["sliceToken"] = "ABuejrS58lk",
+					["id"] = 883,
+					["sliceToken"] = "ABueyhiySOd",
 				}, -- [1]
 				{
-					"mount", -- [1]
-					460, -- [2]
-					["sliceToken"] = "ABuejrS58l4",
+					["id"] = 83242,
+					["sliceToken"] = "ABueyhiySO3",
 				}, -- [2]
 				{
-					"mount", -- [1]
-					522, -- [2]
-					["sliceToken"] = "ABuejrS58lj",
+					["id"] = 83243,
+					["sliceToken"] = "ABueyhiySOs",
 				}, -- [3]
 				{
-					"mount", -- [1]
-					382, -- [2]
-					["sliceToken"] = "ABuejrS58lh",
+					["id"] = 83244,
+					["sliceToken"] = "ABueyhiySOa",
 				}, -- [4]
 				{
-					"mount", -- [1]
-					1039, -- [2]
-					["sliceToken"] = "ABuejgiJURt",
+					["id"] = 83245,
+					["sliceToken"] = "ABueyhiySOp",
 				}, -- [5]
-				["name"] = "Mounts",
+				["name"] = "Pets",
 				["save"] = true,
+				["hotkey"] = "ALT-W",
+				["limit"] = "Bracnar-SistersofElune",
 			},
 			["sefulItems"] = {
 				{
@@ -223,53 +223,6 @@ OneRing_Config = {
 				["save"] = true,
 				["hotkey"] = "ALT-E",
 				["name"] = "Useful Items",
-			},
-			["Food"] = {
-				{
-					"item", -- [1]
-					171276, -- [2]
-					["sliceToken"] = "ABuekN1Wpx4",
-				}, -- [1]
-				{
-					"item", -- [1]
-					172061, -- [2]
-					["sliceToken"] = "ABuekN1Wpxg",
-				}, -- [2]
-				{
-					"item", -- [1]
-					171285, -- [2]
-					["sliceToken"] = "ABuekN1Wpxk",
-				}, -- [3]
-				{
-					"item", -- [1]
-					172049, -- [2]
-					["show"] = "[spec:255/253] hide;",
-					["sliceToken"] = "ABuekN1Wpxj",
-				}, -- [4]
-				{
-					"item", -- [1]
-					172051, -- [2]
-					["show"] = "[spec:255/254] hide;",
-					["sliceToken"] = "ABuekN1Wpxh",
-				}, -- [5]
-				{
-					"item", -- [1]
-					171270, -- [2]
-					["sliceToken"] = "ABuekN1Wpxl",
-				}, -- [6]
-				{
-					"item", -- [1]
-					173049, -- [2]
-					["sliceToken"] = "ABueldpZIq1",
-				}, -- [7]
-				{
-					"item", -- [1]
-					181468, -- [2]
-					["sliceToken"] = "ABueldpZIqr",
-				}, -- [8]
-				["save"] = true,
-				["name"] = "Food",
-				["limit"] = "Bracnar-SistersofElune",
 			},
 			["Teleport"] = {
 				{
@@ -344,6 +297,53 @@ OneRing_Config = {
 				}, -- [14]
 				["name"] = "Teleport",
 				["save"] = true,
+			},
+			["Food"] = {
+				{
+					"item", -- [1]
+					171276, -- [2]
+					["sliceToken"] = "ABuekN1Wpx4",
+				}, -- [1]
+				{
+					"item", -- [1]
+					172061, -- [2]
+					["sliceToken"] = "ABuekN1Wpxg",
+				}, -- [2]
+				{
+					"item", -- [1]
+					171285, -- [2]
+					["sliceToken"] = "ABuekN1Wpxk",
+				}, -- [3]
+				{
+					"item", -- [1]
+					172049, -- [2]
+					["show"] = "[spec:255/253] hide;",
+					["sliceToken"] = "ABuekN1Wpxj",
+				}, -- [4]
+				{
+					"item", -- [1]
+					172051, -- [2]
+					["show"] = "[spec:255/254] hide;",
+					["sliceToken"] = "ABuekN1Wpxh",
+				}, -- [5]
+				{
+					"item", -- [1]
+					171270, -- [2]
+					["sliceToken"] = "ABuekN1Wpxl",
+				}, -- [6]
+				{
+					"item", -- [1]
+					173049, -- [2]
+					["sliceToken"] = "ABueldpZIq1",
+				}, -- [7]
+				{
+					"item", -- [1]
+					181468, -- [2]
+					["sliceToken"] = "ABueldpZIqr",
+				}, -- [8]
+				["save"] = true,
+				["limit"] = "Bracnar-SistersofElune",
+				["name"] = "Food",
 			},
 		},
 	},
