@@ -104,16 +104,16 @@ OneRing_Config = {
 					["sliceToken"] = "OPCCTa",
 				}, -- [5]
 				{
-					["id"] = "/cast [mod] {{spell:818}}; {{spell:2550/51296}}",
 					["sliceToken"] = "OPCCTc",
+					["id"] = "/cast [mod] {{spell:818}}; {{spell:2550/51296}}",
 				}, -- [6]
 				{
 					["sliceToken"] = "OPCCTg",
 					["id"] = "/cast [mod] Thermal Anvil; {{spell:4036/51306}}",
 				}, -- [7]
 				{
-					["id"] = 2656,
 					["sliceToken"] = "OPCCTm",
+					["id"] = 2656,
 				}, -- [8]
 				{
 					["id"] = "/cast [mod] {{spell:31252}}; {{spell:25229/51311}};",
