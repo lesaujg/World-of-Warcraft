@@ -37,9 +37,8 @@ WeakAurasSaved = {
 		["Flask of the Seventh Demon"] = {
 			[188033] = 1385241,
 		},
-		["Survival of the Fittest"] = {
-			[264735] = 136051,
-			[281195] = 136094,
+		["Posthaste"] = {
+			[118922] = 461119,
 		},
 		["Coordinated Assault"] = {
 			[266779] = 2065565,
@@ -47,8 +46,9 @@ WeakAurasSaved = {
 		["Lock and Load"] = {
 			[194594] = 236185,
 		},
-		["Precise Shots"] = {
-			[260242] = 236179,
+		["Survival of the Fittest"] = {
+			[264735] = 136051,
+			[281195] = 136094,
 		},
 		["Steady Focus"] = {
 			[193534] = 236182,
@@ -63,8 +63,8 @@ WeakAurasSaved = {
 		["Frenzy"] = {
 			[272790] = 2058007,
 		},
-		["Posthaste"] = {
-			[118922] = 461119,
+		["Precise Shots"] = {
+			[260242] = 236179,
 		},
 		["Binding Shot"] = {
 			[117405] = 462650,
@@ -108,8 +108,8 @@ WeakAurasSaved = {
 		["Aspect of the Turtle"] = {
 			[186265] = 132199,
 		},
-		["Pheromone Bomb"] = {
-			[270332] = 2065635,
+		["Hunter's Mark"] = {
+			[185365] = 236188,
 		},
 		["Shrapnel Bomb"] = {
 			[270339] = 2065637,
@@ -137,11 +137,11 @@ WeakAurasSaved = {
 			[193526] = 132329,
 			[288613] = 132329,
 		},
-		["Hunter's Mark"] = {
-			[185365] = 236188,
-		},
 		["Heroism"] = {
 			[32182] = 132313,
+		},
+		["Pheromone Bomb"] = {
+			[270332] = 2065635,
 		},
 		["Intimidation"] = {
 			[24394] = 132111,
@@ -334,22 +334,52 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2402",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2402",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "J2XToX6j6KY",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "03 Lingering Embers",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -368,36 +398,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "03 Lingering Embers",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -609,10 +609,42 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "aysHfL1F5x4",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Stack.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 463560,
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "08 Chain Slam",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -631,38 +663,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 463560,
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "08 Chain Slam",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Stack.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -835,22 +835,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2417",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2417",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "UkZPI7ozS)R",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "09 Stone Spike",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -882,38 +914,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "09 Stone Spike",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -1054,9 +1054,9 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownEdge"] = false,
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
 			["actions"] = {
 				["start"] = {
 					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\throwknife.ogg",
@@ -1068,7 +1068,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 				},
 			},
-			["xOffset"] = -32.00006103515625,
+			["cooldownEdge"] = false,
+			["selfPoint"] = "CENTER",
 			["cooldown"] = true,
 			["auto"] = true,
 			["uid"] = "2drIhsHAuIE",
@@ -1089,8 +1090,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["xOffset"] = -32.00006103515625,
 		},
 		["08 High Energy"] = {
 			["iconSource"] = 0,
@@ -1306,22 +1306,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2399",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2399",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "CQRdaeS(2I(",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\High Energy.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 136215,
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "08 High Energy",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -1340,38 +1372,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 136215,
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "08 High Energy",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\High Energy.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -1537,27 +1537,57 @@ WeakAurasSaved = {
 				["role"] = {
 					["single"] = "TANK",
 				},
-				["encounterid"] = "2412",
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["talent"] = {
 					["multi"] = {
 					},
 				},
 				["use_role"] = true,
+				["encounterid"] = "2412",
 				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "fV33VlfGw7x",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "07 Soul Spikes (Tank Only)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -1576,36 +1606,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "07 Soul Spikes (Tank Only)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -1826,12 +1826,13 @@ WeakAurasSaved = {
 			["align"] = "CENTER",
 			["gridWidth"] = 5,
 			["stagger"] = 0,
-			["anchorPerUnit"] = "UNITFRAME",
+			["config"] = {
+			},
 			["version"] = 142,
 			["subRegions"] = {
 			},
-			["fullCircle"] = true,
-			["radius"] = 200,
+			["grow"] = "RIGHT",
+			["space"] = 2,
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -1849,13 +1850,6 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-			},
-			["space"] = 2,
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
 			},
 			["animation"] = {
 				["start"] = {
@@ -1877,6 +1871,13 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["fullCircle"] = true,
 			["animate"] = false,
 			["rotation"] = 0,
 			["scale"] = 1,
@@ -1887,7 +1888,7 @@ WeakAurasSaved = {
 			["borderSize"] = 2,
 			["limit"] = 5,
 			["uid"] = "TKAVMWJO4Xg",
-			["borderInset"] = 1,
+			["anchorPerUnit"] = "UNITFRAME",
 			["constantFactor"] = "RADIUS",
 			["rowSpace"] = 1,
 			["borderOffset"] = 4,
@@ -1899,8 +1900,7 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["sort"] = "none",
-			["config"] = {
-			},
+			["borderInset"] = 1,
 			["anchorPoint"] = "CENTER",
 			["groupIcon"] = 3670321,
 			["conditions"] = {
@@ -1908,7 +1908,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["grow"] = "RIGHT",
+			["radius"] = 200,
 		},
 		["Mend Pet Sound"] = {
 			["iconSource"] = -1,
@@ -2322,25 +2322,39 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2418",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2418",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "Jkc5ZvgON4G",
+			["authorOptions"] = {
+			},
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 236174,
 			["actions"] = {
 				["start"] = {
 					["custom"] = "if aura_env.ID ~= 16 then\n    PlaySoundFile(\"Interface\\\\AddOns\\\\SharedMedia_Causese\\\\sound\\\\Avoid.ogg\", \"MASTER\")\nelse\n    PlaySoundFile(\"Interface\\\\AddOns\\\\SharedMedia_Causese\\\\sound\\\\Soak.ogg\", \"MASTER\")\nend",
 					["do_sound"] = false,
+					["do_custom"] = true,
 					["sound"] = " custom",
 					["do_message"] = false,
-					["do_custom"] = true,
 				},
 				["init"] = {
 					["custom"] = "aura_env.ID = select(3, GetInstanceInfo())",
@@ -2351,14 +2365,6 @@ WeakAurasSaved = {
 					["do_custom"] = false,
 				},
 			},
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
-			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 236174,
-			["url"] = "https://wago.io/slraid1/142",
 			["semver"] = "1.0.141",
 			["width"] = 80,
 			["zoom"] = 0.3,
@@ -2372,17 +2378,11 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["10 Fatal Finesse Dot"] = {
 			["iconSource"] = -1,
@@ -2546,22 +2546,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2407",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2407",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "nMQqCqf5qD7",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 Fatal Finesse Dot",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -2581,38 +2613,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 Fatal Finesse Dot",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -2838,10 +2838,42 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "kVMG42hKTT1",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Soak.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 Night Hunter (Others)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -2861,38 +2893,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 Night Hunter (Others)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Soak.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -3061,22 +3061,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2406",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2406",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "3FXj2KtHq2z",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Linked.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "06 Shared Suffering",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -3095,38 +3127,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "06 Shared Suffering",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Linked.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -3165,14 +3165,14 @@ WeakAurasSaved = {
 						["use_spellId"] = true,
 						["castType"] = "cast",
 						["spellName"] = 0,
+						["useName"] = true,
 						["type"] = "status",
-						["spell"] = "",
 						["custom_type"] = "stateupdate",
 						["subeventSuffix"] = "_CAST_SUCCESS",
 						["unevent"] = "auto",
 						["fetchTooltip"] = false,
 						["event"] = "Cast",
-						["useName"] = true,
+						["spell"] = "",
 						["realSpellName"] = 0,
 						["use_spellName"] = true,
 						["spellIds"] = {
@@ -3311,22 +3311,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2398",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2398",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "GvTYTIHT5Rn",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Dodge.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 136116,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "01 Echoing Sonar",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -3345,38 +3377,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 136116,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "01 Echoing Sonar",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Dodge.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -3415,23 +3415,23 @@ WeakAurasSaved = {
 						["messageType"] = "CHAT_MSG_RAID_BOSS_EMOTE",
 						["use_messageType"] = true,
 						["use_unit"] = true,
-						["custom"] = "function(s, e, spell)\n    if aura_env.config.always and not s[\"\"] then\n        s[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"timed\", \n            icon = GetSpellTexture(aura_env.cdSpell),\n        }\n    end\n    if e == \"UNIT_AURA\" then\n        local name, icon, count, _, duration, expirationTime = WA_GetUnitBuff(\"pet\", 272790)\n        if name then\n            aura_env.duration = duration\n            if not s[\"\"] then s[\"\"] = {} end\n            s[\"\"].show = true\n            s[\"\"].changed = true\n            s[\"\"].stacks = count\n            s[\"\"].duration = duration\n            s[\"\"].expirationTime = expirationTime\n            s[\"\"].autoHide = not aura_env.config.always\n            s[\"\"].icon = GetSpellTexture(aura_env.cdSpell)\n            s[\"\"].progressType = \"timed\"\n            return true\n        else\n            if not s[\"\"] then s[\"\"] = {} end\n            s[\"\"].show = aura_env.config.always\n            s[\"\"].changed = true\n            s[\"\"].stacks = 0\n            s[\"\"].icon = GetSpellTexture(aura_env.cdSpell)\n            return true\n        end\n    elseif spell == aura_env.cdSpell then\n        local charges, maxCharges = WeakAuras.GetSpellCharges(aura_env.cdSpell)\n        local start, duration = WeakAuras.GetSpellCooldown(aura_env.cdSpell)\n        if start > 0 then\n            if not s[1] then s[1] = {} end\n            s[1].show = true\n            s[1].changed = true\n            s[1].progressType = \"timed\"\n            s[1].charges = charges\n            s[1].maxCharges = maxCharges\n            s[1].duration = aura_env.duration or aura_env.frenzyDuration\n            s[1].expirationTime = start and start + duration or 0\n            s[1].type = \"cooldown\"\n            s[1].autoHide = true\n            s[1].orientation = aura_env.orientation\n            if s[\"\"] then\n                s[\"\"].charges = charges\n                s[\"\"].maxCharges = maxCharges\n                s[\"\"].cdExpiration = start and start + duration or 0\n                s[\"\"].changed = true\n            end\n            return true\n        end\n    end\n    return true\nend\n\n\n\n\n",
-						["custom_hide"] = "timed",
 						["spellIds"] = {
 						},
-						["spellName"] = 106832,
-						["unevent"] = "auto",
-						["type"] = "custom",
+						["debuffType"] = "HELPFUL",
+						["events"] = "UNIT_AURA:pet SPELL_COOLDOWN_READY SPELL_COOLDOWN_CHANGED SPELL_COOLDOWN_FORCE COOLDOWN_REMAINING_CHECK SPELL_CHARGES_CHANGED",
+						["custom_hide"] = "timed",
 						["subeventSuffix"] = "_CAST_START",
+						["type"] = "custom",
 						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
 						["duration"] = "1",
 						["use_genericShowOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["unit"] = "player",
 						["realSpellName"] = "Thrash",
 						["use_spellName"] = true,
-						["events"] = "UNIT_AURA:pet SPELL_COOLDOWN_READY SPELL_COOLDOWN_CHANGED SPELL_COOLDOWN_FORCE COOLDOWN_REMAINING_CHECK SPELL_CHARGES_CHANGED",
-						["debuffType"] = "HELPFUL",
+						["custom"] = "function(s, e, spell)\n    if aura_env.config.always and not s[\"\"] then\n        s[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"timed\", \n            icon = GetSpellTexture(aura_env.cdSpell),\n        }\n    end\n    if e == \"UNIT_AURA\" then\n        local name, icon, count, _, duration, expirationTime = WA_GetUnitBuff(\"pet\", 272790)\n        if name then\n            aura_env.duration = duration\n            if not s[\"\"] then s[\"\"] = {} end\n            s[\"\"].show = true\n            s[\"\"].changed = true\n            s[\"\"].stacks = count\n            s[\"\"].duration = duration\n            s[\"\"].expirationTime = expirationTime\n            s[\"\"].autoHide = not aura_env.config.always\n            s[\"\"].icon = GetSpellTexture(aura_env.cdSpell)\n            s[\"\"].progressType = \"timed\"\n            return true\n        else\n            if not s[\"\"] then s[\"\"] = {} end\n            s[\"\"].show = aura_env.config.always\n            s[\"\"].changed = true\n            s[\"\"].stacks = 0\n            s[\"\"].icon = GetSpellTexture(aura_env.cdSpell)\n            return true\n        end\n    elseif spell == aura_env.cdSpell then\n        local charges, maxCharges = WeakAuras.GetSpellCharges(aura_env.cdSpell)\n        local start, duration = WeakAuras.GetSpellCooldown(aura_env.cdSpell)\n        if start > 0 then\n            if not s[1] then s[1] = {} end\n            s[1].show = true\n            s[1].changed = true\n            s[1].progressType = \"timed\"\n            s[1].charges = charges\n            s[1].maxCharges = maxCharges\n            s[1].duration = aura_env.duration or aura_env.frenzyDuration\n            s[1].expirationTime = start and start + duration or 0\n            s[1].type = \"cooldown\"\n            s[1].autoHide = true\n            s[1].orientation = aura_env.orientation\n            if s[\"\"] then\n                s[\"\"].charges = charges\n                s[\"\"].maxCharges = maxCharges\n                s[\"\"].cdExpiration = start and start + duration or 0\n                s[\"\"].changed = true\n            end\n            return true\n        end\n    end\n    return true\nend\n\n\n\n\n",
+						["spellName"] = 106832,
 						["check"] = "event",
 						["subeventPrefix"] = "SPELL",
 						["use_track"] = true,
@@ -3559,6 +3559,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_class_and_spec"] = true,
 				["spec"] = {
 					["multi"] = {
 					},
@@ -3567,7 +3568,6 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_class_and_spec"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -3619,7 +3619,7 @@ WeakAurasSaved = {
 			["texture"] = "Charcoal",
 			["alpha"] = 1,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["semver"] = "1.0.7",
+			["spark"] = false,
 			["tocversion"] = 90002,
 			["sparkHidden"] = "NEVER",
 			["authorOptions"] = {
@@ -3778,7 +3778,7 @@ WeakAurasSaved = {
 			},
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["spark"] = false,
+			["auto"] = true,
 			["config"] = {
 				["tickValue"] = 1,
 				["tickSetting"] = 1,
@@ -3801,7 +3801,7 @@ WeakAurasSaved = {
 				["tickTexture"] = "",
 			},
 			["inverse"] = false,
-			["auto"] = true,
+			["semver"] = "1.0.7",
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 				{
@@ -4106,22 +4106,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2417",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2417",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "kgflKjsnnmA",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "09 Heart Hemorrhage",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -4153,38 +4185,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "09 Heart Hemorrhage",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -4357,22 +4357,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2417",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2417",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "YCnuykMdg5p",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Buff.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 132780,
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "09 Crystalize",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -4408,38 +4440,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 132780,
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "09 Crystalize",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Buff.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -4628,60 +4628,39 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2417",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2417",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "WMbPqSz4BcD",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["duration_type"] = "seconds",
-					["colorA"] = 1,
-					["colorG"] = 0,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["colorB"] = 0.003921568627451,
-					["y"] = 0,
-					["colorType"] = "custom",
-					["scalex"] = 1,
-					["easeStrength"] = 3,
-					["colorFunc"] = "function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n    local angle = (progress * 4 * math.pi) - (math.pi / 2)\n    local newProgress = ((math.sin(angle) + 1)/2);\n    return WeakAuras.GetHSVTransition(newProgress, r1, g1, b1, a1, r2, g2, b2, a2)\nend",
-					["rotate"] = 0,
-					["x"] = 0,
-					["use_color"] = true,
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["displayIcon"] = 1029718,
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
@@ -4695,7 +4674,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
+			["xOffset"] = 0,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -4735,16 +4714,37 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["actions"] = {
+			["animation"] = {
 				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
+				["main"] = {
+					["colorR"] = 1,
+					["duration_type"] = "seconds",
+					["colorA"] = 1,
+					["colorG"] = 0,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["colorB"] = 0.003921568627451,
+					["y"] = 0,
+					["colorType"] = "custom",
+					["scalex"] = 1,
+					["easeStrength"] = 3,
+					["colorFunc"] = "function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n    local angle = (progress * 4 * math.pi) - (math.pi / 2)\n    local newProgress = ((math.sin(angle) + 1)/2);\n    return WeakAuras.GetHSVTransition(newProgress, r1, g1, b1, a1, r2, g2, b2, a2)\nend",
+					["rotate"] = 0,
+					["x"] = 0,
+					["use_color"] = true,
 				},
 				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 			},
 		},
@@ -4914,22 +4914,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2412",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2412",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "BFvydg6yhzq",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Spread.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 3528311,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "07 Prideful Eruption",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -4949,38 +4981,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 3528311,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "07 Prideful Eruption",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Spread.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -5143,22 +5143,55 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2418",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2418",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "modE4sU418s",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["do_sound"] = false,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 132095,
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "02 Deathly Roar",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -5191,39 +5224,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 132095,
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "02 Deathly Roar",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["do_sound"] = false,
 				},
 			},
 		},
@@ -5404,27 +5404,61 @@ WeakAurasSaved = {
 				["role"] = {
 					["single"] = "TANK",
 				},
-				["encounterid"] = "2407",
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["talent"] = {
 					["multi"] = {
 					},
 				},
 				["use_role"] = true,
+				["encounterid"] = "2407",
 				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "xsEbNy4sG(A",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 3528313,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 Wracking Pain Cast (Tank Only)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -5456,40 +5490,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 3528313,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 Wracking Pain Cast (Tank Only)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
 				},
 			},
 		},
@@ -5676,12 +5676,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2405",
-				["class"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
+				["encounterid"] = "2405",
+				["class"] = {
 					["multi"] = {
 					},
 				},
@@ -5988,10 +5988,42 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "t4w40aq(DCt",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Move.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 136025,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "08 Destructive Stomp",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -6023,38 +6055,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 136025,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "08 Destructive Stomp",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Move.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -6219,22 +6219,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2407",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2407",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "BSzX14e)mdY",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3565727",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 Massacre",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -6266,38 +6298,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3565727",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 Massacre",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -6518,10 +6518,42 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "Rzeu)O9nmUw",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 132093,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "03 Cloak of Flames (Shade)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -6541,38 +6573,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 132093,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "03 Cloak of Flames (Shade)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -6808,18 +6808,32 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2398",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2398",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "uyRH2WHoiGe",
+			["authorOptions"] = {
+			},
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
 			["actions"] = {
 				["start"] = {
 				},
@@ -6828,14 +6842,6 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
-			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["url"] = "https://wago.io/slraid1/142",
 			["semver"] = "1.0.141",
 			["width"] = 80,
 			["zoom"] = 0.3,
@@ -6849,17 +6855,11 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["03 High Energy"] = {
 			["iconSource"] = 0,
@@ -7029,22 +7029,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2402",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2402",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "DPf)MQx)02E",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\High Energy.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 524795,
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "03 High Energy",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -7063,38 +7095,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 524795,
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "03 High Energy",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\High Energy.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -7320,23 +7320,37 @@ WeakAurasSaved = {
 				["role"] = {
 					["single"] = "TANK",
 				},
-				["encounterid"] = "2418",
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["talent"] = {
 					["multi"] = {
 					},
 				},
 				["use_role"] = true,
+				["encounterid"] = "2418",
 				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "NR6Py5QtlMS",
+			["authorOptions"] = {
+			},
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
 			["actions"] = {
 				["start"] = {
 				},
@@ -7345,14 +7359,6 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
-			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["url"] = "https://wago.io/slraid1/142",
 			["semver"] = "1.0.141",
 			["width"] = 80,
 			["zoom"] = 0.3,
@@ -7366,17 +7372,11 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["07 Dark Recital Cast"] = {
 			["iconSource"] = 0,
@@ -7399,10 +7399,8 @@ WeakAurasSaved = {
 						["custom_hide"] = "timed",
 						["unit"] = "boss",
 						["useName"] = true,
+						["useExactSpellId"] = false,
 						["subeventSuffix"] = "_CAST_START",
-						["auraspellids"] = {
-							"327773", -- [1]
-						},
 						["names"] = {
 						},
 						["fetchTooltip"] = false,
@@ -7414,7 +7412,9 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "event",
 						["duration"] = "",
-						["useExactSpellId"] = false,
+						["auraspellids"] = {
+							"327773", -- [1]
+						},
 						["type"] = "status",
 						["subeventPrefix"] = "SPELL",
 					},
@@ -7612,12 +7612,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2412",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2412",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -7845,22 +7845,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2398",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2398",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "0mUqotrioPO",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 136147,
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "01 Earsplitting Shriek Dot",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -7895,38 +7927,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 136147,
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "01 Earsplitting Shriek Dot",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -7969,8 +7969,8 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["type"] = "custom",
+						["subeventSuffix"] = "_CAST_START",
 						["unevent"] = "auto",
-						["custom_type"] = "stateupdate",
 						["duration"] = "1",
 						["custom"] = "function(allstates, event, unit) \n    --dimensional cypher placement seems to be based on phase, so this should help.\n    if event == \"UNIT_HEALTH\"\n    and unit\n    and UnitGUID(unit) then\n        local bosshp = ((UnitHealth(unit)/UnitHealthMax(unit))*100)\n        if aura_env.phase == 2 and bosshp <= aura_env.hp[aura_env.phase]\n        or aura_env.phase == 3 and bosshp <= aura_env.hp[aura_env.phase] then\n            allstates[\"phase\"] = {\n                show = true,\n                changed = true,\n                progressType = \"timed\",\n                duration = 3,\n                expirationTime = 3 + GetTime(),\n                icon = aura_env.phase == 2 and 3575389 or aura_env.phase == 3 and 2101973,\n                name = aura_env.phase == 2 and \"Phase 2\" or aura_env.phase == 3 and \"Phase 3\",\n                phase = aura_env.phase,\n                autoHide = true\n            }\n            aura_env.phase = aura_env.phase + 1\n            return true\n        end\n    end\n    if event == \"ENCOUNTER_START\" then\n        aura_env.phase = 2\n    end \nend",
 						["event"] = "Health",
@@ -7981,7 +7981,7 @@ WeakAurasSaved = {
 						},
 						["custom_hide"] = "timed",
 						["check"] = "event",
-						["subeventSuffix"] = "_CAST_START",
+						["custom_type"] = "stateupdate",
 						["dynamicDuration"] = true,
 						["customVariables"] = "{\nphase = \"number\"\n}",
 					},
@@ -8116,12 +8116,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2405",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2405",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -8130,9 +8130,9 @@ WeakAurasSaved = {
 			["semver"] = "1.0.141",
 			["config"] = {
 			},
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["authorOptions"] = {
 			},
+			["xOffset"] = 0,
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -8211,7 +8211,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["xOffset"] = 0,
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
 		},
 		["10 Impale (Others)"] = {
 			["iconSource"] = 0,
@@ -8407,22 +8407,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2407",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2407",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "WlumUCRnXOd",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Avoid.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 1029718,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 Impale (Others)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -8454,38 +8486,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 1029718,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 Impale (Others)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Avoid.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -8659,22 +8659,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2402",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2402",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "UFgMBh1Cgk9",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Dodge.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 524795,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "03 Blazing Surge",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -8706,38 +8738,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 524795,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "03 Blazing Surge",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Dodge.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -8910,22 +8910,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2402",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2402",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "2Z7PAHOFayd",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Add.ogg",
+					["do_sound"] = true,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3601528",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "03 Rockbound Vanquisher Spawn",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -8945,40 +8979,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3601528",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "03 Rockbound Vanquisher Spawn",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Add.ogg",
-					["do_sound"] = true,
 				},
 			},
 		},
@@ -9141,22 +9141,52 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2418",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2418",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "PSq(uzaI74F",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "02 Sinseeker Dot",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -9175,36 +9205,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "02 Sinseeker Dot",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -9384,22 +9384,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2417",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2417",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "9P5xG4FjbIC",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 136025,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "09 Seismic Upheaval Cast",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -9431,38 +9463,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 136025,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "09 Seismic Upheaval Cast",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -9635,22 +9635,52 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2412",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2412",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "EyXPO7NKK0T",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "07 Fancy Footwork",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -9669,36 +9699,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "07 Fancy Footwork",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -9877,22 +9877,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2398",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2398",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "XK7rLObZFs(",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 136147,
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "01 Wave of Blood",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -9927,38 +9959,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 136147,
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "01 Wave of Blood",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -10155,7 +10155,6 @@ WeakAurasSaved = {
 			},
 			["semver"] = "1.0.141",
 			["uid"] = "b4DDaTGg9YW",
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -10174,16 +10173,16 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["scaleType"] = "custom",
 					["type"] = "none",
-					["use_color"] = false,
+					["scaley"] = 1,
 					["easeType"] = "none",
 					["translateFunc"] = "",
-					["preset"] = "alphaPulse",
+					["use_color"] = false,
 					["alpha"] = 0,
 					["colorType"] = "custom",
 					["y"] = 0,
 					["x"] = 0.9,
 					["translateType"] = "custom",
-					["scaley"] = 1,
+					["preset"] = "alphaPulse",
 					["colorFunc"] = "function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n    local angle = (progress * 4 * math.pi) - (math.pi / 2)\n    local newProgress = ((math.sin(angle) + 1)/2);\n    return WeakAuras.GetHSVTransition(newProgress, r1, g1, b1, a1, r2, g2, b2, a2)\nend",
 					["rotate"] = 0,
 					["duration_type"] = "seconds",
@@ -10195,6 +10194,8 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
+			},
+			["authorOptions"] = {
 			},
 			["regionType"] = "icon",
 			["information"] = {
@@ -10231,8 +10232,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
 		},
 		["09 Reverberating Eruption (Others)"] = {
 			["iconSource"] = 0,
@@ -10420,22 +10420,58 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2417",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2417",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "qGnNyyphFJU",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\In.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 2101174,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "09 Reverberating Eruption (Others)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -10455,42 +10491,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 2101174,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "09 Reverberating Eruption (Others)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\In.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
 				},
 			},
 		},
@@ -10561,8 +10561,8 @@ WeakAurasSaved = {
 						["debuffType"] = "HARMFUL",
 						["check"] = "event",
 						["type"] = "event",
+						["unevent"] = "timed",
 						["subeventSuffix"] = "_CAST_START",
-						["custom_type"] = "stateupdate",
 						["events"] = "",
 						["fetchTooltip"] = false,
 						["event"] = "Chat Message",
@@ -10572,7 +10572,7 @@ WeakAurasSaved = {
 						["useExactSpellId"] = true,
 						["spellIds"] = {
 						},
-						["unevent"] = "timed",
+						["custom_type"] = "stateupdate",
 						["use_message"] = true,
 						["useName"] = false,
 						["use_messageType"] = true,
@@ -10706,22 +10706,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2383",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2383",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "0B8XwfrnCqq",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "342917",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "05 Volatile Ejection (Others)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -10753,40 +10787,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "342917",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "05 Volatile Ejection (Others)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -10991,10 +10991,42 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "ZhYQTbgDwGZ",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Debuff.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "06 Change of Heart (Tank)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -11013,38 +11045,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "06 Change of Heart (Tank)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Debuff.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -11206,27 +11206,57 @@ WeakAurasSaved = {
 				["role"] = {
 					["single"] = "TANK",
 				},
-				["encounterid"] = "2402",
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["talent"] = {
 					["multi"] = {
 					},
 				},
 				["use_role"] = true,
+				["encounterid"] = "2402",
 				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "aISIO((tvcA",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "03 Burning Remnants (Tank only)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -11245,36 +11275,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "03 Burning Remnants (Tank only)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -11478,27 +11478,59 @@ WeakAurasSaved = {
 						["TANK"] = true,
 					},
 				},
-				["encounterid"] = "2412",
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["talent"] = {
 					["multi"] = {
 					},
 				},
 				["use_role"] = true,
+				["encounterid"] = "2412",
 				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "AmBCopRfDZH",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Targeted.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 3259845,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "07 Soul Spikes Cast On You (Tank Only)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -11530,38 +11562,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 3259845,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "07 Soul Spikes Cast On You (Tank Only)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Targeted.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -11790,35 +11790,25 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "lmlTKiO95F8",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["displayIcon"] = "136116",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
@@ -11832,7 +11822,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
+			["xOffset"] = 0,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -11865,14 +11855,24 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["actions"] = {
+			["animation"] = {
 				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
-				["init"] = {
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 			},
 		},
@@ -12095,22 +12095,72 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2412",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2412",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "i1zETTzpCKM",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "07 Dreadbolt Volley",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "==",
+						["variable"] = "debuffClass",
+						["value"] = "magic",
+					},
+					["changes"] = {
+						{
+							["value"] = true,
+							["property"] = "sub.5.text_visible",
+						}, -- [1]
+						{
+							["value"] = true,
+							["property"] = "sub.3.border_visible",
+						}, -- [2]
+					},
+				}, -- [1]
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -12142,56 +12192,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "07 Dreadbolt Volley",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["op"] = "==",
-						["variable"] = "debuffClass",
-						["value"] = "magic",
-					},
-					["changes"] = {
-						{
-							["value"] = true,
-							["property"] = "sub.5.text_visible",
-						}, -- [1]
-						{
-							["value"] = true,
-							["property"] = "sub.3.border_visible",
-						}, -- [2]
-					},
-				}, -- [1]
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -12386,22 +12386,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2406",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2406",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "oIdbQj9yRC0",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Debuff.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "06 Concentrated Anima",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -12421,40 +12455,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "06 Concentrated Anima",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Debuff.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
 				},
 			},
 		},
@@ -12617,22 +12617,53 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2407",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2407",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "4wth1UAf7cZ",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 Burden of Sin",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -12651,37 +12682,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 Burden of Sin",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -12864,18 +12864,32 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2407",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2407",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "KwUwaEINvAJ",
+			["authorOptions"] = {
+			},
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3528309",
 			["actions"] = {
 				["start"] = {
 					["sound"] = " custom",
@@ -12888,14 +12902,6 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
-			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3528309",
-			["url"] = "https://wago.io/slraid1/142",
 			["semver"] = "1.0.141",
 			["width"] = 80,
 			["zoom"] = 0.3,
@@ -12909,12 +12915,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -12952,8 +12953,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Bease Cleave Sound"] = {
 			["iconSource"] = -1,
@@ -13300,22 +13300,52 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2406",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2406",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "G)RnRk8iENk",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "06 Indemnification",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -13334,36 +13364,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "06 Indemnification",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -13620,47 +13620,37 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2398",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2398",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "p3MekUmx5Yf",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["displayIcon"] = "538040",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
@@ -13674,7 +13664,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
+			["xOffset"] = 0,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -13733,14 +13723,24 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["actions"] = {
+			["animation"] = {
 				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
-				["init"] = {
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 			},
 		},
@@ -13800,7 +13800,7 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["rotation"] = 0,
+			["anchorPoint"] = "CENTER",
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -13826,7 +13826,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["rowSpace"] = 1,
+			["radius"] = 200,
 			["animate"] = false,
 			["customGrow"] = "function(newPositions, activeRegions)\n    -- this function will produce a parabola shape\n    local mid = #activeRegions / 2\n    for i = 1, #activeRegions do\n        newPositions[i] = {\n            0 * (i - mid),\n            0 * (i - mid)\n        }\n    end\nend",
 			["scale"] = 1,
@@ -13836,19 +13836,6 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
-			["anchorPoint"] = "CENTER",
-			["radius"] = 200,
-			["constantFactor"] = "RADIUS",
-			["sort"] = "none",
-			["borderOffset"] = 4,
-			["semver"] = "1.0.12",
-			["tocversion"] = 90002,
-			["id"] = "Bottled Flayedwing Toxin",
-			["frameStrata"] = 1,
-			["gridWidth"] = 5,
-			["anchorFrameType"] = "SCREEN",
-			["arcLength"] = 360,
-			["uid"] = "wkheImkTFkp",
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -13869,13 +13856,26 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["authorOptions"] = {
-			},
+			["borderInset"] = 1,
+			["constantFactor"] = "RADIUS",
+			["sort"] = "none",
+			["borderOffset"] = 4,
+			["semver"] = "1.0.12",
+			["tocversion"] = 90002,
+			["id"] = "Bottled Flayedwing Toxin",
+			["frameStrata"] = 1,
+			["gridWidth"] = 5,
+			["anchorFrameType"] = "SCREEN",
+			["arcLength"] = 360,
+			["uid"] = "wkheImkTFkp",
+			["rowSpace"] = 1,
+			["rotation"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 			},
-			["borderInset"] = 1,
+			["authorOptions"] = {
+			},
 		},
 		["01 Blood Shroud"] = {
 			["iconSource"] = 0,
@@ -14047,22 +14047,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2398",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2398",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "Bk5jizjaDuo",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Knock.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "538040",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "01 Blood Shroud",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -14081,38 +14113,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "538040",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "01 Blood Shroud",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Knock.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -14283,22 +14283,58 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2399",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2399",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "FSj5YwH4Fs8",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["custom"] = "local ID = select(3, GetInstanceInfo())\nif ID ~= 16 then\n    PlaySoundFile(\"Interface\\\\AddOns\\\\SharedMedia_Causese\\\\sound\\\\Avoid.ogg\", \"MASTER\")\nend",
+					["sound"] = " custom",
+					["do_custom"] = true,
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "aura_env.auraType = {\n    [\"BUFF\"] = \"HELPFUL\",\n    [\"DEBUFF\"] = \"HARMFUL\",\n}",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 796637,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "08 Destructive Impact",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -14330,42 +14366,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 796637,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "08 Destructive Impact",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["do_custom"] = true,
-					["custom"] = "local ID = select(3, GetInstanceInfo())\nif ID ~= 16 then\n    PlaySoundFile(\"Interface\\\\AddOns\\\\SharedMedia_Causese\\\\sound\\\\Avoid.ogg\", \"MASTER\")\nend",
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["custom"] = "aura_env.auraType = {\n    [\"BUFF\"] = \"HELPFUL\",\n    [\"DEBUFF\"] = \"HARMFUL\",\n}",
-					["do_custom"] = true,
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -14528,22 +14528,52 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2402",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2402",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "1SP3LU2EO8Y",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "03 Unfuser's Boon",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -14562,36 +14592,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "03 Unfuser's Boon",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -14784,47 +14784,37 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2383",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2383",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "ZgyKGb5x5A)",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["auto"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
@@ -14838,7 +14828,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
+			["xOffset"] = 0,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -14882,14 +14872,24 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["actions"] = {
+			["animation"] = {
 				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
-				["init"] = {
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 			},
 		},
@@ -15005,19 +15005,46 @@ WeakAurasSaved = {
 				["disabled"] = false,
 				["event"] = 1,
 			},
+			["selfPoint"] = "CENTER",
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
+			["regionType"] = "icon",
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["custom"] = "",
+					["do_sound"] = true,
+					["do_custom"] = false,
+					["sound"] = " custom",
+				},
+				["init"] = {
+					["custom"] = "C_ChatInfo.RegisterAddonMessagePrefix(\"CAUSESE_REQUEST\")\nC_ChatInfo.RegisterAddonMessagePrefix(\"CAUSESE_SEND\")\naura_env.myVersion = WeakAuras.GetData(aura_env.id).version\naura_env.dropDownValues = {\n    [1] = \"READY_CHECK\",\n    [2] = \"WA_DELAYED_PLAYER_ENTERING_WORLD\",\n    [3] = \"RAID_INSTANCE_WELCOME\",\n}",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\wagoupdate_logo.tga",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
-			["regionType"] = "icon",
-			["cooldownEdge"] = false,
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\wagoupdate_logo.tga",
+			["semver"] = "1.0.141",
+			["width"] = 80,
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 90002,
+			["id"] = "WA Version Check Nathria (CHECK CUSTOM OPTIONS)",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.3,
+			["uid"] = "yv7vLsILyax",
+			["inverse"] = false,
 			["authorOptions"] = {
 				{
 					["type"] = "description",
@@ -15078,37 +15105,10 @@ WeakAurasSaved = {
 					["width"] = 0.55,
 				}, -- [7]
 			},
-			["semver"] = "1.0.141",
-			["width"] = 80,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 90002,
-			["id"] = "WA Version Check Nathria (CHECK CUSTOM OPTIONS)",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
-			["uid"] = "yv7vLsILyax",
-			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["custom"] = "",
-					["do_sound"] = true,
-					["do_custom"] = false,
-					["sound"] = " custom",
-				},
-				["init"] = {
-					["custom"] = "C_ChatInfo.RegisterAddonMessagePrefix(\"CAUSESE_REQUEST\")\nC_ChatInfo.RegisterAddonMessagePrefix(\"CAUSESE_SEND\")\naura_env.myVersion = WeakAuras.GetData(aura_env.id).version\naura_env.dropDownValues = {\n    [1] = \"READY_CHECK\",\n    [2] = \"WA_DELAYED_PLAYER_ENTERING_WORLD\",\n    [3] = \"RAID_INSTANCE_WELCOME\",\n}",
-					["do_custom"] = true,
-				},
-				["finish"] = {
-				},
-			},
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["selfPoint"] = "CENTER",
+			["cooldownEdge"] = false,
 		},
 		["03 Drained Soul"] = {
 			["iconSource"] = 0,
@@ -15273,22 +15273,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2402",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2402",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "ilL371E1LJb",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 3528308,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "03 Drained Soul",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -15308,38 +15340,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 3528308,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "03 Drained Soul",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -15370,13 +15370,13 @@ WeakAurasSaved = {
 						["use_specific_unit"] = true,
 						["use_absorbMode"] = true,
 						["unit"] = "boss1",
+						["unevent"] = "timed",
 						["custom_type"] = "event",
-						["subeventSuffix"] = "_CAST_SUCCESS",
 						["debuffType"] = "HARMFUL",
 						["events"] = "",
 						["useName"] = true,
 						["use_spellName"] = false,
-						["unevent"] = "timed",
+						["subeventSuffix"] = "_CAST_SUCCESS",
 						["spellName"] = 0,
 						["fetchTooltip"] = false,
 						["event"] = "Combat Log",
@@ -15408,13 +15408,13 @@ WeakAurasSaved = {
 						["use_specific_unit"] = true,
 						["use_absorbMode"] = true,
 						["unit"] = "boss1",
+						["unevent"] = "timed",
 						["custom_type"] = "event",
-						["subeventSuffix"] = "_CAST_SUCCESS",
 						["debuffType"] = "HARMFUL",
 						["events"] = "",
 						["useName"] = true,
 						["use_spellName"] = false,
-						["unevent"] = "timed",
+						["subeventSuffix"] = "_CAST_SUCCESS",
 						["spellName"] = 0,
 						["fetchTooltip"] = false,
 						["event"] = "Combat Log",
@@ -15573,22 +15573,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2405",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2405",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "oSg09MIKlPJ",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Collect.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+					["custom"] = "aura_env.counter = 0",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3575389",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "04 Collapsing Realities",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -15620,40 +15654,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3575389",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "04 Collapsing Realities",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Collect.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-					["custom"] = "aura_env.counter = 0",
-					["do_custom"] = true,
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -15880,18 +15880,32 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2407",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2407",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "kfov8QlYeFF",
+			["authorOptions"] = {
+			},
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
 			["actions"] = {
 				["start"] = {
 					["do_sound"] = false,
@@ -15901,14 +15915,6 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
-			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["url"] = "https://wago.io/slraid1/142",
 			["semver"] = "1.0.141",
 			["width"] = 80,
 			["zoom"] = 0.3,
@@ -15922,17 +15928,11 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["02 Vicious Lunge (Others)"] = {
 			["iconSource"] = 0,
@@ -16155,22 +16155,55 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2418",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2418",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "NZPlcPOxvtR",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\In.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["do_sound"] = false,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 1033474,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "02 Vicious Lunge (Others)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -16203,39 +16236,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 1033474,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "02 Vicious Lunge (Others)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\In.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["do_sound"] = false,
 				},
 			},
 		},
@@ -16272,11 +16272,11 @@ WeakAurasSaved = {
 						["fetchTooltip"] = false,
 						["event"] = "Combat Log",
 						["use_absorbMode"] = true,
+						["events"] = "UNIT_SPELLCAST_SUCCEEDED:boss",
+						["use_spellId"] = true,
 						["spellIds"] = {
 						},
-						["use_spellId"] = true,
 						["custom"] = "function(event, _, _, spellID)\n    if spellID\n    and spellID == 330964 then\n        return true    \n    end\nend\n\n\n",
-						["events"] = "UNIT_SPELLCAST_SUCCEEDED:boss",
 						["custom_type"] = "event",
 						["subeventSuffix"] = "_CAST_SUCCESS",
 						["subeventPrefix"] = "SPELL",
@@ -16409,22 +16409,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2412",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2412",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "WKHszvzN2lD",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 1396969,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "07 Dancing Fools",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -16443,40 +16477,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 1396969,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "07 Dancing Fools",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -16693,48 +16693,37 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2402",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2402",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "4FZEG7Dsl2(",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["preset"] = "alphaPulse",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["auto"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
@@ -16748,7 +16737,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
+			["xOffset"] = 0,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -16797,14 +16786,25 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["actions"] = {
+			["animation"] = {
 				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
-				["init"] = {
+				["main"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "alphaPulse",
+					["duration_type"] = "seconds",
 				},
 				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 			},
 		},
@@ -17058,10 +17058,42 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "fI72xQPBdc6",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\In.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 463560,
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "08 Chain Slam (Others)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -17080,38 +17112,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 463560,
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "08 Chain Slam (Others)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\In.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -17288,22 +17288,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2412",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2412",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "lZENIi(LQ9X",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Adds.ogg",
+					["do_sound"] = true,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 461806,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "07 Dredger Servants",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -17322,40 +17356,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 461806,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "07 Dredger Servants",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Adds.ogg",
-					["do_sound"] = true,
 				},
 			},
 		},
@@ -17563,23 +17563,37 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2418",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2418",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "x9zcDnyju20",
+			["authorOptions"] = {
+			},
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 236174,
 			["actions"] = {
 				["start"] = {
-					["do_custom"] = false,
 					["custom"] = "",
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Targeted.ogg",
+					["do_custom"] = false,
 					["do_sound"] = true,
 				},
 				["init"] = {
@@ -17589,14 +17603,6 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
-			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 236174,
-			["url"] = "https://wago.io/slraid1/142",
 			["semver"] = "1.0.141",
 			["width"] = 80,
 			["zoom"] = 0.3,
@@ -17610,17 +17616,11 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["06 Bottled/Lingering/Replicating Anima Cast"] = {
 			["iconSource"] = 0,
@@ -17889,22 +17889,76 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2406",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2406",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "j(aL5MEeVtC",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["do_glow"] = false,
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3684825",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "06 Bottled/Lingering/Replicating Anima Cast",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 3,
+						["op"] = "==",
+						["variable"] = "show",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								1, -- [1]
+								0, -- [2]
+								0.054901960784314, -- [3]
+								1, -- [4]
+							},
+							["property"] = "sub.4.glowColor",
+						}, -- [1]
+					},
+				}, -- [1]
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -17936,60 +17990,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3684825",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "06 Bottled/Lingering/Replicating Anima Cast",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 3,
-						["op"] = "==",
-						["variable"] = "show",
-						["value"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								1, -- [1]
-								0, -- [2]
-								0.054901960784314, -- [3]
-								1, -- [4]
-							},
-							["property"] = "sub.4.glowColor",
-						}, -- [1]
-					},
-				}, -- [1]
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["do_glow"] = false,
-					["sound"] = " custom",
-					["do_sound"] = false,
 				},
 			},
 		},
@@ -18176,10 +18176,42 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "VtvWgPOg0T7",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Turn.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "06 Hidden Desire (Tank Only)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -18198,38 +18230,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "06 Hidden Desire (Tank Only)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Turn.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -18417,22 +18417,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2407",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2407",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "HGz5CiDDyYC",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Adds.ogg",
+					["do_sound"] = true,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 3528313,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 Cleansing Pain",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -18471,40 +18505,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 3528313,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 Cleansing Pain",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Adds.ogg",
-					["do_sound"] = true,
 				},
 			},
 		},
@@ -18673,22 +18673,53 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2406",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2406",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "Vd4aQAbMla6",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "06 Anima Web",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -18707,37 +18738,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "06 Anima Web",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -18905,22 +18905,76 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2402",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2402",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "2F5PLJgf)RA",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "03 Greater Castigation",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "==",
+						["variable"] = "spellId",
+						["value"] = "332871",
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								["sound_type"] = "Play",
+								["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Spread.ogg",
+								["sound_channel"] = "Master",
+							},
+							["property"] = "sound",
+						}, -- [1]
+						{
+							["value"] = true,
+							["property"] = "desaturate",
+						}, -- [2]
+					},
+				}, -- [1]
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -18959,60 +19013,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "03 Greater Castigation",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["op"] = "==",
-						["variable"] = "spellId",
-						["value"] = "332871",
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								["sound_type"] = "Play",
-								["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Spread.ogg",
-								["sound_channel"] = "Master",
-							},
-							["property"] = "sound",
-						}, -- [1]
-						{
-							["value"] = true,
-							["property"] = "desaturate",
-						}, -- [2]
-					},
-				}, -- [1]
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -19209,22 +19209,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2402",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2402",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "oCEJ6gZe0Hx",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Soak.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+					["custom"] = "aura_env.spellIDs = {\n    [325877] = true,\n}",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 135826,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "03 Ember Blast (Others)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -19243,40 +19277,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 135826,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "03 Ember Blast (Others)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Soak.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-					["custom"] = "aura_env.spellIDs = {\n    [325877] = true,\n}",
-					["do_custom"] = true,
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -19438,27 +19438,57 @@ WeakAurasSaved = {
 				["role"] = {
 					["single"] = "TANK",
 				},
-				["encounterid"] = "2402",
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["talent"] = {
 					["multi"] = {
 					},
 				},
 				["use_role"] = true,
+				["encounterid"] = "2402",
 				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "cIdLwr1MsAl",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "03 Vanquished (Tank only)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -19477,36 +19507,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "03 Vanquished (Tank only)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -19756,18 +19756,32 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2399",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2399",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "JoOvW6HEz2r",
+			["authorOptions"] = {
+			},
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
 			["actions"] = {
 				["start"] = {
 					["sound"] = " custom",
@@ -19778,14 +19792,6 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
-			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["url"] = "https://wago.io/slraid1/142",
 			["semver"] = "1.0.141",
 			["width"] = 80,
 			["zoom"] = 0.3,
@@ -19799,17 +19805,11 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["10 Ravage Cast"] = {
 			["iconSource"] = 0,
@@ -20036,22 +20036,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2407",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2407",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "cdC94KMfS4D",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 136133,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 Ravage Cast",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -20083,38 +20115,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 136133,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 Ravage Cast",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -20317,18 +20317,32 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2417",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2417",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "JcBscWIfOH5",
+			["authorOptions"] = {
+			},
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 132780,
 			["actions"] = {
 				["start"] = {
 					["sound"] = " custom",
@@ -20339,14 +20353,6 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
-			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 132780,
-			["url"] = "https://wago.io/slraid1/142",
 			["semver"] = "1.0.141",
 			["width"] = 80,
 			["zoom"] = 0.3,
@@ -20360,17 +20366,11 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["09 Wicked Blade"] = {
 			["iconSource"] = 0,
@@ -20558,47 +20558,39 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2417",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2417",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "CGw3Lk3V)3E",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "aura_env.auraType = {\n    [\"BUFF\"] = \"HELPFUL\",\n    [\"DEBUFF\"] = \"HARMFUL\",\n}",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["displayIcon"] = 1029718,
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
@@ -20612,7 +20604,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
+			["xOffset"] = 0,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -20665,16 +20657,24 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["actions"] = {
+			["animation"] = {
 				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
-				["init"] = {
-					["custom"] = "aura_env.auraType = {\n    [\"BUFF\"] = \"HELPFUL\",\n    [\"DEBUFF\"] = \"HARMFUL\",\n}",
-					["do_custom"] = true,
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 			},
 		},
@@ -20836,27 +20836,58 @@ WeakAurasSaved = {
 				["role"] = {
 					["single"] = "TANK",
 				},
-				["encounterid"] = "2407",
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["talent"] = {
 					["multi"] = {
 					},
 				},
 				["use_role"] = true,
+				["encounterid"] = "2407",
 				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "1FAYnNFmdow",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 Scorn (Tank only)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -20875,37 +20906,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 Scorn (Tank only)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -20928,13 +20928,13 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["subeventSuffix"] = "_CAST_START",
 						["useName"] = true,
-						["fetchTooltip"] = false,
+						["duration"] = "1",
 						["unevent"] = "auto",
+						["unit"] = "player",
+						["fetchTooltip"] = false,
+						["event"] = "Cast",
 						["names"] = {
 						},
-						["use_absorbMode"] = true,
-						["event"] = "Cast",
-						["use_unit"] = true,
 						["auranames"] = {
 							"347350", -- [1]
 						},
@@ -20943,8 +20943,8 @@ WeakAurasSaved = {
 						},
 						["type"] = "aura2",
 						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
-						["duration"] = "1",
+						["use_unit"] = true,
+						["use_absorbMode"] = true,
 						["debuffType"] = "HARMFUL",
 					},
 					["untrigger"] = {
@@ -21093,10 +21093,42 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "P04e7Rjc1H5",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Debuff.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 3565717,
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "07 Dancing Fever",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -21116,38 +21148,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 3565717,
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "07 Dancing Fever",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Debuff.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -21323,22 +21323,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2402",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2402",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "tPl0FpNN2iT",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Fixate.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 628267,
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "03 Burning Fixation",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -21371,38 +21403,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 628267,
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "03 Burning Fixation",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Fixate.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -21571,22 +21571,52 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2406",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2406",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "p69HokfznYn",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "06 Unconscionable Guilt",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -21605,36 +21635,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "06 Unconscionable Guilt",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -21805,13 +21805,13 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["parent"] = "Bottled Flayedwing Toxin",
+			["icon"] = true,
 			["useTooltip"] = false,
 			["regionType"] = "icon",
-			["cooldownEdge"] = false,
-			["selfPoint"] = "CENTER",
-			["cooldown"] = true,
 			["xOffset"] = 0,
+			["cooldownEdge"] = false,
+			["cooldown"] = true,
+			["parent"] = "Bottled Flayedwing Toxin",
 			["config"] = {
 			},
 			["cooldownTextDisabled"] = false,
@@ -21855,7 +21855,7 @@ WeakAurasSaved = {
 			},
 			["information"] = {
 			},
-			["icon"] = true,
+			["selfPoint"] = "CENTER",
 		},
 		["04 Arcane Vulnerability (Tank Only)"] = {
 			["iconSource"] = 0,
@@ -22026,27 +22026,59 @@ WeakAurasSaved = {
 						["TANK"] = true,
 					},
 				},
-				["encounterid"] = "2405",
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["talent"] = {
 					["multi"] = {
 					},
 				},
 				["use_role"] = true,
+				["encounterid"] = "2405",
 				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "eOsYSiRVf8c",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 132097,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "04 Arcane Vulnerability (Tank Only)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -22078,38 +22110,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 132097,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "04 Arcane Vulnerability (Tank Only)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -22281,22 +22281,52 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2383",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2383",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "w)frAKWSf4f",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "1778230",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "05 Desolate",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -22315,36 +22345,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "1778230",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "05 Desolate",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -22558,10 +22558,42 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "lxhomeTPRDZ",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Bait.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 136129,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 Sinister Reflection",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -22593,38 +22625,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 136129,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 Sinister Reflection",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Bait.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -22814,47 +22814,39 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2407",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2407",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "myDkQKgGIqT",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "aura_env.auraType = {\n    [\"BUFF\"] = \"HELPFUL\",\n    [\"DEBUFF\"] = \"HARMFUL\",\n}\naura_env.counter = 0\naura_env.order = {\n    [1] = \"First\",\n    [2] = \"Second\",\n    [3] = \"Third\",\n    [4] = \"Fourth\",\n}",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["displayIcon"] = 1029718,
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
@@ -22868,7 +22860,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
+			["xOffset"] = 0,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -22895,16 +22887,24 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["actions"] = {
+			["animation"] = {
 				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
-				["init"] = {
-					["custom"] = "aura_env.auraType = {\n    [\"BUFF\"] = \"HELPFUL\",\n    [\"DEBUFF\"] = \"HARMFUL\",\n}\naura_env.counter = 0\naura_env.order = {\n    [1] = \"First\",\n    [2] = \"Second\",\n    [3] = \"Third\",\n    [4] = \"Fourth\",\n}",
-					["do_custom"] = true,
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 			},
 		},
@@ -23085,22 +23085,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2398",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2398",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "gaW7aKcNq3Z",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Avoid.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 366938,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "01 Blind Swipe",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -23119,38 +23151,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 366938,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "01 Blind Swipe",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Avoid.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -23389,12 +23389,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2402",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2402",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -23402,20 +23402,28 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
+			["selfPoint"] = "CENTER",
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
+			["regionType"] = "icon",
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
-			},
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
-			["regionType"] = "icon",
-			["cooldownEdge"] = false,
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["authorOptions"] = {
 			},
 			["semver"] = "1.0.141",
 			["width"] = 80,
@@ -23429,20 +23437,12 @@ WeakAurasSaved = {
 			["zoom"] = 0.3,
 			["uid"] = "imiJQmbcuJA",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["authorOptions"] = {
 			},
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["selfPoint"] = "CENTER",
+			["cooldownEdge"] = false,
 		},
 		["10 Massacre Cast"] = {
 			["iconSource"] = 0,
@@ -23669,22 +23669,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2407",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2407",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "8jnfGzYf7IE",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Dance.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3565727",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 Massacre Cast",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -23716,38 +23748,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3565727",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 Massacre Cast",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Dance.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -23970,22 +23970,72 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2417",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2417",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "ufPZHv6QdHj",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "09 Heart Rend",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "==",
+						["variable"] = "debuffClass",
+						["value"] = "magic",
+					},
+					["changes"] = {
+						{
+							["value"] = true,
+							["property"] = "sub.5.text_visible",
+						}, -- [1]
+						{
+							["value"] = true,
+							["property"] = "sub.3.border_visible",
+						}, -- [2]
+					},
+				}, -- [1]
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -24017,56 +24067,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "09 Heart Rend",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["op"] = "==",
-						["variable"] = "debuffClass",
-						["value"] = "magic",
-					},
-					["changes"] = {
-						{
-							["value"] = true,
-							["property"] = "sub.5.text_visible",
-						}, -- [1]
-						{
-							["value"] = true,
-							["property"] = "sub.3.border_visible",
-						}, -- [2]
-					},
-				}, -- [1]
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -24239,22 +24239,55 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2402",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2402",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "zeozpTCqGXl",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["do_sound"] = false,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 2103878,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "03 Bleakwing Assassin Spawn",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -24274,39 +24307,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 2103878,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "03 Bleakwing Assassin Spawn",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["do_sound"] = false,
 				},
 			},
 		},
@@ -24482,22 +24482,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2418",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2418",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "fA2kZUS2TPq",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Soon.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 1378703,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "02 Rip Soul",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -24530,40 +24564,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 1378703,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "02 Rip Soul",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Soon.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
 				},
 			},
 		},
@@ -24740,22 +24740,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2405",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2405",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "M92D7FBhyYp",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3512762",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "04 Recombobulation",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -24787,38 +24819,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3512762",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "04 Recombobulation",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -24853,12 +24853,12 @@ WeakAurasSaved = {
 						["spellName"] = 0,
 						["custom"] = "function(allstates, event, unit, _, spellID)\n    if event == \"UNIT_SPELLCAST_CHANNEL_STOP\" then\n        if spellID == 333980\n        or spellID == 332849 then\n            aura_env.counter = aura_env.counter + 1 \n        end\n    elseif event == \"ENCOUNTER_START\" then\n        aura_env.counter = 0\n    elseif event == \"UNIT_POWER_UPDATE\"\n    and unit\n    and UnitGUID(unit) then\n        local power = UnitPower(unit)\n        local bossHP = (UnitHealth(\"boss1\")/UnitHealthMax(\"boss1\"))*100\n        if bossHP\n        and power\n        then\n            if power >= 85 and power < 100 then\n                allstates[\"energy\"] = {\n                    show = true,\n                    changed = true,\n                    progressType = \"static\",\n                    value = power,\n                    total = 100,\n                    name = (bossHP > 70 and \"Dodge Inc\") or (bossHP <= 70 and bossHP > 40 and \"Dance Inc\") or (bossHP <= 40 and (aura_env.ID == 16 and \"Bait Inc\") or (aura_env.counter % 2 == aura_env.hardMode and \"Dance Inc\" or \"Dodge Inc\")),\n                    icon = (bossHP > 70 and 136133) or (bossHP <= 70 and bossHP > 40 and 3565727) or (bossHP <= 40 and (aura_env.ID == 16 and 136129) or (aura_env.counter % 2 == aura_env.hardMode and 3565727 or 136133)),\n                }\n                return true\n            else\n                if allstates[\"energy\"] then\n                    allstates[\"energy\"].show = false\n                    allstates[\"energy\"].changed = true\n                    return true\n                end\n            end\n        end\n    end\nend",
 						["type"] = "custom",
+						["unevent"] = "auto",
 						["subeventSuffix"] = "_CAST_START",
-						["custom_type"] = "stateupdate",
 						["unit"] = "player",
 						["percenthealth"] = "",
 						["event"] = "Health",
-						["unevent"] = "auto",
+						["custom_type"] = "stateupdate",
 						["realSpellName"] = 0,
 						["use_spellName"] = true,
 						["spellIds"] = {
@@ -25010,22 +25010,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2407",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2407",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "hHZydJG3ybb",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\High Energy.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+					["custom"] = "aura_env.counter = 0\naura_env.ID = select(3, GetInstanceInfo())\naura_env.hardMode = aura_env.ID == 15 and 1 or 0",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "136129",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 High Energy P1-P3",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -25057,40 +25091,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "136129",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 High Energy P1-P3",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\High Energy.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-					["custom"] = "aura_env.counter = 0\naura_env.ID = select(3, GetInstanceInfo())\naura_env.hardMode = aura_env.ID == 15 and 1 or 0",
-					["do_custom"] = true,
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -25286,22 +25286,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2402",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2402",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "SkGhkThzKX(",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Stack.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+					["custom"] = "aura_env.spellIDs = {\n    [325877] = true,\n}",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 135826,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "03 Ember Blast",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -25320,40 +25354,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 135826,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "03 Ember Blast",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Stack.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-					["custom"] = "aura_env.spellIDs = {\n    [325877] = true,\n}",
-					["do_custom"] = true,
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -25707,22 +25707,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2405",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2405",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "zpXW4bPFLRb",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "04 Glyph of Destruction (Others)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -25741,38 +25773,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "04 Glyph of Destruction (Others)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -25802,12 +25802,12 @@ WeakAurasSaved = {
 						},
 						["messageType"] = "CHAT_MSG_RAID_BOSS_EMOTE",
 						["debuffType"] = "HARMFUL",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "timed",
 						["custom_hide"] = "timed",
 						["check"] = "event",
 						["useName"] = true,
 						["events"] = "UNIT_SPELLCAST_SUCCEEDED:boss1",
-						["custom_type"] = "stateupdate",
+						["subeventSuffix"] = "_CAST_START",
 						["custom"] = "function(allstates, _, _, _, spellID)\n    if spellID == 342287\n    or spellID == 342288\n    or spellID == 342290 then\n        allstates[spellID] = {\n            show = true,\n            changed = true,\n            spellID = spellID,\n            name = spellID == 342290 and \"Beam+Link\" or \"Links Inc\",\n            progressType = \"timed\",\n            duration = 6,\n            expirationTime = 6 + GetTime(),\n            autoHide = true,\n        }\n        return true\n    end\nend",
 						["fetchTooltip"] = false,
 						["event"] = "Chat Message",
@@ -25816,7 +25816,7 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["spellIds"] = {
 						},
-						["unevent"] = "timed",
+						["custom_type"] = "stateupdate",
 						["use_message"] = true,
 						["type"] = "custom",
 						["use_messageType"] = true,
@@ -25975,60 +25975,37 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2406",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2406",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "qruLTVHmo5E",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["duration_type"] = "seconds",
-					["colorA"] = 1,
-					["colorG"] = 0.011764705882353,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["colorB"] = 0,
-					["y"] = 0,
-					["colorType"] = "custom",
-					["scalex"] = 1,
-					["easeStrength"] = 3,
-					["colorFunc"] = "function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n    local angle = (progress * 4 * math.pi) - (math.pi / 2)\n    local newProgress = ((math.sin(angle) + 1)/2);\n    if aura_env.state\n    and aura_env.state.spellID\n    and aura_env.state.spellID == 342290 then\n        return r1 + (newProgress * (r2 - r1)),\n        g1 + (newProgress * (g2 - g1)),\n        b1 + (newProgress * (b2 - b1)),\n        a1 + (newProgress * (a2 - a1))\n    end\nend",
-					["rotate"] = 0,
-					["x"] = 0,
-					["use_color"] = true,
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["displayIcon"] = "3684828",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["auto"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
@@ -26042,7 +26019,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
+			["xOffset"] = 0,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -26098,14 +26075,37 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["actions"] = {
+			["animation"] = {
 				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
-				["init"] = {
+				["main"] = {
+					["colorR"] = 1,
+					["duration_type"] = "seconds",
+					["colorA"] = 1,
+					["colorG"] = 0.011764705882353,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["colorB"] = 0,
+					["y"] = 0,
+					["colorType"] = "custom",
+					["scalex"] = 1,
+					["easeStrength"] = 3,
+					["colorFunc"] = "function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n    local angle = (progress * 4 * math.pi) - (math.pi / 2)\n    local newProgress = ((math.sin(angle) + 1)/2);\n    if aura_env.state\n    and aura_env.state.spellID\n    and aura_env.state.spellID == 342290 then\n        return r1 + (newProgress * (r2 - r1)),\n        g1 + (newProgress * (g2 - g1)),\n        b1 + (newProgress * (b2 - b1)),\n        a1 + (newProgress * (a2 - a1))\n    end\nend",
+					["rotate"] = 0,
+					["x"] = 0,
+					["use_color"] = true,
 				},
 				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 			},
 		},
@@ -26136,10 +26136,10 @@ WeakAurasSaved = {
 						["debuffType"] = "HARMFUL",
 						["custom_hide"] = "timed",
 						["useName"] = true,
+						["subeventSuffix"] = "_CAST_START",
 						["auraspellids"] = {
 							"331209", -- [1]
 						},
-						["custom_type"] = "stateupdate",
 						["useExactSpellId"] = false,
 						["fetchTooltip"] = false,
 						["event"] = "Combat Log",
@@ -26150,7 +26150,7 @@ WeakAurasSaved = {
 						},
 						["unevent"] = "timed",
 						["check"] = "event",
-						["subeventSuffix"] = "_CAST_START",
+						["custom_type"] = "stateupdate",
 						["type"] = "custom",
 						["customVariables"] = "{initial = \"bool\"}",
 					},
@@ -26287,22 +26287,73 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2417",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2417",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "Yj(kcD8l)UT",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 136025,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "09 Seismic Upheaval",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["variable"] = "initial",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								["sound_type"] = "Play",
+								["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Move.ogg",
+								["sound_channel"] = "Master",
+							},
+							["property"] = "sound",
+						}, -- [1]
+					},
+				}, -- [1]
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -26335,57 +26386,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 136025,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "09 Seismic Upheaval",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["variable"] = "initial",
-						["value"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								["sound_type"] = "Play",
-								["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Move.ogg",
-								["sound_channel"] = "Master",
-							},
-							["property"] = "sound",
-						}, -- [1]
-					},
-				}, -- [1]
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -26564,18 +26564,32 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2383",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2383",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "zgGfD16IJVN",
+			["authorOptions"] = {
+			},
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
 			["actions"] = {
 				["start"] = {
 					["sound"] = " custom",
@@ -26588,14 +26602,6 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
-			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["url"] = "https://wago.io/slraid1/142",
 			["semver"] = "1.0.141",
 			["width"] = 80,
 			["zoom"] = 0.3,
@@ -26609,12 +26615,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -26652,8 +26653,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["07 Castellan's Cadre"] = {
 			["iconSource"] = 0,
@@ -26681,10 +26681,10 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["names"] = {
 						},
+						["events"] = "UNIT_SPELLCAST_START:boss",
 						["spellIds"] = {
 						},
 						["custom"] = "function(_,_,_, spellID)\n    if spellID\n    and spellID == 330965 then\n        return true\n    end\nend",
-						["events"] = "UNIT_SPELLCAST_START:boss",
 						["custom_type"] = "event",
 						["useName"] = true,
 						["subeventSuffix"] = "_CAST_START",
@@ -26864,12 +26864,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2412",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2412",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -27094,22 +27094,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2406",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2406",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "LdkWQ0GkneL",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "aura_env.spellIDs = {\n    [342280] = true,\n    [342281] = true,\n    [342282] = true,\n}",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3684825",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "06 Bottled/Lingering/Replicating Anima",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -27141,40 +27175,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3684825",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "06 Bottled/Lingering/Replicating Anima",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["custom"] = "aura_env.spellIDs = {\n    [342280] = true,\n    [342281] = true,\n    [342282] = true,\n}",
-					["do_custom"] = true,
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -27415,18 +27415,32 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2418",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2418",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "D0cA750w)77",
+			["authorOptions"] = {
+			},
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 1033474,
 			["actions"] = {
 				["start"] = {
 					["sound"] = " custom",
@@ -27438,14 +27452,6 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 				},
 			},
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
-			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 1033474,
-			["url"] = "https://wago.io/slraid1/142",
 			["semver"] = "1.0.141",
 			["width"] = 80,
 			["zoom"] = 0.3,
@@ -27459,17 +27465,11 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["02 Crushing Stone (Tank Only)"] = {
 			["iconSource"] = 0,
@@ -27711,10 +27711,70 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "N(nVYXq62o4",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 1385913,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "02 Crushing Stone (Tank Only)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = -2,
+						["op"] = "==",
+						["variable"] = "AND",
+						["checks"] = {
+							{
+								["trigger"] = 1,
+								["variable"] = "show",
+								["value"] = 1,
+							}, -- [1]
+							{
+								["trigger"] = 2,
+								["variable"] = "aggro",
+								["value"] = 0,
+							}, -- [2]
+						},
+					},
+					["changes"] = {
+						{
+							["value"] = true,
+							["property"] = "desaturate",
+						}, -- [1]
+						{
+							["property"] = "sub.1.text_visible",
+						}, -- [2]
+					},
+				}, -- [1]
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -27749,66 +27809,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 1385913,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "02 Crushing Stone (Tank Only)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = -2,
-						["op"] = "==",
-						["variable"] = "AND",
-						["checks"] = {
-							{
-								["trigger"] = 1,
-								["variable"] = "show",
-								["value"] = 1,
-							}, -- [1]
-							{
-								["trigger"] = 2,
-								["variable"] = "aggro",
-								["value"] = 0,
-							}, -- [2]
-						},
-					},
-					["changes"] = {
-						{
-							["value"] = true,
-							["property"] = "desaturate",
-						}, -- [1]
-						{
-							["property"] = "sub.1.text_visible",
-						}, -- [2]
-					},
-				}, -- [1]
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["finish"] = {
-				},
-			},
 		},
 		["07 Waltz of Blood"] = {
 			["iconSource"] = 0,
@@ -27836,10 +27836,10 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["names"] = {
 						},
+						["events"] = "UNIT_SPELLCAST_SUCCEEDED:boss",
 						["spellIds"] = {
 						},
 						["custom"] = "function(_,_,_, spellID)\n    if spellID\n    and spellID == 346800 then\n        return true\n    end\nend",
-						["events"] = "UNIT_SPELLCAST_SUCCEEDED:boss",
 						["custom_type"] = "event",
 						["useName"] = true,
 						["subeventSuffix"] = "_CAST_START",
@@ -28019,12 +28019,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2412",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2412",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -28249,22 +28249,72 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2407",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2407",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "JQbR85Vx(zQ",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 3528307,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 Begin the Chorus",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "<=",
+						["variable"] = "expirationTime",
+						["value"] = "1",
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								["sound_type"] = "Play",
+								["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Adds.ogg",
+								["sound_channel"] = "Master",
+							},
+							["property"] = "sound",
+						}, -- [1]
+					},
+				}, -- [1]
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -28298,56 +28348,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 3528307,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 Begin the Chorus",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["op"] = "<=",
-						["variable"] = "expirationTime",
-						["value"] = "1",
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								["sound_type"] = "Play",
-								["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Adds.ogg",
-								["sound_channel"] = "Master",
-							},
-							["property"] = "sound",
-						}, -- [1]
-					},
-				}, -- [1]
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
 		},
 		["07 Dark Recital"] = {
 			["iconSource"] = 0,
@@ -28372,13 +28372,13 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["unit"] = "player",
 						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
 						["events"] = "CLEU:SPELL_AURA_APPLIED:SPELL_AURA_REMOVED:SPELL_CAST_START, ENCOUNTER_START",
-						["custom"] = "function(allstates, event, ...)\n    --shows the name of your partner that you are linked to\n    if event == \"COMBAT_LOG_EVENT_UNFILTERED\" then\n        local timestamp, subEvent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, spellID = ...\n        if subEvent == \"SPELL_AURA_APPLIED\" and (spellID == 331636 or spellID == 331637) then\n            aura_env.counter = aura_env.counter + 1\n            aura_env.order[aura_env.counter] = destName\n            if aura_env.myCounter then\n                local state = allstates[WeakAuras.myGUID]\n                if state then\n                    state.name = (state.spellID == 331636 and aura_env.order[aura_env.myCounter+1] or state.spellID == 331637 and aura_env.order[aura_env.myCounter-1]) or \"\"\n                    state.changed = true\n                end\n                --plays Melee.ogg/Range.ogg depending on what your partner is. Requires Exorsus Raidtools\n                if IsAddOnLoaded(\"ExRT\") \n                and VExRT.ExCD2.gnGUIDs then\n                    local nameToSpec = VExRT.ExCD2.gnGUIDs[allstates[WeakAuras.myGUID].name]\n                    if nameToSpec then\n                        PlaySoundFile(\"Interface\\\\AddOns\\\\SharedMedia_Causese\\\\sound\\\\\"..aura_env.convert[nameToSpec]..\".ogg\", \"MASTER\")\n                    end\n                end\n                aura_env.myCounter = nil\n                return true\n            end\n            if destGUID == WeakAuras.myGUID then\n                aura_env.myCounter = aura_env.counter\n                local _, _, _, _, duration, expirationTime = WA_GetUnitDebuff(destName, spellID)\n                allstates[destGUID] = {\n                    show = true,\n                    changed = true,\n                    name = (spellID == 331636 and aura_env.order[aura_env.myCounter+1] or spellID == 331637 and aura_env.order[aura_env.myCounter-1]) or \"\",\n                    progressType = \"timed\",\n                    duration = duration,\n                    expirationTime = expirationTime,\n                    autoHide = true,\n                    spellID = spellID\n                }\n                --plays Melee.ogg/Range.ogg depending on what your partner is. Requires Exorsus Raidtools\n                if IsAddOnLoaded(\"ExRT\") \n                and VExRT.ExCD2.gnGUIDs then\n                    local nameToSpec = VExRT.ExCD2.gnGUIDs[allstates[WeakAuras.myGUID].name]\n                    if nameToSpec then\n                        PlaySoundFile(\"Interface\\\\AddOns\\\\SharedMedia_Causese\\\\sound\\\\\"..aura_env.convert[nameToSpec]..\".ogg\", \"MASTER\")\n                    end\n                end\n                return true\n            end\n        end\n        if subEvent == \"SPELL_AURA_REMOVED\" and (spellID == 331636 or spellID == 331637) \n        and allstates[destGUID] then\n            allstates[destGUID].show = false\n            allstates[destGUID].changed = true\n            return true\n        end\n        if subEvent == \"SPELL_CAST_START\" and spellID == 331634 then\n            aura_env.counter = 0\n            aura_env.order = {}\n            aura_env.myCounter = nil\n            return true\n        end\n    end\n    if event == \"ENCOUNTER_START\" then\n        aura_env.counter = 0\n        aura_env.order = {}\n        aura_env.myCounter = nil\n    end\nend",
 						["names"] = {
 						},
 						["check"] = "event",
-						["spellIds"] = {
-						},
+						["custom"] = "function(allstates, event, ...)\n    --shows the name of your partner that you are linked to\n    if event == \"COMBAT_LOG_EVENT_UNFILTERED\" then\n        local timestamp, subEvent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, spellID = ...\n        if subEvent == \"SPELL_AURA_APPLIED\" and (spellID == 331636 or spellID == 331637) then\n            aura_env.counter = aura_env.counter + 1\n            aura_env.order[aura_env.counter] = destName\n            if aura_env.myCounter then\n                local state = allstates[WeakAuras.myGUID]\n                if state then\n                    state.name = (state.spellID == 331636 and aura_env.order[aura_env.myCounter+1] or state.spellID == 331637 and aura_env.order[aura_env.myCounter-1]) or \"\"\n                    state.changed = true\n                end\n                --plays Melee.ogg/Range.ogg depending on what your partner is. Requires Exorsus Raidtools\n                if IsAddOnLoaded(\"ExRT\") \n                and VExRT.ExCD2.gnGUIDs then\n                    local nameToSpec = VExRT.ExCD2.gnGUIDs[allstates[WeakAuras.myGUID].name]\n                    if nameToSpec then\n                        PlaySoundFile(\"Interface\\\\AddOns\\\\SharedMedia_Causese\\\\sound\\\\\"..aura_env.convert[nameToSpec]..\".ogg\", \"MASTER\")\n                    end\n                end\n                aura_env.myCounter = nil\n                return true\n            end\n            if destGUID == WeakAuras.myGUID then\n                aura_env.myCounter = aura_env.counter\n                local _, _, _, _, duration, expirationTime = WA_GetUnitDebuff(destName, spellID)\n                allstates[destGUID] = {\n                    show = true,\n                    changed = true,\n                    name = (spellID == 331636 and aura_env.order[aura_env.myCounter+1] or spellID == 331637 and aura_env.order[aura_env.myCounter-1]) or \"\",\n                    progressType = \"timed\",\n                    duration = duration,\n                    expirationTime = expirationTime,\n                    autoHide = true,\n                    spellID = spellID\n                }\n                --plays Melee.ogg/Range.ogg depending on what your partner is. Requires Exorsus Raidtools\n                if IsAddOnLoaded(\"ExRT\") \n                and VExRT.ExCD2.gnGUIDs then\n                    local nameToSpec = VExRT.ExCD2.gnGUIDs[allstates[WeakAuras.myGUID].name]\n                    if nameToSpec then\n                        PlaySoundFile(\"Interface\\\\AddOns\\\\SharedMedia_Causese\\\\sound\\\\\"..aura_env.convert[nameToSpec]..\".ogg\", \"MASTER\")\n                    end\n                end\n                return true\n            end\n        end\n        if subEvent == \"SPELL_AURA_REMOVED\" and (spellID == 331636 or spellID == 331637) \n        and allstates[destGUID] then\n            allstates[destGUID].show = false\n            allstates[destGUID].changed = true\n            return true\n        end\n        if subEvent == \"SPELL_CAST_START\" and spellID == 331634 then\n            aura_env.counter = 0\n            aura_env.order = {}\n            aura_env.myCounter = nil\n            return true\n        end\n    end\n    if event == \"ENCOUNTER_START\" then\n        aura_env.counter = 0\n        aura_env.order = {}\n        aura_env.myCounter = nil\n    end\nend",
 						["custom_type"] = "stateupdate",
 						["debuffType"] = "HELPFUL",
 					},
@@ -28513,22 +28513,58 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2412",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2412",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "kfg5FqZoLH2",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["custom"] = "if not IsAddOnLoaded(\"ExRT\") then\n    PlaySoundFile(\"Interface\\\\AddOns\\\\SharedMedia_Causese\\\\sound\\\\Linked.ogg\", \"MASTER\")\nend",
+					["sound"] = " custom",
+					["do_custom"] = true,
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "aura_env.counter = 0\naura_env.order = {}\naura_env.convert = {\n    [250] = \"Melee\",\n    [251] = \"Melee\",\n    [252] = \"Melee\",\n    [577] = \"Melee\",\n    [581] = \"Melee\",\n    [102] = \"Range\",\n    [103] = \"Melee\",\n    [104] = \"Melee\",\n    [105] = \"Range\",\n    [253] = \"Range\",\n    [254] = \"Range\",\n    [255] = \"Melee\",\n    [62] = \"Range\",\n    [63] = \"Range\",\n    [64] = \"Range\",\n    [268] = \"Melee\",\n    [270] = \"Melee\", --MW Monk classified as melee\n    [269] = \"Melee\",\n    [65] = \"Melee\", --Holy Paladin classified as melee\n    [66] = \"Melee\",\n    [70] = \"Melee\",\n    [256] = \"Range\",\n    [257] = \"Range\",\n    [258] = \"Range\",\n    [259] = \"Melee\",\n    [260] = \"Melee\",\n    [261] = \"Melee\",\n    [262] = \"Range\",\n    [263] = \"Melee\",\n    [264] = \"Range\",\n    [265] = \"Range\",\n    [266] = \"Range\",\n    [267] = \"Range\",\n    [71] = \"Melee\",\n    [72] = \"Melee\",\n    [73] = \"Melee\",\n}",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 607854,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "07 Dark Recital",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -28562,42 +28598,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 607854,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "07 Dark Recital",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["do_custom"] = true,
-					["custom"] = "if not IsAddOnLoaded(\"ExRT\") then\n    PlaySoundFile(\"Interface\\\\AddOns\\\\SharedMedia_Causese\\\\sound\\\\Linked.ogg\", \"MASTER\")\nend",
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["custom"] = "aura_env.counter = 0\naura_env.order = {}\naura_env.convert = {\n    [250] = \"Melee\",\n    [251] = \"Melee\",\n    [252] = \"Melee\",\n    [577] = \"Melee\",\n    [581] = \"Melee\",\n    [102] = \"Range\",\n    [103] = \"Melee\",\n    [104] = \"Melee\",\n    [105] = \"Range\",\n    [253] = \"Range\",\n    [254] = \"Range\",\n    [255] = \"Melee\",\n    [62] = \"Range\",\n    [63] = \"Range\",\n    [64] = \"Range\",\n    [268] = \"Melee\",\n    [270] = \"Melee\", --MW Monk classified as melee\n    [269] = \"Melee\",\n    [65] = \"Melee\", --Holy Paladin classified as melee\n    [66] = \"Melee\",\n    [70] = \"Melee\",\n    [256] = \"Range\",\n    [257] = \"Range\",\n    [258] = \"Range\",\n    [259] = \"Melee\",\n    [260] = \"Melee\",\n    [261] = \"Melee\",\n    [262] = \"Range\",\n    [263] = \"Melee\",\n    [264] = \"Range\",\n    [265] = \"Range\",\n    [266] = \"Range\",\n    [267] = \"Range\",\n    [71] = \"Melee\",\n    [72] = \"Melee\",\n    [73] = \"Melee\",\n}",
-					["do_custom"] = true,
-				},
-				["finish"] = {
-				},
-			},
 		},
 		["09 Pulverizing Meteor"] = {
 			["iconSource"] = 0,
@@ -28626,8 +28626,10 @@ WeakAurasSaved = {
 						["custom_hide"] = "timed",
 						["use_absorbMode"] = true,
 						["type"] = "event",
+						["auraspellids"] = {
+							"296737", -- [1]
+						},
 						["subeventSuffix"] = "_AURA_REMOVED",
-						["useExactSpellId"] = true,
 						["events"] = "",
 						["unevent"] = "timed",
 						["event"] = "Combat Log",
@@ -28636,9 +28638,7 @@ WeakAurasSaved = {
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
-						["auraspellids"] = {
-							"296737", -- [1]
-						},
+						["useExactSpellId"] = true,
 						["check"] = "event",
 						["unit"] = "boss2",
 						["subeventPrefix"] = "SPELL",
@@ -28812,6 +28812,20 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "YQ14Lxgl81u",
+			["authorOptions"] = {
+			},
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 796637,
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -28823,14 +28837,6 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
-			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 796637,
-			["url"] = "https://wago.io/slraid1/142",
 			["semver"] = "1.0.141",
 			["width"] = 80,
 			["zoom"] = 0.3,
@@ -28844,17 +28850,11 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["06 Change of Heart (Others)"] = {
 			["iconSource"] = -1,
@@ -29048,22 +29048,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2406",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2406",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "6SZqF5fYOvy",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "06 Change of Heart (Others)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -29082,38 +29114,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "06 Change of Heart (Others)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -29346,30 +29346,36 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "7Uq2Z(7EAh8",
+			["authorOptions"] = {
+			},
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3528309",
 			["actions"] = {
 				["start"] = {
-					["do_custom"] = false,
 					["custom"] = "",
 					["sound"] = " custom",
+					["do_custom"] = false,
 					["do_sound"] = false,
 				},
 				["init"] = {
 				},
 				["finish"] = {
-					["do_custom"] = false,
 					["custom"] = "",
 					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Soak.ogg",
+					["do_custom"] = false,
 					["do_sound"] = true,
 				},
 			},
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
-			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3528309",
-			["url"] = "https://wago.io/slraid1/142",
 			["semver"] = "1.0.141",
 			["width"] = 80,
 			["zoom"] = 0.3,
@@ -29383,17 +29389,11 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["07 Summon Dutiful Attendant"] = {
 			["iconSource"] = 0,
@@ -29561,22 +29561,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2412",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2412",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "5aPKuEJKErU",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Add.ogg",
+					["do_sound"] = true,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 3528307,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "07 Summon Dutiful Attendant",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -29595,40 +29629,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 3528307,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "07 Summon Dutiful Attendant",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Add.ogg",
-					["do_sound"] = true,
 				},
 			},
 		},
@@ -29809,27 +29809,59 @@ WeakAurasSaved = {
 				["role"] = {
 					["single"] = "TANK",
 				},
-				["encounterid"] = "2405",
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["talent"] = {
 					["multi"] = {
 					},
 				},
 				["use_role"] = true,
+				["encounterid"] = "2405",
 				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "UtIa7sMppP7",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Move.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "236219",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "04 Glyph of Destruction Cast On You (Tank Only)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -29848,38 +29880,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "236219",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "04 Glyph of Destruction Cast On You (Tank Only)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Move.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -30121,60 +30121,37 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2417",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2417",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "gCuToK5dyH7",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 0.5921568627451,
-					["duration_type"] = "seconds",
-					["colorA"] = 1,
-					["colorG"] = 0.5921568627451,
-					["type"] = "none",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["colorB"] = 0.5921568627451,
-					["y"] = 0,
-					["colorType"] = "custom",
-					["scalex"] = 1,
-					["easeStrength"] = 3,
-					["colorFunc"] = "    function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n      local angle = (progress * 4 * math.pi) - (math.pi / 2)\n      local newProgress = ((math.sin(angle) + 1)/2);\n      return WeakAuras.GetHSVTransition(newProgress, r1, g1, b1, a1, r2, g2, b2, a2)\n    end\n  ",
-					["rotate"] = 0,
-					["x"] = 0,
-					["use_color"] = false,
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["displayIcon"] = 132780,
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["auto"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
@@ -30188,7 +30165,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
+			["xOffset"] = 0,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -30226,14 +30203,37 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["actions"] = {
+			["animation"] = {
 				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
-				["init"] = {
+				["main"] = {
+					["colorR"] = 0.5921568627451,
+					["duration_type"] = "seconds",
+					["colorA"] = 1,
+					["colorG"] = 0.5921568627451,
+					["type"] = "none",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["colorB"] = 0.5921568627451,
+					["y"] = 0,
+					["colorType"] = "custom",
+					["scalex"] = 1,
+					["easeStrength"] = 3,
+					["colorFunc"] = "    function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n      local angle = (progress * 4 * math.pi) - (math.pi / 2)\n      local newProgress = ((math.sin(angle) + 1)/2);\n      return WeakAuras.GetHSVTransition(newProgress, r1, g1, b1, a1, r2, g2, b2, a2)\n    end\n  ",
+					["rotate"] = 0,
+					["x"] = 0,
+					["use_color"] = false,
 				},
 				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 			},
 		},
@@ -30499,6 +30499,20 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "xkNN(wOx1de",
+			["authorOptions"] = {
+			},
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
 			["actions"] = {
 				["start"] = {
 					["sound"] = " custom",
@@ -30511,14 +30525,6 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
-			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["url"] = "https://wago.io/slraid1/142",
 			["semver"] = "1.0.141",
 			["width"] = 80,
 			["zoom"] = 0.3,
@@ -30532,12 +30538,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -30559,8 +30560,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["01 Echolocation"] = {
 			["iconSource"] = -1,
@@ -30745,22 +30745,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2398",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2398",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = ")Grd3cXbJF0",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Debuff.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "01 Echolocation",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -30780,38 +30812,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "01 Echolocation",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Debuff.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -30974,47 +30974,37 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2383",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2383",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "rg5wTKm29FA",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Stack.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["auto"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
@@ -31028,7 +31018,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
+			["xOffset"] = 0,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -31050,14 +31040,24 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["actions"] = {
+			["animation"] = {
 				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Stack.ogg",
-					["do_sound"] = true,
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
-				["init"] = {
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 			},
 		},
@@ -31234,22 +31234,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2405",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2405",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "bok3(CC7Huw",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3512762",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "04 Withering Touch",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -31281,38 +31313,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3512762",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "04 Withering Touch",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -31482,22 +31482,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2412",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2412",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "PKOzHeAu(3k",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Switch.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 3528309,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "07 Violent Uproar",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -31516,38 +31548,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 3528309,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "07 Violent Uproar",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Switch.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -31720,22 +31720,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2417",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2417",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "T90QEq2oueg",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "09 Reverberating Vulnerability",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -31769,38 +31801,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "09 Reverberating Vulnerability",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
 		},
 		["04 Rift Blast"] = {
 			["iconSource"] = 0,
@@ -31829,13 +31829,13 @@ WeakAurasSaved = {
 						["use_specific_unit"] = true,
 						["use_absorbMode"] = true,
 						["unit"] = "boss1",
+						["unevent"] = "timed",
 						["custom_type"] = "event",
-						["subeventSuffix"] = "_CAST_SUCCESS",
 						["debuffType"] = "HARMFUL",
 						["events"] = "",
 						["useName"] = true,
 						["use_spellName"] = false,
-						["unevent"] = "timed",
+						["subeventSuffix"] = "_CAST_SUCCESS",
 						["spellName"] = 0,
 						["fetchTooltip"] = false,
 						["event"] = "Combat Log",
@@ -31978,22 +31978,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2405",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2405",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "OPTGYo8aA6q",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Beam.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3528282",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "04 Rift Blast",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -32025,38 +32057,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3528282",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "04 Rift Blast",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Beam.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -32223,27 +32223,58 @@ WeakAurasSaved = {
 				["role"] = {
 					["single"] = "TANK",
 				},
-				["encounterid"] = "2407",
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["talent"] = {
 					["multi"] = {
 					},
 				},
 				["use_role"] = true,
+				["encounterid"] = "2407",
 				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "1nFe5piJdb(",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 Wracking Pain (Tank only)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -32264,44 +32295,13 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 Wracking Pain (Tank only)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
 		},
-		["03 Vile Occultist Spawn"] = {
+		["05 Consume"] = {
 			["iconSource"] = 0,
 			["color"] = {
 				1, -- [1]
-				0.98039215686275, -- [2]
-				0.93333333333333, -- [3]
+				1, -- [2]
+				1, -- [3]
 				1, -- [4]
 			},
 			["preferToUpdate"] = false,
@@ -32313,33 +32313,35 @@ WeakAurasSaved = {
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["spellId"] = "181113",
+						["spellId"] = 334522,
 						["auranames"] = {
-							"339251", -- [1]
+							"338614", -- [1]
 						},
-						["duration"] = "7.5",
-						["unit"] = "player",
-						["use_sourceNpcId"] = true,
+						["duration"] = "1",
+						["subeventPrefix"] = "SPELL",
 						["debuffType"] = "HARMFUL",
 						["useName"] = false,
-						["auraspellids"] = {
-							"339251", -- [1]
+						["names"] = {
 						},
+						["auraspellids"] = {
+						},
+						["unevent"] = "auto",
 						["fetchTooltip"] = false,
-						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["sourceNpcId"] = "165763",
+						["event"] = "Cast",
+						["use_unit"] = true,
+						["use_absorbMode"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
-						["names"] = {
-						},
 						["useExactSpellId"] = true,
-						["subeventPrefix"] = "SPELL",
-						["subeventSuffix"] = "_CAST_SUCCESS",
-						["type"] = "event",
+						["type"] = "status",
+						["subeventSuffix"] = "_CAST_START",
+						["use_specific_unit"] = true,
+						["unit"] = "boss1",
 					},
 					["untrigger"] = {
+						["unit"] = "boss1",
+						["use_specific_unit"] = true,
 					},
 				}, -- [1]
 				["activeTriggerMode"] = -10,
@@ -32353,7 +32355,7 @@ WeakAurasSaved = {
 				{
 					["text_shadowXOffset"] = 0,
 					["text_text_format_s_format"] = "none",
-					["text_text"] = "Occultists",
+					["text_text"] = "Move Far",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -32454,6 +32456,26 @@ WeakAurasSaved = {
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_dynamic"] = false,
 				}, -- [3]
+				{
+					["glowFrequency"] = 0.25,
+					["type"] = "subglow",
+					["useGlowColor"] = true,
+					["glowType"] = "Pixel",
+					["glowLength"] = 10,
+					["glowYOffset"] = 0,
+					["glowColor"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["glowXOffset"] = 0,
+					["glowScale"] = 1,
+					["glow"] = false,
+					["glowThickness"] = 2.15,
+					["glowLines"] = 18,
+					["glowBorder"] = false,
+				}, -- [4]
 			},
 			["height"] = 80,
 			["load"] = {
@@ -32465,22 +32487,89 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2402",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2383",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
-			["uid"] = "EfbCjoC05(v",
-			["authorOptions"] = {
+			["uid"] = "GssZ1tlXDM(",
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "1778226",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "05 Consume",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "==",
+						["variable"] = "castType",
+						["value"] = "cast",
+					},
+					["changes"] = {
+						{
+							["value"] = true,
+							["property"] = "desaturate",
+						}, -- [1]
+						{
+							["value"] = {
+								["sound_type"] = "Play",
+								["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Move.ogg",
+								["sound_channel"] = "Master",
+							},
+							["property"] = "sound",
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "==",
+						["variable"] = "castType",
+						["value"] = "channel",
+					},
+					["changes"] = {
+						{
+							["property"] = "sub.4.glow",
+						}, -- [1]
+					},
+				}, -- [2]
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -32490,50 +32579,15 @@ WeakAurasSaved = {
 				},
 				["main"] = {
 					["type"] = "none",
-					["easeType"] = "none",
 					["easeStrength"] = 3,
-					["preset"] = "alphaPulse",
 					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 				["finish"] = {
 					["type"] = "none",
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3601541",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "03 Vile Occultist Spawn",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Adds.ogg",
-					["do_sound"] = true,
 				},
 			},
 		},
@@ -32756,10 +32810,42 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "(iN6cjUbPiT",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 132093,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "03 Cloak of Flames (Kael'thas)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -32779,38 +32865,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 132093,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "03 Cloak of Flames (Kael'thas)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -33006,22 +33060,58 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2417",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2417",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "oRPUT9BJoWp",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Targeted.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 2101174,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "09 Reverberating Eruption",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -33040,42 +33130,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 2101174,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "09 Reverberating Eruption",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Targeted.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
 				},
 			},
 		},
@@ -33268,22 +33322,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2399",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2399",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "heGLBXHKewO",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Targeted.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "08 Hateful Gaze",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -33302,38 +33388,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "08 Hateful Gaze",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Targeted.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -33499,22 +33553,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2407",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2407",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "8bZrZEBi)l8",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Move.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "136225",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 Hand of Destruction",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -33533,38 +33619,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "136225",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 Hand of Destruction",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Move.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -33596,8 +33650,8 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["type"] = "custom",
+						["subeventSuffix"] = "_CAST_SUCCESS",
 						["custom_type"] = "stateupdate",
-						["unevent"] = "timed",
 						["custom_hide"] = "timed",
 						["fetchTooltip"] = false,
 						["event"] = "Combat Log",
@@ -33608,7 +33662,7 @@ WeakAurasSaved = {
 						},
 						["use_absorbMode"] = true,
 						["check"] = "event",
-						["subeventSuffix"] = "_CAST_SUCCESS",
+						["unevent"] = "timed",
 						["useName"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -33739,22 +33793,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2412",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2412",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "G3mCWrzxLRS",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Intermission.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 462534,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "07 Danse Macabre",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -33775,41 +33861,9 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 462534,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "07 Danse Macabre",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Intermission.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
 		},
-		["05 Essence Sap"] = {
-			["iconSource"] = -1,
+		["04 Glyph of Destruction (Tank Only)"] = {
+			["iconSource"] = 0,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -33827,7 +33881,7 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "aura2",
 						["auranames"] = {
-							"334755", -- [1]
+							"325236", -- [1]
 						},
 						["fetchTooltip"] = false,
 						["event"] = "Health",
@@ -33844,6 +33898,7 @@ WeakAurasSaved = {
 					["untrigger"] = {
 					},
 				}, -- [1]
+				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
 			["internalVersion"] = 40,
@@ -33855,7 +33910,7 @@ WeakAurasSaved = {
 				{
 					["text_shadowXOffset"] = 0,
 					["text_text_format_s_format"] = "none",
-					["text_text"] = "+Dmgtaken",
+					["text_text"] = "Move far",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -33948,7 +34003,7 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_visible"] = false,
 					["text_anchorPoint"] = "INNER_BOTTOMRIGHT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_fontType"] = "OUTLINE",
@@ -33956,16 +34011,37 @@ WeakAurasSaved = {
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_dynamic"] = false,
 				}, -- [3]
+				{
+					["glowFrequency"] = 0.25,
+					["type"] = "subglow",
+					["useGlowColor"] = false,
+					["glowType"] = "buttonOverlay",
+					["glowLength"] = 10,
+					["glowYOffset"] = 0,
+					["glowColor"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["glowXOffset"] = 0,
+					["glowScale"] = 1,
+					["glow"] = true,
+					["glowThickness"] = 1,
+					["glowLines"] = 8,
+					["glowBorder"] = false,
+				}, -- [4]
 			},
 			["height"] = 80,
 			["load"] = {
-				["difficulty"] = {
+				["size"] = {
 					["multi"] = {
-						["mythic"] = true,
 					},
 				},
-				["use_encounterid"] = true,
-				["spec"] = {
+				["role"] = {
+					["single"] = "TANK",
+				},
+				["class"] = {
 					["multi"] = {
 					},
 				},
@@ -33973,22 +34049,51 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["use_role"] = true,
+				["encounterid"] = "2405",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["use_difficulty"] = false,
-				["encounterid"] = "2383",
-				["size"] = {
-					["multi"] = {
-					},
-				},
+				["use_encounterid"] = true,
 			},
-			["uid"] = "bsVnE75ZB)0",
-			["authorOptions"] = {
+			["uid"] = "ZmIwdUqChN4",
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "236219",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "04 Glyph of Destruction (Tank Only)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -34007,36 +34112,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "05 Essence Sap",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -34202,22 +34277,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2383",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2383",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "CU)(Ssj1s1m",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "05 Volatile Ejection",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -34238,45 +34345,13 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "05 Volatile Ejection",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
 		},
-		["08 Fractured Boulder/Debris"] = {
-			["iconSource"] = -1,
+		["03 Shade of Kael'thas Spawn"] = {
+			["iconSource"] = 0,
 			["color"] = {
 				1, -- [1]
-				1, -- [2]
-				1, -- [3]
+				0.98039215686275, -- [2]
+				0.93333333333333, -- [3]
 				1, -- [4]
 			},
 			["preferToUpdate"] = false,
@@ -34288,35 +34363,31 @@ WeakAurasSaved = {
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["spellId"] = "",
+						["spellId"] = "323402",
 						["auranames"] = {
-							"335361", -- [1]
+							"339251", -- [1]
 						},
-						["duration"] = "3",
-						["names"] = {
-						},
-						["subeventPrefix"] = "SPELL",
-						["custom_hide"] = "timed",
+						["duration"] = "8.5",
+						["unit"] = "player",
+						["use_sourceNpcId"] = false,
 						["debuffType"] = "HARMFUL",
-						["subeventSuffix"] = "_AURA_APPLIED",
-						["useName"] = true,
-						["custom_type"] = "stateupdate",
-						["unevent"] = "timed",
-						["custom"] = "function(allstates, event, ...)\n    if event == \"COMBAT_LOG_EVENT_UNFILTERED\" then\n        local timestamp, subEvent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, spellID, _,_, auraType = ...\n        if subEvent == \"SPELL_AURA_APPLIED\"\n        and spellID == 331314 then\n            allstates[spellID] = {\n                show = true,\n                changed = true,\n                progressType = \"timed\",\n                duration = 3.5,\n                expirationTime = 3.5 + GetTime(),\n                autoHide = true,\n                firstSoak = true,\n                icon = 135237,\n            }\n            C_Timer.After(3.5, function() WeakAuras.ScanEvents(\"REPEAT_TRIGGER_BOULDER\", spellID) end)\n            return true\n        end\n    end\n    if event == \"REPEAT_TRIGGER_BOULDER\" and ... then\n        allstates[...] = {\n            show = true,\n            changed = true,\n            progressType = \"timed\",\n            duration = 1.5,\n            expirationTime = 1.5 + GetTime(),\n            autoHide = true,\n            secondSoak = true,\n            icon = 135242,\n        }\n        return true\n    end\nend",
+						["useName"] = false,
+						["auraspellids"] = {
+							"339251", -- [1]
+						},
 						["fetchTooltip"] = false,
 						["event"] = "Combat Log",
-						["events"] = "CLEU:SPELL_AURA_APPLIED, REPEAT_TRIGGER_BOULDER",
-						["unit"] = "player",
-						["use_spellId"] = false,
+						["unevent"] = "timed",
+						["sourceNpcId"] = "",
+						["use_spellId"] = true,
 						["spellIds"] = {
 						},
-						["auraspellids"] = {
-							"331209", -- [1]
+						["names"] = {
 						},
-						["check"] = "event",
-						["useExactSpellId"] = false,
-						["type"] = "custom",
-						["customVariables"] = "{\n    firstSoak = \"bool\",\n    secondSoak = \"bool\",\n}",
+						["useExactSpellId"] = true,
+						["subeventPrefix"] = "SPELL",
+						["subeventSuffix"] = "_AURA_APPLIED",
+						["type"] = "event",
 					},
 					["untrigger"] = {
 					},
@@ -34332,7 +34403,7 @@ WeakAurasSaved = {
 				{
 					["text_shadowXOffset"] = 0,
 					["text_text_format_s_format"] = "none",
-					["text_text"] = "Soak",
+					["text_text"] = "Shade Inc",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -34436,6 +34507,10 @@ WeakAurasSaved = {
 			},
 			["height"] = 80,
 			["load"] = {
+				["size"] = {
+					["multi"] = {
+					},
+				},
 				["talent"] = {
 					["multi"] = {
 					},
@@ -34444,35 +34519,52 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = true,
-				["difficulty"] = {
-					["single"] = "mythic",
-					["multi"] = {
-						["mythic"] = true,
-					},
-				},
-				["role"] = {
-					["single"] = "TANK",
-					["multi"] = {
-						["TANK"] = true,
-					},
-				},
-				["encounterid"] = "2399",
-				["use_difficulty"] = true,
+				["encounterid"] = "2402",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
+				["use_encounterid"] = true,
 			},
-			["uid"] = "eiF8ssEckan",
-			["authorOptions"] = {
+			["uid"] = "ZE)A(mt0ss3",
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 3614365,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "03 Shade of Kael'thas Spawn",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -34481,80 +34573,17 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 				["main"] = {
-					["colorR"] = 0.5921568627451,
-					["duration_type"] = "seconds",
-					["colorA"] = 1,
-					["colorG"] = 0.5921568627451,
 					["type"] = "none",
 					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["colorB"] = 0.5921568627451,
-					["y"] = 0,
-					["colorType"] = "custom",
-					["scalex"] = 1,
 					["easeStrength"] = 3,
-					["colorFunc"] = "    function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n      local angle = (progress * 4 * math.pi) - (math.pi / 2)\n      local newProgress = ((math.sin(angle) + 1)/2);\n      return WeakAuras.GetHSVTransition(newProgress, r1, g1, b1, a1, r2, g2, b2, a2)\n    end\n  ",
-					["rotate"] = 0,
-					["x"] = 0,
-					["use_color"] = false,
+					["preset"] = "alphaPulse",
+					["duration_type"] = "seconds",
 				},
 				["finish"] = {
 					["type"] = "none",
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 135237,
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "08 Fractured Boulder/Debris",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["variable"] = "firstSoak",
-						["value"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								["sound_type"] = "Play",
-								["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Soak.ogg",
-								["sound_channel"] = "Master",
-							},
-							["property"] = "sound",
-						}, -- [1]
-					},
-				}, -- [1]
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -34769,35 +34798,23 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "k8PKetUZI2t",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["auto"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
@@ -34811,7 +34828,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
+			["xOffset"] = 0,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -34862,12 +34879,24 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["actions"] = {
+			["animation"] = {
 				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
-				["init"] = {
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 			},
 		},
@@ -35045,22 +35074,55 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2407",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2407",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "MBCzAcaUeH(",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Transition.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["do_sound"] = false,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 3528311,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 Indignation",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -35079,39 +35141,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 3528311,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 Indignation",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Transition.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["do_sound"] = false,
 				},
 			},
 		},
@@ -35209,14 +35238,14 @@ WeakAurasSaved = {
 						["custom_type"] = "stateupdate",
 						["event"] = "Health",
 						["subeventPrefix"] = "SPELL",
-						["events"] = "GARRISON_MISSION_NPC_OPENED GARRISON_SHIPYARD_NPC_CLOSED GARRISON_FOLLOWER_LIST_UPDATE GO_FARM_ANIME",
+						["spellIds"] = {
+						},
 						["customName"] = "\n\n",
-						["custom"] = "function(s, ev, ...)\n    if ev == \"GARRISON_MISSION_NPC_OPENED\"\n    or ev == \"GARRISON_SHIPYARD_NPC_CLOSED\"\n    or ev == \"GARRISON_FOLLOWER_LIST_UPDATE\"\n    then\n        C_Timer.After(0.1, function() WeakAuras.ScanEvents(\"GO_FARM_ANIME\", true) end)\n    elseif ev == \"GO_FARM_ANIME\" and ... then\n        if CovenantMissionFrame\n        and CovenantMissionFrame:IsVisible()\n        and CovenantMissionFrame.MissionTab\n        and CovenantMissionFrame.MissionTab.MissionPage\n        and CovenantMissionFrame.MissionTab.MissionPage.Stage\n        and CovenantMissionFrame.MissionTab.MissionPage.Stage:IsVisible()\n        and CovenantMissionFrame.MissionTab.MissionPage.Board\n        and CovenantMissionFrame.MissionTab.MissionPage.Board:IsVisible()\n        then\n            local stage = CovenantMissionFrame.MissionTab.MissionPage.Stage\n            local board = CovenantMissionFrame.MissionTab.MissionPage.Board\n            local percent = 0\n            \n            local a, e = {}, {}\n            a.hp = board.AllyHealthValue and board.AllyHealthValue:GetText():gsub(',',''):gsub('%.',''):gsub(' ','') or 0\n            a.dmg = board.AllyPowerValue and board.AllyPowerValue:GetText():gsub(',',''):gsub('%.',''):gsub(' ','') or 0\n            \n            if tonumber(a.dmg) > 0 or aura_env.config.details then\n                e.hp = stage.EnemyHealthValue and stage.EnemyHealthValue:GetText():gsub(',',''):gsub('%.',''):gsub(' ','') or 0\n                e.dmg = stage.EnemyPowerValue and stage.EnemyPowerValue:GetText():gsub(',',''):gsub('%.',''):gsub(' ','') or 0\n                \n                a.container = CovenantMissionFrame.MissionTab.MissionPage.Board.FollowerContainer\n                e.container = CovenantMissionFrame.MissionTab.MissionPage.Board.EnemyContainer\n                \n                a.melee, a.ranged, e.melee, e.ranged = aura_env.nbMeleeRanged(a.container, e.container)\n                a.tot = a.melee + a.ranged\n                e.tot = e.melee + e.ranged\n                \n                a.dmgBonus, a.heal, a.dmgMod, a.dmgTakenMod = aura_env.totPartyBonus(a, e)\n                e.dmgBonus, e.heal, e.dmgMod, e.dmgTakenMod = aura_env.totPartyBonus(e, a)\n                \n                a.dmgTot = (a.dmg + a.dmgBonus) * a.dmgMod * e.dmgTakenMod\n                e.dmgTot = (e.dmg + e.dmgBonus) * e.dmgMod * a.dmgTakenMod\n                \n                a.dmgEff = a.dmgTot-e.heal\n                e.dmgEff = e.dmgTot-a.heal\n                \n                if a.dmgEff < 1 then\n                    e.dmgEff = e.dmgEff + (a.dmgEff < 0 and (-a.dmgEff+1) or (1-a.dmgEff))\n                    a.dmgEff = 1\n                end\n                if e.dmgEff < 1 then\n                    a.dmgEff = a.dmgEff + (e.dmgEff < 0 and (-e.dmgEff+1) or (1-e.dmgEff))\n                    e.dmgEff = 1\n                end\n                \n                a.estWin = e.hp/a.dmgEff\n                e.estWin = a.hp/e.dmgEff\n                \n                aura_env.ally = a\n                aura_env.enemy = e\n                \n                percent = e.estWin^2/(e.estWin^2+a.estWin^2)\n                percent = math.floor(percent*100+0.5)\n            end\n            \n            s[\"\"] = {\n                percent = percent,\n                a = a,\n                e = e,\n                select = tonumber(a.dmg) == 0,\n                progressType = \"static\",\n                value = percent,\n                changed = true,\n                show = true,\n            }\n            return true\n        elseif s[\"\"] then\n            s[\"\"] = {\n                changed = true,\n                show = false,\n            }\n            return true\n        end\n    end\nend",
+						["events"] = "GARRISON_MISSION_NPC_OPENED GARRISON_SHIPYARD_NPC_CLOSED GARRISON_FOLLOWER_LIST_UPDATE GO_FARM_ANIME",
 						["names"] = {
 						},
 						["check"] = "event",
-						["spellIds"] = {
-						},
+						["custom"] = "function(s, ev, ...)\n    if ev == \"GARRISON_MISSION_NPC_OPENED\"\n    or ev == \"GARRISON_SHIPYARD_NPC_CLOSED\"\n    or ev == \"GARRISON_FOLLOWER_LIST_UPDATE\"\n    then\n        C_Timer.After(0.1, function() WeakAuras.ScanEvents(\"GO_FARM_ANIME\", true) end)\n    elseif ev == \"GO_FARM_ANIME\" and ... then\n        if CovenantMissionFrame\n        and CovenantMissionFrame:IsVisible()\n        and CovenantMissionFrame.MissionTab\n        and CovenantMissionFrame.MissionTab.MissionPage\n        and CovenantMissionFrame.MissionTab.MissionPage.Stage\n        and CovenantMissionFrame.MissionTab.MissionPage.Stage:IsVisible()\n        and CovenantMissionFrame.MissionTab.MissionPage.Board\n        and CovenantMissionFrame.MissionTab.MissionPage.Board:IsVisible()\n        then\n            local stage = CovenantMissionFrame.MissionTab.MissionPage.Stage\n            local board = CovenantMissionFrame.MissionTab.MissionPage.Board\n            local percent = 0\n            \n            local a, e = {}, {}\n            a.hp = board.AllyHealthValue and board.AllyHealthValue:GetText():gsub(',',''):gsub('%.',''):gsub(' ','') or 0\n            a.dmg = board.AllyPowerValue and board.AllyPowerValue:GetText():gsub(',',''):gsub('%.',''):gsub(' ','') or 0\n            \n            if tonumber(a.dmg) > 0 or aura_env.config.details then\n                e.hp = stage.EnemyHealthValue and stage.EnemyHealthValue:GetText():gsub(',',''):gsub('%.',''):gsub(' ','') or 0\n                e.dmg = stage.EnemyPowerValue and stage.EnemyPowerValue:GetText():gsub(',',''):gsub('%.',''):gsub(' ','') or 0\n                \n                a.container = CovenantMissionFrame.MissionTab.MissionPage.Board.FollowerContainer\n                e.container = CovenantMissionFrame.MissionTab.MissionPage.Board.EnemyContainer\n                \n                a.melee, a.ranged, e.melee, e.ranged = aura_env.nbMeleeRanged(a.container, e.container)\n                a.tot = a.melee + a.ranged\n                e.tot = e.melee + e.ranged\n                \n                a.dmgBonus, a.heal, a.dmgMod, a.dmgTakenMod = aura_env.totPartyBonus(a, e)\n                e.dmgBonus, e.heal, e.dmgMod, e.dmgTakenMod = aura_env.totPartyBonus(e, a)\n                \n                a.dmgTot = (a.dmg + a.dmgBonus) * a.dmgMod * e.dmgTakenMod\n                e.dmgTot = (e.dmg + e.dmgBonus) * e.dmgMod * a.dmgTakenMod\n                \n                a.dmgEff = a.dmgTot-e.heal\n                e.dmgEff = e.dmgTot-a.heal\n                \n                if a.dmgEff < 1 then\n                    e.dmgEff = e.dmgEff + (a.dmgEff < 0 and (-a.dmgEff+1) or (1-a.dmgEff))\n                    a.dmgEff = 1\n                end\n                if e.dmgEff < 1 then\n                    a.dmgEff = a.dmgEff + (e.dmgEff < 0 and (-e.dmgEff+1) or (1-e.dmgEff))\n                    e.dmgEff = 1\n                end\n                \n                a.estWin = e.hp/a.dmgEff\n                e.estWin = a.hp/e.dmgEff\n                \n                aura_env.ally = a\n                aura_env.enemy = e\n                \n                percent = e.estWin^2/(e.estWin^2+a.estWin^2)\n                percent = math.floor(percent*100+0.5)\n            end\n            \n            s[\"\"] = {\n                percent = percent,\n                a = a,\n                e = e,\n                select = tonumber(a.dmg) == 0,\n                progressType = \"static\",\n                value = percent,\n                changed = true,\n                show = true,\n            }\n            return true\n        elseif s[\"\"] then\n            s[\"\"] = {\n                changed = true,\n                show = false,\n            }\n            return true\n        end\n    end\nend",
 						["unit"] = "player",
 						["customVariables"] = "{\n    percent = \"number\",\n    select = \"bool\",\n}",
 					},
@@ -35358,11 +35387,11 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_c2_format"] = "none",
 					["text_shadowYOffset"] = -1,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
-					["text_text_format_c3_format"] = "none",
-					["text_anchorPoint"] = "INNER_RIGHT",
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_RIGHT",
+					["text_text_format_c3_format"] = "none",
 					["text_anchorYOffset"] = -40,
 					["text_fontSize"] = 14,
 					["anchorXOffset"] = 0,
@@ -35397,11 +35426,11 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_c2_format"] = "none",
 					["text_shadowYOffset"] = -1,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
-					["text_text_format_c3_format"] = "none",
-					["text_anchorPoint"] = "INNER_RIGHT",
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_RIGHT",
+					["text_text_format_c3_format"] = "none",
 					["text_anchorYOffset"] = -40,
 					["text_fontSize"] = 14,
 					["anchorXOffset"] = 0,
@@ -35519,10 +35548,10 @@ WeakAurasSaved = {
 					["text_anchorYOffset"] = -40,
 					["text_text_format_c2_format"] = "none",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "INNER_RIGHT",
 					["text_text_format_c3_format"] = "none",
+					["text_anchorPoint"] = "INNER_RIGHT",
 					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_fontSize"] = 14,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_dynamic"] = false,
@@ -35560,10 +35589,10 @@ WeakAurasSaved = {
 					["text_anchorYOffset"] = -40,
 					["text_text_format_c2_format"] = "none",
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
-					["text_anchorPoint"] = "INNER_RIGHT",
 					["text_text_format_c3_format"] = "none",
+					["text_anchorPoint"] = "INNER_RIGHT",
 					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 14,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_dynamic"] = false,
@@ -35629,12 +35658,12 @@ WeakAurasSaved = {
 			},
 			["selfPoint"] = "BOTTOM",
 		},
-		["03 Shade of Kael'thas Spawn"] = {
+		["02 Vicious Lunge"] = {
 			["iconSource"] = 0,
 			["color"] = {
 				1, -- [1]
-				0.98039215686275, -- [2]
-				0.93333333333333, -- [3]
+				1, -- [2]
+				1, -- [3]
 				1, -- [4]
 			},
 			["preferToUpdate"] = false,
@@ -35646,31 +35675,21 @@ WeakAurasSaved = {
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["spellId"] = "323402",
+						["type"] = "aura2",
 						["auranames"] = {
-							"339251", -- [1]
-						},
-						["duration"] = "8.5",
-						["unit"] = "player",
-						["use_sourceNpcId"] = false,
-						["debuffType"] = "HARMFUL",
-						["useName"] = false,
-						["auraspellids"] = {
-							"339251", -- [1]
+							"334945", -- [1]
 						},
 						["fetchTooltip"] = false,
-						["event"] = "Combat Log",
-						["unevent"] = "timed",
-						["sourceNpcId"] = "",
-						["use_spellId"] = true,
+						["event"] = "Health",
+						["unit"] = "player",
 						["spellIds"] = {
 						},
 						["names"] = {
 						},
-						["useExactSpellId"] = true,
+						["useName"] = true,
 						["subeventPrefix"] = "SPELL",
-						["subeventSuffix"] = "_AURA_APPLIED",
-						["type"] = "event",
+						["subeventSuffix"] = "_CAST_START",
+						["debuffType"] = "HARMFUL",
 					},
 					["untrigger"] = {
 					},
@@ -35686,7 +35705,7 @@ WeakAurasSaved = {
 				{
 					["text_shadowXOffset"] = 0,
 					["text_text_format_s_format"] = "none",
-					["text_text"] = "Shade Inc",
+					["text_text"] = "Dmgsplit",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -35787,6 +35806,26 @@ WeakAurasSaved = {
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_dynamic"] = false,
 				}, -- [3]
+				{
+					["glowFrequency"] = 0.25,
+					["type"] = "subglow",
+					["useGlowColor"] = false,
+					["glowType"] = "ACShine",
+					["glowLength"] = 10,
+					["glowYOffset"] = 0,
+					["glowColor"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["glowXOffset"] = 0,
+					["glowScale"] = 1,
+					["glow"] = true,
+					["glowThickness"] = 1,
+					["glowLines"] = 18,
+					["glowBorder"] = false,
+				}, -- [4]
 			},
 			["height"] = 80,
 			["load"] = {
@@ -35798,22 +35837,55 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2402",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2418",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
-			["uid"] = "ZE)A(mt0ss3",
-			["authorOptions"] = {
+			["uid"] = "9qmnBE18sbs",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Stack.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["do_sound"] = false,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 1033474,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "02 Vicious Lunge",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -35822,51 +35894,30 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 				["main"] = {
+					["colorR"] = 0.48627450980392,
+					["scalex"] = 1,
+					["colorA"] = 1,
+					["colorG"] = 0.48235294117647,
 					["type"] = "none",
 					["easeType"] = "none",
-					["easeStrength"] = 3,
+					["colorB"] = 0.49411764705882,
+					["use_color"] = false,
+					["alpha"] = 0,
 					["preset"] = "alphaPulse",
+					["y"] = 0,
+					["x"] = 0,
+					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
+					["colorFunc"] = "    function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      local newProgress = ((math.sin(angle) + 1)/2);\n      return WeakAuras.GetHSVTransition(newProgress, r1, g1, b1, a1, r2, g2, b2, a2)\n    end\n  ",
+					["rotate"] = 0,
+					["colorType"] = "pulseHSV",
+					["scaley"] = 1,
 				},
 				["finish"] = {
 					["type"] = "none",
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 3614365,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "03 Shade of Kael'thas Spawn",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
 				},
 			},
 		},
@@ -36031,22 +36082,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2418",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2418",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "2L7ipF4y0y4",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.auraType = {\n    [\"BUFF\"] = \"HELPFUL\",\n    [\"DEBUFF\"] = \"HARMFUL\",\n}",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 136215,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "02 Devour Soul",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -36065,38 +36148,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 136215,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "02 Devour Soul",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.auraType = {\n    [\"BUFF\"] = \"HELPFUL\",\n    [\"DEBUFF\"] = \"HARMFUL\",\n}",
-					["do_custom"] = true,
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -36298,22 +36349,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2406",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2406",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "eQWuG9L4YWW",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Adds.ogg",
+					["do_sound"] = true,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "06 Concentrated Anima (Others)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -36333,40 +36418,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "06 Concentrated Anima (Others)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Adds.ogg",
-					["do_sound"] = true,
 				},
 			},
 		},
@@ -36550,10 +36601,40 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "xBXlvUAvhI0",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "06 Warped Desires (Tank Only)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -36572,36 +36653,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "06 Warped Desires (Tank Only)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -36775,12 +36826,12 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["icon"] = true,
+			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
+			["icon"] = true,
+			["parent"] = "Bottled Flayedwing Toxin",
 			["authorOptions"] = {
 			},
-			["cooldownEdge"] = false,
-			["selfPoint"] = "CENTER",
 			["cooldown"] = false,
 			["zoom"] = 0,
 			["config"] = {
@@ -36795,7 +36846,7 @@ WeakAurasSaved = {
 			["width"] = 80,
 			["uid"] = "nh7fdprOe0L",
 			["inverse"] = false,
-			["parent"] = "Bottled Flayedwing Toxin",
+			["xOffset"] = 0,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -36836,10 +36887,10 @@ WeakAurasSaved = {
 			},
 			["information"] = {
 			},
-			["xOffset"] = 0,
+			["cooldownEdge"] = false,
 		},
-		["05 Volatile Ejection You"] = {
-			["iconSource"] = 0,
+		["06 Shared Cognition"] = {
+			["iconSource"] = -1,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -36855,40 +36906,25 @@ WeakAurasSaved = {
 			["triggers"] = {
 				{
 					["trigger"] = {
+						["type"] = "aura2",
 						["auranames"] = {
-							"338614", -- [1]
+							"325936", -- [1]
 						},
-						["duration"] = "4",
-						["message_operator"] = "find('%s')",
-						["names"] = {
-						},
-						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
-						["custom_hide"] = "timed",
-						["debuffType"] = "HARMFUL",
-						["check"] = "event",
-						["type"] = "event",
-						["subeventSuffix"] = "_CAST_START",
-						["custom_type"] = "event",
-						["events"] = "",
 						["fetchTooltip"] = false,
-						["event"] = "Chat Message",
-						["auraspellids"] = {
-						},
-						["message"] = "spell:334064",
-						["useExactSpellId"] = true,
+						["event"] = "Health",
+						["unit"] = "player",
 						["spellIds"] = {
 						},
-						["unevent"] = "timed",
-						["use_message"] = true,
-						["useName"] = false,
-						["use_messageType"] = true,
-						["messageType"] = "CHAT_MSG_RAID_BOSS_WHISPER",
+						["names"] = {
+						},
+						["useName"] = true,
+						["subeventPrefix"] = "SPELL",
+						["subeventSuffix"] = "_CAST_START",
+						["debuffType"] = "HARMFUL",
 					},
 					["untrigger"] = {
 					},
 				}, -- [1]
-				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
 			["internalVersion"] = 40,
@@ -36900,7 +36936,7 @@ WeakAurasSaved = {
 				{
 					["text_shadowXOffset"] = 0,
 					["text_text_format_s_format"] = "none",
-					["text_text"] = "Targeted",
+					["text_text"] = "Sharing HP",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -36923,6 +36959,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Arial Narrow",
 					["text_shadowYOffset"] = 0,
+					["text_text_format_unit_format"] = "none",
 					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_BOTTOM",
@@ -37001,29 +37038,14 @@ WeakAurasSaved = {
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_dynamic"] = false,
 				}, -- [3]
-				{
-					["glowFrequency"] = 0.25,
-					["type"] = "subglow",
-					["useGlowColor"] = false,
-					["glowType"] = "buttonOverlay",
-					["glowLength"] = 10,
-					["glowYOffset"] = 0,
-					["glowColor"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["glowXOffset"] = 0,
-					["glowScale"] = 1,
-					["glow"] = true,
-					["glowThickness"] = 1,
-					["glowLines"] = 8,
-					["glowBorder"] = false,
-				}, -- [4]
 			},
 			["height"] = 80,
 			["load"] = {
+				["difficulty"] = {
+					["multi"] = {
+						["mythic"] = true,
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -37032,22 +37054,52 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2383",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2406",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
-			["uid"] = "nhhcMIla1aU",
-			["authorOptions"] = {
+			["uid"] = "QgTfPmtFlVA",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "06 Shared Cognition",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -37066,40 +37118,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "342917",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "05 Volatile Ejection You",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Targeted.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -37122,13 +37140,13 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["subeventSuffix"] = "_CAST_START",
 						["useName"] = true,
-						["fetchTooltip"] = false,
+						["duration"] = "1",
 						["unevent"] = "auto",
+						["unit"] = "player",
+						["fetchTooltip"] = false,
+						["event"] = "Cast",
 						["names"] = {
 						},
-						["use_absorbMode"] = true,
-						["event"] = "Cast",
-						["use_unit"] = true,
 						["auranames"] = {
 							"327610", -- [1]
 						},
@@ -37137,8 +37155,8 @@ WeakAurasSaved = {
 						},
 						["type"] = "aura2",
 						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
-						["duration"] = "1",
+						["use_unit"] = true,
+						["use_absorbMode"] = true,
 						["debuffType"] = "HARMFUL",
 					},
 					["untrigger"] = {
@@ -37267,27 +37285,61 @@ WeakAurasSaved = {
 				["role"] = {
 					["single"] = "TANK",
 				},
-				["encounterid"] = "2412",
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["talent"] = {
 					["multi"] = {
 					},
 				},
 				["use_role"] = true,
+				["encounterid"] = "2412",
 				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "JDfmGlPiswo",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 1392546,
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "07 Evasive Lunge (Tank Only)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -37308,28 +37360,188 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
+		},
+		["09 Soultaint"] = {
+			["iconSource"] = -1,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["displayIcon"] = 1392546,
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "07 Evasive Lunge (Tank Only)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
+			["preferToUpdate"] = false,
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["cooldownEdge"] = false,
+			["icon"] = true,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura2",
+						["auranames"] = {
+							"343895", -- [1]
+						},
+						["fetchTooltip"] = true,
+						["event"] = "Health",
+						["unit"] = "player",
+						["subeventSuffix"] = "_CAST_START",
+						["useExactSpellId"] = false,
+						["spellIds"] = {
+						},
+						["useName"] = true,
+						["auraspellids"] = {
+							"331209", -- [1]
+						},
+						["subeventPrefix"] = "SPELL",
+						["names"] = {
+						},
+						["debuffType"] = "HARMFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["activeTriggerMode"] = -10,
 			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
+			["internalVersion"] = 40,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["desaturate"] = false,
+			["version"] = 142,
+			["subRegions"] = {
+				{
+					["text_shadowXOffset"] = 0,
+					["text_text_format_s_format"] = "none",
+					["text_text"] = "-%tooltip1%% Heal",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["rotateText"] = "NONE",
+					["type"] = "subtext",
+					["text_text_format_tooltip1_format"] = "none",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Arial Narrow",
+					["text_shadowYOffset"] = 0,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
+					["text_anchorPoint"] = "OUTER_BOTTOM",
+					["text_fontSize"] = 16,
+					["anchorXOffset"] = 0,
+					["text_visible"] = true,
+				}, -- [1]
+				{
+					["text_text_format_p_time_precision"] = 0,
+					["text_text"] = "%p",
+					["text_text_format_p_format"] = "timed",
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["rotateText"] = "NONE",
+					["type"] = "subtext",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowYOffset"] = 0,
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "THICKOUTLINE",
+					["text_anchorPoint"] = "CENTER",
+					["text_shadowXOffset"] = 0,
+					["text_visible"] = true,
+					["text_fontSize"] = 25,
+					["anchorXOffset"] = 0,
+					["text_text_format_p_time_dynamic"] = false,
+				}, -- [2]
+				{
+					["text_shadowXOffset"] = 0,
+					["text_text_format_s_format"] = "none",
+					["text_text"] = "%s",
+					["text_text_format_p_format"] = "timed",
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["rotateText"] = "NONE",
+					["type"] = "subtext",
+					["text_anchorXOffset"] = 6,
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Arial Narrow",
+					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = -6,
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "INNER_BOTTOMRIGHT",
+					["text_text_format_p_time_precision"] = 1,
+					["text_fontType"] = "OUTLINE",
+					["text_fontSize"] = 25,
+					["anchorXOffset"] = 0,
+					["text_text_format_p_time_dynamic"] = false,
+				}, -- [3]
 			},
-			["cooldown"] = true,
+			["height"] = 80,
+			["load"] = {
+				["role"] = {
+					["single"] = "TANK",
+					["multi"] = {
+						["TANK"] = true,
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["encounterid"] = "2417",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_encounterid"] = true,
+			},
+			["uid"] = "VCf3kVPphb2",
 			["actions"] = {
 				["start"] = {
 					["sound"] = " custom",
@@ -37338,8 +37550,80 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
+				},
+			},
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
+			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "09 Soultaint",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["variable"] = "show",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								["custom"] = "if aura_env.state\nand aura_env.state.unitCaster then\n    if not UnitIsUnit(\"target\", aura_env.state.unitCaster) then\n        PlaySoundFile(\"Interface\\\\AddOns\\\\SharedMedia_Causese\\\\sound\\\\Switch.ogg\", \"MASTER\")\n    end\nend",
+							},
+							["property"] = "customcode",
+						}, -- [1]
+					},
+				}, -- [1]
+			},
+			["cooldown"] = true,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 0.5921568627451,
+					["duration_type"] = "seconds",
+					["colorA"] = 1,
+					["colorG"] = 0.5921568627451,
+					["type"] = "none",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["colorB"] = 0.5921568627451,
+					["y"] = 0,
+					["colorType"] = "custom",
+					["scalex"] = 1,
+					["easeStrength"] = 3,
+					["colorFunc"] = "    function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n      local angle = (progress * 4 * math.pi) - (math.pi / 2)\n      local newProgress = ((math.sin(angle) + 1)/2);\n      return WeakAuras.GetHSVTransition(newProgress, r1, g1, b1, a1, r2, g2, b2, a2)\n    end\n  ",
+					["rotate"] = 0,
+					["x"] = 0,
+					["use_color"] = false,
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 			},
 		},
@@ -37542,18 +37826,32 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2405",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2405",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "gIgWVV9m96D",
+			["authorOptions"] = {
+			},
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
 			["actions"] = {
 				["start"] = {
 					["sound"] = " custom",
@@ -37564,14 +37862,6 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
-			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["url"] = "https://wago.io/slraid1/142",
 			["semver"] = "1.0.141",
 			["width"] = 80,
 			["zoom"] = 0.3,
@@ -37585,12 +37875,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -37643,274 +37928,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
-		},
-		["09 Soultaint"] = {
-			["iconSource"] = -1,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["preferToUpdate"] = false,
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["cooldownEdge"] = false,
-			["icon"] = true,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "aura2",
-						["auranames"] = {
-							"343895", -- [1]
-						},
-						["fetchTooltip"] = true,
-						["event"] = "Health",
-						["unit"] = "player",
-						["subeventSuffix"] = "_CAST_START",
-						["useExactSpellId"] = false,
-						["spellIds"] = {
-						},
-						["useName"] = true,
-						["auraspellids"] = {
-							"331209", -- [1]
-						},
-						["subeventPrefix"] = "SPELL",
-						["names"] = {
-						},
-						["debuffType"] = "HARMFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 40,
-			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
-			["desaturate"] = false,
-			["version"] = 142,
-			["subRegions"] = {
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text_format_s_format"] = "none",
-					["text_text"] = "-%tooltip1%% Heal",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["rotateText"] = "NONE",
-					["type"] = "subtext",
-					["text_text_format_tooltip1_format"] = "none",
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Arial Narrow",
-					["text_shadowYOffset"] = 0,
-					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
-					["text_anchorPoint"] = "OUTER_BOTTOM",
-					["text_fontSize"] = 16,
-					["anchorXOffset"] = 0,
-					["text_visible"] = true,
-				}, -- [1]
-				{
-					["text_text_format_p_time_precision"] = 0,
-					["text_text"] = "%p",
-					["text_text_format_p_format"] = "timed",
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["rotateText"] = "NONE",
-					["type"] = "subtext",
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Friz Quadrata TT",
-					["text_shadowYOffset"] = 0,
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "THICKOUTLINE",
-					["text_anchorPoint"] = "CENTER",
-					["text_shadowXOffset"] = 0,
-					["text_visible"] = true,
-					["text_fontSize"] = 25,
-					["anchorXOffset"] = 0,
-					["text_text_format_p_time_dynamic"] = false,
-				}, -- [2]
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text_format_s_format"] = "none",
-					["text_text"] = "%s",
-					["text_text_format_p_format"] = "timed",
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["rotateText"] = "NONE",
-					["type"] = "subtext",
-					["text_anchorXOffset"] = 6,
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Arial Narrow",
-					["text_shadowYOffset"] = 0,
-					["text_anchorYOffset"] = -6,
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "INNER_BOTTOMRIGHT",
-					["text_text_format_p_time_precision"] = 1,
-					["text_fontType"] = "OUTLINE",
-					["text_fontSize"] = 25,
-					["anchorXOffset"] = 0,
-					["text_text_format_p_time_dynamic"] = false,
-				}, -- [3]
-			},
-			["height"] = 80,
-			["load"] = {
-				["role"] = {
-					["single"] = "TANK",
-					["multi"] = {
-						["TANK"] = true,
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["encounterid"] = "2417",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["use_encounterid"] = true,
-			},
-			["uid"] = "VCf3kVPphb2",
-			["authorOptions"] = {
-			},
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
-			["regionType"] = "icon",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 0.5921568627451,
-					["duration_type"] = "seconds",
-					["colorA"] = 1,
-					["colorG"] = 0.5921568627451,
-					["type"] = "none",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["colorB"] = 0.5921568627451,
-					["y"] = 0,
-					["colorType"] = "custom",
-					["scalex"] = 1,
-					["easeStrength"] = 3,
-					["colorFunc"] = "    function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n      local angle = (progress * 4 * math.pi) - (math.pi / 2)\n      local newProgress = ((math.sin(angle) + 1)/2);\n      return WeakAuras.GetHSVTransition(newProgress, r1, g1, b1, a1, r2, g2, b2, a2)\n    end\n  ",
-					["rotate"] = 0,
-					["x"] = 0,
-					["use_color"] = false,
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "09 Soultaint",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["variable"] = "show",
-						["value"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								["custom"] = "if aura_env.state\nand aura_env.state.unitCaster then\n    if not UnitIsUnit(\"target\", aura_env.state.unitCaster) then\n        PlaySoundFile(\"Interface\\\\AddOns\\\\SharedMedia_Causese\\\\sound\\\\Switch.ogg\", \"MASTER\")\n    end\nend",
-							},
-							["property"] = "customcode",
-						}, -- [1]
-					},
-				}, -- [1]
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
 		},
 		["07 Wrong Moves"] = {
 			["iconSource"] = -1,
@@ -37931,13 +37949,13 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["subeventSuffix"] = "_CAST_START",
 						["useName"] = true,
-						["fetchTooltip"] = false,
+						["duration"] = "1",
 						["unevent"] = "auto",
+						["unit"] = "player",
+						["fetchTooltip"] = false,
+						["event"] = "Cast",
 						["names"] = {
 						},
-						["use_absorbMode"] = true,
-						["event"] = "Cast",
-						["use_unit"] = true,
 						["auranames"] = {
 							"330848", -- [1]
 						},
@@ -37946,8 +37964,8 @@ WeakAurasSaved = {
 						},
 						["type"] = "aura2",
 						["subeventPrefix"] = "SPELL",
-						["unit"] = "player",
-						["duration"] = "1",
+						["use_unit"] = true,
+						["use_absorbMode"] = true,
 						["debuffType"] = "HARMFUL",
 					},
 					["untrigger"] = {
@@ -38077,22 +38095,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2412",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2412",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "zW9hzTGKWtW",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 1392546,
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "07 Wrong Moves",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -38111,40 +38163,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 1392546,
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "07 Wrong Moves",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
 				},
 			},
 		},
@@ -38176,8 +38194,8 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["type"] = "custom",
+						["subeventSuffix"] = "_CAST_SUCCESS",
 						["custom_type"] = "stateupdate",
-						["unevent"] = "timed",
 						["custom_hide"] = "timed",
 						["fetchTooltip"] = false,
 						["event"] = "Combat Log",
@@ -38188,7 +38206,7 @@ WeakAurasSaved = {
 						},
 						["use_absorbMode"] = true,
 						["check"] = "event",
-						["subeventSuffix"] = "_CAST_SUCCESS",
+						["unevent"] = "timed",
 						["useName"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -38320,22 +38338,58 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2412",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2412",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "dAPT5WwagUR",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "local ID = select(3, GetInstanceInfo())\naura_env.stepAmount = (ID == 16 or ID == 15) and 6 or 4\naura_env.iterateAmount = (ID == 16 or ID == 15) and 5 or 3",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 1100022,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "07 Danse Macabre Next Step",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -38354,42 +38408,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 1100022,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "07 Danse Macabre Next Step",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["custom"] = "local ID = select(3, GetInstanceInfo())\naura_env.stepAmount = (ID == 16 or ID == 15) and 6 or 4\naura_env.iterateAmount = (ID == 16 or ID == 15) and 5 or 3",
-					["do_custom"] = true,
-				},
-				["finish"] = {
-					["custom"] = "",
-					["do_custom"] = false,
 				},
 			},
 		},
@@ -38421,10 +38439,10 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"327773", -- [1]
 						},
+						["custom"] = "function(allstates, event, ...)\n    if event == \"UNIT_SPELLCAST_SUCCEEDED\" then\n        local _, _, spellID = ...\n        if (spellID == 341193 or spellID == 332318 or spellID == 341103) then\n            allstates[spellID] = {\n                show = true,\n                changed = true,\n                progressType = \"timed\",\n                duration = aura_env.dur,\n                expirationTime = aura_env.dur + GetTime(),\n                autoHide = true,\n            }\n            return true\n        end\n    end\nend",
 						["spellIds"] = {
 						},
 						["events"] = "UNIT_SPELLCAST_SUCCEEDED:boss1",
-						["custom"] = "function(allstates, event, ...)\n    if event == \"UNIT_SPELLCAST_SUCCEEDED\" then\n        local _, _, spellID = ...\n        if (spellID == 341193 or spellID == 332318 or spellID == 341103) then\n            allstates[spellID] = {\n                show = true,\n                changed = true,\n                progressType = \"timed\",\n                duration = aura_env.dur,\n                expirationTime = aura_env.dur + GetTime(),\n                autoHide = true,\n            }\n            return true\n        end\n    end\nend",
 						["check"] = "event",
 						["subeventSuffix"] = "_CAST_START",
 						["custom_hide"] = "timed",
@@ -38603,12 +38621,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2399",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2399",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -38870,22 +38888,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2399",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2399",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "z6DmowKfri5",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Dodge.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 136215,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "08 Hateful Gaze (Others)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -38917,38 +38967,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 136215,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "08 Hateful Gaze (Others)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Dodge.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -39140,10 +39158,40 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "koyixBBHtux",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "07 Two Left Feet",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -39164,39 +39212,9 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "07 Two Left Feet",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
 		},
-		["06 Shared Cognition"] = {
-			["iconSource"] = -1,
+		["05 Volatile Ejection You"] = {
+			["iconSource"] = 0,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -39212,25 +39230,40 @@ WeakAurasSaved = {
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["type"] = "aura2",
 						["auranames"] = {
-							"325936", -- [1]
+							"338614", -- [1]
 						},
-						["fetchTooltip"] = false,
-						["event"] = "Health",
-						["unit"] = "player",
-						["spellIds"] = {
-						},
+						["duration"] = "4",
+						["message_operator"] = "find('%s')",
 						["names"] = {
 						},
-						["useName"] = true,
 						["subeventPrefix"] = "SPELL",
-						["subeventSuffix"] = "_CAST_START",
+						["unit"] = "player",
+						["custom_hide"] = "timed",
 						["debuffType"] = "HARMFUL",
+						["check"] = "event",
+						["type"] = "event",
+						["unevent"] = "timed",
+						["subeventSuffix"] = "_CAST_START",
+						["events"] = "",
+						["fetchTooltip"] = false,
+						["event"] = "Chat Message",
+						["auraspellids"] = {
+						},
+						["message"] = "spell:334064",
+						["useExactSpellId"] = true,
+						["spellIds"] = {
+						},
+						["custom_type"] = "event",
+						["use_message"] = true,
+						["useName"] = false,
+						["use_messageType"] = true,
+						["messageType"] = "CHAT_MSG_RAID_BOSS_WHISPER",
 					},
 					["untrigger"] = {
 					},
 				}, -- [1]
+				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
 			["internalVersion"] = 40,
@@ -39242,7 +39275,7 @@ WeakAurasSaved = {
 				{
 					["text_shadowXOffset"] = 0,
 					["text_text_format_s_format"] = "none",
-					["text_text"] = "Sharing HP",
+					["text_text"] = "Targeted",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -39265,7 +39298,6 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Arial Narrow",
 					["text_shadowYOffset"] = 0,
-					["text_text_format_unit_format"] = "none",
 					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_BOTTOM",
@@ -39344,14 +39376,29 @@ WeakAurasSaved = {
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_dynamic"] = false,
 				}, -- [3]
+				{
+					["glowFrequency"] = 0.25,
+					["type"] = "subglow",
+					["useGlowColor"] = false,
+					["glowType"] = "buttonOverlay",
+					["glowLength"] = 10,
+					["glowYOffset"] = 0,
+					["glowColor"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["glowXOffset"] = 0,
+					["glowScale"] = 1,
+					["glow"] = true,
+					["glowThickness"] = 1,
+					["glowLines"] = 8,
+					["glowBorder"] = false,
+				}, -- [4]
 			},
 			["height"] = 80,
 			["load"] = {
-				["difficulty"] = {
-					["multi"] = {
-						["mythic"] = true,
-					},
-				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -39360,22 +39407,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2406",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2383",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
-			["uid"] = "QgTfPmtFlVA",
-			["authorOptions"] = {
+			["uid"] = "nhhcMIla1aU",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Targeted.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "342917",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "05 Volatile Ejection You",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -39394,36 +39475,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "06 Shared Cognition",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -39606,22 +39657,57 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2418",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2418",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "va1)8mhIAbt",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\CC.ogg",
+					["do_custom"] = false,
+					["do_sound"] = true,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 1709932,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "02 Shades of Bargast",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -39654,41 +39740,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 1709932,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "02 Shades of Bargast",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\CC.ogg",
-					["do_custom"] = false,
-					["do_sound"] = true,
 				},
 			},
 		},
@@ -39895,22 +39946,58 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2399",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2399",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "XjhADqSCTam",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["custom"] = "if not IsAddOnLoaded(\"ExRT\") then\n    PlaySoundFile(\"Interface\\\\AddOns\\\\SharedMedia_Causese\\\\sound\\\\Linked.ogg\", \"MASTER\")\nelse\n    --plays Melee.ogg/Range.ogg depending on what your partner is. Requires Exorsus Raidtools\n    if IsAddOnLoaded(\"ExRT\") \n    and VExRT.ExCD2.gnGUIDs\n    and aura_env.state\n    and aura_env.state.unitCaster then\n        local name = GetUnitName(aura_env.state.unitCaster, true)\n        local nameToSpec = VExRT.ExCD2.gnGUIDs[name]\n        if nameToSpec then\n            PlaySoundFile(\"Interface\\\\AddOns\\\\SharedMedia_Causese\\\\sound\\\\\"..aura_env.convert[nameToSpec]..\".ogg\", \"MASTER\")\n        end\n    end\nend",
+					["sound"] = " custom",
+					["do_custom"] = true,
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "aura_env.convert = {\n    [250] = \"Melee\",\n    [251] = \"Melee\",\n    [252] = \"Melee\",\n    [577] = \"Melee\",\n    [581] = \"Melee\",\n    [102] = \"Range\",\n    [103] = \"Melee\",\n    [104] = \"Melee\",\n    [105] = \"Range\",\n    [253] = \"Range\",\n    [254] = \"Range\",\n    [255] = \"Melee\",\n    [62] = \"Range\",\n    [63] = \"Range\",\n    [64] = \"Range\",\n    [268] = \"Melee\",\n    [270] = \"Melee\", --MW Monk classified as melee\n    [269] = \"Melee\",\n    [65] = \"Melee\", --Holy Paladin classified as melee\n    [66] = \"Melee\",\n    [70] = \"Melee\",\n    [256] = \"Range\",\n    [257] = \"Range\",\n    [258] = \"Range\",\n    [259] = \"Melee\",\n    [260] = \"Melee\",\n    [261] = \"Melee\",\n    [262] = \"Range\",\n    [263] = \"Melee\",\n    [264] = \"Range\",\n    [265] = \"Range\",\n    [266] = \"Range\",\n    [267] = \"Range\",\n    [71] = \"Melee\",\n    [72] = \"Melee\",\n    [73] = \"Melee\",\n}",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 463560,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "08 Chain Them!",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -39942,42 +40029,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 463560,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "08 Chain Them!",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["do_custom"] = true,
-					["custom"] = "if not IsAddOnLoaded(\"ExRT\") then\n    PlaySoundFile(\"Interface\\\\AddOns\\\\SharedMedia_Causese\\\\sound\\\\Linked.ogg\", \"MASTER\")\nelse\n    --plays Melee.ogg/Range.ogg depending on what your partner is. Requires Exorsus Raidtools\n    if IsAddOnLoaded(\"ExRT\") \n    and VExRT.ExCD2.gnGUIDs\n    and aura_env.state\n    and aura_env.state.unitCaster then\n        local name = GetUnitName(aura_env.state.unitCaster, true)\n        local nameToSpec = VExRT.ExCD2.gnGUIDs[name]\n        if nameToSpec then\n            PlaySoundFile(\"Interface\\\\AddOns\\\\SharedMedia_Causese\\\\sound\\\\\"..aura_env.convert[nameToSpec]..\".ogg\", \"MASTER\")\n        end\n    end\nend",
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["custom"] = "aura_env.convert = {\n    [250] = \"Melee\",\n    [251] = \"Melee\",\n    [252] = \"Melee\",\n    [577] = \"Melee\",\n    [581] = \"Melee\",\n    [102] = \"Range\",\n    [103] = \"Melee\",\n    [104] = \"Melee\",\n    [105] = \"Range\",\n    [253] = \"Range\",\n    [254] = \"Range\",\n    [255] = \"Melee\",\n    [62] = \"Range\",\n    [63] = \"Range\",\n    [64] = \"Range\",\n    [268] = \"Melee\",\n    [270] = \"Melee\", --MW Monk classified as melee\n    [269] = \"Melee\",\n    [65] = \"Melee\", --Holy Paladin classified as melee\n    [66] = \"Melee\",\n    [70] = \"Melee\",\n    [256] = \"Range\",\n    [257] = \"Range\",\n    [258] = \"Range\",\n    [259] = \"Melee\",\n    [260] = \"Melee\",\n    [261] = \"Melee\",\n    [262] = \"Range\",\n    [263] = \"Melee\",\n    [264] = \"Range\",\n    [265] = \"Range\",\n    [266] = \"Range\",\n    [267] = \"Range\",\n    [71] = \"Melee\",\n    [72] = \"Melee\",\n    [73] = \"Melee\",\n}",
-					["do_custom"] = true,
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -40153,22 +40204,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2417",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2417",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "CQuh)GvXBd4",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "aura_env.spellIDs = {\n    [343086] = true,\n}",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 134427,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "09 Ricocheting Shuriken Cast On You",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -40187,40 +40272,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 134427,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "09 Ricocheting Shuriken Cast On You",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["custom"] = "aura_env.spellIDs = {\n    [343086] = true,\n}",
-					["do_custom"] = true,
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -40388,22 +40439,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2402",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2402",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "f(aH3Fr(oqI",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Spread.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "03 Crimson Flurry",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -40423,38 +40506,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "03 Crimson Flurry",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Spread.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -40701,60 +40752,37 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2405",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2405",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "lOzpr993)wz",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["duration_type"] = "seconds",
-					["colorA"] = 1,
-					["colorG"] = 0.007843137254902,
-					["type"] = "none",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["colorB"] = 0,
-					["y"] = 0,
-					["colorType"] = "custom",
-					["scalex"] = 1,
-					["easeStrength"] = 3,
-					["colorFunc"] = "    function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n      local angle = (progress * 4 * math.pi) - (math.pi / 2)\n      local newProgress = ((math.sin(angle) + 1)/2);\n      return WeakAuras.GetHSVTransition(newProgress, r1, g1, b1, a1, r2, g2, b2, a2)\n    end\n  ",
-					["rotate"] = 0,
-					["x"] = 0,
-					["use_color"] = false,
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["displayIcon"] = "2101973",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
@@ -40768,7 +40796,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
+			["xOffset"] = 0,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -40832,19 +40860,42 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["actions"] = {
+			["animation"] = {
 				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
-				["init"] = {
+				["main"] = {
+					["colorR"] = 1,
+					["duration_type"] = "seconds",
+					["colorA"] = 1,
+					["colorG"] = 0.007843137254902,
+					["type"] = "none",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["colorB"] = 0,
+					["y"] = 0,
+					["colorType"] = "custom",
+					["scalex"] = 1,
+					["easeStrength"] = 3,
+					["colorFunc"] = "    function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n      local angle = (progress * 4 * math.pi) - (math.pi / 2)\n      local newProgress = ((math.sin(angle) + 1)/2);\n      return WeakAuras.GetHSVTransition(newProgress, r1, g1, b1, a1, r2, g2, b2, a2)\n    end\n  ",
+					["rotate"] = 0,
+					["x"] = 0,
+					["use_color"] = false,
 				},
 				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 			},
 		},
-		["02 Vicious Lunge"] = {
-			["iconSource"] = 0,
+		["08 Fractured Boulder/Debris"] = {
+			["iconSource"] = -1,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -40860,21 +40911,35 @@ WeakAurasSaved = {
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["type"] = "aura2",
+						["spellId"] = "",
 						["auranames"] = {
-							"334945", -- [1]
+							"335361", -- [1]
 						},
-						["fetchTooltip"] = false,
-						["event"] = "Health",
-						["unit"] = "player",
-						["spellIds"] = {
-						},
+						["duration"] = "3",
 						["names"] = {
 						},
-						["useName"] = true,
 						["subeventPrefix"] = "SPELL",
-						["subeventSuffix"] = "_CAST_START",
+						["custom_hide"] = "timed",
 						["debuffType"] = "HARMFUL",
+						["subeventSuffix"] = "_AURA_APPLIED",
+						["useName"] = true,
+						["custom_type"] = "stateupdate",
+						["unevent"] = "timed",
+						["custom"] = "function(allstates, event, ...)\n    if event == \"COMBAT_LOG_EVENT_UNFILTERED\" then\n        local timestamp, subEvent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, spellID, _,_, auraType = ...\n        if subEvent == \"SPELL_AURA_APPLIED\"\n        and spellID == 331314 then\n            allstates[spellID] = {\n                show = true,\n                changed = true,\n                progressType = \"timed\",\n                duration = 3.5,\n                expirationTime = 3.5 + GetTime(),\n                autoHide = true,\n                firstSoak = true,\n                icon = 135237,\n            }\n            C_Timer.After(3.5, function() WeakAuras.ScanEvents(\"REPEAT_TRIGGER_BOULDER\", spellID) end)\n            return true\n        end\n    end\n    if event == \"REPEAT_TRIGGER_BOULDER\" and ... then\n        allstates[...] = {\n            show = true,\n            changed = true,\n            progressType = \"timed\",\n            duration = 1.5,\n            expirationTime = 1.5 + GetTime(),\n            autoHide = true,\n            secondSoak = true,\n            icon = 135242,\n        }\n        return true\n    end\nend",
+						["fetchTooltip"] = false,
+						["event"] = "Combat Log",
+						["events"] = "CLEU:SPELL_AURA_APPLIED, REPEAT_TRIGGER_BOULDER",
+						["unit"] = "player",
+						["use_spellId"] = false,
+						["spellIds"] = {
+						},
+						["auraspellids"] = {
+							"331209", -- [1]
+						},
+						["check"] = "event",
+						["useExactSpellId"] = false,
+						["type"] = "custom",
+						["customVariables"] = "{\n    firstSoak = \"bool\",\n    secondSoak = \"bool\",\n}",
 					},
 					["untrigger"] = {
 					},
@@ -40890,7 +40955,7 @@ WeakAurasSaved = {
 				{
 					["text_shadowXOffset"] = 0,
 					["text_text_format_s_format"] = "none",
-					["text_text"] = "Dmgsplit",
+					["text_text"] = "Soak",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -40991,39 +41056,10 @@ WeakAurasSaved = {
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_dynamic"] = false,
 				}, -- [3]
-				{
-					["glowFrequency"] = 0.25,
-					["type"] = "subglow",
-					["useGlowColor"] = false,
-					["glowType"] = "ACShine",
-					["glowLength"] = 10,
-					["glowYOffset"] = 0,
-					["glowColor"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["glowXOffset"] = 0,
-					["glowScale"] = 1,
-					["glow"] = true,
-					["glowThickness"] = 1,
-					["glowLines"] = 18,
-					["glowBorder"] = false,
-				}, -- [4]
 			},
 			["height"] = 80,
 			["load"] = {
-				["size"] = {
-					["multi"] = {
-					},
-				},
 				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["encounterid"] = "2418",
-				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -41032,12 +41068,85 @@ WeakAurasSaved = {
 					},
 				},
 				["use_encounterid"] = true,
+				["difficulty"] = {
+					["single"] = "mythic",
+					["multi"] = {
+						["mythic"] = true,
+					},
+				},
+				["role"] = {
+					["single"] = "TANK",
+					["multi"] = {
+						["TANK"] = true,
+					},
+				},
+				["encounterid"] = "2399",
+				["use_difficulty"] = true,
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
 			},
-			["uid"] = "9qmnBE18sbs",
-			["authorOptions"] = {
+			["uid"] = "eiF8ssEckan",
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 135237,
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "08 Fractured Boulder/Debris",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["variable"] = "firstSoak",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								["sound_type"] = "Play",
+								["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Soak.ogg",
+								["sound_channel"] = "Master",
+							},
+							["property"] = "sound",
+						}, -- [1]
+					},
+				}, -- [1]
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -41046,63 +41155,29 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 				["main"] = {
-					["colorR"] = 0.48627450980392,
-					["scalex"] = 1,
+					["colorR"] = 0.5921568627451,
+					["duration_type"] = "seconds",
 					["colorA"] = 1,
-					["colorG"] = 0.48235294117647,
+					["colorG"] = 0.5921568627451,
 					["type"] = "none",
 					["easeType"] = "none",
-					["colorB"] = 0.49411764705882,
-					["use_color"] = false,
-					["alpha"] = 0,
-					["preset"] = "alphaPulse",
-					["y"] = 0,
-					["x"] = 0,
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["colorFunc"] = "    function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      local newProgress = ((math.sin(angle) + 1)/2);\n      return WeakAuras.GetHSVTransition(newProgress, r1, g1, b1, a1, r2, g2, b2, a2)\n    end\n  ",
-					["rotate"] = 0,
-					["colorType"] = "pulseHSV",
 					["scaley"] = 1,
+					["alpha"] = 0,
+					["colorB"] = 0.5921568627451,
+					["y"] = 0,
+					["colorType"] = "custom",
+					["scalex"] = 1,
+					["easeStrength"] = 3,
+					["colorFunc"] = "    function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n      local angle = (progress * 4 * math.pi) - (math.pi / 2)\n      local newProgress = ((math.sin(angle) + 1)/2);\n      return WeakAuras.GetHSVTransition(newProgress, r1, g1, b1, a1, r2, g2, b2, a2)\n    end\n  ",
+					["rotate"] = 0,
+					["x"] = 0,
+					["use_color"] = false,
 				},
 				["finish"] = {
 					["type"] = "none",
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 1033474,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "02 Vicious Lunge",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Stack.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["do_sound"] = false,
 				},
 			},
 		},
@@ -41291,10 +41366,42 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "EuydIu975yF",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 3528312,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "01 Bloodlight",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -41313,38 +41420,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 3528312,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "01 Bloodlight",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -41515,22 +41590,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2405",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2405",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "hA90DEIkTIC",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Fixate.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "841380",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "04 Fixate",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -41562,38 +41669,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "841380",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "04 Fixate",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Fixate.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -41797,27 +41872,59 @@ WeakAurasSaved = {
 						["TANK"] = true,
 					},
 				},
-				["encounterid"] = "2417",
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["talent"] = {
 					["multi"] = {
 					},
 				},
 				["use_role"] = true,
+				["encounterid"] = "2417",
 				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "(XDwskUjUZK",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Knock.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 136225,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "09 Stone Fist Cast On You (Tank only)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -41849,38 +41956,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 136225,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "09 Stone Fist Cast On You (Tank only)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Knock.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -42058,22 +42133,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2405",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2405",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "Dnv0uZRiBLD",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Soon.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3256113",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "04 Crystal of Phantasms Initial Spawn",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -42107,41 +42214,9 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3256113",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "04 Crystal of Phantasms Initial Spawn",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Soon.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
 		},
-		["04 Glyph of Destruction (Tank Only)"] = {
-			["iconSource"] = 0,
+		["05 Essence Sap"] = {
+			["iconSource"] = -1,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -42159,7 +42234,7 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "aura2",
 						["auranames"] = {
-							"325236", -- [1]
+							"334755", -- [1]
 						},
 						["fetchTooltip"] = false,
 						["event"] = "Health",
@@ -42176,7 +42251,6 @@ WeakAurasSaved = {
 					["untrigger"] = {
 					},
 				}, -- [1]
-				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
 			["internalVersion"] = 40,
@@ -42188,7 +42262,7 @@ WeakAurasSaved = {
 				{
 					["text_shadowXOffset"] = 0,
 					["text_text_format_s_format"] = "none",
-					["text_text"] = "Move far",
+					["text_text"] = "+Dmgtaken",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -42281,7 +42355,7 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = false,
+					["text_visible"] = true,
 					["text_anchorPoint"] = "INNER_BOTTOMRIGHT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_fontType"] = "OUTLINE",
@@ -42289,43 +42363,20 @@ WeakAurasSaved = {
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_dynamic"] = false,
 				}, -- [3]
-				{
-					["glowFrequency"] = 0.25,
-					["type"] = "subglow",
-					["useGlowColor"] = false,
-					["glowType"] = "buttonOverlay",
-					["glowLength"] = 10,
-					["glowYOffset"] = 0,
-					["glowColor"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["glowXOffset"] = 0,
-					["glowScale"] = 1,
-					["glow"] = true,
-					["glowThickness"] = 1,
-					["glowLines"] = 8,
-					["glowBorder"] = false,
-				}, -- [4]
 			},
 			["height"] = 80,
 			["load"] = {
-				["size"] = {
+				["difficulty"] = {
 					["multi"] = {
+						["mythic"] = true,
 					},
 				},
-				["role"] = {
-					["single"] = "TANK",
-				},
-				["encounterid"] = "2405",
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["use_role"] = true,
+				["use_encounterid"] = true,
 				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
 					["multi"] = {
 					},
 				},
@@ -42333,13 +42384,48 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = true,
+				["use_difficulty"] = false,
+				["encounterid"] = "2383",
+				["size"] = {
+					["multi"] = {
+					},
+				},
 			},
-			["uid"] = "ZmIwdUqChN4",
-			["authorOptions"] = {
+			["uid"] = "bsVnE75ZB)0",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "05 Essence Sap",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -42360,45 +42446,13 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "236219",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "04 Glyph of Destruction (Tank Only)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
 		},
-		["05 Consume"] = {
+		["03 Vile Occultist Spawn"] = {
 			["iconSource"] = 0,
 			["color"] = {
 				1, -- [1]
-				1, -- [2]
-				1, -- [3]
+				0.98039215686275, -- [2]
+				0.93333333333333, -- [3]
 				1, -- [4]
 			},
 			["preferToUpdate"] = false,
@@ -42410,35 +42464,33 @@ WeakAurasSaved = {
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["spellId"] = 334522,
+						["spellId"] = "181113",
 						["auranames"] = {
-							"338614", -- [1]
+							"339251", -- [1]
 						},
-						["duration"] = "1",
-						["subeventPrefix"] = "SPELL",
+						["duration"] = "7.5",
+						["unit"] = "player",
+						["use_sourceNpcId"] = true,
 						["debuffType"] = "HARMFUL",
 						["useName"] = false,
-						["names"] = {
-						},
 						["auraspellids"] = {
+							"339251", -- [1]
 						},
-						["unevent"] = "auto",
 						["fetchTooltip"] = false,
-						["event"] = "Cast",
-						["use_unit"] = true,
-						["use_absorbMode"] = true,
+						["event"] = "Combat Log",
+						["unevent"] = "timed",
+						["sourceNpcId"] = "165763",
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
+						["names"] = {
+						},
 						["useExactSpellId"] = true,
-						["type"] = "status",
-						["subeventSuffix"] = "_CAST_START",
-						["use_specific_unit"] = true,
-						["unit"] = "boss1",
+						["subeventPrefix"] = "SPELL",
+						["subeventSuffix"] = "_CAST_SUCCESS",
+						["type"] = "event",
 					},
 					["untrigger"] = {
-						["unit"] = "boss1",
-						["use_specific_unit"] = true,
 					},
 				}, -- [1]
 				["activeTriggerMode"] = -10,
@@ -42452,7 +42504,7 @@ WeakAurasSaved = {
 				{
 					["text_shadowXOffset"] = 0,
 					["text_text_format_s_format"] = "none",
-					["text_text"] = "Move Far",
+					["text_text"] = "Occultists",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -42553,26 +42605,6 @@ WeakAurasSaved = {
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_dynamic"] = false,
 				}, -- [3]
-				{
-					["glowFrequency"] = 0.25,
-					["type"] = "subglow",
-					["useGlowColor"] = true,
-					["glowType"] = "Pixel",
-					["glowLength"] = 10,
-					["glowYOffset"] = 0,
-					["glowColor"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["glowXOffset"] = 0,
-					["glowScale"] = 1,
-					["glow"] = false,
-					["glowThickness"] = 2.15,
-					["glowLines"] = 18,
-					["glowBorder"] = false,
-				}, -- [4]
 			},
 			["height"] = 80,
 			["load"] = {
@@ -42584,22 +42616,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2383",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2402",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
-			["uid"] = "GssZ1tlXDM(",
-			["authorOptions"] = {
+			["uid"] = "EfbCjoC05(v",
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Adds.ogg",
+					["do_sound"] = true,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3601541",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "03 Vile Occultist Spawn",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -42609,82 +42675,16 @@ WeakAurasSaved = {
 				},
 				["main"] = {
 					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
 					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "alphaPulse",
+					["duration_type"] = "seconds",
 				},
 				["finish"] = {
 					["type"] = "none",
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "1778226",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "05 Consume",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["op"] = "==",
-						["variable"] = "castType",
-						["value"] = "cast",
-					},
-					["changes"] = {
-						{
-							["value"] = true,
-							["property"] = "desaturate",
-						}, -- [1]
-						{
-							["value"] = {
-								["sound_type"] = "Play",
-								["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Move.ogg",
-								["sound_channel"] = "Master",
-							},
-							["property"] = "sound",
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["op"] = "==",
-						["variable"] = "castType",
-						["value"] = "channel",
-					},
-					["changes"] = {
-						{
-							["property"] = "sub.4.glow",
-						}, -- [1]
-					},
-				}, -- [2]
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -42865,22 +42865,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2383",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2383",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = ")A)jPs)8V9H",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\High Energy.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "1778226",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "05 High Energy",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -42899,38 +42931,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "1778226",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "05 High Energy",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\High Energy.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -43103,22 +43103,52 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2412",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2412",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "sOx7(LXoDNt",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "07 Drain Essence",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -43137,36 +43167,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "07 Drain Essence",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -43335,27 +43335,59 @@ WeakAurasSaved = {
 						["TANK"] = true,
 					},
 				},
-				["encounterid"] = "2417",
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["talent"] = {
 					["multi"] = {
 					},
 				},
 				["use_role"] = true,
+				["encounterid"] = "2417",
 				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "oy(OgK4(pAf",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "09 Stone Fist (Tank only)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -43387,38 +43419,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "09 Stone Fist (Tank only)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -43584,27 +43584,57 @@ WeakAurasSaved = {
 				["role"] = {
 					["single"] = "TANK",
 				},
-				["encounterid"] = "2412",
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["talent"] = {
 					["multi"] = {
 					},
 				},
 				["use_role"] = true,
+				["encounterid"] = "2412",
 				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "1CwfH3tVNlr",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "07 Duelist's Riposte (Tank Only)",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -43623,36 +43653,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "07 Duelist's Riposte (Tank Only)",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -43838,22 +43838,57 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2399",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2399",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "X9rg3nVsaE7",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["do_message"] = false,
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 463560,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "08 Chain Link",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -43886,41 +43921,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 463560,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "08 Chain Link",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["do_message"] = false,
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -44107,10 +44107,42 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "FABiSlOBX)j",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Trap.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "613397",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "04 Stasis Trap",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -44129,38 +44161,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "613397",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "04 Stasis Trap",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Trap.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -44361,10 +44361,42 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "8qtfPMJeFJY",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Spread.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 136025,
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "08 Seismic Shift",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -44397,38 +44429,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 136025,
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "08 Seismic Shift",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Spread.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -44601,22 +44601,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2402",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2402",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "a5wFAl8q8OL",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Adds.ogg",
+					["do_sound"] = true,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3601530",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "03 Soul Infuser Spawn",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -44636,40 +44670,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3601530",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "03 Soul Infuser Spawn",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Adds.ogg",
-					["do_sound"] = true,
 				},
 			},
 		},
@@ -44845,22 +44845,56 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2417",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2417",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "IfLQggS3Nj(",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "aura_env.spellIDs = {\n    [343060] = true,\n}",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 135644,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "09 Stone Spike Cast On You",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -44879,40 +44913,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 135644,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "09 Stone Spike Cast On You",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["custom"] = "aura_env.spellIDs = {\n    [343060] = true,\n}",
-					["do_custom"] = true,
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -45162,18 +45162,32 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2417",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2417",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "ysZQqlWE1ux",
+			["authorOptions"] = {
+			},
+			["parent"] = "Castle Nathria (wago.io/slraid1)",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
 			["actions"] = {
 				["start"] = {
 					["sound"] = " custom",
@@ -45186,14 +45200,6 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["parent"] = "Castle Nathria (wago.io/slraid1)",
-			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["url"] = "https://wago.io/slraid1/142",
 			["semver"] = "1.0.141",
 			["width"] = 80,
 			["zoom"] = 0.3,
@@ -45207,12 +45213,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["url"] = "https://wago.io/slraid1/142",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -45234,8 +45235,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["10 Shattering Pain"] = {
 			["iconSource"] = 0,
@@ -45408,22 +45408,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2407",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2407",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "wbK0yomW8(3",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Knock.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "1357802",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 Shattering Pain",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -45455,38 +45487,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "1357802",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 Shattering Pain",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Knock.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -45522,8 +45522,10 @@ WeakAurasSaved = {
 						["debuffType"] = "HARMFUL",
 						["useName"] = true,
 						["type"] = "event",
+						["auraspellids"] = {
+							"331209", -- [1]
+						},
 						["subeventSuffix"] = "_CAST_START",
-						["useExactSpellId"] = false,
 						["unevent"] = "timed",
 						["fetchTooltip"] = false,
 						["event"] = "Combat Log",
@@ -45532,9 +45534,7 @@ WeakAurasSaved = {
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
-						["auraspellids"] = {
-							"331209", -- [1]
-						},
+						["useExactSpellId"] = false,
 						["use_message"] = true,
 						["use_destUnit"] = false,
 						["use_messageType"] = true,
@@ -45674,22 +45674,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2417",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2417",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "2JL(rtEskI1",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Knock.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 1519262,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "09 Shattering Blast",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -45721,38 +45753,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 1519262,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "09 Shattering Blast",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Knock.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -45962,22 +45962,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2407",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2407",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "d2t(K5nqgcZ",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Dodge.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "136133",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 Ravage",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -46009,38 +46041,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "136133",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 Ravage",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Dodge.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -46219,22 +46219,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2398",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2398",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "Im2dJk6JoUA",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Hide.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 136147,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "01 Earsplitting Shriek",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -46269,38 +46301,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 136147,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "01 Earsplitting Shriek",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Hide.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -46478,22 +46478,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2407",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2407",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "pFqgJVdoNhh",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "1357812",
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 March of the Pentinent",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -46512,38 +46544,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "1357812",
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 March of the Pentinent",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -46739,10 +46739,44 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "gv)q0xVLJXS",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = " custom",
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Adds.ogg",
+					["do_sound"] = true,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 3160258,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "09 Call Shadow Forces",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -46774,40 +46808,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 3160258,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "09 Call Shadow Forces",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = " custom",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Adds.ogg",
-					["do_sound"] = true,
 				},
 			},
 		},
@@ -46978,22 +46978,54 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2407",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2407",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "Ehfkyy5qL1E",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Spread.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "3716924",
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 Night Hunter / Feeding Time",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -47013,38 +47045,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "3716924",
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 Night Hunter / Feeding Time",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Spread.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
 				},
 			},
 		},
@@ -47207,22 +47207,55 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2418",
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["encounterid"] = "2418",
+				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["use_encounterid"] = true,
 			},
 			["uid"] = "bIEstp7pTz2",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Debuff.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["do_sound"] = false,
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 132095,
+			["authorOptions"] = {
+			},
+			["auto"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "02 Petrifying Howl",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -47255,39 +47288,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 132095,
-			["xOffset"] = 0,
-			["auto"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "02 Petrifying Howl",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\SharedMedia_Causese\\sound\\Debuff.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["do_sound"] = false,
 				},
 			},
 		},
@@ -47474,10 +47474,42 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = "9ngMGTgYuYP",
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+				},
 			},
 			["parent"] = "Castle Nathria (wago.io/slraid1)",
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/slraid1/142",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 237553,
+			["authorOptions"] = {
+			},
+			["auto"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.141",
+			["tocversion"] = 90002,
+			["id"] = "10 Spiteful",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 80,
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -47509,38 +47541,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 237553,
-			["xOffset"] = 0,
-			["auto"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.141",
-			["tocversion"] = 90002,
-			["id"] = "10 Spiteful",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 80,
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["url"] = "https://wago.io/slraid1/142",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["finish"] = {
 				},
 			},
 		},
