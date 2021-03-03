@@ -2706,14 +2706,6 @@ SkadaPerCharDB = {
 					},
 					["hdone"] = 6236,
 					["hdonespell"] = {
-						["Essence Extraction"] = {
-							["min"] = 0,
-							["crits"] = 0,
-							["max"] = 0,
-							["healing"] = 0,
-							["overhealing"] = 859,
-							["hits"] = 1,
-						},
 						["Second Wind"] = {
 							["min"] = 1849,
 							["crits"] = 0,
@@ -2729,6 +2721,14 @@ SkadaPerCharDB = {
 							["healing"] = 173,
 							["overhealing"] = 0,
 							["hits"] = 2,
+						},
+						["Essence Extraction"] = {
+							["min"] = 0,
+							["crits"] = 0,
+							["max"] = 0,
+							["healing"] = 0,
+							["overhealing"] = 859,
+							["hits"] = 1,
 						},
 						["Indelible Victory"] = {
 							["min"] = 0,
@@ -2741,14 +2741,6 @@ SkadaPerCharDB = {
 					},
 					["taken"] = 0,
 					["htakenspell"] = {
-						["Essence Extraction"] = {
-							["min"] = 0,
-							["crits"] = 0,
-							["max"] = 0,
-							["healing"] = 0,
-							["overhealing"] = 859,
-							["hits"] = 1,
-						},
 						["Second Wind"] = {
 							["min"] = 1849,
 							["crits"] = 0,
@@ -2764,6 +2756,14 @@ SkadaPerCharDB = {
 							["healing"] = 173,
 							["overhealing"] = 0,
 							["hits"] = 2,
+						},
+						["Essence Extraction"] = {
+							["min"] = 0,
+							["crits"] = 0,
+							["max"] = 0,
+							["healing"] = 0,
+							["overhealing"] = 859,
+							["hits"] = 1,
 						},
 						["Indelible Victory"] = {
 							["min"] = 0,
@@ -3655,6 +3655,34 @@ SkadaPerCharDB = {
 					["htaken"] = 0,
 					["done"] = 1400,
 				},
+				["Gatrekslayer-BlackwaterRaiders"] = {
+					["players"] = {
+					},
+					["hdone"] = 1810,
+					["hdonespell"] = {
+						["Leech"] = {
+							["min"] = 10,
+							["crits"] = 0,
+							["max"] = 800,
+							["healing"] = 1810,
+							["overhealing"] = 0,
+							["hits"] = 16,
+						},
+					},
+					["taken"] = 0,
+					["htakenspell"] = {
+						["Leech"] = {
+							["min"] = 10,
+							["crits"] = 0,
+							["max"] = 800,
+							["healing"] = 1810,
+							["overhealing"] = 0,
+							["hits"] = 16,
+						},
+					},
+					["htaken"] = 1810,
+					["done"] = 0,
+				},
 				["Oakheart Soul-Eater"] = {
 					["players"] = {
 						["Bracnar"] = {
@@ -3672,34 +3700,6 @@ SkadaPerCharDB = {
 					},
 					["htaken"] = 0,
 					["done"] = 3499,
-				},
-				["Winfield"] = {
-					["players"] = {
-					},
-					["hdone"] = 1082,
-					["hdonespell"] = {
-						["Leech"] = {
-							["min"] = 282,
-							["crits"] = 0,
-							["max"] = 800,
-							["healing"] = 1082,
-							["overhealing"] = 0,
-							["hits"] = 2,
-						},
-					},
-					["taken"] = 0,
-					["htakenspell"] = {
-						["Leech"] = {
-							["min"] = 282,
-							["crits"] = 0,
-							["max"] = 800,
-							["healing"] = 1082,
-							["overhealing"] = 0,
-							["hits"] = 2,
-						},
-					},
-					["htaken"] = 1082,
-					["done"] = 0,
 				},
 				["Grufvonstuck-BlackwaterRaiders"] = {
 					["players"] = {
@@ -3779,32 +3779,32 @@ SkadaPerCharDB = {
 					["htaken"] = 0,
 					["done"] = 4114,
 				},
-				["Gatrekslayer-BlackwaterRaiders"] = {
+				["Winfield"] = {
 					["players"] = {
 					},
-					["hdone"] = 1810,
+					["hdone"] = 1082,
 					["hdonespell"] = {
 						["Leech"] = {
-							["min"] = 10,
+							["min"] = 282,
 							["crits"] = 0,
 							["max"] = 800,
-							["healing"] = 1810,
+							["healing"] = 1082,
 							["overhealing"] = 0,
-							["hits"] = 16,
+							["hits"] = 2,
 						},
 					},
 					["taken"] = 0,
 					["htakenspell"] = {
 						["Leech"] = {
-							["min"] = 10,
+							["min"] = 282,
 							["crits"] = 0,
 							["max"] = 800,
-							["healing"] = 1810,
+							["healing"] = 1082,
 							["overhealing"] = 0,
-							["hits"] = 16,
+							["hits"] = 2,
 						},
 					},
-					["htaken"] = 1810,
+					["htaken"] = 1082,
 					["done"] = 0,
 				},
 				["Sharadrys-Feathermoon"] = {
@@ -4571,6 +4571,14 @@ SkadaPerCharDB = {
 					},
 					["hdone"] = 4906,
 					["hdonespell"] = {
+						["Music of Bastion"] = {
+							["min"] = 605,
+							["crits"] = 0,
+							["max"] = 605,
+							["healing"] = 605,
+							["overhealing"] = 0,
+							["hits"] = 1,
+						},
 						["Bloodthirst Heal"] = {
 							["min"] = 810,
 							["crits"] = 0,
@@ -4585,19 +4593,19 @@ SkadaPerCharDB = {
 							["max"] = 2681,
 							["healing"] = 2681,
 							["overhealing"] = 5419,
-							["hits"] = 1,
-						},
-						["Music of Bastion"] = {
-							["min"] = 605,
-							["crits"] = 0,
-							["max"] = 605,
-							["healing"] = 605,
-							["overhealing"] = 0,
 							["hits"] = 1,
 						},
 					},
 					["taken"] = 0,
 					["htakenspell"] = {
+						["Music of Bastion"] = {
+							["min"] = 605,
+							["crits"] = 0,
+							["max"] = 605,
+							["healing"] = 605,
+							["overhealing"] = 0,
+							["hits"] = 1,
+						},
 						["Bloodthirst Heal"] = {
 							["min"] = 810,
 							["crits"] = 0,
@@ -4612,14 +4620,6 @@ SkadaPerCharDB = {
 							["max"] = 2681,
 							["healing"] = 2681,
 							["overhealing"] = 5419,
-							["hits"] = 1,
-						},
-						["Music of Bastion"] = {
-							["min"] = 605,
-							["crits"] = 0,
-							["max"] = 605,
-							["healing"] = 605,
-							["overhealing"] = 0,
 							["hits"] = 1,
 						},
 					},
@@ -5438,8 +5438,8 @@ SkadaPerCharDB = {
 					["damaged"] = {
 					},
 					["dispells"] = 0,
+					["ffdamagedone"] = 0,
 					["ccbreaks"] = 0,
-					["role"] = "NONE",
 					["time"] = 0,
 					["interrupts"] = 0,
 					["healingspells"] = {
@@ -5477,7 +5477,7 @@ SkadaPerCharDB = {
 					["maxhp"] = 0,
 					["alert"] = {
 					},
-					["ffdamagedone"] = 0,
+					["role"] = "NONE",
 				}, -- [2]
 			},
 			["deaths"] = 0,
@@ -5647,93 +5647,93 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1614456030.32201,
 									["amount"] = -2544,
+									["spellid"] = 50622,
 									["hp"] = 21246,
 									["srcname"] = "Mokron-MoonGuard",
-									["spellid"] = 50622,
 								}, -- [1]
 								{
 									["ts"] = 1614456030.82202,
 									["amount"] = -1150,
+									["spellid"] = 307871,
 									["hp"] = 20096,
 									["srcname"] = "Mokron-MoonGuard",
-									["spellid"] = 307871,
 								}, -- [2]
 								{
 									["ts"] = 1614456030.92203,
 									["amount"] = -539,
+									["spellid"] = 262115,
 									["hp"] = 19557,
 									["srcname"] = "Mokron-MoonGuard",
-									["spellid"] = 262115,
 								}, -- [3]
 								{
 									["ts"] = 1614456031.22204,
 									["amount"] = -2578,
+									["hp"] = 16979,
 									["spellid"] = 50622,
 									["srcname"] = "Mokron-MoonGuard",
-									["hp"] = 16979,
 								}, -- [4]
 								{
 									["ts"] = 1614456031.42205,
 									["amount"] = -705,
+									["spellid"] = 307871,
 									["hp"] = 16274,
 									["srcname"] = "Mokron-MoonGuard",
-									["spellid"] = 307871,
 								}, -- [5]
 								{
 									["ts"] = 1614456032.12206,
 									["amount"] = -2546,
+									["spellid"] = 50622,
 									["hp"] = 13728,
 									["srcname"] = "Mokron-MoonGuard",
-									["spellid"] = 50622,
 								}, -- [6]
 								{
 									["ts"] = 1614456032.98807,
 									["amount"] = -3901,
+									["hp"] = 9827,
 									["spellid"] = 12294,
 									["srcname"] = "Mokron-MoonGuard",
-									["hp"] = 9827,
 								}, -- [7]
 								{
 									["ts"] = 1614456032.98808,
 									["amount"] = -2499,
+									["spellid"] = 50622,
 									["hp"] = 7328,
 									["srcname"] = "Mokron-MoonGuard",
-									["spellid"] = 50622,
 								}, -- [8]
 								{
 									["ts"] = 1614456033.58809,
 									["amount"] = -539,
+									["hp"] = 6789,
 									["spellid"] = 262115,
 									["srcname"] = "Mokron-MoonGuard",
-									["hp"] = 6789,
 								}, -- [9]
 								{
 									["ts"] = 1614456033.9221,
 									["amount"] = -2576,
+									["spellid"] = 50622,
 									["hp"] = 4213,
 									["srcname"] = "Mokron-MoonGuard",
-									["spellid"] = 50622,
 								}, -- [10]
 								{
 									["ts"] = 1614456034.78311,
 									["amount"] = -2578,
+									["hp"] = 1635,
 									["spellid"] = 50622,
 									["srcname"] = "Mokron-MoonGuard",
-									["hp"] = 1635,
 								}, -- [11]
 								{
 									["ts"] = 1614456036.10112,
 									["amount"] = -539,
+									["spellid"] = 262115,
 									["hp"] = 1096,
 									["srcname"] = "Mokron-MoonGuard",
-									["spellid"] = 262115,
 								}, -- [12]
 								{
 									["ts"] = 1614456036.68413,
 									["amount"] = -9823,
+									["hp"] = 1,
 									["spellid"] = 260798,
 									["srcname"] = "Mokron-MoonGuard",
-									["hp"] = 1,
 								}, -- [13]
 								{
 									["spellname"] = "Bracnar dies",
@@ -5744,9 +5744,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1614456030.02115,
 									["amount"] = -1150,
+									["spellid"] = 307871,
 									["hp"] = 23790,
 									["srcname"] = "Mokron-MoonGuard",
-									["spellid"] = 307871,
 								}, -- [15]
 								["pos"] = 15,
 							},
@@ -6329,18 +6329,7 @@ SkadaPerCharDB = {
 				},
 				["overhealing"] = 870193,
 				["interrupts"] = 15,
-				["power"] = {
-					[2] = {
-						["amount"] = 4306,
-						["spells"] = {
-							[246851] = 876,
-							[246152] = 1581,
-							[246853] = 20,
-							[193530] = 1639,
-							[246852] = 190,
-						},
-					},
-				},
+				["shielding"] = 0,
 				["healing"] = 1227175,
 				["ffdamagedonetargets"] = {
 				},
@@ -6786,93 +6775,93 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1614456030.32201,
 								["amount"] = -2544,
+								["spellid"] = 50622,
 								["hp"] = 21246,
 								["srcname"] = "Mokron-MoonGuard",
-								["spellid"] = 50622,
 							}, -- [1]
 							{
 								["ts"] = 1614456030.82202,
 								["amount"] = -1150,
+								["spellid"] = 307871,
 								["hp"] = 20096,
 								["srcname"] = "Mokron-MoonGuard",
-								["spellid"] = 307871,
 							}, -- [2]
 							{
 								["ts"] = 1614456030.92203,
 								["amount"] = -539,
+								["spellid"] = 262115,
 								["hp"] = 19557,
 								["srcname"] = "Mokron-MoonGuard",
-								["spellid"] = 262115,
 							}, -- [3]
 							{
 								["ts"] = 1614456031.22204,
 								["amount"] = -2578,
+								["hp"] = 16979,
 								["spellid"] = 50622,
 								["srcname"] = "Mokron-MoonGuard",
-								["hp"] = 16979,
 							}, -- [4]
 							{
 								["ts"] = 1614456031.42205,
 								["amount"] = -705,
+								["spellid"] = 307871,
 								["hp"] = 16274,
 								["srcname"] = "Mokron-MoonGuard",
-								["spellid"] = 307871,
 							}, -- [5]
 							{
 								["ts"] = 1614456032.12206,
 								["amount"] = -2546,
+								["spellid"] = 50622,
 								["hp"] = 13728,
 								["srcname"] = "Mokron-MoonGuard",
-								["spellid"] = 50622,
 							}, -- [6]
 							{
 								["ts"] = 1614456032.98807,
 								["amount"] = -3901,
+								["hp"] = 9827,
 								["spellid"] = 12294,
 								["srcname"] = "Mokron-MoonGuard",
-								["hp"] = 9827,
 							}, -- [7]
 							{
 								["ts"] = 1614456032.98808,
 								["amount"] = -2499,
+								["spellid"] = 50622,
 								["hp"] = 7328,
 								["srcname"] = "Mokron-MoonGuard",
-								["spellid"] = 50622,
 							}, -- [8]
 							{
 								["ts"] = 1614456033.58809,
 								["amount"] = -539,
+								["hp"] = 6789,
 								["spellid"] = 262115,
 								["srcname"] = "Mokron-MoonGuard",
-								["hp"] = 6789,
 							}, -- [9]
 							{
 								["ts"] = 1614456033.9221,
 								["amount"] = -2576,
+								["spellid"] = 50622,
 								["hp"] = 4213,
 								["srcname"] = "Mokron-MoonGuard",
-								["spellid"] = 50622,
 							}, -- [10]
 							{
 								["ts"] = 1614456034.78311,
 								["amount"] = -2578,
+								["hp"] = 1635,
 								["spellid"] = 50622,
 								["srcname"] = "Mokron-MoonGuard",
-								["hp"] = 1635,
 							}, -- [11]
 							{
 								["ts"] = 1614456036.10112,
 								["amount"] = -539,
+								["spellid"] = 262115,
 								["hp"] = 1096,
 								["srcname"] = "Mokron-MoonGuard",
-								["spellid"] = 262115,
 							}, -- [12]
 							{
 								["ts"] = 1614456036.68413,
 								["amount"] = -9823,
+								["hp"] = 1,
 								["spellid"] = 260798,
 								["srcname"] = "Mokron-MoonGuard",
-								["hp"] = 1,
 							}, -- [13]
 							{
 								["spellname"] = "Bracnar dies",
@@ -6883,9 +6872,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1614456030.02115,
 								["amount"] = -1150,
+								["spellid"] = 307871,
 								["hp"] = 23790,
 								["srcname"] = "Mokron-MoonGuard",
-								["spellid"] = 307871,
 							}, -- [15]
 							["pos"] = 15,
 						},
@@ -6898,9 +6887,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1614396226.83201,
 								["amount"] = -2262,
+								["srcname"] = "Empowered Deadsoul Shade",
 								["spellid"] = 294333,
 								["hp"] = 21810,
-								["srcname"] = "Empowered Deadsoul Shade",
 							}, -- [1]
 							{
 								["absorb"] = 0,
@@ -6913,16 +6902,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1614396227.76603,
 								["amount"] = -5745,
+								["srcname"] = "Deadsoul Echo",
 								["spellid"] = 294362,
 								["hp"] = 17274,
-								["srcname"] = "Deadsoul Echo",
 							}, -- [3]
 							{
 								["ts"] = 1614396228.36704,
 								["amount"] = -2577,
+								["hp"] = 14697,
 								["spellid"] = 294333,
 								["srcname"] = "Empowered Deadsoul Shade",
-								["hp"] = 14697,
 							}, -- [4]
 							{
 								["ts"] = 1614396228.60005,
@@ -6943,16 +6932,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1614396229.91807,
 								["amount"] = -8554,
+								["hp"] = 6471,
 								["spellid"] = 294333,
 								["srcname"] = "Empowered Deadsoul Shade",
-								["hp"] = 6471,
 							}, -- [7]
 							{
 								["ts"] = 1614396230.74208,
 								["amount"] = -7227,
+								["hp"] = 1,
 								["spellid"] = 294362,
 								["srcname"] = "Deadsoul Echo",
-								["hp"] = 1,
 							}, -- [8]
 							{
 								["spellname"] = "Bracnar dies",
@@ -6971,9 +6960,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1614396223.74711,
 								["amount"] = -1759,
+								["hp"] = 27351,
 								["spellid"] = 294333,
 								["srcname"] = "Empowered Deadsoul Shade",
-								["hp"] = 27351,
 							}, -- [11]
 							{
 								["absorb"] = 0,
@@ -6994,9 +6983,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1614396225.29714,
 								["amount"] = -4982,
+								["hp"] = 23366,
 								["spellid"] = 294333,
 								["srcname"] = "Empowered Deadsoul Shade",
-								["hp"] = 23366,
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -7040,9 +7029,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1614395973.46704,
 								["amount"] = -1844,
+								["hp"] = 34354,
 								["spellid"] = 294333,
 								["srcname"] = "Deadsoul Shade",
-								["hp"] = 34354,
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -7079,9 +7068,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1614395979.07209,
 								["amount"] = -5648,
+								["hp"] = 30909,
 								["spellid"] = 294362,
 								["srcname"] = "Deadsoul Echo",
-								["hp"] = 30909,
 							}, -- [9]
 							{
 								["absorb"] = 0,
@@ -7118,9 +7107,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1614395985.13414,
 								["amount"] = -44478,
+								["hp"] = 1,
 								["spellid"] = 294405,
 								["srcname"] = "Deadsoul Echo",
-								["hp"] = 1,
 							}, -- [14]
 							{
 								["spellname"] = "Bracnar dies",
@@ -7146,9 +7135,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1614395551.49602,
 								["amount"] = -364,
+								["hp"] = 35840,
 								["spellid"] = 88163,
 								["srcname"] = "Mawrat",
-								["hp"] = 35840,
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -7169,9 +7158,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1614395622.23905,
 								["amount"] = -1871,
+								["hp"] = 34327,
 								["spellid"] = 329862,
 								["srcname"] = "Empowered Deadsoul Shambler",
-								["hp"] = 34327,
 							}, -- [5]
 							{
 								["ts"] = 1614395622.33906,
@@ -7200,9 +7189,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1614395717.91909,
 								["amount"] = -4022,
+								["hp"] = 37552,
 								["spellid"] = 298844,
 								["srcname"] = "Deadsoul Shambler",
-								["hp"] = 37552,
 							}, -- [9]
 							{
 								["hp"] = 25417,
@@ -7221,9 +7210,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1614395719.69812,
 								["amount"] = -44478,
+								["srcname"] = "Deadsoul Echo",
 								["hp"] = 1,
 								["spellid"] = 294405,
-								["srcname"] = "Deadsoul Echo",
 							}, -- [12]
 							{
 								["spellname"] = "Bracnar dies",
@@ -7376,123 +7365,17 @@ SkadaPerCharDB = {
 						["amount"] = 11207,
 					},
 				},
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 122,
-						["hp"] = 32717,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["ts"] = 1614603979.535,
-					}, -- [1]
-					{
-						["ts"] = 1614603966.424,
-						["amount"] = -1094,
-						["spellid"] = 342904,
-						["srcname"] = "Shifting Dread",
-						["hp"] = 27756,
-					}, -- [2]
-					{
-						["ts"] = 1614603966.624,
-						["amount"] = -447,
-						["spellid"] = 88163,
-						["srcname"] = "Stranded Spriggan",
-						["hp"] = 27756,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 200,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["hp"] = 27509,
-						["ts"] = 1614603967.041,
-					}, -- [4]
-					{
-						["ts"] = 1614603967.274,
-						["amount"] = -1602,
-						["spellid"] = 88163,
-						["srcname"] = "Shifting Dread",
-						["hp"] = 27509,
-					}, -- [5]
-					{
-						["ts"] = 1614603967.808,
-						["amount"] = -788,
-						["spellid"] = 88163,
-						["srcname"] = "Stranded Spriggan",
-						["hp"] = 25907,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 440,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["hp"] = 29577,
-						["ts"] = 1614603969.443,
-					}, -- [7]
-					{
-						["ts"] = 1614603969.543,
-						["amount"] = -1033,
-						["spellid"] = 342904,
-						["srcname"] = "Shifting Dread",
-						["hp"] = 28544,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 91,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["hp"] = 28635,
-						["ts"] = 1614603970.66,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 904,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["hp"] = 29539,
-						["ts"] = 1614603971.845,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 696,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["hp"] = 30235,
-						["ts"] = 1614603973.096,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 90,
-						["hp"] = 30325,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["ts"] = 1614603974.28,
-					}, -- [12]
-					{
-						["ts"] = 1614603975.898,
-						["amount"] = 94,
-						["hp"] = 30419,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["absorb"] = 0,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 1452,
-						["hp"] = 31871,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["ts"] = 1614603977.116,
-					}, -- [14]
-					{
-						["absorb"] = 0,
-						["amount"] = 724,
-						["srcname"] = "Bracnar",
-						["spellid"] = 143924,
-						["hp"] = 32595,
-						["ts"] = 1614603978.284,
-					}, -- [15]
-					["pos"] = 2,
+				["power"] = {
+					[2] = {
+						["amount"] = 4306,
+						["spells"] = {
+							[246851] = 876,
+							[246152] = 1581,
+							[246853] = 20,
+							[193530] = 1639,
+							[246852] = 190,
+						},
+					},
 				},
 				["id"] = "Player-125-09AC62FC",
 				["maxhp"] = 35840,
@@ -8274,7 +8157,124 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Bracnar",
 				["alertCount"] = 72,
-				["shielding"] = 0,
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 122,
+						["hp"] = 32717,
+						["srcname"] = "Bracnar",
+						["spellid"] = 143924,
+						["ts"] = 1614603979.535,
+					}, -- [1]
+					{
+						["ts"] = 1614603966.424,
+						["amount"] = -1094,
+						["hp"] = 27756,
+						["spellid"] = 342904,
+						["srcname"] = "Shifting Dread",
+					}, -- [2]
+					{
+						["ts"] = 1614603966.624,
+						["amount"] = -447,
+						["hp"] = 27756,
+						["spellid"] = 88163,
+						["srcname"] = "Stranded Spriggan",
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 200,
+						["srcname"] = "Bracnar",
+						["spellid"] = 143924,
+						["hp"] = 27509,
+						["ts"] = 1614603967.041,
+					}, -- [4]
+					{
+						["ts"] = 1614603967.274,
+						["amount"] = -1602,
+						["hp"] = 27509,
+						["spellid"] = 88163,
+						["srcname"] = "Shifting Dread",
+					}, -- [5]
+					{
+						["ts"] = 1614603967.808,
+						["amount"] = -788,
+						["hp"] = 25907,
+						["spellid"] = 88163,
+						["srcname"] = "Stranded Spriggan",
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 440,
+						["srcname"] = "Bracnar",
+						["spellid"] = 143924,
+						["hp"] = 29577,
+						["ts"] = 1614603969.443,
+					}, -- [7]
+					{
+						["ts"] = 1614603969.543,
+						["amount"] = -1033,
+						["hp"] = 28544,
+						["spellid"] = 342904,
+						["srcname"] = "Shifting Dread",
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 91,
+						["srcname"] = "Bracnar",
+						["spellid"] = 143924,
+						["hp"] = 28635,
+						["ts"] = 1614603970.66,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 904,
+						["srcname"] = "Bracnar",
+						["spellid"] = 143924,
+						["hp"] = 29539,
+						["ts"] = 1614603971.845,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 696,
+						["srcname"] = "Bracnar",
+						["spellid"] = 143924,
+						["hp"] = 30235,
+						["ts"] = 1614603973.096,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 90,
+						["hp"] = 30325,
+						["srcname"] = "Bracnar",
+						["spellid"] = 143924,
+						["ts"] = 1614603974.28,
+					}, -- [12]
+					{
+						["ts"] = 1614603975.898,
+						["amount"] = 94,
+						["hp"] = 30419,
+						["srcname"] = "Bracnar",
+						["spellid"] = 143924,
+						["absorb"] = 0,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 1452,
+						["hp"] = 31871,
+						["srcname"] = "Bracnar",
+						["spellid"] = 143924,
+						["ts"] = 1614603977.116,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 724,
+						["srcname"] = "Bracnar",
+						["spellid"] = 143924,
+						["hp"] = 32595,
+						["ts"] = 1614603978.284,
+					}, -- [15]
+					["pos"] = 2,
+				},
 				["role"] = "NONE",
 				["alert"] = {
 					["Fail"] = {
@@ -8333,8 +8333,8 @@ SkadaPerCharDB = {
 				["damaged"] = {
 				},
 				["dispells"] = 0,
+				["role"] = "NONE",
 				["ccbreaks"] = 0,
-				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["overhealing"] = 0,
@@ -8373,7 +8373,7 @@ SkadaPerCharDB = {
 				},
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 			}, -- [2]
 		},
 		["deaths"] = 4,
@@ -9205,6 +9205,14 @@ SkadaPerCharDB = {
 				},
 				["hdone"] = 4906,
 				["hdonespell"] = {
+					["Music of Bastion"] = {
+						["min"] = 605,
+						["crits"] = 0,
+						["max"] = 605,
+						["healing"] = 605,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
 					["Bloodthirst Heal"] = {
 						["min"] = 810,
 						["crits"] = 0,
@@ -9219,19 +9227,19 @@ SkadaPerCharDB = {
 						["max"] = 2681,
 						["healing"] = 2681,
 						["overhealing"] = 5419,
-						["hits"] = 1,
-					},
-					["Music of Bastion"] = {
-						["min"] = 605,
-						["crits"] = 0,
-						["max"] = 605,
-						["healing"] = 605,
-						["overhealing"] = 0,
 						["hits"] = 1,
 					},
 				},
 				["taken"] = 0,
 				["htakenspell"] = {
+					["Music of Bastion"] = {
+						["min"] = 605,
+						["crits"] = 0,
+						["max"] = 605,
+						["healing"] = 605,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
 					["Bloodthirst Heal"] = {
 						["min"] = 810,
 						["crits"] = 0,
@@ -9246,14 +9254,6 @@ SkadaPerCharDB = {
 						["max"] = 2681,
 						["healing"] = 2681,
 						["overhealing"] = 5419,
-						["hits"] = 1,
-					},
-					["Music of Bastion"] = {
-						["min"] = 605,
-						["crits"] = 0,
-						["max"] = 605,
-						["healing"] = 605,
-						["overhealing"] = 0,
 						["hits"] = 1,
 					},
 				},
