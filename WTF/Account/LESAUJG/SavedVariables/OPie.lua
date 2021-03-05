@@ -267,6 +267,11 @@ OneRing_Config = {
 					181468, -- [2]
 					["sliceToken"] = "ABueldpZIqr",
 				}, -- [8]
+				{
+					"item", -- [1]
+					172041, -- [2]
+					["sliceToken"] = "ABuelxYkcHe",
+				}, -- [9]
 				["save"] = true,
 				["name"] = "Food",
 				["limit"] = "Bracnar-SistersofElune",
