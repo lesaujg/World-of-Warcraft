@@ -795,6 +795,7 @@ function WQT:TrackDDFunc(ddFrame)
 			info.text = TRACK_QUEST;
 			info.func = function()
 						C_QuestLog.AddWorldQuestWatch(questID, Enum.QuestWatchType.Manual);
+						C_SuperTrack.SetSuperTrackedQuestID(questID);
 						if WQT_WorldQuestFrame:GetAlpha() > 0 then 
 							WQT_QuestScrollFrame:DisplayQuestList();
 						end
@@ -816,9 +817,20 @@ function WQT:TrackDDFunc(ddFrame)
 	
 	ddFrame:AddButton(info);
 	
+	-- LFG if possible
+	info = ddFrame:CreateButtonInfo("option");
+	if (WQT_WorldQuestFrame:ShouldAllowLFG(questInfo)) then
+		info.text = OBJECTIVES_FIND_GROUP;
+		info.func = function()
+			WQT_WorldQuestFrame:SearchGroup(questInfo);
+		end
+		ddFrame:AddButton(info);
+	end
+	
 	-- Dislike toggle
 	info = ddFrame:CreateButtonInfo("checkbox");
 	
+	info.keepShownOnClick = false;
 	info.text = _L["UNINTERESTED"];
 	info.func = function()
 			local dislike = not WQT_Utils:QuestIsDisliked(questID);
@@ -831,16 +843,6 @@ function WQT:TrackDDFunc(ddFrame)
 			end
 	
 	ddFrame:AddButton(info);
-	
-	-- LFG if possible
-	info = ddFrame:CreateButtonInfo("option");
-	if (WQT_WorldQuestFrame:ShouldAllowLFG(questInfo)) then
-		info.text = OBJECTIVES_FIND_GROUP;
-		info.func = function()
-			WQT_WorldQuestFrame:SearchGroup(questInfo);
-		end
-		ddFrame:AddButton(info);
-	end
 	
 	WQT_WorldQuestFrame:TriggerCallback("InitTrackDropDown", ddFrame)
 	
@@ -2254,7 +2256,8 @@ function WQT_CoreMixin:OnLoad()
 			end
 		end);
 
-	LFGListSearchPanelScrollFrame.StartGroupButton:HookScript("OnClick", function() 
+	local LFGParent =  GetBuildInfo() < "9.0.5" and LFGListSearchPanelScrollFrame or LFGListSearchPanelScrollFrameScrollChild;
+	LFGParent.StartGroupButton:HookScript("OnClick", function() 
 			-- If we are creating a group because we couldn't find one, show the info on the create frame
 			if InCombatLockdown() then return; end
 			local searchString = LFGListFrame.SearchPanel.SearchBox:GetText();
@@ -2487,6 +2490,8 @@ end
 
 -- Only allow LFG for quests that would actually allow it
 function WQT_CoreMixin:ShouldAllowLFG(questInfo)
+	if (not questInfo) then return false; end
+
 	local tagInfo;
 	if (type(questInfo) == "number") then
 		tagInfo = C_QuestLog.GetQuestTagInfo(questInfo);

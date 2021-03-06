@@ -96,16 +96,16 @@ OneRing_Config = {
 					["sliceToken"] = "OPCCTb",
 				}, -- [3]
 				{
-					["id"] = "/cast [mod] {{spell:13262}}; {{spell:7411/51313}}",
 					["sliceToken"] = "OPCCTe",
+					["id"] = "/cast [mod] {{spell:13262}}; {{spell:7411/51313}}",
 				}, -- [4]
 				{
 					["id"] = "/cast {{spell:2259/51304}}",
 					["sliceToken"] = "OPCCTa",
 				}, -- [5]
 				{
-					["id"] = "/cast [mod] {{spell:818}}; {{spell:2550/51296}}",
 					["sliceToken"] = "OPCCTc",
+					["id"] = "/cast [mod] {{spell:818}}; {{spell:2550/51296}}",
 				}, -- [6]
 				{
 					["sliceToken"] = "OPCCTg",
@@ -124,8 +124,8 @@ OneRing_Config = {
 					["sliceToken"] = "OPCCTi",
 				}, -- [10]
 				{
-					["id"] = "/cast [mod] {{spell:80451}}; {{spell:78670/89722}}",
 					["sliceToken"] = "OPCCTr",
+					["id"] = "/cast [mod] {{spell:80451}}; {{spell:78670/89722}}",
 				}, -- [11]
 				{
 					["id"] = 53428,
@@ -164,24 +164,24 @@ OneRing_Config = {
 			},
 			["Pets"] = {
 				{
-					["id"] = 883,
 					["sliceToken"] = "ABueyhiySOd",
+					["id"] = 883,
 				}, -- [1]
 				{
-					["id"] = 83242,
 					["sliceToken"] = "ABueyhiySO3",
+					["id"] = 83242,
 				}, -- [2]
 				{
-					["id"] = 83243,
 					["sliceToken"] = "ABueyhiySOs",
+					["id"] = 83243,
 				}, -- [3]
 				{
-					["id"] = 83244,
 					["sliceToken"] = "ABueyhiySOa",
+					["id"] = 83244,
 				}, -- [4]
 				{
-					["id"] = 83245,
 					["sliceToken"] = "ABueyhiySOp",
+					["id"] = 83245,
 				}, -- [5]
 				["name"] = "Pets",
 				["save"] = true,
@@ -219,10 +219,10 @@ OneRing_Config = {
 					156833, -- [2]
 					["sliceToken"] = "ABuekW6rpCe",
 				}, -- [6]
-				["name"] = "Useful Items",
+				["limit"] = "Bracnar-SistersofElune",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["limit"] = "Bracnar-SistersofElune",
+				["name"] = "Useful Items",
 			},
 			["Teleport"] = {
 				{
@@ -317,8 +317,8 @@ OneRing_Config = {
 				{
 					"item", -- [1]
 					172049, -- [2]
-					["show"] = "[spec:255/253] hide;",
 					["sliceToken"] = "ABuekN1Wpxj",
+					["show"] = "[spec:255/253] hide;",
 				}, -- [4]
 				{
 					"item", -- [1]
@@ -346,8 +346,8 @@ OneRing_Config = {
 					172041, -- [2]
 					["sliceToken"] = "ABuelxYkcHe",
 				}, -- [9]
-				["save"] = true,
 				["limit"] = "Bracnar-SistersofElune",
+				["save"] = true,
 				["name"] = "Food",
 			},
 		},

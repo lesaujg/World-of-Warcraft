@@ -76,6 +76,13 @@ VER 3 010000000000005C "bm_Kill Command" "INV_Misc_QuestionMark"
 /target [noexists] pettarget
 /cast Kill Command
 END
+VER 3 0100000000000075 "mm_AimShot" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/click PetActionButton9
+/petattack
+/target [noexists] pettarget
+/cast Aimed Shot
+END
 VER 3 0100000000000074 "mm_Double Tap" "INV_Misc_QuestionMark"
 #showtooltip Double Tap
 /use [btn:1]14

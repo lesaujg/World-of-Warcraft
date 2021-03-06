@@ -96,7 +96,8 @@ VER 3 0100000000000071 "mm_Trueshot" "INV_Misc_QuestionMark"
 /cast Double Tap
 END
 VER 3 0100000000000073 "mm_Volley" "INV_Misc_QuestionMark"
-#showtooltip
+#showtooltip Volley
+/cast [@focus,help,nodead][@pet,nodead,exists] Misdirection
 /cast [btn:1, @cursor][btn:2] Volley
 END
 VER 3 0100000000000070 "Soulforge" "INV_MISC_QUESTIONMARK"
