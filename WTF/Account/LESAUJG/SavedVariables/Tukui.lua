@@ -2726,13 +2726,13 @@ TukuiGold = {
 		["Mandelbrot"] = 7212410,
 		["Torinar"] = 68237357,
 		["Orig"] = 69862866,
-		["Clothgar"] = 22688185862,
-		["Herbinator"] = 3266685,
+		["Clothgar"] = 23583202272,
+		["Herbinator"] = 3266505,
 		["Torinara"] = 68129856,
 		["Galinar"] = 72855272,
 		["Belrath"] = 58217525,
 		["Palani"] = 61017599,
-		["Bracnar"] = 320145066,
+		["Bracnar"] = 347459556,
 		["Uldaris"] = 110391403,
 	},
 }
@@ -2991,192 +2991,192 @@ TukuiSettingsPerCharacter = {
 }
 TukuiChatHistory = {
 	{
-		"tov'osh", -- [1]
-		"Fadessa-Area52", -- [2]
-		"Orcish", -- [3]
+		"ty", -- [1]
+		"Twofiftyfive-Stormrage", -- [2]
+		"", -- [3]
 		"", -- [4]
-		"Fadessa-Area52", -- [5]
+		"Twofiftyfive-Stormrage", -- [5]
 		"", -- [6]
 		0, -- [7]
 		0, -- [8]
 		"", -- [9]
 		0, -- [10]
-		116, -- [11]
-		"Player-3676-0AFF8D21", -- [12]
+		64, -- [11]
+		"Player-60-0E10A641", -- [12]
 		0, -- [13]
 		false, -- [14]
 		false, -- [15]
 		false, -- [16]
 		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1614954681,
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1614967115,
 	}, -- [1]
 	{
-		"thanks for listing!", -- [1]
-		"Kelda-Tanaris", -- [2]
+		"ty", -- [1]
+		"Kazbekkah-Dalaran", -- [2]
 		"", -- [3]
 		"", -- [4]
-		"Kelda-Tanaris", -- [5]
+		"Kazbekkah-Dalaran", -- [5]
 		"", -- [6]
 		0, -- [7]
 		0, -- [8]
 		"", -- [9]
 		0, -- [10]
-		115, -- [11]
-		"Player-158-0866B788", -- [12]
+		61, -- [11]
+		"Player-3683-0B8A0BDE", -- [12]
 		0, -- [13]
 		false, -- [14]
 		false, -- [15]
 		false, -- [16]
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
-		[31] = 1614954680,
+		[31] = 1614967113,
 	}, -- [2]
 	{
-		"Everyone is here", -- [1]
-		"Belrath-SistersofElune", -- [2]
+		"ty all", -- [1]
+		"Ezekielle-Icecrown", -- [2]
 		"", -- [3]
 		"", -- [4]
-		"Belrath-SistersofElune", -- [5]
+		"Ezekielle-Icecrown", -- [5]
 		"", -- [6]
 		0, -- [7]
 		0, -- [8]
 		"", -- [9]
 		0, -- [10]
-		113, -- [11]
-		"Player-125-09A9C231", -- [12]
+		59, -- [11]
+		"Player-104-06465B5C", -- [12]
 		0, -- [13]
 		false, -- [14]
 		false, -- [15]
 		false, -- [16]
 		false, -- [17]
 		[30] = "CHAT_MSG_RAID",
-		[31] = 1614954652,
+		[31] = 1614967111,
 	}, -- [3]
 	{
-		"Tal rini al'shar su shar ishura no ", -- [1]
-		"Feyrore-Spirestone", -- [2]
-		"Thalassian", -- [3]
-		"", -- [4]
-		"Feyrore-Spirestone", -- [5]
-		"", -- [6]
-		0, -- [7]
-		0, -- [8]
-		"", -- [9]
-		0, -- [10]
-		112, -- [11]
-		"Player-127-089CF966", -- [12]
-		0, -- [13]
-		false, -- [14]
-		false, -- [15]
-		false, -- [16]
-		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1614954648,
-	}, -- [4]
-	{
-		"idc lots of people have come already seems good to let it die", -- [1]
-		"Ynes-Proudmoore", -- [2]
+		"ty", -- [1]
+		"Naryun-Dalaran", -- [2]
 		"", -- [3]
 		"", -- [4]
-		"Ynes-Proudmoore", -- [5]
+		"Naryun-Dalaran", -- [5]
 		"", -- [6]
 		0, -- [7]
 		0, -- [8]
 		"", -- [9]
 		0, -- [10]
-		111, -- [11]
-		"Player-5-0BC3E532", -- [12]
+		56, -- [11]
+		"Player-3683-0BAF9199", -- [12]
 		0, -- [13]
 		false, -- [14]
 		false, -- [15]
 		false, -- [16]
 		false, -- [17]
-		[30] = "CHAT_MSG_RAID_LEADER",
-		[31] = 1614954642,
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1614967109,
+	}, -- [4]
+	{
+		"indeed, thanks a lot for listing", -- [1]
+		"Gorda-Lightbringer", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"Gorda-Lightbringer", -- [5]
+		"", -- [6]
+		0, -- [7]
+		0, -- [8]
+		"", -- [9]
+		0, -- [10]
+		27, -- [11]
+		"Player-3694-06BF3DBD", -- [12]
+		0, -- [13]
+		false, -- [14]
+		false, -- [15]
+		false, -- [16]
+		false, -- [17]
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1614967097,
 	}, -- [5]
 	{
-		"ragath'a rega", -- [1]
-		"Fadessa-Area52", -- [2]
-		"Orcish", -- [3]
+		"Interrupted Soundless's |cff71d5ff|Hspell:304349:0|h[Pacifying Screech]|h|r!", -- [1]
+		"Kazbekkah-Dalaran", -- [2]
+		"", -- [3]
 		"", -- [4]
-		"Fadessa-Area52", -- [5]
+		"Kazbekkah-Dalaran", -- [5]
 		"", -- [6]
 		0, -- [7]
 		0, -- [8]
 		"", -- [9]
 		0, -- [10]
-		110, -- [11]
-		"Player-3676-0AFF8D21", -- [12]
+		26, -- [11]
+		"Player-3683-0B8A0BDE", -- [12]
 		0, -- [13]
 		false, -- [14]
 		false, -- [15]
 		false, -- [16]
 		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1614954641,
+		[30] = "CHAT_MSG_EMOTE",
+		[31] = 1614967095,
 	}, -- [6]
 	{
-		"GUL'ROK RAGATH'A", -- [1]
-		"Givecedarmm-Antonidas", -- [2]
-		"Orcish", -- [3]
+		"gl everyone!", -- [1]
+		"Gnomeofdeath-Firetree", -- [2]
+		"", -- [3]
 		"", -- [4]
-		"Givecedarmm-Antonidas", -- [5]
+		"Gnomeofdeath-Firetree", -- [5]
 		"", -- [6]
 		0, -- [7]
 		0, -- [8]
 		"", -- [9]
 		0, -- [10]
-		109, -- [11]
-		"Player-84-09CE8664", -- [12]
+		25, -- [11]
+		"Player-127-08AD183E", -- [12]
 		0, -- [13]
 		false, -- [14]
 		false, -- [15]
 		false, -- [16]
 		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1614954635,
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1614967087,
 	}, -- [7]
 	{
-		"MAKA", -- [1]
-		"Givecedarmm-Antonidas", -- [2]
-		"Orcish", -- [3]
+		"ty for list! gl", -- [1]
+		"Kazbekkah-Dalaran", -- [2]
+		"", -- [3]
 		"", -- [4]
-		"Givecedarmm-Antonidas", -- [5]
+		"Kazbekkah-Dalaran", -- [5]
 		"", -- [6]
 		0, -- [7]
 		0, -- [8]
 		"", -- [9]
 		0, -- [10]
-		108, -- [11]
-		"Player-84-09CE8664", -- [12]
+		24, -- [11]
+		"Player-3683-0B8A0BDE", -- [12]
 		0, -- [13]
 		false, -- [14]
 		false, -- [15]
 		false, -- [16]
 		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1614954631,
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1614967087,
 	}, -- [8]
 	{
-		" GESH", -- [1]
-		"Givecedarmm-Antonidas", -- [2]
-		"Orcish", -- [3]
+		"gl all", -- [1]
+		"Twofiftyfive-Stormrage", -- [2]
+		"", -- [3]
 		"", -- [4]
-		"Givecedarmm-Antonidas", -- [5]
+		"Twofiftyfive-Stormrage", -- [5]
 		"", -- [6]
 		0, -- [7]
 		0, -- [8]
 		"", -- [9]
 		0, -- [10]
-		107, -- [11]
-		"Player-84-09CE8664", -- [12]
+		23, -- [11]
+		"Player-60-0E10A641", -- [12]
 		0, -- [13]
 		false, -- [14]
 		false, -- [15]
 		false, -- [16]
 		false, -- [17]
-		[30] = "CHAT_MSG_SAY",
-		[31] = 1614954630,
+		[30] = "CHAT_MSG_RAID",
+		[31] = 1614967083,
 	}, -- [9]
 }
