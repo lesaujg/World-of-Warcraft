@@ -219,10 +219,10 @@ OneRing_Config = {
 					156833, -- [2]
 					["sliceToken"] = "ABuekW6rpCe",
 				}, -- [6]
-				["name"] = "Useful Items",
+				["limit"] = "Bracnar-SistersofElune",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["limit"] = "Bracnar-SistersofElune",
+				["name"] = "Useful Items",
 			},
 			["Food"] = {
 				{
