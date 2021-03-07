@@ -39,7 +39,7 @@ BWQDB = {
 		},
 	},
 	["global"] = {
-		["versionCheck"] = "9.0.06.2",
+		["versionCheck"] = "9.0.06.4",
 		["profiles"] = {
 			[0] = {
 				["name"] = "Default",
