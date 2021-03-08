@@ -47,12 +47,12 @@ BWQDB = {
 				},
 				["list"] = {
 				},
+				["external"] = {
+				},
 				["pin"] = {
 					["continentVisible"] = 3,
 					["typeIcon"] = false,
 					["ringType"] = 2,
-				},
-				["external"] = {
 				},
 				["general"] = {
 					["sl_genericAnimaIcons"] = true,
