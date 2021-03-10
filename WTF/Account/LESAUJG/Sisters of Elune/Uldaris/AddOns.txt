@@ -230,7 +230,7 @@ DBM-Party-BfA: disabled
 DBM-Nyalotha: disabled
 DBM-EternalPalace: disabled
 DBM-Uldir: disabled
-SilverDragon: enabled
+SilverDragon: disabled
 HandyNotes_VisionsOfNZoth: enabled
 PetTracker: disabled
 PetTracker_Battle: disabled

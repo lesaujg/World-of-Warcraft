@@ -7,7 +7,7 @@ HandyNotes_MechagonAndNazjatar: enabled
 HandyNotes_DraenorTreasures: disabled
 Quartz: enabled
 TomTom: disabled
-SilverDragon: enabled
+SilverDragon: disabled
 AngryWorldQuests: enabled
 SavedInstances: enabled
 FactionAddict: disabled

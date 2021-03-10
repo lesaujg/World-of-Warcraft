@@ -1,9 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0415,
-	["LastPlayerFullName"] = "Torinar-Sisters of Elune",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
+	["LastVersion"] = 2.0416,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173457,
@@ -93,6 +90,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:166898::::::::50:71::81:3:5844:1527:4786:1:28:1401:::|h[Sentinel's Blade]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Torinar-Sisters of Elune",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
