@@ -89,7 +89,7 @@ MrrlsItemInformation: disabled
 SmexyMats: enabled
 DBM-Nyalotha: disabled
 DBM-EternalPalace: disabled
-SilverDragon: disabled
+SilverDragon: enabled
 HandyNotes_VisionsOfNZoth: enabled
 HandyNotes_DraenorTreasures: disabled
 Quartz: enabled
@@ -109,3 +109,12 @@ DBM-Shadowlands: disabled
 SharedMedia_Causese: disabled
 TellMeWhen: disabled
 TellMeWhen_Options: disabled
+SilverDragon_BurningCrusade: disabled
+SilverDragon_Cataclysm: disabled
+SilverDragon_Legion: disabled
+SilverDragon_Mists: disabled
+SilverDragon_Shadowlands: disabled
+SilverDragon_Vanilla: disabled
+SilverDragon_Warlords: disabled
+SilverDragon_Wrath: disabled
+SilverDragon_Overlay: disabled

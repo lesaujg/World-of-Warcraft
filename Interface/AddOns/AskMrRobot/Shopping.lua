@@ -129,8 +129,10 @@ function Amr:ShowShopWindow()
 			end
 			if _selectedSetup and not playerData.setups[_selectedSetup] then					
 				_selectedSetup = nil
-			else
+			elseif _selectedSetup then
 				_selectedSetup = player.Name .. "-" .. player.Realm .. "@" .. _selectedSetup
+			else
+				_selectedSetup = nil
 			end
 		end
 		

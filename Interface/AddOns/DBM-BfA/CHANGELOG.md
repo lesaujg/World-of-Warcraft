@@ -1,11 +1,20 @@
 # <DBM> World Bosses (BfA)
 
-## [r1](https://github.com/DeadlyBossMods/DBM-BfA/tree/r1) (2020-11-17)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-BfA/commits/r1) [Previous Releases](https://github.com/DeadlyBossMods/DBM-BfA/releases)
+## [r2](https://github.com/DeadlyBossMods/DBM-BfA/tree/r2) (2021-03-09)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-BfA/compare/r1...r2) [Previous Releases](https://github.com/DeadlyBossMods/DBM-BfA/releases)
 
-- Bump TOCs  
-- test new push with all api keys plugged in to travis  
-- Set curse project ID  
-- Fix package meta to comform to what packager expects, while also taking oportunity to shrink the mods name anyways  
-- Fix pkgmeta  
-- Welcome to githoob  
+- TOC Bump  
+- Localized mod names in Russian (#2)  
+- LuaCheck cleanup (#1)  
+- Silly git?  
+- Revert "Ci updates from master"  
+    This reverts commit 891ad7bc6f50c40e3e66b307be0fee0f236e2593, reversing  
+    changes made to 243376d3b70cd39beebe51e662567b3c78df1af1.  
+- Ci updates from master  
+- Update CI  
+- Update README.md  
+- Delete .travis.yml  
+- Create ci.yml  
+- Fixed  bug that caused twitch client to infinite loop update BfA mods  
+    Added WoWI project ID for auto packaging to WoWI  
+- This DOES fix pkgmeta  

@@ -228,7 +228,7 @@ DBM-Party-BfA: disabled
 DBM-Nyalotha: disabled
 DBM-EternalPalace: disabled
 DBM-Uldir: disabled
-SilverDragon: disabled
+SilverDragon: enabled
 HandyNotes_VisionsOfNZoth: enabled
 CurrencyTracking: disabled
 WeakAurasArchive: disabled
@@ -242,3 +242,12 @@ DBM-Shadowlands: disabled
 SharedMedia_Causese: disabled
 TellMeWhen: disabled
 TellMeWhen_Options: disabled
+SilverDragon_BurningCrusade: disabled
+SilverDragon_Cataclysm: disabled
+SilverDragon_Legion: disabled
+SilverDragon_Mists: disabled
+SilverDragon_Shadowlands: disabled
+SilverDragon_Vanilla: disabled
+SilverDragon_Warlords: disabled
+SilverDragon_Wrath: disabled
+SilverDragon_Overlay: disabled

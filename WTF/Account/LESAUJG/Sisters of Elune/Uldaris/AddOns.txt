@@ -230,7 +230,7 @@ DBM-Party-BfA: disabled
 DBM-Nyalotha: disabled
 DBM-EternalPalace: disabled
 DBM-Uldir: disabled
-SilverDragon: disabled
+SilverDragon: enabled
 HandyNotes_VisionsOfNZoth: enabled
 PetTracker: disabled
 PetTracker_Battle: disabled
@@ -250,3 +250,12 @@ DBM-Shadowlands: disabled
 SharedMedia_Causese: disabled
 DBM-CastleNathria: disabled
 CurrencyTracking: disabled
+SilverDragon_BurningCrusade: disabled
+SilverDragon_Cataclysm: disabled
+SilverDragon_Legion: disabled
+SilverDragon_Mists: disabled
+SilverDragon_Shadowlands: disabled
+SilverDragon_Vanilla: disabled
+SilverDragon_Warlords: disabled
+SilverDragon_Wrath: disabled
+SilverDragon_Overlay: disabled
