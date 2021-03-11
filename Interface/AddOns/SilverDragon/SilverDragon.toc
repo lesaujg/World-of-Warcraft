@@ -1,10 +1,10 @@
-﻿## Interface: 90002
+﻿## Interface: 90005
 ## Title: SilverDragon
 ## Notes: Remember where rares were
 ## Title-zhTW: SilverDragon
 ## Notes-zhTW: 協助記錄稀有怪位置,以及MouseOver時提示你.
 ## Notes-zhCN: 记录稀有怪物位置。
-## Version: v90002.15.1
+## Version: v90005.0
 ## Author: Kemayo
 ## eMail: kemayo at gmail dot com
 ## X-Category: Interface Enhancements
@@ -25,6 +25,7 @@ achievements.lua
 loot.lua
 slash.lua
 config.lua
+util.lua
 
 scan\targets.lua
 scan\macro.lua
@@ -39,6 +40,7 @@ outputs\sync.lua
 outputs\marker.lua
 
 targets\module.lua
+targets\queue.lua
 targets\popup.lua
 targets\config.lua
 targets\looks\looks.xml

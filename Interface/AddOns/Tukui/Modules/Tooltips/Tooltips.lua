@@ -105,12 +105,21 @@ function Tooltip:OnTooltipSetUnit()
 	
 	if Name then
 		local Extra = ""
-		local GuildColor = IsEnemy and "|cffff0000" or "|cff00ff00"
 		
-		if (UnitIsPlayer(Unit) and Guild) then
-			Extra = GuildColor.."["..Guild.."]|r"
+		if (UnitIsPlayer(Unit) and not Realm) then
+			Realm = T.MyRealm
 		end
-
+		
+		if Realm then
+			local RealmColor = IsEnemy and "|cffDE5E5E" or "|cff4AAB4D"
+			
+			Extra = RealmColor.."["..Realm.."]|r"
+		end
+		
+		if C.Tooltips.DisplayTitle and Title then
+			Name = Title
+		end
+		
 		Line1:SetFormattedText("%s%s%s %s", Color, Name, "|r", Extra)
 	end
 
@@ -129,7 +138,7 @@ function Tooltip:OnTooltipSetUnit()
 		
 		if (UnitIsPlayer(Unit) and Guild) then
 			if Line:GetText():find(Guild) then
-				Line:SetText(Realm)
+				Line:SetText("|cffff8000"..Guild.."|r")
 			end
 		end
 		
@@ -204,6 +213,7 @@ function Tooltip:Skin(style)
 	end
 	
 	if (not self.IsSkinned) then
+		self:StripTextures()
 		self:CreateBackdrop()
 		self:CreateShadow()
 		

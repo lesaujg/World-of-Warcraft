@@ -261,6 +261,7 @@ C["Raid"] = {
 
 C["Tooltips"] = {
 	["Enable"] = true,
+	["DisplayTitle"] = false,
 	["HideInCombat"] = false,
 	["AlwaysCompareItems"] = false,
 	["UnitHealthText"] = true,
@@ -290,8 +291,23 @@ C["UnitFrames"] = {
 	["HealComm"] = true,
 	["PlayerAuraBars"] = false,
 	["ScrollingCombatText"] = false,
-	["ScrollingCombatTextFontSize"] = 26,
+	["ScrollingCombatTextIcon"] = true,
+	["ScrollingCombatTextFontSize"] = 22,
+	["ScrollingCombatTextRadius"] = 120,
+	["ScrollingCombatTextDisplayTime"] = 1.5,
 	["ScrollingCombatTextFont"] = "Tukui Outline",
+	["ScrollingCombatTextAnim"] = {
+		["Options"] = {
+			["diagonal"] = "diagonal",
+			["fountain"] = "fountain",
+			["horizontal"] = "horizontal",
+			["random"] = "random",
+			["static"] = "static",
+			["vertical"] = "vertical",
+		},
+
+		["Value"] = "fountain",
+	},
 	["StatusBarBackgroundMultiplier"] = 25,
 	["Portrait2D"] = true,
 	["OOCNameLevel"] = true,

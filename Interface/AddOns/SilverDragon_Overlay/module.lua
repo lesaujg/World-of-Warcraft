@@ -29,6 +29,7 @@ function module:OnInitialize()
                 icon_scale = 1,
                 icon_alpha = 1,
                 routes = true,
+                zone_disabled = {},
             },
             minimap = {
                 enabled = true,
@@ -224,7 +225,7 @@ function module:ShowTooltip(pin)
     if id and ns.mobdb[id] then
         tooltip:AddLine(core:GetMobLabel(id))
         if ns.mobdb[id].notes then
-            tooltip:AddDoubleLine("Note", ns.mobdb[id].notes)
+            tooltip:AddDoubleLine("Note", (core:RenderString(ns.mobdb[id].notes)))
         end
         tooltip:AddDoubleLine("Last seen", core:FormatLastSeen(core.db.global.mob_seen[id]))
         if pin.config.tooltip_completion then
@@ -256,11 +257,11 @@ function module:ShowTooltip(pin)
     end
 
     if pin.config.tooltip_help then
-        tooltip:AddLine(escapes.keyDown .. ALT_KEY_TEXT .. " + " .. escapes.leftClick .. "  " .. MAP_PIN )
+        tooltip:AddDoubleLine(ALT_KEY_TEXT .. " + " .. escapes.leftClick, MAP_PIN, 0, 1, 1, 0, 1, 1 )
         if C_Map.CanSetUserWaypointOnMap(pin.uiMapID) then
-            tooltip:AddLine(escapes.keyDown .. SHIFT_KEY_TEXT .. " + " .. escapes.leftClick .. "  " .. TRADESKILL_POST )
+            tooltip:AddDoubleLine(SHIFT_KEY_TEXT .. " + " .. escapes.leftClick, TRADESKILL_POST, 0, 1, 1, 0, 1, 1 )
         end
-        tooltip:AddLine(escapes.keyDown .. SHIFT_KEY_TEXT .. " + " .. escapes.rightClick .. "  " .. HIDE )
+        tooltip:AddDoubleLine(SHIFT_KEY_TEXT .. " + " .. escapes.rightClick, HIDE, 0, 1, 1, 0, 1, 1 )
     end
 
     tooltip:Show()

@@ -13,14 +13,16 @@ local escapes = core.escapes
 function module:ApplyLook(popup, look)
 	-- Many values cribbed from AlertFrameSystem.xml
 	(self.Looks[look] or self.Looks.SilverDragon)(self, popup, self.db.profile.style_options[look])
+	popup.look = look
+end
+function module:ResetLook(popup)
+	if not (popup.look and self.LookReset[popup.look]) then return end
+	self.LookReset[popup.look](self, popup, self.db.profile.style_options[popup.look])
 end
 
 function module:ShowFrame(data)
 	if not (data and data.id) then return end
-	if not self.popup then
-		self.popup = self:CreatePopup()
-	end
-	local popup = self.popup
+	local popup = self:Acquire(self.db.profile.style)
 	popup.data = data
 
 	if data.type == "mob" then
@@ -44,6 +46,8 @@ function module:ShowFrame(data)
 	popup:Show()
 
 	self:SetModel(popup)
+
+	return popup
 end
 
 function module:RefreshData(popup)
@@ -168,10 +172,9 @@ function module:SizeModel(popup, offset, borders)
 end
 
 -- copy the Button metatable on to this, because otherwise we lose all regular frame methods
-local PopupClass = setmetatable({}, getmetatable(CreateFrame("Button")))
-local PopupClassMetatable = {__index = PopupClass}
+local PopupMixin = {}
 
-function module:CreatePopup()
+function module:CreatePopup(look)
 	-- Set up the frame
 	local name = "SilverDragonPopupButton"
 	do
@@ -182,22 +185,18 @@ function module:CreatePopup()
 		end
 	end
 	local popup = CreateFrame("Button", name, UIParent, "SecureActionButtonTemplate, SecureHandlerShowHideTemplate, BackdropTemplate")
-	module.popup = popup
-	setmetatable(popup, PopupClassMetatable)
+	Mixin(popup, PopupMixin)
 
 	popup:SetSize(276, 96)
-	-- TODO: a stack
-	popup:SetPoint("CENTER", self.anchor, "CENTER")
+
 	popup:SetScale(self.db.profile.anchor.scale)
 	popup:SetMovable(true)
 	popup:SetClampedToScreen(true)
-	popup:SetFrameStrata("DIALOG")
-	popup:SetFrameLevel(self.anchor:GetFrameLevel() + 5)
 	popup:RegisterForClicks("AnyUp")
 
 	popup:SetAttribute("type", "macro")
-	popup:SetAttribute("_onshow", "self:Enable()")
-	popup:SetAttribute("_onhide", "self:Disable()")
+	-- popup:SetAttribute("_onshow", "self:Enable()")
+	-- popup:SetAttribute("_onhide", "self:Disable()")
 	-- Can't do type=click + clickbutton=close because then it'd be right-clicking the close button which also ignores the mob
 	popup:SetAttribute("macrotext2", "/click " .. popup:GetName() .. "CloseButton")
 
@@ -351,7 +350,7 @@ function module:CreatePopup()
 	popup.lootIcon:SetScript("OnClick", popup.scripts.LootOnClick)
 	popup.lootIcon:SetScript("OnHide", popup.scripts.LootOnHide)
 
-	self:ApplyLook(popup, self.db.profile.style)
+	self:ApplyLook(popup, look)
 
 	return popup
 end
@@ -372,12 +371,12 @@ function CreateAnimationAlpha(animationGroup, fromAlpha, toAlpha, duration, star
 	return animation
 end
 
-function PopupClass:SetRaidIcon(icon)
+function PopupMixin:SetRaidIcon(icon)
 	SetRaidTargetIconTexture(self.raidIcon, icon)
 	self.raidIcon:Show()
 end
 
-function PopupClass:DoIgnore()
+function PopupMixin:DoIgnore()
 	if not (self.data and self.data.id) then return end
 	if self.data.type == "loot" then
 		local vignette = core:GetModule("Scan_Vignettes", true)
@@ -389,7 +388,7 @@ function PopupClass:DoIgnore()
 	end
 end
 
-function PopupClass:HideWhenPossible(automatic)
+function PopupMixin:HideWhenPossible(automatic)
 	-- this is for animations that want to hide the popup itself, since it can't be touched in-combat
 	self.automaticClose = automatic
 	if InCombatLockdown() then
@@ -399,7 +398,29 @@ function PopupClass:HideWhenPossible(automatic)
 	end
 end
 
-PopupClass.scripts = {
+function PopupMixin:Reset()
+	-- note to self: this gets called as part of a chain from OnHide, so we
+	-- can't do anything which might trip in-combat lockdowns here.
+	-- In particular, this means that anything which needs to use this post-
+	-- reset will have to ClearAllPoints manually
+	self.data = nil
+
+	self.glow.animIn:Stop()
+	self.shine.animIn:Stop()
+	self.dead.animIn:Stop()
+	self.animIn:Stop()
+	self.animFade:Stop()
+
+	self.raidIcon:Hide()
+	self.lootIcon:Hide()
+	self.dead:SetAlpha(0)
+	self.model:ClearModel()
+
+	self:UnregisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
+	self:UnregisterEvent("PLAYER_REGEN_ENABLED")
+end
+
+PopupMixin.scripts = {
 	OnEvent = function(self, event, ...)
 		self[event](self, event, ...)
 	end,
@@ -411,13 +432,12 @@ PopupClass.scripts = {
 
 		local anchor = (self:GetCenter() < (UIParent:GetWidth() / 2)) and "ANCHOR_RIGHT" or "ANCHOR_LEFT"
 		GameTooltip:SetOwner(self, anchor, 0, -60)
-		GameTooltip:AddLine(escapes.leftClick .. " " .. TARGET)
-		GameTooltip:AddLine(escapes.keyDown .. ALT_KEY_TEXT .. " + " .. escapes.leftClick .. " + " .. DRAG_MODEL .. "  " .. MOVE_FRAME)
-		GameTooltip:AddLine(escapes.keyDown .. CTRL_KEY_TEXT .. " + " .. escapes.leftClick .. "  " .. MAP_PIN )
+		GameTooltip:AddDoubleLine(escapes.leftClick .. " " .. TARGET, escapes.rightClick .. " " .. CLOSE)
+		GameTooltip:AddDoubleLine(ALT_KEY_TEXT .. " + " .. escapes.leftClick .. " + " .. DRAG_MODEL, MOVE_FRAME)
+		GameTooltip:AddDoubleLine(CTRL_KEY_TEXT .. " + " .. escapes.leftClick, MAP_PIN )
 		if C_Map.CanSetUserWaypointOnMap(self.data.zone) and self.data.x > 0 and self.data.y > 0 then
-			GameTooltip:AddLine(escapes.keyDown .. SHIFT_KEY_TEXT .. " + " .. escapes.leftClick .. "  " .. TRADESKILL_POST )
+			GameTooltip:AddDoubleLine(SHIFT_KEY_TEXT .. " + " .. escapes.leftClick, TRADESKILL_POST )
 		end
-		GameTooltip:AddLine(escapes.rightClick .. " " .. CLOSE)
 		GameTooltip:Show()
 
 		self.glow.animIn:Stop() -- in case
@@ -451,11 +471,14 @@ PopupClass.scripts = {
 		end
 	end,
 	OnMouseDown = function(self, button)
+		if self.waitingToHide then
+			return
+		end
 		if button == "RightButton" then
 			-- handled in the secure click handler
 			return
 		elseif IsControlKeyDown() then
-			module:Point()
+			module:Point(self.data)
 		elseif IsShiftKeyDown() then
 			-- worldmap:uiMapId:x:y
 			local data = self.data
@@ -472,11 +495,19 @@ PopupClass.scripts = {
 		module.anchor:StopMovingOrSizing()
 		if not InCombatLockdown() then
 			LibWindow.SavePosition(module.anchor)
+			module:Reflow()
 		end
 	end,
 	-- hooked:
 	OnShow = function(self)
+		if not self.data then
+			-- Things which show/hide UIParent (cinematics) *might* get us here without data
+			return self:Hide()
+		end
+		module:ResetLook(self)
+
 		self:SetAlpha(1)
+		self:SetScale(module.db.profile.anchor.scale)
 
 		self.glow:Show()
 		self.glow.animIn:Play()
@@ -501,21 +532,10 @@ PopupClass.scripts = {
 		core.events:Fire("PopupShow", self.data.id, self.data.zone, self.data.x, self.data.y, self)
 	end,
 	OnHide = function(self)
-		self.glow.animIn:Stop()
-		self.shine.animIn:Stop()
-		self.dead.animIn:Stop()
-		self.animIn:Stop()
-		self.animFade:Stop()
-
-		self.raidIcon:Hide()
-		self.lootIcon:Hide()
-		self.dead:SetAlpha(0)
-		self.model:ClearModel()
-
-		self:UnregisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
-		self:UnregisterEvent("PLAYER_REGEN_ENABLED")
-
-		core.events:Fire("PopupHide", self.data.id, self.data.zone, self.data.x, self.data.y, self.automaticClose)
+		if self.data then
+			-- Things which show/hide UIParent (cinematics) *might* get us here without data
+			core.events:Fire("PopupHide", self.data.id, self.data.zone, self.data.x, self.data.y, self.automaticClose)
+		end
 
 		if not InCombatLockdown() then
 			LibWindow.SavePosition(module.anchor)
@@ -523,9 +543,14 @@ PopupClass.scripts = {
 
 		self.waitingToHide = false
 		self.automaticClose = nil
+
+		module:Release(self)
 	end,
 	-- Close button
 	CloseOnEnter = function(self)
+		if self:GetParent().waitingToHide then
+			return
+		end
 		local anchor = (self:GetCenter() < (UIParent:GetWidth() / 2)) and "ANCHOR_RIGHT" or "ANCHOR_LEFT"
 		GameTooltip:SetOwner(self, anchor, 0, 0)
 		GameTooltip:AddLine(escapes.leftClick .. " " .. CLOSE)
@@ -537,6 +562,9 @@ PopupClass.scripts = {
 	end,
 	-- Loot icon
 	LootOnEnter = function(self)
+		if self:GetParent().waitingToHide then
+			return
+		end
 		local id = self:GetParent().data.id
 		if not ns.mobdb[id] then
 			return
@@ -554,6 +582,9 @@ PopupClass.scripts = {
 		GameTooltip:Hide()
 	end,
 	LootOnClick = function(self, button)
+		if self:GetParent().waitingToHide then
+			return
+		end
 		if not self.window then
 			self.window = ns.Loot.Window.ShowForMob(self:GetParent().data.id)
 			self.window:SetParent(self)
@@ -585,7 +616,7 @@ PopupClass.scripts = {
 		self:GetParent():HideWhenPossible()
 	end,
 }
-function PopupClass:COMBAT_LOG_EVENT_UNFILTERED()
+function PopupMixin:COMBAT_LOG_EVENT_UNFILTERED()
 	-- timeStamp, event, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags
 	local _, subevent, _, _, _, _, _, destGUID = CombatLogGetCurrentEventInfo()
 	if subevent ~= "UNIT_DIED" then
@@ -604,7 +635,7 @@ function PopupClass:COMBAT_LOG_EVENT_UNFILTERED()
 		end
 	end
 end
-function PopupClass:PLAYER_REGEN_ENABLED()
+function PopupMixin:PLAYER_REGEN_ENABLED()
 	if self.waitingToHide then
 		self:Hide()
 	end

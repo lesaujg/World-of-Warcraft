@@ -594,10 +594,20 @@ end
 
 Toolkit.Functions.OnEvent = function(self, event, ...)
 	if event == "PLAYER_LOGIN" then
-		SetCVar("uiScale", self.Settings.UIScale)
+		local CurrentScale = math.floor((self.Settings.UIScale * 100) + .5)
+		local SavedScale = math.floor((GetCVar("uiScale") * 100) + .5)
+
 		SetCVar("useUiScale", 1)
 		
-		UIParent:SetScale(self.Settings.UIScale)
+		-- Only change ui scale if cvar was changed
+		if SavedScale ~= CurrentScale then
+			SetCVar("uiScale", self.Settings.UIScale)
+		end
+
+		-- For big monitors, allow ui to be set under 0.64
+		if (self.Settings.UIScale < 0.64) then
+			UIParent:SetScale(self.Settings.UIScale)
+		end
 	elseif event == "ADDON_LOADED" then
 		local Addon = ...
 		

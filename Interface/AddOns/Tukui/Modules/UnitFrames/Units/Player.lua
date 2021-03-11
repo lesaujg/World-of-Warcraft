@@ -391,12 +391,31 @@ function UnitFrames:Player()
 
 		local ScrollingCombatText = CreateFrame("Frame", "TukuiPlayerFrameScrollingCombatText", UIParent)
 		ScrollingCombatText:SetSize(32, 32)
-		ScrollingCombatText:SetPoint("CENTER", 0, -(T.ScreenHeight / 8))
-		ScrollingCombatText.scrollTime = 1.5
+		ScrollingCombatText:SetPoint("CENTER", 0, -100)
+		ScrollingCombatText.scrollTime = C.UnitFrames.ScrollingCombatTextDisplayTime
 		ScrollingCombatText.font = DamageFontPath
 		ScrollingCombatText.fontHeight = C.UnitFrames.ScrollingCombatTextFontSize
-		ScrollingCombatText.radius = 100
+		ScrollingCombatText.radius = C.UnitFrames.ScrollingCombatTextRadius
 		ScrollingCombatText.fontFlags = DamageFontFlag
+		ScrollingCombatText.useCLEU = C.UnitFrames.ScrollingCombatTextIcon and true or false
+		ScrollingCombatText.format = "%1$s |T%2$s:0:0:0:0:64:64:4:60:4:60|t"
+		ScrollingCombatText.animationsByEvent = {
+			["ABSORB"] = C.UnitFrames.ScrollingCombatTextAnim.Value,
+			["BLOCK"] = C.UnitFrames.ScrollingCombatTextAnim.Value,
+			["DEFLECT"] = C.UnitFrames.ScrollingCombatTextAnim.Value,
+			["DODGE"] = C.UnitFrames.ScrollingCombatTextAnim.Value,
+			["ENERGIZE"] = C.UnitFrames.ScrollingCombatTextAnim.Value,
+			["EVADE"] = C.UnitFrames.ScrollingCombatTextAnim.Value,
+			["HEAL"] = C.UnitFrames.ScrollingCombatTextAnim.Value,
+			["IMMUNE"] = C.UnitFrames.ScrollingCombatTextAnim.Value,
+			["INTERRUPT"] = C.UnitFrames.ScrollingCombatTextAnim.Value,
+			["MISS"] = C.UnitFrames.ScrollingCombatTextAnim.Value,
+			["PARRY"] = C.UnitFrames.ScrollingCombatTextAnim.Value,
+			["REFLECT"] = C.UnitFrames.ScrollingCombatTextAnim.Value,
+			["RESIST"] = C.UnitFrames.ScrollingCombatTextAnim.Value,
+			["WOUND"] = C.UnitFrames.ScrollingCombatTextAnim.Value,
+			["COMBAT"   ] = C.UnitFrames.ScrollingCombatTextAnim.Value,
+		}
 
 		for i = 1, 6 do
 			ScrollingCombatText[i] = ScrollingCombatText:CreateFontString("TukuiPlayerFrameScrollingCombatTextFont" .. i, "OVERLAY")

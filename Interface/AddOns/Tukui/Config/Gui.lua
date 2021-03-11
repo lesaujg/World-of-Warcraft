@@ -114,7 +114,7 @@ local Chat = function(self)
 	Window:CreateSwitch("Chat", "BubblesNames", "Display name in bubbles?")
 	
 	Window:CreateSection("Log History")
-	Window:CreateSlider("Chat", "LogMax", "Amount of chat line you wish to save into log history", 10, 500, 10)
+	Window:CreateSlider("Chat", "LogMax", "Amount of chat line you wish to save into log history", 0, 500, 10)
 
 	Window:CreateSection("Size [Tukui theme only]")
 	Window:CreateSlider("Chat", "LeftWidth", "Set left chat width", 300, 600, 1)
@@ -288,6 +288,7 @@ local Tooltips = function(self)
 
 	Window:CreateSection("Enable")
 	Window:CreateSwitch("Tooltips", "Enable", "Enable tooltip module")
+	Window:CreateSwitch("Tooltips", "DisplayTitle", "Display player title in their name")
 	Window:CreateSwitch("Tooltips", "UnitHealthText", "Enable unit health text")
 	Window:CreateSwitch("Tooltips", "AlwaysCompareItems", "Always compare items")
 
@@ -340,10 +341,14 @@ local UnitFrames = function(self)
 	Window:CreateSwitch("UnitFrames", "Arena", "Enable arena unit frames")
 	Window:CreateSwitch("UnitFrames", "TotemBar", "Enable totem bar")
 
-	Window:CreateSection("Scrolling combat text")
+	Window:CreateSection("Scrolling combat text for yourself")
 	Window:CreateSwitch("UnitFrames", "ScrollingCombatText", "Enable scrolling combat text")
+	Window:CreateSwitch("UnitFrames", "ScrollingCombatTextIcon", "Display icon on on scrolling combat text")
 	Window:CreateSlider("UnitFrames", "ScrollingCombatTextFontSize", "Text size of scrolling", 10, 80, 1)
+	Window:CreateSlider("UnitFrames", "ScrollingCombatTextRadius", "Area size of the scrolling combat text", 50, 500, 10)
+	Window:CreateSlider("UnitFrames", "ScrollingCombatTextDisplayTime", "Number of seconds the text remain to be seen", .5, 3, .1)
 	Window:CreateDropdown("UnitFrames", "ScrollingCombatTextFont", "Set scrolling combat font", "Font")
+	Window:CreateDropdown("UnitFrames", "ScrollingCombatTextAnim", "Which animation you want to use?")
 
 	Window:CreateSection("Auras")
 	Window:CreateSwitch("UnitFrames", "PlayerBuffs", "Enable player buffs")

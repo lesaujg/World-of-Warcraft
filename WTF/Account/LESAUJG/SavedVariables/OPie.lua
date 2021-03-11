@@ -24,144 +24,6 @@ OneRing_Config = {
 	},
 	["PersistentStorage"] = {
 		["RingKeeper"] = {
-			["Mounts"] = {
-				{
-					"mount", -- [1]
-					280, -- [2]
-					["sliceToken"] = "ABuejrS58lk",
-				}, -- [1]
-				{
-					"mount", -- [1]
-					460, -- [2]
-					["sliceToken"] = "ABuejrS58l4",
-				}, -- [2]
-				{
-					"mount", -- [1]
-					522, -- [2]
-					["sliceToken"] = "ABuejrS58lj",
-				}, -- [3]
-				{
-					"mount", -- [1]
-					382, -- [2]
-					["sliceToken"] = "ABuejrS58lh",
-				}, -- [4]
-				{
-					"mount", -- [1]
-					1039, -- [2]
-					["sliceToken"] = "ABuejgiJURt",
-				}, -- [5]
-				["name"] = "Mounts",
-				["save"] = true,
-			},
-			["Addons"] = {
-				{
-					"opie.databroker.launcher", -- [1]
-					"TradeSkillMaster", -- [2]
-					["sliceToken"] = "ABuel37kKhp",
-				}, -- [1]
-				{
-					"opie.databroker.launcher", -- [1]
-					"TellMeWhen", -- [2]
-					["sliceToken"] = "ABuel37kKho",
-				}, -- [2]
-				{
-					"opie.databroker.launcher", -- [1]
-					"AskMrRobot", -- [2]
-					["sliceToken"] = "ABuel37kKh2",
-				}, -- [3]
-				{
-					"opie.databroker.launcher", -- [1]
-					"WeakAuras", -- [2]
-					["sliceToken"] = "ABuel37kKhi",
-				}, -- [4]
-				{
-					["sliceToken"] = "ABueldjmgJr",
-					["icon"] = 134344,
-					["id"] = "/run LoadAddOn(\"Blizzard_WeeklyRewards\"); WeeklyRewardsFrame:Show()",
-				}, -- [5]
-				["name"] = "Addons",
-				["save"] = true,
-			},
-			["CommonTrades"] = {
-				{
-					["id"] = "/cast {{spell:3908/51309}}",
-					["sliceToken"] = "OPCCTt",
-				}, -- [1]
-				{
-					["id"] = "/cast {{spell:2108/51302}}",
-					["sliceToken"] = "OPCCTl",
-				}, -- [2]
-				{
-					["id"] = "/cast {{spell:2018/51300}}",
-					["sliceToken"] = "OPCCTb",
-				}, -- [3]
-				{
-					["id"] = "/cast [mod] {{spell:13262}}; {{spell:7411/51313}}",
-					["sliceToken"] = "OPCCTe",
-				}, -- [4]
-				{
-					["id"] = "/cast {{spell:2259/51304}}",
-					["sliceToken"] = "OPCCTa",
-				}, -- [5]
-				{
-					["id"] = "/cast [mod] {{spell:818}}; {{spell:2550/51296}}",
-					["sliceToken"] = "OPCCTc",
-				}, -- [6]
-				{
-					["sliceToken"] = "OPCCTg",
-					["id"] = "/cast [mod] Thermal Anvil; {{spell:4036/51306}}",
-				}, -- [7]
-				{
-					["id"] = 2656,
-					["sliceToken"] = "OPCCTm",
-				}, -- [8]
-				{
-					["id"] = "/cast [mod] {{spell:31252}}; {{spell:25229/51311}};",
-					["sliceToken"] = "OPCCTj",
-				}, -- [9]
-				{
-					["id"] = "/cast [mod] {{spell:51005}}; {{spell:45357/45363}}",
-					["sliceToken"] = "OPCCTi",
-				}, -- [10]
-				{
-					["id"] = "/cast [mod] {{spell:80451}}; {{spell:78670/89722}}",
-					["sliceToken"] = "OPCCTr",
-				}, -- [11]
-				{
-					["id"] = 53428,
-					["sliceToken"] = "OPCCTu",
-				}, -- [12]
-				["name"] = "Trade Skills",
-				["save"] = true,
-				["hotkey"] = "ALT-T",
-			},
-			["Vendor"] = {
-				{
-					"battlepet", -- [1]
-					"BattlePet-0-000006BCA5EC", -- [2]
-					["sliceToken"] = "ABue3IpvlVp",
-				}, -- [1]
-				{
-					"battlepet", -- [1]
-					"BattlePet-0-000006BCA654", -- [2]
-					["sliceToken"] = "ABue3IpvlVo",
-				}, -- [2]
-				{
-					"battlepet", -- [1]
-					"BattlePet-0-000006BCA642", -- [2]
-					["sliceToken"] = "ABue3IpvlV2",
-				}, -- [3]
-				{
-					"item", -- [1]
-					49040, -- [2]
-					["sliceToken"] = "ABue3IpvlVi",
-				}, -- [4]
-				["name"] = "Vendor",
-				["save"] = true,
-			},
-			["OPieFlagStore"] = {
-				["StoreVersion"] = 2,
-			},
 			["Pets"] = {
 				{
 					["id"] = 883,
@@ -186,42 +48,6 @@ OneRing_Config = {
 				["name"] = "Pets",
 				["save"] = true,
 				["hotkey"] = "ALT-W",
-				["limit"] = "Bracnar-SistersofElune",
-			},
-			["sefulItems"] = {
-				{
-					"toy", -- [1]
-					40768, -- [2]
-					["sliceToken"] = "ABue2czclk1",
-				}, -- [1]
-				{
-					"toy", -- [1]
-					131900, -- [2]
-					["sliceToken"] = "ABue2czclkr",
-				}, -- [2]
-				{
-					"item", -- [1]
-					114943, -- [2]
-					["sliceToken"] = "ABue2mKEUVe",
-				}, -- [3]
-				{
-					"item", -- [1]
-					144341, -- [2]
-					["sliceToken"] = "ABueodD4zme",
-				}, -- [4]
-				{
-					"item", -- [1]
-					49040, -- [2]
-					["sliceToken"] = "ABuepmAOjSe",
-				}, -- [5]
-				{
-					"toy", -- [1]
-					156833, -- [2]
-					["sliceToken"] = "ABuekW6rpCe",
-				}, -- [6]
-				["name"] = "Useful Items",
-				["save"] = true,
-				["hotkey"] = "ALT-E",
 				["limit"] = "Bracnar-SistersofElune",
 			},
 			["Teleport"] = {
@@ -298,6 +124,151 @@ OneRing_Config = {
 				["name"] = "Teleport",
 				["save"] = true,
 			},
+			["CommonTrades"] = {
+				{
+					["id"] = "/cast {{spell:3908/51309}}",
+					["sliceToken"] = "OPCCTt",
+				}, -- [1]
+				{
+					["id"] = "/cast {{spell:2108/51302}}",
+					["sliceToken"] = "OPCCTl",
+				}, -- [2]
+				{
+					["id"] = "/cast {{spell:2018/51300}}",
+					["sliceToken"] = "OPCCTb",
+				}, -- [3]
+				{
+					["id"] = "/cast [mod] {{spell:13262}}; {{spell:7411/51313}}",
+					["sliceToken"] = "OPCCTe",
+				}, -- [4]
+				{
+					["id"] = "/cast {{spell:2259/51304}}",
+					["sliceToken"] = "OPCCTa",
+				}, -- [5]
+				{
+					["sliceToken"] = "OPCCTc",
+					["id"] = "/cast [mod] {{spell:818}}; {{spell:2550/51296}}",
+				}, -- [6]
+				{
+					["sliceToken"] = "OPCCTg",
+					["id"] = "/cast [mod] Thermal Anvil; {{spell:4036/51306}}",
+				}, -- [7]
+				{
+					["sliceToken"] = "OPCCTm",
+					["id"] = 2656,
+				}, -- [8]
+				{
+					["id"] = "/cast [mod] {{spell:31252}}; {{spell:25229/51311}};",
+					["sliceToken"] = "OPCCTj",
+				}, -- [9]
+				{
+					["id"] = "/cast [mod] {{spell:51005}}; {{spell:45357/45363}}",
+					["sliceToken"] = "OPCCTi",
+				}, -- [10]
+				{
+					["id"] = "/cast [mod] {{spell:80451}}; {{spell:78670/89722}}",
+					["sliceToken"] = "OPCCTr",
+				}, -- [11]
+				{
+					["sliceToken"] = "OPCCTu",
+					["id"] = 53428,
+				}, -- [12]
+				["name"] = "Trade Skills",
+				["save"] = true,
+				["hotkey"] = "ALT-T",
+			},
+			["Vendor"] = {
+				{
+					"battlepet", -- [1]
+					"BattlePet-0-000006BCA5EC", -- [2]
+					["sliceToken"] = "ABue3IpvlVp",
+				}, -- [1]
+				{
+					"battlepet", -- [1]
+					"BattlePet-0-000006BCA654", -- [2]
+					["sliceToken"] = "ABue3IpvlVo",
+				}, -- [2]
+				{
+					"battlepet", -- [1]
+					"BattlePet-0-000006BCA642", -- [2]
+					["sliceToken"] = "ABue3IpvlV2",
+				}, -- [3]
+				{
+					"item", -- [1]
+					49040, -- [2]
+					["sliceToken"] = "ABue3IpvlVi",
+				}, -- [4]
+				["name"] = "Vendor",
+				["save"] = true,
+			},
+			["OPieFlagStore"] = {
+				["StoreVersion"] = 2,
+			},
+			["Mounts"] = {
+				{
+					"mount", -- [1]
+					280, -- [2]
+					["sliceToken"] = "ABuejrS58lk",
+				}, -- [1]
+				{
+					"mount", -- [1]
+					460, -- [2]
+					["sliceToken"] = "ABuejrS58l4",
+				}, -- [2]
+				{
+					"mount", -- [1]
+					522, -- [2]
+					["sliceToken"] = "ABuejrS58lj",
+				}, -- [3]
+				{
+					"mount", -- [1]
+					382, -- [2]
+					["sliceToken"] = "ABuejrS58lh",
+				}, -- [4]
+				{
+					"mount", -- [1]
+					1039, -- [2]
+					["sliceToken"] = "ABuejgiJURt",
+				}, -- [5]
+				["name"] = "Mounts",
+				["save"] = true,
+			},
+			["sefulItems"] = {
+				{
+					"toy", -- [1]
+					40768, -- [2]
+					["sliceToken"] = "ABue2czclk1",
+				}, -- [1]
+				{
+					"toy", -- [1]
+					131900, -- [2]
+					["sliceToken"] = "ABue2czclkr",
+				}, -- [2]
+				{
+					"item", -- [1]
+					114943, -- [2]
+					["sliceToken"] = "ABue2mKEUVe",
+				}, -- [3]
+				{
+					"item", -- [1]
+					144341, -- [2]
+					["sliceToken"] = "ABueodD4zme",
+				}, -- [4]
+				{
+					"item", -- [1]
+					49040, -- [2]
+					["sliceToken"] = "ABuepmAOjSe",
+				}, -- [5]
+				{
+					"toy", -- [1]
+					156833, -- [2]
+					["sliceToken"] = "ABuekW6rpCe",
+				}, -- [6]
+				["limit"] = "Bracnar-SistersofElune",
+				["save"] = true,
+				["hotkey"] = "ALT-E",
+				["name"] = "Useful Items",
+			},
 			["Food"] = {
 				{
 					"item", -- [1]
@@ -347,8 +318,37 @@ OneRing_Config = {
 					["sliceToken"] = "ABuelxYkcHe",
 				}, -- [9]
 				["save"] = true,
-				["limit"] = "Bracnar-SistersofElune",
 				["name"] = "Food",
+				["limit"] = "Bracnar-SistersofElune",
+			},
+			["Addons"] = {
+				{
+					"opie.databroker.launcher", -- [1]
+					"TradeSkillMaster", -- [2]
+					["sliceToken"] = "ABuel37kKhp",
+				}, -- [1]
+				{
+					"opie.databroker.launcher", -- [1]
+					"TellMeWhen", -- [2]
+					["sliceToken"] = "ABuel37kKho",
+				}, -- [2]
+				{
+					"opie.databroker.launcher", -- [1]
+					"AskMrRobot", -- [2]
+					["sliceToken"] = "ABuel37kKh2",
+				}, -- [3]
+				{
+					"opie.databroker.launcher", -- [1]
+					"WeakAuras", -- [2]
+					["sliceToken"] = "ABuel37kKhi",
+				}, -- [4]
+				{
+					["sliceToken"] = "ABueldjmgJr",
+					["icon"] = 134344,
+					["id"] = "/run LoadAddOn(\"Blizzard_WeeklyRewards\"); WeeklyRewardsFrame:Show()",
+				}, -- [5]
+				["name"] = "Addons",
+				["save"] = true,
 			},
 		},
 	},
