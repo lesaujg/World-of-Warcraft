@@ -198,9 +198,13 @@ DBM_AllSavedOptions = {
 			0, -- [3]
 		},
 		["RLReadyCheckSound"] = true,
-		["FilterVoidFormSay"] = true,
+		["HUDColor4"] = {
+			0, -- [1]
+			1, -- [2]
+			0, -- [3]
+		},
 		["SpecialWarningFlash4"] = true,
-		["BadTimerAlert"] = false,
+		["EventSoundTurle"] = "None",
 		["SWarnClassColor"] = true,
 		["WarningDuration2"] = 1.5,
 		["UseNameplateHandoff"] = true,
@@ -239,6 +243,7 @@ DBM_AllSavedOptions = {
 			0, -- [2]
 			0, -- [3]
 		},
+		["InfoFrameFontSize"] = 12,
 		["WarningColors"] = {
 			{
 				["r"] = 0.4117647058823529,
@@ -261,7 +266,6 @@ DBM_AllSavedOptions = {
 				["b"] = 0.1019607843137255,
 			}, -- [4]
 		},
-		["InfoFrameFontSize"] = 12,
 		["HUDSize3"] = 5,
 		["SWarningAlphabetical"] = true,
 		["ShowFlashFrame"] = true,
@@ -277,8 +281,8 @@ DBM_AllSavedOptions = {
 		["DontShowInfoFrame"] = false,
 		["WarningX"] = 0,
 		["ShowGuildMessagesPlus"] = false,
-		["CountdownVoice3v2"] = "Pewsey",
 		["MovieFilter2"] = "OnlyFight",
+		["CountdownVoice3v2"] = "Pewsey",
 		["WarningFont"] = "Interface\\Addons\\Tukui\\Medias\\Fonts\\normal_font.ttf",
 		["SpecialWarningFontStyle"] = "THICKOUTLINE",
 		["DontRestoreRange"] = false,
@@ -294,7 +298,7 @@ DBM_AllSavedOptions = {
 		["HealthFrameWidth"] = 200,
 		["SpecialWarningFlashAlph4"] = 0.4,
 		["ShowEngageMessage"] = true,
-		["RangeFrameSound1"] = "none",
+		["ShowAdvSWSound"] = true,
 		["HPFrameY"] = 55.3814926147461,
 		["WarningFontSize"] = 20,
 		["EventSoundVictory2"] = "None",
@@ -326,7 +330,7 @@ DBM_AllSavedOptions = {
 		["HPFrameMaxEntries"] = 5,
 		["ShowRespawn"] = true,
 		["FilterTankSpec"] = true,
-		["ShowAdvSWSound"] = true,
+		["RangeFrameSound1"] = "none",
 		["VoiceOverSpecW"] = false,
 		["WarningDuration"] = 4,
 		["HUDSize4"] = 5,
@@ -361,17 +365,13 @@ DBM_AllSavedOptions = {
 		["ShowWipeMessage"] = true,
 		["LogOnlyRaidBosses"] = false,
 		["StripServerName"] = true,
-		["HUDSize1"] = 5,
 		["DontPlayTrivialSpecialWarningSound"] = true,
+		["BadTimerAlert"] = false,
 		["HPFrameX"] = 325.999847412109,
-		["EventSoundTurle"] = "None",
+		["FilterVoidFormSay"] = true,
 		["AFKHealthWarning"] = true,
-		["HUDColor4"] = {
-			0, -- [1]
-			1, -- [2]
-			0, -- [3]
-		},
 		["RecordOnlyBosses"] = false,
+		["HUDSize1"] = 5,
 	},
 }
 DBM_MinimapIcon = {
